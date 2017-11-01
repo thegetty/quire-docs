@@ -6,6 +6,53 @@ title: YAML
 
 Location: `config.yml`
 
+Type: Object
+
+| Object Properties | Expected Value | Description |
+| --- | --- | --- |
+| `baseURL` | url | The base url for your project. |
+| `blackfriday` | [object](#black-friday-markdown) | Options for Blackfriday, Hugo’s markdown renderer. See below. |
+| `canonifyURLs` |  boolean | Converts all internal links to being in complete cannonical format. Default is `false`. |
+| `footnoteReturnLinkContents` | string | Controls the appearance of the link added to the end of footnotes. Default is "↩". |
+| `metaDataFormat` | "yaml", "toml", "json" | Default is "yaml" |
+| `params` | [object](quire-parameters) | Additional parameters for Quire. See below. |
+| `relativeURLs` |  boolean | Keeps all internal links relative. Default is `true`. |
+| `theme` | url/id | The name of the theme, in the `theme` directory you’re using. Quire starter kit default is `quire-base-theme` |
+
+See: [Additional Hugo configuration options](https://gohugo.io/getting-started/configuration/#yaml-configuration)
+
+### Black Friday Markdown
+
+Location: `blackfriday` in `config.yml`
+
+Type: Object
+
+| Object Properties | Expected Value | Description |
+| --- | --- | --- |
+| `fractions` | boolean | When set to `true` any numbers separated by a slash are automatically converted to fractions. Default is `false`. Though even then 1/4, 1/2 and 3/4 are still converted. Recommend always using proper unicode fractions: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. |
+
+See: [Additional Blackfriday markdown configurations options](https://gohugo.io/getting-started/configuration/#blackfriday-options)
+
+### Quire Parameters
+
+Location: `params` in `config.yml`
+
+Type: Object
+
+| Object Properties | Expected Value | Description |
+| --- | --- | --- |
+| `displayBiblioShort` | boolean | When `true` the short citation form (ie., "Smith 2003") will be displayed with the full form, when creating a bibliogrpahy on pages with `type: essay`, or on other pages with the `q-bibliograpy` shortcode. Default is `true`. |
+| `citationPageLocationDivider` | string | Default is ", ". |
+| `figureSubDir` | string | The image directory inside the `imageDir` for figures listed in `figures.yml`. Default is "figures/". |
+| `imageDir` | string | The project image directory in the `static`. Default is "img/".  |
+| `imageLabelContentBefore` | string |  |
+| `imageLabelContentAfter` | string |  |
+| `menuType` | "short", "full" | Default is "short".   |
+| `searchEnabled` | boolean | Default is `true`. |
+| `tocType` | "short", "full" | Default is "full". |
+
+
+
 ## Publication
 
 Location: `publication.yml`
