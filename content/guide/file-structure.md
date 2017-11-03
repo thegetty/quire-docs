@@ -1,5 +1,5 @@
 ---
-title: Quire File Strucutre
+title: Quire File Structure
 type: page
 ---
 

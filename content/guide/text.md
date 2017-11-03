@@ -1,5 +1,5 @@
 ---
-title: Working with Text
+title: Pages & Plain Text
 type: page
 ---
 

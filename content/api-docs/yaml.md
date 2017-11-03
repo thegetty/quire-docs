@@ -44,14 +44,12 @@ Type: Object
 | `displayBiblioShort` | boolean | When `true` the short citation form (ie., "Smith 2003") will be displayed with the full form, when creating a bibliogrpahy on pages with `type: essay`, or on other pages with the `q-bibliograpy` shortcode. Default is `true`. |
 | `citationPageLocationDivider` | string | Default is ", ". |
 | `figureSubDir` | string | The image directory inside the `imageDir` for figures listed in `figures.yml`. Default is "figures/". |
-| `imageDir` | string | The project image directory in the `static`. Default is "img/".  |
-| `imageLabelContentBefore` | string |  |
-| `imageLabelContentAfter` | string |  |
-| `menuType` | "short", "full" | Default is "short".   |
-| `searchEnabled` | boolean | Default is `true`. |
-| `tocType` | "short", "full" | Default is "full". |
-
-
+| `imageDir` | string | The project’s main image directory inside the `static` directory. Default is "img/".  |
+| `imageLabelContentBefore` | string | Default is "Figure " |
+| `imageLabelContentAfter` | string | Default is ". " |
+| `menuType` | "short", "full" | Default is "short" |
+| `searchEnabled` | boolean | Default is `true` |
+| `tocType` | "short", "full" | Default is "full" |
 
 ## Publication
 
@@ -71,27 +69,28 @@ Type: Object
 | `language` | 2-letter ISO 639-1 language code(s) | Taken from the the list at https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes. List multiple languages using a comma-separated list. |
 | `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased indivudally or in packages at http://www.isbn.org/.  |
 | `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
-| `doi_uuid` ? | string |  |
-| `publisher` | array | See below. |
+| `doi_uuid` | string | Not yet implemented. |
+| `publisher` | [array](#publisher) | See below. |
+| `publisher_citation_chicago` | string | Temporary. To support page-level citations for multiple publishers with a common location. |
 | `series_periodical_name` | string |  |
 | `series_issue_number` | string |  |
-| `primary_contributor` | array | See below. |
-| `secondary_contributor` | array | See below. |
+| `primary_contributor` | [array](#contributor) | See below. |
+| `secondary_contributor` | [array](#contributor) | See below. |
 | `contributor_as_it_appears` | string |  |
 | `marketing_graphic` | url |  |
-| `description` | object | See below. |
-| `subject_metadata` | array | See below. |
+| `description` | [object](#publication-description) | See below. |
+| `subject_metadata` | [array](#subject-metadata) | See below. |
 | `library_of_congress_cip_data` | list |  |
 | `copyright` | string |  |
-| `license` | object | See below. |
-| `project_team` | array | See below. |
-| `formats` | array | See below. |
-| `related_resources` | array | See below. |
-| `footer_links` | array | See below. |
-| `revision_history` | array | See below. |
-| `repository_url` | url |  |
+| `license` | [object](#license) | See below. |
+| `project_team` | [array](#contributor) | See below. |
+| `other_formats` | [array](#resource-links) | See below. |
+| `related_resources` | [array](#resource-links) | See below. |
+| `footer_links` | [array](#resource-links) | See below. |
+| `revision_history` | [array](#revision-history) | See below. |
+| `repository_url` | url | A public repository of the source code and revision history for the publication. |
 
-## Publisher
+### Publisher
 
 Location: `publisher` in `publication.yml`
 
@@ -103,25 +102,7 @@ Type: Array
 | `location` | string | Publisher location, city. |
 | `url` | url | Publisher homepage. |
 
-## Contributor
-
-Location: `primary_contributor`, `secondary_contributor`, `publication_team` in `publication.yml`; or `contributor` in any `.Page.Params.`
-
-Type: Array
-
-| Item Attributes | Expected Value | Description |
-| --- | --- | --- |
-| `id` |  |  |
-| `first_name` |  |  |
-| `last_name` |  |  |
-| `title` |  |  |
-| `affiliation` |  |  |
-| `role` |  |  |
-| `role_code` | 3-letter role code | Taken from the list at https://www.loc.gov/marc/relators/relaterm.html |
-| `url` |  |  |
-| `bio` |  |  |
-
-## Publication Description
+### Publication Description
 
 Location: `description` in `publication.yml`
 
@@ -134,7 +115,7 @@ Type: Object
 | `additional_online` | string |  |
 | `additional_pdf_ebook` | string | |
 
-## Subject Metadata
+### Subject Metadata
 
 Location: `subject_metadata` in `publication.yml`
 
@@ -143,10 +124,10 @@ Type: Array
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 | `keywords` | string | Comma-separated list of keywords describing your publication. |
-| `linked_vocabulary` | array | See below.  |
-| `bisac` | array | See below. |
+| `linked_vocabulary` | [array](#linked-vocabulary) | See below.  |
+| `bisac` | [array](#bisac) | See below. |
 
-### Linked Vocabulary
+#### Linked Vocabulary
 
 Location: `linked_vocabulary` under `subject_metadata` in `publication.yml`
 
@@ -158,7 +139,7 @@ Type: Array
 | `name` | string |  |
 | `url` | url |  |
 
-### BISAC
+#### BISAC
 
 Location: `bisac` under `subject_metadata` in `publication.yml`
 
@@ -169,7 +150,7 @@ Type: Array
 | `code` | string |  |
 | `subject` | string |  |
 
-## License
+### License
 
 Location: `license` in `publication.yml`
 
@@ -178,11 +159,13 @@ Type: Object
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
 | `name` | string | Name of the license. |
+| `name_short` |  |  |
 | `url` | url | Link to the license text. |
 | `icon` | url |  |
-| `exceptions` | array | See below. |
+| `scope` | "text-only", "full", "text-only", "some-exceptions" |  |
+| `exceptions` | [array](#license-exceptions) | See below. |
 
-### License Exceptions
+#### License Exceptions
 
 Location: `exceptions` under `license` in `publication.yml`
 
@@ -194,9 +177,9 @@ Type: Object
 | `pdf_ebook` | string |  |
 | `all` | string |  |
 
-## Resource Links
+### Resource Links
 
-Location: `formats`, `related_resources`, or `info_links` in `publication.yml`
+Location: `other_formats`, `related_resources`, or `footer_links` in `publication.yml`
 
 Type: Array
 
@@ -211,7 +194,7 @@ Type: Array
 | `icon` | url |  |
 
 
-## Revision History
+### Revision History
 
 Location: `revision_history` in `publication.yml`
 
@@ -222,6 +205,26 @@ Type: Array
 | `date` | YYYY-MM-DD |  |
 | `summary` | list |  |
 
+## Contributor
+
+Location: `primary_contributor`, `secondary_contributor`, `publication_team` in `publication.yml`; or `contributor` in any `.Page.Params.`
+
+Type: Array
+
+| Item Attributes | Expected Value | Description |
+| --- | --- | --- |
+| `id` |  |  |
+| `first_name` |  |  |
+| `last_name` |  |  |
+| `full_name` |  |  |
+| `file_as` |  |  |
+| `title` |  |  |
+| `affiliation` |  |  |
+| `role` |  |  |
+| `role_code` | 3-letter role code | Taken from the list at https://www.loc.gov/marc/relators/relaterm.html |
+| `url` |  |  |
+| `bio` |  |  |
+| `pic` |  |  |
 
 ## Figure
 
@@ -250,3 +253,9 @@ Type: Array
 | --- | --- | --- |
 | `short` | string | The short form of the citation, ie., Brown 1984. |
 | `full` | string | The full form of the citation, ie.,  |
+
+## Page
+
+Location: Any page in `content/`
+
+Type: Object

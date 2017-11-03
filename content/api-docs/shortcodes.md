@@ -33,22 +33,22 @@ Required Named Parameters: "range" and "type"
 
 ### type
 
-| Expected Value | Description |
-| --- | --- | --- | --- |
-| "initials" | Looks for the capital letters in a contributor first and last name and concatenates them together. |
-| "name" | Just the first and last name. |
-| "name-plus" | The first and last name with, when available, their title and affiliation on a line below. |
-| "bio" | First and last name, with pic, url, and bio as available. Plus a link to their contribution. |
+| Expected Value | Description                              |
+| -------------- | ---------------------------------------- |
+| "initials"     | Looks for the capital letters in a contributor first and last name and concatenates them together. |
+| "name"         | Just the first and last name.            |
+| "name-plus"    | The first and last name with, when available, their title and affiliation on a line below. |
+| "bio"          | First and last name, with pic, url, and bio as available. Plus a link to their contribution. |
 
 ### range
 
-| Expected Value | YAML Location | Description |
-| --- | --- | --- |
-| "page" | `.Page.Params.contributor` | In the current Page under `contributor` |
-| "essays" | `.Site.Pages.Params.contributor` | In any Page with a `type: essay` under `contributor` |
-| "all" | `.Site.Pages.Params.contributor` | In all Pages under `contributor` |
-| "primary" | `.Site.Data.publication.primary_contributor` | In `publication.yml` under `primary_contributor` |
-| "secondary" | `.Site.Data.publication.secondary_contributor` | In `publication.yml` under `secondary_contributor` |
+| Expected Value     | YAML Location                            | Description                              |
+| ------------------ | ---------------------------------------- | ---------------------------------------- |
+| "page"             | `.Page.Params.contributor`               | In the current Page under `contributor`  |
+| "essays"           | `.Site.Pages.Params.contributor`         | In any Page with a `type: essay` under `contributor` |
+| "all"              | `.Site.Pages.Params.contributor`         | In all Pages under `contributor`         |
+| "primary"          | `.Site.Data.publication.primary_contributor` | In `publication.yml` under `primary_contributor` |
+| "secondary"        | `.Site.Data.publication.secondary_contributor` | In `publication.yml` under `secondary_contributor` |
 | "publication-team" | `.Site.Data.publication.publication-team` | In `publication.yml` under `publication-team` |
 
 YAML Structure:
@@ -91,9 +91,9 @@ Basic Usage: Creates an unordered list of links. Makes use of the `link-list.htm
 
 Parameters:
 
-| Parameter Position | Expected Value | Description |
-| --- | --- | --- |
-| 0 * | "other-formats", "related-resources" | Values point to corresponding values in `publication.yml` |
+| Parameter Position | Expected Value                       | Description                              |
+| ------------------ | ------------------------------------ | ---------------------------------------- |
+| 0 *                | "other-formats", "related-resources" | Values point to corresponding values in `publication.yml` |
 
 Parameters are not named, but instead defined by their position, starting at 0.
 
@@ -119,9 +119,9 @@ Sample: `{{< q-revision-history >}}`
 
 Basic Usage: Adds a revsion history to the page, based on values in `publication.yml`.
 
-| Named Parameters | Expected Value | Description |
-| --- | --- | --- |
-| format | "short", "full" | "short" will show only the first publication date and most recently updated date. "long" shows all dates and list of changes for each.  |
+| Named Parameters | Expected Value  | Description                              |
+| ---------------- | --------------- | ---------------------------------------- |
+| format           | "short", "full" | "short" will show only the first publication date and most recently updated date. "long" shows all dates and list of changes for each. |
 
 See: [Copyright & About Pages](copyright/index.html)
 
