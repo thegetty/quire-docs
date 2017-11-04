@@ -26,3 +26,9 @@ framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
   - [YAML](content/api-docs/yaml.md)
 - Workshops
   - [MCN 2017](content/workshops/mcn-2017.md)
+
+Read [more about Quire](http://www.getty.edu/publications/digital/platforms-tools.html) on the Getty Publications website, or contact @geealbers or @egardner with questions.
+
+  © J. Paul Getty Trust
+
+  This documentation is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
