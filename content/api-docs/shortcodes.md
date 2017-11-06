@@ -7,7 +7,7 @@ type: page
 
 Sample: `{{< q-backmatter >}}The text you want formatted here.{{< /q-backmatter >}}`
 
-Basic Usage: Wrapping text in `q-backmatter` will format the text in a manner similar to how footnotes and bibliographies are formatted. Good for sections at the end of essays like Appendices, Acknowledgments, and Contributors Bios.
+Basic Usage: Wrapping text in this shortcode will format it in a manner similar to how footnotes and bibliographies are formatted. Good for sections at the end of essays like Appendices, Acknowledgments, and Contributors Bios.
 
 Parameters: None.
 
@@ -17,9 +17,13 @@ See: [Working with Text](text/index.html)
 
 ## `q-bibliography`
 
+Basic Usage: Generates a bibiliography from the entries in the project's `bibiliography.yml` file.
+
 See: [Citations & Bibliographies](bibliographies/index.html)
 
 ## `q-cite`
+
+Basic Usage: Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
 
 See: [Citations & Bibliographies](bibliographies/index.html)
 
@@ -27,7 +31,7 @@ See: [Citations & Bibliographies](bibliographies/index.html)
 
 Sample: `{{< q-contributors range="page" type="bio" >}}`
 
-Basic Usage: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, or a byline for a particular page.
+Basic Usage: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
 
 Required Named Parameters: "range" and "type"
 
@@ -69,7 +73,7 @@ See: [Contributors](contributors/index.html)
 
 Sample: `{{< q-copyright >}}`
 
-Basic Usage: The `q-copyright` shortcode, adds a copyright statement and licensing information as you’ve defined it in your `publication.yml` file. Commonly used on Copyright and About pages. The shortcode itself makes use of the `copyright.html` partial in your site templates.
+Basic Usage: Adds a copyright statement and licensing information as you’ve defined it in your `publication.yml` file. Commonly used on Copyright and About pages. The shortcode itself makes use of the `copyright.html` partial in your site templates.
 
 Parameters: None.
 
@@ -77,9 +81,13 @@ See: [Copyright & About Pages](copyright/index.html)
 
 ## `q-figure`
 
+Basic Usage: Inserts a formatted figure image (includng audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
+
 See: [Figures](figures/index.html)
 
 ## `q-figure-group`
+
+Basic Usage: Like `q-figure`, but with handling for multiple images at once.
 
 See: [Figures](figures/index.html)
 
@@ -127,8 +135,12 @@ See: [Copyright & About Pages](copyright/index.html)
 
 ## `q-table`
 
+Note: Original version of this was tabled. Still looking for better solution for complext tables.
+
 See: [Figures](figures/index.html)
 
 ## `q-url-link`
+
+Note: Not sure we‘ll do this. Might be better to build in with JS rather than have a separate shortcode just for URLs.
 
 See: [Working with Text](text/index.html)
