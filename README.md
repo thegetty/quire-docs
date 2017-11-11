@@ -14,7 +14,7 @@ framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
   - [About](content/guide/about.md)
   - [Setup](content/guide/setup.md)
   - [Quire Project File Structure](content/guide/file-structure.md)
-  - [*Publication Metadata & Configuration*](content/guide/metadata.md)
+  - [*Publication Configuration & Metadata*](content/guide/metadata.md)
   - [Pages & Plain Text](content/guide/text.md)
   - [*Figures*](content/guide/figures.md)
   - [*Other Images & Assets*](content/guide/assets.md)
@@ -31,7 +31,18 @@ framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
 
 (*Note: entries in italics are placeholder stubs.*)
 
-Read [more about Quire](http://www.getty.edu/publications/digital/platforms-tools.html) on the Getty Publications website, or contact @geealbers or @egardner with questions.
+## Links of Interest
+
+- [“Quire: A New Publishing Tool”](http://www.getty.edu/publications/digital/platforms-tools.html)
+- [“Why Static Site Generators Are the Next Big Thing”](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
+- [“An Editor’s View of Digital Publishing”](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/)
+- [Hugo](https://gohugo.io/)
+
+## Contact
+
+Greg Albers: [@geealbers](https://github.com/geealbers) |  [galbers@getty.edu](mailto:galbers@getty.edu)
+
+Eric Gardner: [@egardner](https://github.com/egardner) |  [egardner@getty.edu](mailto:egardner@getty.edu)
 
 ## License
 
