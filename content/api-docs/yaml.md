@@ -234,14 +234,17 @@ Type: Array
 
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
-|`id` | string |Numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). This can be used to create an anchor that can be linked to directly (`mypublication.com/chapter01/#fig-01a`). |
-| `src` | url | the file name (`fig01.jpg`), and if it’s in a sub-folder within the main `figures` directory, it should include that folder name as well (`comparatives/fig01.jpg`). |
-| `alt` | string | For accessibility, all images should have alternative text descriptions. ([Tips on crafting good alt text.](#link)) Only ever leave blank if the image is purely decorative. |
-| `label` | string | When using a `figures.yml` document, if label is set to `true`, label text will be added to your layout under or on the corner of the image, depending on your theme. Quire first looks for a `label` field in `figures.yml` and will use that, or if none is found, a label will be automatically generated from the `id` value and with the `imageLabelContentBefore` and `imageLabelContentAfter` values defined in your `config.yml` file. If not using a `figures.yml` document or if text other than `true` is used, the label will appear as given, or not appear at all if use in the `q-figure-group` shortcode. Markdown is supported. |
+|`id` | string | Numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
+| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main figures directory (which is defined by the `figureSubDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). |
+| `alt` | string | For accessibility, all images should have alternative text descriptions. ([Tips on crafting good alt text.](https://webaim.org/techniques/alttext/)) Only ever leave blank if the image is purely decorative. |
 | `caption` | string | The caption to appear below the figure. Special characters are allowed. Use Markdown for formatting. |
-| `credit` | string |  |
-| `media-type` |  | Not yet available. Supported values are: video, youtube, vimeo, audio, soundcloud. For use specifically with the `q-figure-media` shortcode. |
-| `fallback` | url | Not yet available.  |
+| `credit` | string | Follows the caption. Markdown allowed. |
+| `media_type` | "youtube", "vimeo" | Currently supports video hosted on YouTube or Vimeo. (May eventually expand to HTML5 video, audio, and Soundcloud, and others.) When a `media_type` is defined, a `media_id` must be as well. For video, it is also recommended that an image `src` still be used (presumably being a screenshot from the video) so as to provide a fallback for PDF and EPUB output. |
+| `media_id` | string | The ID of the video resource on YouTube or Vimeo. For example, in the URLs https://www.youtube.com/watch?v=VYqDpNmnu8I or https://youtu.be/VYqDpNmnu8I, the `media_id` would be `VYqDpNmnu8I`; and in https://vimeo.com/221426899 it is `221426899`.|
+| `aspect_ratio` | "standard", "widescreen" | For use with video `media_type`s to properly scale video embeds. When no value is provided, the default is "widescreen". |
+| `label_text` | string | Used for the `q-figure-group` shortcode only. A short text label added to the image, usually just under the image depending on your theme. If no text is provided here, a label is automatically generated from the provided `id` value along with the `imageLabelContentBefore` and `imageLabelContentAfter` values defined in your `config.yml` file.  |
+
+
 
 ## Bibiliography
 

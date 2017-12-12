@@ -81,7 +81,17 @@ See: [Copyright & About Pages](copyright/index.html)
 
 ## `q-figure`
 
-Basic Usage: Inserts a formatted figure image (includng audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
+Sample: `{{< q-figure id="3.1" >}}`
+
+Basic Usage: Inserts a formatted figure image, caption and credit line using data from the project’s `data/figures.yml` file, or from values supplied directly in the shortcode. If a using `data/figures.yml` file, embedded video can also be inserted.
+
+| Named Parameters | Expected Value  | Description |
+| --- | --- | --- |
+|`id` | string | Spaces or special characters should not be used and will be stripped out. When used in a shortcode *without* a corresponding `src` parameter, the shortcode will look for a matching `id` in the project’s `data/figures.yml` file. When used in a shortcode *with* a corresponding `src` parameter, this will create an `id` for the image markup that can be used to link to the image directly (`mypublication.com/chapter01/#fig-3`) and ignores any  potentially corresponding information in the `data/figures.yml` file. |
+| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main figures directory (which is defined by the `figureSubDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). |
+| `alt` | string | For accessibility, all images should have alternative text descriptions. ([Tips on crafting good alt text.](https://webaim.org/techniques/alttext/)) Only ever leave blank if the image is purely decorative. |
+| `caption` | string | The caption to appear below the figure. Special characters are allowed. Use Markdown for formatting. |
+| `credit` | string | Follows the caption. Markdown allowed. |
 
 See: [Figures](figures/index.html)
 
