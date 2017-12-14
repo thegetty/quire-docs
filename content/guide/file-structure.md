@@ -3,7 +3,7 @@ title: Quire File Structure
 type: page
 ---
 
-Inside each Quire project, will be the following directories and files, which are defined by Hugo, the static-site generator that powers Quire.
+Inside each Quire project, will be the following directories and files, which are defined by Hugo, the static-site generator that powers Quire. The three directories that most users work in most are `content`, `data`, and `static`. Developers and designers will also make use of `themes`.
 
 ## 📁 bin
 

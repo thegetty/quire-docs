@@ -40,7 +40,7 @@ Read more in [Setup](content/guide/setup.md), and [Multi-Format Output](content/
 
 ### `quire-starter`
 
-Quire Starter ([quire-starter](https://github.com/gettypubs/quire-starter)) is a starter content repository used as seed content when starting a new Quire project with the `quire new` command. It comes with some pre-defined example content and pages with which to get started.
+Quire Starter ([quire-starter](https://github.com/gettypubs/quire-starter)) is a starter content repository used as placeholder content when starting a new Quire project with the `quire new` command. It comes with some pre-defined example content and pages with which to get started.
 
 ### `quire-starter-theme`
 

@@ -27,7 +27,7 @@ By default, figures are the full width of the text column (depending on your the
 
 Available in all Quire themes are "float-left" (smaller and to the left), "float-right" (smaller and to the right), "small-center" (for decorative elements), and "plate" (big). Some themes may offer additional options, and styles may be edited and new styles added in any theme with [css](#link).
 
-In the same way you add styles and alternate texts to a shortcode, captions and other information can be included in a similar manner. The following attributes are suported in the `q-figure` shortcode. They may be called within the shortcode in any order.
+In the same way you add styles and alternate texts to a shortcode, captions and other information can be included in a similar manner. The following attributes are supported in the `q-figure` shortcode. They may be called within the shortcode in any order.
 
 | Attribute | Value |
 | --- | --- |
