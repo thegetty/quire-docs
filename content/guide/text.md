@@ -121,11 +121,10 @@ The following shortcode are (or will be) avaialble in Quire. You’ll find more 
 
 ## Converting Your Text from Microsoft Word
 
-Commonly, project content will start from Microsoft Word documents rather than being written origianlly in Markdown. In these cases, a simple conversion can be done.
+Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple conversion can be done.
 
 We recommend using [Pandoc](https://pandoc.org/), a free, command-line text conversion tool. There are installation instructions on their site, but for Mac users with Homebrew installed (which you would have done as part of the Quire installation process), you just open your Terminal and type `brew install pandoc`.
 
 Once installed ...
 
 There are also some easy things you can do in the Word document prior to conversion to ensure the best possible results ...
-
