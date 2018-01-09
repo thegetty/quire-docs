@@ -41,8 +41,8 @@ xcode-select --install
 
 As shown in the screenshots, you’ll need to press return/enter when prompted and your computer password when asked:
 
-![Press Enter](images/homebrew_press-enter.tif)
-![Password](images/Homebrew_password.tif)
+![Press Enter](../images/homebrew_press-enter.png)
+![Password](../images/homebrew_password.png)
 
 3.) Install **[Node.js](https://nodejs.org/)**:
 
@@ -63,7 +63,7 @@ git clone https://github.com/gettypubs/quire-cli.git
 
 You’ll be asked to enter your GitHub username and password as you can see on the screenshot.
 
-![Clone on GitHub](images/github_clone.tif)
+![Clone on GitHub](../images/github_clone.png)
 
 6.) Install the **Quire CLI**. Copy and paste the following commands and press return/enter twice:
 
@@ -134,4 +134,4 @@ quire preview
 
 This will give you a live preview of your site, which you can view in any web browser at [http://localhost:1313](http://localhost:1313). To make changes, open your project folder in a text editor like Atom. When you make changes in the files, they’ll show up live on the localhost preview. You will see the changes you make on your site, except for the _config.yml_ files. Stop running the site locally by pressing `control-c`, make the changes and then restart the live preview to see the changes made on _yml_ files.
 
-![preview](images/QuireSmall.gif)
+![preview](../images/quire_small.gif)
