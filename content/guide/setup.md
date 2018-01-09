@@ -9,7 +9,7 @@ The most obvious difference between Quire and other publishing programs you may 
 
 This is working closer to the code. And to work with code, you need three standard coding tools. Before you start the install process. Set these up first:
 
-1. Make sure you have a **command line shell**. Macs come with a good shell called **Terminal** (find it in your Applications > Utilities folder). For PCs we recommend installing **[Git Bash](https://git-for-windows.github.io/)**. A good introduction to the command line shell can be found in this [lesson](https://programminghistorian.org/lessons/intro-to-bash) from The Programming Historian.
+1. Make sure you have a **command line shell**. Macs come with a good shell called **Terminal** (find it in your Applications > Utilities folder). For PCs we recommend installing **[Git Bash](https://git-for-windows.github.io/)**. A good introduction to the command line shell see [Introduction to the Bash Command Line](https://programminghistorian.org/lessons/intro-to-bash)lesson from the Programming Historian.
 2. Set up a **[GitHub account](https://github.com/join)** and download **[GitHub Desktop](https://desktop.github.com/)** for version control.
 3. Get a **text editor** (there are many, but we recommend [Atom](https://atom.io/) because of its integration with Github).
 
@@ -44,12 +44,12 @@ As shown in the screenshots, you’ll need to press return/enter when prompted a
 ![Press Enter](images/homebrew_press-enter.tif)
 ![Password](images/Homebrew_password.tif)
 
-3.) Install **Node.js**:
+3.) Install **[Node.js](https://nodejs.org/)**:
 
 ```
 brew install node
 ```
-4.) Install **Hugo**:
+4.) Install **[Hugo](https://gohugo.io/)**:
 
 ```
 brew install hugo
@@ -83,7 +83,7 @@ mkdir Quire
 
 *Less steps than for a Mac, but the Hugo one in particular, is a bit tricky.*
 
-1.) Download and install **[Node.js 8.9.3.](https://nodejs.org/en/download/)**. You will have to restart your computer for Node to finish installing.
+1.) Download and install **[Node.js](https://nodejs.org/en/download/)**. You will have to restart your computer for Node to finish installing.
 
 2.) Download and install **[Hugo](https://gohugo.io/getting-started/installing/#windows)** following the directions on their website. Note that for Windows 7 and 8 users, you will also need to install a **path editor**, such as the one from [codeplex](https://patheditor2.codeplex.com/).
 
