@@ -41,7 +41,8 @@ xcode-select --install
 
 As shown in the screenshots, you’ll need to press return/enter when prompted and your computer password when asked:
 
-![Press Enter](../images/homebrew_press-enter.png)
+![Press Enter](../images/homebrew_press_enter.png)
+
 ![Password](../images/homebrew_password.png)
 
 3.) Install **[Node.js](https://nodejs.org/)**:

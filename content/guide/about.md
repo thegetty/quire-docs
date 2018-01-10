@@ -39,13 +39,13 @@ Read more in [Setup](content/guide/setup.md), and [Multi-Format Output](content/
 
 Quire Starter ([quire-starter](https://github.com/gettypubs/quire-starter)) is a starter content repository used as placeholder content when starting a new Quire project with the `quire new` command. It comes with some pre-defined example content and pages with which to get started.
 
-![Quire Starter](images/quire_starter.png)
+![Quire Starter](../images/quire_starter.png)
 
 ### `quire-starter-theme`
 
 Quire Starter Theme ([quire-starter-theme](https://github.com/gettypubs/quire-starter)) is the basic theme that is included when starting a new Quire project with the `quire new` command. It is designed to broadly cover a full range of use-cases and to demonstrate the range of Quire content model, without being too overly specific or complex, making it easy to customize and build from. Read more about the use of themes in [Customizing Styles](content/guide/styles.md).
 
-![Quire Starter Theme](images/quire_starter_theme.png)
+![Quire Starter Theme](../images/quire_starter_theme.png)
 
 More themes will be added in the future.
 
