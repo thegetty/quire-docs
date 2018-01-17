@@ -33,23 +33,23 @@ Figures and all their associated attributes can be listed in a single `figures.y
 Assuming each YAML figure entry includes a unique `id`, you can insert a figure in your publication with only the `id` attribute, and all of the other attributes defined in the YAML for that figure, will be automatically included. Note that the figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
 
 ```
-{{</* q-figure id="1.2" */>}}
+{{< q-figure id="1.2" >}}
 ```
 
 If you include an attribute in the shortcode that is also in the `figures.yml` file, the `figures.yml` version is overridden. This can be useful when, for example, a figure is used in multiple locations and you want different captions.
 
 ```
-{{</* q-figure id="1.2" caption="" */>}}
+{{< q-figure id="1.2" caption="" >}}
 ```
 
-Note that including an attribute in this way but leaving it blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`. Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{</* q-figure id="1.2" caption="" */>}}` is the same as `{{</* q-figure caption="" id="1.2" */>}}`.
+Note that including an attribute in this way but leaving it blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`. Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{< q-figure id="1.2" caption="" >}}` is the same as `{{< q-figure caption="" id="1.2" >}}`.
 
 ## Styling Figure Images
 
 Depending on your theme, by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left`, `is-pulled-right`, `is-big`, and `is-small`. Classes are added just like other attributes in the shortcode.
 
 ```
-{{</* q-figure id="1.2" class="is-pulled-left" */>}}
+{{< q-figure id="1.2" class="is-pulled-left" >}}
 ```
 
 Some themes may offer additional options, and styles may be edited and new styles added in any theme with [css](#link).
@@ -59,7 +59,7 @@ Some themes may offer additional options, and styles may be edited and new style
 If your project uses a `figures.yml` file, you can also create a group of figures by using the `q-figure-group` shortcode and simply including multiple, comma-separated values in the `id` field.
 
 ```
-{{</* q-figure-group id="1.1, 1.2" */>}}
+{{< q-figure-group id="1.1, 1.2" >}}
 ```
 
 In the above example, each figure’s caption will be included in the grouping. Alternatively, if you add a `caption` attribute directly in the shortcode, it will override those present in the `figures.yml` file and display with the group alone as a single, group caption.
@@ -67,13 +67,13 @@ In the above example, each figure’s caption will be included in the grouping. 
 Just as with the single `q-figure` shortcode, classes can be added to groups to style them. For example, to create a small group of images running along one side of your text.
 
 ```
-{{</* q-figure-group class="is-pulled-right" id="1.1, 1.2" */>}}
+{{< q-figure-group class="is-pulled-right" id="1.1, 1.2" >}}
 ```
 
 In addition to all the attributes available to the `q-figure` shortcode, the `q-figure-group` extension also supports the `grid` attribute to specify a preferred grid width. In the below example, a `grid="2"` is specified and so the gallery grid will be 2 images wide at your publication layout’s full-size. Alternately, if you specified `grid="4"` the grid would be 4 images wide making each image relatively smaller.
 
 ```
-{{</* q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" */>}}
+{{< q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" >}}
 ```
 
 Note that this is only a **preferred** grid width. With Quire’s responsively desiged templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
@@ -114,13 +114,13 @@ Note that on YouTube, videos can be filed as “Unlisted” and this will let yo
 If you are not using a `figures.yml` file, figures—including still images and animated gifs but not video—can be inserted in any Markdown document in your publication with the `q-figure` shortcode, where `src` is the name of your file as it appears in the `figures` folder of your project.
 
 ```
-{{</* q-figure src="fig01.jpg" */>}}
+{{< q-figure src="fig01.jpg" >}}
 ```
 
 Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies.
 
 ```
-{{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}
+{{< q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" >}}
 ```
 
 Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in this manner.
