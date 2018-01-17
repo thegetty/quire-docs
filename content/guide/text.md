@@ -97,9 +97,20 @@ Footnotes can also be added with Markdown. Use a numbered marker like `[^1]` in 
 [^1]: The footnote itself is the same thing as the footnote number reference in the text, but with a colon followed by the footnote text
 ```
 
-Footnotes can also include multiple paragraphs.
+Footnotes can also include markdown formatting, including lists and even multiple paragraphs. For these, indent the content inwards two levels and put a line space in between the paragraphs just as you would elsewhere.
 
--.......
+```
+## Notes
+
+[^2]:
+    Footnotes with multiple paragraphs
+
+    Are indented in twice, and have line breaks between.
+
+    - Markdown lists
+    - work like this in footnotes
+    - as well
+```
 
 Note that the built-in Markdown processor will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them.
 

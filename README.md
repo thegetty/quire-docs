@@ -14,7 +14,7 @@ framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
   - [About](content/guide/about.md)
   - [Setup](content/guide/setup.md)
   - [Quire Project File Structure](content/guide/file-structure.md)
-  - [*Publication Configuration & Metadata*](content/guide/metadata.md)
+  - [Publication Configuration & Metadata](content/guide/metadata.md)
   - [Pages & Plain Text](content/guide/text.md)
   - [Figure Images](content/guide/figures.md)
   - [*Other Images & Assets*](content/guide/assets.md)
