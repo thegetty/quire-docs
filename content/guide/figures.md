@@ -5,7 +5,7 @@ type: page
 
 ## Figure Image Sizes & Formats
 
-Figure image files should be placed in the `static/img/figures` directory. These are defined in your project `config.yml` file with `imageDir: "img/"` and `figureSubDir: "figures/"`, and can be changed if needed.
+Figure image files should be placed in the `static/img/` directory. This is defined in your project `config.yml` file with `imageDir: "/img/"` and can be changed if needed. You can organize figures into sub-directories within the `img` folder, but you will need to include those directories along with the filename when defining the `src` attribute for the figure, as noted below.
 
 Quire does not require a specific image file format or size, but we have some recommended best practices:
 
@@ -19,7 +19,7 @@ For more information on web image sizing and optimization, [visit ...](#).
 
 For most publications, or at least, those with more than just a handful of images, we recommend using a `figures.yml` text file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the `q-figure` [shortcode](#).
 
-Figures and all their associated attributes can be listed in a single `figures.yml` file which should be placed in your `data` folder. These then can be called from wherever you need them in your project. See the API-DOCs section for [complete details on possible figure attributes](../api-docs/yaml.md#figure), but below a very simple example with `id` and `src` (which are required) and `alt` (which is recommended). Also available are `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, and `label_text`.
+Figures and all their associated attributes can be listed in a single `figures.yml` file which should be placed in your `data` folder. These then can be called from wherever you need them in your project. See the API-DOCs section for [complete details on possible figure attributes](../api-docs/yaml.md#figure), but below a very simple example with `id` and `src` (which are required) and `alt` (which is recommended). Also available are `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, and `label_text`. If your figures are organized in sub-directories within your `static/img/` directory, they should appear as part of the file path under `src`, otherwise, only the filename is needed.
 
 ```yaml
 - id: "1.1"
@@ -111,7 +111,7 @@ Note that on YouTube, videos can be filed as “Unlisted” and this will let yo
 
 ## Basic Figures
 
-If you are not using a `figures.yml` file, figures—including still images and animated gifs but not video—can be inserted in any Markdown document in your publication with the `q-figure` shortcode, where `src` is the name of your file as it appears in the `figures` folder of your project.
+If you are not using a `figures.yml` file, figures—including still images and animated gifs but not video—can be inserted in any Markdown document in your publication with the `q-figure` shortcode, where `src` is the name of your file as it appears in the `static/img/` directory of your project.
 
 ```
 {{< q-figure src="fig01.jpg" >}}

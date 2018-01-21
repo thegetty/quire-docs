@@ -43,10 +43,13 @@ Type: Object
 | --- | --- | --- |
 | `displayBiblioShort` | boolean | When `true` the short citation form (ie., "Smith 2003") will be displayed with the full form, when creating a bibliogrpahy on pages with `type: essay`, or on other pages with the `q-bibliograpy` shortcode. Default is `true`. |
 | `citationPageLocationDivider` | string | Default is ", ". |
-| `figureSubDir` | string | The image directory inside the `imageDir` for figures listed in `figures.yml`. Default is "figures/". |
-| `imageDir` | string | The project’s main image directory inside the `static` directory. Default is "img/".  |
-| `imageLabelContentBefore` | string | Default is "Figure " |
-| `imageLabelContentAfter` | string | Default is ". " |
+| `imageDir` | string | The project’s main image directory inside the `static` directory. Default is "/img/".  |
+| `figureLabels` | boolean | Default is true. |
+| `figureLabelsTextBefore` | string | Default is "Figure " |
+| `figureLabelsTextAfter` | string | Default is ". " |
+| `videoFigureFallbackText` | boolean | Default is true. |
+| `videoFigureFallbackTextBefore` | string | Default is "Watch the video at " |
+| `videoFigureFallbackTextAfter` | string | Default is "." |
 | `menuType` | "short", "full" | Default is "short" |
 | `searchEnabled` | boolean | Default is `true` |
 | `tocType` | "short", "full" | Default is "full" |
@@ -112,7 +115,7 @@ Type: Object
 | --- | --- | --- |
 | `one_line` | string |  |
 | `full` | string |  |
-| `additional_online` | string |  |
+| `additional_online` | string | The `additional_online` and `additional_pdf_ebook` fields allow you to add additional text to the `full` description that is specific to either the online, or the PDF/EPUB/MOBI editions and will only show up there. For instance, in order to point to special features in one or the other of the formats. |
 | `additional_pdf_ebook` | string | |
 
 ### Subject Metadata
@@ -235,7 +238,7 @@ Type: Array
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 |`id` | string | Numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
-| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main figures directory (which is defined by the `figureSubDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). |
+| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img`directory (which is defined by the `imageDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). |
 | `alt` | string | For accessibility, all images should have alternative text descriptions. ([Tips on crafting good alt text.](https://webaim.org/techniques/alttext/)) Only ever leave blank if the image is purely decorative. |
 | `caption` | string | The caption to appear below the figure. Special characters are allowed. Use Markdown for formatting. |
 | `credit` | string | Follows the caption. Markdown allowed. |
