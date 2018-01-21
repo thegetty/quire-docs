@@ -15,7 +15,7 @@ weight:
 ---
 ```
 
-The page `type` must be one of eight possible values: "page", "essay", "entry", "section-head", "cover", "contents", "search", or "data". If left blank, or if any other value besides these eight is entered, the `type` will default to "page".
+The page `type` must be one of nine possible values: "page", "essay", "entry", "section-head", "cover", "contents", "about", "search", or "data". If left blank, or if any other value besides these nine is entered, the `type` will default to "page". Read more about the specific `type`s in the [Defining Page Types](#defining-page-types) section below.
 
 The page `weight` is a number and will determine the order in which the page appears in the publication. Sometimes it’s useful to skip numbers to leave room for adding content later. For example, your frontmatter might start at 0, your first section might be 100, second section 200 and so on.
 
@@ -27,8 +27,8 @@ id: # for chapter/paper numbering
 title:
 subtitle:
 short_title:
-type: # page | essay | entry | section-head | cover | contents | data | search
-class: # frontmatter | copyright | video
+type: # page | essay | entry | section-head | cover | contents | about | data | search
+class:
 weight:
 object:
   -
@@ -36,23 +36,66 @@ object:
 contributor:
   -
   -
-cover_contributor:
 abstract:
-url:
+image:
+slug:
+display:
+  online:
+  menu:
+  pdf_ebook:
+  toc:
 ---
 ```
 
 The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [Catalogue Entries](entries.md) and [Contributors](contributors.md) sections respectively.
 
-### Where Your Pages Show Up
+### Defining Page Types
 
-By default, every page you create will be included in all formats of your publication (online, PDF/print, and e-book) and will automatically be listed in the publication’s menu and table of contents. However, this can be overridden by setting any of the following attributes in the page yaml to "false":
+*Every page has one of the following nine `type`s. If none is specified, Quire defaults to `type: page`.*
+
+`page`: The default value. A general publication page. Used for introductions, forewords, chapters, appendices and other pages.
+
+`essay`: Meant to be a standalone, self-contained article in a periodical or collected volume, the `essay` page type will typically include the contributor names and potentially bios, its own bibliography, and an abstract. This is also reflected in the metadata embedded in the page as well, which will describe the page more specifically and with more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole.
+
+`entry`: An entry in a catalogue of objects. Typically includes a large, zoomable image of the object, with a table of object details and narrative text.
+
+`section-head`: Should only be used inside a sub-directory section. Creates the main landing page, typically with a list of the pages in the section, or a grid of catalogue entries, or simply a large title splash page. See the [Creating Section Landing Pages](#creating-section-landing-pages) section below for more details on `section-head` pages.
+
+`cover`: The cover of your publications. Typically a full-screen splash page with large title, with cover description and publication information below. Along with defining `type: cover`, you will usually want to also add `slug: .` so that the cover page URL is the base URL of your site (your homepage). For more about URLs and the `slug` attribute in the [“File Structure”](../file-structure.md) chapter of this guide.
+
+`contents`: Automatically creates a table of contents for your publication. The `tocType` can be set to either "full" or "short" in the publication’s `config.yml` file. The "full" option will typically list and link to all main pages, sections and section pages as well as including any individual contributors for those pages. The "short" option will list and link to main pages and sections only, not the pages within the section.
+
+`about`: The about page will typically include the publication description, citation information, revision history, downloads and other formats, copyright and license information and more. This can be used also for a traditional copyright page for the PDF output format.
+
+`data`: Description TK
+
+`search`: Description TK
+
+
+### Creating Section Landing Pages
+
+As discussed in the [“File Structure”](../file-structure.md) chapter of this guide, a Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. It is recommended (though not required) to designate one of the pages in each sub-directory section to be the section landing page. To do so, use `type: section-head` in the page YAML of the designated page. This will improve the formatting of your site Table of Contents, and offer a more familiar experience to users.
+
+Secondly, you will also want the URL of that landing page to be the section directory name rather than the name of the page. To do that, use `slug: .` in the page YAML. The `slug` attribute overrides the default name to be used in the URL for the page, and the period `.` refers it back to the sub-directory name. So, if in your site `mypublication.com` you have sub-directory called `part-one` and in that a `section-head` page called `landing-page.md`, instead of the URL being `mypublication.com/part-one/landing-page/`, it would be `mypublication.com/part-one/`. Here’s the YAML:
 
 ```yaml
-online:
-menu:
-pdf_ebook:
-toc:
+title: Part One
+type: section-head
+slug: .
+```
+
+The `title` of your defined `section-head` page is what will be used in the header of that page, and in the Table of Contents and menu of your site. However, the filename of the sub-directory itself is also used in your publication; for the online navigation bar, and in the running page footers of the PDF version. In these two places, Quire takes the sub-directory filename and humanizes it, which means to change hyphens into spaces and capitalize with title case. So, the sub-directory `part-one` becomes “Part One”, or `sculpture-of-the-renaissance` becomes “Sculpture of the Renaissance.”
+
+### Where Your Pages Show Up
+
+By default, every page you create will be included in all formats of your publication (online, PDF/print, and e-book) and will automatically be listed in the publication’s menu and table of contents. However, this can be overridden by setting any of the following attributes under `display` in the page yaml to "false":
+
+```yaml
+display:
+  online:
+  menu:
+  pdf_ebook:
+  toc:
 ```
 
 Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents or search index, but it is still built. When deploying your site from the built files in the `public/` directory, simply delete any unneeded ones. Read [more about site deployment](output.md) in the chapter on Multi-Format Output.
