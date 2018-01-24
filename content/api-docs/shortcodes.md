@@ -51,9 +51,9 @@ Required Named Parameters: "range" and "type"
 | "page"             | `.Page.Params.contributor`               | In the current Page under `contributor`  |
 | "essays"           | `.Site.Pages.Params.contributor`         | In any Page with a `type: essay` under `contributor` |
 | "all"              | `.Site.Pages.Params.contributor`         | In all Pages under `contributor`         |
-| "primary"          | `.Site.Data.publication.primary_contributor` | In `publication.yml` under `primary_contributor` |
-| "secondary"        | `.Site.Data.publication.secondary_contributor` | In `publication.yml` under `secondary_contributor` |
-| "publication-team" | `.Site.Data.publication.publication-team` | In `publication.yml` under `publication-team` |
+| "primary"          | `.Site.Data.publication.contributor` with a `type` of "primary" | In `publication.yml` under `contributor` |
+| "secondary"        | `.Site.Data.publication.contributor` with a `type` of "secondary" | In `publication.yml` under `contributor` |
+| "project-team" | `.Site.Data.publication.contributor` with a `type` of "project-team" | In `publication.yml` under `contributor` |
 
 YAML Structure:
 

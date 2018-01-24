@@ -70,26 +70,19 @@ Type: Object
 | `pub_type` | "book", "journal-periodical", "other" | Can be one of three values. Determines how key search-engine metadata is defined. |
 | `pub-date` | YYYY-MM-DD | The first date your publication will be released |
 | `language` | 2-letter ISO 639-1 language code(s) | Taken from the the list at https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes. List multiple languages using a comma-separated list. |
-| `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased indivudally or in packages at http://www.isbn.org/.  |
-| `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
-| `doi_uuid` | string | Not yet implemented. |
+| `identifier` | [object](#identifier) | See below. |
 | `publisher` | [array](#publisher) | See below. |
-| `publisher_citation_chicago` | string | Temporary. To support page-level citations for multiple publishers with a common location. |
 | `series_periodical_name` | string |  |
 | `series_issue_number` | string |  |
-| `primary_contributor` | [array](#contributor) | See below. |
-| `secondary_contributor` | [array](#contributor) | See below. |
+| `contributor` | [array](#contributor) | See below. |
 | `contributor_as_it_appears` | string |  |
-| `marketing_graphic` | url |  |
+| `promo_image` | url |  |
 | `description` | [object](#publication-description) | See below. |
-| `subject_metadata` | [array](#subject-metadata) | See below. |
+| `subject` | [array](#subject) | See below. |
 | `library_of_congress_cip_data` | list |  |
 | `copyright` | string |  |
 | `license` | [object](#license) | See below. |
-| `project_team` | [array](#contributor) | See below. |
-| `other_formats` | [array](#resource-links) | See below. |
-| `related_resources` | [array](#resource-links) | See below. |
-| `footer_links` | [array](#resource-links) | See below. |
+| `resource_links` | [array](#resource-links) | See below. |
 | `revision_history` | [array](#revision-history) | See below. |
 | `repository_url` | url | A public repository of the source code and revision history for the publication. |
 
@@ -105,7 +98,7 @@ Type: Array
 | `location` | string | Publisher location, city. |
 | `url` | url | Publisher homepage. |
 
-### Publication Description
+### Description
 
 Location: `description` in `publication.yml`
 
@@ -118,40 +111,18 @@ Type: Object
 | `additional_online` | string | The `additional_online` and `additional_pdf_ebook` fields allow you to add additional text to the `full` description that is specific to either the online, or the PDF/EPUB/MOBI editions and will only show up there. For instance, in order to point to special features in one or the other of the formats. |
 | `additional_pdf_ebook` | string | |
 
-### Subject Metadata
+### Subject
 
-Location: `subject_metadata` in `publication.yml`
-
-Type: Array
-
-| Item Attributes | Expected Value | Description |
-| --- | --- | --- |
-| `keywords` | string | Comma-separated list of keywords describing your publication. |
-| `linked_vocabulary` | [array](#linked-vocabulary) | See below.  |
-| `bisac` | [array](#bisac) | See below. |
-
-#### Linked Vocabulary
-
-Location: `linked_vocabulary` under `subject_metadata` in `publication.yml`
+Location: `subject` in `publication.yml`
 
 Type: Array
 
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
-| `type` | string |  |
+| `type` | "keyword", "bisac", "getty" |  |
 | `name` | string |  |
-| `url` | url |  |
+| `identifier` | string |  |
 
-#### BISAC
-
-Location: `bisac` under `subject_metadata` in `publication.yml`
-
-Type: Array
-
-| Item Attributes | Expected Value | Description |
-| --- | --- | --- |
-| `code` | string |  |
-| `subject` | string |  |
 
 ### License
 
@@ -162,37 +133,27 @@ Type: Object
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
 | `name` | string | Name of the license. |
-| `name_short` |  |  |
+| `abbreviation` |  | If using a Creative Commons licenses, should match one of the seven available options: "CC0", "CC BY", "CC BY-SA", "CC BY-ND", "CC BY-NC", "CC BY-NC-SA", or "CC BY-NC-ND". |
 | `url` | url | Link to the license text. |
 | `icon` | url |  |
-| `scope` | "text-only", "full", "text-only", "some-exceptions" |  |
-| `exceptions` | [array](#license-exceptions) | See below. |
+| `scope` | "text-only", "full", "some-exceptions" |  |
+| `online_text` | string | Markdown okay. Will override the automatically generated license text for the online edition only. |
+| `pdf_ebook_text` | string | Markdown okay. Will override the automatically generated license text for the PDF and e-book editions only. |
 
-#### License Exceptions
+### Resource Link
 
-Location: `exceptions` under `license` in `publication.yml`
-
-Type: Object
-
-| Object Properties | Expected Value | Description |
-| --- | --- | --- |
-| `online` | string |  |
-| `pdf_ebook` | string |  |
-| `all` | string |  |
-
-### Resource Links
-
-Location: `other_formats`, `related_resources`, or `footer_links` in `publication.yml`
+Location: `resource_link` in `publication.yml`
 
 Type: Array
 
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 | `name` | string | How the link will be named. |
+| `type` | "other-format", "related-resource", "footer-link" |  |
 | `media_type` | string | Taken from the list at https://www.iana.org/assignments/media-types/media-types.xhtml |
 | `link_relation` | string | Taken from the list at http://www.iana.org/assignments/link-relations/link-relations.xhtml |
 | `url` | url | URL to web resource or to download. |
-| `identifier` | string | ISBN, ISSN, DOI or other similar designator. |
+| `identifier` | [object](#identifier) | See below. |
 | `file_size_mb` | integer | For dowloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |
 | `icon` | url |  |
 
@@ -208,15 +169,27 @@ Type: Array
 | `date` | YYYY-MM-DD |  |
 | `summary` | list |  |
 
+## Identifier
+
+Location: `identifier` in top level of `publication.yml`, in any `.Page.Params.`, or in any `resource_link`
+
+Type: Object
+
+| `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased indivudally or in packages at http://www.isbn.org/.  |
+| `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
+| `doi` | string | Not yet implemented. |
+| `uuid` | string | Not yet implemented. |
+
 ## Contributor
 
-Location: `primary_contributor`, `secondary_contributor`, `publication_team` in `publication.yml`; or `contributor` in any `.Page.Params.`
+Location: `contributor` in `publication.yml` or in any `.Page.Params.`
 
 Type: Array
 
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 | `id` |  |  |
+| `type` | "primary", "secondary", "project-team" |  |
 | `first_name` |  |  |
 | `last_name` |  |  |
 | `full_name` |  |  |

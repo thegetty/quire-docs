@@ -97,7 +97,7 @@ Open access licensing typically means applying [one of seven Creative Commons li
 
 To use a Creative Commons license fill in the `name`, `abbreviation`, `url`, and `scope` attributes. `scope` should be either "full", "text-only" or "some-exceptions" and will determine the way the license is worded on your site. To override the wording and link language use the `online_text` and `pdf_ebook_text` attributes.
 
-If the `abbreviation` matches one of the seven Creative Commons licenses ("CC0", "CC BY", "CC BY-SA", "CC BY-ND", "CC BY-NC", "CC BY-NC-SA", or "CC BY-NC-ND"), a logo will automatically be included, otherwise you can use the `logo` attribute to point to a specific image file in your images directory.
+If the `abbreviation` matches one of the seven Creative Commons licenses ("CC0", "CC BY", "CC BY-SA", "CC BY-ND", "CC BY-NC", "CC BY-NC-SA", or "CC BY-NC-ND"), an icon will automatically be included, otherwise you can use the `icon` attribute to point to a specific image file in your images directory.
 
 ### Formats, Resources & Links
 
@@ -107,7 +107,7 @@ A publication can have multiple `resource_link`s, each with a `type` of "other_f
 
 ### Subjects
 
-Any number of subjects can be added in order to aid search engine discoverability. They may be formatted as simple keywords, [BISAC codes](http://bisg.org/page/bisacedition), or linked data using [the Getty vocabularies](http://www.getty.edu/research/tools/vocabularies/).
+Any number of subjects can be added in order to aid search engine discoverability. They may be formatted as simple keywords, [BISAC codes](http://bisg.org/page/bisacedition), or linked data using [the Getty vocabularies](http://www.getty.edu/research/tools/vocabularies/), including AAT, ULAN, and TGN.
 
 For each subject, indicate the `type`: "keyword", "bisac", or "getty". For "keyword", you only need to include a single comma-separated list under the `name` attribute.
 

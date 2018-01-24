@@ -37,7 +37,6 @@ contributor:
   -
   -
 abstract:
-image:
 slug:
 display:
   online:
