@@ -117,13 +117,18 @@ The main content of your page appears after the YAML block at the top, and will 
 [Link Text](http://www.linkadress.com)
 
 - dashes make
-- a list with
-- bullets
+  - a list with
+  - bullets
+
+* asterisks make
+  * a list with
+      * bullets
 
 1. numbers make
 2. a list with
 3. numbers
 ```
+Indented dashes and asterisks create sub bullets in a bulleted list.
 
 Writing in Markdown should be thought of as giving your content structure, not style. By design, and through the stylesheets in the project theme, a list or a blockquote might look different from theme to theme, or even from format to format.
 
@@ -174,7 +179,7 @@ Outside of more code-driven text editors, there are also a growing number of Mar
 
 ### Configuring The Markdown Output
 
-Hugo has a built-in Markdown processor, Blackfriday, which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
+Hugo has a built-in Markdown processor, [Blackfriday](https://github.com/russross/blackfriday), which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
 
 ### Markdown Formatting Gotchas
 
@@ -192,6 +197,12 @@ As noted in the Fractions section above, 1&#47;4, 1&#47;2, and 3&#47;4 will auto
 As noted in the Footnotes section above, markdown footnotes will be automatically renumbered in the order they appear in the text. They will also always appear at the very end of your content, no matter where else you may try to put them.
 
 Blackfriday does not support superscript or subscript formatting. HTML tags must be used instead.
+
+### Some Markdown Resources
+
+This guide is not covering all existing Markdown tags but there are some good sources that will help you finding the right syntax to format your text. For example, the Programming Historian provides an [introductory lesson to Markdown](https://programminghistorian.org/lessons/getting-started-with-markdown), and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site [Daring Fireball](https://daringfireball.net/projects/markdown/).
+
+Be aware of the multiple [Markdown flavors](https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors) out there and the fact that not all flavors would be supported by Blackfriday.
 
 ## Using Shortcodes to Add Features
 
@@ -231,9 +242,9 @@ Commonly, project content will start from Microsoft Word documents rather than b
 
 While there are a number of free tools, we recommend using [Pandoc](https://pandoc.org/), a free, command-line text conversion tool. There are installation instructions on their site, but for Mac users with Homebrew installed (which you would have done as part of the Quire installation process), you just open your Terminal and type `brew install pandoc`.
 
-Once installed ...
+Once installed, make sure you are in the folder where your .docx document is saved, and enter the typing the following command on the Terminal `pandoc -s your_document_name.docx -t markdown -o your_document_name.md`. You can visit the [Pandoc Demos page](http://pandoc.org/demos.html) that lists the commands for the most frequent types of file conversion.
 
-There are also some easy things you can do in the Word document prior to conversion to ensure the best possible results ...
+There are also some easy things you can do in the Word document prior to conversion to ensure the best possible results, like not inserting pictures and media in the document, ...
 <<<<<<< HEAD
 =======
 

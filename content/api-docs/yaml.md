@@ -108,8 +108,8 @@ Type: Object
 | --- | --- | --- |
 | `one_line` | string |  |
 | `full` | string |  |
-| `additional_online` | string | The `additional_online` and `additional_pdf_ebook` fields allow you to add additional text to the `full` description that is specific to either the online, or the PDF/EPUB/MOBI editions and will only show up there. For instance, in order to point to special features in one or the other of the formats. |
-| `additional_pdf_ebook` | string | |
+| `online` | string | The `online` and `pdf_ebook` fields allow you to add additional text to the `full` description that is specific to either the online, or the PDF/EPUB/MOBI editions and will only show up there. For instance, in order to point to special features in one or the other of the formats. |
+| `pdf_ebook` | string | |
 
 ### Subject
 

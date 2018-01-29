@@ -150,7 +150,7 @@ Note: this should be folded into the `q-contributor`.
 
 Sample: `{{< q-revision-history >}}`
 
-Basic Usage: Adds a revsion history to the page, based on values in `publication.yml`.
+Basic Usage: Adds a revision history to the page, based on values in `publication.yml`.
 
 | Named Parameters | Expected Value  | Description                              |
 | ---------------- | --------------- | ---------------------------------------- |
@@ -160,7 +160,7 @@ See: [Copyright & About Pages](copyright/index.html)
 
 ## `q-table`
 
-Note: Original version of this was tabled. Still looking for better solution for complext tables.
+Note: Original version of this was tabled. Still looking for better solution for complex tables.
 
 See: [Figures](figures/index.html)
 
