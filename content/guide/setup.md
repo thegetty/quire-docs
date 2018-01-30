@@ -9,11 +9,10 @@ The most obvious difference between Quire and other publishing programs you may 
 
 This is working closer to the code. And to work with code, you need three standard coding tools. Before you start the install process. Set these up first:
 
-1. Get a **text editor** (there are many, but we recommend [Atom](https://atom.io/))
-2. Set up a **[GitHub account](https://github.com/join)** and download **[GitHub Desktop](https://desktop.github.com/)** for version control
-3. Make sure you have a **command line shell**. Macs come with a good shell called Terminal (find it in your Applications/Utilities folder). For PCs we recommend installing [Git Bash](https://git-for-windows.github.io/).
+1. Make sure you have a **command line shell**. Macs come with a good shell called **Terminal** (find it in your Applications > Utilities folder). For PCs we recommend installing **[Git Bash](https://git-for-windows.github.io/)**. A good introduction to the command line shell see [Introduction to the Bash Command Line](https://programminghistorian.org/lessons/intro-to-bash)lesson from the Programming Historian.
+2. Set up a **[GitHub account](https://github.com/join)** and download **[GitHub Desktop](https://desktop.github.com/)** for version control.
+3. Get a **text editor** (there are many, but we recommend [Atom](https://atom.io/) because of its integration with Github).
 
-Now you’re ready to install and run Quire. And don’t worry, you only have to do this once! As you’ll see, starting new Quire projects after this takes just a single text command: `quire new my-project-name`.
 
 ### Mac OS
 
@@ -22,36 +21,54 @@ Now you’re ready to install and run Quire. And don’t worry, you only have to
 Open your your Terminal command line application and one-by-one copy and paste the following commands. First to install support software for Quire, and then Quire itself:
 
 
-1.) Install Apple’s Xcode if you don’t already have it:
+1.) Check if you have Apple's Xcode 9 installed by copying and pasting the following command:
+
+```
+which xcode-select
+```
+
+And install **Apple’s Xcode** if you don’t already have it:
 
 ```
 xcode-select --install
 ```
 
-2.) Install Homebrew, which helps manage other installs:
+2.) Install **[Homebrew](https://brew.sh)**, which helps manage other installs:
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-3.) Install Node:
+As shown in the screenshots, you’ll need to press return/enter when prompted:
+
+![Press Enter](../images/homebrew_press_enter.png)
+
+And enter your computer password when asked:
+
+![Password](../images/homebrew_password.png)
+
+3.) Install **[Node.js 8.9.4 LTS](https://nodejs.org/)**:
 
 ```
 brew install node
 ```
-4.) Install Hugo:
+4.) Install **[Hugo](https://gohugo.io/)**:
 
 ```
 brew install hugo
 ```
 
-5.) Copy the Quire CLI (command line application) to your computer from GitHub:
+5.) Copy the **Quire CLI** (command line application) to your computer from GitHub:
 
 ```
 git clone https://github.com/gettypubs/quire-cli.git
 ```
 
-6.) Install the Quire CLI:
+You’ll be asked to enter your GitHub username and password as you can see on the screenshot.
+
+![Clone on GitHub](../images/github_clone.png)
+
+6.) Install the **Quire CLI**. Copy and paste the following commands and press return/enter twice:
 
 ```
 cd quire-cli
@@ -69,19 +86,19 @@ mkdir Quire
 
 *Less steps than for a Mac, but the Hugo one in particular, is a bit tricky.*
 
-1.) Download and install [Node](https://nodejs.org/en/download/). You will have to restart your computer for Node to finish installing.
+1.) Download and install **[Node.js 8.9.4 LTS](https://nodejs.org/en/download/)**. You will have to restart your computer for Node to finish installing.
 
-2.) Download and install [Hugo](https://gohugo.io/getting-started/installing/#windows) following the directions on their website. Note that for Windows 7 and 8 users, you will also need to install a path editor, such as the one from [codeplex](https://patheditor2.codeplex.com/).
+2.) Download and install **[Hugo](https://gohugo.io/getting-started/installing/#windows)** following the directions on their website. Note that for Windows 7 and 8 users, you will also need to install a **path editor**, such as the one from [codeplex](https://patheditor2.codeplex.com/).
 
 Next, open your your Git Bash command line application and one-by-one copy and paste the following commands to install Quire:
 
-3.) Copy the Quire CLI (command line application) to your computer from GitHub:
+3.) Copy the **Quire CLI** (command line application) to your computer from GitHub:
 
 ```
 git clone https://github.com/gettypubs/quire-cli.git
 ```
 
-4.) Install the Quire CLI:
+4.) Install the **Quire CLI**:
 
 ```
 cd quire-cli
@@ -94,6 +111,8 @@ npm install -g
 cd
 mkdir Quire
 ```
+Now you’re ready to install and run Quire. And don’t worry, you only have to do the installation once!
+
 
 ## Start a New Quire Project
 
@@ -116,8 +135,6 @@ cd my-project-name
 quire preview
 ```
 
-This will give you a live preview of your site, which you can view in any web browser at [http://localhost:1313](http://localhost:1313). To make changes, open your project folder in a text editor like Atom. When you make changes in the files, they’ll show up live on the localhost preview.
+This will give you a live preview of your site, which you can view in any web browser at [http://localhost:1313](http://localhost:1313). To make changes, open your project folder in a text editor like Atom. When you make changes in the files, they’ll show up live on the localhost preview. You will see the changes you make on your site, except for the _config.yml_ files. Stop running the site locally by pressing `control-c`, make the changes and then restart the live preview to see the changes made on _yml_ files.
 
-
-
-
+![preview](../images/quire_small.gif)

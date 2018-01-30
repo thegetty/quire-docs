@@ -11,7 +11,9 @@ On the software side, Quire packages together a number of programs: [Prince](htt
 
 The content model is an equal part of Quire to its software stack and is documented in the [API/Docs section](../api-docs) of this guide. The content model defines how publication content is structured and defined in Quire (including data on the publication itself, pages of the publication, contributors, figures, bibliography, etc.) and how the Quire software templates use this structured content. The content model is designed to be as independent of the Quire software stack as possible, so that long-term, it might be used in other ways. If, for example, any part of the Quire software were replaced with something new, or if the content of a publication were to be used for an entirely different use.
 
-![Diagram](diagram.jpg)
+![Diagram](../images/content_model.png)
+
+Full size version of the [content model](https://github.com/gettypubs/quire-docs/tree/master/content/images/content_model_big.pdf)
 
 ## What Do the Quire Repositories Do?
 
@@ -19,7 +21,7 @@ While conceptually, Quire is made of the two distinct parts defined above, these
 
 ### `quire-cli`
 
-Quire CLI, or command line interface, ([quire-cli](https://github.com/gettypubs/quire-starter)) is the control for creating, previewing and outputting Quire projects. It is written in JavaScript and requires [Node.js](https://nodejs.org) to run. Quire CLI is typically run from Terminal on a Mac, and Git Bash (or its equivalent) on a PC. The following commands are available:
+Quire CLI, or command line interface, ([quire-cli](https://github.com/gettypubs/quire-starter)) is the control for creating, previewing and outputting Quire projects. It is written in JavaScript and requires [Node.js 8.9.4 LTS](https://nodejs.org) to run. Quire CLI is typically run from Terminal on a Mac, and Git Bash (or its equivalent) on a PC. The following commands are available:
 
 | Command | Description |
 | -------------- | -------------- |
@@ -37,9 +39,13 @@ Read more in [Setup](content/guide/setup.md), and [Multi-Format Output](content/
 
 Quire Starter ([quire-starter](https://github.com/gettypubs/quire-starter)) is a starter content repository used as placeholder content when starting a new Quire project with the `quire new` command. It comes with some pre-defined example content and pages with which to get started.
 
+![Quire Starter](../images/quire-file-structure-small.png)
+
 ### `quire-starter-theme`
 
 Quire Starter Theme ([quire-starter-theme](https://github.com/gettypubs/quire-starter)) is the basic theme that is included when starting a new Quire project with the `quire new` command. It is designed to broadly cover a full range of use-cases and to demonstrate the range of Quire content model, without being too overly specific or complex, making it easy to customize and build from. Read more about the use of themes in [Customizing Styles](content/guide/styles.md).
+
+![Quire Starter Theme](../images/quire_starter_theme.png)
 
 More themes will be added in the future.
 
