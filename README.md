@@ -3,10 +3,10 @@
 This is the documentation for Quire, an open-source multi-format publishing
 framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
 
-- [quire-cli](https://github.com/gettypubs/quire-starter)
+- [quire-cli](https://github.com/gettypubs/quire-cli)
 - [quire-starter](https://github.com/gettypubs/quire-starter)
-- [quire-starter-theme](https://github.com/gettypubs/quire-starter)
-- [quire-docs](https://github.com/gettypubs/quire-starter)
+- [quire-starter-theme](https://github.com/gettypubs/quire-starter-theme)
+- [quire](https://github.com/gettypubs/quire) (documentation and homepage)
 
 ## Contents
 
@@ -17,15 +17,18 @@ framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
   - [Publication Configuration & Metadata](content/guide/metadata.md)
   - [Pages & Plain Text](content/guide/text.md)
   - [Figure Images](content/guide/figures.md)
-  - [*Other Images & Assets*](content/guide/assets.md)
+  - [*Zooming Images & Maps*](content/guide/zoom.md)
   - [*Citations & Bibliographies*](content/guide/bibliographies.md)
   - [*Copyright & About Pages*](content/guide/copyright.md)
   - [Contributors](content/guide/contributors.md)
   - [*Customizing Styles*](content/guide/styles.md)
   - [*Multi-Format Output*](content/guide/output.md)
+  - [*Keeping Quire Updated*](#)
 - API/Docs
   - [Shortcodes](content/api-docs/shortcodes.md)
   - [YAML](content/api-docs/yaml.md)
+- Resources
+  - [Sample publication.yml file](resources/sample-publication.yml)
 - Workshops
   - [MCN 2017](content/workshops/mcn-2017.md)
 
