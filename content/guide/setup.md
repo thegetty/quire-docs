@@ -39,13 +39,15 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-As shown in the screenshots, you’ll need to press return/enter when prompted and your computer password when asked:
+As shown in the screenshots, you’ll need to press return/enter when prompted:
 
 ![Press Enter](../images/homebrew_press_enter.png)
 
+And enter your computer password when asked:
+
 ![Password](../images/homebrew_password.png)
 
-3.) Install **[Node.js](https://nodejs.org/)**:
+3.) Install **[Node.js 8.9.4 LTS](https://nodejs.org/)**:
 
 ```
 brew install node
@@ -84,7 +86,7 @@ mkdir Quire
 
 *Less steps than for a Mac, but the Hugo one in particular, is a bit tricky.*
 
-1.) Download and install **[Node.js](https://nodejs.org/en/download/)**. You will have to restart your computer for Node to finish installing.
+1.) Download and install **[Node.js 8.9.4 LTS](https://nodejs.org/en/download/)**. You will have to restart your computer for Node to finish installing.
 
 2.) Download and install **[Hugo](https://gohugo.io/getting-started/installing/#windows)** following the directions on their website. Note that for Windows 7 and 8 users, you will also need to install a **path editor**, such as the one from [codeplex](https://patheditor2.codeplex.com/).
 

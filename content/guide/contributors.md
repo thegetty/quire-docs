@@ -7,13 +7,13 @@ type: page
 
 ### Where
 
-Contributors can be listed in your `publication.yml` under `primary_contributor`, `secondary_contributor`, or `publication_team`; or in the YAML block at the top of any page in your project, under `contributor`.
+Contributors can be listed under `contributor` in your `publication.yml` file, or in the YAML block at the top of any page in your project for contributors specific to that page. Each `contributor` should have a `type` specified of either "primary", "secondary", or "project-team".
 
-`primary_contributor`s are authors, editors and others who would appear on a publication’s cover or title page. In Quire templates, they are typically used on the cover, the menu and in the [metadata embedded in your publication](metadata.md); listed as the creators of the publication.
+**Primary** contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire templates, they are typically used on the cover, the menu and in the [metadata embedded in your publication](metadata.md); listed as the creators of the publication.
 
-`secondary_contributor`s are not typically shown in the menu or cover, but are often included in book metadata, and may also be referenced by the `q-contributor` shortcode as noted below. In future iterations of Quire, we hope to be able to reference contributors listed here from individual pages.
+**Secondary** contributors are not typically shown in the menu or cover, but are often included in book metadata, and may also be referenced by the `q-contributor` shortcode as noted below. In future iterations of Quire, we hope to be able to reference contributors listed here from individual pages.
 
-The `publication_team` are those that worked on the publication (editors, designers, developers, and the like), and can be listed using the `q-contributor` shortcode, often on an About or Copyright page. `publication_team` data is not otherwise inlcuded in publication metadata, or used in other Quire templates.
+**Project team** contributors are those that worked on the publication (editors, designers, developers, and the like), and can be listed using the `q-contributor` shortcode, often on an About or Copyright page. Project team contributors are not otherwise included in publication metadata, or used in other Quire templates.
 
 ### How
 
@@ -21,6 +21,7 @@ Wherever they are listed, the following YAML attributes can be used for your con
 
 ```YAML
 - id:
+  type:
   first_name:
   last_name:
   full_name:
@@ -38,11 +39,7 @@ Not all of these are required. Depending on your usage, you may need as little a
 
 ### Alternatives
 
-Contributors may also be listed in the `contributor_as_it_appears` field in your `publication.yml` file. This value will override the indivdual `primary_contributor`s listed on the cover, the menu and in the book metdatea. Useful when you want to include specific language about their role. For example: "Edited by Jane Smith and John Doe".
-
-Contributors listed on the cover can be further refined with `cover_contributor` which can be used on any page with `type: cover` (typically your `index.md` file). Rather than a list of contributors, this field accepts a Markdown-formatted text string or block. In this way you could add italics, list formatting, or other structure or style to these contributors that’s not available elsewhere.
-
-
+Contributors may also be listed in the `contributor_as_it_appears` field in your `publication.yml` file. This value will override the indivdual `primary_contributor`s listed on the cover, the menu and in the book metadata. Useful when you want to include specific language about their role. For example: "Edited by Jane Smith and John Doe".
 
 ## Displaying a List of Contributors
 
@@ -57,9 +54,9 @@ The "range" value determines which contributors will be included in the list. Po
 - **page**: Only the contributors listed for the page the shortcode appears on.
 - **essays**: Contributors on any page in your publications with `type: essay`.
 - **all**: All contributors.
-- **primary**: Contributors listed under `primary_contributor` in your `publication.yml` file.
-- **secondary**: Contributors listed under `secondary_contributor` in your `publication.yml` file.
-- **publication-team**:
+- **primary**: Contributors listed under `contributor` in your `publication.yml` file, and with a `type` of "primary".
+- **secondary**: Contributors listed under `contributor` in your `publication.yml` file, and with a `type` of "secondary".
+- **project-team**: Contributors listed under `contributor` in your `publication.yml` file, and with a `type` of "project-team".
 
 ### type
 
@@ -78,8 +75,8 @@ This shortcode can be used multiple times on a page, but ONLY if the same range 
 
 Users can use a `file_as` value to control sort order. Otherwise lists are sorted alphabetically by `last_name`. If you wanted, for example, a list of essay contributors ordered in the way they are ordered in the page YAML, you could assign a numeric `file_as` value to each. 1, 2, 3 etc. Note though that this `file_as` override will cary over to other uses of the shortcode. For example, a complete list of contributors at the end of a volume of collected papers.
 
-If a contribuor is listed in many papers, the information in last listing will override all the others.
+If a contributor is listed in many papers, the information in last listing will override all the others.
 
-Contributors with the same exact name will override eachother. But using a `file_as` value would fix this, and that value wouldn't show up in the interface. For example if there are two Jane Smiths, assigning a `file_as` value of "Smith, Jane 1" to one and "Smith, Jane 2" will sort them in that order, but there names would still be listed as Jane Smith.
+Contributors with the same exact name will override each other. But using a `file_as` value would fix this, and that value wouldn't show up in the interface. For example if there are two Jane Smiths, assigning a `file_as` value of "Smith, Jane 1" to one and "Smith, Jane 2" will sort them in that order, but there names would still be listed as Jane Smith.
 
 

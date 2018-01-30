@@ -1,110 +1,126 @@
 ---
-title: Figures
+title: Figure Images
 type: page
 ---
 
-*This section discusses how to inlcude images in your publications with Quire’s two figure shortcodes (`q-figure` and `q-figure-group`); the use of a `figures.yml` file as data in a Quire project; planning for and defining fallback image resources for different devices and publication formats; and how to include cover and header images in Quire page layouts.*
+## Figure Image Sizes & Formats
 
-## Basic Figures
+Figure image files should be placed in the `static/img/` directory. This is defined in your project `config.yml` file with `imageDir: "/img/"` and can be changed if needed. You can organize figures into sub-directories within the `img` folder, but you will need to include those directories along with the filename when defining the `src` attribute for the figure, as noted below.
 
-Figures—including still images and animated gifs—can be inserted in any Markdown document in your publication with the `q-figure` shortcode, where `src` is the name of your file as it appears in the `figures` folder of your project.
+Quire does not require a specific image file format or size, but we have some recommended best practices:
 
-```
-{{</* q-figure src="fig01.jpg" */>}}
-```
+- Use JPEG, PNG or GIF
+- Only include images at as big a size as most readers will need. 800px on the longest side is fine for most figures, up to 1200px on the longest side for modest zooming. We find these size also work well enough in print.
+- Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use optimization software when possible, and consider the total number of images on a given page when choosing sizes.
 
-Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies.
+For more information on web image sizing and optimization, [visit ...](#).
 
-```
-{{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}
-```
+## Adding Figure Images to Your Pages
 
-By default, figures are the full width of the text column (depending on your theme), but may be styled by adding a class within the shortcode.
+For most publications, or at least, those with more than just a handful of images, we recommend using a `figures.yml` text file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the `q-figure` [shortcode](#).
 
-```
-{{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" class="float-left" */>}}
-```
-
-Available in all Quire themes are "float-left" (smaller and to the left), "float-right" (smaller and to the right), "small-center" (for decorative elements), and "plate" (big). Some themes may offer additional options, and styles may be edited and new styles added in any theme with [css](#link).
-
-In the same way you add styles and alternate texts to a shortcode, captions and other information can be included in a similar manner. The following attributes are supported in the `q-figure` shortcode. They may be called within the shortcode in any order.
-
-| Attribute | Value |
-| --- | --- |
-|`id` | Numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). This can be used to create an anchor that can be linked to directly (`mypublication.com/chapter01/#fig-01a`). It can also be used in conjunction with a `figures.yml` file in your project for cetralized figure handling and for creating figure groups. |
-| `src` | the file name (`fig01.jpg`), and if it’s in a sub-folder within the main `figures` directory, it should include that folder name as well (`comparatives/fig01.jpg`). |
-| `class` |  Add predefined styles to your figures. Supported values are "float-left", "float-right", "small-center", and "plate". More can be added with css. |
-| `alt` | For accessibility, all images should have alternative text descriptions. ([Tips on crafting good alt text.](#link)) Only ever leave blank if the image is purely decorative. |
-| `label` | When using a `figures.yml` document, if label is set to `true`, label text will be added to your layout under or on the corner of the image, depending on your theme. Quire first looks for a 1label:` field in `figures.yml` and will use that, or if none is found, a label will be automatically generated from the `id` value and with the `imageLabelContentBefore` and `imageLabelContentAfter` values defined in your `config.yml` file. If not using a `figures.yml` document or if text other than `true` is used, the label will appear as given, or not appear at all if use in the `q-figure-group` shortcode. Markdown is supported. |
-| `caption` | The caption to appear below the figure. Special characters are allowed. Use Markdown for formatting. |
-| `grid` | Whole integer values: 2, 3, 4 etc. For use specifically with the `q-figure-group` shortcode.  |
-| `grid-align` | Can be "top" or "bottom". For use specifically with the `q-figure-group` shortcode. Useful for when images in the grid are different sizes.  |
-| `media-type` | Not yet available. Supported values are: video, youtube, vimeo, audio, soundcloud. For use specifically with the `q-figure-media` shortcode. |
-| `fallback` | Not yet available.  |
-
-As you can imagine, when including many attributes, shortcodes can quicky become not so short. One way to manage this is by using a `figures.yml` file.
-
-## Using figures.yml
-
-Figures and all their associated attributes can be listed in a single `figures.yml` file in your `data` folder, and then called from wherever you need them in your project.
+Figures and all their associated attributes can be listed in a single `figures.yml` file which should be placed in your `data` folder. These then can be called from wherever you need them in your project. See the API-DOCs section for [complete details on possible figure attributes](../api-docs/yaml.md#figure), but below a very simple example with `id` and `src` (which are required) and `alt` (which is recommended). Also available are `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, and `label_text`. If your figures are organized in sub-directories within your `static/img/` directory, they should appear as part of the file path under `src`, otherwise, only the filename is needed.
 
 ```yaml
-- id: "001"
-  src: "fig01.jpg"
-  alt: "detail of painting showing diagonal brushstrokes in browns and reds"
-  caption:
-- id: "002"
-  src: "fig02_withframe.jpg"
-  alt: "painting of man in brown and red cloak, shown from the waist up, in a gold frame on a dark red wall"
-  caption:
+- id: "1.1"
+  src: "clyfford-still_untitled96.jpg"
+  alt: "detail of painting showing jagged brushstrokes in browns and reds"
+- id: "1.2"
+  src: "portrait-of-still.jpg"
+  alt: "photograph of a frowning older man in brown jacket and fedora"
 ```
 
-Assuming each yaml figure entry includes a unique `id`, you can insert a figure in your publication with only the `id` attribute, and all of the other attributes defined in the yaml for that figure, will be automaticallly included.
+Assuming each YAML figure entry includes a unique `id`, you can insert a figure in your publication with only the `id` attribute, and all of the other attributes defined in the YAML for that figure, will be automatically included. Note that the figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
 
 ```
-{{</* q-figure id="###" */>}}
+{{< q-figure id="1.2" >}}
 ```
 
 If you include an attribute in the shortcode that is also in the `figures.yml` file, the `figures.yml` version is overridden. This can be useful when, for example, a figure is used in multiple locations and you want different captions.
 
 ```
-{{</* q-figure id="###" caption="" */>}}
+{{< q-figure id="1.2" caption="" >}}
 ```
 
-Note that including an attribute in this way but leaving it blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`.
+Note that including an attribute in this way but leaving it blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`. Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{< q-figure id="1.2" caption="" >}}` is the same as `{{< q-figure caption="" id="1.2" >}}`.
 
-If you use a shortcode with both `src` ad `id` Quire will insert your figure image and give it the `id`, but will ignore any data in the `figures.yml` even if an `id` matches.
+## Styling Figure Images
+
+Depending on your theme, by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left`, `is-pulled-right`, `is-big`, and `is-small`. Classes are added just like other attributes in the shortcode.
 
 ```
-{{</* q-figure src="fig01.jpg" id="###" */>}}
+{{< q-figure id="1.2" class="is-pulled-left" >}}
 ```
+
+Some themes may offer additional options, and styles may be edited and new styles added in any theme with [css](#link).
 
 ## Figure Groups
 
-Using a `figures.yml` file gives you the additional ability to create a group of figures by using the `q-figure-group` shortcode extension and simply including multiple, comma-separated values in the `id` field.
+If your project uses a `figures.yml` file, you can also create a group of figures by using the `q-figure-group` shortcode and simply including multiple, comma-separated values in the `id` field.
 
 ```
-{{</* q-figure-group id="###, ###, ###" */>}}
+{{< q-figure-group id="1.1, 1.2" >}}
 ```
 
-In the above example, each figure’s caption will be included. Alternatively, if you add a `caption` field directly in the shortcode, it will override those present in the `figures.yml` file and display in the group alone, usually along the bottom depending on your theme.
+In the above example, each figure’s caption will be included in the grouping. Alternatively, if you add a `caption` attribute directly in the shortcode, it will override those present in the `figures.yml` file and display with the group alone as a single, group caption.
 
 Just as with the single `q-figure` shortcode, classes can be added to groups to style them. For example, to create a small group of images running along one side of your text.
 
 ```
-{{</* q-figure-group class="float-right" id="###, ###, ###" */>}}
+{{< q-figure-group class="is-pulled-right" id="1.1, 1.2" >}}
 ```
 
-In addition to all the attributes available to the `q-figure` shortcode, the `q-figure-group` extension also supports the `grid` attribute to specify a preferred grid width. In the below example, a `grid="2"` is specified and so the gallery grid will be 2 images wide at you publication layout's full-size. Alternately, if you specified `grid="4"` the grid would be 4 images wide making each image relatively smaller.
+In addition to all the attributes available to the `q-figure` shortcode, the `q-figure-group` extension also supports the `grid` attribute to specify a preferred grid width. In the below example, a `grid="2"` is specified and so the gallery grid will be 2 images wide at your publication layout’s full-size. Alternately, if you specified `grid="4"` the grid would be 4 images wide making each image relatively smaller.
 
 ```
-{{</* q-figure-group grid="2" id="###, ###, ###, ###" */>}}
+{{< q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" >}}
 ```
 
 Note that this is only a **preferred** grid width. With Quire’s responsively desiged templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
 
-This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures. Adding `label="true"` to the shortcode will add a small text label to each image in the group (usually right below the image or in a corner on top of it, depending on your theme), which you can then reference in the caption, rather than referencing the figure’s relative position. The label text is constructed automatically with the `id` of the image and the `imageLabelContentBefore` value defined in your `config.yml` file. For example if the `id` value is "12.3" and the `imageLabelContentBefore` value is "Figure ", the `label` would be "Figure 12.3".
+This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures.
 
-And `label` will work similarly in any `q-figure` shortcode, not just groups.
+## Labeling Figure Images
 
-Finally, for grids, individual figures will center themselves vertically by default. When grid images are differen sizes, a top or bottom alignment may be preferred. For this, you can use the `grid-align` attribute set to either "top" or "bottom".
+By default, all figure images are labeled automatically, either at the start of the caption, or just under the image itself in the case of a figure group with a single, group caption. You can turn off this behavior in the `config.yml` file by switching `figureLabels: true` to `figureLabels: false`.
+
+Figure labels are constructed  with the `id` of the image and the `figureLabelsTextBefore` `figureLabelsTextAfter` values defined in your `config.yml` file. For example if the `id` value is "12.3" and the `figureLabelsTextBefore` value is "Figure ", and `figureLabelsTextAfter` value is ". ", the label would be "Figure 12.3. ".
+
+To customize the label text on a figure-by-figure basis, use the `label_text` attribute in the YAML for your figure. Any text there will override the automatically constructed version.
+
+To remove a label from a specific figure or a group of figures, add `label="false"` to the shortcode. Or, in reverse, if you already have `figureLabels: false` set in your `config.yml` file, use `label="true"` in the shortcode to show a label for that figure.
+
+## Video Figures
+
+Videos can be embedded in your publication the same way as other figure images, using either of the two figure shortcodes. The difference is in the `figures.yml` file where you’ll need to include a `media_id` and a `media_type` attribute for any video, along with an optional `aspect_ratio` attribute.
+
+Quire supports video embeds from either YouTube (`media_type: youtube`)or Vimeo (`media_type: vimeo`). The `media_id`s can be found in the URLs of the videos you wish to embed. For example, in https://www.youtube.com/watch?v=VYqDpNmnu8I or https://youtu.be/VYqDpNmnu8I, the `media_id` would be `VYqDpNmnu8I`; and in https://vimeo.com/221426899 it is `221426899`.
+
+```yaml
+- id: 1.5
+  src: videostill.jpg
+  media_id: VYqDpNmnu8I
+  media_type: youtube
+```
+
+The `src` image provided in this example is a frame from the video and will be used in place of the video in the PDF and EPUB versions of your publication. In Quire this is referred to as a fallback. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
+
+Like the [image labels](#) this is controlled in the project’s `config.yml` file with `videoFigureFallbackText: true`, `videoFigureFallbackTextBefore: "Watch the video at "` and `videoFigureFallbackTextAfter: "."`.
+
+Note that on YouTube, videos can be filed as “Unlisted” and this will let you embed the video, but will not include the video on your channel page, or in YouTube’s general search engine.
+
+## Basic Figures
+
+If you are not using a `figures.yml` file, figures—including still images and animated gifs but not video—can be inserted in any Markdown document in your publication with the `q-figure` shortcode, where `src` is the name of your file as it appears in the `static/img/` directory of your project.
+
+```
+{{< q-figure src="fig01.jpg" >}}
+```
+
+Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies.
+
+```
+{{< q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" >}}
+```
+
+Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in this manner.
