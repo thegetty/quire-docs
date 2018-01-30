@@ -234,22 +234,10 @@ The following shortcode are (or will be) available in Quire. You’ll find more 
 
 ## Converting Your Text from Microsoft Word
 
-<<<<<<< HEAD
 Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple conversion can be done.
-=======
-Commonly, project content will start from Microsoft Word documents rather than being written directly in Markdown. In these cases, a simple conversion from DOCX to Markdown can be done.
->>>>>>> figures-metadata
 
 While there are a number of free tools, we recommend using [Pandoc](https://pandoc.org/), a free, command-line text conversion tool. There are installation instructions on their site, but for Mac users with Homebrew installed (which you would have done as part of the Quire installation process), you just open your Terminal and type `brew install pandoc`.
 
 Once installed, make sure you are in the folder where your .docx document is saved, and enter the typing the following command on the Terminal `pandoc -s your_document_name.docx -t markdown -o your_document_name.md`. You can visit the [Pandoc Demos page](http://pandoc.org/demos.html) that lists the commands for the most frequent types of file conversion.
 
 There are also some easy things you can do in the Word document prior to conversion to ensure the best possible results, like not inserting pictures and media in the document, ...
-<<<<<<< HEAD
-=======
-
-
-
-
-
->>>>>>> figures-metadata
