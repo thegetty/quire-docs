@@ -5,9 +5,9 @@ type: page
 
 ## YAML
 
-In a Quire publication, anything that could be considered data, is written in a plain-text data format called [YAML](http://yaml.org/). YAML is used for configuring how Quire works and for providing metadata about your publication (both topics covered below). It does the same for individual pages or chapters within the publication, and is also used for storing information about figures, bibliographic references, and art objects.
+In a Quire publication, anything that could be considered data, is written in a plain-text data format called [YAML](http://yaml.org/). YAML is used for configuring how Quire works and for providing metadata about your publication in files with the extension .yml (both topics covered below). It does the same for individual pages or chapters within the publication (written in Markdown and with a .md extension), and is also used for storing information about figures, bibliographic references, and art objects (files that use the extension .yml).
 
-The YAML for the page you’re on right now is:
+The YAML for the page, written in markdown, you’re on right now is:
 
 ```yaml
 title: "Publication Configuration & Metadata"
@@ -67,7 +67,7 @@ It is also a good idea to include both `one_line` and `full` descriptions as the
 
 `url`, `pub_date`, and `language` should be filled out. `url` should be the final URL where your publication will live (its permalink) and should include `http://` or `https://` as appropriate. `pub_date` must follow a YYYY-MM-DD format (the ISO 8601 format) and should be the projected final publication date. Lastly, `language` should be a [2-letter ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) (English is en, and is the default).
 
-There’s an optional `pub_type` attribute as well that can be "book", "journal-periodical", or "other". If "book", it is recommended you also include an [ISBN](https://www.isbn.org/) as a standard identifier. And if "journal-periodical", include information for the [ISSN](http://www.issn.org/), `series_periodical_name`, and `series_issue_number` attributes if possible. Identifiers are added as below. Along with `isbn` and `issn`, `doi` and `uuid` are also supported.
+There’s an optional `pub_type` attribute as well that can be "book", "journal-periodical", or "other". If "book", it is recommended you also include an [ISBN](https://www.isbn.org/) as a standard identifier. And if "journal-periodical", include information for the [ISSN](http://www.issn.org/), `series_periodical_name`, and `series_issue_number` attributes if possible. Both ISBN and ISSN are to consider if you want libraries to catalog your publication. Identifiers are added as below. Along with `isbn` and `issn`, `doi` and `uuid` are also supported. DOIs are widely used in academic contexts to support citation.
 
 ```yaml
 identifier:
