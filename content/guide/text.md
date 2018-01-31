@@ -17,7 +17,7 @@ weight:
 
 The page `type` must be one of nine possible values: "page", "essay", "entry", "section-head", "cover", "contents", "about", "search", or "data". If left blank, or if any other value besides these nine is entered, the `type` will default to "page". Read more about the specific `type`s in the [Defining Page Types](#defining-page-types) section below.
 
-The page `weight` is a number and will determine the order in which the page appears in the publication. Sometimes it’s useful to skip numbers to leave room for adding content later. For example, your frontmatter might start at 0, your first section might be 100, second section 200 and so on.
+The page `weight` is a number and will determine the order in which the page appears in the publication. The first page in your publication would be `weight: 1`, the second would be `weight: 2`, and so on. Numbering should be unique, and sequential, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at 0, your first section might be 100, second section 200 and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
 
 When you need to add more page information about, this is the complete list of options:
 
@@ -163,13 +163,15 @@ Note that the built-in Markdown processor will automatically renumber footnotes 
 
 ### Fractions, Superscripts and Subscripts
 
-While automatic fractions have been turned off in the `config.yml` file, Blackfriday will nonetheless still render 1&#47;4, 1&#47;2, and 3&#47;4 into proper, unicode fractions (1/4, 1/2, 3/4). Of course, unicode fractions can also be used in Markdown directly, though note that not all fonts support the eighths in which case, browsers will render them with a default font. The fractions are: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. Any others would need to be written using superscript and subscript formatting.
+The fractions 1&#47;4, 1&#47;2, and 3&#47;4, will be automatically converted into proper, unicode fractions (1/4, 1/2, 3/4). Other unicode fractions can also be used in Markdown directly, though note that not all fonts support the eighths in which case, browsers will render them with a default font. The fractions are: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. Any others would need to be written using superscript and subscript formatting.
 
-While some Markdown processors support superscript and subscript formatting with ^ and ~ characters, Blackfriday does not. For these, you’ll need to use the HTML `<sup>` and `<sub>` tags in your Markdown. For example:
+While some Markdown processors support superscript and subscript formatting with ^ and ~ characters, the one built into Quire does not. You’ll need to use the HTML `<sup>` and `<sub>` tags in your Markdown. For example:
 
 - `19 × 24<sup>3</sup>⁄<sub>16</sub> inches` = 19 × 24<sup>3</sup>⁄<sub>16</sub> inches
 - `20<sup>th</sup> Century Sculpture` = 20<sup>th</sup> Century Sculpture
 - `Chrome yellow (PbCrO<sub>4</sub>)` = Chrome yellow (PbCrO<sub>4</sub>)
+
+You will see a `fractions` attribute with a value of "false" in the `config.yml` file of your publication. Changing this to true will automatically render fraction-style superscript and subscript formatting for anything written as an integer followed by a slash and another integer. However, in many instances this will catch things that are not meant to be fractions. For this reason, we recommend leaving `fractions` set to "false", and manually adding the necessary markup as it’s needed.
 
 ### Previewing Markdown
 
@@ -177,13 +179,9 @@ Many text editors offer a preview function for Markdown, either pre-installed or
 
 Outside of more code-driven text editors, there are also a growing number of Markdown-specific editors. [Typora](https://typora.io/), for instance, offers a single-page live preview by displaying styled Markdown-formatted text as you type it.
 
-### Configuring The Markdown Output
-
-Hugo has a built-in Markdown processor, [Blackfriday](https://github.com/russross/blackfriday), which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
-
 ### Markdown Formatting Gotchas
 
-Links are created with text in brackets followed immediately by a url in parentheses: `[The Getty](http://www.getty.edu)`. However, Blackfriday will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses:
+Links are created with text in brackets followed immediately by a url in parentheses: `[The Getty](http://www.getty.edu)`. However, Blathe built in Markdown processor will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses:
 
 ```markdown
 [^1] &#40;Some aside text here)
@@ -194,9 +192,15 @@ Links are created with text in brackets followed immediately by a url in parenth
 
 As noted in the Fractions section above, 1&#47;4, 1&#47;2, and 3&#47;4 will automatically convert to unicode fractions (¼, ½, ¾).
 
+HTML tags must be used for superscript or subscript formatting.
+
 As noted in the Footnotes section above, markdown footnotes will be automatically renumbered in the order they appear in the text. They will also always appear at the very end of your content, no matter where else you may try to put them.
 
-Blackfriday does not support superscript or subscript formatting. HTML tags must be used instead.
+### Configuring The Markdown Output
+
+Hugo has a built-in Markdown processor, [Blackfriday](https://github.com/russross/blackfriday), which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
+
+In Quire, by default, Blackfriday’s `fraction` option has been set to "false" (text that looks like a fraction won’t be automatically formatted as such.), and the `hrefTargetBlank` option set to "true" (external links will open in new windows/tabs).
 
 ### Some Markdown Resources
 
