@@ -1,4 +1,6 @@
-# Quire Docs (Alpha)
+![Quire logo](content/images/quire_may2017.png)
+
+# Quire (Alpha)
 
 This is the documentation for Quire, an open-source multi-format publishing
 framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
