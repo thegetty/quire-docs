@@ -224,7 +224,7 @@ Type: Array
 
 ## Bibiliography
 
-Location: `entries` in `bibliography.yml`
+Location: `entries` in `references.yml`
 
 Type: Array
 
