@@ -63,7 +63,7 @@ There are some important rules and tips to keep in mind, as well as further ways
 
 ## 📁 data
 
-What content doesn’t live in `content` directory as a Markdown file, will live here in the `data` directory as a YAML file. A `publication.yml` file is required (read more in [*Publication Metadata & Configuration*](content/guide/metadata.md)), but a Quire project may also include `bibliography.yml` ([*Citations & Bibliographies*](content/guide/bibliographies.md)); `figures.yml` ([*Figures*](content/guide/figures.md)); and `object.yml` (*not yet defined*).
+What content doesn’t live in `content` directory as a Markdown file, will live here in the `data` directory as a YAML file. A `publication.yml` file is required (read more in [*Publication Metadata & Configuration*](content/guide/metadata.md)), but a Quire project may also include `references.yml` ([*Citations & Bibliographies*](content/guide/bibliographies.md)); `figures.yml` ([*Figures*](content/guide/figures.md)); and `object.yml` (*not yet defined*).
 
 ## 📁 public
 
