@@ -44,8 +44,7 @@ As shown in the screenshots, you’ll need to press return/enter when prompted:
 ![Press Enter](../images/homebrew_press_enter.png)
 
 And enter your computer password when asked:
-
-![Password](../images/homebrew_password.png)
+![Password](../images/homebrew-password.png)
 
 3.) Install **[Node.js 8.9.4 LTS](https://nodejs.org/)**:
 
