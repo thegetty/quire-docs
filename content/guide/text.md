@@ -17,7 +17,7 @@ weight:
 
 The page `type` must be one of nine possible values: "page", "essay", "entry", "section-head", "cover", "contents", "about", "search", or "data". If left blank, or if any other value besides these nine is entered, the `type` will default to "page". Read more about the specific `type`s in the [Defining Page Types](#defining-page-types) section below.
 
-The page `weight` is a number and will determine the order in which the page appears in the publication. The first page in your publication would be `weight: 1`, the second would be `weight: 2`, and so on. Numbering should be unique, and sequential, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at 0, your first section might be 100, second section 200 and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
+The page `weight` is a number and will determine the order in which the page appears in the publication. The first page in your publication would be `weight: 1` (don’t start with zero 0), the second would be `weight: 2`, and so on. Numbering should be unique, and sequential whole numbers, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at 0, your first section might be 100, second section 200 and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
 
 When you need to add more page information about, this is the complete list of options:
 
@@ -132,7 +132,11 @@ Indented dashes and asterisks create sub bullets in a bulleted list.
 
 Writing in Markdown should be thought of as giving your content structure, not style. By design, and through the stylesheets in the project theme, a list or a blockquote might look different from theme to theme, or even from format to format.
 
-On the headings, in general you should not use the Heading 1 tag in your content as that should be reserved for the page title, which is automatically generated. Start with Heading 2. Also headings should be thought of as levels of your content outline, not as sizes large to small, though they’re often thought of and used that way. See our [notes on accessibility](accessibility.md) for more on this.
+On the headings, in general you should not use the Heading 1 tag in your content as that should be reserved for the page title, which is automatically generated. Start with Heading 2. Also headings should be thought of as levels of your content outline, not as sizes large to small, though they’re often thought of and used that way. See our [notes on accessibility](../resources/notes-on-accessibility.md) for more on this.
+
+Finally, you can also use HTML tags in a Markdown document. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [“Customizing Styles”](../styles.md) chapter of this guide.) Note, however, that you can’t do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode. Read more about Quire shortcodes below.
+
+Special characters like en- and em-dashes, and diacritics also work fine in Markdown and in Quire publications. Any unicode character is allowed, the only limitation, for less common characters, is whether the font you’re using includes it. When a font does not include a specific character, most browsers will substitute one from a different font.
 
 ### Markdown Footnotes
 
