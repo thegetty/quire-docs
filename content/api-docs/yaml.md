@@ -175,6 +175,7 @@ Location: `identifier` in top level of `publication.yml`, in any `.Page.Params.`
 
 Type: Object
 
+| Item Attributes | Expected Value | Description |
 | `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased indivudally or in packages at http://www.isbn.org/.  |
 | `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
 | `doi` | string | Not yet implemented. |
