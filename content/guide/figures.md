@@ -13,7 +13,7 @@ Quire does not require a specific image file format or size, but we have some re
 - Only include images at as big a size as most readers will need. 800px on the longest side is fine for most figures, up to 1200px on the longest side for modest zooming. We find these size also work well enough in print.
 - Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use optimization software when possible, and consider the total number of images on a given page when choosing sizes.
 
-For more information on web image sizing and optimization, [visit ...](#).
+For more information on web image sizing and optimization, visit [Google's Web Fundamentals guide on Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#top_of_page).
 
 ## Adding Figure Images to Your Pages
 
@@ -52,7 +52,11 @@ Depending on your theme, by default figures will appear at about the width of th
 {{< q-figure id="1.2" class="is-pulled-left" >}}
 ```
 
-Some themes may offer additional options, and styles may be edited and new styles added in any theme with [css](#link).
+![`is-pulled-left`](../images/is-pulled-left.png "Example of a figure with the `is-pulled-left` class")
+![`is-pulled-right`](../images/is-pulled-right.png "Example of a figure with the `is-pulled-right` class")
+
+
+Some themes may offer additional options, and styles may be edited and new styles added in any theme with [css](https://www.w3.org/Style/CSS/Overview.en.html).
 
 ## Figure Groups
 
@@ -61,20 +65,27 @@ If your project uses a `figures.yml` file, you can also create a group of figure
 ```
 {{< q-figure-group id="1.1, 1.2" >}}
 ```
+![`figures-group`](../images/two-figures.png "This is how the two figures would appear on your page when using the shortcode")
 
 In the above example, each figure’s caption will be included in the grouping. Alternatively, if you add a `caption` attribute directly in the shortcode, it will override those present in the `figures.yml` file and display with the group alone as a single, group caption.
+
+![`figure-group-caption`](../images/figures-group-caption.png "Example of a figure group caption")
 
 Just as with the single `q-figure` shortcode, classes can be added to groups to style them. For example, to create a small group of images running along one side of your text.
 
 ```
-{{< q-figure-group class="is-pulled-right" id="1.1, 1.2" >}}
+{{< q-figure-group class="is-pulled-left" id="1.1, 1.2" >}}
 ```
+![`figure-group-caption-left`](../images/figure-group-caption-left.png "The group is positioned on one side of the page")
 
 In addition to all the attributes available to the `q-figure` shortcode, the `q-figure-group` extension also supports the `grid` attribute to specify a preferred grid width. In the below example, a `grid="2"` is specified and so the gallery grid will be 2 images wide at your publication layout’s full-size. Alternately, if you specified `grid="4"` the grid would be 4 images wide making each image relatively smaller.
 
 ```
 {{< q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" >}}
 ```
+
+[`figures-grid`](../images/figures-group.png "This is how the figures would be displayed when the `grid` value is set to `2`")
+[`figures-grid-1`](../images/figures-group-1.png "This is how the figures would be displayed when the `grid` value is set to `4`")
 
 Note that this is only a **preferred** grid width. With Quire’s responsively desiged templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
 

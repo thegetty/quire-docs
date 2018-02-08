@@ -5,7 +5,7 @@ type: page
 
 ## Defining Your Page’s Configuration and Metadata
 
-Every page in a Quire publication starts with a block of YAML (discussed further in the [“Publication Configuration & Metadata”](../metadata.md) chapter of this guide). The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes, at the very top of the page.
+Every page in a Quire publication starts with a block of YAML (discussed further in the [“Publication Configuration & Metadata”](metadata.md) chapter of this guide). The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes, at the very top of the page.
 
 ```yaml
 ---
@@ -60,7 +60,7 @@ The `object` and `contributor` attributes above are arrays of one or more items.
 
 `section-head`: Should only be used inside a sub-directory section. Creates the main landing page, typically with a list of the pages in the section, or a grid of catalogue entries, or simply a large title splash page. See the [Creating Section Landing Pages](#creating-section-landing-pages) section below for more details on `section-head` pages.
 
-`cover`: The cover of your publications. Typically a full-screen splash page with large title, with cover description and publication information below. Along with defining `type: cover`, you will usually want to also add `slug: .` so that the cover page URL is the base URL of your site (your homepage). For more about URLs and the `slug` attribute in the [“File Structure”](../file-structure.md) chapter of this guide.
+`cover`: The cover of your publications. Typically a full-screen splash page with large title, with cover description and publication information below. Along with defining `type: cover`, you will usually want to also add `slug: .` so that the cover page URL is the base URL of your site (your homepage). For more about URLs and the `slug` attribute in the [“File Structure”](file-structure.md) chapter of this guide.
 
 `contents`: Automatically creates a table of contents for your publication. The `tocType` can be set to either "full" or "short" in the publication’s `config.yml` file. The "full" option will typically list and link to all main pages, sections and section pages as well as including any individual contributors for those pages. The "short" option will list and link to main pages and sections only, not the pages within the section.
 
@@ -73,7 +73,7 @@ The `object` and `contributor` attributes above are arrays of one or more items.
 
 ### Creating Section Landing Pages
 
-As discussed in the [“File Structure”](../file-structure.md) chapter of this guide, a Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. It is recommended (though not required) to designate one of the pages in each sub-directory section to be the section landing page. To do so, use `type: section-head` in the page YAML of the designated page. This will improve the formatting of your site Table of Contents, and offer a more familiar experience to users.
+As discussed in the [“File Structure”](file-structure.md) chapter of this guide, a Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. It is recommended (though not required) to designate one of the pages in each sub-directory section to be the section landing page. To do so, use `type: section-head` in the page YAML of the designated page. This will improve the formatting of your site Table of Contents, and offer a more familiar experience to users.
 
 Secondly, you will also want the URL of that landing page to be the section directory name rather than the name of the page. To do that, use `slug: .` in the page YAML. The `slug` attribute overrides the default name to be used in the URL for the page, and the period `.` refers it back to the sub-directory name. So, if in your site `mypublication.com` you have sub-directory called `part-one` and in that a `section-head` page called `landing-page.md`, instead of the URL being `mypublication.com/part-one/landing-page/`, it would be `mypublication.com/part-one/`. Here’s the YAML:
 
@@ -246,6 +246,6 @@ Commonly, project content will start from Microsoft Word documents rather than b
 
 While there are a number of free tools, we recommend using [Pandoc](https://pandoc.org/), a free, command-line text conversion tool. There are installation instructions on their site, but for Mac users with Homebrew installed (which you would have done as part of the Quire installation process), you just open your Terminal and type `brew install pandoc`.
 
-Once installed, make sure you are in the folder where your .docx document is saved, and enter the typing the following command on the Terminal `pandoc -s your_document_name.docx -t markdown -o your_document_name.md`. You can visit the [Pandoc Demos page](http://pandoc.org/demos.html) that lists the commands for the most frequent types of file conversion.
+Once installed, make sure you are in the folder where your .docx document is saved, and enter the following command on the Terminal `pandoc -s your_document_name.docx -t markdown -o your_document_name.md`. You can visit the [Pandoc Demos page](http://pandoc.org/demos.html) that lists the commands for the most frequent types of file conversion.
 
 There are also some easy things you can do in the Word document prior to conversion to ensure the best possible results, like not inserting pictures and media in the document, ...
