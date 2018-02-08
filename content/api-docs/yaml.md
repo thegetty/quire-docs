@@ -41,7 +41,7 @@ Type: Object
 
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
-| `displayBiblioShort` | boolean | When `true` the short citation form (ie., "Smith 2003") will be displayed with the full form, when creating a bibliogrpahy on pages with `type: essay`, or on other pages with the `q-bibliograpy` shortcode. Default is `true`. |
+| `displayBiblioShort` | boolean | When `true` the short citation form (ie., "Smith 2003") will be displayed with the full form, when creating a bibliography on pages with `type: essay`, or on other pages with the `q-bibliography` shortcode. Default is `true`. |
 | `citationPageLocationDivider` | string | Default is ", ". |
 | `imageDir` | string | The project’s main image directory inside the `static` directory. Default is "/img/".  |
 | `figureLabels` | boolean | Default is true. |
@@ -176,6 +176,7 @@ Location: `identifier` in top level of `publication.yml`, in any `.Page.Params.`
 Type: Object
 
 | Item Attributes | Expected Value | Description |
+| --- | --- | --- |
 | `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased indivudally or in packages at http://www.isbn.org/.  |
 | `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
 | `doi` | string | Not yet implemented. |
@@ -225,7 +226,7 @@ Type: Array
 
 ## Bibiliography
 
-Location: `entries` in `bibliography.yml`
+Location: `entries` in `references.yml`
 
 Type: Array
 

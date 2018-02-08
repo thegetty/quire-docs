@@ -7,7 +7,9 @@ type: page
 
 ### Where
 
-Contributors can be listed under `contributor` in your `publication.yml` file, or in the YAML block at the top of any page in your project for contributors specific to that page. Each `contributor` should have a `type` specified of either "primary", "secondary", or "project-team".
+Contributors can be listed under `contributor` in your `publication.yml` file, or in the YAML block at the top of any page in your project for contributors specific to that page. For example, if your publication is a monograph you might add the main authors to the `contributor` attribute in `publication.yml`, while if the publication has essays written by different authors, these would be added to the `contributor` fields on each essay/page YAML block.  
+
+Each `contributor` should have a `type` specified of either "primary", "secondary", or "project-team".
 
 **Primary** contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire templates, they are typically used on the cover, the menu and in the [metadata embedded in your publication](metadata.md); listed as the creators of the publication.
 
@@ -78,5 +80,3 @@ Users can use a `file_as` value to control sort order. Otherwise lists are sorte
 If a contributor is listed in many papers, the information in last listing will override all the others.
 
 Contributors with the same exact name will override each other. But using a `file_as` value would fix this, and that value wouldn't show up in the interface. For example if there are two Jane Smiths, assigning a `file_as` value of "Smith, Jane 1" to one and "Smith, Jane 2" will sort them in that order, but there names would still be listed as Jane Smith.
-
-
