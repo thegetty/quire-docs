@@ -14,7 +14,7 @@ title: "Publication Configuration & Metadata"
 type: page
 ```
 
-YAML values don’t necessarily need to be in quotes. `title: My Chapter` works just fine. However, certain formatting and characters (like colons within the text, or lines leading off with asterisks meant to italicize some of the text) can cause issues. In these cases, double quotes can minimize build issues: `title: "My Chapter"`.
+YAML entries can be in any order. You’ll also notice that YAML values don’t necessarily need to be in quotes. `title: My Chapter`, without My Chapter in quotes, works just fine. However, certain formatting and characters (like colons within the text, or lines leading off with asterisks meant to italicize some of the text) can cause issues. In these cases, double quotes can minimize build issues: `title: "My Chapter"`.
 
 Anything at all can go within double-quotes, except for other double-quotes. If you need double-quotes, use “curly quotes”, use a backslash to escape the double quote \" or Hugo will also process two single straight quotes '' as a double when building the pages.
 
@@ -53,7 +53,7 @@ The properties in the `config.yml` file are individually documented in the [API/
 
 ## Publication YAML
 
-The `publication.yml` file in the `/data` directory is *the* source of metadata for your publication. While very few values are actually required (depending on the particular shortcodes or page types you use), it is a good idea to fill out the `publication.yml` file as completely as possible. Many of the properties are used in the metadata which is automatically included in the underlying code of every page of the online edition of your publication to support search engine optimization (SEO) and general discovery.
+The `publication.yml` file in the `/data` directory is *the* source of metadata for your publication. While the only value that is truly required is `title`, it is a good idea to fill out the `publication.yml` file as completely as possible. Many of the properties are used in the metadata which is automatically included in the underlying code of every page of the online edition of your publication to support search engine optimization (SEO) and general discovery.
 
 Some key areas are summed up below, and match headings in the `publication.yml` file itself, but there is also detailed documentation of individual properties in the [API/Docs section](../api-docs) of this guide.
 
@@ -97,7 +97,7 @@ Open access licensing typically means applying [one of seven Creative Commons li
 
 To use a Creative Commons license fill in the `name`, `abbreviation`, `url`, and `scope` attributes. `scope` should be either "full", "text-only" or "some-exceptions" and will determine the way the license is worded on your site. To override the wording and link language use the `online_text` and `pdf_ebook_text` attributes.
 
-If the `abbreviation` matches one of the seven Creative Commons licenses ("CC0", "CC BY", "CC BY-SA", "CC BY-ND", "CC BY-NC", "CC BY-NC-SA", or "CC BY-NC-ND"), an icon will automatically be included, otherwise you can use the `icon` attribute to point to a specific image file in your images directory.
+If the `abbreviation` matches one of the seven Creative Commons licenses ("CC 0", "CC BY", "CC BY-SA", "CC BY-ND", "CC BY-NC", "CC BY-NC-SA", or "CC BY-NC-ND"), an icon will automatically be included, otherwise you can use the `icon` attribute to point to a specific image file in your images directory.
 
 ### Formats, Resources & Links
 

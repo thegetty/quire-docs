@@ -30,7 +30,7 @@ Figures and all their associated attributes can be listed in a single `figures.y
   alt: "photograph of a frowning older man in brown jacket and fedora"
 ```
 
-Assuming each YAML figure entry includes a unique `id`, you can insert a figure in your publication with only the `id` attribute, and all of the other attributes defined in the YAML for that figure, will be automatically included. Note that the figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
+Assuming each YAML figure entry includes a unique `id` (in quotes: "1.1" not 1.1), you can insert a figure in your publication with only the `id` attribute, and all of the other attributes defined in the YAML for that figure, will be automatically included. Note that the figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
 
 ```
 {{< q-figure id="1.2" >}}

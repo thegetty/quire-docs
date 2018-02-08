@@ -23,7 +23,7 @@ framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
   - [Citations & Bibliographies](content/guide/bibliographies.md)
   - [*Copyright & About Pages*](content/guide/copyright.md)
   - [Contributors](content/guide/contributors.md)
-  - [*Customizing Styles*](content/guide/styles.md)
+  - [Customizing Styles](content/guide/styles.md)
   - [*Multi-Format Output*](content/guide/output.md)
   - [*Keeping Quire Updated*](#)
 - API/Docs
@@ -32,6 +32,7 @@ framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
 - Resources
   - [Sample publication.yml file](resources/sample-publication.yml)
 - Workshops
+  - [CAA 2018](content/workshops/caa-2018.md)
   - [MCN 2017](content/workshops/mcn-2017.md)
 
 (*Note: entries in italics are placeholder stubs.*)
