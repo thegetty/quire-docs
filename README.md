@@ -2,19 +2,37 @@
 
 # Quire (Alpha)
 
-This is the documentation for Quire, an open-source multi-format publishing
-framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
+Quire is a modern, multi-format publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
 
-- [quire-cli](https://github.com/gettypubs/quire-cli)
-- [quire-starter](https://github.com/gettypubs/quire-starter)
-- [quire-starter-theme](https://github.com/gettypubs/quire-starter-theme)
-- [quire](https://github.com/gettypubs/quire) (documentation and homepage)
+Quire books are scholarly, visual, and built for discoverability and longevity. They feature:
 
-## Contents
+- Page-level citation
+- Footnotes
+- Bibliographies
+- Figure images and image groups
+- Zooming images and maps
+- Video and audio embeds
+- Dynamic tables of contents and menus
+- Full-text search
+- Responsive web design
+- Web accessibility and SEO optimized
+- Outputs to web, PDF, and EPUB formats
+
+[View some of the books developed with early versions of Quire.](http://www.getty.edu/publications/digital/digitalpubs.html)
+
+## [Get Started](content/guide/getting-started.md)
+
+1. Install Quire and its dependencies
+2. Create and preview a new starter project
+3. Customize the metadata, content, and styles to make it your own
+4. Output your publication
+
+Quire is currently in closed development. To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link) form. Or for more information, contact Greg Albers at [galbers@getty.edu](mailto:galbers@getty.edu).
+
+## Guide & Documentation
 
 - Guide
-  - [About](content/guide/about.md)
-  - [Setup](content/guide/setup.md)
+  - [Getting Started](content/guide/getting-started.md)
   - [Quire Project File Structure](content/guide/file-structure.md)
   - [Publication Configuration & Metadata](content/guide/metadata.md)
   - [Pages & Plain Text](content/guide/text.md)
@@ -25,30 +43,39 @@ framework built on [Hugo](https://github.com/gohugoio/hugo). Quire consists of:
   - [Contributors](content/guide/contributors.md)
   - [Customizing Styles](content/guide/styles.md)
   - [*Multi-Format Output*](content/guide/output.md)
-  - [*Keeping Quire Updated*](#)
+  - [About](content/guide/about.md)
 - API/Docs
   - [Shortcodes](content/api-docs/shortcodes.md)
   - [YAML](content/api-docs/yaml.md)
 - Resources
+  - [Quire Cheatsheet](resources/cheatsheet.md)
+  - [Install Mac](resources/install-mac.md)
+  - [Install PC](resources/install-pc.md)
+  - [Quire CLI Instructions](#)
   - [Sample publication.yml file](resources/sample-publication.yml)
+  - [Hugo Documentation](https://gohugo.io/documentation/)
 - Workshops
-  - [CAA 2018](content/workshops/caa-2018.md)
   - [MCN 2017](content/workshops/mcn-2017.md)
+  - [CAA 2018](content/workshops/caa-2018.md)
+- Articles of Interest
+  - [“Quire: A New Publishing Tool”](http://www.getty.edu/publications/digital/platforms-tools.html)
+  - [“Why Static Site Generators Are the Next Big Thing”](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
+  - [“An Editor’s View of Digital Publishing”](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/)
 
 (*Note: entries in italics are placeholder stubs.*)
 
-## Links of Interest
+## Technical
 
-- [“Quire: A New Publishing Tool”](http://www.getty.edu/publications/digital/platforms-tools.html)
-- [“Why Static Site Generators Are the Next Big Thing”](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
-- [“An Editor’s View of Digital Publishing”](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/)
-- [Hugo](https://gohugo.io/)
+Quire is centered around [Hugo](https://github.com/gohugoio/hugo), and uses [PrinceXML](http://www.princexml.com/) for PDF generation and [pe-epub](https://github.com/peoples-e/pe-epub) for EPUBs.
 
-## Contact
+Quire consists of four primary repositories, all of which but this one are closed during development.
 
-Greg Albers: [@geealbers](https://github.com/geealbers) |  [galbers@getty.edu](mailto:galbers@getty.edu)
+- [quire](https://github.com/gettypubs/quire) (documentation and homepage)
+- [quire-cli](https://github.com/gettypubs/quire-cli)
+- [quire-starter](https://github.com/gettypubs/quire-starter)
+- [quire-starter-theme](https://github.com/gettypubs/quire-starter-theme)
 
-Eric Gardner: [@egardner](https://github.com/egardner) |  [egardner@getty.edu](mailto:egardner@getty.edu)
+To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link) form. Or for more information, contact Greg Albers at [galbers@getty.edu](mailto:galbers@getty.edu).
 
 ## License
 
