@@ -51,9 +51,9 @@ You may in some cases find that the system’s default sort method is sub-optima
 ```yaml
 entries:
   - short: "cummings 1914"
-    sort_as: "Cummings, E E"
+    sort_as: "cummings-e-e"
   - short: "Dickinson 1932"
-    sort_as: "Dickinson, Emily"
+    sort_as: "dickinson-emily"
 ```
 
 ### Displaying the Short Reference in Bibliographies
