@@ -49,12 +49,44 @@ Other typical Markdown formatting is listed below. Note that the spacing after t
 ## YAML
 
 ```yaml
-title:
-subtitle:
+item:
+other_item:
 multiple_items:
   - item_name:
     item_description:
   - item_name:
     item_description:
+```
+
+```yaml
+item: "If the text here has a colon : or other special characters it should be surrounded in double quotes"
+```
+
+```yaml
+item: |
+  Using a pipe character, and then dropping down a line and indenting like this allows you to include multiple paragraphs, just as you would in Markdown.
+
+  Not all Quire YAML attributes expect Markdown though, so check the docs.
+
+  - Markdown style lists
+  - and other formatting are
+  - also allowed
+```
+
+YAML Validator: [http://www.yamllint.com/](http://www.yamllint.com/)
+
+## Shortcodes
+
+```
+{{< q-figure id="##" >}}
+
+{{< q-figure-group id="##, ##, ##" >}}
+
+{{< q-cite "Lastname YYYY">}}
+
+{{< q-bibliography >}}
+
+{{< q-contributors range="xxxx" type="xxxx" >}}
+
 ```
 
