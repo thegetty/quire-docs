@@ -6,7 +6,7 @@ type: page
 
 Quire is a publishing *framework*, meaning it’s not one tool or process, but rather a network of many things hooked together. When you work in Quire, you’ll be using a text editor, a command line shell, and a web browser. You use the text editor to edit your publication files, the command line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work.
 
-![text editor and command line shell pic](#)
+![tcommand line shell, browser, text editor](../images/quire-work-environment.gif)
 
 In the following sections, we’ll get more familiar with these tools, and get you up and running with your first Quire project.
 
@@ -20,7 +20,7 @@ Macs already have a good shell installed. It’s called Terminal and can be foun
 
 The shell is a text-based window into the contents of your computer, and a space where you can run program commands. Like opening a new graphical window on your computer showing the contents of a particular folder (directory), when you open your shell, you will also be in a particular directory.  Usually your main user directory by default. With the shell open, type `ls` ("list") to list the folders and files in your current location. Type `cd` ("change directory") and the name of one of those other folders and the shell will take you into it.
 
-![folder and ls side-by-side pic](#)
+![folder and command line side-by-side](../images/commandline-vs-folder.png)
 
 ### Installing
 
@@ -52,7 +52,7 @@ Macs and PCs come with some simple text editors built-in, but we recommend using
 
 Once installed, open your text editor and locate and open the `my-project` directory you created in Step 2 above. If you’re using a text editor like Atom, you will see all of the directory’s contents listed.
 
-![my-project open in Atom](#)
+![my-project open in Atom](../images/project-in-atom.png)
 
 ### Publication Metadata
 
