@@ -20,14 +20,16 @@ Quire books are scholarly, visual, and built for discoverability and longevity. 
 
 [View some of the books developed with early versions of Quire.](http://www.getty.edu/publications/digital/digitalpubs.html)
 
-## [Get Started](content/guide/getting-started.md)
+## Getting Started
+
+Follow the step-by-step introduction in the [**Getting Started**](content/guide/getting-started.md) chapter of the guide to:
 
 1. Install Quire and its dependencies
 2. Create and preview a new starter project
 3. Customize the metadata, content, and styles to make it your own
 4. Output your publication
 
-Quire is currently in closed development. To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link) form. Or for more information, contact Greg Albers at [galbers@getty.edu](mailto:galbers@getty.edu).
+[*Quire is currently in closed development. To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link) form. Or for more information, contact Greg Albers at [galbers@getty.edu](mailto:galbers@getty.edu).*]
 
 ## Guide & Documentation
 
@@ -48,11 +50,11 @@ Quire is currently in closed development. To request access, please fill out our
   - [Shortcodes](content/api-docs/shortcodes.md)
   - [YAML](content/api-docs/yaml.md)
 - Resources
-  - [Quire Cheatsheet](resources/cheatsheet.md)
-  - [Install Mac](resources/install-mac.md)
-  - [Install PC](resources/install-pc.md)
-  - [Quire CLI Instructions](#)
-  - [Sample publication.yml file](resources/sample-publication.yml)
+  - [Quire Cheatsheet](content/resources/cheatsheet.md)
+  - [Install Mac](content/resources/install-mac.md)
+  - [Install PC](content/resources/install-pc.md)
+  - [Quire CLI Instructions](content/resources/quire-cli.md)
+  - [Sample publication.yml file](content/resources/sample-publication.yml)
   - [Hugo Documentation](https://gohugo.io/documentation/)
 - Workshops
   - [MCN 2017](content/workshops/mcn-2017.md)
