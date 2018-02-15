@@ -16,7 +16,7 @@ The first thing you’ll need is a command line shell. Along with using it to ru
 
 ### Command Line Shell
 
-Macs already have a good shell installed. It’s called Terminal and can be found in the Applications/Utilities folder. (Or, hit Command-Space Bar and type "Terminal" to search for it.) For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH. When installing Git for Windows, you can accept all the default options.
+Macs already have a good shell installed. It’s called Terminal and can be found in the Applications/Utilities folder. (Or, hit Command-Space Bar and type "Terminal" to search for it.) For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git Bash.
 
 The shell is a text-based window into the contents of your computer, and a space where you can run program commands. Like opening a new graphical window on your computer showing the contents of a particular folder (directory), when you open your shell, you will also be in a particular directory.  Usually your main user directory by default. With the shell open, type `ls` ("list") to list the folders and files in your current location. Type `cd` ("change directory") and the name of one of those other folders and the shell will take you into it.
 
@@ -24,14 +24,15 @@ The shell is a text-based window into the contents of your computer, and a space
 
 ### Installing
 
-Follow the directions below for either Mac or PC installation.
+Follow the links below for either Mac or PC installation.
 
-Mac installation
+[**Mac installation**](../resources/install-mac.md)
 
-PC installation
-
+[**PC installation**](../resources/install-mac.md)
 
 ## 2. Create and preview a new starter project
+
+*[For PC users, see the instructions in the [PC installation](../resources/install-mac.md) guide on starting and previewing new Quire projects.]*
 
 To start a new Quire project, open your shell and type `quire new my-project`. Quire will download a new starter project named "my-project" into your current directory. (If you are using the Beta, you may need to enter your GitHub username and password twice during the download process. One for the starter kit and once for the starter theme.)
 
@@ -112,6 +113,8 @@ $quire-navbar-background-color: honeydew;
 ```
 
 Just make sure there’s always a space between the colon and the value you enter, and that the value is immediately proceeded by a semi-colon. If you don’t see the change, you may need to refresh the browser window.
+
+PC users won’t yet be able to customize style variables in this way, but can instead edit the styles directly in `quire-starter-theme/static/css/application.css`.
 
 *Read mmore about applying your own custom CSS styles, altering page templates, and creating a new theme in the [“Customizing Styles”](../styles.md) chapter of this guide.*
 

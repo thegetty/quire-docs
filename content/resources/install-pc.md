@@ -4,30 +4,61 @@ subtitle: PC
 type: page
 ---
 
-Open your your command line shell application and follow the steps below. If you have not previously installed a command line shell, we recommend [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git Bash. When installing Git for Windows, you can accept all the default options.
+The full Quire system is not currently available to PC users. However, PC users can still start and work on Quire projects, preview the online edition, and output final files for it. They will not, however, be able to:
 
-The following steps will install support software for Quire, and then Quire itself. Note that when you type a password in the command line, the cursor doesn’t move, but your typing is being registered. Simply type the password, and hit Enter.
+- Output PDF or EPUB editions
+- Make changes to Style (.scss) or Javascript (.js) files inside the themes folder
 
-1. Visit the **Node.js** site, and download and install the current LTS (long-term support) version: [https://nodejs.org](https://nodejs.org). You will have to restart your computer for Node to finish installing.
+The following steps will install the necessary software for running a Quire project on a PC, and show you how to start a new project as well.
 
-2. Download and install **[Hugo](https://gohugo.io/getting-started/installing/#windows)** following the directions on their website. Note that for Windows 7 and 8 users, you will also need to install a **path editor**, such as the one from [codeplex](https://patheditor2.codeplex.com/).
+1. Download and install **Git for Windows**:
 
-    Next, open your your Git Bash command line application and one-by-one copy and paste the following commands to install Quire:
+    Download the 32-bit or 64-bit version of Git for Windows to match your operating system. (Check your computer by clicking the Start button, right-clicking Computer, and then clicking Properties. Under System, you can view the system type.)
 
-3. Copy the **Quire CLI** (command line application) to your computer from GitHub:
+    [https://gitforwindows.org/](https://gitforwindows.org/)
+
+    When installing, you can accept all the default options. When complete open the “Git Bash” program which is the command line shell you’ll use to run Quire projects. If you installed the 64-bit version and it doesn’t open, we recommend trying the 32-bit.
+
+2. Download and install **Hugo**:
+
+    In your User directory, create a folder called `hugo` and within that, a subdirectory called `bin`.
+
+    Download the 32-bit or 64-bit version of Hugo **0.31.1** to match your operating system.
+
+    [https://github.com/gohugoio/hugo/releases/tag/v0.31.1](https://github.com/gohugoio/hugo/releases/tag/v0.31.1)
+
+    Right click on the downloaded file and use the WinZip “Extract to ...” option to extract the contents into the `hugo/bin` directory you created.
+
+    Open Git Bash, with the "Run as administrator" option (right click), and copy and paste the following line, replacing `YOUR-USER-DIRECTORY` with the name of your actual directory.
 
     ```
-    git clone https://github.com/gettypubs/quire-cli.git
+    setx PATH "%PATH%;C:\Users\YOUR-USER-DIRECTORY\hugo\bin"
     ```
 
-4. Install the **Quire CLI**:
+    [*More directions for installation can be found in the [Hugo documentation](https://gohugo.io/getting-started/installing/#windows).*]
+
+3. Start a new **Quire** project
 
     ```
-    cd quire-cli
-    npm install -g
+    git clone --recursive https://github.com/gettypubs/quire-starter.git
     ```
 
-When complete, type `quire --version` to confirm proper installation. It should return a version number, otherwise, if it says `command not found`, the Quire CLI has not been properly installed. Refer to the “Troubleshooting” section below.
+    You may be asked for your GitHub username and password. Note that when you type a password in the command line, the cursor doesn’t move, but your typing is being registered. Simply type the password, and hit Enter.
+
+    Change directory into the new `quire-starter` folder you just created.
+
+    ```
+    cd quire-starter
+    ```
+
+    And then run Hugo to see a live preview of your site.
+
+    ```
+    hugo server
+    ```
+
+    Once running, open a browser and visit [http://localhost:1313](http://localhost:1313) to see the publication.
+
 
 ### Troubleshooting
 

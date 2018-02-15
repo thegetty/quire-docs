@@ -31,7 +31,7 @@ Open your your Terminal command line application and follow the four steps below
     cd
     ```
 
-4. Copy the **Quire CLI** (command line application) to your computer from GitHub.
+4. Copy and paste the following line into your Terminal to download the **Quire CLI** (command line application) to your computer from GitHub.
 
     ```
     git clone https://github.com/gettypubs/quire-cli.git
