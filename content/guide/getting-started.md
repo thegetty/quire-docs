@@ -14,13 +14,15 @@ In the following sections, we’ll get more familiar with these tools, and get y
 
 The first thing you’ll need is a command line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs Quire is dependent on in order to run).
 
-### Command Line Shell
+### Working in a Command Line Shell
 
 Macs already have a good shell installed. It’s called Terminal and can be found in the Applications/Utilities folder. (Or, hit Command-Space Bar and type "Terminal" to search for it.) For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git Bash.
 
-The shell is a text-based window into the contents of your computer, and a space where you can run program commands. Like opening a new graphical window on your computer showing the contents of a particular folder (directory), when you open your shell, you will also be in a particular directory.  Usually your main user directory by default. With the shell open, type `ls` ("list") to list the folders and files in your current location. Type `cd` ("change directory") and the name of one of those other folders and the shell will take you into it.
+The shell is a text-based window into the contents of your computer, and a space where you can run program commands. Like opening a new graphical window on your computer showing the contents of a particular folder (directory), when you open your shell, you will also be in a particular directory.
 
 ![folder and command line side-by-side](../images/commandline-vs-folder.png)
+
+When you open your shell program you will probably be in your main user directory by default. With the shell open, you can type `ls` ("list") to list the folders and files in your current location. Or type `cd` ("change directory") and the name of one of those other folders (like `cd Downloads`), and the shell will take you into it.
 
 ### Installing
 
@@ -34,9 +36,14 @@ Follow the links below for either Mac or PC installation.
 
 *[For PC users, see the instructions in the [PC installation](../resources/install-mac.md) guide on starting and previewing new Quire projects.]*
 
-To start a new Quire project, open your shell and type `quire new my-project`. Quire will download a new starter project named "my-project" into your current directory. (If you are using the Beta, you may need to enter your GitHub username and password twice during the download process. One for the starter kit and once for the starter theme.)
+To start a new Quire project, open your shell and type `quire new my-project`. Quire will download a new starter project named “my-project” into your current directory. (If you are using the Beta, you may need to enter your GitHub username and password twice during the download process. One for the starter kit and once for the starter theme.)
 
-Once the download is complete, still in your shell, type `cd my-project` and hit enter (which means change directory into the directory called 'my-project', which was just created with the `quire new my-project` command), and then type `quire preview` and enter again.
+Once the download is complete, still in your shell, type `cd my-project` and hit enter (which means change directory into the directory called “my-project”, which was just created with the `quire new my-project` command), and then type `quire preview` and enter again.
+
+```
+cd my-project
+quire preview
+```
 
 Open your browser and go to [http://localhost:1313](http://localhost:1313) to see the starter publication that Quire is now previewing.
 
@@ -44,7 +51,7 @@ Open your browser and go to [http://localhost:1313](http://localhost:1313) to se
 
 To start customizing your publication, you’ll need a text editor. This goes with the command line shell you have for installing and entering Quire commands, and the browser you use for previewing.
 
-### Text Editor
+### Working in a Text Editor
 
 Like its name implies, a text editor is simply a program to edit text. It’s like Microsoft Word, but instead of dealing with text formatted for printing, text editors specialize in text formatted for code and markup. You can use a text editor to edit all the different kinds of files in your Quire project, from chapters written in Markdown, to metadata written in YAML, and styles written in CSS.
 
