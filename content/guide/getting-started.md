@@ -30,11 +30,11 @@ Follow the links below for either Mac or PC installation.
 
 [**Mac installation**](../resources/install-mac.md)
 
-[**PC installation**](../resources/install-mac.md)
+[**PC installation**](../resources/install-pc.md)
 
 ## 2. Create and preview a new starter project
 
-*[For PC users, see the instructions in the [PC installation](../resources/install-mac.md) guide on starting and previewing new Quire projects.]*
+*[For PC users, see the instructions in the [PC installation](../resources/install-pc.md) guide on starting and previewing new Quire projects.]*
 
 To start a new Quire project, open your shell and type `quire new my-project`. Quire will download a new starter project named “my-project” into your current directory. (If you are using the Beta, you may need to enter your GitHub username and password twice during the download process. One for the starter kit and once for the starter theme.)
 
