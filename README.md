@@ -55,6 +55,7 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
   - [Install PC](content/resources/install-pc.md)
   - [Quire CLI Instructions](content/resources/quire-cli.md)
   - [Sample publication.yml file](content/resources/sample-publication.yml)
+  - [Accessibility Principals](content/resources/accessibility.md)
   - [Hugo Documentation](https://gohugo.io/documentation/)
 - Workshops
   - [MCN 2017](content/workshops/mcn-2017.md)
