@@ -4,6 +4,8 @@ subtitle: From Plain Text to Publication
 type: page
 ---
 
+# Getting Started
+
 Quire is a publishing *framework*, meaning it’s not one tool or process, but rather a network of many things hooked together. When you work in Quire, you’ll be using a text editor, a command line shell, and a web browser. You use the text editor to edit your publication files, the command line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work.
 
 ![tcommand line shell, browser, text editor](../images/quire-work-environment.gif)
@@ -123,8 +125,14 @@ Just make sure there’s always a space between the colon and the value you ente
 
 PC users won’t yet be able to customize style variables in this way, but can instead edit the styles directly in `quire-starter-theme/static/css/application.css`.
 
-*Read mmore about applying your own custom CSS styles, altering page templates, and creating a new theme in the [“Customizing Styles”](../styles.md) chapter of this guide.*
+*Read more about applying your own custom CSS styles, altering page templates, and creating a new theme in the [“Customizing Styles”](../styles.md) chapter of this guide.*
 
 ## 4. Output your publication
 
-TK
+In your Terminal, if it is still running, stop the `quire preview` process by typing Control-C. To create the PDF version of your publication type `quire pdf` and Enter. For the EPUB, type `quire epub` and Enter. Both files will be created about saved into your project’s `static/downloads` directory.
+
+For the online edition, type `quire build` and Enter. A `public` directory will be created in your project, with all the website files inside. If `public` directory already exists, `quire build` will simply update it with the latest changes in your project. The files in `public` can then be copied onto virtually any web server or hosting service. They are all you need for the site, and will look just as they did when running `quire preview` locally.
+
+For online hosting, you can also use GitHub Pages which is convenient if you’ll be using GitHub for version control and project management.
+
+*Read more about outputting your publication files, deploying your site, and using GitHub in the [“Multiformat Output”](../output.md) chapter of this guide.*
