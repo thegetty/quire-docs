@@ -15,7 +15,7 @@ weight:
 ---
 ```
 
-The page `type` must be one of nine possible values: "page", "essay", "entry", "section-head", "cover", "contents", "about", "search", or "data". If left blank, or if any other value besides these nine is entered, the `type` will default to "page". Read more about the specific `type`s in the [Defining Page Types](#defining-page-types) section below.
+The page `type` must be one of nine possible values: "page", "essay", "entry", "cover", "contents", "about", "search", or "data". If left blank, or if any other value besides these nine is entered, the `type` will default to "page". Read more about the specific `type`s in the [Defining Page Types](#defining-page-types) section below.
 
 The page `weight` is a number and will determine the order in which the page appears in the publication. The first page in your publication would be `weight: 1` (don’t start with zero 0), the second would be `weight: 2`, and so on. Numbering should be unique, and sequential whole numbers, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at 0, your first section might be 100, second section 200 and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
 
@@ -27,7 +27,7 @@ id: # for chapter/paper numbering
 title:
 subtitle:
 short_title:
-type: # page | essay | entry | section-head | cover | contents | about | data | search
+type: # page | essay | entry | cover | contents | about | data | search
 class:
 weight:
 object:
@@ -58,11 +58,9 @@ The `object` and `contributor` attributes above are arrays of one or more items.
 
 `entry`: An entry in a catalogue of objects. Typically includes a large, zoomable image of the object, with a table of object details and narrative text.
 
-`section-head`: Should only be used inside a sub-directory section. Creates the main landing page, typically with a list of the pages in the section, or a grid of catalogue entries, or simply a large title splash page. See the [Creating Section Landing Pages](#creating-section-landing-pages) section below for more details on `section-head` pages.
-
 `cover`: The cover of your publications. Typically a full-screen splash page with large title, with cover description and publication information below. Along with defining `type: cover`, you will usually want to also add `slug: .` so that the cover page URL is the base URL of your site (your homepage). For more about URLs and the `slug` attribute in the [“File Structure”](file-structure.md) chapter of this guide.
 
-`contents`: Automatically creates a table of contents for your publication. The `tocType` can be set to either "full" or "short" in the publication’s `config.yml` file. The "full" option will typically list and link to all main pages, sections and section pages as well as including any individual contributors for those pages. The "short" option will list and link to main pages and sections only, not the pages within the section.
+`contents`: Automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory. The `tocType` can be set to either "full" or "short" in the publication’s `config.yml` file. The "full" option will typically list and link to all main pages, sections and section pages. The "short" option will list and link to main pages and sections only, not the pages within the section. The `contents` page type can also be customized with four classes: `brief`, `list`, `abstract`, or `grid`.
 
 `about`: The about page will typically include the publication description, citation information, revision history, downloads and other formats, copyright and license information and more. This can be used also for a traditional copyright page for the PDF output format.
 
@@ -73,17 +71,16 @@ The `object` and `contributor` attributes above are arrays of one or more items.
 
 ### Creating Section Landing Pages
 
-As discussed in the [“File Structure”](file-structure.md) chapter of this guide, a Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. It is recommended (though not required) to designate one of the pages in each sub-directory section to be the section landing page. To do so, use `type: section-head` in the page YAML of the designated page. This will improve the formatting of your site Table of Contents, and offer a more familiar experience to users.
-
-Secondly, you will also want the URL of that landing page to be the section directory name rather than the name of the page. To do that, use `slug: .` in the page YAML. The `slug` attribute overrides the default name to be used in the URL for the page, and the period `.` refers it back to the sub-directory name. So, if in your site `mypublication.com` you have sub-directory called `part-one` and in that a `section-head` page called `landing-page.md`, instead of the URL being `mypublication.com/part-one/landing-page/`, it would be `mypublication.com/part-one/`. Here’s the YAML:
+As discussed in the [“File Structure”](file-structure.md) chapter of this guide, a Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. It is recommended (though not required) to designate one of the pages in each sub-directory section to be the section landing page. To do so, add `slug: .` to the page YAML. The `slug` attribute overrides the default name to be used in the URL for the page, and the period `.` refers it back to the sub-directory name. So, if in your site `mypublication.com` you have sub-directory called `part-one` and in that a landing page called `landing-page.md`, instead of the URL being `mypublication.com/part-one/landing-page/`, it would be `mypublication.com/part-one/`. Here’s the YAML:
 
 ```yaml
 title: Part One
-type: section-head
+type: contents
+class: grid
 slug: .
 ```
 
-The `title` of your defined `section-head` page is what will be used in the header of that page, and in the Table of Contents and menu of your site. However, the filename of the sub-directory itself is also used in your publication; for the online navigation bar, and in the running page footers of the PDF version. In these two places, Quire takes the sub-directory filename and humanizes it, which means to change hyphens into spaces and capitalize with title case. So, the sub-directory `part-one` becomes “Part One”, or `sculpture-of-the-renaissance` becomes “Sculpture of the Renaissance.”
+The `title` of your defined landing page is what will be used in the header of that page, and in the Table of Contents and menu of your site. However, the filename of the sub-directory itself is also used in your publication; for the online navigation bar, and in the running page footers of the PDF version. In these two places, Quire takes the sub-directory filename and humanizes it, which means to change hyphens into spaces and capitalize with title case. So, the sub-directory `part-one` becomes “Part One”, or `sculpture-of-the-renaissance` becomes “Sculpture of the Renaissance.”
 
 ### Where Your Pages Show Up
 
