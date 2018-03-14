@@ -38,6 +38,7 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
   - [Quire Project File Structure](content/guide/file-structure.md)
   - [Publication Configuration & Metadata](content/guide/metadata.md)
   - [Pages & Plain Text](content/guide/text.md)
+  - [Collection Catalogues](content/guide/collection-catalogues.md)
   - [Figure Images](content/guide/figures.md)
   - [*Zooming Images & Maps*](content/guide/zoom.md)
   - [Citations & Bibliographies](content/guide/bibliographies.md)
