@@ -222,8 +222,6 @@ Type: Array
 | `aspect_ratio` | "standard", "widescreen" | For use with video `media_type`s to properly scale video embeds. When no value is provided, the default is "widescreen". |
 | `label_text` | string | Used for the `q-figure-group` shortcode only. A short text label added to the image, usually just under the image depending on your theme. If no text is provided here, a label is automatically generated from the provided `id` value along with the `imageLabelContentBefore` and `imageLabelContentAfter` values defined in your `config.yml` file.  |
 
-
-
 ## Bibiliography
 
 Location: `entries` in `references.yml`
@@ -234,6 +232,24 @@ Type: Array
 | --- | --- | --- |
 | `short` | string | The short form of the citation, ie., Brown 1984. |
 | `full` | string | The full form of the citation, ie.,  |
+
+## Object
+
+Location: `object_list` in `objects.yml`
+
+Type: Array
+
+| Attribute | Expected Value | Description |
+| --- | --- | --- |
+| `id` | string | Required. Used to reference objects from entry pages. Should be numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
+| `figures` | [array](#figure) | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. |
+| `link` | url | A URL link to a page with more/current information on the object. Usually the object in the museum’s online collection pages. |
+| `date_start`, `date_end` | integer | Reserved for future use in Quire. |
+| `dimension_width`, `dimension_height`, `dimension_depth` | integer | Reserved for future use in Quire. |
+
+Objects also support arbitrary attributes, which might include `title`, `artist`, `collection`, etc. Those added will be output in a table on collection catalogue entry pages. The ordering of the display can be controlled with `object_display_order` in `objects.yml`.
+
+See: [Guide on Collection Catalogues](../../guide/collection-catalogues/)
 
 ## Page
 
