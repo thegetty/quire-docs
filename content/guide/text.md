@@ -23,7 +23,7 @@ When you need to add more page information about, this is the complete list of o
 
 ```yaml
 ---
-id: # for chapter/paper numbering
+number: # for chapter/paper numbering
 title:
 subtitle:
 short_title:
