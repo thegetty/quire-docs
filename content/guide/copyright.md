@@ -3,7 +3,7 @@ title: Copyright & About Pages
 type: page
 ---
 
-## Managing 
+## Managing
 
 ## Displaying Relevant Publication Metadata with Shortcodes
 
@@ -11,3 +11,6 @@ type: page
 - q-link-list
 - q-loc
 - q-revision-history
+
+
+New Note

@@ -256,3 +256,4 @@ See: [Guide on Collection Catalogues](../../guide/collection-catalogues/)
 Location: Any page in `content/`
 
 Type: Object
+
