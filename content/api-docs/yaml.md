@@ -257,4 +257,3 @@ Location: Any page in `content/`
 
 Type: Object
 
-[ Note: I need to add info here. ]
