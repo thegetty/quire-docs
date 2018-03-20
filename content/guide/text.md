@@ -19,34 +19,8 @@ The page `type` must be one of nine possible values: "page", "essay", "entry", "
 
 The page `weight` is a number and will determine the order in which the page appears in the publication. The first page in your publication would be `weight: 1` (don’t start with zero 0), the second would be `weight: 2`, and so on. Numbering should be unique, and sequential whole numbers, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at 0, your first section might be 100, second section 200 and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
 
-When you need to add more page information about, this is the complete list of options:
+When you need to add more page information about, the complete list of options is available in the ["YAML"](../api-docs/yaml.md) section of the guide.
 
-```yaml
----
-number: # for chapter/paper numbering
-title:
-subtitle:
-short_title:
-type: # page | essay | entry | cover | contents | about | data | search
-class:
-weight:
-object:
-  -
-  -
-contributor:
-  -
-  -
-abstract:
-slug:
-display:
-  online:
-  menu:
-  pdf_ebook:
-  toc:
----
-```
-
-The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [Catalogue Entries](entries.md) and [Contributors](contributors.md) sections respectively.
 
 ### Defining Page Types
 
@@ -213,7 +187,7 @@ Be aware of the multiple [Markdown flavors](https://github.com/commonmark/Common
 
 Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain text markup. While Hugo has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
 
-Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (`{{< shortcode >}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figure.yml` file.
+Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (`{{< shortcode >}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
 
 ```
 {{< q-figure id="3.1" >}}
