@@ -12,23 +12,9 @@ Quire is a publishing *framework*, meaning it’s not one tool or process, but r
 
 In the following sections, we’ll get more familiar with these tools, and get you up and running with your first Quire project.
 
-## 1. Install Quire and Its Dependencies
+## 1. Installing Quire and Its Dependencies
 
-The first thing you’ll need is a command line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs Quire is dependent on in order to run).
-
-### Working in a Command Line Shell
-
-Macs already have a good shell installed. It’s called Terminal and can be found in the Applications/Utilities folder. (Or, hit Command-Space Bar and type "Terminal" to search for it.) For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git Bash.
-
-The shell is a text-based window into the contents of your computer, and a space where you can run program commands. Like opening a new graphical window on your computer showing the contents of a particular folder (directory), when you open your shell, you will also be in a particular directory.
-
-![folder and command line side-by-side](../images/commandline-vs-folder.png)
-
-When you open your shell program you will probably be in your main user directory by default. With the shell open, you can type `ls` ("list") to list the folders and files in your current location. Or type `cd` ("change directory") and the name of one of those other folders (like `cd Downloads`), and the shell will take you into it.
-
-### Installing
-
-Follow the links below for either Mac or PC installation.
+Refer to the following resources via the links below for either Mac or PC installation.
 
 [**Mac installation**](../resources/install-mac.md)
 

@@ -9,6 +9,20 @@ The full Quire system is not currently available to PC users. However, PC users 
 - Output PDF or EPUB editions
 - Make changes to Style (.scss) or Javascript (.js) files inside the themes folder
 
+## 1. PC Installation Guide for Quire and Its Dependencies
+
+The first thing you’ll need is a command line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs Quire is dependent on in order to run).
+
+### Working in a Command Line Shell
+
+The command line shell is a text-based window into the contents of your computer, and a space where you can run program commands. Like opening a new graphical window on your computer showing the contents of a particular folder (directory), when you open your shell, you will also be in a particular directory.
+
+![folder and command line side-by-side](../images/commandline-vs-folder.png)
+
+When you open your shell program you will probably be in your main user directory by default. With the shell open, you can type `ls` ("list") to list the folders and files in your current location. Or type `cd` ("change directory") and the name of one of those other folders (like `cd Downloads`), and the shell will take you into it.
+
+### Install Quire and Its Dependencies
+
 The following steps will install the necessary software for running a Quire project on a PC, and show you how to start a new project as well.
 
 1. Download and install **Git for Windows**:
@@ -63,5 +77,3 @@ The following steps will install the necessary software for running a Quire proj
 ### Troubleshooting
 
 TK
-
-
