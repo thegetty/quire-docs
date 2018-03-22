@@ -154,7 +154,7 @@ Type: Array
 | `link_relation` | string | Taken from the list at http://www.iana.org/assignments/link-relations/link-relations.xhtml |
 | `url` | url | URL to web resource or to download. |
 | `identifier` | [object](#identifier) | See below. |
-| `file_size_mb` | integer | For dowloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |
+| `file_size_mb` | integer | For downloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |
 | `icon` | url |  |
 
 
@@ -206,7 +206,7 @@ Type: Array
 
 ## Figure
 
-Location: `figure_list` in `figure.yml`
+Location: `figure_list` in `figures.yml`
 
 Type: Array
 
@@ -256,3 +256,20 @@ See: [Guide on Collection Catalogues](../../guide/collection-catalogues/)
 Location: Any page in `content/`
 
 Type: Object
+
+| Attribute | Expected Value | Description |
+| --- | --- | --- |
+| `number` | integer |# for chapter/paper numbering. |
+| `title` | string | |
+| `subtitle` | string | |
+| `short_title` | string | |
+| `type` | "page"',' "essay", "entry", "cover", "contents", "about", "data", "search" | |
+| `class` | | |
+| `weight` | integer | |
+| `object` | [array](#Object) | See above. |
+| `contributor` | [array](#Contributor) | See above. |
+| `abstract` | string | |
+| `slug` | | |
+| `display` | "online", "menu", "pdf_ebook", "toc" | |
+
+The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [Catalogue Entries](entries.md) and [Contributors](contributors.md) sections respectively.
