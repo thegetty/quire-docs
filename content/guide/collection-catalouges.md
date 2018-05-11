@@ -51,7 +51,7 @@ Here are the only defined object attributes, you can include any others you like
 | Attribute | Description |
 | --- | --- |
 | `id` | Required. Used to reference objects from entry pages. Should be numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
-| `figures` | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. |
+| `figure` | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. |
 | `link` | A URL link to a page with more/current information on the object. Usually the object in the museum’s online collection pages. |
 | `date_start`, `date_end` | Reserved for future use in Quire. |
 | `dimension_width`, `dimension_height`, `dimension_depth` | Reserved for future use in Quire. |
