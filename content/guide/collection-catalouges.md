@@ -98,3 +98,11 @@ slug: .
 ![screenshot of catalogue grid page as rendered in the browser](../images/catalogue-entry-grid.jpg)
 
 Note that the `slug` value in the sample above, will chnage the URL of the page. Instead of being `/catalogue/overview` it will be simply `/catalogue`.
+
+
+
+
+
+
+
+
