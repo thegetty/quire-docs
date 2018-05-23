@@ -1,0 +1,34 @@
+glossary_list:
+  - id:
+    term: "Command line interface"
+    description:
+  - id:
+    term: "`Git` project management sites"
+    description:
+  - id:
+    term: Hugo
+    description: "Static site generator that powers Quire"
+  - id:
+    term: "Markdown file"
+    description: "A file formatted in Markdown, a very simple plain text markup language, that generates a Web page. Markdown files have a YAML block at the top containing the metadata of the page."
+  - id:
+    term: "Static-site Generator"
+    description: ""
+  - id:
+    term: "Theme"
+    description: ""
+  - id:
+    term: "Template"
+    description: ""
+  - id:
+    term: "Terminal"
+    description: "Mac OS Command line interface."
+  - id:
+    term: "Text editor"
+    description: ""
+  - id:
+    term: "Version control"
+    description: ""
+  - id:
+    term: "YAML file"
+    description: "YAML files are used to describe data. YAML is a human-readable data serialization language."
