@@ -242,7 +242,7 @@ Type: Array
 | Attribute | Expected Value | Description |
 | --- | --- | --- |
 | `id` | string | Required. Used to reference objects from entry pages. Should be numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
-| `figures` | [array](#figure) | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. |
+| `figure` | [array](#figure) | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. |
 | `link` | url | A URL link to a page with more/current information on the object. Usually the object in the museum’s online collection pages. |
 | `date_start`, `date_end` | integer | Reserved for future use in Quire. |
 | `dimension_width`, `dimension_height`, `dimension_depth` | integer | Reserved for future use in Quire. |

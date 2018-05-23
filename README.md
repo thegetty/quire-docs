@@ -55,12 +55,15 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
   - [Install Mac](content/resources/install-mac.md)
   - [Install PC](content/resources/install-pc.md)
   - [Quire CLI Instructions](content/resources/quire-cli.md)
+  - [Using GitHub](content/resources/github.md)
   - [Sample publication.yml file](content/resources/sample-publication.yml)
   - [Accessibility Principals](content/resources/accessibility.md)
   - [Hugo Documentation](https://gohugo.io/documentation/)
 - Workshops
   - [MCN 2017](content/workshops/mcn-2017.md)
-  - [CAA 2018](content/workshops/caa-2018.md)
+  - [College Art Association 2018](content/workshops/caa-2018.md)
+  - [Museums and the Web 2018](content/workshops/mw-2018.md)
+  - [National Museum Publishing Seminar 2018](content/workshops/nmps-2018.md)
 - Articles of Interest
   - [“Quire: A New Publishing Tool”](http://www.getty.edu/publications/digital/platforms-tools.html)
   - [“Why Static Site Generators Are the Next Big Thing”](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
