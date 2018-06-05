@@ -3,10 +3,10 @@ title: Figure Images
 type: page
 ---
 
-Quire books are visual and the framework is built to support the use of images for scholarly purposes. In this page we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the `q-figure` [shortcode](#inserting-figure-images-with-shortcodes).
+Quire books are visual and the framework is built to support the use of images for scholarly purposes. In this page we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-shortcodes).
 
 
-## Adding Figure Images to Your Publication
+## Including Figure Image Files in Your Publication
 
 Figure image files should be placed in the `static/img/` directory. It is defined in your project `config.yml` file with the parameter `imageDir: "/img/"` and the directory can be changed if needed.
 
@@ -20,7 +20,7 @@ Quire does not require a specific image file format or size, but we have some re
 
 *For more information on web image sizing and optimization, visit [Google's Web Fundamentals guide on Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#top_of_page).*
 
-## Adding Figure Images to Your Pages Using `figures.yml`
+## Creating a `figures.yml` File for Figure Image Metadata
 
 For most publications, or at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file which should be placed in your `data` folder. These then can be called from wherever you need them in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](../api-docs/yaml.md#figure), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
 
@@ -37,11 +37,11 @@ Also available are the attributes `caption`, `credit`, `media_id`, `media_type`,
 
 [note] If your figures are organized in sub-directories within your `static/img/` directory, they should appear as part of the file path under `src`, otherwise, only the filename is needed.
 
-## Inserting Figure Images with Shortcodes
+## Inserting Figure Images the `q-figure` Shortcode
 
-Assuming each YAML figure entry includes a unique `id` (with a value in quotes: "1.1" not 1.1), you can insert a figure in your publication with only the `id` attribute in the shortcode, and all of the other attributes defined in the YAML for that figure, will be automatically included.
+Assuming each YAML figure entry in the `figures.yml` file includes a unique `id` (with a value in quotes: "1.1" not 1.1), you can insert a figure in your publication with only the `id` attribute in the shortcode, and all of the other attributes defined in the YAML for that figure, will be automatically included.
 
-Note that the figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
+Figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
 
 ```
 {{< q-figure id="1.2" >}}
@@ -68,7 +68,7 @@ To customize the label text on a figure-by-figure basis, use the `label_text` at
 To remove a label from a specific figure or a group of figures, add `label="false"` to the shortcode. Or, in reverse, if you already have `figureLabels: false` set in your `config.yml` file, use `label="true"` in the shortcode to show a label for that figure.
 
 
-## Styling Figure Images with Shortcodes
+## Styling Figure Images
 
 Depending on your theme[&], by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left`, `is-pulled-right`, `is-large`, and `is-small`. Classes are added just like other attributes in the shortcode.
 
@@ -82,7 +82,7 @@ Depending on your theme[&], by default figures will appear at about the width of
 
 [note]Some themes may offer additional options, and styles may be edited and new styles added in any theme with css[&] (https://www.w3.org/Style/CSS/Overview.en.html).
 
-## Creating and Styling Figure Groups with shortcodes
+## Creating and Styling Figure Groups with the `q-figure-group` Shortcode
 
 If your project uses a `figures.yml` file, you can also create a group of figures by using the `q-figure-group` shortcode and simply including multiple, comma-separated values in the `id` field.
 
