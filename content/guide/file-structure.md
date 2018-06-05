@@ -5,7 +5,7 @@ type: page
 
 Inside each Quire project, Hugo[&] will define the following directories and files:
 
-![Quire File Structure](../screenshots/file-structure.png)
+![Quire File Structure](../images/screenshots/file-structure.png)
 
 [note/tip] The three directories that most users work in are `content`, `data`, and `static`. Developers and designers will also make use of `themes`.
 
