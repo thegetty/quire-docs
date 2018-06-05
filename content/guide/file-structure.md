@@ -5,7 +5,7 @@ type: page
 
 Inside each Quire project, Hugo[&] will define the following directories and files:
 
-![Quire File Structure](../images/quire-file-structure.png)
+![Quire File Structure](../images/screenshots/file-structure.png)
 
 [note/tip] The three directories that most users work in are `content`, `data`, and `static`. Developers and designers will also make use of `themes`.
 
@@ -67,11 +67,12 @@ mypublication.com/part-two/chapter-03/
 
 What content doesn’t live in `content` directory as a Markdown file[&], will live here in the `data` directory as a YAML file[&]. A `publication.yml` file is required (read more in [*Publication Metadata & Configuration*](content/guide/metadata.md)), but a Quire project may also include `references.yml` ([*Citations & Bibliographies*](content/guide/bibliographies.md)); `figures.yml` ([*Figures*](content/guide/figures.md)); and `objects.yml` (*not yet defined*).
 
-## 📁 public
+
+## 📁 site
 
 Where the built pages of the Quire website will be. This folder and its contents are automatically generated with the `quire build` command in the command line interface[&], and should not be edited directly.
 
-[note/warning] The `public` directory won’t be present in the project until running `quire build` command the first time. And even then, may not be viewable in a text editor (depending on which is used) as it’s included in `.gitignore`. Read more in [*Outputting & Deploying Your Site*](content/guide/output.md).
+[note/warning] The `site` directory won’t be present in the project until running `quire build` command the first time. And even then, may not be viewable in a text editor (depending on which is used) as it’s included in `.gitignore`. Read more in [*Outputting & Deploying Your Site*](content/guide/output.md).
 
 ## 📁 static
 
