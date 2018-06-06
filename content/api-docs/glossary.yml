@@ -3,6 +3,9 @@ glossary_list:
     term: "BISAC codes"
     description: "http://bisg.org/page/bisacedition"
   - id:
+    term: "Blackfriday"
+    description: "https://github.com/russross/blackfriday"
+  - id:
     term: "Command line interface"
     description:
   - id:
@@ -18,11 +21,17 @@ glossary_list:
     term: "`Git` project management sites"
     description:
   - id:
+    term: "CSS"
+    description: "https://www.w3.org/Style/CSS/Overview.en.html"
+  - id:
     term: Hugo
     description: "Static site generator that powers Quire"
   - id:
     term: IANA
     description: "https://www.iana.org/"
+  - id:
+    term: Image Optimization
+    description: "web image sizing and optimization, visit [Google's Web Fundamentals guide on Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#top_of_page)."
   - id:
     term: ISBN
     description: "https://www.isbn.org/"
@@ -41,6 +50,9 @@ glossary_list:
   - id:
     term: "Markdown file"
     description: "A file formatted in Markdown, a very simple plain text markup language, that generates a Web page. Markdown files have a YAML block at the top containing the metadata of the page."
+  - id:
+    term: "Markdown Processor"
+    description: ""
   - id:
     term: Media type
     description: "https://www.iana.org/assignments/media-types/media-types.xhtml"
@@ -64,6 +76,9 @@ glossary_list:
     description: "Mac OS Command line interface."
   - id:
     term: "Text editor"
+    description: ""
+  - id:
+    term: "Unicode"
     description: ""
   - id:
     term: "Version control"
