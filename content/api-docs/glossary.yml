@@ -1,7 +1,19 @@
 glossary_list:
   - id:
+    term: "BISAC codes"
+    description: "http://bisg.org/page/bisacedition"
+  - id:
     term: "Command line interface"
     description:
+  - id:
+    term: "Copyright"
+    description: "https://www.copyright.gov/help/faq/faq-general.html#what"
+  - id:
+    term: "Creative Commons Licences"
+    description: "CC 0, CC BY, CC BY-SA, CC BY-ND, CC BY-NC, CC BY-NC-SA, or CC BY-NC-ND. https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/"
+  - id:
+    term: "Getty vocabularies"
+    description: "http://www.getty.edu/research/tools/vocabularies/"
   - id:
     term: "`Git` project management sites"
     description:
@@ -9,10 +21,37 @@ glossary_list:
     term: Hugo
     description: "Static site generator that powers Quire"
   - id:
+    term: IANA
+    description: "https://www.iana.org/"
+  - id:
+    term: ISBN
+    description: "https://www.isbn.org/"
+  - id:
+    term: ISO 8601 format
+    description: "https://www.w3.org/TR/NOTE-datetime"
+  - id:
+    term: ISO 639-1 language code
+    description: "https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
+  - id:
+    term: ISSN
+    description: "http://www.issn.org/"
+  - id:
+    term: Link relation
+    description: "http://www.iana.org/assignments/link-relations/link-relations.xhtml"
+  - id:
     term: "Markdown file"
     description: "A file formatted in Markdown, a very simple plain text markup language, that generates a Web page. Markdown files have a YAML block at the top containing the metadata of the page."
   - id:
+    term: Media type
+    description: "https://www.iana.org/assignments/media-types/media-types.xhtml"
+  - id:
+    term: Search Engine Optimization SEO
+    description: ""
+  - id:
     term: "Static-site Generator"
+    description: ""
+  - id:
+    term: "Shortcode"
     description: ""
   - id:
     term: "Theme"

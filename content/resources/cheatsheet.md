@@ -48,6 +48,24 @@ Other typical Markdown formatting is listed below. Note that the spacing after t
 
 ## YAML
 
+In a Quire publication, anything that could be considered data, is written in a plain-text data format called [YAML](http://yaml.org/).
+
+- YAML is used for configuring how Quire works and for providing metadata about your publication in files with the extension `.yml` (both topics covered in [Publication Configuration & Metadata](../guide/metadata)).
+
+- `.yml` files are also used for storing information about figures, bibliographic references, and art objects.
+
+- In individual pages or chapters within the publication, written in Markdown and with a `.md` extension, there is a YAML block that contains the page metadata. For example the YAML block for the page you’re on right now is:
+
+```
+---
+title: Cheatsheet
+type: page
+---
+```
+
+### YAML
+
+
 ```yaml
 item:
 other_item:
@@ -58,7 +76,7 @@ multiple_items:
     item_description:
 ```
 
-```yaml
+-```yaml
 item: "If the text here has a colon : or other special characters it should be surrounded in double quotes"
 ```
 
@@ -73,7 +91,9 @@ item: |
   - also allowed
 ```
 
-YAML Validator: [http://www.yamllint.com/](http://www.yamllint.com/)
+[YAML Lint](http://www.yamllint.com/)
+[Code Beautify validator](https://codebeautify.org/yaml-validator)
+
 
 ## Shortcodes
 
@@ -89,4 +109,3 @@ YAML Validator: [http://www.yamllint.com/](http://www.yamllint.com/)
 {{< q-contributors range="xxxx" type="xxxx" >}}
 
 ```
-
