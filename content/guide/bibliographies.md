@@ -2,8 +2,7 @@
 title: Citations & Bibliographies
 type: page
 ---
-
-
+In-text citations and bibliographies are all available in Quire. Designed to meet scholarly needs and multiple citation styles, they are easy to implement in your publications. While bibliographic references are formatted in YAML and stored in a YAML file (you can consult our [YAML syntax fundamentals](../fundamentals/yaml) for more information), citation and bibliography shortcodes are used to integrate the references in your publication.
 
 ## Capturing Bibliographic Information in YAML
 
@@ -30,7 +29,7 @@ The `q-cite` shortcode adds a linked Author Date citation reference to the text,
 ```
 The shortcode can be used anywhere in your Markdown text, including within footnotes. The first positional parameter is a short form citation that should match one in `references.yml`. The second, optional parameter is a page reference (if needed). The above sample would output as: “Faure 1909, 54”.
 
-The text element between the author date reference and the page (in this case, a comma and a space) can be changed with the `citationPageLocationDivider` property in your publication’s `config.yml` file.
+[note] The text element between the author date reference and the page (in this case, a comma and a space) can be changed with the `citationPageLocationDivider` property in your publication’s `config.yml` file according to your preferred citation style.
 
 ## Displaying a Bibliography
 
