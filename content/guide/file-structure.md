@@ -13,6 +13,11 @@ Inside each Quire project, Hugo[&] will define the following directories and fil
 
 Currently it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages. May be eliminated. Read more in [*Outputting & Deploying Your Site*](content/guide/output.md).
 
+## 📁 config
+
+This is a configuration directory
+While most Quire configuration happens in the [`config.yml`](#configyml) file as explained below, the `config` directory gives more specific controls for different output formats and development environments. In most cases changes won’t need to be made to these files until you are deploying your site. Read more in [*Outputting & Deploying Your Site*](content/guide/output.md).
+
 ## 📁 content
 
 The central part of a Quire, the `content` directory is where almost all of a publication’s text content will live as individual Markdown files[&]. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Pages & Plain Text*](content/guide/text.md).
@@ -30,7 +35,7 @@ Where the built pages of the Quire website will be. This folder and its contents
 
 ## 📁 static
 
-The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through the Hugo static-site generator[&]. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](content/guide/styles.md)); a `downloads` directory for the multiple Quire formats ([*Outputting & Deploying Your Site*](content/guide/output.md)); and an `img` directory for all image and other media assets ([*Figures*](content/guide/figures.md), and [*Other Images & Assets*](content/guide/assets.md)).
+The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through the Hugo static-site generator[&]. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](content/guide/styles.md)); a `downloads` directory for the multiple Quire formats ([*Outputting & Deploying Your Site*](content/guide/output.md)); and an `img` directory for all image and other media assets ([*Figure Images*](content/guide/figures.md)).
 
 ## 📁 themes
 
