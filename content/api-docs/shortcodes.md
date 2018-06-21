@@ -27,9 +27,9 @@ Basic Usage: Adds a linked Author Date citation reference to the text, and a hov
 
 See: [Citations & Bibliographies](bibliographies/index.html)
 
-## `q-contributors`
+## `q-contributor`
 
-Sample: `{{< q-contributors range="page" type="bio" >}}`
+Sample: `{{< q-contributor range="page" type="bio" >}}`
 
 Basic Usage: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
 
