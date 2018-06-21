@@ -22,7 +22,7 @@ These references can then be called individually from within text using the `q-c
 
 ## Adding Inline Text Citations
 
-The `q-cite` shortcode adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which can be output as a page-level bibliography on pages with a `type` of `essay` and `entry`, as explained [below](#displaying-a-bibliography).
+The `q-cite` shortcode adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which can be output as a page-level bibliography on pages with a `type` of `"essay"` and `"entry"`, as explained [below](#displaying-a-bibliography).
 
 ```
 {{< q-cite "Faure 1909" "54" >}}
@@ -33,7 +33,7 @@ The shortcode can be used anywhere in your Markdown text, including within footn
 
 ## Displaying a Bibliography
 
-Pages in your publication with a `type` of `essay` or `entry`, will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode.
+Pages in your publication with a `type` of `"essay"` or `"entry"`, will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode.
 
 However, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yml` file, you can use the `q-bibliography` shortcode. The resulting bibliography will be output in the order in which it appears in the references file.
 
