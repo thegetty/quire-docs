@@ -16,9 +16,8 @@ Quire does not require a specific image file format or size, but we have some re
 
 - Use JPEG, PNG or GIF.
 - Only include images at as big a size as most readers will need. 800px on the longest side is fine for most figures, up to 1200px on the longest side for modest zooming. We find these size also work well enough in print.
-- Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use optimization software[&] when possible, and consider the total number of images on a given page when choosing sizes.
+- Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use image optimization[&] software when possible, and consider the total number of images on a given page when choosing sizes.
 
-*For more information on web image sizing and optimization, visit [Google's Web Fundamentals guide on Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#top_of_page).*
 
 ## Creating a `figures.yml` File for Figure Image Metadata
 
@@ -55,7 +54,7 @@ If you include an attribute in the shortcode that is also in the `figures.yml` f
 
 [note] Note that including an attribute in this way but leaving it blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`.
 
-*Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{< q-figure id="1.2" caption="" >}}` is the same as `{{< q-figure caption="" id="1.2" >}}`.* (goes in Cheatsheet)
+[note] Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{< q-figure id="1.2" caption="" >}}` is the same as `{{< q-figure caption="" id="1.2" >}}`.
 
 ## Labeling Figure Images
 
@@ -76,11 +75,10 @@ Depending on your theme[&], by default figures will appear at about the width of
 {{< q-figure id="1.2" class="is-pulled-left" >}}
 ```
 
-![`is-pulled-left`](../images/is-pulled-left.png "Example of a figure with the `is-pulled-left` class")
-![`is-pulled-right`](../images/is-pulled-right.png "Example of a figure with the `is-pulled-right` class")
+![`is-pulled-left-right`](../images/screenshots/left-right.png)
 
 
-[note]Some themes may offer additional options, and styles may be edited and new styles added in any theme with css[&] (https://www.w3.org/Style/CSS/Overview.en.html).
+[note]Some themes may offer additional options, and styles may be edited and new styles added in any theme with css[&].
 
 ## Creating and Styling Figure Groups with the `q-figure-group` Shortcode
 
@@ -89,11 +87,10 @@ If your project uses a `figures.yml` file, you can also create a group of figure
 ```
 {{< q-figure-group id="1.1, 1.2" >}}
 ```
-![`figures-group`](../images/two-figures.png "This is how the two figures would appear on your page when using the shortcode")
 
 In the above example, each figure’s caption will be included in the grouping. Alternatively, if you add a `caption` attribute directly in the shortcode, it will override those present in the `figures.yml` file and display with the group alone as a single, group caption.
 
-![`figure-group-caption`](../images/figures-group-caption.png "Example of a figure group caption")
+![`figure-group-caption`](../images/screenshots/group-caption.png)
 
 Just as with the single `q-figure` shortcode, classes can be added to groups to style them. For example, to create a small group of images running along one side of your text.
 
@@ -108,8 +105,7 @@ In addition to all the attributes available to the `q-figure` shortcode, the `q-
 {{< q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" >}}
 ```
 
-[`figures-grid`](../images/figures-group.png "This is how the figures would be displayed when the `grid` value is set to `2`")
-[`figures-grid-1`](../images/figures-group-1.png "This is how the figures would be displayed when the `grid` value is set to `4`")
+![`figures-grid`](../images/screnshots/grid.png)
 
 [note] Note that this is only a **preferred** grid width. With Quire’s responsively designed templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
 This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures individually.
