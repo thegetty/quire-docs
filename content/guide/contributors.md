@@ -9,7 +9,7 @@ Quire is designed to credit and add contributors to publications in a flexible w
 
 Contributors can be listed under `contributor` in your `publication.yml` file, or in the YAML block at the top of any page in your project for contributors specific to that page.
 
-Each `contributor` should have a `type` specified of either `primary`, `secondary`, or `project-team`.
+Each `contributor` should have a `type` specified of either `"primary"`, `"secondary"`, or `"project-team"`.
 
 - **Primary** contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire templates[&], they are typically used on the cover, the menu and in the [metadata embedded in your publication](metadata.md); listed as the creators of the publication.
 
@@ -43,22 +43,22 @@ Not all of these are required. Depending on your usage, you may need as little a
 
 ## Displaying a List of Contributors
 
-You can use the `q-contributor` shortcode to create a page of contributor biographies, a section of bios for a single page, a list of contributors, a byline for a particular page, or other similar applications. The shortcode requires both a `range` and a `type` value.
+You can use the `q-contributor` shortcode to create a page of contributor biographies, a section of bios for a single page, a list of contributors, a byline for a particular page, or other similar applications. The shortcode requires both a `"range"` and a `"type"` value.
 
 Sample: `{{< q-contributors range="page" type="bio" >}}`
 
-The `range` value determines which contributors will be included in the list. Possible `range` values are:
+The `"range"` value determines which contributors will be included in the list. Possible `"range"` values are:
 
 | Value | Description |
 | --- | --- |
 |`page` | Only the contributors listed for the page the shortcode appears on. |
 | `essays` | Contributors on any page in your publications with `type: essay`. |
 | `all` | All contributors. |
-| `primary` | Contributors listed under `contributor` in your `publication.yml` file, and with a `type` of `primary`. |
-| `secondary` | Contributors listed under `contributor` in your `publication.yml` file, and with a `type` of `secondary`. |
-| `project-team` | Contributors listed under `contributor` in your `publication.yml` file, and with a `type` of `project-team`. |
+| `primary` | Contributors listed under `contributor` in your `publication.yml` file, and with a `type` of `"primary"`. |
+| `secondary` | Contributors listed under `contributor` in your `publication.yml` file, and with a `type` of `"secondary"`. |
+| `project-team` | Contributors listed under `contributor` in your `publication.yml` file, and with a `type` of `"project-team"`. |
 
-The `type` value determines what information will be listed for each contributor in the `range`, and how it will be formatted. Possible `type` values are:
+The `"type"` value determines what information will be listed for each contributor in the `"range"`, and how it will be formatted. Possible `"type"` values are:
 
 | Value | Description |
 | --- | --- |
