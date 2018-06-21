@@ -92,7 +92,7 @@ In this example, inside the `content` directory, we have a folder called `catalo
   📄 3.md
 ```
 
-The `overview.md` file is going to be our visual table of contents. To populate it, simply give it the attribute `type` a value of `contents` and the attribute `class` a value of  `brief`, `list`, `abstract`, or `grid` to determine the style. (The `grid` option will include an image from each entry page.) This `contents` page type will automatically generate from each of the Markdown files in the folder.
+The `overview.md` file is going to be our visual table of contents. To populate it, simply give it the attribute `type` a value of `contents` and the attribute `class` a value of  `"brief"`, `"list"`, `"abstract"`, or `"grid"` to determine the style. (The `"grid"` option will include an image from each entry page.) This `contents` page type will automatically generate from each of the Markdown files in the folder.
 
 ```yaml
 title: Catalogue
