@@ -6,6 +6,12 @@ glossary_list:
     term: "Blackfriday"
     description: "https://github.com/russross/blackfriday"
   - id:
+    term: "Bulma variables"
+    description: "https://bulma.io/documentation/overview/variables/"
+  - id:
+    term: "color keywords"
+    description: "https://www.w3.org/TR/SVG/types.html#ColorKeywords"
+  - id:
     term: "Command line interface"
     description:
   - id:
@@ -15,20 +21,35 @@ glossary_list:
     term: "Creative Commons Licences"
     description: "CC 0, CC BY, CC BY-SA, CC BY-ND, CC BY-NC, CC BY-NC-SA, or CC BY-NC-ND. https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/"
   - id:
+    term: "class"
+    description: "CSS class, they start with a period `.` "
+  - id:
+    term: "CSS"
+    description: "https://www.w3.org/Style/CSS/Overview.en.html"
+  - id:
+    term: "CSS selector"
+    description: "https://www.w3.org/Style/CSS/Overview.en.html"
+  - id:
+    term: "element"
+    description: "CSS element"
+  - id:
     term: "Getty vocabularies"
     description: "http://www.getty.edu/research/tools/vocabularies/"
   - id:
     term: "`Git` project management sites"
     description:
   - id:
-    term: "CSS"
-    description: "https://www.w3.org/Style/CSS/Overview.en.html"
+    term: HEX color value
+    description: "http://www.color-hex.com/"
   - id:
     term: Hugo
     description: "Static site generator that powers Quire"
   - id:
     term: IANA
     description: "https://www.iana.org/"
+  - id:
+    term: id
+    description: "CSS id. "
   - id:
     term: Image Optimization
     description: "web image sizing and optimization, visit [Google's Web Fundamentals guide on Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#top_of_page)."
@@ -57,6 +78,9 @@ glossary_list:
     term: Media type
     description: "https://www.iana.org/assignments/media-types/media-types.xhtml"
   - id:
+    term: RGB color value
+    description: "RGB color value calculator https://www.w3schools.com/colors/colors_rgb.asp"
+  - id:
     term: Search Engine Optimization SEO
     description: ""
   - id:
@@ -80,6 +104,9 @@ glossary_list:
   - id:
     term: "Unicode"
     description: ""
+  - id:
+    term: "Variable"
+    description: "CSS variable"
   - id:
     term: "Version control"
     description: ""
