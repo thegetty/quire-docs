@@ -9,9 +9,9 @@ The look and feel of your Quire publication can be customized at four different 
 
 Every Quire project has a theme[&] inside the `themes` directory. When you first start a new project typing the `quire new` command in your command line interface, the default theme included is `quire-starter-theme`. In it, you can access simple text variables[&] that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.
 
-To find the variables, open the `quire-starter-theme` directory, navigate to the `source` sub-directory and then `css`, and open the file called `application.scss`.
+To find the variables, open the `quire-starter-theme` directory, navigate to the `source` sub-directory and then `css`, and open the file called `variables.scss`.
 
-![screenshot of the application.scss file in the quire-starter-theme directory](../images/screenshots/style1.png)
+![screenshot of the variables.scss file in the quire-starter-theme directory](../images/screenshots/style1.png)
 
 The variables[&] are prefixed with a dollar sign and are descriptive of what they control. For instance `$quire-navbar-background-color` is the background color of the navigation bar at the top of every page. To make it red, you could enter:
 
@@ -27,7 +27,7 @@ Colors are expressed a number of different ways, none of which are better or mor
 
 The `quire-starter-theme` uses the Bulma CSS framework, so you can also use any Bulma variables[&].
 
-[Note] You must have the `quire preview` command running in your command line interface to see changes you make to the `application.scss` file. You may also sometimes need to refresh your browser page, or even clear the browser cache to get the style changes to fully load.
+[Note] You must have the `quire preview` command running in your command line interface to see changes you make to the `variables.scss` file. You may also sometimes need to refresh your browser page, or even clear the browser cache to get the style changes to fully load.
 
 ## Adding Custom Styles
 
@@ -87,7 +87,7 @@ In the above example, we are selecting the element with a class[&] of `"title"` 
 
 ## Overriding Theme Templates
 
-CSS[&] changes like those mentioned above are best for re-styling existing elements. If though you’d like to make a more structural change, say, to rearrange elements on the page, or add new elements altogether, you’ll need to alter the template[&] files that come in the theme[&]. That said, other than changing the variables[&] in `application.scss` file, as described above, it’s usually best not to make other changes directly in the theme itself. By not doing so, it’s much easier to update your theme or switch out other themes later, not to mention easier to undo changes you’ve made.
+CSS[&] changes like those mentioned above are best for re-styling existing elements. If though you’d like to make a more structural change, say, to rearrange elements on the page, or add new elements altogether, you’ll need to alter the template[&] files that come in the theme[&]. That said, other than changing the variables[&] in `variables.scss` file, as described above, it’s usually best not to make other changes directly in the theme itself. By not doing so, it’s much easier to update your theme or switch out other themes later, not to mention easier to undo changes you’ve made.
 
 For modest changes to the theme templates[&], we recommend creating new override files. Much like the `custom.css` file can be used to override styles in the project theme, you can also have files to override templates. There are none in the default starting project, so you’ll need to start be creating a new `layouts` directory folder in the main directory of your project. Any files you put in this `layouts` directory will override the corresponding files in the `layouts` directory of your theme. This includes page templates, partial templates and shortcodes.
 
