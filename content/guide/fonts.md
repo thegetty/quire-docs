@@ -25,7 +25,7 @@ Any font you add to your project should be under an open license, or you should 
 
 For open fonts, [Google Fonts](https://fonts.google.com/) is a great source, but other more artisanal options abound like the faces from the [League of Moveable Type](https://www.theleagueofmoveabletype.com/), or even the [Cooper Hewitt’s own open source font](https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/). For more free fonts and for thoughtful ideas about their use, Jeremiah Shoaf’s [*The Definitive Guide to Free Fonts*](https://www.typewolf.com/free-fonts), is worth the purchase price
 
-### Preparing Your Font Files and Adding Them to Your Project
+### 1. Preparing Your Font Files and Adding Them to Your Project
 
 It’s recommended to include your font files in multiple file formats in order to increase browser compatibility. Ideally, you will have each of your fonts in the following formats: `.eot`, `.woff2`, `.woff`, and `.ttf`.
 
@@ -57,7 +57,7 @@ You will continue to have the fonts available in your local copy of your project
 
 When you ultimately host the final site on a web server, the fonts will be included in the built files and will need to be included in the package on the web server. Files hosted this way are not readibly accessible to non-technical users, but are still public. For another layer of protection, if it’s of a concern, font files could be assigned more generic names (ie., `f1-bld.ttf` instead of `cooper-hewitt-bold.ttf`). For complete protection of licensed/proprietary font files, other solutions should be sought.
 
-### Adding Font Information to Your Stylesheets
+### 2. Adding Font Information to Your Stylesheets
 
 Open the file `source/css/fonts.scss`. Each font in your font folder should have its own `@font-face` entry as the examples in this file demonstrate.
 
@@ -92,7 +92,7 @@ The `font-weight` should be an integer set to match named weight of your font. F
 
 The `font-style` will be either `normal` or `italic`.
 
-### Using Your New Font
+### 3. Using Your New Font
 
 With the font files included in the `source/fonts` folder, and all the matching `@font-face` entries saved to the `source/css/fonts.scss` file, you can now use your font anywhere in your site CSS with `font-family`.
 
