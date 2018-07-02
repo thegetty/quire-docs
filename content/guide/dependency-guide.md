@@ -1,5 +1,5 @@
 ---
-title: Quire Dependecy Guide
+title: Quire Dependency Guide
 type: page
 ---
 
