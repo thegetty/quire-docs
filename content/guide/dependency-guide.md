@@ -13,10 +13,6 @@ Quire makes use of Hugo via the npm package <a href="https://www.npmjs.com/packa
 
 Quire uses hugo's cli, templating system and http server. to create a way to preview your site while editig the front end code, build a static html site and aids Prince XML to create a PDF of your publication you are building.
 
-To access the the templates files to customize your publication follow this path to edit hugo template files 
-
-`<your-project-directory>/themes/quire-starter-theme/layouts`
-
 <a  alt="Prince XML" title="Prince XML" href="https://www.princexml.com/"><img src="../images/prince-xml-logo.png" alt="Prince XML" title="Prince XML" width="100"/></a>
 
 > Prince can also be used by authors and publishers to typeset and print documents written in HTML, XHTML, or one of the many XML-based document formats. Prince is capable of formatting academic papers, journals, magazines, and books.
@@ -42,3 +38,5 @@ In the development of Quire there has been discussion about moving away from web
 ### [pe-epub](https://github.com/peoples-e/pe-epub) and [pe-epub-fs](https://github.com/peoples-e/pe-epub-fs)
 
 >"pee pub" makes epubs better. Our goal is to make it as easy as possible to output a valid epub. It's used in production over at The People's E-Book. pe-epub-fs extends pe-epub so you can import local assets from your filesystem rather than from the web.
+
+Quire uses these projects to generate the .epub file format. This file can be access on any device or software that reads the .epub file format. These projects generate a mostly style stripped version of the publication. These projects have been receiving limited maintanace. Quire is currently seeking a replacement to output the epub file format.
