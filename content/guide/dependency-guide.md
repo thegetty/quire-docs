@@ -19,7 +19,7 @@ Quire uses hugo's cli, templating system and http server. to create a way to pre
 
 Quire uses the output of Hugo static-site generator to build a PDF as referenced abovee
 
-<a href="https://webpack.js.org/" alt="webpack" title="webpack" ><img src="../images/webpack-logo.png" alt="webpack" title="webpack" width="100"/></a>
+<a href="https://webpack.js.org/" alt="webpack" title="webpack" ><img src="../images/webpack-logo.png" alt="webpack" title="webpack" width="150"/></a>
 
 > At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.
 
