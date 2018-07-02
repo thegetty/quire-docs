@@ -27,13 +27,9 @@ Quire makes use of Webpack via the npm package <a href="https://www.npmjs.com/pa
 
 Currently Quire starter theme uses the latest version of webpack 4 to bundle front end assets and support the development workflow. 
 
-To modify the webpack configuration to your liking edit this file 
+To modify the webpack configuration for your project edit this file 
 
 `<your-project-directory>/themes/quire-starter-theme/webpack.config.js`
-
-then run `quire preview` to start editing the front end.
-
-In the development of Quire there has been discussion about moving away from webpack in the starter theme, follow this <a href="https://github.com/gettypubs/quire/issues/35">link</a> to track the state of webpack in Quire.
 
 ### [pe-epub](https://github.com/peoples-e/pe-epub) and [pe-epub-fs](https://github.com/peoples-e/pe-epub-fs)
 
