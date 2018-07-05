@@ -36,3 +36,40 @@ To modify the Webpack configuration for your project edit this file
 >"pee pub" makes epubs better. Our goal is to make it as easy as possible to output a valid epub. It's used in production over at The People's E-Book. pe-epub-fs extends pe-epub so you can import local assets from your filesystem rather than from the web.
 
 Quire uses these projects to generate the EPUB file. This file can be access on any device or software that reads the .epub file format. These projects generate a mostly style stripped version of the publication. These projects have been receiving limited maintenance. Quire is currently seeking a replacement to output the EPUB file.
+
+## Quire Dependency Tables
+
+### CLI Dependencies
+
+| Dependency | NPM Description | Function in Quire |
+| --- | --- | --- |
+| axios | Promise based HTTP client for the browser and node.js |  |
+| chalk | Terminal string styling done right |  |
+| cheerio | Fast, flexible & lean implementation of core jQuery designed specifically for the server. |  |
+| command-exists | node module to check if a command-line command exists |  |
+| commander | The complete solution for node.js command-line interfaces, inspired by Ruby's commander. |  |
+| execa | A better `child_process` |  |
+| glob | Match files using the patterns the shell uses, like stars and stuff. |  |
+| hugo-bin | Binary wrapper for Hugo |  |
+| js-yaml | YAML 1.2 parser / writer for JavaScript | |
+| lodash | The Lodash library exported as Node.js modules. |  |
+| pe-epub | Makes epubs better. |  |
+| pe-epub-fs | Extends pe-epub so you can import local assets from your filesystem rather than from the web |  |
+| rimraf | The UNIX command rm -rf for node. |  |
+| striptags | An implementation of PHP's strip_tags in Node.js. |  |
+| webpack | webpack is a module bundler |  |
+| yaml-front-matter | Parses yaml or json at the front of a string. Places the parsed content, plus the rest of the string content, into an object literal. |  |
+
+### CLI Dev Dependencies
+
+| Dependency | NPM Description | Function in Quire |
+| --- | --- | --- |
+| eslint | ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. |  |
+| eslint-config-standard |  |  |
+| eslint-plugin-promise | Enforce best practices for JavaScript promises. |  |
+| eslint-plugin-standard | ESlint Rules for the Standard Linter |  |
+| jsdoc | An API documentation generator for JavaScript. |  |
+| jsdoc-template-argon |  |  |
+| mocha | Simple, flexible, fun JavaScript test framework for Node.js & The Browser |  |
+| tmp | A simple temporary file and directory creator for node.js. |  |
+
