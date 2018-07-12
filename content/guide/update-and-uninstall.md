@@ -37,8 +37,38 @@ You may also need to clear your browser cache to get the new theme stylesheets t
 
 ## Updating the Quire CLI
 
-TK
+As we develop, you may also want/need to update your Quire CLI (the part of Quire that gives you the ability to run `quire` commands in your command line shell). In particular, the CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI any new projects you start will also have an older version of the theme.
+
+1. In your User/Home directory where you initially installed Quire, look for the `quire-cli` folder and delete it.
+
+2. In your command line shell, enter the following three commands in order:
+
+    ```
+    git clone https://github.com/gettypubs/quire-cli.git
+    ```
+
+    ```
+    cd quire-cli
+    ```
+
+    ```
+    npm install -g
+    ```
+
+You now have the latest Quire CLI and any new projects you start will also have the newest theme. Your previously-started projects will keep their original version of theme. You may in some cases see errors or issues when running Quire commands with a newer version of the CLI, in older projects. These can be fixed manually, or, you can also always re-install [your original version of the CLI](https://github.com/gettypubs/quire-cli/releases) to run those older projects if necessary.
 
 ## Uninstalling Quire
 
-TK
+To uninstall Quire:
+
+1. From a new window in your command line shell (you should be in your home/user directory where you initially installed Quire) type the following two commands:
+
+    ```
+    cd quire-cli
+    ```
+
+    ```
+    npm uninstall -g
+    ```
+
+2. In the folder/finder view, go to your user/home directory where you initially installed Quire, look for the `quire-cli` folder and delete it.
