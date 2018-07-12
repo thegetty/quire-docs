@@ -41,35 +41,35 @@ Quire uses these projects to generate the EPUB file. This file can be access on 
 
 ### CLI Dependencies
 
-| Dependency | NPM Description | Function in Quire |
-| --- | --- | --- |
-| axios | Promise based HTTP client for the browser and node.js |  |
-| chalk | Terminal string styling done right |  |
-| cheerio | Fast, flexible & lean implementation of core jQuery designed specifically for the server. |  |
-| command-exists | node module to check if a command-line command exists |  |
-| commander | The complete solution for node.js command-line interfaces, inspired by Ruby's commander. |  |
-| execa | A better `child_process` |  |
-| glob | Match files using the patterns the shell uses, like stars and stuff. |  |
-| hugo-bin | Binary wrapper for Hugo |  |
-| js-yaml | YAML 1.2 parser / writer for JavaScript | |
-| lodash | The Lodash library exported as Node.js modules. |  |
-| pe-epub | Makes epubs better. |  |
-| pe-epub-fs | Extends pe-epub so you can import local assets from your filesystem rather than from the web |  |
-| rimraf | The UNIX command rm -rf for node. |  |
-| striptags | An implementation of PHP's strip_tags in Node.js. |  |
-| webpack | webpack is a module bundler |  |
-| yaml-front-matter | Parses yaml or json at the front of a string. Places the parsed content, plus the rest of the string content, into an object literal. |  |
+| Dependency | NPM Description | 
+| --- | --- |
+| [axios](https://www.npmjs.com/package/axios) | Promise based HTTP client for the browser and node.js |  
+| [chalk](https://www.npmjs.com/package/chalk) | Terminal string styling done right |  
+| [cheerio](https://www.npmjs.com/package/cheerio) | Fast, flexible & lean implementation of core jQuery designed specifically for the server. |  
+| [command-exists](https://www.npmjs.com/package/command-exists) | node module to check if a command-line command exists |  
+| [commander](https://www.npmjs.com/package/commander) | The complete solution for node.js command-line interfaces, inspired by Ruby's commander. |  
+| [execa](https://www.npmjs.com/package/execa) | A better `child_process` |  
+| [glob](https://www.npmjs.com/package/glob) | Match files using the patterns the shell uses, like stars and stuff. |  
+| [hugo-bin](https://www.npmjs.com/package/hugo-bin) | Binary wrapper for Hugo |  
+| [js-yaml](https://www.npmjs.com/package/js-yaml) | YAML 1.2 parser / writer for JavaScript | 
+| [lodash](https://www.npmjs.com/package/lodash) | The Lodash library exported as Node.js modules. | 
+| [pe-epub]() | Makes epubs better. |  
+| [pe-epub-fs]() | Extends pe-epub so you can import local assets from your filesystem rather than from the web |
+| [rimraf](https://www.npmjs.com/package/rimraf) | The UNIX command rm -rf for node. |  
+| [striptags](https://www.npmjs.com/package/striptags) | An implementation of PHP's strip_tags in Node.js. |
+| [webpack](https://www.npmjs.com/package/webpack) | webpack is a module bundler |  
+| [yaml-front-matter](https://www.npmjs.com/package/yaml-front-matter) | Parses yaml or json at the front of a string. Places the parsed content, plus the rest of the string content, into an object literal. |  
 
 ### CLI Dev Dependencies
 
-| Dependency | NPM Description | Function in Quire |
-| --- | --- | --- |
-| eslint | ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. |  |
-| eslint-config-standard |  |  |
-| eslint-plugin-promise | Enforce best practices for JavaScript promises. |  |
-| eslint-plugin-standard | ESlint Rules for the Standard Linter |  |
-| jsdoc | An API documentation generator for JavaScript. |  |
-| jsdoc-template-argon |  |  |
-| mocha | Simple, flexible, fun JavaScript test framework for Node.js & The Browser |  |
-| tmp | A simple temporary file and directory creator for node.js. |  |
+| Dependency | NPM Description | 
+| --- | --- | 
+| [elint]([https://www.npmjs.com/package/eslint]) | ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. |  
+| [eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)  | Shareable configs are designed to work with the extends feature of .eslintrc files. You can learn more about Shareable Configs on the official ESLint website. |  
+| [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)  | Enforce best practices for JavaScript promises. |  
+| [eslint-plugin-standard](https://www.npmjs.com/package/eslint-plugin-standard)  | ESlint Rules for the Standard Linter |  
+| [jsdoc](https://www.npmjs.com/package/jsdoc)  | An API documentation generator for JavaScript. |  
+| [jsdoc-template-argon](https://www.npmjs.com/package/jsdoc-template-argon)  | Template System for jsdoc | 
+| [mocha](https://www.npmjs.com/package/mocha)  | Simple, flexible, fun JavaScript test framework for Node.js & The Browser |  
+| [tmp](https://www.npmjs.com/package/tmp)  | A simple temporary file and directory creator for node.js. |  
 
