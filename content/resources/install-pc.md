@@ -11,31 +11,25 @@ The full Quire system is not currently available to PC users. However, PC users 
 
 The following steps will install the necessary software for running a Quire project on a PC, and show you how to start a new project as well.
 
-1. Download and install **Git for Windows**:
+### Windows 10 Users:
 
-    Download the 32-bit or 64-bit version of Git for Windows to match your operating system. (Check your computer by clicking the Start button, right-clicking Computer, and then clicking Properties. Under System, you can view the system type.)
+1. Install the Windows Subsystem for Linux:
 
-    [https://gitforwindows.org/](https://gitforwindows.org/)
+    Open PowerShell as Administrator and run:
 
-    When installing, you can accept all the default options. When complete open the “Git Bash” program which is the command line shell you’ll use to run Quire projects. If you installed the 64-bit version and it doesn’t open, we recommend trying the 32-bit.
+    `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
 
-2. Download and install **Hugo**:
+    Restart your computer when prompted.
 
-    In your User directory, create a folder called `hugo` and within that, a subdirectory called `bin`.
+    Open the Microsoft Store and choose your favorite Linux distribution.
 
-    Download the 32-bit or 64-bit version of Hugo **0.31.1** to match your operating system.
+    From the distro's page, select "Get"
 
-    [https://github.com/gohugoio/hugo/releases/tag/v0.31.1](https://github.com/gohugoio/hugo/releases/tag/v0.31.1)
+    Once the download has completed, select "Launch".
 
-    Right click on the downloaded file and use the WinZip “Extract to ...” option to extract the contents into the `hugo/bin` directory you created.
 
-    Open Git Bash, with the "Run as administrator" option (right click), and copy and paste the following line, replacing `YOUR-USER-DIRECTORY` with the name of your actual directory.
+2. Download and install **Prince**:
 
-    ```
-    setx PATH "%PATH%;C:\Users\YOUR-USER-DIRECTORY\hugo\bin"
-    ```
-
-    [*More directions for installation can be found in the [Hugo documentation](https://gohugo.io/getting-started/installing/#windows).*]
 
 3. Start a new **Quire** project
 
@@ -59,6 +53,15 @@ The following steps will install the necessary software for running a Quire proj
 
     Once running, open a browser and visit [http://localhost:1313](http://localhost:1313) to see the publication.
 
+
+### All Other Windows Users:
+
+1. Download and Install Gitbash -> https://gitforwindows.org/
+2. Download and Install node and npm -> https://nodejs.org/en/download/
+3. run as admin from powershell npm install --g --production windows-build-tools (this installs c++ 2015 build tools and python 2 required for node-gyp)
+4. git clone git@github.com:gettypubs/quire-cli.git; cd quire-cli;
+5. npm i -g
+6. quire -V
 
 ### Troubleshooting
 
