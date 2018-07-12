@@ -71,5 +71,40 @@ Quire uses these projects to generate the EPUB file. This file can be access on 
 | [jsdoc](https://www.npmjs.com/package/jsdoc)  | An API documentation generator for JavaScript. |  
 | [jsdoc-template-argon](https://www.npmjs.com/package/jsdoc-template-argon)  | Template System for jsdoc | 
 | [mocha](https://www.npmjs.com/package/mocha)  | Simple, flexible, fun JavaScript test framework for Node.js & The Browser |  
-| [tmp](https://www.npmjs.com/package/tmp)  | A simple temporary file and directory creator for node.js. |  
+| [tmp](https://www.npmjs.com/package/tmp)  | A simple temporary file and directory creator for node.js. | 
+
+### Starter Theme Dependencies
+
+| Dependency | NPM Description | 
+| --- | --- | 
+| [bulma]([https://www.npmjs.com/package/bulma]) | Bulma is a CSS framework. There is no JavaScript included. |  
+| [hammerjs](https://www.npmjs.com/package/hammerjs)  | Hammer is a open-source library that can recognize gestures made by touch, mouse and pointerEvents |
+| [jquery](https://www.npmjs.com/package/jquery)  | jQuery is a fast, small, and feature-rich JavaScript library. |  
+| [leaflet](https://www.npmjs.com/package/leaflet)  | Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps.  |  
+| [lodash](https://www.npmjs.com/package/lodash)  |  lodash is a fast, small, and feature-rich JavaScript library. |  
+| [lunr](https://www.npmjs.com/package/lunr)  | A bit like Solr, but much smaller and not as bright. | 
+| [smoothstate](https://www.npmjs.com/package/smoothstate)  | smoothState.js is a jQuery plugin that progressively enhances page loads to give us control over page transitions. |  
+| [template-polyfill](https://www.npmjs.com/package/template-polyfill)  | A polyfill for the HTML5 `<template>` tag. |  
+| [velocity-animate](https://www.npmjs.com/package/velocity-animate)  | Velocity is an animation engine with the same API as jQuery's $.animate(). |  
+
+
+### Starter Theme Dev Dependencies
+
+| Dependency | NPM Description | 
+| --- | --- | 
+| [babel-loader](https://www.npmjs.com/package/babel-loader) | This package allows transpiling JavaScript files using Babel and webpack. |  
+| [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin) | A webpack plugin to remove/clean your build folder(s) before building. |  
+| [css-loader](https://www.npmjs.com/package/css-loader)   | The css-loader interprets @import and url() like import/require() and will resolve them. |  
+| [eslint](https://www.npmjs.com/package/eslint) | ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. |  
+| [extract-text-webpack-plugin](https://www.npmjs.com/package/extract-text-webpack-plugin) | Extract text from a bundle, or bundles, into a separate file. |
+| [file-loader](https://www.npmjs.com/package/file-loader) | Instructs webpack to emit the required object as file and to return its public URL |  
+| [glob](https://www.npmjs.com/package/glob) | Match files using the patterns the shell uses, like stars and stuff. |  
+| [node-sass](https://www.npmjs.com/package/node-sass) | Node-sass is a library that provides binding for Node.js to LibSass, the C version of the popular stylesheet preprocessor, Sass. | 
+| [purify-css](https://www.npmjs.com/package/purify-css) | A function that takes content (HTML/JS/PHP/etc) and CSS, and returns only the used CSS. | 
+| [purifycss-webpack](https://www.npmjs.com/package/purifycss-webpack) | This plugin uses PurifyCSS to remove unused selectors from your CSS. You should use it with the extract-text-webpack-plugin. |  
+| [sass-loader](https://www.npmjs.com/package/sass-loader) | Loads a Sass/SCSS file and compiles it to CSS. |
+| [style-loader](https://www.npmjs.com/package/style-loader) | Adds CSS to the DOM by injecting a `<style>` tag |  
+| [uglifyjs-webpack-plugin](https://www.npmjs.com/package/uglifyjs-webpack-plugin) | This plugin uses UglifyJS v3 (`uglify-es`) to minify your JavaScript |
+| [webpack](https://www.npmjs.com/package/webpack) | webpack is a module bundler |  
+| [url-loader](https://www.npmjs.com/package/url-loader) | Loads files as `base64` encoded URL |  
 
