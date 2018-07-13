@@ -1,5 +1,5 @@
 ---
-title: Copyright & About Pages
+title: Zooming Images & Maps
 type: page
 ---
 

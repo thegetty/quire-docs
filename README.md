@@ -47,7 +47,7 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
   - [Customizing Styles](content/guide/styles.md)
   - [Customizing Fonts](content/guide/fonts.md)
   - [*Multiformat Output*](content/guide/output.md)
-  - [*Updating or Unistalling Quire*](content/guide/update-and-uninstall.md)
+  - [Updating or Unistalling Quire](content/guide/update-and-uninstall.md)
   - [About](content/guide/about.md)
 - API/Docs
   - [Shortcodes](content/api-docs/shortcodes.md)
