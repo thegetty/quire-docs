@@ -30,8 +30,11 @@ glossary_list:
     term: "CSS selector"
     description: "https://www.w3.org/Style/CSS/Overview.en.html"
   - id:
-    term: "element"
+    term: "CSS element"
     description: "CSS element"
+  - id:
+    term: "Free webfont generator"
+    description: "https://www.fontsquirrel.com/tools/webfont-generator"
   - id:
     term: "Getty vocabularies"
     description: "http://www.getty.edu/research/tools/vocabularies/"
