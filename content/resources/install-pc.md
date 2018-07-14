@@ -49,7 +49,7 @@ The following steps will install the necessary software for running a Quire proj
 
    Detailed information here -> https://github.com/creationix/nvm#install-script
 
-    To install or update nvm, you can use the [install script][2] using cURL:
+   To install or update nvm, you can use the [install script][2] using cURL:
 
     ```sh
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -61,27 +61,60 @@ The following steps will install the necessary software for running a Quire proj
     wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
     ```
 
-    <sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc`,          `~/.profile`, or `~/.bashrc`).</sub>
+    <sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc`,      `~/.profile`, or `~/.bashrc`).</sub>
 
     ```sh
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
     ```
 
-    **Note:** You can add `--no-use` to the end of the above script (...`nvm.sh --no-use`) to postpone using `nvm` until you manually       [`use`](#usage) it.
+    **Note:** You can add `--no-use` to the end of the above script (...`nvm.sh --no-use`) to postpone using `nvm` until you manually [`use`](#usage) it.
 
-    You can customize the install source, directory, profile, and version using the `NVM_SOURCE`, `NVM_DIR`, `PROFILE`, and                 `NODE_VERSION` variables.
+    You can customize the install source, directory, profile, and version using the `NVM_SOURCE`, `NVM_DIR`, `PROFILE`, and `NODE_VERSION` variables.
     Eg: `curl ... | NVM_DIR="path/to/nvm"`. Ensure that the `NVM_DIR` does not contain a trailing slash.
 
     <sub>*NB. The installer can use `git`, `curl`, or `wget` to download `nvm`, whatever is available.*</sub>
 
-    **Note:** On Linux, after running the install script, if you get `nvm: command not found` or see no feedback from your terminal         after you type:
+    **Note:** On Linux, after running the install script, if you get `nvm: command not found` or see no feedback from your terminal after you type:
 
     ```sh
     command -v nvm
     ```
     simply close your current terminal, open a new terminal, and try verifying again.
 
+    **Note:** Since OS X 10.9, `/usr/bin/git` has been preset by Xcode command line tools, which means we can't properly detect if Git is installed or not. You need to manually install the Xcode command line tools before running the install script, otherwise, it'll fail. (see [#1782](https://github.com/creationix/nvm/issues/1782))
+
+    **Note:** On OS X, if you get `nvm: command not found` after running the install script, one of the following might be the reason:-
+      - your system may not have a [`.bash_profile file`] where the command is set up. Simply create one with `touch ~/.bash_profile` and run the install script again
+      - you might need to restart your terminal instance. Try opening a new tab/window in your terminal and retry.
+
+    If the above doesn't fix the problem, open your `.bash_profile` and add the following line of code:
+
+    `source ~/.bashrc`
+
+    - For more information about this issue and possible workarounds, please [refer here](https://github.com/creationix/nvm/issues/576)
+
+    ### Verify installation
+
+    To verify that nvm has been installed, do:
+
+    ```sh
+    command -v nvm
+    ```
+
+    which should output 'nvm' if the installation was successful. Please note that `which nvm` will not work, since `nvm` is a sourced shell function, not an executable binary.
+
+    To download, compile, and install the latest release of node, do this:
+
+    ```sh
+    nvm install node
+    ```
+
+    And then in any new shell just use the installed version:
+
+    ```sh
+    nvm use node
+    ```
 
 4. Install **Quire-CLI**
 
