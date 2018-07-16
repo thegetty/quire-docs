@@ -92,7 +92,7 @@ A publication can have multiple `resource_link` properties, each with the `type`
 
 `resource_link` properties can also be internal pages of the publication or files from your publication, or can point to external resources or other websites. The atributes `type`, `name` (how the resource link will be listed in your publication), and `url` are required.
 
-To facilitate machine readability, it is a good idea to also include `link_relation`[&] and `media_type`[&] attributes from the IANA[&] lists if applicable ones for your particular resource are available.
+To facilitate machine readability, it is a good idea to also include `link_relation` and `media_type` attributes from the IANA[&] lists if applicable ones for your particular resource are available.
 
 ### Subjects
 
