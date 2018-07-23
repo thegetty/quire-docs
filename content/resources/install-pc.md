@@ -82,11 +82,6 @@ The following steps will install the necessary software for running a Quire proj
     ```
     simply close your current terminal, open a new terminal, and try verifying again.
 
-    **Note:** Since OS X 10.9, `/usr/bin/git` has been preset by Xcode command line tools, which means we can't properly detect if Git is installed or not. You need to manually install the Xcode command line tools before running the install script, otherwise, it'll fail. (see [#1782](https://github.com/creationix/nvm/issues/1782))
-
-    **Note:** On OS X, if you get `nvm: command not found` after running the install script, one of the following might be the reason:-
-      - your system may not have a [`.bash_profile file`] where the command is set up. Simply create one with `touch ~/.bash_profile` and run the install script again
-      - you might need to restart your terminal instance. Try opening a new tab/window in your terminal and retry.
 
     If the above doesn't fix the problem, open your `.bash_profile` and add the following line of code:
 
@@ -142,7 +137,7 @@ The following steps will install the necessary software for running a Quire proj
     quire -V
     ```
     
-    If version number is returned quire-cli was installed correctly
+    If version number is returned quire-cli was installed correctly, you can now leave the directory.
 
     ```
     cd ~
@@ -178,9 +173,9 @@ The following steps will install the necessary software for running a Quire proj
 
 ### All Other Windows Users:
 
-1. Download and Install Gitbash -> https://gitforwindows.org/
-2. Download and Install node and npm -> https://nodejs.org/en/download/
-3. Download and Install Prince XML for Windows -> https://www.princexml.com/doc-install/#windows
+1. Download and Install Gitbash -> https://gitforwindows.org/ - **Use the default setting on install**
+2. Download and Install node and npm -> https://nodejs.org/en/download/ - **Use latest LTS version of node.js** 
+3. Download and Install Prince XML for Windows -> https://www.princexml.com/doc-install/#windows - **Use the default setting on install**
 4. Run as admin from powershell  (this installs c++ 2015 build tools and python 2 required for node-gyp)
     ```
     npm install --g --production windows-build-tools
@@ -211,7 +206,7 @@ The following steps will install the necessary software for running a Quire proj
     quire -V
     ```
     
-    If version number is returned quire-cli was installed correctly
+    If version number is returned quire-cli was installed correctly, you can now leave the directory.
 
     ```
     cd ~
