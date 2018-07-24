@@ -16,7 +16,9 @@ The following steps will install the necessary software for running a Quire proj
 
     Open PowerShell as Administrator and run:
 
-    `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+    ```
+    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+    ```
 
     Restart your computer when prompted.
 
@@ -37,9 +39,11 @@ The following steps will install the necessary software for running a Quire proj
    cd ~
    ```
 
-   Download  ```wget https://www.princexml.com/download/prince_12-1_ubuntu18.04_amd64.deb```
-   
-   ```
+   Run these commands to download and install PrinceXML 
+
+   ```sh
+   wget https://www.princexml.com/download/prince_12-1_ubuntu18.04_amd64.deb
+
    sudo gdebi prince_10r2-1_debian8.0_amd64.deb
    ```
    
@@ -173,9 +177,9 @@ The following steps will install the necessary software for running a Quire proj
 
 ### All Other Windows Users:
 
-1. Download and Install Gitbash -> https://gitforwindows.org/ - **Use the default setting on install**
+1. Download and Install Gitbash -> https://gitforwindows.org/ - **Use the default settings on install**
 2. Download and Install node and npm -> https://nodejs.org/en/download/ - **Use latest LTS version of node.js** 
-3. Download and Install Prince XML for Windows -> https://www.princexml.com/doc-install/#windows - **Use the default setting on install**
+3. Download and Install Prince XML for Windows -> https://www.princexml.com/doc-install/#windows - **Use the default settings on install**
 4. Run as admin from powershell  (this installs c++ 2015 build tools and python 2 required for node-gyp)
     ```
     npm install --g --production windows-build-tools
