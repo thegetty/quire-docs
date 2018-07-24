@@ -163,3 +163,5 @@ Once installed, make sure you are in the folder where your .docx document is sav
 
 - Quire needs ATX-style Markdown headers[&], these are specified adding `--atx-headers` to the command.
 - The lines of the generated Markdown file[&] are 80 characters long. Adding the option `--wrap=none` to the command will override the default wrapping making easier to work with your files in the text editor[&].
+
+The order of the extensions doesn't matter, and you can either type: `pandoc --atx-header --wrap=none -s your_document_name.docx -t markdown -o your_document_name.md` or `pandoc -s your_document_name.docx -t markdown --atx-header --wrap=none -o your_document_name.md`
