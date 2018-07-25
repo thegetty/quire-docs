@@ -54,6 +54,7 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
   - [YAML](content/api-docs/yaml.md)
 - Resources
   - [Quire Cheatsheet](content/resources/cheatsheet.md)
+  - [Default Style Guide](content/resources/styleguide.md)
   - [Install Mac](content/resources/install-mac.md)
   - [Install PC](content/resources/install-pc.md)
   - [Quire CLI Instructions](content/resources/quire-cli.md)
