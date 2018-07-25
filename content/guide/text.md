@@ -130,16 +130,18 @@ There are several types of linking that can be applied to text on your page. Sty
 
 External links can be included through the following Markdown formatting:
 
-`[Link text](http://www.linkaddress.com)
- [Getty Museum](http://www.getty.edu/museum/)`
+```
+[Link text](http://www.linkaddress.com)
+[Getty Museum](http://www.getty.edu/museum/)
+```
 
 ### Internal Links Between Pages
 
 Internal links between pages in your Quire publication can be included through the following Markdown formatting:
 
-`[Link text](../nameofpage/)
-[Pea Pickers](../catalogue/2)
-More info in our [about](../about/) page.`
+- `[Link text](../nameofpage/)`
+- `[Pea Pickers](../catalogue/2)`
+- `More info in our [about](../about/) page.`
 
 ### Internal Links Within a Page / Between Elements
 
@@ -147,7 +149,9 @@ There are several types of linking between features, text, or objects on a singl
 
 - Callouts to figures (# are used for figures):
   - This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the figures.yml page.
-  - `[number or name of figure](#figureid)`
+
+
+  [number or name of figure](#figureid)`
   - `[fig. 1](#1.1)`
 
 - Linking to other page elements (# is also used for other elements on the same page):
