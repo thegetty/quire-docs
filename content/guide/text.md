@@ -180,18 +180,11 @@ See the introduction [notes](../introduction/#notes)
   - With this, a numbered footnote in the text when clicked upon will take a user to the corresponding area of the page where the full citation is located. The reverse is true from the linked number or arrow from the full citation.
   - This requires two parts:
     - Within the main body text, in a spot where you would like a footnote to be included will be set up as the following:
-
-```    
-Example text.[^#]`
-"A photographic study of use of leisure time in various income groups."[^1]
-```
-
+      - `Example text.[^#]`
+      - `"A photographic study of use of leisure time in various income groups."[^1]`
     - At the end of the main body text, one can designate a “Notes” or related subheading using ## or ###. Underneath that heading the information of the citation will be listed using this format:
-
-```
-[^#]: Corresponding citation information.
-[^1]: Roy Stryker to all FSA (then RA) photographers, outline for first published in Carver, *Just Before the War*, n.p.
-```
+      - `[^#]: Corresponding citation information.`
+      - `[^1]: Roy Stryker to all FSA (then RA) photographers, outline for first published in Carver, *Just Before the War*, n.p.`
 
 - Citation and Bibliography shortcode linking:
   - When the citation shortcode, {{< q-cite “author date” “page # if applicable” >}} is used in body of text, that corresponds to the short and full bibliographic information provided in the references.yml, an in-page bibliography will be generated. This linking is completed automatically.
