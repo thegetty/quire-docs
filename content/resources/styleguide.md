@@ -2,7 +2,7 @@
 title: Default Style Guide
 type: page
 ---
-#Default Style Guide for Quire
+# Default Style Guide for Quire
 
 ## Markdown
 
