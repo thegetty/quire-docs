@@ -15,13 +15,15 @@ Static site generators like Hugo, the one under the hood in Quire, allow us to k
 
 We built Quire first for ourselves. In the last two years, we’ve published seven publications with early versions of Quire, and have seven more in the pipeline for the next two years. We’re also starting to look at ways at expanding its usage to other projects around the Getty, potentially including the annual report, documentation and reports, newsletters, and even online exhibitions.
 
-
-
+In its present renditions, Quire is a tool for publishing professionals and private individuals with an interest in digital publishing and everyone in between. Quire’s versatility lends itself to a variety of projects and a diverse range of users.
 
 ## What is Quire’s Goal?
 
+Quire aims to streamline the digital publication process to create multi-faceted and sustainable books in multiple formats.
+
 ## What Are the Benefits of Using Quire?
 
+As an open-source framework, Quire provides a cost-friendly alternative to digital publishing that is inclusive of a variety of features and customization that allows for the realization of projects in a user-friendly manner. Quire allows for greater preservation and digital distribution of works in a simplified format that lends itself to user accessibility.
 
 ## What Is Quire?
 
