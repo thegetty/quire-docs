@@ -120,9 +120,9 @@ display:
 
 ## Formatting Text Content with Markdown
 
-The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it italic. You can learn more about Markdown syntax in the *Markdown fundamentals* page of this guide.
+The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it italic. You can learn more about Markdown syntax in the [*Markdown fundamentals* section](../fundamentals/markdown.md) of this guide.
 
-## Types of Linking
+## Applying Types of Linking
 
 There are several types of linking that can be applied to text on your page. Stylization such as bolding, italics, underlining, and more can also be applied to linked text.
 
@@ -150,7 +150,7 @@ More info in our [about](../about/) page.
 There are several types of linking between features, text, or objects on a single page that can be included through the following Markdown formatting:
 
 - Callouts to figures (# are used for figures):
-  - This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the figures.yml page.
+  - This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images* section](figures.md) of this guide.
 
 ```
 [number or name of figure](#figureid)
@@ -175,6 +175,7 @@ See [heading 1](#heading-1).
 [referencetolink](../nameofpage/#idname)
 See the introduction [notes](../introduction/#notes)
 ```
+[note] Blackfriday, the built in Markdown processor, will incorrectly create link even if there is a space between the bracketed text and the parentheses when there is some text in brackets followed immediately by more text in parentheses. To avoid the linking, you can use a backslash escape character before the first parentheses.  
 
 - Footnotes within a page, NOT bibliography or citations shortcodes:
   - With this, a numbered footnote in the text when clicked upon will take a user to the corresponding area of the page where the full citation is located. The reverse is true from the linked number or arrow from the full citation.
@@ -185,9 +186,10 @@ See the introduction [notes](../introduction/#notes)
     - At the end of the main body text, one can designate a “Notes” or related subheading using ## or ###. Underneath that heading the information of the citation will be listed using this format:
       - `[^#]: Corresponding citation information.`
       - `[^1]: Roy Stryker to all FSA (then RA) photographers, outline for first published in Carver, *Just Before the War*, n.p.`
+  - You can find additional information about formatting notes text with Markdown in the [*Markdown fundamentals* section](../fundamentals/markdown.md) of this guide.
 
 - Citation and Bibliography shortcode linking:
-  - When the citation shortcode, {{< q-cite “author date” “page # if applicable” >}} is used in body of text, that corresponds to the short and full bibliographic information provided in the references.yml, an in-page bibliography will be generated. This linking is completed automatically.
+  - When the citation shortcode, {{< q-cite “author date” “page # if applicable” >}} is used in body of text, that corresponds to the short and full bibliographic information provided in the `references.yml`, an in-page bibliography will be generated. This linking is completed automatically.
   - When the short code is used in the page the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
   - For more information see the [Citations & Bibliography](bibliographies.md) section of this guide.
 
