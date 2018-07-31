@@ -177,14 +177,14 @@ The following steps will install the necessary software for running a Quire proj
 
 ### All Other Windows Users:
 
-1. Download and Install Gitbash -> https://gitforwindows.org/ - **Use the default settings on install**
+1. Download and Install Git for Windows -> https://gitforwindows.org/ - **Use the default settings on install**
 2. Download and Install node and npm -> https://nodejs.org/en/download/ - **Use latest LTS version of node.js** 
 3. Download and Install Prince XML for Windows -> https://www.princexml.com/doc-install/#windows - **Use the default settings on install**
-4. Run as admin from powershell  (this installs c++ 2015 build tools and python 2 required for node-gyp)
+4. Run as admin from Powershell  (this installs c++ 2015 build tools and python 2 required for node-gyp)
     ```
     npm install --g --production windows-build-tools
     ```
-5. From the git-bash terminal run
+5. Now continuing from Powershell Install Quire CLI (admin is not required for the rest of these commands)
 
     ```
     git clone https://github.com/gettypubs/quire-cli
