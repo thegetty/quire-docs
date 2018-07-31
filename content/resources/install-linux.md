@@ -1,4 +1,3 @@
-
 ---
 title: Quire Installation
 subtitle: LINUX
