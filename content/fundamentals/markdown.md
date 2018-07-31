@@ -35,12 +35,13 @@ On the headings, in general you should not use the *Heading 1* tag in your conte
 ```
 > Blockquote
 
+Links are created with text in brackets followed immediately by a url in parentheses:
+
 ```
 [Link Text](http://www.linkadress.com)
 ```
 [Link Text](http://www.linkadress.com)
 
-Links are created with text in brackets followed immediately by a url in parentheses: `[The Getty](http://www.getty.edu)`. However, Blackfriday, the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses.
 
 ```
 - dashes make
