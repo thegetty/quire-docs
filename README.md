@@ -54,6 +54,7 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
   - [Quire Cheatsheet](content/resources/cheatsheet.md)
   - [Install Mac](content/resources/install-mac.md)
   - [Install PC](content/resources/install-pc.md)
+  - [Install LINUX](content/resources/install-linux.md)
   - [Quire CLI Instructions](content/resources/quire-cli.md)
   - [Using GitHub](content/resources/github.md)
   - [Sample publication.yml file](content/resources/sample-publication.yml)
