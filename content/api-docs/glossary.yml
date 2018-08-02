@@ -1,5 +1,8 @@
 glossary_list:
   - id:
+    term: "ATX-style Markdown headers"
+    description: "https://pandoc.org/MANUAL.html#headers"
+  - id:
     term: "BISAC Subject Codes"
     description: "Developed by BISG, the BISAC Subject Codes List, or BISAC Subject Headings List, is a standard used to categorize books based on topical content. For more information visit: [https://bisg.org/page/BISACSubjectCodes](https://bisg.org/page/BISACSubjectCodes)"
   - id:
@@ -74,6 +77,9 @@ glossary_list:
   - id:
     term: "Markdown Processor"
     description: "A Markdown processor parses Markdown code and generates the formatted text we get on the screen."
+  - id:
+    term: Pandoc
+    description: "An open source, command-line text conversion tool https://pandoc.org/. You can visit the [Pandoc Demos page](http://pandoc.org/demos.html) that lists the commands for the most frequent types of file conversion."
   - id:
     term: "RGB Color Values"
     description: "The RGB model define colors according to their red, green, and blue components by using hexadecimal and functional notations. An RGB color value calculator can be found at: [https://www.w3schools.com/colors/colors_rgb.asp](https://www.w3schools.com/colors/colors_rgb.asp)"

@@ -35,12 +35,13 @@ On the headings, in general you should not use the *Heading 1* tag in your conte
 ```
 > Blockquote
 
+Links are created with text in brackets followed immediately by a url in parentheses:
+
 ```
 [Link Text](http://www.linkadress.com)
 ```
 [Link Text](http://www.linkadress.com)
 
-Links are created with text in brackets followed immediately by a url in parentheses: `[The Getty](http://www.getty.edu)`. However, Blackfriday, the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses.
 
 ```
 - dashes make
@@ -149,10 +150,19 @@ Be aware of the multiple [Markdown flavors](https://github.com/commonmark/Common
 
 ## Microsoft Word to Markdown Conversion
 
-Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple conversion can be done.
+Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using Pandoc[&] can be done.
 
-While there are a number of free tools, we recommend using [Pandoc](https://pandoc.org/), an open source, command-line text[&] conversion tool. There are installation instructions on their site, but for Mac users with Homebrew installed (which you would have done as part of the Quire installation process), you just open your Terminal and type `brew install pandoc`.
+There are some easy things you can do in the Word document prior to conversion to ensure the best possible results:
 
-Once installed, make sure you are in the folder where your .docx document is saved, and enter the following command on the command-line application `pandoc -s your_document_name.docx -t markdown -o your_document_name.md`. You can visit the [Pandoc Demos page](http://pandoc.org/demos.html) that lists the commands for the most frequent types of file conversion.
+- We recommend not to insert any images and media to the Word document before conversion.
+- Headings must be formatted with Word styles instead of by changing font formats.
+-
 
-There are also some easy things you can do in the Word document prior to conversion to ensure the best possible results, like not inserting pictures and media in the document, ...
+While there are a number of free tools, we recommend using Pandoc[&]. You can find installation instructions on their site.
+
+Once installed, make sure you are in the folder where your .docx document is saved, and enter the Pandoc command on the command-line application. The command used to convert your file is: `pandoc -s your_document_name.docx -t markdown -o your_document_name.md`. However, in order to optimize the default conversion you should specify the following extensions:
+
+- Quire needs ATX-style Markdown headers[&], these are specified adding `--atx-headers` to the command.
+- The lines of the generated Markdown file[&] are 80 characters long. Adding the option `--wrap=none` to the command will override the default wrapping making easier to work with your files in the text editor[&].
+
+The order of the extensions doesn't matter, and you can either type: `pandoc --atx-header --wrap=none -s your_document_name.docx -t markdown -o your_document_name.md` or `pandoc -s your_document_name.docx -t markdown --atx-header --wrap=none -o your_document_name.md`

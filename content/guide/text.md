@@ -120,7 +120,78 @@ display:
 
 ## Formatting Text Content with Markdown
 
-The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it italic. You can learn more about Markdown syntax in the *Markdown fundamentals* page of this guide.
+The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it italic. You can learn more about Markdown syntax in the [*Markdown fundamentals* section](../fundamentals/markdown.md) of this guide.
+
+## Applying Types of Linking
+
+There are several types of linking that can be applied to text on your page. Stylization such as bolding, italics, underlining, and more can also be applied to linked text.
+
+### External Links
+
+External links can be included through the following Markdown formatting:
+
+```
+[Link text](http://www.linkaddress.com)
+[Getty Museum](http://www.getty.edu/museum/)
+```
+
+### Internal Links Between Pages
+
+Internal links between pages in your Quire publication can be included through the following Markdown formatting:
+
+```
+[Link text](../nameofpage/)
+[Pea Pickers](../catalogue/2)
+More info in our [about](../about/) page.
+```
+
+### Internal Links Within a Page / Between Elements
+
+There are several types of linking between features, text, or objects on a single page that can be included through the following Markdown formatting:
+
+- Callouts to figures (# are used for figures):
+  - This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images* section](figures.md) of this guide.
+
+```
+[number or name of figure](#figureid)
+[fig. 1](#1.1)
+```
+
+- Linking to other page elements (# is also used for other elements on the same page):
+  - The IDs for other elements can be found using the following method:
+    - Use the Inspect Element tool when right clicking a page or specific element. For Safari users, refer to this [guide](https://apple.stackexchange.com/questions/139767/inspect-element-in-safari) to enable this feature.
+    - In the page's code certain elements will include a piece of code, `id="idnamehere"` that designates the ID of that element. If the name of the element has a space that will be represented with a dash `-`.
+    - For example, the ID of a heading will often be the name of that heading.
+
+```
+[referencetolink](#element-id)
+See [heading 1](#heading-1).
+```
+
+- Linking to elements on a separate page
+  - Following the formula for internal links between pages, you can also specify an element on a separate page as a link destination.
+
+```  
+[referencetolink](../nameofpage/#idname)
+See the introduction [notes](../introduction/#notes)
+```
+[note] Blackfriday, the built in Markdown processor, will incorrectly create link even if there is a space between the bracketed text and the parentheses when there is some text in brackets followed immediately by more text in parentheses. To avoid the linking, you can use a backslash escape character before the first parentheses.  
+
+- Footnotes within a page, NOT bibliography or citations shortcodes:
+  - With this, a numbered footnote in the text when clicked upon will take a user to the corresponding area of the page where the full citation is located. The reverse is true from the linked number or arrow from the full citation.
+  - This requires two parts:
+    - Within the main body text, in a spot where you would like a footnote to be included will be set up as the following:
+      - `Example text.[^#]`
+      - `"A photographic study of use of leisure time in various income groups."[^1]`
+    - At the end of the main body text, one can designate a “Notes” or related subheading using ## or ###. Underneath that heading the information of the citation will be listed using this format:
+      - `[^#]: Corresponding citation information.`
+      - `[^1]: Roy Stryker to all FSA (then RA) photographers, outline for first published in Carver, *Just Before the War*, n.p.`
+  - You can find additional information about formatting notes text with Markdown in the [*Markdown fundamentals* section](../fundamentals/markdown.md) of this guide.
+
+- Citation and Bibliography shortcode linking:
+  - When the citation shortcode, {{< q-cite “author date” “page # if applicable” >}} is used in body of text, that corresponds to the short and full bibliographic information provided in the `references.yml`, an in-page bibliography will be generated. This linking is completed automatically.
+  - When the short code is used in the page the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
+  - For more information see the [Citations & Bibliography](bibliographies.md) section of this guide.
 
 ## Using Shortcodes to Add Features
 
