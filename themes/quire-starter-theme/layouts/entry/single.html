@@ -1,0 +1,160 @@
+{{/*
+Entry layout. This template is intended for use in catalogue-style pages where
+a single image or object needs to be featured prominently.\
+*/}}
+
+{{ define "main" }}
+
+{{ if isset $.Site.Params "imagedir" }}
+{{ $.Scratch.Set "imageDir" $.Site.Params.imageDir }}
+{{ else }}
+{{ $.Scratch.Set "imageDir" "" }}
+{{ end }}
+
+{{/* Entry content, including entry image and tombstone data */}}
+<article class="{{ partial "page-class.html" . }} quire-entry" id="main" role="main">
+
+  {{/* Full-width entry image header */}}
+  <div class="quire-entry__image">
+  {{ if .Params.image }}
+    {{- $imgPath := printf "%s/%s" ($.Scratch.Get "imageDir") .Params.image -}}
+    <img src="{{ $imgPath | relURL }}" alt="" />
+  {{ else if .Params.object }}
+    {{ range .Params.object }}
+      {{ if .id }}
+        {{ range where $.Site.Data.objects.object_list "id" "eq" .id }}
+        <div class="quire-entry__image__group-container">
+          {{ if gt (len .figure) 1 -}}
+          <button class="button is-rounded quire-image-control quire-image-control--prev-image" onclick="slideImage('prev')" id="prev-image" title="Previous image">
+            {{- template "image-control-icon" (dict "type" "left-arrow" "description" "Previous image" "imageDir" ($.Scratch.Get "imageDir") ) -}}
+          </button>
+          <button class="button is-rounded quire-image-control quire-image-control--next-image" onclick="slideImage('next')" id="next-image" title="Next image">
+            {{- template "image-control-icon" (dict "type" "right-arrow" "description" "Next image" "imageDir" ($.Scratch.Get "imageDir") ) -}}
+          </button>
+          {{ end -}}
+        {{ range .figure }}
+          {{ if .id }}
+            {{ range where $.Site.Data.figures.figure_list "id" "eq" .id }}
+              {{ template "figure" (dict "imageDir" ($.Scratch.Get "imageDir") "figure" . ) }}
+            {{ end }}
+          {{ else if .src }}
+            {{ template "figure" (dict "imageDir" ($.Scratch.Get "imageDir") "figure" . ) }}
+          {{ end }}
+        {{ end }}
+        </div>
+        {{ end }}
+      {{ else if .figure }}
+      <div class="quire-entry__image__group-container">
+      {{ range .figure }}
+        {{ if .id }}
+          {{ range where $.Site.Data.figures.figure_list "id" "eq" .id }}
+            {{ template "figure" (dict "imageDir" ($.Scratch.Get "imageDir") "figure" . ) }}
+          {{ end }}
+        {{ else if .src }}
+          {{ template "figure" (dict "imageDir" ($.Scratch.Get "imageDir") "figure" . ) }}
+        {{ end }}
+      {{ end }}
+      </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  </div>
+
+  {{/* Entry header */}}
+  <header class="quire-entry__header">
+    <div class="container">
+      {{/* Title */}}
+      <h1 class="quire-page__header__title">
+        {{ with .Params.number }}<span>{{ . }}.</span>{{ end }}
+        {{ .Title | markdownify }}
+      {{/* Subtitle if any */}}
+      {{ with .Params.subtitle }}
+      <span class="quire-page__header__subtitle">{{ . }}</span></h1>
+      {{ end }}
+    </div>
+  </header>
+
+  {{/* Entry tombstone data */}}
+  {{ range .Params.object }}
+    <section class="quire-entry__tombstone">
+      <div class="container">
+        <table class="table is-fullwidth">
+          <tbody>
+          {{ if .id }}
+            {{ $.Scratch.Set "id" .id }}
+            {{ range $.Site.Data.objects.object_display_order }}
+              {{ $.Scratch.Set "key" . }}
+              {{ range where $.Site.Data.objects.object_list "id" "eq" ($.Scratch.Get "id") }}
+                {{ range $key, $value := . }}
+                {{ if and (eq $key ($.Scratch.Get "key")) (ne $value nil) }}
+                  <tr><td>{{ $key | title }}</td><td>{{ markdownify $value }}</td></tr>
+                {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ else }}
+            {{ range $key, $value :=  . }}
+            <tr><td>{{ $key | title }}</td><td>{{ $value }}</td></tr>
+            {{ end }}
+          {{ end }}
+          </tbody>
+        </table>
+        {{ if .id }}
+          {{ range where $.Site.Data.objects.object_list "id" "eq" .id }}
+            {{ if .link }}
+            <a href="{{ .link }}" target="_blank" class="button">{{ $.Site.Params.objectLinkText }} {{- template "image-control-icon" (dict "type" "link" "description" "Open in new window" "imageDir" ($.Scratch.Get "imageDir") ) -}}</a>
+            {{ end }}
+          {{ end }}
+        {{ else }}
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ if .Params.abstract }}
+  {{ partial "page-abstract.html" . }}
+  {{ end }}
+
+  {{/* Entry content */}}
+  <section class="section quire-page__content" id="content">
+    <div class="container">
+      <div class="content">
+        {{ .Content }}
+        {{ partial "page-bibliography.html" . }}
+      </div>
+    </div>
+  </section>
+
+</article>
+{{ end }}
+
+
+{{ define "figure" }}
+{{- $imgPath := printf "%s/%s" .imageDir .figure.src -}}
+<figure>
+  <img src="{{ $imgPath | relURL }}" alt="{{ .figure.alt }}" />
+  {{ if or .figure.caption .figure.credit }}
+    <div tabindex="0" class="button is-rounded quire-image-control quire-image-control--more" title="More info">
+      {{- template "image-control-icon" (dict "type" "more" "description" "More info" "imageDir" .imageDir ) -}}
+    </div>
+    <div class="quire-image-control quire-image-info"><span class="quire-image-info__caption">{{ .figure.caption }}</span> <span class="quire-image-info__credit">{{ .figure.credit }}</span></div>
+  {{ end }}
+  {{ if eq .figure.download true }}
+    <a href="{{ $imgPath | relURL }}" target="_blank" class="button is-rounded quire-image-control quire-image-control--download" title="Download image" download>
+      {{- template "image-control-icon" (dict "type" "download" "description" "Download image" "imageDir" .imageDir ) -}}
+    </a>
+  {{ end }}
+</figure>
+{{ end }}
+
+{{ define "image-control-icon" }}
+<svg>
+  <switch>
+    <use xlink:href="#{{ .type }}-icon"></use>
+    <foreignObject width="32" height="32">
+        <img src="{{ absURL .imageDir }}/icons/{{ .type }}.png" alt="" />
+    </foreignObject>
+  </switch>
+</svg>
+<span class="visually-hidden">{{ .description }}</span>
+{{ end }}

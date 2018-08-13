@@ -1,0 +1,26 @@
+{{/*
+  Complete title block for publication.
+*/}}
+<header class="quire-menu__header">
+  {{ if ne .Kind "home" -}}
+  <a class="quire-menu__header__title-link" href="{{ .Site.BaseURL }}">
+  {{- end }}
+  <h2 class="quire-menu__header__title">
+    <span class="visually-hidden">Site Title: </span>
+    {{- .Site.Data.publication.title | markdownify -}}
+    {{ with .Site.Data.publication.subtitle }}
+    <span class="quire-menu__header__subtitle">{{ . | markdownify -}}</span>
+    {{- end }}
+  </h2>
+  {{ if ne .Kind "home" -}}
+  </a>
+  {{- end }}
+  <div class="quire-menu__header__contributors">
+    {{- if .Site.Data.publication.contributor_as_it_appears -}}
+    {{ .Site.Data.publication.contributor_as_it_appears }}
+    {{ else }}
+    <span class="visually-hidden">Contributors: </span>
+    {{ partial "contributor-list.html" (dict "range" .Site.Data.publication.contributor "contributorType" "primary" "listType" "string") }}
+    {{- end }}
+  </div>
+</header>

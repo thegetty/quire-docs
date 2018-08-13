@@ -1,0 +1,52 @@
+{{/*
+This controlls the global table of contents for the publication, which is
+available on all pages. For users with Javascript enabled, this menu is hidden
+by default. Users with JS disabled will alwasy see the menu in its expanded state.
+*/}}
+
+{{- $contents := dict "contentsScope" .Site.Pages "contentsType" .Site.Params.menuType "contentsLocation" ".Params.menu" "contentsPage" . }}
+
+<div  class="quire-menu menu"
+      role="banner"
+      id="site-menu__inner">
+
+  {{ partial "menu-header.html" . }}
+
+  <nav class="quire-menu__list menu-list" role="navigation" aria-label="full">
+    <h3 class="visually-hidden">Table of Contents</h3>
+    {{- partial "contents-list.html" $contents -}}
+  </nav>
+
+  {{ if isset .Site.Data.publication "resource_link" -}}
+    {{ $otherFormats := where .Site.Data.publication.resource_link "type" "other-format" }}
+    {{ $relatedResources := where .Site.Data.publication.resource_link "type" "related-resource" }}
+    {{ if gt (len $otherFormats) 0 -}}
+      <div class="quire-menu__formats">
+      <h3 class="menu-label">Other Formats</h3>
+        <div role="complementary" aria-label="downloads">
+          {{- partial "link-list.html" $otherFormats -}}
+        </div>
+      </div>
+    {{ end -}}
+    {{ if gt (len $relatedResources) 0 -}}
+      <div class="quire-menu__formats">
+      <h3 class="menu-label">Related Resources</h3>
+        <div role="complementary" aria-label="related resources">
+          {{- partial "link-list.html" $relatedResources -}}
+        </div>
+      </div>
+    {{ end -}}
+  {{ end -}}
+
+  <footer class="quire-menu__footer" role="contentinfo">
+    {{ partial "copyright.html" . }}
+
+    {{ if isset .Site.Data.publication "resource_link" -}}
+    {{ $footerLinks := where .Site.Data.publication.resource_link "type" "footer-link" }}
+    {{ if gt (len $footerLinks) 0 -}}
+      {{- partial "link-list.html" $footerLinks -}}
+    {{- end -}}
+    {{- end -}}
+  </footer>
+
+</div>

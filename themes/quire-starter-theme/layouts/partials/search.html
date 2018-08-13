@@ -1,0 +1,54 @@
+{{- if isset $.Site.Params "imagedir" }}
+{{ $.Scratch.Set "imageDir" $.Site.Params.imageDir }}
+{{ else }}
+{{ $.Scratch.Set "imageDir" "" }}
+{{ end -}}
+{{- $imgDir := $.Scratch.Get "imageDir" -}}
+
+<div id="js-search"
+     class="quire-search"
+     aria-expanded="false"
+     data-search-index='{{ ref . "search-index.md" }}' >
+  <div class="quire-search__close-button">
+    <button class="button is-medium" onclick="toggleSearch()">
+      <svg>
+        <switch>
+          <use xlink:href="#close-icon"></use>
+          <foreignObject width="32" height="32">
+              <img src="{{ $imgDir | absURL }}/icons/close.png" alt="" />
+          </foreignObject>
+        </switch>
+      </svg>
+    </button>
+  </div>
+
+  <div class="quire-search__inner" aria-label="search results">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Search</h1>
+          <input id="js-search-input"
+                 class="input is-large"
+                 name=""
+                 type="text"
+                 value=""
+                 oninput="search()" />
+
+          <ul id="js-search-results-list"
+              class="quire-search__inner__list">
+          </ul>
+        </div>
+      </div>
+    </section>
+    </div>
+  </div>
+
+  <template id="js-search-results-template">
+    <li class="quire-search__inner__list-item">
+      <a class="js-search-results-item" href="">
+        <h2 class="title js-search-results-item-title"></h2>
+        <p><span class="js-search-results-item-type"></span> | <span class="js-search-results-item-length"></span> words</p>
+      </a>
+    </li>
+  </template>
+</div>

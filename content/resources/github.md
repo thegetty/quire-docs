@@ -1,11 +1,12 @@
 ---
-title: Using GitHub
-type: page
+title: GitHub for Quire
+weight: 507
+type: essay
 ---
 
-## Host Your Project Code on GitHub
+## Hosting Your Project Code on GitHub
 
-1. Download and install GitHub Desktop: https://desktop.github.com/
+1. Download and install GitHub Desktop: [https://desktop.github.com/](https://desktop.github.com/)
 
 2. Open it and go to File > Add Local Repository (Cmd-O). Select your project repository and click Add Repository
 
@@ -15,7 +16,7 @@ type: page
 
 Your project code is now on GitHub. To see it, go to Repository > View on GitHub (Shift-Cmd-G) or visit https://github.com/YOUR-USERNAME/YOUR-PROJECT-DIRECTORY-NAME.
 
-## Display Your Project Preview on GitHub
+## Displaying Your Project Preview on GitHub
 
 While you can host your project code on GitHub, you can also use it to host a live version of your site, the way it looks when you run `quire preview`.
 

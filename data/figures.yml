@@ -1,0 +1,48 @@
+figure_list:
+  - id: "1.1"
+    src: content-model.png
+    caption: "Quire content model "
+    credit: " "
+  - id: "1.2"
+    src: file-structure.png
+    caption: "File structure "
+    credit: " "
+  - id: "1.3"
+    src: quire_starter_theme.png
+    caption: "Starter Theme"
+    credit: " "
+  - id: "1.4"
+    src: quire-work-environment.gif
+    caption: "command line shell, browser, text editor"
+    credit: " "
+  - id: "1.5"
+    src: commandline-vs-folder.png
+    caption: "folder and command line side-by-side"
+    credit: " "
+  - id: "1.6"
+    src: project-in-atom.png
+    caption: "`my-project` open in Atom"
+    credit: " "
+  - id: "1.7"
+    src: file-structure.png
+    caption: "File Structure"
+    credit: " "
+  - id: "1.8"
+    src: catalogue-entry-grid.jpg
+    caption: "screenshot of catalogue grid page as rendered in the browser"
+    credit: " "
+  - id: "1.9"
+    src: style1.png
+    caption: "screenshot of the variables.scss file in the quire-starter-theme directory"
+    download: true
+  - id: "1.10"
+    src: markdownstyleguide.jpg
+    caption: "markdown style guide with code"
+  - id: "1.11"
+    src: outputstyleguide.jpg
+    caption: "visual output style guide in quire"
+    credit: " "
+  - id: "1.12"
+    src: morisot-signature.jpg
+    caption: "Detail of lower right corner of the painting with Morisot’s signature."
+    credit: Image courtesy of Cleveland Museum of Art
