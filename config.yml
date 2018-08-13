@@ -1,0 +1,53 @@
+# ==============================================================================
+# Config.yml
+# ------------------------------------------------------------------------------
+#
+# This is the main configuration file for the website. The 'theme' value should
+# match the name of the folder in /themes that contains your theme files; if
+# you've copied the default theme and given it a different name make sure to
+# update the value here too.
+
+baseURL: ""
+
+title: "Quire Starter"
+languageCode: "en-us"
+theme: "quire-starter-theme"
+publishDir: site
+
+footnoteReturnLinkContents: "↩"
+metaDataFormat: "yaml"
+googleAnalytics: ""
+
+pluralizeListTitles: true
+disableKinds:
+  - "home"
+  - "section"
+  - "taxonomy"
+  - "taxonomyTerm"
+
+blackfriday:
+  fractions: false
+  hrefTargetBlank: true
+
+# These values can be accessed in templates via .Site.Params
+params:
+  searchEnabled: true
+  licenseIcons: true
+  citationPageLocationDivider: ", "
+  figureLabels: false
+  figureLabelsTextBefore: "Figure "
+  figureLabelsTextAfter: ". "
+  videoFigureFallbackText: true
+  videoFigureFallbackTextBefore: "Watch the video at "
+  videoFigureFallbackTextAfter: ". "
+  websiteFigureFallbackText: true
+  websiteFigureFallbackTextBefore: "Visit the site at "
+  websiteFigureFallbackTextAfter: ". "
+  displayBiblioShort: true
+  imageDir: "img"
+  tocType: full
+  menuType: short
+  objectLinkText: "View in Collection"
+  frontmatterPageStart: 0
+  bodyPageStart: 100
+  backmatterPageStart: 1000

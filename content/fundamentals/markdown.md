@@ -1,8 +1,8 @@
 ---
 title: Markdown
-type: page
+weight: 301
+type: essay
 ---
-
 Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. Writing in Markdown should be thought of as giving your content structure, not style. By design, and through the stylesheets in the project theme, a list or a blockquote might look different from theme to theme, or even from format to format.
 
 ## Basic Markdown Tags
