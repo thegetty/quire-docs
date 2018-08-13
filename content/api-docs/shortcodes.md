@@ -1,6 +1,6 @@
 ---
 title: Shortcodes
-type: page
+type: essay
 ---
 
 ## `q-backmatter`
@@ -13,19 +13,19 @@ Parameters: None.
 
 YAML Dependencies: None.
 
-See: [Working with Text](text/index.html)
+See: [Working with Text](../guide/pages-plain-text)
 
 ## `q-bibliography`
 
 Basic Usage: Generates a bibiliography from the entries in the project's `bibiliography.yml` file.
 
-See: [Citations & Bibliographies](bibliographies/index.html)
+See: [Citations & Bibliographies](../guide/citation-bibliographies)
 
 ## `q-cite`
 
 Basic Usage: Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
 
-See: [Citations & Bibliographies](bibliographies/index.html)
+See: [Citations & Bibliographies](../guide/citation-bibliographies)
 
 ## `q-contributor`
 
@@ -67,7 +67,7 @@ YAML Structure:
 | `url` | N |  |
 | `pic` | N | Filename only. File must be in the top level image director, or in a sub-directory defined in `config.yml` with `contributorSubDir`. |
 
-See: [Contributors](contributors/index.html)
+See: [Contributors](../guide/contributors)
 
 ## `q-copyright`
 
@@ -77,7 +77,7 @@ Basic Usage: Adds a copyright statement and licensing information as you’ve de
 
 Parameters: None.
 
-See: [Copyright & About Pages](copyright/index.html)
+See: [Copyright & About Pages](../guide/copyright-about-pages)
 
 ## `q-figure`
 
@@ -97,7 +97,7 @@ Basic Usage: Inserts a formatted figure image, label, caption and credit line. I
 | `label_text` | string | Will override the default label text for the figure, which is otherwise constructed automatically with the `figureLabelsTextBefore` and `figureLabelsTextAfter` parameters in `config.yml`. |
 | `class` | `is-pulled-right`, `is-pulled-left`, `is-full-width`, `is-centered-small` | Sets the style of the figure image. |
 
-See: [Figure Images](figures/index.html) and [Figure YAML](#)
+See: [Figure Images](../guide/figure-images) and [Figure YAML](#)
 
 ## `q-figure-group`
 
@@ -114,7 +114,7 @@ Basic Usage: Like `q-figure`, but with handling for multiple images at once.
 | `class` | `is-pulled-right`, `is-pulled-left`, `is-full-width`, `is-centered-small` | Sets the style of the group of figures overall. |
 | `grid` |  `1`, `2`, `3`, `4`, `5`, `6` | Determines the horizontal width (in number of images) of the image grid. If no grid is set, the images will stack on top of one another vertically. |
 
-See: [Figure Images](figures/index.html) and [Figure YAML](#)
+See: [Figure Images](../guide/figure-images) and [Figure YAML](#)
 
 ## `q-link-list`
 
@@ -130,7 +130,7 @@ Parameters:
 
 Parameters are not named, but instead defined by their position, starting at 0.
 
-See: [Copyright & About Pages](copyright/index.html)
+See: [Copyright & About Pages](../guide/copyright-about-pages)
 
 ## `q-loc`
 
@@ -140,7 +140,7 @@ Basic Usage: Adds formatted Library of Congress Cataloging-in-Publication Data t
 
 Parameters: None
 
-See: [Copyright & About Pages](copyright/index.html)
+See: [Copyright & About Pages](../guide/copyright-about-pages)
 
 ## `q-publisher-team`
 
@@ -156,16 +156,16 @@ Basic Usage: Adds a revision history to the page, based on values in `publicatio
 | ---------------- | --------------- | ---------------------------------------- |
 | format           | "short", "full" | "short" will show only the first publication date and most recently updated date. "long" shows all dates and list of changes for each. |
 
-See: [Copyright & About Pages](copyright/index.html)
+See: [Copyright & About Pages](../guide/copyright-about-pages)
 
 ## `q-table`
 
 Note: Original version of this was tabled. Still looking for better solution for complex tables.
 
-See: [Figures](figures/index.html)
+See: [Figures](../guide/figure-images)
 
 ## `q-url-link`
 
 Note: Not sure we‘ll do this. Might be better to build in with JS rather than have a separate shortcode just for URLs.
 
-See: [Working with Text](text/index.html)
+See: [Working with Text](../guide/pages-plain-text)

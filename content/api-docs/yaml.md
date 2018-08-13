@@ -1,5 +1,6 @@
 ---
 title: YAML
+type: essay
 ---
 
 ## Configuration
@@ -249,7 +250,7 @@ Type: Array
 
 Objects also support arbitrary attributes, which might include `title`, `artist`, `collection`, etc. Those added will be output in a table on collection catalogue entry pages. The ordering of the display can be controlled with `object_display_order` in `objects.yml`.
 
-See: [Guide on Collection Catalogues](../../guide/collection-catalogues/)
+See: [Guide on Collection Catalogues](../guide/collection-catalogues/)
 
 ## Page
 
@@ -272,4 +273,4 @@ Type: Object
 | `slug` | | |
 | `display` | "online", "menu", "pdf_ebook", "toc" | |
 
-The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [Catalogue Entries](entries.md) and [Contributors](contributors.md) sections respectively.
+The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [Catalogue Entries](../guide/collection-catalogues/) and [Contributors](../guide/contributors/) sections respectively.

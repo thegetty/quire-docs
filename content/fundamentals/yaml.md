@@ -1,6 +1,7 @@
 ---
 title: YAML
-type: page
+weight: 302
+type: essay
 ---
 
 ### YAML syntax basics

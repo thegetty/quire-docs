@@ -1,6 +1,7 @@
 ---
-title: Cheatsheet
-type: page
+title: Quire Cheatsheet
+weight: 501
+type: essay
 ---
 
 ## Markdown
