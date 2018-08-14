@@ -198,16 +198,16 @@ See the introduction [notes](../introduction/#notes)
 
 Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain text markup. While Hugo[&] has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
 
-Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (`{{< shortcode >}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
+Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (`{{</*/ shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
 
 ```
-{{< q-figure id="3.1" >}}
+{{</* q-figure id="3.1" */>}}
 ```
 
 While most Quire shortcodes work like `q-figure` as a single instance, some shortcodes act as wrappers around other text and so appear in pairs, with the second of the pair having a slash `/` preceding the shortcode name, much like you’d find in HTML markup.
 
 ```
-{{< q-class "backmatter" >}}Text goes here{{< /q-class >}}
+{{</* q-class "backmatter" */>}}Text goes here{{</* /q-class */>}}
 
 ```
 

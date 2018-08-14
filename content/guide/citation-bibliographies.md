@@ -27,7 +27,7 @@ These references can then be called individually from within text using the `q-c
 The `q-cite` shortcode adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which can be output as a page-level bibliography on pages with a `type` of `"essay"` and `"entry"`, as explained [below](#displaying-a-bibliography).
 
 ```
-{{< q-cite "Faure 1909" "54" >}}
+{{</* q-cite "Faure 1909" "54" */>}}
 ```
 The shortcode can be used anywhere in your Markdown text, including within footnotes. The first positional parameter is a short form citation that should match one in `references.yml`. The second, optional parameter is a page reference (if needed). The above sample would output as: “Faure 1909, 54”.
 
@@ -40,12 +40,12 @@ Pages in your publication with a `type` of `"essay"` or `"entry"`, will automati
 However, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yml` file, you can use the `q-bibliography` shortcode. The resulting bibliography will be output in the order in which it appears in the references file.
 
 ```
-{{< q-bibliography >}}
+{{</* q-bibliography */>}}
 ```
 [note] You may create one page in your publication where the bibliography will be displayed. All you need is to add the `q-bibliography` shortcode after the YAML block.
 
 ```
-{{< q-bibliography sort="short" >}}
+{{</* q-bibliography sort="short" */>}}
 ```
 
 You may in some cases find that the system’s default sort method is sub-optimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key such as `sort_as` could be added to all entries in the `references.yml` file for fine-grained control.

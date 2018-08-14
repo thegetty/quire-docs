@@ -5,7 +5,7 @@ type: essay
 
 ## `q-backmatter`
 
-Sample: `{{< q-backmatter >}}The text you want formatted here.{{< /q-backmatter >}}`
+Sample: `{{</* q-backmatter */>}}The text you want formatted here.{{</* /q-backmatter */>}}`
 
 Basic Usage: Wrapping text in this shortcode will format it in a manner similar to how footnotes and bibliographies are formatted. Good for sections at the end of essays like Appendices, Acknowledgments, and Contributors Bios.
 
@@ -29,7 +29,7 @@ See: [Citations & Bibliographies](../guide/citation-bibliographies)
 
 ## `q-contributor`
 
-Sample: `{{< q-contributor range="page" type="bio" >}}`
+Sample: `{{</* q-contributor range="page" type="bio" */>}}`
 
 Basic Usage: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
 
@@ -71,7 +71,7 @@ See: [Contributors](../guide/contributors)
 
 ## `q-copyright`
 
-Sample: `{{< q-copyright >}}`
+Sample: `{{</* q-copyright */>}}`
 
 Basic Usage: Adds a copyright statement and licensing information as you’ve defined it in your `publication.yml` file. Commonly used on Copyright and About pages. The shortcode itself makes use of the `copyright.html` partial in your site templates.
 
@@ -81,7 +81,7 @@ See: [Copyright & About Pages](../guide/copyright-about-pages)
 
 ## `q-figure`
 
-Sample: `{{< q-figure id="3.1" >}}`
+Sample: `{{</* q-figure id="3.1" */>}}`
 
 Basic Usage: Inserts a formatted figure image, label, caption and credit line. If using a `data/figures.yml` file, only an `id` parameter is required for this shortcode. If other values supplied directly in the shortcode they will override any corresponding values in the `data/figures.yml`.
 
@@ -101,7 +101,7 @@ See: [Figure Images](../guide/figure-images) and [Figure YAML](#)
 
 ## `q-figure-group`
 
-Sample: `{{< q-figure-group id="3.1, 3.2, 3.3" >}}`
+Sample: `{{</* q-figure-group id="3.1, 3.2, 3.3" */>}}`
 
 Basic Usage: Like `q-figure`, but with handling for multiple images at once.
 
@@ -118,7 +118,7 @@ See: [Figure Images](../guide/figure-images) and [Figure YAML](#)
 
 ## `q-link-list`
 
-Sample: `{{< q-link-list "other-formats" >}}`
+Sample: `{{</* q-link-list "other-formats" */>}}`
 
 Basic Usage: Creates an unordered list of links. Makes use of the `link-list.html` partial in the site templates.
 
@@ -134,7 +134,7 @@ See: [Copyright & About Pages](../guide/copyright-about-pages)
 
 ## `q-loc`
 
-Sample: `{{< q-loc >}}`
+Sample: `{{</* q-loc */>}}`
 
 Basic Usage: Adds formatted Library of Congress Cataloging-in-Publication Data to the page, from values in `publication.yml`.
 
@@ -148,7 +148,7 @@ Note: this should be folded into the `q-contributor`.
 
 ## `q-revision-history`
 
-Sample: `{{< q-revision-history >}}`
+Sample: `{{</* q-revision-history */>}}`
 
 Basic Usage: Adds a revision history to the page, based on values in `publication.yml`.
 

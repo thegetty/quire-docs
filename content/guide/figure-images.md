@@ -44,18 +44,18 @@ Assuming each YAML figure entry in the `figures.yml` file includes a unique `id`
 Figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
 
 ```
-{{< q-figure id="1.2" >}}
+{{</* q-figure id="1.2" */>}}
 ```
 
 If you include an attribute in the shortcode that is also in the `figures.yml` file, the `figures.yml` version is overridden. This can be useful when, for example, a figure is used in multiple locations and you want different captions.
 
 ```
-{{< q-figure id="1.2" caption="" >}}
+{{</* q-figure id="1.2" caption="" */>}}
 ```
 
 [note] Note that including an attribute in this way but leaving it blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`.
 
-[note] Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{< q-figure id="1.2" caption="" >}}` is the same as `{{< q-figure caption="" id="1.2" >}}`.
+[note] Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{</* q-figure id="1.2" caption="" */>}}` is the same as `{{</* q-figure caption="" id="1.2" */>}}`.
 
 ## Labeling Figure Images
 
@@ -73,7 +73,7 @@ To remove a label from a specific figure or a group of figures, add `label="fals
 Depending on your theme[&], by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left`, `is-pulled-right`, `is-large`, and `is-small`. Classes are added just like other attributes in the shortcode.
 
 ```
-{{< q-figure id="1.2" class="is-pulled-left" >}}
+{{</* q-figure id="1.2" class="is-pulled-left" */>}}
 ```
 
 ![`is-pulled-left-right`](../images/screenshots/left-right.png)
@@ -86,7 +86,7 @@ Depending on your theme[&], by default figures will appear at about the width of
 If your project uses a `figures.yml` file, you can also create a group of figures by using the `q-figure-group` shortcode and simply including multiple, comma-separated values in the `id` field.
 
 ```
-{{< q-figure-group id="1.1, 1.2" >}}
+{{</* q-figure-group id="1.1, 1.2" */>}}
 ```
 
 In the above example, each figure’s caption will be included in the grouping. Alternatively, if you add a `caption` attribute directly in the shortcode, it will override those present in the `figures.yml` file and display with the group alone as a single, group caption.
@@ -96,14 +96,14 @@ In the above example, each figure’s caption will be included in the grouping. 
 Just as with the single `q-figure` shortcode, classes can be added to groups to style them. For example, to create a small group of images running along one side of your text.
 
 ```
-{{< q-figure-group class="is-pulled-left" id="1.1, 1.2" >}}
+{{</* q-figure-group class="is-pulled-left" id="1.1, 1.2" */>}}
 ```
 ![`figure-group-caption-left`](../images/figure-group-caption-left.png "The group is positioned on one side of the page")
 
 In addition to all the attributes available to the `q-figure` shortcode, the `q-figure-group` extension also supports the `grid` attribute to specify a preferred grid width. In the below example, a `grid="2"` is specified and so the gallery grid will be 2 images wide at your publication layout’s full-size. Alternately, if you specified `grid="4"` the grid would be 4 images wide making each image relatively smaller.
 
 ```
-{{< q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" >}}
+{{</* q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" */>}}
 ```
 
 ![`figures-grid`](../images/screnshots/grid.png)
@@ -135,7 +135,7 @@ Like the [image labels](#labeling-figure-images) this is controlled in the proje
 If you are not using a `figures.yml` file, figures—including still images and animated gifs but not video—can be inserted in any Markdown document in your publication with the `q-figure` shortcode, where `src` is the name of your file as it appears in the `static/img/` directory of your project.
 
 ```
-{{< q-figure src="fig01.jpg" >}}
+{{</* q-figure src="fig01.jpg" */>}}
 ```
 
 Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in this manner.
@@ -143,5 +143,5 @@ Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in t
 Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [Accessibility Principles](../resources/accessibility-principals/)
 
 ```
-{{< q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" >}}
+{{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}
 ```

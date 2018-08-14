@@ -99,14 +99,14 @@ item: |
 ## Shortcodes
 
 ```
-{{< q-figure id="##" >}}
+{{</* q-figure id="##" */>}}
 
-{{< q-figure-group id="##, ##, ##" >}}
+{{</* q-figure-group id="##, ##, ##" */>}}
 
-{{< q-cite "Lastname YYYY">}}
+{{</* q-cite "Lastname YYYY" */>}}
 
-{{< q-bibliography >}}
+{{</* q-bibliography */>}}
 
-{{< q-contributors range="xxxx" type="xxxx" >}}
+{{</* q-contributors range="xxxx" type="xxxx" */>}}
 
 ```
