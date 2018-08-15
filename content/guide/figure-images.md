@@ -98,7 +98,6 @@ Just as with the single `q-figure` shortcode, classes can be added to groups to 
 ```
 {{</* q-figure-group class="is-pulled-left" id="1.1, 1.2" */>}}
 ```
-{{< q-figure id="1.14" >}}
 
 In addition to all the attributes available to the `q-figure` shortcode, the `q-figure-group` extension also supports the `grid` attribute to specify a preferred grid width. In the below example, a `grid="2"` is specified and so the gallery grid will be 2 images wide at your publication layout’s full-size. Alternately, if you specified `grid="4"` the grid would be 4 images wide making each image relatively smaller.
 

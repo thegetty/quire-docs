@@ -50,10 +50,6 @@ figure_list:
     caption: " "
     credit:
   - id: "1.14"
-    src: /screenshots/figure-group-caption-left.png
-    caption: "The figures group is positioned on one side of the page"
-    credit:
-  - id: "1.15"
     src: /screenshots/grid.png
     caption: " "
     credit:
