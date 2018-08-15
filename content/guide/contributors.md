@@ -46,7 +46,7 @@ Not all of these are required. Depending on your usage, you may need as little a
 
 You can use the `q-contributor` shortcode to create a page of contributor biographies, a section of bios for a single page, a list of contributors, a byline for a particular page, or other similar applications. The shortcode requires both a `"range"` and a `"type"` value.
 
-Sample: `{{< q-contributors range="page" type="bio" >}}`
+Sample: `{{</* q-contributors range="page" type="bio" */>}}`
 
 The `"range"` value determines which contributors will be included in the list. Possible `"range"` values are:
 

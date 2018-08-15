@@ -10,7 +10,8 @@ Typography is an important element of style in your Quire publication. Quire all
 
 The `quire-starter-theme` includes three embedded, open license fonts: ["Merriweather"](https://fonts.google.com/specimen/Merriweather), ["Lato"](https://fonts.google.com/specimen/Lato), and ["Aleo"](http://www.fontfabric.com/aleo-free-font/). You can adjust which ones are used where in the "variables" file of your theme[&], `source/css/variables.scss`:
 
-```scss
+```
+scss
 $serif: Merriweather, Georgia, serif;
 $sans-serif: Lato, Helvetica, sans-serif;
 $slab-serif: Aleo, Rockwell, "Trebuchet MS", sans-serif;
@@ -69,7 +70,8 @@ When you ultimately host the final site on a web server, the fonts will be inclu
 
 Open the file `source/css/fonts.scss`. Each font in your font folder should have its own `@font-face` entry as the examples in this file demonstrate.
 
-```css
+```
+css
 @font-face {
   font-family: "Cooper Hewitt";
   src: url("../fonts/cooper-hewitt/cooper-hewitt-bold.eot");
@@ -106,7 +108,8 @@ The individual weights and styles are instead specified with the `font-weight` a
 
 With the font files included in the `source/fonts` folder, and all the matching `@font-face` entries saved to the `source/css/fonts.scss` file, you can now use your font anywhere in your site CSS with `font-family`.
 
-```css
+```
+css
 h1 {
   font-family: "Cooper Hewitt";
 }
@@ -116,13 +119,15 @@ Typically, you’ll want to change fonts across the project. For instance making
 
 To replace all `$sans-serif` uses with a new font:
 
-```scss
+```
+scss
 $sans-serif: "Cooper Hewitt", Helvetica, sans-serif;
 ```
 
 Or to leave the existing `$sans-serif` and just make all the primary font be our new one:
 
-```scss
+```
+scss
 $family-primary: "Cooper Hewitt", Helvetica, sans-serif;
 ```
 

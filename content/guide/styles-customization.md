@@ -38,13 +38,15 @@ In your project’s `static` directory, there is a `css` directory with a blank 
 
 Any CSS[&] you add here, will be added to your site’s styles. For example, let’s say you’d like a particular line of text in one of your Markdown files[&] to be red. You could wrap that text in `<span>` HTML tags and give it a class.
 
-```html
+```
+html
 <span class="red-text">This text should be red</span>
 ```
 
 And then in your `custom.css` file, add a style rule for that class:
 
-```css
+```
+css
 .red-text {
   color: red;
 }
@@ -52,19 +54,21 @@ And then in your `custom.css` file, add a style rule for that class:
 
 Custom CSS[&] like this can also be used in conjunction with the `q-class` shortcode. While you can add `<span>` HTML tags within lines and paragraphs of text, in Markdown you can’t do the same with `<div>` or `<section>` tags across multiple paragraphs. Instead, you can use the `q-class` shortcode to assign any class to all the Markdown within the opening and closing shortcode tags.
 
-```go
-{{< q-class "red-text" >}}
+```
+go
+{{</* q-class "red-text" */>}}
 
 This entire paragraph should be red.
 
 As should the paragraph after it.
 
-{{< /q-class >}}
+{{</* /q-class */>}}
 ```
 
 Styles added to the `custom.css` file will also override any existing styles already in use in your theme[&]. For example, the following option would apply the style to any element with a class[&] of `"title"` anywhere in your publication.
 
-```css
+```
+css
 .title {
   color: red;
 }
@@ -74,7 +78,8 @@ To determine the selectors for any element[&], in your browser of choice with yo
 
 The more specific you can be with your CSS selectors[&], the more likely the style will only be applied to the specific element you want. For example, if you wanted the page title on specific page to be a different color than the titles all the rest of the pages, you could determine the CSS selector[&] for that element on that page and apply a style rule to it without changing the styles on any other element or page. This example limits the style to the title in the page header of that one page:
 
-```css
+```
+css
 #chapter-one .quire-page__header .title {
   color: red;
 }
@@ -94,7 +99,8 @@ For modest changes to the theme templates[&], we recommend creating new override
 
 For example, let’s say you want to customize the layout of all the pages in your project with the `type` of `"essay"`. In the theme `layouts` directory you’ll find that there’s a sub-directory called `essay` with a file in it called `single.html`. This is the template that controls the `"essay"` pages. You can see there’s a page header, an abstract the main content `(.Content)` of the Markdown file[&] and a page bibliography.
 
-```go
+```
+go
 {{ define "main" }}
 <article class="quire-page" id="main" role="main">
 
@@ -119,7 +125,8 @@ For example, let’s say you want to customize the layout of all the pages in yo
 
 If you copy the `essay` sub-directory and its `single.html` file into the new `layouts` directory in your project’s main directory, this copy will override anything in the theme[&]. So, if you delete the bibliography and rearrange the header and abstract in the copied file, that’s what Quire will use when building the site. It only changes the style of the header and abstract of your pages while the bibliography style remains intact.
 
-```go
+```
+go
 {{ define "main" }}
 <article class="quire-page" id="main" role="main">
 
