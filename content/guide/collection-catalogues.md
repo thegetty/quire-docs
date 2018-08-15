@@ -73,7 +73,7 @@ object:
 
 The page will feature any images associated with the object, followed by a table of object information and finally any essay/entry text included in the page Markdown file[&].
 
-![screenshot of catalogue entry page as rendered in the browser](/images/catalogue-entry-page.jpg)
+{{< q-figure id="1.7" >}}
 
 If you add multiple figures of the object, these are displayed in a rotating carousel, in the order they are listed in the object information in `objects.yml`. If any of the object figures have a `caption` and/or `credit`, they will be included as a pop-up window. And if the figure’s `download` attribute is set to `true`, a download icon will be included as well.
 

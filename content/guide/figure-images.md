@@ -76,7 +76,7 @@ Depending on your theme[&], by default figures will appear at about the width of
 {{</* q-figure id="1.2" class="is-pulled-left" */>}}
 ```
 
-{{< q-figure id="1.12" >}}
+{{< q-figure id="1.9" >}}
 
 
 [note]Some themes may offer additional options, and styles may be edited and new styles added in any theme with css[&].
@@ -91,7 +91,7 @@ If your project uses a `figures.yml` file, you can also create a group of figure
 
 In the above example, each figure’s caption will be included in the grouping. Alternatively, if you add a `caption` attribute directly in the shortcode, it will override those present in the `figures.yml` file and display with the group alone as a single, group caption.
 
-{{< q-figure id="1.13" >}}
+{{< q-figure id="1.10" >}}
 
 Just as with the single `q-figure` shortcode, classes can be added to groups to style them. For example, to create a small group of images running along one side of your text.
 
@@ -105,7 +105,7 @@ In addition to all the attributes available to the `q-figure` shortcode, the `q-
 {{</* q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" */>}}
 ```
 
-{{< q-figure id="1.14" >}}
+{{< q-figure id="1.11" >}}
 
 [note] Note that this is only a **preferred** grid width. With Quire’s responsively designed templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
 This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures individually.

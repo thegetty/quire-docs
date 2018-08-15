@@ -24,32 +24,35 @@ figure_list:
     caption: "`my-project` open in Atom"
     credit: " "
   - id: "1.7"
-    src: /screenshots/file-structure.png
-    caption: "File Structure"
-    credit: " "
+    src: /screenshots/catalogue-entry-page.jpg
+    caption: "screenshot of catalogue entry page as rendered in the browser"
+    credit:
   - id: "1.8"
     src: /screenshots/catalogue-entry-grid.jpg
     caption: "screenshot of catalogue grid page as rendered in the browser"
     credit: " "
   - id: "1.9"
-    src: /screenshots/style1.png
-    caption: "screenshot of the `variables.scss` file in the quire-starter-theme directory"
-  - id: "1.10"
-    src: /screenshots/markdownstyleguide.jpg
-    caption: "markdown style guide with code"
-  - id: "1.11"
-    src: /screenshots/outputstyleguide.jpg
-    caption: "visual output style guide in quire"
-    credit: " "
-  - id: "1.12"
     src: /screenshots/left-right.png
     caption: " "
     credit:
-  - id: "1.13"
+  - id: "1.10"
     src: /screenshots/group-caption.png
     caption: " "
     credit:
-  - id: "1.14"
+  - id: "1.11"
     src: /screenshots/grid.png
     caption: " "
     credit:
+  - id: "1.12"
+    src: /screenshots/style1.png
+    caption: "screenshot of the `variables.scss` file in the quire-starter-theme directory"
+  - id: "1.13"
+    src: /screenshots/style2.png
+    caption: "screenshot of the custom.css file in the static directory"
+  - id: "1.14"
+    src: /screenshots/markdownstyleguide.jpg
+    caption: "markdown style guide with code"
+  - id: "1.15"
+    src: /screenshots/outputstyleguide.jpg
+    caption: "visual output style guide in quire"
+    credit: " "

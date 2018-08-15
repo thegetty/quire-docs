@@ -8,8 +8,8 @@ type: essay
 
 ## Markdown
 
-{{< q-figure id="1.10" >}}
+{{< q-figure id="1.14" >}}
 
 ## Visual Output in Quire
 
-{{< q-figure id="1.11" >}}
+{{< q-figure id="1.15" >}}

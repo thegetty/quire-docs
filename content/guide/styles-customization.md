@@ -12,7 +12,7 @@ Every Quire project has a theme[&] inside the `themes` directory. When you first
 
 To find the variables, open the `quire-starter-theme` directory, navigate to the `source` sub-directory and then `css`, and open the file called `variables.scss`.
 
-{{< q-figure id="1.9" >}}
+{{< q-figure id="1.12" >}}
 
 The variables[&] are prefixed with a dollar sign and are descriptive of what they control. For instance `$quire-navbar-background-color` is the background color of the navigation bar at the top of every page. To make it red, you could enter:
 
@@ -34,7 +34,7 @@ The `quire-starter-theme` uses the Bulma CSS framework, so you can also use any 
 
 In your project’s `static` directory, there is a `css` directory with a blank `custom.css` file.
 
-{{< q-figure id="1.10" >}}
+{{< q-figure id="1.13" >}}
 
 Any CSS[&] you add here, will be added to your site’s styles. For example, let’s say you’d like a particular line of text in one of your Markdown files[&] to be red. You could wrap that text in `<span>` HTML tags and give it a class.
 
