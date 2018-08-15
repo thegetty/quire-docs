@@ -102,7 +102,7 @@ Quire content is written in Markdown. Markdown allows you to express content str
 
 Quire also extends Markdown’s capabilities with a set of [shortcodes](/api-docs/shortcodes/). Type the following figure image shortcode on a new line in your `about.md` file, hit save and check the preview in your browser.
 ```
-{{< q-figure id="1.1" >}}
+{{</* q-figure id="1.1" */>}}
 ```
 
 You’ll see that a figure and caption was added, the information for which is stored in the project’s `figures.yml` file under the `id` of "1.1". If you update the information stored in `figures.yml` it will update on your page, as well as anywhere else that figure is used.
