@@ -273,4 +273,4 @@ Type: Object
 | `slug` | | |
 | `display` | "online", "menu", "pdf_ebook", "toc" | |
 
-The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [Catalogue Entries](../guide/collection-catalogues/) and [Contributors](../guide/contributors/) sections respectively.
+The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [Catalogue Entries](/guide/collection-catalogues/) and [Contributors](/guide/contributors/) sections respectively.

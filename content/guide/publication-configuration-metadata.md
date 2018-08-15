@@ -10,7 +10,7 @@ You can read more about [*YAML syntax basics*](/resources/cheatsheet/) and check
 
 ## Adjusting the Default Publication Settings in the `config.yml` File
 
-The `config.yml` file is a standard and required file for Hugo[&], and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire templates[&]. Users who have worked on other non-Quire Hugo projects will note that those typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses `publication.yml` file inside the `data` directory for that purpose [(see below)](#publication.yml).
+The `config.yml` file is a standard and required file for Hugo[&], and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire templates[&]. Users who have worked on other non-Quire Hugo projects will note that those typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
 
 The properties in the `config.yml` file are individually documented in the [*API/Docs section*](/api-docs/yaml/), however, a few key items to note:
 
@@ -51,7 +51,7 @@ identifier:
 
 DOIs[&] are widely used in academic contexts to support citation while UUIDs[&] serve to identify information in computer systems.
 
-[note] Note that the `isbn` and `issn` identifiers used here are for the online edition specifically. Identifiers for other specific editions (PDF/Print, EPUB, and MOBI) can be defined separately with the appropriate `resource_link`. See the [*Formats, Resources & Links*](#formats-resources--links) section below for more.
+[note] Note that the `isbn` and `issn` identifiers used here are for the online edition specifically. Identifiers for other specific editions (PDF/Print, EPUB, and MOBI) can be defined separately with the appropriate `resource_link`. See the [*Formats, Resources & Links*](#formats-resources-links) section below for more.
 
 Lastly, Quire supports publications with multiple publishers, but at least one `publisher` should be listed with a `name`, `location` and `url` attributes. In particular, this is used in the citation features as well as in search engine metadata.
 
