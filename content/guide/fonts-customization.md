@@ -22,7 +22,7 @@ $family-secondary: $sans-serif;
 // headings and navigation items: $serif, $sans-serif, $slab-serif
 ```
 
-The `$serif`, `$sans-serif` and  `$slab-serif` variables tell your publication what fonts to use. For example, the variable `$serif: Merriweather, Georgia, serif;` tells Quire to use "Merriweather" as serif font. "Georgia" and a generic `serif, the comma-separated fonts declared after our custom font, are fallbacks in case the browser doesn’t load or support our custom one (in this case "Merriweather"). You want your fallbacks to be of the same basic type as your custom one, and go from most to least specific in the list. [Read more about fallbacks and `font-family` usage on Mozilla’s web docs.](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+The `$serif`, `$sans-serif` and  `$slab-serif` variables tell your publication what fonts to use. For example, the variable `$serif: Merriweather, Georgia, serif;` tells Quire to use "Merriweather" as serif font. "Georgia" and a generic "serif", the comma-separated fonts declared after our custom font, are fallbacks in case the browser doesn’t load or support our custom one (in this case "Merriweather"). You want your fallbacks to be of the same basic type as your custom one, and go from most to least specific in the list. [Read more about fallbacks and `font-family` usage on Mozilla’s web docs.](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
 
 The variables `$family-primary` and `$family-secondary` tell your publication where to use the fonts you specify with the above variables. If the `$family-primary` font of your publication is `$serif`, "Merriweather" (and its fallback options) will be used in the body text of the publication pages.
 

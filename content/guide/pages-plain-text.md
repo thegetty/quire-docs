@@ -52,7 +52,7 @@ mypublication.com/part-two/chapter-03/
 
 ## Defining Your Page’s Configuration and Metadata
 
-Every page in a Quire publication starts with a block of YAML (discussed further in the [*Publication Configuration & Metadata*](publication-configuration-metadata) page of this guide). The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes, at the very top of the page.
+Every page in a Quire publication starts with a block of YAML (discussed further in the [*Publication Configuration & Metadata*](../publication-configuration-metadata/) page of this guide). The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes, at the very top of the page.
 
 ```yaml
 ---
@@ -66,7 +66,7 @@ The page `type` must be one of nine possible values: `page`, `essay`, `entry`, `
 
 The page `weight` is a number and will determine the order in which the page appears in the publication. The first page in your publication would be `weight: 1` (don’t start with zero 0), the second would be `weight: 2`, and so on. Numbering should be unique, and sequential whole numbers, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at "0", your first section might be "100", second section "200" and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
 
-When you need to add more page information, the complete list of options is available in the ["YAML"](../api-docs/yaml/) section of the guide.
+When you need to add more page information, the complete list of options is available in the ["YAML"](/api-docs/yaml/) section of the guide.
 
 
 ## Defining Page Types
@@ -77,7 +77,7 @@ Every page has one of the following nine `type`s. If none is specified, Quire de
 
 `essay`: Meant to be a standalone, self-contained article in a periodical or collected volume. The `essay` page type will typically include the contributor names and potentially bios, its own bibliography, and an abstract. This is also reflected in the metadata embedded in the page as well, which will describe the page more specifically and with more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole.
 
-`entry`: An entry in a catalogue of objects. Typically includes a large, zoomable image of the object, with a table of object details and narrative text. You can learn more about entries in the [*Catalogues* page](collection-catalogues)of this guide
+`entry`: An entry in a catalogue of objects. Typically includes a large, zoomable image of the object, with a table of object details and narrative text. You can learn more about entries in the [*Catalogues* page](../collection-catalogues/)of this guide
 
 `cover`: The cover of your publications. Typically a full-screen splash page with large title, with cover description and publication information below. Along with defining `type: cover`, you will usually want to also add `slug: .` so that the cover page URL is the base URL of your site (your homepage). You can find more details about how to use `slug` in [Creating section landing pages](#creating-section-landing-pages) below.
 
@@ -117,11 +117,11 @@ display:
   toc:
 ```
 
-[note]Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents or search index, but it is still built. When deploying your site from the built files in the `public/` directory, simply delete any unneeded ones. Read [more about site deployment](multiformat-output) in the chapter on *Multi-Format Output*.
+[note]Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents or search index, but it is still built. When deploying your site from the built files in the `public/` directory, simply delete any unneeded ones. Read [more about site deployment](../multiformat-output/) in the chapter on *Multi-Format Output*.
 
 ## Formatting Text Content with Markdown
 
-The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it italic. You can learn more about Markdown syntax in the [*Markdown fundamentals* section](../fundamentals/markdown/) of this guide.
+The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it italic. You can learn more about Markdown syntax in the [*Markdown fundamentals* section](/fundamentals/markdown/) of this guide.
 
 ## Applying Types of Linking
 
@@ -151,7 +151,7 @@ More info in our [about](../about/) page.
 There are several types of linking between features, text, or objects on a single page that can be included through the following Markdown formatting:
 
 - Callouts to figures (# are used for figures):
-  - This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images* section](figure-images) of this guide.
+  - This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images* section](../figure-images/) of this guide.
 
 ```
 [number or name of figure](#figureid)
@@ -187,18 +187,18 @@ See the introduction [notes](../introduction/#notes)
     - At the end of the main body text, one can designate a “Notes” or related subheading using ## or ###. Underneath that heading the information of the citation will be listed using this format:
       - `[^#]: Corresponding citation information.`
       - `[^1]: Roy Stryker to all FSA (then RA) photographers, outline for first published in Carver, *Just Before the War*, n.p.`
-  - You can find additional information about formatting notes text with Markdown in the [*Markdown fundamentals* section](../fundamentals/markdown) of this guide.
+  - You can find additional information about formatting notes text with Markdown in the [*Markdown fundamentals* section](/fundamentals/markdown) of this guide.
 
 - Citation and Bibliography shortcode linking:
-  - When the citation shortcode, `{{< q-cite "author date" "page # if applicable" >}}` is used in body of text, that corresponds to the short and full bibliographic information provided in the `references.yml`, an in-page bibliography will be generated. This linking is completed automatically.
+  - When the citation shortcode, `{{</* q-cite "author date" "page # if applicable" */>}}` is used in body of text, that corresponds to the short and full bibliographic information provided in the `references.yml`, an in-page bibliography will be generated. This linking is completed automatically.
   - When the short code is used in the page the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
-  - For more information see the [Citations & Bibliography](citation-bibliographies) section of this guide.
+  - For more information see the [Citations & Bibliography](../citation-bibliographies/) section of this guide.
 
 ## Using Shortcodes to Add Features
 
 Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain text markup. While Hugo[&] has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
 
-Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (`{{</*/ shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
+Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (`{{</* shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
 
 ```
 {{</* q-figure id="3.1" */>}}
@@ -211,13 +211,13 @@ While most Quire shortcodes work like `q-figure` as a single instance, some shor
 
 ```
 
-The following shortcode are (or will be) available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes api reference](../api-docs/shortcodes/).
+The following shortcode are (or will be) available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes api reference](/api-docs/shortcodes/).
 
 
 - [`q-class`](#): Wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom css styles or interactions as needed.
-- [`q-bibliography`](citation-bibliographies): Generates a bibliography from the entries in the project's `bibiliography.yml` file.
-- [`q-cite`](citation-bibliographies): Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
-- [`q-contributors`](contributors): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
-- [`q-figure`](figure-images): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
-- [`q-figure-group`](figure-images): Like `q-figure`, but with handling for multiple images at once.
-- [`q-link-list`](copyright-about-pages): Creates an unordered list of links. Makes use of the `link-list.html` partial in the site templates.
+- [`q-bibliography`](../citation-bibliographies/): Generates a bibliography from the entries in the project's `bibiliography.yml` file.
+- [`q-cite`](../citation-bibliographies/): Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
+- [`q-contributors`](../contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
+- [`q-figure`](../figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
+- [`q-figure-group`](../figure-images/): Like `q-figure`, but with handling for multiple images at once.
+- [`q-link-list`](../copyright-about-pages/): Creates an unordered list of links. Makes use of the `link-list.html` partial in the site templates.

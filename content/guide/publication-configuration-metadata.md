@@ -6,13 +6,13 @@ type: essay
 
 Quire uses two YAML files[&] as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yml` and `publication.yml`. By default, both `config.yml` and `publication.yml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.
 
-You can read more about [*YAML syntax basics*](../resources/cheatsheet/) and check out a sample of the [*`publication.yml` file*](../resources/sample-publication-file/) in other chapters of this guide.
+You can read more about [*YAML syntax basics*](/resources/cheatsheet/) and check out a sample of the [*`publication.yml` file*](/resources/sample-publication-file/) in other chapters of this guide.
 
 ## Adjusting the Default Publication Settings in the `config.yml` File
 
 The `config.yml` file is a standard and required file for Hugo[&], and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire templates[&]. Users who have worked on other non-Quire Hugo projects will note that those typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses `publication.yml` file inside the `data` directory for that purpose [(see below)](#publication.yml).
 
-The properties in the `config.yml` file are individually documented in the [*API/Docs section*](../api-docs/yaml/), however, a few key items to note:
+The properties in the `config.yml` file are individually documented in the [*API/Docs section*](/api-docs/yaml/), however, a few key items to note:
 
 - While Quire exclusively uses the `title` value as defined in your `publication.yml` file, other Hugo[&] projects require a `title` value in the `config.yml` file, so it is a good idea to include it here as well.
 
@@ -24,7 +24,7 @@ The properties in the `config.yml` file are individually documented in the [*API
 
 The `publication.yml` file in the `/data` directory is *the* source of metadata for your publication. While the only value that is truly required is the one for the property `title`, it is a good idea to fill out the `publication.yml` file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support search engine optimization (SEO)[&] and general discovery.
 
-Some key areas are summed up below, and match headings in the `publication.yml` file itself, but there is a detailed documentation of individual properties and their values in the [*API/Docs section*](../api-docs/yaml/) of this guide.
+Some key areas are summed up below, and match headings in the `publication.yml` file itself, but there is a detailed documentation of individual properties and their values in the [*API/Docs section*](/api-docs/yaml/) of this guide.
 
 ### Title & Description
 
@@ -63,7 +63,7 @@ An optional `contributor_as_it_appears` value allows for more fine-grained contr
 
 The editors, designers and developers and others who worked on the title may be listed as contributors with the `project-team` value. This information is usually then listed on the *About* and *Copyright* pages of the publication.
 
-Read more about this matter in the [*Contributors*](contributors) chapter of this guide.
+Read more about this matter in the [*Contributors*](/guide/contributors/) chapter of this guide.
 
 ### Copyright & License
 

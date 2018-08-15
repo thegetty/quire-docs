@@ -6,7 +6,7 @@ type: essay
 
 Quire CLI, or command line interface, ([quire-cli](https://github.com/gettypubs/quire-cli)) is the control for creating, previewing and outputting Quire projects. It is written in JavaScript and requires [Node.js](https://nodejs.org) to run. Quire CLI is typically run from Terminal on a Mac, and Git Bash (or its equivalent) on a PC. The following commands are available
 
-The full Quire CLI system is not currently available to PC users. However, PC users can still start and work on Quire projects, preview the online edition, and output final files for it, by installing and using Hugo directly (the static-site software underlying Quire). They will not, however, be able to: Output PDF or EPUB editions, or make changes to Style (.scss) or Javascript (.js) files inside the themes folder. More information can be found in the [PC installation instructions](/install-pc.md). Corresponding commands are included in the table below.
+The full Quire CLI system is not currently available to PC users. However, PC users can still start and work on Quire projects, preview the online edition, and output final files for it, by installing and using Hugo directly (the static-site software underlying Quire). They will not, however, be able to: Output PDF or EPUB editions, or make changes to Style (.scss) or Javascript (.js) files inside the themes folder. More information can be found in the [PC installation instructions](../pc-installation/). Corresponding commands are included in the table below.
 
 
 | Command | PC Option | Description |

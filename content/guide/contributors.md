@@ -12,7 +12,7 @@ Contributors can be listed under `contributor` in your `publication.yml` file, o
 
 Each `contributor` should have a `type` specified of either `"primary"`, `"secondary"`, or `"project-team"`.
 
-- **Primary** contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire templates[&], they are typically used on the cover, the menu and in the [metadata embedded in your publication](publication-configuration-metadata); listed as the creators of the publication.
+- **Primary** contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire templates[&], they are typically used on the cover, the menu and in the [metadata embedded in your publication](/publication-configuration-metadata/); listed as the creators of the publication.
 
 - **Secondary** contributors are not typically shown in the menu or cover, but are often included in book metadata, and may also be referenced by the `q-contributor` shortcode as noted below. In future iterations of Quire, we hope to be able to reference contributors listed here from individual pages.
 
@@ -38,7 +38,7 @@ Wherever they are listed (`publication.yml` or pages YAML block), the following 
   bio:
 ```
 
-Not all of these are required. Depending on your usage, you may need as little as  `first_name` and `last_name`, or just `full_name`. See the [`q-contributor` shortcode reference](../api-docs/shortcodes/#q-contributor) for details on each of the standard contributor attributes.
+Not all of these are required. Depending on your usage, you may need as little as  `first_name` and `last_name`, or just `full_name`. See the [`q-contributor` shortcode reference](/api-docs/shortcodes/#q-contributor) for details on each of the standard contributor attributes.
 
 [note] Contributors may also be listed in the `contributor_as_it_appears` field in your `publication.yml` file. This value will override the indivdual `primary_contributor`s listed on the cover, the menu and in the book metadata. Useful when you want to include specific language about their role. For example: "Edited by Jane Smith and John Doe".
 

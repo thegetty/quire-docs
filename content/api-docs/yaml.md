@@ -250,7 +250,7 @@ Type: Array
 
 Objects also support arbitrary attributes, which might include `title`, `artist`, `collection`, etc. Those added will be output in a table on collection catalogue entry pages. The ordering of the display can be controlled with `object_display_order` in `objects.yml`.
 
-See: [Guide on Collection Catalogues](../guide/collection-catalogues/)
+See: [Guide on Collection Catalogues](/guide/collection-catalogues/)
 
 ## Page
 

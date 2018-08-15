@@ -51,7 +51,7 @@ Other typical Markdown formatting is listed below. Note that the spacing after t
 
 In a Quire publication, anything that could be considered data, is written in a plain-text data format called [YAML](http://yaml.org/).
 
-- YAML is used for configuring how Quire works and for providing metadata about your publication in files with the extension `.yml` (both topics covered in [Publication Configuration & Metadata](../guide/metadata)).
+- YAML is used for configuring how Quire works and for providing metadata about your publication in files with the extension `.yml` (both topics covered in [Publication Configuration & Metadata](/guide/metadata)).
 
 - `.yml` files are also used for storing information about figures, bibliographic references, and art objects.
 

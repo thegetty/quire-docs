@@ -22,7 +22,7 @@ Quire does not require a specific image file format or size, but we have some re
 
 ## Creating a `figures.yml` File for Figure Image Metadata
 
-For most publications, or at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file which should be placed in your `data` folder. These then can be called from wherever you need them in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](../api-docs/yaml/#figure), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
+For most publications, or at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file which should be placed in your `data` folder. These then can be called from wherever you need them in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/api-docs/yaml/#figure), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
 
 ```yaml
 - id: "1.1"
@@ -59,7 +59,7 @@ If you include an attribute in the shortcode that is also in the `figures.yml` f
 
 ## Labeling Figure Images
 
-By default, all figure images are labeled automatically, either at the start of the caption, or just under the image itself in the case of a figure group with a single, group caption [(see below)](#creating-and-styling-figure-groups-with-shortcodes). You can turn off this behavior in the `config.yml` file by switching the value `figureLabels: true` to `figureLabels: false`.
+By default, all figure images are labeled automatically, either at the start of the caption, or just under the image itself in the case of a figure group with a single, group caption [(see below)](#creating-and-styling-figure-groups-with-the-q-figure-group-shortcode). You can turn off this behavior in the `config.yml` file by switching the value `figureLabels: true` to `figureLabels: false`.
 
 Figure labels are constructed  with the `id` of the image and the `figureLabelsTextBefore` `figureLabelsTextAfter` values defined in your `config.yml` file. For example if the `id` value is "12.3" and the `figureLabelsTextBefore` value is "Figure ", and `figureLabelsTextAfter` value is ". ", the resulting label would be "Figure 12.3".
 
@@ -140,7 +140,7 @@ If you are not using a `figures.yml` file, figures—including still images and 
 
 Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in this manner.
 
-Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [Accessibility Principles](../resources/accessibility-principals/)
+Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [Accessibility Principles](/resources/accessibility-principals/)
 
 ```
 {{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}
