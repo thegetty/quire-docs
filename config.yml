@@ -17,6 +17,8 @@ publishDir: site
 footnoteReturnLinkContents: "↩"
 metaDataFormat: "yaml"
 googleAnalytics: ""
+pygmentsCodefences: true
+pygmentsStyle: "monokailight"
 
 pluralizeListTitles: true
 disableKinds:
