@@ -1,0 +1,63 @@
+/*Creates a box for notes and changes fonts color*/
+
+.box {
+  background-color: #a9b4c8;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(54, 54, 54, 0.1), 0 0 0;
+  color: #ffffff;
+  display: block;
+  padding: 1.25rem;
+}
+
+.box strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.box code {
+  color: #ffffff;
+  background-color: #b1bbcd;
+  }
+
+.box pre {
+  color: #ffffff;
+  background-color: #b1bbcd;
+  }
+
+/*Changes color of cover "start reading" button*/
+
+.quire-cover__button {
+    background-color: #a9b4c8;
+    color: #fff;
+    border-width: 0px;
+    border-radius: 6px;
+    font-family: Lato, Helvetica, sans-serif;
+    font-style: italic;
+  }
+
+.quire-cover__button:hover {
+  background-color: #a9b4c8; }
+
+/*changes syntax font color*/
+
+code {
+  background-color: transparent;
+  color: #363636;
+}
+
+a code {
+  background-color: transparent;
+  color: #3273dc;
+}
+
+.title a code {
+    color: #363636;
+}
+
+/*changes indentation in shortcodes page*/
+
+#api-docs-shortcodes .quire-page__content .content p + p {
+    text-indent: 0em; }
+
+#api-docs-yaml .quire-page__content .content p + p {
+    text-indent: 0em; }
