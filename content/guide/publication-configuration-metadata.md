@@ -51,7 +51,7 @@ identifier:
 
 DOIs[&] are widely used in academic contexts to support citation while UUIDs[&] serve to identify information in computer systems.
 
-[note] Note that the `isbn` and `issn` identifiers used here are for the online edition specifically. Identifiers for other specific editions (PDF/Print, EPUB, and MOBI) can be defined separately with the appropriate `resource_link`. See the [*Formats, Resources & Links*](#formats-resources-links) section below for more.
+{{< q-class "box" >}}Note that the `isbn` and `issn` identifiers used here are for the online edition specifically. Identifiers for other specific editions (PDF/Print, EPUB, and MOBI) can be defined separately with the appropriate `resource_link`. See the [*Formats, Resources & Links*](#formats-resources-links) section below for more.{{< /q-class >}}
 
 Lastly, Quire supports publications with multiple publishers, but at least one `publisher` should be listed with a `name`, `location` and `url` attributes. In particular, this is used in the citation features as well as in search engine metadata.
 
@@ -71,7 +71,7 @@ You should include a `copyright` line property for your publication, and optiona
 
 A simple copyright[&] statement would typically be formatted as "© 2018 Author Name".
 
-[note]The `copyright` property does support Markdown[&] formatting to allow for multiple paragraphs and other formatting.
+{{< q-class "box" >}}The `copyright` property does support Markdown[&] formatting to allow for multiple paragraphs and other formatting.{{< /q-class >}}
 
 Open access licensing typically means applying one of seven Creative Commons licenses[&] to your publication. This is in addition to your copyright statement.
 

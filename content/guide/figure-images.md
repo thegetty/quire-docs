@@ -35,7 +35,9 @@ For most publications, or at least, those with more than just a handful of image
 
 Also available are the attributes `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, and `label_text`.
 
-[note] If your figures are organized in sub-directories within your `static/img/` directory, they should appear as part of the file path under `src`, otherwise, only the filename is needed.
+{{< q-class "box" >}}
+If your figures are organized in sub-directories within your `static/img/` directory, they should appear as part of the file path under `src`, otherwise, only the filename is needed.
+{{< /q-class >}}
 
 ## Inserting Figure Images the `q-figure` Shortcode
 
@@ -43,19 +45,19 @@ Assuming each YAML figure entry in the `figures.yml` file includes a unique `id`
 
 Figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
 
-```
+```go
 {{</* q-figure id="1.2" */>}}
 ```
 
 If you include an attribute in the shortcode that is also in the `figures.yml` file, the `figures.yml` version is overridden. This can be useful when, for example, a figure is used in multiple locations and you want different captions.
 
-```
+```go
 {{</* q-figure id="1.2" caption="" */>}}
 ```
 
-[note] Note that including an attribute in this way but leaving it blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`.
+{{< q-class "box" >}}Note that including an attribute in this way but leaving it blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`.{{< /q-class >}}
 
-[note] Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{</* q-figure id="1.2" caption="" */>}}` is the same as `{{</* q-figure caption="" id="1.2" */>}}`.
+{{< q-class "box" >}}Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{</* q-figure id="1.2" caption="" */>}}` is the same as `{{</* q-figure caption="" id="1.2" */>}}`.{{< /q-class >}}
 
 ## Labeling Figure Images
 
@@ -72,20 +74,20 @@ To remove a label from a specific figure or a group of figures, add `label="fals
 
 Depending on your theme[&], by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left`, `is-pulled-right`, `is-large`, and `is-small`. Classes are added just like other attributes in the shortcode.
 
-```
+```go
 {{</* q-figure id="1.2" class="is-pulled-left" */>}}
 ```
 
 {{< q-figure id="1.9" >}}
 
 
-[note]Some themes may offer additional options, and styles may be edited and new styles added in any theme with css[&].
+{{< q-class "box" >}}Some themes may offer additional options, and styles may be edited and new styles added in any theme with css[&].{{< /q-class >}}
 
 ## Creating and Styling Figure Groups with the `q-figure-group` Shortcode
 
 If your project uses a `figures.yml` file, you can also create a group of figures by using the `q-figure-group` shortcode and simply including multiple, comma-separated values in the `id` field.
 
-```
+```go
 {{</* q-figure-group id="1.1, 1.2" */>}}
 ```
 
@@ -95,20 +97,20 @@ In the above example, each figure’s caption will be included in the grouping. 
 
 Just as with the single `q-figure` shortcode, classes can be added to groups to style them. For example, to create a small group of images running along one side of your text.
 
-```
+```go
 {{</* q-figure-group class="is-pulled-left" id="1.1, 1.2" */>}}
 ```
 
 In addition to all the attributes available to the `q-figure` shortcode, the `q-figure-group` extension also supports the `grid` attribute to specify a preferred grid width. In the below example, a `grid="2"` is specified and so the gallery grid will be 2 images wide at your publication layout’s full-size. Alternately, if you specified `grid="4"` the grid would be 4 images wide making each image relatively smaller.
 
-```
+```go
 {{</* q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" */>}}
 ```
 
 {{< q-figure id="1.11" >}}
 
-[note] Note that this is only a **preferred** grid width. With Quire’s responsively designed templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
-This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures individually.
+{{< q-class "box" >}}Note that this is only a **preferred** grid width. With Quire’s responsively designed templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
+This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures individually.{{< /q-class >}}
 
 ## Adding Video Figures
 
@@ -123,17 +125,17 @@ Quire supports video embeds from either YouTube (`media_type: youtube`)or Vimeo 
   media_type: youtube
 ```
 
-[note] The `src` image provided in this example is a frame from the video and will be used in place of the video in the PDF and EPUB versions of your publication. In Quire this is referred to as a fallback. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
+{{< q-class "box" >}}The `src` image provided in this example is a frame from the video and will be used in place of the video in the PDF and EPUB versions of your publication. In Quire this is referred to as a fallback. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
 
-Like the [image labels](#labeling-figure-images) this is controlled in the project’s `config.yml` file with `videoFigureFallbackText: true`, `videoFigureFallbackTextBefore: "Watch the video at "` and `videoFigureFallbackTextAfter: "."`.
+Like the [image labels](#labeling-figure-images) this is controlled in the project’s `config.yml` file with `videoFigureFallbackText: true`, `videoFigureFallbackTextBefore: "Watch the video at "` and `videoFigureFallbackTextAfter: "."`. {{< /q-class >}}
 
-[note] Note that on YouTube, videos can be filed as “Unlisted” and this will let you embed the video, but will not include the video on your channel page, or in YouTube’s general search engine.
+{{< q-class "box" >}}Note that on YouTube, videos can be filed as “Unlisted” and this will let you embed the video, but will not include the video on your channel page, or in YouTube’s general search engine.{{< /q-class >}}
 
 ## Adding Basic Figures
 
 If you are not using a `figures.yml` file, figures—including still images and animated gifs but not video—can be inserted in any Markdown document in your publication with the `q-figure` shortcode, where `src` is the name of your file as it appears in the `static/img/` directory of your project.
 
-```
+```go
 {{</* q-figure src="fig01.jpg" */>}}
 ```
 
@@ -141,6 +143,6 @@ Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in t
 
 Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [Accessibility Principles](/resources/accessibility-principals/)
 
-```
+```go
 {{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}
 ```

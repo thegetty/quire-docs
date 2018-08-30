@@ -8,7 +8,7 @@ Open your your Terminal command line application and follow the four steps below
 
 1. Install **Apple’s Xcode** by copying and pasting the following command and hitting enter. After hitting ender, an additional alert notification will pop up. Click “Install” and follow the prompts.
 
-    ```
+    ```text
     xcode-select --install
     ```
 
@@ -18,7 +18,7 @@ Open your your Terminal command line application and follow the four steps below
 
     Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default) and that the version you downloaded was 11.3, you can update the command if either of these is not the case.
 
-    ```
+    ```text
     cd Downloads/prince-11.3-macosx
     sudo ./install.sh
     ```
@@ -27,23 +27,23 @@ Open your your Terminal command line application and follow the four steps below
 
     When complete, type `cd` into the Terminal to return to your home/user directory.
 
-    ```
+    ```text
     cd
     ```
 
 4. Copy and paste the following line into your Terminal to download the **Quire CLI** (command line application) to your computer from GitHub.
 
-    ```
+    ```text
     git clone https://github.com/gettypubs/quire-cli.git
     ```
 
     You may asked to enter your GitHub username and password. When complete, install the CLI by copying and pasting the following commands into your Terminal and pressing enter. The first resets user permissions for your local directory, the second installs Quire.
 
-    ```
+    ```text
     sudo chown -R $USER /usr/local
     ```
 
-    ```
+    ```text
     cd quire-cli
     npm install -g
     ```

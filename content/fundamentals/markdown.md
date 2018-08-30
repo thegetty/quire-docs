@@ -9,7 +9,7 @@ Markdown is a very simple, plain text markup language that uses a few text rules
 
 Here are the most commonly used tags:
 
-```
+```md
 *Italic Text*
 **Bold Text**
 ```
@@ -17,7 +17,7 @@ Here are the most commonly used tags:
 
 **Bold Text**
 
-```
+```md
 # Heading 1
 ## Heading 2
 ### Heading 3
@@ -30,20 +30,20 @@ Here are the most commonly used tags:
 
 On the headings, in general you should not use the *Heading 1* tag in your content as that should be reserved for the page title, which is automatically generated. Start with *Heading 2*. Also headings should be thought of as levels of your content outline, not as sizes large to small, though they’re often thought of and used that way. See our [*Notes on accessibility*](../resources/accessibility.md) for more on this.
 
-```
+```md
 > Blockquote
 ```
 > Blockquote
 
 Links are created with text in brackets followed immediately by a url in parentheses:
 
-```
+```md
 [Link Text](http://www.linkadress.com)
 ```
 [Link Text](http://www.linkadress.com)
 
 
-```
+```md
 - dashes make
   - a list with
     - bullets
@@ -52,7 +52,7 @@ Links are created with text in brackets followed immediately by a url in parenth
   - a list with
     - bullets
 
-```
+```md
 * asterisks make
   * a list with
       * bullets
@@ -64,7 +64,7 @@ Links are created with text in brackets followed immediately by a url in parenth
 
 Indented dashes and asterisks create sub bullets in a bulleted list.
 
-```
+```md
 1. numbers make
 2. a list with
 3. numbers
@@ -88,7 +88,7 @@ Indented dashes and asterisks create sub bullets in a bulleted list.
 
 Footnotes can also be added with Markdown. Use a numbered marker like `[^1]` in the text where you want the number to go, and then at the end of the page, usually under a “Notes” heading, add the corresponding footnote:
 
-```
+```md
 ## Notes
 
 [^1]: The footnote itself is the same thing as the footnote number reference in the text, but with a colon followed by the footnote text
@@ -96,7 +96,7 @@ Footnotes can also be added with Markdown. Use a numbered marker like `[^1]` in 
 
 Footnotes can also include Markdown formatting, including lists and even multiple paragraphs. For these, indent the content inwards two levels and put a line space in between the paragraphs just as you would elsewhere.
 
-```
+```md
 ## Notes
 
 [^2]:
@@ -109,14 +109,19 @@ Footnotes can also include Markdown formatting, including lists and even multipl
     - as well
 ```
 
-[note/warning] The built-in Markdown processor[&] will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them.
+{{< q-class "box" >}}
+<ion-icon name="warning"></ion-icon>
+The built-in Markdown processor[&] will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them. {{< /q-class >}}
 
-[note/warning] Blackfriday[&], the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses:
+{{< q-class "box" >}}
+<ion-icon name="warning"></ion-icon>
+Blackfriday[&], the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses:
 
-```markdown
+```
 [^1] &#40;Some aside text here)
 [^1] \(Some aside text here)
 ```
+{{< /q-class >}}
 
 ## Fractions, Superscripts and Subscripts
 
@@ -165,4 +170,10 @@ Once installed, make sure you are in the folder where your .docx document is sav
 - Quire needs ATX-style Markdown headers[&], these are specified adding `--atx-headers` to the command.
 - The lines of the generated Markdown file[&] are 80 characters long. Adding the option `--wrap=none` to the command will override the default wrapping making easier to work with your files in the text editor[&].
 
-The order of the extensions doesn't matter, and you can either type: `pandoc --atx-header --wrap=none -s your_document_name.docx -t markdown -o your_document_name.md` or `pandoc -s your_document_name.docx -t markdown --atx-header --wrap=none -o your_document_name.md`
+The order of the extensions doesn't matter, and you can either type:
+
+`pandoc --atx-header --wrap=none -s your_document_name.docx -t markdown -o your_document_name.md`
+
+or `pandoc -s your_document_name.docx -t markdown --atx-header --wrap=none -o your_document_name.md`
+
+<script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>

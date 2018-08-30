@@ -10,8 +10,7 @@ Typography is an important element of style in your Quire publication. Quire all
 
 The `quire-starter-theme` includes three embedded, open license fonts: ["Merriweather"](https://fonts.google.com/specimen/Merriweather), ["Lato"](https://fonts.google.com/specimen/Lato), and ["Aleo"](http://www.fontfabric.com/aleo-free-font/). You can adjust which ones are used where in the "variables" file of your theme[&], `source/css/variables.scss`:
 
-```
-scss
+```scss
 $serif: Merriweather, Georgia, serif;
 $sans-serif: Lato, Helvetica, sans-serif;
 $slab-serif: Aleo, Rockwell, "Trebuchet MS", sans-serif;
@@ -29,7 +28,7 @@ The variables `$family-primary` and `$family-secondary` tell your publication wh
 
 ## Adding a New Font
 
-[Note] Any font you add to your project should be under an open license, or you should have an explicit license to use it. While licensed fonts may offer variety, using them often means paying fees, and tracking usage. Additionally, if you are using GitHub to publicly share your Quire project, licensed fonts should **never** be included in your repository without also being listed on your `.gitignore` file, as this will expose the files to other users.
+{{< q-class "box" >}}Any font you add to your project should be under an open license, or you should have an explicit license to use it. While licensed fonts may offer variety, using them often means paying fees, and tracking usage. Additionally, if you are using GitHub to publicly share your Quire project, licensed fonts should **never** be included in your repository without also being listed on your `.gitignore` file, as this will expose the files to other users. {{< /q-class >}}
 
 For open license fonts, [Google Fonts](https://fonts.google.com/) is a great source, but other more artisanal options abound like the faces from the [League of Moveable Type](https://www.theleagueofmoveabletype.com/), or even the [Cooper Hewitt’s own open source font](https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/). For more free fonts and for thoughtful ideas about their use, Jeremiah Shoaf’s [*The Definitive Guide to Free Fonts*](https://www.typewolf.com/free-fonts), is worth the purchase price.
 
@@ -41,7 +40,7 @@ It’s recommended to include your font files in multiple file formats in order 
 
 All the fonts you’d like to add should go in a folder named after the font, and all should be named consistently. We recommend the following format with lowercase and no spaces:
 
-```
+```md
 📁 cooper-hewitt
   📄 cooper-hewitt-bold.eot
   📄 cooper-hewitt-bold.ttf
@@ -56,7 +55,7 @@ All the fonts you’d like to add should go in a folder named after the font, an
 In your `themes/quire-starter-theme` folder, all fonts are stored in `source/fonts`. Move your folder of fonts there.
 
 
-[note] If you are using GitHub, and this is a licensed font, or a font you don’t otherwise want available to anyone outside your project, add a line to your project’s `.gitignore` file to make sure the fonts are not added to the git record.
+{{< q-class "box" >}}If you are using GitHub, and this is a licensed font, or a font you don’t otherwise want available to anyone outside your project, add a line to your project’s `.gitignore` file to make sure the fonts are not added to the git record.
 
 ```
 cooper-hewitt
@@ -64,14 +63,13 @@ cooper-hewitt
 
 You will continue to have the fonts available in your local copy of your project, but anyone working on a clone or fork of your repository will have to manually add your font files to their local copy for them to appear in the project properly when they preview or build the site.
 
-When you ultimately host the final site on a web server, the fonts will be included in the built files and will need to be included in the package on the web server. Files hosted this way are not readibly accessible to non-technical users, but are still public. For another layer of protection, if it’s of a concern, font files could be assigned more generic names (ie., `f1-bld.ttf` instead of `cooper-hewitt-bold.ttf`). For complete protection of licensed/proprietary font files, other solutions should be sought.
+When you ultimately host the final site on a web server, the fonts will be included in the built files and will need to be included in the package on the web server. Files hosted this way are not readibly accessible to non-technical users, but are still public. For another layer of protection, if it’s of a concern, font files could be assigned more generic names (ie., `f1-bld.ttf` instead of `cooper-hewitt-bold.ttf`). For complete protection of licensed/proprietary font files, other solutions should be sought.{{< /q-class >}}
 
 ### 2. Adding Font Information to Your Stylesheets
 
 Open the file `source/css/fonts.scss`. Each font in your font folder should have its own `@font-face` entry as the examples in this file demonstrate.
 
-```
-css
+```css
 @font-face {
   font-family: "Cooper Hewitt";
   src: url("../fonts/cooper-hewitt/cooper-hewitt-bold.eot");
@@ -108,8 +106,7 @@ The individual weights and styles are instead specified with the `font-weight` a
 
 With the font files included in the `source/fonts` folder, and all the matching `@font-face` entries saved to the `source/css/fonts.scss` file, you can now use your font anywhere in your site CSS with `font-family`.
 
-```
-css
+```css
 h1 {
   font-family: "Cooper Hewitt";
 }
@@ -119,15 +116,13 @@ Typically, you’ll want to change fonts across the project. For instance making
 
 To replace all `$sans-serif` uses with a new font:
 
-```
-scss
+```scss
 $sans-serif: "Cooper Hewitt", Helvetica, sans-serif;
 ```
 
 Or to leave the existing `$sans-serif` and just make all the primary font be our new one:
 
-```
-scss
+```scss
 $family-primary: "Cooper Hewitt", Helvetica, sans-serif;
 ```
 

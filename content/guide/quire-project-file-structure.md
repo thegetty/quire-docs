@@ -6,9 +6,9 @@ type: essay
 
 Inside each Quire project, Hugo[&] will define the following directories and files:
 
-{{< q-figure id="1.7" >}}
+{{< q-figure id="1.3" >}}
 
-[note/tip] The three directories that most users work in are `content`, `data`, and `static`. Developers and designers will also make use of `themes`.
+{{< q-class "box" >}} The three directories that most users work in are `content`, `data`, and `static`. Developers and designers will also make use of `themes`.{{< /q-class >}}
 
 ## 📁 bin
 
@@ -50,7 +50,7 @@ If you are using `git` for version control[&], this file defines which files and
 
 This is a standard, and required file for Hugo, and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire templates[&].
 
-[note/warning] Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire additionally uses `publication.yml` file inside the `data` directory for that purpose. Read more in [*Publication Metadata & Configuration*](../publication-configuration-metadata/).
+{{< q-class "box" >}}Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire additionally uses `publication.yml` file inside the `data` directory for that purpose. Read more in [*Publication Metadata & Configuration*](../publication-configuration-metadata/).{{< /q-class >}}
 
 ## 📄 README.md
 

@@ -8,7 +8,7 @@ type: essay
 
 In pages with the extension `.md`, YAML block entries can be in any order. It doesn't matter if you write:
 
-```
+```yaml
 ---
 title: Cheatsheet
 type: page
@@ -16,7 +16,7 @@ type: page
 ```
 Or:
 
-```
+```yaml
 ---
 type: page
 title: Cheatsheet
@@ -55,4 +55,4 @@ item: |
   - also allowed
 ```
 
-[note/tip] It’s always a good idea to copy and paste your YAML blocks into a validator like [YAML Lint](http://www.yamllint.com/) or [Code Beautify validator](https://codebeautify.org/yaml-validator) to make sure there aren’t any hidden errors. You don’t need to use the re-formatted YAML validators like this will sometimes give back to you, you just need to make sure it’s correctly formatted.
+{{< q-class "box" >}} It’s always a good idea to copy and paste your YAML blocks into a validator like [YAML Lint](http://www.yamllint.com/) or [Code Beautify validator](https://codebeautify.org/yaml-validator) to make sure there aren’t any hidden errors. You don’t need to use the re-formatted YAML validators like this will sometimes give back to you, you just need to make sure it’s correctly formatted. {{< /q-class >}}

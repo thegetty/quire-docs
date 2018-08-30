@@ -8,7 +8,7 @@ type: essay
 
 The way you organize the pages Markdown files in the `content` directory of your project defines the structure of your publication. The names of the files will effect the final URLs of your publication as well as how the *Table of Contents* is organized. By default, URLs will be the filename, minus the `.md` suffix. Files nested in a sub-directory within `content` will include that sub-directory in the URL as well. So if your site is mypublication.com, these files:
 
-```
+```md
 📄 cover.md
 📄 contents.md
 📁 part-one
@@ -22,7 +22,7 @@ The way you organize the pages Markdown files in the `content` directory of your
 
 Will map to these URLs:
 
-```
+```md
 mypublication.com/cover/
 mypublication.com/contents/
 mypublication.com/part-one/section-overview/
@@ -32,22 +32,19 @@ mypublication.com/part-two/section-overview/
 mypublication.com/part-two/chapter-03/
 ```
 
-[note/tip] There are some important rules and tips to keep in mind, as well as further ways of refining and customizing the organization of your publication content:
+There are some important rules and tips to keep in mind, as well as further ways of refining and customizing the organization of your publication content:
 
 1. Filenames should be lowercase, with no spaces or special characters.
 
 2. Sub-directories can’t have other sub-directories within them.
 
 3. Don't use `index.md` or `_index.md` files.
-
   For users with previous Hugo, static-site or other web development experience, you should not use `index.md` or `_index.md` files in your Quire project. `_index.md` is a Hugo convention for creating sections and nested sections, but in Quire it works against the linear ordering of the publication and breaks the *Next* and *Previous* page navigation. `index.md` is a web convention, but in Hugo, the presence of an `index.md` file in any directory converts that directory into a so-called “page bundle” in Hugo’s eyes and none of the other pages in that directory will be rendered.
 
 4. Create homepage and section landing pages with `slug`.
-
   `index.md` files would typically be used to create pages with URLs at the root level of the directory including the homepage of your site and sub-directories (like `mypublication.com/` and `mypublication.com/part-one/`). Because `index.md` files can’t be used, you can instead define a `slug` attribute with a value of `.` (a period) in the page YAML of the page/file you want to use as a landing or homepage. You should add one `slug` attribute with a value of `.` per section. Read more about how to use `slug` to [create section landing pages](#creating-section-landing-pages) in the below section.
 
 5. Control page ordering with `weight`.
-
   In the example above, we’ve listed the files and directories in the order they would appear in the publication. When looking in the actual `content` directory, however, they will almost certainly not appear in the proper publication order, but rather more likely, they’d appear alphabetically. To control page ordering in Quire, define a `weight` attribute, with a numerical value, in the page YAML.
 
 ## Defining Your Page’s Configuration and Metadata
@@ -117,7 +114,7 @@ display:
   toc:
 ```
 
-[note]Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents or search index, but it is still built. When deploying your site from the built files in the `public/` directory, simply delete any unneeded ones. Read [more about site deployment](../multiformat-output/) in the chapter on *Multi-Format Output*.
+{{< q-class "box" >}}Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents or search index, but it is still built. When deploying your site from the built files in the `public/` directory, simply delete any unneeded ones. Read [more about site deployment](../multiformat-output/) in the chapter on *Multi-Format Output*.{{< /q-class >}}
 
 ## Formatting Text Content with Markdown
 
@@ -131,7 +128,7 @@ There are several types of linking that can be applied to text on your page. Sty
 
 External links can be included through the following Markdown formatting:
 
-```
+```md
 [Link text](http://www.linkaddress.com)
 [Getty Museum](http://www.getty.edu/museum/)
 ```
@@ -140,7 +137,7 @@ External links can be included through the following Markdown formatting:
 
 Internal links between pages in your Quire publication can be included through the following Markdown formatting:
 
-```
+```md
 [Link text](../nameofpage/)
 [Pea Pickers](../catalogue/2)
 More info in our [about](../about/) page.
@@ -153,10 +150,10 @@ There are several types of linking between features, text, or objects on a singl
 - Callouts to figures (# are used for figures):
   - This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images* section](../figure-images/) of this guide.
 
-```
-[number or name of figure](#figureid)
-[fig. 1](#1.1)
-```
+      ```md
+      [number or name of figure](#figureid)
+      [fig. 1](#1.1)
+      ```
 
 - Linking to other page elements (# is also used for other elements on the same page):
   - The IDs for other elements can be found using the following method:
@@ -164,29 +161,29 @@ There are several types of linking between features, text, or objects on a singl
     - In the page's code certain elements will include a piece of code, `id="idnamehere"` that designates the ID of that element. If the name of the element has a space that will be represented with a dash `-`.
     - For example, the ID of a heading will often be the name of that heading.
 
-```
-[referencetolink](#element-id)
-See [heading 1](#heading-1).
-```
+        ```md
+        [referencetolink](#element-id)
+        See [heading 1](#heading-1).
+        ```
 
 - Linking to elements on a separate page
   - Following the formula for internal links between pages, you can also specify an element on a separate page as a link destination.
 
-```  
-[referencetolink](../nameofpage/#idname)
-See the introduction [notes](../introduction/#notes)
-```
-[note] Blackfriday, the built in Markdown processor, will incorrectly create link even if there is a space between the bracketed text and the parentheses when there is some text in brackets followed immediately by more text in parentheses. To avoid the linking, you can use a backslash escape character before the first parentheses.  
+      ```  md
+      [referencetolink](../nameofpage/#idname)
+      See the introduction [notes](../introduction/#notes)
+      ```
+{{< q-class "box" >}}Blackfriday, the built in Markdown processor, will incorrectly create link even if there is a space between the bracketed text and the parentheses when there is some text in brackets followed immediately by more text in parentheses. To avoid the linking, you can use a backslash escape character before the first parentheses.{{< /q-class >}}
 
 - Footnotes within a page, NOT bibliography or citations shortcodes:
   - With this, a numbered footnote in the text when clicked upon will take a user to the corresponding area of the page where the full citation is located. The reverse is true from the linked number or arrow from the full citation.
   - This requires two parts:
     - Within the main body text, in a spot where you would like a footnote to be included will be set up as the following:
-      - `Example text.[^#]`
-      - `"A photographic study of use of leisure time in various income groups."[^1]`
+        - `Example text.[^#]`
+        - `"A photographic study of use of leisure time in various income groups."[^1]`
     - At the end of the main body text, one can designate a “Notes” or related subheading using ## or ###. Underneath that heading the information of the citation will be listed using this format:
-      - `[^#]: Corresponding citation information.`
-      - `[^1]: Roy Stryker to all FSA (then RA) photographers, outline for first published in Carver, *Just Before the War*, n.p.`
+        - `[^#]: Corresponding citation information.`
+        - `[^1]: Roy Stryker to all FSA (then RA) photographers, outline for first published in Carver, *Just Before the War*, n.p.`
   - You can find additional information about formatting notes text with Markdown in the [*Markdown fundamentals* section](/fundamentals/markdown) of this guide.
 
 - Citation and Bibliography shortcode linking:
@@ -200,13 +197,13 @@ Quire adds a number of specialty shortcodes which extend the functionality and p
 
 Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (`{{</* shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
 
-```
+```go
 {{</* q-figure id="3.1" */>}}
 ```
 
 While most Quire shortcodes work like `q-figure` as a single instance, some shortcodes act as wrappers around other text and so appear in pairs, with the second of the pair having a slash `/` preceding the shortcode name, much like you’d find in HTML markup.
 
-```
+```go
 {{</* q-class "backmatter" */>}}Text goes here{{</* /q-class */>}}
 
 ```

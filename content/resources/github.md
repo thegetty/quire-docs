@@ -1,6 +1,6 @@
 ---
 title: GitHub for Quire
-weight: 507
+weight: 508
 type: essay
 ---
 
@@ -28,7 +28,7 @@ While you can host your project code on GitHub, you can also use it to host a li
 
 4. Open Terminal and navigate to your project (if it’s in your main user directory, just `cd YOUR-PROJECT-DIRECTORY-NAME`), and enter:
 
-    ```
+    ```text
     bin/deploy.sh
     ```
 

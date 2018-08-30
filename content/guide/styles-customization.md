@@ -16,7 +16,7 @@ To find the variables, open the `quire-starter-theme` directory, navigate to the
 
 The variables[&] are prefixed with a dollar sign and are descriptive of what they control. For instance `$quire-navbar-background-color` is the background color of the navigation bar at the top of every page. To make it red, you could enter:
 
-```
+```css
 $quire-navbar-background-color: red;
 ```
 
@@ -38,15 +38,13 @@ In your project’s `static` directory, there is a `css` directory with a blank 
 
 Any CSS[&] you add here, will be added to your site’s styles. For example, let’s say you’d like a particular line of text in one of your Markdown files[&] to be red. You could wrap that text in `<span>` HTML tags and give it a class.
 
-```
-html
+```html
 <span class="red-text">This text should be red</span>
 ```
 
 And then in your `custom.css` file, add a style rule for that class:
 
-```
-css
+```css
 .red-text {
   color: red;
 }
@@ -54,8 +52,7 @@ css
 
 Custom CSS[&] like this can also be used in conjunction with the `q-class` shortcode. While you can add `<span>` HTML tags within lines and paragraphs of text, in Markdown you can’t do the same with `<div>` or `<section>` tags across multiple paragraphs. Instead, you can use the `q-class` shortcode to assign any class to all the Markdown within the opening and closing shortcode tags.
 
-```
-go
+```go
 {{</* q-class "red-text" */>}}
 
 This entire paragraph should be red.
@@ -67,8 +64,7 @@ As should the paragraph after it.
 
 Styles added to the `custom.css` file will also override any existing styles already in use in your theme[&]. For example, the following option would apply the style to any element with a class[&] of `"title"` anywhere in your publication.
 
-```
-css
+```css
 .title {
   color: red;
 }
@@ -78,8 +74,7 @@ To determine the selectors for any element[&], in your browser of choice with yo
 
 The more specific you can be with your CSS selectors[&], the more likely the style will only be applied to the specific element you want. For example, if you wanted the page title on specific page to be a different color than the titles all the rest of the pages, you could determine the CSS selector[&] for that element on that page and apply a style rule to it without changing the styles on any other element or page. This example limits the style to the title in the page header of that one page:
 
-```
-css
+```css
 #chapter-one .quire-page__header .title {
   color: red;
 }
@@ -87,9 +82,9 @@ css
 
 In the above example, we are selecting the element with a class[&] of `"title"` that is inside an element with the class of `"quire-page__header"` (both of which start with a period `.` to indicate class[&]), that is inside an element[&] (in this case an element representing the page itself) with an id[&] of `"#chapter-one"` (which starts with a hashmark to indicate id).
 
-[note]In Quire, page ids are unique, and can be found on the `<div>` element that has the class[&] `"quire-primary"`. By using the id[&] in your custom CSS[&], you are targeting only that page, not all `"quire-primary"` elements[&] throughout your publication.
+{{< q-class "box" >}}In Quire, page ids are unique, and can be found on the `<div>` element that has the class[&] `"quire-primary"`. By using the id[&] in your custom CSS[&], you are targeting only that page, not all `"quire-primary"` elements[&] throughout your publication.{{< /q-class >}}
 
-[note]Exceptionally, if somewhere there is a more specific CSS selector[&] that’s applying a style to an element, it will override the less specific one even if it’s in your `custom.css` file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your CSS selector[&] is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The "Inspect element" tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.
+{{< q-class "box" >}}Exceptionally, if somewhere there is a more specific CSS selector[&] that’s applying a style to an element, it will override the less specific one even if it’s in your `custom.css` file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your CSS selector[&] is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The "Inspect element" tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.{{< /q-class >}}
 
 ## Overriding Theme Templates
 
@@ -99,8 +94,7 @@ For modest changes to the theme templates[&], we recommend creating new override
 
 For example, let’s say you want to customize the layout of all the pages in your project with the `type` of `"essay"`. In the theme `layouts` directory you’ll find that there’s a sub-directory called `essay` with a file in it called `single.html`. This is the template that controls the `"essay"` pages. You can see there’s a page header, an abstract the main content `(.Content)` of the Markdown file[&] and a page bibliography.
 
-```
-go
+```go
 {{ define "main" }}
 <article class="quire-page" id="main" role="main">
 
@@ -125,8 +119,7 @@ go
 
 If you copy the `essay` sub-directory and its `single.html` file into the new `layouts` directory in your project’s main directory, this copy will override anything in the theme[&]. So, if you delete the bibliography and rearrange the header and abstract in the copied file, that’s what Quire will use when building the site. It only changes the style of the header and abstract of your pages while the bibliography style remains intact.
 
-```
-go
+```go
 {{ define "main" }}
 <article class="quire-page" id="main" role="main">
 

@@ -77,7 +77,7 @@ The page will feature any images associated with the object, followed by a table
 
 If you add multiple figures of the object, these are displayed in a rotating carousel, in the order they are listed in the object information in `objects.yml`. If any of the object figures have a `caption` and/or `credit`, they will be included as a pop-up window. And if the figure’s `download` attribute is set to `true`, a download icon will be included as well.
 
-[note] In the table of object information, the items displayed and their titles are determined by the `object_display_order` attribute in the `objects.yml` file, as detailed in the section above. If the object information included a `link`, a “View in Collection” button is generated. The text of this button can be customized with the `objectLinkText` attribute in the project’s `config.yml` file.
+{{< q-class "box" >}}In the table of object information, the items displayed and their titles are determined by the `object_display_order` attribute in the `objects.yml` file, as detailed in the section above. If the object information included a `link`, a “View in Collection” button is generated. The text of this button can be customized with the `objectLinkText` attribute in the project’s `config.yml` file. {{< /q-class >}}
 
 ## Generating Object Lists/Grids
 
@@ -85,7 +85,7 @@ In a collection catalogue, there will typically be a visual table of contents fo
 
 In this example, inside the `content` directory, we have a folder called `catalogue` and inside that, three numbered entries and an overview page:
 
-```
+```md
 📁 catalogue
   📄 overview.md
   📄 1.md
@@ -104,4 +104,4 @@ slug: .
 
 {{< q-figure id="1.8" >}}
 
-[Note] The `slug` value in the sample above, will change the URL of the page. Instead of being `/catalogue/overview` it will be simply `/catalogue`. Read more about the function of `slug` in the [*Pages and Plain Text*](../pages-plain-text/) page of this guide.
+{{< q-class "box" >}}The `slug` value in the sample above, will change the URL of the page. Instead of being `/catalogue/overview` it will be simply `/catalogue`. Read more about the function of `slug` in the [*Pages and Plain Text*](../pages-plain-text/) page of this guide.{{< /q-class >}}

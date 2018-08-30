@@ -1,6 +1,6 @@
 ---
 title: Quire CLI Instructions
-weight: 506
+weight: 507
 type: essay
 ---
 

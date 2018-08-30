@@ -42,7 +42,7 @@ To start a new Quire project, open your shell and type `quire new my-project`. Q
 
 Once the download is complete, still in your shell, type `cd my-project` and hit enter (which means change directory into the directory called “my-project”, which was just created with the `quire new my-project` command), and then type `quire preview` and enter again.
 
-```
+```text
 cd my-project
 quire preview
 ```
@@ -89,7 +89,7 @@ Below the YAML block is where your content goes. Type something here, save the f
 
 Quire content is written in Markdown. Markdown allows you to express content structure as minimally as possible, using simple text indicators. Paragraphs are made with double line breaks; asterisks around text will make it italic, double asterisks will make it bold; headings are made with hashmarks preceding the heading text.
 
-```
+```md
 # Heading 1
 ## Heading 2
 ### Heading 3
@@ -101,7 +101,8 @@ Quire content is written in Markdown. Markdown allows you to express content str
 ```
 
 Quire also extends Markdown’s capabilities with a set of [shortcodes](/api-docs/shortcodes/). Type the following figure image shortcode on a new line in your `about.md` file, hit save and check the preview in your browser.
-```
+
+```go
 {{</* q-figure id="1.1" */>}}
 ```
 
@@ -117,7 +118,7 @@ First, open the `cover.md` file and try adding `image: cover_bg.jpg` to the YAML
 
 Next, we can change the colors used in various elements of the site design. For that, we need to look in the `themes` directory of the project. By default, the `quire new` command installs the `quire-starter-theme` here, but down the road, you could potentially switch in a different theme (once they are available). For now, look inside the theme for the `source/css` sub-directories and inside that, the `application.scss` file. Here you’ll find a number of variables, prefixed with a dollar sign, that are descriptive of what they control. For instance `$quire-navbar-background-color` is the background color of the navigation bar at the top of every page. Change it to something new, like a Hex value, or one of the [standard 140 color keywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords), save the change, and preview in your browser.
 
-```
+```css
 $quire-navbar-background-color: honeydew;
 ```
 
