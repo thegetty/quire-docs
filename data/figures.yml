@@ -56,3 +56,15 @@ figure_list:
     src: /screenshots/outputstyleguide.jpg
     caption: "visual output style guide in quire"
     credit: " "
+  - id: "1.16"
+    src: /screenshots/hugo-logo.png
+    caption: " "
+    credit: " "
+  - id: "1.17"
+    src: /screenshots/prince-xml-logo.png
+    caption: " "
+    credit: " "
+  - id: "1.18"
+    src: /screenshots/webpack-logo.png
+    caption: " "
+    credit: " "
