@@ -1,6 +1,7 @@
 ---
 title: Dependency Guide
 type: essay
+weight: 403
 ---
 
 Each Quire project relies on two projects the `quire-cli` a command line interface (cli) to run commands to preview and build a static website, a PDF or an EPUB and the `quire-starter-theme` a front end development toolkit that allows users to shape the output of the website, PDF and EPUB. This page explains what makes these two projects work and what major dependencies currently make quire what it is.

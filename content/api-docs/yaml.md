@@ -1,6 +1,7 @@
 ---
 title: YAML
 type: essay
+weight: 401
 ---
 
 ## Configuration
