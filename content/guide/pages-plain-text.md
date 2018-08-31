@@ -118,7 +118,7 @@ display:
 
 ## Formatting Text Content with Markdown
 
-The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it italic. You can learn more about Markdown syntax in the [*Markdown fundamentals* section](/fundamentals/markdown/) of this guide.
+The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it italic. You can learn more about Markdown syntax in the [*Markdown fundamentals* section](../fundamentals/) of this guide.
 
 ## Applying Types of Linking
 
