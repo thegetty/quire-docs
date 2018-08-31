@@ -33,7 +33,7 @@ While not exhaustive, the list below is meant to highlight the *key* principals 
 
 - Any element or piece of information that inherits meaning or context from its *visual* appearance, should be augmented with spoken, descriptive labels for screen readers. Quire templates make use of a `visually-hidden` CSS class. When applied to an element, the text within is hidden from view, but will be read aloud by screen-readers.
 
-- If clicking on an interface element sends the user to a new page or a new location on the existing page, it should be an <a> link. If clicking changes the state of the current page, such as in opening a modal, it should be a <button>.
+- If clicking on an interface element sends the user to a new page or a new location on the existing page, it should be an `<a>` link. If clicking changes the state of the current page, such as in opening a modal, it should be a `<button>`.
 
 - Buttons that hide/reveal content and rely on JavaScript to do so, should be progressively created with JavaScript on the client side. In this way, if JavaScript is disabled or not functioning, the user will have access to *all* the content of the page.
 
