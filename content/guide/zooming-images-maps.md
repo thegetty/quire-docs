@@ -1,6 +1,6 @@
 ---
 title: Zooming Images & Maps
-weight: 205
+weight: 207
 type: essay
 ---
 

@@ -1,11 +1,67 @@
 ---
-title: Markdown
-weight: 301
+title: "Fundamentals: YAML and Markdown"
+weight: 204
 type: essay
 ---
+
+## YAML syntax basics
+
+Dashes represent individual items in a list. In the example below, there are two contributors, each with a first and last name. Note too, indentations matter in YAML.
+
+```yaml
+item:
+other_item:
+multiple_items:
+  - item_name:
+    item_description:
+  - item_name:
+    item_description:
+```
+
+YAML can include multiple, markdown-style paragraphs by using a pipe character, dropping down a line, and indenting one level. This can be used in areas like captions, descriptions, and abstracts.
+
+```yaml
+item: |
+  Using a pipe character, and then dropping down a line and indenting like this allows you to include multiple paragraphs, just as you would in Markdown.
+
+  Not all Quire YAML attributes expect Markdown though, so check the docs.
+
+  - Markdown style lists
+  - and other formatting are
+  - also allowed
+```
+
+In pages with the extension `.md`, YAML block entries can be in any order. It doesn't matter if you write:
+
+```yaml
+---
+title: Cheatsheet
+type: page
+---
+```
+Or:
+
+```yaml
+---
+type: page
+title: Cheatsheet
+---
+```
+
+You’ll also notice that YAML values don’t necessarily need to be in quotes. `title: My Chapter`, without *My Chapter* in quotes, works just fine. However, certain formatting and characters (like colons within the text, or lines leading off with asterisks meant to italicize some of the text) can cause issues. In these cases, double quotes can minimize build issues: `title: "My Chapter"`.
+
+```yaml
+item: "If the text here has a colon : or other special characters it should be surrounded in double quotes"
+```
+{{< q-class "box" >}} Anything at all can go within double-quotes, except for other double-quotes. If you need double-quotes, use “curly quotes”, use a backslash to escape the double quote `\"` or Hugo will also process two single straight quotes '' as a double when building the pages. {{< /q-class >}}
+
+{{< q-class "box" >}} It’s always a good idea to copy and paste your YAML blocks into a validator like [YAML Lint](http://www.yamllint.com/) or [Code Beautify validator](https://codebeautify.org/yaml-validator) to make sure there aren’t any hidden errors. You don’t need to use the re-formatted YAML validators like this will sometimes give back to you, you just need to make sure it’s correctly formatted. {{< /q-class >}}
+
+## Markdown syntax basics
+
 Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. Writing in Markdown should be thought of as giving your content structure, not style. By design, and through the stylesheets in the project theme, a list or a blockquote might look different from theme to theme, or even from format to format.
 
-## Basic Markdown Tags
+### Basic Markdown Tags
 
 Here are the most commonly used tags:
 
@@ -84,7 +140,7 @@ Indented dashes and asterisks create sub bullets in a bulleted list.
 
 - You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Customizing Styles*](../styles.md) chapter of this guide.) Note, however, that you can’t do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode. Read more about Quire shortcodes below.
 
-## Markdown Footnotes
+### Markdown Footnotes
 
 Footnotes can also be added with Markdown. Use a numbered marker like `[^1]` in the text where you want the number to go, and then at the end of the page, usually under a “Notes” heading, add the corresponding footnote:
 
@@ -110,11 +166,9 @@ Footnotes can also include Markdown formatting, including lists and even multipl
 ```
 
 {{< q-class "box" >}}
-<ion-icon name="warning"></ion-icon>
 The built-in Markdown processor[&] will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them. {{< /q-class >}}
 
 {{< q-class "box" >}}
-<ion-icon name="warning"></ion-icon>
 Blackfriday[&], the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses:
 
 ```
@@ -123,7 +177,7 @@ Blackfriday[&], the built in Markdown processor, will incorrectly also create li
 ```
 {{< /q-class >}}
 
-## Fractions, Superscripts and Subscripts
+### Fractions, Superscripts and Subscripts
 
 The fractions 1&#47;4, 1&#47;2, and 3&#47;4, will be automatically converted into proper, Unicode fractions (1/4, 1/2, 3/4). Other Unicode fractions can also be used in Markdown directly, though note that not all fonts support the eighths in which case, browsers will render them with a default font. The fractions are: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. Any others would need to be written using superscript and subscript formatting.
 
@@ -135,25 +189,25 @@ While some Markdown processors[&] support superscript and subscript formatting w
 
 You will see a `fractions` attribute with a value of "false" in the `config.yml` file of your publication. Changing this to true will automatically render fraction-style superscript and subscript formatting for anything written as an integer followed by a slash and another integer. However, in many instances this will catch things that are not meant to be fractions. For this reason, we recommend leaving `fractions` set to `false`, and manually adding the necessary markup as it’s needed.
 
-## Markdown Preview
+### Markdown Preview
 
 Many text editors offer a preview function for Markdown, either pre-installed or as an add-on. In Atom for instance, a Markdown file can be previewed by selecting Packages > Markdown Preview > Toggle Preview (or just Shift-Control-M). The preview won’t match the style of your publication site, but will have default styling for headings, blockquotes, links and the like to allow you to confirm proper formatting.
 
 Outside of more code-driven text editors, there are also a growing number of Markdown-specific editors. [Typora](https://typora.io/), for instance, offers a single-page live preview by displaying styled Markdown-formatted text as you type it.
 
-## Markdown Output Configuration
+### Markdown Output Configuration
 
 Hugo has a built-in Markdown processor, Blackfriday[&](https://github.com/russross/blackfriday), which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
 
 By default, in the `config.yml` file of your Quire project, Blackfriday’s[&] `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such.), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
 
-## Markdown Resources
+### Markdown Resources
 
 This guide doesn’t cover all existing Markdown tags but there are some good sources that will help you find the right syntax to format your text. For example, the Programming Historian provides an [introductory lesson to Markdown](https://programminghistorian.org/lessons/getting-started-with-markdown), and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site [Daring Fireball](https://daringfireball.net/projects/markdown/).
 
 Be aware of the multiple [Markdown flavors](https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors) out there and the fact that not all flavors are supported by Blackfriday[&].
 
-## Microsoft Word to Markdown Conversion
+### Microsoft Word to Markdown Conversion
 
 Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using Pandoc[&] can be done.
 
@@ -175,5 +229,3 @@ The order of the extensions doesn't matter, and you can either type:
 `pandoc --atx-header --wrap=none -s your_document_name.docx -t markdown -o your_document_name.md`
 
 or `pandoc -s your_document_name.docx -t markdown --atx-header --wrap=none -o your_document_name.md`
-
-<script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>

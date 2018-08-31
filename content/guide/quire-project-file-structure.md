@@ -1,6 +1,6 @@
 ---
 title: Quire Project File Structure
-weight: 201
+weight: 202
 type: essay
 ---
 
