@@ -30,8 +30,9 @@ Open your your Terminal command line application and follow the four steps below
     ```
     cd
     ```
+4. Visit the **Pandoc** site, download the Mac OS version. The easiest way to install Pandoc on a Mac is to download the .pkg file. Install this file by double clicking the icon and following the prompts. Visit this page https://github.com/jgm/pandoc/releases/ to download the latest release.
 
-4. Copy and paste the following line into your Terminal to download the **Quire CLI** (command line application) to your computer from GitHub.
+5. Copy and paste the following line into your Terminal to download the **Quire CLI** (command line application) to your computer from GitHub.
 
     ```
     git clone https://github.com/gettypubs/quire-cli.git
