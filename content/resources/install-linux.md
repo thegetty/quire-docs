@@ -89,8 +89,34 @@ type: page
     ```sh
     nvm use node
     ```
+4. Install **Pandoc** for EPUB and MOBI output 
 
-4. Install **Quire-CLI**
+   ```
+   cd ~
+   ```
+
+   Visit https://github.com/jgm/pandoc/releases and download the latest .deb file
+
+   ```
+   wget https://github.com/jgm/pandoc/releases/download/2.2.3.2/pandoc-2.2.3.2-1-amd64.deb
+   ```
+   Install the .deb file
+   
+   ```
+   sudo dpkg -i pandoc-2.2.3.2-1-amd64.deb
+   ```
+
+   This will install the pandoc and pandoc-citeproc executables and man pages.
+
+   Verify pandoc was installed
+
+   ```
+   pandoc -v
+   ```
+
+   If Pandoc version information is returned then Pandoc was successfully installed on your system.
+
+5. Install **Quire-CLI**
 
     ```
     git clone https://github.com/gettypubs/quire-cli
@@ -122,7 +148,7 @@ type: page
     cd ~
     ```
 
-5. Start a new **Quire** project
+6. Start a new **Quire** project
 
     Create a new project
 
