@@ -8,7 +8,7 @@ type: page
 
     2. Download and install **Node.js** and **npm** at https://nodejs.org/en/download/. Make sure you get the LTS version of Node.js, npm will be installed during the same process. The Windows installer will be downloaded, just open it and a setup wizard screen will guide you through the process.
 
-    3. Download **Prince** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your processor. To install Prince you can follow the instructions at their site: https://www.princexml.com/doc-install/#windows
+    3. Download **Prince** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Prince you can follow the instructions at their site: https://www.princexml.com/doc-install/#windows
 
     4. Open **PowerShell** (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select "run as administrator" from the context menu. Then once you get the administrator PowerShell window, type the following command:
 
@@ -16,8 +16,11 @@ type: page
       npm install --g --production windows-build-tools
       ```
     This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with your the name of your computer and your username once it's complete.
+    
+    5. Download **Pandoc** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc on your system.
 
-    5.  Continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one) and type the following command to download **Quire CLI** to your computer from GitHub:
+
+    6.  Continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one) and type the following command to download **Quire CLI** to your computer from GitHub:
 
       ```
       git clone https://github.com/gettypubs/quire-cli
