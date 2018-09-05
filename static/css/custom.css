@@ -61,3 +61,10 @@ a code {
 
 #api-docs-yaml .quire-page__content .content p + p {
     text-indent: 0em; }
+
+/*adds style for glossary terms*/
+
+.quire-glossary {
+    color: #3273dc;
+    text-decoration: underline;
+}

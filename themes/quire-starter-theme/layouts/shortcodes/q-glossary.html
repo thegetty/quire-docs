@@ -39,7 +39,7 @@
     {{- $entry := ($.Page.Scratch.GetSortedMapValues "term") -}}
     {{- $termId := $term | urlize -}}
     {{- $.Page.Scratch.SetInMap "cited" $termId $entry -}}
-    <a href="#{{ $term | urlize }}" class="quire-citation"><span class="visually-hidden">Citation: </span>{{- markdownify $term -}}{{- if eq (len .Params) 2 }}{{ $.Site.Params.citationPageLocationDivider }}{{ .Get 1 }}{{ end -}}<span class="quire-citation__content">{{- markdownify $description -}}</span></a>
+    <span style="#{{ $term | urlize }}" class="quire-citation" ><span class="visually-hidden">Citation: </span><span class="quire-glossary">{{- markdownify $term -}}</span>{{- if eq (len .Params) 2 }}{{ $.Site.Params.citationPageLocationDivider }}{{ .Get 1 }}{{ end -}}<span class="quire-citation__content">{{- markdownify $description -}}</span></span>
   {{- end -}}
 
 {{- end -}}
