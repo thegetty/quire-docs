@@ -6,7 +6,7 @@ type: essay
 
 Inside each Quire project, Hugo[&] will define the following directories and files:
 
-{{< q-figure id="1.3" >}}
+{{< q-figure id="1.2" >}}
 
 {{< q-class "box" >}} The three directories that most users work in are `content`, `data`, and `static`. Developers and designers will also make use of `themes`.{{< /q-class >}}
 
