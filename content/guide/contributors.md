@@ -12,11 +12,11 @@ Contributors can be listed under `contributor` in your `publication.yml` file, o
 
 Each `contributor` should have a `type` specified of either `"primary"`, `"secondary"`, or `"project-team"`.
 
-- **Primary** contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire templates[&], they are typically used on the cover, the menu and in the [metadata embedded in your publication](/publication-configuration-metadata/); listed as the creators of the publication.
+- **Primary** contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire {{< q-glossary "Template" >}}s, they are typically used on the cover, the menu and in the [metadata embedded in your publication](/publication-configuration-metadata/); listed as the creators of the publication.
 
 - **Secondary** contributors are not typically shown in the menu or cover, but are often included in book metadata, and may also be referenced by the `q-contributor` shortcode as noted below. In future iterations of Quire, we hope to be able to reference contributors listed here from individual pages.
 
-- **Project team** contributors are those that worked on the publication (editors, designers, developers, and the like), and can be listed using the `q-contributor` shortcode, often on an *About* or *Copyright* page. Project team contributors are not otherwise included in publication metadata, or used in other Quire templates[&].
+- **Project team** contributors are those that worked on the publication (editors, designers, developers, and the like), and can be listed using the `q-contributor` shortcode, often on an *About* or *Copyright* page. Project team contributors are not otherwise included in publication metadata, or used in other Quire {{< q-glossary "Template" >}}s.
 
 [note] If your publication is a monograph you might add the main authors to the `contributor` attribute in `publication.yml`, while if the publication has essays written by different authors, these would be added to the `contributor` fields on each essay/page YAML block.  
 

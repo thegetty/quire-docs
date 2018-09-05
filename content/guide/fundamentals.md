@@ -166,10 +166,10 @@ Footnotes can also include Markdown formatting, including lists and even multipl
 ```
 
 {{< q-class "box" >}}
-The built-in Markdown processor[&] will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them. {{< /q-class >}}
+The built-in {{< q-glossary "Markdown Processor" >}} will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them. {{< /q-class >}}
 
 {{< q-class "box" >}}
-Blackfriday[&], the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses:
+Blackfriday{{< q-glossary "Blackfriday" >}}, the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses:
 
 ```
 [^1] &#40;Some aside text here)
@@ -181,7 +181,7 @@ Blackfriday[&], the built in Markdown processor, will incorrectly also create li
 
 The fractions 1&#47;4, 1&#47;2, and 3&#47;4, will be automatically converted into proper, Unicode fractions (1/4, 1/2, 3/4). Other Unicode fractions can also be used in Markdown directly, though note that not all fonts support the eighths in which case, browsers will render them with a default font. The fractions are: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. Any others would need to be written using superscript and subscript formatting.
 
-While some Markdown processors[&] support superscript and subscript formatting with ^ and ~ characters, the one built into Quire does not. You’ll need to use the HTML `<sup>` and `<sub>` tags in your Markdown. For example:
+While some {{< q-glossary "Markdown Processor" >}}s support superscript and subscript formatting with ^ and ~ characters, the one built into Quire does not. You’ll need to use the HTML `<sup>` and `<sub>` tags in your Markdown. For example:
 
 - `19 × 24<sup>3</sup>⁄<sub>16</sub> inches` = 19 × 24<sup>3</sup>⁄<sub>16</sub> inches
 - `20<sup>th</sup> Century Sculpture` = 20<sup>th</sup> Century Sculpture
@@ -197,19 +197,19 @@ Outside of more code-driven text editors, there are also a growing number of Mar
 
 ### Markdown Output Configuration
 
-Hugo has a built-in Markdown processor, Blackfriday[&](https://github.com/russross/blackfriday), which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
+Hugo has a built-in Markdown processor, {{< q-glossary "Blackfriday" >}} (https://github.com/russross/blackfriday), which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
 
-By default, in the `config.yml` file of your Quire project, Blackfriday’s[&] `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such.), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
+By default, in the `config.yml` file of your Quire project, {{< q-glossary "Blackfriday" >}}'s `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such.), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
 
 ### Markdown Resources
 
 This guide doesn’t cover all existing Markdown tags but there are some good sources that will help you find the right syntax to format your text. For example, the Programming Historian provides an [introductory lesson to Markdown](https://programminghistorian.org/lessons/getting-started-with-markdown), and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site [Daring Fireball](https://daringfireball.net/projects/markdown/).
 
-Be aware of the multiple [Markdown flavors](https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors) out there and the fact that not all flavors are supported by Blackfriday[&].
+Be aware of the multiple [Markdown flavors](https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors) out there and the fact that not all flavors are supported by {{< q-glossary "Blackfriday" >}}.
 
 ### Microsoft Word to Markdown Conversion
 
-Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using Pandoc[&] can be done.
+Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using {{< q-glossary "Pandoc" >}} can be done.
 
 There are some easy things you can do in the Word document prior to conversion to ensure the best possible results:
 
@@ -217,12 +217,12 @@ There are some easy things you can do in the Word document prior to conversion t
 - Headings must be formatted with Word styles instead of by changing font formats.
 -
 
-While there are a number of free tools, we recommend using Pandoc[&]. You can find installation instructions on their site.
+While there are a number of free tools, we recommend using {{< q-glossary "Pandoc" >}}. You can find installation instructions on their site.
 
 Once installed, make sure you are in the folder where your .docx document is saved, and enter the Pandoc command on the command-line application. The command used to convert your file is: `pandoc -s your_document_name.docx -t markdown -o your_document_name.md`. However, in order to optimize the default conversion you should specify the following extensions:
 
-- Quire needs ATX-style Markdown headers[&], these are specified adding `--atx-headers` to the command.
-- The lines of the generated Markdown file[&] are 80 characters long. Adding the option `--wrap=none` to the command will override the default wrapping making easier to work with your files in the text editor[&].
+- Quire needs {{< q-glossary "ATX-style Markdown headers" >}}, these are specified adding `--atx-headers` to the command.
+- The lines of the generated {{< q-glossary "Markdown file" >}} are 80 characters long. Adding the option `--wrap=none` to the command will override the default wrapping making easier to work with your files in the {{< q-glossary "Text editor" >}}.
 
 The order of the extensions doesn't matter, and you can either type:
 

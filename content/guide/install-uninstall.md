@@ -187,7 +187,7 @@ You now have the latest Quire CLI and any new projects you start will also have 
 
 To uninstall Quire:
 
-1. From a new window in your command line shell [&] (you should be in your home/user directory where you initially installed Quire) type the following two commands:
+1. From a new window in your {{< q-glossary "Command Line Interface" >}} (you should be in your home/user directory where you initially installed Quire) type the following two commands:
 
     ```tx
     cd quire-cli

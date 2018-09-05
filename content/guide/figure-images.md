@@ -17,7 +17,7 @@ Quire does not require a specific image file format or size, but we have some re
 
 - Use JPEG, PNG or GIF.
 - Only include images at as big a size as most readers will need. 800px on the longest side is fine for most figures, up to 1200px on the longest side for modest zooming. We find these size also work well enough in print.
-- Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use image optimization[&] software when possible, and consider the total number of images on a given page when choosing sizes.
+- Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use {{< q-glossary "Image Optimization" >}} software when possible, and consider the total number of images on a given page when choosing sizes.
 
 
 ## Creating a `figures.yml` File for Figure Image Metadata
@@ -72,7 +72,7 @@ To remove a label from a specific figure or a group of figures, add `label="fals
 
 ## Styling Figure Images
 
-Depending on your theme[&], by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left`, `is-pulled-right`, `is-large`, and `is-small`. Classes are added just like other attributes in the shortcode.
+Depending on your {{< q-glossary "Theme" >}}, by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left`, `is-pulled-right`, `is-large`, and `is-small`. Classes are added just like other attributes in the shortcode.
 
 ```go
 {{</* q-figure id="1.2" class="is-pulled-left" */>}}
@@ -81,7 +81,7 @@ Depending on your theme[&], by default figures will appear at about the width of
 {{< q-figure id="1.9" >}}
 
 
-{{< q-class "box" >}}Some themes may offer additional options, and styles may be edited and new styles added in any theme with css[&].{{< /q-class >}}
+{{< q-class "box" >}}Some themes may offer additional options, and styles may be edited and new styles added in any theme with {{< q-glossary "CSS" >}}.{{< /q-class >}}
 
 ## Creating and Styling Figure Groups with the `q-figure-group` Shortcode
 

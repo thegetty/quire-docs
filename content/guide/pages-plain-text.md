@@ -193,7 +193,7 @@ There are several types of linking between features, text, or objects on a singl
 
 ## Using Shortcodes to Add Features
 
-Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain text markup. While Hugo[&] has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
+Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain text markup. While {{< q-glossary "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
 
 Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (`{{</* shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
 

@@ -4,17 +4,17 @@ weight: 211
 type: essay
 ---
 
-The look and feel of your Quire publication can be customized at four different levels of complexity: 1. changing style variables in the theme, 2. adding new style rules to the `custom.css` file, 3. overriding specific theme templates[&] with your own custom version, or 4. creating an entirely new Quire theme.
+The look and feel of your Quire publication can be customized at four different levels of complexity: 1. changing style variables in the theme, 2. adding new style rules to the `custom.css` file, 3. overriding specific theme {{< q-glossary "Template" >}}s with your own custom version, or 4. creating an entirely new Quire theme.
 
 ## Changing the Style Variables in the Theme
 
-Every Quire project has a theme[&] inside the `themes` directory. When you first start a new project typing the `quire new` command in your command line interface, the default theme included is `quire-starter-theme`. In it, you can access simple text variables[&] that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.
+Every Quire project has a {{< q-glossary "Theme" >}} inside the `themes` directory. When you first start a new project typing the `quire new` command in your command line interface, the default theme included is `quire-starter-theme`. In it, you can access simple text {{< q-glossary "Variable" >}}s that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.
 
 To find the variables, open the `quire-starter-theme` directory, navigate to the `source` sub-directory and then `css`, and open the file called `variables.scss`.
 
 {{< q-figure id="1.12" >}}
 
-The variables[&] are prefixed with a dollar sign and are descriptive of what they control. For instance `$quire-navbar-background-color` is the background color of the navigation bar at the top of every page. To make it red, you could enter:
+The {{< q-glossary "Variable" >}}s are prefixed with a dollar sign and are descriptive of what they control. For instance `$quire-navbar-background-color` is the background color of the navigation bar at the top of every page. To make it red, you could enter:
 
 ```css
 $quire-navbar-background-color: red;

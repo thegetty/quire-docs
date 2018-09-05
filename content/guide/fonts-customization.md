@@ -8,7 +8,7 @@ Typography is an important element of style in your Quire publication. Quire all
 
 ## Customizing Fonts
 
-The `quire-starter-theme` includes three embedded, open license fonts: ["Merriweather"](https://fonts.google.com/specimen/Merriweather), ["Lato"](https://fonts.google.com/specimen/Lato), and ["Aleo"](http://www.fontfabric.com/aleo-free-font/). You can adjust which ones are used where in the "variables" file of your theme[&], `source/css/variables.scss`:
+The `quire-starter-theme` includes three embedded, open license fonts: ["Merriweather"](https://fonts.google.com/specimen/Merriweather), ["Lato"](https://fonts.google.com/specimen/Lato), and ["Aleo"](http://www.fontfabric.com/aleo-free-font/). You can adjust which ones are used where in the "variables" file of your {{< q-glossary "Theme" >}}, `source/css/variables.scss`:
 
 ```scss
 $serif: Merriweather, Georgia, serif;
@@ -36,7 +36,7 @@ The steps to adding new fonts to your publication are:
 
 ### 1. Preparing Your Font Files and Adding Them to Your Project
 
-It’s recommended to include your font files in multiple file formats in order to increase browser compatibility. Ideally, you will have each of your fonts in the following formats: `.eot`, `.woff2`, `.woff`, and `.ttf`. If this is not the case, you can use a free webfont generator[&] like the one from Font Squirrel to produce these various formats from a single source.
+It’s recommended to include your font files in multiple file formats in order to increase browser compatibility. Ideally, you will have each of your fonts in the following formats: `.eot`, `.woff2`, `.woff`, and `.ttf`. If this is not the case, you can use a free webfont generator like the one from Font Squirrel to produce these various formats from a single source.
 
 All the fonts you’d like to add should go in a folder named after the font, and all should be named consistently. We recommend the following format with lowercase and no spaces:
 
