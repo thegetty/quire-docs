@@ -3,37 +3,12 @@ title: Quire Installation
 subtitle: LINUX
 type: page
 ---
-<!--
-The full Quire system is not currently available to PC users. However, PC users can still start and work on Quire projects, preview the online edition, and output final files for it. They will not, however, be able to:
-- Output PDF or EPUB editions
-- Make changes to Style (.scss) or Javascript (.js) files inside the themes folder
-The following steps will install the necessary software for running a Quire project on a PC, and show you how to start a new project as well.
--->
 
 ### LINUX Users:
 
-1. Install the Windows Subsystem for Linux:
-
-    Open PowerShell as Administrator and run:
-
-    ```
-    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-    ```
-
-    Restart your computer when prompted.
-
-    Open the Microsoft Store and choose your favorite Linux distribution.
-    
-    Quire recommend [Ubuntu](https://www.ubuntu.com/)
-
-    From the distro's page, select "Get"
-
-    Once the download has completed, select "Launch".
-
+1. Open terminal (If you are coming from the Windows 10 instructions this should already be open)
 
 2. Download and install **Prince**:
-
-   From the terminal that just loaded
    
    ```
    cd ~
@@ -114,8 +89,34 @@ The following steps will install the necessary software for running a Quire proj
     ```sh
     nvm use node
     ```
+4. Install **Pandoc** for EPUB and MOBI output 
 
-4. Install **Quire-CLI**
+   ```
+   cd ~
+   ```
+
+   Visit https://github.com/jgm/pandoc/releases and download the latest .deb file
+
+   ```
+   wget https://github.com/jgm/pandoc/releases/download/2.2.3.2/pandoc-2.2.3.2-1-amd64.deb
+   ```
+   Install the .deb file
+   
+   ```
+   sudo dpkg -i pandoc-2.2.3.2-1-amd64.deb
+   ```
+
+   This will install the pandoc and pandoc-citeproc executables and man pages.
+
+   Verify pandoc was installed
+
+   ```
+   pandoc -v
+   ```
+
+   If Pandoc version information is returned then Pandoc was successfully installed on your system.
+
+5. Install **Quire-CLI**
 
     ```
     git clone https://github.com/gettypubs/quire-cli
@@ -147,7 +148,7 @@ The following steps will install the necessary software for running a Quire proj
     cd ~
     ```
 
-5. Start a new **Quire** project
+6. Start a new **Quire** project
 
     Create a new project
 
