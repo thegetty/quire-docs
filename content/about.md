@@ -59,7 +59,7 @@ Quire CLI, or command line interface, ([quire-cli](https://github.com/gettypubs/
 | `quire pdf` | Generate a PDF version of the current project. |
 | `quire epub` | Generate an EPUB version of the current project. |
 
-Read more in [Setup](content/guide/setup.md), and [Multi-Format Output](multiformat-output).
+Read more in [Install and Uninstall](/guide/install-uninstall/), and [Multi-Format Output](/guide/multiformat-output).
 
 ### `quire-starter`
 
