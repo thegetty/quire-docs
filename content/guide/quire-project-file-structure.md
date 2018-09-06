@@ -40,7 +40,7 @@ The `static` directory includes anything that will be included in your final pub
 
 ## 📁 themes
 
-The `themes` directory contains one or more {{< q-glossary "Theme" >}}s that define the structure and style of the Quire publication. When using the `quire new` command in the {{< q-glossary "Command Line Interface" >}}, the default theme is `quire-starter-theme`. Read more in [*Customizing Styles*](../styles-customization/).
+The `themes` directory contains one or more {{< q-glossary "theme" >}}s that define the structure and style of the Quire publication. When using the `quire new` command in the {{< q-glossary "Command Line Interface" >}}, the default theme is `quire-starter-theme`. Read more in [*Customizing Styles*](../styles-customization/).
 
 ## 📄 .gitignore
 
@@ -48,10 +48,10 @@ If you are using `git` for {{< q-glossary "Version control" >}}, this file defin
 
 ## 📄 config.yml
 
-This is a standard, and required file for Hugo, and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "Template" >}}s.
+This is a standard, and required file for Hugo, and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "template" >}}s.
 
 {{< q-class "box" >}}Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire additionally uses `publication.yml` file inside the `data` directory for that purpose. Read more in [*Publication Metadata & Configuration*](../publication-configuration-metadata/).{{< /q-class >}}
 
 ## 📄 README.md
 
-The `README.md` file is a code convention, and is a free space for information about the publication and specifically, its codebase. **It is not used in the output Quire publication at all.** However, if you host your Quire project on GitHub[&] or other similar `git` project management sites, the `README.md` file is used for the repository’s front page description. Often it will include notes on development, on what usage is allowed, on how issues will be handled and if contributions should be considered. Read more in [*Outputting & Deploying Your Site*](../multiformat-output/).
+The `README.md` file is a code convention, and is a free space for information about the publication and specifically, its codebase. **It is not used in the output Quire publication at all.** However, if you host your Quire project on {{< q-glossary "GitHub" >}} or other similar `git` project management sites, the `README.md` file is used for the repository’s front page description. Often it will include notes on development, on what usage is allowed, on how issues will be handled and if contributions should be considered. Read more in [*Outputting & Deploying Your Site*](../multiformat-output/).

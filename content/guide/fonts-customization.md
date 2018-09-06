@@ -8,7 +8,7 @@ Typography is an important element of style in your Quire publication. Quire all
 
 ## Customizing Fonts
 
-The `quire-starter-theme` includes three embedded, open license fonts: ["Merriweather"](https://fonts.google.com/specimen/Merriweather), ["Lato"](https://fonts.google.com/specimen/Lato), and ["Aleo"](http://www.fontfabric.com/aleo-free-font/). You can adjust which ones are used where in the "variables" file of your {{< q-glossary "Theme" >}}, `source/css/variables.scss`:
+The `quire-starter-theme` includes three embedded, open license fonts: ["Merriweather"](https://fonts.google.com/specimen/Merriweather), ["Lato"](https://fonts.google.com/specimen/Lato), and ["Aleo"](http://www.fontfabric.com/aleo-free-font/). You can adjust which ones are used where in the "variables" file of your {{< q-glossary "theme" >}}, `source/css/variables.scss`:
 
 ```scss
 $serif: Merriweather, Georgia, serif;

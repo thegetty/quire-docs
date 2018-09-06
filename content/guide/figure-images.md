@@ -72,7 +72,7 @@ To remove a label from a specific figure or a group of figures, add `label="fals
 
 ## Styling Figure Images
 
-Depending on your {{< q-glossary "Theme" >}}, by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left`, `is-pulled-right`, `is-large`, and `is-small`. Classes are added just like other attributes in the shortcode.
+Depending on your {{< q-glossary "theme" >}}, by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left`, `is-pulled-right`, `is-large`, and `is-small`. Classes are added just like other attributes in the shortcode.
 
 ```go
 {{</* q-figure id="1.2" class="is-pulled-left" */>}}

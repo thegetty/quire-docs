@@ -10,15 +10,15 @@ You can read more about [*YAML syntax basics*](/resources/cheatsheet/) and check
 
 ## Adjusting the Default Publication Settings in the `config.yml` File
 
-The `config.yml` file is a standard and required file for {{< q-glossary "Hugo" >}}, and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "Template" >}}s. Users who have worked on other non-Quire Hugo projects will note that those typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
+The `config.yml` file is a standard and required file for {{< q-glossary "Hugo" >}}, and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "template" >}}s. Users who have worked on other non-Quire Hugo projects will note that those typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
 
 The properties in the `config.yml` file are individually documented in the [*API/Docs section*](/api-docs/yaml/), however, a few key items to note:
 
 - While Quire exclusively uses the `title` value as defined in your `publication.yml` file, other Hugo{{< q-glossary "Hugo" >}} projects require a `title` value in the `config.yml` file, so it is a good idea to include it here as well.
 
-- The `theme` value should match the name of the folder in the `/themes` directory that contains your theme files; if you've copied the default {{< q-glossary "Theme" >}} and given it a different name make sure to update the value here too.
+- The `theme` value should match the name of the folder in the `/themes` directory that contains your theme files; if you've copied the default {{< q-glossary "theme" >}} and given it a different name make sure to update the value here too.
 
-- The `params` section includes a number of values specific to various Quire layout {{< q-glossary "Template" >}}s and {{< q-glossary "Shortcode" >}}s. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (`""`) rather than completely deleting it.
+- The `params` section includes a number of values specific to various Quire layout {{< q-glossary "template" >}}s and {{< q-glossary "Shortcode" >}}s. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (`""`) rather than completely deleting it.
 
 ## Adding and Editing Important Metadata in the `publication.yml` File
 
@@ -49,7 +49,7 @@ identifier:
   uuid: 4a1b423d-6d5a-469b-bd5f-b498182ad6ca
 ```
 
-DOIs[&] are widely used in academic contexts to support citation while UUIDs[&] serve to identify information in computer systems.
+{{< q-glossary "DOI" >}}s are widely used in academic contexts to support citation while {{< q-glossary "UUID" >}}s serve to identify information in computer systems.
 
 {{< q-class "box" >}}Note that the `isbn` and `issn` identifiers used here are for the online edition specifically. Identifiers for other specific editions (PDF/Print, EPUB, and MOBI) can be defined separately with the appropriate `resource_link`. See the [*Formats, Resources & Links*](#formats-resources-links) section below for more.{{< /q-class >}}
 
@@ -67,7 +67,7 @@ Read more about this matter in the [*Contributors*](/guide/contributors/) chapte
 
 ### Copyright & License
 
-You should include a `copyright` line property for your publication, and optionally `license` information property if you are distributing the publication open access[&].
+You should include a `copyright` line property for your publication, and optionally `license` information property if you are distributing the publication {{< q-glossary "Open Access" >}}.
 
 A simple {{< q-glossary "Copyright" >}} statement would typically be formatted as "© 2018 Author Name".
 
@@ -126,4 +126,4 @@ subjects:
 
 A history of post-publication revisions made to the publication typically appears on the *About* page. Any number of revision history property items can be added and each must include the attributes `date` and a `summary` of changes made on that date. The `summary` attribute supports Markdown formatting, and would typically be in list form.
 
-If you are using GitHub[&] or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yml` can act as an overview. For more, see [our revision history policy document](#).
+If you are using {{< q-glossary "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yml` can act as an overview. For more, see [our revision history policy document](#).
