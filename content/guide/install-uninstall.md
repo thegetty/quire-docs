@@ -32,8 +32,9 @@ Open your your Terminal command line application and follow the four steps below
     ```text
     cd
     ```
+4. Visit the **Pandoc** site, download the Mac OS version. The easiest way to install Pandoc on a Mac is to download the .pkg file. Install this file by double clicking the icon and following the prompts. Visit this page [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/) to download the latest release.
 
-4. Copy and paste the following line into your Terminal to download the **Quire CLI** (command line application) to your computer from GitHub.
+5. Copy and paste the following line into your Terminal to download the **Quire CLI** (command line application) to your computer from GitHub.
 
     ```text
     git clone https://github.com/gettypubs/quire-cli.git
@@ -70,7 +71,7 @@ The following steps will install the necessary software for running a Quire proj
 
 2. Download and install **Node.js** and **npm** at https://nodejs.org/en/download/. Make sure you get the LTS version of Node.js, npm will be installed during the same process. The Windows installer will be downloaded, just open it and a setup wizard screen will guide you through the process.
 
-3. Download **Prince** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your processor. To install Prince you can follow the instructions at their site: https://www.princexml.com/doc-install/#windows
+3. Download **Prince** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Prince you can follow the instructions at their site: https://www.princexml.com/doc-install/#windows
 
 4. Open **PowerShell** (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select "run as administrator" from the context menu.
 
@@ -119,6 +120,158 @@ The following steps will install the necessary software for running a Quire proj
 6. Lastly, to navigate to your home directory and create a new project or publication type:
 
     ```tx
+    cd ~
+    ```
+
+## LINUX
+
+Install the Windows Subsystem for Linux:
+
+- Open PowerShell as Administrator (that should be installed by default in your Windows computer). To do so, right click on the icon and select "run as administrator" from the context menu. Once you get the administrator window, type the following command:
+
+    ```tx
+    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+    ```
+
+Restart your computer when prompted by typing yes (y) or no (n).
+
+- Install the Subsystem for Linux:
+
+We recommend to use the LTS version of [Ubuntu Desktop](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6) that you'll find in the Microsoft Store. From the app page, select "Get the app" and once the download has completed, select "Launch".
+
+{{< q-class "box" >}}If you have a preferred Linux distribution you can also download and install it from the Microsoft Store.{{< /q-class >}}
+
+Now that you have access to the command line in the Linux Subsystem this can be considered a Linux install.
+
+1. Open terminal (If you are coming from the Windows 10 instructions this should already be open)
+
+2. Download and install **Prince**:
+
+       ```tx
+       cd ~
+       ```
+Run these commands to download and install PrinceXML
+
+    ```sh
+    wget https://www.princexml.com/download/prince_12-1_ubuntu18.04_amd64.deb
+
+    sudo gdebi prince_10r2-1_debian8.0_amd64.deb
+  ```
+If you chose a different distribution of Linux there are more instructions here -> https://www.princexml.com/doc-install/#linux
+
+3. Install node js and npm through nvm
+
+Detailed information about this installation can be found in this link [https://github.com/creationix/nvm#install-script](https://github.com/creationix/nvm#install-script)
+
+To install or update nvm, you can use the install script using cURL:
+
+   ```sh
+      curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  ```
+or Wget:
+
+  ```sh
+  wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  ```
+<sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc`,      `~/.profile`, or `~/.bashrc`).</sub>
+
+  ```sh
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+  ```
+**Note:** You can add `--no-use` to the end of the above script (...`nvm.sh --no-use`) to postpone using `nvm` until you manually `use` it.
+
+You can customize the install source, directory, profile, and version using the `NVM_SOURCE`, `NVM_DIR`, `PROFILE`, and `NODE_VERSION` variables.
+Eg: `curl ... | NVM_DIR="path/to/nvm"`. Ensure that the `NVM_DIR` does not contain a trailing slash.
+
+<sub>*NB. The installer can use `git`, `curl`, or `wget` to download `nvm`, whatever is available.*</sub>
+
+**Note:** On Linux, after running the install script, if you get `nvm: command not found` or see no feedback from your terminal after you type:
+
+  ```sh
+  command -v nvm
+  ```
+
+simply close your current terminal, open a new terminal, and try verifying again.
+
+If the above doesn't fix the problem, open your `.bash_profile` and add the following line of code:
+
+  ```sh
+  source ~/.bashrc
+  ```
+
+For more information about this issue and possible workarounds, please [refer here](https://github.com/creationix/nvm/issues/576)
+To verify that nvm has been installed, do:
+
+  ```sh
+  command -v nvm
+  ```
+
+which should output 'nvm' if the installation was successful. Please note that `which nvm` will not work, since `nvm` is a sourced shell function, not an executable binary.
+To download, compile, and install the latest release of node, do this:
+
+  ```sh
+  nvm install node
+  ```
+
+And then in any new shell just use the installed version:
+
+  ```sh
+  nvm use node
+  ```
+
+4. Install **Pandoc** for EPUB and MOBI output
+
+  ```tx
+  cd ~
+  ```
+
+Visit https://github.com/jgm/pandoc/releases and download the latest .deb file
+
+  ```sh
+  wget https://github.com/jgm/pandoc/releases/download/2.2.3.2/pandoc-2.2.3.2-1-amd64.deb
+  ```
+Install the .deb file
+
+  ```sh
+  sudo dpkg -i pandoc-2.2.3.2-1-amd64.deb
+  ```
+This will install the pandoc and pandoc-citeproc executables and man pages.
+
+Verify pandoc was installed
+
+   ```sh
+   pandoc -v
+   ```
+
+If Pandoc version information is returned then Pandoc was successfully installed on your system.
+
+5. Install **Quire-CLI**
+
+    ```sh
+    git clone https://github.com/gettypubs/quire-cli
+    ```
+
+    ```sh
+    cd quire-cli
+    ```
+
+    ```sh
+    git checkout pc-dev
+    ```
+Install Dependencies
+
+    ```sh
+    npm install -g
+    ```
+Verify
+
+    ```sh
+    quire -V
+    ```
+If version number is returned quire-cli was installed correctly, you can now leave the directory.
+
+    ```sh
     cd ~
     ```
 
