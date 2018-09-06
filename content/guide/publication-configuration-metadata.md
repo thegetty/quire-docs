@@ -71,7 +71,7 @@ You should include a `copyright` line property for your publication, and optiona
 
 A simple {{< q-glossary "Copyright" >}} statement would typically be formatted as "© 2018 Author Name".
 
-{{< q-class "box" >}}The `copyright` property does support {{< q-glossary "Markdown" >}} formatting to allow for multiple paragraphs and other formatting.{{< /q-class >}}
+{{< q-class "box" >}}The `copyright` property does support Markdown formatting to allow for multiple paragraphs and other formatting.{{< /q-class >}}
 
 Open access licensing typically means applying one of seven {{< q-glossary "Creative Commons Licenses" >}} to your publication. This is in addition to your copyright statement.
 

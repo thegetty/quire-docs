@@ -169,7 +169,7 @@ Footnotes can also include Markdown formatting, including lists and even multipl
 The built-in {{< q-glossary "Markdown Processor" >}} will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them. {{< /q-class >}}
 
 {{< q-class "box" >}}
-Blackfriday{{< q-glossary "Blackfriday" >}}, the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses:
+{{< q-glossary "Blackfriday" >}}, the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses:
 
 ```
 [^1] &#40;Some aside text here)

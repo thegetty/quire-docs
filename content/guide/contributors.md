@@ -18,7 +18,7 @@ Each `contributor` should have a `type` specified of either `"primary"`, `"secon
 
 - **Project team** contributors are those that worked on the publication (editors, designers, developers, and the like), and can be listed using the `q-contributor` shortcode, often on an *About* or *Copyright* page. Project team contributors are not otherwise included in publication metadata, or used in other Quire {{< q-glossary "template" >}}s.
 
-[note] If your publication is a monograph you might add the main authors to the `contributor` attribute in `publication.yml`, while if the publication has essays written by different authors, these would be added to the `contributor` fields on each essay/page YAML block.  
+{{< q-class "box" >}}If your publication is a monograph you might add the main authors to the `contributor` attribute in `publication.yml`, while if the publication has essays written by different authors, these would be added to the `contributor` fields on each essay/page YAML block.{{< /q-class >}}
 
 Wherever they are listed (`publication.yml` or pages YAML block), the following YAML attributes can be used for your contributors:
 
