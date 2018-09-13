@@ -25,7 +25,7 @@ The central part of a Quire, the `content` directory is where almost all of a pu
 
 ## 📁 data
 
-What content doesn’t live in `content` directory as a {{< q-glossary "Markdown file" >}}, will live here in the `data` directory as a {{< q-glossary "YAML file" >}}. A `publication.yml` file is required (read more in [*Publication Metadata & Configuration*](../publication-configuration-metadata/)), but a Quire project may also include `references.yml` ([*Citations & Bibliographies*](../citation-bibliographies/)); `figures.yml` ([*Figures*](../figures-images/)); and `objects.yml` (*not yet defined*).
+What content doesn’t live in `content` directory as a {{< q-glossary "Markdown file" >}}, will live here in the `data` directory as a {{< q-glossary "YAML" >}} file. A `publication.yml` file is required (read more in [*Publication Metadata & Configuration*](../publication-configuration-metadata/)), but a Quire project may also include `references.yml` ([*Citations & Bibliographies*](../citation-bibliographies/)); `figures.yml` ([*Figures*](../figures-images/)); and `objects.yml` (*not yet defined*).
 
 
 ## 📁 site

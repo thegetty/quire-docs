@@ -4,21 +4,21 @@ weight: 203
 type: essay
 ---
 
-Quire uses two {{< q-glossary "YAML file" >}}s as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yml` and `publication.yml`. By default, both `config.yml` and `publication.yml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.
+Quire uses two {{< q-glossary "YAML" >}} files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yml` and `publication.yml`. By default, both `config.yml` and `publication.yml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.
 
 You can read more about [*YAML syntax basics*](/resources/cheatsheet/) and check out a sample of the [*`publication.yml` file*](/resources/sample-publication-file/) in other chapters of this guide.
 
 ## Adjusting the Default Publication Settings in the `config.yml` File
 
-The `config.yml` file is a standard and required file for {{< q-glossary "Hugo" >}}, and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "template" >}}s. Users who have worked on other non-Quire Hugo projects will note that those typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
+The `config.yml` file is a standard and required file for {{< q-glossary "Hugo" >}}, and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that those typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
 
 The properties in the `config.yml` file are individually documented in the [*API/Docs section*](/api-docs/yaml/), however, a few key items to note:
 
-- While Quire exclusively uses the `title` value as defined in your `publication.yml` file, other Hugo{{< q-glossary "Hugo" >}} projects require a `title` value in the `config.yml` file, so it is a good idea to include it here as well.
+- While Quire exclusively uses the `title` value as defined in your `publication.yml` file, other {{< q-glossary "Hugo" >}} projects require a `title` value in the `config.yml` file, so it is a good idea to include it here as well.
 
 - The `theme` value should match the name of the folder in the `/themes` directory that contains your theme files; if you've copied the default {{< q-glossary "theme" >}} and given it a different name make sure to update the value here too.
 
-- The `params` section includes a number of values specific to various Quire layout {{< q-glossary "template" >}}s and {{< q-glossary "Shortcode" >}}s. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (`""`) rather than completely deleting it.
+- The `params` section includes a number of values specific to various Quire layout {{< q-glossary "templates" >}} and {{< q-glossary "shortcodes" >}}. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (`""`) rather than completely deleting it.
 
 ## Adding and Editing Important Metadata in the `publication.yml` File
 
@@ -49,7 +49,7 @@ identifier:
   uuid: 4a1b423d-6d5a-469b-bd5f-b498182ad6ca
 ```
 
-{{< q-glossary "DOI" >}}s are widely used in academic contexts to support citation while {{< q-glossary "UUID" >}}s serve to identify information in computer systems.
+{{< q-glossary "DOIs" >}} are widely used in academic contexts to support citation while {{< q-glossary "UUIDs" >}} serve to identify information in computer systems.
 
 {{< q-class "box" >}}Note that the `isbn` and `issn` identifiers used here are for the online edition specifically. Identifiers for other specific editions (PDF/Print, EPUB, and MOBI) can be defined separately with the appropriate `resource_link`. See the [*Formats, Resources & Links*](#formats-resources-links) section below for more.{{< /q-class >}}
 

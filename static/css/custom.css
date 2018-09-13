@@ -64,7 +64,38 @@ a code {
 
 /*adds style for glossary terms*/
 
-.quire-glossary {
-    color: #3273dc;
-    text-decoration: underline;
+.quire-definition {
+  display: inline-block;
+  position: relative;
+  text-indent: 0;
+}
+
+.quire-definition__content {
+  visibility: hidden;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #f6f9fd;
+  color: #3273dc;
+  border-radius: 6px;
+  border: 1px solid #3273dc;
+  padding: 1rem;
+  position: absolute;
+  width: 400px;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -200px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.quire-definition:hover .quire-definition__content {
+  visibility: visible;
+}
+
+.quire-definition__term {
+  font-weight: bold;
+  cursor: pointer;
 }
