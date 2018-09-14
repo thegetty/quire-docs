@@ -34,7 +34,7 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
 ## Guide & Documentation
 
 - [**Getting Started**](content/guide/getting-started.md)
-- [**Guide**](content/guide/)
+- **Guide**
   - [Install and Uninstall](content/guide/install-uninstall.md)
   - [Quire Project File Structure](content/guide/file-structure.md)
   - [Publication Configuration & Metadata](content/guide/metadata.md)
@@ -49,11 +49,11 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
   - [Style Customization](content/guide/styles.md)
   - [Fonts Customization](content/guide/fonts.md)
   - [*Multiformat Output*](content/guide/output.md)
-- [**API/Docs**](content/api-docs/)
+- **API/Docs**
   - [YAML](content/api-docs/yaml.md)
   - [Shortcodes](content/api-docs/shortcodes.md)
   - [Dependency Guide](content/guide/dependency-guide.md)
-- [**Resources**](content/resources/)
+- **Resources**
   - [Quire Cheatsheet](content/resources/cheatsheet.md)
   - [Default Style Guide](content/resources/styleguide.md)
   - [Quire CLI Instructions](content/resources/quire-cli.md)
