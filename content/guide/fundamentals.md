@@ -53,6 +53,7 @@ You’ll also notice that YAML values don’t necessarily need to be in quotes. 
 ```yaml
 item: "If the text here has a colon : or other special characters it should be surrounded in double quotes"
 ```
+
 {{< q-class "box" >}} Anything at all can go within double-quotes, except for other double-quotes. If you need double-quotes, use “curly quotes”, use a backslash to escape the double quote `\"` or Hugo will also process two single straight quotes '' as a double when building the pages. {{< /q-class >}}
 
 {{< q-class "box" >}} It’s always a good idea to copy and paste your YAML blocks into a validator like [YAML Lint](http://www.yamllint.com/) or [Code Beautify validator](https://codebeautify.org/yaml-validator) to make sure there aren’t any hidden errors. You don’t need to use the re-formatted YAML validators like this will sometimes give back to you, you just need to make sure it’s correctly formatted. {{< /q-class >}}
@@ -89,6 +90,7 @@ On the headings, in general you should not use the *Heading 1* tag in your conte
 ```md
 > Blockquote
 ```
+
 > Blockquote
 
 Links are created with text in brackets followed immediately by a url in parentheses:
@@ -96,6 +98,7 @@ Links are created with text in brackets followed immediately by a url in parenth
 ```md
 [Link Text](http://www.linkadress.com)
 ```
+
 [Link Text](http://www.linkadress.com)
 
 
@@ -104,6 +107,7 @@ Links are created with text in brackets followed immediately by a url in parenth
   - a list with
     - bullets
 ```
+
 - dashes make
   - a list with
     - bullets

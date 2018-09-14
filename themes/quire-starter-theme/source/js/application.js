@@ -181,9 +181,16 @@ function loadSearchData() {
 function menuSetup() {
   let menu = document.getElementById('site-menu')
   let menuAriaStatus = menu.getAttribute('aria-expanded')
-  menu.classList.remove('is-expanded')
-  if (menuAriaStatus === 'true') {
-    menu.setAttribute('aria-expanded', 'false')
+  if ($(window).width() < 820) {
+    menu.classList.remove('is-expanded')
+    if (menuAriaStatus === 'true') {
+      menu.setAttribute('aria-expanded', 'false')
+    }
+  } else {
+    menu.classList.add('is-expanded')
+    if (menuAriaStatus === 'false') {
+      menu.setAttribute('aria-expanded', 'true')
+    }
   }
 }
 
@@ -275,6 +282,10 @@ globalSetup()
 // Run when document is ready
 $(document).ready(() => {
   pageSetup()
+
+  $(window).resize(function() {
+    menuSetup();
+  });
 
   $('#container').smoothState({
     scroll: false,

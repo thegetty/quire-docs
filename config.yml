@@ -48,7 +48,7 @@ params:
   displayBiblioShort: true
   imageDir: "img"
   tocType: full
-  menuType: short
+  menuType: full
   objectLinkText: "View in Collection"
   frontmatterPageStart: 0
   bodyPageStart: 100

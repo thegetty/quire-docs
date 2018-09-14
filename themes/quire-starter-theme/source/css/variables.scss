@@ -23,8 +23,8 @@ $family-primary: $serif;
 $family-secondary: $sans-serif;
 // headings and navigation items: $serif, $sans-serif, $slab-serif
 
-$quire-base-font-size: 17px;
-$quire-page-paragraph-style: indent;
+$quire-base-font-size: 16px;
+$quire-page-paragraph-style: 'null';
 // make the value null for paragraphs with no indent and a line space between
 
 
@@ -44,16 +44,16 @@ $quire-page-link-highlight: $light;
 $page-color: $white;
 $page-text-color: $dark;
 
-$quire-page-header-color: $light;
+$quire-page-header-color: white;
 $quire-page-header-text-color: $dark;
 
 $quire-navbar-color: $white;
 $quire-navbar-border-color: $dark;
 $quire-navbar-text-color: $dark;
 
-$quire-menu-color: $dark;
-$quire-menu-border-color: $dark;
-$quire-menu-text-color: $white;
+$quire-menu-color: $white;
+$quire-menu-border-color: $white;
+$quire-menu-text-color: $dark;
 
 $quire-entry-image-color: $dark;
 $quire-entry-image-icons-color: $white;
@@ -91,7 +91,7 @@ $quire-cover-footer-text-color: $dark;
 // Layout
 // -----------------------------------------------------------------------------
 
-$quire-menu-width: 350px;
+$quire-menu-width: 300px;
 
 $navbar-height: 3rem;
 

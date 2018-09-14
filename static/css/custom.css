@@ -1,3 +1,113 @@
+/* adds beta banner */
+
+.quire-banner {
+  background-color: #3273dc;
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: fixed;
+  top: -75px;
+  right: -75px;
+  width: 150px;
+  height: 150px;
+  z-index: 4000;
+  transform: rotate(45deg);
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: .5rem;
+}
+
+.quire-navbar-controls__right,
+.quire-search__close-button {
+  margin-right: 100px;
+}
+
+/* changes layout for fixed sidebar menu */
+
+.quire-navbar {
+  position: fixed;
+  z-index: 2000;
+}
+
+.quire-navbar-controls {
+  justify-content: flex-end;
+}
+
+.quire-navbar-controls__center {
+  flex: 0 1 3rem;
+}
+
+.quire-navbar-controls__left,
+.quire-navbar-page-controls__item.quire-home-page,
+.quire-navbar-page-controls__item.quire-section-page,
+.quire-navbar-page-controls__item.quire-current-page {
+  display: none;
+}
+
+.quire-search {
+  z-index: 3000;
+}
+
+.quire-search__inner,
+.quire__secondary,
+.quire__primary {
+  margin-top: 3rem;
+}
+
+.quire:not(.no-js) .quire__secondary {
+  overflow-y: inherit;
+  position: inherit;
+  float: left;
+}
+
+.quire__primary {
+  padding: 0 2rem;
+}
+
+.quire-page__header .container {
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .quire-navbar-controls__left {
+    display: block;
+    margin-right: auto;
+  }
+  .quire:not(.no-js) .quire__secondary {
+    overflow-y: scroll;
+    position: fixed;
+    float: inherit;
+    margin-top: 3rem;
+  }
+  .quire:not(.no-js) .quire__secondary[aria-expanded=true] {
+    width: 100%;
+  }
+}
+
+/* adjusts style and visibility of menu items */
+
+.quire-menu__header {
+  border-bottom-width: 0px;
+}
+
+.quire-menu__header__title {
+  color: #3273dc;
+}
+
+.quire-menu__header__subtitle,
+.quire-menu__header__contributors {
+  display: none;
+}
+
 /*Creates a box for notes and changes fonts color*/
 
 .box {
@@ -41,7 +151,7 @@
 /*changes syntax font color*/
 
 code {
-  background-color: transparent;
+  /* background-color: transparent; */
   color: #363636;
 }
 
@@ -52,6 +162,13 @@ a code {
 
 .title a code {
     color: #363636;
+}
+
+h2 code {
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0;
+  font-size: 1em;
 }
 
 /*changes indentation in shortcodes page*/
