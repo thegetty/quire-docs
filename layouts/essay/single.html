@@ -12,6 +12,19 @@
   {{ partial "page-abstract.html" . }}
   {{ end }}
 
+  {{ $headers := findRE "<h[2-3].*?>(.|\n])+?</h[2-3]>" .Content }}
+  {{ if gt (len $headers) 1 }}
+  <div class="container quire-page__page-navigation">
+    <ul class="page-navigation__list">
+    {{ range $headers }}
+      {{ $text := . | replaceRE "<[/]*h[1-6].*?>" "" }}
+      {{ $anchorId := $text | plainify | htmlUnescape | anchorize }}
+      <li {{ if findRE "<h[2].*?>" . }}class="main-heading"{{ else }}class="sub-heading"{{ end }}><a href="#{{ $anchorId }}">{{ $text | safeHTML }}</a></li>
+    {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+
   <section id="content" class="section quire-page__content">
     <div class="container">
       <div class="content">

@@ -108,6 +108,40 @@
   display: none;
 }
 
+/* add styles for page-level navigation list */
+
+.quire-page__page-navigation ul {
+  text-align: center;
+  column-count: 2;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+.quire-page__page-navigation ul li {
+  margin-bottom: .75em;
+}
+
+.quire__secondary .this-page {
+  font-weight: bold;
+  border-left: 4px solid #3273dc;
+}
+
+.quire__secondary .this-page ul {
+  font-weight: normal;
+  border-left-width: 0;
+}
+
+.quire-menu__list li ul {
+  border-left: inherit;
+}
+
+.quire-menu__list li ul li {
+  border-left: 1px solid #dbdbdb;
+}
+
+.quire-menu__list li ul li a {
+  padding-left: 1rem;
+}
+
 /*Creates a box for notes and changes fonts color*/
 
 .box {
