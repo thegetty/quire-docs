@@ -18,7 +18,7 @@ footnoteReturnLinkContents: "↩"
 metaDataFormat: "yaml"
 googleAnalytics: ""
 pygmentsCodefences: true
-pygmentsStyle: "monokailight"
+pygmentsStyle: "friendly"
 
 pluralizeListTitles: true
 disableKinds:

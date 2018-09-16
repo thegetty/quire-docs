@@ -35,8 +35,10 @@ For most publications, or at least, those with more than just a handful of image
 
 Also available are the attributes `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, and `label_text`.
 
-{{< q-class "box" >}}
-If your figures are organized in sub-directories within your `static/img/` directory, they should appear as part of the file path under `src`, otherwise, only the filename is needed.
+{{< q-class "box warning" >}}
+
+- You can organize your images in the If your figures are organized in sub-directories within your `static/img/` directory, they should appear as part of the file path under `src`, otherwise, only the filename is needed.
+
 {{< /q-class >}}
 
 ## Inserting Figure Images the `q-figure` Shortcode
@@ -55,9 +57,12 @@ If you include an attribute in the shortcode that is also in the `figures.yml` f
 {{</* q-figure id="1.2" caption="" */>}}
 ```
 
-{{< q-class "box" >}}Note that including an attribute in this way but leaving it blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`.{{< /q-class >}}
+{{< q-class "box tip" >}}
 
-{{< q-class "box" >}}Also, attributes like `id` and `caption` may be called within the shortcode in any order. `{{</* q-figure id="1.2" caption="" */>}}` is the same as `{{</* q-figure caption="" id="1.2" */>}}`.{{< /q-class >}}
+- Leaving an attribute blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`.
+- Attributes may be called within the shortcode in any order. `{{</* q-figure id="1.2" caption="" */>}}` is the same as `{{</* q-figure caption="" id="1.2" */>}}`.
+
+{{< /q-class >}}
 
 ## Labeling Figure Images
 
@@ -81,7 +86,11 @@ Depending on your {{< q-glossary "theme" >}}, by default figures will appear at 
 {{< q-figure id="1.9" >}}
 
 
-{{< q-class "box" >}}Some themes may offer additional options, and styles may be edited and new styles added in any theme with {{< q-glossary "CSS" >}}.{{< /q-class >}}
+{{< q-class "box tip" >}}
+
+- Some themes may offer additional options, and styles may be edited and new styles added in any theme with {{< q-glossary "CSS" >}}.
+
+{{< /q-class >}}
 
 ## Creating and Styling Figure Groups with the `q-figure-group` Shortcode
 

@@ -23,11 +23,11 @@
   {{- range $.Site.Data.glossary.entries -}}
     {{- if .alternates -}}
       {{/* convert all the alternates listed into lowercase for comparison */}}
-      {{ range .alternates }}
-        {{ $lowercaseAlternates := lower . }}
+      {{- range .alternates -}}
+        {{- $lowercaseAlternates := lower . -}}
         {{- $.Scratch.Add "alternates" (slice $lowercaseAlternates) -}}
-      {{ end }}
-      {{- $alternates := $.Scratch.Get "alternates" }}
+      {{- end -}}
+      {{- $alternates := $.Scratch.Get "alternates" -}}
       {{/* add alternaes and main term, compare to term given in shortcode */}}
       {{- $allTerms := union (slice (lower .term)) $alternates -}}
       {{- if in $allTerms (lower $term) -}}
@@ -54,7 +54,7 @@
     {{- $entry := ($.Page.Scratch.GetSortedMapValues "term") -}}
     {{- $termId := $term | urlize -}}
     {{- $.Page.Scratch.SetInMap "defined" $termId $entry -}}
-    <span class="quire-definition" ><span class="visually-hidden">Citation: </span><span class="quire-definition__term">{{- markdownify $term -}}</span><span class="quire-definition__content">{{- markdownify $definition -}}</span></span>
+    <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">{{- markdownify $term -}}</span><span class="quire-definition__content">{{- markdownify $definition -}}</span></span>
   {{- end -}}
 
 {{- end -}}

@@ -50,6 +50,14 @@
   z-index: 3000;
 }
 
+.quire-search.is-active {
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 .quire-search__inner,
 .quire__secondary,
 .quire__primary {
@@ -142,6 +150,18 @@
   padding-left: 1rem;
 }
 
+/* makes text selectable */
+
+.container {
+  user-select: text;
+}
+
+/* increases heading line height */
+
+.content h2 {
+  line-height: 1.35;
+}
+
 /*Creates a box for notes and changes fonts color*/
 
 .box {
@@ -153,20 +173,73 @@
   padding: 1.25rem;
 }
 
-.box strong {
-    color: #ffffff;
-    font-weight: 700;
+.box ul {
+  margin-top: 0;
 }
 
-.box code {
-  color: #ffffff;
-  background-color: #b1bbcd;
-  }
+.box ul li {
+  margin-bottom: .75rem;
+}
 
+.box.warning ul,
+.box.tip ul {
+  list-style-type: none;
+}
+
+.box.warning ul li,
+.box.tip ul li {
+  padding-left: 2rem;
+}
+
+.box.warning ul li:first-of-type::before,
+.box.tip ul li:first-of-type::before {
+  color: #fff700;
+  position: absolute;
+  margin-top: -1.25rem;
+}
+
+.box.warning ul li:first-of-type::before {
+  font-size: 4rem;
+  margin-left: -4.75rem;
+  content: "⚠";
+}
+
+.box.tip ul li:first-of-type::before {
+  font-size: 3.5rem;
+  margin-left: -4.25rem;
+  content: "★";
+  /* content: "☞";
+  content: "✓";
+  content: "✎"; */
+}
+
+.box strong {
+  color: #fff;
+}
+
+.box code,
 .box pre {
-  color: #ffffff;
-  background-color: #b1bbcd;
-  }
+  color: #fff;
+  background-color: #b8c1d1;
+}
+
+.quire-page__content .content .box a:not([rel=footnote]):not(.footnote-return) {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.quire-page__content .content .box a:hover {
+  background-color: #b8c1d1;
+}
+
+.quire-page__content .content .box .quire-definition a:not([rel=footnote]):not(.footnote-return) {
+  color: #3273dc;
+  border-bottom-color: #3273dc;
+}
+
+.quire-page__content .content .box .quire-definition a:hover {
+  background-color: whitesmoke;
+}
 
 /*Changes color of cover "start reading" button*/
 
@@ -184,18 +257,22 @@
 
 /*changes syntax font color*/
 
+
 code {
-  /* background-color: transparent; */
   color: #363636;
+  background-color: whitesmoke;
+  border-radius: 4px;
 }
 
 a code {
   background-color: transparent;
   color: #3273dc;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .title a code {
-    color: #363636;
+  color: #363636;
 }
 
 h2 code {
@@ -203,6 +280,11 @@ h2 code {
   background-color: transparent;
   padding: 0;
   font-size: 1em;
+  color: #363636;
+}
+
+.highlight {
+  border-radius: 4px;
 }
 
 /*changes indentation in shortcodes page*/
