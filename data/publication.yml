@@ -10,7 +10,7 @@
 # ------------------------------------------------------------------------------
 
 title: Quire
-subtitle: Documentation for a Multiformat Publishing Framework
+subtitle: Documentation Site for the Getty’s Multiformat Publishing Framework
 reading_line:
 short_title:
 
@@ -44,13 +44,8 @@ contributor_as_it_appears:
 
 contributor:
   - type: primary
-    first_name: Getty
-    last_name: Publications
-    title: Chair
-    affiliation: Commission for the Protection of Works of Art
-    bio: "Rose Antonia Maria Valland (1 November 1898 – 18 September 1980) was a French art historian, member of the French Resistance, captain in the French military, and one of the most decorated women in French history. She secretly recorded details of the Nazi plundering of National French and private Jewish-owned art from France; and, working with the French Resistance, she saved thousands of works of art."
-    url: https://en.wikipedia.org/wiki/Rose_Valland
-    pic: contributors/rose-valland.jpg
+    full_name: Getty Publications
+    url: http://www.getty.edu/publications/
 
 # ------------------------------------------------------------------------------
 # Copright & License
@@ -84,13 +79,8 @@ resource_link:
     link_relation: about
     url: /about/
   - type: footer-link
-    name: Privacy Policy
-    link_relation: privacy-policy
-    url:
-  - type: footer-link
-    name: Terms of Use
-    link_relation: terms-of-service
-    url:
+    name: GitHub
+    url: https://github.com/gettypubs/quire/
 
 # ------------------------------------------------------------------------------
 # Subjects

@@ -63,11 +63,11 @@ $quire-splash-page-color: $color-primary;
 // Cover
 // -----------------------------------------------------------------------------
 
-$quire-cover-color-1: $color-primary;
-$quire-cover-color-2: #dc52f5;
+$quire-cover-color-1: white;
+$quire-cover-color-2: #DFE3EB;
 // make the colors the same to have a solid background
 
-$cover-overlay-image-opacity: .5;
+$cover-overlay-image-opacity: 0;
 $cover-overlay-image: 'pattern-1.png';
 // pattern-1.png, pattern-2.png, pattern-3.png, pattern-4.png
 // Or add your own custom pattern tile in your static/img directory and

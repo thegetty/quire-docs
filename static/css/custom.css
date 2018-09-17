@@ -116,6 +116,20 @@
   display: none;
 }
 
+/* adjusts cover style */
+
+.quire__primary#cover {
+  padding-right: 0;
+}
+
+.quire-cover__hero .title {
+  margin-top: 1.5rem;
+}
+
+.quire-cover__hero-body.hero-body {
+  max-width: 100%;
+}
+
 /* add styles for page-level navigation list */
 
 .quire-page__page-navigation ul {
@@ -241,22 +255,7 @@
   background-color: whitesmoke;
 }
 
-/*Changes color of cover "start reading" button*/
-
-.quire-cover__button {
-    background-color: #a9b4c8;
-    color: #fff;
-    border-width: 0px;
-    border-radius: 6px;
-    font-family: Lato, Helvetica, sans-serif;
-    font-style: italic;
-  }
-
-.quire-cover__button:hover {
-  background-color: #a9b4c8; }
-
 /*changes syntax font color*/
-
 
 code {
   color: #363636;

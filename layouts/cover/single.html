@@ -20,7 +20,7 @@ Cover page layout. This controls the home page of the publication.
       <div class="quire-cover__overlay"></div>
   {{- end -}}
     <div class="quire-cover__hero-body hero-body">
-      <div class="container is-fluid">
+      <div class="container">
         {{/* Use .Site.Data.publication info if available */}}
         {{ if .Site.Data.publication }}
         <p class="half-title">{{ if .Site.Data.publication.short_title }}{{ .Site.Data.publication.short_title | markdownify }}{{ else }}{{ .Site.Data.publication.title | markdownify }}{{ end }}</p>
@@ -56,27 +56,14 @@ Cover page layout. This controls the home page of the publication.
   {{ with .Content }}
 
   <section class="section quire-page__content" id="content">
-    <div class="container is-fluid">
+    <div class="container">
       <div class="content">
         {{ . }}
-      </div>
-      <div class="has-text-centered">
-        <a class="button is-medium quire-cover__button" href="/contents">Start reading {{- template "image-control-icon" (dict "type" "right-arrow" "description" "Go to next page" "imageDir" ($.Scratch.Get "imageDir") ) -}}</a>
       </div>
     </div>
   </section>
 
-
-
   {{ end }}
-
-  <footer class="footer quire-cover-footer">
-    <div class="container is-fluid">
-      <div class="content is-small">
-        {{ partial "footer.html" . }}
-      </div>
-    </div>
-  </footer>
 
   {{/* End "below-the-fold" section */}}
 </div>

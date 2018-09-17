@@ -7796,14 +7796,14 @@ html {
   width: 100%;
   min-height: calc(100vh - 3rem);
   background-image: url(../img/pattern-1.png);
-  opacity: 0.5; }
+  opacity: 0; }
   @media print {
     .quire-cover__overlay {
       display: none; } }
 
 .quire-cover__hero {
-  background-color: #3273dc;
-  background-image: linear-gradient(90deg, #3273dc, #dc52f5);
+  background-color: white;
+  background-image: linear-gradient(90deg, white, #DFE3EB);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
