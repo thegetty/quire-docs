@@ -1,0 +1,345 @@
+// =============================================================================
+// Quire-page.scss
+// -----------------------------------------------------------------------------
+//
+// Page container component
+// - .quire-page__header: Styled with Bulma hero classes by default, but the
+//     top-level <section> elemement has this class for overrides.
+// - .quire-page__content: Uses Bulma's section & container elements for layout;
+//     most styles here relate only to typography.
+//
+// This stylesheet also controls some of the fundamentals of print layout since
+// it governs the body text. It is possible to keep body copy columns mostly
+// aligned to a baseline grid but care must be taken to ensure that font-size,
+// margins, and line-height add up to mulitples of the body text line-height.
+
+// Variables
+// -----------------------------------------------------------------------------
+$serif: Merriweather, Georgia, serif !default;
+$tablet: 500px !default;
+$desktop: 700px !default;
+$color-primary: #3273dc !default;
+$dark: #363636 !default;
+$light: #f5f5f5 !default;
+
+$family-primary: $serif !default;
+$family-secondary: $sans-serif !default;
+$navbar-height: 3rem !default;
+
+$quire-base-font-size: 17px !default;
+$quire-page-paragraph-style: indent !default;
+$quire-page-header-color: $light !default;
+$quire-page-header-text-color: $dark !default;
+$quire-page-link-color: $color-primary !default;
+$quire-page-link-highlight: $light !default;
+
+$quire-splash-page-color: $color-primary !default;
+
+// html
+// -----------------------------------------------------------------------------
+html {
+  font-size: $quire-base-font-size * .9;
+  @media screen and (min-width: 500px) {
+    font-size: $quire-base-font-size;
+  }
+}
+
+// .quire-page
+// -----------------------------------------------------------------------------
+.quire-page {
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h1:not(:first-child) {
+    margin-top: 3rem;
+  }
+  h2:not(:first-child),
+  h3:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  h4:not(:first-child),
+  h5:not(:first-child),
+  h6:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  h1,
+  &__header__title {
+    font-family: $family-secondary;
+    font-size: 3.3rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.14;
+    em {
+      font-style: normal;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 3.75rem;
+      line-height: 1.07;
+    }
+    @if $family-secondary == $serif {
+      font-size: 2.8rem;
+      font-weight: 600;
+      line-height: 1.24;
+      @media screen and (min-width: $tablet) {
+        font-size: 3rem;
+        line-height: 1.33;
+      }
+    }
+    @media print {
+      font-size: 30pt;
+      margin-top: .75in;
+      // border: 1px solid #ff0000;
+    }
+  }
+
+  h2 {
+    font-family: $family-secondary;
+    font-size: 2.7rem;
+    font-weight: 300;
+    line-height: 1.09;
+    @if $family-secondary == $serif {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+    @media print {
+      font-weight: 400;
+    }
+  }
+
+  h3,
+  h4,
+  &__header__subtitle,
+  &__header__contributor {
+    font-family: $family-secondary;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.143;
+  }
+  &__header__subtitle {
+    display: block;
+    font-style: italic;
+    font-weight:400;
+    margin-top: 1rem;
+    em {
+      font-style: normal;
+    }
+    @if $family-secondary == $serif {
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    @media print {
+      font-size: 16pt;
+    }
+  }
+  &__header__contributor {
+    font-weight:400;
+    margin-top: 3rem;
+    @media print {
+      font-size: 13pt;
+      margin-top: .375in;
+    }
+  }
+  h4 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 1.23;
+  }
+
+  h5, h6 {
+    font-family: $family-secondary;
+    font-weight:400;
+  }
+  h5 {
+    font-weight: 600;
+  }
+  h5,
+  h6 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+
+}
+
+
+// .quire-page-header
+// -----------------------------------------------------------------------------
+.quire-page__header {
+  background-color: $quire-page-header-color;
+  @include foreground-color($quire-page-header-color, $quire-page-header-text-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: cover;
+  text-align: center;
+
+  .quire-page--splash & {
+    background-color: $quire-splash-page-color;
+    * {
+      color: findColorInvert($quire-splash-page-color);
+    }
+    .hero-body {
+      padding-top: 15rem;
+      padding-bottom: 3rem;
+    }
+    &.quire-page__header--full-height {
+      min-height: calc(100vh - #{$navbar-height});
+      .quire-page__header__splash-page-arrow {
+        position: absolute;
+        bottom: 0;
+        width: 6%;
+        left: 47%;
+        right: 47%;
+        svg {
+          width: 1rem;
+          fill: findColorInvert($quire-splash-page-color);
+        }
+      }
+    }
+  }
+
+  .hero-body {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    @media screen and (min-width: $desktop) {
+      margin: 0 5rem;
+    }
+    @media print {
+      padding: 0;
+      // This border is a hack for PrinceXML which doesn't
+      // otherwise recognize the box sizing for some reason
+      border: 1pt solid transparent;
+    }
+  }
+
+  @media print {
+    &.hero {
+      background-color: transparent;
+      height: 3in;
+    }
+  }
+}
+
+.quire-page__content {
+  font-size: 1.125rem;
+  line-height: 1.78;
+  font-weight: 400;
+  padding-bottom: 8rem;
+
+  @if $family-primary != $serif {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  // Overrides to Bulma's .content styles where needed.
+
+  .content {
+
+    a:not([rel=footnote]):not(.footnote-return) {
+      color: $quire-page-link-color;
+      border-bottom: 1px solid $quire-page-link-color;
+      @media print {
+        color: $page-text-color;
+        border-bottom-width: 0;
+      }
+    }
+
+    a {
+      @media print {
+        color: $page-text-color;
+      }
+    }
+
+    a:hover {
+      background-color: $quire-page-link-highlight;
+      border-bottom-width: 2px;
+    }
+
+    blockquote {
+      padding: 0 0 0 1.5em;
+      margin: 1.5em 0 1.5em 0;
+      @media screen and (min-width: $tablet) {
+        padding: 0 0 0 1.5em;
+        margin: 1.5em 0 1.5em 1.5em;
+      }
+      background-color: transparent;
+      font-style: italic;
+      em {
+        font-style: normal;
+      }
+      @media print {
+        border-left-width: 0;
+      }
+    }
+
+    .leaflet-control {
+      a {
+        color: $dark;
+      }
+    }
+
+    @if $quire-page-paragraph-style == "indent" {
+      p { margin-bottom: 0; }
+      p + p { text-indent: 2em; }
+      blockquote {
+        margin: 1em 0 1em 0;
+        @media screen and (min-width: $tablet) {
+          margin: 1.5em 0 1.5em 1.5em;
+        }
+      }
+    }
+
+    @media print {
+      h2 {
+        font-size: 18pt;
+        line-height: 18pt;
+        margin-bottom: 8pt;
+        margin-top: 18pt;
+
+        + h3 {
+          margin-bottom: 10pt;
+          margin-top: 0;
+        }
+      }
+
+      h3 {
+        font-size: 12pt;
+        line-height: 13pt;
+        margin-bottom: 13pt;
+        margin-top: 13pt;
+      }
+
+      ul {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      li + li {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media print {
+    column-count: 2;
+    column-fill: balance;
+    column-gap: .1875in;
+    font-size: 9pt;
+    line-height: 14pt;
+    margin: 0;
+  }
+
+  .quire-page--frontmatter &,
+  .quire-page--backmatter & {
+    @media print {
+      column-count: 1;
+      margin: 0 .75in;
+    }
+  }
+}

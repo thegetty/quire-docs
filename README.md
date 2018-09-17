@@ -2,7 +2,7 @@
 
 # Quire (Alpha)
 
-Quire is a modern, multi-format publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
+Quire is a modern, multiformat publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
 
 Quire books are scholarly, visual, and built for discoverability and longevity. They feature:
 
@@ -33,10 +33,12 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
 
 ## Guide & Documentation
 
-- Guide
-  - [Getting Started](content/guide/getting-started.md)
+- [**Getting Started**](content/guide/getting-started.md)
+- **Guide**
+  - [Install and Uninstall](content/guide/install-uninstall.md)
   - [Quire Project File Structure](content/guide/file-structure.md)
   - [Publication Configuration & Metadata](content/guide/metadata.md)
+  - [Fundamentals: YAML and Markdown](content/guide/fundamentals.md)
   - [Pages & Plain Text](content/guide/text.md)
   - [Collection Catalogues](content/guide/collection-catalogues.md)
   - [Figure Images](content/guide/figures.md)
@@ -44,36 +46,31 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
   - [Citations & Bibliographies](content/guide/bibliographies.md)
   - [*Copyright & About Pages*](content/guide/copyright.md)
   - [Contributors](content/guide/contributors.md)
-  - [Customizing Styles](content/guide/styles.md)
-  - [Customizing Fonts](content/guide/fonts.md)
+  - [Style Customization](content/guide/styles.md)
+  - [Fonts Customization](content/guide/fonts.md)
   - [*Multiformat Output*](content/guide/output.md)
-  - [Updating or Unistalling Quire](content/guide/update-and-uninstall.md)
-  - [About](content/guide/about.md)
-- API/Docs
-  - [Shortcodes](content/api-docs/shortcodes.md)
+- **API/Docs**
   - [YAML](content/api-docs/yaml.md)
-- Resources
+  - [Shortcodes](content/api-docs/shortcodes.md)
+  - [Dependency Guide](content/guide/dependency-guide.md)
+- **Resources**
   - [Quire Cheatsheet](content/resources/cheatsheet.md)
   - [Default Style Guide](content/resources/styleguide.md)
-  - [Install Mac](content/resources/install-mac.md)
-  - [Install PC](content/resources/install-pc.md)
-  - [Install LINUX](content/resources/install-linux.md)
   - [Quire CLI Instructions](content/resources/quire-cli.md)
-  - [Using GitHub](content/resources/github.md)
+  - [GitHub for Quire](content/resources/github.md)
   - [Sample publication.yml file](content/resources/sample-publication.yml)
   - [Accessibility Principals](content/resources/accessibility.md)
   - [Hugo Documentation](https://gohugo.io/documentation/)
-- Workshops
-  - [MCN 2017](content/workshops/mcn-2017.md)
-  - [College Art Association 2018](content/workshops/caa-2018.md)
-  - [Museums and the Web 2018](content/workshops/mw-2018.md)
-  - [National Museum Publishing Seminar 2018](content/workshops/nmps-2018.md)
-- Articles of Interest
+- [**About**](content/guide/about.md)
+
+(*Note: entries in italics are placeholder stubs.*)
+
+- **Links**
+  - [Quire Workshop Syllabi & Agendas](content/workshops/)
+  - [Hugo Documentation](https://gohugo.io/documentation/)
   - [“Quire: A New Publishing Tool”](http://www.getty.edu/publications/digital/platforms-tools.html)
   - [“Why Static Site Generators Are the Next Big Thing”](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/)
   - [“An Editor’s View of Digital Publishing”](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/)
-
-(*Note: entries in italics are placeholder stubs.*)
 
 ## Technical
 

@@ -1,0 +1,60 @@
+{{/*
+
+  This shortcode adds a glossary term reference to the text, and a
+  hover pop-up with the full definition of the term.
+
+  The first positional parameter is the glossary term that should match one
+  in `glossary.yml`.
+
+*/}}
+
+{{- $errorMissingValue := dict "shortcode" "q-glossary" "message" "a value must be supplied with this shortcode and should match a term in the project’s `glossary.yml` file" "example" "{{< q-glossary &#34;chiaroscuro&#34; &#34;304&#34; >}}" -}}
+
+{{- $errorMissingTerm := dict "shortcode" "q-glossary" "message" "The term supplied doesn’t match one in the project’s `glossary.yml` file. The term should be listed under the `term` or `alternates` key." "example" "{{< q-glossary &#34;chiaroscuro&#34; >}}<br /><br />term: &#34;chiaroscuro&#34;<br />alternates:<br /> - &#34;chiaroscuros&#34;" -}}
+
+{{- if and (ne (len .Params) 1) (ne (len .Params) 2) -}}
+
+  {{- partial "error-message.html" $errorMissingValue -}}
+
+{{- else -}}
+
+  {{- $term := .Get 0 -}}
+
+  {{- range $.Site.Data.glossary.entries -}}
+    {{- if .alternates -}}
+      {{/* convert all the alternates listed into lowercase for comparison */}}
+      {{- range .alternates -}}
+        {{- $lowercaseAlternates := lower . -}}
+        {{- $.Scratch.Add "alternates" (slice $lowercaseAlternates) -}}
+      {{- end -}}
+      {{- $alternates := $.Scratch.Get "alternates" -}}
+      {{/* add alternaes and main term, compare to term given in shortcode */}}
+      {{- $allTerms := union (slice (lower .term)) $alternates -}}
+      {{- if in $allTerms (lower $term) -}}
+          {{- $.Scratch.Add "definition" .definition -}}
+      {{- end -}}
+      {{/* clear alternates Scratch for next use */}}
+      {{- $.Scratch.Delete "alternates" -}}
+    {{- else -}}
+      {{- if eq (lower .term) (lower $term) -}}
+          {{- $.Scratch.Add "definition" .definition -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if eq ($.Scratch.Get "definition") nil -}}
+
+    {{- partial "error-message.html" $errorMissingTerm -}}
+
+  {{- else -}}
+
+    {{- $definition := $.Scratch.Get "definition" -}}
+    {{- $.Page.Scratch.SetInMap "term" "0" $term -}}
+    {{- $.Page.Scratch.SetInMap "term" "1" $definition -}}
+    {{- $entry := ($.Page.Scratch.GetSortedMapValues "term") -}}
+    {{- $termId := $term | urlize -}}
+    {{- $.Page.Scratch.SetInMap "defined" $termId $entry -}}
+    <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">{{- markdownify $term -}}</span><span class="quire-definition__content">{{- markdownify $definition -}}</span></span>
+  {{- end -}}
+
+{{- end -}}

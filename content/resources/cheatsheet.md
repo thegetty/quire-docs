@@ -1,13 +1,14 @@
 ---
-title: Cheatsheet
-type: page
+title: Quire Cheatsheet
+weight: 501
+type: essay
 ---
 
 ## Markdown
 
-Paragraphs are made by adding two hard returns. When working in a text editor, depending on your configuration and the source of your text, lines might have hard breaks, or might all flow together. This is seen in the example below where the first paragraph has hard breaks and the second does not. In Markdwon, these will both render as single paragraphs with no hard breaks. The only way to add a hard break in markdown is wit the HTML break (`<br />`) element.
+Paragraphs are made by adding two hard returns. When working in a text editor, depending on your configuration and the source of your text, lines might have hard breaks, or might all flow together. This is seen in the example below where the first paragraph has hard breaks and the second does not. In Markdwon, these will both render as single paragraphs with no hard breaks. The only way to add a hard break in markdown is with the HTML break (`<br />`) element.
 
-```
+```md
 Lorem ipsum dolor sit amet, consectetur
 adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua.
@@ -50,13 +51,13 @@ Other typical Markdown formatting is listed below. Note that the spacing after t
 
 In a Quire publication, anything that could be considered data, is written in a plain-text data format called [YAML](http://yaml.org/).
 
-- YAML is used for configuring how Quire works and for providing metadata about your publication in files with the extension `.yml` (both topics covered in [Publication Configuration & Metadata](../guide/metadata)).
+- YAML is used for configuring how Quire works and for providing metadata about your publication in files with the extension `.yml` (both topics covered in [Publication Configuration & Metadata](/guide/metadata)).
 
 - `.yml` files are also used for storing information about figures, bibliographic references, and art objects.
 
 - In individual pages or chapters within the publication, written in Markdown and with a `.md` extension, there is a YAML block that contains the page metadata. For example the YAML block for the page you’re on right now is:
 
-```
+```yaml
 ---
 title: Cheatsheet
 type: page
@@ -76,7 +77,7 @@ multiple_items:
     item_description:
 ```
 
--```yaml
+```yaml
 item: "If the text here has a colon : or other special characters it should be surrounded in double quotes"
 ```
 
@@ -97,15 +98,15 @@ item: |
 
 ## Shortcodes
 
-```
-{{< q-figure id="##" >}}
+```go
+{{</* q-figure id="##" */>}}
 
-{{< q-figure-group id="##, ##, ##" >}}
+{{</* q-figure-group id="##, ##, ##" */>}}
 
-{{< q-cite "Lastname YYYY">}}
+{{</* q-cite "Lastname YYYY" */>}}
 
-{{< q-bibliography >}}
+{{</* q-bibliography */>}}
 
-{{< q-contributors range="xxxx" type="xxxx" >}}
+{{</* q-contributors range="xxxx" type="xxxx" */>}}
 
 ```

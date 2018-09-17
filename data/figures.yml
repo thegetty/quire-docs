@@ -1,0 +1,70 @@
+figure_list:
+  - id: "1.1"
+    src: /screenshots/content-model.png
+    caption: "Quire content model "
+    credit: " "
+  - id: "1.2"
+    src: /screenshots/file-structure.png
+    caption: "File structure "
+    credit: " "
+  - id: "1.3"
+    src: /screenshots/quire_starter_theme.png
+    caption: "Starter Theme"
+    credit: " "
+  - id: "1.4"
+    src: /screenshots/quire-work-environment.gif
+    caption: "command line shell, browser, text editor"
+    credit: " "
+  - id: "1.5"
+    src: /screenshots/commandline-vs-folder.png
+    caption: "folder and command line side-by-side"
+    credit: " "
+  - id: "1.6"
+    src: /screenshots/project-in-atom.png
+    caption: "`my-project` open in Atom"
+    credit: " "
+  - id: "1.7"
+    src: /screenshots/catalogue-entry-page.jpg
+    caption: "screenshot of catalogue entry page as rendered in the browser"
+    credit:
+  - id: "1.8"
+    src: /screenshots/catalogue-entry-grid.jpg
+    caption: "screenshot of catalogue grid page as rendered in the browser"
+    credit: " "
+  - id: "1.9"
+    src: /screenshots/left-right.png
+    caption: " "
+    credit:
+  - id: "1.10"
+    src: /screenshots/group-caption.png
+    caption: " "
+    credit:
+  - id: "1.11"
+    src: /screenshots/grid.png
+    caption: " "
+    credit:
+  - id: "1.12"
+    src: /screenshots/style1.png
+    caption: "screenshot of the `variables.scss` file in the quire-starter-theme directory"
+  - id: "1.13"
+    src: /screenshots/style2.png
+    caption: "screenshot of the custom.css file in the static directory"
+  - id: "1.14"
+    src: /screenshots/markdownstyleguide.jpg
+    caption: "markdown style guide with code"
+  - id: "1.15"
+    src: /screenshots/outputstyleguide.jpg
+    caption: "visual output style guide in quire"
+    credit: " "
+  - id: "1.16"
+    src: /screenshots/hugo-logo.png
+    caption: " "
+    credit: " "
+  - id: "1.17"
+    src: /screenshots/prince-xml-logo.png
+    caption: " "
+    credit: " "
+  - id: "1.18"
+    src: /screenshots/webpack-logo.png
+    caption: " "
+    credit: " "

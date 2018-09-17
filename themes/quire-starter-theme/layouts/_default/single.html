@@ -1,0 +1,23 @@
+{{/*
+  Single page default template. Normal page content will appear in the
+  .Content outlet below.
+*/}}
+
+{{ define "main" }}
+
+<div class="{{ partial "page-class.html" . }}" id="main" role="main">
+  {{ partial "page-header.html" . }}
+
+  {{ with .Content }}
+  <section class="section quire-page__content" id="content">
+    <div class="container">
+      <div class="content">
+        {{ . }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+</div>
+{{ end }}
+
