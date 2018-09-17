@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/contents/</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/install-uninstall/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/quire-project-file-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/publication-configuration-metadata/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/fundamentals/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/pages-plain-text/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/collection-catalogues/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/figure-images/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/zooming-images-maps/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/citation-bibliographies/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/copyright-about-pages/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/contributors/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/styles-customization/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/fonts-customization/</loc>
+  </url>
+  
+  <url>
+    <loc>/guide/multiformat-output/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-docs/yaml/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-docs/shortcodes/</loc>
+  </url>
+  
+  <url>
+    <loc>/api-docs/dependency-guide/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/cheatsheet/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/default-styleguide/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/quire-cli-instructions/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/github/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/sample-publication-file/</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/accessibility-principals/</loc>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/search.json</loc>
+  </url>
+  
+  <url>
+    <loc>/resources/install-pc/</loc>
+  </url>
+  
+</urlset>
