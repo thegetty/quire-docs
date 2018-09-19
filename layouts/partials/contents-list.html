@@ -59,7 +59,10 @@
   {{- if or (eq .Section "") (and (ne $.contentsPage.Section "") (ne $.contentsLocation ".Params.menu" )) -}}
 
     {{- if eq $.contentsLocation ".Params.menu" }}
-      <li class="page-item{{ template "contents-class" . }}{{ if eq $.contentsPage.UniqueID .UniqueID }} this-page{{ end }}">{{ template "contents-item-menu" . -}}</li>
+
+
+
+      <li class="page-item{{ template "contents-class" . }}{{ if eq $.contentsPage.UniqueID .UniqueID }} this-page{{ $headers := findRE "<h[2-3].*?>(.|\n])+?</h[2-3]>" .Content }}{{ if gt (len $headers) 1 }} with-page-nav{{ end }}{{ end }}">{{ template "contents-item-menu" . -}}</li>
     {{ end -}}
 
     {{- if and (eq $.contentsLocation ".Params.toc") (ne $.contentsPage.UniqueID .UniqueID) }}
@@ -91,7 +94,7 @@
         {{- range where $pages "Section" .Section -}}
           {{ if ne .Params.slug "." -}}
             {{ if eq $.contentsLocation ".Params.menu" }}
-              <li class="page-item{{ template "contents-class" . }}{{ if eq $.contentsPage.UniqueID .UniqueID }} this-page{{ end }}">{{ template "contents-item-menu" . -}}</li>
+              <li class="page-item{{ template "contents-class" . }}{{ if eq $.contentsPage.UniqueID .UniqueID }} this-page{{ $headers := findRE "<h[2-3].*?>(.|\n])+?</h[2-3]>" .Content }}{{ if gt (len $headers) 1 }} with-page-nav{{ end }}{{ end }}">{{ template "contents-item-menu" . -}}</li>
             {{ else }}
               <li class="page-item{{ template "contents-class" . }}">{{ template "contents-item-toc" (dict "class" $.contentsPage.Params.class "Page" . "Site" .Site ) -}}</li>
             {{ end -}}
