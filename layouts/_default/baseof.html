@@ -19,6 +19,7 @@
 
       {{ partial "navbar.html" . }}
 
+      <div id="{{ with .Section }}{{ . | urlize }}-{{ end }}{{ .File.BaseFileName | lower }}">
       <div class="quire__secondary is-expanded"
           id="site-menu"
           aria-expanded="true"
@@ -26,9 +27,10 @@
         {{ partial "menu.html" . }}
       </div>
 
-      <div class="quire__primary" id="{{ with .Section }}{{ . | urlize }}-{{ end }}{{ .File.BaseFileName | lower }}">
+      <div class="quire__primary">
         {{ block "main" . }}
         {{ end }}
+      </div>
       </div>
 
       {{ partial "search.html" . }}
