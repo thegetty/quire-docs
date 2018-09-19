@@ -53,9 +53,6 @@ Open your your Terminal command line application and follow the four steps below
 
 When complete, type `quire --version` to confirm proper installation. It should return a version number, otherwise, if it says `command not found`, the Quire CLI has not been properly installed. Refer to the “Troubleshooting” section below.
 
-### Troubleshooting
-
-TK
 
 <!--
 The full Quire system is not currently available to PC users. However, PC users can still start and work on Quire projects, preview the online edition, and output final files for it. They will not, however, be able to:
@@ -73,7 +70,9 @@ The following steps will install the necessary software for running a Quire proj
 
 3. Download **Prince** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Prince you can follow the instructions at their site: https://www.princexml.com/doc-install/#windows
 
-4. Open **PowerShell** (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select "run as administrator" from the context menu.
+4. Download **Pandoc** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc on your system.
+
+5. Open **PowerShell** (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select "run as administrator" from the context menu.
 
     Then once you get the administrator PowerShell window, type the following command:
 
@@ -83,7 +82,7 @@ The following steps will install the necessary software for running a Quire proj
 
     This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with your the name of your computer and your username once it's complete.
 
-5. Continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one) and type the following command to download **Quire CLI** to your computer from GitHub:
+6. Continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one) and type the following command to download **Quire CLI** to your computer from GitHub:
 
     ```tx
     git clone https://github.com/gettypubs/quire-cli
@@ -117,7 +116,7 @@ The following steps will install the necessary software for running a Quire proj
 
     If version number is returned, means that the install is correct.
 
-6. Lastly, to navigate to your home directory and create a new project or publication type:
+7. Lastly, to navigate to your home directory and create a new project or publication type:
 
     ```tx
     cd ~
@@ -125,25 +124,7 @@ The following steps will install the necessary software for running a Quire proj
 
 ## LINUX
 
-Install the Windows Subsystem for Linux:
-
-- Open PowerShell as Administrator (that should be installed by default in your Windows computer). To do so, right click on the icon and select "run as administrator" from the context menu. Once you get the administrator window, type the following command:
-
-    ```tx
-    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-    ```
-
-Restart your computer when prompted by typing yes (y) or no (n).
-
-- Install the Subsystem for Linux:
-
-We recommend to use the LTS version of [Ubuntu Desktop](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6) that you'll find in the Microsoft Store. From the app page, select "Get the app" and once the download has completed, select "Launch".
-
-{{< q-class "box" >}}If you have a preferred Linux distribution you can also download and install it from the Microsoft Store.{{< /q-class >}}
-
-Now that you have access to the command line in the Linux Subsystem this can be considered a Linux install.
-
-1. Open terminal (If you are coming from the Windows 10 instructions this should already be open)
+1. Open terminal
 
 2. Download and install **Prince**:
 
@@ -212,13 +193,13 @@ which should output 'nvm' if the installation was successful. Please note that `
 To download, compile, and install the latest release of node, do this:
 
   ```sh
-  nvm install node
+  nvm install --lts
   ```
 
 And then in any new shell just use the installed version:
 
   ```sh
-  nvm use node
+  nvm use --lts
   ```
 
 4. Install **Pandoc** for EPUB and MOBI output
@@ -276,6 +257,7 @@ If version number is returned quire-cli was installed correctly, you can now lea
 cd ~
 ```
 
+
 ## Starting a New Quire Project
 
 The steps you follow to create a new Quire publication or project are the same for MAC Os and all Windows versions.
@@ -311,9 +293,7 @@ The steps you follow to create a new Quire publication or project are the same f
     Once running, open a browser and visit [http://localhost:1313](http://localhost:1313) to see the publication. To stop the preview you can either press ctrl+c or type `quire stop`.
 
 
-### Troubleshooting
 
-TK
 
 ## Updating the Quire CLI
 
@@ -337,6 +317,7 @@ As we develop, you may also want/need to update your [Quire CLI](../quire-cli-in
 
 You now have the latest Quire CLI and any new projects you start will also have the newest theme. Your previously-started projects will keep their original version of theme. You may in some cases see errors or issues when running Quire commands with a newer version of the CLI, in older projects. These can be fixed manually, or, you can also always re-install [your original version of the CLI](https://github.com/gettypubs/quire-cli/releases) to run those older projects if necessary.
 
+
 ## Uninstalling Quire
 
 To uninstall Quire:
@@ -352,3 +333,8 @@ To uninstall Quire:
     ```
 
 2. In the folder/finder view, go to your user/home directory where you initially installed Quire, look for the `quire-cli` folder and delete it.
+
+
+### Troubleshooting
+
+TK
