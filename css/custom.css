@@ -22,6 +22,7 @@
 .quire-navbar-controls__right,
 .quire-search__close-button {
   margin-right: 100px;
+  z-index: 5000;
 }
 
 /* changes layout for fixed sidebar menu */
