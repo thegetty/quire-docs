@@ -3,119 +3,119 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>https://gettypubs.github.io/quire/</loc>
   </url>
   
   <url>
-    <loc>/contents/</loc>
+    <loc>https://gettypubs.github.io/quire/contents/</loc>
   </url>
   
   <url>
-    <loc>/getting-started/</loc>
+    <loc>https://gettypubs.github.io/quire/getting-started/</loc>
   </url>
   
   <url>
-    <loc>/guide/install-uninstall/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/install-uninstall/</loc>
   </url>
   
   <url>
-    <loc>/guide/quire-project-file-structure/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/quire-project-file-structure/</loc>
   </url>
   
   <url>
-    <loc>/guide/publication-configuration-metadata/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/publication-configuration-metadata/</loc>
   </url>
   
   <url>
-    <loc>/guide/fundamentals/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/fundamentals/</loc>
   </url>
   
   <url>
-    <loc>/guide/pages-plain-text/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/pages-plain-text/</loc>
   </url>
   
   <url>
-    <loc>/guide/collection-catalogues/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/collection-catalogues/</loc>
   </url>
   
   <url>
-    <loc>/guide/figure-images/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/figure-images/</loc>
   </url>
   
   <url>
-    <loc>/guide/zooming-images-maps/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/zooming-images-maps/</loc>
   </url>
   
   <url>
-    <loc>/guide/citation-bibliographies/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/citation-bibliographies/</loc>
   </url>
   
   <url>
-    <loc>/guide/copyright-about-pages/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/copyright-about-pages/</loc>
   </url>
   
   <url>
-    <loc>/guide/contributors/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/contributors/</loc>
   </url>
   
   <url>
-    <loc>/guide/styles-customization/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/styles-customization/</loc>
   </url>
   
   <url>
-    <loc>/guide/fonts-customization/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/fonts-customization/</loc>
   </url>
   
   <url>
-    <loc>/guide/multiformat-output/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/multiformat-output/</loc>
   </url>
   
   <url>
-    <loc>/api-docs/yaml/</loc>
+    <loc>https://gettypubs.github.io/quire/api-docs/yaml/</loc>
   </url>
   
   <url>
-    <loc>/api-docs/shortcodes/</loc>
+    <loc>https://gettypubs.github.io/quire/api-docs/shortcodes/</loc>
   </url>
   
   <url>
-    <loc>/api-docs/dependency-guide/</loc>
+    <loc>https://gettypubs.github.io/quire/api-docs/dependency-guide/</loc>
   </url>
   
   <url>
-    <loc>/resources/cheatsheet/</loc>
+    <loc>https://gettypubs.github.io/quire/resources/cheatsheet/</loc>
   </url>
   
   <url>
-    <loc>/resources/default-styleguide/</loc>
+    <loc>https://gettypubs.github.io/quire/resources/default-styleguide/</loc>
   </url>
   
   <url>
-    <loc>/resources/quire-cli-instructions/</loc>
+    <loc>https://gettypubs.github.io/quire/resources/quire-cli-instructions/</loc>
   </url>
   
   <url>
-    <loc>/resources/github/</loc>
+    <loc>https://gettypubs.github.io/quire/resources/github/</loc>
   </url>
   
   <url>
-    <loc>/resources/sample-publication-file/</loc>
+    <loc>https://gettypubs.github.io/quire/resources/sample-publication-file/</loc>
   </url>
   
   <url>
-    <loc>/resources/accessibility-principals/</loc>
+    <loc>https://gettypubs.github.io/quire/resources/accessibility-principals/</loc>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://gettypubs.github.io/quire/about/</loc>
   </url>
   
   <url>
-    <loc>/search.json</loc>
+    <loc>https://gettypubs.github.io/quire/search.json</loc>
   </url>
   
   <url>
-    <loc>/resources/install-pc/</loc>
+    <loc>https://gettypubs.github.io/quire/resources/install-pc/</loc>
   </url>
   
 </urlset>
