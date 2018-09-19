@@ -119,7 +119,7 @@
 
 /* adjusts cover style */
 
-.quire__primary#cover {
+#cover .quire__primary {
   padding-right: 0;
 }
 
@@ -170,7 +170,7 @@
     z-index: 1999;
   }
 
-  .page-item.this-page::after {
+  .page-item.this-page.with-page-nav::after {
     content: "";
     position: absolute;
     width: calc(30px + 2rem + 1px);
@@ -213,12 +213,12 @@
     left: calc((((100vw - 936px - 4rem) / 2) + 1px) * -1);
   }
 
-  #getting-started .page-item.this-page::after,
-  #guide-install-uninstall .page-item.this-page::after,
-  #guide-quire-project-file-structure .page-item.this-page::after,
-  #guide-fundamentals .page-item.this-page::after,
-  #guide-publication-configuration-metadata .page-item.this-page::after,
-  #guide-pages-plain-text .page-item.this-page::after {
+  #getting-started .page-item.this-page.with-page-nav::after,
+  #guide-install-uninstall .page-item.this-page.with-page-nav::after,
+  #guide-quire-project-file-structure .page-item.this-page.with-page-nav::after,
+  #guide-fundamentals .page-item.this-page.with-page-nav::after,
+  #guide-publication-configuration-metadata .page-item.this-page.with-page-nav::after,
+  #guide-pages-plain-text .page-item.this-page.with-page-nav::after {
     margin-top: -1rem;
     border-bottom-width: 0;
     border-top: 1px solid #dbdbdb;
@@ -239,7 +239,7 @@
     top: calc(50% - 10px);
   }
 
-  #guide-pages-plain-text .page-item.this-page::after {
+  #guide-pages-plain-text .page-item.this-page.with-page-nav::after {
     border-top-right-radius: 10px;
   }
 
