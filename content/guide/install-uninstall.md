@@ -147,15 +147,16 @@ Now that you have access to the command line in the Linux Subsystem this can be 
 
 2. Download and install **Prince**:
 
-       ```tx
-       cd ~
-       ```
+```tx
+cd ~
+```
+
 Run these commands to download and install PrinceXML
 
-    ```sh
-    wget https://www.princexml.com/download/prince_12-1_ubuntu18.04_amd64.deb
+```sh
+wget https://www.princexml.com/download/prince_12-1_ubuntu18.04_amd64.deb
 
-    sudo gdebi prince_10r2-1_debian8.0_amd64.deb
+sudo gdebi prince_10r2-1_debian8.0_amd64.deb
   ```
 If you chose a different distribution of Linux there are more instructions here -> https://www.princexml.com/doc-install/#linux
 
@@ -165,8 +166,8 @@ Detailed information about this installation can be found in this link [https://
 
 To install or update nvm, you can use the install script using cURL:
 
-   ```sh
-      curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+  ```sh
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
   ```
 or Wget:
 
@@ -248,32 +249,32 @@ If Pandoc version information is returned then Pandoc was successfully installed
 
 5. Install **Quire-CLI**
 
-    ```sh
-    git clone https://github.com/gettypubs/quire-cli
-    ```
+```sh
+git clone https://github.com/gettypubs/quire-cli
+```
 
-    ```sh
-    cd quire-cli
-    ```
+```sh
+cd quire-cli
+```
 
-    ```sh
-    git checkout pc-dev
-    ```
+```sh
+git checkout pc-dev
+```
 Install Dependencies
 
-    ```sh
-    npm install -g
-    ```
+```sh
+npm install -g
+```
 Verify
 
-    ```sh
-    quire -V
-    ```
+```sh
+quire -V
+```
 If version number is returned quire-cli was installed correctly, you can now leave the directory.
 
-    ```sh
-    cd ~
-    ```
+```sh
+cd ~
+```
 
 ## Starting a New Quire Project
 
