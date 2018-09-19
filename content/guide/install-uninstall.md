@@ -122,7 +122,7 @@ The following steps will install the necessary software for running a Quire proj
     cd ~
     ```
 
-## LINUX
+## LINUX installation
 
 1. Open terminal
 
