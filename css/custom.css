@@ -134,13 +134,127 @@
 /* add styles for page-level navigation list */
 
 .quire-page__page-navigation ul {
-  text-align: center;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
   column-count: 2;
   font-family: "Lato", Helvetica, sans-serif;
+  border-left: 4px solid #3273dc;
+}
+
+@media only screen and (min-width: 1000px) {
+
+  /* add graphic lines connecting menu item and page navigation */
+
+  .quire-page__page-navigation::before {
+    content: "";
+    position: absolute;
+    width: calc((100vw - 936px - 4rem) / 2);
+    height: 800px;
+    left: calc(((100vw - 936px - 4rem) / 2) * -1);
+    background-color: white;
+    top: calc(50% + 770px * -1);
+    z-index: 1998;
+  }
+
+  .quire-page__page-navigation ul::before {
+    content: "";
+    position: absolute;
+    width: calc((100vw - 936px - 4rem) / 2);
+    height: 30px;
+    left: calc(((100vw - 936px - 4rem) / 2) * -1);
+    background-color: white;
+    top: 50%;
+    border-top: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    border-top-left-radius: 30px;
+    z-index: 1999;
+  }
+
+  .page-item.this-page::after {
+    content: "";
+    position: absolute;
+    width: calc(30px + 2rem + 1px);
+    height: 800px;
+    left: 270px;
+    border-bottom: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    margin-top: calc(-800px - 1rem);
+    border-bottom-right-radius: 30px;
+  }
+
+  /* turns lines downward for top list items */
+
+  #getting-started .quire-page__page-navigation ul::before,
+  #guide-install-uninstall .quire-page__page-navigation ul::before,
+  #guide-quire-project-file-structure .quire-page__page-navigation ul::before,
+  #guide-fundamentals .quire-page__page-navigation ul::before,
+  #guide-publication-configuration-metadata .quire-page__page-navigation ul::before,
+  #guide-pages-plain-text .quire-page__page-navigation ul::before {
+    top: calc(50% - 30px);
+    border-top: 0px;
+    border-bottom: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 30px;
+    width: calc(((100vw - 936px - 4rem) / 2) + 1px);
+    left: calc((((100vw - 936px - 4rem) / 2) + 1px) * -1);
+  }
+
+  #getting-started .quire-page__page-navigation::before,
+  #guide-install-uninstall .quire-page__page-navigation::before,
+  #guide-quire-project-file-structure .quire-page__page-navigation::before,
+  #guide-fundamentals .quire-page__page-navigation::before,
+  #guide-publication-configuration-metadata .quire-page__page-navigation::before,
+  #guide-pages-plain-text .quire-page__page-navigation::before {
+    height: 800px;
+    top: calc(50% - 30px);
+    border-bottom-right-radius: 0px;
+    width: calc(((100vw - 936px - 4rem) / 2) + 1px);
+    left: calc((((100vw - 936px - 4rem) / 2) + 1px) * -1);
+  }
+
+  #getting-started .page-item.this-page::after,
+  #guide-install-uninstall .page-item.this-page::after,
+  #guide-quire-project-file-structure .page-item.this-page::after,
+  #guide-fundamentals .page-item.this-page::after,
+  #guide-publication-configuration-metadata .page-item.this-page::after,
+  #guide-pages-plain-text .page-item.this-page::after {
+    margin-top: -1rem;
+    border-bottom-width: 0;
+    border-top: 1px solid #dbdbdb;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 0px;
+    width: calc(30px + 2rem);
+  }
+
+  /* reduces border radius of line for page that's almost even */
+
+  #guide-pages-plain-text .quire-page__page-navigation ul::before {
+    top: calc(50% - 10px);
+    border-bottom-left-radius: 10px;
+    height: 10px;
+  }
+
+  #guide-pages-plain-text .quire-page__page-navigation::before {
+    top: calc(50% - 10px);
+  }
+
+  #guide-pages-plain-text .page-item.this-page::after {
+    border-top-right-radius: 10px;
+  }
+
 }
 
 .quire-page__page-navigation ul li {
-  margin-bottom: .75em;
+  padding: .5rem 1.5rem;
+}
+
+.quire-page__page-navigation ul li:hover {
+  background-color: whitesmoke;
+}
+
+.quire-page__page-navigation ul li:hover a {
+  color: #3273dc;
 }
 
 .quire__secondary .this-page {
