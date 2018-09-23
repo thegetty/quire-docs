@@ -13,11 +13,11 @@ figure_list:
     credit: " "
   - id: "1.4"
     src: /screenshots/quire-work-environment.gif
-    caption: "command line shell, browser, text editor"
+    caption: "When you work in Quire, you’ll be using a text editor (left), a command-line shell (center), and a web browser (right)."
     credit: " "
-  - id: "1.5"
+  - id: "commandline-vs-folder"
     src: /screenshots/commandline-vs-folder.png
-    caption: "folder and command line side-by-side"
+    caption: "Both the command-line shell (left) and the Finder window (right) are views of the same directory on your computer. In this case, we are in a directory called “my-project” in a user account “workstation” and we can see a number of files and sub-directories which happen to make up a Quire project."
     credit: " "
   - id: "1.6"
     src: /screenshots/project-in-atom.png
@@ -68,3 +68,26 @@ figure_list:
     src: /screenshots/webpack-logo.png
     caption: " "
     credit: " "
+  - id: "command-line-shell"
+    src: /screenshots/command-line-shell.png
+    caption: "When you first open your command-line shell, you will be in your main user/home directory by default. In this case, “workstation”."
+    credit: " "
+  - id: "quire-starter"
+    src: /screenshots/quire-starter.png
+    caption: "When your run `quire new` Quire starts you with a demo project with some default content. You can edit, delete and add from there in building your own publication."
+  - id: "text-editor"
+    src: /screenshots/text-editor.png
+    caption: "When working on a Quire project in a text editor like Atom or Visual Studio Code you can see and access all your project files from the sidebar at the left."
+  - id: "quire-starter-metadata-change"
+    src: /screenshots/quire-starter-metadata-change.png
+    caption: "Basic publication information lives in the `publication.yml` file, and is used throughout the site. Here we see the title being used on the cover, in the top navigation bar and in the side navigation."
+  - id: "quire-starter-content-change-1"
+    src: /screenshots/quire-starter-content-change-1.png
+    caption: "Changing the page `title`, `weight` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
+  - id: "quire-starter-content-change-2"
+    src: /screenshots/quire-starter-content-change-2.gif
+    caption: "The main text of a Quire publication is written in Markdown. Simple text formatting indicates structure. Like asterisks for italics (`*italics*`) and hashmarks for headings (`## Heading`). Figures are added with a “shortcode” that references a listing in your `figures.yml` file: `{{< q-figure id=\"1.1\" >}}`"
+  - id: "quire-starter-styles-change"
+    src: /screenshots/quire-starter-styles-change.png
+    caption: "A background image can be added to the cover by adding it to the page YAML of your `cover.md` page (`images: cover_bg.jpg`). Colors and other styles can be customized in the `variables.scss` file of your project’s theme."
+
