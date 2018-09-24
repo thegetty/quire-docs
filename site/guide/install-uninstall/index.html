@@ -299,7 +299,7 @@
         
 
 <li class="quire-navbar-button arrow-button">
-  <a href="https://gettypubs.github.io/quire/getting-started/" rel="prev" id="js-prev" >
+  <a href="https://gettypubs.github.io/quire/tutorial/" rel="prev" id="js-prev" >
     <svg>
       <switch>
         <use xlink:href="#left-arrow-icon"></use>
@@ -340,7 +340,7 @@
         
 
 <li class="quire-navbar-button arrow-button">
-  <a href="https://gettypubs.github.io/quire/guide/quire-project-file-structure/" rel="next" id="js-next">
+  <a href="https://gettypubs.github.io/quire/guide/start/" rel="next" id="js-next">
     <svg>
       <switch>
         <use xlink:href="#right-arrow-icon"></use>
@@ -414,12 +414,16 @@
 
 
       <li class="page-item quire-frontmatter">
-  <a href="https://gettypubs.github.io/quire/getting-started/">Getting Started</a>
+  <a href="https://gettypubs.github.io/quire/tutorial/">Tutorial: Quire Basics</a>
 </li>
     
           <li class="section-item no-landing"><div class="list-header title">Guide</div><ul>
               <li class="page-item this-page with-page-nav">
   <a href="https://gettypubs.github.io/quire/guide/install-uninstall/">Install and Uninstall</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/start/">Getting Started with a Project</a>
 </li>
             
               <li class="page-item">
@@ -658,23 +662,15 @@
     
       
       
-      <li class="sub-heading"><a href="#troubleshooting">Troubleshooting</a></li>
-    
-      
-      
       <li class="main-heading"><a href="#windows-installation">Windows Installation</a></li>
     
       
       
-      <li class="main-heading"><a href="#linux">LINUX</a></li>
+      <li class="main-heading"><a href="#linux-installation">LINUX installation</a></li>
     
       
       
       <li class="main-heading"><a href="#starting-a-new-quire-project">Starting a New Quire Project</a></li>
-    
-      
-      
-      <li class="sub-heading"><a href="#troubleshooting">Troubleshooting</a></li>
     
       
       
@@ -683,6 +679,10 @@
       
       
       <li class="main-heading"><a href="#uninstalling-quire">Uninstalling Quire</a></li>
+    
+      
+      
+      <li class="sub-heading"><a href="#troubleshooting">Troubleshooting</a></li>
     
     </ul>
   </div>
@@ -724,10 +724,6 @@ npm install -g</code></pre></div></li>
 
 <p>When complete, type <code>quire --version</code> to confirm proper installation. It should return a version number, otherwise, if it says <code>command not found</code>, the Quire CLI has not been properly installed. Refer to the “Troubleshooting” section below.</p>
 
-<h3 id="troubleshooting">Troubleshooting</h3>
-
-<p>TK</p>
-
 <!--
 The full Quire system is not currently available to PC users. However, PC users can still start and work on Quire projects, preview the online edition, and output final files for it. They will not, however, be able to:
 - Output PDF or EPUB editions
@@ -743,6 +739,8 @@ The following steps will install the necessary software for running a Quire proj
 <li><p>Download and install <strong>Node.js</strong> and <strong>npm</strong> at <a href="https://nodejs.org/en/download/" target="_blank">https://nodejs.org/en/download/</a>. Make sure you get the LTS version of Node.js, npm will be installed during the same process. The Windows installer will be downloaded, just open it and a setup wizard screen will guide you through the process.</p></li>
 
 <li><p>Download <strong>Prince</strong> for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Prince you can follow the instructions at their site: <a href="https://www.princexml.com/doc-install/#windows" target="_blank">https://www.princexml.com/doc-install/#windows</a></p></li>
+
+<li><p>Download <strong>Pandoc</strong> for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc on your system.</p></li>
 
 <li><p>Open <strong>PowerShell</strong> (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select &ldquo;run as administrator&rdquo; from the context menu.</p>
 
@@ -768,47 +766,28 @@ The following steps will install the necessary software for running a Quire proj
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">cd ~</code></pre></div></li>
 </ol>
 
-<h2 id="linux">LINUX</h2>
-
-<p>Install the Windows Subsystem for Linux:</p>
-
-<ul>
-<li><p>Open PowerShell as Administrator (that should be installed by default in your Windows computer). To do so, right click on the icon and select &ldquo;run as administrator&rdquo; from the context menu. Once you get the administrator window, type the following command:</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</code></pre></div></li>
-</ul>
-
-<p>Restart your computer when prompted by typing yes (y) or no (n).</p>
-
-<ul>
-<li>Install the Subsystem for Linux:</li>
-</ul>
-
-<p>We recommend to use the LTS version of <a href="https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6" target="_blank">Ubuntu Desktop</a> that you&rsquo;ll find in the Microsoft Store. From the app page, select &ldquo;Get the app&rdquo; and once the download has completed, select &ldquo;Launch&rdquo;.</p>
-
-<section class="box">
-  If you have a preferred Linux distribution you can also download and install it from the Microsoft Store.
-</section>
-
-<p>Now that you have access to the command line in the Linux Subsystem this can be considered a Linux install.</p>
+<h2 id="linux-installation">LINUX installation</h2>
 
 <ol>
-<li><p>Open terminal (If you are coming from the Windows 10 instructions this should already be open)</p></li>
+<li><p>Open terminal</p></li>
 
-<li><p>Download and install <strong>Prince</strong>:</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">   cd ~</code></pre></div>
+<li><p>Download and install <strong>Prince</strong>:</p></li>
+</ol>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">cd ~</code></pre></div>
 <p>Run these commands to download and install PrinceXML</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">wget https://www.princexml.com/download/prince_12-1_ubuntu18.04_amd64.deb
 
 sudo gdebi prince_10r2-1_debian8.0_amd64.deb</code></pre></div>
-<p>If you chose a different distribution of Linux there are more instructions here -&gt; <a href="https://www.princexml.com/doc-install/#linux" target="_blank">https://www.princexml.com/doc-install/#linux</a></p></li>
+<p>If you chose a different distribution of Linux there are more instructions here -&gt; <a href="https://www.princexml.com/doc-install/#linux" target="_blank">https://www.princexml.com/doc-install/#linux</a></p>
 
-<li><p>Install node js and npm through nvm</p></li>
+<ol>
+<li>Install node js and npm through nvm</li>
 </ol>
 
 <p>Detailed information about this installation can be found in this link <a href="https://github.com/creationix/nvm#install-script" target="_blank">https://github.com/creationix/nvm#install-script</a></p>
 
 <p>To install or update nvm, you can use the install script using cURL:</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">      curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash</code></pre></div>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash</code></pre></div>
 <p>or Wget:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash</code></pre></div>
 <p><sub>The script clones the nvm repository to <code>~/.nvm</code> and adds the source line to your profile (<code>~/.bash_profile</code>, <code>~/.zshrc</code>,      <code>~/.profile</code>, or <code>~/.bashrc</code>).</sub></p>
@@ -832,9 +811,9 @@ To verify that nvm has been installed, do:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#007020">command</span> -v nvm</code></pre></div>
 <p>which should output &lsquo;nvm&rsquo; if the installation was successful. Please note that <code>which nvm</code> will not work, since <code>nvm</code> is a sourced shell function, not an executable binary.
 To download, compile, and install the latest release of node, do this:</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  nvm install node</code></pre></div>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  nvm install --lts</code></pre></div>
 <p>And then in any new shell just use the installed version:</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  nvm use node</code></pre></div>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  nvm use --lts</code></pre></div>
 <ol>
 <li>Install <strong>Pandoc</strong> for EPUB and MOBI output</li>
 </ol>
@@ -850,16 +829,15 @@ To download, compile, and install the latest release of node, do this:</p>
 <p>If Pandoc version information is returned then Pandoc was successfully installed on your system.</p>
 
 <ol>
-<li><p>Install <strong>Quire-CLI</strong></p>
+<li>Install <strong>Quire-CLI</strong></li>
+</ol>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone https://github.com/gettypubs/quire-cli</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#007020">cd</span> quire-cli</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git checkout pc-dev</code></pre></div>
 <p>Install Dependencies</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm install -g</code></pre></div>
 <p>Verify</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">quire -V</code></pre></div>
 <p>If version number is returned quire-cli was installed correctly, you can now leave the directory.</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#007020">cd</span> ~</code></pre></div></li>
-</ol>
-
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#007020">cd</span> ~</code></pre></div>
 <h2 id="starting-a-new-quire-project">Starting a New Quire Project</h2>
 
 <p>The steps you follow to create a new Quire publication or project are the same for MAC Os and all Windows versions.</p>
@@ -881,10 +859,6 @@ To download, compile, and install the latest release of node, do this:</p>
 <p>Once running, open a browser and visit <a href="http://localhost:1313" target="_blank">http://localhost:1313</a> to see the publication. To stop the preview you can either press ctrl+c or type <code>quire stop</code>.</p></li>
 </ol>
 
-<h3 id="troubleshooting-1">Troubleshooting</h3>
-
-<p>TK</p>
-
 <h2 id="updating-the-quire-cli">Updating the Quire CLI</h2>
 
 <p>As we develop, you may also want/need to update your <a href="../quire-cli-instructions/">Quire CLI</a>. In particular, the CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI any new projects you start will also have an older version of the theme.</p>
@@ -903,11 +877,29 @@ To download, compile, and install the latest release of node, do this:</p>
 <p>To uninstall Quire:</p>
 
 <ol>
-<li><p>From a new window in your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Command Line Interface</span><span class="quire-definition__content">Command line interface or CLI is a text-based user interface for running tasks. In it, the user issues commands in the form of a text</span></span> (you should be in your home/user directory where you initially installed Quire) type the following two commands:</p>
+<li><p>From a new window in your 
+
+
+
+
+
+<div class="quire-error message is-danger">
+  <div class="message-header">
+    <strong>SHORTCODE ERROR: q-glossary</strong>
+  </div>
+  <div class="message-body">
+    <p>The term supplied doesn’t match one in the project’s <code>glossary.yml</code> file. The term should be listed under the <code>term</code> or <code>alternates</code> key.</p>
+    <pre>{{< q-glossary &#34;chiaroscuro&#34; >}}<br /><br />term: &#34;chiaroscuro&#34;<br />alternates:<br /> - &#34;chiaroscuros&#34;</pre>
+  </div>
+</div> (you should be in your home/user directory where you initially installed Quire) type the following two commands:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">cd quire-cli</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">npm uninstall -g</code></pre></div></li>
 
 <li><p>In the folder/finder view, go to your user/home directory where you initially installed Quire, look for the <code>quire-cli</code> folder and delete it.</p></li>
 </ol>
+
+<h3 id="troubleshooting">Troubleshooting</h3>
+
+<p>TK</p>
 
         
 </section>

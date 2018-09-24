@@ -414,12 +414,16 @@
 
 
       <li class="page-item quire-frontmatter">
-  <a href="https://gettypubs.github.io/quire/getting-started/">Getting Started</a>
+  <a href="https://gettypubs.github.io/quire/tutorial/">Tutorial: Quire Basics</a>
 </li>
     
           <li class="section-item no-landing"><div class="list-header title">Guide</div><ul>
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/install-uninstall/">Install and Uninstall</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/start/">Getting Started with a Project</a>
 </li>
             
               <li class="page-item">
@@ -697,7 +701,7 @@
       <div class="content">
         
 
-<p>Quire uses two <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML files are used to describe data. YAML is a human-readable data serialization language.</span></span> files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: <code>config.yml</code> and <code>publication.yml</code>. By default, both <code>config.yml</code> and <code>publication.yml</code> will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.</p>
+<p>Quire uses two <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix <code>yml</code>, or inside a Markdown (<code>.md</code>) file.</span></span> files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: <code>config.yml</code> and <code>publication.yml</code>. By default, both <code>config.yml</code> and <code>publication.yml</code> will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.</p>
 
 <p>You can read more about <a href="https://gettypubs.github.io/quire/resources/cheatsheet/"><em>YAML syntax basics</em></a> and check out a sample of the <a href="https://gettypubs.github.io/quire/resources/sample-publication-file/"><em><code>publication.yml</code> file</em></a> in other chapters of this guide.</p>
 
@@ -712,12 +716,12 @@
 
 <li><p>The <code>theme</code> value should match the name of the folder in the <code>/themes</code> directory that contains your theme files; if you&rsquo;ve copied the default <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span> and given it a different name make sure to update the value here too.</p></li>
 
-<li><p>The <code>params</code> section includes a number of values specific to various Quire layout <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">templates</span><span class="quire-definition__content">Themes may include one or more templates. Templates are the variety of layouts a theme has.</span></span> and <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">shortcodes</span><span class="quire-definition__content">A shortcode is a simple snippet inside a content file that Hugo/Quire will render using a predefined template. For more information about shortcodes visit the Hugo website: <a href="https://gohugo.io/content-management/shortcodes/" target="_blank">https://gohugo.io/content-management/shortcodes/</a></span></span>. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (<code>&quot;&quot;</code>) rather than completely deleting it.</p></li>
+<li><p>The <code>params</code> section includes a number of values specific to various Quire layout <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">templates</span><span class="quire-definition__content">Themes may include one or more templates. Templates are the variety of layouts a theme has.</span></span> and <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">shortcodes</span><span class="quire-definition__content">A shortcode is a simple snippet used inside a Markdown file, that Quire will render using a predefined template. Quire suports <a href="https://gettypubs.github.io/quire/api-docs/shortcodes/">a range of shortcodes</a>, and custom shortcodes can also be added.</span></span>. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (<code>&quot;&quot;</code>) rather than completely deleting it.</p></li>
 </ul>
 
 <h2 id="adding-and-editing-important-metadata-in-the-publication-yml-file">Adding and Editing Important Metadata in the <code>publication.yml</code> File</h2>
 
-<p>The <code>publication.yml</code> file in the <code>/data</code> directory is <em>the</em> source of metadata for your publication. While the only value that is truly required is the one for the property <code>title</code>, it is a good idea to fill out the <code>publication.yml</code> file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Search Engine Optimization (SEO)</span><span class="quire-definition__content">Search engine optimization, SEO, is the process of increasing the online visibility of a website or a web page in a web search engine&rsquo;s unpaid results</span></span> and general discovery.</p>
+<p>The <code>publication.yml</code> file in the <code>/data</code> directory is <em>the</em> source of metadata for your publication. While the only value that is truly required is the one for the property <code>title</code>, it is a good idea to fill out the <code>publication.yml</code> file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Search Engine Optimization (SEO)</span><span class="quire-definition__content">Search engine optimization, SEO, is the process of increasing the online visibility of a website or a web page in a web search engine&rsquo;s unpaid results.</span></span> and general discovery.</p>
 
 <p>Some key areas are summed up below, and match headings in the <code>publication.yml</code> file itself, but there is a detailed documentation of individual properties and their values in the <a href="https://gettypubs.github.io/quire/api-docs/yaml/"><em>API/Docs section</em></a> of this guide.</p>
 

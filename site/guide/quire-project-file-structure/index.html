@@ -299,7 +299,7 @@
         
 
 <li class="quire-navbar-button arrow-button">
-  <a href="https://gettypubs.github.io/quire/guide/install-uninstall/" rel="prev" id="js-prev" >
+  <a href="https://gettypubs.github.io/quire/guide/start/" rel="prev" id="js-prev" >
     <svg>
       <switch>
         <use xlink:href="#left-arrow-icon"></use>
@@ -414,12 +414,16 @@
 
 
       <li class="page-item quire-frontmatter">
-  <a href="https://gettypubs.github.io/quire/getting-started/">Getting Started</a>
+  <a href="https://gettypubs.github.io/quire/tutorial/">Tutorial: Quire Basics</a>
 </li>
     
           <li class="section-item no-landing"><div class="list-header title">Guide</div><ul>
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/install-uninstall/">Install and Uninstall</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/start/">Getting Started with a Project</a>
 </li>
             
               <li class="page-item this-page with-page-nav">
@@ -783,11 +787,25 @@ While most Quire configuration happens in the <a href="#configyml"><code>config.
 
 <h2 id="data">📁 data</h2>
 
-<p>What content doesn’t live in <code>content</code> directory as a <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Markdown file</span><span class="quire-definition__content">A file formatted in Markdown that generates a Web page. Markdown files have a YAML block at the top containing the metadata of the page.</span></span>, will live here in the <code>data</code> directory as a <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML files are used to describe data. YAML is a human-readable data serialization language.</span></span> file. A <code>publication.yml</code> file is required (read more in <a href="../publication-configuration-metadata/"><em>Publication Metadata &amp; Configuration</em></a>), but a Quire project may also include <code>references.yml</code> (<a href="../citation-bibliographies/"><em>Citations &amp; Bibliographies</em></a>); <code>figures.yml</code> (<a href="../figures-images/"><em>Figures</em></a>); and <code>objects.yml</code> (<em>not yet defined</em>).</p>
+<p>What content doesn’t live in <code>content</code> directory as a <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Markdown file</span><span class="quire-definition__content">A file formatted in Markdown that generates a Web page. Markdown files have a YAML block at the top containing the metadata of the page.</span></span>, will live here in the <code>data</code> directory as a <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix <code>yml</code>, or inside a Markdown (<code>.md</code>) file.</span></span> file. A <code>publication.yml</code> file is required (read more in <a href="../publication-configuration-metadata/"><em>Publication Metadata &amp; Configuration</em></a>), but a Quire project may also include <code>references.yml</code> (<a href="../citation-bibliographies/"><em>Citations &amp; Bibliographies</em></a>); <code>figures.yml</code> (<a href="../figures-images/"><em>Figures</em></a>); and <code>objects.yml</code> (<em>not yet defined</em>).</p>
 
 <h2 id="site">📁 site</h2>
 
-<p>Where the built pages of the Quire website will be. This folder and its contents are automatically generated with the <code>quire build</code> command in the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Command Line Interface</span><span class="quire-definition__content">Command line interface or CLI is a text-based user interface for running tasks. In it, the user issues commands in the form of a text</span></span>, and should not be edited directly.</p>
+<p>Where the built pages of the Quire website will be. This folder and its contents are automatically generated with the <code>quire build</code> command in the 
+
+
+
+
+
+<div class="quire-error message is-danger">
+  <div class="message-header">
+    <strong>SHORTCODE ERROR: q-glossary</strong>
+  </div>
+  <div class="message-body">
+    <p>The term supplied doesn’t match one in the project’s <code>glossary.yml</code> file. The term should be listed under the <code>term</code> or <code>alternates</code> key.</p>
+    <pre>{{< q-glossary &#34;chiaroscuro&#34; >}}<br /><br />term: &#34;chiaroscuro&#34;<br />alternates:<br /> - &#34;chiaroscuros&#34;</pre>
+  </div>
+</div>, and should not be edited directly.</p>
 
 <p>[note/warning] The <code>site</code> directory won’t be present in the project until running <code>quire build</code> command the first time. And even then, may not be viewable in a text editor (depending on which is used) as it’s included in <code>.gitignore</code>. Read more in <a href="../multiformat-output/"><em>Outputting &amp; Deploying Your Site</em></a>.</p>
 
@@ -797,7 +815,21 @@ While most Quire configuration happens in the <a href="#configyml"><code>config.
 
 <h2 id="themes">📁 themes</h2>
 
-<p>The <code>themes</code> directory contains one or more <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span>s that define the structure and style of the Quire publication. When using the <code>quire new</code> command in the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Command Line Interface</span><span class="quire-definition__content">Command line interface or CLI is a text-based user interface for running tasks. In it, the user issues commands in the form of a text</span></span>, the default theme is <code>quire-starter-theme</code>. Read more in <a href="../styles-customization/"><em>Customizing Styles</em></a>.</p>
+<p>The <code>themes</code> directory contains one or more <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span>s that define the structure and style of the Quire publication. When using the <code>quire new</code> command in the 
+
+
+
+
+
+<div class="quire-error message is-danger">
+  <div class="message-header">
+    <strong>SHORTCODE ERROR: q-glossary</strong>
+  </div>
+  <div class="message-body">
+    <p>The term supplied doesn’t match one in the project’s <code>glossary.yml</code> file. The term should be listed under the <code>term</code> or <code>alternates</code> key.</p>
+    <pre>{{< q-glossary &#34;chiaroscuro&#34; >}}<br /><br />term: &#34;chiaroscuro&#34;<br />alternates:<br /> - &#34;chiaroscuros&#34;</pre>
+  </div>
+</div>, the default theme is <code>quire-starter-theme</code>. Read more in <a href="../styles-customization/"><em>Customizing Styles</em></a>.</p>
 
 <h2 id="gitignore">📄 .gitignore</h2>
 
