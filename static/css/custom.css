@@ -137,6 +137,9 @@
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
   font-family: "Lato", Helvetica, sans-serif;
   border-left: 4px solid #3273dc;
 }
@@ -186,10 +189,10 @@
 
   #tutorial .quire-page__page-navigation ul::before,
   #guide-install-uninstall .quire-page__page-navigation ul::before,
-  #guide-quire-project-file-structure .quire-page__page-navigation ul::before,
+  #guide-getting-started .quire-page__page-navigation ul::before,
   #guide-fundamentals .quire-page__page-navigation ul::before,
-  #guide-publication-configuration-metadata .quire-page__page-navigation ul::before,
-  #guide-pages-plain-text .quire-page__page-navigation ul::before {
+  #guide-metadata-configuration .quire-page__page-navigation ul::before,
+  #guide-pages .quire-page__page-navigation ul::before {
     top: calc(50% - 30px);
     border-top: 0px;
     border-bottom: 1px solid #dbdbdb;
@@ -202,10 +205,10 @@
 
   #tutorial .quire-page__page-navigation::before,
   #guide-install-uninstall .quire-page__page-navigation::before,
-  #guide-quire-project-file-structure .quire-page__page-navigation::before,
+  #guide-getting-started .quire-page__page-navigation::before,
   #guide-fundamentals .quire-page__page-navigation::before,
-  #guide-publication-configuration-metadata .quire-page__page-navigation::before,
-  #guide-pages-plain-text .quire-page__page-navigation::before {
+  #guide-metadata-configuration .quire-page__page-navigation::before,
+  #guide-pages .quire-page__page-navigation::before {
     height: 800px;
     top: calc(50% - 30px);
     border-bottom-right-radius: 0px;
@@ -215,10 +218,10 @@
 
   #tutorial .page-item.this-page.with-page-nav::after,
   #guide-install-uninstall .page-item.this-page.with-page-nav::after,
-  #guide-quire-project-file-structure .page-item.this-page.with-page-nav::after,
+  #guide-getting-started .page-item.this-page.with-page-nav::after,
   #guide-fundamentals .page-item.this-page.with-page-nav::after,
-  #guide-publication-configuration-metadata .page-item.this-page.with-page-nav::after,
-  #guide-pages-plain-text .page-item.this-page.with-page-nav::after {
+  #guide-metadata-configuration .page-item.this-page.with-page-nav::after,
+  #guide-pages .page-item.this-page.with-page-nav::after {
     margin-top: -1rem;
     border-bottom-width: 0;
     border-top: 1px solid #dbdbdb;
@@ -229,24 +232,24 @@
 
   /* reduces border radius of line for page that's almost even */
 
-  #guide-pages-plain-text .quire-page__page-navigation ul::before {
+  #guide-pages .quire-page__page-navigation ul::before {
     top: calc(50% - 10px);
     border-bottom-left-radius: 10px;
     height: 10px;
   }
 
-  #guide-pages-plain-text .quire-page__page-navigation::before {
+  #guide-pages .quire-page__page-navigation::before {
     top: calc(50% - 10px);
   }
 
-  #guide-pages-plain-text .page-item.this-page.with-page-nav::after {
+  #guide-pages .page-item.this-page.with-page-nav::after {
     border-top-right-radius: 10px;
   }
 
 }
 
 .quire-page__page-navigation ul li a {
-  margin: .5rem 1.5rem;
+  padding: .5rem 1.5rem;
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -410,6 +413,16 @@ h2 code {
   border-radius: 4px;
 }
 
+/* overrides default list spacing */
+
+.content li + li {
+  margin-top: 1em;
+}
+
+li .highlight:last-child {
+  margin-bottom: 1em;
+}
+
 /*changes indentation in shortcodes page*/
 
 #api-docs-shortcodes .quire-page__content .content p + p {
@@ -472,4 +485,13 @@ h2 code {
 table {
   font-size: .8em;
   max-width: 100%;
+}
+
+/* made code bold when in headings */
+
+strong code {
+  font-weight: bold;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
 }

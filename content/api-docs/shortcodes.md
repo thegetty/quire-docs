@@ -14,7 +14,7 @@ Parameters: None.
 
 YAML Dependencies: None.
 
-See: [Working with Text](/guide/pages-plain-text/)
+See: [Working with Text](/guide/pages/)
 
 ## `q-bibliography`
 
@@ -169,4 +169,4 @@ See: [Figures](/guide/figure-images/)
 
 Note: Not sure we‘ll do this. Might be better to build in with JS rather than have a separate shortcode just for URLs.
 
-See: [Working with Text](/guide/pages-plain-text/)
+See: [Working with Text](/guide/pages/)

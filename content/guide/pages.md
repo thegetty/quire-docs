@@ -1,55 +1,10 @@
 ---
-title: Pages & Plain Text
+title: Pages
 weight: 205
 type: essay
 ---
 
-## Structuring Your Publication
-
-The way you organize the pages Markdown files in the `content` directory of your project defines the structure of your publication. The names of the files will effect the final URLs of your publication as well as how the *Table of Contents* is organized. By default, URLs will be the filename, minus the `.md` suffix. Files nested in a sub-directory within `content` will include that sub-directory in the URL as well. So if your site is mypublication.com, these files:
-
-```md
-📄 cover.md
-📄 contents.md
-📁 part-one
-  📄 section-overview.md
-  📄 chapter-01.md
-  📄 chapter-02.md
-📁 part-two
-  📄 section-overview.md
-  📄 chapter-03.md
-```
-
-Will map to these URLs:
-
-```md
-mypublication.com/cover/
-mypublication.com/contents/
-mypublication.com/part-one/section-overview/
-mypublication.com/part-one/chapter-01/
-mypublication.com/part-one/chapter-02/
-mypublication.com/part-two/section-overview/
-mypublication.com/part-two/chapter-03/
-```
-
-There are some important rules and tips to keep in mind, as well as further ways of refining and customizing the organization of your publication content:
-
-1. Filenames should be lowercase, with no spaces or special characters.
-
-2. Sub-directories can’t have other sub-directories within them.
-
-3. Don't use `index.md` or `_index.md` files.
-  For users with previous Hugo, static-site or other web development experience, you should not use `index.md` or `_index.md` files in your Quire project. `_index.md` is a Hugo convention for creating sections and nested sections, but in Quire it works against the linear ordering of the publication and breaks the *Next* and *Previous* page navigation. `index.md` is a web convention, but in Hugo, the presence of an `index.md` file in any directory converts that directory into a so-called “page bundle” in Hugo’s eyes and none of the other pages in that directory will be rendered.
-
-4. Create homepage and section landing pages with `slug`.
-  `index.md` files would typically be used to create pages with URLs at the root level of the directory including the homepage of your site and sub-directories (like `mypublication.com/` and `mypublication.com/part-one/`). Because `index.md` files can’t be used, you can instead define a `slug` attribute with a value of `.` (a period) in the page YAML of the page/file you want to use as a landing or homepage. You should add one `slug` attribute with a value of `.` per section. Read more about how to use `slug` to [create section landing pages](#creating-section-landing-pages) in the below section.
-
-5. Control page ordering with `weight`.
-  In the example above, we’ve listed the files and directories in the order they would appear in the publication. When looking in the actual `content` directory, however, they will almost certainly not appear in the proper publication order, but rather more likely, they’d appear alphabetically. To control page ordering in Quire, define a `weight` attribute, with a numerical value, in the page YAML.
-
-## Defining Your Page’s Configuration and Metadata
-
-Every page in a Quire publication starts with a block of YAML (discussed further in the [*Publication Configuration & Metadata*](../publication-configuration-metadata/) page of this guide). The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes, at the very top of the page.
+Every page in a Quire publication starts with a block of YAML (discussed further in the [*Metadata & Configuration*](../metadata-configuration/) page of this guide). The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes, at the very top of the page.
 
 ```yaml
 ---
@@ -59,16 +14,9 @@ weight:
 ---
 ```
 
-The page `type` must be one of nine possible values: `page`, `essay`, `entry`, `cover`, `contents`, `about`, `search`, or `data`. If left blank, or if any other value besides these nine is entered, the `type` will default to "page". Read more about the specific `type`s in the [Defining Page Types](#defining-page-types) section below.
-
-The page `weight` is a number and will determine the order in which the page appears in the publication. The first page in your publication would be `weight: 1` (don’t start with zero 0), the second would be `weight: 2`, and so on. Numbering should be unique, and sequential whole numbers, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at "0", your first section might be "100", second section "200" and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
-
-When you need to add more page information, the complete list of options is available in the ["YAML"](/api-docs/yaml/) section of the guide.
-
-
 ## Defining Page Types
 
-Every page has one of the following nine `type`s. If none is specified, Quire defaults to `type: page`.
+The page `type` must be one of nine possible values: `page`, `essay`, `entry`, `cover`, `contents`, `about`, `search`, or `data`. If left blank, or if any other value besides these nine is entered, the `type` will default to "page".
 
 `page`: The default value. A general publication page. Used for introductions, forewords, chapters, appendices and other pages.
 
@@ -86,6 +34,27 @@ Every page has one of the following nine `type`s. If none is specified, Quire de
 
 `search`: Description TK
 
+## Putting Pages in the Right Order
+
+In this example publication outline we’ve listed the files and directories as we would like them to appear in the publication’s table of contents.
+
+```md
+📄 cover.md
+📄 contents.md
+📁 part-one
+  📄 section-overview.md
+  📄 chapter-01.md
+  📄 chapter-02.md
+📁 part-two
+  📄 section-overview.md
+  📄 chapter-03.md
+```
+
+When looking in the actual `content` directory on your computer or in your text editor, however, they will almost certainly not appear in this order. More likely, they’ll appear alphabetically or by date modified, which is also how Quire will order them when building and previewing your publication. You can adjust this by assigning a numerical `weight` to each page in its page YAML.
+
+The page `weight` is a number and will determine the order in which the page appears in the publication. For example, the `contents.md` file in the example above, the second page in our book, would be `weight: 2`.
+
+Numbering should be unique, and sequential whole numbers, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at "0", your first section might be "100", second section "200" and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
 
 ## Creating Section Landing Pages
 

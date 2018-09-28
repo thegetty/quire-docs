@@ -8,7 +8,7 @@ entries:
   - term: "Bulma variables"
     definition: "Sass variables used by Bulma, an open source CSS framework. You can check a list of Bulma variables at: [https://bulma.io/documentation/overview/variables/](https://bulma.io/documentation/overview/variables/)"
   - term: "Color Keywords"
-    definition: "Color keywords are case-insensitive identifiers that represent specific colors. A comprehensive list of color keywords is at: [https://www.w3.org/TR/SVG/types.html#ColorKeywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords)"
+    definition: "Color keywords are case-insensitive identifiers that represent specific colors. A comprehensive list of color keywords is at: [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)"
   - term: "command-line interface"
     definition: "A command-line interface (CLI) is a text-based user interface for running program tasks. In it, the user issues commands in the form of typed strings of text. This is opposed to a graphical user interface (GUI) for a software program, in which the user controls the program through visualized buttons, toggles and menus."
   - term: "command-line shell"
@@ -81,11 +81,12 @@ entries:
       - "shortcodes"
     definition: "A shortcode is a simple snippet used inside a Markdown file, that Quire will render using a predefined template. Quire suports [a range of shortcodes](/api-docs/shortcodes/), and custom shortcodes can also be added."
   - term: "theme"
+    alternates:
+      - "themes"
     definition: "Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning."
   - term: "template"
     alternates:
       - "templates"
-      - "templatos"
     definition: "Themes may include one or more templates. Templates are the variety of layouts a theme has."
   - term: "Terminal"
     definition: "Terminal is the Bash Command-line Interface for macOS. An introductory lesson to the Basch Command-line can be found at the Programming Historian: [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash)."

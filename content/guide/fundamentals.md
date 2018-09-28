@@ -1,8 +1,10 @@
 ---
-title: "Fundamentals: YAML and Markdown"
-weight: 204
+title: "Fundamentals: YAML & Markdown"
+weight: 203
 type: essay
 ---
+
+Content is stored in two different plain-text formats in Quire: YAML for data, and Markdown for more narrative or textual content. Markdown is used in standalone `.md` files in the `content` directory of every Quire project. YAML is found in `.yml` files in the `data` directory, the configuration files, and at the top of every Markdown file.
 
 ## YAML syntax basics
 

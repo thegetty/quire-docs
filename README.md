@@ -33,13 +33,13 @@ Follow the step-by-step introduction in the [**Getting Started**](content/guide/
 
 ## Guide & Documentation
 
-- [**Getting Started**](content/guide/getting-started.md)
+- [**Tutorial: Quire Basics**](content/tutorial.md)
 - **Guide**
   - [Install and Uninstall](content/guide/install-uninstall.md)
-  - [Quire Project File Structure](content/guide/file-structure.md)
-  - [Publication Configuration & Metadata](content/guide/metadata.md)
-  - [Fundamentals: YAML and Markdown](content/guide/fundamentals.md)
-  - [Pages & Plain Text](content/guide/text.md)
+  - [Getting Started](content/guide/getting-started.md)
+  - [Fundamentals: YAML & Markdown](content/guide/fundamentals.md)
+  - [Metadata & Configuration](content/guide/metadata-configuration.md)
+  - [Pages](content/guide/pages.md)
   - [Collection Catalogues](content/guide/collection-catalogues.md)
   - [Figure Images](content/guide/figures.md)
   - [*Zooming Images & Maps*](content/guide/zoom.md)

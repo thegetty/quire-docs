@@ -107,7 +107,7 @@ While not always necessary, it’s usually a good idea to wrap any information y
 
 The three other metadata files in the `data` directory—`figures.yml`, `references.yml`, and `objects.yml`—are data for figure images, bibliographic references, and catalogue/artwork objects. If your publication won’t have figures, a bibliography, or a catalogue section you can remove these. The `publication.yml` file, however, is always required and the more complete you can make it, the better.
 
-*Read more in the [“Publication Configuration & Metadata”](/guide/publication-configuration-metadata/) chapter of this guide and our [“Quire YAML”](/api-docs/yaml/) reference.*
+*Read more in the [“Metadata & Configuration”](/guide/metadata-configuration/) chapter of this guide and our [“Quire YAML”](/api-docs/yaml/) reference.*
 
 ## 6. Editing Content
 
@@ -118,7 +118,7 @@ Open the `about.md` file. At the top you’ll see a small block of YAML surround
 Let’s make some changes to the `about.md` file to make it the Preface in our demo book:
 
 1. First change the `title` to `"Preface"`.
-2. The `type` of `"page"` is fine to leave as is. [Other page types available](guide/pages-plain-text/#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
+2. The `type` of `"page"` is fine to leave as is. [Other page types available](guide/pages/#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
 3. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in order based on their filenames. Change the `weight` of this page to `"3"`, which will order it after the `contents.md` page which has a `weight` of `"2"`.
 
 Save your changes and you should see the page update at http://localhost:1313/about/. You’ll probably also want to change the name of the file from `about.md` to `preface.md`. Do this by right clicking (or control clicking on a Mac) on the file in your text editor and selecting “Rename”. Note that this will also change the URL of the page so instead of http://localhost:1313/about/, you’d now find the preview at http://localhost:1313/preface/.
@@ -161,7 +161,7 @@ You’ll see this added a figure and caption, the text for which is stored in th
 
 {{< q-figure id="quire-starter-content-change-2" >}}
 
-*Read more about Page YAML, Markdown, and Quire shortcodes in the [“Pages & Plain Text”](/guide/pages-plain-text/) chapter of this guide, and more about figure shortcodes in [“Figure Images”](/guide/figure-images/).*
+*Read more about Page YAML, Markdown, and Quire shortcodes in the [“Pages”](/guide/pages/) chapter of this guide, and more about figure shortcodes in [“Figure Images”](/guide/figure-images/).*
 
 ## 7. Customizing Styles
 

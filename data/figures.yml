@@ -90,4 +90,7 @@ figure_list:
   - id: "quire-starter-styles-change"
     src: /screenshots/quire-starter-styles-change.png
     caption: "A background image can be added to the cover by adding it to the page YAML of your `cover.md` page (`images: cover_bg.jpg`). Colors and other styles can be customized in the `variables.scss` file of your project’s theme."
+  - id: "command-line-drag-and-drop"
+    src: /screenshots/command-line-drag-and-drop.gif
+    caption: ""
 

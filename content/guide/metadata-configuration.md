@@ -1,6 +1,6 @@
 ---
-title: Publication Configuration & Metadata
-weight: 203
+title: Metadata & Configuration
+weight: 204
 type: essay
 ---
 

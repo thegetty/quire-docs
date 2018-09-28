@@ -12,7 +12,7 @@ Contributors can be listed under `contributor` in your `publication.yml` file, o
 
 Each `contributor` should have a `type` specified of either `"primary"`, `"secondary"`, or `"project-team"`.
 
-- **Primary** contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire {{< q-glossary "template" >}}s, they are typically used on the cover, the menu and in the [metadata embedded in your publication](/publication-configuration-metadata/); listed as the creators of the publication.
+- **Primary** contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire {{< q-glossary "template" >}}s, they are typically used on the cover, the menu and in the [metadata embedded in your publication](/metadata-configuration/); listed as the creators of the publication.
 
 - **Secondary** contributors are not typically shown in the menu or cover, but are often included in book metadata, and may also be referenced by the `q-contributor` shortcode as noted below. In future iterations of Quire, we hope to be able to reference contributors listed here from individual pages.
 

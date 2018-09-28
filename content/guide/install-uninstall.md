@@ -1,27 +1,29 @@
 ---
-title: Install and Uninstall
+title: Install or Update
 weight: 201
 type: essay
 ---
 
-## Mac Os installation
+## macOS Installation
 
-Open your your Terminal command line application and follow the four steps below. First to install support software for Quire, and then Quire itself. Note that when you type a password in the command line, the cursor doesn’t move, but your typing is being registered. Simply type the password, and hit Enter.
+Open your your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder) and follow the steps below. First to install support software for Quire, and then Quire itself. If you are new to the command line, read our tutorial on [“Working in a Command-line Shell”](/tutorial/#1-working-in-a-command-line-shell).
 
-1. Install **Apple’s Xcode** by copying and pasting the following command and hitting enter. After hitting ender, an additional alert notification will pop up. Click “Install” and follow the prompts.
+1. Install **Apple’s Xcode** by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
 
     ```text
     xcode-select --install
     ```
 
-2. Visit the **Node.js** site, and download and install the current LTS (long-term support) version: [https://nodejs.org](https://nodejs.org)
+2. Visit the **Node.js** site, and download and install the current LTS (long-term support) version: [https://nodejs.org](https://nodejs.org).
 
-3. Visit the **PrinceXML** site, download the Mac OS version, and uncompress the folder: [http://www.princexml.com/download/](http://www.princexml.com/download/)
+3. Visit the **Pandoc** repository on GitHub, and download the macOS .pkg file of the latest release: [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/). Install by double clicking the icon and following the prompts.
 
-    Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default) and that the version you downloaded was 11.3, you can update the command if either of these is not the case.
+4. Visit the **PrinceXML** site, download the Mac OS version, and uncompress the folder: [http://www.princexml.com/download/](http://www.princexml.com/download/).
+
+    Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default) and that the version you downloaded was 12.2, you can update the command if either of these is not the case.
 
     ```text
-    cd Downloads/prince-11.3-macosx
+    cd Downloads/prince-12.2-macosx
     sudo ./install.sh
     ```
 
@@ -32,9 +34,8 @@ Open your your Terminal command line application and follow the four steps below
     ```text
     cd
     ```
-4. Visit the **Pandoc** site, download the Mac OS version. The easiest way to install Pandoc on a Mac is to download the .pkg file. Install this file by double clicking the icon and following the prompts. Visit this page [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/) to download the latest release.
 
-5. Copy and paste the following line into your Terminal to download the **Quire CLI** (command line application) to your computer from GitHub.
+5. Copy and paste the following line into your Terminal to download the **Quire CLI** ({{< q-glossary "command-line interface" >}}) to your computer from GitHub.
 
     ```text
     git clone https://github.com/gettypubs/quire-cli.git
@@ -51,16 +52,7 @@ Open your your Terminal command line application and follow the four steps below
     npm install -g
     ```
 
-When complete, type `quire --version` to confirm proper installation. It should return a version number, otherwise, if it says `command not found`, the Quire CLI has not been properly installed. Refer to the “Troubleshooting” section below.
-
-
-<!--
-The full Quire system is not currently available to PC users. However, PC users can still start and work on Quire projects, preview the online edition, and output final files for it. They will not, however, be able to:
-- Output PDF or EPUB editions
-- Make changes to Style (.scss) or Javascript (.js) files inside the themes folder
-The following steps will install the necessary software for running a Quire project on a PC, and show you how to start a new project as well.
--->
-
+When complete, type `quire --version` to confirm proper installation. It should return a version number, otherwise, if it says `command not found`, the Quire CLI has not been properly installed. Refer to the [“Troubleshooting”](#troubleshooting) section below.
 
 ## Windows Installation
 
@@ -122,7 +114,7 @@ The following steps will install the necessary software for running a Quire proj
     cd ~
     ```
 
-## LINUX installation
+## Linux Installation
 
 1. Open terminal
 
@@ -257,47 +249,9 @@ If version number is returned quire-cli was installed correctly, you can now lea
 cd ~
 ```
 
-
-## Starting a New Quire Project
-
-The steps you follow to create a new Quire publication or project are the same for MAC Os and all Windows versions.
-
-1. To create a new project type:
-
-    ```tx
-    quire new your-project-name
-    ```
-
-    This command will install the starter kit, set up the theme and install dependencies wait until you see a text string that says "theme and dependencies sucessfully installed" and the prompt with your username pops up.
-
-2. Then enter the new directory by typing:
-
-    ```tx
-    cd your-project-name
-    ```
-
-3. And install starter theme dependencies with the following command:
-
-    ```tx
-    quire install
-    ```
-
-    This process can last a few minutes, once again wait until you see the prompt.
-
-4. Now you can preview the project, and any edits you'd make, by typing:
-
-    ```tx
-    quire preview
-    ```
-
-    Once running, open a browser and visit [http://localhost:1313](http://localhost:1313) to see the publication. To stop the preview you can either press ctrl+c or type `quire stop`.
-
-
-
-
 ## Updating the Quire CLI
 
-As we develop, you may also want/need to update your [Quire CLI](../quire-cli-instructions/). In particular, the CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI any new projects you start will also have an older version of the theme.
+As we develop, you may also want/need to update your [Quire CLI](../quire-cli-instructions/). The CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI, any new projects you start will have the corresponding older version of the theme.
 
 1. In your User/Home directory where you initially installed Quire, look for the `quire-cli` folder and delete it.
 
@@ -315,14 +269,32 @@ As we develop, you may also want/need to update your [Quire CLI](../quire-cli-in
     npm install -g
     ```
 
-You now have the latest Quire CLI and any new projects you start will also have the newest theme. Your previously-started projects will keep their original version of theme. You may in some cases see errors or issues when running Quire commands with a newer version of the CLI, in older projects. These can be fixed manually, or, you can also always re-install [your original version of the CLI](https://github.com/gettypubs/quire-cli/releases) to run those older projects if necessary.
+You now have the latest Quire CLI and any new projects you start will also have the newest theme. Your previously-started projects will keep their original version of theme unless you [update the theme](#updating-the-theme) separately.
 
+You may in some cases see errors or issues when running Quire commands with a newer version of the CLI, in older projects. These can be fixed manually, or, you can also re-install [your original version of the CLI](https://github.com/gettypubs/quire-cli/releases) to run those older projects if necessary.
+
+## Updating the Theme
+
+To update the version of a theme you have:
+
+1. In the `themes` directory of your project, delete the current theme directory. It’s `quire-starter-theme` by default.
+2. Copy in your new theme directory ensuring that it has the same name as the original.
+3. Open your command-line shell and navigate to the project directory using the `cd` (change directory) command. For example, if your project directory was called `my-project` and it was in your main user directory, you’d enter `cd my-project`.
+3. Still in the command-line shell, type `quire install` and press enter to install the theme dependencies for your project. (This is done automatically when running `quire new`, but needs to be done manually when adding a new or replacement theme.)
+
+{{< q-class "box warning" >}}
+- Be sure to save any [customizations you’ve made](/guide/styles-customization) inside your theme. (Typically style changes to the `variables.scss` file.) You’ll have to copy these over into the new theme manually once it is installed.
+{{< /q-class >}}
+
+## Installing a New Theme
+
+TK
 
 ## Uninstalling Quire
 
 To uninstall Quire:
 
-1. From a new window in your {{< q-glossary "Command Line Interface" >}} (you should be in your home/user directory where you initially installed Quire) type the following two commands:
+1. From a new window in your command-line shell (you should be in your home/user directory where you initially installed Quire) type the following two commands:
 
     ```tx
     cd quire-cli
@@ -334,7 +306,6 @@ To uninstall Quire:
 
 2. In the folder/finder view, go to your user/home directory where you initially installed Quire, look for the `quire-cli` folder and delete it.
 
-
-### Troubleshooting
+## Troubleshooting
 
 TK
