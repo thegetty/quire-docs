@@ -65,7 +65,7 @@ Quire uses these projects to generate the EPUB file. This file can be access on 
 
 | Dependency | NPM Description |
 | --- | --- |
-| [elint]([https://www.npmjs.com/package/eslint]) | ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. |  
+| [elint](https://www.npmjs.com/package/eslint) | ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. |  
 | [eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)  | Shareable configs are designed to work with the extends feature of .eslintrc files. You can learn more about Shareable Configs on the official ESLint website. |  
 | [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)  | Enforce best practices for JavaScript promises. |  
 | [eslint-plugin-standard](https://www.npmjs.com/package/eslint-plugin-standard)  | ESlint Rules for the Standard Linter |  
@@ -78,7 +78,7 @@ Quire uses these projects to generate the EPUB file. This file can be access on 
 
 | Dependency | NPM Description |
 | --- | --- |
-| [bulma]([https://www.npmjs.com/package/bulma]) | Bulma is a CSS framework. There is no JavaScript included. |  
+| [bulma](https://www.npmjs.com/package/bulma) | Bulma is a CSS framework. There is no JavaScript included. |  
 | [hammerjs](https://www.npmjs.com/package/hammerjs)  | Hammer is a open-source library that can recognize gestures made by touch, mouse and pointerEvents |
 | [jquery](https://www.npmjs.com/package/jquery)  | jQuery is a fast, small, and feature-rich JavaScript library. |  
 | [leaflet](https://www.npmjs.com/package/leaflet)  | Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps.  |  
