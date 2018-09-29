@@ -33,20 +33,15 @@ block-scoped .Scratch inside the `range` loop.
 {{- .Scratch.Set "parentSection" "" -}}
 {{- .Scratch.Set "pageType" "" -}}
 {{- .Scratch.Set "pageLength" "" -}}
-{{- .Scratch.Set "pageHeadings" "" -}}
-
 
 {{- if gt (len $page.Content) 0 -}}
-{{ $headings := findRE "<h[2-3].*?>(.|\n])+?</h[2-3]>" $page.Content }}
-
-{{- .Scratch.Set "pageHeadings" ($headings) -}}
 {{- .Scratch.Set "searchContent" $page.Plain -}}
 {{- .Scratch.Set "pageURL" $page.Permalink -}}
 {{- .Scratch.Set "pageType" $page.Type -}}
 {{- .Scratch.Set "pageLength" $page.WordCount -}}
 
 {{- end -}}
-{{- .Scratch.Set "pageData" (dict "id" $index "title" $page.Title "url" (.Scratch.Get "pageURL") "type" (.Scratch.Get "pageType") "length" (.Scratch.Get "pageLength") "headings" (.Scratch.Get "pageHeadings") "content" (.Scratch.Get "searchContent")) -}}
+{{- .Scratch.Set "pageData" (dict "id" $index "title" $page.Title "url" (.Scratch.Get "pageURL") "type" (.Scratch.Get "pageType") "length" (.Scratch.Get "pageLength") "content" (.Scratch.Get "searchContent")) -}}
 
 {{- $.Scratch.Add "index" (.Scratch.Get "pageData") -}}
 {{- end -}}

@@ -156,7 +156,7 @@
     left: calc(((100vw - 936px - 4rem) / 2) * -1);
     background-color: white;
     top: calc(50% + 770px * -1);
-    z-index: 1000;
+    z-index: 1200;
   }
 
   .quire-page__page-navigation ul::before {
@@ -170,7 +170,7 @@
     border-top: 1px solid #dbdbdb;
     border-left: 1px solid #dbdbdb;
     border-top-left-radius: 30px;
-    z-index: 1001;
+    z-index: 1201;
   }
 
   .page-item.this-page.with-page-nav::after {

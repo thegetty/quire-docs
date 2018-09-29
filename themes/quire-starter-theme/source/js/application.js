@@ -1,13 +1,15 @@
 /**
  * @fileOverview
  * @name application.js
- * @description This file serves as the entry point for Weback, the JS library
+ * @description This file serves as the entry point for Webpack, the JS library
  * responsible for building all CSS and JS assets for the theme.
  */
 
 // Stylesheets
+// console.log(webpack)
+
 import '../css/application.scss'
-import '../css/epub.scss'
+// import '../css/fonts.scss'
 import 'leaflet/dist/leaflet.css'
 import 'leaflet-fullscreen/dist/leaflet.fullscreen.css'
 
@@ -178,21 +180,21 @@ function loadSearchData() {
  * @description Set the menu to its default hidden state. This
  * function should be called again after each smootState reload.
  */
-function menuSetup() {
-  let menu = document.getElementById('site-menu')
-  let menuAriaStatus = menu.getAttribute('aria-expanded')
-  if ($(window).width() < 820) {
-    menu.classList.remove('is-expanded')
-    if (menuAriaStatus === 'true') {
-      menu.setAttribute('aria-expanded', 'false')
-    }
-  } else {
-    menu.classList.add('is-expanded')
-    if (menuAriaStatus === 'false') {
-      menu.setAttribute('aria-expanded', 'true')
-    }
-  }
-}
+ function menuSetup() {
+   let menu = document.getElementById('site-menu')
+   let menuAriaStatus = menu.getAttribute('aria-expanded')
+   if ($(window).width() < 820) {
+     menu.classList.remove('is-expanded')
+     if (menuAriaStatus === 'true') {
+       menu.setAttribute('aria-expanded', 'false')
+     }
+   } else {
+     menu.classList.add('is-expanded')
+     if (menuAriaStatus === 'false') {
+       menu.setAttribute('aria-expanded', 'true')
+     }
+   }
+ }
 
 function mapSetup() {
   let map = document.getElementById('js-map')

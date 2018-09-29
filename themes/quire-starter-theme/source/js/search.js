@@ -10,9 +10,6 @@ class Search {
       this.field('title', {
         boost: 100
       })
-      this.field('headings', {
-        boost: 100
-      })
       this.field('url', {
         boost: 10
       })
@@ -23,7 +20,7 @@ class Search {
       })
     })
   }
-
+  
   // Return results in order of relevance
   search(query) {
     let results = this.index.search(query)
