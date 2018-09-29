@@ -15,12 +15,12 @@
     {{- end -}}
     <div class="quire no-js" id="container">
 
-      <a href="https://goo.gl/forms/BgX3h7pFyGME0CWX2" target="_blank"><span class="quire-banner">BETA</span></a>
+      <a href="https://goo.gl/forms/BgX3h7pFyGME0CWX2" target="_blank" class="remove-from-epub"><span class="quire-banner">BETA</span></a>
 
       {{ partial "navbar.html" . }}
 
       <div id="{{ with .Section }}{{ . | urlize }}-{{ end }}{{ .File.BaseFileName | lower }}">
-      <div class="quire__secondary is-expanded"
+      <div class="quire__secondary is-expanded remove-from-epub"
           id="site-menu"
           aria-expanded="true"
           role="contentinfo">

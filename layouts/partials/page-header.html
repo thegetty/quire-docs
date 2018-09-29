@@ -29,7 +29,7 @@
 
       {{ if in .Params.class "splash" }}
       {{ if or (or (eq .Type "contents") (eq .Type "info")) .Content }}
-      <div class="quire-page__header__splash-page-arrow is-screen-only">
+      <div class="quire-page__header__splash-page-arrow is-screen-only remove-from-epub">
         <svg transform="rotate(90)">
           <switch>
             <use xlink:href="#right-arrow-icon"></use>
