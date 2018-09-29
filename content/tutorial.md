@@ -43,9 +43,9 @@ With the shell open, you can type `ls` (list) to list the folders and files in y
 
 Follow the links below to install Quire:
 
-- [MacOS](/guide/install-uninstall/#mac-os-installation)
-- [Windows](/guide/install-uninstall/#windows-installation)
-- [Linux](/guide/install-uninstall/#linux-installation)
+- [MacOS](/guide/install-uninstall#macos-installation)
+- [Windows](/guide/install-uninstall#windows-installation)
+- [Linux](/guide/install-uninstall#linux-installation)
 
 ## 3. Creating a New Project
 
@@ -118,7 +118,7 @@ Open the `about.md` file. At the top you’ll see a small block of YAML surround
 Let’s make some changes to the `about.md` file to make it the Preface in our demo book:
 
 1. First change the `title` to `"Preface"`.
-2. The `type` of `"page"` is fine to leave as is. [Other page types available](guide/pages/#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
+2. The `type` of `"page"` is fine to leave as is. [Other page types available](/guide/pages#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
 3. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in order based on their filenames. Change the `weight` of this page to `"3"`, which will order it after the `contents.md` page which has a `weight` of `"2"`.
 
 Save your changes and you should see the page update at http://localhost:1313/about/. You’ll probably also want to change the name of the file from `about.md` to `preface.md`. Do this by right clicking (or control clicking on a Mac) on the file in your text editor and selecting “Rename”. Note that this will also change the URL of the page so instead of http://localhost:1313/about/, you’d now find the preview at http://localhost:1313/preface/.
@@ -127,7 +127,7 @@ Save your changes and you should see the page update at http://localhost:1313/ab
 
 Page content goes below the YAML block. Type or copy-and-paste some text here as a test. Save the file and check the preview you’re running in the browser at http://localhost:1313/preview/. You should see the update.
 
-Quire content is written in Markdown. Markdown allows you to express content structure as minimally as possible, using simple text indicators. For longer texts and publications, you’ll want to use a [Microsoft Word to Markdown conversion](/guide/fundamentals/#microsoft-word-to-markdown-conversion) process, but you can also write Markdown directly in the text editor.
+Quire content is written in Markdown. Markdown allows you to express content structure as minimally as possible, using simple text indicators. For longer texts and publications, you’ll want to use a [Microsoft Word to Markdown conversion](/guide/fundamentals#microsoft-word-to-markdown-conversion) process, but you can also write Markdown directly in the text editor.
 
 Use Markdown to add styles and elements to your sample text:
 

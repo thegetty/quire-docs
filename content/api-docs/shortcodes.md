@@ -98,7 +98,7 @@ Basic Usage: Inserts a formatted figure image, label, caption and credit line. I
 | `label_text` | string | Will override the default label text for the figure, which is otherwise constructed automatically with the `figureLabelsTextBefore` and `figureLabelsTextAfter` parameters in `config.yml`. |
 | `class` | `is-pulled-right`, `is-pulled-left`, `is-full-width`, `is-centered-small` | Sets the style of the figure image. |
 
-See: [Figure Images](/guide/figure-images/) and [Figure YAML](#)
+See: [Figure Images](/guide/figure-images/) and [Figure YAML](/api-docs/yaml#figure)
 
 ## `q-figure-group`
 
@@ -115,7 +115,7 @@ Basic Usage: Like `q-figure`, but with handling for multiple images at once.
 | `class` | `is-pulled-right`, `is-pulled-left`, `is-full-width`, `is-centered-small` | Sets the style of the group of figures overall. |
 | `grid` |  `1`, `2`, `3`, `4`, `5`, `6` | Determines the horizontal width (in number of images) of the image grid. If no grid is set, the images will stack on top of one another vertically. |
 
-See: [Figure Images](/guide/figure-images/) and [Figure YAML](#)
+See: [Figure Images](/guide/figure-images/) and [Figure YAML](/api-docs/yaml#figure)
 
 ## `q-link-list`
 

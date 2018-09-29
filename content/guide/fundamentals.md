@@ -87,7 +87,7 @@ Here are the most commonly used tags:
 ### Heading 3
 #### Heading 4
 
-On the headings, in general you should not use the *Heading 1* tag in your content as that should be reserved for the page title, which is automatically generated. Start with *Heading 2*. Also headings should be thought of as levels of your content outline, not as sizes large to small, though they’re often thought of and used that way. See our [*Notes on accessibility*](../resources/accessibility.md) for more on this.
+On the headings, in general you should not use the *Heading 1* tag in your content as that should be reserved for the page title, which is automatically generated. Start with *Heading 2*. Also headings should be thought of as levels of your content outline, not as sizes large to small, though they’re often thought of and used that way. See our [*Accessibility Principals*](/resources/accessibility-principals/) for more on this.
 
 ```md
 > Blockquote
@@ -144,7 +144,7 @@ Indented dashes and asterisks create sub bullets in a bulleted list.
 
 - &#40;c&#41; will automatically render as ©.
 
-- You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Customizing Styles*](../styles.md) chapter of this guide.) Note, however, that you can’t do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode. Read more about Quire shortcodes below.
+- You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Styles Customization*](/guide/styles-customization/) chapter of this guide.) Note, however, that you can’t do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode. Read more about Quire shortcodes below.
 
 ### Markdown Footnotes
 

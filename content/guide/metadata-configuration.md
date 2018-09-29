@@ -126,4 +126,4 @@ subjects:
 
 A history of post-publication revisions made to the publication typically appears on the *About* page. Any number of revision history property items can be added and each must include the attributes `date` and a `summary` of changes made on that date. The `summary` attribute supports Markdown formatting, and would typically be in list form.
 
-If you are using {{< q-glossary "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yml` can act as an overview. For more, see [our revision history policy document](#).
+If you are using {{< q-glossary "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yml` can act as an overview. For more, see [our revision history policy document](https://github.com/gettypubs/digpublishing-guide/blob/master/updates-and-revisions.md).

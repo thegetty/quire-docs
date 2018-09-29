@@ -32,7 +32,7 @@ To modify the Webpack configuration for your project edit this file
 
 `<your-project-directory>/themes/quire-starter-theme/webpack.config.js`
 
-### [pe-epub](https://github.com/peoples-e/pe-epub) and [pe-epub-fs](https://github.com/peoples-e/pe-epub-fs)
+### pe-epub and pe-epub-fs
 
 >"pee pub" makes epubs better. Our goal is to make it as easy as possible to output a valid epub. It's used in production over at The People's E-Book. pe-epub-fs extends pe-epub so you can import local assets from your filesystem rather than from the web.
 

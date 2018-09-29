@@ -52,7 +52,7 @@ Inside each Quire project, you will find the following directories and files. Co
 
 #### 📁 content
 
-The central part of a Quire, the `content` directory is where almost all of a publication’s text content will live as individual {{< q-glossary "Markdown" >}} files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Pages*](/guide/pages.md).
+The central part of a Quire, the `content` directory is where almost all of a publication’s text content will live as individual {{< q-glossary "Markdown" >}} files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Pages*](/guide/pages/).
 
 {{< q-class "box tip" >}}
 - New Quire projects started with the `quire new` command, come with some demo content, images and data as samples to start. These materials can be written over, re-used or deleted altogether as you’d like.
@@ -60,11 +60,11 @@ The central part of a Quire, the `content` directory is where almost all of a pu
 
 #### 📁 data
 
-What content doesn’t live in `content` directory as a Markdown file, will live here in the `data` directory as a {{< q-glossary "YAML" >}} file. A `publication.yml` file is required (read more in [*Publication Metadata & Configuration*](/guide/metadata-configuration/)), but a Quire project may also include `references.yml` ([*Citations & Bibliographies*](/guide/citation-bibliographies/)); `figures.yml` ([*Figures*](/guide/figures-images/)); and `objects.yml` ([*Catalogue Objects*](/guide/collection-catalogues/)).
+What content doesn’t live in `content` directory as a Markdown file, will live here in the `data` directory as a {{< q-glossary "YAML" >}} file. A `publication.yml` file is required (read more in [*Publication Metadata & Configuration*](/guide/metadata-configuration/)), but a Quire project may also include `references.yml` ([*Citations & Bibliographies*](/guide/citation-bibliographies/)); `figures.yml` ([*Figures*](/guide/figure-images/); and `objects.yml` ([*Catalogue Objects*](/guide/collection-catalogues/)).
 
 #### 📁 static
 
-The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s templates {{< q-glossary "static-site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/guide/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Outputting & Deploying Your Site*](/guide/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/guide/figures-images/)).
+The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s templates {{< q-glossary "static-site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/guide/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Outputting & Deploying Your Site*](/guide/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/guide/figure-images/).
 
 #### 📄 README.md
 
@@ -134,7 +134,7 @@ The names of the files will effect the final URLs of your publication. By defaul
 | The `section-overview.md` file inside the `part-two` directory | `mypublication.com/part-two/section-overview/` |
 
 {{< q-class "box tip">}}
-- To have URLs for your homepage or section landing pages that don’t include the Markdown file name, add `slug: .` to the page YAML of that file. Read more in the [*Pages*](/guide/pages/#creating-section-landing-pages) section of this guide.
+- To have URLs for your homepage or section landing pages that don’t include the Markdown file name, add `slug: .` to the page YAML of that file. Read more in the [*Pages*](/guide/pages#creating-section-landing-pages) section of this guide.
 {{< /q-class >}}
 
 For the ordering of the pages, in the example above we’ve listed the files and directories as they would appear in the publication’s table of contents. When looking in the actual `content` directory on your computer or in your text editor, however, they will almost certainly not appear in the proper publication order. More likely, they’ll appear alphabetically or by date modified, which is also how Quire will order them when building and previewing your publication. You can adjust this by [assigning a `weight` to each page](/guide/pages/) in its page YAML.

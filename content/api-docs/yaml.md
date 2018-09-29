@@ -17,7 +17,7 @@ Type: Object
 | `canonifyURLs` |  boolean | Converts all internal links to being in complete cannonical format. Default is `false`. |
 | `footnoteReturnLinkContents` | string | Controls the appearance of the link added to the end of footnotes. Default is "↩". |
 | `metaDataFormat` | "yaml", "toml", "json" | Default is "yaml" |
-| `params` | [object](quire-parameters) | Additional parameters for Quire. See below. |
+| `params` | [object](#quire-parameters) | Additional parameters for Quire. See below. |
 | `relativeURLs` |  boolean | Keeps all internal links relative. Default is `true`. |
 | `theme` | url/id | The name of the theme, in the `theme` directory you’re using. Quire starter kit default is `quire-base-theme` |
 
@@ -79,12 +79,12 @@ Type: Object
 | `contributor` | [array](#contributor) | See below. |
 | `contributor_as_it_appears` | string |  |
 | `promo_image` | url |  |
-| `description` | [object](#publication-description) | See below. |
+| `description` | [object](#description) | See below. |
 | `subject` | [array](#subject) | See below. |
 | `library_of_congress_cip_data` | list |  |
 | `copyright` | string |  |
 | `license` | [object](#license) | See below. |
-| `resource_links` | [array](#resource-links) | See below. |
+| `resource_link` | [array](#resource-link) | See below. |
 | `revision_history` | [array](#revision-history) | See below. |
 | `repository_url` | url | A public repository of the source code and revision history for the publication. |
 

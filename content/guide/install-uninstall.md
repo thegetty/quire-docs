@@ -6,7 +6,7 @@ type: essay
 
 ## macOS Installation
 
-Open your your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder) and follow the steps below. First to install support software for Quire, and then Quire itself. If you are new to the command line, read our tutorial on [“Working in a Command-line Shell”](/tutorial/#1-working-in-a-command-line-shell).
+Open your your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder) and follow the steps below. First to install support software for Quire, and then Quire itself. If you are new to the command line, read our tutorial on [“Working in a Command-line Shell”](/tutorial#1-working-in-a-command-line-shell).
 
 1. Install **Apple’s Xcode** by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
 
@@ -251,7 +251,7 @@ cd ~
 
 ## Updating the Quire CLI
 
-As we develop, you may also want/need to update your [Quire CLI](../quire-cli-instructions/). The CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI, any new projects you start will have the corresponding older version of the theme.
+As we develop, you may also want/need to update your Quire CLI. The CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI, any new projects you start will have the corresponding older version of the theme.
 
 1. In your User/Home directory where you initially installed Quire, look for the `quire-cli` folder and delete it.
 
