@@ -6,7 +6,7 @@ type: essay
 
 Content is stored in two different plain-text formats in Quire: YAML for data, and Markdown for more narrative or textual content. Markdown is used in standalone `.md` files in the `content` directory of every Quire project. YAML is found in `.yml` files in the `data` directory, the configuration files, and at the top of every Markdown file.
 
-## YAML syntax basics
+## YAML Basics
 
 Dashes represent individual items in a list. In the example below, there are two contributors, each with a first and last name. Note too, indentations matter in YAML.
 
@@ -60,11 +60,9 @@ item: "If the text here has a colon : or other special characters it should be s
 
 {{< q-class "box" >}} It’s always a good idea to copy and paste your YAML blocks into a validator like [YAML Lint](http://www.yamllint.com/) or [Code Beautify validator](https://codebeautify.org/yaml-validator) to make sure there aren’t any hidden errors. You don’t need to use the re-formatted YAML validators like this will sometimes give back to you, you just need to make sure it’s correctly formatted. {{< /q-class >}}
 
-## Markdown syntax basics
+## Markdown Basics
 
 Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. Writing in Markdown should be thought of as giving your content structure, not style. By design, and through the stylesheets in the project theme, a list or a blockquote might look different from theme to theme, or even from format to format.
-
-### Basic Markdown Tags
 
 Here are the most commonly used tags:
 

@@ -153,7 +153,7 @@ There are several types of linking between features, text, or objects on a singl
     - At the end of the main body text, one can designate a “Notes” or related subheading using ## or ###. Underneath that heading the information of the citation will be listed using this format:
         - `[^#]: Corresponding citation information.`
         - `[^1]: Roy Stryker to all FSA (then RA) photographers, outline for first published in Carver, *Just Before the War*, n.p.`
-  - You can find additional information about formatting notes text with Markdown in the [*Markdown fundamentals* section](/fundamentals/markdown) of this guide.
+  - You can find additional information about formatting notes text with Markdown in the [*Markdown fundamentals* section](/guide/fundamentals#markdown-basics) of this guide.
 
 - Citation and Bibliography shortcode linking:
   - When the citation shortcode, `{{</* q-cite "author date" "page # if applicable" */>}}` is used in body of text, that corresponds to the short and full bibliographic information provided in the `references.yml`, an in-page bibliography will be generated. This linking is completed automatically.

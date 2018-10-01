@@ -4,7 +4,7 @@ weight: 207
 type: essay
 ---
 
-Quire books are visual and the framework is built to support the use of images for scholarly purposes. In this page we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-shortcodes).
+Quire books are visual and the framework is built to support the use of images for scholarly purposes. In this page we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-the-q-figure-shortcode).
 
 
 ## Including Figure Image Files in Your Publication
