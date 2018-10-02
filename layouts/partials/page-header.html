@@ -12,7 +12,7 @@
 {{- end -}}
   <div class="container">
       {{/* Page Title */}}
-      <h1 class="quire-page__header__title">
+      <h1 class="quire-page__header__title" id="{{ .Title | urlize }}">
         {{ with .Params.number }}<span>{{ . }}.</span>{{ end }}
         {{ .Title | markdownify }}
         {{ with .Params.subtitle }}
