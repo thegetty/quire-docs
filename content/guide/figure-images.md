@@ -41,7 +41,7 @@ Also available are the attributes `caption`, `credit`, `media_id`, `media_type`,
 
 {{< /q-class >}}
 
-## Inserting Figure Images the `q-figure` Shortcode
+## Inserting Figure Images with the `q-figure` Shortcode
 
 Assuming each YAML figure entry in the `figures.yml` file includes a unique `id` (with a value in quotes: "1.1" not 1.1), you can insert a figure in your publication with only the `id` attribute in the shortcode, and all of the other attributes defined in the YAML for that figure, will be automatically included.
 

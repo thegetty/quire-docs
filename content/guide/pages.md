@@ -177,10 +177,10 @@ While most Quire shortcodes work like `q-figure` as a single instance, some shor
 
 ```
 
-The following shortcode are (or will be) available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes api reference](/api-docs/shortcodes/).
+The following shortcodes are (or will be) available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes api reference](/api-docs/shortcodes/).
 
 
-- [`q-class`](#): Wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom css styles or interactions as needed.
+- `q-class`: Wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom css styles or interactions as needed.
 - [`q-bibliography`](/guide/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibiliography.yml` file.
 - [`q-cite`](/guide/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
 - [`q-contributors`](/guide/contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.

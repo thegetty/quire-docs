@@ -37,8 +37,6 @@ Quire is an open-source framework for the creation of multi-format publications.
 
     The content model is documented in the [API/Docs section](/api-docs/) of this guide. It defines how publication content is structured and defined in Quire (including data on the publication itself, pages of the publication, contributors, figures, bibliography, etc.) and how the Quire software templates use this structured content. The content model is designed to be as independent of the Quire software stack as possible, so that long-term, it might be used in other ways. If, for example, any part of the Quire software were replaced with something new, or if the content of a publication were to be used for an entirely different use.
 
-    {{< q-figure id="1.1" >}}
-
     Full size version of the [content model](https://github.com/gettypubs/quire-docs/tree/master/content/images/content_model_big.pdf)
 
 ## What Do the Quire Repositories Do?
