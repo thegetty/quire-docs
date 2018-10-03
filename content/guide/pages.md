@@ -186,4 +186,3 @@ The following shortcodes are (or will be) available in Quire. You’ll find more
 - [`q-contributors`](/guide/contributor/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
 - [`q-figure`](/guide/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
 - [`q-figure-group`](/guide/figure-images/): Like `q-figure`, but with handling for multiple images at once.
-- [`q-link-list`](/guide/copyright-about-pages/): Creates an unordered list of links. Makes use of the `link-list.html` partial in the site templates.

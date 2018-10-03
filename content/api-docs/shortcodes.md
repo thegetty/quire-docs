@@ -4,15 +4,11 @@ type: essay
 weight: 402
 ---
 
-## `q-backmatter`
+## `q-class`
 
-Sample: `{{</* q-backmatter */>}}The text you want formatted here.{{</* /q-backmatter */>}}`
+Sample: `{{</* q-class "my-class-name" */>}}The text you want formatted here.{{</* /q-class */>}}`
 
-Basic Usage: Wrapping text in this shortcode will format it in a manner similar to how footnotes and bibliographies are formatted. Good for sections at the end of essays like Appendices, Acknowledgments, and Contributors Bios.
-
-Parameters: None.
-
-YAML Dependencies: None.
+Basic Usage: Wrapping any Markdown text in this shortcode will wrap it in a `<div>` with the given class name in the HTML output. Used for styling.
 
 See: [Working with Text](/guide/pages/)
 
@@ -70,16 +66,6 @@ YAML Structure:
 
 See: [Contributors](/guide/contributors/)
 
-## `q-copyright`
-
-Sample: `{{</* q-copyright */>}}`
-
-Basic Usage: Adds a copyright statement and licensing information as you’ve defined it in your `publication.yml` file. Commonly used on Copyright and About pages. The shortcode itself makes use of the `copyright.html` partial in your site templates.
-
-Parameters: None.
-
-See: [Copyright & About Pages](/guide/copyright-about-pages/)
-
 ## `q-figure`
 
 Sample: `{{</* q-figure id="3.1" */>}}`
@@ -117,7 +103,11 @@ Basic Usage: Like `q-figure`, but with handling for multiple images at once.
 
 See: [Figure Images](/guide/figure-images/) and [Figure YAML](/api-docs/yaml#figure)
 
-## `q-link-list`
+## Other Potential Shortcodes
+
+The following have been used previously but are not yet implemented in Quire. They are under consideration.
+
+### `q-link-list`
 
 Sample: `{{</* q-link-list "other-formats" */>}}`
 
@@ -133,7 +123,17 @@ Parameters are not named, but instead defined by their position, starting at 0.
 
 See: [Copyright & About Pages](/guide/copyright-about-pages/)
 
-## `q-loc`
+### `q-copyright`
+
+Sample: `{{</* q-copyright */>}}`
+
+Basic Usage: Adds a copyright statement and licensing information as you’ve defined it in your `publication.yml` file. Commonly used on Copyright and About pages. The shortcode itself makes use of the `copyright.html` partial in your site templates.
+
+Parameters: None.
+
+See: [Copyright & About Pages](/guide/copyright-about-pages/)
+
+### `q-loc`
 
 Sample: `{{</* q-loc */>}}`
 
@@ -143,11 +143,7 @@ Parameters: None
 
 See: [Copyright & About Pages](/guide/copyright-about-pages/)
 
-## `q-publisher-team`
-
-Note: this should be folded into the `q-contributors`.
-
-## `q-revision-history`
+### `q-revision-history`
 
 Sample: `{{</* q-revision-history */>}}`
 
@@ -159,13 +155,13 @@ Basic Usage: Adds a revision history to the page, based on values in `publicatio
 
 See: [Copyright & About Pages](/guide/copyright-about-pages/)
 
-## `q-table`
+### `q-table`
 
 Note: Original version of this was tabled. Still looking for better solution for complex tables.
 
 See: [Figures](/guide/figure-images/)
 
-## `q-url-link`
+### `q-url-link`
 
 Note: Not sure we‘ll do this. Might be better to build in with JS rather than have a separate shortcode just for URLs.
 
