@@ -961,5 +961,15 @@ To download, compile, and install the latest release of node, do this:</p>
 <script type="text/javascript">
 
 </script>
+    <script>
+    
+    window.onhashchange = scrollTop;
+      function scrollTop() {
+        var scrollY = window.scrollY;
+        var navHeight = $(".quire-navbar").height();
+        var newScroll = scrollY - navHeight - 5;
+        window.scroll(0, newScroll);
+      }
+    </script>
   </body>
 </html>
