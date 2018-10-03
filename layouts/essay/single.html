@@ -12,7 +12,7 @@
   {{ partial "page-abstract.html" . }}
   {{ end }}
 
-  {{ $headers := findRE "<h[2-3].*?>(.|\n])+?</h[2-3]>" .Content }}
+  {{ $headers := findRE "<h[2].*?>(.|\n])+?</h[2]>" .Content }}
   {{ if gt (len $headers) 1 }}
   <div class="container quire-page__page-navigation">
     <ul class="page-navigation__list">
