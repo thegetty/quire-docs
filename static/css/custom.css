@@ -25,6 +25,23 @@
   z-index: 5000;
 }
 
+@media print {
+  .quire-banner {
+    display: none;
+  }
+  @page {
+     @top {
+        color: #3273dc;
+        content: "BETA";
+        font-size: 14pt;
+        font-weight: bold;
+        color: #777;
+        letter-spacing: 2pt;
+        font-family: sans-serif;
+     }
+  }
+}
+
 /* changes layout for fixed sidebar menu */
 
 .quire-navbar {

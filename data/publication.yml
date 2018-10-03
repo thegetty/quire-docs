@@ -74,6 +74,11 @@ resource_link:
     media_type: application/epub+zip
     link_relation: alternate
     url: /downloads/output.epub
+  - type: other-format
+    name: MOBI/Kindle
+    media_type: application/mobi
+    link_relation: alternate
+    url: /downloads/output.mobi
   - type: footer-link
     name: About
     link_relation: about
