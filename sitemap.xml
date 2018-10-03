@@ -19,15 +19,7 @@
   </url>
   
   <url>
-    <loc>https://gettypubs.github.io/quire/guide/start/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gettypubs.github.io/quire/guide/quire-project-file-structure/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gettypubs.github.io/quire/guide/publication-configuration-metadata/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/getting-started/</loc>
   </url>
   
   <url>
@@ -35,7 +27,11 @@
   </url>
   
   <url>
-    <loc>https://gettypubs.github.io/quire/guide/pages-plain-text/</loc>
+    <loc>https://gettypubs.github.io/quire/guide/metadata-configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gettypubs.github.io/quire/guide/pages/</loc>
   </url>
   
   <url>
@@ -116,10 +112,6 @@
   
   <url>
     <loc>https://gettypubs.github.io/quire/search.json</loc>
-  </url>
-  
-  <url>
-    <loc>https://gettypubs.github.io/quire/resources/install-pc/</loc>
   </url>
   
 </urlset>

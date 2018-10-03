@@ -94,6 +94,7 @@
 
   <link rel="stylesheet" href="https://gettypubs.github.io/quire/css/application.css">
   <link rel="stylesheet" href="https://gettypubs.github.io/quire/css/custom.css">
+
   <script>
    
    
@@ -132,6 +133,7 @@
     }
   }, { once:true });
 </script>
+
 
 </head>
 
@@ -176,7 +178,7 @@
 </svg>
 
 
-<svg style="display:none">
+<svg style="display:none" class="remove-from-epub">
   <symbol id="cc" viewBox="0 0 270 60" preserveAspectRatio="xMinYMax meet">
     <path  d="M29.9,0c8.4,0,15.5,2.9,21.4,8.8c2.8,2.8,5,6,6.4,9.7C59.3,22.1,60,25.9,60,30c0,4.1-0.7,8-2.2,11.5
 		c-1.4,3.6-3.6,6.8-6.4,9.5c-2.9,2.9-6.2,5.1-10,6.6c-3.7,1.5-7.6,2.3-11.5,2.3s-7.8-0.8-11.4-2.3c-3.6-1.5-6.9-3.7-9.8-6.6
@@ -260,7 +262,7 @@
 </svg>
 <div class="quire no-js" id="container">
 
-      <a href="https://goo.gl/forms/BgX3h7pFyGME0CWX2" target="_blank"><span class="quire-banner">BETA</span></a>
+      <a href="https://goo.gl/forms/BgX3h7pFyGME0CWX2" target="_blank" class="remove-from-epub"><span class="quire-banner">BETA</span></a>
 
       
 
@@ -328,19 +330,7 @@
 
 
 
-<li class="quire-navbar-button arrow-button">
-  <a href="https://gettypubs.github.io/quire/resources/install-pc/" rel="next" id="js-next">
-    <svg>
-      <switch>
-        <use xlink:href="#right-arrow-icon"></use>
-        <foreignObject width="18" height="32">
-            <img src="https://gettypubs.github.io/quire/img/icons/right-arrow.png" alt="" />
-        </foreignObject>
-      </switch>
-    </svg>
-    <span class="visually-hidden">Next Page (right keyboard arrow or swipe)</span>
-  </a>
-</li>
+
 
       </ul>
     </div>
@@ -367,7 +357,7 @@
 </div>
 
       <div id="about">
-      <div class="quire__secondary is-expanded"
+      <div class="quire__secondary is-expanded remove-from-epub"
           id="site-menu"
           aria-expanded="true"
           role="contentinfo">
@@ -388,6 +378,7 @@
   <div class="quire-menu__header__contributors">
     <span class="visually-hidden">Contributors: </span>
     <span class="quire-contributor">Getty Publications</span>
+
   </div>
 </header>
 
@@ -408,27 +399,23 @@
     
           <li class="section-item no-landing"><div class="list-header title">Guide</div><ul>
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/install-uninstall/">Install and Uninstall</a>
+  <a href="https://gettypubs.github.io/quire/guide/install-uninstall/">Install or Update</a>
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/start/">Getting Started with a Project</a>
+  <a href="https://gettypubs.github.io/quire/guide/getting-started/">Getting Started</a>
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/quire-project-file-structure/">Quire Project File Structure</a>
+  <a href="https://gettypubs.github.io/quire/guide/fundamentals/">Fundamentals: YAML &amp; Markdown</a>
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/publication-configuration-metadata/">Publication Configuration &amp; Metadata</a>
+  <a href="https://gettypubs.github.io/quire/guide/metadata-configuration/">Metadata &amp; Configuration</a>
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/fundamentals/">Fundamentals: YAML and Markdown</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages-plain-text/">Pages &amp; Plain Text</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
 </li>
             
               <li class="page-item">
@@ -504,10 +491,6 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/accessibility-principals/">Accessibility Principals</a>
 </li>
-            
-              <li class="page-item quire-frontmatter">
-  <a href="https://gettypubs.github.io/quire/resources/install-pc/">Quire Installation</a>
-</li>
             </ul></li>
 
 
@@ -531,6 +514,10 @@
   
   <li>
     <a href="https://gettypubs.github.io/quire/downloads/output.epub" target="_blank" rel="alternate" type="application/epub&#43;zip">EPUB</a>
+  </li>
+  
+  <li>
+    <a href="https://gettypubs.github.io/quire/downloads/output.mobi" target="_blank" rel="alternate" type="application/mobi">MOBI/Kindle</a>
   </li>
   
 </ul>
@@ -624,7 +611,7 @@
 
 <section class="quire-page__header hero "><div class="container">
       
-      <h1 class="quire-page__header__title">
+      <h1 class="quire-page__header__title" id="about">
         
         About
         
@@ -678,68 +665,7 @@
 
 <li><p>Quire Content Model</p>
 
-<p>The content model is documented in the <a href="../api-docs">API/Docs section</a> of this guide. It defines how publication content is structured and defined in Quire (including data on the publication itself, pages of the publication, contributors, figures, bibliography, etc.) and how the Quire software templates use this structured content. The content model is designed to be as independent of the Quire software stack as possible, so that long-term, it might be used in other ways. If, for example, any part of the Quire software were replaced with something new, or if the content of a publication were to be used for an entirely different use.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class='quire-figure '
-        id='1.1'>
-
-  
-  
-  <img class="quire-figure__image"
-       src='https://gettypubs.github.io/quire/img//screenshots/content-model.png'
-       alt='' />
-  
-  
-
-  
-  <figcaption class="quire-figure__caption">
-    
-
-    
-    Quire content model
-    
-
-    
-
-    
-    <span class="quire-figure__credit">
-      
-    </span>
-    
-  </figcaption>
-  
-
-</figure>
-
-
-
-
-
-
-
+<p>The content model is documented in the API/Docs section of this guide. It defines how publication content is structured and defined in Quire (including data on the publication itself, pages of the publication, contributors, figures, bibliography, etc.) and how the Quire software templates use this structured content. The content model is designed to be as independent of the Quire software stack as possible, so that long-term, it might be used in other ways. If, for example, any part of the Quire software were replaced with something new, or if the content of a publication were to be used for an entirely different use.</p>
 
 <p>Full size version of the <a href="https://github.com/gettypubs/quire-docs/tree/master/content/images/content_model_big.pdf" target="_blank">content model</a></p></li>
 </ol>
@@ -827,14 +753,14 @@
 
 
 
-<figure class='quire-figure '
-        id='1.2'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='1.2'
        src='https://gettypubs.github.io/quire/img//screenshots/file-structure.png'
        alt='' />
+
   
   
 
@@ -892,14 +818,14 @@
 
 
 
-<figure class='quire-figure '
-        id='1.3'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='1.3'
        src='https://gettypubs.github.io/quire/img//screenshots/quire_starter_theme.png'
        alt='' />
+
   
   
 
@@ -951,7 +877,7 @@
 <div id="js-search"
      class="quire-search"
      aria-expanded="false"
-     data-search-index='https://gettypubs.github.io/quire/search.json'>
+     data-search-index='https://gettypubs.github.io/quire/search.json' >
   <div class="quire-search__close-button">
     <button class="button is-medium" onclick="toggleSearch()">
       <svg>

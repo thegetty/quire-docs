@@ -98,6 +98,7 @@
 
   <link rel="stylesheet" href="https://gettypubs.github.io/quire/css/application.css">
   <link rel="stylesheet" href="https://gettypubs.github.io/quire/css/custom.css">
+
   <script>
    
    
@@ -136,6 +137,7 @@
     }
   }, { once:true });
 </script>
+
 
 </head>
 
@@ -180,7 +182,7 @@
 </svg>
 
 
-<svg style="display:none">
+<svg style="display:none" class="remove-from-epub">
   <symbol id="cc" viewBox="0 0 270 60" preserveAspectRatio="xMinYMax meet">
     <path  d="M29.9,0c8.4,0,15.5,2.9,21.4,8.8c2.8,2.8,5,6,6.4,9.7C59.3,22.1,60,25.9,60,30c0,4.1-0.7,8-2.2,11.5
 		c-1.4,3.6-3.6,6.8-6.4,9.5c-2.9,2.9-6.2,5.1-10,6.6c-3.7,1.5-7.6,2.3-11.5,2.3s-7.8-0.8-11.4-2.3c-3.6-1.5-6.9-3.7-9.8-6.6
@@ -264,7 +266,7 @@
 </svg>
 <div class="quire no-js" id="container">
 
-      <a href="https://goo.gl/forms/BgX3h7pFyGME0CWX2" target="_blank"><span class="quire-banner">BETA</span></a>
+      <a href="https://goo.gl/forms/BgX3h7pFyGME0CWX2" target="_blank" class="remove-from-epub"><span class="quire-banner">BETA</span></a>
 
       
 
@@ -371,7 +373,7 @@
 </div>
 
       <div id="tutorial">
-      <div class="quire__secondary is-expanded"
+      <div class="quire__secondary is-expanded remove-from-epub"
           id="site-menu"
           aria-expanded="true"
           role="contentinfo">
@@ -392,6 +394,7 @@
   <div class="quire-menu__header__contributors">
     <span class="visually-hidden">Contributors: </span>
     <span class="quire-contributor">Getty Publications</span>
+
   </div>
 </header>
 
@@ -412,27 +415,23 @@
     
           <li class="section-item no-landing"><div class="list-header title">Guide</div><ul>
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/install-uninstall/">Install and Uninstall</a>
+  <a href="https://gettypubs.github.io/quire/guide/install-uninstall/">Install or Update</a>
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/start/">Getting Started with a Project</a>
+  <a href="https://gettypubs.github.io/quire/guide/getting-started/">Getting Started</a>
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/quire-project-file-structure/">Quire Project File Structure</a>
+  <a href="https://gettypubs.github.io/quire/guide/fundamentals/">Fundamentals: YAML &amp; Markdown</a>
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/publication-configuration-metadata/">Publication Configuration &amp; Metadata</a>
+  <a href="https://gettypubs.github.io/quire/guide/metadata-configuration/">Metadata &amp; Configuration</a>
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/fundamentals/">Fundamentals: YAML and Markdown</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages-plain-text/">Pages &amp; Plain Text</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
 </li>
             
               <li class="page-item">
@@ -508,10 +507,6 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/accessibility-principals/">Accessibility Principals</a>
 </li>
-            
-              <li class="page-item quire-frontmatter">
-  <a href="https://gettypubs.github.io/quire/resources/install-pc/">Quire Installation</a>
-</li>
             </ul></li>
 
 
@@ -535,6 +530,10 @@
   
   <li>
     <a href="https://gettypubs.github.io/quire/downloads/output.epub" target="_blank" rel="alternate" type="application/epub&#43;zip">EPUB</a>
+  </li>
+  
+  <li>
+    <a href="https://gettypubs.github.io/quire/downloads/output.mobi" target="_blank" rel="alternate" type="application/mobi">MOBI/Kindle</a>
   </li>
   
 </ul>
@@ -627,7 +626,7 @@
 
 <section class="quire-page__header hero "><div class="container">
       
-      <h1 class="quire-page__header__title">
+      <h1 class="quire-page__header__title" id="tutorial-quire-basics">
         
         Tutorial: Quire Basics
         
@@ -721,14 +720,14 @@
 
 
 
-<figure class='quire-figure '
-        id='1.4'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='1.4'
        src='https://gettypubs.github.io/quire/img//screenshots/quire-work-environment.gif'
        alt='' />
+
   
   
 
@@ -792,14 +791,14 @@
 
 
 
-<figure class='quire-figure '
-        id='command-line-shell'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='command-line-shell'
        src='https://gettypubs.github.io/quire/img//screenshots/command-line-shell.png'
        alt='' />
+
   
   
 
@@ -855,14 +854,14 @@
 
 
 
-<figure class='quire-figure '
-        id='commandline-vs-folder'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='commandline-vs-folder'
        src='https://gettypubs.github.io/quire/img//screenshots/commandline-vs-folder.png'
        alt='' />
+
   
   
 
@@ -906,16 +905,16 @@
 
 </section>
 
-<p><em>For a deeper dive into the command line, check out a <a href="https://hellowebbooks.com/learn-command-line/" target="_blank">Really Friendly Command Line Intro</a>, or the Programming Historian’s <a href="(https://programminghistorian.org/en/lessons/intro-to-bash)" target="_blank">“Introduction to the Bash Command Line”</a>.</em></p>
+<p><em>For a deeper dive into the command line, check out a <a href="https://hellowebbooks.com/learn-command-line/" target="_blank">Really Friendly Command Line Intro</a>, or the Programming Historian’s <a href="https://programminghistorian.org/en/lessons/intro-to-bash" target="_blank">“Introduction to the Bash Command Line”</a>.</em></p>
 
 <h2 id="2-installing-quire">2. Installing Quire</h2>
 
 <p>Follow the links below to install Quire:</p>
 
 <ul>
-<li><a href="https://gettypubs.github.io/quire/guide/install-uninstall/#mac-os-installation">MacOS</a></li>
-<li><a href="https://gettypubs.github.io/quire/guide/install-uninstall/#windows-installation">Windows</a></li>
-<li><a href="https://gettypubs.github.io/quire/guide/install-uninstall/#linux-installation">Linux</a></li>
+<li><a href="https://gettypubs.github.io/quire/guide/install-uninstall#macos-installation">MacOS</a></li>
+<li><a href="https://gettypubs.github.io/quire/guide/install-uninstall#windows-installation">Windows</a></li>
+<li><a href="https://gettypubs.github.io/quire/guide/install-uninstall#linux-installation">Linux</a></li>
 </ul>
 
 <h2 id="3-creating-a-new-project">3. Creating a New Project</h2>
@@ -957,14 +956,14 @@ quire preview</code></pre></div>
 
 
 
-<figure class='quire-figure '
-        id='quire-starter'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='quire-starter'
        src='https://gettypubs.github.io/quire/img//screenshots/quire-starter.png'
        alt='' />
+
   
   
 
@@ -1029,14 +1028,14 @@ quire preview</code></pre></div>
 
 
 
-<figure class='quire-figure '
-        id='text-editor'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='text-editor'
        src='https://gettypubs.github.io/quire/img//screenshots/text-editor.png'
        alt='' />
+
   
   
 
@@ -1094,14 +1093,14 @@ quire preview</code></pre></div>
 
 
 
-<figure class='quire-figure '
-        id='quire-starter-metadata-change'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='quire-starter-metadata-change'
        src='https://gettypubs.github.io/quire/img//screenshots/quire-starter-metadata-change.png'
        alt='' />
+
   
   
 
@@ -1143,7 +1142,7 @@ quire preview</code></pre></div>
 
 <p>The three other metadata files in the <code>data</code> directory—<code>figures.yml</code>, <code>references.yml</code>, and <code>objects.yml</code>—are data for figure images, bibliographic references, and catalogue/artwork objects. If your publication won’t have figures, a bibliography, or a catalogue section you can remove these. The <code>publication.yml</code> file, however, is always required and the more complete you can make it, the better.</p>
 
-<p><em>Read more in the <a href="https://gettypubs.github.io/quire/guide/publication-configuration-metadata/">“Publication Configuration &amp; Metadata”</a> chapter of this guide and our <a href="https://gettypubs.github.io/quire/api-docs/yaml/">“Quire YAML”</a> reference.</em></p>
+<p><em>Read more in the <a href="https://gettypubs.github.io/quire/guide/metadata-configuration/">“Metadata &amp; Configuration”</a> chapter of this guide and our <a href="https://gettypubs.github.io/quire/api-docs/yaml/">“Quire YAML”</a> reference.</em></p>
 
 <h2 id="6-editing-content">6. Editing Content</h2>
 
@@ -1155,7 +1154,7 @@ quire preview</code></pre></div>
 
 <ol>
 <li>First change the <code>title</code> to <code>&quot;Preface&quot;</code>.</li>
-<li>The <code>type</code> of <code>&quot;page&quot;</code> is fine to leave as is. <a href="guide/pages-plain-text/#defining-page-types" target="_blank">Other page types available</a> are <code>&quot;essay&quot;</code>, <code>&quot;entry&quot;</code>, <code>&quot;cover&quot;</code>, and <code>&quot;contents&quot;</code>. Each displays the page content and data differently. The default is <code>&quot;page&quot;</code>.</li>
+<li>The <code>type</code> of <code>&quot;page&quot;</code> is fine to leave as is. <a href="https://gettypubs.github.io/quire/guide/pages#defining-page-types">Other page types available</a> are <code>&quot;essay&quot;</code>, <code>&quot;entry&quot;</code>, <code>&quot;cover&quot;</code>, and <code>&quot;contents&quot;</code>. Each displays the page content and data differently. The default is <code>&quot;page&quot;</code>.</li>
 <li>The <code>weight</code> value creates the ordering of pages in your book. Without a <code>weight</code> value, Quire will automatically put the pages in order based on their filenames. Change the <code>weight</code> of this page to <code>&quot;3&quot;</code>, which will order it after the <code>contents.md</code> page which has a <code>weight</code> of <code>&quot;2&quot;</code>.</li>
 </ol>
 
@@ -1184,14 +1183,14 @@ quire preview</code></pre></div>
 
 
 
-<figure class='quire-figure '
-        id='quire-starter-content-change-1'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='quire-starter-content-change-1'
        src='https://gettypubs.github.io/quire/img//screenshots/quire-starter-content-change-1.png'
        alt='' />
+
   
   
 
@@ -1220,7 +1219,7 @@ quire preview</code></pre></div>
 
 <p>Page content goes below the YAML block. Type or copy-and-paste some text here as a test. Save the file and check the preview you’re running in the browser at <a href="http://localhost:1313/preview/" target="_blank">http://localhost:1313/preview/</a>. You should see the update.</p>
 
-<p>Quire content is written in Markdown. Markdown allows you to express content structure as minimally as possible, using simple text indicators. For longer texts and publications, you’ll want to use a <a href="https://gettypubs.github.io/quire/guide/fundamentals/#microsoft-word-to-markdown-conversion">Microsoft Word to Markdown conversion</a> process, but you can also write Markdown directly in the text editor.</p>
+<p>Quire content is written in Markdown. Markdown allows you to express content structure as minimally as possible, using simple text indicators. For longer texts and publications, you’ll want to use a <a href="https://gettypubs.github.io/quire/guide/fundamentals#microsoft-word-to-markdown-conversion">Microsoft Word to Markdown conversion</a> process, but you can also write Markdown directly in the text editor.</p>
 
 <p>Use Markdown to add styles and elements to your sample text:</p>
 
@@ -1272,14 +1271,14 @@ quire preview</code></pre></div>
 
 
 
-<figure class='quire-figure '
-        id='quire-starter-content-change-2'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='quire-starter-content-change-2'
        src='https://gettypubs.github.io/quire/img//screenshots/quire-starter-content-change-2.gif'
        alt='' />
+
   
   
 
@@ -1306,7 +1305,7 @@ quire preview</code></pre></div>
 
 
 
-<p><em>Read more about Page YAML, Markdown, and Quire shortcodes in the <a href="https://gettypubs.github.io/quire/guide/pages-plain-text/">“Pages &amp; Plain Text”</a> chapter of this guide, and more about figure shortcodes in <a href="https://gettypubs.github.io/quire/guide/figure-images/">“Figure Images”</a>.</em></p>
+<p><em>Read more about Page YAML, Markdown, and Quire shortcodes in the <a href="https://gettypubs.github.io/quire/guide/pages/">“Pages”</a> chapter of this guide, and more about figure shortcodes in <a href="https://gettypubs.github.io/quire/guide/figure-images/">“Figure Images”</a>.</em></p>
 
 <h2 id="7-customizing-styles">7. Customizing Styles</h2>
 
@@ -1346,14 +1345,14 @@ quire preview</code></pre></div>
 
 
 
-<figure class='quire-figure '
-        id='quire-starter-styles-change'>
+<figure class='quire-figure '>
+  
+  
 
-  
-  
-  <img class="quire-figure__image"
+  <img class="quire-figure__image"  id='quire-starter-styles-change'
        src='https://gettypubs.github.io/quire/img//screenshots/quire-starter-styles-change.png'
        alt='' />
+
   
   
 
@@ -1410,6 +1409,7 @@ quire preview</code></pre></div>
 
         
 </section>
+
       </div>
     </div>
   </section>
@@ -1424,7 +1424,7 @@ quire preview</code></pre></div>
 <div id="js-search"
      class="quire-search"
      aria-expanded="false"
-     data-search-index='https://gettypubs.github.io/quire/search.json'>
+     data-search-index='https://gettypubs.github.io/quire/search.json' >
   <div class="quire-search__close-button">
     <button class="button is-medium" onclick="toggleSearch()">
       <svg>
