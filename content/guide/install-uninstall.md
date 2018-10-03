@@ -4,6 +4,10 @@ weight: 201
 type: essay
 ---
 
+{{< q-class "box warning" >}}
+- Quire is in a closed beta. Installation will not work unless you have [requested and been given access](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
+{{< /q-class >}}
+
 ## macOS Installation
 
 Open your your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder) and follow the steps below. First to install support software for Quire, and then Quire itself. If you are new to the command line, read our tutorial on [“Working in a Command-line Shell”](/tutorial#1-working-in-a-command-line-shell).
