@@ -19,6 +19,10 @@
   </url>
   
   <url>
+    <loc>https://gettypubs.github.io/quire/guide/quire-cli/</loc>
+  </url>
+  
+  <url>
     <loc>https://gettypubs.github.io/quire/guide/getting-started/</loc>
   </url>
   
@@ -35,10 +39,6 @@
   </url>
   
   <url>
-    <loc>https://gettypubs.github.io/quire/guide/collection-catalogues/</loc>
-  </url>
-  
-  <url>
     <loc>https://gettypubs.github.io/quire/guide/figure-images/</loc>
   </url>
   
@@ -48,6 +48,10 @@
   
   <url>
     <loc>https://gettypubs.github.io/quire/guide/citation-bibliographies/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gettypubs.github.io/quire/guide/collection-catalogues/</loc>
   </url>
   
   <url>
@@ -88,10 +92,6 @@
   
   <url>
     <loc>https://gettypubs.github.io/quire/resources/default-styleguide/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gettypubs.github.io/quire/resources/quire-cli-instructions/</loc>
   </url>
   
   <url>

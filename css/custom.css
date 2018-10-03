@@ -206,10 +206,10 @@
 
   #tutorial .quire-page__page-navigation ul::before,
   #guide-install-uninstall .quire-page__page-navigation ul::before,
+  #guide-quire-cli .quire-page__page-navigation ul::before,
   #guide-getting-started .quire-page__page-navigation ul::before,
   #guide-fundamentals .quire-page__page-navigation ul::before,
-  #guide-metadata-configuration .quire-page__page-navigation ul::before,
-  #guide-pages .quire-page__page-navigation ul::before {
+  #guide-metadata-configuration .quire-page__page-navigation ul::before {
     top: calc(50% - 30px);
     border-top: 0px;
     border-bottom: 1px solid #dbdbdb;
@@ -222,10 +222,10 @@
 
   #tutorial .quire-page__page-navigation::before,
   #guide-install-uninstall .quire-page__page-navigation::before,
+  #guide-quire-cli .quire-page__page-navigation::before,
   #guide-getting-started .quire-page__page-navigation::before,
   #guide-fundamentals .quire-page__page-navigation::before,
-  #guide-metadata-configuration .quire-page__page-navigation::before,
-  #guide-pages .quire-page__page-navigation::before {
+  #guide-metadata-configuration .quire-page__page-navigation::before {
     height: 800px;
     top: calc(50% - 30px);
     border-bottom-right-radius: 0px;
@@ -235,10 +235,10 @@
 
   #tutorial .page-item.this-page.with-page-nav::after,
   #guide-install-uninstall .page-item.this-page.with-page-nav::after,
+  #guide-quire-cli .page-item.this-page.with-page-nav::after,
   #guide-getting-started .page-item.this-page.with-page-nav::after,
   #guide-fundamentals .page-item.this-page.with-page-nav::after,
-  #guide-metadata-configuration .page-item.this-page.with-page-nav::after,
-  #guide-pages .page-item.this-page.with-page-nav::after {
+  #guide-metadata-configuration .page-item.this-page.with-page-nav::after {
     margin-top: -1rem;
     border-bottom-width: 0;
     border-top: 1px solid #dbdbdb;
@@ -249,18 +249,24 @@
 
   /* reduces border radius of line for page that's almost even */
 
+  #guide-metadata-configuration .quire-page__page-navigation ul::before,
   #guide-pages .quire-page__page-navigation ul::before {
     top: calc(50% - 10px);
     border-bottom-left-radius: 10px;
     height: 10px;
   }
 
-  #guide-pages .quire-page__page-navigation::before {
+  #guide-metadata-configuration .quire-page__page-navigation::before{
     top: calc(50% - 10px);
   }
+  #guide-pages .quire-page__page-navigation::before {
+    top: calc(50% + 801px * -1);
+  }
 
+  #guide-metadata-configuration .page-item.this-page.with-page-nav::after,
   #guide-pages .page-item.this-page.with-page-nav::after {
     border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
 }
@@ -511,4 +517,11 @@ strong code {
   background-color: transparent;
   padding-left: 0;
   padding-right: 0;
+}
+
+/* Improve definition list spacing (used in CLI guide page) */
+
+dt {
+  margin-top: 1rem;
+  margin-bottom: .25rem;
 }
