@@ -208,8 +208,7 @@
   #guide-install-uninstall .quire-page__page-navigation ul::before,
   #guide-quire-cli .quire-page__page-navigation ul::before,
   #guide-getting-started .quire-page__page-navigation ul::before,
-  #guide-fundamentals .quire-page__page-navigation ul::before,
-  #guide-metadata-configuration .quire-page__page-navigation ul::before {
+  #guide-fundamentals .quire-page__page-navigation ul::before {
     top: calc(50% - 30px);
     border-top: 0px;
     border-bottom: 1px solid #dbdbdb;
@@ -224,8 +223,7 @@
   #guide-install-uninstall .quire-page__page-navigation::before,
   #guide-quire-cli .quire-page__page-navigation::before,
   #guide-getting-started .quire-page__page-navigation::before,
-  #guide-fundamentals .quire-page__page-navigation::before,
-  #guide-metadata-configuration .quire-page__page-navigation::before {
+  #guide-fundamentals .quire-page__page-navigation::before {
     height: 800px;
     top: calc(50% - 30px);
     border-bottom-right-radius: 0px;
@@ -237,8 +235,7 @@
   #guide-install-uninstall .page-item.this-page.with-page-nav::after,
   #guide-quire-cli .page-item.this-page.with-page-nav::after,
   #guide-getting-started .page-item.this-page.with-page-nav::after,
-  #guide-fundamentals .page-item.this-page.with-page-nav::after,
-  #guide-metadata-configuration .page-item.this-page.with-page-nav::after {
+  #guide-fundamentals .page-item.this-page.with-page-nav::after {
     margin-top: -1rem;
     border-bottom-width: 0;
     border-top: 1px solid #dbdbdb;
@@ -251,22 +248,19 @@
 
   #guide-metadata-configuration .quire-page__page-navigation ul::before,
   #guide-pages .quire-page__page-navigation ul::before {
-    top: calc(50% - 10px);
-    border-bottom-left-radius: 10px;
-    height: 10px;
+    top: calc(50%);
+    height: 20px;
   }
 
-  #guide-metadata-configuration .quire-page__page-navigation::before{
-    top: calc(50% - 10px);
-  }
+  #guide-metadata-configuration .quire-page__page-navigation::before,
   #guide-pages .quire-page__page-navigation::before {
-    top: calc(50% + 801px * -1);
+    top: calc(50% + 781px * -1);
   }
 
   #guide-metadata-configuration .page-item.this-page.with-page-nav::after,
   #guide-pages .page-item.this-page.with-page-nav::after {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
 }
@@ -403,6 +397,10 @@
 
 .quire-page__content .content .box .quire-definition a:hover {
   background-color: whitesmoke;
+}
+
+.box .quire-definition__term {
+  color: #fff;
 }
 
 /*changes syntax font color*/
