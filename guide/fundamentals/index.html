@@ -665,39 +665,23 @@
     
       
       
-      <li class="main-heading"><a href="#heading-2">Heading 2</a></li>
+      <li class="main-heading"><a href="#markdown-special-cases">Markdown Special Cases</a></li>
     
       
       
-      <li class="sub-heading"><a href="#heading-3">Heading 3</a></li>
+      <li class="main-heading"><a href="#markdown-preview">Markdown Preview</a></li>
     
       
       
-      <li class="main-heading"><a href="#markdown-formatting-gotchas">Markdown Formatting Gotchas</a></li>
+      <li class="main-heading"><a href="#markdown-output-configuration">Markdown Output Configuration</a></li>
     
       
       
-      <li class="sub-heading"><a href="#markdown-footnotes">Markdown Footnotes</a></li>
+      <li class="main-heading"><a href="#markdown-resources">Markdown Resources</a></li>
     
       
       
-      <li class="sub-heading"><a href="#fractions-superscripts-and-subscripts">Fractions, Superscripts and Subscripts</a></li>
-    
-      
-      
-      <li class="sub-heading"><a href="#markdown-preview">Markdown Preview</a></li>
-    
-      
-      
-      <li class="sub-heading"><a href="#markdown-output-configuration">Markdown Output Configuration</a></li>
-    
-      
-      
-      <li class="sub-heading"><a href="#markdown-resources">Markdown Resources</a></li>
-    
-      
-      
-      <li class="sub-heading"><a href="#microsoft-word-to-markdown-conversion">Microsoft Word to Markdown Conversion</a></li>
+      <li class="main-heading"><a href="#microsoft-word-to-markdown-conversion">Microsoft Word to Markdown Conversion</a></li>
     
     </ul>
   </div>
@@ -708,11 +692,13 @@
       <div class="content">
         
 
-<p>Content is stored in two different plain-text formats in Quire: YAML for data, and Markdown for more narrative or textual content. Markdown is used in standalone <code>.md</code> files in the <code>content</code> directory of every Quire project. YAML is found in <code>.yml</code> files in the <code>data</code> directory, the configuration files, and at the top of every Markdown file.</p>
+<p>Content is stored in two different plain-text formats in Quire: YAML (<em>yam-ul</em>) for data, and Markdown for more narrative or textual content. Markdown is used in standalone <code>.md</code> files in the <code>content</code> directory of every Quire project. YAML is found in <code>.yml</code> files in the <code>data</code> directory, in the configuration files, and at the top of every Markdown file.</p>
 
 <h2 id="yaml-basics">YAML Basics</h2>
 
-<p>Dashes represent individual items in a list. In the example below, there are two contributors, each with a first and last name. Note too, indentations matter in YAML.</p>
+<p>YAML is designed to be a plain-text way of capturing data. The general principal is to have the name of a data item (a key), followed by a colon, a space, and then the data item’s value. A key-value pair.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">title:<span style="color:#bbb"> </span>My<span style="color:#bbb"> </span>Book</code></pre></div>
+<p>Each line in YAML is a new item. Dashes represent individual items in a list. In the example below, there are two contributors, each with a first and last name.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">item:<span style="color:#bbb">
 </span><span style="color:#bbb"></span>other_item:<span style="color:#bbb">
 </span><span style="color:#bbb"></span>multiple_items:<span style="color:#bbb">
@@ -720,16 +706,28 @@
 </span><span style="color:#bbb">    </span>item_description:<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>-<span style="color:#bbb"> </span>item_name:<span style="color:#bbb">
 </span><span style="color:#bbb">    </span>item_description:</code></pre></div>
+<p>Note too, that indentations matter in YAML. If any of the items above were indented even just one space more or less from where they are, the YAML would not be formatted correctly and the Quire preview and output functions would not work. YAML items and list items should always line up with one another.</p>
+
+<section class="box warning">
+  <ul>
+<li>Improperly formatted YAML can temporarily break Quire functionality. Copy and paste your YAML blocks into a validator like the <a href="https://codebeautify.org/yaml-validator" target="_blank">Code Beautify YAML validator</a> to make sure there aren’t any hidden errors.</li>
+</ul>
+
+</section>
+
 <p>YAML can include multiple, markdown-style paragraphs by using a pipe character, dropping down a line, and indenting one level. This can be used in areas like captions, descriptions, and abstracts.</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">item:<span style="color:#bbb"> </span><span style="color:#4070a0;font-style:italic">|
-</span><span style="color:#4070a0;font-style:italic">  Using a pipe character, and then dropping down a line and indenting like this allows you to include multiple paragraphs, just as you would in Markdown.
-</span><span style="color:#4070a0;font-style:italic">
-</span><span style="color:#4070a0;font-style:italic">  Not all Quire YAML attributes expect Markdown though, so check the docs.
-</span><span style="color:#4070a0;font-style:italic">
-</span><span style="color:#4070a0;font-style:italic">  - Markdown style lists
-</span><span style="color:#4070a0;font-style:italic">  - and other formatting are
-</span><span style="color:#4070a0;font-style:italic">  - also allowed</span></code></pre></div>
-<p>In pages with the extension <code>.md</code>, YAML block entries can be in any order. It doesn&rsquo;t matter if you write:</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">item: |
+  Using a pipe character, and then dropping down a line
+  and indenting like this allows you to include multiple
+  paragraphs, just as you would in Markdown.
+
+  Not all Quire YAML attributes expect Markdown though,
+  so check the docs.
+
+  - Markdown style lists
+  - and other formatting are
+  - also allowed</code></pre></div>
+<p>YAML block entries can be in any order. It doesn&rsquo;t matter if you write:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---<span style="color:#bbb">
 </span><span style="color:#bbb"></span>title:<span style="color:#bbb"> </span>Cheatsheet<span style="color:#bbb">
 </span><span style="color:#bbb"></span>type:<span style="color:#bbb"> </span>page<span style="color:#bbb">
@@ -739,74 +737,93 @@
 </span><span style="color:#bbb"></span>type:<span style="color:#bbb"> </span>page<span style="color:#bbb">
 </span><span style="color:#bbb"></span>title:<span style="color:#bbb"> </span>Cheatsheet<span style="color:#bbb">
 </span><span style="color:#bbb"></span>---</code></pre></div>
-<p>You’ll also notice that YAML values don’t necessarily need to be in quotes. <code>title: My Chapter</code>, without <em>My Chapter</em> in quotes, works just fine. However, certain formatting and characters (like colons within the text, or lines leading off with asterisks meant to italicize some of the text) can cause issues. In these cases, double quotes can minimize build issues: <code>title: &quot;My Chapter&quot;</code>.</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">item:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;If the text here has a colon : or other special characters it should be surrounded in double quotes&#34;</span></code></pre></div>
-<section class="box">
-  Anything at all can go within double-quotes, except for other double-quotes. If you need double-quotes, use “curly quotes”, use a backslash to escape the double quote <code>\&quot;</code> or Hugo will also process two single straight quotes &ldquo; as a double when building the pages.
-</section>
+<p>Certain formatting and characters (like colons within the text, or lines leading off with asterisks meant to italicize some of the text) can cause issues. In the example above, <code>title: My Chapter</code> without <em>My Chapter</em> in quotes works just fine, but more complicated cases might arise. In these cases, double quotes will help to avoid issues.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">description:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;*My Chapter* is about colons :)&#34;</span></code></pre></div>
+<p>Anything at all can go within double-quotes, except for other double-quotes. If you need double-quotes, use “curly quotes”, or use a backslash to escape the double quote <code>\&quot;</code>.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">title:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;“Ah ha!” Amazing Double-quote (\&#34;) Tricks!&#34;</span></code></pre></div>
+<section class="box tip">
+  <ul>
+<li><strong>Our Top 3 YAML Tips:</strong></li>
+<li>1. Use quotes around item values</li>
+<li>2. Watch horizontal spacing to make sure things line up</li>
+<li>3. Check your YAML with a validator</li>
+</ul>
 
-<section class="box">
-  It’s always a good idea to copy and paste your YAML blocks into a validator like <a href="http://www.yamllint.com/" target="_blank">YAML Lint</a> or <a href="https://codebeautify.org/yaml-validator" target="_blank">Code Beautify validator</a> to make sure there aren’t any hidden errors. You don’t need to use the re-formatted YAML validators like this will sometimes give back to you, you just need to make sure it’s correctly formatted.
 </section>
 
 <h2 id="markdown-basics">Markdown Basics</h2>
 
-<p>Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. Writing in Markdown should be thought of as giving your content structure, not style. By design, and through the stylesheets in the project theme, a list or a blockquote might look different from theme to theme, or even from format to format.</p>
+<p>Markdown is designed to be a simple, plain-text markup language that uses a few text rules to structure content for easy conversion into HTML. Writing in Markdown should be thought of as giving your content structure, not style. You use Markdown to indicate what’s a heading, what’s a list, etcetera. Quire’s themes and stylesheets then control what those headings, lists and other elements <em>look</em> like, from device to device and format to format.</p>
 
-<p>Here are the most commonly used tags:</p>
+<p>Special characters like en- and em-dashes, and diacritics work fine in Markdown and in Quire publications. Any <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Unicode</span><span class="quire-definition__content">Character encoding standard that provides a unique number for every character allowing data to be transported through different platforms, devices and applications without corruption. For more information visit: <a href="https://unicode.org/" target="_blank">https://unicode.org/</a>.</span></span> character is allowed. The only limitation, for less common characters, is whether the font you’re using includes it. When a font does not include a specific character, most browsers will substitute one from a different font.</p>
+
+<p>The following sections detail the most commonly used Markdown tags.</p>
+
+<h3 id="paragraphs">Paragraphs</h3>
+
+<p>Individual paragraphs are created with double line breaks.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">This is the first paragraph.<span style="">
+</span><span style="">
+</span><span style=""></span>This is the second.</code></pre></div>
+<p>This is the first paragraph.</p>
+
+<p>This is the second.</p>
+
+<h3 id="headings">Headings</h3>
+
+<p>Headings are created with hashmarks. The number of hashmarks corresponds to the level of the heading you want.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#800080;font-weight:bold">###</span> Heading 3
+<span style="color:#800080;font-weight:bold">####</span> Heading 4
+##### Heading 5</code></pre></div>
+<h3 id="heading-3">Heading 3</h3>
+
+<h4 id="heading-4">Heading 4</h4>
+
+<h5 id="heading-5">Heading 5</h5>
+
+<p>Start your content headings with Heading 2 tags rather than Heading 1. Heading 1 should be reserved for the page title and will be automatically generated in Quire. And, for truly accessible documents, headings should be thought of as levels of your content outline, not as sizes large to small. See our <a href="https://gettypubs.github.io/quire/resources/accessibility-principals/"><em>Accessibility Principals</em></a> for more on this.</p>
+
+<h3 id="italic-and-bold">Italic and Bold</h3>
+
+<p>Italics and bold are created with asterisks.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">*Italic Text*<span style="">
 </span><span style=""></span>**Bold Text**</code></pre></div>
 <p><em>Italic Text</em></p>
 
 <p><strong>Bold Text</strong></p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#000080;font-weight:bold">#</span> Heading 1
-<span style="color:#800080;font-weight:bold">##</span> Heading 2
-<span style="color:#800080;font-weight:bold">###</span> Heading 3
-#### Heading 4</code></pre></div>
-<h1 id="heading-1">Heading 1</h1>
 
-<h2 id="heading-2">Heading 2</h2>
+<h3 id="blockquotes">Blockquotes</h3>
 
-<h3 id="heading-3">Heading 3</h3>
-
-<h4 id="heading-4">Heading 4</h4>
-
-<p>On the headings, in general you should not use the <em>Heading 1</em> tag in your content as that should be reserved for the page title, which is automatically generated. Start with <em>Heading 2</em>. Also headings should be thought of as levels of your content outline, not as sizes large to small, though they’re often thought of and used that way. See our <a href="https://gettypubs.github.io/quire/resources/accessibility-principals/"><em>Accessibility Principals</em></a> for more on this.</p>
+<p>Blockquotes (indented blocks of text) are created with the right caret, or greater-than sign.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">&gt; Blockquote</code></pre></div>
 <blockquote>
 <p>Blockquote</p>
 </blockquote>
 
-<p>Links are created with text in brackets followed immediately by a url in parentheses:</p>
+<h3 id="links">Links</h3>
+
+<p>Links are created with text in brackets followed immediately by a url in parentheses.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">[<span style="color:#062873;font-weight:bold">Link Text</span>](<span style="color:#4070a0">http://www.linkadress.com</span>)</code></pre></div>
 <p><a href="http://www.linkadress.com" target="_blank">Link Text</a></p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#007020;font-weight:bold">-</span> dashes make<span style="">
-</span><span style=""></span>  <span style="color:#007020;font-weight:bold">-</span> a list with<span style="">
-</span><span style=""></span>    - bullets</code></pre></div>
+
+<h3 id="lists">Lists</h3>
+
+<p>Dashes and numbers create lists. Indenting creates nested lists.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#007020;font-weight:bold">-</span> dashes<span style="">
+</span><span style=""></span><span style="color:#007020;font-weight:bold">-</span> make<span style="">
+</span><span style=""></span>  <span style="color:#007020;font-weight:bold">-</span> a list<span style="">
+</span><span style=""></span>  <span style="color:#007020;font-weight:bold">-</span> with<span style="">
+</span><span style=""></span>  - bullets</code></pre></div>
 <ul>
-<li>dashes make
+<li>dashes</li>
+<li>make
 
 <ul>
-<li>a list with</li>
+<li>a list</li>
+<li>with</li>
 <li>bullets</li>
 </ul></li>
 </ul>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#007020;font-weight:bold">*</span> asterisks make<span style="">
-</span><span style=""></span>  <span style="color:#007020;font-weight:bold">*</span> a list with<span style="">
-</span><span style=""></span>      * bullets</code></pre></div>
-<ul>
-<li>asterisks make
-
-<ul>
-<li>a list with
-
-<ul>
-<li>bullets</li>
-</ul></li>
-</ul></li>
-</ul>
-
-<p>Indented dashes and asterisks create sub bullets in a bulleted list.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#007020;font-weight:bold">1.</span> numbers make<span style="">
 </span><span style=""></span><span style="color:#007020;font-weight:bold">2.</span> a list with<span style="">
 </span><span style=""></span>3. numbers</code></pre></div>
@@ -816,24 +833,16 @@
 <li>numbers</li>
 </ol>
 
-<h2 id="markdown-formatting-gotchas">Markdown Formatting Gotchas</h2>
+<h3 id="footnotes">Footnotes</h3>
 
-<ul>
-<li><p>Individual paragraphs are created with double line breaks.</p></li>
+<p>Precede footnote numbers with a up-arrow accent (<code>^</code>) and then surround it in square brackets. Footnote number one would be <code>[^1]</code>, number two would be <code>[^2]</code>, and so on.</p>
 
-<li><p>Special characters like en- and em-dashes, and diacritics also work fine in Markdown and in Quire publications. Any Unicode character is allowed, the only limitation, for less common characters, is whether the font you’re using includes it. When a font does not include a specific character, most browsers will substitute one from a different font.</p></li>
-
-<li><p>&#40;c&#41; will automatically render as ©.</p></li>
-
-<li><p>You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a <code>&lt;span&gt;</code> tag with a class in order to add custom styling. (See more about this in the <a href="https://gettypubs.github.io/quire/guide/styles-customization/"><em>Styles Customization</em></a> chapter of this guide.) Note, however, that you can’t do the same by wrapping multiple paragraphs of Markdown in <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code> or other block-level tags. For this, you need the <code>q-class</code> shortcode. Read more about Quire shortcodes below.</p></li>
-</ul>
-
-<h3 id="markdown-footnotes">Markdown Footnotes</h3>
-
-<p>Footnotes can also be added with Markdown. Use a numbered marker like <code>[^1]</code> in the text where you want the number to go, and then at the end of the page, usually under a “Notes” heading, add the corresponding footnote:</p>
+<p>At the end of the page, usually under a “Notes” heading, add the corresponding note with the same marker followed by a colon and the note text.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#800080;font-weight:bold">##</span> Notes
 <span style="">
-</span><span style=""></span>[^1]: The footnote itself is the same thing as the footnote number reference in the text, but with a colon followed by the footnote text</code></pre></div>
+</span><span style=""></span>[^1]: The footnote itself is the same thing as the footnote<span style="">
+</span><span style=""></span>number reference in the text, but with a colon followed by<span style="">
+</span><span style=""></span>the footnote text</code></pre></div>
 <p>Footnotes can also include Markdown formatting, including lists and even multiple paragraphs. For these, indent the content inwards two levels and put a line space in between the paragraphs just as you would elsewhere.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#800080;font-weight:bold">##</span> Notes
 <span style="">
@@ -845,16 +854,23 @@
     <span style="color:#007020;font-weight:bold">-</span> Markdown lists<span style="">
 </span><span style=""></span>    <span style="color:#007020;font-weight:bold">-</span> work like this in footnotes<span style="">
 </span><span style=""></span>    - as well</code></pre></div>
-<section class="box">
-  The built-in <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Markdown Processor</span><span class="quire-definition__content">A Markdown processor parses Markdown code and generates the formatted text we get on the screen.</span></span> will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them.
+<section class="box warning">
+  <ul>
+<li>The built-in <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Markdown processor</span><span class="quire-definition__content">A Markdown processor parses Markdown code and generates the formatted text we get on the screen.</span></span> will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them.</li>
+</ul>
+
 </section>
 
-<section class="box">
-  <p><span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Blackfriday</span><span class="quire-definition__content">Blackfriday is the Markdown processor used by Hugo to render the formatted text of the publication. You can find technical details at: <a href="https://github.com/russross/blackfriday" target="_blank"><a href="https://github.com/russross/blackfriday" target="_blank">https://github.com/russross/blackfriday</a></a></span></span>, the built in Markdown processor, will incorrectly also create link even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number <code>[^1]</code> followed by a space and any text in parentheses, will incorrectly format as a link: <code>[^1] (Some aside text here)</code>. To avoid this, you can use the HTML entity reference, <code>&amp;#40;</code>, for the first parentheses, or a backslash escape character before the first parentheses:</p>
+<h2 id="markdown-special-cases">Markdown Special Cases</h2>
 
-<pre><code>[^1] &amp;#40;Some aside text here)
-[^1] \(Some aside text here)
-</code></pre>
+<h3 id="markdown-and-html">Markdown and HTML</h3>
+
+<p>You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a <code>&lt;span&gt;</code> tag with a class in order to add custom styling. (See more about this in the <a href="https://gettypubs.github.io/quire/guide/styles-customization/"><em>Styles Customization</em></a> chapter of this guide.) Note, however, that you can’t do the same by wrapping multiple paragraphs of Markdown in <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code> or other block-level tags. For this, you need the <code>q-class</code> shortcode.</p>
+
+<section class="box tip">
+  <ul>
+<li>For the things Markdown can’t do, Quire includes number of useful shortcodes. You’ll read more about them in other chapters of this guide. A complete list is available in the <a href="https://gettypubs.github.io/quire/api-docs/shortcodes">shortcode reference section</a>.</li>
+</ul>
 
 </section>
 
@@ -862,7 +878,7 @@
 
 <p>The fractions 1&#47;4, 1&#47;2, and 3&#47;4, will be automatically converted into proper, Unicode fractions (&frac14;, &frac12;, &frac34;). Other Unicode fractions can also be used in Markdown directly, though note that not all fonts support the eighths in which case, browsers will render them with a default font. The fractions are: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. Any others would need to be written using superscript and subscript formatting.</p>
 
-<p>While some <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Markdown Processor</span><span class="quire-definition__content">A Markdown processor parses Markdown code and generates the formatted text we get on the screen.</span></span>s support superscript and subscript formatting with ^ and ~ characters, the one built into Quire does not. You’ll need to use the HTML <code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code> tags in your Markdown. For example:</p>
+<p>While some Markdown processors support superscript and subscript formatting with ^ and ~ characters, the one built into Quire does not. You’ll need to use the HTML <code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code> tags in your Markdown. For example:</p>
 
 <ul>
 <li><code>19 × 24&lt;sup&gt;3&lt;/sup&gt;⁄&lt;sub&gt;16&lt;/sub&gt; inches</code> = 19 × 24<sup>3</sup>⁄<sub>16</sub> inches</li>
@@ -872,25 +888,37 @@
 
 <p>You will see a <code>fractions</code> attribute with a value of &ldquo;false&rdquo; in the <code>config.yml</code> file of your publication. Changing this to true will automatically render fraction-style superscript and subscript formatting for anything written as an integer followed by a slash and another integer. However, in many instances this will catch things that are not meant to be fractions. For this reason, we recommend leaving <code>fractions</code> set to <code>false</code>, and manually adding the necessary markup as it’s needed.</p>
 
-<h3 id="markdown-preview">Markdown Preview</h3>
+<h3 id="markdown-gotchas">Markdown Gotchas</h3>
+
+<ol>
+<li><p>The built in Markdown processor will incorrectly create links even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number <code>[^1]</code> followed by a space and any text in parentheses, will incorrectly format as a link: <code>[^1] (Some aside text here)</code>. To avoid this, you can use the HTML entity reference, <code>&amp;#40;</code>, for the first parentheses, or a backslash escape character before the first parentheses.</p>
+
+<pre><code>[^1] &amp;#40;Some aside text here)
+[^1] \(Some aside text here)
+</code></pre></li>
+
+<li><p>&#40;c&#41; will automatically render as ©.</p></li>
+</ol>
+
+<h2 id="markdown-preview">Markdown Preview</h2>
 
 <p>Many text editors offer a preview function for Markdown, either pre-installed or as an add-on. In Atom for instance, a Markdown file can be previewed by selecting Packages &gt; Markdown Preview &gt; Toggle Preview (or just Shift-Control-M). The preview won’t match the style of your publication site, but will have default styling for headings, blockquotes, links and the like to allow you to confirm proper formatting.</p>
 
 <p>Outside of more code-driven text editors, there are also a growing number of Markdown-specific editors. <a href="https://typora.io/" target="_blank">Typora</a>, for instance, offers a single-page live preview by displaying styled Markdown-formatted text as you type it.</p>
 
-<h3 id="markdown-output-configuration">Markdown Output Configuration</h3>
+<h2 id="markdown-output-configuration">Markdown Output Configuration</h2>
 
-<p>Hugo has a built-in Markdown processor, <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Blackfriday</span><span class="quire-definition__content">Blackfriday is the Markdown processor used by Hugo to render the formatted text of the publication. You can find technical details at: <a href="https://github.com/russross/blackfriday" target="_blank">https://github.com/russross/blackfriday</a></span></span> (<a href="https://github.com/russross/blackfriday" target="_blank">https://github.com/russross/blackfriday</a>), which comes with some configuration options that can be applied in your project’s <code>config.yml</code> file. Details can be found <a href="https://gohugo.io/getting-started/configuration/#configure-blackfriday" target="_blank">in the Hugo documentation</a>.</p>
+<p>Hugo has a built-in Markdown processor, <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Blackfriday</span><span class="quire-definition__content">Blackfriday is the Markdown processor used by Hugo to render the formatted text of the publication. You can find technical details at: <a href="https://github.com/russross/blackfriday" target="_blank">https://github.com/russross/blackfriday</a></span></span>, which comes with some configuration options that can be applied in your project’s <code>config.yml</code> file. Details can be found <a href="https://gohugo.io/getting-started/configuration/#configure-blackfriday" target="_blank">in the Hugo documentation</a>.</p>
 
 <p>By default, in the <code>config.yml</code> file of your Quire project, <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Blackfriday</span><span class="quire-definition__content">Blackfriday is the Markdown processor used by Hugo to render the formatted text of the publication. You can find technical details at: <a href="https://github.com/russross/blackfriday" target="_blank">https://github.com/russross/blackfriday</a></span></span>&rsquo;s <code>fraction</code> option has been set to <code>false</code> (text that looks like a fraction won’t be automatically formatted as such.), and the <code>hrefTargetBlank</code> option set to <code>true</code> (external links will open in new windows/tabs).</p>
 
-<h3 id="markdown-resources">Markdown Resources</h3>
+<h2 id="markdown-resources">Markdown Resources</h2>
 
 <p>This guide doesn’t cover all existing Markdown tags but there are some good sources that will help you find the right syntax to format your text. For example, the Programming Historian provides an <a href="https://programminghistorian.org/lessons/getting-started-with-markdown" target="_blank">introductory lesson to Markdown</a>, and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site <a href="https://daringfireball.net/projects/markdown/" target="_blank">Daring Fireball</a>.</p>
 
-<p>Be aware of the multiple <a href="https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors" target="_blank">Markdown flavors</a> out there and the fact that not all flavors are supported by <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Blackfriday</span><span class="quire-definition__content">Blackfriday is the Markdown processor used by Hugo to render the formatted text of the publication. You can find technical details at: <a href="https://github.com/russross/blackfriday" target="_blank">https://github.com/russross/blackfriday</a></span></span>.</p>
+<p>Be aware of the multiple <a href="https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors" target="_blank">Markdown flavors</a> out there and the fact that not all flavors are supported by Blackfriday.</p>
 
-<h3 id="microsoft-word-to-markdown-conversion">Microsoft Word to Markdown Conversion</h3>
+<h2 id="microsoft-word-to-markdown-conversion">Microsoft Word to Markdown Conversion</h2>
 
 <p>Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Pandoc</span><span class="quire-definition__content">An open source, command-line text conversion tool. You can visit the <a href="http://pandoc.org/demos.html" target="_blank">Pandoc Demos page</a> that lists the commands for the most frequent types of file conversion.</span></span> can be done.</p>
 
@@ -898,8 +926,7 @@
 
 <ul>
 <li>We recommend not to insert any images and media to the Word document before conversion.</li>
-<li>Headings must be formatted with Word styles instead of by changing font formats.
--</li>
+<li>Headings must be formatted with Word styles instead of by changing font formats.</li>
 </ul>
 
 <p>While there are a number of free tools, we recommend using <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Pandoc</span><span class="quire-definition__content">An open source, command-line text conversion tool. You can visit the <a href="http://pandoc.org/demos.html" target="_blank">Pandoc Demos page</a> that lists the commands for the most frequent types of file conversion.</span></span>. You can find installation instructions on their site.</p>
