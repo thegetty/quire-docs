@@ -657,7 +657,7 @@
     
       
       
-      <li class="main-heading"><a href="#q-backmatter"><code>q-backmatter</code></a></li>
+      <li class="main-heading"><a href="#q-class"><code>q-class</code></a></li>
     
       
       
@@ -669,19 +669,7 @@
     
       
       
-      <li class="main-heading"><a href="#q-contributor"><code>q-contributor</code></a></li>
-    
-      
-      
-      <li class="sub-heading"><a href="#type">type</a></li>
-    
-      
-      
-      <li class="sub-heading"><a href="#range">range</a></li>
-    
-      
-      
-      <li class="main-heading"><a href="#q-copyright"><code>q-copyright</code></a></li>
+      <li class="main-heading"><a href="#q-contributors"><code>q-contributors</code></a></li>
     
       
       
@@ -693,27 +681,7 @@
     
       
       
-      <li class="main-heading"><a href="#q-link-list"><code>q-link-list</code></a></li>
-    
-      
-      
-      <li class="main-heading"><a href="#q-loc"><code>q-loc</code></a></li>
-    
-      
-      
-      <li class="main-heading"><a href="#q-publisher-team"><code>q-publisher-team</code></a></li>
-    
-      
-      
-      <li class="main-heading"><a href="#q-revision-history"><code>q-revision-history</code></a></li>
-    
-      
-      
-      <li class="main-heading"><a href="#q-table"><code>q-table</code></a></li>
-    
-      
-      
-      <li class="main-heading"><a href="#q-url-link"><code>q-url-link</code></a></li>
+      <li class="main-heading"><a href="#other-potential-shortcodes">Other Potential Shortcodes</a></li>
     
     </ul>
   </div>
@@ -724,15 +692,11 @@
       <div class="content">
         
 
-<h2 id="q-backmatter"><code>q-backmatter</code></h2>
+<h2 id="q-class"><code>q-class</code></h2>
 
-<p>Sample: <code>{{&lt; q-backmatter &gt;}}The text you want formatted here.{{&lt; /q-backmatter &gt;}}</code></p>
+<p>Sample: <code>{{&lt; q-class &quot;my-class-name&quot; &gt;}}The text you want formatted here.{{&lt; /q-class &gt;}}</code></p>
 
-<p>Basic Usage: Wrapping text in this shortcode will format it in a manner similar to how footnotes and bibliographies are formatted. Good for sections at the end of essays like Appendices, Acknowledgments, and Contributors Bios.</p>
-
-<p>Parameters: None.</p>
-
-<p>YAML Dependencies: None.</p>
+<p>Basic Usage: Wrapping any Markdown text in this shortcode will wrap it in a <code>&lt;div&gt;</code> with the given class name in the HTML output. Used for styling.</p>
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/pages/">Working with Text</a></p>
 
@@ -748,9 +712,9 @@
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/citation-bibliographies/">Citations &amp; Bibliographies</a></p>
 
-<h2 id="q-contributor"><code>q-contributor</code></h2>
+<h2 id="q-contributors"><code>q-contributors</code></h2>
 
-<p>Sample: <code>{{&lt; q-contributor range=&quot;page&quot; type=&quot;bio&quot; &gt;}}</code></p>
+<p>Sample: <code>{{&lt; q-contributors range=&quot;page&quot; type=&quot;bio&quot; &gt;}}</code></p>
 
 <p>Basic Usage: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.</p>
 
@@ -897,16 +861,6 @@
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/contributors/">Contributors</a></p>
 
-<h2 id="q-copyright"><code>q-copyright</code></h2>
-
-<p>Sample: <code>{{&lt; q-copyright &gt;}}</code></p>
-
-<p>Basic Usage: Adds a copyright statement and licensing information as you’ve defined it in your <code>publication.yml</code> file. Commonly used on Copyright and About pages. The shortcode itself makes use of the <code>copyright.html</code> partial in your site templates.</p>
-
-<p>Parameters: None.</p>
-
-<p>See: <a href="https://gettypubs.github.io/quire/guide/copyright-about-pages/">Copyright &amp; About Pages</a></p>
-
 <h2 id="q-figure"><code>q-figure</code></h2>
 
 <p>Sample: <code>{{&lt; q-figure id=&quot;3.1&quot; &gt;}}</code></p>
@@ -1031,7 +985,11 @@
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/figure-images/">Figure Images</a> and <a href="https://gettypubs.github.io/quire/api-docs/yaml#figure">Figure YAML</a></p>
 
-<h2 id="q-link-list"><code>q-link-list</code></h2>
+<h2 id="other-potential-shortcodes">Other Potential Shortcodes</h2>
+
+<p>The following have been used previously but are not yet implemented in Quire. They are under consideration.</p>
+
+<h3 id="q-link-list"><code>q-link-list</code></h3>
 
 <p>Sample: <code>{{&lt; q-link-list &quot;other-formats&quot; &gt;}}</code></p>
 
@@ -1061,7 +1019,17 @@
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/copyright-about-pages/">Copyright &amp; About Pages</a></p>
 
-<h2 id="q-loc"><code>q-loc</code></h2>
+<h3 id="q-copyright"><code>q-copyright</code></h3>
+
+<p>Sample: <code>{{&lt; q-copyright &gt;}}</code></p>
+
+<p>Basic Usage: Adds a copyright statement and licensing information as you’ve defined it in your <code>publication.yml</code> file. Commonly used on Copyright and About pages. The shortcode itself makes use of the <code>copyright.html</code> partial in your site templates.</p>
+
+<p>Parameters: None.</p>
+
+<p>See: <a href="https://gettypubs.github.io/quire/guide/copyright-about-pages/">Copyright &amp; About Pages</a></p>
+
+<h3 id="q-loc"><code>q-loc</code></h3>
 
 <p>Sample: <code>{{&lt; q-loc &gt;}}</code></p>
 
@@ -1071,11 +1039,7 @@
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/copyright-about-pages/">Copyright &amp; About Pages</a></p>
 
-<h2 id="q-publisher-team"><code>q-publisher-team</code></h2>
-
-<p>Note: this should be folded into the <code>q-contributor</code>.</p>
-
-<h2 id="q-revision-history"><code>q-revision-history</code></h2>
+<h3 id="q-revision-history"><code>q-revision-history</code></h3>
 
 <p>Sample: <code>{{&lt; q-revision-history &gt;}}</code></p>
 
@@ -1101,13 +1065,13 @@
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/copyright-about-pages/">Copyright &amp; About Pages</a></p>
 
-<h2 id="q-table"><code>q-table</code></h2>
+<h3 id="q-table"><code>q-table</code></h3>
 
 <p>Note: Original version of this was tabled. Still looking for better solution for complex tables.</p>
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/figure-images/">Figures</a></p>
 
-<h2 id="q-url-link"><code>q-url-link</code></h2>
+<h3 id="q-url-link"><code>q-url-link</code></h3>
 
 <p>Note: Not sure we‘ll do this. Might be better to build in with JS rather than have a separate shortcode just for URLs.</p>
 
