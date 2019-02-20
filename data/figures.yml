@@ -93,4 +93,9 @@ figure_list:
   - id: "command-line-drag-and-drop"
     src: /screenshots/command-line-drag-and-drop.gif
     caption: ""
-
+  - id: "github-desktop-initial-commit"
+    src: /screenshots/github-desktop-initial-commit.png
+    caption: "In GitHub Desktop, files with changes will be listed at left, and a detailed red (old version) and green (new version) highlighted “diff” of individual changes will appear at right. The Commit to Master button in the lower left adds these changes to your project’s git repository."
+  - id: "github-desktop-publish"
+    src: /screenshots/github-desktop-publish.png
+    caption: "When publishing a new project repository to GitHub leave the name the same as your project file. You can add add a description if you’d like, can choose whether to make it private or not if you have a paid account, or publish it to an organization account if you have publishing access to one."
