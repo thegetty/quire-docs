@@ -15,10 +15,16 @@ Type: Object
 | `baseURL` | url | The base url for your project. |
 | `blackfriday` | [object](#black-friday-markdown) | Options for Blackfriday, Hugo’s markdown renderer. See below. |
 | `canonifyURLs` |  boolean | Converts all internal links to being in complete cannonical format. Default is `false`. |
+| `disableKinds` | | | 
 | `footnoteReturnLinkContents` | string | Controls the appearance of the link added to the end of footnotes. Default is "↩". |
+| `googleAnalytics` | | | 
+| `languageCode` | | | 
 | `metaDataFormat` | "yaml", "toml", "json" | Default is "yaml" |
 | `params` | [object](#quire-parameters) | Additional parameters for Quire. See below. |
+| `pluralizeListTitles` | | | 
+| `publishDir` | | | 
 | `relativeURLs` |  boolean | Keeps all internal links relative. Default is `true`. |
+| `title` | | | 
 | `theme` | url/id | The name of the theme, in the `theme` directory you’re using. Quire starter kit default is `quire-base-theme` |
 
 See: [Additional Hugo configuration options](https://gohugo.io/getting-started/configuration/#yaml-configuration)
@@ -32,6 +38,7 @@ Type: Object
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
 | `fractions` | boolean | When set to `true` any numbers separated by a slash are automatically converted to fractions. Default is `false`. Though even then 1/4, 1/2 and 3/4 are still converted. Recommend always using proper unicode fractions: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. |
+| `hrefTargetBlank` | boolean | When set to true, any Markdown links to external pages and resources will open in a new tab/window for the user. | 
 
 See: [Additional Blackfriday markdown configurations options](https://gohugo.io/getting-started/configuration/#blackfriday-options)
 
@@ -41,20 +48,24 @@ Location: `params` in `config.yml`
 
 Type: Object
 
-| Object Properties | Expected Value | Description |
-| --- | --- | --- |
-| `displayBiblioShort` | boolean | When `true` the short citation form (ie., "Smith 2003") will be displayed with the full form, when creating a bibliography on pages with `type: essay`, or on other pages with the `q-bibliography` shortcode. Default is `true`. |
-| `citationPageLocationDivider` | string | Default is ", ". |
-| `imageDir` | string | The project’s main image directory inside the `static` directory. Default is "/img/".  |
-| `figureLabels` | boolean | Default is true. |
-| `figureLabelsTextBefore` | string | Default is "Figure " |
-| `figureLabelsTextAfter` | string | Default is ". " |
-| `videoFigureFallbackText` | boolean | Default is true. |
-| `videoFigureFallbackTextBefore` | string | Default is "Watch the video at " |
-| `videoFigureFallbackTextAfter` | string | Default is "." |
-| `menuType` | "short", "full" | Default is "short" |
-| `searchEnabled` | boolean | Default is `true` |
-| `tocType` | "short", "full" | Default is "full" |
+| Parameter | Expected Value | Description |
+| --------- | -------------- | ----------- |
+| `searchEnabled` | boolean | Turn on or off the built-in text search capability for users |
+| `licenseIcons` | boolean | Whether or not to display Creative Commons license icons |
+| `pageLabelDivider` | string | ". " default, etermines the text/spacing to be inserted between page .label and page .title |
+| `citationPageLocationDivider` | string | ", " default, determines the text/spacing to be inserted between the citation and the page number in the q-cite shortcode |
+| `displayBiblioShort` | boolean | Whether a bibilography generated with the q-cite or q-bibliography shorcodes should display the short form of the reference, along with the long. | 
+| `imageDir` | string | "img" default, the directory in the `/static/` directory where you put your images |
+| `tocType` | "full", "short" | "short" will hide all sub-section pages |
+| `menuType` | "full", "short" |  "short" will hide all sub-section pages |
+| `prevPageButtonText` | string | "Back" default |
+| `nextPageButtonText` | string | "Next" default |
+| `entryPageSideBySideLayout` | boolean | Entry pages can have a side-by-side layout with image on the left and text on the right, this can be controlled by `class: side-by-side` in the page YAML, or globally with this parameter |
+| `entryPageObjectLinkText` | string | "View in Collection" default |
+| `figureLabelLocation` | "on-top", "below" | Whether the figure label is "on-top" of the image in the upper left corner, or "below" it with the caption | 
+| `figureModal` | boolean | If figures should be clickable to open into a full-screen modal window |
+| `figureModalIcons` | boolean | Whether to display icons with the figure modal links |
+| `figureZoom` | boolean | Whether figures should zoom or not inside the modal |
 
 ## Publication
 
@@ -255,23 +266,29 @@ See: [Guide on Collection Catalogues](/guide/collection-catalogues/)
 
 ## Page
 
-Location: Any page in `content/`
+Location: Any Markdown page in the `/content/` directory.
 
 Type: Object
 
 | Attribute | Expected Value | Description |
 | --- | --- | --- |
-| `number` | integer |# for chapter/paper numbering. |
+| `label` | string | A label for the page “Chapter 1”, “2”, “III”, etc. |
 | `title` | string | |
 | `subtitle` | string | |
-| `short_title` | string | |
-| `type` | "page"',' "essay", "entry", "cover", "contents", "about", "data", "search" | |
-| `class` | | |
-| `weight` | integer | |
-| `object` | [array](#Object) | See above. |
-| `contributor` | [array](#Contributor) | See above. |
-| `abstract` | string | |
-| `slug` | | |
-| `display` | "online", "menu", "pdf_ebook", "toc" | |
+| `short_title` | string | Used in navigation items where a long title would be too unwieldy. |
+| `type` | "page" (default), "essay", "entry", "cover", "contents", "splash", or "data" | See [*Defining Page Types*](/guide/pages/#defining-page-types) for examples |
+| `class` | string | Can accept any string, which will be included as a class in the main page element to facilitate style customization. A number of pre-defined classes also exist in the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). Pages with `type: contents` can have class `list` (default), `brief`, `abstract`, or `grid`. Pages with `type: entry` can have class `landscape` (default) or `side-by-side`. |
+| `weight` | integer | Controls ordering of pages in the publication. |
+| `object` | [array](#Object) | |
+| `contributor` | [array](#Contributor) | |
+| `abstract` | string | Markdown okay. |
+| `slug` | url path | Will change the URL of the page. Or use a period `.` to make the URL be the directory name (homepage). Read more in the [*Page Types & Structure*](/guide/pages/#creating-section-landing-pages) chapter of this guide.|
+| `toc` | "true" (default), "false" | Page will not display in contents page if false. |
+| `menu` | "true" (default), "false" | Page will not display in menu if false. |
+| `online` | "true" (default), "false" | Page will not display in online edition if false. |
+| `pdf` | "true" (default), "false" | Page will not display in pdf edition if false. |
+| `epub` | "true" (default), "false" | Page will not display in epub or mobi edition if false. |
 
-The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [Catalogue Entries](/guide/collection-catalogues/) and [Contributors](/guide/contributors/) sections respectively.
+The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [*Catalogue Entries*](/guide/collection-catalogues/) and [*Contributors*](/guide/contributors/) chapters respectively.
+
+Pages with `type: contents` can have class `list` (default), `brief`, `abstract`, or `grid`. Pages with `type: entry` can have class `landscape` (default) or `side-by-side`.

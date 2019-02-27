@@ -61,6 +61,7 @@ If you include an attribute in the shortcode that is also in the `figures.yml` f
 
 - Leaving an attribute blank, as in the caption example above, can also be used to display no caption at all, even if one is present in `figures.yml`.
 - Attributes may be called within the shortcode in any order. `{{</* q-figure id="1.2" caption="" */>}}` is the same as `{{</* q-figure caption="" id="1.2" */>}}`.
+- Always use the figure shortcodes on their own lines in your Markdown documents, in between paragraphs. Never within a paragraph. Traditionally, figures will be placed directly after the paragraph in which they were first referred to.
 
 {{< /q-class >}}
 
