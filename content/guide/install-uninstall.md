@@ -257,9 +257,26 @@ cd ~
 
 As we develop, you may also want/need to update your Quire CLI. The CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI, any new projects you start will have the corresponding older version of the theme.
 
-1. In your User/Home directory where you initially installed Quire, look for the `quire-cli` folder and delete it.
+1. In your command line shell, to first uninstall and discard the existing version of the CLI, enter the following four commands in order:
+    
+    ```tx
+    cd quire-cli
+    ```
+    
+    ```tx
+    npm uninstall -g
+    ```
+    
+    ```tx
+    cd
+    ```
+    
+    ```tx
+    rm -rf quire-cli
+    ```
 
-2. In your command line shell, enter the following three commands in order:
+3. Still in your command line shell, enter these three commands to download the latest version and install it:
+
 
     ```tx
     git clone https://github.com/gettypubs/quire-cli.git
