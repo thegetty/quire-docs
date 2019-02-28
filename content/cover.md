@@ -7,6 +7,8 @@ type: cover
 slug: .
 ---
 
+The Quire starter theme has recently been revamped, and includes a modern and classic version, better figure handling, and better pdf/print output. Check out [the demo site](https://gettypubs.github.io/quire-starter/).
+
 **Quire is currently in closed development. To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link) form.**
 
 Quire is a modern, multiformat publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
