@@ -39,6 +39,10 @@
   </url>
   
   <url>
+    <loc>https://gettypubs.github.io/quire/guide/page-content/</loc>
+  </url>
+  
+  <url>
     <loc>https://gettypubs.github.io/quire/guide/figure-images/</loc>
   </url>
   
@@ -75,6 +79,10 @@
   </url>
   
   <url>
+    <loc>https://gettypubs.github.io/quire/guide/github/</loc>
+  </url>
+  
+  <url>
     <loc>https://gettypubs.github.io/quire/api-docs/yaml/</loc>
   </url>
   
@@ -92,10 +100,6 @@
   
   <url>
     <loc>https://gettypubs.github.io/quire/resources/default-styleguide/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gettypubs.github.io/quire/resources/github/</loc>
   </url>
   
   <url>

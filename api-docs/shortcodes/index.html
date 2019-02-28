@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -702,7 +706,7 @@
 
 <h2 id="q-bibliography"><code>q-bibliography</code></h2>
 
-<p>Basic Usage: Generates a bibiliography from the entries in the project&rsquo;s <code>bibiliography.yml</code> file.</p>
+<p>Basic Usage: Generates a bibiliography from the entries in the project's <code>bibiliography.yml</code> file.</p>
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/citation-bibliographies/">Citations &amp; Bibliographies</a></p>
 
@@ -718,7 +722,7 @@
 
 <p>Basic Usage: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.</p>
 
-<p>Required Named Parameters: &ldquo;range&rdquo; and &ldquo;type&rdquo;</p>
+<p>Required Named Parameters: &quot;range&quot; and &quot;type&quot;</p>
 
 <h3 id="type">type</h3>
 
@@ -732,22 +736,22 @@
 
 <tbody>
 <tr>
-<td>&ldquo;initials&rdquo;</td>
+<td>&quot;initials&quot;</td>
 <td>Looks for the capital letters in a contributor first and last name and concatenates them together.</td>
 </tr>
 
 <tr>
-<td>&ldquo;name&rdquo;</td>
+<td>&quot;name&quot;</td>
 <td>Just the first and last name.</td>
 </tr>
 
 <tr>
-<td>&ldquo;name-plus&rdquo;</td>
+<td>&quot;name-plus&quot;</td>
 <td>The first and last name with, when available, their title and affiliation on a line below.</td>
 </tr>
 
 <tr>
-<td>&ldquo;bio&rdquo;</td>
+<td>&quot;bio&quot;</td>
 <td>First and last name, with pic, url, and bio as available. Plus a link to their contribution.</td>
 </tr>
 </tbody>
@@ -766,38 +770,38 @@
 
 <tbody>
 <tr>
-<td>&ldquo;page&rdquo;</td>
+<td>&quot;page&quot;</td>
 <td><code>.Page.Params.contributor</code></td>
 <td>In the current Page under <code>contributor</code></td>
 </tr>
 
 <tr>
-<td>&ldquo;essays&rdquo;</td>
+<td>&quot;essays&quot;</td>
 <td><code>.Site.Pages.Params.contributor</code></td>
 <td>In any Page with a <code>type: essay</code> under <code>contributor</code></td>
 </tr>
 
 <tr>
-<td>&ldquo;all&rdquo;</td>
+<td>&quot;all&quot;</td>
 <td><code>.Site.Pages.Params.contributor</code></td>
 <td>In all Pages under <code>contributor</code></td>
 </tr>
 
 <tr>
-<td>&ldquo;primary&rdquo;</td>
-<td><code>.Site.Data.publication.contributor</code> with a <code>type</code> of &ldquo;primary&rdquo;</td>
+<td>&quot;primary&quot;</td>
+<td><code>.Site.Data.publication.contributor</code> with a <code>type</code> of &quot;primary&quot;</td>
 <td>In <code>publication.yml</code> under <code>contributor</code></td>
 </tr>
 
 <tr>
-<td>&ldquo;secondary&rdquo;</td>
-<td><code>.Site.Data.publication.contributor</code> with a <code>type</code> of &ldquo;secondary&rdquo;</td>
+<td>&quot;secondary&quot;</td>
+<td><code>.Site.Data.publication.contributor</code> with a <code>type</code> of &quot;secondary&quot;</td>
 <td>In <code>publication.yml</code> under <code>contributor</code></td>
 </tr>
 
 <tr>
-<td>&ldquo;project-team&rdquo;</td>
-<td><code>.Site.Data.publication.contributor</code> with a <code>type</code> of &ldquo;project-team&rdquo;</td>
+<td>&quot;project-team&quot;</td>
+<td><code>.Site.Data.publication.contributor</code> with a <code>type</code> of &quot;project-team&quot;</td>
 <td>In <code>publication.yml</code> under <code>contributor</code></td>
 </tr>
 </tbody>
@@ -836,7 +840,7 @@
 <tr>
 <td><code>role</code></td>
 <td>N</td>
-<td>When the shortcode range is &ldquo;publication-team&rdquo;, <code>role</code> is used in place of <code>title</code></td>
+<td>When the shortcode range is &quot;publication-team&quot;, <code>role</code> is used in place of <code>title</code></td>
 </tr>
 
 <tr>
@@ -910,7 +914,7 @@
 <tr>
 <td><code>label</code></td>
 <td>boolean</td>
-<td>Default is set to <code>true</code>. <code>true</code> will add a label to the caption, such as &ldquo;Figure 1.3&rdquo;, <code>false</code> will remove the label. The global label setting is in the <code>config.yml</code> file under the parameter <code>figureLabels</code>.</td>
+<td>Default is set to <code>true</code>. <code>true</code> will add a label to the caption, such as &quot;Figure 1.3&quot;, <code>false</code> will remove the label. The global label setting is in the <code>config.yml</code> file under the parameter <code>figureLabels</code>.</td>
 </tr>
 
 <tr>
@@ -966,7 +970,7 @@
 <tr>
 <td><code>label</code></td>
 <td>boolean</td>
-<td>Default is set to <code>true</code>. <code>true</code> will add a label to the caption, such as &ldquo;Figure 1.3&rdquo;, <code>false</code> will remove the label. The global label setting is in the <code>config.yml</code> file under the parameter <code>figureLabels</code>. If a <code>caption</code> is also provided in the shortcode, the labels will be applied on their own directly under each image in the group, rather than as part of the caption.</td>
+<td>Default is set to <code>true</code>. <code>true</code> will add a label to the caption, such as &quot;Figure 1.3&quot;, <code>false</code> will remove the label. The global label setting is in the <code>config.yml</code> file under the parameter <code>figureLabels</code>. If a <code>caption</code> is also provided in the shortcode, the labels will be applied on their own directly under each image in the group, rather than as part of the caption.</td>
 </tr>
 
 <tr>
@@ -1009,7 +1013,7 @@
 <tbody>
 <tr>
 <td>0 *</td>
-<td>&ldquo;other-formats&rdquo;, &ldquo;related-resources&rdquo;</td>
+<td>&quot;other-formats&quot;, &quot;related-resources&quot;</td>
 <td>Values point to corresponding values in <code>publication.yml</code></td>
 </tr>
 </tbody>
@@ -1057,8 +1061,8 @@
 <tbody>
 <tr>
 <td>format</td>
-<td>&ldquo;short&rdquo;, &ldquo;full&rdquo;</td>
-<td>&ldquo;short&rdquo; will show only the first publication date and most recently updated date. &ldquo;long&rdquo; shows all dates and list of changes for each.</td>
+<td>&quot;short&quot;, &quot;full&quot;</td>
+<td>&quot;short&quot; will show only the first publication date and most recently updated date. &quot;long&quot; shows all dates and list of changes for each.</td>
 </tr>
 </tbody>
 </table>

@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -704,7 +708,7 @@
 
 <p>Pages in your publication with a <code>type</code> of <code>&quot;essay&quot;</code> or <code>&quot;entry&quot;</code>, will automatically include a page-level bibliography listing all works that were cited on that page using the <code>q-cite</code> shortcode.</p>
 
-<p>However, to create a complete bibliography for your entire publication, from all the entries in the project&rsquo;s <code>references.yml</code> file, you can use the <code>q-bibliography</code> shortcode. The resulting bibliography will be output in the order in which it appears in the references file.</p>
+<p>However, to create a complete bibliography for your entire publication, from all the entries in the project's <code>references.yml</code> file, you can use the <code>q-bibliography</code> shortcode. The resulting bibliography will be output in the order in which it appears in the references file.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>bibliography &gt;}}</code></pre></div>
 <section class="box">
   You may create one page in your publication where the bibliography will be displayed. All you need is to add the <code>q-bibliography</code> shortcode after the YAML block.

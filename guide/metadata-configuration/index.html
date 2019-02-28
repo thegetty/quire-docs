@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -672,7 +676,7 @@
       <div class="content">
         
 
-<p>Quire uses two <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix <code>yml</code>, or inside a Markdown (<code>.md</code>) file.</span></span> files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: <code>config.yml</code> and <code>publication.yml</code>. By default, both <code>config.yml</code> and <code>publication.yml</code> will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.</p>
+<p>Quire uses two <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix <code>yml</code>, or inside a Markdown (<code>.md</code>) file. Read more in the <a href="https://gettypubs.github.io/quire/guide/fundamentals/"><em>Fundamentals: YAML &amp; Markdown</em></a> chapter of this guide.</span></span> files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: <code>config.yml</code> and <code>publication.yml</code>. By default, both <code>config.yml</code> and <code>publication.yml</code> will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.</p>
 
 <p>You can read more about <a href="https://gettypubs.github.io/quire/resources/cheatsheet/"><em>YAML syntax basics</em></a> and check out a sample of the <a href="https://gettypubs.github.io/quire/resources/sample-publication-file/"><em><code>publication.yml</code> file</em></a> in other chapters of this guide.</p>
 
@@ -685,14 +689,14 @@
 <ul>
 <li><p>While Quire exclusively uses the <code>title</code> value as defined in your <code>publication.yml</code> file, other <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Hugo</span><span class="quire-definition__content">The static site generator that powers Quire: <a href="https://gohugo.io/" target="_blank">https://gohugo.io/</a></span></span> projects require a <code>title</code> value in the <code>config.yml</code> file, so it is a good idea to include it here as well.</p></li>
 
-<li><p>The <code>theme</code> value should match the name of the folder in the <code>/themes</code> directory that contains your theme files; if you&rsquo;ve copied the default <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span> and given it a different name make sure to update the value here too.</p></li>
+<li><p>The <code>theme</code> value should match the name of the folder in the <code>/themes</code> directory that contains your theme files; if you've copied the default <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span> and given it a different name make sure to update the value here too.</p></li>
 
 <li><p>The <code>params</code> section includes a number of values specific to various Quire layout <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">templates</span><span class="quire-definition__content">Themes may include one or more templates. Templates are the variety of layouts a theme has.</span></span> and <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">shortcodes</span><span class="quire-definition__content">A shortcode is a simple snippet used inside a Markdown file, that Quire will render using a predefined template. Quire suports <a href="https://gettypubs.github.io/quire/api-docs/shortcodes/">a range of shortcodes</a>, and custom shortcodes can also be added.</span></span>. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (<code>&quot;&quot;</code>) rather than completely deleting it.</p></li>
 </ul>
 
 <h2 id="adding-and-editing-important-metadata-in-the-publication-yml-file">Adding and Editing Important Metadata in the <code>publication.yml</code> File</h2>
 
-<p>The <code>publication.yml</code> file in the <code>/data</code> directory is <em>the</em> source of metadata for your publication. While the only value that is truly required is the one for the property <code>title</code>, it is a good idea to fill out the <code>publication.yml</code> file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Search Engine Optimization (SEO)</span><span class="quire-definition__content">Search engine optimization, SEO, is the process of increasing the online visibility of a website or a web page in a web search engine&rsquo;s unpaid results.</span></span> and general discovery.</p>
+<p>The <code>publication.yml</code> file in the <code>/data</code> directory is <em>the</em> source of metadata for your publication. While the only value that is truly required is the one for the property <code>title</code>, it is a good idea to fill out the <code>publication.yml</code> file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Search Engine Optimization (SEO)</span><span class="quire-definition__content">Search engine optimization, SEO, is the process of increasing the online visibility of a website or a web page in a web search engine's unpaid results.</span></span> and general discovery.</p>
 
 <p>Some key areas are summed up below, and match headings in the <code>publication.yml</code> file itself, but there is a detailed documentation of individual properties and their values in the <a href="https://gettypubs.github.io/quire/api-docs/yaml/"><em>API/Docs section</em></a> of this guide.</p>
 
@@ -727,7 +731,7 @@
 
 <p>Every publication should have at least one <code>contributor</code>. The <code>contributor</code> item <code>type</code> can have one of three values: <code>primary</code>, <code>secondary</code>, or <code>project-team</code>. The <code>primary</code> contributors are those that would show up on the <em>Cover</em>, <em>Menu</em> and <em>Title Page</em> of a publication, and may include authors, editors, translators and others. Contributors should, at a minimum, be listed with a <code>first_name</code> and <code>last_name</code> (or alternately just a <code>full_name</code>).</p>
 
-<p>An optional <code>contributor_as_it_appears</code> value allows for more fine-grained control in the way contributors are listed. It could be, for example, something like &ldquo;Edited by Rose Valland and Denis Diderot&rdquo;. Even when using <code>contributor_as_it_appears</code> though, the contributors should still also be individually listed as contributors (with a value of <code>primary</code>) for search engine legibility.</p>
+<p>An optional <code>contributor_as_it_appears</code> value allows for more fine-grained control in the way contributors are listed. It could be, for example, something like &quot;Edited by Rose Valland and Denis Diderot&quot;. Even when using <code>contributor_as_it_appears</code> though, the contributors should still also be individually listed as contributors (with a value of <code>primary</code>) for search engine legibility.</p>
 
 <p>The editors, designers and developers and others who worked on the title may be listed as contributors with the <code>project-team</code> value. This information is usually then listed on the <em>About</em> and <em>Copyright</em> pages of the publication.</p>
 
@@ -737,7 +741,7 @@
 
 <p>You should include a <code>copyright</code> line property for your publication, and optionally <code>license</code> information property if you are distributing the publication <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Open Access</span><span class="quire-definition__content">Open access (OA) refers to free, unrestricted online access to content, frequently research outputs.</span></span>.</p>
 
-<p>A simple <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Copyright</span><span class="quire-definition__content">Copyright is a form of protection granted by law for original works of authorship fixed in a tangible medium of expression. For more information about U.S. copyright visit: <a href="https://www.copyright.gov/help/faq/faq-general.html#what" target="_blank">https://www.copyright.gov/help/faq/faq-general.html#what</a></span></span> statement would typically be formatted as &ldquo;© 2018 Author Name&rdquo;.</p>
+<p>A simple <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Copyright</span><span class="quire-definition__content">Copyright is a form of protection granted by law for original works of authorship fixed in a tangible medium of expression. For more information about U.S. copyright visit: <a href="https://www.copyright.gov/help/faq/faq-general.html#what" target="_blank">https://www.copyright.gov/help/faq/faq-general.html#what</a></span></span> statement would typically be formatted as &quot;© 2018 Author Name&quot;.</p>
 
 <section class="box">
   The <code>copyright</code> property does support Markdown formatting to allow for multiple paragraphs and other formatting.

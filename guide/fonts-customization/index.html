@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -676,7 +680,7 @@
 
 <h2 id="customizing-fonts">Customizing Fonts</h2>
 
-<p>The <code>quire-starter-theme</code> includes three embedded, open license fonts: <a href="https://fonts.google.com/specimen/Merriweather" target="_blank">&ldquo;Merriweather&rdquo;</a>, <a href="https://fonts.google.com/specimen/Lato" target="_blank">&ldquo;Lato&rdquo;</a>, and <a href="http://www.fontfabric.com/aleo-free-font/" target="_blank">&ldquo;Aleo&rdquo;</a>. You can adjust which ones are used where in the &ldquo;variables&rdquo; file of your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span>, <code>source/css/variables.scss</code>:</p>
+<p>The <code>quire-starter-theme</code> includes three embedded, open license fonts: <a href="https://fonts.google.com/specimen/Merriweather" target="_blank">&quot;Merriweather&quot;</a>, <a href="https://fonts.google.com/specimen/Lato" target="_blank">&quot;Lato&quot;</a>, and <a href="http://www.fontfabric.com/aleo-free-font/" target="_blank">&quot;Aleo&quot;</a>. You can adjust which ones are used where in the &quot;variables&quot; file of your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span>, <code>source/css/variables.scss</code>:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#bb60d5">$serif</span><span style="color:#666">:</span> Merriweather<span style="color:#666">,</span> Georgia<span style="color:#666">,</span> <span style="color:#60add5">serif</span>;
 <span style="color:#bb60d5">$sans-serif</span><span style="color:#666">:</span> Lato<span style="color:#666">,</span> Helvetica<span style="color:#666">,</span> <span style="color:#60add5">sans-serif</span>;
 <span style="color:#bb60d5">$slab-serif</span><span style="color:#666">:</span> Aleo<span style="color:#666">,</span> Rockwell<span style="color:#666">,</span> <span style="color:#4070a0">&#34;Trebuchet MS&#34;</span><span style="color:#666">,</span> <span style="color:#60add5">sans-serif</span>;
@@ -686,9 +690,9 @@
 </span><span style="color:#60a0b0;font-style:italic"></span>
 <span style="color:#bb60d5">$family-secondary</span><span style="color:#666">:</span> <span style="color:#bb60d5">$sans-serif</span>;
 <span style="color:#666">//</span> <span style="color:#062873;font-weight:bold">headings</span> <span style="color:#062873;font-weight:bold">and</span> <span style="color:#062873;font-weight:bold">navigation</span> <span style="color:#062873;font-weight:bold">items</span><span style="color:#555;font-weight:bold">:</span> <span style="">$</span><span style="color:#062873;font-weight:bold">serif</span><span style="color:#666">,</span> <span style="">$</span><span style="color:#062873;font-weight:bold">sans-serif</span><span style="color:#666">,</span> <span style="">$</span><span style="color:#062873;font-weight:bold">slab-serif</span></code></pre></div>
-<p>The <code>$serif</code>, <code>$sans-serif</code> and  <code>$slab-serif</code> variables tell your publication what fonts to use. For example, the variable <code>$serif: Merriweather, Georgia, serif;</code> tells Quire to use &ldquo;Merriweather&rdquo; as serif font. &ldquo;Georgia&rdquo; and a generic &ldquo;serif&rdquo;, the comma-separated fonts declared after our custom font, are fallbacks in case the browser doesn’t load or support our custom one (in this case &ldquo;Merriweather&rdquo;). You want your fallbacks to be of the same basic type as your custom one, and go from most to least specific in the list. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">Read more about fallbacks and <code>font-family</code> usage on Mozilla’s web docs.</a></p>
+<p>The <code>$serif</code>, <code>$sans-serif</code> and  <code>$slab-serif</code> variables tell your publication what fonts to use. For example, the variable <code>$serif: Merriweather, Georgia, serif;</code> tells Quire to use &quot;Merriweather&quot; as serif font. &quot;Georgia&quot; and a generic &quot;serif&quot;, the comma-separated fonts declared after our custom font, are fallbacks in case the browser doesn’t load or support our custom one (in this case &quot;Merriweather&quot;). You want your fallbacks to be of the same basic type as your custom one, and go from most to least specific in the list. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">Read more about fallbacks and <code>font-family</code> usage on Mozilla’s web docs.</a></p>
 
-<p>The variables <code>$family-primary</code> and <code>$family-secondary</code> tell your publication where to use the fonts you specify with the above variables. If the <code>$family-primary</code> font of your publication is <code>$serif</code>, &ldquo;Merriweather&rdquo; (and its fallback options) will be used in the body text of the publication pages.</p>
+<p>The variables <code>$family-primary</code> and <code>$family-secondary</code> tell your publication where to use the fonts you specify with the above variables. If the <code>$family-primary</code> font of your publication is <code>$serif</code>, &quot;Merriweather&quot; (and its fallback options) will be used in the body text of the publication pages.</p>
 
 <h2 id="adding-a-new-font">Adding a New Font</h2>
 

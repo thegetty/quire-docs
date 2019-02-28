@@ -435,7 +435,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -473,6 +477,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -494,10 +502,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -1064,7 +1068,7 @@ quire preview</code></pre></div>
 
 <h2 id="5-entering-publication-metadata">5. Entering Publication Metadata</h2>
 
-<p>The metadata for your publication (its title, subtitle, contributors, publication date, etc.) is used in various areas of your site. It’s used under the hood for <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">search engine optimization</span><span class="quire-definition__content">Search engine optimization, SEO, is the process of increasing the online visibility of a website or a web page in a web search engine&rsquo;s unpaid results.</span></span> (SEO), as well as on the site itself in headings, navigation labels, and on your About or Copyright page.</p>
+<p>The metadata for your publication (its title, subtitle, contributors, publication date, etc.) is used in various areas of your site. It’s used under the hood for <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">search engine optimization</span><span class="quire-definition__content">Search engine optimization, SEO, is the process of increasing the online visibility of a website or a web page in a web search engine's unpaid results.</span></span> (SEO), as well as on the site itself in headings, navigation labels, and on your About or Copyright page.</p>
 
 <p>All publication metadata is in the <code>publication.yml</code> file for your project, which you’ll find in the <code>data</code> directory.</p>
 
@@ -1127,7 +1131,7 @@ quire preview</code></pre></div>
 
 
 
-<p>The format of this metadata is called <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix <code>yml</code>, or inside a Markdown (<code>.md</code>) file.</span></span> (<em>yam-ul</em>). It’s designed to be a plain-text way of capturing data. The general principal is to have the name of a data item, followed by a colon, a space, and then the data item’s value. A key-value pair.</p>
+<p>The format of this metadata is called <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix <code>yml</code>, or inside a Markdown (<code>.md</code>) file. Read more in the <a href="https://gettypubs.github.io/quire/guide/fundamentals/"><em>Fundamentals: YAML &amp; Markdown</em></a> chapter of this guide.</span></span> (<em>yam-ul</em>). It’s designed to be a plain-text way of capturing data. The general principal is to have the name of a data item, followed by a colon, a space, and then the data item’s value. A key-value pair.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">title:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;Cézanne&#34;</span><span style="color:#bbb">
 </span><span style="color:#bbb"></span>subtitle:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;Promenades of an Impressionist&#34;</span></code></pre></div>
 <p>While not always necessary, it’s usually a good idea to wrap any information you’re entering in straight quotes as in the example above. Certain character combinations can otherwise cause issues with the way the YAML data is processed and may cause your site preview to fail.</p>
@@ -1246,7 +1250,7 @@ quire preview</code></pre></div>
 
 <p>For more specialized features (especially images, mutimedia, and citations), Quire extends Markdown’s capabilities with a set of <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">shortcodes</span><span class="quire-definition__content">A shortcode is a simple snippet used inside a Markdown file, that Quire will render using a predefined template. Quire suports <a href="https://gettypubs.github.io/quire/api-docs/shortcodes/">a range of shortcodes</a>, and custom shortcodes can also be added.</span></span>. Type the following figure image shortcode on a new line in your <code>about.md</code> file, save the change, and check the preview in your browser.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>figure id=<span style="color:#4070a0">&#34;1.1&#34;</span> &gt;}}</code></pre></div>
-<p>You’ll see this added a figure and caption, the text for which is stored in the project’s <code>figures.yml</code> file under the <code>id</code> of &ldquo;1.1&rdquo;. If you update the information stored in <code>figures.yml</code> it will update on your page as well as anywhere else that figure is used.</p>
+<p>You’ll see this added a figure and caption, the text for which is stored in the project’s <code>figures.yml</code> file under the <code>id</code> of &quot;1.1&quot;. If you update the information stored in <code>figures.yml</code> it will update on your page as well as anywhere else that figure is used.</p>
 
 
 
