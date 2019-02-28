@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -688,13 +692,28 @@
       <div class="content">
         
 
-<p>The look and feel of your Quire publication can be customized at four different levels of complexity: 1. changing style variables in the theme, 2. adding new style rules to the <code>custom.css</code> file, 3. overriding specific theme <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">template</span><span class="quire-definition__content">Themes may include one or more templates. Templates are the variety of layouts a theme has.</span></span>s with your own custom version, or 4. creating an entirely new Quire theme.</p>
+<p>The look and feel of your Quire publication can be customized at four different levels of complexity:</p>
+
+<ol>
+<li>Changing style <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">variables</span><span class="quire-definition__content">CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a document. For more information about CSS variables visit: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables</a>.</span></span> in the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span></li>
+<li>Adding new style rules to the <code>custom.css</code> file</li>
+<li>Overriding specific theme <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">templates</span><span class="quire-definition__content">Themes may include one or more templates. Templates are the variety of layouts a theme has.</span></span> with your own custom version</li>
+<li>Creating an entirely new Quire theme.
+<br /></li>
+</ol>
+
+<section class="box tip">
+  <ul>
+<li>The default theme installed with every new Quire project is the <a href="https://github.com/gettypubs/quire-starter-theme" target="_blank">Quire Starter Theme</a>. The README file of that repository includes complete information about the customizations available in that specific theme.</li>
+</ul>
+
+</section>
 
 <h2 id="changing-the-style-variables-in-the-theme">Changing the Style Variables in the Theme</h2>
 
-<p>Every Quire project has a <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span> inside the <code>themes</code> directory. When you first start a new project typing the <code>quire new</code> command in your command line interface, the default theme included is <code>quire-starter-theme</code>. In it, you can access simple text <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Variable</span><span class="quire-definition__content">CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a document. For more information about CSS variables visit: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables</a>.</span></span>s that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.</p>
+<p>Every Quire project has a theme inside the <code>themes</code> directory. When you first start a new project typing the <code>quire new</code> command in your command line interface, the default theme included is the <a href="https://github.com/gettypubs/quire-starter-theme" target="_blank">Quire Starter Theme</a>. In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.</p>
 
-<p>To find the variables, open the <code>quire-starter-theme</code> directory, navigate to the <code>source</code> sub-directory and then <code>css</code>, and open the file called <code>variables.scss</code>.</p>
+<p>To find the variables, open the <code>themes/quire-starter-theme</code> directory, navigate to the <code>source</code> sub-directory and then <code>css</code>, and open the file called <code>variables.scss</code>.</p>
 
 
 
@@ -753,7 +772,7 @@
 
 
 
-<p>The <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Variable</span><span class="quire-definition__content">CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a document. For more information about CSS variables visit: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables</a>.</span></span>s are prefixed with a dollar sign and are descriptive of what they control. For instance <code>$quire-navbar-background-color</code> is the background color of the navigation bar at the top of every page. To make it red, you could enter:</p>
+<p>The variables are prefixed with a dollar sign and are descriptive of what they control. For instance <code>$quire-navbar-background-color</code> is the background color of the navigation bar at the top of every page. To make it red, you could enter:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#666">$</span><span style="color:#062873;font-weight:bold">quire-navbar-background-color</span><span style="color:#666">:</span> <span style="color:#062873;font-weight:bold">red</span><span style="color:#666">;</span></code></pre></div>
 <p>Colors are expressed a number of different ways, none of which are better or more supported than the others, so you can use your preference. Most common are:</p>
 
@@ -763,10 +782,11 @@
 <li><span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">RGB Color Values</span><span class="quire-definition__content">The RGB model define colors according to their red, green, and blue components by using hexadecimal and functional notations. An RGB color value calculator can be found at: <a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank">https://www.w3schools.com/colors/colors_rgb.asp</a></span></span> like <code>rgb(255, 0, 0)</code>, <code>rgb(65, 105, 225)</code> and <code>rgb(240, 255, 240)</code></li>
 </ul>
 
-<p>The <code>quire-starter-theme</code> uses the Bulma CSS framework, so you can also use any <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Bulma variables</span><span class="quire-definition__content">Sass variables used by Bulma, an open source CSS framework. You can check a list of Bulma variables at: <a href="https://bulma.io/documentation/overview/variables/" target="_blank">https://bulma.io/documentation/overview/variables/</a></span></span>.</p>
+<section class="box warning">
+  <ul>
+<li>You must have the <code>quire preview</code> command running in your command line interface to see changes you make to the <code>variables.scss</code> file. You may also sometimes need to refresh your browser page, or even clear the browser cache to get the style changes to fully load.</li>
+</ul>
 
-<section class="box">
-  You must have the <code>quire preview</code> command running in your command line interface to see changes you make to the <code>variables.scss</code> file. You may also sometimes need to refresh your browser page, or even clear the browser cache to get the style changes to fully load.
 </section>
 
 <h2 id="adding-custom-styles">Adding Custom Styles</h2>
@@ -848,7 +868,7 @@ As should the paragraph after it.
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#0e84b5;font-weight:bold">title</span> {
   <span style="color:#007020;font-weight:bold">color</span>: <span style="color:#007020;font-weight:bold">red</span>;
 }</code></pre></div>
-<p>To determine the selectors for any <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">element</span><span class="quire-definition__content">An HTML element is an individual component of an HTML document or web page. Elements are defined by tags.</span></span>, in your browser of choice with your publication previewing, control-click (Mac) or right click (PC) on the element and select &ldquo;Inspect element&rdquo;. This will show you the HTML markup for your site, along with all the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">class</span><span class="quire-definition__content">The CSS class selector selects elements with a specific class attribute. The selector starts with a period <code>.</code></span></span> names and elements, and even the styles that are currently being applied to that <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">element</span><span class="quire-definition__content">An HTML element is an individual component of an HTML document or web page. Elements are defined by tags.</span></span>.</p>
+<p>To determine the selectors for any <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">element</span><span class="quire-definition__content">An HTML element is an individual component of an HTML document or web page. Elements are defined by tags.</span></span>, in your browser of choice with your publication previewing, control-click (Mac) or right click (PC) on the element and select &quot;Inspect element&quot;. This will show you the HTML markup for your site, along with all the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">class</span><span class="quire-definition__content">The CSS class selector selects elements with a specific class attribute. The selector starts with a period <code>.</code></span></span> names and elements, and even the styles that are currently being applied to that <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">element</span><span class="quire-definition__content">An HTML element is an individual component of an HTML document or web page. Elements are defined by tags.</span></span>.</p>
 
 <p>The more specific you can be with your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">CSS selector</span><span class="quire-definition__content">CSS selectors are used to target the HTML elements on web pages. There are several CSS selectors available, being one of these the CSS Class Selector.</span></span>s, the more likely the style will only be applied to the specific element you want. For example, if you wanted the page title on specific page to be a different color than the titles all the rest of the pages, you could determine the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">CSS selector</span><span class="quire-definition__content">CSS selectors are used to target the HTML elements on web pages. There are several CSS selectors available, being one of these the CSS Class Selector.</span></span> for that element on that page and apply a style rule to it without changing the styles on any other element or page. This example limits the style to the title in the page header of that one page:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">#<span style="color:#0e84b5;font-weight:bold">chapter-one</span> .<span style="color:#0e84b5;font-weight:bold">quire-page__header</span> .<span style="color:#0e84b5;font-weight:bold">title</span> {
@@ -861,7 +881,7 @@ As should the paragraph after it.
 </section>
 
 <section class="box">
-  Exceptionally, if somewhere there is a more specific <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">CSS selector</span><span class="quire-definition__content">CSS selectors are used to target the HTML elements on web pages. There are several CSS selectors available, being one of these the CSS Class Selector.</span></span> that’s applying a style to an element, it will override the less specific one even if it’s in your <code>custom.css</code> file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">CSS selector</span><span class="quire-definition__content">CSS selectors are used to target the HTML elements on web pages. There are several CSS selectors available, being one of these the CSS Class Selector.</span></span> is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The &ldquo;Inspect element&rdquo; tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.
+  Exceptionally, if somewhere there is a more specific <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">CSS selector</span><span class="quire-definition__content">CSS selectors are used to target the HTML elements on web pages. There are several CSS selectors available, being one of these the CSS Class Selector.</span></span> that’s applying a style to an element, it will override the less specific one even if it’s in your <code>custom.css</code> file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">CSS selector</span><span class="quire-definition__content">CSS selectors are used to target the HTML elements on web pages. There are several CSS selectors available, being one of these the CSS Class Selector.</span></span> is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The &quot;Inspect element&quot; tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.
 </section>
 
 <h2 id="overriding-theme-templates">Overriding Theme Templates</h2>
@@ -932,21 +952,7 @@ As should the paragraph after it.
 
 <li><p>In the <code>themes</code> folder of your Quire project, delete the existing folder there, and replace it with the one you just downloaded. The replacement folder must be named the same as the original.</p></li>
 
-<li><p>In your 
-
-
-
-
-
-<div class="quire-error message is-danger">
-  <div class="message-header">
-    <strong>SHORTCODE ERROR: q-glossary</strong>
-  </div>
-  <div class="message-body">
-    <p>The term supplied doesn’t match one in the project’s <code>glossary.yml</code> file. The term should be listed under the <code>term</code> or <code>alternates</code> key.</p>
-    <pre>{{< q-glossary &#34;chiaroscuro&#34; >}}<br /><br />term: &#34;chiaroscuro&#34;<br />alternates:<br /> - &#34;chiaroscuros&#34;</pre>
-  </div>
-</div>, navigate to your project folder and run the command <code>quire install</code>. This will install your theme’s dependencies.</p></li>
+<li><p>In your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">command-line interface</span><span class="quire-definition__content">A command-line interface (CLI) is a text-based user interface for running program tasks. In it, the user issues commands in the form of typed strings of text. This is opposed to a graphical user interface (GUI) for a software program, in which the user controls the program through visualized buttons, toggles and menus.</span></span>, navigate to your project folder and run the command <code>quire install</code>. This will install your theme’s dependencies.</p></li>
 
 <li><p>Once the install process is complete, manually copy over any changes/customizations to the theme that had made previously, and run <code>quire preview</code> to confirm.</p></li>
 </ol>
@@ -964,21 +970,7 @@ As should the paragraph after it.
 
 <li><p>In your project’s <code>config.yml</code> file change the name listed under <code>theme</code> from <code>&quot;quire-starter-theme&quot;</code> to the name of the new theme.</p></li>
 
-<li><p>In your 
-
-
-
-
-
-<div class="quire-error message is-danger">
-  <div class="message-header">
-    <strong>SHORTCODE ERROR: q-glossary</strong>
-  </div>
-  <div class="message-body">
-    <p>The term supplied doesn’t match one in the project’s <code>glossary.yml</code> file. The term should be listed under the <code>term</code> or <code>alternates</code> key.</p>
-    <pre>{{< q-glossary &#34;chiaroscuro&#34; >}}<br /><br />term: &#34;chiaroscuro&#34;<br />alternates:<br /> - &#34;chiaroscuros&#34;</pre>
-  </div>
-</div>, navigate to your project folder and run the command <code>quire install</code>. This will install your theme’s dependencies.</p></li>
+<li><p>In your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">command-line interface</span><span class="quire-definition__content">A command-line interface (CLI) is a text-based user interface for running program tasks. In it, the user issues commands in the form of typed strings of text. This is opposed to a graphical user interface (GUI) for a software program, in which the user controls the program through visualized buttons, toggles and menus.</span></span>, navigate to your project folder and run the command <code>quire install</code>. This will install your theme’s dependencies.</p></li>
 
 <li><p>Once the install process is complete, run <code>quire preview</code> to confirm.</p></li>
 </ol>

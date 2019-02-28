@@ -301,7 +301,7 @@
         
 
 <li class="quire-navbar-button arrow-button">
-  <a href="https://gettypubs.github.io/quire/guide/multiformat-output/" rel="prev" id="js-prev" >
+  <a href="https://gettypubs.github.io/quire/guide/github/" rel="prev" id="js-prev" >
     <svg>
       <switch>
         <use xlink:href="#left-arrow-icon"></use>
@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item this-page with-page-nav">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -731,15 +735,33 @@
 </tr>
 
 <tr>
+<td><code>disableKinds</code></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
 <td><code>footnoteReturnLinkContents</code></td>
 <td>string</td>
-<td>Controls the appearance of the link added to the end of footnotes. Default is &ldquo;↩&rdquo;.</td>
+<td>Controls the appearance of the link added to the end of footnotes. Default is &quot;↩&quot;.</td>
+</tr>
+
+<tr>
+<td><code>googleAnalytics</code></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>languageCode</code></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
 <td><code>metaDataFormat</code></td>
-<td>&ldquo;yaml&rdquo;, &ldquo;toml&rdquo;, &ldquo;json&rdquo;</td>
-<td>Default is &ldquo;yaml&rdquo;</td>
+<td>&quot;yaml&quot;, &quot;toml&quot;, &quot;json&quot;</td>
+<td>Default is &quot;yaml&quot;</td>
 </tr>
 
 <tr>
@@ -749,9 +771,27 @@
 </tr>
 
 <tr>
+<td><code>pluralizeListTitles</code></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><code>publishDir</code></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
 <td><code>relativeURLs</code></td>
 <td>boolean</td>
 <td>Keeps all internal links relative. Default is <code>true</code>.</td>
+</tr>
+
+<tr>
+<td><code>title</code></td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
@@ -783,7 +823,13 @@
 <tr>
 <td><code>fractions</code></td>
 <td>boolean</td>
-<td>When set to <code>true</code> any numbers separated by a slash are automatically converted to fractions. Default is <code>false</code>. Though even then &frac14;, &frac12; and &frac34; are still converted. Recommend always using proper unicode fractions: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞.</td>
+<td>When set to <code>true</code> any numbers separated by a slash are automatically converted to fractions. Default is <code>false</code>. Though even then 1/4, 1/2 and 3/4 are still converted. Recommend always using proper unicode fractions: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞.</td>
+</tr>
+
+<tr>
+<td><code>hrefTargetBlank</code></td>
+<td>boolean</td>
+<td>When set to true, any Markdown links to external pages and resources will open in a new tab/window for the user.</td>
 </tr>
 </tbody>
 </table>
@@ -799,7 +845,7 @@
 <table>
 <thead>
 <tr>
-<th>Object Properties</th>
+<th>Parameter</th>
 <th>Expected Value</th>
 <th>Description</th>
 </tr>
@@ -807,75 +853,99 @@
 
 <tbody>
 <tr>
-<td><code>displayBiblioShort</code></td>
+<td><code>searchEnabled</code></td>
 <td>boolean</td>
-<td>When <code>true</code> the short citation form (ie., &ldquo;Smith 2003&rdquo;) will be displayed with the full form, when creating a bibliography on pages with <code>type: essay</code>, or on other pages with the <code>q-bibliography</code> shortcode. Default is <code>true</code>.</td>
+<td>Turn on or off the built-in text search capability for users</td>
+</tr>
+
+<tr>
+<td><code>licenseIcons</code></td>
+<td>boolean</td>
+<td>Whether or not to display Creative Commons license icons</td>
+</tr>
+
+<tr>
+<td><code>pageLabelDivider</code></td>
+<td>string</td>
+<td>&quot;. &quot; default, etermines the text/spacing to be inserted between page .label and page .title</td>
 </tr>
 
 <tr>
 <td><code>citationPageLocationDivider</code></td>
 <td>string</td>
-<td>Default is &ldquo;, &ldquo;.</td>
+<td>&quot;, &quot; default, determines the text/spacing to be inserted between the citation and the page number in the q-cite shortcode</td>
+</tr>
+
+<tr>
+<td><code>displayBiblioShort</code></td>
+<td>boolean</td>
+<td>Whether a bibilography generated with the q-cite or q-bibliography shorcodes should display the short form of the reference, along with the long.</td>
 </tr>
 
 <tr>
 <td><code>imageDir</code></td>
 <td>string</td>
-<td>The project’s main image directory inside the <code>static</code> directory. Default is &ldquo;/img/&rdquo;.</td>
-</tr>
-
-<tr>
-<td><code>figureLabels</code></td>
-<td>boolean</td>
-<td>Default is true.</td>
-</tr>
-
-<tr>
-<td><code>figureLabelsTextBefore</code></td>
-<td>string</td>
-<td>Default is &ldquo;Figure &ldquo;</td>
-</tr>
-
-<tr>
-<td><code>figureLabelsTextAfter</code></td>
-<td>string</td>
-<td>Default is &ldquo;. &ldquo;</td>
-</tr>
-
-<tr>
-<td><code>videoFigureFallbackText</code></td>
-<td>boolean</td>
-<td>Default is true.</td>
-</tr>
-
-<tr>
-<td><code>videoFigureFallbackTextBefore</code></td>
-<td>string</td>
-<td>Default is &ldquo;Watch the video at &ldquo;</td>
-</tr>
-
-<tr>
-<td><code>videoFigureFallbackTextAfter</code></td>
-<td>string</td>
-<td>Default is &ldquo;.&rdquo;</td>
-</tr>
-
-<tr>
-<td><code>menuType</code></td>
-<td>&ldquo;short&rdquo;, &ldquo;full&rdquo;</td>
-<td>Default is &ldquo;short&rdquo;</td>
-</tr>
-
-<tr>
-<td><code>searchEnabled</code></td>
-<td>boolean</td>
-<td>Default is <code>true</code></td>
+<td>&quot;img&quot; default, the directory in the <code>/static/</code> directory where you put your images</td>
 </tr>
 
 <tr>
 <td><code>tocType</code></td>
-<td>&ldquo;short&rdquo;, &ldquo;full&rdquo;</td>
-<td>Default is &ldquo;full&rdquo;</td>
+<td>&quot;full&quot;, &quot;short&quot;</td>
+<td>&quot;short&quot; will hide all sub-section pages</td>
+</tr>
+
+<tr>
+<td><code>menuType</code></td>
+<td>&quot;full&quot;, &quot;short&quot;</td>
+<td>&quot;short&quot; will hide all sub-section pages</td>
+</tr>
+
+<tr>
+<td><code>prevPageButtonText</code></td>
+<td>string</td>
+<td>&quot;Back&quot; default</td>
+</tr>
+
+<tr>
+<td><code>nextPageButtonText</code></td>
+<td>string</td>
+<td>&quot;Next&quot; default</td>
+</tr>
+
+<tr>
+<td><code>entryPageSideBySideLayout</code></td>
+<td>boolean</td>
+<td>Entry pages can have a side-by-side layout with image on the left and text on the right, this can be controlled by <code>class: side-by-side</code> in the page YAML, or globally with this parameter</td>
+</tr>
+
+<tr>
+<td><code>entryPageObjectLinkText</code></td>
+<td>string</td>
+<td>&quot;View in Collection&quot; default</td>
+</tr>
+
+<tr>
+<td><code>figureLabelLocation</code></td>
+<td>&quot;on-top&quot;, &quot;below&quot;</td>
+<td>Whether the figure label is &quot;on-top&quot; of the image in the upper left corner, or &quot;below&quot; it with the caption</td>
+</tr>
+
+<tr>
+<td><code>figureModal</code></td>
+<td>boolean</td>
+<td>If figures should be clickable to open into a full-screen modal window</td>
+</tr>
+
+<tr>
+<td><code>figureModalIcons</code></td>
+<td>boolean</td>
+<td>Whether to display icons with the figure modal links</td>
+</tr>
+
+<tr>
+<td><code>figureZoom</code></td>
+<td>boolean</td>
+<td>Whether figures should zoom or not inside the modal</td>
 </tr>
 </tbody>
 </table>
@@ -928,7 +998,7 @@
 
 <tr>
 <td><code>pub_type</code></td>
-<td>&ldquo;book&rdquo;, &ldquo;journal-periodical&rdquo;, &ldquo;other&rdquo;</td>
+<td>&quot;book&quot;, &quot;journal-periodical&quot;, &quot;other&quot;</td>
 <td>Can be one of three values. Determines how key search-engine metadata is defined.</td>
 </tr>
 
@@ -1132,7 +1202,7 @@
 <tbody>
 <tr>
 <td><code>type</code></td>
-<td>&ldquo;keyword&rdquo;, &ldquo;bisac&rdquo;, &ldquo;getty&rdquo;</td>
+<td>&quot;keyword&quot;, &quot;bisac&quot;, &quot;getty&quot;</td>
 <td></td>
 </tr>
 
@@ -1175,7 +1245,7 @@
 <tr>
 <td><code>abbreviation</code></td>
 <td></td>
-<td>If using a Creative Commons licenses, should match one of the seven available options: &ldquo;CC0&rdquo;, &ldquo;CC BY&rdquo;, &ldquo;CC BY-SA&rdquo;, &ldquo;CC BY-ND&rdquo;, &ldquo;CC BY-NC&rdquo;, &ldquo;CC BY-NC-SA&rdquo;, or &ldquo;CC BY-NC-ND&rdquo;.</td>
+<td>If using a Creative Commons licenses, should match one of the seven available options: &quot;CC0&quot;, &quot;CC BY&quot;, &quot;CC BY-SA&quot;, &quot;CC BY-ND&quot;, &quot;CC BY-NC&quot;, &quot;CC BY-NC-SA&quot;, or &quot;CC BY-NC-ND&quot;.</td>
 </tr>
 
 <tr>
@@ -1192,7 +1262,7 @@
 
 <tr>
 <td><code>scope</code></td>
-<td>&ldquo;text-only&rdquo;, &ldquo;full&rdquo;, &ldquo;some-exceptions&rdquo;</td>
+<td>&quot;text-only&quot;, &quot;full&quot;, &quot;some-exceptions&quot;</td>
 <td></td>
 </tr>
 
@@ -1234,7 +1304,7 @@
 
 <tr>
 <td><code>type</code></td>
-<td>&ldquo;other-format&rdquo;, &ldquo;related-resource&rdquo;, &ldquo;footer-link&rdquo;</td>
+<td>&quot;other-format&quot;, &quot;related-resource&quot;, &quot;footer-link&quot;</td>
 <td></td>
 </tr>
 
@@ -1325,13 +1395,13 @@
 <tr>
 <td><code>isbn</code></td>
 <td>10- or 13-digit ISBN</td>
-<td>For use with <code>pub-type</code> of &ldquo;book&rdquo;. ISBNs can be purchased indivudally or in packages at <a href="http://www.isbn.org/" target="_blank">http://www.isbn.org/</a>.</td>
+<td>For use with <code>pub-type</code> of &quot;book&quot;. ISBNs can be purchased indivudally or in packages at <a href="http://www.isbn.org/" target="_blank">http://www.isbn.org/</a>.</td>
 </tr>
 
 <tr>
 <td><code>issn</code></td>
 <td>8-digit ISSN</td>
-<td>For use with <code>pub-type</code> of &ldquo;journal-periodical&rdquo;. ISSNs can be requested through <a href="http://www.issn.org/" target="_blank">http://www.issn.org/</a>.</td>
+<td>For use with <code>pub-type</code> of &quot;journal-periodical&quot;. ISSNs can be requested through <a href="http://www.issn.org/" target="_blank">http://www.issn.org/</a>.</td>
 </tr>
 
 <tr>
@@ -1372,7 +1442,7 @@
 
 <tr>
 <td><code>type</code></td>
-<td>&ldquo;primary&rdquo;, &ldquo;secondary&rdquo;, &ldquo;project-team&rdquo;</td>
+<td>&quot;primary&quot;, &quot;secondary&quot;, &quot;project-team&quot;</td>
 <td></td>
 </tr>
 
@@ -1492,7 +1562,7 @@
 
 <tr>
 <td><code>media_type</code></td>
-<td>&ldquo;youtube&rdquo;, &ldquo;vimeo&rdquo;</td>
+<td>&quot;youtube&quot;, &quot;vimeo&quot;</td>
 <td>Currently supports video hosted on YouTube or Vimeo. (May eventually expand to HTML5 video, audio, and Soundcloud, and others.) When a <code>media_type</code> is defined, a <code>media_id</code> must be as well. For video, it is also recommended that an image <code>src</code> still be used (presumably being a screenshot from the video) so as to provide a fallback for PDF and EPUB output.</td>
 </tr>
 
@@ -1504,8 +1574,8 @@
 
 <tr>
 <td><code>aspect_ratio</code></td>
-<td>&ldquo;standard&rdquo;, &ldquo;widescreen&rdquo;</td>
-<td>For use with video <code>media_type</code>s to properly scale video embeds. When no value is provided, the default is &ldquo;widescreen&rdquo;.</td>
+<td>&quot;standard&quot;, &quot;widescreen&quot;</td>
+<td>For use with video <code>media_type</code>s to properly scale video embeds. When no value is provided, the default is &quot;widescreen&quot;.</td>
 </tr>
 
 <tr>
@@ -1600,7 +1670,7 @@
 
 <h2 id="page">Page</h2>
 
-<p>Location: Any page in <code>content/</code></p>
+<p>Location: Any Markdown page in the <code>/content/</code> directory.</p>
 
 <p>Type: Object</p>
 
@@ -1615,9 +1685,9 @@
 
 <tbody>
 <tr>
-<td><code>number</code></td>
-<td>integer</td>
-<td># for chapter/paper numbering.</td>
+<td><code>label</code></td>
+<td>string</td>
+<td>A label for the page “Chapter 1”, “2”, “III”, etc.</td>
 </tr>
 
 <tr>
@@ -1635,60 +1705,86 @@
 <tr>
 <td><code>short_title</code></td>
 <td>string</td>
-<td></td>
+<td>Used in navigation items where a long title would be too unwieldy.</td>
 </tr>
 
 <tr>
 <td><code>type</code></td>
-<td>&ldquo;page&rdquo;&lsquo;,&rsquo; &ldquo;essay&rdquo;, &ldquo;entry&rdquo;, &ldquo;cover&rdquo;, &ldquo;contents&rdquo;, &ldquo;about&rdquo;, &ldquo;data&rdquo;, &ldquo;search&rdquo;</td>
-<td></td>
+<td>&quot;page&quot; (default), &quot;essay&quot;, &quot;entry&quot;, &quot;cover&quot;, &quot;contents&quot;, &quot;splash&quot;, or &quot;data&quot;</td>
+<td>See <a href="https://gettypubs.github.io/quire/guide/pages/#defining-page-types"><em>Defining Page Types</em></a> for examples</td>
 </tr>
 
 <tr>
 <td><code>class</code></td>
-<td></td>
-<td></td>
+<td>string</td>
+<td>Can accept any string, which will be included as a class in the main page element to facilitate style customization. A number of pre-defined classes also exist in the <a href="https://github.com/gettypubs/quire-starter-theme" target="_blank">Quire Starter Theme</a>. Pages with <code>type: contents</code> can have class <code>list</code> (default), <code>brief</code>, <code>abstract</code>, or <code>grid</code>. Pages with <code>type: entry</code> can have class <code>landscape</code> (default) or <code>side-by-side</code>.</td>
 </tr>
 
 <tr>
 <td><code>weight</code></td>
 <td>integer</td>
-<td></td>
+<td>Controls ordering of pages in the publication.</td>
 </tr>
 
 <tr>
 <td><code>object</code></td>
 <td><a href="#Object">array</a></td>
-<td>See above.</td>
+<td></td>
 </tr>
 
 <tr>
 <td><code>contributor</code></td>
 <td><a href="#Contributor">array</a></td>
-<td>See above.</td>
+<td></td>
 </tr>
 
 <tr>
 <td><code>abstract</code></td>
 <td>string</td>
-<td></td>
+<td>Markdown okay.</td>
 </tr>
 
 <tr>
 <td><code>slug</code></td>
-<td></td>
-<td></td>
+<td>url path</td>
+<td>Will change the URL of the page. Or use a period <code>.</code> to make the URL be the directory name (homepage). Read more in the <a href="https://gettypubs.github.io/quire/guide/pages/#creating-section-landing-pages"><em>Page Types &amp; Structure</em></a> chapter of this guide.</td>
 </tr>
 
 <tr>
-<td><code>display</code></td>
-<td>&ldquo;online&rdquo;, &ldquo;menu&rdquo;, &ldquo;pdf_ebook&rdquo;, &ldquo;toc&rdquo;</td>
-<td></td>
+<td><code>toc</code></td>
+<td>&quot;true&quot; (default), &quot;false&quot;</td>
+<td>Page will not display in contents page if false.</td>
+</tr>
+
+<tr>
+<td><code>menu</code></td>
+<td>&quot;true&quot; (default), &quot;false&quot;</td>
+<td>Page will not display in menu if false.</td>
+</tr>
+
+<tr>
+<td><code>online</code></td>
+<td>&quot;true&quot; (default), &quot;false&quot;</td>
+<td>Page will not display in online edition if false.</td>
+</tr>
+
+<tr>
+<td><code>pdf</code></td>
+<td>&quot;true&quot; (default), &quot;false&quot;</td>
+<td>Page will not display in pdf edition if false.</td>
+</tr>
+
+<tr>
+<td><code>epub</code></td>
+<td>&quot;true&quot; (default), &quot;false&quot;</td>
+<td>Page will not display in epub or mobi edition if false.</td>
 </tr>
 </tbody>
 </table>
 
-<p>The <code>object</code> and <code>contributor</code> attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the <a href="https://gettypubs.github.io/quire/guide/collection-catalogues/">Catalogue Entries</a> and <a href="https://gettypubs.github.io/quire/guide/contributors/">Contributors</a> sections respectively.</p>
+<p>The <code>object</code> and <code>contributor</code> attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the <a href="https://gettypubs.github.io/quire/guide/collection-catalogues/"><em>Catalogue Entries</em></a> and <a href="https://gettypubs.github.io/quire/guide/contributors/"><em>Contributors</em></a> chapters respectively.</p>
+
+<p>Pages with <code>type: contents</code> can have class <code>list</code> (default), <code>brief</code>, <code>abstract</code>, or <code>grid</code>. Pages with <code>type: entry</code> can have class <code>landscape</code> (default) or <code>side-by-side</code>.</p>
 
         
 </section>
