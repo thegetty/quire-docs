@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -727,7 +731,7 @@
   - Markdown style lists
   - and other formatting are
   - also allowed</code></pre></div>
-<p>YAML block entries can be in any order. It doesn&rsquo;t matter if you write:</p>
+<p>YAML block entries can be in any order. It doesn't matter if you write:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---<span style="color:#bbb">
 </span><span style="color:#bbb"></span>title:<span style="color:#bbb"> </span>Cheatsheet<span style="color:#bbb">
 </span><span style="color:#bbb"></span>type:<span style="color:#bbb"> </span>page<span style="color:#bbb">
@@ -876,7 +880,7 @@
 
 <h3 id="fractions-superscripts-and-subscripts">Fractions, Superscripts and Subscripts</h3>
 
-<p>The fractions 1&#47;4, 1&#47;2, and 3&#47;4, will be automatically converted into proper, Unicode fractions (&frac14;, &frac12;, &frac34;). Other Unicode fractions can also be used in Markdown directly, though note that not all fonts support the eighths in which case, browsers will render them with a default font. The fractions are: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. Any others would need to be written using superscript and subscript formatting.</p>
+<p>The fractions 1&#47;4, 1&#47;2, and 3&#47;4, will be automatically converted into proper, Unicode fractions (1/4, 1/2, 3/4). Other Unicode fractions can also be used in Markdown directly, though note that not all fonts support the eighths in which case, browsers will render them with a default font. The fractions are: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. Any others would need to be written using superscript and subscript formatting.</p>
 
 <p>While some Markdown processors support superscript and subscript formatting with ^ and ~ characters, the one built into Quire does not. You’ll need to use the HTML <code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code> tags in your Markdown. For example:</p>
 
@@ -886,7 +890,7 @@
 <li><code>Chrome yellow (PbCrO&lt;sub&gt;4&lt;/sub&gt;)</code> = Chrome yellow (PbCrO<sub>4</sub>)</li>
 </ul>
 
-<p>You will see a <code>fractions</code> attribute with a value of &ldquo;false&rdquo; in the <code>config.yml</code> file of your publication. Changing this to true will automatically render fraction-style superscript and subscript formatting for anything written as an integer followed by a slash and another integer. However, in many instances this will catch things that are not meant to be fractions. For this reason, we recommend leaving <code>fractions</code> set to <code>false</code>, and manually adding the necessary markup as it’s needed.</p>
+<p>You will see a <code>fractions</code> attribute with a value of &quot;false&quot; in the <code>config.yml</code> file of your publication. Changing this to true will automatically render fraction-style superscript and subscript formatting for anything written as an integer followed by a slash and another integer. However, in many instances this will catch things that are not meant to be fractions. For this reason, we recommend leaving <code>fractions</code> set to <code>false</code>, and manually adding the necessary markup as it’s needed.</p>
 
 <h3 id="markdown-gotchas">Markdown Gotchas</h3>
 
@@ -910,7 +914,7 @@
 
 <p>Hugo has a built-in Markdown processor, <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Blackfriday</span><span class="quire-definition__content">Blackfriday is the Markdown processor used by Hugo to render the formatted text of the publication. You can find technical details at: <a href="https://github.com/russross/blackfriday" target="_blank">https://github.com/russross/blackfriday</a></span></span>, which comes with some configuration options that can be applied in your project’s <code>config.yml</code> file. Details can be found <a href="https://gohugo.io/getting-started/configuration/#configure-blackfriday" target="_blank">in the Hugo documentation</a>.</p>
 
-<p>By default, in the <code>config.yml</code> file of your Quire project, <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Blackfriday</span><span class="quire-definition__content">Blackfriday is the Markdown processor used by Hugo to render the formatted text of the publication. You can find technical details at: <a href="https://github.com/russross/blackfriday" target="_blank">https://github.com/russross/blackfriday</a></span></span>&rsquo;s <code>fraction</code> option has been set to <code>false</code> (text that looks like a fraction won’t be automatically formatted as such.), and the <code>hrefTargetBlank</code> option set to <code>true</code> (external links will open in new windows/tabs).</p>
+<p>By default, in the <code>config.yml</code> file of your Quire project, <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Blackfriday</span><span class="quire-definition__content">Blackfriday is the Markdown processor used by Hugo to render the formatted text of the publication. You can find technical details at: <a href="https://github.com/russross/blackfriday" target="_blank">https://github.com/russross/blackfriday</a></span></span>'s <code>fraction</code> option has been set to <code>false</code> (text that looks like a fraction won’t be automatically formatted as such.), and the <code>hrefTargetBlank</code> option set to <code>true</code> (external links will open in new windows/tabs).</p>
 
 <h2 id="markdown-resources">Markdown Resources</h2>
 
@@ -938,7 +942,7 @@
 <li>The lines of the generated <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Markdown file</span><span class="quire-definition__content">A file formatted in Markdown that generates a Web page. Markdown files have a YAML block at the top containing the metadata of the page.</span></span> are 80 characters long. Adding the option <code>--wrap=none</code> to the command will override the default wrapping making easier to work with your files in the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Text editor</span><span class="quire-definition__content">A text editor is an application used to edit text files containing either plain text or markup for rich text. All computers have basic text editors preinstalled, though we recommend using a free, more fully featured option like <a href="https://atom.io/" target="_blank">Atom</a> or <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</span></span>.</li>
 </ul>
 
-<p>The order of the extensions doesn&rsquo;t matter, and you can either type:</p>
+<p>The order of the extensions doesn't matter, and you can either type:</p>
 
 <p><code>pandoc --atx-header --wrap=none -s your_document_name.docx -t markdown -o your_document_name.md</code></p>
 

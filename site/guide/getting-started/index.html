@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -769,7 +773,7 @@
 
 <h4 id="data">📁 data</h4>
 
-<p>What content doesn’t live in <code>content</code> directory as a Markdown file, will live here in the <code>data</code> directory as a <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix <code>yml</code>, or inside a Markdown (<code>.md</code>) file.</span></span> file. A <code>publication.yml</code> file is required (read more in <a href="https://gettypubs.github.io/quire/guide/metadata-configuration/"><em>Publication Metadata &amp; Configuration</em></a>), but a Quire project may also include <code>references.yml</code> (<a href="https://gettypubs.github.io/quire/guide/citation-bibliographies/"><em>Citations &amp; Bibliographies</em></a>); <code>figures.yml</code> (<a href="https://gettypubs.github.io/quire/guide/figure-images/"><em>Figures</em></a>; and <code>objects.yml</code> (<a href="https://gettypubs.github.io/quire/guide/collection-catalogues/"><em>Catalogue Objects</em></a>).</p>
+<p>What content doesn’t live in <code>content</code> directory as a Markdown file, will live here in the <code>data</code> directory as a <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix <code>yml</code>, or inside a Markdown (<code>.md</code>) file. Read more in the <a href="https://gettypubs.github.io/quire/guide/fundamentals/"><em>Fundamentals: YAML &amp; Markdown</em></a> chapter of this guide.</span></span> file. A <code>publication.yml</code> file is required (read more in <a href="https://gettypubs.github.io/quire/guide/metadata-configuration/"><em>Publication Metadata &amp; Configuration</em></a>), but a Quire project may also include <code>references.yml</code> (<a href="https://gettypubs.github.io/quire/guide/citation-bibliographies/"><em>Citations &amp; Bibliographies</em></a>); <code>figures.yml</code> (<a href="https://gettypubs.github.io/quire/guide/figure-images/"><em>Figures</em></a>; and <code>objects.yml</code> (<a href="https://gettypubs.github.io/quire/guide/collection-catalogues/"><em>Catalogue Objects</em></a>).</p>
 
 <h4 id="static">📁 static</h4>
 
@@ -874,7 +878,7 @@
 
 <li><p><strong>Sub-directories can’t have other sub-directories within them.</strong> Quire currently supports only one level of nesting.</p></li>
 
-<li><p><strong>Don&rsquo;t use <code>index.md</code> or <code>_index.md</code> files.</strong> Though common for users with previous static-site or web development experience, you should not use <code>index.md</code> or <code>_index.md</code> files in your Quire project. Because of the way <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Hugo</span><span class="quire-definition__content">The static site generator that powers Quire: <a href="https://gohugo.io/" target="_blank">https://gohugo.io/</a></span></span> is modeled, these work against the linear ordering of the publication and break the <em>Next</em> and <em>Previous</em> page navigation in Quire.</p></li>
+<li><p><strong>Don't use <code>index.md</code> or <code>_index.md</code> files.</strong> Though common for users with previous static-site or web development experience, you should not use <code>index.md</code> or <code>_index.md</code> files in your Quire project. Because of the way <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Hugo</span><span class="quire-definition__content">The static site generator that powers Quire: <a href="https://gohugo.io/" target="_blank">https://gohugo.io/</a></span></span> is modeled, these work against the linear ordering of the publication and break the <em>Next</em> and <em>Previous</em> page navigation in Quire.</p></li>
 </ol>
 
 <h2 id="prepping-images-and-text">Prepping Images and Text</h2>

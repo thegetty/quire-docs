@@ -501,6 +501,18 @@ li .highlight:last-child {
   font-family: Lato, Helvetica, sans-serif;
 }
 
+/* fix margins on left and right floating images */
+
+.content .quire-figure.is-pulled-left {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+.content .quire-figure.is-pulled-right {
+  margin-left: 1.5rem;
+  margin-right: 0;
+}
+
 /* style tables */
 
 table {
@@ -516,6 +528,17 @@ strong code {
   padding-left: 0;
   padding-right: 0;
 }
+
+/* keep code in running text together */
+
+code {
+  white-space: nowrap;
+}
+
+pre code {
+  white-space: pre;
+}
+
 
 /* Improve definition list spacing (used in CLI guide page) */
 

@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -737,7 +741,7 @@ npm install -g</code></pre></div></li>
 <h2 id="windows-installation">Windows Installation</h2>
 
 <ol>
-<li><p>Download <strong>Git for Windows</strong> by clicking on &ldquo;Download&rdquo; at <a href="https://gitforwindows.org/" target="_blank">https://gitforwindows.org/</a>. An exe file will be downloaded, click on it and hit &ldquo;run&rdquo;, you should see a setup wizard screen that will install Git for Windows. During the installation, use the default settings.</p></li>
+<li><p>Download <strong>Git for Windows</strong> by clicking on &quot;Download&quot; at <a href="https://gitforwindows.org/" target="_blank">https://gitforwindows.org/</a>. An exe file will be downloaded, click on it and hit &quot;run&quot;, you should see a setup wizard screen that will install Git for Windows. During the installation, use the default settings.</p></li>
 
 <li><p>Download and install <strong>Node.js</strong> and <strong>npm</strong> at <a href="https://nodejs.org/en/download/" target="_blank">https://nodejs.org/en/download/</a>. Make sure you get the LTS version of Node.js, npm will be installed during the same process. The Windows installer will be downloaded, just open it and a setup wizard screen will guide you through the process.</p></li>
 
@@ -745,13 +749,13 @@ npm install -g</code></pre></div></li>
 
 <li><p>Download <strong>Pandoc</strong> for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc on your system.</p></li>
 
-<li><p>Open <strong>PowerShell</strong> (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select &ldquo;run as administrator&rdquo; from the context menu.</p>
+<li><p>Open <strong>PowerShell</strong> (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select &quot;run as administrator&quot; from the context menu.</p>
 
 <p>Then once you get the administrator PowerShell window, type the following command:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">npm install --g --production windows-build-tools</code></pre></div>
-<p>This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you&rsquo;ll see the prompt with your the name of your computer and your username once it&rsquo;s complete.</p></li>
+<p>This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with your the name of your computer and your username once it's complete.</p></li>
 
-<li><p>Continue using PowerShell, but this time it&rsquo;s not required to run it as administrator (you can close the administrator window and open a new one) and type the following command to download <strong>Quire CLI</strong> to your computer from GitHub:</p>
+<li><p>Continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one) and type the following command to download <strong>Quire CLI</strong> to your computer from GitHub:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">git clone https://github.com/gettypubs/quire-cli</code></pre></div>
 <p>A pop up window may emerge and ask you to type your GitHub username and password, then the download starts.</p>
 
@@ -761,7 +765,7 @@ npm install -g</code></pre></div></li>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">git checkout pc-dev</code></pre></div>
 <p>The following command will install dependencies:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">npm install -g</code></pre></div>
-<p>Installing the dependencies takes some time and you&rsquo;ll notice multiple text strings being generated on the screen during the process. Wait until the prompt with your username shows up and then, to verify that <code>quire-cli</code> has been installed correctly, type:</p>
+<p>Installing the dependencies takes some time and you'll notice multiple text strings being generated on the screen during the process. Wait until the prompt with your username shows up and then, to verify that <code>quire-cli</code> has been installed correctly, type:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">quire -V</code></pre></div>
 <p>If version number is returned, means that the install is correct.</p></li>
 
@@ -796,7 +800,7 @@ sudo gdebi prince_10r2-1_debian8.0_amd64.deb</code></pre></div>
 <p><sub>The script clones the nvm repository to <code>~/.nvm</code> and adds the source line to your profile (<code>~/.bash_profile</code>, <code>~/.zshrc</code>,      <code>~/.profile</code>, or <code>~/.bashrc</code>).</sub></p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#007020">export</span> <span style="color:#bb60d5">NVM_DIR</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$HOME</span><span style="color:#4070a0">/.nvm&#34;</span>
   <span style="color:#666">[</span> -s <span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$NVM_DIR</span><span style="color:#4070a0">/nvm.sh&#34;</span> <span style="color:#666">]</span> <span style="color:#666">&amp;&amp;</span> <span style="color:#4070a0;font-weight:bold">\.</span> <span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$NVM_DIR</span><span style="color:#4070a0">/nvm.sh&#34;</span> # This loads nvm</code></pre></div>
-<p><strong>Note:</strong> You can add <code>--no-use</code> to the end of the above script (&hellip;<code>nvm.sh --no-use</code>) to postpone using <code>nvm</code> until you manually <code>use</code> it.</p>
+<p><strong>Note:</strong> You can add <code>--no-use</code> to the end of the above script (...<code>nvm.sh --no-use</code>) to postpone using <code>nvm</code> until you manually <code>use</code> it.</p>
 
 <p>You can customize the install source, directory, profile, and version using the <code>NVM_SOURCE</code>, <code>NVM_DIR</code>, <code>PROFILE</code>, and <code>NODE_VERSION</code> variables.
 Eg: <code>curl ... | NVM_DIR=&quot;path/to/nvm&quot;</code>. Ensure that the <code>NVM_DIR</code> does not contain a trailing slash.</p>
@@ -807,12 +811,12 @@ Eg: <code>curl ... | NVM_DIR=&quot;path/to/nvm&quot;</code>. Ensure that the <co
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#007020">command</span> -v nvm</code></pre></div>
 <p>simply close your current terminal, open a new terminal, and try verifying again.</p>
 
-<p>If the above doesn&rsquo;t fix the problem, open your <code>.bash_profile</code> and add the following line of code:</p>
+<p>If the above doesn't fix the problem, open your <code>.bash_profile</code> and add the following line of code:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#007020">source</span> ~/.bashrc</code></pre></div>
 <p>For more information about this issue and possible workarounds, please <a href="https://github.com/creationix/nvm/issues/576" target="_blank">refer here</a>
 To verify that nvm has been installed, do:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#007020">command</span> -v nvm</code></pre></div>
-<p>which should output &lsquo;nvm&rsquo; if the installation was successful. Please note that <code>which nvm</code> will not work, since <code>nvm</code> is a sourced shell function, not an executable binary.
+<p>which should output 'nvm' if the installation was successful. Please note that <code>which nvm</code> will not work, since <code>nvm</code> is a sourced shell function, not an executable binary.
 To download, compile, and install the latest release of node, do this:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  nvm install --lts</code></pre></div>
 <p>And then in any new shell just use the installed version:</p>

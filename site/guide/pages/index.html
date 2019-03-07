@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Pages | Quire</title>
+  <title>Page Types &amp; Structure | Quire</title>
   <meta name="description" content="Quire is a digital publishing framework built on top of the Hugo static site generator. Generate Web, PDF, and print books (with Epub coming soon) from a single …">
   <meta name="keywords" content="lemons, oranges, marmalade, still life">
   <link rel="canonical" href="https://gettypubs.github.io/quire/guide/pages/">
@@ -26,21 +26,21 @@
   <meta name="dcterms.subject" content="oil pastels">
   <meta name="dcterms.subject" content="Still Life with Blue Pot">
   
-  <meta property="og:title" content="Pages" />
+  <meta property="og:title" content="Page Types &amp; Structure" />
   <meta property="og:url" content="https://gettypubs.github.io/quire/guide/pages/" /><meta property="og:image" content="https://gettypubs.github.io/quireimgpromo_image.png" /><meta property="og:description" content="Quire is a digital publishing framework built on top of the Hugo static site generator. Generate Web, PDF, and print books (with Epub coming soon) from a single …" /><meta property="og:type" content="article" />
   <meta property="og:site_name" content="Quire" />
   <meta property="og:article:published_time" content="" />
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="https://gettypubs.github.io/quire/guide/pages/">
-  <meta name="twitter:title" content="Pages">
+  <meta name="twitter:title" content="Page Types &amp; Structure">
   <meta name="twitter:description" content="Quire is a digital publishing framework built on top of the Hugo static site generator. Generate Web, PDF, and print books (with Epub coming soon) from a single …">
   <meta property="twitter:image" content="https://gettypubs.github.io/quireimgpromo_image.png" />
     <script type="application/ld+json">
   {
     "@context": "http://schema.org/",
     "@type": "Article",
-    "headline": "Pages",
+    "headline": "Page Types &amp; Structure",
     "url": "https://gettypubs.github.io/quire/guide/pages/",
     "description": "",
     "isPartOf": {
@@ -335,14 +335,14 @@
         
         <li class="quire-navbar-page-controls__item quire-current-page">
           <span class="visually-hidden">Current Page: </span>
-          <span class="quire-current-page__title">Pages</span>
+          <span class="quire-current-page__title">Page Types &amp; Structure</span>
         </li>
         
 
         
 
 <li class="quire-navbar-button arrow-button">
-  <a href="https://gettypubs.github.io/quire/guide/figure-images/" rel="next" id="js-next">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/" rel="next" id="js-next">
     <svg>
       <switch>
         <use xlink:href="#right-arrow-icon"></use>
@@ -442,7 +442,11 @@
 </li>
             
               <li class="page-item this-page with-page-nav">
-  <a href="https://gettypubs.github.io/quire/guide/pages/">Pages</a>
+  <a href="https://gettypubs.github.io/quire/guide/pages/">Page Types &amp; Structure</a>
+</li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/page-content/">Page Content</a>
 </li>
             
               <li class="page-item">
@@ -480,6 +484,10 @@
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">Multiformat Output</a>
 </li>
+            
+              <li class="page-item">
+  <a href="https://gettypubs.github.io/quire/guide/github/">GitHub for Quire</a>
+</li>
             </ul></li>
           <li class="section-item no-landing"><div class="list-header title">Api-Docs</div><ul>
               <li class="page-item">
@@ -501,10 +509,6 @@
             
               <li class="page-item">
   <a href="https://gettypubs.github.io/quire/resources/default-styleguide/">Default Styleguide</a>
-</li>
-            
-              <li class="page-item">
-  <a href="https://gettypubs.github.io/quire/resources/github/">GitHub for Quire</a>
 </li>
             
               <li class="page-item">
@@ -633,9 +637,9 @@
 
 <section class="quire-page__header hero "><div class="container">
       
-      <h1 class="quire-page__header__title" id="pages">
+      <h1 class="quire-page__header__title" id="page-types--structure">
         
-        Pages
+        Page Types &amp; Structure
         
       </h1>
 
@@ -669,19 +673,7 @@
     
       
       
-      <li class="main-heading"><a href="#displaying-your-pages">Displaying your Pages</a></li>
-    
-      
-      
-      <li class="main-heading"><a href="#formatting-text-content-with-markdown">Formatting Text Content with Markdown</a></li>
-    
-      
-      
-      <li class="main-heading"><a href="#applying-types-of-linking">Applying Types of Linking</a></li>
-    
-      
-      
-      <li class="main-heading"><a href="#using-shortcodes-to-add-features">Using Shortcodes to Add Features</a></li>
+      <li class="main-heading"><a href="#hiding-showing-pages">Hiding/Showing Pages</a></li>
     
     </ul>
   </div>
@@ -692,35 +684,611 @@
       <div class="content">
         
 
-<p>Every page in a Quire publication starts with a block of YAML (discussed further in the <a href="https://gettypubs.github.io/quire/guide/metadata-configuration/"><em>Metadata &amp; Configuration</em></a> page of this guide). The three core attributes you’re probably going to define on every page are <code>title</code>, <code>type</code>, and <code>weight</code>. All page YAML, no matter how many attributes it has, goes between a set of three dashes, at the very top of the page.</p>
+<p>Every page in a Quire publication starts with a block of <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">YAML</span><span class="quire-definition__content">YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix <code>yml</code>, or inside a Markdown (<code>.md</code>) file. Read more in the <a href="https://gettypubs.github.io/quire/guide/fundamentals/"><em>Fundamentals: YAML &amp; Markdown</em></a> chapter of this guide.</span></span>. The three core attributes you’re probably going to define on every page are <code>title</code>, <code>type</code>, and <code>weight</code>. All page YAML, no matter how many attributes it has, goes between a set of three dashes, at the very top of the page.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---<span style="color:#bbb">
 </span><span style="color:#bbb"></span>title:<span style="color:#bbb">
 </span><span style="color:#bbb"></span>type:<span style="color:#bbb">
 </span><span style="color:#bbb"></span>weight:<span style="color:#bbb">
 </span><span style="color:#bbb"></span>---</code></pre></div>
+<p>Much more information about the page than just these three attributes can be included. A more complete example would be:</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---<span style="color:#bbb">
+</span><span style="color:#bbb"></span>label:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>title:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>subtitle:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>short_title:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>object:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>-<span style="color:#bbb"> </span>id:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>contributor:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>-<span style="color:#bbb"> </span>id:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>abstract:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>type:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>class:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>weight:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>slug:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>---</code></pre></div>
+<p>For more details on this full list of possible attributes that Quire can use in page YAML, see the <a href="https://gettypubs.github.io/quire/api-docs/yaml/#page">Page YAML</a> section of the Quire API docs.</p>
+
 <h2 id="defining-page-types">Defining Page Types</h2>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">type:</code></pre></div>
+<p>The page <code>type</code> must be one of six possible values: <code>page</code>, <code>essay</code>, <code>entry</code>, <code>cover</code>, <code>contents</code>, or <code>splash</code>. If left blank, or if any other value besides these six is entered, the type will default to <code>page</code>. (A seventh page type, <code>data</code>, is available for special applications such as the pre-built search index. New page types can be created to customize Quire projects even further.)</p>
 
-<p>The page <code>type</code> must be one of nine possible values: <code>page</code>, <code>essay</code>, <code>entry</code>, <code>cover</code>, <code>contents</code>, <code>about</code>, <code>search</code>, or <code>data</code>. If left blank, or if any other value besides these nine is entered, the <code>type</code> will default to &ldquo;page&rdquo;.</p>
 
-<p><code>page</code>: The default value. A general publication page. Used for introductions, forewords, chapters, appendices and other pages.</p>
 
-<p><code>essay</code>: Meant to be a standalone, self-contained article in a periodical or collected volume. The <code>essay</code> page type will typically include the contributor names and potentially bios, its own bibliography, and an abstract. This is also reflected in the metadata embedded in the page as well, which will describe the page more specifically and with more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole.</p>
 
-<p><code>entry</code>: An entry in a catalogue of objects. Typically includes a large, zoomable image of the object, with a table of object details and narrative text. You can learn more about entries in the <a href="https://gettypubs.github.io/quire/guide/collection-catalogues/"><em>Catalogues</em> page</a>of this guide</p>
 
-<p><code>cover</code>: The cover of your publications. Typically a full-screen splash page with large title, with cover description and publication information below. Along with defining <code>type: cover</code>, you will usually want to also add <code>slug: .</code> so that the cover page URL is the base URL of your site (your homepage). You can find more details about how to use <code>slug</code> in <a href="#creating-section-landing-pages">Creating section landing pages</a> below.</p>
 
-<p><code>contents</code>: Automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory. The <code>tocType</code> can be set to either <code>full</code> or <code>short</code> in the publication’s <code>config.yml</code> file. The <code>full</code> option will typically list and link to all main pages, sections and section pages. The <code>short</code> option will list and link to main pages and sections only, not the pages within the section. The <code>contents</code> page type can also be customized with four classes: <code>brief</code>, <code>list</code>, <code>abstract</code>, or <code>grid</code>.</p>
 
-<p><code>about</code>: The about page will typically include the publication description, citation information, revision history, downloads and other formats, copyright and license information and more. This can be used also for a traditional copyright page for the PDF output format.</p>
 
-<p><code>data</code>: Description TK</p>
 
-<p><code>search</code>: Description TK</p>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-cover'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-cover.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: cover</code></strong> <br /> Cover page in the default modern theme. A custom cover image can be added in the YAML of the cover page: <code>image: my-cover-image.jpg</code>.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-page'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-page.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: page</code></strong> (default) <br /> The basic, default Quire page with title, page content, links and a list. A general publication page. Used for introductions, forewords, chapters, appendices and other pages. Also showing the progress bar at the top that indicates a reader’s place in the publication.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-contents-list'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-contents-list.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: contents</code></strong> <br /> <strong><code>class: list</code></strong> (default)<br /> The default contents page showing the title, subtitle and contributors for each main page and sub-section page. This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-contents-brief'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-contents-brief.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: contents</code></strong> <br /> <strong><code>class: brief</code></strong> <br /> A minimal version of the contents page showing only the title for each main page. Sub-section pages have been optionally hidden using the <code>tocType: short</code> option in the config.yml file.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-contents-abstract'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-contents-abstract.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: contents</code></strong> <br /> <strong><code>class: abstract</code></strong> <br /> A maximal version of the contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-contents-grid'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-contents-grid.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: contents</code></strong> <br /> <strong><code>class: grid</code></strong> <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an <a href="https://gettypubs.github.io/quire/guide/collection-catalogues/">object entry page</a>. Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-splash'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-splash.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: splash</code></strong> <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-essay'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-essay.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: essay</code></strong> <br /> An essay page showing a page label, contributor, abstract, figure group, links, and footnotes. The essay is a standalone, self-contained article in a periodical or collected volume. This is also reflected in the metadata embedded in the page, which will include more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-entry'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-entry.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: entry</code></strong> <br /> <strong><code>class: landscape</code></strong> (default) <br /> An entry page with entry text below and a nearly full-frame image viewer that supports zooming images, maps and videos.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-entry-side'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-entry-side.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    <strong><code>type: entry</code></strong> <br /> <strong><code>class: side-by-side</code></strong> <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including <code>entryPageSideBySideLayout: true</code> in the config.yml file of the project.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+<p>Along with <code>type</code>, Quire pages can also have a <code>class</code>. These can be used to facilitate custom styling, but as illustrated above, there are also a number of pre-defined classes that can be applied specifically to the <code>contents</code> and <code>entry</code> page types to give some further control over the layouts of those pages.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">type:<span style="color:#bbb"> </span>contents<span style="color:#bbb">
+</span><span style="color:#bbb"></span>class:<span style="color:#bbb"> </span>list<span style="color:#bbb"> </span>(default)<span style="color:#bbb"> </span><span style="color:#4070a0;font-style:italic">| brief | abstract | grid</span></code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">type:<span style="color:#bbb"> </span>entry<span style="color:#bbb">
+</span><span style="color:#bbb"></span>class:<span style="color:#bbb"> </span>landscape<span style="color:#bbb"> </span>(default)<span style="color:#bbb"> </span><span style="color:#4070a0;font-style:italic">| side-by-side</span></code></pre></div>
 <h2 id="putting-pages-in-the-right-order">Putting Pages in the Right Order</h2>
-
-<p>In this example publication outline we’ve listed the files and directories as we would like them to appear in the publication’s table of contents.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">weight:</code></pre></div>
+<p>In the following example publication outline, we’ve listed the files and directories as we would like them to appear in the publication’s table of contents.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">📄 cover.md<span style="">
 </span><span style=""></span>📄 contents.md<span style="">
 </span><span style=""></span>📁 part-one<span style="">
@@ -734,7 +1302,14 @@
 
 <p>The page <code>weight</code> is a number and will determine the order in which the page appears in the publication. For example, the <code>contents.md</code> file in the example above, the second page in our book, would be <code>weight: 2</code>.</p>
 
-<p>Numbering should be unique, and sequential whole numbers, but it can skip numbers. So, if there’s no page with <code>weight: 3</code>, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at &ldquo;0&rdquo;, your first section might be &ldquo;100&rdquo;, second section &ldquo;200&rdquo; and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.</p>
+<p>Numbering should be unique, and sequential whole numbers, but it can skip numbers. So, if there’s no page with <code>weight: 3</code>, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at &quot;0&quot;, your first section might be &quot;100&quot;, second section &quot;200&quot; and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.</p>
+
+<section class="box tip">
+  <ul>
+<li>Add <code>class: page-one</code> to the page/chapter where you want page 1 to start for the PDF/Print output. This is often an Introduction or first essay rather than the cover, table of contents, or other frontmatter.</li>
+</ul>
+
+</section>
 
 <h2 id="creating-section-landing-pages">Creating Section Landing Pages</h2>
 
@@ -747,120 +1322,22 @@
 
 <p>However, the filename of the sub-directory itself is also used in your publication; for the online navigation bar, and in the running page footers of the PDF version. In these two places, Quire takes the sub-directory filename and humanizes it, which means to change hyphens into spaces and capitalize with title case. So, the sub-directory <code>part-one</code> becomes “Part One”, or <code>sculpture-of-the-renaissance</code> becomes “Sculpture of the Renaissance.”</p>
 
-<h2 id="displaying-your-pages">Displaying your Pages</h2>
+<h2 id="hiding-showing-pages">Hiding/Showing Pages</h2>
 
-<p>By default, every page you create will be included in all formats of your publication (online, PDF/print, and e-book) and will automatically be listed in the publication’s menu and <em>Table of Contents</em>. However, this can be overridden by setting any of the following attributes under <code>display</code> in the page YAML to <code>false</code>:</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">display:<span style="color:#bbb">
-</span><span style="color:#bbb">  </span>online:<span style="color:#bbb">
-</span><span style="color:#bbb">  </span>menu:<span style="color:#bbb">
-</span><span style="color:#bbb">  </span>pdf_ebook:<span style="color:#bbb">
-</span><span style="color:#bbb">  </span>toc:</code></pre></div>
-<section class="box">
-  Note that when setting <code>online: false</code>, the page will not be included in the linear ordering of the book or in the menu, table of contents or search index, but it is still built. When deploying your site from the built files in the <code>public/</code> directory, simply delete any unneeded ones. Read <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">more about site deployment</a> in the chapter on <em>Multi-Format Output</em>.
+<p>By default, every page you create will be included in all formats of your publication (online, PDF/print, and e-book). Every page will also automatically be listed in the publication’s menu and contents pages. However, this can be overridden by setting any of the following Page YAML attributes to <code>false</code>.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">toc:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>menu:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>online:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>pdf:<span style="color:#bbb">
+</span><span style="color:#bbb"></span>epub:</code></pre></div>
+<p>This allows you to do things like including an About page in your online edition, but a more traditional Copyright page in print. Or to substitute a simple splash page as a section break in the print, for the more elaborate contents grid you might use online.</p>
+
+<section class="box tip">
+  <ul>
+<li>Note that when setting <code>online: false</code>, the page will not be included in the linear ordering of the book or in the menu, table of contents or search index, but it is still built. When deploying your site from the built files in the <code>/site/</code> directory, simply delete any unneeded ones. Read <a href="https://gettypubs.github.io/quire/guide/multiformat-output/">more about site deployment</a> in the chapter on <em>Multi-Format Output</em>.</li>
+</ul>
+
 </section>
-
-<h2 id="formatting-text-content-with-markdown">Formatting Text Content with Markdown</h2>
-
-<p>The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it italic. You can learn more about Markdown syntax in the <a href="https://gettypubs.github.io/quire/guide/fundamentals/"><em>Markdown fundamentals</em> section</a> of this guide.</p>
-
-<h2 id="applying-types-of-linking">Applying Types of Linking</h2>
-
-<p>There are several types of linking that can be applied to text on your page. Stylization such as bolding, italics, underlining, and more can also be applied to linked text.</p>
-
-<h3 id="external-links">External Links</h3>
-
-<p>External links can be included through the following Markdown formatting:</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">[<span style="color:#062873;font-weight:bold">Link text</span>](<span style="color:#4070a0">http://www.linkaddress.com</span>)<span style="">
-</span><span style=""></span>[<span style="color:#062873;font-weight:bold">Getty Museum</span>](<span style="color:#4070a0">http://www.getty.edu/museum/</span>)</code></pre></div>
-<h3 id="internal-links-between-pages">Internal Links Between Pages</h3>
-
-<p>Internal links between pages in your Quire publication can be included through the following Markdown formatting:</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">[<span style="color:#062873;font-weight:bold">Link text</span>](<span style="color:#4070a0">../nameofpage/</span>)<span style="">
-</span><span style=""></span>[<span style="color:#062873;font-weight:bold">Pea Pickers</span>](<span style="color:#4070a0">../catalogue/2</span>)<span style="">
-</span><span style=""></span>More info in our [<span style="color:#062873;font-weight:bold">about</span>](<span style="color:#4070a0">../about/</span>) page.</code></pre></div>
-<h3 id="internal-links-within-a-page-between-elements">Internal Links Within a Page / Between Elements</h3>
-
-<p>There are several types of linking between features, text, or objects on a single page that can be included through the following Markdown formatting:</p>
-
-<ul>
-<li><p>Callouts to figures (# are used for figures):</p>
-
-<ul>
-<li>This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the <code>figures.yml</code> page as explained in the <a href="https://gettypubs.github.io/quire/guide/figure-images/"><em>Figure Images</em> section</a> of this guide.</li>
-</ul>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">  [<span style="color:#062873;font-weight:bold">number or name of figure</span>](<span style="color:#4070a0">#figureid</span>)<span style="">
-</span><span style=""></span>  [<span style="color:#062873;font-weight:bold">fig. 1</span>](<span style="color:#4070a0">#1.1</span>)</code></pre></div></li>
-
-<li><p>Linking to other page elements (# is also used for other elements on the same page):</p>
-
-<ul>
-<li>The IDs for other elements can be found using the following method:</li>
-<li>Use the Inspect Element tool when right clicking a page or specific element. For Safari users, refer to this <a href="https://apple.stackexchange.com/questions/139767/inspect-element-in-safari" target="_blank">guide</a> to enable this feature.</li>
-<li>In the page&rsquo;s code certain elements will include a piece of code, <code>id=&quot;idnamehere&quot;</code> that designates the ID of that element. If the name of the element has a space that will be represented with a dash <code>-</code>.</li>
-
-<li><p>For example, the ID of a heading will often be the name of that heading.</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">[<span style="color:#062873;font-weight:bold">referencetolink</span>](<span style="color:#4070a0">#element-id</span>)<span style="">
-</span><span style=""></span>See [<span style="color:#062873;font-weight:bold">heading 1</span>](<span style="color:#4070a0">#heading-1</span>).</code></pre></div></li>
-</ul></li>
-
-<li><p>Linking to elements on a separate page</p>
-
-<ul>
-<li>Following the formula for internal links between pages, you can also specify an element on a separate page as a link destination.</li>
-</ul>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">  [<span style="color:#062873;font-weight:bold">referencetolink</span>](<span style="color:#4070a0">../nameofpage/#idname</span>)<span style="">
-</span><span style=""></span>  See the introduction [<span style="color:#062873;font-weight:bold">notes</span>](<span style="color:#4070a0">../introduction/#notes</span>)</code></pre></div>
-<section class="box">
-  Blackfriday, the built in Markdown processor, will incorrectly create link even if there is a space between the bracketed text and the parentheses when there is some text in brackets followed immediately by more text in parentheses. To avoid the linking, you can use a backslash escape character before the first parentheses.
-</section></li>
-
-<li><p>Footnotes within a page, NOT bibliography or citations shortcodes:</p>
-
-<ul>
-<li>With this, a numbered footnote in the text when clicked upon will take a user to the corresponding area of the page where the full citation is located. The reverse is true from the linked number or arrow from the full citation.</li>
-<li>This requires two parts:</li>
-<li>Within the main body text, in a spot where you would like a footnote to be included will be set up as the following:
-
-<ul>
-<li><code>Example text.[^#]</code></li>
-<li><code>&quot;A photographic study of use of leisure time in various income groups.&quot;[^1]</code></li>
-</ul></li>
-<li>At the end of the main body text, one can designate a “Notes” or related subheading using ## or ###. Underneath that heading the information of the citation will be listed using this format:
-
-<ul>
-<li><code>[^#]: Corresponding citation information.</code></li>
-<li><code>[^1]: Roy Stryker to all FSA (then RA) photographers, outline for first published in Carver, *Just Before the War*, n.p.</code></li>
-</ul></li>
-<li>You can find additional information about formatting notes text with Markdown in the <a href="https://gettypubs.github.io/quire/guide/fundamentals#markdown-basics"><em>Markdown fundamentals</em> section</a> of this guide.</li>
-</ul></li>
-
-<li><p>Citation and Bibliography shortcode linking:</p>
-
-<ul>
-<li>When the citation shortcode, <code>{{&lt; q-cite &quot;author date&quot; &quot;page # if applicable&quot; &gt;}}</code> is used in body of text, that corresponds to the short and full bibliographic information provided in the <code>references.yml</code>, an in-page bibliography will be generated. This linking is completed automatically.</li>
-<li>When the short code is used in the page the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.</li>
-<li>For more information see the <a href="https://gettypubs.github.io/quire/guide/citation-bibliographies/">Citations &amp; Bibliography</a> section of this guide.</li>
-</ul></li>
-</ul>
-
-<h2 id="using-shortcodes-to-add-features">Using Shortcodes to Add Features</h2>
-
-<p>Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain text markup. While <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Hugo</span><span class="quire-definition__content">The static site generator that powers Quire: <a href="https://gohugo.io/" target="_blank">https://gohugo.io/</a></span></span> has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a <code>q</code>.</p>
-
-<p>Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (<code>{{&lt; shortcode &gt;}}</code>) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding <code>id</code> with figure information stored in the publication’s <code>figures.yml</code> file.</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>figure id=<span style="color:#4070a0">&#34;3.1&#34;</span> &gt;}}</code></pre></div>
-<p>While most Quire shortcodes work like <code>q-figure</code> as a single instance, some shortcodes act as wrappers around other text and so appear in pairs, with the second of the pair having a slash <code>/</code> preceding the shortcode name, much like you’d find in HTML markup.</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>class <span style="color:#4070a0">&#34;backmatter&#34;</span> &gt;}}Text goes here{{&lt; <span style="color:#666">/</span>q<span style="color:#666">-</span>class &gt;}}</code></pre></div>
-<p>The following shortcodes are (or will be) available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the <a href="https://gettypubs.github.io/quire/api-docs/shortcodes/">shortcodes api reference</a>.</p>
-
-<ul>
-<li><code>q-class</code>: Wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom css styles or interactions as needed.</li>
-<li><a href="https://gettypubs.github.io/quire/guide/citation-bibliographies/"><code>q-bibliography</code></a>: Generates a bibliography from the entries in the project&rsquo;s <code>bibiliography.yml</code> file.</li>
-<li><a href="https://gettypubs.github.io/quire/guide/citation-bibliographies/"><code>q-cite</code></a>: Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.</li>
-<li><a href="https://gettypubs.github.io/quire/guide/contributor/"><code>q-contributors</code></a>: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.</li>
-<li><a href="https://gettypubs.github.io/quire/guide/figure-images/"><code>q-figure</code></a>: Inserts a formatted figure image (including audio and video) and caption using data from the project’s <code>figures.yml</code> file, or from values supplied directly in the shortcode.</li>
-<li><a href="https://gettypubs.github.io/quire/guide/figure-images/"><code>q-figure-group</code></a>: Like <code>q-figure</code>, but with handling for multiple images at once.</li>
-</ul>
 
         
 </section>

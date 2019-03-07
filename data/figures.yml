@@ -93,4 +93,40 @@ figure_list:
   - id: "command-line-drag-and-drop"
     src: /screenshots/command-line-drag-and-drop.gif
     caption: ""
-
+  - id: "github-desktop-initial-commit"
+    src: /screenshots/github-desktop-initial-commit.png
+    caption: "In GitHub Desktop, files with changes will be listed at left, and a detailed red (old version) and green (new version) highlighted “diff” of individual changes will appear at right. The Commit to Master button in the lower left adds these changes to your project’s git repository."
+  - id: "github-desktop-publish"
+    src: /screenshots/github-desktop-publish.png
+    caption: "When publishing a new project repository to GitHub leave the name the same as your project file. You can add add a description if you’d like, can choose whether to make it private or not if you have a paid account, or publish it to an organization account if you have publishing access to one."
+  - id: "modern-cover"
+    src: /screenshots/modern-cover.png
+    caption: "**`type: cover`** <br /> Cover page in the default modern theme. A custom cover image can be added in the YAML of the cover page: `image: my-cover-image.jpg`."
+  - id: "modern-page"
+    src: /screenshots/modern-page.png
+    caption: "**`type: page`** (default) <br /> The basic, default Quire page with title, page content, links and a list. A general publication page. Used for introductions, forewords, chapters, appendices and other pages. Also showing the progress bar at the top that indicates a reader’s place in the publication."
+  - id: "modern-contents-list"
+    src: /screenshots/modern-contents-list.png
+    caption: "**`type: contents`** <br /> **`class: list `** (default)<br /> The default contents page showing the title, subtitle and contributors for each main page and sub-section page. This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory."
+  - id: "modern-contents-abstract"
+    src: /screenshots/modern-contents-abstract.png
+    caption: "**`type: contents`** <br /> **`class: abstract`** <br /> A maximal version of the contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
+  - id: "modern-contents-brief"
+    src: /screenshots/modern-contents-brief.png
+    caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each main page. Sub-section pages have been optionally hidden using the `tocType: short` option in the config.yml file."  
+  - id: "modern-contents-grid"
+    src: /screenshots/modern-contents-grid.png
+    caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/guide/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."  
+  - id: "modern-splash"
+    src: /screenshots/modern-splash.png
+    caption: "**`type: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."
+  - id: "modern-essay"
+    src: /screenshots/modern-essay.png
+    caption: "**`type: essay`** <br /> An essay page showing a page label, contributor, abstract, figure group, links, and footnotes. The essay is a standalone, self-contained article in a periodical or collected volume. This is also reflected in the metadata embedded in the page, which will include more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole."
+  - id: "modern-entry"
+    src: /screenshots/modern-entry.png
+    caption: "**`type: entry`** <br /> **`class: landscape`** (default) <br /> An entry page with entry text below and a nearly full-frame image viewer that supports zooming images, maps and videos."
+  - id: "modern-entry-side"
+    src: /screenshots/modern-entry-side.png
+    caption: "**`type: entry`** <br /> **`class: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `entryPageSideBySideLayout: true` in the config.yml file of the project."
+    
