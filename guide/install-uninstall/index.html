@@ -850,9 +850,10 @@ To download, compile, and install the latest release of node, do this:</p>
 <p>As we develop, you may also want/need to update your Quire CLI. The CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI, any new projects you start will have the corresponding older version of the theme.</p>
 
 <ol>
-<li><p>In your User/Home directory where you initially installed Quire, look for the <code>quire-cli</code> folder and delete it.</p></li>
+<li><p>In your command line shell, to first uninstall and discard the existing version of the CLI, enter the following four commands in order:</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">cd quire-cli</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">npm uninstall -g</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">cd</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">rm -rf quire-cli</code></pre></div></li>
 
-<li><p>In your command line shell, enter the following three commands in order:</p>
+<li><p>Still in your command line shell, enter these three commands to download the latest version and install it:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">git clone https://github.com/gettypubs/quire-cli.git</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">cd quire-cli</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">npm install -g</code></pre></div></li>
 </ol>
 
