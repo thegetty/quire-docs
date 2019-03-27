@@ -34,8 +34,8 @@ Sometimes, rather than a plain list, you may want your contributors listed in a 
 
 ```yaml
 contributor_as_it_appears: as told by Beyoncé, Kelly Rowland, 
-  and Michelle Williams <br /> *with an introduction by Aretha 
-  Franklin*
+  and Michelle Williams <br /> *with an introduction by Diana
+  Ross*
 ```
 
 {{< q-figure id="modern_contributors-cover" >}}

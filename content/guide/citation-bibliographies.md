@@ -24,31 +24,53 @@ These references can then be called individually from within text using the `q-c
 
 ## Adding Inline Text Citations
 
-The `q-cite` shortcode adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which can be output as a page-level bibliography on pages with a `type` of `"essay"` and `"entry"`, as explained [below](#displaying-a-bibliography).
+The `q-cite` shortcode adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which is output as a page-level bibliography, as explained [below](#displaying-a-bibliography).
+
+{{< q-figure id="modern-citation-hover" >}}
+
+{{< q-figure id="modern-bibliography-page" >}}
+
+The first positional parameter of the `q-cite` shortcode is a short form citation that should match one in `references.yml`. The second, *optional* parameter is a page reference. The following sample would output as: Faure 1909, 54.
 
 ```go
 {{</* q-cite "Faure 1909" "54" */>}}
 ```
-The shortcode can be used anywhere in your Markdown text, including within footnotes. The first positional parameter is a short form citation that should match one in `references.yml`. The second, optional parameter is a page reference (if needed). The above sample would output as: “Faure 1909, 54”.
 
-{{< q-class "box" >}} The text element between the author date reference and the page (in this case, a comma and a space) can be changed with the `citationPageLocationDivider` property in your publication’s `config.yml` file according to your preferred citation style. {{< /q-class >}}
+A third optional parameter allows you to customize the text to appear in the link if not the short form of the citation. The following sample would appear simply as: 1909, 54.
+
+```go
+{{</* q-cite "Faure 1909" "54" "1909" */>}}
+```
+
+In using this third parameter, you still need to have the second parameter even if it’s empty. The following sample would appear simply as: 1909.
+
+```go
+{{</* q-cite "Faure 1909" "" "1909" */>}}
+```
+
+The text element between the author date reference and the page can be changed with the `citationPageLocationDivider` property in `config.yml`. The humanities tend to favor comma separation (which is the default in Quire), whereas the sciences typically favor a colon.
+
+The `q-cite` shortcode can be used anywhere in your Markdown text, including within footnotes.
+
 
 ## Displaying a Bibliography
 
-Pages in your publication with a `type` of `"essay"` or `"entry"`, will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode.
-
-However, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yml` file, you can use the `q-bibliography` shortcode. The resulting bibliography will be output in the order in which it appears in the references file.
+Pages in your publication will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode. However, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yml` file, you can use the `q-bibliography` shortcode. The resulting bibliography will be output in the order in which it appears in the references file.
 
 ```go
 {{</* q-bibliography */>}}
 ```
-{{< q-class "box" >}}You may create one page in your publication where the bibliography will be displayed. All you need is to add the `q-bibliography` shortcode after the YAML block. {{< /q-class >}}
+
+{{< q-figure id="modern-bibliography" >}}
+
+
+This shortcode accepts an optional `sort` value, which will sort the list by whatever key from the entries is given. Often `"short"` or `"full"`, though a custom key could be added, such as `"sort_as"`, for fine-grained control. Without a `sort` value given, the bibliography will be output in the order in which it appears in the references file.
 
 ```go
 {{</* q-bibliography sort="short" */>}}
 ```
 
-You may in some cases find that the system’s default sort method is sub-optimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key such as `sort_as` could be added to all entries in the `references.yml` file for fine-grained control.
+You may in some cases find that the system’s default sort method is sub-optimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key like `"sort_as"` could be added to all entries in the `references.yml` file for fine-grained control.
 
 ```yaml
 entries:
@@ -57,10 +79,10 @@ entries:
   - short: "Dickinson 1932"
     sort_as: "dickinson-emily"
 ```
-{{< q-class "box" >}}This custom key would need to be added to *all* entries, not just the one that need to be sorted differently than the default.{{< /q-class >}}
+{{< q-class "box warning" >}}
+- If adding a custom sort key, it would need to be added to *all* entries, not just the one that need to be sorted differently than the default.
+{{< /q-class >}}
 
 ### Displaying the Short Reference in Bibliographies
 
-Bibliographies displayed on pages with a `type` of `essay` or `entry`, and those generated with the `q-bibliography` shortcode, can be just a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.
-
-Additionally, to change the sort, the `q-bibliography` shortcode accepts an optional `sort` value, which will sort the list by whatever key from the entries is given. Often `"short"` or `"full"`.
+Bibliographies displayed automatically at the bottom of pages, and those generated with the `q-bibliography` shortcode, can be just a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.

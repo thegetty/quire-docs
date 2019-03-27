@@ -149,5 +149,17 @@ figure_list:
   - id: "modern_contributors-bio"
     src: /screenshots/modern_contributors-bio.png
     caption: "The most full-featured way to list contirbutors is with the `bio` format. It includes the contributor’s name, bio, picture, an offsite link to their personal site, and a link to any contributions they made to the publication."
+  
+  - id: "modern-citation-hover"
+    src: /screenshots/modern-citation-hover.png
+    caption: "By using the `q-cite` shortcode, you can add citations that appear when hovering over the linked text. Clicking the link brings you to a bibliography at the bottom of the page."
+  
+  - id: "modern-bibliography-page"
+    src: /screenshots/modern-bibliography-page.png
+    caption: "Any citations added to a page with `q-cite` are automatically added to a bibliography list at the bottom of the page."
+  
+  - id: "modern-bibliography"
+    src: /screenshots/modern-bibliography.png
+    caption: "A bibliography of all works in your project’s references.yml file can be added to any page with the `q-bibliography` shortcode."
     
     
