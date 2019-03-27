@@ -107,6 +107,6 @@ item: |
 
 {{</* q-bibliography */>}}
 
-{{</* q-contributors range="xxxx" type="xxxx" */>}}
+{{</* q-contributor range="xxxx" type="xxxx" */>}}
 
 ```

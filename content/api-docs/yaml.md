@@ -197,24 +197,22 @@ Type: Object
 
 ## Contributor
 
-Location: `contributor` in `publication.yml` or in any `.Page.Params.`
+Location: `contributor` in publication.yml or in any `.Page.Params.`
 
-Type: Array
+Type: Array 
 
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 | `id` |  |  |
-| `type` | "primary", "secondary", "project-team" |  |
-| `first_name` |  |  |
+| `type` | "primary", "secondary", or user choice |  |
+| `first_name` |  | All contributors must have either a first and last name, or a full name defined. |
 | `last_name` |  |  |
 | `full_name` |  |  |
 | `file_as` |  |  |
 | `title` |  |  |
 | `affiliation` |  |  |
-| `role` |  |  |
-| `role_code` | 3-letter role code | Taken from the list at https://www.loc.gov/marc/relators/relaterm.html |
-| `url` |  |  |
-| `bio` |  |  |
+| `url` | URL |  |
+| `bio` | | Markdwon okay. |
 | `pic` |  |  |
 
 ## Figure

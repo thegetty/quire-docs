@@ -24,45 +24,43 @@ Basic Usage: Adds a linked Author Date citation reference to the text, and a hov
 
 See: [Citations & Bibliographies](/guide/citation-bibliographies/)
 
-## `q-contributors`
+## `q-contributor`
 
-Sample: `{{</* q-contributors range="page" type="bio" */>}}`
+Sample: `{{</* q-contributor range="page" format="bio" align="center" */>}}`
 
 Basic Usage: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
 
-Required Named Parameters: "range" and "type"
+Required Named Parameters: "range" and "format"
 
-### type
+### format
 
-| Expected Value | Description                              |
-| -------------- | ---------------------------------------- |
-| "initials"     | Looks for the capital letters in a contributor first and last name and concatenates them together. |
-| "name"         | Just the first and last name.            |
-| "name-plus"    | The first and last name with, when available, their title and affiliation on a line below. |
-| "bio"          | First and last name, with pic, url, and bio as available. Plus a link to their contribution. |
+| Value | Description |
+| --- | --- |
+|`initials` | Looks for the capital letters in a contributor first and last name and concatenates them together. Jane Pauley, becomes J.P.; Ralph Waldo Emerson becomes R.W.E. |
+| `name` | Just the name. |
+| `name-title` | The name and, when available, the title and affiliation; on a single line |
+| `name-title-block` | The name and, when available, the title and affiliation; broken onto separate lines. |
+| `bio` | The name and, when available, a picture, offsite link to their personal site, and a bio. Plus links to any individual pages in the project for which they are listed as a contributor. |
 
 ### range
 
-| Expected Value     | YAML Location                            | Description                              |
-| ------------------ | ---------------------------------------- | ---------------------------------------- |
-| "page"             | `.Page.Params.contributor`               | In the current Page under `contributor`  |
-| "essays"           | `.Site.Pages.Params.contributor`         | In any Page with a `type: essay` under `contributor` |
-| "all"              | `.Site.Pages.Params.contributor`         | In all Pages under `contributor`         |
-| "primary"          | `.Site.Data.publication.contributor` with a `type` of "primary" | In `publication.yml` under `contributor` |
-| "secondary"        | `.Site.Data.publication.contributor` with a `type` of "secondary" | In `publication.yml` under `contributor` |
-| "project-team" | `.Site.Data.publication.contributor` with a `type` of "project-team" | In `publication.yml` under `contributor` |
+| Value | Description |
+| --- | --- |
+|`page` | Only the contributors listed for the page the shortcode appears on. |
+| `all` | All contributors listed in the publication, whether listed on individual pages or in the publication.yml file. |
 
-YAML Structure:
+You can also use any contributor `type` you define. So if you give a contributor a `type: primary` then a shortcode using `range="primary"` will list any of your project’s primary contributors. 
 
-| YAML Attribute | Required | Notes
-| --- | --- | --- |
-| Either both `first_name` and `last_name`, OR `full_name` | Y | If all are included, `full_name` will override the others. |
-| `title` | N |  |
-| `affiliation` | N |  |
-| `role` | N | When the shortcode range is "publication-team", `role` is used in place of `title` |
-| `bio` | N | Markdown okay |
-| `url` | N |  |
-| `pic` | N | Filename only. File must be in the top level image director, or in a sub-directory defined in `config.yml` with `contributorSubDir`. |
+Required Named Parameter: "align"
+
+### align
+
+| Value | Description |
+| --- | --- |
+|`left` (default) | Align the names and text to the left. |
+| `center` | Align the names and text in the center. |
+|`right` | Align the names and text to the right. |
+
 
 See: [Contributors](/guide/contributors/)
 
