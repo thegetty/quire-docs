@@ -665,7 +665,15 @@
     
       
       
-      <li class="main-heading"><a href="#displaying-a-list-of-contributors">Displaying a List of Contributors</a></li>
+      <li class="main-heading"><a href="#displaying-contributors-on-your-cover">Displaying Contributors on Your Cover</a></li>
+    
+      
+      
+      <li class="main-heading"><a href="#displaying-contributors-on-individual-pages">Displaying Contributors on Individual Pages</a></li>
+    
+      
+      
+      <li class="main-heading"><a href="#including-contributors-for-search-engines">Including Contributors for Search Engines</a></li>
     
     </ul>
   </div>
@@ -676,27 +684,13 @@
       <div class="content">
         
 
-<p>Quire is designed to credit and add contributors to publications in a flexible way. Contributors data is stored in the <code>publication.yml</code> file of your project or in the YAML block of individual pages. The <code>q-contributors</code> shortcode offers multiple options to display contributors data in your publication.</p>
+<p>Quire is designed to credit and add contributors to publications in a flexible way. Contributors data is stored in the <code>publication.yml</code> file of your project or in the YAML block of individual pages. The <code>q-contributor</code> shortcode offers multiple options to display contributors data in your publication.</p>
 
 <h2 id="adding-contributors-to-your-project">Adding Contributors to Your Project</h2>
 
-<p>Contributors can be listed under <code>contributor</code> in your <code>publication.yml</code> file, or in the YAML block at the top of any page in your project for contributors specific to that page.</p>
+<p>Contributors can be listed under <code>contributor</code> in your publication.yml file, or for contributors specific to a page in your project, in the YAML block at the top of that page.</p>
 
-<p>Each <code>contributor</code> should have a <code>type</code> specified of either <code>&quot;primary&quot;</code>, <code>&quot;secondary&quot;</code>, or <code>&quot;project-team&quot;</code>.</p>
-
-<ul>
-<li><p><strong>Primary</strong> contributors are authors, editors and others who would appear on a publication’s cover or title page. In Quire <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">template</span><span class="quire-definition__content">Themes may include one or more templates. Templates are the variety of layouts a theme has.</span></span>s, they are typically used on the cover, the menu and in the <a href="https://gettypubs.github.io/quire/guide/metadata-configuration/">metadata embedded in your publication</a>; listed as the creators of the publication.</p></li>
-
-<li><p><strong>Secondary</strong> contributors are not typically shown in the menu or cover, but are often included in book metadata, and may also be referenced by the <code>q-contributors</code> shortcode as noted below. In future iterations of Quire, we hope to be able to reference contributors listed here from individual pages.</p></li>
-
-<li><p><strong>Project team</strong> contributors are those that worked on the publication (editors, designers, developers, and the like), and can be listed using the <code>q-contributors</code> shortcode, often on an <em>About</em> or <em>Copyright</em> page. Project team contributors are not otherwise included in publication metadata, or used in other Quire <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">template</span><span class="quire-definition__content">Themes may include one or more templates. Templates are the variety of layouts a theme has.</span></span>s.</p></li>
-</ul>
-
-<section class="box">
-  If your publication is a monograph you might add the main authors to the <code>contributor</code> attribute in <code>publication.yml</code>, while if the publication has essays written by different authors, these would be added to the <code>contributor</code> fields on each essay/page YAML block.
-</section>
-
-<p>Wherever they are listed (<code>publication.yml</code> or pages YAML block), the following YAML attributes can be used for your contributors:</p>
+<p>At a minimum, each contributor must have a <code>first_name</code> and <code>last_name</code>, or just <code>full_name</code>. In addition to these, wherever they are listed (publication.yml or pages YAML block), the following YAML attributes can be used for your contributors:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML">-<span style="color:#bbb"> </span>id:<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>type:<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>first_name:<span style="color:#bbb">
@@ -705,24 +699,172 @@
 </span><span style="color:#bbb">  </span>file_as:<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>title:<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>affiliation:<span style="color:#bbb">
-</span><span style="color:#bbb">  </span>role:<span style="color:#bbb">
-</span><span style="color:#bbb">  </span>role_code:<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>pic:<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>url:<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>bio:</code></pre></div>
-<p>Not all of these are required. Depending on your usage, you may need as little as  <code>first_name</code> and <code>last_name</code>, or just <code>full_name</code>. See the <a href="https://gettypubs.github.io/quire/api-docs/shortcodes#q-contributors"><code>q-contributors</code> shortcode reference</a> for details on each of the standard contributor attributes.</p>
+<h2 id="displaying-contributors-on-your-cover">Displaying Contributors on Your Cover</h2>
 
-<section class="box">
-  Contributors may also be listed in the <code>contributor_as_it_appears</code> field in your <code>publication.yml</code> file. This value will override the indivdual <code>primary_contributor</code>s listed on the cover, the menu and in the book metadata. Useful when you want to include specific language about their role. For example: &quot;Edited by Jane Smith and John Doe&quot;.
+<p>Any contributor listed in your publication.yml file that has a <code>type: primary</code> will be considered a main author for your project and will be listed on the cover page, in the site menu, and in the metadata included in the project code. For publications with more than one author, names will be listed in the order they appear in the publication.yml file.</p>
+
+<p>Sometimes, rather than a plain list, you may want your contributors listed in a particular way. Such as, “Edited by Author Name and Author Name”. In these cases, you can add you custom text in the publication.yml file under <code>contributor_as_it_appears</code> which can also take Markdown and HTML tags as needed.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">contributor_as_it_appears:<span style="color:#bbb"> </span>as<span style="color:#bbb"> </span>told<span style="color:#bbb"> </span>by<span style="color:#bbb"> </span>Beyoncé,<span style="color:#bbb"> </span>Kelly<span style="color:#bbb"> </span>Rowland,<span style="color:#bbb"> 
+</span><span style="color:#bbb">  </span>and<span style="color:#bbb"> </span>Michelle<span style="color:#bbb"> </span>Williams<span style="color:#bbb"> </span>&lt;br<span style="color:#bbb"> </span>/<span style="color:#4070a0;font-style:italic">&gt; *with an introduction by Aretha 
+</span><span style="color:#4070a0;font-style:italic">  Franklin*</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern_contributors-cover'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern_contributors-cover.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    Sample publication cover with the contributors listed using the <code>contributor_as_it_appears</code> option in the publication.yml file, which allows for specific language and formatting to be applied.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+<p>While the <code>contributor_as_it_appears</code> value will override any contributor information otherwise listed, it is still recommended that you list the individual authors under the <code>contributor</code> area in your YAML, as this will be used as metadata for your book and will aid search engines and social media sites in discovering and listing your site.</p>
+
+<h2 id="displaying-contributors-on-individual-pages">Displaying Contributors on Individual Pages</h2>
+
+<p>Individual pages in your publication can have specific authors. Add them to the page YAML either with their names and other information, or by using an <code>id</code> that references a corresponding listing in your publication.yml file.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML">title:<span style="color:#bbb"> </span>Introduction<span style="color:#bbb">
+</span><span style="color:#bbb"></span>type:<span style="color:#bbb"> </span>page<span style="color:#bbb">
+</span><span style="color:#bbb"></span>contributor:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>-<span style="color:#bbb"> </span>first_name:<span style="color:#bbb"> </span>Kelly<span style="color:#bbb">
+</span><span style="color:#bbb">    </span>last_name:<span style="color:#bbb"> </span>Roland</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML">title:<span style="color:#bbb"> </span>Introduction<span style="color:#bbb">
+</span><span style="color:#bbb"></span>type:<span style="color:#bbb"> </span>page<span style="color:#bbb">
+</span><span style="color:#bbb"></span>contributor:<span style="color:#bbb">
+</span><span style="color:#bbb">  </span>-<span style="color:#bbb"> </span>id:<span style="color:#bbb"> </span>kroland</code></pre></div>
+<h3 id="contributors-in-the-page-heading">Contributors in the Page Heading</h3>
+
+<p>For most <a href="https://gettypubs.github.io/quire/guide/pages/#defining-page-types">page types</a>, you will see in previewing your site that contributors to a page will be automatically listed at the top of the page just under the title, in the order they appear in the YAML. By default, they will appear with their names and, if given, their titles and affiliations. You can override this by specifying a new value either on a page-by-page basis, or globally.</p>
+
+<p>On an individual page, in the page YAML:</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">contributor_byline:<span style="color:#bbb"> </span>name-title<span style="color:#bbb"> </span><span style="color:#60a0b0;font-style:italic"># name | name-title | false</span></code></pre></div>
+<p>For the entire publication, in the config.yml file:</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">contributorByline:<span style="color:#bbb"> </span>name-title<span style="color:#bbb"> </span><span style="color:#60a0b0;font-style:italic"># name | name-title | false</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern_contributors-page'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern_contributors-page.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    By default, page contributors are listed in the page header, under the title. Contributor professional <code>title</code> and <code>affiliation</code> will be included unless <code>contributor_byline: false</code> is set in the page YAML, or <code>contributorByline: false</code> is set in your config.yml file.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+<p>While <code>name-title</code> is the default (and will be used if no value is specified), <code>name</code> will omit any title or affiliation information, and <code>false</code> will remove the contributor listing from the heading of the page altogether.</p>
+
+<section class="box tip">
+  <ul>
+<li>If you specify <code>contributorByline: false</code> you can still have names appear on individual pages by specifying either <code>contributor_byline: name-title</code> or <code>contributor_byline: name</code> on that page.</li>
+</ul>
+
 </section>
 
-<h2 id="displaying-a-list-of-contributors">Displaying a List of Contributors</h2>
+<p>Just as with the cover, if you want to display the contributors in a particular way, such as “Translated by Author Name”, you can do so by specifying a <code>contributor_as_it_appears</code> value in the page YAML.</p>
 
-<p>You can use the <code>q-contributors</code> shortcode to create a page of contributor biographies, a section of bios for a single page, a list of contributors, a byline for a particular page, or other similar applications. The shortcode requires both a <code>&quot;range&quot;</code> and a <code>&quot;type&quot;</code> value.</p>
+<h3 id="contributors-elsewhere-on-the-page">Contributors Elsewhere on the Page</h3>
 
-<p>Sample: <code>{{&lt; q-contributors range=&quot;page&quot; type=&quot;bio&quot; &gt;}}</code></p>
+<p>You can also add lists of contributors to the main body of a page using the <code>q-contributor</code> shortcode. This allows you to create a page of contributor biographies, a section of bios for a single page, a list of contributors, a byline for a particular page, or other similar applications.</p>
 
-<p>The <code>&quot;range&quot;</code> value determines which contributors will be included in the list. Possible <code>&quot;range&quot;</code> values are:</p>
+<p>The shortcode requires both a <code>&quot;range&quot;</code> and a <code>&quot;format&quot;</code> value, and allows for an optional  <code>&quot;align&quot;</code> value as well.</p>
+
+<p>Sample: <code>{{&lt; q-contributor range=&quot;page&quot; format=&quot;bio&quot; align=&quot;right&quot; &gt;}}</code></p>
+
+<p>The <code>&quot;range&quot;</code> value determines which contributors will be included in the list. Predefined <code>&quot;range&quot;</code> values are:</p>
 
 <table>
 <thead>
@@ -739,33 +881,15 @@
 </tr>
 
 <tr>
-<td><code>essays</code></td>
-<td>Contributors on any page in your publications with <code>type: essay</code>.</td>
-</tr>
-
-<tr>
 <td><code>all</code></td>
-<td>All contributors.</td>
-</tr>
-
-<tr>
-<td><code>primary</code></td>
-<td>Contributors listed under <code>contributor</code> in your <code>publication.yml</code> file, and with a <code>type</code> of <code>&quot;primary&quot;</code>.</td>
-</tr>
-
-<tr>
-<td><code>secondary</code></td>
-<td>Contributors listed under <code>contributor</code> in your <code>publication.yml</code> file, and with a <code>type</code> of <code>&quot;secondary&quot;</code>.</td>
-</tr>
-
-<tr>
-<td><code>project-team</code></td>
-<td>Contributors listed under <code>contributor</code> in your <code>publication.yml</code> file, and with a <code>type</code> of <code>&quot;project-team&quot;</code>.</td>
+<td>All contributors listed in the publication, whether listed on individual pages or in the publication.yml file.</td>
 </tr>
 </tbody>
 </table>
 
-<p>The <code>&quot;type&quot;</code> value determines what information will be listed for each contributor in the <code>&quot;range&quot;</code>, and how it will be formatted. Possible <code>&quot;type&quot;</code> values are:</p>
+<p>You can also use any contributor <code>type</code> you define. So if you give a contributor a <code>type: primary</code> (such as for your main publication authors as discussed in the <a href="#displaying-contributors-on-your-cover">“Displaying Contributors on Your Cover”</a>) than a shortcode using <code>range=&quot;primary&quot;</code> will list any of your project’s primary contributors.</p>
+
+<p>The <code>&quot;format&quot;</code> value determines what information will be listed for each contributor in the <code>&quot;range&quot;</code>, and how it will be formatted. Possible <code>&quot;format&quot;</code> values are:</p>
 
 <table>
 <thead>
@@ -783,31 +907,248 @@
 
 <tr>
 <td><code>name</code></td>
-<td>Just the first and last name.</td>
+<td>Just the name.</td>
 </tr>
 
 <tr>
-<td><code>name-plus</code></td>
-<td>The first and last name with, when available, their title and affiliation on a line below.</td>
+<td><code>name-title</code></td>
+<td>The name and, when available, the title and affiliation; on a single line</td>
+</tr>
+
+<tr>
+<td><code>name-title-block</code></td>
+<td>The name and, when available, the title and affiliation; broken onto separate lines.</td>
 </tr>
 
 <tr>
 <td><code>bio</code></td>
-<td>First and last name, with pic, url, and bio as available. Plus a link to their contribution.</td>
+<td>The name and, when available, a picture, offsite link to their personal site, and a bio. Plus links to any individual pages in the project for which they are listed as a contributor.</td>
 </tr>
 </tbody>
 </table>
 
-<p>There are some gotchas and limitations to the <code>q-contributors</code> shortcode:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern_contributors-name-title-block'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern_contributors-name-title-block.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    The <code>q-contributor</code> shortcode can be used to add a list of contributors anywhere on a page. In this case it is the page author formated with the <code>name-title-block</code> option.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern_contributors-initials'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern_contributors-initials.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    Quire also includes an <code>initials</code> format which will list the author names onluy by initials.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern_contributors-bio'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern_contributors-bio.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    The most full-featured way to list contirbutors is with the <code>bio</code> format. It includes the contributor’s name, bio, picture, an offsite link to their personal site, and a link to any contributions they made to the publication.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+<p>The <code>&quot;align&quot;</code> value will align the text. If no value is given, text alignment will default to the left. The possible values are:</p>
+
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>left</code> (default)</td>
+<td>Align the names and text to the left.</td>
+</tr>
+
+<tr>
+<td><code>center</code></td>
+<td>Align the names and text in the center.</td>
+</tr>
+
+<tr>
+<td><code>right</code></td>
+<td>Align the names and text to the right.</td>
+</tr>
+</tbody>
+</table>
+
+<p>See the <a href="https://gettypubs.github.io/quire/api-docs/shortcodes#q-contributor"><code>q-contributor</code> shortcode reference</a> for details on each of the standard contributor attributes.</p>
+
+<h4 id="sorting-contributor-lists">Sorting Contributor Lists</h4>
+
+<p>Using the shortcode, contributors will be listed alphabetically. Either by <code>last_name</code> <code>first_name</code> if given, or <code>full_name</code>. You can specify a <code>file_as</code> value for contributors to override the default sorting.</p>
+
+<p>If you wanted, for example, a list of essay contributors ordered in the way they are ordered in the page YAML block, you could assign a numeric <code>file_as</code> value to each (1, 2, 3 etc.). Note though that this <code>file_as</code> override will cary over to other uses of the shortcode. For example, a complete list of contributors at the end of a volume of collected papers.</p>
+
+<section class="box warning">
+  <ul>
+<li>Contributors with the same exact name will override each other and only one will appear, but using a <code>file_as</code> value would fix this. For example, if there are two Jane Smiths, assigning a <code>file_as</code> value of &quot;Smith, Jane 1&quot; to one and &quot;Smith, Jane 2&quot; will sort them in that order, but their names would still be listed as Jane Smith.</li>
+</ul>
+
+</section>
+
+<h2 id="including-contributors-for-search-engines">Including Contributors for Search Engines</h2>
+
+<p>Contributor information is also embedded in Quire projects in a way that is optimized for search engine discovery. Here are a few tips to take advantage of this feature:</p>
 
 <ul>
-<li><p>This shortcode can be used multiple times on a page, but ONLY if the same range is referenced.</p></li>
-
-<li><p>You can use a <code>file_as</code> value to control sort order. Otherwise lists are sorted alphabetically by <code>last_name</code>. If you wanted, for example, a list of essay contributors ordered in the way they are ordered in the page YAML block, you could assign a numeric <code>file_as</code> value to each (1, 2, 3 etc.). Note though that this <code>file_as</code> override will cary over to other uses of the shortcode. For example, a complete list of contributors at the end of a volume of collected papers.</p></li>
-
-<li><p>If a contributor is listed in many papers, the information in last listing will override all the others.</p></li>
-
-<li><p>Contributors with the same exact name will override each other. But using a <code>file_as</code> value would fix this (that value wouldn't show up in the interface). For example, if there are two Jane Smiths, assigning a <code>file_as</code> value of &quot;Smith, Jane 1&quot; to one and &quot;Smith, Jane 2&quot; will sort them in that order, but their names would still be listed as Jane Smith.</p></li>
+<li>List your project’s main authors in the publication.yml file and give them a <code>type: primary</code></li>
+<li>List other contributors (like authors of individual papers) in the publication.yml file and give them a <code>type: secondary</code>.</li>
+<li>Whenever using the <code>contributor_as_it_appears</code> value (which overrides how contributors are listed on the cover or on individual pages) still include a list of the individual contributors in your YAML. This is especially true for your overall publication, and any pages that have a <code>type: essay</code>, the metadata for which are structured to pay particular attention to the authors.</li>
 </ul>
 
         
