@@ -673,7 +673,7 @@
     
       
       
-      <li class="main-heading"><a href="#q-contributors"><code>q-contributors</code></a></li>
+      <li class="main-heading"><a href="#q-contributor"><code>q-contributor</code></a></li>
     
       
       
@@ -716,43 +716,48 @@
 
 <p>See: <a href="https://gettypubs.github.io/quire/guide/citation-bibliographies/">Citations &amp; Bibliographies</a></p>
 
-<h2 id="q-contributors"><code>q-contributors</code></h2>
+<h2 id="q-contributor"><code>q-contributor</code></h2>
 
-<p>Sample: <code>{{&lt; q-contributors range=&quot;page&quot; type=&quot;bio&quot; &gt;}}</code></p>
+<p>Sample: <code>{{&lt; q-contributor range=&quot;page&quot; format=&quot;bio&quot; align=&quot;center&quot; &gt;}}</code></p>
 
 <p>Basic Usage: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.</p>
 
-<p>Required Named Parameters: &quot;range&quot; and &quot;type&quot;</p>
+<p>Required Named Parameters: &quot;range&quot; and &quot;format&quot;</p>
 
-<h3 id="type">type</h3>
+<h3 id="format">format</h3>
 
 <table>
 <thead>
 <tr>
-<th>Expected Value</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td>&quot;initials&quot;</td>
-<td>Looks for the capital letters in a contributor first and last name and concatenates them together.</td>
+<td><code>initials</code></td>
+<td>Looks for the capital letters in a contributor first and last name and concatenates them together. Jane Pauley, becomes J.P.; Ralph Waldo Emerson becomes R.W.E.</td>
 </tr>
 
 <tr>
-<td>&quot;name&quot;</td>
-<td>Just the first and last name.</td>
+<td><code>name</code></td>
+<td>Just the name.</td>
 </tr>
 
 <tr>
-<td>&quot;name-plus&quot;</td>
-<td>The first and last name with, when available, their title and affiliation on a line below.</td>
+<td><code>name-title</code></td>
+<td>The name and, when available, the title and affiliation; on a single line</td>
 </tr>
 
 <tr>
-<td>&quot;bio&quot;</td>
-<td>First and last name, with pic, url, and bio as available. Plus a link to their contribution.</td>
+<td><code>name-title-block</code></td>
+<td>The name and, when available, the title and affiliation; broken onto separate lines.</td>
+</tr>
+
+<tr>
+<td><code>bio</code></td>
+<td>The name and, when available, a picture, offsite link to their personal site, and a bio. Plus links to any individual pages in the project for which they are listed as a contributor.</td>
 </tr>
 </tbody>
 </table>
@@ -762,103 +767,52 @@
 <table>
 <thead>
 <tr>
-<th>Expected Value</th>
-<th>YAML Location</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td>&quot;page&quot;</td>
-<td><code>.Page.Params.contributor</code></td>
-<td>In the current Page under <code>contributor</code></td>
+<td><code>page</code></td>
+<td>Only the contributors listed for the page the shortcode appears on.</td>
 </tr>
 
 <tr>
-<td>&quot;essays&quot;</td>
-<td><code>.Site.Pages.Params.contributor</code></td>
-<td>In any Page with a <code>type: essay</code> under <code>contributor</code></td>
-</tr>
-
-<tr>
-<td>&quot;all&quot;</td>
-<td><code>.Site.Pages.Params.contributor</code></td>
-<td>In all Pages under <code>contributor</code></td>
-</tr>
-
-<tr>
-<td>&quot;primary&quot;</td>
-<td><code>.Site.Data.publication.contributor</code> with a <code>type</code> of &quot;primary&quot;</td>
-<td>In <code>publication.yml</code> under <code>contributor</code></td>
-</tr>
-
-<tr>
-<td>&quot;secondary&quot;</td>
-<td><code>.Site.Data.publication.contributor</code> with a <code>type</code> of &quot;secondary&quot;</td>
-<td>In <code>publication.yml</code> under <code>contributor</code></td>
-</tr>
-
-<tr>
-<td>&quot;project-team&quot;</td>
-<td><code>.Site.Data.publication.contributor</code> with a <code>type</code> of &quot;project-team&quot;</td>
-<td>In <code>publication.yml</code> under <code>contributor</code></td>
+<td><code>all</code></td>
+<td>All contributors listed in the publication, whether listed on individual pages or in the publication.yml file.</td>
 </tr>
 </tbody>
 </table>
 
-<p>YAML Structure:</p>
+<p>You can also use any contributor <code>type</code> you define. So if you give a contributor a <code>type: primary</code> then a shortcode using <code>range=&quot;primary&quot;</code> will list any of your project’s primary contributors.</p>
+
+<p>Required Named Parameter: &quot;align&quot;</p>
+
+<h3 id="align">align</h3>
 
 <table>
 <thead>
 <tr>
-<th>YAML Attribute</th>
-<th>Required</th>
-<th>Notes</th>
+<th>Value</th>
+<th>Description</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td>Either both <code>first_name</code> and <code>last_name</code>, OR <code>full_name</code></td>
-<td>Y</td>
-<td>If all are included, <code>full_name</code> will override the others.</td>
+<td><code>left</code> (default)</td>
+<td>Align the names and text to the left.</td>
 </tr>
 
 <tr>
-<td><code>title</code></td>
-<td>N</td>
-<td></td>
+<td><code>center</code></td>
+<td>Align the names and text in the center.</td>
 </tr>
 
 <tr>
-<td><code>affiliation</code></td>
-<td>N</td>
-<td></td>
-</tr>
-
-<tr>
-<td><code>role</code></td>
-<td>N</td>
-<td>When the shortcode range is &quot;publication-team&quot;, <code>role</code> is used in place of <code>title</code></td>
-</tr>
-
-<tr>
-<td><code>bio</code></td>
-<td>N</td>
-<td>Markdown okay</td>
-</tr>
-
-<tr>
-<td><code>url</code></td>
-<td>N</td>
-<td></td>
-</tr>
-
-<tr>
-<td><code>pic</code></td>
-<td>N</td>
-<td>Filename only. File must be in the top level image director, or in a sub-directory defined in <code>config.yml</code> with <code>contributorSubDir</code>.</td>
+<td><code>right</code></td>
+<td>Align the names and text to the right.</td>
 </tr>
 </tbody>
 </table>
