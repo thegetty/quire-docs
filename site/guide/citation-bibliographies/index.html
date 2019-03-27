@@ -696,39 +696,211 @@
 
 <h2 id="adding-inline-text-citations">Adding Inline Text Citations</h2>
 
-<p>The <code>q-cite</code> shortcode adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which can be output as a page-level bibliography on pages with a <code>type</code> of <code>&quot;essay&quot;</code> and <code>&quot;entry&quot;</code>, as explained <a href="#displaying-a-bibliography">below</a>.</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>cite <span style="color:#4070a0">&#34;Faure 1909&#34;</span> <span style="color:#4070a0">&#34;54&#34;</span> &gt;}}</code></pre></div>
-<p>The shortcode can be used anywhere in your Markdown text, including within footnotes. The first positional parameter is a short form citation that should match one in <code>references.yml</code>. The second, optional parameter is a page reference (if needed). The above sample would output as: “Faure 1909, 54”.</p>
+<p>The <code>q-cite</code> shortcode adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which is output as a page-level bibliography, as explained <a href="#displaying-a-bibliography">below</a>.</p>
 
-<section class="box">
-  The text element between the author date reference and the page (in this case, a comma and a space) can be changed with the <code>citationPageLocationDivider</code> property in your publication’s <code>config.yml</code> file according to your preferred citation style.
-</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-citation-hover'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-citation-hover.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    By using the <code>q-cite</code> shortcode, you can add citations that appear when hovering over the linked text. Clicking the link brings you to a bibliography at the bottom of the page.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-bibliography-page'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-bibliography-page.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    Any citations added to a page with <code>q-cite</code> are automatically added to a bibliography list at the bottom of the page.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+<p>The first positional parameter of the <code>q-cite</code> shortcode is a short form citation that should match one in <code>references.yml</code>. The second, <em>optional</em> parameter is a page reference. The following sample would output as: Faure 1909, 54.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>cite <span style="color:#4070a0">&#34;Faure 1909&#34;</span> <span style="color:#4070a0">&#34;54&#34;</span> &gt;}}</code></pre></div>
+<p>A third optional parameter allows you to customize the text to appear in the link if not the short form of the citation. The following sample would appear simply as: 1909, 54.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>cite <span style="color:#4070a0">&#34;Faure 1909&#34;</span> <span style="color:#4070a0">&#34;54&#34;</span> <span style="color:#4070a0">&#34;1909&#34;</span> &gt;}}</code></pre></div>
+<p>In using this third parameter, you still need to have the second parameter even if it’s empty. The following sample would appear simply as: 1909.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>cite <span style="color:#4070a0">&#34;Faure 1909&#34;</span> <span style="color:#4070a0">&#34;&#34;</span> <span style="color:#4070a0">&#34;1909&#34;</span> &gt;}}</code></pre></div>
+<p>The text element between the author date reference and the page can be changed with the <code>citationPageLocationDivider</code> property in <code>config.yml</code>. The humanities tend to favor comma separation (which is the default in Quire), whereas the sciences typically favor a colon.</p>
+
+<p>The <code>q-cite</code> shortcode can be used anywhere in your Markdown text, including within footnotes.</p>
 
 <h2 id="displaying-a-bibliography">Displaying a Bibliography</h2>
 
-<p>Pages in your publication with a <code>type</code> of <code>&quot;essay&quot;</code> or <code>&quot;entry&quot;</code>, will automatically include a page-level bibliography listing all works that were cited on that page using the <code>q-cite</code> shortcode.</p>
-
-<p>However, to create a complete bibliography for your entire publication, from all the entries in the project's <code>references.yml</code> file, you can use the <code>q-bibliography</code> shortcode. The resulting bibliography will be output in the order in which it appears in the references file.</p>
+<p>Pages in your publication will automatically include a page-level bibliography listing all works that were cited on that page using the <code>q-cite</code> shortcode. However, to create a complete bibliography for your entire publication, from all the entries in the project's <code>references.yml</code> file, you can use the <code>q-bibliography</code> shortcode. The resulting bibliography will be output in the order in which it appears in the references file.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>bibliography &gt;}}</code></pre></div>
-<section class="box">
-  You may create one page in your publication where the bibliography will be displayed. All you need is to add the <code>q-bibliography</code> shortcode after the YAML block.
-</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class='quire-figure '>
+  
+  
+
+  <img class="quire-figure__image"  id='modern-bibliography'
+       src='https://gettypubs.github.io/quire/img//screenshots/modern-bibliography.png'
+       alt='' />
+
+  
+  
+
+  
+  <figcaption class="quire-figure__caption">
+    
+
+    
+    A bibliography of all works in your project’s references.yml file can be added to any page with the <code>q-bibliography</code> shortcode.
+    
+
+    
+
+    
+  </figcaption>
+  
+
+</figure>
+
+
+
+
+
+
+
+
+<p>This shortcode accepts an optional <code>sort</code> value, which will sort the list by whatever key from the entries is given. Often <code>&quot;short&quot;</code> or <code>&quot;full&quot;</code>, though a custom key could be added, such as <code>&quot;sort_as&quot;</code>, for fine-grained control. Without a <code>sort</code> value given, the bibliography will be output in the order in which it appears in the references file.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>bibliography sort=<span style="color:#4070a0">&#34;short&#34;</span> &gt;}}</code></pre></div>
-<p>You may in some cases find that the system’s default sort method is sub-optimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key such as <code>sort_as</code> could be added to all entries in the <code>references.yml</code> file for fine-grained control.</p>
+<p>You may in some cases find that the system’s default sort method is sub-optimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key like <code>&quot;sort_as&quot;</code> could be added to all entries in the <code>references.yml</code> file for fine-grained control.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">entries:<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>-<span style="color:#bbb"> </span>short:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;cummings 1914&#34;</span><span style="color:#bbb">
 </span><span style="color:#bbb">    </span>sort_as:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;cummings-e-e&#34;</span><span style="color:#bbb">
 </span><span style="color:#bbb">  </span>-<span style="color:#bbb"> </span>short:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;Dickinson 1932&#34;</span><span style="color:#bbb">
 </span><span style="color:#bbb">    </span>sort_as:<span style="color:#bbb"> </span><span style="color:#4070a0">&#34;dickinson-emily&#34;</span></code></pre></div>
-<section class="box">
-  This custom key would need to be added to <em>all</em> entries, not just the one that need to be sorted differently than the default.
+<section class="box warning">
+  <ul>
+<li>If adding a custom sort key, it would need to be added to <em>all</em> entries, not just the one that need to be sorted differently than the default.</li>
+</ul>
+
 </section>
 
 <h3 id="displaying-the-short-reference-in-bibliographies">Displaying the Short Reference in Bibliographies</h3>
 
-<p>Bibliographies displayed on pages with a <code>type</code> of <code>essay</code> or <code>entry</code>, and those generated with the <code>q-bibliography</code> shortcode, can be just a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the <code>config.yml</code> file with the <code>displayBiblioShort</code> property, can be set to <code>&quot;true&quot;</code> or <code>&quot;false&quot;</code>.</p>
-
-<p>Additionally, to change the sort, the <code>q-bibliography</code> shortcode accepts an optional <code>sort</code> value, which will sort the list by whatever key from the entries is given. Often <code>&quot;short&quot;</code> or <code>&quot;full&quot;</code>.</p>
+<p>Bibliographies displayed automatically at the bottom of pages, and those generated with the <code>q-bibliography</code> shortcode, can be just a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the <code>config.yml</code> file with the <code>displayBiblioShort</code> property, can be set to <code>&quot;true&quot;</code> or <code>&quot;false&quot;</code>.</p>
 
         
 </section>
