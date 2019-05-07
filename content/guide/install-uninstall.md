@@ -92,12 +92,6 @@ When complete, type `quire --version` to confirm proper installation. It should 
     cd quire-cli
     ```
 
-    and type:
-
-    ```tx
-    git checkout pc-dev
-    ```
-
     The following command will install dependencies:
 
     ```tx
