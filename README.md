@@ -1,4 +1,4 @@
-![Quire logo](content/static/img/quire_logo_tm.png)
+![Quire logo](static/img/quire_logo_tm.png)
 
 # Quire
 
