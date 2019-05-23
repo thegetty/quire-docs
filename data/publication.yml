@@ -10,7 +10,7 @@
 # ------------------------------------------------------------------------------
 
 title: Quire
-subtitle: Documentation Site for the Getty’s Multiformat Publishing Framework
+subtitle: Multiformat Book Publishing
 reading_line:
 short_title:
 
@@ -42,10 +42,10 @@ publisher:
 
 contributor_as_it_appears:
 
-contributor:
-  - type: primary
-    full_name: Getty Publications
-    url: http://www.getty.edu/publications/
+# contributor:
+#   - type: primary
+#     full_name: J. Paul Getty Trust
+#     url: http://www.getty.edu/
 
 # ------------------------------------------------------------------------------
 # Copright & License

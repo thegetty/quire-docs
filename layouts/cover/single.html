@@ -21,11 +21,12 @@ Cover page layout. This controls the home page of the publication.
   {{- end -}}
     <div class="quire-cover__hero-body hero-body">
       <div class="container">
+        <img src="{{ printf "%s/%s" ($.Scratch.Get "imageDir") "quire_logo_tm.png" }}" style="max-width: 450px;" alt="" />
         {{/* Use .Site.Data.publication info if available */}}
         {{ if .Site.Data.publication }}
         <p class="half-title">{{ if .Site.Data.publication.short_title }}{{ .Site.Data.publication.short_title | markdownify }}{{ else }}{{ .Site.Data.publication.title | markdownify }}{{ end }}</p>
         <h1 class="title">
-          {{ .Site.Data.publication.title | markdownify }}
+          <span class="visually-hidden">{{ .Site.Data.publication.title | markdownify }}</span>
           {{ with .Site.Data.publication.subtitle }}
           <span class="subtitle">{{ . | markdownify }}</span>
           {{ end }}
