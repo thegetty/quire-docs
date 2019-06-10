@@ -913,29 +913,50 @@
 
 <h2 id="microsoft-word-to-markdown-conversion">Microsoft Word to Markdown Conversion</h2>
 
-<p>Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Pandoc</span><span class="quire-definition__content">An open source, command-line text conversion tool. You can visit the <a href="http://pandoc.org/demos.html" target="_blank">Pandoc Demos page</a> that lists the commands for the most frequent types of file conversion.</span></span> can be done.</p>
+<p>Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Pandoc</span><span class="quire-definition__content">An open source, command-line text conversion tool that is included as part of the basic Quire installation. You can visit the <a href="http://pandoc.org/demos.html" target="_blank">Pandoc Demos page</a> that lists the commands for the most frequent types of file conversion.</span></span> can be done.</p>
 
 <p>There are some easy things you can do in the Word document prior to conversion to ensure the best possible results:</p>
 
 <ul>
-<li>We recommend not to insert any images and media to the Word document before conversion.</li>
-<li>Headings must be formatted with Word styles instead of by changing font formats.</li>
+<li>We recommend not inserting any images and media into the Word document before conversion.</li>
+<li>Headings should be formatted <a href="https://support.office.com/en-us/article/Apply-styles-f8b96097-4d25-4fac-8200-6139c8093109" target="_blank">by applying Word styles</a> instead of by manually changing font formats.</li>
+<li>Don’t use any font color or color highlighting, it will not convert to Markdown.</li>
+<li>Save as .docx rather than .doc</li>
 </ul>
 
-<p>While there are a number of free tools, we recommend using <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Pandoc</span><span class="quire-definition__content">An open source, command-line text conversion tool. You can visit the <a href="http://pandoc.org/demos.html" target="_blank">Pandoc Demos page</a> that lists the commands for the most frequent types of file conversion.</span></span>. You can find installation instructions on their site.</p>
+<p>While there are a number of free tools, we recommend using Pandoc, which is included with the basic Quire installation and can be used through the command line. To convert, open your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">command-line shell</span><span class="quire-definition__content">The command-line shell is a text-based window into the contents of your computer, and a space where you can run program commands. On Mac computers you’ll most often use a shell called Terminal, on PCs it’s PowerShell or Git BASH.</span></span>, use the <code>cd</code> (change directory) command to move to the folder where your .docx documents are saved, and enter the applicable Pandoc command:</p>
 
-<p>Once installed, make sure you are in the folder where your .docx document is saved, and enter the Pandoc command on the command-line application. The command used to convert your file is: <code>pandoc -s your_document_name.docx -t markdown -o your_document_name.md</code>. However, in order to optimize the default conversion you should specify the following extensions:</p>
+<p>To convert a single Word document (in this example it has a file name of MyFile.docx) into Markdown:</p>
+
+<pre><code>pandoc --atx-header --wrap=none -s MyFile.docx -t markdown -o MyFile.md
+</code></pre>
+
+<p>To convert all the Word documents in the folder and compile them into a <strong>single</strong> Markdown document:</p>
+
+<pre><code>pandoc --atx-header --wrap=none -s *.docx -t markdown-smart -o MyFile.md
+</code></pre>
+
+<p>To convert all the Word documents in the folder into <strong>individual</strong> Markdown files:</p>
+
+<pre><code>for f in *.docx; do pandoc --atx-header --wrap=none &quot;$f&quot; -s -t markdown-smart -o &quot;${f%.docx}.md&quot;; done
+</code></pre>
+
+<p>Note that the <code>--atx-header</code> and <code>--wrap=none</code> options in the above commands are optional, but recommended for Quire.</p>
 
 <ul>
-<li>Quire needs <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">ATX-style Markdown headers</span><span class="quire-definition__content">It is the type of Markwdown headers that are used in Quire. It consists of one to six # signs and a line of text. For more details visit the Pandoc manual: <a href="https://pandoc.org/MANUAL.html#headers" target="_blank">https://pandoc.org/MANUAL.html#headers</a></span></span>, these are specified adding <code>--atx-headers</code> to the command.</li>
-<li>The lines of the generated <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Markdown file</span><span class="quire-definition__content">A file formatted in Markdown that generates a Web page. Markdown files have a YAML block at the top containing the metadata of the page.</span></span> are 80 characters long. Adding the option <code>--wrap=none</code> to the command will override the default wrapping making easier to work with your files in the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Text editor</span><span class="quire-definition__content">A text editor is an application used to edit text files containing either plain text or markup for rich text. All computers have basic text editors preinstalled, though we recommend using a free, more fully featured option like <a href="https://atom.io/" target="_blank">Atom</a> or <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</span></span>.</li>
+<li>Quire uses <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">ATX-style Markdown headers</span><span class="quire-definition__content">It is the type of Markwdown headers that are used in Quire. It consists of one to six # signs and a line of text. For more details visit the Pandoc manual: <a href="https://pandoc.org/MANUAL.html#headers" target="_blank">https://pandoc.org/MANUAL.html#headers</a></span></span>, these are specified adding <code>--atx-header</code> to the command.</li>
+<li>The lines of a Pandoc-generated file are 80 characters long. Adding the option <code>--wrap=none</code> to the command will override the default wrapping making easier to work with your files in the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Text editor</span><span class="quire-definition__content">A text editor is an application used to edit text files containing either plain text or markup for rich text. All computers have basic text editors preinstalled, though we recommend using a free, more fully featured option like <a href="https://atom.io/" target="_blank">Atom</a> or <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</span></span>.</li>
 </ul>
 
 <p>The order of the extensions doesn't matter, and you can either type:</p>
 
-<p><code>pandoc --atx-header --wrap=none -s your_document_name.docx -t markdown -o your_document_name.md</code></p>
+<pre><code>pandoc --atx-header --wrap=none -s MyFile.docx -t markdown -o MyFile.md
+</code></pre>
 
-<p>or <code>pandoc -s your_document_name.docx -t markdown --atx-header --wrap=none -o your_document_name.md</code></p>
+<p>or</p>
+
+<pre><code>pandoc -s MyFile.docx -t markdown --atx-header --wrap=none -o MyFilemd
+</code></pre>
 
         
 </section>
