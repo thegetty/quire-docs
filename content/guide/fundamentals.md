@@ -279,18 +279,44 @@ Commonly, project content will start from Microsoft Word documents rather than b
 
 There are some easy things you can do in the Word document prior to conversion to ensure the best possible results:
 
-- We recommend not to insert any images and media to the Word document before conversion.
-- Headings must be formatted with Word styles instead of by changing font formats.
+- We recommend not inserting any images and media into the Word document before conversion.
+- Headings should be formatted [by applying Word styles](https://support.office.com/en-us/article/Apply-styles-f8b96097-4d25-4fac-8200-6139c8093109) instead of by manually changing font formats.
+- Don’t use any font color or color highlighting, it will not convert to Markdown.
+- Save as .docx rather than .doc
 
-While there are a number of free tools, we recommend using {{< q-glossary "Pandoc" >}}. You can find installation instructions on their site.
+While there are a number of free tools, we recommend using Pandoc, which is included with the basic Quire installation and can be used through the command line. To convert, open your {{< q-glossary "command-line shell" >}}, use the `cd` (change directory) command to move to the folder where your .docx documents are saved, and enter the applicable Pandoc command:
 
-Once installed, make sure you are in the folder where your .docx document is saved, and enter the Pandoc command on the command-line application. The command used to convert your file is: `pandoc -s your_document_name.docx -t markdown -o your_document_name.md`. However, in order to optimize the default conversion you should specify the following extensions:
+To convert a single Word document (in this example it has a file name of MyFile.docx) into Markdown:
 
-- Quire needs {{< q-glossary "ATX-style Markdown headers" >}}, these are specified adding `--atx-headers` to the command.
-- The lines of the generated {{< q-glossary "Markdown file" >}} are 80 characters long. Adding the option `--wrap=none` to the command will override the default wrapping making easier to work with your files in the {{< q-glossary "Text editor" >}}.
+```
+pandoc --atx-header --wrap=none -s MyFile.docx -t markdown -o MyFile.md
+```
+
+To convert all the Word documents in the folder and compile them into a **single** Markdown document:
+
+```
+pandoc --atx-header --wrap=none -s *.docx -t markdown-smart -o MyFile.md
+  ```
+
+To convert all the Word documents in the folder into **individual** Markdown files:
+
+```
+for f in *.docx; do pandoc --atx-header --wrap=none "$f" -s -t markdown-smart -o "${f%.docx}.md"; done
+```
+
+Note that the `--atx-header` and `--wrap=none` options in the above commands are optional, but recommended for Quire.
+
+- Quire uses {{< q-glossary "ATX-style Markdown headers" >}}, these are specified adding `--atx-header` to the command.
+- The lines of a Pandoc-generated file are 80 characters long. Adding the option `--wrap=none` to the command will override the default wrapping making easier to work with your files in the {{< q-glossary "Text editor" >}}.
 
 The order of the extensions doesn't matter, and you can either type:
 
-`pandoc --atx-header --wrap=none -s your_document_name.docx -t markdown -o your_document_name.md`
+```
+pandoc --atx-header --wrap=none -s MyFile.docx -t markdown -o MyFile.md
+```
 
-or `pandoc -s your_document_name.docx -t markdown --atx-header --wrap=none -o your_document_name.md`
+or 
+
+```
+pandoc -s MyFile.docx -t markdown --atx-header --wrap=none -o MyFilemd
+```
