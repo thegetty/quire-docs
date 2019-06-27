@@ -15,9 +15,9 @@ In the following sections, we’ll get more familiar with these tools, and get y
 
 The first thing you’ll need is a command-line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs Quire is dependent on in order to run such as Hugo to create the online site, and Pandoc to create the e-book files).
 
-Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder. (Or press Command–Space Bar and type “Terminal” to search for it.) For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH.
+Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder (or press Command–Space Bar and type “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH.
 
-The shell is a text-based window into the contents of your computer, and a space where you can run program commands. Like opening a Finder or File Explorer window on your computer that shows the contents of a particular folder (directory), when you open your shell, you will also be in a particular directory. Your main user directory by default.
+The shell is a text-based window into the contents of your computer, and a space where you can run program commands. Like opening a Finder or File Explorer window on your computer that shows the contents of a particular folder (directory). When you open your shell, you will also be in a particular directory, your main user directory by default.
 
 {{< q-figure id="command-line-shell" >}}
 
@@ -207,7 +207,3 @@ Congratulations on completing the tutorial! We’ve touched on Quire’s core co
 - [Sign up for beta access](https://goo.gl/forms/IaQ8kHH6Y2YyVlgr1), if you haven’t already, to work with Quire on your own.
 - Continue reading the docs.
 - Start working on your own Quire project.
-
-
-
-
