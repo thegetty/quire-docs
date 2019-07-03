@@ -52,7 +52,7 @@ Inside each Quire project, you will find the following directories and files. Co
 
 #### 📁 content
 
-The central part of a Quire, the `content` directory is where almost all of a publication’s text content will live as individual {{< q-glossary "Markdown" >}} files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Pages*](/guide/pages/).
+The central part of Quire is the `content` directory where almost all of a publication’s text content will live as individual {{< q-glossary "Markdown" >}} files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Pages*](/guide/pages/).
 
 {{< q-class "box tip" >}}
 - New Quire projects started with the `quire new` command, come with some demo content, images and data as samples to start. These materials can be written over, re-used or deleted altogether as you’d like.
@@ -64,7 +64,7 @@ What content doesn’t live in `content` directory as a Markdown file, will live
 
 #### 📁 static
 
-The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s templates {{< q-glossary "static-site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/guide/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Outputting & Deploying Your Site*](/guide/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/guide/figure-images/).
+The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s templates {{< q-glossary "static-site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/guide/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Outputting & Deploying Your Site*](/guide/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/guide/figure-images/)).
 
 #### 📄 README.md
 
@@ -88,23 +88,23 @@ Inside each Quire project, you will find the following directories and files. De
 
 #### 📁 bin
 
-Currently it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages. Read more in [*Outputting & Deploying Your Site*](/guide/multiformat-output/).
+Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages. Read more in [*Outputting & Deploying Your Site*](/guide/multiformat-output/).
 
 #### 📄 config.yml
 
-This is a standard, required file for {{< q-glossary "Hugo" >}}, and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire uses the `publication.yml` file inside the `data` directory instead. Read more in [*Publication Metadata & Configuration*](/guide/metadata-configuration/).
+This is a standard, required file for {{< q-glossary "Hugo" >}} and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "templates" >}}. Users who have worked on other non-Quire/Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire uses the `publication.yml` file inside the `data` directory instead. Read more in [*Publication Metadata & Configuration*](/guide/metadata-configuration/).
 
 #### 📁 config
 
-An additional configuration directory. While most Quire configuration happens in the [`config.yml`](#config-yml) file as explained above, the `config` directory gives more specific controls for different output formats and development environments. In most cases changes won’t need to be made to these files until you are deploying your site. Read more in [*Outputting & Deploying Your Site*](/guide/multiformat-output/).
+An additional configuration directory. While most Quire configuration happens in the [`config.yml`](#config-yml) file as explained above, the `config` directory gives more specific controls for different output formats and development environments. In most cases, changes won’t need to be made to these files until you are deploying your site. Read more in [*Outputting & Deploying Your Site*](/guide/multiformat-output/).
 
 #### 📁 site
 
-Where the built pages of the Quire website will be. This folder and its contents are automatically generated with the `quire site` command in the Quire CLI, and should not be edited directly. Read more in [*Outputting & Deploying Your Site*](/guide/multiformat-output/).
+Where the built pages of the Quire website will be. This folder and its contents are automatically generated with the `quire site` command-in the Quire CLI, and should not be edited directly. Read more in [*Outputting & Deploying Your Site*](/guide/multiformat-output/).
 
 #### 📁 themes
 
-The `themes` directory contains one or more {{< q-glossary "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command in the Quire CLI, the default theme is `quire-starter-theme`. Read more in [*Customizing Styles*](/guide/styles-customization/).
+The `themes` directory contains one or more {{< q-glossary "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command-in the Quire CLI, the default theme is `quire-starter-theme`. Read more in [*Customizing Styles*](/guide/styles-customization/).
 
 ## Creating a Publication Outline
 
@@ -163,7 +163,7 @@ Quire lets you preview the current version of your site in a web browser, and wi
 
 3. Open a web browser and visit [http://localhost:1313](http://localhost:1313) to see the publication. To stop the preview you can either press Control–C or type `quire stop` and press enter.
 
-Quire files can be edited in any text editor, though we recommended [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/), two free and fully featured options. With one of these text editors installed, open your Quire project in it. You will see the directory contents listed in the left sidebar. As you make and save changes to these files the web browser preview of the site will automatically update as well.
+Quire files can be edited in any text editor, though we recommended [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/), two free and fully featured options. With one of these text editors installed, open your Quire project in it. You will see the directory contents listed on the left sidebar. As you make and save changes to these files, the web browser preview of the site will automatically update as well.
 
 {{< q-class "box warning" >}}
 
