@@ -4,20 +4,20 @@ weight: 211
 type: essay
 ---
 
-The look and feel of your Quire publication can be customized at four different levels of complexity: 
+The look and feel of your Quire publication can be customized at four different levels of complexity:
 
   1. Changing style {{< q-glossary "variables" >}} in the {{< q-glossary "theme" >}}
   2. Adding new style rules to the `custom.css` file
   3. Overriding specific theme {{< q-glossary "templates" >}} with your own custom version
   4. Creating an entirely new Quire theme.
-  
+
 {{< q-class "box tip" >}}  
 - The default theme installed with every new Quire project is the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). The README file of that repository includes complete information about the customizations available in that specific theme.
 {{< /q-class >}}
 
 ## Changing the Style Variables in the Theme
 
-Every Quire project has a theme inside the `themes` directory. When you first start a new project typing the `quire new` command in your command line interface, the default theme included is the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.
+Every Quire project has a theme inside the `themes` directory. When you first start a new project typing the `quire new` command in your command-line interface, the default theme included is the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.
 
 To find the variables, open the `themes/quire-starter-theme` directory, navigate to the `source` sub-directory and then `css`, and open the file called `variables.scss`.
 
@@ -36,7 +36,7 @@ Colors are expressed a number of different ways, none of which are better or mor
 - {{< q-glossary "RGB Color Values" >}} like `rgb(255, 0, 0)`, `rgb(65, 105, 225)` and `rgb(240, 255, 240)`
 
 {{< q-class "box warning" >}}
-- You must have the `quire preview` command running in your command line interface to see changes you make to the `variables.scss` file. You may also sometimes need to refresh your browser page, or even clear the browser cache to get the style changes to fully load.
+- You must have the `quire preview` command running in your command-line interface to see changes you make to the `variables.scss` file. You may also sometimes need to refresh your browser page, or even clear the browser cache to get the style changes to fully load.
 {{< /q-class >}}
 
 ## Adding Custom Styles
@@ -184,7 +184,7 @@ You may also need to clear your browser cache to get the new theme stylesheets t
 
 3. Add the new theme package to the `themes` folder of your Quire project. Leave the old theme there for now, until you confirm your new theme works and you are sure you want to use it.
 
-4. In your project’s `config.yml` file change the name listed under `theme` from `"quire-starter-theme"` to the name of the new theme.
+4. In your project’s `config.yml` file, change the name listed under `theme` from `"quire-starter-theme"` to the name of the new theme.
 
 5. In your {{< q-glossary "command-line interface" >}}, navigate to your project folder and run the command `quire install`. This will install your theme’s dependencies.
 
