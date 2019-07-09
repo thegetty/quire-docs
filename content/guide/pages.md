@@ -4,7 +4,7 @@ type: essay
 weight: 205
 ---
 
-Every page in a Quire publication starts with a block of {{< q-glossary "YAML" >}}. The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes, at the very top of the page.
+Every page in a Quire publication starts with a block of {{< q-glossary "YAML" >}}. The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes at the very top of the page.
 
 ```yaml
 ---
@@ -33,9 +33,9 @@ weight:
 slug:
 ---
 ```
-  
+
 For more details on this full list of possible attributes that Quire can use in page YAML, see the [Page YAML](/api-docs/yaml/#page) section of the Quire API docs.
-  
+
 ## Defining Page Types
 
 ```yaml
