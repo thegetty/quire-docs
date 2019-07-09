@@ -10,7 +10,7 @@ You can read more about [*YAML syntax basics*](/resources/cheatsheet/) and check
 
 ## Adjusting the Default Publication Settings in the `config.yml` File
 
-The `config.yml` file is a standard and required file for {{< q-glossary "Hugo" >}}, and so also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that those typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
+The `config.yml` file is a standard and required file for {{< q-glossary "Hugo" >}}, and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
 
 The properties in the `config.yml` file are individually documented in the [*API/Docs section*](/api-docs/yaml/), however, a few key items to note:
 
@@ -35,13 +35,16 @@ It is also a good idea to include both `one_line` and `full` descriptions as the
 ### Publication Details
 
 The values of `url`, `pub_date`, and `language` should be filled out.
+
 - `url` should be the final URL where your publication will live (its permalink) and should include `http://` or `https://` as appropriate.
+
 - The value of `pub_date` must follow a YYYY-MM-DD format (the {{< q-glossary "ISO 8601 format" >}}) and should be the projected final publication date.
+
 - Lastly, `language` should be a 2-letter {{< q-glossary "ISO 639-1 language code" >}}. The default value is `en` (English) and other languages can be used.
 
-There’s an optional `pub_type` property whose values are `book`, `journal-periodical`, or `other`. If you use the value `book`, it is recommended you also include an {{< q-glossary "ISBN" >}} as a standard identifier. And if you use the value `journal-periodical`, you should include information for the {{< q-glossary "ISSN" >}}, `series_periodical_name`, and `series_issue_number` attributes if possible.
+There’s an optional `pub_type` property whose values are `book`, `journal-periodical`, or `other`. If you use the value `book`, it is recommended you also include an {{< q-glossary "ISBN" >}} as a standard identifier. If you use the value `journal-periodical`, you should include information for the {{< q-glossary "ISSN" >}}, `series_periodical_name`, and `series_issue_number` attributes if possible.
 
-Both {{< q-glossary "ISBN" >}} and {{< q-glossary "ISSN" >}} are to consider if you want libraries to catalog your publication. Along with `isbn` and `issn`, `doi` and `uuid` are also supported so you can add these attributes as identifiers:
+Both {{< q-glossary "ISBN" >}} and {{< q-glossary "ISSN" >}} are considered if you want libraries to catalog your publication. Along with `isbn` and `issn`, `doi` and `uuid` are also supported so you can add these attributes as identifiers:
 
 ```yaml
 identifier:
@@ -53,13 +56,13 @@ identifier:
 
 {{< q-class "box" >}}Note that the `isbn` and `issn` identifiers used here are for the online edition specifically. Identifiers for other specific editions (PDF/Print, EPUB, and MOBI) can be defined separately with the appropriate `resource_link`. See the [*Formats, Resources & Links*](#formats-resources-links) section below for more.{{< /q-class >}}
 
-Lastly, Quire supports publications with multiple publishers, but at least one `publisher` should be listed with a `name`, `location` and `url` attributes. In particular, this is used in the citation features as well as in search engine metadata.
+Lastly, Quire supports publications with multiple publishers, but at least one `publisher` should be listed with a `name`, `location`, and `url` attributes. In particular, this is used in the citation features as well as in search engine metadata.
 
 ### Contributors
 
-Every publication should have at least one `contributor`. The `contributor` item `type` can have one of three values: `primary`, `secondary`, or `project-team`. The `primary` contributors are those that would show up on the *Cover*, *Menu* and *Title Page* of a publication, and may include authors, editors, translators and others. Contributors should, at a minimum, be listed with a `first_name` and `last_name` (or alternately just a `full_name`).
+Every publication should have at least one `contributor`. The `contributor` item `type` can have one of three values: `primary`, `secondary`, or `project-team`. The `primary` contributors are those who would show up on the *Cover*, *Menu* and *Title Page* of a publication, and may include authors, editors, translators and others. Contributors should, at a minimum, be listed with a `first_name` and `last_name` (or alternately just a `full_name`).
 
-An optional `contributor_as_it_appears` value allows for more fine-grained control in the way contributors are listed. It could be, for example, something like "Edited by Rose Valland and Denis Diderot". Even when using `contributor_as_it_appears` though, the contributors should still also be individually listed as contributors (with a value of `primary`) for search engine legibility.
+An optional `contributor_as_it_appears` value allows for more fine-grained control in the way contributors are listed. It could be, for example, something like "Edited by Rose Valland and Denis Diderot". Even when using `contributor_as_it_appears`, the contributors should still also be individually listed as contributors (with a value of `primary`) for search engine legibility.
 
 The editors, designers and developers and others who worked on the title may be listed as contributors with the `project-team` value. This information is usually then listed on the *About* and *Copyright* pages of the publication.
 
@@ -69,13 +72,13 @@ Read more about this matter in the [*Contributors*](/guide/contributors/) chapte
 
 You should include a `copyright` line property for your publication, and optionally `license` information property if you are distributing the publication {{< q-glossary "Open Access" >}}.
 
-A simple {{< q-glossary "Copyright" >}} statement would typically be formatted as "© 2018 Author Name".
+A simple {{< q-glossary "Copyright" >}} statement would typically be formatted as "© 2019 Author Name".
 
 {{< q-class "box" >}}The `copyright` property does support Markdown formatting to allow for multiple paragraphs and other formatting.{{< /q-class >}}
 
 Open access licensing typically means applying one of seven {{< q-glossary "Creative Commons Licenses" >}} to your publication. This is in addition to your copyright statement.
 
-[note]An open Creative Commons license does not replace or supersede copyright in a work, it instead says that the copyright holder is licensing (allowing) others to make use of the work in an open way.
+Note, an open Creative Commons license does not replace or supersede copyright in a work, it instead says that the copyright holder is licensing (allowing) others to make use of the work in an open way.
 
 To use a Creative Commons license fill in the `name`, `abbreviation`, `url`, and `scope` values of the license property. `scope` value should be either `full`, `text-only` or `some-exceptions` and will determine the way the license is worded on your site. To override the wording and link language use the `online_text` and `pdf_ebook_text` attributes.
 
