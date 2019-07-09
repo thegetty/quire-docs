@@ -4,13 +4,13 @@ weight: 214
 type: essay
 ---
 
-GitHub is a project management platform centered around git-based version control. That means it’s a good place to host your project and to track changes to it, whether you’re working on your own, or with a team of collaborators. The Getty uses GitHub to manage all of its publications, as well as Quire itself.
+GitHub is a project management platform centered around git-based version control. That means it’s a good place to host your project and track changes to it, whether you’re working on your own, or with a team of collaborators. The Getty uses GitHub to manage all of its publications, as well as Quire itself.
 
-To get started you just need to [sign up for a free GitHub account](http://github.com/join), and [download and install the free GitHub Desktop software](https://desktop.github.com/). (Advance users will often use git and GitHub from their {{< q-glossary "command-line shell" >}}.)
+To get started, you just need to [sign up for a free GitHub account](http://github.com/join), and [download and install the free GitHub Desktop software](https://desktop.github.com/). (Advance users will often use git and GitHub from their {{< q-glossary "command-line shell" >}}.)
 
 ## Hosting Your Project Code on GitHub
 
-GitHub uses git to track changes in project files. When you start a new project with `quire new`, it comes already configured as a git repository. (You might have noticed a mysterious `.git` directory in your project.) Follow the steps below to host the code on GitHub. Note that this will load just the raw code of the current version of your project, not the online publication itself. Instructions for updating your project code once on GitHub, and for hosting a website version follow this.
+GitHub uses git to track changes in project files. When you start a new project with `quire new`, it comes already configured as a git repository. (You might have noticed a mysterious `.git` directory in your project.) Follow the steps below to host the code on GitHub. Note that this will load just the raw code of the current version of your project, not the online publication itself. Instructions for updating your project code on GitHub, and for hosting a website version are the following.
 
 1. Open GitHub Desktop and go to File > Add Local Repository (Cmd-O). Select your project repository and click Add Repository
 
@@ -109,6 +109,4 @@ While you can host your project code on GitHub, you can also use it to host a li
 
 It will take a few minutes to propagate through GitHub’s system, but your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
 
-Note that if you have a GitHub account that allows for private repositories, you can have a private repo and still run the deploy script. The code will note show up on the public GitHub site, but the preview will still be accessible at its URL. This is a good way of sharing a site preview to other collaborators during the development process, before your site is published.
-
-
+Note that if you have a GitHub account that allows for private repositories, you can have a private repo and still run the deploy script. The code will not show up on the public GitHub site, but the preview will still be accessible at its URL. This is a good way of sharing a site preview to other collaborators during the development process, before your site is published.
