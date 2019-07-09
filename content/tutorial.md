@@ -37,7 +37,7 @@ With the shell open, you can type `ls` (list) to list the folders and files in y
 
 {{< /q-class >}}
 
-*For a deeper dive into the command line, check out a [Really Friendly Command Line Intro](https://hellowebbooks.com/learn-command-line/), or the Programming Historian’s [“Introduction to the Bash Command Line”](https://programminghistorian.org/en/lessons/intro-to-bash).*
+*For a deeper dive into the command-line, check out a [Really Friendly Command Line Intro](https://hellowebbooks.com/learn-command-line/), or the Programming Historian’s [“Introduction to the Bash Command Line”](https://programminghistorian.org/en/lessons/intro-to-bash).*
 
 ## 2. Installing Quire
 
