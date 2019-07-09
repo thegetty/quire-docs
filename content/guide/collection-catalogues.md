@@ -49,7 +49,7 @@ There are two sections in the `objects.yml` file: `object_list` and `object_disp
 
 - You control the specifics of which attributes to display and in what order, by listing them under `object_display_order`. Following the sample above, the attributes included on the pages would be: `artist`, `year`, `dimensions`, `medium` and `location`.
 
-  Any images of the object are also included here, under the `figure` attribute. This is a list of one or or more images. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. However, if you prefer, you can instead include a `src` attribute with the filename as it appears in your project’s image directory.
+  Any images of the object are also included here, under the `figure` attribute. This is a list of one or more images. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. However, if you prefer, you can instead include a `src` attribute with the filename as it appears in your project’s image directory.
 
 Here are the only defined object attributes, you can include any others you like:
 
@@ -71,7 +71,7 @@ object:
   - id: 1
 ```
 
-The page will feature any images associated with the object, followed by a table of object information and finally any essay/entry text included in the page {{< q-glossary "Markdown file" >}}.
+The page will feature any images associated with the object, followed by a table of object information and finally an essay/entry text included in the page {{< q-glossary "Markdown file" >}}.
 
 {{< q-figure id="1.7" >}}
 
