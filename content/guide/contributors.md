@@ -33,7 +33,7 @@ Any contributor listed in your publication.yml file that has a `type: primary` w
 Sometimes, rather than a plain list, you may want your contributors listed in a particular way. Such as, “Edited by Author Name and Author Name”. In these cases, you can add you custom text in the publication.yml file under `contributor_as_it_appears` which can also take Markdown and HTML tags as needed.
 
 ```yaml
-contributor_as_it_appears: as told by Beyoncé, Kelly Rowland, 
+contributor_as_it_appears: as told by Beyoncé, Kelly Rowland,
   and Michelle Williams <br /> *with an introduction by Diana
   Ross*
 ```
@@ -92,7 +92,7 @@ Just as with the cover, if you want to display the contributors in a particular 
 
 ### Contributors Elsewhere on the Page
 
-You can also add lists of contributors to the main body of a page using the `q-contributor` shortcode. This allows you to create a page of contributor biographies, a section of bios for a single page, a list of contributors, a byline for a particular page, or other similar applications. 
+You can also add lists of contributors to the main body of a page using the `q-contributor` shortcode. This allows you to create a page of contributor biographies, a section of bios for a single page, a list of contributors, a byline for a particular page, or other similar applications.
 
 The shortcode requires both a `"range"` and a `"format"` value, and allows for an optional  `"align"` value as well.
 
@@ -105,7 +105,7 @@ The `"range"` value determines which contributors will be included in the list. 
 |`page` | Only the contributors listed for the page the shortcode appears on. |
 | `all` | All contributors listed in the publication, whether listed on individual pages or in the publication.yml file. |
 
-You can also use any contributor `type` you define. So if you give a contributor a `type: primary` (such as for your main publication authors as discussed in the [“Displaying Contributors on Your Cover”](#displaying-contributors-on-your-cover)) than a shortcode using `range="primary"` will list any of your project’s primary contributors. 
+You can also use any contributor `type` you define. So if you give a contributor a `type: primary` (such as for your main publication authors as discussed in the [“Displaying Contributors on Your Cover”](#displaying-contributors-on-your-cover)) than a shortcode using `range="primary"` will list any of your project’s primary contributors.
 
 The `"format"` value determines what information will be listed for each contributor in the `"range"`, and how it will be formatted. Possible `"format"` values are:
 
@@ -121,7 +121,7 @@ The `"format"` value determines what information will be listed for each contrib
 {{< q-figure id="modern_contributors-name-title-block" >}}
 
 {{< q-figure id="modern_contributors-initials" >}}
- 
+
 {{< q-figure id="modern_contributors-bio" >}}
 
 
@@ -137,7 +137,7 @@ See the [`q-contributor` shortcode reference](/api-docs/shortcodes#q-contributor
 
 #### Sorting Contributor Lists
 
-Using the shortcode, contributors will be listed alphabetically. Either by `last_name` `first_name` if given, or `full_name`. You can specify a `file_as` value for contributors to override the default sorting. 
+Using the shortcode, contributors will be listed alphabetically. Either by `last_name` `first_name` if given, or `full_name`. You can specify a `file_as` value for contributors to override the default sorting.
 
 If you wanted, for example, a list of essay contributors ordered in the way they are ordered in the page YAML block, you could assign a numeric `file_as` value to each (1, 2, 3 etc.). Note though that this `file_as` override will cary over to other uses of the shortcode. For example, a complete list of contributors at the end of a volume of collected papers.
 
@@ -151,7 +151,6 @@ If you wanted, for example, a list of essay contributors ordered in the way they
 
 Contributor information is also embedded in Quire projects in a way that is optimized for search engine discovery. Here are a few tips to take advantage of this feature:
 
-- List your project’s main authors in the publication.yml file and give them a `type: primary` 
+- List your project’s main authors in the publication.yml file and give them a `type: primary`
 - List other contributors (like authors of individual papers) in the publication.yml file and give them a `type: secondary`.
 - Whenever using the `contributor_as_it_appears` value (which overrides how contributors are listed on the cover or on individual pages) still include a list of the individual contributors in your YAML. This is especially true for your overall publication, and any pages that have a `type: essay`, the metadata for which are structured to pay particular attention to the authors.
-

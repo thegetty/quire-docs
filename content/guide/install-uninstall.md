@@ -10,7 +10,7 @@ type: essay
 
 ## macOS Installation
 
-Open your your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder) and follow the steps below. First to install support software for Quire, and then Quire itself. If you are new to the command line, read our tutorial on [“Working in a Command-line Shell”](/tutorial#1-working-in-a-command-line-shell).
+Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder) and follow the steps below. First, install support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial on [“Working in a Command-line Shell”](/tutorial#1-working-in-a-command-line-shell).
 
 1. Install **Apple’s Xcode** by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
 
@@ -24,14 +24,14 @@ Open your your Terminal {{< q-glossary "command-line shell" >}} (found in your A
 
 4. Visit the **PrinceXML** site, download the Mac OS version, and uncompress the folder: [http://www.princexml.com/download/](http://www.princexml.com/download/).
 
-    Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default) and that the version you downloaded was 12.2, you can update the command if either of these is not the case.
+    Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default) and that the version you downloaded was 12.5. You can update the command if either of these is not the case.
 
     ```text
-    cd Downloads/prince-12.2-macosx
+    cd Downloads/prince-12.5-macosx
     sudo ./install.sh
     ```
 
-    The Terminal will ask for your computer password. After entering it another message will appear in the Terminal shell to confirm that PrinceXML should be installed in the `/usr/local` directory. Press enter.
+    The Terminal will ask for your computer password. After entering it, another message will appear in the Terminal shell to confirm that PrinceXML should be installed in the `/usr/local` directory. Press enter.
 
     When complete, type `cd` into the Terminal to return to your home/user directory.
 
@@ -45,7 +45,7 @@ Open your your Terminal {{< q-glossary "command-line shell" >}} (found in your A
     git clone https://github.com/gettypubs/quire-cli.git
     ```
 
-    You may asked to enter your GitHub username and password. When complete, install the CLI by copying and pasting the following commands into your Terminal and pressing enter. The first resets user permissions for your local directory, the second installs Quire.
+    You may be asked to enter your GitHub username and password. When complete, install the CLI by copying and pasting the following commands into your Terminal and pressing enter. The first resets user permissions for your local directory, the second installs Quire.
 
     ```text
     sudo chown -R $USER /usr/local
@@ -66,7 +66,7 @@ When complete, type `quire --version` to confirm proper installation. It should 
 
 3. Download **Prince** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Prince you can follow the instructions at their site: https://www.princexml.com/doc-install/#windows
 
-4. Download **Pandoc** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc on your system.
+4. Download **Pandoc** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc onto your system.
 
 5. Open **PowerShell** (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select "run as administrator" from the context menu.
 
@@ -76,7 +76,7 @@ When complete, type `quire --version` to confirm proper installation. It should 
     npm install --g --production windows-build-tools
     ```
 
-    This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with your the name of your computer and your username once it's complete.
+    This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with the name of your computer and your username once it's complete.
 
 6. Continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one) and type the following command to download **Quire CLI** to your computer from GitHub:
 
@@ -173,7 +173,7 @@ If the above doesn't fix the problem, open your `.bash_profile` and add the foll
   ```
 
 For more information about this issue and possible workarounds, please [refer here](https://github.com/creationix/nvm/issues/576)
-To verify that nvm has been installed, do:
+to verify that nvm has been installed, do:
 
   ```sh
   command -v nvm
@@ -210,7 +210,7 @@ Install the .deb file
   ```
 This will install the pandoc and pandoc-citeproc executables and man pages.
 
-Verify pandoc was installed
+Verify Pandoc was installed
 
    ```sh
    pandoc -v
@@ -241,7 +241,7 @@ Verify
 ```sh
 quire -V
 ```
-If version number is returned quire-cli was installed correctly, you can now leave the directory.
+If version number is returned, quire-cli was installed correctly. You can now leave the directory.
 
 ```sh
 cd ~
@@ -251,25 +251,25 @@ cd ~
 
 As we develop, you may also want/need to update your Quire CLI. The CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI, any new projects you start will have the corresponding older version of the theme.
 
-1. In your command line shell, to first uninstall and discard the existing version of the CLI, enter the following four commands in order:
-    
+1. In your command-line shell, to first uninstall and discard the existing version of the CLI, enter the following four commands in order:
+
     ```tx
     cd quire-cli
     ```
-    
+
     ```tx
     npm uninstall -g
     ```
-    
+
     ```tx
     cd
     ```
-    
+
     ```tx
     rm -rf quire-cli
     ```
 
-3. Still in your command line shell, enter these three commands to download the latest version and install it:
+3. Still in your command-line shell, enter these three commands to download the latest version and install it:
 
 
     ```tx
@@ -286,7 +286,7 @@ As we develop, you may also want/need to update your Quire CLI. The CLI is pegge
 
 You now have the latest Quire CLI and any new projects you start will also have the newest theme. Your previously-started projects will keep their original version of theme unless you [update the theme](#updating-the-theme) separately.
 
-You may in some cases see errors or issues when running Quire commands with a newer version of the CLI, in older projects. These can be fixed manually, or, you can also re-install [your original version of the CLI](https://github.com/gettypubs/quire-cli/releases) to run those older projects if necessary.
+You may in some cases see errors or issues when running Quire commands with a newer version of the CLI in older projects. These can be fixed manually, or, you can also re-install [your original version of the CLI](https://github.com/gettypubs/quire-cli/releases) to run those older projects if necessary.
 
 ## Updating the Theme
 

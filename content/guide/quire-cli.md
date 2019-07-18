@@ -16,7 +16,7 @@ The [Quire CLI](https://github.com/gettypubs/quire-cli), or command-line interfa
 : Create a new Quire project named `project-name` in the current directory. The name can be anything, but shouldn’t contain spaces or special characters.
 
 `quire preview`
-: Run a local server to preview the project in a browser. Defaults to previewing at http://localhost:1313/, but will use other port numbers (such as http://localhost:6532/) if 1313 is busy. The specific address will be listed in your command line terminal after running the command. If you’re having any issue with the preview, try running `quire preview --verbose` instead. This outputs error, warning and other processing information that can sometimes be useful in troubleshooting.
+: Run a local server to preview the project in a browser. Defaults to previewing at http://localhost:1313/, but will use other port numbers (such as http://localhost:6532/) if 1313 is busy. The specific address will be listed in your command-line terminal after running the command. If you’re having any issue with the preview, try running `quire preview --verbose` instead. This outputs error, warning and other processing information that can sometimes be useful in troubleshooting.
 
 `quire install`
 : Install this project's theme dependencies when you update or change themes.
@@ -73,8 +73,7 @@ Also for the PDF, EPUB, and MOBI commands, developers may  use the `--env` optio
 : Output usage information.
 
 `quire preview --verbose`
-: Show verbose output in the command line. Includes warnings, errors and process information.
+: Show verbose output in the command-line. Includes warnings, errors and process information.
 
 `quire debug`
 : Development use only. Log info about current project.
-

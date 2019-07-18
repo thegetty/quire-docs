@@ -28,7 +28,7 @@ The variables `$family-primary` and `$family-secondary` tell your publication wh
 
 ## Adding a New Font
 
-{{< q-class "box" >}}Any font you add to your project should be under an open license, or you should have an explicit license to use it. While licensed fonts may offer variety, using them often means paying fees, and tracking usage. Additionally, if you are using GitHub to publicly share your Quire project, licensed fonts should **never** be included in your repository without also being listed on your `.gitignore` file, as this will expose the files to other users. {{< /q-class >}}
+{{< q-class "box" >}}Any font you add to your project should be under an open license, or you should have an explicit license to use it. While licensed fonts may offer variety, using them often means paying fees and tracking usage. Additionally, if you are using GitHub to publicly share your Quire project, licensed fonts should **never** be included in your repository without also being listed on your `.gitignore` file, as this will expose the files to other users. {{< /q-class >}}
 
 For open license fonts, [Google Fonts](https://fonts.google.com/) is a great source, but other more artisanal options abound like the faces from the [League of Moveable Type](https://www.theleagueofmoveabletype.com/), or even the [Cooper Hewitt’s own open source font](https://www.cooperhewitt.org/open-source-at-cooper-hewitt/cooper-hewitt-the-typeface-by-chester-jenkins/). For more free fonts and for thoughtful ideas about their use, Jeremiah Shoaf’s [*The Definitive Guide to Free Fonts*](https://www.typewolf.com/free-fonts), is worth the purchase price.
 

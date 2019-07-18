@@ -223,7 +223,7 @@ Footnotes can also include Markdown formatting, including lists and even multipl
 
 ### Markdown and HTML
 
-You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Styles Customization*](/guide/styles-customization/) chapter of this guide.) Note, however, that you can’t do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode.
+You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Styles Customization*](/guide/styles-customization/) chapter of this guide.) Note, however, that you can do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode.
 
 {{< q-class "box tip" >}}
 - For the things Markdown can’t do, Quire includes number of useful shortcodes. You’ll read more about them in other chapters of this guide. A complete list is available in the [shortcode reference section](/api-docs/shortcodes).
@@ -265,7 +265,7 @@ Outside of more code-driven text editors, there are also a growing number of Mar
 
 Hugo has a built-in Markdown processor, {{< q-glossary "Blackfriday" >}}, which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
 
-By default, in the `config.yml` file of your Quire project, {{< q-glossary "Blackfriday" >}}'s `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such.), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
+By default, in the `config.yml` file of your Quire project, {{< q-glossary "Blackfriday" >}}'s `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
 
 ## Markdown Resources
 
@@ -284,7 +284,7 @@ There are some easy things you can do in the Word document prior to conversion t
 - Don’t use any font color or color highlighting, it will not convert to Markdown.
 - Save as .docx rather than .doc
 
-While there are a number of free tools, we recommend using Pandoc, which is included with the basic Quire installation and can be used through the command line. To convert, open your {{< q-glossary "command-line shell" >}}, use the `cd` (change directory) command to move to the folder where your .docx documents are saved, and enter the applicable Pandoc command:
+While there are a number of free tools, we recommend using Pandoc, which is included with the basic Quire installation and can be used through the command-line. To convert, open your {{< q-glossary "command-line shell" >}}, use the `cd` (change directory) command to move to the folder where your .docx documents are saved, and enter the applicable Pandoc command:
 
 To convert a single Word document (in this example it has a file name of MyFile.docx) into Markdown:
 
@@ -315,7 +315,7 @@ The order of the extensions doesn't matter, and you can either type:
 pandoc --atx-header --wrap=none -s MyFile.docx -t markdown -o MyFile.md
 ```
 
-or 
+or
 
 ```
 pandoc -s MyFile.docx -t markdown --atx-header --wrap=none -o MyFilemd

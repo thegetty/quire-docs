@@ -6,7 +6,7 @@ weight: 206
 
 ## Formatting Text Content with Markdown
 
-The main content of your page appears after the YAML block at the top ([*Page Types & Structure*](/guide/pages/)), and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it *italic*. 
+The main content of your page appears after the YAML block at the top ([*Page Types & Structure*](/guide/pages/)), and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and one set of asterisks wrapping around the text turns it *italic*.
 
 The markdown file for this page starts like this:
 
@@ -19,22 +19,22 @@ weight: 206
 
 ## Formatting Text Content with Markdown
 
-The main content of your page appears after the YAML block at 
-the top ([*Page Types & Structure*](/guide/pages/)), and will be 
-formatted in Markdown. Markdown is a very simple, plain text 
-markup language that uses a few text rules to structure content 
-for easy conversion into HTML. For example, a hash or pound sign 
-at the beginning of a line makes a heading, and asterisks 
-wrapping text turns it *italic*. 
+The main content of your page appears after the YAML block at
+the top ([*Page Types & Structure*](/guide/pages/)), and will be
+formatted in Markdown. Markdown is a very simple, plain text
+markup language that uses a few text rules to structure content
+for easy conversion into HTML. For example, a hash or pound sign
+at the beginning of a line makes a heading, and asterisks
+wrapping text turns it *italic*.
 ```
 
-You can all about Markdown syntax and how it is used in Quire in the [*Fundamentals: YAML & Markdown*](/guide/fundamentals/) chapter of this guide.
+You can read all about Markdown syntax and how it is used in Quire in the [*Fundamentals: YAML & Markdown*](/guide/fundamentals/) chapter of this guide.
 
 ## Using Shortcodes to Add Features
 
 Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain Markdown. While {{< q-glossary "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
 
-Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (`{{</* q-shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
+Shortcodes are always formatted with a combination of curly brackets and angle brackets with the name of the shortcode inside (`{{</* q-shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
 
 ```go
 {{</* q-figure id="3.1" */>}}
@@ -54,7 +54,7 @@ Text goes here
     {{</* q-class "bsckmatter" */>}} ...
     {{</* /q-class */>}}
     ```
-{{< /q-class >}} 
+{{< /q-class >}}
 
 The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes api reference](/api-docs/shortcodes/).
 
@@ -82,7 +82,7 @@ These are set by default to open in new pages, but you can change that by settin
 
 ### Internal Links Between Pages
 
-Internal links between pages in your Quire publication can be included through the following Markdown formatting, using the file name of the page, and the directory name of the section it is in if any.
+Internal links between pages in your Quire publication can be included through the following Markdown formatting using the file name of the page and the directory name of the section it is in if any.
 
 ```md
 [Link text](/name-of-section-if-any/nameofpage/)
@@ -106,11 +106,11 @@ This linking can be applied to a piece of text that when clicked upon will take 
 #### Linking to Other Kinds of Page Elements
 
 An ID and the # symbol is also used for other kinds of elements on the same page. The IDs for these elements can be found using the following method:
-  
+
 - Use the Inspect Element tool when right clicking a page or specific element. For Safari users, refer to this [guide](https://apple.stackexchange.com/questions/139767/inspect-element-in-safari) to enable this feature.
 
-- In the page's code certain elements will include a piece of code, `id="idnamehere"` that designates the ID of that element. If the name of the element has a space that will be represented with a dash `-`.
-  
+- In the page's code, certain elements will include a piece of code, `id="idnamehere"` that designates the ID of that element. If the name of the element has a space that will be represented with a dash `-`.
+
 - For example, the ID of a heading will often be the name of that heading.
 
     ```md
@@ -126,14 +126,14 @@ Following the formula for internal links between pages, you can also specify an 
       [referencetolink](/nameofpage/#idname)
       See the introduction [notes](/introduction/#notes)
       ```
-  
+
 {{< q-class "box warning" >}}
 - Blackfriday, Quire’s built in Markdown processor, will incorrectly create link when there is some text in brackets followed immediately by more text in parentheses even if there is a space between them. To avoid the linking, you can use a \ (backslash) escape character before the first parentheses, such as: `[not a link] \(1926)`  The \ will not display in the final rendered text.
 {{< /q-class >}}
 
 #### Linked Footnotes
 
-When creating [footnotes with Markdown](/guide/fundamentals/#footnotes), links are automatically created between the footnote number in the text and the note itself at the bottom of the page. To link to a note from other locations, you can use its automatically generated ID, which always follows the format `fn:#` where # is the number of the footnote. 
+When creating [footnotes with Markdown](/guide/fundamentals/#footnotes), links are automatically created between the footnote number in the text and the note itself at the bottom of the page. To link to a note from other locations, you can use its automatically generated ID, which always follows the format `fn:#` where # is the number of the footnote.
 
 ```md
 [referencetolink](#fn:#)
@@ -143,9 +143,8 @@ See [note 3, chapter 2](/chapter-2/#fn:3)
 
 #### Citations
 
-When the citation shortcode, `{{</* q-cite "author date" "page #" */>}}` is used in body of text and corresponds to the short and full bibliographic information provided in the references.yml file, an in-page bibliography will be generated and linked to. This linking is completed automatically.
+When the citation shortcode `{{</* q-cite "author date" "page #" */>}}` is used in a body of text and corresponds to the short and full bibliographic information provided in the references.yml file, an in-page bibliography will be generated and linked to. This linking is completed automatically.
 
 When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
 
 For more information see the [Citations & Bibliography](/guide/citation-bibliographies/) section of this guide.
-
