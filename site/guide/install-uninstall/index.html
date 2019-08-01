@@ -698,7 +698,7 @@
 
 <h2 id="macos-installation">macOS Installation</h2>
 
-<p>Open your your Terminal <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">command-line shell</span><span class="quire-definition__content">The command-line shell is a text-based window into the contents of your computer, and a space where you can run program commands. On Mac computers you’ll most often use a shell called Terminal, on PCs it’s PowerShell or Git BASH.</span></span> (found in your Applications/Utilities folder) and follow the steps below. First to install support software for Quire, and then Quire itself. If you are new to the command line, read our tutorial on <a href="https://gettypubs.github.io/quire/tutorial#1-working-in-a-command-line-shell">“Working in a Command-line Shell”</a>.</p>
+<p>Open your Terminal <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">command-line shell</span><span class="quire-definition__content">The command-line shell is a text-based window into the contents of your computer, and a space where you can run program commands. On Mac computers you’ll most often use a shell called Terminal, on PCs it’s PowerShell or Git BASH.</span></span> (found in your Applications/Utilities folder) and follow the steps below. First, install support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial on <a href="https://gettypubs.github.io/quire/tutorial#1-working-in-a-command-line-shell">“Working in a Command-line Shell”</a>.</p>
 
 <ol>
 <li><p>Install <strong>Apple’s Xcode</strong> by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.</p>
@@ -710,17 +710,17 @@
 
 <li><p>Visit the <strong>PrinceXML</strong> site, download the Mac OS version, and uncompress the folder: <a href="http://www.princexml.com/download/" target="_blank">http://www.princexml.com/download/</a>.</p>
 
-<p>Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default) and that the version you downloaded was 12.2, you can update the command if either of these is not the case.</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">cd Downloads/prince-12.2-macosx
+<p>Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default) and that the version you downloaded was 12.5. You can update the command if either of these is not the case.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">cd Downloads/prince-12.5-macosx
 sudo ./install.sh</code></pre></div>
-<p>The Terminal will ask for your computer password. After entering it another message will appear in the Terminal shell to confirm that PrinceXML should be installed in the <code>/usr/local</code> directory. Press enter.</p>
+<p>The Terminal will ask for your computer password. After entering it, another message will appear in the Terminal shell to confirm that PrinceXML should be installed in the <code>/usr/local</code> directory. Press enter.</p>
 
 <p>When complete, type <code>cd</code> into the Terminal to return to your home/user directory.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">cd</code></pre></div></li>
 
 <li><p>Copy and paste the following line into your Terminal to download the <strong>Quire CLI</strong> (<span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">command-line interface</span><span class="quire-definition__content">A command-line interface (CLI) is a text-based user interface for running program tasks. In it, the user issues commands in the form of typed strings of text. This is opposed to a graphical user interface (GUI) for a software program, in which the user controls the program through visualized buttons, toggles and menus.</span></span>) to your computer from GitHub.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">git clone https://github.com/gettypubs/quire-cli.git</code></pre></div>
-<p>You may asked to enter your GitHub username and password. When complete, install the CLI by copying and pasting the following commands into your Terminal and pressing enter. The first resets user permissions for your local directory, the second installs Quire.</p>
+<p>You may be asked to enter your GitHub username and password. When complete, install the CLI by copying and pasting the following commands into your Terminal and pressing enter. The first resets user permissions for your local directory, the second installs Quire.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">sudo chown -R $USER /usr/local</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">cd quire-cli
 npm install -g</code></pre></div></li>
 </ol>
@@ -736,13 +736,13 @@ npm install -g</code></pre></div></li>
 
 <li><p>Download <strong>Prince</strong> for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Prince you can follow the instructions at their site: <a href="https://www.princexml.com/doc-install/#windows" target="_blank">https://www.princexml.com/doc-install/#windows</a></p></li>
 
-<li><p>Download <strong>Pandoc</strong> for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc on your system.</p></li>
+<li><p>Download <strong>Pandoc</strong> for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc onto your system.</p></li>
 
 <li><p>Open <strong>PowerShell</strong> (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select &quot;run as administrator&quot; from the context menu.</p>
 
 <p>Then once you get the administrator PowerShell window, type the following command:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">npm install --g --production windows-build-tools</code></pre></div>
-<p>This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with your the name of your computer and your username once it's complete.</p></li>
+<p>This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with the name of your computer and your username once it's complete.</p></li>
 
 <li><p>Continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one) and type the following command to download <strong>Quire CLI</strong> to your computer from GitHub:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">git clone https://github.com/gettypubs/quire-cli</code></pre></div>
@@ -801,7 +801,7 @@ Eg: <code>curl ... | NVM_DIR=&quot;path/to/nvm&quot;</code>. Ensure that the <co
 <p>If the above doesn't fix the problem, open your <code>.bash_profile</code> and add the following line of code:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#007020">source</span> ~/.bashrc</code></pre></div>
 <p>For more information about this issue and possible workarounds, please <a href="https://github.com/creationix/nvm/issues/576" target="_blank">refer here</a>
-To verify that nvm has been installed, do:</p>
+to verify that nvm has been installed, do:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  <span style="color:#007020">command</span> -v nvm</code></pre></div>
 <p>which should output 'nvm' if the installation was successful. Please note that <code>which nvm</code> will not work, since <code>nvm</code> is a sourced shell function, not an executable binary.
 To download, compile, and install the latest release of node, do this:</p>
@@ -818,7 +818,7 @@ To download, compile, and install the latest release of node, do this:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">  sudo dpkg -i pandoc-2.2.3.2-1-amd64.deb</code></pre></div>
 <p>This will install the pandoc and pandoc-citeproc executables and man pages.</p>
 
-<p>Verify pandoc was installed</p>
+<p>Verify Pandoc was installed</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">   pandoc -v</code></pre></div>
 <p>If Pandoc version information is returned then Pandoc was successfully installed on your system.</p>
 
@@ -830,23 +830,23 @@ To download, compile, and install the latest release of node, do this:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm install -g</code></pre></div>
 <p>Verify</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">quire -V</code></pre></div>
-<p>If version number is returned quire-cli was installed correctly, you can now leave the directory.</p>
+<p>If version number is returned, quire-cli was installed correctly. You can now leave the directory.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#007020">cd</span> ~</code></pre></div>
 <h2 id="updating-the-quire-cli">Updating the Quire CLI</h2>
 
 <p>As we develop, you may also want/need to update your Quire CLI. The CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI, any new projects you start will have the corresponding older version of the theme.</p>
 
 <ol>
-<li><p>In your command line shell, to first uninstall and discard the existing version of the CLI, enter the following four commands in order:</p>
+<li><p>In your command-line shell, to first uninstall and discard the existing version of the CLI, enter the following four commands in order:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">cd quire-cli</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">npm uninstall -g</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">cd</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">rm -rf quire-cli</code></pre></div></li>
 
-<li><p>Still in your command line shell, enter these three commands to download the latest version and install it:</p>
+<li><p>Still in your command-line shell, enter these three commands to download the latest version and install it:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">git clone https://github.com/gettypubs/quire-cli.git</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">cd quire-cli</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tx" data-lang="tx">npm install -g</code></pre></div></li>
 </ol>
 
 <p>You now have the latest Quire CLI and any new projects you start will also have the newest theme. Your previously-started projects will keep their original version of theme unless you <a href="#updating-the-theme">update the theme</a> separately.</p>
 
-<p>You may in some cases see errors or issues when running Quire commands with a newer version of the CLI, in older projects. These can be fixed manually, or, you can also re-install <a href="https://github.com/gettypubs/quire-cli/releases" target="_blank">your original version of the CLI</a> to run those older projects if necessary.</p>
+<p>You may in some cases see errors or issues when running Quire commands with a newer version of the CLI in older projects. These can be fixed manually, or, you can also re-install <a href="https://github.com/gettypubs/quire-cli/releases" target="_blank">your original version of the CLI</a> to run those older projects if necessary.</p>
 
 <h2 id="updating-the-theme">Updating the Theme</h2>
 

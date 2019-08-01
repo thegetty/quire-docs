@@ -689,7 +689,7 @@
       <div class="content">
         
 
-<p>Quire books are visual and the framework is built to support the use of images for scholarly purposes. In this page we explain where images are placed in the project and how you can manage them. We recommend using the <code>figures.yml</code> file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the <a href="#inserting-figure-images-with-the-q-figure-shortcode"><code>q-figure</code> shortcode</a>.</p>
+<p>Quire books are visual and the framework is built to support the use of images for scholarly purposes. In this page, we explain where images are placed in the project and how you can manage them. We recommend using the <code>figures.yml</code> file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the <a href="#inserting-figure-images-with-the-q-figure-shortcode"><code>q-figure</code> shortcode</a>.</p>
 
 <h2 id="including-figure-image-files-in-your-publication">Including Figure Image Files in Your Publication</h2>
 
@@ -725,7 +725,7 @@
 
 <h2 id="inserting-figure-images-with-the-q-figure-shortcode">Inserting Figure Images with the <code>q-figure</code> Shortcode</h2>
 
-<p>Assuming each YAML figure entry in the <code>figures.yml</code> file includes a unique <code>id</code> (with a value in quotes: &quot;1.1&quot; not 1.1), you can insert a figure in your publication with only the <code>id</code> attribute in the shortcode, and all of the other attributes defined in the YAML for that figure, will be automatically included.</p>
+<p>Assuming each YAML figure entry in the <code>figures.yml</code> file includes a unique <code>id</code> (with a value in quotes: &quot;1.1&quot; not 1.1), you can insert a figure in your publication with only the <code>id</code> attribute in the shortcode, and all of the other attributes defined in the YAML for that figure will be automatically included.</p>
 
 <p>Figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the <code>q-figure</code> shortcode would look like this:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>figure id=<span style="color:#4070a0">&#34;1.2&#34;</span> &gt;}}</code></pre></div>
@@ -742,9 +742,9 @@
 
 <h2 id="labeling-figure-images">Labeling Figure Images</h2>
 
-<p>By default, all figure images are labeled automatically, either at the start of the caption, or just under the image itself in the case of a figure group with a single, group caption <a href="#creating-and-styling-figure-groups-with-the-q-figure-group-shortcode">(see below)</a>. You can turn off this behavior in the <code>config.yml</code> file by switching the value <code>figureLabels: true</code> to <code>figureLabels: false</code>.</p>
+<p>By default, all figure images are labeled automatically, either at the start of the caption or just under the image itself in the case of a figure group with a single, group caption <a href="#creating-and-styling-figure-groups-with-the-q-figure-group-shortcode">(see below)</a>. You can turn off this behavior in the <code>config.yml</code> file by switching the value <code>figureLabels: true</code> to <code>figureLabels: false</code>.</p>
 
-<p>Figure labels are constructed  with the <code>id</code> of the image and the <code>figureLabelsTextBefore</code> <code>figureLabelsTextAfter</code> values defined in your <code>config.yml</code> file. For example if the <code>id</code> value is &quot;12.3&quot; and the <code>figureLabelsTextBefore</code> value is &quot;Figure &quot;, and <code>figureLabelsTextAfter</code> value is &quot;. &quot;, the resulting label would be &quot;Figure 12.3&quot;.</p>
+<p>Figure labels are constructed  with the <code>id</code> of the image and the <code>figureLabelsTextBefore</code> <code>figureLabelsTextAfter</code> values defined in your <code>config.yml</code> file. For example, if the <code>id</code> value is &quot;12.3&quot; and the <code>figureLabelsTextBefore</code> value is &quot;Figure &quot;, and <code>figureLabelsTextAfter</code> value is &quot;. &quot;, the resulting label would be &quot;Figure 12.3&quot;.</p>
 
 <p>To customize the label text on a figure-by-figure basis, use the <code>label_text</code> attribute in the YAML attributes for your figure. Any text there will override the automatically constructed version.</p>
 
@@ -752,7 +752,7 @@
 
 <h2 id="styling-figure-images">Styling Figure Images</h2>
 
-<p>Depending on your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span>, by default figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are <code>is-pulled-left</code> and <code>is-pulled-right</code>. Classes are added just like other attributes in the shortcode.</p>
+<p>Depending on your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span>, by default, figures will appear at about the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are <code>is-pulled-left</code> and <code>is-pulled-right</code>. Classes are added just like other attributes in the shortcode.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>figure id=<span style="color:#4070a0">&#34;1.2&#34;</span> class=<span style="color:#4070a0">&#34;is-pulled-left&#34;</span> &gt;}}</code></pre></div>
 
 
@@ -951,7 +951,7 @@ This responsiveness also means that group captions that use language like “Fro
 
 <p>Videos can be embedded in your publication the same way as other figure images, using either of the two figure shortcodes. The difference is in the <code>figures.yml</code> file where you’ll need to include a <code>media_id</code> and a <code>media_type</code> attribute for any video, along with an optional <code>aspect_ratio</code> attribute.</p>
 
-<p>Quire supports video embeds from either YouTube (<code>media_type: youtube</code>)or Vimeo (<code>media_type: vimeo</code>). The <code>media_id</code>s can be found in the URLs of the videos you wish to embed. For example, in <a href="https://www.youtube.com/watch?v=VYqDpNmnu8I" target="_blank">https://www.youtube.com/watch?v=VYqDpNmnu8I</a> or <a href="https://youtu.be/VYqDpNmnu8I" target="_blank">https://youtu.be/VYqDpNmnu8I</a>, the <code>media_id</code> would be <code>VYqDpNmnu8I</code>; and in <a href="https://vimeo.com/221426899" target="_blank">https://vimeo.com/221426899</a> it is <code>221426899</code>.</p>
+<p>Quire supports video embeds from either YouTube (<code>media_type: youtube</code>) or Vimeo (<code>media_type: vimeo</code>). The <code>media_id</code>s can be found in the URLs of the videos you wish to embed. For example, in <a href="https://www.youtube.com/watch?v=VYqDpNmnu8I" target="_blank">https://www.youtube.com/watch?v=VYqDpNmnu8I</a> or <a href="https://youtu.be/VYqDpNmnu8I" target="_blank">https://youtu.be/VYqDpNmnu8I</a>, the <code>media_id</code> would be <code>VYqDpNmnu8I</code>; and in <a href="https://vimeo.com/221426899" target="_blank">https://vimeo.com/221426899</a> it is <code>221426899</code>.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">-<span style="color:#bbb"> </span>id:<span style="color:#bbb"> </span><span style="color:#40a070">1.5</span><span style="color:#bbb">
 </span><span style="color:#bbb">  </span>src:<span style="color:#bbb"> </span>videostill.jpg<span style="color:#bbb">
 </span><span style="color:#bbb">  </span>media_id:<span style="color:#bbb"> </span>VYqDpNmnu8I<span style="color:#bbb">
