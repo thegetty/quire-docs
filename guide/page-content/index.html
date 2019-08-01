@@ -671,7 +671,7 @@
 
 <h2 id="formatting-text-content-with-markdown">Formatting Text Content with Markdown</h2>
 
-<p>The main content of your page appears after the YAML block at the top (<a href="https://gettypubs.github.io/quire/guide/pages/"><em>Page Types &amp; Structure</em></a>), and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it <em>italic</em>.</p>
+<p>The main content of your page appears after the YAML block at the top (<a href="https://gettypubs.github.io/quire/guide/pages/"><em>Page Types &amp; Structure</em></a>), and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and one set of asterisks wrapping around the text turns it <em>italic</em>.</p>
 
 <p>The markdown file for this page starts like this:</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">---<span style="">
@@ -682,20 +682,20 @@
 </span><span style="">
 </span><span style=""></span><span style="color:#800080;font-weight:bold">##</span> Formatting Text Content with Markdown
 <span style="">
-</span><span style=""></span>The main content of your page appears after the YAML block at <span style="">
-</span><span style=""></span>the top ([*Page Types &amp; Structure*](/guide/pages/)), and will be <span style="">
-</span><span style=""></span>formatted in Markdown. Markdown is a very simple, plain text <span style="">
-</span><span style=""></span>markup language that uses a few text rules to structure content <span style="">
-</span><span style=""></span>for easy conversion into HTML. For example, a hash or pound sign <span style="">
-</span><span style=""></span>at the beginning of a line makes a heading, and asterisks <span style="">
-</span><span style=""></span>wrapping text turns it <span style="font-style:italic">*italic*</span>. </code></pre></div>
-<p>You can all about Markdown syntax and how it is used in Quire in the <a href="https://gettypubs.github.io/quire/guide/fundamentals/"><em>Fundamentals: YAML &amp; Markdown</em></a> chapter of this guide.</p>
+</span><span style=""></span>The main content of your page appears after the YAML block at<span style="">
+</span><span style=""></span>the top ([*Page Types &amp; Structure*](/guide/pages/)), and will be<span style="">
+</span><span style=""></span>formatted in Markdown. Markdown is a very simple, plain text<span style="">
+</span><span style=""></span>markup language that uses a few text rules to structure content<span style="">
+</span><span style=""></span>for easy conversion into HTML. For example, a hash or pound sign<span style="">
+</span><span style=""></span>at the beginning of a line makes a heading, and asterisks<span style="">
+</span><span style=""></span>wrapping text turns it <span style="font-style:italic">*italic*</span>.</code></pre></div>
+<p>You can read all about Markdown syntax and how it is used in Quire in the <a href="https://gettypubs.github.io/quire/guide/fundamentals/"><em>Fundamentals: YAML &amp; Markdown</em></a> chapter of this guide.</p>
 
 <h2 id="using-shortcodes-to-add-features">Using Shortcodes to Add Features</h2>
 
 <p>Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain Markdown. While <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">Hugo</span><span class="quire-definition__content">The static site generator that powers Quire: <a href="https://gohugo.io/" target="_blank">https://gohugo.io/</a></span></span> has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a <code>q</code>.</p>
 
-<p>Shortcodes are always formatted with a combination of curly brackets and angle brackets, with the name of the shortcode inside (<code>{{&lt; q-shortcode &gt;}}</code>) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding <code>id</code> with figure information stored in the publication’s <code>figures.yml</code> file.</p>
+<p>Shortcodes are always formatted with a combination of curly brackets and angle brackets with the name of the shortcode inside (<code>{{&lt; q-shortcode &gt;}}</code>) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding <code>id</code> with figure information stored in the publication’s <code>figures.yml</code> file.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>figure id=<span style="color:#4070a0">&#34;3.1&#34;</span> &gt;}}</code></pre></div>
 <p>While most Quire shortcodes work like <code>q-figure</code> as a single instance, the <code>q-class</code> shortcode acts as wrapper around other text and so it appears as a paired opening and closing shortcode. The closing code has a slash <code>/</code> preceding the shortcode name, much like you’d find in HTML markup. This example adds the class &quot;alert&quot; to the the phrase &quot;Text goes here&quot;, which could be used to facilitate <a href="https://gettypubs.github.io/quire/guide/styles-customization/">custom styling</a>.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">{{&lt; q<span style="color:#666">-</span>class <span style="color:#4070a0">&#34;alert&#34;</span> &gt;}}
@@ -736,7 +736,7 @@ Text goes here
 
 <h3 id="internal-links-between-pages">Internal Links Between Pages</h3>
 
-<p>Internal links between pages in your Quire publication can be included through the following Markdown formatting, using the file name of the page, and the directory name of the section it is in if any.</p>
+<p>Internal links between pages in your Quire publication can be included through the following Markdown formatting using the file name of the page and the directory name of the section it is in if any.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">[<span style="color:#062873;font-weight:bold">Link text</span>](<span style="color:#4070a0">/name-of-section-if-any/nameofpage/</span>)<span style="">
 </span><span style=""></span>[<span style="color:#062873;font-weight:bold">Pea Pickers</span>](<span style="color:#4070a0">/catalogue/2/</span>)<span style="">
 </span><span style=""></span>More info in our [<span style="color:#062873;font-weight:bold">about</span>](<span style="color:#4070a0">/about/</span>) page.</code></pre></div>
@@ -756,7 +756,7 @@ Text goes here
 <ul>
 <li><p>Use the Inspect Element tool when right clicking a page or specific element. For Safari users, refer to this <a href="https://apple.stackexchange.com/questions/139767/inspect-element-in-safari" target="_blank">guide</a> to enable this feature.</p></li>
 
-<li><p>In the page's code certain elements will include a piece of code, <code>id=&quot;idnamehere&quot;</code> that designates the ID of that element. If the name of the element has a space that will be represented with a dash <code>-</code>.</p></li>
+<li><p>In the page's code, certain elements will include a piece of code, <code>id=&quot;idnamehere&quot;</code> that designates the ID of that element. If the name of the element has a space that will be represented with a dash <code>-</code>.</p></li>
 
 <li><p>For example, the ID of a heading will often be the name of that heading.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">[<span style="color:#062873;font-weight:bold">referencetolink</span>](<span style="color:#4070a0">#element-id</span>)<span style="">
@@ -788,7 +788,7 @@ Text goes here
 </span><span style=""></span>See [<span style="color:#062873;font-weight:bold">note 3, chapter 2</span>](<span style="color:#4070a0">/chapter-2/#fn:3</span>)</code></pre></div>
 <h4 id="citations">Citations</h4>
 
-<p>When the citation shortcode, <code>{{&lt; q-cite &quot;author date&quot; &quot;page #&quot; &gt;}}</code> is used in body of text and corresponds to the short and full bibliographic information provided in the references.yml file, an in-page bibliography will be generated and linked to. This linking is completed automatically.</p>
+<p>When the citation shortcode <code>{{&lt; q-cite &quot;author date&quot; &quot;page #&quot; &gt;}}</code> is used in a body of text and corresponds to the short and full bibliographic information provided in the references.yml file, an in-page bibliography will be generated and linked to. This linking is completed automatically.</p>
 
 <p>When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.</p>
 

@@ -687,8 +687,7 @@
 <li>Changing style <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">variables</span><span class="quire-definition__content">CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a document. For more information about CSS variables visit: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables</a>.</span></span> in the <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">theme</span><span class="quire-definition__content">Themes define the overall style of your website. It determines the use of colors, layout elements, and text positioning.</span></span></li>
 <li>Adding new style rules to the <code>custom.css</code> file</li>
 <li>Overriding specific theme <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">templates</span><span class="quire-definition__content">Themes may include one or more templates. Templates are the variety of layouts a theme has.</span></span> with your own custom version</li>
-<li>Creating an entirely new Quire theme.
-<br /></li>
+<li>Creating an entirely new Quire theme.</li>
 </ol>
 
 <section class="box tip">
@@ -700,7 +699,7 @@
 
 <h2 id="changing-the-style-variables-in-the-theme">Changing the Style Variables in the Theme</h2>
 
-<p>Every Quire project has a theme inside the <code>themes</code> directory. When you first start a new project typing the <code>quire new</code> command in your command line interface, the default theme included is the <a href="https://github.com/gettypubs/quire-starter-theme" target="_blank">Quire Starter Theme</a>. In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.</p>
+<p>Every Quire project has a theme inside the <code>themes</code> directory. When you first start a new project typing the <code>quire new</code> command in your command-line interface, the default theme included is the <a href="https://github.com/gettypubs/quire-starter-theme" target="_blank">Quire Starter Theme</a>. In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.</p>
 
 <p>To find the variables, open the <code>themes/quire-starter-theme</code> directory, navigate to the <code>source</code> sub-directory and then <code>css</code>, and open the file called <code>variables.scss</code>.</p>
 
@@ -773,7 +772,7 @@
 
 <section class="box warning">
   <ul>
-<li>You must have the <code>quire preview</code> command running in your command line interface to see changes you make to the <code>variables.scss</code> file. You may also sometimes need to refresh your browser page, or even clear the browser cache to get the style changes to fully load.</li>
+<li>You must have the <code>quire preview</code> command running in your command-line interface to see changes you make to the <code>variables.scss</code> file. You may also sometimes need to refresh your browser page, or even clear the browser cache to get the style changes to fully load.</li>
 </ul>
 
 </section>
@@ -957,7 +956,7 @@ As should the paragraph after it.
 
 <li><p>Add the new theme package to the <code>themes</code> folder of your Quire project. Leave the old theme there for now, until you confirm your new theme works and you are sure you want to use it.</p></li>
 
-<li><p>In your project’s <code>config.yml</code> file change the name listed under <code>theme</code> from <code>&quot;quire-starter-theme&quot;</code> to the name of the new theme.</p></li>
+<li><p>In your project’s <code>config.yml</code> file, change the name listed under <code>theme</code> from <code>&quot;quire-starter-theme&quot;</code> to the name of the new theme.</p></li>
 
 <li><p>In your <span class="quire-definition" ><span class="visually-hidden">Definition: </span><span class="quire-definition__term">command-line interface</span><span class="quire-definition__content">A command-line interface (CLI) is a text-based user interface for running program tasks. In it, the user issues commands in the form of typed strings of text. This is opposed to a graphical user interface (GUI) for a software program, in which the user controls the program through visualized buttons, toggles and menus.</span></span>, navigate to your project folder and run the command <code>quire install</code>. This will install your theme’s dependencies.</p></li>
 
