@@ -33,12 +33,12 @@ Now add this to your `package.json` in the root directory add this to `scripts` 
 }
 ```
 
-This is the command we are running to build the Quire site in Netlify via our configuration below.
+This is the command we are running to build the Quire site in Netlify via our configuration below. It first runs Webpack to build our assets, CSS, JS. Then it runs the Hugo command to build the static.  
 
 ```toml
 # netlify.toml
 
-# This fdg
+# This section is the production configuration and is all you need to deploy
 [build]
 publish = "public"
 command = "npm run build"
@@ -47,33 +47,60 @@ command = "npm run build"
 HUGO_VERSION = "0.55.4"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-# NPM_VERSION = "6.4.1"
 
-[context.split1]
-command = "npm run build"
+# These next configurations are optional
 
-[context.split1.environment]
-HUGO_VERSION = "0.55.4"
-HUGO_ENV = "production"
-# NPM_VERSION = "6.4.1"
-
+# This section is the pull request configuration
 [context.deploy-preview]
 command = "npm run build"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.55.4"
-# NPM_VERSION = "6.4.1"
 
+# This section is the branch configuration
 [context.branch-deploy]
 command = "npm run build"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.55.4"
-# NPM_VERSION = "6.4.1"
 
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
+# This section is the branch configuration but targets a specific branch and also runs a different command
+[context.stage]
+command = "npm run build:stage"
+
+[context.stage.environment]
+HUGO_VERSION = "0.55.5"
 ```
 
+This will get you working version of a Quire site on Netlify.
 
+### Alteraing the Hugo command
+
+When we run the build process on Netlify we may want to add flags to our Hugo command to make Hugo behave differntly either on a specific branch or in the preview deploy.
+Let say for example we want to add the flag to build drafts for a branch and not for production. 
+We have the command `npm run build:stage` above, let's use that. 
+
+Our scripts block will now be
+
+```json
+"scripts": {
+ "build": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml",
+  "build:stage": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify -D"
+}
+```
+
+We are able to add the `-D` or `--buildDrafts` to the Hugo command to build drafts on our stage branch in our repository but not in master which can consider live or production.
+
+Adding extra commands is a great way to preview code!
+
+
+## Domains
+
+There 3 ways of connecting a domain to Netlify
+
+- Purchase your domain through Netlify and run your DNS through there interface
+- Add a proxy to your webserver 
+- Add an alias CNAME to your DNS to point to your Netlify domain
+
+Any of these will work, it is more specific to want you want your domain to be
 
