@@ -21,12 +21,11 @@ For Quire, Netlify can automatically generate a preview site to share with your 
 
 ### Netlify Build Configuration
 
-Once you accounts are connected you will asked to provide a `Production` directory or `Build` directory. Instead of doing this, which is fine, my recommendation is heading back to your repository and creating a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts block in the your `package.json` file.  In quire-starter-theme the path is `themes/quire-starter-theme/package.json`.
-Once you find your `package.json` file add `"build": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml"` to `scripts` block like below:
+Once you accounts are connected you will asked to provide a `Production` directory or `Build` directory. Instead of doing this, which is fine, my recommendation is heading back to your repository and creating a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts block in the your `package.json` file.  In quire-starter-theme the path is `themes/quire-starter-theme/package.json`. Quire comes with a Netlify build command already but as you will read below it is very easy to add or modify your own. 
 
 ```json
 "scripts": {
- "build": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml"
+ "build:netlify": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml"
 }
 ```
 
@@ -42,7 +41,7 @@ Now let's create the `netlify.toml` in the root directory. Copy and paste this t
 # This section is the production configuration and is all you need to deploy
 [build]
 publish = "public"
-command = "npm --prefix themes/quire-starter-theme run build"
+command = "npm --prefix themes/quire-starter-theme run build:netlify"
 
 [context.production.environment]
 HUGO_VERSION = "0.55.4"
@@ -53,14 +52,14 @@ HUGO_ENABLEGITINFO = "true"
 
 # This section is the pull request configuration
 [context.deploy-preview]
-command = "npm --prefix themes/quire-starter-theme run build"
+command = "npm --prefix themes/quire-starter-theme run build:netlify"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.55.4"
 
 # This section is the branch configuration
 [context.branch-deploy]
-command = "npm --prefix themes/quire-starter-theme run build"
+command = "npm --prefix themes/quire-starter-theme run build:netlify"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.55.4"
@@ -73,7 +72,7 @@ command = "npm --prefix themes/quire-starter-theme run build:stage"
 HUGO_VERSION = "0.55.5"
 ```
 
-### Alteraing the Hugo command
+### Alteraing or adding another command
 
 When we run the build process on Netlify we may want to add flags to our Hugo command to make Hugo behave differntly either on a specific branch or in the preview deploy.
 Let say for example we want to add the flag to build drafts for a branch and not for production. 
@@ -91,7 +90,6 @@ Our scripts block will now be
 We are able to add the `-D` or `--buildDrafts` to the Hugo command to build drafts on our stage branch in our repository but not in master which can consider live or production.
 
 Adding extra commands is a great way to preview code!
-
 
 ## Domains
 
