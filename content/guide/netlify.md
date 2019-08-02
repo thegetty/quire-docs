@@ -72,8 +72,6 @@ command = "npm run build:stage"
 HUGO_VERSION = "0.55.5"
 ```
 
-This will get you working version of a Quire site on Netlify.
-
 ### Alteraing the Hugo command
 
 When we run the build process on Netlify we may want to add flags to our Hugo command to make Hugo behave differntly either on a specific branch or in the preview deploy.
