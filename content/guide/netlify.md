@@ -21,7 +21,7 @@ Our bet on the JAMstack is quickly coming true. The web is rapidly changing away
 - Connect your Netlify account to your Github or Gitlab account
 
 
-## Netlify Build Configuration
+### Netlify Build Configuration
 
 Once you accounts are connected you will asked to provide a `Production` directory or `Build` directory. Instead of doing this, which is fine, my recommendation is heading back to your repository and creating a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts object in the your `package.json` file. Currently the `package.json` file is not in the root directory so make a copy of the one in your theme folder. In quire-starter-theme the path is `themes/quire-starter-theme/package.json`. 
 
