@@ -29,7 +29,7 @@ Once you accounts are connected you will asked to provide a `Production` directo
 }
 ```
 
-This is the command we are running to build the Quire site in Netlify via our configuration below. It first runs Webpack to build our assets, CSS, JS. Then it runs the Hugo command to build the static. 
+This is the command we are running to build the Quire site in Netlify via our configuration below and comes installed with Quire. It first runs Webpack to build our assets, CSS, JS. Then it runs the Hugo command to build the static. 
 
 Now let's create the `netlify.toml` in the root directory. Copy and paste this text below into a new file called `netlfy.toml` and put it in the root directory of your project.
 
