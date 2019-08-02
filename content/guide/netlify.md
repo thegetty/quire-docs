@@ -85,7 +85,7 @@ Our scripts block will now be
 ```json
 "scripts": {
  "build": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml",
-  "build:stage": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify -D"
+ "build:stage": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify -D"
 }
 ```
 
