@@ -38,6 +38,7 @@ This is the command we are running to build the Quire site in Netlify via our co
 ```toml
 # netlify.toml
 
+# This fdg
 [build]
 publish = "public"
 command = "npm run build"
@@ -73,4 +74,6 @@ HUGO_VERSION = "0.55.4"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 ```
+
+
 
