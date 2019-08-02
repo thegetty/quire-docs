@@ -19,7 +19,7 @@ For Quire, Netlify can automatically generate a preview site to share with your 
 - Connect your Netlify account to your Github or Gitlab account
 
 
-## Netlify Build Configuration
+### Netlify Build Configuration
 
 Once you accounts are connected you will asked to provide a `Production` directory or `Build` directory. Instead of doing this, which is fine, my recommendation is heading back to your repository and creating a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts block in the your `package.json` file.  In quire-starter-theme the path is `themes/quire-starter-theme/package.json`.
 Once you find your `package.json` file add `"build": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml"` to `scripts` block like below:
@@ -72,8 +72,6 @@ command = "npm --prefix themes/quire-starter-theme run build:stage"
 [context.stage.environment]
 HUGO_VERSION = "0.55.5"
 ```
-
-This will get you working version of a Quire site on Netlify.
 
 ### Alteraing the Hugo command
 
