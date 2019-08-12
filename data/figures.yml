@@ -162,4 +162,6 @@ figure_list:
     src: /screenshots/modern-bibliography.png
     caption: "A bibliography of all works in your project’s references.yml file can be added to any page with the `q-bibliography` shortcode."
     
+  - id: "netlify-logo"
+    src: full-logo-light.png
     
