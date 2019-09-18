@@ -151,13 +151,13 @@ of students let loose in the halls of art.
 - [A complete Markdown reference](/guide/fundamentals/) is available in the “Fundamentals” chapter of this guide, but for quick rules and tips, refer to our [Markdown cheatsheet](/resources/cheatsheet/).
 {{< /q-class >}}
 
-For more specialized features (especially images, mutimedia, and citations), Quire extends Markdown’s capabilities with a set of {{< q-glossary "shortcodes" >}}. Type the following figure image shortcode on a new line in your `about.md` file, save the change, and check the preview in your browser.
+For more specialized features (especially images, mutimedia, and citations), Quire extends Markdown’s capabilities with a set of {{< q-glossary "shortcodes" >}}. Type the following figure image shortcode on a new line in your `preface.md` file, save the change, and check the preview in your browser.
 
 ```go
-{{</* q-figure id="1.1" */>}}
+{{</* q-figure id="Fig-1" */>}}
 ```
 
-You’ll see this added a figure and caption, the text for which is stored in the project’s `figures.yml` file under the `id` of "1.1". If you update the information stored in `figures.yml` it will update on your page as well as anywhere else that figure is used.
+You’ll see this added a figure and caption, the text for which is stored in the project’s `figures.yml` file under the `id` of "Fig-1". If you update the information stored in `figures.yml` it will update on your page as well as anywhere else that figure is used.
 
 {{< q-figure id="quire-starter-content-change-2" >}}
 
