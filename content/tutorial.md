@@ -154,10 +154,10 @@ of students let loose in the halls of art.
 For more specialized features (especially images, mutimedia, and citations), Quire extends Markdown’s capabilities with a set of {{< q-glossary "shortcodes" >}}. Type the following figure image shortcode on a new line in your `preface.md` file, save the change, and check the preview in your browser.
 
 ```go
-{{</* q-figure id="Fig-1" */>}}
+{{</* q-figure id="fig-1" */>}}
 ```
 
-You’ll see this added a figure and caption, the text for which is stored in the project’s `figures.yml` file under the `id` of "Fig-1". If you update the information stored in `figures.yml` it will update on your page as well as anywhere else that figure is used.
+You’ll see this added a figure and caption, the text for which is stored in the project’s `figures.yml` file under the `id` of "fig-1". If you update the information stored in `figures.yml` it will update on your page as well as anywhere else that figure is used.
 
 {{< q-figure id="quire-starter-content-change-2" >}}
 
