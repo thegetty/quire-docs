@@ -56,11 +56,9 @@ With a project on GitHub, it’s possible for others to make changes and commits
 - You can make them a collaborator on your repository in which case they can work on it directly just as you would. This is generally easier to manage, but grants them full access to your repository.
 - If your project is hosted in a GitHub Organization account, you can add them to the organization team.
 
-When collaborating with others, be communicative about what areas of the project you’re working on and try to avoid cross overs. If you have multiple people connected to a project and pushing commits to the GitHub repository, there’s a good chance you will at some point make changes that are incompatible with someone else’s changes. Git is designed to deal with these sorts of issues.
+When collaborating with others, be communicative about what areas of the project you’re working on and try to avoid cross overs. If you have multiple people connected to a project and pushing commits to the GitHub repository, there’s a good chance you will at some point make changes that are incompatible with someone else’s changes.The trick with multiple people working in a single project is managing these potential change conflicts. Git is designed to deal with these sorts of issues.
 
-The trick with multiple people working in a single project is managing potential change conflicts. Issues may occur if two make people make different changes to a single file and then try to commit those changes to the central copy of the project on GitHub.
-
-When working with others on a single project, use branches as a way of managing different users' changes and avoiding such conflicts. Users can make changes on their branch before submitting a pull request to have the changes committed to the master branch. This allows you to review these changes and identify possible conflicts before they are added to your project. There are a number of guides for forking repositories, using branches, and making pull requests online.
+When working with others on a project, use branches as a way of managing different users' changes and avoiding conflicts. Users can make changes on their branch before submitting a pull request to have the changes committed to the master branch. This allows you to review these changes and identify possible conflicts before they are added to your project. There are a number of guides for forking repositories, using branches, and making pull requests online.
 
 ## Installing an Existing Quire Project from GitHub
 
