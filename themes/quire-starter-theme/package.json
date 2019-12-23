@@ -8,7 +8,13 @@
   },
   "main": "webpack/webpack.config.dev.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:preview": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --config config.yml,config/site.yml",
+    "build:production": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --config config.yml,config/site.yml --minify -v",
+    "lint": "./node_modules/.bin/eslint 'source/js/*.js' --ignore-pattern node_modules/",
+    "quire:cypress": "cd ../../ && quire preview",
+    "test:e2e": "./node_modules/.bin/cypress run",
+    "test:e2e:open": "./node_modules/.bin/cypress open",
+    "test:e2e:local": "npm run quire:cypress & ./node_modules/.bin/wait-on http://localhost:1313 & ./node_modules/.bin/cypress open -b electron --env CYPRESS=true"
   },
   "author": "Getty Publications",
   "license": "BSD-3-Clause",
@@ -45,18 +51,25 @@
     "webpack-manifest-plugin": "^2.0.4"
   },
   "dependencies": {
-    "bulma": "^0.7.1",
+    "bulma": "^0.7.5",
+    "fast-memoize": "^2.5.1",
     "hammerjs": "^2.0.8",
+    "intersection-observer": "^0.7.0",
     "jquery": "^3.3.1",
-    "leaflet": "^1.3.4",
+    "jquery-zoom": "^1.7.21",
+    "leaflet": "^1.5.1",
     "leaflet-fullscreen": "^1.0.2",
     "leaflet-iiif": "^2.0.1",
-    "lodash": "^4.17.11",
+    "leaflet-image": "^0.4.0",
+    "lodash": "^4.17.15",
     "lodash.debounce": "^4.0.8",
     "lodash.findindex": "^4.6.0",
-    "lunr": "^2.3.3",
-    "photoswipe": "^4.1.2",
-    "smoothstate": "github:miguel-perez/smoothState.js",
+    "lunr": "^2.3.6",
+    "magnific-popup": "^1.1.0",
+    "material-icons": "^0.3.1",
+    "quicklink": "^1.0.0",
+    "smooth-scroll": "^16.1.0",
+    "smoothstate": "^0.7.2",
     "template-polyfill": "^2.0.0",
     "velocity-animate": "^1.5.2"
   }
