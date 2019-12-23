@@ -283,13 +283,18 @@ globalSetup();
 
 // Run when document is ready
 $(document).ready(() => {
+  let $container = $("#container");
+  $container.velocity("fadeIn", { duration: 200 });
   pageSetup();
-
+  scrollToHash();
+  if (window.ga) {
+    window.ga("send", "pageview", window.location.pathname);
+  }
   $(window).resize(function() {
     menuSetup();
   });
 
-  $("#container").smoothState({
+  /*   $("#container").smoothState({
     scroll: false,
     onStart: {
       duration: 200,
@@ -315,5 +320,5 @@ $(document).ready(() => {
     onBefore($container, $newContent) {
       pageTeardown();
     }
-  });
+  }); */
 });
