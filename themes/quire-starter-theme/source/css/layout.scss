@@ -33,11 +33,11 @@ $quire-menu-text-color: $white !default;
 $quire-menu-width: 350px !default;
 $navbar-height: 3rem !default;
 
-
 // .quire
 // -----------------------------------------------------------------------------
 .quire {
   width: 100%;
+  opacity: 0;
 
   // Styles used whether JS is enabled or not
   &__secondary {
@@ -45,7 +45,6 @@ $navbar-height: 3rem !default;
     padding: 1em;
 
     @include foreground-color($quire-menu-color, $quire-menu-text-color);
-
   }
 
   // Styles when JS is not supported; menu at bottom
@@ -53,8 +52,11 @@ $navbar-height: 3rem !default;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    opacity: 1;
 
-    .quire__primary { flex: 1; }
+    .quire__primary {
+      flex: 1;
+    }
 
     .quire__secondary {
       order: 1;
@@ -85,7 +87,9 @@ $navbar-height: 3rem !default;
         padding-right: 0;
       }
 
-      .quire-navbar { flex: 0 0 auto; }
+      .quire-navbar {
+        flex: 0 0 auto;
+      }
     }
 
     .quire__secondary {
@@ -108,7 +112,9 @@ $navbar-height: 3rem !default;
       // for the menu content when it is not visible (and then un-setting when
       // that changes) produces the desired behavior.
       // scss-lint:disable IdSelector
-      #site-menu__inner { display: none; }
+      #site-menu__inner {
+        display: none;
+      }
 
       &.is-expanded {
         transform: translateX(0);
@@ -139,8 +145,8 @@ $navbar-height: 3rem !default;
       height: 100%;
     }
 
-    &__secondary { display: none; }
+    &__secondary {
+      display: none;
+    }
   }
 }
-
-
