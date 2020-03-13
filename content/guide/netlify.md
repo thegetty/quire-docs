@@ -39,12 +39,14 @@ Now let's create the `netlify.toml` in the root directory. Copy and paste this t
 # Change the path of your theme if it is not themes/quire-starter-theme.
 
 # This section is the production configuration and is all you need to deploy
+
 [build]
-publish = "public"
-command = "npm --prefix themes/quire-starter-theme run build:netlify"
+# Base is the path to your themes package.json file.
+base = "themes/quire-starter-theme"
+command = "npm run build:netlify"
 
 [context.production.environment]
-HUGO_VERSION = "0.55.4"
+HUGO_VERSION = "0.55.5"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
@@ -52,21 +54,27 @@ HUGO_ENABLEGITINFO = "true"
 
 # This section is the pull request configuration
 [context.deploy-preview]
-command = "npm --prefix themes/quire-starter-theme run build:netlify"
+# Base is the path to your themes package.json file.
+base = "themes/quire-starter-theme"
+command = "npm run build:netlify"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.55.4"
+HUGO_VERSION = "0.55.5"
 
 # This section is the branch configuration
 [context.branch-deploy]
-command = "npm --prefix themes/quire-starter-theme run build:netlify"
+# Base is the path to your themes package.json file.
+base = "themes/quire-starter-theme"
+command = "npm run build:netlify"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.55.4"
+HUGO_VERSION = "0.55.5"
 
 # This section is the branch configuration but targets a specific branch and also runs a different command
 [context.stage]
-command = "npm --prefix themes/quire-starter-theme run build:stage"
+# Base is the path to your themes package.json file.
+base = "themes/quire-starter-theme"
+command = "npm run build:stage"
 
 [context.stage.environment]
 HUGO_VERSION = "0.55.5"

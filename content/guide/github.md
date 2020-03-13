@@ -14,7 +14,7 @@ GitHub uses git to track changes in project files. When you start a new project 
 
 1. Open GitHub Desktop and go to File > Add Local Repository (Cmd-O). Select your project repository and click Add Repository
 
-2. If there any Changes listed in the left-hand pane of the window, type "Initial commit" in the Summary field below, and then click the Commit to Master button.
+2. If there are any Changes listed in the left-hand pane of the window, type "Initial commit" in the Summary field below, and then click the Commit to Master button.
 
 3. At the top right of the window, click Publish Repository (next to the cloud icon). In the pop-window, keep the Name as is, add a text Description if you’d like, and click the Publish Repository button.
 
@@ -56,20 +56,9 @@ With a project on GitHub, it’s possible for others to make changes and commits
 - You can make them a collaborator on your repository in which case they can work on it directly just as you would. This is generally easier to manage, but grants them full access to your repository.
 - If your project is hosted in a GitHub Organization account, you can add them to the organization team.
 
-When collaborating with others, be communicative about what areas of the project you’re working on and try to avoid cross overs.
+When collaborating with others, be communicative about what areas of the project you’re working on and try to avoid cross overs. If you have multiple people connected to a project and pushing commits to the GitHub repository, there’s a good chance you will at some point make changes that are incompatible with someone else’s changes.The trick with multiple people working in a single project is managing these potential change conflicts. Git is designed to deal with these sorts of issues.
 
-Use branches as a way of managing
-
-
-There are a number of guides for forking repositories and making pull requests.
-
-When working with others on a single project,
-
-If you have multiple people connected to a project and making changes and pushing commits to the GitHub repository, there’s a good chance you will at some point make changes that are incompatible with someone else’s changes. Git is designed to deal with these sorts of issues.
-
-The trick with multiple people working in a single project is managing potential change conflicts. If two make people make different changes to a single file and then try to commit those changes to the central copy of the project on GitHUb
-
-
+When working with others on a project, use branches as a way of managing different users' changes and avoiding conflicts. Users can make changes on their branch before submitting a pull request to have the changes committed to the master branch. This allows you to review these changes and identify possible conflicts before they are added to your project. There are a number of guides for forking repositories, using branches, and making pull requests online.
 
 ## Installing an Existing Quire Project from GitHub
 
