@@ -4,7 +4,7 @@ weight: 215
 type: essay
 ---
 
-## Netlify 
+## Netlify
 
 {{< q-figure id="netlify-logo" >}}
 
@@ -14,14 +14,14 @@ For Quire, Netlify can automatically generate a preview site to share with your 
 
 ## Steps to deploy to Netlify
 
-- [As stated in the previous page add your code to Github repositiory](/guide/github/)
+- [As stated in the previous page add your code to Github repository](/guide/github/)
 - Next sign up to Netlify here -> https://app.netlify.com/signup
 - Connect your Netlify account to your Github or Gitlab account
 
 
 ### Netlify Build Configuration
 
-Once you accounts are connected you will asked to provide a `Production` directory or `Build` directory. Instead of doing this, which is fine, my recommendation is heading back to your repository and creating a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts block in the your `package.json` file.  In quire-starter-theme the path is `themes/quire-starter-theme/package.json`. Quire comes with a Netlify build command already but as you will read below it is very easy to add or modify your own. 
+Once you accounts are connected you will asked to provide a `Production` directory or `Build` directory. Instead of doing this, which is fine, my recommendation is heading back to your repository and creating a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts block in the your `package.json` file.  In quire-starter-theme the path is `themes/quire-starter-theme/package.json`. Quire comes with a Netlify build command already but as you will read below it is very easy to add or modify your own.
 
 ```json
 "scripts": {
@@ -29,7 +29,7 @@ Once you accounts are connected you will asked to provide a `Production` directo
 }
 ```
 
-This is the command we are running to build the Quire site in Netlify via our configuration below and comes installed with Quire. It first runs Webpack to build our assets, CSS, JS. Then it runs the Hugo command to build the static. 
+This is the command we are running to build the Quire site in Netlify via our configuration below and comes installed with Quire. It first runs Webpack to build our assets, CSS, JS. Then it runs the Hugo command to build the static.
 
 Now let's create the `netlify.toml` in the root directory. Copy and paste this text below into a new file called `netlfy.toml` and put it in the root directory of your project.
 
@@ -83,8 +83,8 @@ HUGO_VERSION = "0.55.5"
 ### Alteraing or adding another command
 
 When we run the build process on Netlify we may want to add flags to our Hugo command to make Hugo behave differntly either on a specific branch or in the preview deploy.
-Let say for example we want to add the flag to build drafts for a branch and not for production. 
-We have the command `npm run build:stage` above, let's use that. 
+Let say for example we want to add the flag to build drafts for a branch and not for production.
+We have the command `npm run build:stage` above, let's use that.
 
 Our scripts block will now be
 
@@ -104,8 +104,7 @@ Adding extra commands is a great way to preview code!
 There 3 ways of connecting a domain to Netlify
 
 - Purchase your domain through Netlify and run your DNS through there interface
-- Add a proxy to your webserver 
+- Add a proxy to your webserver
 - Add an alias CNAME to your DNS to point to your Netlify domain
 
 Any of these will work, it is more specific to want you want your domain to be
-

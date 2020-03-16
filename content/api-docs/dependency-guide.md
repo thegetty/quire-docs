@@ -12,7 +12,7 @@ Each Quire project relies on two projects the `quire-cli` a command line interfa
 
 Quire makes use of Hugo via the npm package <a href="https://www.npmjs.com/package/hugo-bin"/>`hugo-bin`</a>
 
-Quire uses Hugo’s cli, templating system and http server. to create a way to preview your site while editing the front end code, build a static html site and aids Prince XML to create a PDF of your publication you are building.
+Quire uses Hugo’s cli, templating system and http server to create a way to preview your site while editing the front end code, build a static html site and aids Prince XML to create a PDF of your publication you are building.
 
 {{< q-figure id="1.17" class="is-small" >}}
 

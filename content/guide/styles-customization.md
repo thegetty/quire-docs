@@ -32,7 +32,7 @@ $quire-navbar-background-color: red;
 Colors are expressed a number of different ways, none of which are better or more supported than the others, so you can use your preference. Most common are:
 
 - The standard 140 {{< q-glossary "Color Keywords" >}} such as `red`, `royalblue` and `honeydew`
-- The many possible {{< q-glossary "HEX color value" >}}s like `#FF0000`, `#4169E1` and `#F0FFF0`
+- The many possible {{< q-glossary "HEX color values" >}} like `#FF0000`, `#4169E1` and `#F0FFF0`
 - {{< q-glossary "RGB Color Values" >}} like `rgb(255, 0, 0)`, `rgb(65, 105, 225)` and `rgb(240, 255, 240)`
 
 {{< q-class "box warning" >}}
@@ -45,7 +45,7 @@ In your project’s `static` directory, there is a `css` directory with a blank 
 
 {{< q-figure id="1.13" >}}
 
-Any {{< q-glossary "CSS" >}} you add here, will be added to your site’s styles. For example, let’s say you’d like a particular line of text in one of your {{< q-glossary "Markdown file" >}}s to be red. You could wrap that text in `<span>` HTML tags and give it a class.
+Any {{< q-glossary "CSS" >}} you add here, will be added to your site’s styles. For example, let’s say you’d like a particular line of text in one of your {{< q-glossary "Markdown files" >}} to be red. You could wrap that text in `<span>` HTML tags and give it a class.
 
 ```html
 <span class="red-text">This text should be red</span>
@@ -81,7 +81,7 @@ Styles added to the `custom.css` file will also override any existing styles alr
 
 To determine the selectors for any {{< q-glossary "element" >}}, in your browser of choice with your publication previewing, control-click (Mac) or right click (PC) on the element and select "Inspect element". This will show you the HTML markup for your site, along with all the {{< q-glossary "class" >}} names and elements, and even the styles that are currently being applied to that {{< q-glossary "element" >}}.
 
-The more specific you can be with your {{< q-glossary "CSS selector" >}}s, the more likely the style will only be applied to the specific element you want. For example, if you wanted the page title on specific page to be a different color than the titles all the rest of the pages, you could determine the {{< q-glossary "CSS selector" >}} for that element on that page and apply a style rule to it without changing the styles on any other element or page. This example limits the style to the title in the page header of that one page:
+The more specific you can be with your {{< q-glossary "CSS selectors" >}}, the more likely the style will only be applied to the specific element you want. For example, if you wanted the page title on specific page to be a different color than the titles all the rest of the pages, you could determine the {{< q-glossary "CSS selector" >}} for that element on that page and apply a style rule to it without changing the styles on any other element or page. This example limits the style to the title in the page header of that one page:
 
 ```css
 #chapter-one .quire-page__header .title {
@@ -97,9 +97,9 @@ In the above example, we are selecting the element with a {{< q-glossary "class"
 
 ## Overriding Theme Templates
 
-{{< q-glossary "CSS" >}} changes like those mentioned above are best for re-styling existing elements. If though you’d like to make a more structural change, say, to rearrange elements on the page, or add new elements altogether, you’ll need to alter the {{< q-glossary "template" >}} files that come in the {{< q-glossary "theme" >}}. That said, other than changing the {{< q-glossary "Variable" >}}s in `variables.scss` file, as described above, it’s usually best not to make other changes directly in the theme itself. By not doing so, it’s much easier to update your theme or switch out other themes later, not to mention easier to undo changes you’ve made.
+{{< q-glossary "CSS" >}} changes like those mentioned above are best for re-styling existing elements. If though you’d like to make a more structural change, say, to rearrange elements on the page, or add new elements altogether, you’ll need to alter the {{< q-glossary "template" >}} files that come in the {{< q-glossary "theme" >}}. That said, other than changing the {{< q-glossary "Variables" >}} in `variables.scss` file, as described above, it’s usually best not to make other changes directly in the theme itself. By not doing so, it’s much easier to update your theme or switch out other themes later, not to mention easier to undo changes you’ve made.
 
-For modest changes to the theme {{< q-glossary "template" >}}s, we recommend creating new override files. Much like the `custom.css` file can be used to override styles in the project theme, you can also have files to override templates. There are none in the default starting project, so you’ll need to start be creating a new `layouts` directory folder in the main directory of your project. Any files you put in this `layouts` directory will override the corresponding files in the `layouts` directory of your theme. This includes page templates, partial templates and shortcodes.
+For modest changes to the theme {{< q-glossary "templates" >}}, we recommend creating new override files. Much like the `custom.css` file can be used to override styles in the project theme, you can also have files to override templates. There are none in the default starting project, so you’ll need to start be creating a new `layouts` directory folder in the main directory of your project. Any files you put in this `layouts` directory will override the corresponding files in the `layouts` directory of your theme. This includes page templates, partial templates and shortcodes.
 
 For example, let’s say you want to customize the layout of all the pages in your project with the `type` of `"essay"`. In the theme `layouts` directory you’ll find that there’s a sub-directory called `essay` with a file in it called `single.html`. This is the template that controls the `"essay"` pages. You can see there’s a page header, an abstract the main content `(.Content)` of the {{< q-glossary "Markdown file" >}} and a page bibliography.
 
@@ -152,7 +152,7 @@ If you copy the `essay` sub-directory and its `single.html` file into the new `l
 
 By default, Quire has a number of pre-defined page types like `"essay"`, `"entry"`, and `"cover"`. To create a new page type, you would follow the model of the `"essay"` page type above, and create a directory with the name of the type and in that, have a file called `single.html` with the {{< q-glossary "template" >}}.
 
-Whether in the {{< q-glossary "theme" >}} or in your project directory, all shortcodes go in the `layouts` directory and `shortcodes` sub-directory. The name of the shortcode file corresponds to the way the shortcode is called in the {{< q-glossary "Markdown file" >}}s. So `q-figure.html` is the shortcode `{{</* q-figure */>}}`.
+Whether in the {{< q-glossary "theme" >}} or in your project directory, all shortcodes go in the `layouts` directory and `shortcodes` sub-directory. The name of the shortcode file corresponds to the way the shortcode is called in the {{< q-glossary "Markdown files" >}}. So `q-figure.html` is the shortcode `{{</* q-figure */>}}`.
 
 And if you make a mistake or change your mind later, you can simply delete the copy of the file and Quire will go back to using the original template as provided in the theme. This method can also be used to add completely new templates and even new shortcodes.
 
