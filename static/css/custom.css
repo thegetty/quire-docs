@@ -16,7 +16,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .quire-navbar-controls__right,
@@ -30,15 +30,15 @@
     display: none;
   }
   @page {
-     @top {
-        color: #3273dc;
-        content: "BETA";
-        font-size: 14pt;
-        font-weight: bold;
-        color: #777;
-        letter-spacing: 2pt;
-        font-family: sans-serif;
-     }
+    @top {
+      color: #3273dc;
+      content: "BETA";
+      font-size: 14pt;
+      font-weight: bold;
+      color: #777;
+      letter-spacing: 2pt;
+      font-family: sans-serif;
+    }
   }
 }
 
@@ -114,7 +114,7 @@
     float: inherit;
     margin-top: 3rem;
   }
-  .quire:not(.no-js) .quire__secondary[aria-expanded=true] {
+  .quire:not(.no-js) .quire__secondary[aria-expanded="true"] {
     width: 100%;
   }
 }
@@ -162,7 +162,6 @@
 }
 
 @media only screen and (min-width: 1000px) {
-
   /* add graphic lines connecting menu item and page navigation */
 
   .quire-page__page-navigation::before {
@@ -195,7 +194,8 @@
     position: absolute;
     width: calc(30px + 2rem + 1px);
     height: 800px;
-    left: 270px;
+    /* left: 270px; */
+    left: 263px;
     border-bottom: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
     margin-top: calc(-800px - 1rem);
@@ -262,11 +262,10 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-
 }
 
 .quire-page__page-navigation ul li a {
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -336,7 +335,7 @@
 }
 
 .box ul li {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .box.warning ul,
@@ -381,7 +380,7 @@
   background-color: #b8c1d1;
 }
 
-.quire-page__content .content .box a:not([rel=footnote]):not(.footnote-return) {
+.quire-page__content .content .box a:not([rel="footnote"]):not(.footnote-return) {
   color: #fff;
   border-bottom-color: #fff;
 }
@@ -390,7 +389,7 @@
   background-color: #b8c1d1;
 }
 
-.quire-page__content .content .box .quire-definition a:not([rel=footnote]):not(.footnote-return) {
+.quire-page__content .content .box .quire-definition a:not([rel="footnote"]):not(.footnote-return) {
   color: #3273dc;
   border-bottom-color: #3273dc;
 }
@@ -447,10 +446,12 @@ li .highlight:last-child {
 /*changes indentation in shortcodes page*/
 
 #api-docs-shortcodes .quire-page__content .content p + p {
-    text-indent: 0em; }
+  text-indent: 0em;
+}
 
 #api-docs-yaml .quire-page__content .content p + p {
-    text-indent: 0em; }
+  text-indent: 0em;
+}
 
 /*adds style for glossary terms*/
 
@@ -516,7 +517,7 @@ li .highlight:last-child {
 /* style tables */
 
 table {
-  font-size: .8em;
+  font-size: 0.8em;
   max-width: 100%;
 }
 
@@ -539,10 +540,9 @@ pre code {
   white-space: pre;
 }
 
-
 /* Improve definition list spacing (used in CLI guide page) */
 
 dt {
   margin-top: 1rem;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
