@@ -6,7 +6,7 @@ type: essay
 
 ## Markdown
 
-Paragraphs are made by adding two hard returns. When working in a text editor, depending on your configuration and the source of your text, lines might have hard breaks, or might all flow together. This is seen in the example below where the first paragraph has hard breaks and the second does not. In Markdwon, these will both render as single paragraphs with no hard breaks. The only way to add a hard break in markdown is with the HTML break (`<br />`) element.
+Paragraphs are made by adding two hard returns. When working in a text editor, depending on your configuration and the source of your text, lines might have hard breaks, or might all flow together. This is seen in the example below where the first paragraph has hard breaks and the second does not. In Markdown, these will both render as single paragraphs with no hard breaks. The only way to add a hard break in markdown is with the HTML break (`<br />`) element.
 
 ```md
 Lorem ipsum dolor sit amet, consectetur

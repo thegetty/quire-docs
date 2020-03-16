@@ -24,12 +24,15 @@ Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applic
 
 4. Visit the **PrinceXML** site, download the Mac OS version, and uncompress the folder: [http://www.princexml.com/download/](http://www.princexml.com/download/).
 
-    Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default) and that the version you downloaded was 12.5. You can update the command if either of these is not the case.
+    Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default).Copy and paste the following code into your terminal:
 
-    ```text
-    cd Downloads/prince-12.5-macosx
-    sudo ./install.sh
-    ```
+      ```text
+      cd Downloads/prince-XX.X-macosx
+      sudo ./install.sh
+      ```
+    The key line is **prince-XX.X-macosx**
+
+    Go to the Downloads folder to make sure the Prince zip file is there. Make sure XX.X matches the current version of Prince that you are using by deleting and replacing with the current numbers.The line may end in macos or macosx. Make sure the it matches exactly what the program looks like in the download folder and delete the "x" if necessary.
 
     The Terminal will ask for your computer password. After entering it, another message will appear in the Terminal shell to confirm that PrinceXML should be installed in the `/usr/local` directory. Press enter.
 
@@ -323,4 +326,57 @@ To uninstall Quire:
 
 ## Troubleshooting
 
-TK
+**Downloading the Quire CLI to your computer from GitHub through the Terminal**
+
+If you have {{< q-glossary "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly.
+
+Follow these steps:
+
+1. Run
+
+    ```text
+    git clone https://github.com/gettypubs/quire-cli.git
+    ```
+
+2. For username: enter your Github Username
+
+   For Password: **follow the directions below.**
+
+3. In GitHub follow this link (https://github.com/settings/tokens) to access the personal token access token page.
+
+6. Click **generate** new token.
+
+7. Give your token a descriptive name.
+
+8. This page allows you to select the scopes or permissions you'd like to grant this token. In this instance, click **repo** at the very top.
+
+9. Scroll down to the bottom of the page and click **generate token**.
+
+10. Copy the token to your clipboard before closing this window. For security reasons, after you navigate off the page, you will not be able to see the token again.
+
+**Resetting user permission for local directory**
+
+When entering
+
+  ```text
+  sudo chown -R $USER /usr/local
+  ```
+
+You will be prompted to enter a password and may receive the following error, *Operation not permitted*.
+
+Please note, on some computers you may not need to run this command.
+
+Try continuing with the installation process to see if everything is running smoothly:
+
+  ```text
+  cd quire-cli
+  npm install -g
+  ```
+
+If this works, then you can ignore the *sudo chown* command.
+
+When when you have finished these steps, type the following command to confirm proper installation:
+
+  ```text
+  quire --version
+  ```

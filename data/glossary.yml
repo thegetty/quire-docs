@@ -92,6 +92,8 @@ entries:
     definition: "Terminal is the Bash Command-line Interface for macOS. An introductory lesson to the Basch Command-line can be found at the Programming Historian: [https://programminghistorian.org/en/lessons/intro-to-bash](https://programminghistorian.org/en/lessons/intro-to-bash)."
   - term: "Text editor"
     definition: "A text editor is an application used to edit text files containing either plain text or markup for rich text. All computers have basic text editors preinstalled, though we recommend using a free, more fully featured option like [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/)."
+  - term: "two-factor authentication"
+    definition: "Two-factor authentication provides an extra layer of protection ensuring the security of your online accounts. A computer user is granted access only after providing two pieces of information (or factors) -your password and another identifying factor, usually a 6-digit code generated through an authentication app."
   - term: "Unicode"
     definition: "Character encoding standard that provides a unique number for every character allowing data to be transported through different platforms, devices and applications without corruption. For more information visit: [https://unicode.org/](https://unicode.org/)."
   - term: "UUID"
