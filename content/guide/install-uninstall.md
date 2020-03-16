@@ -323,4 +323,80 @@ To uninstall Quire:
 
 ## Troubleshooting
 
-TK
+**Errors installing Prince**
+
+When installing versions of Prince newer than 12.5 you will need to follow these steps:
+
+1. Copy and paste the following code:
+
+    ```text
+    cd Downloads/prince-12.5-macosx
+    sudo ./install.sh
+    ```
+
+The key line is **prince-XX.X-macos(x)**
+
+2. Go to the Downloads folder to make sure the Prince zip file is there.
+
+3. Make sure XX.X matches the current version of Prince that you are using.
+
+4. The line may end in macos or macosx. Make sure the it matches exactly what the program looks like in the download folder.
+
+
+**Downloading the Quire CLI to your computer from GitHub through the Terminal**
+
+If you have two-factor authentication set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly.
+
+Follow these steps:
+
+1. Run
+
+    ```text
+    git clone https://github.com/gettypubs/quire-cli.git
+    ```
+
+2. For username: enter your Github Username
+
+   For Password: **follow the directions below.**
+
+3. In the upper-right corner of any page, click your profile photo, then click Settings.
+
+4. In the left sidebar, click Developer settings.
+
+5. In the left sidebar, click Personal access tokens.
+
+6. Click Generate new token.
+
+7. Give your token a descriptive name.
+
+8. Select the scopes or permissions you'd like to grant this token. To use your token to access repositories from the command line, select repo.
+    Click Generate token.
+
+9. Copy the token to your clipboard. For security reasons, after you navigate off the page, you will not be able to see the token again.
+
+**Resetting user permission for local directory**
+
+When entering
+
+  ```text
+  sudo chown -R $USER /usr/local
+  ```
+
+You will be prompted to enter a password and may receive the following error, *Operation not permitted*.
+
+Please note, on some computers you may not need to run this command.
+
+Try continuing with the installation process to see if everything is running smoothly:
+
+  ```text
+  cd quire-cli
+  npm install -g
+  ```
+
+If this works, then you can ignore the *sudo chown* command.
+
+When when you have finished these steps, type the following command to confirm proper installation:
+
+  ```text
+  quire --version
+  ```
