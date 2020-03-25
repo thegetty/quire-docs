@@ -62,9 +62,11 @@ In your `themes/quire-starter-theme` folder, all fonts are stored in `source/fon
 cooper-hewitt
 ```
 
+If you are using GitHub, and this is a licensed font, or a font you don’t otherwise want available to anyone outside your project, add a line to your project’s `.gitignore` file to make sure the fonts are not added to the git record.
+
 You will continue to have the fonts available in your local copy of your project, but anyone working on a clone or fork of your repository will have to manually add your font files to their local copy for them to appear in the project properly when they preview or build the site.
 
-When you ultimately host the final site on a web server, the fonts will be included in the built files and will need to be included in the package on the web server. Files hosted this way are not readibly accessible to non-technical users, but are still public. For another layer of protection, if it’s of a concern, font files could be assigned more generic names (ie., `f1-bld.ttf` instead of `cooper-hewitt-bold.ttf`). For complete protection of licensed/proprietary font files, other solutions should be sought.{{< /q-class >}}
+When you ultimately host the final site on a web server, the fonts will be included in the built files and will need to be included in the package on the web server. Files hosted this way are not readibly accessible to non-technical users, but are still public. For another layer of protection, if it’s of a concern, font files could be assigned more generic names (ie., `f1-bld.ttf` instead of `cooper-hewitt-bold.ttf`). For complete protection of licensed/proprietary font files, other solutions should be sought.
 
 ### 2. Adding Font Information to Your Stylesheets
 
