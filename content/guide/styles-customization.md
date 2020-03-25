@@ -45,7 +45,7 @@ In your project’s `static` directory, there is a `css` directory with a blank 
 
 {{< q-figure id="1.13" >}}
 
-Any {{< q-glossary "CSS" >}} you add here, will be added to your site’s styles. For example, let’s say you’d like a particular line of text in one of your {{< q-glossary "Markdown files" >}} to be red. You could wrap that text in `<span>` HTML tags and give it a class.
+Any {{< q-glossary "CSS" >}} you add here, will be added to your site’s styles. For example, let’s say you’d like a particular line of text in one of your {{< q-glossary "Markdown" >}} files to be red. You could wrap that text in `<span>` HTML tags and give it a class.
 
 ```html
 <span class="red-text">This text should be red</span>
@@ -152,7 +152,7 @@ If you copy the `essay` sub-directory and its `single.html` file into the new `l
 
 By default, Quire has a number of pre-defined page types like `"essay"`, `"entry"`, and `"cover"`. To create a new page type, you would follow the model of the `"essay"` page type above, and create a directory with the name of the type and in that, have a file called `single.html` with the {{< q-glossary "template" >}}.
 
-Whether in the {{< q-glossary "theme" >}} or in your project directory, all shortcodes go in the `layouts` directory and `shortcodes` sub-directory. The name of the shortcode file corresponds to the way the shortcode is called in the {{< q-glossary "Markdown files" >}}. So `q-figure.html` is the shortcode `{{</* q-figure */>}}`.
+Whether in the {{< q-glossary "theme" >}} or in your project directory, all shortcodes go in the `layouts` directory and `shortcodes` sub-directory. The name of the shortcode file corresponds to the way the shortcode is called in the {{< q-glossary "Markdown" >}} files. So `q-figure.html` is the shortcode `{{</* q-figure */>}}`.
 
 And if you make a mistake or change your mind later, you can simply delete the copy of the file and Quire will go back to using the original template as provided in the theme. This method can also be used to add completely new templates and even new shortcodes.
 

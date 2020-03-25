@@ -22,6 +22,8 @@ entries:
   - term: "CSS"
     definition: "Cascading Style Sheets or CSS is a stylesheet language used to define sytles and layouts for webpages written in HTML. For a deeper dive, Mozilla Developers provides a good guide to CSS: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)"
   - term: "CSS selector"
+    alternates:
+      - "CSS selectors"
     definition: "CSS selectors are used to target the HTML elements on web pages. There are several CSS selectors available, being one of these the CSS Class Selector."
   - term: "DOI"
     alternates:
@@ -40,6 +42,8 @@ entries:
   - term: "`Git` project management tool"
     definition: "Project management tool for software development that uses Git as their version control language. There are multiple tools available in the web."
   - term: "HEX color value"
+    alternates: 
+      - "HEX color values"
     definition: "Hexadecimal color values that represent specific colors. Colors are specified by hexadecimal integers between 00 and FF. For more information visit: [http://www.color-hex.com/](http://www.color-hex.com/)"
   - term: "Hugo"
     definition: "The static site generator that powers Quire: [https://gohugo.io/](https://gohugo.io/)"
