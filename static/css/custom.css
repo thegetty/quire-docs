@@ -8,20 +8,32 @@
   padding-bottom: .5rem;
   margin: 2rem 0;
 }
-.box.warning ul li:first-of-type::before,
-.box.tip ul li:first-of-type::before {
+.box.warning > ul > li:first-of-type::before,
+.box.tip > ul > li:first-of-type::before {
   color: #d3cd00;
   position: absolute;
   margin-top: -1.25rem;
 }
-.box.warning ul li:first-of-type::before {
+.box.warning > ul > li:first-of-type::before {
   font-size: 4rem;
   margin-left: -4.75rem;
   content: "⚠";
 }
-
 .box.tip ul li:first-of-type::before {
   font-size: 3.5rem;
   margin-left: -4.25rem;
   content: "★";
+}
+
+@media print {
+  .box.warning > ul > li:first-of-type::before {
+    margin-left: -2.75rem;
+    content: "!";
+  }
+  .box.tip ul li:first-of-type::before {
+    margin-left: -3.25rem;
+  }
+  pre, code {
+    white-space: pre-wrap;
+  }
 }
