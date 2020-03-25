@@ -10,16 +10,26 @@
 
 {{- $css := "css/application.css" | relURL -}}
 {{- $customCSS := "css/custom.css" | relURL -}}
+{{- $icon := "img/icons/favicon.ico" | relURL -}}
+
+{{- $pages := .Site.Pages -}}
+{{- $pages := where $pages "Params.online" "!=" "false" }}
+{{- $pages := where $pages ".Type" "!=" "data" -}}
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  {{- if eq .Params.online false -}}
-  <meta name="robots" content="noindex">
+  {{ if eq .Params.online false -}}
+  <meta name="robots" content="noindex, nofollow">
   {{- end }}
-  <title>{{ .Title }} | {{ .Site.Data.publication.title }}</title>
+  {{- range first 1 $pages -}}
+    {{- $.Scratch.Set "homepage" .File.UniqueID -}}
+  {{- end -}}
+  <title>{{ if ne .File.UniqueID ($.Scratch.Get "homepage") }}{{ with .Title }}{{ . | markdownify | plainify }} | {{ end }}{{ end }}{{ .Site.Data.publication.title | markdownify | plainify }}</title>
   {{ partial "metadata.html" . }}
+
+  <link rel="icon" href="{{ $icon }}" />
   <link rel="stylesheet" href="{{ $css }}">
   <link rel="stylesheet" href="{{ $customCSS }}">
 
@@ -28,10 +38,9 @@
    // search. More info: https://www.npmjs.com/package/template-polyfill
    document.createElement('template')
   </script>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  
+  {{ if .Site.GoogleAnalytics}}
   {{ partial "analytics.html" . }}
+  {{ end }}
 
 </head>
