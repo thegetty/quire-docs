@@ -12,8 +12,8 @@ $print-base-text-column-width: 4.75in;
 
 $print-bottom-margin: 0.875in;
 $print-top-margin: 0.75in;
-$print-outer-margin: 0.75in;
-$print-inner-margin: 1in;
+$print-outer-margin: 1.5in;
+$print-inner-margin: 1.5in;
 
 @if $print-width <= 7 {
   $print-inner-margin: $print-width - $print-base-text-column-width - $print-outer-margin;
@@ -293,7 +293,7 @@ $print-trim: $print-bleed * 2;
     @if $print-width > 7 {
       .quire-essay &,
       .quire-entry & {
-        column-count: 2;
+        column-count: 1;
         column-fill: balance;
         column-gap: .1875in;
         max-width: 100%;
