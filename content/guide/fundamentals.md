@@ -80,9 +80,9 @@ title: "“Ah ha!” Amazing Double-quote (\") Tricks!"
 {{< q-class "box tip" >}}
 
 - **Our Top 3 YAML Tips:**
-- 1. Use quotes around item values
-- 2. Watch horizontal spacing to make sure things line up
-- 3. Check your YAML with a validator
+    1. Use quotes around item values
+    2. Watch horizontal spacing to make sure things line up
+    3. Check your YAML with a validator
 
 {{< /q-class >}}
 

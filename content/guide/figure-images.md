@@ -119,8 +119,12 @@ In addition to all the attributes available to the `q-figure` shortcode, the `q-
 
 {{< q-figure id="1.11" >}}
 
-{{< q-class "box" >}}Note that this is only a **preferred** grid width. With Quire’s responsively designed templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
-This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures individually.{{< /q-class >}}
+{{< q-class "box warning" >}}
+
+- Note that this is only a **preferred** grid width. With Quire’s responsively designed templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
+    This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures individually.
+
+{{< /q-class >}}
 
 ## Adding Video Figures
 
@@ -135,11 +139,19 @@ Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo
   media_type: youtube
 ```
 
-{{< q-class "box" >}}The `src` image provided in this example is a frame from the video and will be used in place of the video in the PDF and EPUB versions of your publication. In Quire this is referred to as a fallback. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
+{{< q-class "box tip" >}}
 
-Like the [image labels](#labeling-figure-images) this is controlled in the project’s `config.yml` file with `videoFigureFallbackText: true`, `videoFigureFallbackTextBefore: "Watch the video at "` and `videoFigureFallbackTextAfter: "."`. {{< /q-class >}}
+- The `src` image provided in this example is a frame from the video and will be used in place of the video in the PDF and EPUB versions of your publication. In Quire this is referred to as a fallback. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
+    
+    Like the [image labels](#labeling-figure-images) this is controlled in the project’s `config.yml` file with `videoFigureFallbackText: true`, `videoFigureFallbackTextBefore: "Watch the video at "` and `videoFigureFallbackTextAfter: "."`. 
 
-{{< q-class "box" >}}Note that on YouTube, videos can be filed as “Unlisted” and this will let you embed the video, but will not include the video on your channel page, or in YouTube’s general search engine.{{< /q-class >}}
+{{< /q-class >}}
+
+{{< q-class "box tip" >}}
+
+- Note that on YouTube, videos can be filed as “Unlisted” and this will let you embed the video, but will not include the video on your channel page, or in YouTube’s general search engine.
+
+{{< /q-class >}}
 
 ## Adding Basic Figures
 

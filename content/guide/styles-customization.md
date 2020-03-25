@@ -91,9 +91,17 @@ The more specific you can be with your {{< q-glossary "CSS selectors" >}}, the m
 
 In the above example, we are selecting the element with a {{< q-glossary "class" >}} of `"title"` that is inside an element with the class of `"quire-page__header"` (both of which start with a period `.` to indicate {{< q-glossary "class" >}}), that is inside an {{< q-glossary "element" >}} (in this case an element representing the page itself) with an {{< q-glossary "id" >}} of `"#chapter-one"` (which starts with a hashmark to indicate id).
 
-{{< q-class "box" >}}In Quire, page ids are unique, and can be found on the `<div>` element that has the {{< q-glossary "class" >}} `"quire-primary"`. By using the {{< q-glossary "id" >}} in your custom {{< q-glossary "CSS" >}}, you are targeting only that page, not all `"quire-primary"` {{< q-glossary "element" >}}s throughout your publication.{{< /q-class >}}
+{{< q-class "box tip" >}}
 
-{{< q-class "box" >}}Exceptionally, if somewhere there is a more specific {{< q-glossary "CSS selector" >}} that’s applying a style to an element, it will override the less specific one even if it’s in your `custom.css` file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your {{< q-glossary "CSS selector" >}} is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The "Inspect element" tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.{{< /q-class >}}
+- In Quire, page ids are unique, and can be found on the `<div>` element that has the {{< q-glossary "class" >}} `"quire-primary"`. By using the {{< q-glossary "id" >}} in your custom {{< q-glossary "CSS" >}}, you are targeting only that page, not all `"quire-primary"` {{< q-glossary "element" >}}s throughout your publication.
+
+{{< /q-class >}}
+
+{{< q-class "box tip" >}}
+
+- Exceptionally, if somewhere there is a more specific {{< q-glossary "CSS selector" >}} that’s applying a style to an element, it will override the less specific one even if it’s in your `custom.css` file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your {{< q-glossary "CSS selector" >}} is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The "Inspect element" tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.
+
+{{< /q-class >}}
 
 ## Overriding Theme Templates
 
