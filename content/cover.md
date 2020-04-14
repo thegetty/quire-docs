@@ -1,6 +1,6 @@
 ---
 title: Quire
-subtitle: The Getty’s Multiformat Publishing Framework
+subtitle: The Getty’s Multiformat Publishing Tool
 weight: 1
 menu: false
 type: cover
@@ -9,7 +9,7 @@ slug: .
 
 **Quire is currently in closed development. To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link) form.**
 
-Created by [the Getty](http://www.getty.edu/publications), Quire is a modern, multiformat publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
+Created by [the Getty](http://www.getty.edu/publications), Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
 
 Quire books are scholarly, visual, and built for discoverability and longevity. They feature:
 

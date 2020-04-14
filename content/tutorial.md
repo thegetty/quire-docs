@@ -5,11 +5,11 @@ weight: 2
 type: essay
 ---
 
-Quire is a publishing *framework*, meaning it’s not one tool or process, but rather a network of many things hooked together. When you work in Quire, you’ll be using a {{< q-glossary "text editor" >}}, a {{< q-glossary "command-line shell" >}}, and a {{< q-glossary "web browser" >}}. You use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work.
+Quire can be thought of as a publishing *framework*, meaning it is not one thing but rather a network of many interconnected programs and processes. When you work in Quire, you’ll be using a {{< q-glossary "text editor" >}}, a {{< q-glossary "command-line shell" >}}, and a {{< q-glossary "web browser" >}}. You use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real time.
 
 {{< q-figure id="1.4" >}}
 
-In the following sections, we’ll get more familiar with these tools, and get you up and running in a demo Quire project.
+In the following sections, we’ll get more familiar with these interconnected components, and get you up and running in a demo Quire project.
 
 ## 1. Working in a Command-Line Shell
 
@@ -17,7 +17,7 @@ The first thing you’ll need is a command-line shell. Along with using it to ru
 
 Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder (or press Command–Space Bar and type “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH.
 
-The shell is a text-based window into the contents of your computer, and a space where you can run program commands. Like opening a Finder or File Explorer window on your computer that shows the contents of a particular folder (directory). When you open your shell, you will also be in a particular directory, your main user directory by default.
+The shell is a text-based view of the contents of your computer, and a space where you can run program commands. It's the equivalent of opening a Finder or File Explorer window on your computer that shows the contents of a particular folder (directory). When you open your shell, you will also be in a particular directory, your main user directory by default.
 
 {{< q-figure id="command-line-shell" >}}
 
