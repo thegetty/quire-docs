@@ -1,6 +1,6 @@
 ---
 title: About
-weight: 1001
+weight: 2
 ---
 
 ## History
