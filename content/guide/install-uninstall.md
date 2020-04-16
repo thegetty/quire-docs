@@ -10,7 +10,7 @@ type: essay
 
 ## macOS Installation
 
-Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder) and follow the steps below. First, install support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial on [“Working in a Command-line Shell”](/tutorial#1-working-in-a-command-line-shell).
+Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder or by pressing Command–Space Bar and type “Terminal” ) and follow the steps below. First, install support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial on [“Working in a Command-line Shell”](/tutorial#1-working-in-a-command-line-shell).
 
 1. Install **Apple’s Xcode** by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
 
@@ -24,17 +24,17 @@ Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applic
 
 4. Visit the **PrinceXML** site, download the Mac OS version, and uncompress the folder: [http://www.princexml.com/download/](http://www.princexml.com/download/).
 
-    Copy and paste the following two lines in your Terminal at once and press enter. Note that this assumes the file downloaded into your Downloads folder (the Mac default).Copy and paste the following code into your terminal:
+    Copy and paste the following two lines in a blank Word or Notes document:
 
       ```text
       cd Downloads/prince-XX.X-macosx
       sudo ./install.sh
       ```
-    The key line is **prince-XX.X-macosx**
+    Before you can proceed, you need to update **prince-XX.X-macosx** with the correct version number.
 
-    Go to the Downloads folder to make sure the Prince zip file is there. Make sure XX.X matches the current version of Prince that you are using by deleting and replacing with the current numbers.The line may end in macos or macosx. Make sure the it matches exactly what the program looks like in the download folder and delete the "x" if necessary.
+    Go to the Downloads folder to make sure the Prince zip file is there. The Prince folder should have a number listed in its title. Make sure XX.X in Word or Notes document matches this number by deleting and replacing with the correct version numbers. The line may end in macos or macosx. Make sure the it matches exactly what the program looks like in your Downloads folder and delete the "x" if necessary.
 
-    The Terminal will ask for your computer password. After entering it, another message will appear in the Terminal shell to confirm that PrinceXML should be installed in the `/usr/local` directory. Press enter.
+    Once updated, paste the two lines together in Terminal. You will be prompted to enter your computer password. Press enter. You should receive a message that PrinceXML will be installed in the `/usr/local` directory. Press enter again. If successful you will see a message in the Terminal saying "installation complete."
 
     When complete, type `cd` into the Terminal to return to your home/user directory.
 

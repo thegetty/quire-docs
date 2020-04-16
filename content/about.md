@@ -1,6 +1,6 @@
 ---
 title: About
-weight: 1001
+weight: 2
 ---
 
 ## History
@@ -27,9 +27,9 @@ As an open-source framework, Quire provides a cost-friendly alternative to digit
 
 ## What Is Quire?
 
-Quire is an open-source framework for the creation of multi-format publications. It consists of two distinct parts: 1. a set of software, and 2. a defined content model.
+Quire is an open-source tool used for the creation of multi-format publications. It consists of two distinct parts: 1. a software stack, and 2. a defined content model.
 
-1. Quire Software
+1. Quire Software Stack
 
     On the software side, Quire packages together a number of programs: [Prince](http://www.princexml.com/) for PDF/print versions, [pe-epub](https://github.com/peoples-e/pe-epub) for EPUB, and at the heart of things, the static-site generator [Hugo](https://gohugo.io/) for the online version. The file structure, layout templates, partials and shortcodes of Quire are all Hugo conventions that have been structured to allow us create more formal digital publications (essentially, dynamic websites that make use of certain traditional print publication conventions like tables of contents, copyright and authorship information, linear reading orders, and the like).
 
