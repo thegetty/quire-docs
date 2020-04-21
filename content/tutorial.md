@@ -49,13 +49,13 @@ Follow the links below to install Quire:
 
 ## 3. Creating a New Project
 
-To start a new Quire project, open your command-line shell and type `quire new my-project`. Quire will download a new starter project named “my-project” into your current directory. If you are using the Beta, you may need to enter your GitHub username and password twice during the download process: once for the starter kit and again for the starter theme.
+To start a new Quire project, open your command-line shell and type `quire new my-project` and press enter. Quire will download a new starter project named “my-project” into your main user directory. If you are using the Beta, you may need to enter your GitHub username and password twice during the download process: once for the starter kit and again for the starter theme.
 
 {{< q-class "box tip" >}}
 - You can call your project anything you want, it doesn’t have to be `my-project`, but don’t use spaces, and we recommend lowercase.
 {{< /q-class >}}
 
-Once the process is complete, still in your shell, type `cd my-project` and press enter (which means change directory into the directory called “my-project”, which was just created). Next type `quire preview` and press enter again.
+The process may take a few minutes. Once complete, still in your shell, type `cd my-project` and press enter (which means change directory into the directory called “my-project”, which was just created). Next type `quire preview` and press enter again.
 
 ```text
 cd my-project
