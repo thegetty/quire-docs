@@ -1,21 +1,21 @@
 ---
-title: Accessibility Principles
+title: Accessibility Principals
 weight: 510
 type: essay
 ---
 
 As a publishing tool, Quire’s goal is to maintain accessibility for keyboard and screen reader navigation, as well as for devices and browsers of varying sizes and capabilities and with limited functionality, such as those operation with no JavaScript and/or no CSS.
 
-The principles outlined below have been informed in particular by:
+The principals outlined below have been informed in particular by:
 
 - [The 18F Accessibility Guide](https://pages.18f.gov/accessibility)
 - [Carnegie Museums of Pittsburgh Web Accessibility Guidelines](http://web-accessibility.carnegiemuseums.org)
 - [*Adaptive Web Design*](https://adaptivewebdesign.info), by [@AaronGustafson](https://twitter.com/AaronGustafson) https://adaptivewebdesign.info
 - [*Inclusive Design Patterns*](https://shop.smashingmagazine.com/products/inclusive-design-patterns), by [@heydonworks](https://twitter.com/heydonworks)
 
-While not exhaustive, the list below is meant to highlight the *key* principles by which Quire was originally developed and that we recommend be followed by others developing their own Quire projects. It has been ordered roughly starting with those items most owned or effected by editors working on publication content and progressing into those owned or effected by developers working on publication styles, template markup, and interaction.
+While not exhaustive, the list below is meant to highlight the *key* principals by which Quire was originally developed and that we recommend be followed by others developing their own Quire projects. It has been ordered roughly starting with those items most owned or effected by editors working on publication content and progressing into those owned or effected by developers working on publication styles, template markup, and interaction.
 
-## Key Principles
+## Key Principals
 
 - Heading levels (`H1` through `H6`) should indicate a content outline, not visual styles, as they are frequently used by screen readers for page navigation. Quire pages will have their titles placed in an `H1` tag at the template level, and there should only ever be one `H1` tag on a page. Headings in the Markdown content documents should start with `H2`. All headings should have content following them.
 
