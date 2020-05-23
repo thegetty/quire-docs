@@ -80,7 +80,7 @@ command = "npm run build:stage"
 HUGO_VERSION = "0.55.5"
 ```
 
-### Alteraing or adding another command
+### Altering or adding another command
 
 When we run the build process on Netlify we may want to add flags to our Hugo command to make Hugo behave differntly either on a specific branch or in the preview deploy.
 Let say for example we want to add the flag to build drafts for a branch and not for production.
