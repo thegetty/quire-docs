@@ -17,7 +17,7 @@ The first thing you’ll need is a command-line shell. Along with using it to ru
 
 Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder (or press Command–Space Bar and type “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH.
 
-The shell is a text-based view of the contents of your computer, and a space where you can run program commands. It's the equivalent of opening a Finder or File Explorer window on your computer that shows the contents of a particular folder (directory). When you open your shell, you will also be in a particular directory, your main user directory by default.
+The shell is a text-based view of the contents of your computer, and a space where you can run program commands. It's the equivalent of opening a Finder or File Explorer window on your computer that shows the contents of a particular folder (also known as a directory). When you open your shell, you will be in your {{< q-glossary "home directory">}} by default. When installing Quire, all the relevant files will automatically be saved in this location.
 
 {{< q-figure id="command-line-shell" >}}
 
@@ -31,7 +31,7 @@ With the shell open, you can type `ls` (list) to list the folders and files in y
 
 - `ls` lists all the files in the directory you’re in
 - `cd` followed by a space and a directory name, will move you into that directory: `cd my-project`
-- `cd` by itself will return you to your Home directory
+- `cd` by itself will return you to your home directory
 - `!!` will re-run the last command you entered
 - Pressing Control–C will stop any process running
 
@@ -49,13 +49,13 @@ Follow the links below to install Quire:
 
 ## 3. Creating a New Project
 
-To start a new Quire project, open your command-line shell and type `quire new my-project`. Quire will download a new starter project named “my-project” into your current directory. If you are using the Beta, you may need to enter your GitHub username and password twice during the download process: once for the starter kit and again for the starter theme.
+To start a new Quire project, open your command-line shell and type `quire new my-project`. Quire will download a new starter project into a folder named “my-project” in your home directory. If you are using the Beta version of Quire, you may need to enter your GitHub username and password twice during the download process: once for the starter kit and again for the starter theme.
 
 {{< q-class "box tip" >}}
 - You can call your project anything you want, it doesn’t have to be `my-project`, but don’t use spaces, and we recommend lowercase.
 {{< /q-class >}}
 
-Once the process is complete, still in your shell, type `cd my-project` and press enter (which means change directory into the directory called “my-project”, which was just created). Next type `quire preview` and press enter again.
+Once the process is complete, still in your shell, type `cd my-project` and press enter (which means change directory into the folder called “my-project”, which was just created). Next type `quire preview` and press enter again.
 
 ```text
 cd my-project
