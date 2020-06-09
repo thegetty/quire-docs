@@ -21,6 +21,9 @@ The [Quire CLI](https://github.com/gettypubs/quire-cli), or command-line interfa
 `quire install`
 : Install this project's theme dependencies when you update or change themes.
 
+`quire stop`
+: Stop the preview from running. This can also be done by typing Control-C. 
+
 
 ## Outputting Files
 
