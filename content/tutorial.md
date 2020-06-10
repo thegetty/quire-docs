@@ -94,8 +94,8 @@ Open the `publication.yml` file and try changing the title and subtitle, saving 
 The format of this metadata is called {{< q-glossary "YAML" >}} (*yam-ul*). It’s designed to be a plain-text way of capturing data. The general principal is to have the name of a data item, followed by a colon, a space, and then the data item’s value. A key-value pair.
 
 ```yaml
-title: "Cézanne"
-subtitle: "Promenades of an Impressionist"
+title: "New Deal Photography"
+subtitle: "The Works of Dorothea Lange and Walker Evans"
 ```
 
 While not always necessary, it’s usually a good idea to wrap any information you’re entering in straight quotes as in the example above. Certain character combinations can otherwise cause issues with the way the YAML data is processed and may cause your site preview to fail.
@@ -175,11 +175,19 @@ image: cover_bg.jpg
 
 The image itself is stored in the `static/img` directory of your project, put any image file you’d like in there to use it as background image. You’ll see that this is also where images are stored for use with the `q-figure` shortcode demonstrated above.
 
-You can also change the colors used in various elements of the site design. Look inside the `themes` directory for the `quire-starter-theme/source/css` subdirectory and inside that, the `variables.scss` file. Here you’ll find a number of variables, prefixed with a dollar sign, that are descriptive of what they control. For instance `$quire-navbar-color` is the background color of the navigation bar at the top of every page. Change it to something new—like a [hex color](https://www.w3schools.com/colors/colors_hexadecimal.asp) value, or one of the [standard 140 color names](https://www.w3schools.com/colors/colors_names.asp)—save the change, and preview it in your browser. Like with changes to YAML files, changes to theme styles may require you to refresh the browser, or even to stop and restart the `quire preview` process in your command-line shell.
+You can also change the colors used in various elements of the site design. Look inside the `themes` directory for the `quire-starter-theme/source/css` subdirectory and inside that, the `variables.scss` file. Here you’ll find a number of variables, prefixed with a dollar sign, that are descriptive of what they control. For instance `$quire-navbar-color` is the background color of the navigation bar at the top of every page. You can choose from a variety of hex color values that can be found [here](https://www.w3schools.com/colors/colors_hexadecimal.asp), or from one of the standard 140 color names found [here](https://www.w3schools.com/colors/colors_names.asp). Like with changes to YAML files, changes to theme styles may require you to refresh the browser, or even to stop and restart the `quire preview` process in your command-line shell.
+
+For example, while in the variables.scss file try making the following changes. Under the section "Declare the navbar color style: normal/accent" switch the value to *accent*.
 
 ```scss
-$quire-navbar-color: lightcoral;
+$navbar:accent;
 ```
+Scroll down a little further to the section called "Declare navbar colors" and change the color value to *rosybrown*.
+
+```scss
+$quire-navbar-color: rosybrown;
+```
+Now, save the changes in your text editor and preview it in your browser.
 
 Make sure there’s always a space between the colon and the value you enter, and that the value is immediately proceeded by a semicolon. And as in the example above, your color choice won’t be preceded by a dollar sign, even though some of them in `variables.scss` are. Hex color values are preceded by a hashmark (like `#ff00ff`) and the 140 standard color keywords don’t need anything.
 
