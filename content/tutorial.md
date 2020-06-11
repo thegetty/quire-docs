@@ -5,7 +5,7 @@ weight: 2
 type: essay
 ---
 
-Quire can be thought of as a publishing *framework*, meaning it is not one thing but rather a network of many interconnected programs and processes. When you work in Quire, you’ll be using a {{< q-glossary "text editor" >}}, a {{< q-glossary "command-line shell" >}}, and a {{< q-glossary "web browser" >}}. You use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real time.
+When getting started with Quire, it is important to understand that you will use three core components to create, edit, and output your Quire project: a {{< q-glossary "text editor" >}}, a {{< q-glossary "command-line shell" >}}, and a {{< q-glossary "web browser" >}}. You use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real-time.
 
 {{< q-figure id="1.4" >}}
 
