@@ -5,15 +5,15 @@ weight: 2
 type: essay
 ---
 
-When getting started with Quire, it is important to understand that you will use three core components to create, edit, and output your Quire project: a {{< q-glossary "text editor" >}}, a {{< q-glossary "command-line shell" >}}, and a {{< q-glossary "web browser" >}}. You use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real-time.
+As you get started with Quire, it is important to familiarize yourself with the three core components that you will use to create, edit, and output your Quire project: a {{< q-glossary "text editor" >}}, a {{< q-glossary "command-line shell" >}}, and a {{< q-glossary "web browser" >}}. You will use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real-time.
 
 {{< q-figure id="1.4" >}}
 
-In the following sections, we’ll get more familiar with these interconnected components, and get you up and running in a demo Quire project.
+In the following sections, we’ll learn more about these interconnected components, and get you up and running in a demo Quire project.
 
 ## 1. Working in a Command-Line Shell
 
-The first thing you’ll need is a command-line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs Quire is dependent on in order to run such as Hugo to create the online site, and Pandoc to create the e-book files).
+The first thing you’ll need is a command-line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs Quire is dependent on in order to run such as Pandoc to create the e-book files and Node.js to run javascript).
 
 Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder (or press Command–Space Bar and type “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH.
 
@@ -37,7 +37,7 @@ With the shell open, you can type `ls` (list) to list the folders and files in y
 
 {{< /q-class >}}
 
-*For a deeper dive into the command-line, check out a [Really Friendly Command Line Intro](https://hellowebbooks.com/learn-command-line/), or the Programming Historian’s [“Introduction to the Bash Command Line”](https://programminghistorian.org/en/lessons/intro-to-bash).*
+*For a deeper dive into the command-line, check out a ["Really Friendly Command Line Intro"](https://hellowebbooks.com/learn-command-line/), or the Programming Historian’s ["Introduction to the Bash Command Line"](https://programminghistorian.org/en/lessons/intro-to-bash).*
 
 ## 2. Installing Quire
 
@@ -117,23 +117,27 @@ Open the `about.md` file. At the top you’ll see a small block of YAML surround
 
 Let’s make some changes to the `about.md` file to make it the Preface in our demo book:
 
-1. First change the `title` to `"Preface"`.
-2. The `type` of `"page"` is fine to leave as is. [Other page types available](/guide/pages#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
-3. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in order based on their filenames. Change the `weight` of this page to `"3"`, which will order it after the `contents.md` page which has a `weight` of `"2"`.
-
-Save your changes and you should see the page update at http://localhost:1313/about/. You’ll probably also want to change the name of the file from `about.md` to `preface.md`. Do this by right clicking (or control clicking on a Mac) on the file in your text editor and selecting “Rename”. Note that this will also change the URL of the page so instead of http://localhost:1313/about/, you’d now find the preview at http://localhost:1313/preface/.
+1. Change the `title` to `"Preface"`.
+2. Leave the `type` as `"page"`. [Other page types available](/guide/pages#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
+3. Change the `weight` of this page to `"2.5"`, which will order it after the `contents.md` page which has a `weight` of `"2"` and before the `intro.md` page which has a `weight` of `"3"`. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in order based on their filenames.
+4. Change the name of the file from `about.md` to `preface.md`. Do this by right clicking (or control clicking on a Mac) on the file in your text editor and selecting “Rename”. Note that this will also change the URL of the page.
+5. Page content goes below the YAML block. Delete the text that is there and copy-and-paste the following text as a test:
+*The quick brown fox jumps over the lazy dog.*
+6. Save your changes and you should see the page update at http://localhost:1313/preface/.
 
 {{< q-figure id="quire-starter-content-change-1" >}}
 
-Page content goes below the YAML block. Type or copy-and-paste some text here as a test. Save the file and check the preview you’re running in the browser at http://localhost:1313/preview/. You should see the update.
-
 Quire content is written in Markdown. Markdown allows you to express content structure as minimally as possible, using simple text indicators. For longer texts and publications, you’ll want to use a [Microsoft Word to Markdown conversion](/guide/fundamentals#microsoft-word-to-markdown-conversion) process, but you can also write Markdown directly in the text editor.
 
-Use Markdown to add styles and elements to your sample text:
+Markdown is used to add style and elements to your text. Here are some examples of what you can do with Markdown:
 
-1. Add some italics to a phrase by surrounding it with asterisks: `*a phrase in italics*`.
-2. Add a second-level heading by putting the text on it’s own line, preceded by two hashmarks: `## Heading 2`.
-3. Add a link by putting the link text in square brackets followed by the URL in parentheses: `[click here](http://www.myurl.com)`.
+- Add some italics to a phrase by surrounding it with asterisks: `*a phrase in italics*`.
+- Add a second-level heading by putting the text on it’s own line, preceded by two hashmarks: `## Heading 2`.
+- Add a link by putting the link text in square brackets followed by the URL in parentheses: `[click here](http://www.myurl.com)`.
+
+Let's try it out:
+
+1. Delete the current text and cut-and-paste the text below into your text editor.
 
 ```md
 ## A Riotous Energy
@@ -147,15 +151,20 @@ is a riotous energy, the noisy ebullition of a gang
 of students let loose in the halls of art.
 ```
 
+2. Save the change, and check the preview in your browser. You will notice the text has been formatted for you.
+
 {{< q-class "box tip" >}}
 - [A complete Markdown reference](/guide/fundamentals/) is available in the “Fundamentals” chapter of this guide, but for quick rules and tips, refer to our [Markdown cheatsheet](/resources/cheatsheet/).
 {{< /q-class >}}
 
-For more specialized features (especially images, mutimedia, and citations), Quire extends Markdown’s capabilities with a set of {{< q-glossary "shortcodes" >}}. Type the following figure image shortcode on a new line in your `preface.md` file, save the change, and check the preview in your browser.
+For more specialized features (especially images, multimedia, and citations), Quire extends Markdown’s capabilities with a set of {{< q-glossary "shortcodes" >}}.
+
+1. Type the following figure image shortcode on a new line in your `preface.md` file.
 
 ```go
 {{</* q-figure id="fig-1" */>}}
 ```
+2. Save the change, and check the preview in your browser.
 
 You’ll see this added a figure and caption, the text for which is stored in the project’s `figures.yml` file under the `id` of "fig-1". If you update the information stored in `figures.yml` it will update on your page as well as anywhere else that figure is used.
 
@@ -167,27 +176,33 @@ You’ll see this added a figure and caption, the text for which is stored in th
 
 There are number of different ways to customize the look of your publication. Some of the easiest are to add your own background images to your cover and page banners, and to change the colors and other styles of different interface elements (like the menu, navigation bar, and links) with {{< q-glossary "CSS" >}} variables.
 
-A background image can be added to most pages by indicating the image in the page YAML of that page. Open the `cover.md` file, add the following line inside the page YAML, save the file, and preview the results in the browser.
+A background image can be added to most pages by indicating the image in the page YAML of that page.
+
+1. Open the `cover.md` file.
+2. Add the following line inside the page YAML.
 
 ```
 image: cover_bg.jpg
 ```
+3. Save the file, and preview the results in the browser.
 
 The image itself is stored in the `static/img` directory of your project, put any image file you’d like in there to use it as background image. You’ll see that this is also where images are stored for use with the `q-figure` shortcode demonstrated above.
 
-You can also change the colors used in various elements of the site design. Look inside the `themes` directory for the `quire-starter-theme/source/css` subdirectory and inside that, the `variables.scss` file. Here you’ll find a number of variables, prefixed with a dollar sign, that are descriptive of what they control. For instance `$quire-navbar-color` is the background color of the navigation bar at the top of every page. You can choose from a variety of hex color values that can be found [here](https://www.w3schools.com/colors/colors_hexadecimal.asp), or from one of the standard 140 color names found [here](https://www.w3schools.com/colors/colors_names.asp). Like with changes to YAML files, changes to theme styles may require you to refresh the browser, or even to stop and restart the `quire preview` process in your command-line shell.
+You can also change the colors used in various elements of the site design. Let's try it out.
 
-For example, while in the variables.scss file try making the following changes. Under the section "Declare the navbar color style: normal/accent" switch the value to *accent*.
+1. Look inside the `themes` directory for the `quire-starter-theme/source/css` subdirectory and inside that, the `variables.scss` file. Here you’ll find a number of variables, prefixed with a dollar sign, that are descriptive of what they control. For instance `$quire-navbar-color` is the background color of the navigation bar at the top of every page.
+2. You can choose from a variety of hex color values that can be found [here](https://www.w3schools.com/colors/colors_hexadecimal.asp), or from one of the standard 140 color names found [here](https://www.w3schools.com/colors/colors_names.asp). Like with changes to YAML files, changes to theme styles may require you to refresh the browser, or even to stop and restart the `quire preview` process in your command-line shell.
+3. While in the variables.scss file, go to the section "Declare the navbar color style: normal/accent" and switch the value to *accent*.
 
 ```scss
-$navbar:accent;
+$navbar: accent;
 ```
-Scroll down a little further to the section called "Declare navbar colors" and change the color value to *rosybrown*.
+4. Scroll down a little further to the section called "Declare navbar colors" and change the color value to *rosybrown*.
 
 ```scss
 $quire-navbar-color: rosybrown;
 ```
-Now, save the changes in your text editor and preview it in your browser.
+5. Now, save the changes in your text editor and preview it in your browser.
 
 Make sure there’s always a space between the colon and the value you enter, and that the value is immediately proceeded by a semicolon. And as in the example above, your color choice won’t be preceded by a dollar sign, even though some of them in `variables.scss` are. Hex color values are preceded by a hashmark (like `#ff00ff`) and the 140 standard color keywords don’t need anything.
 
