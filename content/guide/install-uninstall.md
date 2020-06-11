@@ -12,17 +12,17 @@ type: essay
 
 Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder or by pressing Command–Space Bar and type “Terminal” ) and follow the steps below. First, install support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial on [“Working in a Command-line Shell”](/tutorial#1-working-in-a-command-line-shell).
 
-1. Install **Apple’s Xcode** by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
+1. **Apple’s Xcode** is a set of developer tools for your mac. More information can be found [here](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
 
     ```text
     xcode-select --install
     ```
 
-2. Visit the **Node.js** site, and download and install the current LTS (long-term support) version: [https://nodejs.org](https://nodejs.org).
+2. **Node.js** enables you to run javascript on your computer. The Quire CLI is written in javascript. Visit the Node.js site, and download and install the current LTS (long-term support) version: [https://nodejs.org](https://nodejs.org).
 
-3. Visit the **Pandoc** repository on GitHub, and download the macOS .pkg file of the latest release: [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/). Install by double clicking the icon and following the prompts.
+3. **Pandoc** serves two purposes in Quire. You can use it to convert Word documents to Markdown, and you can also use it to create e-book files of your Quire project. Visit the Pandoc repository on GitHub, and download the macOS .pkg file of the latest release: [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/). Install by double clicking the icon and following the prompts.
 
-4. Visit the **PrinceXML** site, download the Mac OS version, and uncompress the folder: [http://www.princexml.com/download/](http://www.princexml.com/download/).
+4. **PrinceXML** enables you to create a PDF version of your Quire project. Visit the PrinceXML site, download the Mac OS version, and uncompress the folder: [http://www.princexml.com/download/](http://www.princexml.com/download/).
 
     Copy and paste the following two lines in a blank Word or Notes document:
 
@@ -36,13 +36,13 @@ Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applic
 
     Once updated, paste the two lines together in Terminal. You will be prompted to enter your computer password. Press enter. You should receive a message that PrinceXML will be installed in the `/usr/local` directory. Press enter again. If successful you will see a message in the Terminal saying "installation complete."
 
-    When complete, type `cd` into the Terminal to return to your home/user directory.
+    When complete, type `cd` into the Terminal to return to your home directory.
 
     ```text
     cd
     ```
 
-5. Copy and paste the following line into your Terminal to download the **Quire CLI** ({{< q-glossary "command-line interface" >}}) to your computer from GitHub.
+5. The **Quire CLI** ({{< q-glossary "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the ["Quire CLI Commands"](https://gettypubs.github.io/quire/guide/quire-cli/) chapter of our guide.  Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
 
     ```text
     git clone https://github.com/gettypubs/quire-cli.git
@@ -65,11 +65,11 @@ When complete, type `quire --version` to confirm proper installation. It should 
 
 1. Download **Git for Windows** by clicking on "Download" at https://gitforwindows.org/. An exe file will be downloaded, click on it and hit "run", you should see a setup wizard screen that will install Git for Windows. During the installation, use the default settings.
 
-2. Download and install **Node.js** and **npm** at https://nodejs.org/en/download/. Make sure you get the LTS version of Node.js, npm will be installed during the same process. The Windows installer will be downloaded, just open it and a setup wizard screen will guide you through the process.
+2. **Node.js** and **npm** enable you to run javascript on your computer. Download and install Node.js and npm at https://nodejs.org/en/download/. Make sure you get the LTS version of Node.js, npm will be installed during the same process. The Windows installer will be downloaded, just open it and a setup wizard screen will guide you through the process. Node.js
 
-3. Download **Prince** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Prince you can follow the instructions at their site: https://www.princexml.com/doc-install/#windows
+3. **PrinceXML** enables you to create a PDF version of your Quire project. You will need to download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Prince you can follow the instructions at their site: https://www.princexml.com/doc-install/#windows
 
-4. Download **Pandoc** for Windows. You would download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc onto your system.
+4. **Pandoc** serves two purposes in Quire. You can use it to convert Word documents to Markdown, and you can also use it to create e-book files of your Quire project. You will need to download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc onto your system.
 
 5. Open **PowerShell** (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select "run as administrator" from the context menu.
 
@@ -81,7 +81,7 @@ When complete, type `quire --version` to confirm proper installation. It should 
 
     This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with the name of your computer and your username once it's complete.
 
-6. Continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one) and type the following command to download **Quire CLI** to your computer from GitHub:
+6.  The **Quire CLI** ({{< q-glossary "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the ["Quire CLI Commands"](https://gettypubs.github.io/quire/guide/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
 
     ```tx
     git clone https://github.com/gettypubs/quire-cli
