@@ -98,3 +98,14 @@ on the page and adjusts to different window widths */
     margin: 0 1.5rem;
   }
 }
+
+/* PAGE HEADER
+============================================================================= */
+/* A couple fixes for moving page-header inside content area
+when menuType is "fixed" */
+.quire-page__header {
+  background-color: inherit;
+}
+.content .quire-page__header h1 {
+  font-size: 2.5rem;
+}

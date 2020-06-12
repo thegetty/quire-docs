@@ -1,0 +1,24 @@
+{{/*
+  Single page default template. Normal page content will appear in the
+  .Content outlet below.
+*/}}
+
+{{ define "main" }}
+<article class="{{ partial "page-class.html" . }} quire-page" id="main" role="main">
+  {{ if ne .Site.Params.menuView "fixed" }}{{ partial "page-header.html" . }}{{ end }}
+  <section class="section quire-page__content" id="content">
+    <div class="container">
+      <div class="content">
+        {{ if eq .Site.Params.menuView "fixed" }}{{ partial "page-header.html" . }}{{ end }}
+        {{ .Content }}
+        {{ partial "page-bibliography.html" . }}
+      </div>
+    </div>
+  </section>
+  <section class="section quire-page__content">
+    <div class="container">
+      {{ partial "footer-buttons.html" . }}
+    </div>
+  </section>
+</article>
+{{ end }}
