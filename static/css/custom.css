@@ -109,3 +109,51 @@ when menuType is "fixed" */
 .content .quire-page__header h1 {
   font-size: 2.5rem;
 }
+
+/* NAVBAR
+============================================================================= */
+/* Let there be more room for left and right areas */
+.quire-navbar-controls__left,
+.quire-navbar-controls__right {
+  flex: auto;
+}
+/* With search moved to right side, move search close button there too */
+.quire-search__close-button {
+  left: auto;
+  right: 0;
+}
+/* style the site logo added in on the right side of the nav */
+.quire-navbar-controls__site-logo {
+  max-height: 1rem;
+}
+.quire-navbar-controls__left {
+  padding-left: 1rem;
+  padding-top: .2rem;
+}
+/* Don't display center text navigation items unless there's room */
+.quire-navbar-controls__center {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .quire-navbar-controls__center {
+    display: block;
+  }
+  /* Style items when navType is "main-pages",
+  which is generated from contents-list/html partial */
+  .quire-navbar-controls__center.navbar-type--main-pages ul {
+    display: flex;
+    justify-content: center;
+  }
+  .quire-navbar-controls__center.navbar-type--main-pages ul li a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: .8125rem;
+    font-weight: bold;
+  }
+  .quire-navbar-controls__center.navbar-type--main-pages ul li a:hover {
+    background-color: #3273dc;
+    color:#fff !important;
+  }
+}
