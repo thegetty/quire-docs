@@ -1,3 +1,6 @@
+/* TIP/ALERT BOXES
+============================================================================= */
+/* Implement with shortcode q-class "box warning" or q-class "box tip" */
 .box {
   box-shadow: none;
   font-weight: bold;
@@ -24,7 +27,6 @@
   margin-left: -4.25rem;
   content: "★";
 }
-
 @media print {
   .box.warning > ul > li:first-of-type::before {
     margin-left: -2.75rem;
@@ -35,5 +37,64 @@
   }
   pre, code {
     white-space: pre-wrap;
+  }
+}
+
+/* FIXED MENU
+============================================================================= */
+/* When window is at least 900px, show menu as fixed and hide toggle button */
+@media screen and (min-width: 900px) {
+  .quire:not(.no-js).menu-view--fixed {
+    background-color: #EEF2F3;
+  }
+  .quire:not(.no-js).menu-view--fixed .quire__secondary {
+    position: inherit;
+    float: right;
+    transform: none;
+    width: 330px;
+    margin-top: 3rem;
+    padding: 3rem 1rem 3rem 1.5rem;
+  }
+  .quire:not(.no-js).menu-view--fixed .quire__secondary #site-menu__inner {
+    display: block;
+  }
+  .quire:not(.no-js).menu-view--fixed .quire__primary {
+    width: calc(100% - 330px);
+  }
+  .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar {
+    width: 100vw
+  }
+  .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar #quire-controls-menu-button {
+    display: none;
+  }
+  /* Adjust for when menuSide is set to "left" (default is "right") */
+  .quire:not(.no-js).menu-view--fixed.menu-side--left .quire__secondary {
+    float: left;
+    padding-right: 0;
+  }
+  .quire:not(.no-js).menu-view--fixed.menu-side--left .quire__primary .quire-navbar {
+    margin-left: -330px;
+  }
+  .quire:not(.no-js).menu-view--fixed.menu-side--left .quire__secondary {
+    float: left;
+    padding-right: 0;
+  }
+}
+/* Make some fixes to the way the content area appears
+on the page and adjusts to different window widths */
+@media screen and (max-width: 500px),
+       screen and (max-width: calc(720px + 2rem)) {
+  .quire-page__content .container {
+    width: auto;
+    margin: 0 1rem;
+  }
+  .quire-page__content .container .content {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: calc(1050px + 3rem)) and (min-width: 900px) {
+  .quire-page__content .container {
+    width: auto;
+    margin: 0 1.5rem;
   }
 }
