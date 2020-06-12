@@ -2,7 +2,7 @@
   This partial generates a contents list. It is used in the publication menu
   and in the "contents" page type, but could be extended for further use. It
   expects five specific variables to be passed:
-  
+
   site              .Site
   contentsScope     Typically .Site.Pages or narrowed down to pages within a
                     specific section.
@@ -39,8 +39,8 @@
   `brief`           Lists only the title, or short_title when available.
 
   EXAMPLE PARTIAL USE:
-  partial "contents-list.html" (dict "site" .Site "contentsScope" .Site.Pages 
-  "contentsType" .Site.Params.tocType "contentsLocation" ".Params.toc" 
+  partial "contents-list.html" (dict "site" .Site "contentsScope" .Site.Pages
+  "contentsType" .Site.Params.tocType "contentsLocation" ".Params.toc"
   "contentsPage" . )
 
 */}}
@@ -102,7 +102,7 @@
       {{- else -}}
 
         {{- range first 1 (where $pages "Section" .Section) }}
-          <li class="section-item no-landing">{{ if and (eq $.contentsLocation ".Params.menu") (eq $contentsType "short") }}<a href="{{ .Permalink | relURL }}"{{- if lt .Weight .pageOne }} class="frontmatter-page"{{ end }}>{{ .Section | title }}</a>{{ else }}<div class="list-header">{{ .Section | humanize | title }}</div>{{ end -}}
+          <li class="section-item no-landing">{{ if and (eq $.contentsLocation ".Params.menu") (eq $contentsType "short") }}<a href="{{ .Permalink | relURL }}"{{- if lt .Weight ($.contentsPage.Scratch.Get "pageOneWeight") }} class="frontmatter-page"{{ end }}>{{ .Section | title }}</a>{{ else }}<div class="list-header">{{ .Section | humanize | title }}</div>{{ end -}}
         {{- end -}}
 
       {{- end -}}
