@@ -8,7 +8,7 @@
   THE OVERRIDE ALSO MOVES THE SEACH ICON TO THE RIGHT CORNER, AND ADDS A SITE
   LOGO TO THE LEFT CORNER.
 
-  
+
   This controls the various navigation elements (nav, skip-link, menu and
   search icons, and search results if enabled). It is visible on all pages.
 
@@ -28,6 +28,20 @@
 {{ end -}}
 {{- $imgDir := $.Scratch.Get "imageDir" -}}
 
+{{- $pages := .Site.Pages -}}
+{{- $pages := where $pages "Params.online" "!=" "false" }}
+{{- $pages := where $pages ".Type" "!=" "data" -}}
+
+{{- range $index, $element := $pages -}}
+  {{- if eq $index  0 -}}
+    {{- $.Scratch.Set "homepage" .File.UniqueID -}}
+    {{- $.Scratch.Set "homepage-link" .Permalink -}}
+  {{- end -}}
+  {{- if eq $index  1 -}}
+    {{- $.Scratch.Set "secondpage-link" .Permalink -}}
+  {{- end -}}
+{{- end -}}
+
 <div class="quire-navbar">
 
   <a href="#main" class="quire-navbar-skip-link" tabindex="1">
@@ -37,13 +51,11 @@
   <nav class="quire-navbar-controls">
     <div class="quire-navbar-controls__left">
       {{ with .Site.Data.publication.site_logo }}
-      <img src="{{ $imgDir | relURL }}/{{ . }}" class="quire-navbar-controls__site-logo" />
+      <a href='{{ $.Scratch.Get "homepage-link" | relURL }}' rel='home' class="quire-navbar-controls__site-logo">
+        <img src="{{ $imgDir | relURL }}/{{ . }}" />
+      </a>
       {{ end }}
     </div>
-
-    {{- $pages := .Site.Pages -}}
-    {{- $pages := where $pages "Params.online" "!=" "false" }}
-    {{- $pages := where $pages ".Type" "!=" "data" -}}
 
     <div class="quire-navbar-controls__center{{ with .Site.Params.navType }} navbar-type--{{ . }}{{ end }}">
 
@@ -57,15 +69,7 @@
 
       <ul class="quire-navbar-page-controls" role="navigation" aria-label="quick">
 
-      {{- range $index, $element := $pages -}}
-        {{- if eq $index  0 -}}
-          {{- $.Scratch.Set "homepage" .File.UniqueID -}}
-          {{- $.Scratch.Set "homepage-link" .Permalink -}}
-        {{- end -}}
-        {{- if eq $index  1 -}}
-          {{- $.Scratch.Set "secondpage-link" .Permalink -}}
-        {{- end -}}
-      {{- end -}}
+
 
       {{- if eq .File.UniqueID ($.Scratch.Get "homepage") -}}
 

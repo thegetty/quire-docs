@@ -123,7 +123,11 @@ when menuType is "fixed" */
   right: 0;
 }
 /* style the site logo added in on the right side of the nav */
-.quire-navbar-controls__site-logo {
+a.quire-navbar-controls__site-logo,
+a.quire-navbar-controls__site-logo:hover {
+  background-color: transparent;
+}
+a.quire-navbar-controls__site-logo img {
   max-height: 1rem;
 }
 .quire-navbar-controls__left {
@@ -152,8 +156,12 @@ when menuType is "fixed" */
     font-size: .8125rem;
     font-weight: bold;
   }
-  .quire-navbar-controls__center.navbar-type--main-pages ul li a:hover {
+  .quire-navbar-controls__center.navbar-type--main-pages ul li a:hover,
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active a:hover {
     background-color: #3273dc;
     color:#fff !important;
+  }
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active a {
+    color: #3273dc !important;
   }
 }
