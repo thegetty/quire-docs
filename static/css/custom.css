@@ -157,11 +157,13 @@ a.quire-navbar-controls__site-logo img {
     font-weight: bold;
   }
   .quire-navbar-controls__center.navbar-type--main-pages ul li a:hover,
-  .quire-navbar-controls__center.navbar-type--main-pages ul li.active a:hover {
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active a:hover,
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section a:hover {
     background-color: #3273dc;
     color:#fff !important;
   }
-  .quire-navbar-controls__center.navbar-type--main-pages ul li.active a {
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active a,
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section a {
     color: #3273dc !important;
   }
 }
