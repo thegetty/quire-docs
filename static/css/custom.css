@@ -165,3 +165,7 @@ a.quire-navbar-controls__site-logo img {
     color: #3273dc !important;
   }
 }
+/* Hide progress bar, doesn’t make sense with main-pages nav */
+.quire-progress-bar div {
+  display: none;
+}
