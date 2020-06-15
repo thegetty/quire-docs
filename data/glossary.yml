@@ -42,9 +42,11 @@ entries:
   - term: "`Git` project management tool"
     definition: "Project management tool for software development that uses Git as their version control language. There are multiple tools available in the web."
   - term: "HEX color value"
-    alternates: 
+    alternates:
       - "HEX color values"
     definition: "Hexadecimal color values that represent specific colors. Colors are specified by hexadecimal integers between 00 and FF. For more information visit: [http://www.color-hex.com/](http://www.color-hex.com/)"
+  - term: "home directory"
+    definition: "A home directory is a file system directory on a multi-user operating system that serves as the repository for a user's personal files, applications, music, movies, downloads, etc. The directory name usually defaults to the system user's name. You can find the directory by opening your Finder or File Explorer window and typing Command-H."
   - term: "Hugo"
     definition: "The static site generator that powers Quire: [https://gohugo.io/](https://gohugo.io/)"
   - term: IANA

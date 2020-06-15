@@ -2,7 +2,7 @@
   This partial generates a contents list. It is used in the publication menu
   and in the "contents" page type, but could be extended for further use. It
   expects five specific variables to be passed:
-  
+
   site              .Site
   contentsScope     Typically .Site.Pages or narrowed down to pages within a
                     specific section.
@@ -39,8 +39,8 @@
   `brief`           Lists only the title, or short_title when available.
 
   EXAMPLE PARTIAL USE:
-  partial "contents-list.html" (dict "site" .Site "contentsScope" .Site.Pages 
-  "contentsType" .Site.Params.tocType "contentsLocation" ".Params.toc" 
+  partial "contents-list.html" (dict "site" .Site "contentsScope" .Site.Pages
+  "contentsType" .Site.Params.tocType "contentsLocation" ".Params.toc"
   "contentsPage" . )
 
 */}}
@@ -76,16 +76,22 @@
    {{- $.contentsPage.Scratch.Set "pageOneWeight" .Weight -}}
 {{- end -}}
 
+{{ $thisPage := .contentsPage.File.UniqueID }}
+{{ $thisSection := .contentsPage.Section }}
+
 <ul>
 {{- range $pages -}}
+
+{{ $location := (dict "page" . "thisPage" $thisPage "thisSection" $thisSection) }}
+
   {{- if or (eq .Section "") (and (ne $.contentsPage.Section "") (ne $.contentsLocation ".Params.menu" )) -}}
 
     {{- if eq $.contentsLocation ".Params.menu" }}
-      <li class="page-item">{{ template "contents-item-menu" . -}}</li>
+      <li class="{{ template "page-class" $location }}">{{ template "contents-item-menu" . -}}</li>
     {{ end -}}
 
     {{- if and (eq $.contentsLocation ".Params.toc") (ne $.contentsPage.File.UniqueID .File.UniqueID) }}
-      <li class="page-item">{{ template "contents-item-toc" (dict "class" $.contentsPage.Params.class "Page" . "Site" .Site "pageOne" ($.contentsPage.Scratch.Get "pageOneWeight") ) -}}</li>
+      <li class="{{ template "page-class" $location }}">{{ template "contents-item-toc" (dict "class" $.contentsPage.Params.class "Page" . "Site" .Site "pageOne" ($.contentsPage.Scratch.Get "pageOneWeight") ) -}}</li>
     {{ end -}}
 
   {{- else if and .Section (ne .Section ($.contentsPage.Scratch.Get "renderedSection")) -}}
@@ -94,15 +100,15 @@
 
       {{- if eq .Params.slug "." -}}
         {{- if eq $.contentsLocation ".Params.menu" }}
-          <li class="section-item">{{ template "contents-item-menu" . -}}
+          <li class="{{ template "section-class" $location }}">{{ template "contents-item-menu" . -}}
         {{- end -}}
         {{- if and (eq $.contentsLocation ".Params.toc") (ne $.contentsPage.File.UniqueID .File.UniqueID) }}
-          <li class="section-item">{{ template "contents-item-toc" (dict "class" $.contentsPage.Params.class "Page" . "Site" .Site "pageOne" ($.contentsPage.Scratch.Get "pageOneWeight") ) -}}
+          <li class="{{ template "section-class" $location }}">{{ template "contents-item-toc" (dict "class" $.contentsPage.Params.class "Page" . "Site" .Site "pageOne" ($.contentsPage.Scratch.Get "pageOneWeight") ) -}}
         {{- end -}}
       {{- else -}}
 
         {{- range first 1 (where $pages "Section" .Section) }}
-          <li class="section-item no-landing">{{ if and (eq $.contentsLocation ".Params.menu") (eq $contentsType "short") }}<a href="{{ .Permalink | relURL }}"{{- if lt .Weight .pageOne }} class="frontmatter-page"{{ end }}>{{ .Section | title }}</a>{{ else }}<div class="list-header">{{ .Section | humanize | title }}</div>{{ end -}}
+          <li class="{{ template "section-class" $location }} no-landing">{{ if and (eq $.contentsLocation ".Params.menu") (eq $contentsType "short") }}<a href="{{ .Permalink | relURL }}"{{- if lt .Weight ($.contentsPage.Scratch.Get "pageOneWeight") }} class="frontmatter-page"{{ end }}>{{ .Section | title }}</a>{{ else }}<div class="list-header">{{ .Section | humanize | title }}</div>{{ end -}}
         {{- end -}}
 
       {{- end -}}
@@ -110,11 +116,12 @@
       {{- if eq $contentsType "full" -}}
       <ul>
         {{- range where $pages "Section" .Section -}}
+        {{ $subLocation := (dict "page" . "thisPage" $thisPage "thisSection" $thisSection) }}
           {{ if ne .Params.slug "." -}}
             {{ if eq $.contentsLocation ".Params.menu" }}
-              <li class="page-item">{{ template "contents-item-menu" . -}}</li>
+              <li class="{{ template "page-class" $subLocation }}">{{ template "contents-item-menu" . -}}</li>
             {{ else }}
-              <li class="page-item">{{ template "contents-item-toc" (dict "class" $.contentsPage.Params.class "Page" . "Site" .Site "pageOne" ($.contentsPage.Scratch.Get "pageOneWeight") ) -}}</li>
+              <li class="{{ template "page-class" $subLocation }}">{{ template "contents-item-toc" (dict "class" $.contentsPage.Params.class "Page" . "Site" .Site "pageOne" ($.contentsPage.Scratch.Get "pageOneWeight") ) -}}</li>
             {{ end -}}
           {{ end -}}
         {{- end -}}
@@ -205,3 +212,14 @@
   </figure>
 </div>
 {{ end -}}
+
+{{- define "page-class" -}}
+page-item
+{{- if eq .thisPage .page.File.UniqueID }} active{{ end -}}
+{{- end -}}
+
+{{- define "section-class" -}}
+section-item
+{{- if eq .thisPage .page.File.UniqueID }} active{{ end -}}
+{{- if eq .thisSection .page.Section }} active-section{{ end -}}
+{{- end -}}
