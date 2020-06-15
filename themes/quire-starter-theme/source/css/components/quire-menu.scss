@@ -56,8 +56,8 @@
     h1, h2, h3, h4, h5, h6 { color: $quire-menu-text-color; }
 
   }
-  
-  // Temporary until the headings/semantics of the menu can be reworked. Style matches backmatter h2 
+
+  // Temporary until the headings/semantics of the menu can be reworked. Style matches backmatter h2
   h6 {
     font-family: $quire-headings-font;
     @if $theme == classic {
@@ -134,24 +134,24 @@
   }
 
   .page-item, .section-item {
-    a {
-      font-family: $quire-primary-font;
-      &.active {
-        margin-left: -1.25em;
-        border-left: 4px solid $accent-color;
+    &.active > a {
+      margin-left: -1.25em;
+      border-left: 4px solid $accent-color;
+      color: $accent-color !important;
+      text-decoration: none;
+      padding-left: calc(.75em + 4px);
+      &:hover {
+        border-left-width: 4px;
+      }
+      * {
         color: $accent-color !important;
-        text-decoration: none;
-        padding-left: calc(.75em + 4px);
-        &:hover {
-          border-left-width: 4px;
-        }
-        * {
-          color: $accent-color !important;
-        }
       }
     }
+    a {
+      font-family: $quire-primary-font;
+    }
     .page-item {
-      a.active {
+      &.active > a {
         margin-left: calc(-2.75em + -4px);
         padding-left: 2.65em;
       }
@@ -201,4 +201,3 @@
     background-color: transparent;
   }
 }
-

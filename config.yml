@@ -52,3 +52,8 @@ params:
   figureModalIcons: true
   figureZoom: true
   citationPopupStyle: text # text | icon
+  #
+  # These are custom attributes for this project:
+  menuView: fixed # fixed | hidden (default)
+  menuSide: right # left | right (default)
+  navType: main-pages # main-pages | next-prev (default)

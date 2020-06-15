@@ -1,30 +1,98 @@
 ---
 title: Quire
-subtitle: The Getty’s Multiformat Publishing Tool
+# subtitle: The Getty’s Multiformat Publishing Tool
+reading_line: The best free tool for creating beautiful digital books that last.
 weight: 1
 menu: false
-type: cover
+type: splash
 slug: .
 ---
 
-**Quire is currently in closed development. To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link) form.**
+[[[ LOGO ]]]
 
-Created by [the Getty](http://www.getty.edu/publications), Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
+The best free tool for creating beautiful digital books that last.
 
-Quire books are scholarly, visual, and built for discoverability and longevity. They feature:
+[[[ IMAGES ]]]
 
-- Page-level citation
-- Footnotes
-- Bibliographies
-- Figure images and image groups
-- Zooming images and maps
-- Video and audio embeds
-- Dynamic tables of contents and menus
-- Full-text search
-- Responsive web design
-- Web accessibility and SEO optimized
-- Outputs to web, PDF, and EPUB formats
+Created by the Getty, Quire is a modern, multiformat publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
 
-Check out [the demo site](https://gettypubs.github.io/quire-starter/), and [some of the Getty’s books developed with early versions of Quire.](http://www.getty.edu/publications/digital/digitalpubs.html)
+## What Quire Does
 
-*For more information, contact Greg Albers, Digital Publications Manager at the J. Paul Getty Trust, at [galbers@getty.edu](mailto:galbers@getty.edu).*
+- Outputs multiple formats of the publication (web, ebook, PDF, print-on-demand).
+- Keeps source content in non-specialized plain text to ensure longterm readability and reusability.
+- Supports visually rich scholarship.
+- Allows for a wide range of possible custom features and styles.
+- Persists without the need for ongoing maintenance or updating once published.
+
+## Why Use Quire?
+
+Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digital book that is optimized for visual imagery and designed to ensure its content is widely accessible and stable.
+
+<div class="feature-list">
+
+- **Affordable** Free! No proprietary software involved
+- **Richly Featured & Interactive** Add images, videos, audio clips, maps, and zooming features
+- **Flexible and Customizable** Can be adapted to suit the content
+- **Discoverable** Publish as a PDF, ebook, website, or print-on-demand
+- **Empowering** Self-hosted so need to utilize a developer
+- **Booklike** Builds in the understanding of high-quality scholarly publishing
+- **Beautiful** Optimized for visual imagery with a clean, modern design
+- **Accessible** Logical reading over, alt texts, language codes, semantic section elements, and more
+- **Open-Source** Adhering to open-source standards but goal is to officially launch as open source in 2022
+- **Sustainable** Based around plain text files so need to worry about your publication going obsolete
+
+</div>
+
+<div class="block">
+
+## The Quire Community
+
+Quire is moving towards an open-source model. 
+We invite you to learn more about our [initiative](https://quire/getty.edu/about) and our [community](https://quire/getty.edu/community).
+
+<div class="action-button">
+
+[Join us](https://quire/getty.edu/community)
+
+</div>
+
+</div>
+
+## Meet Our Users
+
+[[[ IMAGES ]]]
+
+“Quire allows for greater preservation and digital distribution of works in a simplified format.” – Kris Thayer, Minneapolis Institute of Art 
+
+<div class="feature-cards">
+
+## Learn More About Quire 
+
+- [Quire Roadmap ![Explore icon](/img/icons/baseline_explore_white_48dp.png) ](#)
+- [Quire Basics & Tutorials ![School icon](/img/icons/baseline_school_white_48dp.png)](#)
+- [View Demo Website ![Website icon](/img/icons/baseline_domain_verification_white_48dp.png)](#) 
+
+</div>
+
+<div class="block">
+
+For news, updates, and events be sure to sign up for our [mailing list](#).
+
+<div class="action-button">
+
+[Get the Latest](#y)
+
+</div>
+
+</div>
+
+
+## Get Started With Quire
+
+<div class="action-button">
+
+[Sign Up for Free Access](#)
+
+</div>
+
+

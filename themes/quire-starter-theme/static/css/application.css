@@ -7873,22 +7873,22 @@ html {
       .quire #main {
         background-color: transparent; } }
   .quire__secondary {
-    background-color: #333333;
+    background-color: #EEF2F3;
     padding: 1.25em; }
     .quire__secondary * {
-      color: #ffffff; }
+      color: #333333; }
     .quire__secondary svg {
-      fill: #ffffff; }
+      fill: #333333; }
       .quire__secondary svg:hover {
-        fill: #ffffff;
+        fill: #333333;
         background-color: transparent; }
     .quire__secondary a,
     .quire__secondary button,
     .quire__secondary .button {
-      background-color: #333333;
-      color: #ffffff !important; }
+      background-color: #EEF2F3;
+      color: #333333 !important; }
     .quire__secondary a {
-      border-bottom-color: #ffffff !important; }
+      border-bottom-color: #333333 !important; }
     .quire__secondary .title {
       font-size: inherit;
       font-weight: inherit;
@@ -8241,7 +8241,7 @@ html {
     .quire-menu__header__contributors {
       margin: .25em 0 1.5em; }
     .quire-menu__header h1, .quire-menu__header h2, .quire-menu__header h3, .quire-menu__header h4, .quire-menu__header h5, .quire-menu__header h6 {
-      color: #ffffff; }
+      color: #333333; }
   .quire-menu h6 {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     letter-spacing: .25px;
@@ -8256,17 +8256,15 @@ html {
   .quire-menu__formats {
     margin-top: 2rem; }
     .quire-menu__formats h6 {
-      color: #999999;
-      border-color: #999999;
-      color: #999999;
-      border-color: #999999; }
+      color: #333333;
+      border-color: #333333; }
     .quire-menu__formats .menu-list {
       margin-top: .75em; }
   .quire-menu__header a, .quire-menu__list a, .quire-menu__formats a {
     margin: 0 -.75rem;
     border-radius: 0; }
     .quire-menu__header a:hover, .quire-menu__list a:hover, .quire-menu__formats a:hover {
-      background-color: #333333;
+      background-color: #EEF2F3;
       text-decoration: underline;
       border-left-width: 0; }
   .quire-menu__footer {
@@ -8286,19 +8284,19 @@ html {
           background-color: inherit; }
     .quire-menu__footer .quire-copyright {
       padding: 0 .5em; }
+  .quire-menu .page-item.active > a, .quire-menu .section-item.active > a {
+    margin-left: -1.25em;
+    border-left: 4px solid #3273dc;
+    color: #3273dc !important;
+    text-decoration: none;
+    padding-left: calc(.75em + 4px); }
+    .quire-menu .page-item.active > a:hover, .quire-menu .section-item.active > a:hover {
+      border-left-width: 4px; }
+    .quire-menu .page-item.active > a *, .quire-menu .section-item.active > a * {
+      color: #3273dc !important; }
   .quire-menu .page-item a, .quire-menu .section-item a {
     font-family: "Noto Sans", sans-serif; }
-    .quire-menu .page-item a.active, .quire-menu .section-item a.active {
-      margin-left: -1.25em;
-      border-left: 4px solid #3273dc;
-      color: #3273dc !important;
-      text-decoration: none;
-      padding-left: calc(.75em + 4px); }
-      .quire-menu .page-item a.active:hover, .quire-menu .section-item a.active:hover {
-        border-left-width: 4px; }
-      .quire-menu .page-item a.active *, .quire-menu .section-item a.active * {
-        color: #3273dc !important; }
-  .quire-menu .page-item .page-item a.active, .quire-menu .section-item .page-item a.active {
+  .quire-menu .page-item .page-item.active > a, .quire-menu .section-item .page-item.active > a {
     margin-left: calc(-2.75em + -4px);
     padding-left: 2.65em; }
   .quire-menu .page-item.no-landing .list-header, .quire-menu .section-item.no-landing .list-header {
