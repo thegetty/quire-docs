@@ -1,6 +1,6 @@
 ---
 title: Figure Images
-weight: 207
+weight: 3800
 type: essay
 ---
 
@@ -142,8 +142,8 @@ Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo
 {{< q-class "box tip" >}}
 
 - The `src` image provided in this example is a frame from the video and will be used in place of the video in the PDF and EPUB versions of your publication. In Quire this is referred to as a fallback. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
-    
-    Like the [image labels](#labeling-figure-images) this is controlled in the project’s `config.yml` file with `videoFigureFallbackText: true`, `videoFigureFallbackTextBefore: "Watch the video at "` and `videoFigureFallbackTextAfter: "."`. 
+
+    Like the [image labels](#labeling-figure-images) this is controlled in the project’s `config.yml` file with `videoFigureFallbackText: true`, `videoFigureFallbackTextBefore: "Watch the video at "` and `videoFigureFallbackTextAfter: "."`.
 
 {{< /q-class >}}
 

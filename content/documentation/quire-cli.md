@@ -1,6 +1,6 @@
 ---
 title: Quire CLI Commands
-weight: 201.5
+weight: 3200
 type: essay
 ---
 
@@ -22,7 +22,7 @@ The [Quire CLI](https://github.com/gettypubs/quire-cli), or command-line interfa
 : Install this project's theme dependencies when you update or change themes.
 
 `quire stop`
-: Stop the preview from running. This can also be done by typing Control-C. 
+: Stop the preview from running. This can also be done by typing Control-C.
 
 
 ## Outputting Files

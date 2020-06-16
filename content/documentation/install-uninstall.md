@@ -1,6 +1,6 @@
 ---
 title: Install or Update
-weight: 201
+weight: 3100
 type: essay
 ---
 
