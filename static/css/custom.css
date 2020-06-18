@@ -205,6 +205,13 @@ on the page and adjusts to different window widths */
   }
 }
 
+/* Sytle buttons for collapsed nav sections, created with Javascript function */
+.quire-menu .list-header button {
+  all: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
 /* PAGE HEADER
 ============================================================================= */
 /* A couple fixes for moving page-header inside content area
