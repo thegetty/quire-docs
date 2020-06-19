@@ -31,6 +31,8 @@ Created by Getty, Quire is a modern, multiformat publishing framework designed t
 - Allows for a wide range of possible custom features and styles.
 - Persists without the need for ongoing maintenance or updating once published.
 
+[Learn More](https://quire/getty.edu/about/quire)
+
 ## Why Use Quire?
 
 Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digital book that is optimized for visual imagery and designed to ensure its content is widely accessible and stable.
@@ -55,7 +57,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 ## The Quire Community
 
 Quire is moving towards an open-source model.
-We invite you to learn more about our [initiative](https://quire/getty.edu/about) and our [community](https://quire/getty.edu/community).
+We invite you to learn more about our [initiative](https://quire/getty.edu/about/history) and our [community](https://quire/getty.edu/community/quire-community).
 
 <div class="action-button">
 
