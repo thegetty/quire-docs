@@ -12,7 +12,7 @@ In traditional website publishing, a content management system (CMS) is connecte
 
 In static-site publishing, the CMS is just software and a folder of files on your, the publisher’s, computer (1) that are used to build the site. The site files are then uploaded to the server (2), and users (3) access them directly. You only need to run the site software and upload new files if you want to make updates to the publication.
 
-{{< q-figure id="digitalpipeline-static" >}}
+{{< q-figure id="digitalpipeline-static" >}} 
 
 And yet, despite the name, static sites can be as dynamic and interactive as you want them to be, thanks to the full support of the complete web platform (HTML5, CSS3, and JavaScript). Zoomable and rotating images, interactive maps, and embedded glossaries are just a few of the features that can be included.
 
