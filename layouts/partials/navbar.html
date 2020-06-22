@@ -57,11 +57,18 @@
       {{ end }}
     </div>
 
-    <div class="quire-navbar-controls__center{{ with .Site.Params.navType }} navbar-type--{{ . }}{{ end }}">
+    <div class="quire-navbar-controls__center{{ with .Site.Params.navView }} navbar-type--{{ . }}{{ end }}">
 
-    {{ if eq .Site.Params.navType "main-pages" }}
+    {{ if eq .Site.Params.navView "main-pages" }}
+    
+        {{ $navType := "" }}
+        {{ if eq .Site.Params.navType "short" }}
+        {{ $navType = "short" }}
+        {{ else }}
+        {{ $navType = "full" }}
+        {{ end }}
 
-        {{- $contents := dict "site" .Site "contentsScope" .Site.Pages "contentsType" "full" "contentsLocation" ".Params.menu" "contentsPage" . }}
+        {{- $contents := dict "site" .Site "contentsScope" .Site.Pages "contentsType" $navType "contentsLocation" ".Params.menu" "contentsPage" . }}
 
         {{- partial "contents-list.html" $contents -}}
 
