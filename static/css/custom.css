@@ -148,10 +148,19 @@
 
 /* FIXED MENU
 ============================================================================= */
+/* Fix the navbar and content area */
+.quire:not(.no-js).menu-view--fixed .quire-navbar {
+  position: fixed;
+}
+.quire:not(.no-js).menu-view--fixed #main {
+  margin-top: 3rem;
+  min-height: calc(100vh - 3rem);
+}
 /* When window is at least 900px, show menu as fixed and hide toggle button */
 @media screen and (min-width: 900px) {
   body:not(#cover) .quire:not(.no-js).menu-view--fixed {
     background-color: #EEF2F3;
+    overflow: auto;
   }
   body:not(#cover) .quire:not(.no-js).menu-view--fixed .quire__secondary {
     position: inherit;
@@ -199,7 +208,7 @@ on the page and adjusts to different window widths */
   }
 }
 @media screen and (max-width: calc(1050px + 3rem)) and (min-width: 900px) {
-  .quire-page__content .container {
+  body:not(.cover).quire-page__content .container {
     width: auto;
     margin: 0 1.5rem;
   }
