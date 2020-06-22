@@ -113,7 +113,7 @@
       {{- else -}}
 
         {{- range first 1 (where $pages "Section" .Section) }}
-          <li class="{{ template "section-class" $location }} no-landing">{{ if and (eq $.contentsLocation ".Params.menu") (eq $contentsType "short") }}<a href="{{ .Permalink | relURL }}"{{- if lt .Weight ($.contentsPage.Scratch.Get "pageOneWeight") }} class="frontmatter-page"{{ end }}>{{ .Section | title }}</a>{{ else }}<div class="list-header">{{ .Section | humanize | title }}</div>{{ end -}}
+          <li class="{{ template "section-class" $location }} no-landing">{{ if and (eq $.contentsLocation ".Params.menu") (eq $contentsType "short") }}<a href="{{ .Permalink | relURL }}"{{- if lt .Weight ($.contentsPage.Scratch.Get "pageOneWeight") }} class="frontmatter-page"{{ end }}>{{ .Section | title }}</a>{{ else }}<div class="list-header">{{ .Section | humanize | title }}</div>{{ end -}}{{ if eq $contentsType "full"}}<div class="list-screen"></div>{{ end }}
         {{- end -}}
 
       {{- end -}}

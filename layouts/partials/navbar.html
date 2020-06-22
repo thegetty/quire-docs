@@ -61,7 +61,7 @@
 
     {{ if eq .Site.Params.navType "main-pages" }}
 
-        {{- $contents := dict "site" .Site "contentsScope" .Site.Pages "contentsType" "short" "contentsLocation" ".Params.menu" "contentsPage" . }}
+        {{- $contents := dict "site" .Site "contentsScope" .Site.Pages "contentsType" "full" "contentsLocation" ".Params.menu" "contentsPage" . }}
 
         {{- partial "contents-list.html" $contents -}}
 

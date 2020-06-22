@@ -206,7 +206,7 @@ on the page and adjusts to different window widths */
 }
 
 /* Sytle buttons for collapsed nav sections, created with Javascript function */
-.quire-menu .list-header button {
+.list-header button {
   all: inherit;
   padding: 0;
   cursor: pointer;
@@ -276,23 +276,60 @@ a.quire-navbar-controls__site-logo img {
     display: flex;
     justify-content: center;
   }
-  .quire-navbar-controls__center.navbar-type--main-pages ul li a {
+  .quire-navbar-controls__center.navbar-type--main-pages ul li a,
+  .quire-navbar-controls__center.navbar-type--main-pages ul li .list-header {
     padding-left: 2rem;
     padding-right: 2rem;
     text-transform: uppercase;
     letter-spacing: .5px;
     font-size: .8125rem;
     font-weight: bold;
+    cursor: pointer;
   }
+  /* Styles for full navigation menu type with dropdown */
+  .quire-navbar-controls__center.navbar-type--main-pages ul li ul {
+    max-height: 16.75rem;
+    overflow-y: scroll; 
+  }
+  .quire-navbar-controls__center.navbar-type--main-pages ul li ul a,
+  .quire-navbar-controls__center.navbar-type--main-pages ul li ul .list-header {
+    background-color: #d0dbde;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active a,
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section a
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active .list-header,
+  .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section .list-header {
+    color: #3273dc !important;
+  }
+  .quire-navbar-controls__center.navbar-type--main-pages ul li .list-header:hover,
   .quire-navbar-controls__center.navbar-type--main-pages ul li a:hover,
   .quire-navbar-controls__center.navbar-type--main-pages ul li.active a:hover,
   .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section a:hover {
     background-color: #3273dc;
     color:#fff !important;
+  }  
+  .quire-navbar-controls__center.navbar-type--main-pages .list-header + div + ul {
+    display: none;
   }
-  .quire-navbar-controls__center.navbar-type--main-pages ul li.active a,
-  .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section a {
-    color: #3273dc !important;
+  .quire-navbar-controls__center.navbar-type--main-pages ul li:hover ul {
+    display: block;
+    position: absolute;
+  }
+  /* Style type list in dropdown */
+  .quire-navbar-controls__center.navbar-type--main-pages ul li:hover .list-screen {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    background-color: #d0dbde;
+    height: 16.75rem;
+  }
+  /* Don't show heading links from individual pages */
+  .quire-navbar-controls__center.navbar-type--main-pages ul li ul.quire__heading-links,
+  .quire-navbar-controls__center.navbar-type--main-pages ul li:hover ul.quire__heading-links {
+    display: none;
   }
 }
 /* Hide progress bar, doesn’t make sense with main-pages nav */
