@@ -14,7 +14,14 @@ The best free tool for creating beautiful digital books that last.
 
 [[[ IMAGES ]]]
 
-Created by the Getty, Quire is a modern, multiformat publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
+Created by Getty, Quire is a modern, multiformat publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
+
+<div class="feature-cards">
+
+- [Sign Up for Free Access ![Explore icon](/img/icons/baseline_explore_white_48dp.png) ](#)
+- [View our Documentation ![School icon](/img/icons/baseline_school_white_48dp.png)](#)
+
+</div>
 
 ## What Quire Does
 
@@ -23,6 +30,8 @@ Created by the Getty, Quire is a modern, multiformat publishing framework design
 - Supports visually rich scholarship.
 - Allows for a wide range of possible custom features and styles.
 - Persists without the need for ongoing maintenance or updating once published.
+
+[Learn More](https://quire/getty.edu/about/quire)
 
 ## Why Use Quire?
 
@@ -47,8 +56,8 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 ## The Quire Community
 
-Quire is moving towards an open-source model. 
-We invite you to learn more about our [initiative](https://quire/getty.edu/about) and our [community](https://quire/getty.edu/community).
+Quire is moving towards an open-source model.
+We invite you to learn more about our [initiative](https://quire/getty.edu/about/history) and our [community](https://quire/getty.edu/community/quire-community).
 
 <div class="action-button">
 
@@ -62,15 +71,15 @@ We invite you to learn more about our [initiative](https://quire/getty.edu/about
 
 [[[ IMAGES ]]]
 
-“Quire allows for greater preservation and digital distribution of works in a simplified format.” – Kris Thayer, Minneapolis Institute of Art 
+“Quire allows for greater preservation and digital distribution of works in a simplified format.” – Kris Thayer, Minneapolis Institute of Art
 
 <div class="feature-cards">
 
-## Learn More About Quire 
+## Learn More About Quire
 
 - [Quire Roadmap ![Explore icon](/img/icons/baseline_explore_white_48dp.png) ](#)
 - [Quire Basics & Tutorials ![School icon](/img/icons/baseline_school_white_48dp.png)](#)
-- [View Demo Website ![Website icon](/img/icons/baseline_domain_verification_white_48dp.png)](#) 
+- [View Demo Website ![Website icon](/img/icons/baseline_domain_verification_white_48dp.png)](#)
 
 </div>
 
@@ -93,6 +102,6 @@ For news, updates, and events be sure to sign up for our [mailing list](#).
 
 [Sign Up for Free Access](#)
 
+[View our Documentation](#)
+
 </div>
-
-
