@@ -12,7 +12,7 @@ Ask and answer questions, share ideas, raise issues, and more!
 
 [Forum](https://quire/getty.edu/community)
 
-
+</div>
 
 # Contributor Covenant Code of Conduct
 

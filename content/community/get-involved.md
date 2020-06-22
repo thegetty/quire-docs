@@ -8,11 +8,11 @@ type: essay
 
 All contributions big and small are welcome!
 
-**[Contributor Guidelines](This would link to a "menu:false" page that lists the guidelines)**
+**[Contributor Guidelines](https://quire/getty.edu/community/contributor-guidelines)**
 
 ## Ways to Contribute
 
-    [[[Graphic]]]
+  [[[Graphic]]]
 - **Contribute Code**
 
     [Quire Starter Theme Repository](https://github.com/gettypubs/quire-starter-theme)
