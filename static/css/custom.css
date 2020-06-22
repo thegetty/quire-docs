@@ -212,6 +212,21 @@ on the page and adjusts to different window widths */
   cursor: pointer;
 }
 
+/* Style heading links in side menu */
+.quire-menu .menu-list li ul {
+  margin: 0 .75em;
+}
+.quire-menu .page-item .quire__heading-links {
+  display: none;
+}
+.quire-menu .page-item.active .quire__heading-links {
+  display: block;
+  margin: .25rem 1.5rem;
+}
+.quire-menu .page-item.active .quire__heading-links .main-heading a {
+  color: #3273dc !important;
+}
+
 /* PAGE HEADER
 ============================================================================= */
 /* A couple fixes for moving page-header inside content area
