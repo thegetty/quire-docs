@@ -69,7 +69,7 @@ We invite you to learn more about our [initiative](https://quire/getty.edu/about
 
 ## Meet Our Users
 
-[[[ IMAGES ]]]
+{{< q-figure-group id="modern_contributors-page, modern_contributors-bio, modern_contributors-cover, modern_contributors-name-title-block, modern_contributors-initials" grid="5" class="slider slider-medium" >}}
 
 “Quire allows for greater preservation and digital distribution of works in a simplified format.” – Kris Thayer, Minneapolis Institute of Art
 
