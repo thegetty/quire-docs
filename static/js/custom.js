@@ -80,3 +80,19 @@
   // Switch the content's visibility
   wrapper.hidden = expanded 
 })();
+
+// A small script to center the images inside the custom slider figure group
+// So if there are five images in the slider, the third one will be centered
+// in the scroll area. (So, odd numbers of images work best)
+(function() {
+  
+  let sliders = document.querySelectorAll('.slider')
+  
+  Array.prototype.forEach.call(sliders, slider => {
+    let scrollContainer = slider.querySelector('.quire-figure--group__row')
+    let containerWidth = scrollContainer.offsetWidth
+    let windowWidth = window.innerWidth
+    
+    slider.scrollLeft = ((containerWidth * .5) - (windowWidth * .5));
+  })
+})();

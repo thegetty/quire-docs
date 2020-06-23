@@ -345,3 +345,81 @@ a.quire-navbar-controls__site-logo img {
 .quire-progress-bar div {
   display: none;
 }
+
+/* HORIZONATAL SCROLLING IMAGES
+============================================================================= */
+/* Use with q-figure-group shortcode by aadding
+class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
+.quire-figure--group.slider {
+  overflow-x: scroll;
+  width: 100vw;
+  margin-left: -2.25rem;
+  border-width: 0;
+  padding-bottom: 2rem;
+}
+/* Ensure image widths even on mobile, add support for higher grid numbers */
+.quire-figure--group.slider .quire-grid--2 {
+  width: 49%;
+}
+.quire-figure--group.slider .quire-grid--3 {
+  width: 32%;
+}
+.quire-figure--group.slider .quire-grid--4 {
+  width: 23.5%;
+}
+.quire-figure--group.slider .quire-grid--5 {
+  width: 18.4%;
+}
+.quire-figure--group.slider .quire-grid--6 {
+  width: 15%;
+}
+.quire-figure--group.slider .quire-grid--7 {
+  width: 12.57%;
+}
+.quire-figure--group.slider .quire-grid--8 {
+  width: 10.75%;
+}
+.quire-figure--group.slider .quire-grid--9 {
+  width: 9.33%;
+}
+/* Ensure slider stretches full-width at different screen sizes */
+@media screen and (min-width: 501px) {
+  .quire-figure--group.slider {
+    margin-left: -3.5rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .quire-figure--group.slider {
+    margin-left: calc((100vw - 720px + 5rem) / 2 * -1);
+  }
+}
+/* Set the length of the slider, larger ones mean larger images */
+.quire-figure--group.slider .quire-figure--group__row {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+.quire-figure--group.slider.slider-small .quire-figure--group__row {
+  width: 200vw;
+}
+.quire-figure--group.slider.slider-medium .quire-figure--group__row {
+  width: 300vw;
+}
+.quire-figure--group.slider.slider-large .quire-figure--group__row {
+  width: 400vw;
+}
+.quire-figure--group.slider.slider-xlarge .quire-figure--group__row {
+  width: 500vw;
+}
+/* Adds add styles tooltip text below scrolling area */
+.quire-figure--group.slider::after {
+  content: "< Scroll for more >";
+  font-size: .875rem;
+  font-weight: bold;
+  color: #3273dc;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  position: absolute;
+  margin-left: -81.5px;
+}
