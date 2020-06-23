@@ -1,6 +1,6 @@
 ---
 title: Figure Images
-weight: 3800
+weight: 4800
 type: essay
 ---
 

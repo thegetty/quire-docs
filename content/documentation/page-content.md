@@ -1,7 +1,7 @@
 ---
 title: Page Content
 type: essay
-weight: 3700
+weight: 4700
 ---
 
 ## Formatting Text Content with Markdown

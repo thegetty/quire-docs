@@ -1,6 +1,6 @@
 ---
 title: Copyright & About Pages
-weight: 4200
+weight: 5200
 type: essay
 ---
 

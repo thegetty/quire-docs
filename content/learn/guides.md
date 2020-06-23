@@ -1,5 +1,5 @@
 ---
 title: Guides
-weight: 5100
+weight: 3100
 type: essay
 ---

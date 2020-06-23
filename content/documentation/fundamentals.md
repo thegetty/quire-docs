@@ -1,6 +1,6 @@
 ---
 title: "Fundamentals: YAML & Markdown"
-weight: 3300
+weight: 4300
 type: essay
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Netlify for Quire
-weight: 4600
+weight: 5600
 type: essay
 ---
 

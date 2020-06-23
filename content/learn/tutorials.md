@@ -1,5 +1,5 @@
 ---
 title: Tutorials
-weight: 5000
+weight: 3300
 type: essay
 ---

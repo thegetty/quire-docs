@@ -1,5 +1,5 @@
 ---
 title: Other Resources
-weight: 5200
+weight: 3200
 type: essay
 ---

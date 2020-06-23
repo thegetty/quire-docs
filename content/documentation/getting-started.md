@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 type: essay
-weight: 3000
+weight: 4000
 ---
 
 ## Starting a New Project

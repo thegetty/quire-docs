@@ -1,6 +1,6 @@
 ---
 title: Accessibility Principles
-weight: 4800
+weight: 5800
 type: essay
 ---
 
