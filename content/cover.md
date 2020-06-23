@@ -23,6 +23,9 @@ Created by Getty, Quire is a modern, multiformat publishing framework designed t
 
 </div>
 
+*“Quire allows for greater preservation and digital distribution of works in a simplified format.”* – Kris Thayer, Minneapolis Institute of Art
+
+
 ## What Quire Does
 
 - Outputs multiple formats of the publication (web, ebook, PDF, print-on-demand).
@@ -65,11 +68,18 @@ We invite you to learn more about our [initiative](https://quire/getty.edu/about
 
 </div>
 
-</div>
-
 ## Meet Our Users
 
-“Quire allows for greater preservation and digital distribution of works in a simplified format.” – Kris Thayer, Minneapolis Institute of Art
+From collection catalogues and online exhibitions to digital pamphlets, reports, and journal articles, learn more about what our diverse community of Quire users is creating.
+
+<div class="action-button">
+
+[Visit User Showcase](https://quire/getty.edu/user-showcase)
+
+</div>
+
+</div>
+
 
 <div class="feature-cards">
 
