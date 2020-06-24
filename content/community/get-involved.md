@@ -4,13 +4,11 @@ weight: 2300
 type: essay
 ---
 
-## How to Get Involved with the Quire Community
-
 All contributions big and small are welcome!
 
 **[Contributor Guidelines](https://quire/getty.edu/community/contributor-guidelines)**
 
-## Ways to Contribute
+### Ways to Contribute
 
   [[[Graphic]]]
 - **Contribute Code**
@@ -38,12 +36,12 @@ All contributions big and small are welcome!
     [[[Graphic]]]
 - **Participate in our Forum**
 
-    [Link to Forum](this would link to GitHub discussions)
+    Forum coming soon!
 
   [[[Graphic]]]
 - **Become an Ambassador**
 
-    Learn more about our Ambassador program [here](This would link to a "menu:false" page)
+    Ambassador program coming soon!
 
     [[[Graphic]]]
 - **Attend an Event or Lead One of Your Own**
