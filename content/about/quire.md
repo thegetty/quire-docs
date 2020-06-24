@@ -3,7 +3,6 @@ title: What is Quire?
 weight: 1000
 type: essay
 ---
-## About
 
 Quire is a multiformat publishing tool created by Getty. As an open-source framework, Quire provides a cost-friendly alternative to digital publishing that is inclusive of a variety of features and customizations allowing for the realization of projects in a user-friendly manner. Quire enables greater preservation and digital distribution of works in a simplified format that lends itself to increased longevity and discoverability.
 
