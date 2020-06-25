@@ -12,7 +12,7 @@ slug: .
 
 The best free tool for creating beautiful digital books that last.
 
-{{< q-figure-group id="modern_contributors-page, modern_contributors-bio, modern_contributors-cover, modern_contributors-name-title-block, modern_contributors-initials" grid="5" class="slider slider-medium" >}}
+{{< q-figure-group id="modern_contributors-page, modern_contributors-bio, modern_contributors-cover, modern_contributors-name-title-block, modern_contributors-initials" grid="5" class="slider slider-small" >}}
 
 Created by Getty, Quire is a modern, multiformat publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
 
