@@ -172,3 +172,35 @@ figure_list:
   - id: "digitalpipeline-static"
     src: /screenshots/digitalpipeline-static.gif
     caption: "In static-site publishing, the CMS is just software and a folder of files on your, the publisher’s, computer that are used to build the site."
+
+  - id: "alamo_keeper"
+    src: /screenshots/_alamo_keeper.png
+    caption: "*The Alamo Keeper: Thomas C. Rife* , by Philip Mullins and George Mullins. Austin Texas: Self-published, 2020."
+
+  - id: "artists_studios_paris"
+    src: /screenshots/_artists_studios_paris.png
+    caption: "This article was published in *Journal18: a journal of eighteenth-century art and culture*, Issue 5: *Coordinates: Digital Mapping and 18th-Century Visual, Material, and Built Cultures* (Spring 2018), co-edited by Nancy Um and Carrie Anderson."
+
+  - id: "bending_lines"
+    src: /screenshots/_bending_lines.png
+    caption: "*Bending Lines: Maps and Data from Distortion to Deception.* Boston: Leventhal Map & Education Center at the Boston Public Library, 2020."
+
+  - id: "fault_lines"
+    src: /screenshots/_fault_lines.png
+    caption: "*Fault Lines: 2020 Senior Thesis*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir. Oakland, CA: Mills College Art Museum, 2020."
+
+  - id: "french_paintings"
+    src: /screenshots/_french_paintings.png
+    caption: "Aimee Marcereau DeGalan, Editor, *French Paintings, 1600–1945: The Collections of the Nelson-Atkins Museum of Art* (Kansas City: The Nelson-Atkins Museum of Art, 2020)."
+
+  - id: "in_plain_sight"
+    src: /screenshots/_in_plain_sight.png
+    caption: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor. Oakland: Mills College Art Museum, 2019."
+
+  - id: "state_of_convergence"
+    src: /screenshots/_state_of_convergence.png
+    caption: "*State of Convergence*, Oakland: Mills College Art Museum, 2020."
+
+  - id: "tilt_west"
+    src: /screenshots/_tilt_west.png
+    caption: "“Art and Language.” In *Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson. Denver: Tilt West, 2020."
