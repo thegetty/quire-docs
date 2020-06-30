@@ -1,6 +1,6 @@
 ---
-title: News
-weight: 2400
+title: News & Events
+weight: 2600
 type: essay
 ---
 **July 6, 2020**
