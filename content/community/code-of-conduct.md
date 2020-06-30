@@ -2,7 +2,6 @@
 title: Code of Conduct
 weight: 2500
 type: essay
-menu: true
 ---
 
 ## QUIRE CODE OF CONDUCT
