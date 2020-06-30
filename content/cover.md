@@ -55,6 +55,28 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 </div>
 
+## Features
+
+<div class="feature-list">
+
+- Page-level citation
+- Footnotes
+- Bibliographies
+- Figure images and image groups
+- Zooming images and maps
+- Video and audio embeds
+- Dynamic tables of contents and menus
+- Full-text search
+- Responsive web design
+- Web accessibility and SEO optimized
+- Outputs to web, PDF, and EPUB formats
+- Realtime publication preview
+- Embedded glossaries -- is this true?
+- Interactive maps -- is this true?
+- Rotating images -- is this true?
+
+</div>
+
 <div class="block">
 
 ## The Quire Community
