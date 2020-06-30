@@ -14,122 +14,68 @@ Ask and answer questions, share ideas, raise issues, and more!
 
 </div>
 
-## Contributor Covenant Code of Conduct
+## QUIRE CODE OF CONDUCT
 
-### Our Pledge
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity
-and orientation.
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+**All are welcome.** As an open-source community, Quire is committed to providing a safe, welcoming, transparent, and inclusive environment for all our community members and those wishing to become involved. We value diverse perspectives, as well as, expertise and experience at all levels.
 
-### Our Standards
+Our Code of Conduct provides guidance to help foster friendly and respectful interactions, as well as outlines the steps that will be taken against anyone found violating this code. Our Code of Conduct applies across all Quire related communication platforms including the GitHub Discussions forum, GitHub repositories, the Quire email list, and any private correspondence, as well as remote and in-person meetings, events, conferences, and any instances in which a community member is representing Quire out in the world. We strive to maintain a positive, collaborative, and enriching experience for our community. To help us reach this goal, we ask that all community members adhere to the following guidelines for participation.
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+If you believe that someone is violating the Quire Code of Conduct, we ask that you please report this behavior immediately by emailing quire@getty.edu. For more information please see our **Reporting Guidelines**.
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+### QUIRE GUIDELINES
 
-Examples of unacceptable behavior include:
+- **We are friendly and patient.**
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+- **We are welcoming**: We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
 
-### Enforcement Responsibilities
+- **We are considerate**: Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we’re a world-wide community, so you might not be communicating in someone else’s primary language.
 
-Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+- **We are respectful**: Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one.
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.
+- **We are careful in the words that we choose**: we are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behavior aren’t acceptable.
 
-### Scope
+- **We try to understand why we disagree**: Disagreements, both social and technical, happen all the time. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of our community comes from its diversity, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
-This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
 
-### Enforcement
+### ANTI-HARRASSMENT
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement quire@getty.edu.
+The Quire community is dedicated to providing a harassment-free collaboration experience for everyone regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, faith, or anything else. We do not tolerate harassment of community participants in any form. Sexual or discriminatory language and imagery is not appropriate at any time.
 
-All complaints will be reviewed and investigated promptly and fairly.
+Harassment includes, but is not limited to:
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+- Offensive verbal comments, insults, or jokes related to physical or intellectual ability, gender, sexual orientation, disability, physical appearance, body size, race, religion, etc.
+- Discriminatory images in public spaces, including but not limited to sexually explicit or violent material
+- Deliberate intimidation, violent threats or language directed against another person
+- Sustained disruption of talks or other communication
+- Inappropriate or unwelcome sexual attention
+- Posting (or threatening to post) other people’s personally identifying information
+- Advocating for, or encouraging, any of the above behavior
+- Repeated harassment of others. In general, if someone asks you to stop, then stop
 
-### Enforcement Guidelines
 
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
+### REPORTING GUIDELINES
 
-#### 1. Correction
+If you are being harassed or see someone participating in harassment of any form, we ask that you please report this behavior immediately by emailing quire@getty.edu. Please include the following information:
 
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
+- Your contact info (so we can get in touch with you if we need to follow up).
+- Names (real, nicknames, or pseudonyms) of any individuals involved. If there were other witnesses besides you, please try to include them as well.
+- When and where the incident occurred. Please be as specific as possible.
+- Your account of what occurred. If there is a record available please include a link or screenshot.
+- Any additional context you believe existed surrounding the incident.
+- If you believe this incident is or may be ongoing.
+- Any other information you believe we should have.
 
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
 
-#### 2. Warning
+### CONSEQUENCES FOR CODE OF CONDUCT VIOLATIONS
 
-**Community Impact**: A violation through a single incident or series
-of actions.
+If a participant engages in any behavior violating this Code of Conduct, the core members of this community may take any action they deem appropriate, including warning the offender or expulsion from the community, exclusion from any interaction and loss of all rights in this community. Participants asked, by anyone, to stop any harassing behavior are expected to comply immediately.
 
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or
-permanent ban.
+### FOR QUESTIONS OR FEEDBACK
 
-#### 3. Temporary Ban
+If you have questions or feedback on this Code of Conduct please feel free to reach out to us at any time at quire@getty.edu.
 
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
+### ACKNOWLEDGEMENTS
 
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.
-
-#### 4. Permanent Ban
-
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
-
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
-
-### Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
-
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
-
-[homepage]: https://www.contributor-covenant.org
-
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+The Quire Code of Conduct has been modeled on the Code of Conduct policies from [Hoodie](http://hood.ie/code-of-conduct/), [IIIF](https://iiif.io/event/conduct/), and [Django](https://www.djangoproject.com/conduct/).
