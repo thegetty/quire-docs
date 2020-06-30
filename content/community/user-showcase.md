@@ -1,6 +1,6 @@
 ---
 title: User Showcase
-weight: 2600
+weight: 2400
 type: essay
 ---
 
