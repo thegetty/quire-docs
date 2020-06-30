@@ -4,18 +4,30 @@ weight: 2300
 type: essay
 ---
 
-All contributions big and small are welcome!
+Thank you for considering contributing to Quire! As a community-driven and ever-evolving initiative, contributions from our users are what enable us to continue fine-tuning and developing Quire as a vital digital publishing tool. We couldn't do it without you!
 
-**[Contributor Guidelines](https://quire/getty.edu/community/contributor-guidelines)**
+We recommend first taking a look at our [Documentation](https://quire/getty.edu/documentation) and [Roadmap](tk) to familiarize yourself with Quire and what the future of the platform looks like. You can also refer to our [News & Events](https://quire/getty.edu/documentation) page for the latest information.
 
-### Ways to Contribute
+Before getting started, we kindly request that you review our **[Contributor Guidelines](https://quire/getty.edu/community/contributor-guidelines)** for information on best practices, guidelines, and recommendations for contributing.
+
+Below are ways you can help support and improve Quire:
+
+(I like the way Hoodie includes icons here that you can click through to more information)
+
+### SHARE YOUR SKILLS AND KNOWLEDGE:
+
+Hoodie is still work in progress, and you can help us make it more awesome. Support us in working towards Hoodie’s eventual goals and making Hoodie a tool which enables people to express themselves through a well-accessible, easy-to-learn technology. No matter your level of skills or knowledge, we appreciate your support and would love to welcome you on board.
 
   [[[Graphic]]]
 - **Contribute Code**
 
-    [Quire Starter Theme Repository](https://github.com/gettypubs/quire-starter-theme)
+The benefit of an open-source community is that all our users have an opportunity to help mold Quire into a tool that meets their diverse needs. This is your opportunity to contribute to code and impact the development of the platform.
 
-    [Quire CLI Repository](https://github.com/gettypubs/quire-cli)
+Here are some suggestions for where to get started: (would this link to a menu:false page)
+
+[Quire Starter Theme Repository](https://github.com/gettypubs/quire-starter-theme)
+
+[Quire CLI Repository](https://github.com/gettypubs/quire-cli)
 
     [[[Graphic]]]
 - **Submit a Bug**
