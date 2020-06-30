@@ -6,7 +6,7 @@ type: essay
 
 ## Join the Discussion
 
-As a community-driven and ever-evolving initiative, active discussion and feedback from our diverse community of users help us continue developing and fine-tuning Quire as a digital publishing tool. Our community is the most valuable resource we have, and so we encourage you to join our forum and participate in the conversation. We invite you to ask and answer questions, share ideas, raise issues, and collaborate and assist your fellow community members.
+At Quire, we consider our community to be the valuable resource we have. Here you will find community-based support as you navigate Quire and help us improve it as a vital digital publishing tool. We encourage you to join our forum and participate in the conversation. We invite you to ask and answer questions, share ideas, raise issues, and collaborate and assist your fellow community members.
 
 <div class="action-button">
 
@@ -14,68 +14,24 @@ As a community-driven and ever-evolving initiative, active discussion and feedba
 
 </div>
 
-Examples of topics you will find covered in our forums include: installation troubleshooting, deployment tips, suggestions for new features, and show-and-tell for Quire projects in development.
+Examples of topics you will find covered in our forums include: support, tips & tricks, announcements, show-and-tell, development, feature suggestions, customizations, installation, deployment, and more. We ask that you do not utilize the forum for bug reports. Those must be submitted via [GitHub Issues](https://github.com/gettypubs/quire/issues).
 
-## QUIRE CODE OF CONDUCT
+Basic Forum Rules (**From Arches**)
 
-**All are welcome.** As an open-source community, Quire is committed to providing a safe, welcoming, transparent, and inclusive environment for all our community members and those wishing to become involved. We value diverse perspectives, as well as expertise and experience at all levels.
+- Please keep posts to topics related to the Arches platform, or of particular interest to the Arches community.
 
-Our Code of Conduct provides guidance to help foster friendly and respectful interactions and outlines the steps the consequences for anyone found violating this code. Our Code of Conduct applies across all Quire related communication platforms including the GitHub Discussions forum, GitHub repositories, the Quire email list, and any private correspondence. It also applies to remote and in-person meetings, events, conferences, and any instances in which a community member represents Quire out in the world. We strive to maintain a positive, collaborative, and enriching experience for our community. To help us reach this goal, we ask that all community members adhere to the following guidelines for participation.
+- No advertising or spamming.
 
-If you believe that someone is violating the Quire Code of Conduct, we ask that you please report this behavior immediately by emailing quire@getty.edu. For more information, please see our **Reporting Guidelines**.
+- No attacks on other posters.
 
-### QUIRE GUIDELINES
+- No attacks on other people.
 
-- **We are friendly and patient.**
+- No reproduction of personal communication (without prior consent).
 
-- **We are welcoming**: We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
+- All participants are required to declare their interests up front when participating in discussions directly affecting them or their company.
 
-- **We are considerate**: Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we’re a world-wide community, so you might not be communicating in someone else’s primary language.
+Please see our [Quire Code of Conduct](https://quire/getty.edu/community/code-of-conduct) for more information regarding appropriate behavior, as well as our anti-harrassment policy.
 
-- **We are respectful**: Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one.
+Note for new members:  to prevent spam on the **Arches Project Forum**, the first post of all new members will be reviewed by the forum moderator. If you post on a Saturday or Sunday, it can take up-to 48 hours for the first post to be reviewed and approved.  Thank you for your understanding!
 
-- **We are careful in the words that we choose**: we are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other participants. Harassment and other exclusionary behavior aren’t acceptable.
-
-- **We try to understand why we disagree**: Disagreements, both social and technical, happen all the time. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of our community comes from its diversity, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
-
-
-### ANTI-HARRASSMENT
-
-The Quire community is dedicated to providing a harassment-free collaboration experience for everyone regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, faith, or anything else. We do not tolerate harassment of community participants in any form. Sexual or discriminatory language and imagery is not appropriate at any time.
-
-Harassment includes, but is not limited to:
-
-- Offensive verbal comments, insults, or jokes related to physical or intellectual ability, gender, sexual orientation, disability, physical appearance, body size, race, religion, etc.
-- Discriminatory images in public spaces, including but not limited to sexually explicit or violent material
-- Deliberate intimidation, violent threats or language directed against another person
-- Sustained disruption of talks or other communication
-- Inappropriate or unwelcome sexual attention
-- Posting (or threatening to post) other people’s personally identifying information
-- Advocating for, or encouraging, any of the above behavior
-- Repeated harassment of others. In general, if someone asks you to stop, then stop
-
-
-### REPORTING GUIDELINES
-
-If you are being harassed or see someone participating in harassment of any form, we ask that you please report this behavior immediately by emailing quire@getty.edu. Please include the following information:
-
-- Your contact info (so we can get in touch with you if we need to follow up).
-- Names (real, nicknames, or pseudonyms) of any individuals involved. If there were other witnesses besides you, please try to include them as well.
-- When and where the incident occurred. Please be as specific as possible.
-- Your account of what occurred. If there is a record available please include a link or screenshot.
-- Any additional context you believe existed surrounding the incident.
-- If you believe this incident is or may be ongoing.
-- Any other information you believe we should have.
-
-
-### CONSEQUENCES FOR CODE OF CONDUCT VIOLATIONS
-
-If a participant engages in any behavior violating this Code of Conduct, the core members of this community may take any action they deem appropriate, including warning the offender or expulsion from the community, exclusion from any interaction and loss of all rights in this community. Participants asked, by anyone, to stop any harassing behavior are expected to comply immediately.
-
-### FOR QUESTIONS OR FEEDBACK
-
-If you have questions or feedback on this Code of Conduct please feel free to reach out to us at any time at quire@getty.edu.
-
-### ACKNOWLEDGEMENTS
-
-The Quire Code of Conduct has been modeled on the Code of Conduct policies from [Hoodie](http://hood.ie/code-of-conduct/), [IIIF](https://iiif.io/event/conduct/), and [Django](https://www.djangoproject.com/conduct/).
+Unless specifically noted, the views expressed here are not the views of the **Arches project**, but are rather the personal views of the individual posters.  Moderators may move, remove or lock threads, if it is felt a post violates these rules.
