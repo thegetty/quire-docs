@@ -6,7 +6,7 @@ type: essay
 
 ## Join the Discussion
 
-Ask and answer questions, share ideas, raise issues, and more!
+As a community-driven and ever-evolving initiative, active discussion and feedback from our diverse community of users help us continue developing and fine-tuning Quire as a digital publishing tool. Our community is the most valuable resource we have, and so we encourage you to join our forum and participate in the conversation. We invite you to ask and answer questions, share ideas, raise issues, and collaborate and assist your fellow community members.
 
 <div class="action-button">
 
@@ -14,15 +14,15 @@ Ask and answer questions, share ideas, raise issues, and more!
 
 </div>
 
+Examples of topics you will find covered in our forums include: installation troubleshooting, deployment tips, suggestions for new features, and show-and-tell for Quire projects in development.
+
 ## QUIRE CODE OF CONDUCT
 
+**All are welcome.** As an open-source community, Quire is committed to providing a safe, welcoming, transparent, and inclusive environment for all our community members and those wishing to become involved. We value diverse perspectives, as well as expertise and experience at all levels.
 
+Our Code of Conduct provides guidance to help foster friendly and respectful interactions and outlines the steps the consequences for anyone found violating this code. Our Code of Conduct applies across all Quire related communication platforms including the GitHub Discussions forum, GitHub repositories, the Quire email list, and any private correspondence. It also applies to remote and in-person meetings, events, conferences, and any instances in which a community member represents Quire out in the world. We strive to maintain a positive, collaborative, and enriching experience for our community. To help us reach this goal, we ask that all community members adhere to the following guidelines for participation.
 
-**All are welcome.** As an open-source community, Quire is committed to providing a safe, welcoming, transparent, and inclusive environment for all our community members and those wishing to become involved. We value diverse perspectives, as well as, expertise and experience at all levels.
-
-Our Code of Conduct provides guidance to help foster friendly and respectful interactions, as well as outlines the steps that will be taken against anyone found violating this code. Our Code of Conduct applies across all Quire related communication platforms including the GitHub Discussions forum, GitHub repositories, the Quire email list, and any private correspondence, as well as remote and in-person meetings, events, conferences, and any instances in which a community member is representing Quire out in the world. We strive to maintain a positive, collaborative, and enriching experience for our community. To help us reach this goal, we ask that all community members adhere to the following guidelines for participation.
-
-If you believe that someone is violating the Quire Code of Conduct, we ask that you please report this behavior immediately by emailing quire@getty.edu. For more information please see our **Reporting Guidelines**.
+If you believe that someone is violating the Quire Code of Conduct, we ask that you please report this behavior immediately by emailing quire@getty.edu. For more information, please see our **Reporting Guidelines**.
 
 ### QUIRE GUIDELINES
 
