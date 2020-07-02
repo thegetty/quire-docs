@@ -58,8 +58,12 @@
     </div>
 
     <div class="quire-navbar-controls__center{{ with .Site.Params.navView }} navbar-type--{{ . }}{{ end }}">
-
-    {{ if eq .Site.Params.navView "main-pages" }}
+      
+    {{ if eq .Site.Params.navView "none" }}
+      
+    {{ else if eq .Site.Params.navView "tagline" }}
+      {{ with .Site.Data.publication.description.tagline }}<span class="quire-navbar-controls__center__tagline">{{ markdownify . }}</span>{{ end }}
+    {{ else if eq .Site.Params.navView "main-pages" }}
     
         {{ $navType := "" }}
         {{ if eq .Site.Params.navType "short" }}

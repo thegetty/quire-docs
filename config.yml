@@ -56,5 +56,5 @@ params:
   # These are custom attributes for this project:
   menuView: fixed # fixed | hidden (default)
   menuSide: right # left | right (default)
-  navView: main-pages # main-pages | next-prev (default)
+  navView: tagline # none | tagline | main-pages | next-prev (default)
   navType: full # short | full (default)
