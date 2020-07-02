@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Data.publication.language }}">
   {{ partial "head.html" . }}
-  <body id="{{ with .Section }}{{ . | urlize }}-{{ end }}{{ .File.BaseFileName | lower }}">
+  <body id="{{ with .Section }}{{ . | urlize }}-{{ end }}{{ .File.BaseFileName | lower }}" {{ with .Page.Type }}class="quire-page-type--{{ . }}"{{ end }}>
     {{ partial "icons.html" . }}
     {{- if eq .Site.Params.licenseIcons true -}}
       {{ partial "icons-cc.html" . }}

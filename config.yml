@@ -57,4 +57,4 @@ params:
   menuView: fixed # fixed | hidden (default)
   menuSide: right # left | right (default)
   navView: tagline # none | tagline | main-pages | next-prev (default)
-  navType: full # short | full (default)
+  navType: short # short | full (default)
