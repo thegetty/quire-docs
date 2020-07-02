@@ -162,6 +162,9 @@
     background-color: #EEF2F3;
     overflow: auto;
   }
+  body:not(#cover) .quire:not(.no-js).menu-view--fixed .quire__secondary * {
+    background-color: inherit;
+  }
   body:not(#cover) .quire:not(.no-js).menu-view--fixed .quire__secondary {
     top: calc(3rem + 2px);
     overflow-y: scroll;
@@ -169,6 +172,7 @@
     transform: none;
     width: 330px;
     padding: 3rem 1rem 3rem 1.5rem;
+    background-color: inherit;
   }
   body:not(#cover) .quire:not(.no-js).menu-view--fixed .quire__secondary #site-menu__inner {
     display: block;

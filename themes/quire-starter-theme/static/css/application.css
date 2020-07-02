@@ -7873,7 +7873,7 @@ html {
       .quire #main {
         background-color: transparent; } }
   .quire__secondary {
-    background-color: #EEF2F3;
+    background-color: #d0dbde;
     padding: 1.25em; }
     .quire__secondary * {
       color: #333333; }
@@ -7885,7 +7885,7 @@ html {
     .quire__secondary a,
     .quire__secondary button,
     .quire__secondary .button {
-      background-color: #EEF2F3;
+      background-color: #d0dbde;
       color: #333333 !important; }
     .quire__secondary a {
       border-bottom-color: #333333 !important; }
@@ -8264,7 +8264,7 @@ html {
     margin: 0 -.75rem;
     border-radius: 0; }
     .quire-menu__header a:hover, .quire-menu__list a:hover, .quire-menu__formats a:hover {
-      background-color: #EEF2F3;
+      background-color: #d0dbde;
       text-decoration: underline;
       border-left-width: 0; }
   .quire-menu__footer {
