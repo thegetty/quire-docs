@@ -56,10 +56,25 @@
       </a>
       {{ end }}
     </div>
+    
+    {{ $navClass := "" }}
+    {{ if eq .Site.Params.navView "none" }}
+      {{ $navClass = "none" }}
+    {{ else if and (eq .Site.Params.navView "tagline" ) (ne .Page.Type "splash") }}
+      {{ $navClass = "tagline" }}
+    {{ else if or (eq .Site.Params.navView "main-pages") (eq .Page.Type "splash") }}
+      {{ $navClass = "main-pages" }}
+    {{ else }}
+      {{ $navClass = "next-prev" }}
+    {{ end }}
 
-    <div class="quire-navbar-controls__center{{ with .Site.Params.navView }} navbar-type--{{ . }}{{ end }}">
-
-    {{ if eq .Site.Params.navView "main-pages" }}
+    <div class="quire-navbar-controls__center navbar-type--{{ $navClass }}">
+      
+    {{ if eq .Site.Params.navView "none" }}
+      
+    {{ else if and (eq .Site.Params.navView "tagline" ) (ne .Page.Type "splash") }}
+      {{ with .Site.Data.publication.description.tagline }}<span class="quire-navbar-controls__center__tagline">{{ markdownify . }}</span>{{ end }}
+    {{ else if or (eq .Site.Params.navView "main-pages") (eq .Page.Type "splash") }}
     
         {{ $navType := "" }}
         {{ if eq .Site.Params.navType "short" }}
