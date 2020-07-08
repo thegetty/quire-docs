@@ -2,6 +2,7 @@
 title: Contributor Guidelines
 weight: 2501
 type: essay
+menu: false
 ---
 ## Introduction
 
