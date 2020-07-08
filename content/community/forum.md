@@ -6,7 +6,7 @@ type: essay
 
 ## Join the Discussion
 
-At Quire, we consider our community to be the valuable resource we have. Here you will find community-based support as you navigate Quire and help us improve it as a vital digital publishing tool. We encourage you to join our forum and participate in the conversation. We invite you to ask and answer questions, share ideas, raise issues, and collaborate and assist your fellow community members.
+In our forum, you will find community-based support as you navigate Quire and help us continue to develop and improve it as a vital digital publishing tool. We encourage you to join and participate in the conversation: ask and answer questions, share ideas, raise issues, collaborate, and assist your fellow community members.
 
 <div class="action-button">
 
@@ -18,17 +18,13 @@ Examples of topics you will find covered in our forums include: support, tips & 
 
 Basic Forum Rules (**From Arches**)
 
-- Please keep posts to topics related to the Arches platform, or of particular interest to the Arches community.
+- Please keep posts to topics related to Quire or relevant to the interest of the community
 
 - No advertising or spamming.
 
 - No attacks on other posters.
 
 - No attacks on other people.
-
-- No reproduction of personal communication (without prior consent).
-
-- All participants are required to declare their interests up front when participating in discussions directly affecting them or their company.
 
 Please see our [Quire Code of Conduct](https://quire/getty.edu/community/code-of-conduct) for more information regarding appropriate behavior, as well as our anti-harrassment policy.
 
