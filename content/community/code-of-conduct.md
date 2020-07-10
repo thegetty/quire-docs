@@ -11,7 +11,7 @@ menu: false
 
 Our Code of Conduct provides guidance to help foster friendly and respectful interactions and outlines the steps the consequences for anyone found violating this code. Our Code of Conduct applies across all Quire related communication platforms including the GitHub Discussions forum, GitHub repositories, the Quire email list, and any private correspondence. It also applies to remote and in-person meetings, events, conferences, and any instances in which a community member represents Quire out in the world. We strive to maintain a positive, collaborative, and enriching experience for our community. To help us reach this goal, we ask that all community members adhere to the following guidelines for participation.
 
-If you believe that someone is violating the Quire Code of Conduct, we ask that you please report this behavior immediately by emailing quire@getty.edu. For more information, please see our **Reporting Guidelines**.
+If you believe that someone is violating the Quire Code of Conduct, we ask that you please report this behavior immediately by emailing quire@getty.edu. For more information, please see our **Reporting Guidelines** below.
 
 ### QUIRE GUIDELINES
 
