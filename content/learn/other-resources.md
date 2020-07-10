@@ -2,6 +2,7 @@
 title: Resources
 weight: 3200
 type: essay
+menu: false
 ---
 
 ### Quire
