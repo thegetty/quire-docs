@@ -289,7 +289,7 @@ While there are a number of free tools, we recommend using Pandoc, which is incl
 To convert a single Word document (in this example it has a file name of MyFile.docx) into Markdown:
 
 ```
-pandoc --atx-header --wrap=none -s MyFile.docx -t markdown -o MyFile.md
+pandoc --atx-header --wrap=none -s MyFile.docx -t markdown-smart -o MyFile.md
 ```
 
 To convert all the Word documents in the folder and compile them into a **single** Markdown document:
