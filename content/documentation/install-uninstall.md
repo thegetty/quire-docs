@@ -10,7 +10,7 @@ type: essay
 
 ## macOS Installation
 
-Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder or by pressing Command–Space Bar and type “Terminal” ) and follow the steps below. First, install support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial on [“Working in a Command-line Shell”](/tutorial#1-working-in-a-command-line-shell).
+Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder or by pressing Command–Space Bar and type “Terminal” ) and follow the steps below. First, install support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
 
 1. **Apple’s Xcode** is a set of developer tools for your mac. More information can be found [here](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
 
@@ -18,7 +18,7 @@ Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applic
     xcode-select --install
     ```
 
-2. **Node.js** enables you to run javascript on your computer. The Quire CLI is written in javascript. Visit the Node.js site, and download and install the current LTS (long-term support) version: [https://nodejs.org](https://nodejs.org).
+2. **Node.js** enables you to run javascript on your computer. Visit the Node.js site, and download and install the current LTS (long-term support) version: [https://nodejs.org](https://nodejs.org).
 
 3. **Pandoc** serves two purposes in Quire. You can use it to convert Word documents to Markdown, and you can also use it to create e-book files of your Quire project. Visit the Pandoc repository on GitHub, and download the macOS .pkg file of the latest release: [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/). Install by double clicking the icon and following the prompts.
 
@@ -42,7 +42,7 @@ Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applic
     cd
     ```
 
-5. The **Quire CLI** ({{< q-glossary "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the ["Quire CLI Commands"](https://gettypubs.github.io/quire/guide/quire-cli/) chapter of our guide.  Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
+5. The **Quire CLI** ({{< q-glossary "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli) chapter of our guide.  Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
 
     ```text
     git clone https://github.com/gettypubs/quire-cli.git
@@ -59,7 +59,7 @@ Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applic
     npm install -g
     ```
 
-When complete, type `quire --version` to confirm proper installation. It should return a version number, otherwise, if it says `command not found`, the Quire CLI has not been properly installed. Refer to the [“Troubleshooting”](#troubleshooting) section below.
+When complete, type `quire --version` to confirm proper installation. It should return a version number, otherwise, if it says `command not found`, the Quire CLI has not been properly installed. Refer to the [*Troubleshooting*](#troubleshooting) section below.
 
 ## Windows Installation
 
@@ -81,7 +81,7 @@ When complete, type `quire --version` to confirm proper installation. It should 
 
     This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with the name of your computer and your username once it's complete.
 
-6.  The **Quire CLI** ({{< q-glossary "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the ["Quire CLI Commands"](https://gettypubs.github.io/quire/guide/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
+6.  The **Quire CLI** ({{< q-glossary "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](https://gettypubs.github.io/quire/guide/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
 
     ```tx
     git clone https://github.com/gettypubs/quire-cli
@@ -301,7 +301,7 @@ To update the version of a theme you have:
 3. Still in the command-line shell, type `quire install` and press enter to install the theme dependencies for your project. (This is done automatically when running `quire new`, but needs to be done manually when adding a new or replacement theme.)
 
 {{< q-class "box warning" >}}
-- Be sure to save any [customizations you’ve made](/guide/styles-customization) inside your theme. (Typically style changes to the `variables.scss` file.) You’ll have to copy these over into the new theme manually once it is installed.
+- Be sure to save any [customizations you’ve made](/documentation/styles-customization) inside your theme. (Typically style changes to the `variables.scss` file.) You’ll have to copy these over into the new theme manually once it is installed.
 {{< /q-class >}}
 
 ## Installing a New Theme
