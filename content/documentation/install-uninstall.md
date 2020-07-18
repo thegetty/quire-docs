@@ -328,7 +328,7 @@ To uninstall Quire:
 
 **Downloading the Quire CLI to your computer from GitHub through the Terminal**
 
-If you have {{< q-glossary "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly.
+If you have {{< q-glossary "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) or you can follow the instructions below.
 
 Follow these steps:
 
@@ -342,9 +342,9 @@ Follow these steps:
 
    For Password: **follow the directions below.**
 
-3. In GitHub follow this link (https://github.com/settings/tokens) to access the personal token access token page.
+3. In GitHub follow this link (https://github.com/settings/tokens) to access the personal token access token page. Or, while on Github.com, navigate to the upper-right corner of any page, click your profile photo, then click **Settings**. In the left sidebar, click **Developer settings**. In the left sidebar, click **Personal access tokens**.
 
-6. Click **generate** new token.
+6. Click **generate new token**.
 
 7. Give your token a descriptive name.
 
@@ -352,7 +352,7 @@ Follow these steps:
 
 9. Scroll down to the bottom of the page and click **generate token**.
 
-10. Copy the token to your clipboard before closing this window. For security reasons, after you navigate off the page, you will not be able to see the token again.
+10. Copy the token to your clipboard before closing this window. For security reasons, after you navigate off the page, you will not be able to see the token again.(Treat your tokens like passwords, and keep them secret.)
 
 **Resetting user permission for local directory**
 
