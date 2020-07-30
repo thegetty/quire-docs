@@ -4,67 +4,77 @@ weight: 2300
 type: essay
 ---
 
-Thank you for considering contributing to Quire! As a community-driven and ever-evolving initiative, contributions from our users are what enable us to continue fine-tuning and developing Quire as a vital digital publishing tool. We couldn't do it without you!
+Thank you for your interest in getting involved with Quire! As a community-driven and ever-evolving initiative, our users' contributions are what enable us to continue fine-tuning, developing, and spreading the word about Quire as a vital digital publishing tool. We couldn't do it without you!
 
-We recommend first taking a look at our [Documentation](https://quire/getty.edu/documentation) and [Roadmap](tk) to familiarize yourself with Quire and what the future of the platform looks like. You can also refer to our [News & Events](https://quire/getty.edu/documentation) page for the latest information.
+We recommend first taking a look at our **[Documentation](https://quire/getty.edu/documentation)** and **[Roadmap](#)** to familiarize yourself with Quire and the future of the tool. You can also refer to our **[News & Events](https://quire/getty.edu/documentation)** page for the latest information.
 
 Before getting started, we kindly request that you review our **[Contributor Guidelines](https://quire/getty.edu/community/contributor-guidelines)** for information on best practices, guidelines, and recommendations for contributing.
 
 Below are ways you can help support and improve Quire:
 
-(I like the way Hoodie includes icons here that you can click through to more information)
+### Ways to Take Action Now!
 
-### SHARE YOUR SKILLS AND KNOWLEDGE:
 
-Hoodie is still work in progress, and you can help us make it more awesome. Support us in working towards Hoodie’s eventual goals and making Hoodie a tool which enables people to express themselves through a well-accessible, easy-to-learn technology. No matter your level of skills or knowledge, we appreciate your support and would love to welcome you on board.
-
-  [[[Graphic]]]
+[[[Graphic]]]
 - **Contribute Code**
 
-The benefit of an open-source community is that all our users have an opportunity to help mold Quire into a tool that meets their diverse needs. This is your opportunity to contribute to code and impact the development of the platform.
+  The benefit of an open-source community is that all our users have an opportunity to help mold Quire into a digital publishing solution that meets a diverse set of needs. This is your opportunity to contribute to code and directly impact the development of the platform.
 
-Here are some suggestions for where to get started: (would this link to a menu:false page)
+  Here are some suggestions for where to get started: (would link to a menu:false page)
 
-[Quire Starter Theme Repository](https://github.com/gettypubs/quire-starter-theme)
+  Quire on GitHub:
 
-[Quire CLI Repository](https://github.com/gettypubs/quire-cli)
+  [Quire Starter Theme Repository](https://github.com/gettypubs/quire-starter-theme)
 
-    [[[Graphic]]]
+  [Quire CLI Repository](https://github.com/gettypubs/quire-cli)
+
+[[[Graphic]]]
 - **Submit a Bug**
+
+    Bugs are sneaky, and we need your help spotting them! If you come across something broken or just not looking right, please add it to our bug tracker, and we'll work on getting the issue resolved:
 
     [GitHub Issues](https://github.com/gettypubs/quire/issues)
 
     Please remember to label your issue and include the following information when submitting a bug:
+
     - What were you doing or what you tried to do
-    - What you expected
+    - What your desired results were
     - What actually happened
     - Include code or screenshot if possible
 
-    [[[Graphic]]]
+[[[Graphic]]]
 - **Add to Documentation**
 
-    Help us complete [these](This would link to section of GitHub where we have checklist of sections needing work. Can use wiki area.) sections of the documentation.
+    The Quire documentation is a work in progress and we value your contributions. We invite you to dive in and help us complete [these](This would link to section of GitHub where we have checklist of sections needing work. Can use wiki area.) incomplete sections of the documentation.
 
-    [[[Graphic]]]
+[[[Graphic]]]
 - **Participate in our Forum**
 
-    Forum coming soon!
+    **Coming Soon...**
 
-  [[[Graphic]]]
+    Here you will find community-based support to help you navigate the ins-and-outs of Quire. We encourage you to join and participate in the conversation. Ask and answer questions, share ideas, raise issues, collaborate, and assist your fellow community members.
+
+    [Join the Conversation Now](https://quire/getty.edu/community/forum)
+
+[[[Graphic]]]
 - **Become an Ambassador**
 
-    Ambassador program coming soon!
+    **Coming Soon...**
 
-    [[[Graphic]]]
+    We are looking for Quire lovers and super users who are passionate about bringing Quire into their own communities and expanding its reach.
+
+    [Learn More](This would link to a menu false page)
+
+[[[Graphic]]]
 - **Attend an Event or Lead One of Your Own**
 
-    Learn more about our upcoming events [here](this would link to event section of our website)
+    Learn more about our upcoming events [here](https://quire/getty.edu/community/news-events)
 
-    Submit information about an upcoming Quire events you will be hosting (webinar, workshop, conference, etc.) [here](ideally we would hvae a submission form but this can come later)
+    We'd love to know about upcoming Quire events that you may be hosting (webinars, workshops, conferences, etc.) Please email quire@getty.edu.
 
-  [[[Graphic]]]
+[[[Graphic]]]
 - **Submit Work to be Featured on Our Site**
 
-    Submit your Quire projects to be featured on our website [here](ideally we would have a submission form but this can come later).
+    We welcome you to submit your Quire projects so they can be featured on our website's [User Showcase](https://quire/getty.edu/community/user-showcase). Please email quire@getty.edu to learn more.
 
-    Submit papers, articles, presentations that you have written about Quire [here](ideally we would have a submission form but this can come later).
+    Submit papers, articles, presentations that you have written about Quire (I like this idea and imagine it would live in learn, but I'm not sure exactly where yet). Please email quire@getty.edu to learn more.

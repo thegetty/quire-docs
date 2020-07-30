@@ -212,3 +212,8 @@ figure_list:
     src: /screenshots/_tilt_west.png
     caption: "**Journal** | Tilt West ([view](http://journal.tiltwest.org/vol1/))"
     full_caption: "“Art and Language.” In *Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson. Denver: Tilt West, 2020."
+
+  - id: "quire_demo"
+    src: /screenshots/quire_demo.png
+    media_id: VVYe0qR5DnM
+    media_type: youtube

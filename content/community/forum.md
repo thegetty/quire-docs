@@ -4,21 +4,25 @@ weight: 2200
 type: essay
 ---
 
+# COMING SOON...
+
+**Please note the forum is not live yet.**
+
 ## Join the Discussion
 
-At Quire, we consider our community to be the valuable resource we have. Here you will find community-based support as you navigate Quire and help us improve it as a vital digital publishing tool. We encourage you to join our forum and participate in the conversation. We invite you to ask and answer questions, share ideas, raise issues, and collaborate and assist your fellow community members.
+Welcome to the Quire forum! Here you will find community-based support to help you navigate the ins-and-outs of Quire. We encourage you to join and participate in the conversation. Ask and answer questions, share ideas, raise issues, collaborate, and assist your fellow community members. We are grateful for your feedback as it enables us to continue developing and improving Quire as a vital digital publishing tool.
 
 <div class="action-button">
 
-[Forum](https://quire/getty.edu/community)
+[Join Us](#)
 
 </div>
 
-Examples of topics you will find covered in our forums include: support, tips & tricks, announcements, show-and-tell, development, feature suggestions, customizations, installation, deployment, and more. We ask that you do not utilize the forum for bug reports. Those must be submitted via [GitHub Issues](https://github.com/gettypubs/quire/issues).
+Examples of topics you will find covered in our forums include: support, tips & tricks, announcements, show-and-tell, development, customizations, installation, deployment, and more. We ask that you do not utilize the forum for bug reports. Those must be submitted via **[GitHub Issues](https://github.com/gettypubs/quire/issues)**.
 
-Basic Forum Rules (**From Arches**)
+### Basic Forum Rules
 
-- Please keep posts to topics related to the Arches platform, or of particular interest to the Arches community.
+- Please keep posts to topics related to Quire or relevant to the interest of the community
 
 - No advertising or spamming.
 
@@ -26,12 +30,4 @@ Basic Forum Rules (**From Arches**)
 
 - No attacks on other people.
 
-- No reproduction of personal communication (without prior consent).
-
-- All participants are required to declare their interests up front when participating in discussions directly affecting them or their company.
-
-Please see our [Quire Code of Conduct](https://quire/getty.edu/community/code-of-conduct) for more information regarding appropriate behavior, as well as our anti-harrassment policy.
-
-Note for new members:  to prevent spam on the **Arches Project Forum**, the first post of all new members will be reviewed by the forum moderator. If you post on a Saturday or Sunday, it can take up-to 48 hours for the first post to be reviewed and approved.  Thank you for your understanding!
-
-Unless specifically noted, the views expressed here are not the views of the **Arches project**, but are rather the personal views of the individual posters.  Moderators may move, remove or lock threads, if it is felt a post violates these rules.
+Please see our **[Quire Code of Conduct](https://quire/getty.edu/community/code-of-conduct)** for more information regarding appropriate behavior, as well as our anti-harrassment policy.

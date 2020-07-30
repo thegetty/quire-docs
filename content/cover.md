@@ -39,8 +39,9 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 
 ***“Quire allows for greater preservation and digital distribution of works in a simplified format.”*** — Kris Thayer, Minneapolis Institute of Art
 
+<br/>
 
-## What Quire Does
+<div class="feature-list">
 
 - <span class="checkmark">✓</span> Outputs multiple formats of the publication (web, ebook, PDF, print-on-demand)
 - <span class="checkmark">✓</span> Keeps source content in non-specialized plain text to ensure reusability
@@ -56,20 +57,20 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 
 ## Why Use Quire?
 
-Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digital book that is optimized for visual imagery and designed to ensure its content is widely accessible and stable.
+Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digital book optimized for visual imagery and designed to ensure its content is widely accessible and stable.
 
 <div class="feature-list">
 
-- **Affordable** Free! No proprietary software involved
-- **Richly Featured & Interactive** Add images, videos, audio clips, maps, and zooming features
-- **Flexible and Customizable** Can be adapted to suit the content
-- **Discoverable** Publish as a PDF, ebook, website, or print-on-demand
-- **Empowering** Self-hosted so need to utilize a developer
-- **Booklike** Builds in the understanding of high-quality scholarly publishing
+- **Affordable** Free! No proprietary software necessary
+- **Richly Featured & Interactive**  Add images, videos, audio clips, maps, and zooming features
+- **Flexible and Customizable** Adapt to suit the content
+- **Discoverable** Increase visibility by publishing as PDF, ebook, website, or print-on-demand
+- **Empowering** Can be used by anyone, a developer skillset is not required
+- **Booklike** Built-in understanding of high-quality scholarly publishing
 - **Beautiful** Optimized for visual imagery with a clean, modern design
 - **Accessible** Logical reading over, alt texts, language codes, semantic section elements, and more
-- **Open-Source** Adhering to open-source standards but goal is to officially launch as open source in 2022
-- **Sustainable** Based around plain text files so need to worry about your publication going obsolete
+- **Open-Source** Adheres to open-source standards with goal to officially launch as open source in 2022
+- **Sustainable** Based around plain text files so no need to worry about your publication going obsolete
 
 </div>
 
@@ -81,13 +82,11 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 </div>
 
-
 <div class="block">
 
 ## The Quire Community
 
-Quire is moving towards an open-source model.
-We invite you to learn more about our [initiative](https://quire/getty.edu/about/history) and our [community](https://quire/getty.edu/community/quire-community).
+The Quire community is open and accepting to all. Our users value the sustainability, accessibility, affordability, and discoverability of scholarly digital publications. For this reason, Quire is moving towards an open-source, community-supported model. This ensures that Quire continues developing and thriving beyond Getty as a critical solution to our community's publishing needs.
 
 <div class="action-button">
 
@@ -103,8 +102,6 @@ From collection catalogues and online exhibitions to digital pamphlets, reports,
 <div class="action-button">
 
 [Visit User Showcase](https://quire/getty.edu/user-showcase)
-
-</div>
 
 </div>
 

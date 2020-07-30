@@ -3,9 +3,13 @@ title: News & Events
 weight: 2600
 type: essay
 ---
-**July 6, 2020**
 
-### Announcing Quire Roadmap
+## News
+
+<br/>
+
+#### Announcing Quire Roadmap
+**July 6, 2020**
 
 The Quire team is excited to announce our official roadmap for 2020, including upcoming milestones, version updates, new features, bug fixes.
 
@@ -16,37 +20,41 @@ Version 18 release features:
 
 etc.
 
+#### Happy 4th of July                             
 **July 4, 2020**
-
-### Happy 4th of July
 
 Wishing all our Quire users a safe and happy holiday!
 
-## Quire at Conferences
+
+## Events
+
+<br/>
+
+### Quire in the Wild
 
 **Museum Publishing Now 2020**
 
-    **Monday, July 20**
+**Monday, July 20**
 
-    11:00am-12:00pm CST
+11:00am-12:00pm CST
 
-    Think Digital
+Think Digital
 
-    Part 1: Conceptualizing
+Part 1: Conceptualizing
 
-    **Tuesday, July 28**
+**Tuesday, July 28**
 
-    11:00am-12:00pm CST
+11:00am-12:00pm CST
 
-    Think Digital
+Think Digital
 
-    Part 2: Implementing
+Part 2: Implementing
 
 
-## Quire Workshops
+### Quire Workshops
 
 **Quire Workshop @ The Getty Center**
 
-    **Thursday, September 1**
+**Thursday, September 1**
 
-    10:00am - 2:00pm PST
+10:00am - 2:00pm PST

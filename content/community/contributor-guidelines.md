@@ -2,10 +2,11 @@
 title: Contributor Guidelines
 weight: 2501
 type: essay
+menu: false
 ---
 ## Introduction
 
-Thank you for considering contributing to Quire! The following Contributor Guidelines will ensure streamlined and effective communication, and will help the Quire team improve and develop Quire in a timely and efficient manner. Thank you for taking the time to read through the following considerations.
+Thank you for your interest in contributing to Quire! The following Contributor Guidelines will ensure streamlined and effective communication, and will help the Quire team improve and develop Quire in a timely and efficient manner. Thank you for taking the time to read through the following considerations.
 
 ### Useful Contributions
 
@@ -15,17 +16,19 @@ There are many ways to contribute from adding to the code, submitting bug report
 
 ### Important Things to Remember
 
-Always check the documentation first.
+Always check the **[documentation](https://quire/getty.edu/documentation)** first.
 
-Refer to the [forum](TK) for support, to ask and answer questions, and for general information.
+Refer to the **[forum](#)** for support, to ask and answer questions, and for general information.
 
-For bugs, please refer to [GitHub Issues](https://github.com/gettypubs/quire/issues).
+For bugs, please refer to **[GitHub Issues](https://github.com/gettypubs/quire/issues)**.
 
 More TK
 
 ### Ground Rules
 
 Always be friendly and patient. Be welcoming, considerate, and respectful. Be careful with the words you choose. Try to understand why we disagree. Do not make offensive comments, insults, or jokes. Do not deliberately threaten or intimidate. Do not use sexually explicit or violent language or images. Harrassment will not be tolerated.  For more guidelines on appropriate behavior, please see our [Code of Conduct](https://quire/getty.edu/community/code-of-conduct).
+
+-----------
 
 ### Responsibilities (**Text below is placeholder text**)
 
