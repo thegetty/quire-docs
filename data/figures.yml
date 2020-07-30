@@ -113,10 +113,10 @@ figure_list:
     caption: "**`type: contents`** <br /> **`class: abstract`** <br /> A maximal version of the contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
   - id: "modern-contents-brief"
     src: /screenshots/modern-contents-brief.png
-    caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each main page. Sub-section pages have been optionally hidden using the `tocType: short` option in the config.yml file."  
+    caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each main page. Sub-section pages have been optionally hidden using the `tocType: short` option in the config.yml file."
   - id: "modern-contents-grid"
     src: /screenshots/modern-contents-grid.png
-    caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/guide/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."  
+    caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/guide/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
   - id: "modern-splash"
     src: /screenshots/modern-splash.png
     caption: "**`type: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."
@@ -129,39 +129,83 @@ figure_list:
   - id: "modern-entry-side"
     src: /screenshots/modern-entry-side.png
     caption: "**`type: entry`** <br /> **`class: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `entryPageSideBySideLayout: true` in the config.yml file of the project."
-    
+
   - id: "modern_contributors-cover"
     src: /screenshots/modern_contributors-cover.png
-    caption: "Sample publication cover with the contributors listed using the `contributor_as_it_appears` option in the publication.yml file, which allows for specific language and formatting to be applied."  
-  
+    caption: "Sample publication cover with the contributors listed using the `contributor_as_it_appears` option in the publication.yml file, which allows for specific language and formatting to be applied."
+
   - id: "modern_contributors-page"
     src: /screenshots/modern_contributors-page.png
     caption: "By default, page contributors are listed in the page header, under the title. Contributor professional `title` and `affiliation` will be included unless `contributor_byline: false` is set in the page YAML, or `contributorByline: false` is set in your config.yml file."
-  
+
   - id: "modern_contributors-name-title-block"
     src: /screenshots/modern_contributors-name-title-block.png
     caption: "The `q-contributor` shortcode can be used to add a list of contributors anywhere on a page. In this case it is the page author formated with the `name-title-block` option."
-  
+
   - id: "modern_contributors-initials"
     src: /screenshots/modern_contributors-initials.png
     caption: "Quire also includes an `initials` format which will list the author names onluy by initials."
-    
+
   - id: "modern_contributors-bio"
     src: /screenshots/modern_contributors-bio.png
     caption: "The most full-featured way to list contirbutors is with the `bio` format. It includes the contributor’s name, bio, picture, an offsite link to their personal site, and a link to any contributions they made to the publication."
-  
+
   - id: "modern-citation-hover"
     src: /screenshots/modern-citation-hover.png
     caption: "By using the `q-cite` shortcode, you can add citations that appear when hovering over the linked text. Clicking the link brings you to a bibliography at the bottom of the page."
-  
+
   - id: "modern-bibliography-page"
     src: /screenshots/modern-bibliography-page.png
     caption: "Any citations added to a page with `q-cite` are automatically added to a bibliography list at the bottom of the page."
-  
+
   - id: "modern-bibliography"
     src: /screenshots/modern-bibliography.png
     caption: "A bibliography of all works in your project’s references.yml file can be added to any page with the `q-bibliography` shortcode."
-    
+
   - id: "netlify-logo"
     src: full-logo-light.png
-    
+
+  - id: "digitalpipeline-traditional"
+    src: /screenshots/digitalpipeline-traditional.gif
+    caption: "In traditional website publishing, a content management system (CMS) is connected to collections and image databases and set up on a server."
+
+  - id: "digitalpipeline-static"
+    src: /screenshots/digitalpipeline-static.gif
+    caption: "In static-site publishing, the CMS is just software and a folder of files on your, the publisher’s, computer that are used to build the site."
+
+  - id: "alamo_keeper"
+    src: /screenshots/_alamo_keeper.png
+    caption: "*The Alamo Keeper: Thomas C. Rife* , by Philip Mullins and George Mullins. Austin Texas: Self-published, 2020."
+
+  - id: "artists_studios_paris"
+    src: /screenshots/_artists_studios_paris.png
+    caption: "This article was published in *Journal18: a journal of eighteenth-century art and culture*, Issue 5: *Coordinates: Digital Mapping and 18th-Century Visual, Material, and Built Cultures* (Spring 2018), co-edited by Nancy Um and Carrie Anderson."
+
+  - id: "bending_lines"
+    src: /screenshots/_bending_lines.png
+    caption: "*Bending Lines: Maps and Data from Distortion to Deception.* Boston: Leventhal Map & Education Center at the Boston Public Library, 2020."
+
+  - id: "fault_lines"
+    src: /screenshots/_fault_lines.png
+    caption: "*Fault Lines: 2020 Senior Thesis*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir. Oakland, CA: Mills College Art Museum, 2020."
+
+  - id: "french_paintings"
+    src: /screenshots/_french_paintings.png
+    caption: "Aimee Marcereau DeGalan, Editor, *French Paintings, 1600–1945: The Collections of the Nelson-Atkins Museum of Art* (Kansas City: The Nelson-Atkins Museum of Art, 2020)."
+
+  - id: "in_plain_sight"
+    src: /screenshots/_in_plain_sight.png
+    caption: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor. Oakland: Mills College Art Museum, 2019."
+
+  - id: "state_of_convergence"
+    src: /screenshots/_state_of_convergence.png
+    caption: "*State of Convergence*, Oakland: Mills College Art Museum, 2020."
+
+  - id: "tilt_west"
+    src: /screenshots/_tilt_west.png
+    caption: "“Art and Language.” In *Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson. Denver: Tilt West, 2020."
+
+  - id: "quire_demo"
+    src: /screenshots/quire_demo.png
+    media_id: VVYe0qR5DnM
+    media_type: youtube
