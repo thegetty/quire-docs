@@ -1,8 +1,36 @@
+/* Colors */
+:root {  
+  --accent-color: #1a47b8; /* Getty Blue */
+  --accent-color-dark: #10378c;
+  
+  --background-color: #cff0f7;
+  --background-color-dark: #a3e2f0;
+  
+  --cover-accent-color: #1a47b8;
+  --cover-accent-color-dark: #10378c;
+  
+  --warning-color: #dab836;
+}
+
+
+
 /* COVER
 ============================================================================= */
-:root {
-  --accent-color: #B744B8;
-  --accent-color-darken: #A23DA4;
+/* Style special header-quote in Markdown as cover header */
+#cover .quire-page__header {
+  display: none;
+}
+#cover .quire-page__content .header-quote h1 {
+  font-size: 4rem;
+  font-family: Times, serif;
+}
+#cover .quire-page__content .header-quote h1 .sub-head {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 1.75rem;
+  display: block;
+  line-height: 1.5;
+  letter-spacing: -0.035em;
+  margin-top: 1rem;
 }
 /* Make general adjustments */
 #cover .quire-page__content {
@@ -12,7 +40,8 @@
   all: unset;
 }
 #cover .quire-page__content h2 {
-  margin-top: 6rem;
+  margin-top: 8rem;
+  font-size: 2rem;
 }
 #cover .quire-page__content ul,
 #cover .quire-page__content ul li {
@@ -20,6 +49,20 @@
 }
 #cover .quire-page__content ul li::before {
   content: "";
+}
+/* Size and position the cover logo */
+#cover .quire-page__content .logo {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+/* A span class to have colored checkmarks */
+#cover .quire-page__content .checkmark {
+  font-size: 1.5em;
+  color: var(--accent-color);
+}
+/* Hide the default footer navigation buttons */
+#cover .quire-nav-button {
+  display: none;
 }
 /* Button-like links used for calls to action
    div class="action-button" */
@@ -30,14 +73,14 @@
   border-radius: 4px;
   font-size: 1rem;
   background-color: var(--accent-color);
-  color: #fff;
+  color: white;
   padding: .75rem 1.5rem;
   margin: 1rem;
   display: inline-block;
 }
 .quire-page__content .container .content .action-button a:hover {
-  color: #fff !important;
-  background-color: var(--accent-color-darken);
+  color: white !important;
+  background-color: var(--accent-color-dark);
 }
 /* A two-column list, with <strong> initial word large and accent-colored
    div class="feature-list" */
@@ -59,7 +102,7 @@
   display: block;
   font-size: 1.2rem;
   font-weight: normal;
-  color: var(--accent-color);
+  color: var(--cover-accent-color);
 }
 /* Single-color card-like links
    div class="feature-cards" */
@@ -73,20 +116,24 @@
 }
 .quire-page__content .container .content .feature-cards ul li a {
   margin: .5rem;
-  background-color: var(--accent-color);
-  color: #fff;
+  color: var(--accent-color);
   min-height: 12rem;
-  border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: -.5px;
+  border-bottom-width: 0px !important;
+}
+.quire-page__content .container .content .feature-cards ul li a  img {
+  margin-top: 1rem;
 }
 .quire-page__content .container .content .feature-cards ul li a:hover {
-  color: #fff !important;
-  background-color: var(--accent-color-darken);
+  color: white !important;
+  background-color: var(--cover-accent-color-dark);
 }
 .quire-page__content .container .content .feature-cards ul li::before {
   content: "";
@@ -95,9 +142,9 @@
    div class="block" */
 .quire-page__content .container .content .block {
   border-radius: 4px;
-  background-color: #fff;
+  background-color: white;
   padding: 1.5rem;
-  margin: 6rem -1.5rem 1.5rem;
+  margin: 8rem -1.5rem 1.5rem;
   width: calc(100% + 3rem);
 }
 #cover .quire-page__content .container .content .block h2 {
@@ -119,7 +166,7 @@
 }
 .box.warning > ul > li:first-of-type::before,
 .box.tip > ul > li:first-of-type::before {
-  color: #d3cd00;
+  color: var(--warning-color);
   position: absolute;
   margin-top: -1.25rem;
 }
@@ -159,7 +206,7 @@
 /* When window is at least 900px, show menu as fixed and hide toggle button */
 @media screen and (min-width: 900px) {
   body:not(.quire-page-type--splash) .quire:not(.no-js).menu-view--fixed {
-    background-color: #EEF2F3;
+    background-color: var(--background-color);
     overflow: auto;
   }
   body:not(.quire-page-type--splash) .quire:not(.no-js).menu-view--fixed .quire__secondary * {
@@ -241,7 +288,7 @@ on the page and adjusts to different window widths */
   margin: .25rem 1.5rem;
 }
 .quire-menu .page-item.active .quire__heading-links .main-heading a {
-  color: #3273dc !important;
+  color: var(--accent-color) !important;
 }
 
 /* Make main section headings stand out visually */
@@ -321,7 +368,7 @@ a.quire-navbar-controls__site-logo img {
   }
   .quire-navbar-controls__center.navbar-type--main-pages ul li ul a,
   .quire-navbar-controls__center.navbar-type--main-pages ul li ul .list-header {
-    background-color: #d0dbde;
+    background-color: var(--background-color-dark);
     font-weight: normal;
     text-transform: none;
     letter-spacing: 0;
@@ -330,14 +377,14 @@ a.quire-navbar-controls__site-logo img {
   .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section a
   .quire-navbar-controls__center.navbar-type--main-pages ul li.active .list-header,
   .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section .list-header {
-    color: #3273dc !important;
+    color: var(--accent-color) !important;
   }
   .quire-navbar-controls__center.navbar-type--main-pages ul li .list-header:hover,
   .quire-navbar-controls__center.navbar-type--main-pages ul li a:hover,
   .quire-navbar-controls__center.navbar-type--main-pages ul li.active a:hover,
   .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section a:hover {
-    background-color: #3273dc;
-    color:#fff !important;
+    background-color: var(--accent-color);
+    color:white !important;
   }  
   .quire-navbar-controls__center.navbar-type--main-pages .list-header + div + ul {
     display: none;
@@ -351,7 +398,7 @@ a.quire-navbar-controls__site-logo img {
     position: absolute;
     left: 0;
     width: 100vw;
-    background-color: #d0dbde;
+    background-color: var(--background-color-dark);
     height: 16.75rem;
   }
   /* Don't show heading links from individual pages */
@@ -374,7 +421,6 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
   width: 100vw;
   margin-left: -2.25rem;
   border-width: 0;
-  padding-bottom: 2rem;
 }
 /* Ensure image widths even on mobile, add support for higher grid numbers */
 .quire-figure--group.slider .quire-grid--2 {
@@ -433,12 +479,24 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 }
 /* Adds add styles tooltip text below scrolling area */
 .quire-figure--group.slider::after {
-  content: "< Scroll for more >";
+  /* content: "< - - - Built with Quire - - - >"; */
   font-size: .875rem;
   font-weight: bold;
-  color: #3273dc;
+  color: var(--accent-color);
   text-transform: uppercase;
   letter-spacing: .5px;
   position: absolute;
   margin-left: -81.5px;
+}
+/* Color and style the figure captions */
+.quire-figure--group.slider .quire-figure__modal {
+  display: none;
+}
+.quire-figure--group.slider figure .quire-figure__caption {
+  padding: 0 .9rem;
+  margin-top: 0;
+  color: var(--accent-color);
+}
+.quire-figure--group.slider figure .quire-figure__caption strong {
+  color: var(--accent-color);
 }
