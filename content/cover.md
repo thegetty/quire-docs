@@ -94,6 +94,8 @@ The Quire community is open and accepting to all. Our users value the sustainabi
 
 </div>
 
+</div>
+
 
 ## Meet Our Users
 
