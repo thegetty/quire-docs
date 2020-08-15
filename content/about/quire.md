@@ -1,60 +1,72 @@
 ---
-title: What is Quire?
+title: About
 weight: 1000
 type: essay
 ---
 
-## About
+## What Is Quire?
 
-Quire is a multiformat publishing tool created by Getty that enables people to create scholarly, visually rich digital books that are enduring, discoverable, beautiful, and accessible. As an open-source framework, Quire provides a cost-friendly alternative to digital publishing that is inclusive of a variety of features and customizations, allowing for the realization of projects in a user-friendly manner. Quire enables greater preservation and digital distribution of works in a simplified format that lends itself to increased longevity and discoverability.
+Created by Getty, Quire is a modern digital publishing tool that empowers people to create scholarly, visually rich publications in a variety of formats, including online, ebook, and print.
 
-Quire uniquely builds upon the traditions and infrastructures of book publishing and Getty’s expertise in the field, taking essential print publishing attributes and adopting them for digital publication. By combining the dynamics and interactivity of the web with the imprimatur and stability of print, Quire is designed to ensure that new digital books and their content last as long as the print books we rely on today.
+Quire offers an elegant and cost-friendly publishing solution.  No matter the size or scale, an institution that publishes with Quire isn’t locked into proprietary software or a long-term technology choice, nor is it required to have staff with highly advanced technical skills. Quire was designed with its users in mind, from museums, publishers, and academics, to designers, developers, and the plain old digitally curious.
 
-No matter the size or scale of its publishing operation, an institution that publishes a Quire book isn’t locking itself into a long-term technology choice, nor is it required to have staff with highly advanced technical skills to do so. Quire offers a sustainable way to publish work online in a way that is enduring, discoverable, beautiful, and accessible.
+Quire is flexible and feature-rich. It can be used in its most basic configuration or can be heavily customized. It is adaptable for an endless number of use cases, from collection catalogues and online exhibitions to digital pamphlets, reports, and journal articles. [See what our diverse community of Quire users is creating.](https://quire/getty.edu/community/user-showcase)
 
-## Features
+Quire is designed to ensure that digital books and their content are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables more robust preservation and distribution of works in a simplified and accessible format. [Learn how Quire works.](#)
+
+Currently under development to be released as open-source software, Quire uniquely builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering digital publishing program. At a time when digital initiatives are more vital than ever, Quire offers an innovative and sustainable publishing solution that is affordable, flexible, discoverable, and enduring. [Become a part of the growing Quire community.](https://quire/getty.edu/community/join-us)
+
+Ready to dive in? [Request Access](https://quire/getty.edu/request-access/beta-access) to sign up to be a beta user now. If you're still on the fence, keep reading!
+
+## Is Quire Right for You?
+
+Here are some things to consider:
+
+- Using Quire is free! There are only minimal costs for specific processes, such as outputting a PDF. [Learn more here.](##)
+- Looking to build a website? Quire can do that! Looking to create a print publication? Quire can do that! Looking to create an ebook that can be sold? Quire can do that! [Visit our documentation to learn more](https://quire/getty.edu/documentation/multiformat-output)
+- Quire is compatible with most operating systems, whether you are using a MAC, PC, or Linux. [Visit our installation guidelines here](https://quire/getty.edu/documentation/install-uninstall)
+- No pre-existing technical skills necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or if you have access to a developer or possess a more advanced skillset, then Quire can be heavily customized and adapted to your unique content. [Visit our documentation to learn more.](https://quire/getty.edu/documentation)
+- We know how intimidating learning new technology can be but we've got you covered. We've created helpful tutorials to guide you through each step of using Quire. From installation to deployment and everything in between. [Learn more here.](https://quire/getty.edu/learn/tutorial)
+- We also have a fabulous community of users that are here to help. [Visit our user forum to learn more.](https://quire/getty.edu/community/forum)
+
+Still on the fence? Visit [Implementation Considerations](https://quire/getty.edu/documentation/implementation-considerations) to learn more.
+
+## What Makes Quire Special?
 
 <div class="feature-list">
 
-- Page-level citation
-- Footnotes
-- Bibliographies
-- Figure images and image groups
-- Zooming images and maps
-- Video and audio embeds
-- Dynamic tables of contents and menus
-- Full-text search
-- Responsive web design
-- Web accessibility and SEO optimized
-- Outputs to web, PDF, and EPUB formats
-- Realtime publication preview
-- Embedded glossaries -- coming soon
-- Interactive maps -- coming soon
-- Rotating images -- coming soon
+- **Multiformat Output** Generate publications as websites, ebooks, and PDFs
+- **Realtime Publication Preview** Make changes and view them live in your browser
+- **Web Accessibility** Adheres to web accessibility principles outlined in WCAG2.0 AA
+- **SEO Optimization** Include metadata and tags for enhanced search engine optimization
+- **Responsive Web Design** Feature-rich and gracefully enhanced
+- **Figure Images and Image Groups** Include high quality images in a variety of configurations
+- **Zooming Images and Maps** Ability to zoom on images and embedded maps
+- **Video and Audio Embeds** Include audio and video clips with ease
+- **Dynamic Tables of Contents and Menus** Easily navigate and jump to other sections of publication
+- **Full-text Search** Quickly search throughout publication
+- **Page-level Citation** XX
+- **Footnotes** XX
+- **Bibliographies** XX
+
+[Visit our Roadmap to learn about additional features coming soon!](##)
 
 </div>
 
-## How it Works
+## How Does It Work?
 
 {{< q-figure id="quire_demo" >}}
 
-At the heart of Quire is static site generation. Static site generators like [Hugo](https://gohugo.io/), the one under the hood in Quire, allow users to keep content in plain text with very simple human-readable markup. This keeps the complexity of building the site at the point of publication, rather than relying on ongoing build processes through a server that needs to be continually maintained. Unlike websites with short lifespans, even if certain technology goes obsolete, Quire files will continue to be readable. The static site generator also enables the conversion of plain text content into formats other than online sites, including PDF, e-book, and even print.
+At the heart of Quire is static site generation. Static site generators like [Hugo](https://gohugo.io/), the one under the hood in Quire, allow users to keep content in plain text with very simple human-readable markup. This keeps the complexity of building the site at the point of publication, rather than relying on ongoing build processes through a server that needs to be continually maintained. Unlike websites with short lifespans, even if certain technology goes obsolete, Quire files will continue to be readable. The static site generator also enables the conversion of plain text content into formats other than online sites, including PDF, e-book, and even print. [Learn more about static website generation.](##)
 
-### Static-Website Generation
+## Why Open Source?
 
-So what is static site generation? In traditional website publishing, a content management system (CMS) is connected to collections and image databases (1) and set up on a server (2). The CMS is used to create the website, and once the website is published, the CMS rebuilds the site pages each time they are loaded by a user (3). Thus, the CMS must be kept running for the lifetime of the publication.
+Open source is a way of developing software where the source code is free and available for others to use and adapt. Open-source software relies on both transparency and an engaged community of users. The community works together to both use and contribute to the development of the software and its code.
 
-{{< q-figure id="digitalpipeline-traditional" >}}
+For the past four years, Getty has been utilizing Quire to advance its internal publishing needs. This work has enabled us to test and refine the software. By open-sourcing Quire and supporting its ongoing use in the field, other institutions can leverage the Getty's work to help others publish online at low cost and with very little ongoing maintenance.
 
-In static-site publishing, the CMS is just software and a folder of files on your, the publisher’s, computer (1) that are used to build the site. The site files are then uploaded to the server (2), and users (3) access them directly. You only need to run the site software and upload new files if you want to make updates to the publication.
+Through the Quire beta program, new users are welcomed and encouraged to not only utilize Quire to create beautiful publications but also meaningfully contribute to its growth and health as a publishing tool. As Quire continues to evolve, our goal is to launch as fully open source by 2022. A community-supported model would enable Quire to remain free to use and would ensure a long lifespan beyond Getty.
 
-{{< q-figure id="digitalpipeline-static" >}}
+[Join the Quire community!](https://quire/getty.edu/request-access/beta-access)
 
-And yet, despite the name, static sites can be as dynamic and interactive as you want them to be, thanks to the full support of the complete web platform (HTML5, CSS3, and JavaScript). Zoomable images, interactive maps, and embedded video and audio clips are just a few of the features that can be included.
-
-### Working With Quire
-
-When working in Quire, you’ll use a text editor, command-line shell, and a web browser. You use the text editor to edit your publication (plain text) files, the command-line shell to tell Quire what to do (like quire new to start a new project and quire pdf to build the PDF version), and the web browser to preview your work.
-
-{{< q-figure id="1.4" >}}
- 
+To learn more about open source software development visit [Digital Curation Center](https://www.dcc.ac.uk/faq/open-source-software-and-open-standards) and [Open Source Initiative](https://opensource.org/faq#osd).
