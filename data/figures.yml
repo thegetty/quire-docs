@@ -217,3 +217,18 @@ figure_list:
     src: /screenshots/quire_demo.png
     media_id: VVYe0qR5DnM
     media_type: youtube
+
+  - id: "mcn_2017"
+    src: /screenshots/mcn_2017.png
+    media_id: oFBHi5ed5OU
+    media_type: youtube
+
+  - id: "the_gang"
+    src: /screenshots/the_gang.png
+    caption: "Eric Gardner (Former Quire Developer), Ruth Evans Lane (Getty Publications Editor), and Greg Albers (Digital Publishing Manager.)"
+    full_caption: "Eric Gardner (Former Quire Developer), Ruth Evans Lane (Getty Publications Editor), and Greg Albers (Digital Publishing Manager.)"
+
+  - id: "mcn_2013"
+    src: /screenshots/mcn_2013.png
+    media_id: Gp67HS3m_Pg
+    media_type: youtube
