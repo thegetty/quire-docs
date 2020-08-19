@@ -4,7 +4,7 @@ weight: 1300
 type: essay
 ---
 
-For over sixty years, [Getty](https://www.getty.edu/) has preserved the world’s artistic legacy through the publication of award-winning books and journals. While we have witnessed the rise of critical digital scholarship over the past few decades, the field still lacks reliable, affordable, and sustainable tools for presenting long-form visually rich scholarship online. Now, more than ever, the digital has come to play a vital role in the academic ecosystem, and the Getty is uniquely positioned to build on its expertise in the field advance this effort. Keep reading to learn how Quire evolved as the cornerstone of the institution’s pioneering digital publishing initiative.
+For over sixty years, [Getty](https://www.getty.edu/) has preserved the world’s artistic legacy through the publication of award-winning books and journals. While we have witnessed the rise of the internet and emergence critical digital scholarship over the past few decades, the field still lacks reliable, affordable, and sustainable tools for presenting visually rich scholarship online. Now, more than ever, the digital has come to play a vital role in the publishing ecosystem, and the Getty is uniquely positioned to build on its expertise in the field and advance this effort. Keep reading to learn how Quire evolved as the cornerstone of the institution’s pioneering [digital publishing initiative](https://www.getty.edu/publications/digital/index.html).
 
 **2009**
 
@@ -15,11 +15,17 @@ Getty Foundation launches the [Online Scholarly Catalogue Initiative (OSCI)](ht
 [Getty Publications](https://www.getty.edu/publications) begins investing in full-time digital publishing staff.
 Greg Albers joins the Getty as the Digital Publications Manager. Greg is a key figure in the world digital publishing (having founded Hol Art Book and creating the People’s E-Book), and is poised to help the Getty reach new heights.
 
+{{< q-figure id="mcn_2013" caption="Greg Albers speaking at MCN 2013. Print Meet Digital, Digital Meet Print: A Matchmaking" >}}
+
 **2016**
 
 Getty publishes their first digital publication, [Ancient Terracottas](https://www.getty.edu/publications/terracottas/), built with OSCI and a precursor to future Quire titles.
 
 This is later followed by the success of [Roman Mosaics](https://www.getty.edu/publications/romanmosaics/) and [Introduction to Metadata, Third Edition](https://www.getty.edu/publications/intrometadata/)
+
+Ruth Evans Lane, Getty Publications editor, publishes article in Getty Iris [*An Editor's View of Digital Publishing*](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/).
+
+{{< q-figure id="the_gang" >}}
 
 **2017**
 
@@ -28,6 +34,8 @@ OSCI concludes. While the program, undoubtedly transformed the digital publishin
 Quire version 1 begins development.
 
 Getty uses Quire to develop two more digital publications [Artistry in Bronze](https://www.getty.edu/publications/artistryinbronze/index.html) and [Ancient Lamps.](https://www.getty.edu/publications/ancientlamps/)
+
+{{< q-figure id="mcn_2017" caption="MCN 2017. Data Driven Approaches to Publishing. Pamela Horn, Eric Gardner. NOVEMBER 8, 2017" >}}
 
 **2018**
 
