@@ -27,8 +27,6 @@ Also released this year are [*Roman Mosaics*](https://www.getty.edu/publications
 
 Getty Publications editor, Ruth Evans Lane, writes an article for Getty's blog, The Iris. [*An Editor's View of Digital Publishing*](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/) detailing her experience working on *Ancient Terracottas* and *Roman Mosaics*.
 
-> To me, more remarkable than the form they take now is that they are built to last. While these publications take advantage of the latest technology, the fact that they are built from plain-text files and as open-source static sites helps to ensure they will never be dependent on soon-to-be-out-of-date platforms and are much more likely to be compatible with the technologies of the future.
-
 {{< q-figure id="the_gang" >}}
 
 **2017**
@@ -69,5 +67,5 @@ Quire is invited to participate in the inaugural Open Publishing Fest. In the se
 
 <div class="feature-cards">
 
-- [We invite you to become part of Quire's history. <br> Sign-up for beta access now and join the Quire community today! ![Explore icon](/img/illustrations/undraw_community_8nwl.png)](/request-access/beta-access/)
+- [We invite you to become part of Quire's history. <br> Sign-up for beta access and join the Quire community today! ![Explore icon](/img/illustrations/undraw_community_8nwl.png)](/request-access/beta-access/)
 </div>
