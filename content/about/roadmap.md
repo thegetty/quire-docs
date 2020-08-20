@@ -9,5 +9,5 @@ menu: false
 
 - Embedded glossaries
 - Rotating Images
-- Interactive maps
 - IIIF compatibility
+- Nested menu subsections 
