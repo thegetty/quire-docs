@@ -57,7 +57,7 @@ Two additional Quire publications are released [*Ancient Ambers*](https://www.ge
 
 **2020**
 
-Erin Cecele Dunigan joins the Quire team as Community Manager to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
+The Quire team hires a community manager to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
 
 Quire is used to bring the century-old reference series, Corpus Vasorum Antiquorum (CVA), to a new digital platform.
 
