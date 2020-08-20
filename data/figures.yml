@@ -232,3 +232,14 @@ figure_list:
     src: /screenshots/mcn_2013.png
     media_id: Gp67HS3m_Pg
     media_type: youtube
+
+  - id: "opf_2020"
+    src: /screenshots/opf_2020.png
+    media_id: SB1Y5GfDP7c
+    media_type: youtube
+
+  - id: "cva_podcast"
+    src: /screenshots/cva_podcast.png
+    media_id: 809104705
+    media_type: soundcloud
+    caption: "Audio from Getty podcast Art & Ideas. Moving a Hundred-Year-Old Series Online: Getty’s Corpus Vasorum Antiquorum."
