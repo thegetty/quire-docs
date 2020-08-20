@@ -1,14 +1,14 @@
 /* Colors */
-:root {  
+:root {
   --accent-color: #1a47b8; /* Getty Blue */
   --accent-color-dark: #10378c;
-  
+
   --background-color: #cff0f7;
   --background-color-dark: #a3e2f0;
-  
+
   --cover-accent-color: #1a47b8;
   --cover-accent-color-dark: #10378c;
-  
+
   --warning-color: #dab836;
 }
 
@@ -110,6 +110,11 @@
   display: flex;
   width: 100%;
   margin-left: 0;
+}
+.quire-page__content .container .content .feature-cards.small-card ul {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .quire-page__content .container .content .feature-cards ul li {
   flex: 1 1 0;
@@ -364,7 +369,7 @@ a.quire-navbar-controls__site-logo img {
   /* Styles for full navigation menu type with dropdown */
   .quire-navbar-controls__center.navbar-type--main-pages ul li ul {
     max-height: 16.75rem;
-    overflow-y: scroll; 
+    overflow-y: scroll;
   }
   .quire-navbar-controls__center.navbar-type--main-pages ul li ul a,
   .quire-navbar-controls__center.navbar-type--main-pages ul li ul .list-header {
@@ -385,7 +390,7 @@ a.quire-navbar-controls__site-logo img {
   .quire-navbar-controls__center.navbar-type--main-pages ul li.active-section a:hover {
     background-color: var(--accent-color);
     color:white !important;
-  }  
+  }
   .quire-navbar-controls__center.navbar-type--main-pages .list-header + div + ul {
     display: none;
   }
@@ -499,4 +504,9 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 }
 .quire-figure--group.slider figure .quire-figure__caption strong {
   color: var(--accent-color);
+}
+/* Use with q-figure shortcode by adding class="small-image" */
+.small-image {
+  width: 50%;
+  height: 50%;
 }
