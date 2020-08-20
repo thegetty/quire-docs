@@ -61,12 +61,12 @@ Here are some things to consider:
 
 - Quire is free to use, and no proprietary software is required. [Learn more.](/about/costs/)
 - Looking to build an interactive website, create a purchasable ebook, or produce a high-quality print publication? Quire can do that! [Learn more about Quire's multiformat output capabilities.](/documentation/multiformat-output/)
-- Quire is compatible with most operating systems, whether you are using a MAC, PC, or Linux. [Visit our installation guidelines.](documentation/install-uninstall/)
-- No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or if you have more advanced resources, then Quire can be heavily customized and adapted to your unique content. [Visit our documentation.](/documentation/)
+- Quire is compatible with most operating systems, whether you are using a MAC, PC, or Linux. [Visit our installation guidelines.](/documentation/install-uninstall/)
+- No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or if you have more advanced resources, then Quire can be heavily customized and adapted to your unique content. [Visit our documentation.](/documentation/getting-started/)
 - We know how intimidating learning new technology can be, but we've got you covered. We've created helpful tutorials to guide you through each step of using Quire, from installation to deployment and everything in between. [Learn more.](/learn/tutorial/)
-- We also have a vibrant and diverse community of users that are here to help. [Visit our user forum.](/about/open-source/)
+- We also have a vibrant and diverse community of users that are here to help. [Visit our User Forum.](/community/forum)
 - We are moving Quire towards an open-source, community-supported model are currently following open-source software standards. Our goal is to launch Quire as officially open source by 2021. [Learn more about the benefits of open-source development.](/about/open-source)
-- To learn more about whether Quire is right for you, [please visit our implementation considerations.](/documentation/implemenation-considerations/)
+- To learn more about whether Quire is right for you, [please visit our Implementation Considerations.](/documentation/implementation/)
 
 <div class="feature-cards">
 
