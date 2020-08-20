@@ -9,7 +9,9 @@ menu: false
 
 At the heart of Quire is static site generation. Static site generators like [Hugo](https://gohugo.io/), the one under the hood in Quire, allow users to keep content in plain text with very simple human-readable markup. This keeps the complexity of building the site at the point of publication, rather than relying on ongoing build processes through a server that needs to be continually maintained. Unlike websites with short lifespans, even if certain technology goes obsolete, Quire files will continue to be readable. The static site generator also enables the conversion of plain text content into formats other than online sites, including PDF, e-book, and even print.
 
-So what is static site generation? In traditional website publishing, a content management system (CMS) is connected to collections and image databases (1) and set up on a server (2). The CMS is used to create the website, and once the website is published, the CMS rebuilds the site pages each time they are loaded by a user (3). Thus, the CMS must be kept running for the lifetime of the publication.
+### What is static site generation? 
+
+In traditional website publishing, a content management system (CMS) is connected to collections and image databases (1) and set up on a server (2). The CMS is used to create the website, and once the website is published, the CMS rebuilds the site pages each time they are loaded by a user (3). Thus, the CMS must be kept running for the lifetime of the publication.
 
 {{< q-figure id="digitalpipeline-traditional" >}}
 
