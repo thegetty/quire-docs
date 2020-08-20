@@ -43,7 +43,7 @@ Currently under development for potential release as [open-source software](/abo
 - **Zooming Images & Maps** Enable zooming capabilities on images and embedded maps
 - **Video & Audio Embeds** Include audio and video clips with ease (including Soundcloud, YouTube, and Vimeo)
 - **Dynamic Navigation**  Use tables of contents and menus to navigate and jump to other sections
-- **Full-text Search** Search throughout publication quickly and efficiently
+- **Full-text Search** Perform global search throughout publication
 - **Page-level Citation** Create citations that directly link to footnotes
 - **Footnotes** Link footnotes with page-level citations
 - **Bibliographies** Create bibliographies the link to citations and footnotes
@@ -70,5 +70,5 @@ Here are some things to consider:
 
 <div class="feature-cards">
 
-- [Get Started! ![Explore icon](/img/illustrations/undraw_web_developer_p3e5.png)](/request-access/beta-access/)
+- [Get Started! ![Explore icon](/img/illustrations/undraw_web_developer_p3e5.png)](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
 </div>
