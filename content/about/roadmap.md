@@ -5,9 +5,16 @@ type: essay
 menu: false
 ---
 
-## New Features Coming soon
+## New Features Coming Soon
+<br>
 
 - Embedded glossaries
 - Rotating Images
 - IIIF compatibility
-- Nested menu subsections 
+- Nested menu subsections
+
+
+<div class="feature-cards">
+
+-  ![Explore icon](/img/illustrations/roadmap.png)
+</div>

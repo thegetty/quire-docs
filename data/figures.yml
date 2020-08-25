@@ -243,3 +243,7 @@ figure_list:
     media_id: 809104705
     media_type: soundcloud
     caption: "Audio from Getty podcast Art & Ideas. Moving a Hundred-Year-Old Series Online: Getty’s Corpus Vasorum Antiquorum."
+
+  - id: "roadmap"
+    src: /illustrations/roadmap.png
+    caption: "The journey ahead."
