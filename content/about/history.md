@@ -15,7 +15,7 @@ Getty Foundation launches the [Online Scholarly Catalogue Initiative (OSCI)](ht
 **2013**
 
 [Getty Publications](https://www.getty.edu/publications) begins investing in full-time digital publishing staff.
-[Greg Albers](https://geealbers.net/) joins Getty as the Digital Publications Manager. Albers is a leading figure in the world digital publishing and is poised to help the Getty reach new heights.
+[Greg Albers](https://geealbers.net/) joins Getty as the Digital Publications Manager. Albers is a leading figure in the world digital publishing and is poised to help Getty reach new heights.
 
 {{< q-figure id="mcn_2013" caption="Greg Albers speaking at the 2013 Museum Computer Network Conference. Print Meet Digital, Digital Meet Print: A Matchmaking" >}}
 
@@ -31,7 +31,7 @@ Getty Publications editor, Ruth Evans Lane, writes an article for Getty's blog, 
 
 **2017**
 
-OSCI concludes. While the program transformed the digital publishing landscape for museums notable challenges remained, particularly around the discoverability, longevity, and objectness of digital catalogues. Read the [OSCI Final Report](https://www.getty.edu/publications/osci-report/remaining-challenges/) to learn more about the participant's conclusions.
+OSCI concludes. While the program transformed the digital publishing landscape for museums notable challenges remained, particularly around the discoverability, longevity, and objectness of digital catalogues. Read the [OSCI Final Report](https://www.getty.edu/publications/osci-report/remaining-challenges/) to learn more about the participants' conclusions.
 
 Greg Albers and, former Getty developer, Eric Gardner, begin work on an early version of Quire with the goal of creating a tool that is not only beautiful and booklike, but also affordable, flexible, accessible, discoverable, and enduring.
 
@@ -55,7 +55,7 @@ Two additional Quire publications are released [*Ancient Ambers*](https://www.ge
 
 **2020**
 
-The Quire team hires a community manager to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
+The Quire team hires a Community Manager to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
 
 Quire is used to bring the century-old reference series, Corpus Vasorum Antiquorum (CVA), to a new digital platform.
 
