@@ -9,7 +9,7 @@ menu: false
 
 {{< q-figure id="quire_demo" >}}
 
-At the heart of Quire is static site generation. Static site generators like [Hugo](https://gohugo.io/), the one under the hood in Quire, allow users to keep content in plain text with very simple human-readable markup. This keeps the complexity of building the site at the point of publication, rather than relying on ongoing build processes through a server that needs to be continually maintained. Unlike websites with short lifespans, even if certain technology goes obsolete, Quire files will continue to be readable. The static site generator also enables the conversion of plain text content into formats other than online sites, including PDF, e-book, and even print.
+At the heart of Quire is static site generation. Static site generators like [Hugo](https://gohugo.io/), the one under the hood in Quire, allow users to keep content in plain text with very simple human-readable markup. This keeps the complexity of building the site at the point of publication, rather than relying on ongoing build processes through a server that needs to be continually maintained. Unlike websites with short lifespans, even if certain technology goes obsolete, Quire files will continue to be readable. The static site generator also enables the conversion of plain text content into formats other than online sites, including PDF, e-book, and even print. Continue reading if you're curious how it works!
 
 ### What is static site generation?
 
