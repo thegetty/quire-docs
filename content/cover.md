@@ -118,11 +118,14 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 ## The Quire Community
 
-The Quire community is open and accepting to all. Our users value the sustainability, accessibility, affordability, and discoverability of scholarly digital publications. For this reason, Quire is moving towards an open-source, community-supported model. This ensures that Quire continues developing and thriving beyond Getty as a critical solution to our community's publishing needs.
+ Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions providing vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators or developers. <br>
+ All are welcome.
+
+![illustration](/img/illustrations/undraw_community_8nwl.png)
 
 <div class="action-button">
 
-[Join us](https://quire/getty.edu/community)
+[Join us](/community/join-us/)
 
 
 </div>
