@@ -20,7 +20,13 @@ slug: .
 
 </div>
 
-{{< q-figure-group id="alamo_keeper, artists_studios_paris, bending_lines, fault_lines, french_paintings, in_plain_sight, state_of_convergence, tilt_west" grid="8" class="slider slider-medium" >}}
+{{< q-figure-group id="alamo_keeper, artists_studios_paris, bending_lines, fault_lines, french_paintings, in_plain_sight, state_of_convergence, tilt_west" grid="8" class="slider slider-large" >}}
+
+<div class="action-button">
+
+[Visit Our User Showcase](/community/user-showcase/)
+
+</div>
 
 <div class="logo">
 
