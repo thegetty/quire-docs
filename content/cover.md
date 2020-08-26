@@ -90,7 +90,31 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 </div>
 
-<div class="block">
+## Features & Functionality
+<br>
+
+- **Operating System Compatibility**
+- **Cross-Device Usage**
+- **Multiformat Output**
+- **Realtime Publication Preview**
+- **Web Accessibility**
+- **SEO Optimization**
+- **Responsive Web Design**
+- **Reproducible Content**
+- **Figure Images & Image Groups**
+- **Zooming Images & Maps**
+- **Video & Audio Embeds**
+- **Dynamic Navigation**  
+- **Full-text Search**
+- **Page-level Citation**
+- **Linkable Footnotes**
+- **Linkable Bibliographies**
+
+<div class="action-button">
+
+[Learn More](/about/quire)
+
+</div>
 
 ## The Quire Community
 
@@ -100,7 +124,6 @@ The Quire community is open and accepting to all. Our users value the sustainabi
 
 [Join us](https://quire/getty.edu/community)
 
-</div>
 
 </div>
 
@@ -114,30 +137,6 @@ From collection catalogues and online exhibitions to digital pamphlets, reports,
 [Visit User Showcase](https://quire/getty.edu/user-showcase)
 
 </div>
-
-
-## Features
-
-<div class="feature-list">
-
-- Page-level citation
-- Footnotes
-- Bibliographies
-- Figure images and image groups
-- Zooming images and maps
-- Video and audio embeds
-- Dynamic tables of contents and menus
-- Full-text search
-- Responsive web design
-- Web accessibility and SEO optimized
-- Outputs to web, PDF, and EPUB formats
-- Realtime publication preview
-- Embedded glossaries -- is this true?
-- Interactive maps -- is this true?
-- Rotating images -- is this true?
-
-</div>
-
 
 <div class="feature-cards">
 
