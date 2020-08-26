@@ -4,58 +4,68 @@ weight: 1300
 type: essay
 ---
 
-## The Background
+For over sixty years, [Getty](https://www.getty.edu/) has preserved the world's artistic legacy through the publication of award-winning books and journals. Over the last two decades, the internet has become a vital platform for the creation and dissemination of critical scholarship online. Yet the field of digital publishing still lacks reliable, affordable, and sustainable tools for presenting visually rich narratives that are globally accessible across devices and borders. Getty is uniquely positioned to build on its expertise in the field and advance this effort. Keep reading to learn how Quire evolved as the cornerstone of the institution's pioneering [digital publishing initiative](https://www.getty.edu/publications/digital/index.html).
 
-[Getty](https://www.getty.edu/) has preserved and presented the world’s artistic legacy through the publication and dissemination of research in printed books and journals for over sixty years. Over the last two decades, the internet has offered us a platform to share at a scale and with a reach far greater than anything before possible. While important art historical research and scholarly communication are increasingly taking place in the digital sphere, the field still lacks reliable, sustainable tools for presenting long-form scholarship online. Moreover, the tools that do exist often require potentially costly long-term maintenance and don’t support visually rich narratives. They fall short of Getty's institutional ambition to create globally accessible publications across devices and borders, a key advantage of digital publication. The field needs sustainable, dynamic ways to publish critical research and scholarship online, and Getty is uniquely positioned to advance this effort.
+[[[Image of Getty Center]]]
 
-In 2009, the Getty Foundation launched a program called the [Online Scholarly Catalogue Initiative (OSCI)](http://www.oscitoolkit.org/) to support eight museums’ efforts to publish their collection catalogues online.  Collection catalogues, having been traditionally published in print, were costly to produce, offered relatively limited access (mostly through research libraries that would collect them), and were difficult, if not impossible, to update. At the end of the initiative, all eight museums had successfully published one or more collection catalogues online and had plans to do more. OSCI transformed the digital publishing landscape for museums at large and unequivocally established Getty’s leadership in the field. The question was no longer whether museums could publish scholarly content online but rather: *how should they best do it?* However, [notable challenges remained](https://www.getty.edu/publications/osci-report/remaining-challenges/), particularly around the discoverability of the catalogues after publication, and the longevity of the catalogues, both as individual digital objects out in the world and as publication processes internally.
+**2009**
 
-In 2014, [Getty Publications](https://www.getty.edu/publications) began building on OSCI’s successes by investing in full-time digital publishing staff. Their work on digital book projects for Getty was guided by three fundamental challenges:
+Getty Foundation launches the [Online Scholarly Catalogue Initiative (OSCI)](http://www.oscitoolkit.org/), a partnership between eight museums, exploring digital solutions to the high costs, limited access, and challenges of producing and updating scholarly publications.
 
-- Increasing discoverability of online publications
-- Ensuring the longevity of online content
-- Increasing the sustainability of the online publishing process
+**2013**
 
-To address these challenges, the team began developing Quire.
+[Getty Publications](https://www.getty.edu/publications) begins investing in full-time digital publishing staff.
+[Greg Albers](https://geealbers.net/) joins Getty as the Digital Publications Manager. Albers is a leading figure in the world digital publishing and is poised to help Getty reach new heights.
 
-## The Development of Quire
+{{< q-figure id="mcn_2013" caption="Greg Albers speaking at the 2013 Museum Computer Network Conference. Print Meet Digital, Digital Meet Print: A Matchmaking" >}}
 
-Quire is a multiformat publishing tool that is structured around [static site generation](https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/). Static site generators allow users to keep content in plain text with very simple human-readable markup. This enables the contents of a publication to live independently of almost any file format. In other words, it doesn't take a specific program to open and access the contents of a file.  Unlike websites that have short lifespans, even if certain technology goes obsolete, Quire files will continue to be readable. The static site generator also enables the conversion of plain text content into formats other than online sites, including PDF, e-book, and even print, which dramatically improves the publication's discoverability and archival longevity.
+**2016**
 
-Getty has successfully published over [ten Quire publications](https://www.getty.edu/publications/digital/digitalpubs.html) in the last four years, which have served as prototypes for the development of Quire. Getty is committed to continuing the use of Quire as its primary tool for digital publishing. Getty is also dedicated to improving and fine-tuning Quire and addressing any issues or bugs in the process.
+Getty publishes its first digital catalogue, [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/). The publication,  built with OSCI, serves as a precursor to future Quire titles.
 
- Examples of Getty publications built with Quire (through various stages of its development) include:
+Also released this year are [*Roman Mosaics*](https://www.getty.edu/publications/romanmosaics/) and [*Introduction to Metadata, Third Edition*](https://www.getty.edu/publications/intrometadata/). [ARLIS/NA's *Multimedia & Technology Reviews*](https://arlisna.org/publications/multimedia-technology-reviews/1025-roman-mosaics-in-the-j-paul-getty-museum) writes that *Roman Mosaics* has a "dynamic design that encourages further discovery and scholarship."
 
-2016
+Getty Publications editor, Ruth Evans Lane, writes an article for Getty's blog, The Iris. [*An Editor's View of Digital Publishing*](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/) detailing her experience working on *Ancient Terracottas* and *Roman Mosaics*.
 
-[Roman Mosaics](https://www.getty.edu/publications/romanmosaics/)
+{{< q-figure id="the_gang" >}}
 
-[Introduction to Metadata, Third Edition](https://www.getty.edu/publications/intrometadata/)
+**2017**
 
-[Ancient Terracottas](https://www.getty.edu/publications/terracottas/)
+OSCI concludes. While the program transformed the digital publishing landscape for museums notable challenges remained, particularly around the discoverability, longevity, and objectness of digital catalogues. Read the [OSCI Final Report](https://www.getty.edu/publications/osci-report/remaining-challenges/) to learn more about the participants' conclusions.
 
-2017
+Greg Albers and, former Getty developer, Eric Gardner, begin work on an early version of Quire with the goal of creating a tool that is not only beautiful and booklike, but also affordable, flexible, accessible, discoverable, and enduring.
 
-[Artistry in Bronze](https://www.getty.edu/publications/artistryinbronze/index.html)
+Getty uses early Quire prototype to develop two digital publications [*Artistry in Bronze*](https://www.getty.edu/publications/artistryinbronze/index.html) and [*Ancient Lamps*.](https://www.getty.edu/publications/ancientlamps/)
 
-[Ancient Lamps](https://www.getty.edu/publications/ancientlamps/)
+The first in-person Quire workshop takes place at the Museum Computer Network (MCN) Conference.
 
-2018
+{{< q-figure id="mcn_2017" caption="2017 Museum Computer Network Conference. Data Driven Approaches to Publishing. Pamela Horn, Eric Gardner. NOVEMBER 8, 2017" >}}
 
-[Keep it Moving](https://www.getty.edu/publications/keepitmoving/)
+**2018**
 
-2019
+Early successes with the development of Quire encourage Getty to move the tool towards an open-source model. [Beta Access](/request-access/beta-access) is enabled. Over fifty users sign-up as beta testers within the first year.
 
-[Ancient Ambers](https://www.getty.edu/publications/ambers/)
+As a result of the successful MCN Quire workshop, [Journal 18](http://www.journal18.org/issue5_williams/about/), the first external Quire publication, launches.
 
-[Values in Heritage Management](https://www.getty.edu/publications/heritagemanagement/)
+Getty publishes their next Quire book, [*Keep it Moving*.](https://www.getty.edu/publications/keepitmoving/)
 
-While Getty originally developed Quire in response to its own publishing needs, it quickly became apparent that many other institutions and individuals were seeking a similar solution for the long-term sustainability and increased discoverability of their publications. In 2018, the decision was made to move Quire towards an open-source model and enable beta access. By open-sourcing the Quire and supporting its ongoing use in the field, other institutions can utilize Getty's work developing Quire for their own publishing projects, at low cost and with very little ongoing maintenance.
+**2019**
 
-[Sign-up for beta access now](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
+Two additional Quire publications are released [*Ancient Ambers*](https://www.getty.edu/publications/ambers/) and [*Values in Heritage Management*](https://www.getty.edu/publications/heritagemanagement/).
 
-## An Open-Source Future
+**2020**
 
-Through the beta program, new users are welcomed and encouraged to not only utilize Quire to create beautiful publications but also meaningfully contribute to its growth and health as a publishing tool. As Quire continues to evolve, our goal is to launch as fully open source by 2022. A community-supported model would enable Quire to remain free to use and would ensure a long lifespan beyond Getty.
+The Quire team hires a Community Manager to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
 
-[Learn more about Open Source](https://quire/getty.edu/community/quire-community)
+Quire is used to bring the century-old reference series, Corpus Vasorum Antiquorum (CVA), to a new digital platform.
+
+{{< q-figure id="cva_podcast" caption="Audio from Getty podcast Art & Ideas. Moving a Hundred-Year-Old Series Online. Getty's Corpus Vasorum Antiquorum.">}}
+
+Quire is invited to participate in the inaugural Open Publishing Fest. In the session, *Quire: Multiformat Publishing Solutions for Art Books and Beyond*, the team discusses the history and future of the tool. Three Quire users also reflect on their experience publishing with Quire and demo their recent projects.
+
+{{< q-figure id="opf_2020" caption=" Recording of Open Publishing Fest 2020. Quire: Multiformat Publishing Solutions for Art Books and Beyond.">}}
+
+<div class="feature-cards">
+
+- [We invite you to become part of Quire's history. <br> Sign-up for beta access and join the Quire community today! ![Explore icon](/img/illustrations/undraw_community_8nwl.png)](/request-access/beta-access/)
+</div>
