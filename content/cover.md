@@ -14,7 +14,7 @@ slug: .
 
 <div class="action-button">
 
-[Sign Up for Free Access](https://quire/getty.edu/community)
+[Sign Up for Free Access](/request-access/beta-access/)
 
 </div>
 
@@ -39,7 +39,7 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 <div class="feature-cards">
 
 - [Watch a Video Intro ![Explore icon](/img/illustrations/undraw_online_video_ivvq.png) ](#)
-- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](#)
+- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started)
 
 </div>
 
@@ -66,7 +66,7 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 
 <div class="feature-cards">
 
-- [Quire Roadmap ![Explore icon](/img/illustrations/undraw_developer_activity_bv83.png) ](#)
+- [Quire Roadmap ![Explore icon](/img/illustrations/roadmap_transparent.png)](/about/roadmap/)
 - [Quire Basics & Tutorials ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](#)
 - [View Demo Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](#)
 </div>
@@ -94,7 +94,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 <div class="action-button">
 
-[Try It for Yourself](#)
+[Try It for Yourself](/request-access/beta-access/)
 
 </div>
 
@@ -144,15 +144,19 @@ For news, updates, and events be sure to sign up for our [mailing list](#).
 
 <div class="action-button">
 
-[Get the Latest](#y)
+[Get the Latest](/community/news-events/)
 
 </div>
+
+![illustration](/img/illustrations/undraw_newspaper_k72w.png)
 
 
 ## Get Started
 
 <div class="action-button">
 
-[Sign Up for Free Access](#)
+[Sign Up for Free Access](/request-access/beta-access/)
 
 </div>
+
+![illustration](/img/illustrations/undraw_blogging_vpvv.png)
