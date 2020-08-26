@@ -69,11 +69,11 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 <div class="feature-list">
 
-- **Affordable** Free! No proprietary software necessary
+- **Affordable** No proprietary software or ongoing maintenance fees required
 - **Richly Featured & Interactive**  Add images, videos, audio clips, maps, and zooming features
-- **Flexible and Customizable** Adapt to suit the content
+- **Flexible and Customizable** Designed to be adaptable to your unique content
 - **Discoverable** Increase visibility by publishing as PDF, ebook, website, or print-on-demand
-- **Empowering** Can be used by anyone, a developer skillset is not required
+- **Empowering** Can be used by anyone from non-technical content creators to developers
 - **Booklike** Built-in understanding of high-quality scholarly publishing
 - **Beautiful** Optimized for visual imagery with a clean, modern design
 - **Accessible** Logical reading over, alt texts, language codes, semantic section elements, and more
