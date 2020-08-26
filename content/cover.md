@@ -62,6 +62,14 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 [Discover Quire](/about/quire)
 
 </div>
+<br>
+
+<div class="feature-cards">
+
+- [Quire Roadmap ![Explore icon](/img/illustrations/undraw_developer_activity_bv83.png) ](#)
+- [Quire Basics & Tutorials ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](#)
+- [View Demo Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](#)
+</div>
 
 ## Why Use Quire?
 
@@ -121,37 +129,14 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
  Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions providing vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators or developers. <br>
  All are welcome.
 
-![illustration](/img/illustrations/undraw_community_8nwl.png)
+ <div class="action-button">
 
-<div class="action-button">
+ [Join us](/community/join-us/)
 
-[Join us](/community/join-us/)
+ </div>
 
+![illustration](/img/illustrations/undraw_community_transparent.png)
 
-</div>
-
-
-## Meet Our Users
-
-From collection catalogues and online exhibitions to digital pamphlets, reports, and journal articles, learn more about what our diverse community of Quire users is creating.
-
-<div class="action-button">
-
-[Visit User Showcase](https://quire/getty.edu/user-showcase)
-
-</div>
-
-<div class="feature-cards">
-
-## Learn More About Quire
-
-- [Quire Roadmap ![Explore icon](/img/illustrations/undraw_developer_activity_bv83.png) ](#)
-- [Quire Basics & Tutorials ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](#)
-- [View Demo Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](#)
-
-</div>
-
-<div class="block">
 
 ## Stay in Touch
 
@@ -160,8 +145,6 @@ For news, updates, and events be sure to sign up for our [mailing list](#).
 <div class="action-button">
 
 [Get the Latest](#y)
-
-</div>
 
 </div>
 
