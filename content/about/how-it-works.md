@@ -5,6 +5,24 @@ type: essay
 menu: false
 ---
 
+In order to work its magic, Quire packages together a number of programs. These components play a critical role in the longterm discoverability, longevity, and multiformat output capabilities of Quire publications.
+
+- [Apple’s Xcode](https://developer.apple.com/support/xcode/) is a set of developer tools for your Mac. (Does not apply to Windows users.)
+
+- [Node.js](https://nodejs.org) enables you to run javascript on your computer.
+
+- [PrinceMXL](http://www.princexml.com/) is used to generate PDF/print versions of your publication.
+
+- [Pandoc](https://github.com/jgm/pandoc/releases/) is used to generate EPUBs.
+
+- [The Quire CLI (command-line interface)](https://www.codecademy.com/articles/command-line-interface) is the core of Quire. It is used for creating, previewing, and outputting projects.
+
+- [Hugo](https://gohugo.io/), the **static-site generator** that generates the online version of your publication. The file structure, layout templates, partials and shortcodes of Quire are all Hugo conventions that have been structured to allow for more formal digital publications (essentially, dynamic websites that make use of certain traditional print publishing conventions like tables of contents, copyright and authorship information, linear reading orders, etc.)
+
+Please visit the [Hugo Documentation](https://gohugo.io/documentation/) for more information.
+
+## Static Site Generation
+
 *To me, more remarkable than the form they take now is that they are built to last. While these publications take advantage of the latest technology, the fact that they are built from plain-text files and as open-source static sites helps to ensure they will never be dependent on soon-to-be-out-of-date platforms and are much more likely to be compatible with the technologies of the future.* - Getty Publications Editor, Ruth Evans Lane
 
 {{< q-figure id="quire_demo" >}}
