@@ -4,82 +4,129 @@ weight: 2300
 type: essay
 ---
 
-We are excited to welcome you to the Quire community! As an open-source community and ever-evolving initiative, our members' contributions are what enable us to continue fine-tuning, developing, and spreading the word about Quire as a vital digital publishing tool. We couldn't do it without you!
+## Welcome to the Quire Community!
 
-We recommend first taking a look at our **[Documentation](https://quire/getty.edu/documentation)** and **[Roadmap](#)** to familiarize yourself with Quire and the future of the tool. You can also refer to our **[News & Events](https://quire/getty.edu/documentation)** page for the latest information.
+We invite you to join our diverse and vibrant community of scholars, publishers, museum professionals, developers, designers, and more, that are using Quire to create new and exciting digital publishing projects.
 
-### Exciting Ways to Get Involved
+As an open-source community and ever-evolving initiative, our community members' participation, feedback, and contributions are what enable us to continue fine-tuning, developing, and spreading the word about Quire. We encourage you to get involved and get your hands dirty. No matter what level of experience you have, we welcome all contributions, big and small. We couldn't do it without you!
 
-[[[Graphic]]]
-- **Become a User**
+### Ways to Get Involved
 
-  The Quire community is open, inclusive, and accessible to all. Our members support one another, share knowledge and expertise, and solve problems together. Our community believes in the mission of open-source publishing and makes everyone feel comfortable at all levels of technical expertise, from content creators to developers.
+<div class="feature-cards xsmall-card">
 
-  Please click here to [request beta access](https://quire/getty.edu/request-access/beta-access).
+- ![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)
+</div>
+
+<div class="action-button">
+
+[Become a User](https://quire/getty.edu/community)
+</div>
+
+We welcome users at all levels of technical expertise and publishing experience.  Sign up for free beta access and get started with Quire today!
+
+<div class="feature-cards xsmall-card">
+
+-  ![Explore icon](/img/illustrations/undraw_team_chat_y27k.png)
+</div>
+
+<div class="action-button">
+
+[Participate in Forum](/community/forum/)
+
+</div>
+
+**Coming Soon...**
+
+Here you will find community-based support to help you navigate the ins-and-outs of Quire. Ask and answer questions, share ideas, raise issues, collaborate, and assist your fellow community members.
+
+<div class="feature-cards xsmall-card">
+
+-  ![Explore icon](/img/illustrations/undraw_certification_aif8.png)
+</div>
+
+<div class="action-button">
+
+[Become an Ambassador](#)
+</div>
+
+**Coming Soon...**
+
+We are looking for Quire lovers and super users who are passionate about bringing Quire into their own communities and expanding its reach.
+
+<div class="feature-cards xsmall-card">
+
+-  ![Explore icon](/img/illustrations/undraw_events_2p66.png)
+</div>
+
+<div class="action-button">
+
+[Attend an Event](/community/news-events)
+</div>
 
 
-[[[Graphic]]]
-- **Participate in our Forum**
+In addition to attending a Quire workshop or event, we'd also love to know about any Quire-related events that you may be hosting (webinars, workshops, conferences, etc.) Please email quire@getty.edu.
 
-    **Coming Soon...**
+<div class="feature-cards xsmall-card">
 
-    Here you will find community-based support to help you navigate the ins-and-outs of Quire. We encourage you to join and participate in the conversation. Ask and answer questions, share ideas, raise issues, collaborate, and assist your fellow community members.
+-  ![Explore icon](/img/illustrations/undraw_done_a34v.png)
+</div>
 
-    [Join the Conversation Now](https://quire/getty.edu/community/forum)
+<div class="action-button">
 
-[[[Graphic]]]
-- **Become an Ambassador**
+[Submit Your Work](#)
+</div>
 
-    **Coming Soon...**
+We love to celebrate any Quire accomplishments! Send us your finished Quire publications and we will add them to our **[User Showcase](community/user-showcase/)** and feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
 
-    We are looking for Quire lovers and super users who are passionate about bringing Quire into their own communities and expanding its reach.
+Please email quire@getty.edu to learn more.
 
-    [Learn More](This would link to a menu false page)
+<div class="feature-cards xsmall-card">
 
-[[[Graphic]]]
-- **Attend an Event or Lead One of Your Own**
+-  ![Explore icon](/img/illustrations/undraw_code_typing_7jnv.png)
+</div>
 
-    Learn more about our upcoming events [here](https://quire/getty.edu/community/news-events)
+<div class="action-button">
 
-    We'd love to know about Quire events that you may be hosting (webinars, workshops, conferences, etc.) Please email quire@getty.edu.
+[Contribute Code](/community/contributor-guidelines)
+</div>
 
-[[[Graphic]]]
-- **Submit Work to be Featured on Our Site**
+The benefit of an open-source community is that all members have an opportunity to help mold Quire into a digital publishing solution that meets a diverse set of needs. This is your opportunity to contribute to the code and directly impact the development of the platform.
 
-    We welcome you to submit your Quire projects so they can be featured on our website's [User Showcase](https://quire/getty.edu/community/user-showcase). Please email quire@getty.edu to learn more.
+Before getting started, we kindly request that you review our **[Contributor Guidelines](/community/contributor-guidelines/)** for information on best practices, guidelines, and recommendations for contributing.
 
-    Submit papers, articles, presentations that you have written about Quire (I like this idea and imagine it would live in learn, but I'm not sure exactly where yet). Please email quire@getty.edu to learn more.
+Quire on GitHub:
 
-[[[Graphic]]]
-- **Contribute Code**
+[Quire Starter Theme Repository](https://github.com/gettypubs/quire-starter-theme)
 
-    The benefit of an open-source community is that all our users have an opportunity to help mold Quire into a digital publishing solution that meets a diverse set of needs. This is your opportunity to contribute to code and directly impact the development of the platform.
+[Quire CLI Repository](https://github.com/gettypubs/quire-cli)
 
-    Before getting started, we kindly request that you review our **[Contributor Guidelines](https://quire/getty.edu/community/contributor-guidelines)** for information on best practices, guidelines, and recommendations for contributing.
+<div class="feature-cards xsmall-card">
 
-    Here are some suggestions for where to get started: (would link to a menu:false page)
+-  ![Explore icon](/img/illustrations/undraw_bug_fixing_oc7a.png)
+</div>
 
-    Quire on GitHub:
+<div class="action-button">
 
-    [Quire Starter Theme Repository](https://github.com/gettypubs/quire-starter-theme)
+[Submit a Bug](https://github.com/gettypubs/quire/issues)
+</div>
 
-    [Quire CLI Repository](https://github.com/gettypubs/quire-cli)
+Bugs are sneaky, and we need your help spotting them! If you come across something broken or just not looking right, please add it to our bug tracker, and we'll work on getting the issue resolved ASAP.
 
-[[[Graphic]]]
-- **Submit a Bug**
+Please remember to label your issue and include the following information when submitting a bug:
 
-    Bugs are sneaky, and we need your help spotting them! If you come across something broken or just not looking right, please add it to our bug tracker, and we'll work on getting the issue resolved:
+  - What were you doing or what you tried to do
+  - What your desired results were
+  - What actually happened
+  - Include code or screenshot if possible
 
-    [GitHub Issues](https://github.com/gettypubs/quire/issues)
+<div class="feature-cards xsmall-card">
 
-    Please remember to label your issue and include the following information when submitting a bug:
+-  ![Explore icon](/img/illustrations/undraw_add_document_0hek.png)
+  </div>
 
-    - What were you doing or what you tried to do
-    - What your desired results were
-    - What actually happened
-    - Include code or screenshot if possible
+<div class="action-button">
 
-[[[Graphic]]]
-- **Add to Documentation**
+[Add to Documentation](https://github.com/gettypubs/quire)
+  </div>
 
-    The Quire documentation is a work in progress and we value your contributions. We invite you to dive in and help us complete [these](This would link to section of GitHub where we have checklist of sections needing work. Can use wiki area.) incomplete sections of the documentation.
+The Quire documentation is a work in progress and we value your contributions. We invite you to dive in and help us add to and refine our user manual.
