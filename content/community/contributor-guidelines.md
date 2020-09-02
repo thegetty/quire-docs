@@ -6,13 +6,18 @@ menu: false
 ---
 ## Introduction
 
-Thank you for your interest in contributing to Quire! The following Contributor Guidelines will ensure streamlined and effective communication, and will help the Quire team improve and develop Quire in a timely and efficient manner. Thank you for taking the time to read through the following considerations.
+Thank you for your interest in contributing to Quire! The following Contributor Guidelines will ensure streamlined and effective communication, and will help the Quire team develop and improve Quire in a timely and efficient manner. Thank you for taking the time to read through the following considerations.
 
 ### Useful Contributions
 
 As an open-source project we encourage contributions from our community members. No matter what level of experience you have, we welcome all contributions, big and small.
 
 There are many ways to contribute from adding to the code, submitting bug reports and improving the documentation to participating in our forum, becoming a Quire ambassador, and attending or leading workshops, events, and training sessions.
+
+<div class="action-button">
+
+[Get Involved](/community/join-us/)
+</div>
 
 ### Important Things to Remember
 
