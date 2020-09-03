@@ -29,11 +29,13 @@ Currently under development for potential release as [open-source software](/abo
 - [Join the Quire community today! ![Explore icon](/img/illustrations/undraw_celebration_0jvk.png)](/community/get-involved/)
 </div>
 
-### Features
+### Features & Functionality
 <br>
 
 <div class="feature-list">
 
+- **Operating System Compatibility** Available for Mac, Windows, and Linux
+- **Cross-Device Usage** Adapts formatting to tablets, PCs, and smart phones
 - **Multiformat Output** Generate publications as websites, ebooks, and PDFs with the touch of a button
 - **Realtime Publication Preview** Make changes and view them live in your browser
 - **Web Accessibility** Adhere to web accessibility principles outlined in WCAG2.0 AA
@@ -46,8 +48,8 @@ Currently under development for potential release as [open-source software](/abo
 - **Dynamic Navigation**  Use tables of contents and menus to navigate and jump to other sections
 - **Full-text Search** Perform global search throughout publication
 - **Page-level Citation** Create citations that directly link to footnotes
-- **Footnotes** Link footnotes with page-level citations
-- **Bibliographies** Create bibliographies the link to citations and footnotes
+- **Linkable Footnotes** Link footnotes with page-level citations
+- **Linkable Bibliographies** Create bibliographies the link to citations and footnotes
 
 </div>
 

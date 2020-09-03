@@ -14,13 +14,19 @@ slug: .
 
 <div class="action-button">
 
-[Sign Up for Free Access](https://quire/getty.edu/community)
+[Sign Up for Free Access](/request-access/beta-access/)
 
 </div>
 
 </div>
 
-{{< q-figure-group id="alamo_keeper, artists_studios_paris, bending_lines, fault_lines, french_paintings, in_plain_sight, state_of_convergence, tilt_west" grid="8" class="slider slider-medium" >}}
+{{< q-figure-group id="alamo_keeper, artists_studios_paris, bending_lines, fault_lines, french_paintings, in_plain_sight, state_of_convergence, tilt_west" grid="8" class="slider slider-large" >}}
+
+<div class="action-button">
+
+[Visit Our User Showcase](/community/user-showcase/)
+
+</div>
 
 <div class="logo">
 
@@ -33,26 +39,36 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 <div class="feature-cards">
 
 - [Watch a Video Intro ![Explore icon](/img/illustrations/undraw_online_video_ivvq.png) ](#)
-- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](#)
+- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started)
 
 </div>
 
 ***“Quire allows for greater preservation and digital distribution of works in a simplified format.”*** — Kris Thayer, Minneapolis Institute of Art
 
-<br/>
+## Quire in Action
+<br>
 
 <div class="feature-list">
 
 - <span class="checkmark">✓</span> Outputs multiple formats of the publication (web, ebook, PDF, print-on-demand)
 - <span class="checkmark">✓</span> Keeps source content in non-specialized plain text to ensure reusability
-- <span class="checkmark">✓</span> Supports visually rich scholarship
+- <span class="checkmark">✓</span> Supports visually rich scholarship in the tradition of print publishing
 - <span class="checkmark">✓</span> Allows for a wide range of possible custom features and styles
 - <span class="checkmark">✓</span> Persists without the need for ongoing maintenance or updating once published
+- <span class="checkmark">✓</span> Empowers users at any skill level to create dynamic feature-rich digital publications
 
 <div class="action-button">
 
-[What Quire Can Do For You](https://quire/getty.edu/about/quire)
+[Discover Quire](/about/quire)
 
+</div>
+<br>
+
+<div class="feature-cards">
+
+- [Quire Roadmap ![Explore icon](/img/illustrations/roadmap_transparent.png)](/about/roadmap/)
+- [Quire Basics & Tutorials ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](#)
+- [View Demo Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](#)
 </div>
 
 ## Why Use Quire?
@@ -61,11 +77,11 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 <div class="feature-list">
 
-- **Affordable** Free! No proprietary software necessary
+- **Affordable** No proprietary software or ongoing maintenance fees required
 - **Richly Featured & Interactive**  Add images, videos, audio clips, maps, and zooming features
-- **Flexible and Customizable** Adapt to suit the content
+- **Flexible and Customizable** Designed to be adaptable to your unique content
 - **Discoverable** Increase visibility by publishing as PDF, ebook, website, or print-on-demand
-- **Empowering** Can be used by anyone, a developer skillset is not required
+- **Empowering** Can be used by anyone from non-technical content creators to developers
 - **Booklike** Built-in understanding of high-quality scholarly publishing
 - **Beautiful** Optimized for visual imagery with a clean, modern design
 - **Accessible** Logical reading over, alt texts, language codes, semantic section elements, and more
@@ -78,70 +94,49 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 <div class="action-button">
 
-[Try It for Yourself](#)
+[Try It for Yourself](/request-access/beta-access/)
 
 </div>
 
-<div class="block">
+## Features & Functionality
+<br>
+
+- **Operating System Compatibility**
+- **Cross-Device Usage**
+- **Multiformat Output**
+- **Realtime Publication Preview**
+- **Web Accessibility**
+- **SEO Optimization**
+- **Responsive Web Design**
+- **Reproducible Content**
+- **Figure Images & Image Groups**
+- **Zooming Images & Maps**
+- **Video & Audio Embeds**
+- **Dynamic Navigation**  
+- **Full-text Search**
+- **Page-level Citation**
+- **Linkable Footnotes**
+- **Linkable Bibliographies**
+
+<div class="action-button">
+
+[Learn More](/about/quire)
+
+</div>
 
 ## The Quire Community
 
-The Quire community is open and accepting to all. Our users value the sustainability, accessibility, affordability, and discoverability of scholarly digital publications. For this reason, Quire is moving towards an open-source, community-supported model. This ensures that Quire continues developing and thriving beyond Getty as a critical solution to our community's publishing needs.
+ Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions providing vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators or developers. <br>
+ All are welcome.
 
-<div class="action-button">
+ <div class="action-button">
 
-[Join us](https://quire/getty.edu/community)
+ [Join us](/community/join-us/)
 
-</div>
+ </div>
 
-</div>
+![illustration](/img/illustrations/undraw_community_transparent.png)
 
-
-## Meet Our Users
-
-From collection catalogues and online exhibitions to digital pamphlets, reports, and journal articles, learn more about what our diverse community of Quire users is creating.
-
-<div class="action-button">
-
-[Visit User Showcase](https://quire/getty.edu/user-showcase)
-
-</div>
-
-
-## Features
-
-<div class="feature-list">
-
-- Page-level citation
-- Footnotes
-- Bibliographies
-- Figure images and image groups
-- Zooming images and maps
-- Video and audio embeds
-- Dynamic tables of contents and menus
-- Full-text search
-- Responsive web design
-- Web accessibility and SEO optimized
-- Outputs to web, PDF, and EPUB formats
-- Realtime publication preview
-- Embedded glossaries -- is this true?
-- Interactive maps -- is this true?
-- Rotating images -- is this true?
-
-</div>
-
-
-<div class="feature-cards">
-
-## Learn More About Quire
-
-- [Quire Roadmap ![Explore icon](/img/illustrations/undraw_developer_activity_bv83.png) ](#)
-- [Quire Basics & Tutorials ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](#)
-- [View Demo Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](#)
-
-</div>
-
-<div class="block">
 
 ## Stay in Touch
 
@@ -149,17 +144,19 @@ For news, updates, and events be sure to sign up for our [mailing list](#).
 
 <div class="action-button">
 
-[Get the Latest](#y)
+[Get the Latest](/community/news-events/)
 
 </div>
 
-</div>
+![illustration](/img/illustrations/undraw_newspaper_k72w.png)
 
 
 ## Get Started
 
 <div class="action-button">
 
-[Sign Up for Free Access](#)
+[Sign Up for Free Access](/request-access/beta-access/)
 
 </div>
+
+![illustration](/img/illustrations/undraw_blogging_vpvv.png)
