@@ -8,7 +8,7 @@ type: essay
 
 ### `quire-cli`
 
-Quire CLI, or command-line interface, ([quire-cli](https://github.com/gettypubs/quire-cli)) is the control for creating, previewing and outputting Quire projects. It is written in JavaScript and requires [Node.js 8.9.4 LTS](https://nodejs.org) to run. Quire CLI is typically run from Terminal on a Mac, and Git Bash (or its equivalent) on a PC. The following commands are available:
+Quire CLI is written in JavaScript and requires [Node.js 12.18.3 LTS](https://nodejs.org) to run.The following commands are available:
 
 | Command | Description |
 | -------------- | -------------- |
