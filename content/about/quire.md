@@ -65,9 +65,9 @@ Currently under development for potential release as [open-source software](/abo
 
 Here are some things to consider:
 
-- Quire is developed and tested by Getty. While Quire was originally created in response to Gettys own publishing needs, it quickly became apparent that others were seeking similar solutions for the long-term sustainability and increased discoverability of their publications.
-- Quire is free to use, and no proprietary software is required. [Learn more.](/about/costs/)
-- Looking to build an interactive website, create a purchasable ebook, or produce a high-quality print publication? Quire can do that! [Learn more about Quire's multiformat output capabilities.](/documentation/multiformat-output/)
+- Getty is committed to Quire's success. The publishing tool is developed, tested, and used internally by Getty. [Learn more about Getty's digital publishing program](https://www.getty.edu/publications/digital/digitalpubs.html).
+- Quire is free to use, and no proprietary software or ongoing maintenance is required. [Learn more.](/about/costs/)
+- Multiformat output means E-book files are distribution-ready for Amazon, Apple, and other vendors; PDF files are print-on-demand ready, and the online edition can be hosted on any web server. [Learn more about Quire's multiformat output capabilities.](/documentation/quire-cli/#outputting-files)
 - Quire is compatible with most operating systems, whether you're using a MAC, PC, or Linux. [Visit our installation guidelines.](/documentation/install-uninstall/)
 - No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or if you have more advanced resources, then Quire can be heavily customized and adapted to your unique content. [Visit our documentation.](/documentation/getting-started/)
 - We know how intimidating learning new technology can be, but we've got you covered. We've created helpful tutorials to guide you through each step of using Quire, from installation to deployment and everything in between. [Learn more.](/learn/tutorial/)
