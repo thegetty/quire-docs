@@ -67,8 +67,8 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 <div class="feature-cards">
 
 - [Quire Roadmap ![Explore icon](/img/illustrations/roadmap_transparent.png)](/about/roadmap/)
-- [Quire Basics & Tutorials ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](#)
-- [View Demo Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](#)
+- [Quire Basics & Tutorials ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](/learn/tutorial/)
+- [View Demo Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](https://gettypubs.github.io/quire-starter/)
 </div>
 
 ## Why Use Quire?
