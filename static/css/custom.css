@@ -116,6 +116,10 @@
   margin-right: auto;
   margin-left: auto;
 }
+.quire-page__content .container .content .feature-cards.xsmall-card ul {
+  width: 40%;
+  margin-left: 0;
+}
 .quire-page__content .container .content .feature-cards ul li {
   flex: 1 1 0;
 }
@@ -509,4 +513,9 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 .small-image {
   width: 50%;
   height: 50%;
+}
+/* Use with q-figure shortcode by adding class="xsmall-image" */
+.xsmall-image {
+  width: 20%;
+  height: 20%;
 }
