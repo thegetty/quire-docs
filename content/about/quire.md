@@ -42,8 +42,10 @@ Currently under development for potential release as [open-source software](/abo
 - **SEO Optimization** Include metadata and tags for enhanced search engine optimization
 - **Responsive Web Design** Enable feature-rich and gracefully enhanced content
 - **Reproducible Content** Use code to change content across the publication without duplicating efforts
+- **Customizable Styles & Fonts** Customize your publication's look and feel to suit your brand/content
 - **Figure Images & Image Groups** Include high quality images in a variety of configurations
 - **Zooming Images & Maps** Enable zooming capabilities on images and embedded maps
+- **IIIF Compatible** Add high-res files that are automatically tiled and formatted as IIIF resources
 - **Video & Audio Embeds** Include audio and video clips with ease (including Soundcloud, YouTube, and Vimeo)
 - **Dynamic Navigation**  Use tables of contents and menus to navigate and jump to other sections
 - **Full-text Search** Perform global search throughout publication

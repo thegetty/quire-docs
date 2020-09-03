@@ -109,8 +109,10 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 - **SEO Optimization**
 - **Responsive Web Design**
 - **Reproducible Content**
+- **Customizable Styles & Fonts**
 - **Figure Images & Image Groups**
 - **Zooming Images & Maps**
+- **IIIF Compatible**
 - **Video & Audio Embeds**
 - **Dynamic Navigation**  
 - **Full-text Search**

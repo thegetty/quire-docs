@@ -10,7 +10,6 @@ menu: false
 
 - Embedded glossaries
 - Rotating Images
-- IIIF compatibility
 - Nested menu subsections
 
 
