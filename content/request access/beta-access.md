@@ -1,7 +1,7 @@
 ---
 title: Request Beta Access
 type: essay
-weight: 6000
+weight: 7000
 ---
 
 Prior to Quire's public release, we are looking for people to work with on improving our beta version. In exchange for your feedback on the tool, we'll be available to answer questions and guide you through issues. Plus, we'll be making changes based on your responses, so it's a great opportunity to shape the tool in ways that will suit your needs. If you're interested, please fill out the form below and we'll be in touch with you soon!

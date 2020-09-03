@@ -1,6 +1,6 @@
 ---
 title: GitHub for Quire
-weight: 3800
+weight: 6300
 type: essay
 ---
 

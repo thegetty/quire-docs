@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Quire Basics"
 subtitle: "A Step-by-Step Walkthrough of the Fundamental Parts of Quire"
-weight: 3000
+weight: 6000
 type: essay
 ---
 

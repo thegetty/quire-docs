@@ -1,6 +1,6 @@
 ---
 title: Resources
-weight: 3200
+weight: 6200
 type: essay
 menu: false
 ---
