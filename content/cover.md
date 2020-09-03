@@ -128,7 +128,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 ## The Quire Community
 
- Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions providing vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators or developers. <br>
+ Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions providing vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators to developers. <br>
  All are welcome.
 
  <div class="action-button">
