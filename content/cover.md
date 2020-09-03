@@ -38,7 +38,7 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 
 <div class="feature-cards">
 
-- [Watch a Video Intro ![Explore icon](/img/illustrations/undraw_online_video_ivvq.png) ](#)
+- [Watch a Video Intro ![Explore icon](/img/illustrations/undraw_online_video_ivvq.png)](https://www.youtube.com/watch?v=kFTcJLbMDxs&feature=youtu.be)
 - [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started)
 
 </div>
