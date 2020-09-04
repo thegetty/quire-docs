@@ -15,7 +15,7 @@ Getty Foundation launches the [Online Scholarly Catalogue Initiative (OSCI)](ht
 **2013**
 
 [Getty Publications](https://www.getty.edu/publications) begins investing in full-time digital publishing staff.
-[Greg Albers](https://geealbers.net/) joins Getty as the Digital Publications Manager. Albers is a leading figure in the world digital publishing and is poised to help Getty reach new heights.
+[Greg Albers](https://geealbers.net/) joins Getty as the Digital Publications Manager. Albers, a leading figure in the world digital publishing, is poised to help Getty reach new heights.
 
 {{< q-figure id="mcn_2013" caption="Greg Albers speaking at the 2013 Museum Computer Network Conference. Print Meet Digital, Digital Meet Print: A Matchmaking" >}}
 
