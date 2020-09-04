@@ -2,8 +2,19 @@
 title: Implementation Considerations
 type: essay
 weight: 3999
-menu: false
 ---
+
+## Technology Requirements
+
+- Quire is compatible with Mac, Windows, and Linux
+
+- It is recommended to have X amount of disk space available for installing Quire.
+
+## Skill Requirements
+
+- Quire can be used "out of the box" by any individual, no matter their skill level. However, in order to customize the Quire starter theme, advanced knowledge of CSS, HTML, and static-site generation, is required.
+
+- We do provide additional [Resources](/learn/other-resources/) and [Tutorials](/learn/tutorial/) to aid non-technical users in gaining the skills and knowledge to use Quire in a more advanced way.
 
 ## Affiliated Costs
 
@@ -15,4 +26,4 @@ Quire is free to use, however, there are occasionally associated costs:
 
 ## Licensing
 
-Beta access enables users to create anything they like with Quire and do anything with that creation that they’d like. You can modify your copy of the starter theme in any way that suits your needs. However, we ask that users **don’t redistribute Quire itself.**
+Beta access enables users to create publications with Quire and distribute as they see fit. Users can modify the starter theme in any way that suits their needs. However, we ask that users **don’t redistribute Quire itself.**
