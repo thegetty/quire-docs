@@ -530,3 +530,13 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
   width: 1em;
   margin-left: .25em;
 }
+/* Make these links the accent color */
+.quire-navbar a[target=_blank],
+.quire-menu__list > ul > .page-item a[target=_blank] {
+  color: var(--accent-color) !important;
+}
+/* Use the white arrow file on hover */
+.quire-navbar-controls__center .section-item a[target=_blank]:hover::after,
+.quire-navbar-controls__center .page-item a[target=_blank]:hover::after {
+  content: url('../img/icons/right-up-arrow--white.svg');
+}
