@@ -85,7 +85,7 @@ figure_list:
     src: /screenshots/quire-starter-content-change-1.png
     caption: "Changing the page `title`, `weight` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
   - id: "quire-starter-content-change-2"
-    src: /screenshots/quire-starter-content-change-2.gif
+    src: /screenshots/quire-starter-content-change-2.png
     caption: "The main text of a Quire publication is written in Markdown. Simple text formatting indicates structure. Like asterisks for italics (`*italics*`) and hashmarks for headings (`## Heading`). Figures are added with a “shortcode” that references a listing in your `figures.yml` file: `{{< q-figure id=\"1.1\" >}}`"
   - id: "quire-starter-styles-change"
     src: /screenshots/quire-starter-styles-change.png
