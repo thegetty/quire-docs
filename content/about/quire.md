@@ -22,7 +22,7 @@ Quire is designed to ensure that digital books and their content are not only as
 - [Learn how Quire works. ![Explore icon](/img/illustrations/undraw_in_progress_ql66.png)](/about/how-it-works/)
 </div>
 
-Currently under development for potential release as [open-source software](/about/open-source/), Quire uniquely builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating original and enduring digital publications.
+Currently under development for potential release as [open-source software](/about/open-source/), Quire uniquely builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating enduring and discoverable digital publications.
 
 <div class="feature-cards small-card">
 
