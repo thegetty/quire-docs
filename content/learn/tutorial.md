@@ -13,7 +13,7 @@ In the following sections, we’ll learn more about these interconnected compone
 
 ## 1. Working in a Command-Line Shell
 
-The first thing you’ll need is a command-line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs Quire is dependent on in order to run such as Pandoc to create the e-book files and Node.js to run javascript).
+The first thing you’ll need is a command-line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs required for Quire to function, such as Pandoc to create the e-book files and Node.js to run javascript).
 
 Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder (or press Command–Space Bar and type “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH.
 
@@ -77,7 +77,7 @@ Macs and PCs come with some simple text editors built in, but we recommend using
 - [Atom](https://atom.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-Once installed, open your text editor and locate and open the `my-project` directory you created in Step 3 above. You should see all of the directory’s contents listed.
+Once installed, open your text editor, navigate to File, and open the `my-project` directory you created in Step 3 above. You should see all of the directory’s contents listed.
 
 {{< q-figure id="text-editor" >}}
 
@@ -119,7 +119,7 @@ Let’s make some changes to the `about.md` file to make it the Preface in our d
 
 1. Change the `title` to `"Preface"`.
 2. Leave the `type` as `"page"`. [Other page types available](/guide/pages#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
-3. Change the `weight` of this page to `"2.5"`, which will order it after the `contents.md` page which has a `weight` of `"2"` and before the `intro.md` page which has a `weight` of `"3"`. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in order based on their filenames.
+3. Change the `weight` of this page to `"2.5"`, which will order it after the `contents.md` page which has a `weight` of `"2"` and before the `intro.md` page which has a `weight` of `"3"`. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in alphabetical order based on their filenames.
 4. Change the name of the file from `about.md` to `preface.md`. Do this by right clicking (or control clicking on a Mac) on the file in your text editor and selecting “Rename”. Note that this will also change the URL of the page.
 5. Page content goes below the YAML block. Delete the text that is there and copy-and-paste the following text as a test:
 *The quick brown fox jumps over the lazy dog.*
@@ -179,10 +179,10 @@ There are number of different ways to customize the look of your publication. So
 A background image can be added to most pages by indicating the image in the page YAML of that page.
 
 1. Open the `cover.md` file.
-2. Add the following line inside the page YAML.
+2. Remove "pattern-spiral-overlay.png" and update the YAML content to read:
 
 ```
-image: cover_bg.jpg
+image: figures/lange-house.jpg
 ```
 3. Save the file, and preview the results in the browser.
 

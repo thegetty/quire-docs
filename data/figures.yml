@@ -80,16 +80,16 @@ figure_list:
     caption: "When working on a Quire project in a text editor like Atom or Visual Studio Code you can see and access all your project files from the sidebar at the left."
   - id: "quire-starter-metadata-change"
     src: /screenshots/quire-starter-metadata-change.png
-    caption: "Basic publication information lives in the `publication.yml` file, and is used throughout the site. Here we see the title being used on the cover, in the top navigation bar and in the side navigation."
+    caption: "Basic publication information lives in the `publication.yml` file, and is used throughout the site. Here we see the title being used on the cover, in the PDF version of the publication, and in the side navigation."
   - id: "quire-starter-content-change-1"
     src: /screenshots/quire-starter-content-change-1.png
     caption: "Changing the page `title`, `weight` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
   - id: "quire-starter-content-change-2"
-    src: /screenshots/quire-starter-content-change-2.gif
-    caption: "The main text of a Quire publication is written in Markdown. Simple text formatting indicates structure. Like asterisks for italics (`*italics*`) and hashmarks for headings (`## Heading`). Figures are added with a “shortcode” that references a listing in your `figures.yml` file: `{{< q-figure id=\"1.1\" >}}`"
+    src: /screenshots/quire-starter-content-change-2.png
+    caption: "The main text of a Quire publication is written in Markdown. Simple text formatting indicates structure. Like asterisks for italics (`*italics*`) and hashmarks for headings (`## Heading`). Figures are added with a “shortcode” that references a listing in your `figures.yml` file: `{{< q-figure id=\"fig-1\" >}}`"
   - id: "quire-starter-styles-change"
     src: /screenshots/quire-starter-styles-change.png
-    caption: "A background image can be added to the cover by adding it to the page YAML of your `cover.md` page (`images: cover_bg.jpg`). Colors and other styles can be customized in the `variables.scss` file of your project’s theme."
+    caption: "A background image can be added to the cover by adding it to the page YAML of your `cover.md` page (`images: cover_2.jpg`). Colors and other styles can be customized in the `variables.scss` file of your project’s theme."
   - id: "command-line-drag-and-drop"
     src: /screenshots/command-line-drag-and-drop.gif
     caption: ""
