@@ -182,7 +182,7 @@ A background image can be added to most pages by indicating the image in the pag
 2. Remove "pattern-spiral-overlay.png" and update the YAML content to read:
 
 ```
-image: cover_2.jpg
+image: figures/lange-house.jpg
 ```
 3. Save the file, and preview the results in the browser.
 
