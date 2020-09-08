@@ -301,7 +301,8 @@ on the page and adjusts to different window widths */
 }
 
 /* Make main section headings stand out visually */
-.quire-menu .section-item > .list-header {
+.quire-menu .section-item > .list-header,
+.quire-menu__list > ul > .page-item {
   font-weight: bold;
 }
 
@@ -518,4 +519,14 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 .xsmall-image {
   width: 20%;
   height: 20%;
+}
+
+/* OFF SITE INDICATORS FOR MENU AND NAVIGATION
+============================================================================= */
+.section-item a[target=_blank]::after,
+.page-item a[target=_blank]::after {
+  content: url('../img/icons/right-up-arrow.svg');
+  display: inline-flex;
+  width: 1em;
+  margin-left: .25em;
 }
