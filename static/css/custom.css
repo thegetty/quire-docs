@@ -82,6 +82,24 @@
   color: white !important;
   background-color: var(--accent-color-dark);
 }
+/* Button-like links used for calls to action centered on page
+   div class="action-button-center" */
+.quire-page__content .container .content .action-button-center {
+  text-align: center;
+}
+.quire-page__content .container .content .action-button-center a {
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--accent-color);
+  color: white;
+  padding: .75rem 1.5rem;
+  margin: 1rem;
+  display: inline-block;
+}
+.quire-page__content .container .content .action-button-center a:hover {
+  color: white !important;
+  background-color: var(--accent-color-dark);
+}
 /* A two-column list, with <strong> initial word large and accent-colored
    div class="feature-list" */
 .quire-page__content .container .content .feature-list ul {
