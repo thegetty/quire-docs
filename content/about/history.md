@@ -65,7 +65,12 @@ Quire is invited to participate in the inaugural Open Publishing Fest. In the se
 
 {{< q-figure id="opf_2020" caption=" Recording of Open Publishing Fest 2020. Quire: Multiformat Publishing Solutions for Art Books and Beyond.">}}
 
+<div class="action-button-center">
+
+[**We invite you to become part of Quire's history. <br> Sign-up for beta access and join the Quire community today!**](/request-access/beta-access/)
+</div>
+
 <div class="feature-cards">
 
-- [We invite you to become part of Quire's history. <br> Sign-up for beta access and join the Quire community today! ![Explore icon](/img/illustrations/undraw_community_8nwl.png)](/request-access/beta-access/)
+- ![Explore icon](/img/illustrations/undraw_community_8nwl.png)
 </div>
