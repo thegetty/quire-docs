@@ -4,13 +4,13 @@ weight: 4200
 type: essay
 ---
 
-The [Quire CLI](https://github.com/gettypubs/quire-cli), or command-line interface, is the control for creating, previewing and outputting Quire projects. Quire CLI is typically run from Terminal on a Mac, and Git Bash (or its equivalent) on a PC. The following commands are available.
+The [Quire CLI](https://github.com/gettypubs/quire-cli), or command-line interface, is the control for creating, previewing and outputting Quire projects. Quire CLI is typically run from Terminal on a Mac and Git Bash (or its equivalent) on a PC. The following commands are available.
 
 {{< q-class "box tip" >}}
 - Run `quire --help` in your command-line shell for a full list of the Quire commands and options defined below.
 {{< /q-class >}}
 
-## Starting and Previewing Projects
+## Start and Preview Projects
 
 `quire new project-name`
 : Create a new Quire project named `project-name` in the current directory. The name can be anything, but shouldn’t contain spaces or special characters.
@@ -25,7 +25,7 @@ The [Quire CLI](https://github.com/gettypubs/quire-cli), or command-line interfa
 : Stop the preview from running. This can also be done by typing Control-C.
 
 
-## Outputting Files
+## Output Files
 
 `quire site`
 : Build the final web files for your publication into its `site` directory. These include all the pages, images, and styles necessary for your project, and can be hosted on any web server.
@@ -62,12 +62,12 @@ Outputs as: `static/ebooks/photography.epub`.
 Also for the PDF, EPUB, and MOBI commands, developers may  use the `--env` option to specify and environmental variable.
 
 
-## Customizing File Templates
+## Customize File Templates
 
 `quire template epub`
 : Download the built-in template for customization of the cover and title pages of the EPUB and MOBI files Quire outputs. `epub/template.xhtml` All other template customization (for the website and pdf/print versions) is done in the `theme` directory.
 
-## Getting Help
+## Get Help
 
 `quire -V` `quire --version`
 : Output the version number.

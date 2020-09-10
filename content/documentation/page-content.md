@@ -4,7 +4,7 @@ type: essay
 weight: 4700
 ---
 
-## Formatting Text Content with Markdown
+## Format Text Content with Markdown
 
 The main content of your page appears after the YAML block at the top ([*Page Types & Structure*](/guide/pages/)), and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and one set of asterisks wrapping around the text turns it *italic*.
 
@@ -17,7 +17,7 @@ type: essay
 weight: 206
 ---
 
-## Formatting Text Content with Markdown
+## Format Text Content with Markdown
 
 The main content of your page appears after the YAML block at
 the top ([*Page Types & Structure*](/guide/pages/)), and will be
@@ -30,7 +30,7 @@ wrapping text turns it *italic*.
 
 You can read all about Markdown syntax and how it is used in Quire in the [*Fundamentals: YAML & Markdown*](/guide/fundamentals/) chapter of this guide.
 
-## Using Shortcodes to Add Features
+## Use Shortcodes to Add Features
 
 Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain Markdown. While {{< q-glossary "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
 
@@ -65,7 +65,7 @@ The following shortcodes are currently available in Quire. You’ll find more ab
 - [`q-figure`](/guide/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
 - [`q-figure-group`](/guide/figure-images/): Like `q-figure`, but with handling for multiple images at once.
 
-## Applying Types of Linking
+## Apply Different Types of Links
 
 As seen in the example above, a link is created by combining the text of the link in brackets with the url of the link in parentheses: `[Link text](Link URL)` There are several types of linking that can be applied to text on your page. Stylization such as bolding, italics, underlining, and more can also be applied to linked text.
 
@@ -94,7 +94,7 @@ More info in our [about](/about/) page.
 
 There are several types of linking between features, text, or objects on a single page that can be included through the following Markdown formatting:
 
-#### Linking to Figures
+#### Links to Figures
 
 This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images*](/guide/figure-images/) chapter of this guide. They are proceeded by the # symbol when used as a link address.
 
@@ -103,7 +103,7 @@ This linking can be applied to a piece of text that when clicked upon will take 
 [fig. 1](#1.1)
 ```
 
-#### Linking to Other Kinds of Page Elements
+#### Links to Other Kinds of Page Elements
 
 An ID and the # symbol is also used for other kinds of elements on the same page. The IDs for these elements can be found using the following method:
 
@@ -118,7 +118,7 @@ An ID and the # symbol is also used for other kinds of elements on the same page
     See [heading 1](#heading-1).
     ```
 
-#### Linking to Elements on a Separate Page
+#### Links to Elements on a Separate Page
 
 Following the formula for internal links between pages, you can also specify an element on a separate page as a link destination by adding the # symbol and the element’s ID on to the end of a page link.
 

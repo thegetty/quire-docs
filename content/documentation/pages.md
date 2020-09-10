@@ -36,7 +36,7 @@ slug:
 
 For more details on this full list of possible attributes that Quire can use in page YAML, see the [Page YAML](/api-docs/yaml/#page) section of the Quire API docs.
 
-## Defining Page Types
+## Define Page Types
 
 ```yaml
 type:
@@ -76,7 +76,7 @@ type: entry
 class: landscape (default) | side-by-side
 ```
 
-## Putting Pages in the Right Order
+## Organize Pages in the Right Order
 
 ```yaml
 weight:
@@ -106,7 +106,7 @@ Numbering should be unique, and sequential whole numbers, but it can skip number
 - Add `class: page-one` to the page/chapter where you want page 1 to start for the PDF/Print output. This is often an Introduction or first essay rather than the cover, table of contents, or other frontmatter.
 {{< /q-class >}}
 
-## Creating Section Landing Pages
+## Create Section Landing Pages
 
 A Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. It is recommended (though not required) to designate one of the pages in each sub-directory section to be the section landing page. To do so, add `slug: .` to the page YAML block. The `slug` attribute overrides the default name to be used in the URL for the page, and the period `.` refers it back to the sub-directory name. So, if in your site `mypublication.com` you have sub-directory called `part-one` and in that a landing page called `landing-page.md`, instead of the URL being `mypublication.com/part-one/landing-page/`, it would be `mypublication.com/part-one/`. Here’s the YAML:
 
@@ -121,7 +121,7 @@ The `title` of your defined landing page is what will be used in the header of t
 
 However, the filename of the sub-directory itself is also used in your publication; for the online navigation bar, and in the running page footers of the PDF version. In these two places, Quire takes the sub-directory filename and humanizes it, which means to change hyphens into spaces and capitalize with title case. So, the sub-directory `part-one` becomes “Part One”, or `sculpture-of-the-renaissance` becomes “Sculpture of the Renaissance.”
 
-## Hiding/Showing Pages
+## Hide/Show Pages
 
 By default, every page you create will be included in all formats of your publication (online, PDF/print, and e-book). Every page will also automatically be listed in the publication’s menu and contents pages. However, this can be overridden by setting any of the following Page YAML attributes to `false`.
 
