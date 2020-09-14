@@ -23,7 +23,7 @@ There are many ways to contribute from adding to the code, submitting bug report
 
 Always check the **[documentation](https://quire/getty.edu/documentation)** first.
 
-Refer to the **[forum](#)** for support, to ask and answer questions, and for general information.
+Refer to the **[forum](/community/forum/)** for support, to ask and answer questions, and for general information.
 
 For bugs, please refer to **[GitHub Issues](https://github.com/gettypubs/quire/issues)**.
 
