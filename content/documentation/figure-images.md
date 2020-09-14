@@ -20,7 +20,7 @@ Quire does not require a specific image file format or size, but we have some re
 - Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use {{< q-glossary "Image Optimization" >}} software when possible, and consider the total number of images on a given page when choosing sizes.
 
 
-## Create a `figures.yml` File for Figure Image Metadata
+## Create a figures.yml File for Figure Image Metadata
 
 For most publications, or at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file which should be placed in your `data` folder. These then can be called from wherever you need them in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/api-docs/yaml/#figure), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
 
@@ -41,7 +41,7 @@ Also available are the attributes `caption`, `credit`, `media_id`, `media_type`,
 
 {{< /q-class >}}
 
-## Insert Figure Images with `q-figure` Shortcode
+## Insert Figure Images with q-figure Shortcode
 
 Assuming each YAML figure entry in the `figures.yml` file includes a unique `id` (with a value in quotes: "1.1" not 1.1), you can insert a figure in your publication with only the `id` attribute in the shortcode, and all of the other attributes defined in the YAML for that figure will be automatically included.
 
@@ -93,7 +93,7 @@ Depending on your {{< q-glossary "theme" >}}, by default, figures will appear at
 
 {{< /q-class >}}
 
-## Create and Style Figure Groups with `q-figure-group` Shortcode
+## Create and Style Figure Groups with q-figure-group Shortcode
 
 If your project uses a `figures.yml` file, you can also create a group of figures by using the `q-figure-group` shortcode and simply including multiple, comma-separated values in the `id` field.
 
