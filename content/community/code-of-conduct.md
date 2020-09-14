@@ -11,7 +11,7 @@ Version 1.0 (dated September 2, 2020)
 
 **All are welcome.** As an open-source community, Quire is committed to providing a safe, welcoming, transparent, and inclusive environment for all our community members and those wishing to become involved. We value diverse perspectives, as well as expertise and experience at all levels.
 
-Our Code of Conduct provides guidance to help foster friendly and respectful interactions and outlines the consequences for anyone found violating this code. Our Code of Conduct applies across all Quire related communication platforms including the GitHub Discussions forum, GitHub repositories, the Quire email list, and any private correspondence. It also applies to remote and in-person meetings, events, conferences, and any instances in which a community member represents Quire out in the world. We strive to maintain a positive, collaborative, and enriching experience for our community. To help us reach this goal, we ask that all community members adhere to the following guidelines for participation.
+Our Code of Conduct provides guidance to help foster friendly and respectful interactions and outlines the consequences for anyone found violating this code. Our Code of Conduct applies across all Quire-related communication platforms including the GitHub Discussions forum, GitHub repositories, the Quire email list, and any private correspondence. It also applies to remote and in-person meetings, events, conferences, and any instances in which a community member represents Quire out in the world. We strive to maintain a positive, collaborative, and enriching experience for our community. To help us reach this goal, we ask that all community members adhere to the following guidelines for participation.
 
 If you believe that someone is violating the Quire Code of Conduct, we ask that you please report this behavior immediately by emailing quire@getty.edu. For more information, please see our **Reporting Guidelines** below.
 
@@ -19,7 +19,7 @@ If you believe that someone is violating the Quire Code of Conduct, we ask that 
 
 - **We are friendly and patient.**
 
-- **We are welcoming**: We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
+- **We are welcoming**: We strive to be a community that welcomes and supports people of all backgrounds and identities. This includes, but is not limited to, members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
 
 - **We are considerate**: Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we’re an international community, so you might not be communicating in someone else’s primary language.
 
@@ -27,10 +27,10 @@ If you believe that someone is violating the Quire Code of Conduct, we ask that 
 
 - **We are careful in the words that we choose**: We are a community of professionals, and we conduct ourselves professionally. Be kind to others. Do not insult or put down other community members. Harassment and other exclusionary behavior aren’t acceptable.
 
-- **We try to understand why we disagree**: Disagreements, both social and technical, happen all the time. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of our community comes from its diversity. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
+- **We try to understand why we disagree**: Disagreements, both social and technical, happen all the time. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of our community comes from its diversity. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err, and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
 
-### ANTI-HARRASSMENT
+### ANTI-HARASSMENT
 
 The Quire community is dedicated to providing a harassment-free collaboration experience for everyone regardless of gender, sexual orientation, disability, physical appearance, body size, race, religion, faith, or anything else. We do not tolerate harassment of community members in any form. Sexual or discriminatory language and imagery is not appropriate at any time.
 

@@ -31,13 +31,13 @@ More TK
 
 ### Ground Rules
 
-Always be friendly and patient. Be welcoming, considerate, and respectful. Be careful with the words you choose. Try to understand why we disagree. Do not make offensive comments, insults, or jokes. Do not deliberately threaten or intimidate. Do not use sexually explicit or violent language or images. Harrassment will not be tolerated.  For more guidelines on appropriate behavior, please see our [Code of Conduct](https://quire/getty.edu/community/code-of-conduct).
+Always be friendly and patient. Be welcoming, considerate, and respectful. Be careful with the words you choose. Try to understand why we disagree. Do not make offensive comments, insults, or jokes. Do not deliberately threaten or intimidate. Do not use sexually explicit or violent language or images. Harassment will not be tolerated.  For more guidelines on appropriate behavior, please see our [Code of Conduct](https://quire/getty.edu/community/code-of-conduct).
 
 -----------
 
 ### Responsibilities (**Text below is placeholder text**)
 
-- Ensure cross-platform compatibility for every change that's accepted. Windows, Mac, Debian & Ubuntu Linux.
+- Ensure cross-platform compatibility for every change that is accepted. Windows, Mac, Debian & Ubuntu Linux.
 - Ensure that code that goes into core meets all requirements in this checklist: https://gist.github.com/audreyr/4feef90445b9680475f2
 - Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
 - Don't add any classes to the codebase unless absolutely needed. Err on the side of using functions.
