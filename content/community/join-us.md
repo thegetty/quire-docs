@@ -6,7 +6,7 @@ type: essay
 
 ## Welcome to the Quire Community!
 
-We invite you to join our diverse and vibrant community of scholars, publishers, museum professionals, developers, designers, and more, that are using Quire to create innovative digital publishing projects.
+We invite you to join our diverse and vibrant community of scholars, publishers, museum professionals, developers, designers, and more, who are using Quire to create innovative digital publishing projects.
 
 As an open-source community and ever-evolving initiative, our community members' participation, feedback, and contributions are what enable us to continue fine-tuning, developing, and spreading the word about Quire. We encourage you to get involved. No matter what level of experience you have, we welcome all contributions, big and small. We couldn't do it without you!
 
@@ -22,7 +22,7 @@ As an open-source community and ever-evolving initiative, our community members'
 [Become a User](/request-access/beta-access/)
 </div>
 
-We welcome users at all levels of technical expertise and publishing experience.  Sign up for free beta access and get started with Quire today!
+We welcome users at all levels of technical expertise and publishing experience. Sign up for free beta access and get started with Quire today!
 
 <div class="feature-cards xsmall-card">
 
@@ -35,7 +35,7 @@ We welcome users at all levels of technical expertise and publishing experience.
 
 </div>
 
-Here you will find community-based support to help you navigate the ins-and-outs of Quire. Ask and answer questions, share ideas, raise issues, collaborate, and assist your fellow community members.
+Here you will find community-based support to help you navigate the ins and outs of Quire. Ask and answer questions, share ideas, raise issues, collaborate, and assist your fellow community members.
 
 <div class="feature-cards xsmall-card">
 
@@ -74,7 +74,7 @@ We hope to see you at future Quire workshops and events. We'd also love to know 
 [Submit Your Work](#)
 </div>
 
-We love celebrating Quire accomplishments. Send us your finished Quire publications and we will add them to our **[User Showcase](community/user-showcase/)** and feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
+We love celebrating Quire accomplishments. Send us your finished Quire publications and we will add them to our **[User Showcase](/community/user-showcase/)** and feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
 
 Please email quire@getty.edu to learn more.
 
@@ -108,7 +108,7 @@ Quire on GitHub:
 [Submit a Bug](https://github.com/gettypubs/quire/issues)
 </div>
 
-Bugs are sneaky, and we need your help spotting them! If you come across something broken or just not looking right, please add it to our bug tracker, and we'll work on getting the issue resolved ASAP.
+Bugs are sneaky, and we need your help spotting them! If you come across something broken or that just doesn't look right, please add it to our bug tracker and we'll work on getting the issue resolved ASAP.
 
 Please remember to label your issue and include the following information when submitting a bug:
 

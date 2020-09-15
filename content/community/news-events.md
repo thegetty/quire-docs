@@ -36,7 +36,7 @@ Wishing all our Quire users a safe and happy holiday!
 
 **Monday, July 20**
 
-11:00am-12:00pm CST
+11:00am–12:00pm CST
 
 Think Digital
 
@@ -44,7 +44,7 @@ Part 1: Conceptualizing
 
 **Tuesday, July 28**
 
-11:00am-12:00pm CST
+11:00am–12:00pm CST
 
 Think Digital
 
@@ -57,4 +57,4 @@ Part 2: Implementing
 
 **Thursday, September 1**
 
-10:00am - 2:00pm PST
+10:00am–2:00pm PST
