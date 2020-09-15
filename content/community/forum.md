@@ -8,9 +8,9 @@ Welcome to the Quire forum! Here you will find community-based support to help y
 
 Examples of topics you will find covered in our forums include: **support, tips & tricks, announcements, show-and-tell, development, customization, installation, deployment, and more.** We ask that you do not utilize the forum for bug reports. Those must be submitted via **[GitHub Issues](https://github.com/gettypubs/quire/issues)**.
 
-<div class="action-button">
+<div class="action-button-center">
 
-[Join the Discussion](https://github.com/gettypubs/quire/discussions)
+[**Join the Discussion**](https://github.com/gettypubs/quire/discussions)
 
 </div>
 

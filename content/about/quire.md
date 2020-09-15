@@ -10,23 +10,38 @@ Quire offers an elegant and affordable publishing solution.  No matter the size 
 
 Quire is also flexible and feature-rich. It can be used in its most basic configuration or can be heavily customized. It adapts to an endless number of use cases, from collection catalogues and research projects to online exhibitions, reports, and journal articles.
 
+<div class="action-button-center">
+
+[**See What Our Community Is Creating**](/community/user-showcase/)
+</div>
+
 <div class="feature-cards small-card">
 
-- [See what our community is creating. ![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)](/community/user-showcase/)
+- ![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)
 </div>
 
 Quire is designed to ensure that digital books and their content are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables robust preservation and distribution of works in a simplified and accessible format.
 
+<div class="action-button-center">
+
+[**Learn How Quire Works**](/about/how-it-works/)
+</div>
+
 <div class="feature-cards small-card">
 
-- [Learn how Quire works. ![Explore icon](/img/illustrations/undraw_in_progress_ql66.png)](/about/how-it-works/)
+- ![Explore icon](/img/illustrations/undraw_in_progress_ql66.png)
 </div>
 
 Currently under development for potential release as [open-source software](/about/open-source/), Quire uniquely builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating enduring and discoverable digital publications.
 
+<div class="action-button-center">
+
+[**Join the Quire Community Today**](/community/join-us/)
+</div>
+
 <div class="feature-cards small-card">
 
-- [Join the Quire community today! ![Explore icon](/img/illustrations/undraw_celebration_0jvk.png)](/community/get-involved/)
+- ![Explore icon](/img/illustrations/undraw_celebration_0jvk.png)
 </div>
 
 ### Features & Functionality
@@ -55,9 +70,14 @@ Currently under development for potential release as [open-source software](/abo
 
 </div>
 
+<div class="action-button-center">
+
+[**Learn About New Features Coming Soon**](/about/roadmap/)
+</div>
+
 <div class="feature-cards small-card">
 
-- [Learn about new features coming soon ![Explore icon](/img/illustrations/undraw_moving_forward_lhhd.png)](/about/roadmap/)
+- ![Explore icon](/img/illustrations/undraw_moving_forward_lhhd.png)
 </div>
 
 ### Is Quire Right for You?
@@ -74,7 +94,12 @@ Here are some things to consider:
 - We have a vibrant and diverse community of users that are here to help. [Visit our User Forum.](/community/forum)
 - We are moving Quire towards an open-source, community-supported model, and we are currently following open-source software standards. Our goal is to launch an officially open-source Quire by 2022. [Learn more about the benefits of open-source development.](/about/open-source)
 
+<div class="action-button-center">
+
+[**Get Started Now!**](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
+</div>
+
 <div class="feature-cards">
 
-- [Get Started! ![Explore icon](/img/illustrations/undraw_web_developer_p3e5.png)](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
+- ![Explore icon](/img/illustrations/undraw_web_developer_p3e5.png)
 </div>
