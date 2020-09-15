@@ -20,7 +20,7 @@ slug: .
 
 </div>
 
-{{< q-figure-group id="alamo_keeper, artists_studios_paris, bending_lines, fault_lines, french_paintings, in_plain_sight, state_of_convergence, tilt_west" grid="8" class="slider slider-large" >}}
+{{< q-figure-group id="artists_studios_paris, bending_lines, fault_lines, state_of_convergence, thomas_rife, tilt_west, heritage_management, ancient_ambers, cva" grid="11" class="slider slider-large" >}}
 
 <div class="action-button">
 
