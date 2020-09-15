@@ -1,12 +1,12 @@
 ---
-title: Fonts Customization
+title: Font Customization
 weight: 5500
 type: essay
 ---
 
 Typography is an important element of style in your Quire publication. Quire allows different levels of font customization, from using the already embedded open license fonts in the `quire-starter-theme` to adding new external fonts.
 
-## Customizing Fonts
+## Customize Fonts
 
 The `quire-starter-theme` includes three embedded, open license fonts: ["Merriweather"](https://fonts.google.com/specimen/Merriweather), ["Lato"](https://fonts.google.com/specimen/Lato), and ["Aleo"](http://www.fontfabric.com/aleo-free-font/). You can adjust which ones are used where in the "variables" file of your {{< q-glossary "theme" >}}, `source/css/variables.scss`:
 
@@ -26,7 +26,7 @@ The `$serif`, `$sans-serif` and  `$slab-serif` variables tell your publication w
 
 The variables `$family-primary` and `$family-secondary` tell your publication where to use the fonts you specify with the above variables. If the `$family-primary` font of your publication is `$serif`, "Merriweather" (and its fallback options) will be used in the body text of the publication pages.
 
-## Adding a New Font
+## Add a New Font
 
 {{< q-class "box warning" >}}
 
@@ -38,7 +38,7 @@ For open license fonts, [Google Fonts](https://fonts.google.com/) is a great sou
 
 The steps to adding new fonts to your publication are:
 
-### 1. Preparing Your Font Files and Adding Them to Your Project
+### 1. Prepare Your Font Files and Add Them to Your Project
 
 It’s recommended to include your font files in multiple file formats in order to increase browser compatibility. Ideally, you will have each of your fonts in the following formats: `.eot`, `.woff2`, `.woff`, and `.ttf`. If this is not the case, you can use a free webfont generator like the one from Font Squirrel to produce these various formats from a single source.
 
@@ -68,7 +68,7 @@ You will continue to have the fonts available in your local copy of your project
 
 When you ultimately host the final site on a web server, the fonts will be included in the built files and will need to be included in the package on the web server. Files hosted this way are not readibly accessible to non-technical users, but are still public. For another layer of protection, if it’s of a concern, font files could be assigned more generic names (ie., `f1-bld.ttf` instead of `cooper-hewitt-bold.ttf`). For complete protection of licensed/proprietary font files, other solutions should be sought.
 
-### 2. Adding Font Information to Your Stylesheets
+### 2. Add Font Information to Your Stylesheets
 
 Open the file `source/css/fonts.scss`. Each font in your font folder should have its own `@font-face` entry as the examples in this file demonstrate.
 
@@ -105,7 +105,7 @@ The individual weights and styles are instead specified with the `font-weight` a
 
 - The `font-style` will be either `normal` or `italic`.
 
-### 3. Using Your New Font
+### 3. Use Your New Font
 
 With the font files included in the `source/fonts` folder, and all the matching `@font-face` entries saved to the `source/css/fonts.scss` file, you can now use your font anywhere in your site CSS with `font-family`.
 
@@ -115,7 +115,7 @@ h1 {
 }
 ```
 
-Typically, you’ll want to change fonts across the project. For instance making all the main body copy a new font, or all the headings. This can be done in the `source/css/variables.scss` file that we describe in the [Customizing fonts section](#customizing-fonts):
+Typically, you’ll want to change fonts across the project. For instance making all the main body copy a new font, or all the headings. This can be done in the `source/css/variables.scss` file that we describe in the [Customize fonts section](#customizing-fonts):
 
 To replace all `$sans-serif` uses with a new font:
 
@@ -129,4 +129,4 @@ Or to leave the existing `$sans-serif` and just make all the primary font be our
 $family-primary: "Cooper Hewitt", Helvetica, sans-serif;
 ```
 
-The rules about fallback fonts described in the [Customizing fonts section](#customizing-fonts) above also apply to the new fonts.
+The rules about fallback fonts described in the [Customize fonts section](#customizing-fonts) above also apply to the new fonts.

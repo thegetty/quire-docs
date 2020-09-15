@@ -250,7 +250,7 @@ If version number is returned, quire-cli was installed correctly. You can now le
 cd ~
 ```
 
-## Updating the Quire CLI
+## Update the Quire CLI
 
 As we develop, you may also want/need to update your Quire CLI. The CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI, any new projects you start will have the corresponding older version of the theme.
 
@@ -291,7 +291,7 @@ You now have the latest Quire CLI and any new projects you start will also have 
 
 You may in some cases see errors or issues when running Quire commands with a newer version of the CLI in older projects. These can be fixed manually, or, you can also re-install [your original version of the CLI](https://github.com/gettypubs/quire-cli/releases) to run those older projects if necessary.
 
-## Updating the Theme
+## Update the Theme
 
 To update the version of a theme you have:
 
@@ -304,11 +304,11 @@ To update the version of a theme you have:
 - Be sure to save any [customizations you’ve made](/guide/styles-customization) inside your theme. (Typically style changes to the `variables.scss` file.) You’ll have to copy these over into the new theme manually once it is installed.
 {{< /q-class >}}
 
-## Installing a New Theme
+## Install a New Theme
 
 TK
 
-## Uninstalling Quire
+## Uninstall Quire
 
 To uninstall Quire:
 
@@ -328,7 +328,7 @@ To uninstall Quire:
 
 **Downloading the Quire CLI to your computer from GitHub through the Terminal**
 
-If you have {{< q-glossary "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly.
+If you have {{< q-glossary "two-factor authentication" >}} set up, you may need to create a personal access token in GitHub to get Quire CLI to download properly.
 
 Follow these steps:
 
@@ -366,7 +366,7 @@ You will be prompted to enter a password and may receive the following error, *O
 
 Please note, on some computers you may not need to run this command.
 
-Try continuing with the installation process to see if everything is running smoothly:
+Try to continue with the installation process to see if everything is running smoothly:
 
   ```text
   cd quire-cli
@@ -375,7 +375,7 @@ Try continuing with the installation process to see if everything is running smo
 
 If this works, then you can ignore the *sudo chown* command.
 
-When when you have finished these steps, type the following command to confirm proper installation:
+When you have finished these steps, type the following command to confirm proper installation:
 
   ```text
   quire --version

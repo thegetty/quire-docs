@@ -6,7 +6,7 @@ type: essay
 
 In-text citations and bibliographies are all available in Quire. Designed to meet scholarly needs and multiple citation styles, they are easy to implement in your publications. While bibliographic references are formatted in YAML and stored in a YAML file (you can consult our [YAML syntax fundamentals](/guide/fundamentals/) for more information), citation and bibliography shortcodes are used to integrate the references in your publication.
 
-## Capturing Bibliographic Information in YAML
+## Capture Bibliographic Information in YAML
 
 Bibliographic references for your publication can be listed in a `references.yml` file in the `data` directory (along with the `publication.yml`, `figures.yml` and `objects.yml` files).
 
@@ -22,7 +22,7 @@ entries:
 
 These references can then be called individually from within text using the `q-cite` shortcode, or in their entirety as a generated bibliography using the `q-bibliography` shortcode. Both of which are detailed below.
 
-## Adding Inline Text Citations
+## Add Inline Text Citations
 
 The `q-cite` shortcode adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which is output as a page-level bibliography, as explained [below](#displaying-a-bibliography).
 
@@ -53,7 +53,7 @@ The text element between the author date reference and the page can be changed w
 The `q-cite` shortcode can be used anywhere in your Markdown text, including within footnotes.
 
 
-## Displaying a Bibliography
+## Display a Bibliography
 
 Pages in your publication will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode. However, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yml` file, you can use the `q-bibliography` shortcode. The resulting bibliography will be output in the order in which it appears in the references file.
 
@@ -70,7 +70,7 @@ This shortcode accepts an optional `sort` value, which will sort the list by wha
 {{</* q-bibliography sort="short" */>}}
 ```
 
-You may in some cases find that the system’s default sort method is sub-optimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key like `"sort_as"` could be added to all entries in the `references.yml` file for fine-grained control.
+You may in some cases find that the system’s default sort method is suboptimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key like `"sort_as"` could be added to all entries in the `references.yml` file for fine-grained control.
 
 ```yaml
 entries:
@@ -83,6 +83,6 @@ entries:
 - If adding a custom sort key, it would need to be added to *all* entries, not just the one that need to be sorted differently than the default.
 {{< /q-class >}}
 
-### Displaying the Short Reference in Bibliographies
+### Display the Short Reference in Bibliographies
 
-Bibliographies displayed automatically at the bottom of pages, and those generated with the `q-bibliography` shortcode, can be just a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.
+Bibliographies displayed automatically at the bottom of pages, and those generated with the `q-bibliography` shortcode, can just be a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.
