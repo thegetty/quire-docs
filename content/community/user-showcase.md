@@ -16,4 +16,4 @@ Quire is used both internally at Getty and externally by scholars, publishers, c
 [Submit publication to be featured](#)
 </div>
 
-{{< q-figure-group grid=2 id="alamo_keeper, artists_studios_paris, bending_lines, fault_lines, french_paintings, in_plain_sight, state_of_convergence, tilt_west" >}}
+{{< q-figure-group grid=2 id="thomas_rife, alcohols_empire, ancient_ambers, artists_studios_paris, bending_lines, cva, fault_lines, mozoomdar_at_sea, in_plain_sight, silk_poems, state_of_convergence, tilt_west,  tour_toolkit, heritage_management" >}}
