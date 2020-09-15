@@ -174,59 +174,74 @@ figure_list:
     caption: "In static-site publishing, the CMS is just software and a folder of files on your, the publisher’s, computer that are used to build the site."
 
   - id: "thomas_rife"
-    src: /screenshots/thomas_rife.png
+    src: /screenshots/_thomas_rife.png
     caption: "**Family history**"
     full_caption: "*The Alamo Keeper: Thomas C. Rife* , by Philip Mullins and George Mullins. Austin Texas: Self-published, 2020."
 
   - id: "artists_studios_paris"
-    src: /screenshots/artists_studios_paris.png
+    src: /screenshots/_artists_studios_paris.png
     caption: "**Journal article** | Journal18"
     full_caption: "This article was published in *Journal18: a journal of eighteenth-century art and culture*, Issue 5: *Coordinates: Digital Mapping and 18th-Century Visual, Material, and Built Cultures* (Spring 2018), co-edited by Nancy Um and Carrie Anderson."
 
   - id: "bending_lines"
-    src: /screenshots/bending_lines.png
+    src: /screenshots/_bending_lines.png
     caption: "**Online exhibition** | Leventhal Map & Education Center, Boston Public Library"
     full_caption: "*Bending Lines: Maps and Data from Distortion to Deception.* Boston: Leventhal Map & Education Center at the Boston Public Library, 2020."
 
   - id: "fault_lines"
-    src: /screenshots/fault_lines.png
+    src: /screenshots/_fault_lines.png
     caption: "**Senior thesis show** | Mills College Art Museum"
     full_caption: "*Fault Lines: 2020 Senior Thesis*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir. Oakland, CA: Mills College Art Museum, 2020."
 
   - id: "in_plain_sight"
-    src: /screenshots/in_plain_sight.png
+    src: /screenshots/_in_plain_sight.png
     caption: "**Exhibition catalogue** | Mills College Art Museum"
     full_caption: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor. Oakland: Mills College Art Museum, 2019."
 
   - id: "state_of_convergence"
-    src: /screenshots/state_of_convergence.png
+    src: /screenshots/_state_of_convergence.png
     caption: "**Exhibition catalogue** | Mills College Art Museum"
     full_caption: "*State of Convergence*, Oakland: Mills College Art Museum, 2020."
 
   - id: "tilt_west"
-    src: /screenshots/tilt_west.png
+    src: /screenshots/_tilt_west.png
     caption: "**Journal** | Tilt West ([view](http://journal.tiltwest.org/vol1/))"
     full_caption: "“Art and Language.” In *Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson. Denver: Tilt West, 2020."
 
   - id: "silk_poems"
-    src: /screenshots/silk_poems.png
+    src: /screenshots/_silk_poems.png
     caption: "**Exhibition catalogue** | The University of Hong Kong Museum and Art Gallery"
     full_caption: "*Silk Poems: Jen Bervin*, by Jen Bervin, The University Museum and Art Gallery, The University of Hong Kong, 2019."
 
   - id: "ancient_ambers"
-    src: /screenshots/ancient_ambers.png
+    src: /screenshots/_ancient_ambers.png
     caption: "**Collection catalogue** | Getty Publications"
     full_caption: "*Ancient Carved Ambers in the J. Paul Getty Museum*, J. Paul Getty Museum."
 
   - id: "cva"
-    src: /screenshots/cva.png
+    src: /screenshots/_cva.png
     caption: "**Corpus Vasorum Antiquorum** | Getty Publications"
     full_caption: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis, J. Paul Getty Museum, 2019."
 
   - id: "heritage_management"
-    src: /screenshots/heritage_management.png
+    src: /screenshots/_heritage_management.png
     caption: "**Research proceedings** | Getty Publications"
     full_caption: "Values in Heritage Management: Emerging Approaches and Research Directions, by Erica Avrami, et al, The Getty Conservation Institute, 2019."
+
+  - id: "tour_toolkit"
+    src: /screenshots/_tour_toolkit.png
+    caption: "**Informational Pamphlet** | Minneapolis Institute of Art"
+    full_caption: "*Tour Toolkit: Developing an Inclusive Tour*, by Minneapolis Institue of Art, 2019."
+
+  - id: "alcohols_empire"
+    src: /screenshots/_alcohols_empire.png
+    caption: "**Online Exhibition** | Minneapolis Institute of Art"
+    full_caption: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*. Minneapolis Institute of Art, 2019."
+
+  - id: "mozoomdar_at_sea"
+    src: /screenshots/_mozoomdar_at_sea.png
+    caption: "**Student Research Project**"
+    full_caption: "*Mozoomdar at Sea*, by Nick Tackes, 2018."
 
   - id: "quire_demo"
     src: /screenshots/quire_demo.png
