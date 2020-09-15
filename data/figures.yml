@@ -185,7 +185,7 @@ figure_list:
 
   - id: "bending_lines"
     src: /screenshots/bending_lines.png
-    caption: "**Online exhibition** | Leventhal Map & Education Center, Boston Publica Library"
+    caption: "**Online exhibition** | Leventhal Map & Education Center, Boston Public Library"
     full_caption: "*Bending Lines: Maps and Data from Distortion to Deception.* Boston: Leventhal Map & Education Center at the Boston Public Library, 2020."
 
   - id: "fault_lines"
