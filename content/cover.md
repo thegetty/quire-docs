@@ -10,7 +10,7 @@ slug: .
 
 <div class="header-quote">
 
-# Create scholarly, visually rich <br />digital books that last <span class="sub-head">Online, in print, and in ebook</span>
+# Create scholarly, visually rich <br />digital books that last <span class="sub-head">Online, Print, E-book</span>
 
 <div class="action-button">
 
