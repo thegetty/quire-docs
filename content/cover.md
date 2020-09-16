@@ -14,7 +14,7 @@ slug: .
 
 <div class="action-button">
 
-[Sign Up for Free Access](/request-access/beta-access/)
+[Sign Up for Free Access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
 
 </div>
 
@@ -50,11 +50,11 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 
 <div class="feature-list">
 
-- <span class="checkmark">✓</span> Outputs multiple formats of the publication (web, ebook, PDF, print-on-demand)
-- <span class="checkmark">✓</span> Keeps source content in non-specialized plain text to ensure reusability
+- <span class="checkmark">✓</span> Outputs publications in multiple formats (web, ebook, PDF, print-on-demand)
+- <span class="checkmark">✓</span> Keeps source content in nonspecialized plain text to ensure reusability
 - <span class="checkmark">✓</span> Supports visually rich scholarship in the tradition of print publishing
 - <span class="checkmark">✓</span> Allows for a wide range of possible custom features and styles
-- <span class="checkmark">✓</span> Persists without the need for ongoing maintenance or updating once published
+- <span class="checkmark">✓</span> Persists without ongoing maintenance or updates once published
 - <span class="checkmark">✓</span> Empowers users at any skill level to create dynamic feature-rich digital publications
 
 <div class="action-button">
@@ -81,12 +81,12 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 - **Richly Featured & Interactive**  Add images, videos, audio clips, maps, and zooming features
 - **Flexible and Customizable** Designed to be adaptable to your unique content
 - **Discoverable** Increase visibility by publishing as PDF, ebook, website, or print-on-demand
-- **Empowering** Can be used by anyone from non-technical content creators to developers
+- **Empowering** Can be used by anyone from nontechnical content creators to developers
 - **Booklike** Built-in understanding of high-quality scholarly publishing
 - **Beautiful** Optimized for visual imagery with a clean, modern design
 - **Accessible** Logical reading over, alt texts, language codes, semantic section elements, and more
 - **Open-Source** Adheres to open-source standards with goal to officially launch as open source in 2022
-- **Sustainable** Based around plain text files so no need to worry about your publication going obsolete
+- **Sustainable** Based around plain text files, so no need to worry about your publication going obsolete
 
 </div>
 
@@ -94,7 +94,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 <div class="action-button">
 
-[Try It for Yourself](/request-access/beta-access/)
+[Try It for Yourself](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
 
 </div>
 
@@ -112,7 +112,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 - **Customizable Styles & Fonts**
 - **Figure Images & Image Groups**
 - **Zooming Images & Maps**
-- **IIIF Compatible**
+- **IIIF Compatibility**
 - **Video & Audio Embeds**
 - **Dynamic Navigation**  
 - **Full-text Search**
@@ -128,7 +128,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 ## The Quire Community
 
- Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions providing vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators to developers. <br>
+ Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators to developers. <br>
  All are welcome.
 
  <div class="action-button">
@@ -157,7 +157,7 @@ For news, updates, and events be sure to sign up for our [mailing list](#).
 
 <div class="action-button">
 
-[Sign Up for Free Access](/request-access/beta-access/)
+[Sign Up for Free Access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
 
 </div>
 
