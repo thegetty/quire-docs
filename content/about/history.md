@@ -31,7 +31,7 @@ Getty Publications editor, Ruth Evans Lane, writes an article for Getty's blog, 
 
 **2017**
 
-OSCI concludes. While the program transformed the digital publishing landscape for museums, notable challenges remained, particularly around the discoverability, longevity, and objectness of digital catalogues. Read the [OSCI Final Report](https://www.getty.edu/publications/osci-report/remaining-challenges/) to learn more about the participants' conclusions.
+OSCI concludes. While the program transformed the digital publishing landscape for museums, notable challenges remained, particularly around the discoverability and longevity of digital catalogues. Read the [OSCI Final Report](https://www.getty.edu/publications/osci-report/remaining-challenges/) to learn more about the participants' conclusions.
 
 Greg Albers and, former Getty developer, Eric Gardner, begin work on an early version of Quire with the goal of creating a tool that is not only beautiful and booklike, but also affordable, flexible, accessible, discoverable, and enduring.
 
