@@ -19,7 +19,7 @@ As an open-source community and ever-evolving initiative, our community members'
 
 <div class="action-button">
 
-[Become a User](/request-access/beta-access/)
+[Become a User](https://forms.gle/m1fgZu5BHKhddMrW7)
 </div>
 
 We welcome users at all levels of technical expertise and publishing experience. Sign up for free beta access and get started with Quire today!
