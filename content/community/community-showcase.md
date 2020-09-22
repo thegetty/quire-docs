@@ -1,5 +1,5 @@
 ---
-title: User Showcase
+title: Community Showcase
 weight: 2400
 type: essay
 ---

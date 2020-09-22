@@ -74,7 +74,7 @@ We hope to see you at future Quire workshops and events. We'd also love to know 
 [Submit Your Work](#)
 </div>
 
-We love celebrating Quire accomplishments. Send us your finished Quire publications and we will add them to our **[User Showcase](/community/user-showcase/)** and feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
+We love celebrating Quire accomplishments. Send us your finished Quire publications and we will add them to our **[Community Showcase](/community/community-showcase/)** and feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
 
 Please email quire@getty.edu to learn more.
 
