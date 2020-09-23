@@ -4,9 +4,9 @@ weight: 5300
 type: essay
 ---
 
-Quire is designed to credit and add contributors to publications in a flexible way. Contributors data is stored in the `publication.yml` file of your project or in the YAML block of individual pages. The `q-contributor` shortcode offers multiple options to display contributors data in your publication.
+Quire is designed to credit and add contributors to publications in a flexible way. Contributors' data is stored in the `publication.yml` file of your project or in the YAML block of individual pages. The `q-contributor` shortcode offers multiple options to display contributors data in your publication.
 
-## Adding Contributors to Your Project
+## Add Contributors to Your Project
 
 Contributors can be listed under `contributor` in your publication.yml file, or for contributors specific to a page in your project, in the YAML block at the top of that page.
 
@@ -26,11 +26,11 @@ At a minimum, each contributor must have a `first_name` and `last_name`, or just
   bio:
 ```
 
-## Displaying Contributors on Your Cover
+## Display Contributors on Your Cover
 
 Any contributor listed in your publication.yml file that has a `type: primary` will be considered a main author for your project and will be listed on the cover page, in the site menu, and in the metadata included in the project code. For publications with more than one author, names will be listed in the order they appear in the publication.yml file.
 
-Sometimes, rather than a plain list, you may want your contributors listed in a particular way. Such as, “Edited by Author Name and Author Name”. In these cases, you can add you custom text in the publication.yml file under `contributor_as_it_appears` which can also take Markdown and HTML tags as needed.
+Sometimes, rather than a plain list, you may want your contributors listed in a particular way. Such as, “Edited by Author Name and Author Name”. In these cases, you can add your custom text in the publication.yml file under `contributor_as_it_appears` which can also take Markdown and HTML tags as needed.
 
 ```yaml
 contributor_as_it_appears: as told by Beyoncé, Kelly Rowland,
@@ -42,7 +42,7 @@ contributor_as_it_appears: as told by Beyoncé, Kelly Rowland,
 
 While the `contributor_as_it_appears` value will override any contributor information otherwise listed, it is still recommended that you list the individual authors under the `contributor` area in your YAML, as this will be used as metadata for your book and will aid search engines and social media sites in discovering and listing your site.
 
-## Displaying Contributors on Individual Pages
+## Display Contributors on Individual Pages
 
 Individual pages in your publication can have specific authors. Add them to the page YAML either with their names and other information, or by using an `id` that references a corresponding listing in your publication.yml file.
 
@@ -105,13 +105,13 @@ The `"range"` value determines which contributors will be included in the list. 
 |`page` | Only the contributors listed for the page the shortcode appears on. |
 | `all` | All contributors listed in the publication, whether listed on individual pages or in the publication.yml file. |
 
-You can also use any contributor `type` you define. So if you give a contributor a `type: primary` (such as for your main publication authors as discussed in the [“Displaying Contributors on Your Cover”](#displaying-contributors-on-your-cover)) than a shortcode using `range="primary"` will list any of your project’s primary contributors.
+You can also use any contributor `type` you define. So if you give a contributor a `type: primary` (such as for your main publication authors, as discussed in the [“Displaying Contributors on Your Cover”](#displaying-contributors-on-your-cover)), then a shortcode using `range="primary"` will list any of your project’s primary contributors.
 
 The `"format"` value determines what information will be listed for each contributor in the `"range"`, and how it will be formatted. Possible `"format"` values are:
 
 | Value | Description |
 | --- | --- |
-|`initials` | Looks for the capital letters in a contributor first and last name and concatenates them together. Jane Pauley, becomes J.P.; Ralph Waldo Emerson becomes R.W.E. |
+|`initials` | Looks for the capital letters in a contributor first and last name and combines them together. Jane Pauley becomes J.P.; Ralph Waldo Emerson becomes R.W.E. |
 | `name` | Just the name. |
 | `name-title` | The name and, when available, the title and affiliation; on a single line |
 | `name-title-block` | The name and, when available, the title and affiliation; broken onto separate lines. |
@@ -135,19 +135,19 @@ The `"align"` value will align the text. If no value is given, text alignment wi
 
 See the [`q-contributor` shortcode reference](/api-docs/shortcodes#q-contributor) for details on each of the standard contributor attributes.
 
-#### Sorting Contributor Lists
+#### Sort Contributor Lists
 
 Using the shortcode, contributors will be listed alphabetically. Either by `last_name` `first_name` if given, or `full_name`. You can specify a `file_as` value for contributors to override the default sorting.
 
-If you wanted, for example, a list of essay contributors ordered in the way they are ordered in the page YAML block, you could assign a numeric `file_as` value to each (1, 2, 3 etc.). Note though that this `file_as` override will cary over to other uses of the shortcode. For example, a complete list of contributors at the end of a volume of collected papers.
+If you wanted, for example, a list of essay contributors ordered in the way they are ordered in the page YAML block, you could assign a numeric `file_as` value to each (1, 2, 3 etc.). Note though that this `file_as` override will carry over to other uses of the shortcode. For example, a complete list of contributors at the end of a volume of collected papers.
 
 {{< q-class "box warning" >}}
 
-- Contributors with the same exact name will override each other and only one will appear, but using a `file_as` value would fix this. For example, if there are two Jane Smiths, assigning a `file_as` value of "Smith, Jane 1" to one and "Smith, Jane 2" will sort them in that order, but their names would still be listed as Jane Smith.
+- Contributors with the same name will override each other and only one will appear, but using a `file_as` value would fix this. For example, if there are two Jane Smiths, assigning a `file_as` value of "Smith, Jane 1" to one and "Smith, Jane 2" will sort them in that order, but their names would still be listed as Jane Smith.
 
 {{< /q-class >}}
 
-## Including Contributors for Search Engines
+## Include Contributors for Search Engines
 
 Contributor information is also embedded in Quire projects in a way that is optimized for search engine discovery. Here are a few tips to take advantage of this feature:
 

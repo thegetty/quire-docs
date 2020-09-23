@@ -6,9 +6,9 @@
 // To avoid errors, variables names should not be changed or deleted, and be
 // sure to leave the colons (:) and semi-colons (;) in place.
 
-$accent-color: #3273dc;
+$accent-color: #1a47b8;
 $content-background-color: null; // main text area background color
-$secondary-background-color: null; // only for modern theme
+$secondary-background-color: #cff0f7; // only for modern theme
 
 // Declare the theme: modern/classic
 $theme: modern;
@@ -39,7 +39,7 @@ $quire-cover-text-scale: 1; // use decimal numbers such as .8 or 1.3
 
 // Menu colors
 // -----------------------------------------------------------------------------
-$quire-menu-color: #d0dbde;
+$quire-menu-color: #a3e2f0;
 $quire-menu-text-color: $off-black;
 
 // Image viewer colors (pop-up figure viewer & entry page viewer)

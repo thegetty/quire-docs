@@ -1,10 +1,10 @@
 ---
-title: Getting Started
+title: Get Started
 type: essay
 weight: 4100
 ---
 
-## Starting a New Project
+## Start a New Project
 
 Now that you have [installed Quire](/documentation/install-uninstall/) its time to get started on your first publication. To create a new project you will be running the `quire new` command. You can learn more about various commands in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Open your {{< q-glossary "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
 
@@ -16,7 +16,7 @@ The process may take a minute as Quire installs the starter kit, configures the 
 
 The project is ready when you see the message, “Theme and dependencies successfully installed.”
 
-## Copying an Existing Project
+## Copy an Existing Project
 
 In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you were on a team working on a publication together and are sharing the files via GitHub or another service, or you wanted to use a previous Quire project as a template for a new one.
 
@@ -104,11 +104,11 @@ This is where the built pages of the Quire website will live. This folder and it
 
 The `themes` directory contains one or more {{< q-glossary "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command-in the Quire CLI, the default theme is `quire-starter-theme`. Read more in [*Customizing Styles*](/documentation/styles-customization/).
 
-## Creating a Publication Outline
+## Create a Publication Outline
 
 It is a good idea to start any project by creating a basic outline of your publication. To get started with your outline, you will want to download a {{< q-glossary "text editor" >}}. We recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/), two free and fully featured options. Once the text editor has been installed, open your Quire project in it. You will see the directory contents listed on the left sidebar. The way you organize the Markdown files in the `content` directory of your project will define the structure of your publication and how the *Table of Contents* is organized.
 
-Here’s an outline showing the ordering, organization, and file naming for a sample publication:
+Here’s an outline showing the order, organization, and file names for a sample publication:
 
 ```md
 📄 cover.md
@@ -147,11 +147,11 @@ There are some other important rules and tips to keep in mind:
 
 4. **Don't use `index.md` or `_index.md` files.** Though common for users with previous static-site or web development experience, you should not use `index.md` or `_index.md` files in your Quire project. Because of the way {{< q-glossary "Hugo" >}} is modeled, these work against the linear ordering of the publication and break the *Next* and *Previous* page navigation in Quire.
 
-## Prepping Images and Text
+## Prepare Images and Text
 
 TK
 
-## Previewing and Editing a Project
+## Preview and Edit a Project
 
 Quire lets you preview the current version of your site in a web browser, and will update the preview as you edit the files.
 

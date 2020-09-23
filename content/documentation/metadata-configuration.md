@@ -8,7 +8,7 @@ Quire uses two {{< q-glossary "YAML" >}} files as sources of the metadata and to
 
 You can read more about [*YAML syntax basics*](/resources/cheatsheet/) and check out a sample of the [*`publication.yml` file*](/resources/sample-publication-file/) in other chapters of this guide.
 
-## Adjusting the Default Publication Settings in the `config.yml` File
+## Adjust the Default Publication Settings in config.yml File
 
 The `config.yml` file is a standard and required file for {{< q-glossary "Hugo" >}}, and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
 
@@ -20,7 +20,7 @@ The properties in the `config.yml` file are individually documented in the [*API
 
 - The `params` section includes a number of values specific to various Quire layout {{< q-glossary "templates" >}} and {{< q-glossary "shortcodes" >}}. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (`""`) rather than completely deleting it.
 
-## Adding and Editing Important Metadata in the `publication.yml` File
+## Add and Edit Important Metadata in publication.yml File
 
 The `publication.yml` file in the `/data` directory is *the* source of metadata for your publication. While the only value that is truly required is the one for the property `title`, it is a good idea to fill out the `publication.yml` file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support {{< q-glossary "Search Engine Optimization (SEO)" >}} and general discovery.
 

@@ -186,7 +186,7 @@ Dashes and numbers create lists. Indenting creates nested lists.
 
 ### Footnotes
 
-Precede footnote numbers with a up-arrow accent (`^`) and then surround it in square brackets. Footnote number one would be `[^1]`, number two would be `[^2]`, and so on.
+Precede footnote numbers with an up-arrow accent (`^`) and then surround it in square brackets. Footnote number one would be `[^1]`, number two would be `[^2]`, and so on.
 
 At the end of the page, usually under a “Notes” heading, add the corresponding note with the same marker followed by a colon and the note text.
 

@@ -1,6 +1,6 @@
 ---
 title: GitHub for Quire
-weight: 3800
+weight: 6300
 type: essay
 ---
 
@@ -99,3 +99,15 @@ While you can host your project code on GitHub, you can also use it to host a li
 It will take a few minutes to propagate through GitHub’s system, but your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
 
 Note that if you have a GitHub account that allows for private repositories, you can have a private repo and still run the deploy script. The code will not show up on the public GitHub site, but the preview will still be accessible at its URL. This is a good way of sharing a site preview to other collaborators during the development process, before your site is published.
+
+## More Resources for Exploring GitHub
+
+#### GitHub
+
+[Git and GitHub for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
+
+[GitHub Desktop](https://docs.github.com/en/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop)
+
+[GitHub Glossary](https://docs.github.com/en/github/getting-started-with-github/github-glossary)
+
+[Intro to GitHub](https://egghead.io/lessons/javascript-introduction-to-github)

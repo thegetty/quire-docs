@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Quire Basics"
 subtitle: "A Step-by-Step Walkthrough of the Fundamental Parts of Quire"
-weight: 3000
+weight: 6000
 type: essay
 ---
 
@@ -11,9 +11,9 @@ As you get started with Quire, it is important to familiarize yourself with the 
 
 In the following sections, we’ll learn more about these interconnected components, and get you up and running in a demo Quire project.
 
-## 1. Working in a Command-Line Shell
+## 1. Work in a Command-Line Shell
 
-The first thing you’ll need is a command-line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs Quire is dependent on in order to run such as Pandoc to create the e-book files and Node.js to run javascript).
+The first thing you’ll need is a command-line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs required for Quire to function, such as Pandoc to create the e-book files and Node.js to run javascript).
 
 Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder (or press Command–Space Bar and type “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH.
 
@@ -39,7 +39,7 @@ With the shell open, you can type `ls` (list) to list the folders and files in y
 
 *For a deeper dive into the command-line, check out a ["Really Friendly Command Line Intro"](https://hellowebbooks.com/learn-command-line/), or the Programming Historian’s ["Introduction to the Bash Command Line"](https://programminghistorian.org/en/lessons/intro-to-bash).*
 
-## 2. Installing Quire
+## 2. Install Quire
 
 Follow the links below to install Quire:
 
@@ -47,7 +47,7 @@ Follow the links below to install Quire:
 - [Windows](/guide/install-uninstall#windows-installation)
 - [Linux](/guide/install-uninstall#linux-installation)
 
-## 3. Creating a New Project
+## 3. Create a New Project
 
 To start a new Quire project, open your command-line shell and type `quire new my-project`. Quire will download a new starter project into a folder named “my-project” in your home directory. If you are using the Beta version of Quire, you may need to enter your GitHub username and password twice during the download process: once for the starter kit and again for the starter theme.
 
@@ -66,7 +66,7 @@ To see the preview of your new starter, open your browser and go to [http://loca
 
 {{< q-figure id="quire-starter" >}}
 
-## 4. Working in a Text Editor
+## 4. Work in a Text Editor
 
 Some placeholder content comes with each new Quire project. To start customizing it, you’ll need a text editor. This goes with the command-line shell you have for installing and entering Quire commands, and the browser you use for previewing.
 
@@ -77,11 +77,11 @@ Macs and PCs come with some simple text editors built in, but we recommend using
 - [Atom](https://atom.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-Once installed, open your text editor and locate and open the `my-project` directory you created in Step 3 above. You should see all of the directory’s contents listed.
+Once installed, open your text editor, navigate to File, and open the `my-project` directory you created in Step 3 above. You should see all of the directory’s contents listed.
 
 {{< q-figure id="text-editor" >}}
 
-## 5. Entering Publication Metadata
+## 5. Enter Publication Metadata
 
 The metadata for your publication (its title, subtitle, contributors, publication date, etc.) is used in various areas of your site. It’s used under the hood for {{< q-glossary "search engine optimization" >}} (SEO), as well as on the site itself in headings, navigation labels, and on your About or Copyright page.
 
@@ -109,7 +109,7 @@ The three other metadata files in the `data` directory—`figures.yml`, `referen
 
 *Read more in the [“Metadata & Configuration”](/guide/metadata-configuration/) chapter of this guide and our [“Quire YAML”](/api-docs/yaml/) reference.*
 
-## 6. Editing Content
+## 6. Edit Content
 
 Next let’s look at the `content` directory of your publication. In this directory are a series of {{< q-glossary "Markdown" >}} files (`.md`) that hold the content of the publication. Each one represents a page of your website. The filename becomes part of the URL for that page in your final publication, so it’s always lowercase and includes no spaces or special characters.
 
@@ -119,7 +119,7 @@ Let’s make some changes to the `about.md` file to make it the Preface in our d
 
 1. Change the `title` to `"Preface"`.
 2. Leave the `type` as `"page"`. [Other page types available](/guide/pages#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
-3. Change the `weight` of this page to `"2.5"`, which will order it after the `contents.md` page which has a `weight` of `"2"` and before the `intro.md` page which has a `weight` of `"3"`. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in order based on their filenames.
+3. Change the `weight` of this page to `"2.5"`, which will order it after the `contents.md` page which has a `weight` of `"2"` and before the `intro.md` page which has a `weight` of `"3"`. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in alphabetical order based on their filenames.
 4. Change the name of the file from `about.md` to `preface.md`. Do this by right clicking (or control clicking on a Mac) on the file in your text editor and selecting “Rename”. Note that this will also change the URL of the page.
 5. Page content goes below the YAML block. Delete the text that is there and copy-and-paste the following text as a test:
 *The quick brown fox jumps over the lazy dog.*
@@ -172,17 +172,17 @@ You’ll see this added a figure and caption, the text for which is stored in th
 
 *Read more about Page YAML, Markdown, and Quire shortcodes in the [“Pages”](/guide/pages/) chapter of this guide, and more about figure shortcodes in [“Figure Images”](/guide/figure-images/).*
 
-## 7. Customizing Styles
+## 7. Customize Styles
 
 There are number of different ways to customize the look of your publication. Some of the easiest are to add your own background images to your cover and page banners, and to change the colors and other styles of different interface elements (like the menu, navigation bar, and links) with {{< q-glossary "CSS" >}} variables.
 
 A background image can be added to most pages by indicating the image in the page YAML of that page.
 
 1. Open the `cover.md` file.
-2. Add the following line inside the page YAML.
+2. Remove "pattern-spiral-overlay.png" and update the YAML content to read:
 
 ```
-image: cover_bg.jpg
+image: figures/lange-house.jpg
 ```
 3. Save the file, and preview the results in the browser.
 
@@ -210,7 +210,7 @@ Make sure there’s always a space between the colon and the value you enter, an
 
 *Read more about applying your own custom CSS styles, altering page templates, and creating a new theme in the [“Customizing Styles”](/guide/styles-customization/) chapter of this guide.*
 
-## 8. Outputting Your Publication
+## 8. Output Your Publication
 
 In your Terminal, stop the `quire preview` process by typing Control-C. To create the PDF version of your publication type `quire pdf` and press enter. For the EPUB, type `quire epub` and press enter. Both files will be created and saved into your project’s `static/downloads` directory. View them by right clicking (or control clicking on a Mac) on the file name in the lefthand sidebar of your text editor and selecting “Show in Finder” or “Show in File Explorer”.
 

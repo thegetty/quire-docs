@@ -4,11 +4,11 @@ weight: 5100
 type: essay
 ---
 
-Along with monographs, edited volumes and serial publications, Quire is also designed with the publication of museum collection catalogues in mind and has a specific page `type` for them (See all page types in the [*Defining Page Types* section](/guide/pages#defining-page-types) of the *Pages and Plain Text* page of this guide). Collection catalogues typically feature a page for each object, featuring images of the object, information about it, and an essay or entry text. To publish a catalogue with Quire, you’ll capture each object data, create the object pages, and then optionally, display a list of the objects included in your publication. Essays in object pages work in the same way as any other pages and you can visit our [*Markdown fundamentals*](/guide/fundamentals/) page for reference.
+Along with monographs, edited volumes and serial publications, Quire is also designed with the publication of museum collection catalogues in mind and has a specific page `type` for them (See all page types in the [*Defining Page Types* section](/guide/pages#defining-page-types) of the *Pages and Plain Text* page of this guide). Collection catalogues typically feature a page for each object, featuring images of the object, information about it, and an essay or entry text. To publish a catalogue with Quire, you’ll capture each object data, create the object pages, and then, optionally, display a list of the objects included in your publication. Essays in object pages work in the same way as any other pages and you can visit our [*Markdown fundamentals*](/guide/fundamentals/) page for reference.
 
-## Capturing Object Data
+## Capture Object Data
 
-Much like `figures.yml` or `references.yml`, all catalogue object metadata should be captured in a single `objects.yml` file in the `data` directory of your project and then called as needed in different pages of your publication. Here is a brief sample:
+Much like `figures.yml` or `references.yml`, all catalogue object metadata should be captured in a single `objects.yml` file in the `data` directory of your project and then labeled as needed in different pages of your publication. Here is a brief sample:
 
 ```yaml
 object_display_order:
@@ -61,7 +61,7 @@ Here are the only defined object attributes, you can include any others you like
 | `date_start`, `date_end` | Reserved for future use in Quire. |
 | `dimension_width`, `dimension_height`, `dimension_depth` | Reserved for future use in Quire. |
 
-## Creating Object Pages
+## Create Object Pages
 
 Like all other pages in your publication, object pages are generated from the Markdown files in your `content` directory. To create an object entry page, give the page a `type: entry` in the page YAML block, and list one or more objects by `id` corresponding to those in your `objects.yml` file.
 
@@ -81,9 +81,9 @@ If you add multiple figures of the object, these are displayed in a rotating car
 - In the table of object information, the items displayed and their titles are determined by the `object_display_order` attribute in the `objects.yml` file, as detailed in the section above. If the object information included a `link`, a “View in Collection” button is generated. The text of this button can be customized with the `objectLinkText` attribute in the project’s `config.yml` file.
 {{< /q-class >}}
 
-## Generating Object Lists/Grids
+## Generate Object Lists/Grids
 
-In a collection catalogue, there will typically be a visual table of contents for just the catalogue entries. To create a page with a list or visual grid of all the object entries, the entries themselves need to be grouped in their own section. In Quire, this means putting them in a sub-directory within the main `content` directory (Read more about it in the [*Pages and Plain Text*](/guide/pages/) page of this guide).
+In a collection catalogue, there will typically be a visual table of contents for just the catalogue entries. To create a page with a list or visual grid of all the object entries, the entries themselves need to be grouped in their own section. In Quire, this means putting them in a subdirectory within the main `content` directory (Read more about it in the [*Pages and Plain Text*](/guide/pages/) page of this guide).
 
 In this example, inside the `content` directory, we have a folder called `catalogue` and inside that, three numbered entries and an overview page:
 

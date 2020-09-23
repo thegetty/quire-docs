@@ -1,5 +1,5 @@
 ---
-title: Styles Customization
+title: Style Customization
 weight: 5400
 type: essay
 ---
@@ -15,11 +15,11 @@ The look and feel of your Quire publication can be customized at four different 
 - The default theme installed with every new Quire project is the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). The README file of that repository includes complete information about the customizations available in that specific theme.
 {{< /q-class >}}
 
-## Changing the Style Variables in the Theme
+## Change the Style Variables in the Theme
 
-Every Quire project has a theme inside the `themes` directory. When you first start a new project typing the `quire new` command in your command-line interface, the default theme included is the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents and more.
+Every Quire project has a theme inside the `themes` directory. When you first start a new project typing the `quire new` command in your command-line interface, the default theme included is the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents, and more.
 
-To find the variables, open the `themes/quire-starter-theme` directory, navigate to the `source` sub-directory and then `css`, and open the file called `variables.scss`.
+To find the variables, open the `themes/quire-starter-theme` directory, navigate to the `source` sub-directory, and then `css`, and open the file called `variables.scss`.
 
 {{< q-figure id="1.12" >}}
 
@@ -39,7 +39,7 @@ Colors are expressed a number of different ways, none of which are better or mor
 - You must have the `quire preview` command running in your command-line interface to see changes you make to the `variables.scss` file. You may also sometimes need to refresh your browser page, or even clear the browser cache to get the style changes to fully load.
 {{< /q-class >}}
 
-## Adding Custom Styles
+## Add Custom Styles
 
 In your project’s `static` directory, there is a `css` directory with a blank `custom.css` file.
 
@@ -103,9 +103,9 @@ In the above example, we are selecting the element with a {{< q-glossary "class"
 
 {{< /q-class >}}
 
-## Overriding Theme Templates
+## Override Theme Templates
 
-{{< q-glossary "CSS" >}} changes like those mentioned above are best for re-styling existing elements. If though you’d like to make a more structural change, say, to rearrange elements on the page, or add new elements altogether, you’ll need to alter the {{< q-glossary "template" >}} files that come in the {{< q-glossary "theme" >}}. That said, other than changing the {{< q-glossary "Variables" >}} in `variables.scss` file, as described above, it’s usually best not to make other changes directly in the theme itself. By not doing so, it’s much easier to update your theme or switch out other themes later, not to mention easier to undo changes you’ve made.
+{{< q-glossary "CSS" >}} changes like those mentioned above are best for restyling existing elements. If though you’d like to make a more structural change, say, to rearrange elements on the page, or add new elements altogether, you’ll need to alter the {{< q-glossary "template" >}} files that come in the {{< q-glossary "theme" >}}. That said, other than changing the {{< q-glossary "Variables" >}} in `variables.scss` file, as described above, it’s usually best not to make other changes directly in the theme itself. By not doing so, it’s easier to update your theme or switch out other themes later, not to mention easier to undo changes you’ve made.
 
 For modest changes to the theme {{< q-glossary "templates" >}}, we recommend creating new override files. Much like the `custom.css` file can be used to override styles in the project theme, you can also have files to override templates. There are none in the default starting project, so you’ll need to start be creating a new `layouts` directory folder in the main directory of your project. Any files you put in this `layouts` directory will override the corresponding files in the `layouts` directory of your theme. This includes page templates, partial templates and shortcodes.
 
@@ -134,7 +134,7 @@ For example, let’s say you want to customize the layout of all the pages in yo
 {{ end }}
 ```
 
-If you copy the `essay` sub-directory and its `single.html` file into the new `layouts` directory in your project’s main directory, this copy will override anything in the {{< q-glossary "theme" >}}. So, if you delete the bibliography and rearrange the header and abstract in the copied file, that’s what Quire will use when building the site. It only changes the style of the header and abstract of your pages while the bibliography style remains intact.
+If you copy the `essay` subdirectory and its `single.html` file into the new `layouts` directory in your project’s main directory, this copy will override anything in the {{< q-glossary "theme" >}}. So, if you delete the bibliography and rearrange the header and abstract in the copied file, that’s what Quire will use when building the site. It only changes the style of the header and abstract of your pages while the bibliography style remains intact.
 
 ```go
 {{ define "main" }}
@@ -164,11 +164,11 @@ Whether in the {{< q-glossary "theme" >}} or in your project directory, all shor
 
 And if you make a mistake or change your mind later, you can simply delete the copy of the file and Quire will go back to using the original template as provided in the theme. This method can also be used to add completely new templates and even new shortcodes.
 
-## Creating a New Quire Theme
+## Create a New Quire Theme
 
 TK
 
-## Updating Your Theme to a Newer Version
+## Update Your Theme to a Newer Version
 
 Before updating your {{< q-glossary "theme" >}}, make note of any changes you made to it as these will need to be manually copied over to the updated version of the theme if you want to keep them. Usually, this would only be changes to the [style variables](#changing-the-style-variables-in-the-theme).
 
@@ -184,7 +184,7 @@ Before updating your {{< q-glossary "theme" >}}, make note of any changes you ma
 
 You may also need to clear your browser cache to get the new theme stylesheets to reload.
 
-## Changing to a New Theme
+## Change to a New Theme
 
 1. In the theme repository on GitHub, use the “Clone or download” button to download a ZIP file of the most current version of the theme, or, go to the repository’s Releases page to choose a particular release.
 
