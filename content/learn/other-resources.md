@@ -4,9 +4,13 @@ weight: 6200
 type: essay
 ---
 
+The following is a list of helpful resources to guide your experience and exploration of Quire. It is a work in progress, and we welcome suggestions for tools and other resources that you find helpful.
+
 ## Hugo  
 
 [Hugo Documentation](https://gohugo.io/documentation/)
+
+[Mike Dane | Video Tutorials](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1)
 
 ## Markdown
 
@@ -24,7 +28,7 @@ type: essay
 
 ## Visual Studio Code
 
-[Visual Studio Code Docs](https://code.visualstudio.com/docs)
+[Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 
 ## Basic HTML & CSS
 
