@@ -162,7 +162,7 @@ For more specialized features (especially images, multimedia, and citations), Qu
 1. Type the following figure image shortcode on a new line in your `preface.md` file.
 
 ```go
-{{</* q-figure id="fig-1" */>}}
+{{</* q-figure id="fig-2" */>}}
 ```
 2. Save the change, and check the preview in your browser.
 
