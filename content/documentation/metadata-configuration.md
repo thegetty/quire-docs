@@ -4,25 +4,25 @@ weight: 4500
 type: essay
 ---
 
-Quire uses two {{< q-glossary "YAML" >}} files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yml` and `publication.yml`. By default, both `config.yml` and `publication.yml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.
+Quire uses two {{< q-def "YAML" >}} files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yml` and `publication.yml`. By default, both `config.yml` and `publication.yml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.
 
 You can read more about [*YAML syntax basics*](/resources/cheatsheet/) and check out a sample of the [*`publication.yml` file*](/resources/sample-publication-file/) in other chapters of this guide.
 
 ## Adjust the Default Publication Settings in config.yml File
 
-The `config.yml` file is a standard and required file for {{< q-glossary "Hugo" >}}, and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-glossary "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
+The `config.yml` file is a standard and required file for {{< q-def "Hugo" >}}, and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
 
 The properties in the `config.yml` file are individually documented in the [*API/Docs section*](/api-docs/yaml/), however, a few key items to note:
 
-- While Quire exclusively uses the `title` value as defined in your `publication.yml` file, other {{< q-glossary "Hugo" >}} projects require a `title` value in the `config.yml` file, so it is a good idea to include it here as well.
+- While Quire exclusively uses the `title` value as defined in your `publication.yml` file, other {{< q-def "Hugo" >}} projects require a `title` value in the `config.yml` file, so it is a good idea to include it here as well.
 
-- The `theme` value should match the name of the folder in the `/themes` directory that contains your theme files; if you've copied the default {{< q-glossary "theme" >}} and given it a different name make sure to update the value here too.
+- The `theme` value should match the name of the folder in the `/themes` directory that contains your theme files; if you've copied the default {{< q-def "theme" >}} and given it a different name make sure to update the value here too.
 
-- The `params` section includes a number of values specific to various Quire layout {{< q-glossary "templates" >}} and {{< q-glossary "shortcodes" >}}. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (`""`) rather than completely deleting it.
+- The `params` section includes a number of values specific to various Quire layout {{< q-def "templates" >}} and {{< q-def "shortcodes" >}}. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (`""`) rather than completely deleting it.
 
 ## Add and Edit Important Metadata in publication.yml File
 
-The `publication.yml` file in the `/data` directory is *the* source of metadata for your publication. While the only value that is truly required is the one for the property `title`, it is a good idea to fill out the `publication.yml` file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support {{< q-glossary "Search Engine Optimization (SEO)" >}} and general discovery.
+The `publication.yml` file in the `/data` directory is *the* source of metadata for your publication. While the only value that is truly required is the one for the property `title`, it is a good idea to fill out the `publication.yml` file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support {{< q-def "Search Engine Optimization (SEO)" >}} and general discovery.
 
 Some key areas are summed up below, and match headings in the `publication.yml` file itself, but there is a detailed documentation of individual properties and their values in the [*API/Docs section*](/api-docs/yaml/) of this guide.
 
@@ -38,13 +38,13 @@ The values of `url`, `pub_date`, and `language` should be filled out.
 
 - `url` should be the final URL where your publication will live (its permalink) and should include `http://` or `https://` as appropriate.
 
-- The value of `pub_date` must follow a YYYY-MM-DD format (the {{< q-glossary "ISO 8601 format" >}}) and should be the projected final publication date.
+- The value of `pub_date` must follow a YYYY-MM-DD format (the {{< q-def "ISO 8601 format" >}}) and should be the projected final publication date.
 
-- Lastly, `language` should be a 2-letter {{< q-glossary "ISO 639-1 language code" >}}. The default value is `en` (English) and other languages can be used.
+- Lastly, `language` should be a 2-letter {{< q-def "ISO 639-1 language code" >}}. The default value is `en` (English) and other languages can be used.
 
-There’s an optional `pub_type` property whose values are `book`, `journal-periodical`, or `other`. If you use the value `book`, it is recommended you also include an {{< q-glossary "ISBN" >}} as a standard identifier. If you use the value `journal-periodical`, you should include information for the {{< q-glossary "ISSN" >}}, `series_periodical_name`, and `series_issue_number` attributes if possible.
+There’s an optional `pub_type` property whose values are `book`, `journal-periodical`, or `other`. If you use the value `book`, it is recommended you also include an {{< q-def "ISBN" >}} as a standard identifier. If you use the value `journal-periodical`, you should include information for the {{< q-def "ISSN" >}}, `series_periodical_name`, and `series_issue_number` attributes if possible.
 
-Both {{< q-glossary "ISBN" >}} and {{< q-glossary "ISSN" >}} are considered if you want libraries to catalog your publication. Along with `isbn` and `issn`, `doi` and `uuid` are also supported so you can add these attributes as identifiers:
+Both {{< q-def "ISBN" >}} and {{< q-def "ISSN" >}} are considered if you want libraries to catalog your publication. Along with `isbn` and `issn`, `doi` and `uuid` are also supported so you can add these attributes as identifiers:
 
 ```yaml
 identifier:
@@ -52,7 +52,7 @@ identifier:
   uuid: 4a1b423d-6d5a-469b-bd5f-b498182ad6ca
 ```
 
-{{< q-glossary "DOIs" >}} are widely used in academic contexts to support citation while {{< q-glossary "UUIDs" >}} serve to identify information in computer systems.
+{{< q-def "DOIs" >}} are widely used in academic contexts to support citation while {{< q-def "UUIDs" >}} serve to identify information in computer systems.
 
 {{< q-class "box tip" >}}
 
@@ -74,9 +74,9 @@ Read more about this matter in the [*Contributors*](/guide/contributors/) chapte
 
 ### Copyright & License
 
-You should include a `copyright` line property for your publication, and optionally `license` information property if you are distributing the publication {{< q-glossary "Open Access" >}}.
+You should include a `copyright` line property for your publication, and optionally `license` information property if you are distributing the publication {{< q-def "Open Access" >}}.
 
-A simple {{< q-glossary "Copyright" >}} statement would typically be formatted as "© 2019 Author Name".
+A simple {{< q-def "Copyright" >}} statement would typically be formatted as "© 2019 Author Name".
 
 {{< q-class "box tip" >}}
 
@@ -84,13 +84,13 @@ A simple {{< q-glossary "Copyright" >}} statement would typically be formatted a
 
 {{< /q-class >}}
 
-Open access licensing typically means applying one of seven {{< q-glossary "Creative Commons Licenses" >}} to your publication. This is in addition to your copyright statement.
+Open access licensing typically means applying one of seven {{< q-def "Creative Commons Licenses" >}} to your publication. This is in addition to your copyright statement.
 
 Note, an open Creative Commons license does not replace or supersede copyright in a work, it instead says that the copyright holder is licensing (allowing) others to make use of the work in an open way.
 
 To use a Creative Commons license fill in the `name`, `abbreviation`, `url`, and `scope` values of the license property. `scope` value should be either `full`, `text-only` or `some-exceptions` and will determine the way the license is worded on your site. To override the wording and link language use the `online_text` and `pdf_ebook_text` attributes.
 
-If the `abbreviation` attribute matches one of the seven {{< q-glossary "Creative Commons Licenses" >}}, an icon will automatically be included, otherwise you can use the `icon` attribute to point to a specific image file in your images directory.
+If the `abbreviation` attribute matches one of the seven {{< q-def "Creative Commons Licenses" >}}, an icon will automatically be included, otherwise you can use the `icon` attribute to point to a specific image file in your images directory.
 
 ### Formats, Resources & Links
 
@@ -104,11 +104,11 @@ A publication can have multiple `resource_link` properties, each with the `type`
 
 `resource_link` properties can also be internal pages of the publication or files from your publication, or can point to external resources or other websites. The atributes `type`, `name` (how the resource link will be listed in your publication), and `url` are required.
 
-To facilitate machine readability, it is a good idea to also include `link_relation` and `media_type` attributes from the {{< q-glossary "IANA" >}} lists if applicable ones for your particular resource are available.
+To facilitate machine readability, it is a good idea to also include `link_relation` and `media_type` attributes from the {{< q-def "IANA" >}} lists if applicable ones for your particular resource are available.
 
 ### Subjects
 
-Any number of subjects can be added to the publication in order to aid search engine discoverability. They may be formatted as simple keywords, {{< q-glossary "BISAC Subject Codes" >}}, or linked data using the {{< q-glossary "Getty Vocabularies" >}}, including AAT, ULAN, and TGN.
+Any number of subjects can be added to the publication in order to aid search engine discoverability. They may be formatted as simple keywords, {{< q-def "BISAC Subject Codes" >}}, or linked data using the {{< q-def "Getty Vocabularies" >}}, including AAT, ULAN, and TGN.
 
 For each subject, indicate the `type`: `keyword`, `bisac`, or `getty`. For `keyword`, you only need to include a single comma-separated list under the `name` attribute.
 
@@ -137,4 +137,4 @@ subjects:
 
 A history of post-publication revisions made to the publication typically appears on the *About* page. Any number of revision history property items can be added and each must include the attributes `date` and a `summary` of changes made on that date. The `summary` attribute supports Markdown formatting, and would typically be in list form.
 
-If you are using {{< q-glossary "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yml` can act as an overview. For more, see [our revision history policy document](https://github.com/gettypubs/digpublishing-guide/blob/master/updates-and-revisions.md).
+If you are using {{< q-def "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yml` can act as an overview. For more, see [our revision history policy document](https://github.com/gettypubs/digpublishing-guide/blob/master/updates-and-revisions.md).

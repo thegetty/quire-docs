@@ -5,7 +5,7 @@ weight: 6000
 type: essay
 ---
 
-As you get started with Quire, it is important to familiarize yourself with the three core components that you will use to create, edit, and output your Quire project: a {{< q-glossary "text editor" >}}, a {{< q-glossary "command-line shell" >}}, and a {{< q-glossary "web browser" >}}. You will use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real-time.
+As you get started with Quire, it is important to familiarize yourself with the three core components that you will use to create, edit, and output your Quire project: a {{< q-def "text editor" >}}, a {{< q-def "command-line shell" >}}, and a {{< q-def "web browser" >}}. You will use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real-time.
 
 {{< q-figure id="1.4" >}}
 
@@ -17,7 +17,7 @@ The first thing you’ll need is a command-line shell. Along with using it to ru
 
 Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder (or press Command–Space Bar and type “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH.
 
-The shell is a text-based view of the contents of your computer, and a space where you can run program commands. It's the equivalent of opening a Finder or File Explorer window on your computer that shows the contents of a particular folder (also known as a directory). When you open your shell, you will be in your {{< q-glossary "home directory">}} by default. When installing Quire, all the relevant files will automatically be saved in this location.
+The shell is a text-based view of the contents of your computer, and a space where you can run program commands. It's the equivalent of opening a Finder or File Explorer window on your computer that shows the contents of a particular folder (also known as a directory). When you open your shell, you will be in your {{< q-def "home directory">}} by default. When installing Quire, all the relevant files will automatically be saved in this location.
 
 {{< q-figure id="command-line-shell" >}}
 
@@ -83,7 +83,7 @@ Once installed, open your text editor, navigate to File, and open the `my-projec
 
 ## 5. Enter Publication Metadata
 
-The metadata for your publication (its title, subtitle, contributors, publication date, etc.) is used in various areas of your site. It’s used under the hood for {{< q-glossary "search engine optimization" >}} (SEO), as well as on the site itself in headings, navigation labels, and on your About or Copyright page.
+The metadata for your publication (its title, subtitle, contributors, publication date, etc.) is used in various areas of your site. It’s used under the hood for {{< q-def "search engine optimization" >}} (SEO), as well as on the site itself in headings, navigation labels, and on your About or Copyright page.
 
 All publication metadata is in the `publication.yml` file for your project, which you’ll find in the `data` directory.
 
@@ -91,7 +91,7 @@ Open the `publication.yml` file and try changing the title and subtitle, saving 
 
 {{< q-figure id="quire-starter-metadata-change" >}}
 
-The format of this metadata is called {{< q-glossary "YAML" >}} (*yam-ul*). It’s designed to be a plain-text way of capturing data. The general principal is to have the name of a data item, followed by a colon, a space, and then the data item’s value. A key-value pair.
+The format of this metadata is called {{< q-def "YAML" >}} (*yam-ul*). It’s designed to be a plain-text way of capturing data. The general principal is to have the name of a data item, followed by a colon, a space, and then the data item’s value. A key-value pair.
 
 ```yaml
 title: "New Deal Photography"
@@ -111,7 +111,7 @@ The three other metadata files in the `data` directory—`figures.yml`, `referen
 
 ## 6. Edit Content
 
-Next let’s look at the `content` directory of your publication. In this directory are a series of {{< q-glossary "Markdown" >}} files (`.md`) that hold the content of the publication. Each one represents a page of your website. The filename becomes part of the URL for that page in your final publication, so it’s always lowercase and includes no spaces or special characters.
+Next let’s look at the `content` directory of your publication. In this directory are a series of {{< q-def "Markdown" >}} files (`.md`) that hold the content of the publication. Each one represents a page of your website. The filename becomes part of the URL for that page in your final publication, so it’s always lowercase and includes no spaces or special characters.
 
 Open the `about.md` file. At the top you’ll see a small block of YAML surrounded in two sets of three dashes `---`. Just like the overall publication has metadata, each page has metadata as well. Page metadata appears at the top of every Markdown file. Included in this example are the three most basic types of page YAML that you’ll want to always include: the `title`, `type` and `weight`.
 
@@ -157,7 +157,7 @@ of students let loose in the halls of art.
 - [A complete Markdown reference](/guide/fundamentals/) is available in the “Fundamentals” chapter of this guide, but for quick rules and tips, refer to our [Markdown cheatsheet](/resources/cheatsheet/).
 {{< /q-class >}}
 
-For more specialized features (especially images, multimedia, and citations), Quire extends Markdown’s capabilities with a set of {{< q-glossary "shortcodes" >}}.
+For more specialized features (especially images, multimedia, and citations), Quire extends Markdown’s capabilities with a set of {{< q-def "shortcodes" >}}.
 
 1. Type the following figure image shortcode on a new line in your `preface.md` file.
 
@@ -174,7 +174,7 @@ You’ll see this added a figure and caption, the text for which is stored in th
 
 ## 7. Customize Styles
 
-There are number of different ways to customize the look of your publication. Some of the easiest are to add your own background images to your cover and page banners, and to change the colors and other styles of different interface elements (like the menu, navigation bar, and links) with {{< q-glossary "CSS" >}} variables.
+There are number of different ways to customize the look of your publication. Some of the easiest are to add your own background images to your cover and page banners, and to change the colors and other styles of different interface elements (like the menu, navigation bar, and links) with {{< q-def "CSS" >}} variables.
 
 A background image can be added to most pages by indicating the image in the page YAML of that page.
 

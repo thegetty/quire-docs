@@ -71,7 +71,7 @@ object:
   - id: 1
 ```
 
-The page will feature any images associated with the object, followed by a table of object information and finally an essay/entry text included in the page {{< q-glossary "Markdown file" >}}.
+The page will feature any images associated with the object, followed by a table of object information and finally an essay/entry text included in the page {{< q-def "Markdown file" >}}.
 
 {{< q-figure id="1.7" >}}
 

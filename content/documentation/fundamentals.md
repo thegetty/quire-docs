@@ -90,7 +90,7 @@ title: "“Ah ha!” Amazing Double-quote (\") Tricks!"
 
 Markdown is designed to be a simple, plain-text markup language that uses a few text rules to structure content for easy conversion into HTML. Writing in Markdown should be thought of as giving your content structure, not style. You use Markdown to indicate what’s a heading, what’s a list, etcetera. Quire’s themes and stylesheets then control what those headings, lists and other elements *look* like, from device to device and format to format.
 
-Special characters like en- and em-dashes, and diacritics work fine in Markdown and in Quire publications. Any {{< q-glossary "Unicode" >}} character is allowed. The only limitation, for less common characters, is whether the font you’re using includes it. When a font does not include a specific character, most browsers will substitute one from a different font.
+Special characters like en- and em-dashes, and diacritics work fine in Markdown and in Quire publications. Any {{< q-def "Unicode" >}} character is allowed. The only limitation, for less common characters, is whether the font you’re using includes it. When a font does not include a specific character, most browsers will substitute one from a different font.
 
 The following sections detail the most commonly used Markdown tags.
 
@@ -215,7 +215,7 @@ Footnotes can also include Markdown formatting, including lists and even multipl
 
 {{< q-class "box warning" >}}
 
-- The built-in {{< q-glossary "Markdown processor" >}} will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them.
+- The built-in {{< q-def "Markdown processor" >}} will automatically renumber footnotes in the order they appear in the text. It will also always put the footnotes at the very end of your content, no matter where you may try to put them.
 
 {{< /q-class >}}
 
@@ -263,9 +263,9 @@ Outside of more code-driven text editors, there are also a growing number of Mar
 
 ## Markdown Output Configuration
 
-Hugo has a built-in Markdown processor, {{< q-glossary "Blackfriday" >}}, which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
+Hugo has a built-in Markdown processor, {{< q-def "Blackfriday" >}}, which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
 
-By default, in the `config.yml` file of your Quire project, {{< q-glossary "Blackfriday" >}}'s `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
+By default, in the `config.yml` file of your Quire project, {{< q-def "Blackfriday" >}}'s `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
 
 ## Markdown Resources
 
@@ -275,7 +275,7 @@ Be aware of the multiple [Markdown flavors](https://github.com/commonmark/Common
 
 ## Microsoft Word to Markdown Conversion
 
-Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using {{< q-glossary "Pandoc" >}} can be done.
+Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using {{< q-def "Pandoc" >}} can be done.
 
 There are some easy things you can do in the Word document prior to conversion to ensure the best possible results:
 
@@ -284,7 +284,7 @@ There are some easy things you can do in the Word document prior to conversion t
 - Don’t use any font color or color highlighting, it will not convert to Markdown.
 - Save as .docx rather than .doc
 
-While there are a number of free tools, we recommend using Pandoc, which is included with the basic Quire installation and can be used through the command-line. To convert, open your {{< q-glossary "command-line shell" >}}, use the `cd` (change directory) command to move to the folder where your .docx documents are saved, and enter the applicable Pandoc command:
+While there are a number of free tools, we recommend using Pandoc, which is included with the basic Quire installation and can be used through the command-line. To convert, open your {{< q-def "command-line shell" >}}, use the `cd` (change directory) command to move to the folder where your .docx documents are saved, and enter the applicable Pandoc command:
 
 To convert a single Word document (in this example it has a file name of MyFile.docx) into Markdown:
 
@@ -306,8 +306,8 @@ for f in *.docx; do pandoc --atx-header --wrap=none "$f" -s -t markdown-smart -o
 
 Note that the `--atx-header` and `--wrap=none` options in the above commands are optional, but recommended for Quire.
 
-- Quire uses {{< q-glossary "ATX-style Markdown headers" >}}, these are specified adding `--atx-header` to the command.
-- The lines of a Pandoc-generated file are 80 characters long. Adding the option `--wrap=none` to the command will override the default wrapping making easier to work with your files in the {{< q-glossary "Text editor" >}}.
+- Quire uses {{< q-def "ATX-style Markdown headers" >}}, these are specified adding `--atx-header` to the command.
+- The lines of a Pandoc-generated file are 80 characters long. Adding the option `--wrap=none` to the command will override the default wrapping making easier to work with your files in the {{< q-def "Text editor" >}}.
 
 The order of the extensions doesn't matter, and you can either type:
 

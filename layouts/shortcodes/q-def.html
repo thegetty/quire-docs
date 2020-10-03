@@ -6,6 +6,10 @@
   The first positional parameter is the glossary term that should match one
   in `glossary.yml`.
 
+  See also later versions of this shortcode in Mummy Portraits
+  (https://github.com/thegetty/mummyportraits) which includes an optional second
+  parameter to customize the displayed word.
+
 */}}
 
 {{- $errorMissingValue := dict "shortcode" "q-glossary" "message" "a value must be supplied with this shortcode and should match a term in the project’s `glossary.yml` file" "example" "{{< q-glossary &#34;chiaroscuro&#34; &#34;304&#34; >}}" -}}
@@ -54,9 +58,9 @@
     {{- $entry := ($.Page.Scratch.GetSortedMapValues "term") -}}
     {{- $termId := $term | urlize -}}
     {{- $.Page.Scratch.SetInMap "defined" $termId $entry -}}
-    
+
     <span class="quire-citation expandable">{{ if ne .Site.Params.citationPopupStyle "icon" }}<span class="quire-citation__button glossary-button" role="button" tabindex="0" aria-expanded="false">{{ end }}{{ if eq (len .Params) 2 }}{{ .Get 1 | markdownify }}{{ else }}{{ .Get 0 }}{{ end }}{{ if eq .Site.Params.citationPopupStyle "icon" }}<button class="material-icons md-18 material-control-point" aria-expanded="false">control_point</button>{{ end }}{{ if ne .Site.Params.citationPopupStyle "icon" }}</span>{{ end }}<span hidden class="quire-citation__content"><span class="visually-hidden">Definition: </span><strong>{{- markdownify $term -}}{{ if .Site.Params.glossaryTermDivider }}{{ .Site.Params.glossaryTermDivider }}{{ else }}: {{ end }}</strong>{{- markdownify $definition -}}</span></span>
-        
+
   {{- end -}}
 
 {{- end -}}

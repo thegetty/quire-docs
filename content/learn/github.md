@@ -6,7 +6,7 @@ type: essay
 
 GitHub is a project management platform centered around git-based version control. That means it’s a good place to host your project and track changes to it, whether you’re working on your own, or with a team of collaborators. The Getty uses GitHub to manage all of its publications, as well as Quire itself.
 
-To get started, you just need to [sign up for a free GitHub account](http://github.com/join), and [download and install the free GitHub Desktop software](https://desktop.github.com/). (Advance users will often use git and GitHub from their {{< q-glossary "command-line shell" >}}.)
+To get started, you just need to [sign up for a free GitHub account](http://github.com/join), and [download and install the free GitHub Desktop software](https://desktop.github.com/). (Advance users will often use git and GitHub from their {{< q-def "command-line shell" >}}.)
 
 ## Hosting Your Project Code on GitHub
 
