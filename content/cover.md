@@ -98,31 +98,13 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 </div>
 
-## Features & Functionality
-<br>
+## Key Features & Functionality
 
-- **Operating System Compatibility**
-- **Cross-Device Usage**
-- **Multiformat Output**
-- **Realtime Publication Preview**
-- **Web Accessibility**
-- **SEO Optimization**
-- **Responsive Web Design**
-- **Reproducible Content**
-- **Customizable Styles & Fonts**
-- **Figure Images & Image Groups**
-- **Zooming Images & Maps**
-- **IIIF Compatibility**
-- **Video & Audio Embeds**
-- **Dynamic Navigation**  
-- **Full-text Search**
-- **Page-level Citation**
-- **Linkable Footnotes**
-- **Linkable Bibliographies**
+{{< q-figure-group id="collection-catalogue, custom-styles, multiformat, video-embeds, plain-text" grid="9" class="slider slider-small" >}}
 
 <div class="action-button">
 
-[Learn More](/about/quire)
+[See the Complete Feature List](/about/quire/#features--functionality)
 
 </div>
 

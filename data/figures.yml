@@ -297,3 +297,23 @@ figure_list:
   - id: "roadmap"
     src: /illustrations/roadmap.png
     caption: "The journey ahead."
+
+  - id: "collection-catalogue"
+    src: /screenshots/collection-catalogue.jpg
+    caption: "**Scholar approved** | Optimized for visual, scholarly publishing"
+
+  - id: "custom-styles"
+    src: /screenshots/custom-styles.jpg
+    caption: "**Customizable styles** | Change colors, fonts and more"
+
+  - id: "multiformat"
+    src: /screenshots/multiformat.jpg
+    caption: "**Multiformat** | Publish online, as an e-book, and in print"
+
+  - id: "video-embeds"
+    src: /screenshots/video-embeds.jpg
+    caption: "**Multimedia** | Embed videos, audio, and still images"
+
+  - id: "plain-text"
+    src: /screenshots/plain-text.jpg
+    caption: "**Simple structure** | Keep content in human-readable format"
