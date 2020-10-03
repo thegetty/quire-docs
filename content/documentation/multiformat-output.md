@@ -1,5 +1,5 @@
 ---
-title: Multiformat Output
+title: Outputting & Deploying Your Site
 weight: 5700
 type: essay
 ---
