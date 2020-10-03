@@ -262,27 +262,37 @@ figure_list:
     src: /screenshots/mcn_2017.png
     media_id: oFBHi5ed5OU
     media_type: youtube
+    caption: "Eric Gardner presents some of the thinking behind Quire in “Data Driven Approaches to Publishing” at MCN (Museum Computer Network) in Pittsburgh, 2017."
 
   - id: "the_gang"
     src: /screenshots/the_gang.png
-    caption: "Eric Gardner (Former Quire Developer), Ruth Evans Lane (Getty Publications Editor), and Greg Albers (Digital Publishing Manager.)"
-    full_caption: "Eric Gardner (Former Quire Developer), Ruth Evans Lane (Getty Publications Editor), and Greg Albers (Digital Publishing Manager.)"
+    caption: "Eric Gardner (Digital Publications Developer), Ruth Evans Lane (Editor), and Greg Albers (Digital Publications Manager) with multiple formats of Getty’s [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/) publication."
 
   - id: "mcn_2013"
     src: /screenshots/mcn_2013.png
     media_id: Gp67HS3m_Pg
     media_type: youtube
+    caption: "Greg Albers moderates a panel at MCN (Museum Computer Network) in Montreal, 2013, exploring the intersections between print and digital publishing."
+
+  - id: "virtual-library"
+    src: /screenshots/virtual-library.png
+    caption: "Getty Publications’ [Virtual Library](https://www.getty.edu/publications/virtuallibrary/), featuring more than 300 of its past books, for free online reading and PDF download."
+
+  - id: "getty-center"
+    src: /screenshots/getty.jpg
+    caption: "Getty Center, Los Angeles, California (2001)."
 
   - id: "opf_2020"
     src: /screenshots/opf_2020.png
     media_id: SB1Y5GfDP7c
     media_type: youtube
+    caption: "“Quire: Multiformat Publishing Solutions for Art Books and Beyond,” featuring Jayna Swartzman-Brosky (Mills College Art Museum), Nancy Um (Binghamton University), and Amanda Helton (San José Museum of Art)."
 
   - id: "cva_podcast"
     src: /screenshots/cva_podcast.png
     media_id: 809104705
     media_type: soundcloud
-    caption: "Audio from Getty podcast Art & Ideas. Moving a Hundred-Year-Old Series Online: Getty’s Corpus Vasorum Antiquorum."
+    caption: "“Moving a Hundred-Year-Old Series Online: Getty’s Corpus Vasorum Antiquorum,” from Getty’s *Art & Ideas* podcast."
 
   - id: "roadmap"
     src: /illustrations/roadmap.png
