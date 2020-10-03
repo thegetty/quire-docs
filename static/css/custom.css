@@ -548,6 +548,7 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
   padding: 0 .9rem;
   margin-top: 0;
   color: var(--accent-color);
+  font-size: 1rem;
 }
 .quire-figure--group.slider figure .quire-figure__caption strong {
   color: var(--accent-color);
