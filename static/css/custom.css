@@ -558,3 +558,34 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 .quire-navbar-controls__center .page-item a[target=_blank]:hover::after {
   content: url('../img/icons/right-up-arrow--white.svg');
 }
+
+/* GLOSSARY
+============================================================================= */
+.content ul.quire-glossary__key {
+  margin-left: 0;
+  text-align: center;
+  display: table;
+  margin-bottom: 2rem;
+}
+.quire-page__content .container .content ul.quire-glossary__key li::before {
+  content: "";
+}
+.quire-page__content .container .content ul.quire-glossary__key li {
+  margin: .5rem .75rem;
+  display: inline-block;
+}
+.quire-page__content .content dl.quire-glossary {
+  margin: 2rem 0;
+}
+.quire-page__content .content dl.quire-glossary dt {
+  display: inline;
+  margin-right: .3rem
+}
+.quire-page__content .content dl.quire-glossary dd {
+  display: inline;
+}
+.quire-page__content .content dl.quire-glossary dd::after {
+  content: " ";
+  display: block;
+  margin-bottom: 1rem;
+}
