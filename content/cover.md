@@ -38,8 +38,8 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 
 <div class="feature-cards">
 
-- [Watch a Video Intro ![Explore icon](/img/illustrations/undraw_online_video_ivvq.png)](https://www.youtube.com/watch?v=kFTcJLbMDxs&feature=youtu.be)
-- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started)
+- [Quire Basics <br />Step‑by‑Step ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](/learn/tutorial/)
+- [Demo <br />Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](https://gettypubs.github.io/quire-starter/)
 
 </div>
 
@@ -67,8 +67,8 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 <div class="feature-cards">
 
 - [Quire Roadmap ![Explore icon](/img/illustrations/roadmap_transparent.png)](/about/roadmap/)
-- [Quire Basics & Tutorials ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](/learn/tutorial/)
-- [View Demo Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](https://gettypubs.github.io/quire-starter/)
+- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started)
+
 </div>
 
 ## Why Use Quire?
@@ -126,11 +126,11 @@ All are welcome.
 
 - [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](#)
 
-  For news, updates, and events sign up for our mailing list
+  For news, updates, and events, <br />sign up for our mailing list
 
 - [Get Started ![illustration](/img/illustrations/undraw_blogging_vpvv.png)](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
 
-  To try Quire for yourself, sign up for free beta access
+  To try Quire for yourself, <br />sign up for free beta access
 
 </div>
 
