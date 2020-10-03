@@ -49,30 +49,28 @@ Currently under development for potential release as [open-source software](/abo
 
 <div class="feature-list">
 
-- **Operating System Compatibility** Available for Mac, Windows, and Linux
-- **Cross-Device Usage** Adapt format to tablets, PCs, and smart phones
-- **Multiformat Output** Generate publications as websites, ebooks, and PDFs with the touch of a button
+- **Operating System Compatibility** Work on your Mac, Windows, or Linux computer
+- **Responsive Web Design** Publish books that will work equally on tablets, desktops, and smartphones
+- **Multiformat Output** Generate publications as websites, EPUB and MOBI ebooks, and PDFs
 - **Realtime Publication Preview** Make changes and view them live in your browser
-- **Web Accessibility** Adhere to web accessibility principles outlined in WCAG2.0 AA
+- **Web Accessibility** Adhere to [WCAG2.0](https://www.w3.org/TR/WCAG20/) web accessibility principles
 - **SEO Optimization** Include metadata and tags for enhanced search engine optimization
-- **Responsive Web Design** Enable feature-rich and gracefully enhanced content
-- **Reproducible Content** Use code to change content across the publication without duplicating efforts
-- **Customizable Styles & Fonts** Customize your publication's look and feel to suit your brand/content
+- **Single-source Publishing** Change content once to change it across formats, without duplicating effort
+- **Customizable Styles & Fonts** Customize your publication's look and feel to suit your needs
 - **Figure Images & Image Groups** Include high quality images in a variety of configurations
-- **Zooming Images & Maps** Enable zooming capabilities on images and embedded maps
-- **IIIF Compatible** Add high-res files that are automatically tiled and formatted as IIIF resources
+- **Zooming Images** Enable zooming capabilities on images (with [IIIF](https://iiif.io/) compatibility in the works)
 - **Video & Audio Embeds** Insert audio and video clips with ease (includes Soundcloud, YouTube, and Vimeo)
 - **Dynamic Navigation**  Use table of contents and menus to navigate and jump to other sections
-- **Full-text Search** Perform global search throughout publication
-- **Page-level Citation** Create citations that directly link to footnotes
-- **Linkable Footnotes** Link footnotes with page-level citations
-- **Linkable Bibliographies** Create bibliographies that link to citations and footnotes
+- **Full-text Search** Perform global search throughout your publication
+- **Page-level Citation** Automatically generate citations to help readers reference your publication
+- **Linkable Footnotes** Include footnotes that automatically link between note and text
+- **Pop-up Bibliographies** Add pop-up citations and create bibliographies for a page or a whole book
 
 </div>
 
 <div class="action-button-center">
 
-[**Learn About New Features Coming Soon**](/about/roadmap/)
+[**Learn About Other Features in Development**](/about/roadmap/)
 </div>
 
 <div class="feature-cards small-card">
