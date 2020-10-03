@@ -165,6 +165,10 @@
 .quire-page__content .container .content .feature-cards ul li::before {
   content: "";
 }
+.quire-page__content .container .content .feature-cards ul li p {
+  font-weight: bold;
+  text-align: center;
+}
 /* A simple white box around the content, like other pages of the site
    div class="block" */
 .quire-page__content .container .content .block {

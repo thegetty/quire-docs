@@ -110,37 +110,26 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 ## The Quire Community
 
- Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators to developers. <br>
- All are welcome.
+Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious.
 
- <div class="action-button">
+The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators to developers.
 
- [Join us](/community/join-us/)
-
- </div>
-
-![illustration](/img/illustrations/undraw_community_transparent.png)
-
-
-## Stay in Touch
-
-For news, updates, and events be sure to sign up for our [mailing list](#).
+All are welcome.
 
 <div class="action-button">
 
-[Get the Latest](/community/news-events/)
+[Join us](/community/join-us/)
 
 </div>
 
-![illustration](/img/illustrations/undraw_newspaper_k72w.png)
+<div class="feature-cards">
 
+- [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](#)
 
-## Get Started
+  For news, updates, and events sign up for our mailing list
 
-<div class="action-button">
+- [Get Started ![illustration](/img/illustrations/undraw_blogging_vpvv.png)](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
 
-[Sign Up for Free Access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
+  To try Quire for yourself, sign up for free beta access
 
 </div>
-
-![illustration](/img/illustrations/undraw_blogging_vpvv.png)
