@@ -243,6 +243,16 @@ figure_list:
     caption: "**Student Research Project**"
     full_caption: "*Mozoomdar at Sea*, by Nick Tackes, 2018."
 
+  - id: "humanizing_the_digital"
+    src: /screenshots/_humanizing_the_digital.png
+    caption: "**Conference Proceedings** | Ad Hoc Museum Collective"
+    full_caption: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
+
+  - id: "state_of_museum_dig"
+    src: /screenshots/_state_of_museum_dig.png
+    caption: "**Graduate Essays** | Ad Hoc Museum Collective"
+    full_caption: "*The State of Museum Digital Practice in 2019: A collection of graduate essays and responses*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
+
   - id: "quire_demo"
     src: /screenshots/quire_demo.png
     media_id: VVYe0qR5DnM

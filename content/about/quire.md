@@ -12,7 +12,7 @@ Quire is also flexible and feature-rich. It can be used in its most basic config
 
 <div class="action-button-center">
 
-[**See What Our Community Is Creating**](/community/user-showcase/)
+[**See What Our Community Is Creating**](/community/community-showcase/)
 </div>
 
 <div class="feature-cards small-card">
@@ -91,7 +91,7 @@ Here are some things to consider:
 - Quire is compatible with most operating systems, whether you're using a MAC, PC, or Linux. [Visit our installation guidelines.](/documentation/install-uninstall/)
 - No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or if you have more advanced resources, then Quire can be heavily customized and adapted to your unique content. [Visit our documentation.](/documentation/getting-started/)
 - We know how intimidating learning new technology can be, but we've got you covered. We've created helpful tutorials to guide you through each step of using Quire, from installation to deployment and everything in between. [Learn more.](/learn/tutorial/)
-- We have a vibrant and diverse community of users that are here to help. [Visit our User Forum.](/community/forum)
+- We have a vibrant and diverse community of users that are here to help. [Visit our Community Forum.](/community/forum)
 - We are moving Quire towards an open-source, community-supported model, and we are currently following open-source software standards. Our goal is to launch an officially open-source Quire by 2022. [Learn more about the benefits of open-source development.](/about/open-source)
 
 <div class="action-button-center">

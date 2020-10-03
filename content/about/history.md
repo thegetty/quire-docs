@@ -4,7 +4,7 @@ weight: 1300
 type: essay
 ---
 
-For over sixty years, [Getty](https://www.getty.edu/) has preserved the world's artistic legacy through the publication of award-winning books and journals. Over the last two decades, the internet has become a vital platform for the creation and dissemination of critical scholarship online. Yet the field of digital publishing still lacks reliable, affordable, and sustainable tools for presenting visually rich narratives that are globally accessible across devices and borders. Getty is uniquely positioned to build on its expertise in the field and advance this effort. Keep reading to learn how Quire evolved as a cornerstone of the institution's pioneering [digital publishing initiative](https://www.getty.edu/publications/digital/index.html).
+For over sixty years, [Getty](https://www.getty.edu/) has preserved the world's artistic legacy through the publication of award-winning books and journals. Over the last two decades, the internet has become a vital platform for the creation and dissemination of critical scholarship online. Yet the field of digital publishing still lacks reliable, affordable, and sustainable tools for presenting visually rich narratives that are globally accessible across devices and borders. Getty is uniquely positioned to build on its expertise in the field and advance this effort. Keep reading to learn how Quire evolved as the cornerstone of the institution's pioneering [digital publishing initiative](https://www.getty.edu/publications/digital/index.html).
 
 [[[Image of Getty Center]]]
 
@@ -15,13 +15,13 @@ Getty Foundation launches the [Online Scholarly Catalogue Initiative (OSCI)](ht
 **2013**
 
 [Getty Publications](https://www.getty.edu/publications) begins investing in full-time digital publishing staff.
-[Greg Albers](https://geealbers.net/) joins Getty as the Digital Publications Manager. Albers, a leading figure in the world of digital publishing, is poised to help Getty reach new heights.
+[Greg Albers](https://geealbers.net/) joins Getty as the Digital Publications Manager. Albers, a leading figure in the world digital publishing, is poised to help Getty reach new heights.
 
 {{< q-figure id="mcn_2013" caption="Greg Albers speaking at the 2013 Museum Computer Network Conference. Print Meet Digital, Digital Meet Print: A Matchmaking" >}}
 
 **2016**
 
-Getty publishes its first digital catalogue, [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/). The publication, built with OSCI, serves as a precursor to future Quire titles.
+Getty publishes its first digital catalogue, [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/). The publication,  built with OSCI, serves as a precursor to future Quire titles.
 
 Also released this year are [*Roman Mosaics*](https://www.getty.edu/publications/romanmosaics/) and [*Introduction to Metadata, Third Edition*](https://www.getty.edu/publications/intrometadata/). [ARLIS/NA's *Multimedia & Technology Reviews*](https://arlisna.org/publications/multimedia-technology-reviews/1025-roman-mosaics-in-the-j-paul-getty-museum) writes that *Roman Mosaics* has a "dynamic design that encourages further discovery and scholarship."
 
@@ -31,7 +31,7 @@ Getty Publications editor, Ruth Evans Lane, writes an article for Getty's blog, 
 
 **2017**
 
-OSCI concludes. While the program transformed the digital publishing landscape for museums, notable challenges remained, particularly around the discoverability and longevity of digital catalogues. Read the [OSCI Final Report](https://www.getty.edu/publications/osci-report/remaining-challenges/) to learn more about the participants' conclusions.
+OSCI concludes. While the program transformed the digital publishing landscape for museums notable challenges remained, particularly around the discoverability, longevity, and objectness of digital catalogues. Read the [OSCI Final Report](https://www.getty.edu/publications/osci-report/remaining-challenges/) to learn more about the participants' conclusions.
 
 Greg Albers and, former Getty developer, Eric Gardner, begin work on an early version of Quire with the goal of creating a tool that is not only beautiful and booklike, but also affordable, flexible, accessible, discoverable, and enduring.
 
@@ -43,7 +43,7 @@ The first in-person Quire workshop takes place at the Museum Computer Network (M
 
 **2018**
 
-Early successes with the development of Quire encourage Getty to move the tool toward an open-source model. [Beta Access](/request-access/beta-access) is enabled. Over fifty users sign up as beta testers within the first year.
+Early successes with the development of Quire encourage Getty to move the tool towards an open-source model. [Beta Access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform) is enabled. Over fifty new community members sign-up as beta testers within the first year.
 
 As a result of the successful MCN Quire workshop, [Journal 18](http://www.journal18.org/issue5_williams/about/), the first external Quire publication, launches.
 
@@ -57,17 +57,19 @@ Two additional Quire publications are released [*Ancient Ambers*](https://www.ge
 
 The Quire team hires a Community Manager to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
 
-Quire is used to bring the century-old reference series, Corpus Vasorum Antiquorum (CVA), to a new digital platform.
+Quire is used to bring the century-old reference series, [Corpus Vasorum Antiquorum (CVA)](https://www.getty.edu/publications/cva10/), to a new digital platform.
 
 {{< q-figure id="cva_podcast" caption="Audio from Getty podcast Art & Ideas. Moving a Hundred-Year-Old Series Online. Getty's Corpus Vasorum Antiquorum.">}}
 
-Quire is invited to participate in the inaugural Open Publishing Fest. In the session, *Quire: Multiformat Publishing Solutions for Art Books and Beyond*, the team discusses the history and future of the tool. Three Quire users also reflect on their experience publishing with Quire and demo their recent projects.
+Quire is invited to participate in the inaugural Open Publishing Fest. In the session, *Quire: Multiformat Publishing Solutions for Art Books and Beyond*, the team discusses the history and future of the tool. Three Quire community members also reflect on their experience publishing with Quire and demo their recent projects.
 
-{{< q-figure id="opf_2020" caption=" Recording of Open Publishing Fest 2020. Quire: Multiformat Publishing Solutions for Art Books and Beyond.">}}
+{{< q-figure id="opf_2020" caption="Recording of Open Publishing Fest 2020. Quire: Multiformat Publishing Solutions for Art Books and Beyond" >}}
+
+The latest Quire publication, [Mummy Portraits of Roman Egypt: Emerging Research from the APPEAR Project](https://www.getty.edu/publications/mummyportraits/) is released in summer 2020.
 
 <div class="action-button-center">
 
-[**We invite you to become part of Quire's history. <br> Sign-up for beta access and join the Quire community today!**](/request-access/beta-access/)
+[**We invite you to become part of Quire's history. <br> Sign-up for beta access and join the Quire community today!**](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
 </div>
 
 <div class="feature-cards">

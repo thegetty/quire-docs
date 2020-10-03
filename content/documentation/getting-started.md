@@ -26,11 +26,13 @@ In addition to starting a Quire project from scratch as described in the previou
 
 3. Still in the command-line shell, type `quire install` and press enter to install the theme dependencies for your project. (This is done automatically when running `quire new`, but needs to be done manually when working on pre-existing projects.)
 
-{{< q-class "box tip" >}}
-- You can also type `cd` and a space in your shell and then drag and drop the Quire directory icon into it. This will copy the full file path.
-{{< /q-class >}}
+<div class="box tip">
 
-{{< q-figure id="command-line-drag-and-drop" >}}
+- You can also type `cd` and a space in your shell and then drag and drop the Quire directory icon into it. This will copy the full file path.
+
+![Drag-and-drop](/img/screenshots/command-line-drag-and-drop.gif)
+
+</div>
 
 ## Which Quire Files Are for Content Creators and Editors?
 

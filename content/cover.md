@@ -24,7 +24,7 @@ slug: .
 
 <div class="action-button">
 
-[Visit Our User Showcase](/community/user-showcase/)
+[Visit Our Community Showcase](/community/community-showcase/)
 
 </div>
 
