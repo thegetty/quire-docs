@@ -1,6 +1,7 @@
 {{/*
 
-  THIS OVERRIDE VERSION REMOVES THE "CITE THIS" FEATURE
+  THIS OVERRIDE VERSION REMOVES THE "CITE THIS" FEATURE, AND ADDS
+  THE QUIRE CREDIT LINE
 
 This controlls the global table of contents for the publication, which is
 available on all pages. For users with Javascript enabled, this menu is hidden
@@ -47,6 +48,9 @@ by default. Users with JS disabled will alwasy see the menu in its expanded stat
   {{ end -}}
 
   <footer class="quire-menu__footer" role="contentinfo">
+    <p>This site was created using Quire™, <br/>
+      a multiformat publishing tool from Getty.</p>
+
     {{ partial "copyright.html" . }}
 
     {{ if isset .Site.Data.publication "resource_link" -}}

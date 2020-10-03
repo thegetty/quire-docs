@@ -340,6 +340,18 @@ on the page and adjusts to different window widths */
 }
 .quire-menu__footer .menu-list li {
   float: left;
+  margin-left: -.5em;
+  margin-right: .5em;
+  margin-bottom: -.5em;
+}
+.quire-menu__footer {
+  margin-top: 3rem;
+}
+.quire-menu__footer p {
+  margin-bottom: 1em;
+}
+.quire-menu__footer .quire-copyright {
+  padding: 0;
 }
 
 /* PAGE HEADER
