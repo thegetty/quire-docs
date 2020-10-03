@@ -133,3 +133,7 @@ All are welcome.
   To try Quire for yourself, sign up for free beta access
 
 </div>
+
+---
+
+[GitHub](https://github.com/gettypubs/quire/) | [About](/about/quire/) | [Contact](mailto:edunigan@getty.edu)

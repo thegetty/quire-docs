@@ -334,6 +334,14 @@ on the page and adjusts to different window widths */
   font-style: italic;
 }
 
+.quire-menu__footer .menu-list {
+  display: block;
+  height: 100px;
+}
+.quire-menu__footer .menu-list li {
+  float: left;
+}
+
 /* PAGE HEADER
 ============================================================================= */
 /* A couple fixes for moving page-header inside content area
