@@ -75,7 +75,7 @@ External links can be included through the following Markdown formatting:
 
 ```md
 [Link text](http://www.linkaddress.com)
-[Getty Museum](http://www.getty.edu/museum/)
+[Getty Museum](https://www.getty.edu/museum/)
 ```
 
 These are set by default to open in new pages, but you can change that by setting `hrefTargetBlank` to `true` in the config.yml file.

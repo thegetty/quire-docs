@@ -36,7 +36,7 @@ entries:
   - term: "Free webfont generator"
     definition: "A tool that generates copies of your font in multiple formats for display on the web. A good webfont generator can be found at: [https://www.fontsquirrel.com/tools/webfont-generator](https://www.fontsquirrel.com/tools/webfont-generator)."
   - term: "Getty Vocabularies"
-    definition: "Controlled vocabularies developed to ensure consistency in cataloging and more efficient retrieval of information. For more information visit: [http://www.getty.edu/research/tools/vocabularies/](http://www.getty.edu/research/tools/vocabularies/)"
+    definition: "Controlled vocabularies developed to ensure consistency in cataloging and more efficient retrieval of information. For more information visit: [https://www.getty.edu/research/tools/vocabularies/](https://www.getty.edu/research/tools/vocabularies/)"
   - term: "GitHub"
     definition: "GitHub is a code hosting platform for version control and collaboration. For an introductory guide to it, visit: [https://guides.github.com/activities/hello-world/#what](https://guides.github.com/activities/hello-world/#what)"
   - term: "`Git` project management tool"
