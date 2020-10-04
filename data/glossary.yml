@@ -10,7 +10,7 @@ entries:
   - term: "Color Keywords"
     definition: "Color keywords are case-insensitive identifiers that represent specific colors. A comprehensive list of color keywords is at: [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)"
   - term: "command-line interface"
-    definition: "A command-line interface (CLI) is a text-based user interface for running program tasks. In it, the user issues commands in the form of typed strings of text. This is opposed to a graphical user interface (GUI) for a software program, in which the user controls the program through visualized buttons, toggles and menus."
+    definition: "A command-line interface (CLI) is a text-based user interface for running program tasks. In it, the user issues commands in the form of typed strings of text. This is opposed to a graphical user interface (GUI) for a software program, in which the user controls the program through visualized buttons, toggles and menus. [https://www.codecademy.com/articles/command-line-interface](https://www.codecademy.com/articles/command-line-interface)"
   - term: "command-line shell"
     definition: "The command-line shell is a text-based window into the contents of your computer, and a space where you can run program commands. On Mac computers you’ll most often use a shell called Terminal, on PCs it’s PowerShell or Git BASH."
   - term: "Copyright"
