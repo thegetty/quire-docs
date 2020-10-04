@@ -1,62 +1,56 @@
 {{/*
 
-  This shortcode adds a glossary term reference to the text, and a
-  hover pop-up with the full definition of the term.
+  A shortcode to create a glossary of terms from a data/glossary.yml file that
+  includes `term` and `definition` attributes for each term.
 
-  The first positional parameter is the glossary term that should match one
-  in `glossary.yml`.
+  This shortcode also adds a linked alphabetic menu at the top for users to
+  jump down to certain letters. Letters that do not have any associated terms
+  will not be linked.
 
 */}}
 
-{{- $errorMissingValue := dict "shortcode" "q-glossary" "message" "a value must be supplied with this shortcode and should match a term in the project’s `glossary.yml` file" "example" "{{< q-glossary &#34;chiaroscuro&#34; &#34;304&#34; >}}" -}}
+{{- $.Scratch.Set "letters" "" -}}
+{{- $alphabet := slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z" -}}
 
-{{- $errorMissingTerm := dict "shortcode" "q-glossary" "message" "The term supplied doesn’t match one in the project’s `glossary.yml` file. The term should be listed under the `term` or `alternates` key." "example" "{{< q-glossary &#34;chiaroscuro&#34; >}}<br /><br />term: &#34;chiaroscuro&#34;<br />alternates:<br /> - &#34;chiaroscuros&#34;" -}}
-
-{{- if and (ne (len .Params) 1) (ne (len .Params) 2) -}}
-
-  {{- partial "error-message.html" $errorMissingValue -}}
-
-{{- else -}}
-
-  {{- $term := .Get 0 -}}
-
-  {{- range $.Site.Data.glossary.entries -}}
-    {{- if .alternates -}}
-      {{/* convert all the alternates listed into lowercase for comparison */}}
-      {{- range .alternates -}}
-        {{- $lowercaseAlternates := lower . -}}
-        {{- $.Scratch.Add "alternates" (slice $lowercaseAlternates) -}}
-      {{- end -}}
-      {{- $alternates := $.Scratch.Get "alternates" -}}
-      {{/* add alternaes and main term, compare to term given in shortcode */}}
-      {{- $allTerms := union (slice (lower .term)) $alternates -}}
-      {{- if in $allTerms (lower $term) -}}
-          {{- $.Scratch.Add "definition" .definition -}}
-      {{- end -}}
-      {{/* clear alternates Scratch for next use */}}
-      {{- $.Scratch.Delete "alternates" -}}
-    {{- else -}}
-      {{- if eq (lower .term) (lower $term) -}}
-          {{- $.Scratch.Add "definition" .definition -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-
-  {{- if eq ($.Scratch.Get "definition") nil -}}
-
-    {{- partial "error-message.html" $errorMissingTerm -}}
-
+{{/* Stash an array of letters that have associated glossary terms */}}
+{{/* ---------------------------------------------------------------------- */}}
+{{- range .Site.Data.glossary.entries -}}
+  {{- $letter := substr .term 0 1 | upper -}}
+  {{- if in ($.Scratch.Get "letters") $letter -}}
   {{- else -}}
-
-    {{- $definition := $.Scratch.Get "definition" -}}
-    {{- $.Page.Scratch.SetInMap "term" "0" $term -}}
-    {{- $.Page.Scratch.SetInMap "term" "1" $definition -}}
-    {{- $entry := ($.Page.Scratch.GetSortedMapValues "term") -}}
-    {{- $termId := $term | urlize -}}
-    {{- $.Page.Scratch.SetInMap "defined" $termId $entry -}}
-    
-    <span class="quire-citation expandable">{{ if ne .Site.Params.citationPopupStyle "icon" }}<span class="quire-citation__button glossary-button" role="button" tabindex="0" aria-expanded="false">{{ end }}{{ if eq (len .Params) 2 }}{{ .Get 1 | markdownify }}{{ else }}{{ .Get 0 }}{{ end }}{{ if eq .Site.Params.citationPopupStyle "icon" }}<button class="material-icons md-18 material-control-point" aria-expanded="false">control_point</button>{{ end }}{{ if ne .Site.Params.citationPopupStyle "icon" }}</span>{{ end }}<span hidden class="quire-citation__content"><span class="visually-hidden">Definition: </span><strong>{{- markdownify $term -}}{{ if .Site.Params.glossaryTermDivider }}{{ .Site.Params.glossaryTermDivider }}{{ else }}: {{ end }}</strong>{{- markdownify $definition -}}</span></span>
-        
+    {{- $.Scratch.Add "letters" $letter -}}
   {{- end -}}
-
 {{- end -}}
+
+{{/* Create an alphabet list at the top of the glossary
+     and link those letters that have associated glossary terms */}}
+{{/* ---------------------------------------------------------------------- */}}
+<ul class="quire-glossary__key remove-from-pdf remove-from-epub" id="key">
+{{ range $alphabet -}}
+  {{- if in ($.Scratch.Get "letters") . -}}
+    <li><a href="#{{ . }}">{{ . }}</a></li>
+  {{- else -}}
+    <li>{{ . }}</li>
+  {{- end -}}
+{{- end }}
+</ul>
+{{- $.Scratch.Delete "letters" -}}
+
+<hr class="remove-from-pdf remove-from-epub" />
+
+{{/* Create the glossary
+     add IDs to the first term in each letter of the alphabet  */}}
+{{/* ---------------------------------------------------------------------- */}}
+<dl class="quire-glossary">
+{{ $.Scratch.Set "letters" "" -}}
+{{- range .Site.Data.glossary.entries -}}
+  {{- $letter := substr .term 0 1 | upper -}}
+  {{- if in ($.Scratch.Get "letters") $letter -}}
+    <dt>{{ .term | markdownify }}{{ if $.Site.Params.glossaryTermDivider }}{{ $.Site.Params.glossaryTermDivider }}{{ else }}: {{ end }}</dt>
+  {{- else -}}
+    {{- $.Scratch.Add "letters" $letter -}}
+    <dt id="{{ $letter | safeHTMLAttr }}">{{ .term | markdownify }}{{ if $.Site.Params.glossaryTermDivider }}{{ $.Site.Params.glossaryTermDivider }}{{ else }}: {{ end }}</dt>
+  {{- end -}}
+  <dd>{{ .definition | markdownify }}</dd>
+{{- end }}
+</dl>

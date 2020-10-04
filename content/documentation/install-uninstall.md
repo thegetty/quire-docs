@@ -10,7 +10,7 @@ type: essay
 
 ## macOS Installation
 
-Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applications/Utilities folder or by pressing Command–Space Bar and type “Terminal” ) and follow the steps below to first install the support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
+Open your Terminal {{< q-def "command-line shell" >}} (found in your Applications/Utilities folder or by pressing Command–Space Bar and type “Terminal” ) and follow the steps below to first install the support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
 
 1. **Apple’s Xcode** is a set of developer tools for your mac. More information can be found [here](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
 
@@ -42,7 +42,7 @@ Open your Terminal {{< q-glossary "command-line shell" >}} (found in your Applic
     cd
     ```
 
-5. The **Quire CLI** ({{< q-glossary "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli) chapter of our guide.  Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
+5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli) chapter of our guide.  Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
 
     ```text
     git clone https://github.com/gettypubs/quire-cli.git
@@ -81,7 +81,7 @@ When complete, type `quire --version` to confirm proper installation. It should 
 
     This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with the name of your computer and your username once it's complete.
 
-6.  The **Quire CLI** ({{< q-glossary "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](https://gettypubs.github.io/quire/guide/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
+6.  The **Quire CLI** ({{< q-def "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](https://gettypubs.github.io/quire/guide/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
 
     ```tx
     git clone https://github.com/gettypubs/quire-cli
@@ -328,7 +328,7 @@ To uninstall Quire:
 
 **Downloading the Quire CLI to your computer from GitHub through the Terminal**
 
-If you have {{< q-glossary "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) or you can follow the instructions below.
+If you have {{< q-def "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) or you can follow the instructions below.
 
 Follow these steps:
 

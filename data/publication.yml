@@ -83,12 +83,21 @@ resource_link:
     link_relation: alternate
     url: /downloads/output.mobi
   - type: footer-link
-    name: About
-    link_relation: about
-    url: /about/
-  - type: footer-link
     name: GitHub
     url: https://github.com/gettypubs/quire/
+  - type: footer-link
+    name: About
+    link_relation: about
+    url: /about/quire/
+  - type: footer-link
+    name: Contact
+    url: mailto:edunigan@getty.edu
+  - type: footer-link
+    name: Privacy Policy
+    url: https://www.getty.edu/legal/privacy.html
+  - type: footer-link
+    name: Terms of Use
+    url: https://www.getty.edu/legal/copyright.html
 
 # ------------------------------------------------------------------------------
 # Subjects
@@ -96,24 +105,7 @@ resource_link:
 
 subject:
   - type: keyword
-    name: lemons, oranges, marmalade
-  - type: bisac
-    name: ART HISTORY / English / Jams
-    identifer: ART0009210
-  - type: getty
-    name: Paul Cézanne
-    identifier: "http://vocab.getty.edu/ulan/500004793"
-  - type: keyword
-    name: still life
-  - type: getty
-    name: Hampshire
-    identifier: "http://vocab.getty.edu/tgn/7008139"
-  - type: getty
-    name: oil pastels
-    identifier: "http://vocab.getty.edu/aat/300230810"
-  - type: getty
-    name: Still Life with Blue Pot
-    identifier: "https://www.getty.edu/cona/CONAFullSubject.aspx?subid=700002042"
+    name: digital publishing, open source, static site generator, musetech, museum technology, scholarly communications, ebook, web book
 
 # ------------------------------------------------------------------------------
 # Revision History

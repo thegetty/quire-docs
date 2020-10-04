@@ -38,8 +38,8 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 
 <div class="feature-cards">
 
-- [Watch a Video Intro ![Explore icon](/img/illustrations/undraw_online_video_ivvq.png)](https://www.youtube.com/watch?v=kFTcJLbMDxs&feature=youtu.be)
-- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started)
+- [Quire Basics <br />Step‑by‑Step ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](/learn/tutorial/)
+- [Demo <br />Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](https://gettypubs.github.io/quire-starter/)
 
 </div>
 
@@ -67,8 +67,8 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 <div class="feature-cards">
 
 - [Quire Roadmap ![Explore icon](/img/illustrations/roadmap_transparent.png)](/about/roadmap/)
-- [Quire Basics & Tutorials ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](/learn/tutorial/)
-- [View Demo Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](https://gettypubs.github.io/quire-starter/)
+- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started)
+
 </div>
 
 ## Why Use Quire?
@@ -98,67 +98,42 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 </div>
 
-## Features & Functionality
-<br>
+## Key Features & Functionality
 
-- **Operating System Compatibility**
-- **Cross-Device Usage**
-- **Multiformat Output**
-- **Realtime Publication Preview**
-- **Web Accessibility**
-- **SEO Optimization**
-- **Responsive Web Design**
-- **Reproducible Content**
-- **Customizable Styles & Fonts**
-- **Figure Images & Image Groups**
-- **Zooming Images & Maps**
-- **IIIF Compatibility**
-- **Video & Audio Embeds**
-- **Dynamic Navigation**  
-- **Full-text Search**
-- **Page-level Citation**
-- **Linkable Footnotes**
-- **Linkable Bibliographies**
+{{< q-figure-group id="collection-catalogue, custom-styles, multiformat, video-embeds, plain-text" grid="9" class="slider slider-small" >}}
 
 <div class="action-button">
 
-[Learn More](/about/quire)
+[See the Complete Feature List](/about/quire/#features--functionality)
 
 </div>
 
 ## The Quire Community
 
- Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators to developers. <br>
- All are welcome.
+Quire is used internally at the Getty and externally by scholars, publishers, curators, developers, and the digitally curious.
 
- <div class="action-button">
+The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience, from content creators to developers.
 
- [Join us](/community/join-us/)
-
- </div>
-
-![illustration](/img/illustrations/undraw_community_transparent.png)
-
-
-## Stay in Touch
-
-For news, updates, and events be sure to sign up for our [mailing list](#).
+All are welcome.
 
 <div class="action-button">
 
-[Get the Latest](/community/news-events/)
+[Join us](/community/join-us/)
 
 </div>
 
-![illustration](/img/illustrations/undraw_newspaper_k72w.png)
+<div class="feature-cards">
 
+- [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](#)
 
-## Get Started
+  For news, updates, and events, <br />sign up for our mailing list
 
-<div class="action-button">
+- [Get Started ![illustration](/img/illustrations/undraw_blogging_vpvv.png)](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
 
-[Sign Up for Free Access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
+  To try Quire for yourself, <br />sign up for free beta access
 
 </div>
 
-![illustration](/img/illustrations/undraw_blogging_vpvv.png)
+---
+
+[GitHub](https://github.com/gettypubs/quire/) | [About](/about/quire/) | [Contact](mailto:edunigan@getty.edu)
