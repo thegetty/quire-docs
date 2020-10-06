@@ -40,7 +40,7 @@ Getty Publications editor, Ruth Evans Lane, writes an article for Getty's blog, 
 
 ## 2017
 
-[OSCI](https://www.getty.edu/foundation/initiatives/past/osci/index.html) concludes. While the program transformed the digital publishing landscape for museums [notable challenges remained](https://www.getty.edu/publications/osci-report//remaining-challenges/), particularly around the discoverability, longevity, and objectness of digital catalogues. (Read the [*OSCI Final Report*](https://www.getty.edu/publications/osci-report//).)
+OSCI concludes. While the program transformed the digital publishing landscape for museums [notable challenges remained](https://www.getty.edu/publications/osci-report//remaining-challenges/), particularly around the discoverability, longevity, and objectness of digital catalogues. (Read the [*OSCI Final Report*](https://www.getty.edu/publications/osci-report//).)
 
 Greg Albers and Eric Gardner, begin building Quire with the goal of enabling other museums and publishers to do multiformat publishing on their own. Albers and Gardner envision a free and flexible tool to create beautiful, accessible, discoverable, and enduring publications.
 
