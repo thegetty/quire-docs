@@ -14,15 +14,15 @@ Getty Foundation launches the [Online Scholarly Catalogue Initiative (OSCI)](ht
 
 ## 2012
 
-Getty Publications experiments with a number of different digital formats including EPUB and MOBI e-books, a mobile app, a first online collection catalogue, and two titles created in Apple’s iBooks Author tool ([*Visions of Tondal*](https://books.apple.com/us/book/the-visions-of-tondal/id567895177) and [*Looking East*](https://books.apple.com/us/book/looking-east/id605969649) ).
+Getty Publications experiments with a number of different digital formats including EPUB and MOBI e-books, a mobile app, an online collection catalogue, and two titles created in Apple’s iBooks Author tool ([*Visions of Tondal*](https://books.apple.com/us/book/the-visions-of-tondal/id567895177) and [*Looking East*](https://books.apple.com/us/book/looking-east/id605969649) ).
 
 ## 2013
 
-[Getty Publications](https://www.getty.edu/publications) begins investing in full-time digital publishing staff. [Greg Albers](https://geealbers.net/), a leading figure in the digital publishing in the arts, joins Getty as the Digital Publications Manager.
+[Getty Publications](https://www.getty.edu/publications) begins investing in full-time digital publishing staff. [Greg Albers](https://geealbers.net/), a leading figure in digital arts publishing, joins Getty as the Digital Publications Manager.
 
 ## 2014
 
-Getty launches its [Virtual Library](https://www.getty.edu/publications/virtuallibrary/) featuring 300 of its past books available to read and download in PDF for free. 500,000 copies have been downloaded to date.
+Getty launches its [Virtual Library](https://www.getty.edu/publications/virtuallibrary/) featuring 300 of its past books available to read and download as free PDFs. 500,000 copies have been downloaded to date.
 
 Getty Publications hires its first Digital Publications Developer, [Eric Gardner](https://ericgardner.info/).
 
@@ -40,9 +40,9 @@ Getty Publications editor, Ruth Evans Lane, writes an article for Getty's blog, 
 
 ## 2017
 
-OSCI concludes. While the program transformed the digital publishing landscape for museums [notable challenges remained]((https://www.getty.edu/publications/osci-report/remaining-challenges/)), particularly around the discoverability, longevity, and objectness of digital catalogues. (Read the [*OSCI Final Report*](https://www.getty.edu/publications/osci-report//).)
+[OSCI](https://www.getty.edu/foundation/initiatives/past/osci/index.html) concludes. While the program transformed the digital publishing landscape for museums [notable challenges remained]((https://www.getty.edu/publications/osci-report/remaining-challenges/)), particularly around the discoverability, longevity, and objectness of digital catalogues. (Read the [*OSCI Final Report*](https://www.getty.edu/publications/osci-report//).)
 
-Greg Albers and Eric Gardner, begin work building Quire with the goal of enabling other museums and publishers to do multiformat publishing on their own. Albers and Gardner envision a free and flexible tool to create beautiful, accessible, discoverable, and enduring publications.
+Greg Albers and Eric Gardner, begin building Quire with the goal of enabling other museums and publishers to do multiformat publishing on their own. Albers and Gardner envision a free and flexible tool to create beautiful, accessible, discoverable, and enduring publications.
 
 Getty uses early Quire prototype to develop and publish [*Artistry in Bronze*](https://www.getty.edu/publications/artistryinbronze/).
 
@@ -60,7 +60,7 @@ Developer Eric Gardner leaves Getty Publications. From Getty’s centralized dig
 
 ## 2019
 
-[A major release](https://github.com/gettypubs/quire-starter-theme/releases/tag/v0.1.0.alpha.15.3) of Quire comes out with a completelynew theme—designed by Ramon Tapales (Lead User Experience Designer)—as well as dramatically improved figure handling, audio embedding, and page layout options.
+[A major release](https://github.com/gettypubs/quire-starter-theme/releases/tag/v0.1.0.alpha.15.3) of Quire comes out with a new theme—designed by Ramon Tapales (Lead User Experience Designer)—as well as improved figure handling, audio embedding, and page layout options.
 
 Three additional Quire publications are released by Getty, including the first-ever born digital version of the century-old reference series, [*Corpus Vasorum Antiquorum (CVA)*](https://www.getty.edu/publications/cva10/).
 

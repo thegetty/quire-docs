@@ -7,7 +7,7 @@ menu: false
 
 The Quire team at Getty continues work on Quire as a whole, including making improvements to the installation process, the overall architecture, and ongoing enhancements for web accessibility.
 
-We also have planned a number of specific features being developed in conjunction with forthcoming Getty Publications’ books, which will also be built into Quire and released to the community.
+We also plan to develop a number of specific features in conjunction with forthcoming Getty Publications’ books, which will also be built into Quire and released to the community.
 
 ## Quire Features in Development
 

@@ -32,7 +32,7 @@ Quire is designed to ensure that digital books and their content are not only as
 - ![Explore icon](/img/illustrations/undraw_in_progress_ql66.png)
 </div>
 
-Currently under development for potential release as [open-source software](/about/open-source/), Quire uniquely builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating enduring and discoverable digital publications.
+Currently under development for potential release as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating enduring and discoverable digital publications.
 
 <div class="action-button-center">
 
@@ -54,8 +54,8 @@ Currently under development for potential release as [open-source software](/abo
 - **Multiformat Output** Generate publications as websites, EPUB and MOBI ebooks, and PDFs
 - **Realtime Publication Preview** Make changes and view them live in your browser
 - **Web Accessibility** Adhere to [WCAG2.0](https://www.w3.org/TR/WCAG20/) web accessibility principles
-- **SEO Optimization** Include metadata and tags for enhanced search engine optimization
-- **Single-source Publishing** Change content once to change it across formats, without duplicating effort
+- **SEO Optimization** Include metadata and tags for enhanced {{< q-def "search engine optimization" >}}
+- **Single-source Publishing** Change content once to change it across all formats, without duplicating effort
 - **Customizable Styles & Fonts** Customize your publication's look and feel to suit your needs
 - **Figure Images & Image Groups** Include high quality images in a variety of configurations
 - **Zooming Images** Enable zooming capabilities on images (with [IIIF](https://iiif.io/) compatibility in the works)
@@ -87,7 +87,7 @@ Here are some things to consider:
 - Quire is free to use, and no proprietary software or ongoing maintenance is required. [Visit our Implementation Considerations to learn more.](/documentation/implementation/)
 - Multiformat output means E-book files are distribution-ready for Amazon, Apple, and other vendors; PDF files are print-on-demand ready, and the online edition can be hosted on any web server. [Learn more about Quire's multiformat output capabilities.](/documentation/quire-cli/#outputting-files)
 - Quire is compatible with most operating systems, whether you're using a MAC, PC, or Linux. [Visit our installation guidelines.](/documentation/install-uninstall/)
-- No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or if you have more advanced resources, then Quire can be heavily customized and adapted to your unique content. [Visit our documentation.](/documentation/getting-started/)
+- No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or, if you have more advanced resources, you can heavily customize and adapt Quire to your unique content. [Visit our documentation.](/documentation/getting-started/)
 - We know how intimidating learning new technology can be, but we've got you covered. We've created helpful tutorials to guide you through each step of using Quire, from installation to deployment and everything in between. [Learn more.](/learn/tutorial/)
 - We have a vibrant and diverse community of users that are here to help. [Visit our Community Forum.](/community/forum)
 - We are moving Quire towards an open-source, community-supported model, and we are currently following open-source software standards. Our goal is to launch an officially open-source Quire by 2022. [Learn more about the benefits of open-source development.](/about/open-source)
