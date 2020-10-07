@@ -1,0 +1,127 @@
+#
+# PROJECT INFOMATION FOR COMMUNITY SHOWCASE:
+# ==================================================================
+#
+# YAML KEY:
+# ---------
+# - id:                     lowercase, no spaces or special characters
+#   src:                    Screenshot of homepage
+#   type:                   Try to use existing types if possible
+#   publisher:              Or "Self Published" if not publisher/institution
+#   title_info:             Markdown ok, typically: "*Title of Publication*, by Author Name"
+#   pub_date:               YYYY-MM-DD format, only year will display
+#   url:                    URL to homepage/cover of the publication
+#   customization_scale:    Scale 0–5 (see above for key)
+#   github_user:            GitHub username
+#   note:                   Markdown ok, should focus on it as a Quire project:
+#                             What's new? What features did the use? How was it
+#                             customized?
+#
+# CUSTOMIZATION SCALE:
+# --------------------
+# 0: No customization
+# 1: Style variables manipulated
+# 2: New fonts used, some custom CSS
+# 3: Templates/shortcodes customized, more custom CSS
+# 4: New templates/shortcodes written, more custom CSS, custom JS
+# 5: Fully new theme/design
+
+project_list:
+
+  - id: "thomas_rife"
+    src: /screenshots/_thomas_rife.png
+    type: Family History
+    publisher: Self published
+    title_info: "*The Alamo Keeper: Thomas C. Rife*, by Philip Mullins and George Mullins"
+    pub_date: 2020-06-21
+    url: http://www.thomasrife.com/
+    customization_scale: 2
+    github_user: halfempty
+    note: "This project updates the starter theme with a new font and custom css for in the typography."
+
+  - id: "artists_studios_paris"
+    src: /screenshots/_artists_studios_paris.png
+    type: Journal Article
+    publisher: Journal18
+    title_info: "“Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World,” by Hannah Williams"
+    pub_date: 2018-04-01
+    url: https://www.journal18.org/issue5_williams/
+    customization_scale: 1
+    github_user: nancyum
+    note: "This project has the distinction of being the first Quire project published outside Getty. It’s an article published as part of the Spring 2018 issue of *Journal18* on [Digital Mapping & Eighteenth-Century Visual, Material, and Built Cultures](https://www.journal18.org/past-issues/5-coordinates-spring-2018/)."
+
+  - id: "bending_lines"
+    src: /screenshots/_bending_lines.png
+    type: Online Exhibition
+    publisher: Leventhal Map & Education Center, Boston Public Library
+    title_info: "*Bending Lines: Maps and Data from Distortion to Deception*"
+    pub_date: 2020-05-01
+    url: https://www.leventhalmap.org/digital-exhibitions/bending-lines/
+    customization_scale: 3
+    github_user: garrettdashnelson
+    note: "This online exhibition was orignally slated to be a phyiscally gallery exhibition, but it was put on indefinite hold due the COVID-19 pandemic. The project features a wide range of style customizations."
+
+  # - id: "fault_lines"
+  #   src: /screenshots/_fault_lines.png
+  #   caption: "Senior thesis show | Mills College Art Museum"
+  #   full_caption: "*Fault Lines: 2020 Senior Thesis*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir. Oakland, CA: Mills College Art Museum, 2020."
+  #
+  # - id: "in_plain_sight"
+  #   src: /screenshots/_in_plain_sight.png
+  #   caption: "Exhibition catalogue | Mills College Art Museum"
+  #   full_caption: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor. Oakland: Mills College Art Museum, 2019."
+  #
+  # - id: "state_of_convergence"
+  #   src: /screenshots/_state_of_convergence.png
+  #   caption: "Exhibition catalogue | Mills College Art Museum"
+  #   full_caption: "*State of Convergence*, Oakland: Mills College Art Museum, 2020."
+  #
+  # - id: "tilt_west"
+  #   src: /screenshots/_tilt_west.png
+  #   caption: "Journal | Tilt West ([view](http://journal.tiltwest.org/vol1/))"
+  #   full_caption: "“Art and Language.” In *Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson. Denver: Tilt West, 2020."
+  #
+  # - id: "silk_poems"
+  #   src: /screenshots/_silk_poems.png
+  #   caption: "Exhibition catalogue | The University of Hong Kong Museum and Art Gallery"
+  #   full_caption: "*Silk Poems: Jen Bervin*, by Jen Bervin, The University Museum and Art Gallery, The University of Hong Kong, 2019."
+  #
+  # - id: "ancient_ambers"
+  #   src: /screenshots/_ancient_ambers.png
+  #   caption: "Collection catalogue | Getty Publications"
+  #   full_caption: "*Ancient Carved Ambers in the J. Paul Getty Museum*, J. Paul Getty Museum."
+  #
+  # - id: "cva"
+  #   src: /screenshots/_cva.png
+  #   caption: "Corpus Vasorum Antiquorum | Getty Publications"
+  #   full_caption: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis, J. Paul Getty Museum, 2019."
+  #
+  # - id: "heritage_management"
+  #   src: /screenshots/_heritage_management.png
+  #   caption: "Research proceedings | Getty Publications"
+  #   full_caption: "Values in Heritage Management: Emerging Approaches and Research Directions, by Erica Avrami, et al, The Getty Conservation Institute, 2019."
+  #
+  # - id: "tour_toolkit"
+  #   src: /screenshots/_tour_toolkit.png
+  #   caption: "Informational Pamphlet | Minneapolis Institute of Art"
+  #   full_caption: "*Tour Toolkit: Developing an Inclusive Tour*, by Minneapolis Institue of Art, 2019."
+  #
+  # - id: "alcohols_empire"
+  #   src: /screenshots/_alcohols_empire.png
+  #   caption: "Online Exhibition | Minneapolis Institute of Art"
+  #   full_caption: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*. Minneapolis Institute of Art, 2019."
+  #
+  # - id: "mozoomdar_at_sea"
+  #   src: /screenshots/_mozoomdar_at_sea.png
+  #   caption: "Student Research Project"
+  #   full_caption: "*Mozoomdar at Sea*, by Nick Tackes, 2018."
+  #
+  # - id: "humanizing_the_digital"
+  #   src: /screenshots/_humanizing_the_digital.png
+  #   caption: "Conference Proceedings | Ad Hoc Museum Collective"
+  #   full_caption: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
+  #
+  # - id: "state_of_museum_dig"
+  #   src: /screenshots/_state_of_museum_dig.png
+  #   caption: "Graduate Essays | Ad Hoc Museum Collective"
+  #   full_caption: "*The State of Museum Digital Practice in 2019: A collection of graduate essays and responses*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
