@@ -12,7 +12,9 @@
 #   pub_date:               YYYY-MM-DD format, only year will display
 #   url:                    URL to homepage/cover of the publication
 #   customization_scale:    Scale 0–5 (see above for key)
-#   github_user:            GitHub username
+#   github_user:            GitHub username(s) in a list format as shown
+#     - name
+#     - name
 #   note:                   Markdown ok, should focus on it as a Quire project:
 #                             What's new? What features did the use? How was it
 #                             customized?
@@ -36,7 +38,8 @@ project_list:
     pub_date: 2020-06-21
     url: http://www.thomasrife.com/
     customization_scale: 2
-    github_user: halfempty
+    github_user:
+      - halfempty
     note: "This project updates the starter theme with a new font and custom css for in the typography."
 
   - id: "artists_studios_paris"
@@ -47,7 +50,8 @@ project_list:
     pub_date: 2018-04-01
     url: https://www.journal18.org/issue5_williams/
     customization_scale: 1
-    github_user: nancyum
+    github_user:
+      - nancyum
     note: "This project has the distinction of being the first Quire project published outside Getty. It’s an article published as part of the Spring 2018 issue of *Journal18* on [Digital Mapping & Eighteenth-Century Visual, Material, and Built Cultures](https://www.journal18.org/past-issues/5-coordinates-spring-2018/)."
 
   - id: "bending_lines"
@@ -58,7 +62,8 @@ project_list:
     pub_date: 2020-05-01
     url: https://www.leventhalmap.org/digital-exhibitions/bending-lines/
     customization_scale: 3
-    github_user: garrettdashnelson
+    github_user:
+      - garrettdashnelson
     note: "This online exhibition was orignally slated to be a phyiscally gallery exhibition, but it was put on indefinite hold due the COVID-19 pandemic. The project features a wide range of style customizations."
 
   # - id: "fault_lines"
