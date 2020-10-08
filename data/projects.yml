@@ -32,6 +32,7 @@ project_list:
 
   - id: "thomas_rife"
     src: /screenshots/_thomas_rife.png
+    alt: "Screenshot of publication cover: a color drawing of a western scene with four cowboys and a wagon"
     type: Family History
     publisher: Self published
     title_info: "*The Alamo Keeper: Thomas C. Rife*, by Philip Mullins and George Mullins"
@@ -44,6 +45,7 @@ project_list:
 
   - id: "artists_studios_paris"
     src: /screenshots/_artists_studios_paris.png
+    alt: "Screenshot of publication cover: an old painting of a large building in Paris and a cloud yellow-blue sky"
     type: Journal Article
     publisher: Journal18
     title_info: "“Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World,” by Hannah Williams"
@@ -56,6 +58,7 @@ project_list:
 
   - id: "bending_lines"
     src: /screenshots/_bending_lines.png
+    alt: "Screenshot of publication cover: a stylized map of the world in shades of deep blue, with a thick red dashed line curving across it"
     type: Online Exhibition
     publisher: Leventhal Map & Education Center, Boston Public Library
     title_info: "*Bending Lines: Maps and Data from Distortion to Deception*"

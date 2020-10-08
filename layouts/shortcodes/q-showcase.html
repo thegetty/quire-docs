@@ -14,7 +14,7 @@
 {{ if .src }}
 <figure>
   <a href="{{ .url }}" target="_blank">
-    <img src="{{ printf "%s/%s" $imgDir .src | relURL }}" />
+    <img src="{{ printf "%s/%s" $imgDir .src | relURL }}"{{ with .alt }} alt="{{ . }}"{{ end }} />
   </a>
 </figure>
 {{ end }}
