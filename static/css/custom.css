@@ -628,6 +628,11 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
   padding-top: 1rem;
   border-top: solid 1px var(--accent-color);
 }
+@media screen and (max-width: 500px) {
+  .quire-page__content .container .content ul.showcase {
+    grid-template-columns: 1fr;
+  }
+}
 .quire-page__content .container .content ul li.showcase-project::before {
   content: "";
   margin-left: 0;
@@ -665,6 +670,7 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 .quire-page__content .container .content ul li.showcase-project a.view-link svg {
   fill: var(--accent-color);
   vertical-align: text-top;
+  pointer-events: none;
 }
 .quire-page__content .container .content ul li.showcase-project figure {
   margin: 0;
