@@ -642,18 +642,27 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 .quire-page__content .container .content ul li.showcase-project span.publisher {
   font-weight: bold;
 }
-.quire-page__content .container .content ul li.showcase-project .quire-citation {
-  float: right;
+.quire-page__content .container .content ul li.showcase-project .quire-citation,
+.quire-page__content .container .content ul li.showcase-project a.view-link {
+  /* float: right; */
   margin-right: 1rem;
 }
-.quire-page__content .container .content ul li.showcase-project .quire-citation__button {
+.quire-page__content .container .content ul li.showcase-project a.view-link {
+  padding: 6px 0;
+}
+.quire-page__content .container .content ul li.showcase-project .quire-citation__button,
+.quire-page__content .container .content ul li.showcase-project a.view-link {
   color: var(--accent-color);
   border-bottom-width: 0;
   text-transform: uppercase;
   font-size: .875rem;
   letter-spacing: .5px;
 }
-.quire-page__content .container .content ul li.showcase-project .quire-citation__button svg {
+.quire-page__content .container .content ul li.showcase-project a.view-link:hover {
+  border-bottom-width: 0 !important;
+}
+.quire-page__content .container .content ul li.showcase-project .quire-citation__button svg,
+.quire-page__content .container .content ul li.showcase-project a.view-link svg {
   fill: var(--accent-color);
   vertical-align: text-top;
 }
