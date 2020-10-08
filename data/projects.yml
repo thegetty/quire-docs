@@ -5,13 +5,13 @@
 # YAML KEY:
 # ---------
 # - id:                     lowercase, no spaces or special characters
-#   src:                    Screenshot of homepage
+#   src:                    Screenshot of homepage, 1200px x 668px or at least that ratio
 #   type:                   Try to use existing types if possible
-#   publisher:              Or "Self Published" if not publisher/institution
+#   publisher:              Or "Self published" if not publisher/institution
 #   title_info:             Markdown ok, typically: "*Title of Publication*, by Author Name"
 #   pub_date:               YYYY-MM-DD format, only year will display
 #   url:                    URL to homepage/cover of the publication
-#   customization_scale:    Scale 0–5 (see above for key)
+#   customization_level:    "none", "minor", "moderate", "significant", "extensive", or "full"
 #   github_user:            GitHub username(s) in a list format as shown
 #     - name
 #     - name
@@ -19,14 +19,14 @@
 #                             What's new? What features did the use? How was it
 #                             customized?
 #
-# CUSTOMIZATION SCALE:
+# CUSTOMIZATION LEVELS:
 # --------------------
-# 0: No customization
-# 1: Style variables manipulated
-# 2: New fonts used, some custom CSS
-# 3: Templates/shortcodes customized, more custom CSS
-# 4: New templates/shortcodes written, more custom CSS, custom JS
-# 5: Fully new theme/design
+# "none": No customization
+# "minor": Style variables manipulated
+# "moderate": New fonts used, some custom CSS
+# "significant": Templates/shortcodes customized, more custom CSS
+# "extensive": New templates/shortcodes written, more custom CSS, custom JS
+# "full": Fully new theme/design
 
 project_list:
 
@@ -38,7 +38,7 @@ project_list:
     title_info: "*The Alamo Keeper: Thomas C. Rife*, by Philip Mullins and George Mullins"
     pub_date: 2020-06-21
     url: http://www.thomasrife.com/
-    customization_scale: 2
+    customization_level: moderate
     github_user:
       - halfempty
     note: "This project updates the starter theme with a new font and custom css for in the typography."
@@ -51,7 +51,7 @@ project_list:
     title_info: "“Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World,” by Hannah Williams"
     pub_date: 2018-04-01
     url: https://www.journal18.org/issue5_williams/
-    customization_scale: 1
+    customization_level: minor
     github_user:
       - nancyum
     note: "This project has the distinction of being the first Quire project published outside Getty. It’s an article published as part of the Spring 2018 issue of *Journal18* on [Digital Mapping & Eighteenth-Century Visual, Material, and Built Cultures](https://www.journal18.org/past-issues/5-coordinates-spring-2018/)."
@@ -64,10 +64,10 @@ project_list:
     title_info: "*Bending Lines: Maps and Data from Distortion to Deception*"
     pub_date: 2020-05-01
     url: https://www.leventhalmap.org/digital-exhibitions/bending-lines/
-    customization_scale: 3
+    customization_level: moderate
     github_user:
       - garrettdashnelson
-    note: "This online exhibition was orignally slated to be a phyiscally gallery exhibition, but it was put on indefinite hold due the COVID-19 pandemic. The project features a wide range of style customizations."
+    note: "This online exhibition was orignally slated to be a physical gallery exhibition, but it was put on indefinite hold due the COVID-19 pandemic. The project features a wide range of style customizations."
 
   # - id: "fault_lines"
   #   src: /screenshots/_fault_lines.png
