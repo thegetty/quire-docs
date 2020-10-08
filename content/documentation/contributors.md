@@ -4,13 +4,13 @@ weight: 5300
 type: essay
 ---
 
-Quire is designed to credit and add contributors to publications in a flexible way. Contributors' data is stored in the `publication.yml` file of your project or in the YAML block of individual pages. The `q-contributor` shortcode offers multiple options to display contributors data in your publication.
+Quire is designed to credit and add contributors to publications in a flexible way. Contributors' data is stored in the `publication.yml` file of your project or in the YAML block of individual pages. The `q-contributor` shortcode offers multiple options to display contributors' data in your publication.
 
 ## Add Contributors to Your Project
 
-Contributors can be listed under `contributor` in your publication.yml file, or for contributors specific to a page in your project, in the YAML block at the top of that page.
+Contributors can be listed under `contributor` in your publication.yml file, or, for contributors specific to a page in your project, in the YAML block at the top of that page.
 
-At a minimum, each contributor must have a `first_name` and `last_name`, or just `full_name`. In addition to these, wherever they are listed (publication.yml or pages YAML block), the following YAML attributes can be used for your contributors:
+At minimum, each contributor must have a `first_name` and `last_name`, or just `full_name`. In addition to these, wherever they are listed (publication.yml or pages YAML block), the following YAML attributes can be used for your contributors:
 
 ```YAML
 - id:
@@ -139,7 +139,7 @@ See the [`q-contributor` shortcode reference](/api-docs/shortcodes#q-contributor
 
 Using the shortcode, contributors will be listed alphabetically. Either by `last_name` `first_name` if given, or `full_name`. You can specify a `file_as` value for contributors to override the default sorting.
 
-If you wanted, for example, a list of essay contributors ordered in the way they are ordered in the page YAML block, you could assign a numeric `file_as` value to each (1, 2, 3 etc.). Note though that this `file_as` override will carry over to other uses of the shortcode. For example, a complete list of contributors at the end of a volume of collected papers.
+If you wanted, for example, a list of essay contributors ordered in the way they are ordered in the page YAML block, you could assign a numeric `file_as` value to each (1, 2, 3 etc.). Note, though, that this `file_as` override will carry over to other uses of the shortcode. For example, a complete list of contributors at the end of a volume of collected papers.
 
 {{< q-class "box warning" >}}
 
@@ -153,4 +153,4 @@ Contributor information is also embedded in Quire projects in a way that is opti
 
 - List your project’s main authors in the publication.yml file and give them a `type: primary`
 - List other contributors (like authors of individual papers) in the publication.yml file and give them a `type: secondary`.
-- Whenever using the `contributor_as_it_appears` value (which overrides how contributors are listed on the cover or on individual pages) still include a list of the individual contributors in your YAML. This is especially true for your overall publication, and any pages that have a `type: essay`, the metadata for which are structured to pay particular attention to the authors.
+- Whenever using the `contributor_as_it_appears` value (which overrides how contributors are listed on the cover or on individual pages) still include a list of the individual contributors in your YAML. This is especially true for your overall publication, and any pages that have a `type: essay`, the metadata for which is structured to pay particular attention to the authors.

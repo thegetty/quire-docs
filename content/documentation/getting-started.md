@@ -14,11 +14,11 @@ quire new project-name
 
 The process may take a minute as Quire installs the starter kit, configures the project, sets up the theme, and installs the dependencies. You may need to enter your GitHub username and password twice during the download process: once for the starter kit and again for the starter theme.
 
-The project is ready when you see the message, “Theme and dependencies successfully installed.”
+The project is ready when you see the message: “Theme and dependencies successfully installed.”
 
 ## Copy an Existing Project
 
-In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you were on a team working on a publication together and are sharing the files via GitHub or another service, or you wanted to use a previous Quire project as a template for a new one.
+In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you were on a team working on a publication together and are sharing the files via GitHub or another service, or if you wanted to use a previous Quire project as a template for a new one.
 
 1. Copy the Quire project directory into your {{< q-def "home directory">}} (typically from a thumb drive, Dropbox or Google Drive, or GitHub).
 
@@ -34,7 +34,7 @@ In addition to starting a Quire project from scratch as described in the previou
 
 </div>
 
-## Which Quire Files Are for Content Creators and Editors?
+## Files for Content Creators and Editors
 
 Inside each Quire project, you will find the following directories and files. Content creators and editors will primarily use the `content`, `data`, and `static` directories.
 
@@ -42,8 +42,8 @@ Inside each Quire project, you will find the following directories and files. Co
 📁 bin
 📁 config
 📄 config.yml  
-📁 content     <-- Markdown files with publication text
-📁 data        <-- YAML files with publication data
+📁 content     <-- Markdown files with publication text.
+📁 data        <-- YAML files with publication data.
 📄 README.md
 📁 site
 📁 static      <-- Images / Style overrides / PDF, EPUB & MOBI
@@ -55,7 +55,7 @@ Inside each Quire project, you will find the following directories and files. Co
 The central part of Quire is the `content` directory where almost all of a publication’s text content will live as individual {{< q-def "Markdown" >}} files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Pages*](/documentation/pages/).
 
 {{< q-class "box tip" >}}
-- New Quire projects started with the `quire new` command, come with some demo content, images and data as samples to start. These materials can be written over, re-used or deleted altogether as you’d like.
+- New Quire projects started with the `quire new` command come with some demo content, images, and data as samples to start. These materials can be written over, re-used, or deleted altogether as you’d like.
 {{< /q-class >}}
 
 #### 📁 data
@@ -70,9 +70,9 @@ The `static` directory includes anything that will be included in your final pub
 
 The `README.md` file is a code convention, and is a free space for information about the publication. **It is not used in the output Quire publication at all.** However, if you host your Quire project on {{< q-def "GitHub" >}} or other similar `git` project management sites, the `README.md` file is used for the repository’s front page description. Often it will include notes on development, on what usage is allowed, on how issues will be handled, and if contributions should be considered. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
 
-## Which Quire Files Are for Developers?
+## Files for Developers
 
-Inside each Quire project, you will find the following directories and files. Developers will primarily use the `config.yml` file and the `bin`, `config`, and `site` and `theme` directories.
+Inside each Quire project, you will find the following directories and files. Developers will primarily use the `config.yml` file and the `bin`, `config`, `site`, and `theme` directories.
 
 ```tx
 📁 bin         <-- Scripts

@@ -8,7 +8,7 @@ weight: 3999
 
 - Quire is compatible with macOS, Windows, and Linux. Currently, support is better for macOS.
 
-- [Installing Quire](/documentation/install-uninstall/) requires also installing a number of third-party applications. It is recommended to do so with care, and to consult with your institution’s technology department if you’re using a work machine.
+- [Installing Quire](/documentation/install-uninstall/) also requires installing a number of third-party applications. It is recommended to do so with care, and to consult with your institution’s technology department if you’re using a work machine.
 
 - A standard web server / hosting service is required for publishing your project, but no special server software or setup is required.
 
@@ -34,7 +34,7 @@ Quire is free to use, however, there are occasionally associated costs:
 
 - For those looking to publish more non-textual image-intensive presentations, like an online exhibition, or a fully illustrated children’s book or graphic novel, Quire may not be the right fit.
 
-- Using Quire for journal publishing is also an option, though not as of yet fully developed.
+- Using Quire for journal publishing is also an option, though not yet fully developed.
 
 ## Beta Status & Licensing
 

@@ -64,7 +64,7 @@ The page `type` must be one of six possible values: `page`, `essay`, `entry`, `c
 
 {{< q-figure id="modern-entry-side" >}}
 
-Along with `type`, Quire pages can also have a `class`. These can be used to facilitate custom styling, but as illustrated above, there are also a number of pre-defined classes that can be applied specifically to the `contents` and `entry` page types to give some further control over the layouts of those pages.
+Along with `type`, Quire pages can also have a `class`. These can be used to facilitate custom styling, but, as illustrated above, there are also a number of pre-defined classes that can be applied specifically to the `contents` and `entry` page types to give further control over the layouts of those pages.
 
 ```yaml
 type: contents
@@ -100,7 +100,7 @@ When looking in the actual `content` directory on your computer or in your text 
 
 The page `weight` is a number and will determine the order in which the page appears in the publication. For example, the `contents.md` file in the example above, the second page in our book, would be `weight: 2`.
 
-Numbering should be unique, and sequential whole numbers, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at "0", your first section might be "100", second section "200" and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
+Numbering should be unique, and use sequential whole numbers, but it can skip numbers. So, if there’s no page with `weight: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at "0", your first section might be "100", second section "200" and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
 
 {{< q-class "box tip" >}}
 - Add `class: page-one` to the page/chapter where you want page 1 to start for the PDF/Print output. This is often an Introduction or first essay rather than the cover, table of contents, or other frontmatter.
@@ -117,7 +117,7 @@ class: grid
 slug: .
 ```
 
-The `title` of your defined landing page is what will be used in the header of that page, and in the *Table of Contents* and menu of your site.
+The `title` of your defined landing page is what will be used in the header of that page, the *Table of Contents*, and the menu of your site.
 
 However, the filename of the sub-directory itself is also used in your publication; for the online navigation bar, and in the running page footers of the PDF version. In these two places, Quire takes the sub-directory filename and humanizes it, which means to change hyphens into spaces and capitalize with title case. So, the sub-directory `part-one` becomes “Part One”, or `sculpture-of-the-renaissance` becomes “Sculpture of the Renaissance.”
 
@@ -136,5 +136,5 @@ epub:
 This allows you to do things like including an About page in your online edition, but a more traditional Copyright page in print. Or to substitute a simple splash page as a section break in the print, for the more elaborate contents grid you might use online.
 
 {{< q-class "box tip" >}}
-- Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents or search index, but it is still built. When deploying your site from the built files in the `/site/` directory, simply delete any unneeded ones. Read [more about site deployment](/guide/multiformat-output/) in the chapter on *Multi-Format Output*.
+- Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files in the `/site/` directory, simply delete any unneeded ones. Read [more about site deployment](/guide/multiformat-output/) in the chapter on *Multi-Format Output*.
 {{< /q-class >}}

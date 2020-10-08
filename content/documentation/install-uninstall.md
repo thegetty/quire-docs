@@ -42,7 +42,7 @@ Open your Terminal {{< q-def "command-line shell" >}} (found in your Application
     cd
     ```
 
-5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli) chapter of our guide.  Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
+5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli) chapter of our guide. Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
 
     ```text
     git clone https://github.com/gettypubs/quire-cli.git
@@ -101,13 +101,13 @@ When complete, type `quire --version` to confirm proper installation. It should 
     npm install -g
     ```
 
-    Installing the dependencies takes some time and you'll notice multiple text strings being generated on the screen during the process. Wait until the prompt with your username shows up and then, to verify that `quire-cli` has been installed correctly, type:
+    Installing the dependencies takes some time, and you'll notice multiple text strings being generated on the screen during the process. Wait until the prompt with your username shows up and then, to verify that `quire-cli` has been installed correctly, type:
 
     ```tx
     quire -V
     ```
 
-    If version number is returned, means that the install is correct.
+    If the version number is returned, it means that the install is correct.
 
 7. Lastly, to navigate to your home directory and create a new project or publication type:
 
@@ -136,7 +136,7 @@ If you chose a different distribution of Linux there are more instructions here 
 
 3. Install node js and npm through nvm
 
-Detailed information about this installation can be found in this link [https://github.com/creationix/nvm#install-script](https://github.com/creationix/nvm#install-script)
+Detailed information about this installation can be found in this link [https://github.com/creationix/nvm#install-script](https://github.com/creationix/nvm#install-script).
 
 To install or update nvm, you can use the install script using cURL:
 
@@ -167,7 +167,7 @@ Eg: `curl ... | NVM_DIR="path/to/nvm"`. Ensure that the `NVM_DIR` does not conta
   command -v nvm
   ```
 
-simply close your current terminal, open a new terminal, and try verifying again.
+Simply close your current terminal, open a new terminal, and try verifying again.
 
 If the above doesn't fix the problem, open your `.bash_profile` and add the following line of code:
 
@@ -297,7 +297,7 @@ To update the version of a theme you have:
 
 1. In the `themes` directory of your project, delete the current theme directory. It’s `quire-starter-theme` by default.
 2. Copy in your new theme directory ensuring that it has the same name as the original.
-3. Open your command-line shell and navigate to the project directory using the `cd` (change directory) command. For example, if your project directory was called `my-project` and it was in your main user directory, you’d enter `cd my-project`.
+3. Open your command-line shell and navigate to the project directory using the `cd` (change directory) command. For example, if your project directory was called `my-project`, and it was in your main user directory, you’d enter `cd my-project`.
 3. Still in the command-line shell, type `quire install` and press enter to install the theme dependencies for your project. (This is done automatically when running `quire new`, but needs to be done manually when adding a new or replacement theme.)
 
 {{< q-class "box warning" >}}
@@ -328,7 +328,7 @@ To uninstall Quire:
 
 **Downloading the Quire CLI to your computer from GitHub through the Terminal**
 
-If you have {{< q-def "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) or you can follow the instructions below.
+If you have {{< q-def "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token), or you can follow the instructions below.
 
 Follow these steps:
 
