@@ -69,67 +69,158 @@ project_list:
       - garrettdashnelson
     note: "This online exhibition was orignally slated to be a physical gallery exhibition, but it was put on indefinite hold due the COVID-19 pandemic. The project features a wide range of style customizations."
 
-  # - id: "fault_lines"
-  #   src: /screenshots/_fault_lines.png
-  #   caption: "Senior thesis show | Mills College Art Museum"
-  #   full_caption: "*Fault Lines: 2020 Senior Thesis*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir. Oakland, CA: Mills College Art Museum, 2020."
-  #
-  # - id: "in_plain_sight"
-  #   src: /screenshots/_in_plain_sight.png
-  #   caption: "Exhibition catalogue | Mills College Art Museum"
-  #   full_caption: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor. Oakland: Mills College Art Museum, 2019."
-  #
-  # - id: "state_of_convergence"
-  #   src: /screenshots/_state_of_convergence.png
-  #   caption: "Exhibition catalogue | Mills College Art Museum"
-  #   full_caption: "*State of Convergence*, Oakland: Mills College Art Museum, 2020."
-  #
-  # - id: "tilt_west"
-  #   src: /screenshots/_tilt_west.png
-  #   caption: "Journal | Tilt West ([view](http://journal.tiltwest.org/vol1/))"
-  #   full_caption: "“Art and Language.” In *Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson. Denver: Tilt West, 2020."
-  #
-  # - id: "silk_poems"
-  #   src: /screenshots/_silk_poems.png
-  #   caption: "Exhibition catalogue | The University of Hong Kong Museum and Art Gallery"
-  #   full_caption: "*Silk Poems: Jen Bervin*, by Jen Bervin, The University Museum and Art Gallery, The University of Hong Kong, 2019."
-  #
-  # - id: "ancient_ambers"
-  #   src: /screenshots/_ancient_ambers.png
-  #   caption: "Collection catalogue | Getty Publications"
-  #   full_caption: "*Ancient Carved Ambers in the J. Paul Getty Museum*, J. Paul Getty Museum."
-  #
-  # - id: "cva"
-  #   src: /screenshots/_cva.png
-  #   caption: "Corpus Vasorum Antiquorum | Getty Publications"
-  #   full_caption: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis, J. Paul Getty Museum, 2019."
-  #
-  # - id: "heritage_management"
-  #   src: /screenshots/_heritage_management.png
-  #   caption: "Research proceedings | Getty Publications"
-  #   full_caption: "Values in Heritage Management: Emerging Approaches and Research Directions, by Erica Avrami, et al, The Getty Conservation Institute, 2019."
-  #
-  # - id: "tour_toolkit"
-  #   src: /screenshots/_tour_toolkit.png
-  #   caption: "Informational Pamphlet | Minneapolis Institute of Art"
-  #   full_caption: "*Tour Toolkit: Developing an Inclusive Tour*, by Minneapolis Institue of Art, 2019."
-  #
-  # - id: "alcohols_empire"
-  #   src: /screenshots/_alcohols_empire.png
-  #   caption: "Online Exhibition | Minneapolis Institute of Art"
-  #   full_caption: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*. Minneapolis Institute of Art, 2019."
-  #
-  # - id: "mozoomdar_at_sea"
-  #   src: /screenshots/_mozoomdar_at_sea.png
-  #   caption: "Student Research Project"
-  #   full_caption: "*Mozoomdar at Sea*, by Nick Tackes, 2018."
-  #
-  # - id: "humanizing_the_digital"
-  #   src: /screenshots/_humanizing_the_digital.png
-  #   caption: "Conference Proceedings | Ad Hoc Museum Collective"
-  #   full_caption: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
-  #
-  # - id: "state_of_museum_dig"
-  #   src: /screenshots/_state_of_museum_dig.png
-  #   caption: "Graduate Essays | Ad Hoc Museum Collective"
-  #   full_caption: "*The State of Museum Digital Practice in 2019: A collection of graduate essays and responses*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
+  - id: "fault_lines"
+    src: /screenshots/_fault_lines.png
+    alt: "Screenshot of publication cover: a distorted and cropped photograph of a lower arm in front of a dark background"
+    type: Online Exhibition/Exhibition Catalogue
+    publisher: Mills College Art Museum
+    title_info: "*Fault Lines: 2020 Senior Thesis Exhibition*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir"
+    pub_date: 2020
+    url: https://mcam.mills.edu/publications/faultlines/index.html
+    customization_level:
+    github_user:
+    note:
+
+  - id: "in_plain_sight"
+    src: /screenshots/_in_plain_sight.png
+    alt: "Screenshot of publication cover: a wall of framed and hung artwork behind a sheet of partially opaque material"
+    type: Exhibition Catalogue
+    publisher: Mills College Art Museum
+    title_info: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor"
+    pub_date: 2019
+    url: https://mcam.mills.edu/publications/inplainsight/index.html
+    customization_level:
+    github_user:
+    note:
+
+  - id: "state_of_convergence"
+    src: /screenshots/_state_of_convergence.png
+    alt: "Screenshot of publication cover: a fist punches through a sheet, onto which an image of mountains and trees is projected"
+    type: Online Exhibition/Exhibition Catalogue
+    publisher: Mills College Art Museum
+    title_info: "*State of Convergence*"
+    pub_date: 2020
+    url: https://mcam.mills.edu/publications/stateofconvergence/index.html
+    customization_level:
+    github_user:
+    note:
+
+  - id: "tilt_west"
+    src: /screenshots/_tilt_west.png
+    alt: "Screenshot of publication cover: a collage of scraps of text and brown, red, and green geometric shapes on a yellow background"
+    type: Journal
+    publisher: Tilt West
+    title_info: "*Tilt West Journal, vol. 1, Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson"
+    pub_date: 2020-03
+    url: http://journal.tiltwest.org/vol1/
+    customization_level:
+    github_user:
+    note:
+
+  - id: "silk_poems"
+    src: /screenshots/_silk_poems.png
+    alt:
+    type: Exhibition Catalogue
+    publisher: Hong Kong University Museum of Art Gallery
+    title_info: "*Silk Poems*"
+    pub_date: 2019
+    url:
+    customization_level:
+    github_user:
+    note:
+
+  - id: "ancient_ambers"
+    src: /screenshots/_ancient_ambers.png
+    alt: "Screenshot of publication cover: a humanoid figurine carved out of dark red amber"
+    type: Collection Catalogue
+    publisher: Getty Publications
+    title_info: "*Ancient Carved Ambers in the J. Paul Getty Museum*, by Faya Causey"
+    pub_date: 2019
+    url: https://www.getty.edu/publications/ambers/
+    customization_level:
+    github_user:
+    note:
+
+  - id: "cva"
+    src: /screenshots/_cva.png
+    alt: "Screenshot of publication cover: black text in Latin and French on an off-white background"
+    type: Corpus Vasorum Antiquorum
+    publisher: Getty Publications
+    title_info: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis"
+    pub_date: 2019
+    url: https://www.getty.edu/publications/cva10/
+    customization_level:
+    github_user:
+    note:
+
+  - id: "heritage_management"
+    src: /screenshots/_heritage_management.png
+    alt: "Screenshot of publication cover: a patinated bronze sculpture covered in graffiti is being lifted off its pedestal with a crane as onlookers watch"
+    type: Research Proceedings
+    publisher: Getty Publications
+    title_info: "*Values in Heritage Management: Emerging Approaches and Research Directions*, by Erica Avrami, Susan MacDonald, Randall Madison, and David Myers"
+    pub_date: 2019
+    url: https://www.getty.edu/publications/heritagemanagement/
+    customization_level:
+    github_user:
+    note:
+
+  - id: "tour_toolkit"
+    src: /screenshots/_tour_toolkit.png
+    alt: "Screenshot of publication cover: a docent gives a tour to a group of schoolchildren inside a museum gallery"
+    type: Informational Pamphlet
+    publisher: Minneapolis Institute of Art
+    title_info: "*Tour Toolkit: Developing an Inclusive Tour*, by Minneapolis Institute of Art"
+    pub_date: 2019
+    url: https://artsmia.github.io/tour-toolkit/
+    customization_level:
+    github_user:
+    note:
+
+  - id: "alcohols_empire"
+    src: /screenshots/_alcohols_empire.png
+    alt: "Screenshot of publication cover: three cocktails sit on a stone table with sprigs of rosemary superimposed onto the photograph"
+    type: Digital Native Project
+    publisher: Minneapolis Institute of Art
+    title_info: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*, edited by Nicole LaBouff and Emily Beck"
+    pub_date: 2019-02-04
+    url: https://artsmia.github.io/alcohols-empire/
+    customization_level:
+    github_user:
+    note:
+
+  - id: "mozoomdar_at_sea"
+    src: /screenshots/_mozoomdar_at_sea.png
+    alt: "Screenshot of publication cover: a watercolor and pencil image of the 1893 Columbian Exposition from a bird's eye perspective"
+    type: Research Project
+    publisher: Self-Published
+    title_info: "*Mozoomdar at Sea*, by Nick Tackes"
+    pub_date: 2018
+    url: https://mozoomdar-at-sea.netlify.app/
+    customization_level:
+    github_user:
+    note:
+
+ - id: "humanizing_the_digital"
+   src: /screenshots/_humanizing_the_digital.png
+   alt: "Screenshot of publication cover: black text on a white background with anthropomorphized computer file folders smattered across two wavy registers of qr-code"
+   type: Conference Proceedings
+   publisher: Ad Hoc Museum Collective
+   title_info: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, edited by Suse Anderson, Isabella Bruno, Hannah Hethmon, Seema Rao, Ed Rodley, and Rachel Ropeik"
+   pub_date: 2019
+   url: https://ad-hoc-museum-collective.github.io/humanizing-the-digital/
+   customization_level:
+   github_user:
+   note:
+
+ - id: "state_of_museum_dig"
+   src: /screenshots/_state_of_museum_dig.png
+   alt: "Screenshot of publication cover: myriad strands of twinkle lights hung in two horizontal registers across a large architectural space"
+   type: Graduate Student/Class Project
+   publisher: Ad Hoc Museum Collective
+   title_info: "*The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses*, by Suse Anderson, Cristin Guinan-Wiley, Jonathan Edelman, Rachel Rosenfeld, Mary McCulla, Sheridan Small, Cynthia Kurtz, Amy Pollard, Corrie Brady, Melissa Garcia, Caitlin Hepner, Sydney Thatcher, Laura Dickson, and Rebecca Brockette"
+   pub_date: 2019
+   url: https://ad-hoc-museum-collective.github.io/GWU-museum-digital-practice-2019/
+   customization_level:
+   github_user:
+   note:
