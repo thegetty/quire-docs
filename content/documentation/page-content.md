@@ -49,9 +49,9 @@ Text goes here
 ```
 
 {{< q-class "box tip" >}}
-- Quire includes one pre-defined class called "backmatter". This is typically used to wrap bibliographies, appendices and other related content at the end of an article or page, and will style them to match the default footnote styling.
+- Quire includes one pre-defined class called "backmatter". This is typically used to wrap bibliographies, appendices, and other related content at the end of an article or page, and will style them to match the default footnote styling.
     ```
-    {{</* q-class "bsckmatter" */>}} ...
+    {{</* q-class "backmatter" */>}} ...
     {{</* /q-class */>}}
     ```
 {{< /q-class >}}
@@ -59,7 +59,7 @@ Text goes here
 The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes api reference](/api-docs/shortcodes/).
 
 - `q-class`: As demonstrated above, wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom styles or interactions as needed.
-- [`q-bibliography`](/guide/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibiliography.yml` file.
+- [`q-bibliography`](/guide/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yml` file.
 - [`q-cite`](/guide/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
 - [`q-contributor`](/guide/contributor/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
 - [`q-figure`](/guide/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
@@ -82,7 +82,7 @@ These are set by default to open in new pages, but you can change that by settin
 
 ### Internal Links Between Pages
 
-Internal links between pages in your Quire publication can be included through the following Markdown formatting using the file name of the page and the directory name of the section it is in if any.
+Internal links between pages in your Quire publication can be included through the following Markdown formatting using the file name of the page and the directory name of the section it is in.
 
 ```md
 [Link text](/name-of-section-if-any/nameofpage/)
@@ -103,7 +103,7 @@ This linking can be applied to a piece of text that when clicked upon will take 
 [fig. 1](#1.1)
 ```
 
-#### Links to Other Kinds of Page Elements
+#### Links to Other Page Elements
 
 An ID and the # symbol is also used for other kinds of elements on the same page. The IDs for these elements can be found using the following method:
 

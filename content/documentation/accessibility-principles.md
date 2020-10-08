@@ -4,7 +4,7 @@ weight: 5800
 type: essay
 ---
 
-As a publishing tool, Quire’s goal is to maintain accessibility for keyboard and screen reader navigation, as well as for devices and browsers of varying sizes and capabilities and with limited functionality, such as those operation with no JavaScript and/or no CSS.
+As a publishing tool, Quire’s goal is to maintain accessibility for keyboard and screen reader navigation, as well as for devices and browsers of varying sizes and capabilities and with limited functionality, such as those operating without JavaScript and/or CSS.
 
 The principles outlined below have been informed in particular by:
 
@@ -13,7 +13,7 @@ The principles outlined below have been informed in particular by:
 - [*Adaptive Web Design*](https://adaptivewebdesign.info), by [@AaronGustafson](https://twitter.com/AaronGustafson) https://adaptivewebdesign.info
 - [*Inclusive Design Patterns*](https://shop.smashingmagazine.com/products/inclusive-design-patterns), by [@heydonworks](https://twitter.com/heydonworks)
 
-While not exhaustive, the list below is meant to highlight the *key* principles by which Quire was originally developed and that we recommend be followed by others developing their own Quire projects. It has been ordered roughly starting with those items most owned or effected by editors working on publication content and progressing into those owned or effected by developers working on publication styles, template markup, and interaction.
+While not exhaustive, the list below is meant to highlight the *key* principles by which Quire was originally developed and that we recommend others follow when developing their own Quire projects. It has been ordered roughly, starting with those items most owned or effected by editors working on publication content and progressing into those owned or effected by developers working on publication styles, template markup, and interaction.
 
 ## Key Principles
 

@@ -26,7 +26,7 @@ multiple_items:
     item_description:
 ```
 
-Note too, that indentations matter in YAML. If any of the items above were indented even just one space more or less from where they are, the YAML would not be formatted correctly and the Quire preview and output functions would not work. YAML items and list items should always line up with one another.
+Note that indentations matter in YAML. If any of the items above were indented even just one space more or less from where they are, the YAML would not be formatted correctly, and the Quire preview and output functions would not work. YAML items and list items should always line up with one another.
 
 {{< q-class "box warning" >}}
 - Improperly formatted YAML can temporarily break Quire functionality. Copy and paste your YAML blocks into a validator like the [Code Beautify YAML validator](https://codebeautify.org/yaml-validator) to make sure there aren’t any hidden errors.
@@ -71,7 +71,7 @@ Certain formatting and characters (like colons within the text, or lines leading
 description: "*My Chapter* is about colons :)"
 ```
 
-Anything at all can go within double-quotes, except for other double-quotes. If you need double-quotes, use “curly quotes”, or use a backslash to escape the double quote `\"`.
+Anything can go within double-quotes, except for other double-quotes. If you need double-quotes, use “curly quotes”, or use a backslash to escape the double quote `\"`.
 
 ```yaml
 title: "“Ah ha!” Amazing Double-quote (\") Tricks!"
@@ -88,7 +88,7 @@ title: "“Ah ha!” Amazing Double-quote (\") Tricks!"
 
 ## Markdown Basics
 
-Markdown is designed to be a simple, plain-text markup language that uses a few text rules to structure content for easy conversion into HTML. Writing in Markdown should be thought of as giving your content structure, not style. You use Markdown to indicate what’s a heading, what’s a list, etcetera. Quire’s themes and stylesheets then control what those headings, lists and other elements *look* like, from device to device and format to format.
+Markdown is designed to be a simple, plain-text markup language that uses a few text rules to structure content for easy conversion into HTML. Writing in Markdown should be thought of as giving your content structure, not style. You use Markdown to indicate what’s a heading, what’s a list, etcetera. Quire’s themes and stylesheets then control what those headings, lists, and other elements *look* like, from device to device and format to format.
 
 Special characters like en- and em-dashes, and diacritics work fine in Markdown and in Quire publications. Any {{< q-def "Unicode" >}} character is allowed. The only limitation, for less common characters, is whether the font you’re using includes it. When a font does not include a specific character, most browsers will substitute one from a different font.
 
@@ -231,7 +231,7 @@ You can also use HTML tags in a Markdown file. This can be convenient for adding
 {{< / q-class >}}
 
 
-### Fractions, Superscripts and Subscripts
+### Fractions, Superscripts, and Subscripts
 
 The fractions 1&#47;4, 1&#47;2, and 3&#47;4, will be automatically converted into proper, Unicode fractions (1/4, 1/2, 3/4). Other Unicode fractions can also be used in Markdown directly, though note that not all fonts support the eighths in which case, browsers will render them with a default font. The fractions are: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. Any others would need to be written using superscript and subscript formatting.
 
@@ -269,7 +269,7 @@ By default, in the `config.yml` file of your Quire project, {{< q-def "Blackfrid
 
 ## Markdown Resources
 
-This guide doesn’t cover all existing Markdown tags but there are some good sources that will help you find the right syntax to format your text. For example, the Programming Historian provides an [introductory lesson to Markdown](https://programminghistorian.org/lessons/getting-started-with-markdown), and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site [Daring Fireball](https://daringfireball.net/projects/markdown/).
+This guide doesn’t cover all existing Markdown tags, but there are some good sources that will help you find the right syntax to format your text. For example, the Programming Historian provides an [introductory lesson to Markdown](https://programminghistorian.org/lessons/getting-started-with-markdown), and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site [Daring Fireball](https://daringfireball.net/projects/markdown/).
 
 Be aware of the multiple [Markdown flavors](https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors) out there and the fact that not all flavors are supported by Blackfriday.
 

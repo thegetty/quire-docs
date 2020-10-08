@@ -4,7 +4,7 @@ weight: 5100
 type: essay
 ---
 
-Along with monographs, edited volumes and serial publications, Quire is also designed with the publication of museum collection catalogues in mind and has a specific page `type` for them (See all page types in the [*Defining Page Types* section](/guide/pages#defining-page-types) of the *Pages and Plain Text* page of this guide). Collection catalogues typically feature a page for each object, featuring images of the object, information about it, and an essay or entry text. To publish a catalogue with Quire, you’ll capture each object data, create the object pages, and then, optionally, display a list of the objects included in your publication. Essays in object pages work in the same way as any other pages and you can visit our [*Markdown fundamentals*](/guide/fundamentals/) page for reference.
+Along with monographs, edited volumes, and serial publications, Quire is also designed with the publication of museum collection catalogues in mind and has a specific page `type` for them (See all page types in the [*Defining Page Types* section](/guide/pages#defining-page-types) of the *Pages and Plain Text* page of this guide). Collection catalogues typically feature a page for each object, featuring images of the object, information about it, and an essay or entry text. To publish a catalogue with Quire, you’ll capture each object data, create the object pages, and then, optionally, display a list of the objects included in your publication. Essays in object pages work in the same way as any other pages, and you can visit our [*Markdown fundamentals*](/guide/fundamentals/) page for reference.
 
 ## Capture Object Data
 
@@ -47,9 +47,9 @@ There are two sections in the `objects.yml` file: `object_list` and `object_disp
 
 - The `object_list` is a list of the objects and their individual metadata attributes. With the exception of a few reserved terms, as noted in the table below, any attributes can be included here. These attributes and the associated values will ultimately display on the entry pages for each object.
 
-- You control the specifics of which attributes to display and in what order, by listing them under `object_display_order`. Following the sample above, the attributes included on the pages would be: `artist`, `year`, `dimensions`, `medium` and `location`.
+- You control the specifics of which attributes to display and in what order by listing them under `object_display_order`. Following the sample above, the attributes included on the pages would be: `artist`, `year`, `dimensions`, `medium`, and `location`.
 
-  Any images of the object are also included here, under the `figure` attribute. This is a list of one or more images. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. However, if you prefer, you can instead include a `src` attribute with the filename as it appears in your project’s image directory.
+  Any images of the object are also included here, under the `figure` attribute. This is a list of one or more images. It is recommended that this list contains only `id` values corresponding with `id`s in your project’s `figures.yml` file. However, if you prefer, you can instead include a `src` attribute with the filename as it appears in your project’s image directory.
 
 Here are the only defined object attributes, you can include any others you like:
 
@@ -75,7 +75,7 @@ The page will feature any images associated with the object, followed by a table
 
 {{< q-figure id="1.7" >}}
 
-If you add multiple figures of the object, these are displayed in a rotating carousel, in the order they are listed in the object information in `objects.yml`. If any of the object figures have a `caption` and/or `credit`, they will be included as a pop-up window. And if the figure’s `download` attribute is set to `true`, a download icon will be included as well.
+If you add multiple figures of the object, the figures are displayed in a rotating carousel and are arranged in the order they are listed in the object information in `objects.yml`. If any of the object figures have a `caption` and/or `credit`, they will be included as a pop-up window. And if the figure’s `download` attribute is set to `true`, a download icon will be included as well.
 
 {{< q-class "box tip" >}}
 - In the table of object information, the items displayed and their titles are determined by the `object_display_order` attribute in the `objects.yml` file, as detailed in the section above. If the object information included a `link`, a “View in Collection” button is generated. The text of this button can be customized with the `objectLinkText` attribute in the project’s `config.yml` file.

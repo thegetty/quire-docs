@@ -70,7 +70,7 @@ This shortcode accepts an optional `sort` value, which will sort the list by wha
 {{</* q-bibliography sort="short" */>}}
 ```
 
-You may in some cases find that the system’s default sort method is suboptimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key like `"sort_as"` could be added to all entries in the `references.yml` file for fine-grained control.
+You may find in some cases that the system’s default sort method is suboptimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key like `"sort_as"` could be added to all entries in the `references.yml` file for fine-grained control.
 
 ```yaml
 entries:
@@ -85,4 +85,4 @@ entries:
 
 ### Display the Short Reference in Bibliographies
 
-Bibliographies displayed automatically at the bottom of pages, and those generated with the `q-bibliography` shortcode, can just be a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.
+Bibliographies displayed automatically at the bottom of pages, and those generated with the `q-bibliography` shortcode, can be a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.

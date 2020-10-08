@@ -8,7 +8,7 @@ type: essay
 
 ### `quire-cli`
 
-Quire CLI is written in JavaScript and requires [Node.js 12.18.3 LTS](https://nodejs.org) to run.The following commands are available:
+Quire CLI is written in JavaScript and requires [Node.js 12.18.3 LTS](https://nodejs.org) to run. The following commands are available:
 
 | Command | Description |
 | -------------- | -------------- |
@@ -30,7 +30,7 @@ Quire Starter ([quire-starter](https://github.com/gettypubs/quire-starter)) is a
 
 ### `quire-starter-theme`
 
-Quire Starter Theme ([quire-starter-theme](https://github.com/gettypubs/quire-starter-theme)) is the basic theme that is included when starting a new Quire project with the `quire new` command. It is designed to broadly cover a full range of use-cases and to demonstrate the range of Quire content model, without being too overly specific or complex, making it easy to customize and build from. Read more about the use of themes in [Customizing Styles](/guide/styles-customization).
+Quire Starter Theme ([quire-starter-theme](https://github.com/gettypubs/quire-starter-theme)) is the basic theme that is included when starting a new Quire project with the `quire new` command. It is designed to broadly cover a full range of use-cases and to demonstrate the range of Quire content model, without being overly specific or complex, making it easy to customize and build from. Read more about the use of themes in [Customizing Styles](/guide/styles-customization).
 
 {{< q-figure id="1.3" >}}
 
@@ -52,18 +52,18 @@ Type: Object
 | --- | --- | --- |
 | `baseURL` | url | The base url for your project. |
 | `blackfriday` | [object](#black-friday-markdown) | Options for Blackfriday, Hugo’s markdown renderer. See below. |
-| `canonifyURLs` |  boolean | Converts all internal links to being in complete cannonical format. Default is `false`. |
+| `canonifyURLs` |  boolean | Converts all internal links to being in complete canonical format. Default is `false`. |
 | `disableKinds` | | |
 | `footnoteReturnLinkContents` | string | Controls the appearance of the link added to the end of footnotes. Default is "↩". |
 | `googleAnalytics` | | |
 | `languageCode` | | |
-| `metaDataFormat` | "yaml", "toml", "json" | Default is "yaml" |
+| `metaDataFormat` | "yaml", "toml", "json" | Default is "yaml". |
 | `params` | [object](#quire-parameters) | Additional parameters for Quire. See below. |
 | `pluralizeListTitles` | | |
 | `publishDir` | | |
 | `relativeURLs` |  boolean | Keeps all internal links relative. Default is `true`. |
 | `title` | | |
-| `theme` | url/id | The name of the theme, in the `theme` directory you’re using. Quire starter kit default is `quire-base-theme` |
+| `theme` | url/id | The name of the theme, in the `theme` directory you’re using. Quire starter kit default is `quire-base-theme`. |
 
 See: [Additional Hugo configuration options](https://gohugo.io/getting-started/configuration/#yaml-configuration)
 
@@ -90,9 +90,9 @@ Type: Object
 | --------- | -------------- | ----------- |
 | `searchEnabled` | boolean | Turn on or off the built-in text search capability for users |
 | `licenseIcons` | boolean | Whether or not to display Creative Commons license icons |
-| `pageLabelDivider` | string | ". " default, etermines the text/spacing to be inserted between page .label and page .title |
+| `pageLabelDivider` | string | ". " default, determines the text/spacing to be inserted between page .label and page .title |
 | `citationPageLocationDivider` | string | ", " default, determines the text/spacing to be inserted between the citation and the page number in the q-cite shortcode |
-| `displayBiblioShort` | boolean | Whether a bibilography generated with the q-cite or q-bibliography shorcodes should display the short form of the reference, along with the long. |
+| `displayBiblioShort` | boolean | Whether a bibliography generated with the q-cite or q-bibliography shortcodes should display the short form of the reference, along with the long |
 | `imageDir` | string | "img" default, the directory in the `/static/` directory where you put your images |
 | `tocType` | "full", "short" | "short" will hide all sub-section pages |
 | `menuType` | "full", "short" |  "short" will hide all sub-section pages |
@@ -101,7 +101,7 @@ Type: Object
 | `entryPageSideBySideLayout` | boolean | Entry pages can have a side-by-side layout with image on the left and text on the right, this can be controlled by `class: side-by-side` in the page YAML, or globally with this parameter |
 | `entryPageObjectLinkText` | string | "View in Collection" default |
 | `figureLabelLocation` | "on-top", "below" | Whether the figure label is "on-top" of the image in the upper left corner, or "below" it with the caption |
-| `figureModal` | boolean | If figures should be clickable to open into a full-screen modal window |
+| `figureModal` | boolean | If figures should be clickable to open into a full-screen modal window. |
 | `figureModalIcons` | boolean | Whether to display icons with the figure modal links |
 | `figureZoom` | boolean | Whether figures should zoom or not inside the modal |
 
@@ -119,7 +119,7 @@ Type: Object
 | `reading_line` | string | An additional title line for your publication. |
 | `url` | url | The full URL of your final publication. |
 | `pub_type` | "book", "journal-periodical", "other" | Can be one of three values. Determines how key search-engine metadata is defined. |
-| `pub-date` | YYYY-MM-DD | The first date your publication will be released |
+| `pub-date` | YYYY-MM-DD | The first date your publication will be released. |
 | `language` | 2-letter ISO 639-1 language code(s) | Taken from the the list at https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes. List multiple languages using a comma-separated list. |
 | `identifier` | [object](#identifier) | See below. |
 | `publisher` | [array](#publisher) | See below. |
@@ -145,7 +145,7 @@ Type: Array
 
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
-| `name` | string | Name of the publisher |
+| `name` | string | Name of the publisher. |
 | `location` | string | Publisher location, city. |
 | `url` | url | Publisher homepage. |
 
@@ -201,8 +201,8 @@ Type: Array
 | --- | --- | --- |
 | `name` | string | How the link will be named. |
 | `type` | "other-format", "related-resource", "footer-link" |  |
-| `media_type` | string | Taken from the list at https://www.iana.org/assignments/media-types/media-types.xhtml |
-| `link_relation` | string | Taken from the list at http://www.iana.org/assignments/link-relations/link-relations.xhtml |
+| `media_type` | string | Taken from the list at https://www.iana.org/assignments/media-types/media-types.xhtml. |
+| `link_relation` | string | Taken from the list at http://www.iana.org/assignments/link-relations/link-relations.xhtml. |
 | `url` | url | URL to web resource or to download. |
 | `identifier` | [object](#identifier) | See below. |
 | `file_size_mb` | integer | For downloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |
@@ -228,7 +228,7 @@ Type: Object
 
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
-| `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased indivudally or in packages at http://www.isbn.org/.  |
+| `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased individually or in packages at http://www.isbn.org/.  |
 | `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
 | `doi` | string | Not yet implemented. |
 | `uuid` | string | Not yet implemented. |
@@ -250,7 +250,7 @@ Type: Array
 | `title` |  |  |
 | `affiliation` |  |  |
 | `url` | URL |  |
-| `bio` | | Markdwon okay. |
+| `bio` | | Markdown okay. |
 | `pic` |  |  |
 
 ### Figure
@@ -262,7 +262,7 @@ Type: Array
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 |`id` | string | Numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
-| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img`directory (which is defined by the `imageDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). |
+| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img` directory (which is defined by the `imageDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). |
 | `alt` | string | For accessibility, all images should have alternative text descriptions. ([Tips on crafting good alt text.](https://webaim.org/techniques/alttext/)) Only ever leave blank if the image is purely decorative. |
 | `caption` | string | The caption to appear below the figure. Special characters are allowed. Use Markdown for formatting. |
 | `credit` | string | Follows the caption. Markdown allowed. |
@@ -271,7 +271,7 @@ Type: Array
 | `aspect_ratio` | "standard", "widescreen" | For use with video `media_type`s to properly scale video embeds. When no value is provided, the default is "widescreen". |
 | `label_text` | string | Used for the `q-figure-group` shortcode only. A short text label added to the image, usually just under the image depending on your theme. If no text is provided here, a label is automatically generated from the provided `id` value along with the `imageLabelContentBefore` and `imageLabelContentAfter` values defined in your `config.yml` file.  |
 
-### Bibiliography
+### Bibliography
 
 Location: `entries` in `references.yml`
 
@@ -365,7 +365,7 @@ Required Named Parameters: "range" and "format"
 | --- | --- |
 |`initials` | Looks for the capital letters in a contributor first and last name and concatenates them together. Jane Pauley, becomes J.P.; Ralph Waldo Emerson becomes R.W.E. |
 | `name` | Just the name. |
-| `name-title` | The name and, when available, the title and affiliation; on a single line |
+| `name-title` | The name and, when available, the title and affiliation; on a single line. |
 | `name-title-block` | The name and, when available, the title and affiliation; broken onto separate lines. |
 | `bio` | The name and, when available, a picture, offsite link to their personal site, and a bio. Plus links to any individual pages in the project for which they are listed as a contributor. |
 

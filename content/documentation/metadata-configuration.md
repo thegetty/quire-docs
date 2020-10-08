@@ -30,7 +30,7 @@ Some key areas are summed up below, and match headings in the `publication.yml` 
 
 Of the possible properties in this section, `title`, and the optional `subtitle` and `reading_line` are the most important. If your title is particularly long, the `short_title` property can be used to provide an alternative for the navigation elements of the online book where long titles will otherwise be truncated.
 
-It is also a good idea to include both `one_line` and `full` descriptions as these are used in the publication SEO metadata and often on the *Cover* and *About* or *Copyright* pages.
+It is also a good idea to include both `one_line` and `full` descriptions, as these are used in the publication SEO metadata and often on the *Cover* and *About* or *Copyright* pages.
 
 ### Publication Details
 
@@ -64,17 +64,17 @@ Lastly, Quire supports publications with multiple publishers, but at least one `
 
 ### Contributors
 
-Every publication should have at least one `contributor`. The `contributor` item `type` can have one of three values: `primary`, `secondary`, or `project-team`. The `primary` contributors are those who would show up on the *Cover*, *Menu* and *Title Page* of a publication, and may include authors, editors, translators and others. Contributors should, at a minimum, be listed with a `first_name` and `last_name` (or alternately just a `full_name`).
+Every publication should have at least one `contributor`. The `contributor` item `type` can have one of three values: `primary`, `secondary`, or `project-team`. The `primary` contributors are those who would show up on the *Cover*, *Menu*, and *Title Page* of a publication, and may include authors, editors, translators, and others. Contributors should, at a minimum, be listed with a `first_name` and `last_name` (or alternately just a `full_name`).
 
-An optional `contributor_as_it_appears` value allows for more fine-grained control in the way contributors are listed. It could be, for example, something like "Edited by Rose Valland and Denis Diderot". Even when using `contributor_as_it_appears`, the contributors should still also be individually listed as contributors (with a value of `primary`) for search engine legibility.
+An optional `contributor_as_it_appears` value allows for more fine-grained control in the way contributors are listed. It could be, for example, something like "Edited by Rose Valland and Denis Diderot". Even when using `contributor_as_it_appears`, the contributors should still be individually listed as contributors (with a value of `primary`) for search engine legibility.
 
-The editors, designers and developers and others who worked on the title may be listed as contributors with the `project-team` value. This information is usually then listed on the *About* and *Copyright* pages of the publication.
+The editors, designers, developers, and others who worked on the title may be listed as contributors with the `project-team` value. This information is usually then listed on the *About* and *Copyright* pages of the publication.
 
 Read more about this matter in the [*Contributors*](/guide/contributors/) chapter of this guide.
 
 ### Copyright & License
 
-You should include a `copyright` line property for your publication, and optionally `license` information property if you are distributing the publication {{< q-def "Open Access" >}}.
+You should include a `copyright` line property for your publication, and, optionally, `license` information property if you are distributing the publication {{< q-def "Open Access" >}}.
 
 A simple {{< q-def "Copyright" >}} statement would typically be formatted as "© 2019 Author Name".
 
@@ -88,21 +88,21 @@ Open access licensing typically means applying one of seven {{< q-def "Creative 
 
 Note, an open Creative Commons license does not replace or supersede copyright in a work, it instead says that the copyright holder is licensing (allowing) others to make use of the work in an open way.
 
-To use a Creative Commons license fill in the `name`, `abbreviation`, `url`, and `scope` values of the license property. `scope` value should be either `full`, `text-only` or `some-exceptions` and will determine the way the license is worded on your site. To override the wording and link language use the `online_text` and `pdf_ebook_text` attributes.
+To use a Creative Commons license fill in the `name`, `abbreviation`, `url`, and `scope` values of the license property. `scope` value should be either `full`, `text-only`, or `some-exceptions` and will determine the way the license is worded on your site. To override the wording and link language use the `online_text` and `pdf_ebook_text` attributes.
 
 If the `abbreviation` attribute matches one of the seven {{< q-def "Creative Commons Licenses" >}}, an icon will automatically be included, otherwise you can use the `icon` attribute to point to a specific image file in your images directory.
 
-### Formats, Resources & Links
+### Formats, Resources, & Links
 
 A publication can have multiple `resource_link` properties, each with the `type` of `other_format`, `related_resource`, or `footer_link`.
 
-- `other_format` will be where you can list the PDF, EPUB and MOBI editions of your publication that Quire produces.
+- `other_format` will be where you can list the PDF, EPUB, and MOBI editions of your publication that Quire produces.
 
 - `related_resource` are for additional items you want to point readers to.
 
 - `footer_link` are just that and are often links to privacy policies, your own *About* page, or social media profiles.
 
-`resource_link` properties can also be internal pages of the publication or files from your publication, or can point to external resources or other websites. The atributes `type`, `name` (how the resource link will be listed in your publication), and `url` are required.
+`resource_link` properties can also be internal pages of the publication or files from your publication, or can point to external resources or other websites. The attributes `type`, `name` (how the resource link will be listed in your publication), and `url` are required.
 
 To facilitate machine readability, it is a good idea to also include `link_relation` and `media_type` attributes from the {{< q-def "IANA" >}} lists if applicable ones for your particular resource are available.
 

@@ -1,5 +1,5 @@
 ---
-title: Outputting & Deploying Your Site
+title: Output & Deploy Your Site
 weight: 5700
 type: essay
 ---

@@ -4,25 +4,25 @@ weight: 4800
 type: essay
 ---
 
-Quire books are visual and the framework is built to support the use of images for scholarly purposes. In this page, we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-the-q-figure-shortcode).
+Quire books are visual and the framework is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-the-q-figure-shortcode).
 
 
 ## Include Figure Image Files in Your Publication
 
-Figure image files should be placed in the `static/img/` directory. It is defined in your project `config.yml` file with the parameter `imageDir: "/img/"` and the directory can be changed if needed.
+Figure image files should be placed in the `static/img/` directory. It is defined in your project's `config.yml` file with the parameter `imageDir: "/img/"` and the directory can be changed if needed.
 
 [Note] You can organize figures into sub-directories within the `img` folder, but you will need to include those directories along with the filename when defining the `src` attribute for the figure, as noted below.
 
 Quire does not require a specific image file format or size, but we have some recommended best practices:
 
-- Use JPEG, PNG or GIF.
+- Use JPEG, PNG, or GIF.
 - Only include images at as big a size as most readers will need. 800px on the longest side is fine for most figures, up to 1200px on the longest side for modest zooming. We find these size also work well enough in print.
 - Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use {{< q-def "Image Optimization" >}} software when possible, and consider the total number of images on a given page when choosing sizes.
 
 
 ## Create a figures.yml File for Figure Image Metadata
 
-For most publications, or at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file which should be placed in your `data` folder. These then can be called from wherever you need them in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/api-docs/yaml/#figure), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
+For most publications, or, at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file, which should be placed in your `data` folder. This figure image metadata can then be called from wherever you need it in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/api-docs/yaml/#figure), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
 
 ```yaml
 - id: "1.1"
@@ -37,7 +37,7 @@ Also available are the attributes `caption`, `credit`, `media_id`, `media_type`,
 
 {{< q-class "box warning" >}}
 
-- You can organize your images in the If your figures are organized in sub-directories within your `static/img/` directory, they should appear as part of the file path under `src`, otherwise, only the filename is needed.
+- You can organize your images in the If your figures are organized in sub-directories within your `static/img/` directory. They should appear as part of the file path under `src`, otherwise, only the filename is needed.
 
 {{< /q-class >}}
 
@@ -111,7 +111,7 @@ Just as with the single `q-figure` shortcode, classes can be added to groups to 
 {{</* q-figure-group class="is-pulled-left" id="1.1, 1.2" */>}}
 ```
 
-In addition to all the attributes available to the `q-figure` shortcode, the `q-figure-group` extension also supports the `grid` attribute to specify a preferred grid width. In the below example, a `grid="2"` is specified and so the gallery grid will be 2 images wide at your publication layout’s full-size. Alternately, if you specified `grid="4"` the grid would be 4 images wide making each image relatively smaller.
+In addition to all the attributes available to the `q-figure` shortcode, the `q-figure-group` extension also supports the `grid` attribute to specify a preferred grid width. In the below example, a `grid="2"` is specified and so the gallery grid will be 2 images wide at your publication layout’s full-size. Alternately, if you specified `grid="4"` the grid would be 4 images wide, making each image relatively smaller.
 
 ```go
 {{</* q-figure-group grid="2" id="1.1, 1.2, 1.3, 1.4" */>}}

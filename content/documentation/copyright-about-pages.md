@@ -8,7 +8,7 @@ type: essay
 
 The Chicago and MLA formatted citations provided on every page of the online edition of a Quire publication are generated automatically based on data in your publication.yml file, and in the YAML of each Markdown page.
 
-Key metadata about your publication included in publication.yml that will be used in generating your citations:
+Key metadata about your publication that is included in publication.yml and will be used to generate your citations:
 
 ```yaml
 title:

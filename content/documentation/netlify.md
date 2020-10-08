@@ -10,7 +10,7 @@ type: essay
 
 > <br/> Netlify is a web developer platform that multiplies productivity. <br/> <br/> By unifying the elements of the modern decoupled web, from local development to advanced edge logic, Netlify enables a 10x faster path to much more performant, secure, and scalable websites and apps. Our bet on the JAMstack is quickly coming true. <br/> <br/>The web is rapidly changing away from monolithic to decoupled apps, and web developers are storming ahead with more power than ever. Netlify is built to cater to that movement, and in just a few years we’ve on-boarded more than half a million businesses and developers, and are building and serving millions of web projects daily around the globe.<br/> <br/>
 
-For Quire, Netlify can automatically generate a preview site to share with your collaborators every time you push changes to your project, and can also use it to host your final project when its ready to publish.
+For Quire, Netlify can automatically generate a preview site to share with your collaborators every time you push changes to your project, and can also use it to host your final project when it's ready to publish.
 
 ## Steps to deploy to Netlify
 
@@ -21,7 +21,7 @@ For Quire, Netlify can automatically generate a preview site to share with your 
 
 ### Netlify Build Configuration
 
-Once you accounts are connected you will asked to provide a `Production` directory or `Build` directory. Instead of doing this, which is fine, my recommendation is heading back to your repository and creating a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts block in the your `package.json` file.  In quire-starter-theme the path is `themes/quire-starter-theme/package.json`. Quire comes with a Netlify build command already but as you will read below it is very easy to add or modify your own.
+Once your accounts are connected you will asked to provide a `Production` directory or `Build` directory. Instead of doing this, which is fine, my recommendation is heading back to your repository and creating a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts block in the your `package.json` file.  In quire-starter-theme the path is `themes/quire-starter-theme/package.json`. Quire comes with a Netlify build command already, but as you will read below it is very easy to add or modify your own.
 
 ```json
 "scripts": {
@@ -82,8 +82,8 @@ HUGO_VERSION = "0.55.5"
 
 ### Alter or add another command
 
-When we run the build process on Netlify we may want to add flags to our Hugo command to make Hugo behave differntly either on a specific branch or in the preview deploy.
-Let say for example we want to add the flag to build drafts for a branch and not for production.
+When we run the build process on Netlify we may want to add flags to our Hugo command to make Hugo behave differently, either on a specific branch or in the preview deploy.
+Let's say, for example, we want to add the flag to build drafts for a branch and not for production.
 We have the command `npm run build:stage` above, let's use that.
 
 Our scripts block will now be
@@ -103,8 +103,8 @@ Adding extra commands is a great way to preview code!
 
 There 3 ways of connecting a domain to Netlify
 
-- Purchase your domain through Netlify and run your DNS through there interface
+- Purchase your domain through Netlify and run your DNS through their interface
 - Add a proxy to your webserver
 - Add an alias CNAME to your DNS to point to your Netlify domain
 
-Any of these will work, it is more specific to want you want your domain to be
+Any of these will work, it is more specific to what you want your domain to be.
