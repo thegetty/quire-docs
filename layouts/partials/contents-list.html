@@ -5,7 +5,9 @@
 
   ALSO ADDS SUPPORT FOR AN external_url PARAMETER THAT CAN BE ADDED TO A PAGE
   TO CREATE AN EXTERNAL PAGE LINK IN THE MENU AND NAVIGATION BAR
-  
+
+  ADDS UP TO 80 CHARACTERS OF THE PAGE ABSTRACT TO THE GRID TABLE OF CONTENTS
+
 
   This partial generates a contents list. It is used in the publication menu
   and in the "contents" page type, but could be extended for further use. It
@@ -189,6 +191,7 @@
       <div class="card-content">
         <div class="title">
         {{- with .Page.Params.label }}{{ . }}{{ $.Site.Params.pageLabelDivider }}{{ end }}{{ if and .Page.Params.short_title (in .class "brief")}}{{ .Page.Params.short_title | markdownify }}{{ else if in .class "brief" }}{{ .Page.Title | markdownify }}{{ else }}{{ partial "page-title.html" . | markdownify }}{{ if .Page.Params.contributor }}<span class="contributor"> — {{ partial "contributor-list.html" (dict "range" .Page.Params.contributor "contributorType" "all" "listType" "string" "Site" .Site) }}</span>{{- end -}}{{- end -}}<span class="arrow remove-from-epub">&nbsp;{{- partial "icon.html" (dict "type" "arrow-forward" "description" "") -}}</span></div>
+        {{ with .Page.Params.abstract }}<div class="abstract">{{ . | markdownify | truncate 80 }}</div>{{ end }}
       </div>
     </div></a>
 
