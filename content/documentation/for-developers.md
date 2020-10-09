@@ -35,14 +35,16 @@ The Quire website, and the central location for issues and discussion forum post
 
 ## Configuration
 
-*General [configuration options](https://gohugo.io/getting-started/configuration/) for a project.*
+General configuration options for a project. See [*Configure Hugo*](https://gohugo.io/getting-started/configuration/) for more options and information.
 
-Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory | Type: Object
+Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory
+
+Type: Object
 
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
 | `baseURL` | url | The base url for your project. |
-| `blackfriday` | [object](#black-friday-markdown) | Options for Blackfriday, Hugo’s markdown renderer. Quire v0.18.0 and below. See below. |
+| `blackfriday` | [object](#blackfriday) | Options for Blackfriday, Hugo’s markdown renderer. Quire v0.18.0 and below. See below. |
 | `buildDrafts` | | |
 | `canonifyURLs` |  boolean | Converts all internal links to being in complete canonical format. Default is `false`. |
 | `disableKinds` | | |
@@ -51,7 +53,7 @@ Location: `config.yml`, or any of the environment and format specific config fil
 | `languageCode` | | |
 | `markup` | [object](#markup) | Options for Hugo’s markdown rendering. Quire v0.19.0 and above. See below. |
 | `metaDataFormat` | "yaml", "toml", "json" | Default is "yaml". |
-| `params` | [object](#quire-parameters) | Additional parameters for Quire. See below. |
+| `params` | [object](#params) | Additional parameters for Quire. See below. |
 | `pluralizeListTitles` | | |
 | `publishDir` | | |
 | `relativeURLs` |  boolean | Keeps all internal links relative. Default is `true`. |
@@ -60,9 +62,13 @@ Location: `config.yml`, or any of the environment and format specific config fil
 
 ### `blackfriday`
 
-*Configuration for the [Blackfriday](https://gohugo.io/getting-started/configuration-markup#blackfriday) markdown rendering engine.*
+Configuration for the [Blackfriday](https://gohugo.io/getting-started/configuration-markup#blackfriday) markdown rendering engine.
 
-Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory | Type: Object | Compatibility: Quire v0.18.0 and below
+Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory
+
+Type: Object
+
+Compatibility: Quire v0.18.0 and below
 
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
@@ -71,9 +77,13 @@ Location: `config.yml`, or any of the environment and format specific config fil
 
 ### `markup`
 
-*Configuration for the markdown rendering engine. See [Hugo’s Markup Configuration](https://gohugo.io/getting-started/configuration-markup/) for more options and information.*
+Configuration for the markdown rendering engine. See [Hugo’s Markup Configuration](https://gohugo.io/getting-started/configuration-markup/) for more options and information.
 
-Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory | Type: Object | Compatibility: Quire v0.19.0 and above
+Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory
+
+Type: Object
+
+Compatibility: Quire v0.19.0 and above
 
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
@@ -81,9 +91,11 @@ Location: `config.yml`, or any of the environment and format specific config fil
 
 ### `params`
 
-*Quire-specific project parameters.*
+Quire-specific project parameters.
 
-Location: `config.yml` | Type: Object
+Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory
+
+Type: Object
 
 | Parameter | Expected Value | Description |
 | --------- | -------------- | ----------- |
@@ -108,15 +120,17 @@ Location: `config.yml` | Type: Object
 
 ## Publication API
 
-Location: `publication.yml` | Type: Object
+Location: `publication.yml`
+
+Type: Object
 
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
 | `title` | string | The title of your publication. |
 | `subtitle` | string | The subtitle of your publication. |
-| `short_title` [\*](#asterisked) | string | A short version of your title, primarily for use in navigation elements with limited space. |
+| `short_title`[\*](#asterisked) | string | A short version of your title, primarily for use in navigation elements with limited space. |
 | `reading_line` | string | An additional title line for your publication. |
-| `url` [\*](#asterisked) | url | The full URL of your final publication. |
+| `url`[\*](#asterisked) | url | The full URL of your final publication. |
 | `pub_type` | "book", "journal-periodical", "other" | Can be one of three values. Determines how key search-engine metadata is defined. |
 | `pub_date` | YYYY-MM-DD | The first date your publication will be released. |
 | `language` | 2-letter ISO 639-1 language code(s) | Taken from the the list at https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes. List multiple languages using a comma-separated list. |
@@ -129,10 +143,10 @@ Location: `publication.yml` | Type: Object
 | `subject` | [array](#subject) | See below. |
 | `copyright` | string |  |
 | `license` | [object](#license) | See below. |
-| `resource_link` | [array](#resource-link) | See below. |
-| `revision_history` | [array](#revision-history) | See below. |
+| `resource_link` | [array](#resource_link) | See below. |
+| `revision_history` | [array](#revision_history) | See below. |
 | `repository_url` | url | A public repository of the source code and revision history for the publication. |
-| `series_periodical_name` [\*](#asterisked) | string |  |
+| `series_periodical_name`[\*](#asterisked) | string |  |
 | `series_issue_number` | string |  |
 
 ### `publisher`
@@ -158,8 +172,8 @@ Type: Object
 | --- | --- | --- |
 | `one_line` | string |  |
 | `full` | string |  |
-| `online` [\*](#asterisked) | string | The `online` and `pdf_ebook` fields allow you to add additional text to the `full` description that is specific to either the online, or the PDF/EPUB/MOBI editions and will only show up there. For instance, in order to point to special features in one or the other of the formats. |
-| `pdf_ebook` [\*](#asterisked) | string | |
+| `online`[\*](#asterisked) | string | The `online` and `pdf_ebook` fields allow you to add additional text to the `full` description that is specific to either the online, or the PDF/EPUB/MOBI editions and will only show up there. For instance, in order to point to special features in one or the other of the formats. |
+| `pdf_ebook`[\*](#asterisked) | string | |
 
 ### `subject`
 
@@ -186,7 +200,7 @@ Type: Object
 | `abbreviation` |  | If using a Creative Commons licenses, should match one of the seven available options: "CC0", "CC BY", "CC BY-SA", "CC BY-ND", "CC BY-NC", "CC BY-NC-SA", or "CC BY-NC-ND". |
 | `url` | url | Link to the license text. |
 | `scope` | "text-only", "full", "some-exceptions" |  |
-| `icon` [\*](#asterisked) | url |  |
+| `icon`[\*](#asterisked) | url |  |
 | `online_text` | string | Markdown okay. Will override the automatically generated license text for the online edition only. |
 | `pdf_ebook_text` | string | Markdown okay. Will override the automatically generated license text for the PDF and e-book editions only. |
 
@@ -203,9 +217,9 @@ Type: Array
 | `media_type` | string | Taken from the list at https://www.iana.org/assignments/media-types/media-types.xhtml. |
 | `link_relation` | string | Taken from the list at http://www.iana.org/assignments/link-relations/link-relations.xhtml. |
 | `url` | url | URL to web resource or to download. |
-| `identifier` [\*](#asterisked) | [object](#identifier) | See below. |
-| `file_size_mb` [\*](#asterisked) | integer | For downloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |
-| `icon` [\*](#asterisked) | url |  |
+| `identifier`[\*](#asterisked) | [object](#identifier) | See below. |
+| `file_size_mb`[\*](#asterisked) | integer | For downloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |
+| `icon`[\*](#asterisked) | url |  |
 
 
 ### `revision_history`
@@ -217,7 +231,7 @@ Type: Array
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 | `date` | YYYY-MM-DD |  |
-| `summary` [\*](#asterisked) | list |  |
+| `summary`[\*](#asterisked) | list |  |
 
 ### `identifier`
 
@@ -229,8 +243,8 @@ Type: Object
 | --- | --- | --- |
 | `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased individually or in packages at http://www.isbn.org/.  |
 | `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
-| `doi` [\*](#asterisked) | string | Not yet implemented. |
-| `uuid` [\*](#asterisked) | string | Not yet implemented. |
+| `doi`[\*](#asterisked) | string | Not yet implemented. |
+| `uuid`[\*](#asterisked) | string | Not yet implemented. |
 | `url` |  | Possibly replacing `url` in general Publication level?? |
 
 ### `contributor`
@@ -267,7 +281,7 @@ Type: Array
 | `caption` | string | The caption to appear below the figure. Special characters are allowed. Use Markdown for formatting. |
 | `credit` | string | Follows the caption. Markdown allowed. |
 | `media_type` | "youtube", "vimeo" | Currently supports video hosted on YouTube or Vimeo. (May eventually expand to HTML5 video, audio, and Soundcloud, and others.) When a `media_type` is defined, a `media_id` must be as well. For video, it is also recommended that an image `src` still be used (presumably being a screenshot from the video) so as to provide a fallback for PDF and EPUB output. |
-| `media_id` | string | The ID of the video resource on YouTube or Vimeo. For example, in the URLs https://www.youtube.com/watch?v=VYqDpNmnu8I or https://youtu.be/VYqDpNmnu8I, the `media_id` would be `VYqDpNmnu8I`; and in https://vimeo.com/221426899 it is `221426899`.|
+| `media_id` | string | The ID of the video resource on YouTube or Vimeo. For example, in the URL [https://www.youtube.com/watch?v=VYqDpNmnu8I](https://www.youtube.com/watch?v=VYqDpNmnu8I), the `media_id` would be `VYqDpNmnu8I`; and in https://vimeo.com/221426899 it is `221426899`.|
 | `aspect_ratio` | "standard", "widescreen" | For use with video `media_type`s to properly scale video embeds. When no value is provided, the default is "widescreen". |
 | `label` | string |  |
 | `download` | boolean | If "true", download icon will be added to image viewer, allowing users to easily download the image file. Currently only implemented in the page `type: entry` image viewer. Default is "false". |
@@ -296,12 +310,12 @@ Type: Array
 | Attribute | Expected Value | Description |
 | --- | --- | --- |
 | `id` | string | Required. Used to reference objects from entry pages. Should be numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
-| `figure` | [array](#figure) | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. |
+| `figure` | [array](#figure_list) | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. |
 | `link` | url | A URL link to a page with more/current information on the object. Usually the object in the museum’s online collection pages. |
 | `date_start`, `date_end` | integer | Reserved for future use in Quire. |
 | `dimension_width`, `dimension_height`, `dimension_depth` | integer | Reserved for future use in Quire. |
 
-Objects also support arbitrary attributes, which might include `title`, `artist`, `collection`, etc. Those added will be output in a table on collection catalogue entry pages. The ordering of the display can be controlled with `object_display_order` in `objects.yml`. See: [Guide on Collection Catalogues](/guide/collection-catalogues/)
+Objects also support arbitrary attributes, which might include `title`, `artist`, `collection`, etc. Those added will be output in a table on collection catalogue entry pages. The ordering of the display can be controlled with `object_display_order` in `objects.yml`. See [*Guide on Collection Catalogues*](/documentation/collection-catalogues/).
 
 ## Page API
 
@@ -315,22 +329,20 @@ Type: Object
 | `title` | string | |
 | `subtitle` | string | |
 | `short_title` | string | Used in navigation items where a long title would be too unwieldy. |
-| `type` | "page" (default), "essay", "entry", "cover", "contents", "splash", or "data" | See [*Defining Page Types*](/guide/pages/#defining-page-types) for examples |
+| `type` | "page" (default), "essay", "entry", "cover", "contents", "splash", or "data" | See [*Define Page Types*](/documentation/pages/#define-page-types) for examples |
 | `class` | string | Can accept any string, which will be included as a class in the main page element to facilitate style customization. A number of pre-defined classes also exist in the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). Pages with `type: contents` can have class `list` (default), `brief`, `abstract`, or `grid`. Pages with `type: entry` can have class `landscape` (default) or `side-by-side`. |
 | `weight` | integer | Controls ordering of pages in the publication. |
-| `object` | [array](#Object) | |
-| `contributor` | [array](#Contributor) | |
+| `object` | [array](#object_list) | See [*Catalogue Entries*](/documentation/collection-catalogues/). |
+| `contributor` | [array](#contributor) | See [*Contributors*](/documentation/contributors/). |
 | `contributor_byline` | boolean | |
 | `abstract` | string | Markdown okay. |
-| `slug` | url path | Will change the URL of the page. Or use a period `.` to make the URL be the directory name (homepage). Read more in the [*Page Types & Structure*](/guide/pages/#creating-section-landing-pages) chapter of this guide.|
-| `toc` | "true" (default), "false" | Page will not display in contents page if false. |
-| `menu` | "true" (default), "false" | Page will not display in menu if false. |
-| `online` | "true" (default), "false" | Page will not display in online edition if false. |
-| `pdf` | "true" (default), "false" | Page will not display in pdf edition if false. |
-| `epub` | "true" (default), "false" | Page will not display in epub or mobi edition if false. |
+| `slug` | url path | Will change the URL of the page. Or use a period `.` to make the URL be the directory name (homepage). Read more in the [*Page Types & Structure*](/documentation/pages/#creating-section-landing-pages) chapter of this guide.|
+| `toc` | boolean | Default is "true". Page will not display in contents page if "false". |
+| `menu` | boolean | Default is "true". Page will not display in menu if "false". |
+| `online` | boolean | Default is "true". Page will not display in the online edition if "false". |
+| `pdf` | boolean | Default is "true". Page will not display in the PDF edition if "false". |
+| `epub` | boolean | Default is "true". Page will not display in either the EPUB or MOPBI ebook editions if "false". |
 | `image` | url | |
-
-The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [*Catalogue Entries*](/guide/collection-catalogues/) and [*Contributors*](/guide/contributors/) chapters respectively.
 
 Pages with `type: contents` can have class `list` (default), `brief`, `abstract`, or `grid`. Pages with `type: entry` can have class `landscape` (default) or `side-by-side`.
 
@@ -338,7 +350,7 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 ### `q-class`
 
-*Wrapping any Markdown text in this shortcode will wrap it in a `<div>` with the given class name in the HTML output. Used for styling. See [Working with Text](/guide/pages/)*
+Wrapping any Markdown text in this shortcode will wrap it in a `<div>` with the given class name in the HTML output. Used for styling.
 
 `{{</* q-class "" */>}}  {{</* /q-class */>}}`
 
@@ -348,7 +360,7 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 ### `q-bibliography`
 
-*Generates a bibliography from the entries in the project's `bibliography.yml` file. See [Citations & Bibliographies](/guide/citation-bibliographies/).*
+Generates a bibliography from the entries in the project's `bibliography.yml` file. See [*Citations & Bibliographies*](/documentation/citation-bibliographies/).
 
 `{{</* q-bibliography sort="" */>}}`
 
@@ -358,7 +370,7 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 ### `q-cite`
 
-*Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages. See [Citations & Bibliographies](/guide/citation-bibliographies/).*
+Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages. See [*Citations & Bibliographies*](/documentation/citation-bibliographies/).
 
 `{{</* q-cite "" "" "" */>}}`
 
@@ -370,7 +382,7 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 ### `q-contributor`
 
-*Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs. See [Contributors](/guide/contributors/).*
+Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs. See [*Contributors*](/documentation/contributors/).
 
 `{{</* q-contributor range="" format="" align="" */>}}`
 
@@ -382,7 +394,7 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 ### `q-figure`
 
-*Inserts a formatted figure image, label, caption and credit line. If using a `data/figures.yml` file, only an `id` parameter is required for this shortcode. If other values supplied directly in the shortcode they will override any corresponding values in the `data/figures.yml`. See [Figure Images](/guide/figure-images/) and [Figure YAML](/api-docs/yaml#figure).*
+Inserts a formatted figure image, label, caption and credit line. If using a `data/figures.yml` file, only an `id` parameter is required for this shortcode. If other values supplied directly in the shortcode they will override any corresponding values in the `data/figures.yml`. See [*Figure Images*](/documentation/figure-images/) and [`figure_list`](#figure_list) above.
 
 `{{</* q-figure id="" src="" label="" caption="" credit="" alt="" class="" */>}}`
 
@@ -398,7 +410,7 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 ### `q-figure-group`
 
-*Like `q-figure`, but with handling for multiple images at once. See [Figure Images](/guide/figure-images/) and [Figure YAML](/api-docs/yaml#figure).*
+Like `q-figure`, but with handling for multiple images at once. See [*Figure Images*](/documentation/figure-images/) and [`figure_list`](#figure_list) above.
 
 `{{</* q-figure-group id=" , , " grid="" src="" label="" caption="" credit="" class="" */>}}`
 
@@ -413,7 +425,7 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 ### `q-figure-zoom`
 
-*In progress. Documentation to come.*
+In progress. Documentation to come.
 
 | Parameter | Expected Value  | Description |
 | --- | --- | --- |
