@@ -616,6 +616,73 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
   margin-bottom: 1rem;
 }
 
+/* COMMUNITY SHOWCASE
+============================================================================= */
+.quire-page__content .container .content ul.showcase {
+  margin-left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+  margin: 2rem 0;
+  padding-top: 1rem;
+  border-top: solid 1px var(--accent-color);
+}
+@media screen and (max-width: 500px) {
+  .quire-page__content .container .content ul.showcase {
+    grid-template-columns: 1fr;
+  }
+}
+.quire-page__content .container .content ul li.showcase-project::before {
+  content: "";
+  margin-left: 0;
+}
+.quire-page__content .container .content ul li.showcase-project {
+  margin-left: 0;
+  margin-top: 2rem;
+}
+.quire-page__content .container .content ul li.showcase-project p {
+  margin-bottom: 0;
+}
+.quire-page__content .container .content ul li.showcase-project span.publisher {
+  font-weight: bold;
+}
+.quire-page__content .container .content ul li.showcase-project .quire-citation,
+.quire-page__content .container .content ul li.showcase-project a.view-link {
+  /* float: right; */
+  margin-right: 1rem;
+}
+.quire-page__content .container .content ul li.showcase-project a.view-link {
+  padding: 6px 0;
+}
+.quire-page__content .container .content ul li.showcase-project .quire-citation__button,
+.quire-page__content .container .content ul li.showcase-project a.view-link {
+  color: var(--accent-color);
+  border-bottom-width: 0;
+  text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: .5px;
+}
+.quire-page__content .container .content ul li.showcase-project a.view-link:hover {
+  border-bottom-width: 0 !important;
+}
+.quire-page__content .container .content ul li.showcase-project .quire-citation__button svg,
+.quire-page__content .container .content ul li.showcase-project a.view-link svg {
+  fill: var(--accent-color);
+  vertical-align: text-top;
+  pointer-events: none;
+}
+.quire-page__content .container .content ul li.showcase-project figure {
+  margin: 0;
+}
+.quire-page__content .container .content ul li.showcase-project figure a {
+  border-bottom-width: 0;
+}
+.quire-page__content .container .content ul li.showcase-project figure a:hover img {
+  transition: box-shadow 0.35s;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
 /* CODE
 ============================================================================= */
 code {
