@@ -60,7 +60,7 @@ Location: `config.yml`, or any of the environment and format specific config fil
 
 ### `blackfriday`
 
-*Configuration for the [Blackfriday](https://gohugo.io/getting-started/configuration-markup#blackfriday) markdown rendering engine. See *
+*Configuration for the [Blackfriday](https://gohugo.io/getting-started/configuration-markup#blackfriday) markdown rendering engine.*
 
 Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory | Type: Object | Compatibility: Quire v0.18.0 and below
 
@@ -114,9 +114,9 @@ Location: `publication.yml` | Type: Object
 | --- | --- | --- |
 | `title` | string | The title of your publication. |
 | `subtitle` | string | The subtitle of your publication. |
-| `short_title` \* | string | A short version of your title, primarily for use in navigation elements with limited space. |
+| `short_title` [\*](#asterisked) | string | A short version of your title, primarily for use in navigation elements with limited space. |
 | `reading_line` | string | An additional title line for your publication. |
-| `url` \* | url | The full URL of your final publication. |
+| `url` [\*](#asterisked) | url | The full URL of your final publication. |
 | `pub_type` | "book", "journal-periodical", "other" | Can be one of three values. Determines how key search-engine metadata is defined. |
 | `pub_date` | YYYY-MM-DD | The first date your publication will be released. |
 | `language` | 2-letter ISO 639-1 language code(s) | Taken from the the list at https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes. List multiple languages using a comma-separated list. |
@@ -132,7 +132,7 @@ Location: `publication.yml` | Type: Object
 | `resource_link` | [array](#resource-link) | See below. |
 | `revision_history` | [array](#revision-history) | See below. |
 | `repository_url` | url | A public repository of the source code and revision history for the publication. |
-| `series_periodical_name` \* | string |  |
+| `series_periodical_name` [\*](#asterisked) | string |  |
 | `series_issue_number` | string |  |
 
 ### `publisher`
@@ -158,8 +158,8 @@ Type: Object
 | --- | --- | --- |
 | `one_line` | string |  |
 | `full` | string |  |
-| `online` \* | string | The `online` and `pdf_ebook` fields allow you to add additional text to the `full` description that is specific to either the online, or the PDF/EPUB/MOBI editions and will only show up there. For instance, in order to point to special features in one or the other of the formats. |
-| `pdf_ebook` \* | string | |
+| `online` [\*](#asterisked) | string | The `online` and `pdf_ebook` fields allow you to add additional text to the `full` description that is specific to either the online, or the PDF/EPUB/MOBI editions and will only show up there. For instance, in order to point to special features in one or the other of the formats. |
+| `pdf_ebook` [\*](#asterisked) | string | |
 
 ### `subject`
 
@@ -186,7 +186,7 @@ Type: Object
 | `abbreviation` |  | If using a Creative Commons licenses, should match one of the seven available options: "CC0", "CC BY", "CC BY-SA", "CC BY-ND", "CC BY-NC", "CC BY-NC-SA", or "CC BY-NC-ND". |
 | `url` | url | Link to the license text. |
 | `scope` | "text-only", "full", "some-exceptions" |  |
-| `icon` \* | url |  |
+| `icon` [\*](#asterisked) | url |  |
 | `online_text` | string | Markdown okay. Will override the automatically generated license text for the online edition only. |
 | `pdf_ebook_text` | string | Markdown okay. Will override the automatically generated license text for the PDF and e-book editions only. |
 
@@ -203,9 +203,9 @@ Type: Array
 | `media_type` | string | Taken from the list at https://www.iana.org/assignments/media-types/media-types.xhtml. |
 | `link_relation` | string | Taken from the list at http://www.iana.org/assignments/link-relations/link-relations.xhtml. |
 | `url` | url | URL to web resource or to download. |
-| `identifier` \* | [object](#identifier) | See below. |
-| `file_size_mb` \* | integer | For downloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |
-| `icon` \* | url |  |
+| `identifier` [\*](#asterisked) | [object](#identifier) | See below. |
+| `file_size_mb` [\*](#asterisked) | integer | For downloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |
+| `icon` [\*](#asterisked) | url |  |
 
 
 ### `revision_history`
@@ -217,7 +217,7 @@ Type: Array
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 | `date` | YYYY-MM-DD |  |
-| `summary` \* | list |  |
+| `summary` [\*](#asterisked) | list |  |
 
 ### `identifier`
 
@@ -229,8 +229,8 @@ Type: Object
 | --- | --- | --- |
 | `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased individually or in packages at http://www.isbn.org/.  |
 | `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
-| `doi` \* | string | Not yet implemented. |
-| `uuid` \* | string | Not yet implemented. |
+| `doi` [\*](#asterisked) | string | Not yet implemented. |
+| `uuid` [\*](#asterisked) | string | Not yet implemented. |
 | `url` |  | Possibly replacing `url` in general Publication level?? |
 
 ### `contributor`
@@ -419,6 +419,12 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 | --- | --- | --- |
 | id | string | |
 
----
+<div class="backmatter">
+
+## Notes
+
+<sup id="asterisked">*</sup> Attributes with an asterisk are in the process of being reviewed as they may not be currently being used and/or may be deprecated.
 
 <sup id="positional">†</sup> Positional parameters are included in shortcodes without a name defining them. See [`q-class`](#q-class), and [`q-cite`](q-cite).
+
+</div>
