@@ -92,6 +92,7 @@ Location: `config.yml` | Type: Object
 | `pageLabelDivider` | string | ". " default, determines the text/spacing to be inserted between page .label and page .title. |
 | `citationPageLocationDivider` | string | ", " default, determines the text/spacing to be inserted between the citation and the page number in the q-cite shortcode. |
 | `displayBiblioShort` | boolean | Whether a bibliography generated with the q-cite or q-bibliography shortcodes should display the short form of the reference, along with the long. |
+| `biblioHeading` | | |
 | `imageDir` | string | "img" default, the directory in the `/static/` directory where you put your images. |
 | `tocType` | "full", "short" | "short" will hide all sub-section pages. |
 | `menuType` | "full", "short" |  "short" will hide all sub-section pages. |
@@ -319,6 +320,7 @@ Type: Object
 | `weight` | integer | Controls ordering of pages in the publication. |
 | `object` | [array](#Object) | |
 | `contributor` | [array](#Contributor) | |
+| `contributor_byline` | boolean | |
 | `abstract` | string | Markdown okay. |
 | `slug` | url path | Will change the URL of the page. Or use a period `.` to make the URL be the directory name (homepage). Read more in the [*Page Types & Structure*](/guide/pages/#creating-section-landing-pages) chapter of this guide.|
 | `toc` | "true" (default), "false" | Page will not display in contents page if false. |
@@ -326,6 +328,7 @@ Type: Object
 | `online` | "true" (default), "false" | Page will not display in online edition if false. |
 | `pdf` | "true" (default), "false" | Page will not display in pdf edition if false. |
 | `epub` | "true" (default), "false" | Page will not display in epub or mobi edition if false. |
+| `image` | url | |
 
 The `object` and `contributor` attributes above are arrays of one or more items. The details of what YAML values each of those items can have, can be found in the [*Catalogue Entries*](/guide/collection-catalogues/) and [*Contributors*](/guide/contributors/) chapters respectively.
 
@@ -335,72 +338,55 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 ### `q-class`
 
-Sample: `{{</* q-class "my-class-name" */>}}The text you want formatted here.{{</* /q-class */>}}`
+*Wrapping any Markdown text in this shortcode will wrap it in a `<div>` with the given class name in the HTML output. Used for styling. See [Working with Text](/guide/pages/)*
 
-Basic Usage: Wrapping any Markdown text in this shortcode will wrap it in a `<div>` with the given class name in the HTML output. Used for styling.
+`{{</* q-class "" */>}}  {{</* /q-class */>}}`
 
-See: [Working with Text](/guide/pages/)
+| Positional Parameter[<sup>†</sup>](#positional) | Expected Value | Description |
+| --- | --- | --- |
+| `0` (class name) | string | String without spaces or special characters to be used as a class for CSS styling. |
 
 ### `q-bibliography`
 
-Basic Usage: Generates a bibliography from the entries in the project's `bibliography.yml` file.
+*Generates a bibliography from the entries in the project's `bibliography.yml` file. See [Citations & Bibliographies](/guide/citation-bibliographies/).*
 
-See: [Citations & Bibliographies](/guide/citation-bibliographies/)
+`{{</* q-bibliography sort="" */>}}`
+
+| Parameter | Expected Value | Description |
+| --- | --- | --- |
+| `sort` | string | Optional. Value can be any string that matches a key in the entires under `entries` of the `references.yml` file, to indicate which key to alphabetically sort the output bibliography by. Without `sort` the default sort is on "full".  |
 
 ### `q-cite`
 
-Basic Usage: Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
+*Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages. See [Citations & Bibliographies](/guide/citation-bibliographies/).*
 
-See: [Citations & Bibliographies](/guide/citation-bibliographies/)
+`{{</* q-cite "" "" "" */>}}`
+
+| Positional Parameter[<sup>†</sup>](#positional) | Expected Value | Description |
+| --- | --- | --- |
+| `0` (author date reference) | string | Should exactly match an `id` value under `entries` in the `references.yml` file. Typically something like "Jones 1974". |
+| `1` (page number) | string | Optional. A page number of the specific citation. Will be appended to the citation text with a text divider defined by `citationPageLocationDivider` in `config.yml` |
+| `2` (display text)| string | Optional. Alternate text that should be displayed instead of the default Author Date provided in the first parameter. |
 
 ### `q-contributor`
 
-Sample: `{{</* q-contributor range="page" format="bio" align="center" */>}}`
+*Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs. See [Contributors](/guide/contributors/).*
 
-Basic Usage: Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
+`{{</* q-contributor range="" format="" align="" */>}}`
 
-Required Named Parameters: "range" and "format"
-
-#### format
-
-| Value | Description |
-| --- | --- |
-|`initials` | Looks for the capital letters in a contributor first and last name and concatenates them together. Jane Pauley, becomes J.P.; Ralph Waldo Emerson becomes R.W.E. |
-| `name` | Just the name. |
-| `name-title` | The name and, when available, the title and affiliation; on a single line. |
-| `name-title-block` | The name and, when available, the title and affiliation; broken onto separate lines. |
-| `bio` | The name and, when available, a picture, offsite link to their personal site, and a bio. Plus links to any individual pages in the project for which they are listed as a contributor. |
-
-#### range
-
-| Value | Description |
-| --- | --- |
-|`page` | Only the contributors listed for the page the shortcode appears on. |
-| `all` | All contributors listed in the publication, whether listed on individual pages or in the publication.yml file. |
-
-You can also use any contributor `type` you define. So if you give a contributor a `type: primary` then a shortcode using `range="primary"` will list any of your project’s primary contributors.
-
-Required Named Parameter: "align"
-
-#### align
-
-| Value | Description |
-| --- | --- |
-|`left` (default) | Align the names and text to the left. |
-| `center` | Align the names and text in the center. |
-|`right` | Align the names and text to the right. |
-
-
-See: [Contributors](/guide/contributors/)
+| Parameter | Expected Value | Description |
+| --- | --- | --- |
+| range | "page", "all", or string | Defines which contributors to include. An arbitrary value matching a contributor type such as "primary" or "secondary" may also be used. |
+| format | "initials", "name", "name-title", "name-title-block", "bio" | Defines what format the list should take. |
+| align | "left" (default), "center", "right" | Optional. Defines how the output text will be aligned. |
 
 ### `q-figure`
 
-Sample: `{{</* q-figure id="3.1" */>}}`
+*Inserts a formatted figure image, label, caption and credit line. If using a `data/figures.yml` file, only an `id` parameter is required for this shortcode. If other values supplied directly in the shortcode they will override any corresponding values in the `data/figures.yml`. See [Figure Images](/guide/figure-images/) and [Figure YAML](/api-docs/yaml#figure).*
 
-Basic Usage: Inserts a formatted figure image, label, caption and credit line. If using a `data/figures.yml` file, only an `id` parameter is required for this shortcode. If other values supplied directly in the shortcode they will override any corresponding values in the `data/figures.yml`.
+`{{</* q-figure id="" src="" label="" caption="" credit="" alt="" class="" */>}}`
 
-
-| Named Parameters | Expected Value  | Description |
+| Parameter | Expected Value  | Description |
 | --- | --- | --- |
 |`id` | string | Spaces or special characters should not be used and will be stripped out. When used in a shortcode *without* a corresponding `src` parameter, the shortcode will look for a matching `id` in the project’s `data/figures.yml` file. When used in a shortcode *with* a corresponding `src` parameter, this will create an `id` for the image markup that can be used to link to the image directly (`mypublication.com/chapter01/#fig-3`) and ignores any  potentially corresponding information in the `data/figures.yml` file. |
 | `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img` directory (which is defined by the `imageDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). If your project uses `data/figures.yml` file, you shouldn’t use a `src` parameter in the shortcode as it will override all other information.  |
@@ -408,18 +394,15 @@ Basic Usage: Inserts a formatted figure image, label, caption and credit line. I
 | `caption` | string | The caption to appear below the figure. Special characters are allowed. Use Markdown for formatting. |
 | `credit` | string | Follows the caption. Markdown allowed. |
 | `label` | boolean | Default is set to `true`. `true` will add a label to the caption, such as "Figure 1.3", `false` will remove the label. The global label setting is in the `config.yml` file under the parameter `figureLabels`.  |
-| `label_text` | string | Will override the default label text for the figure, which is otherwise constructed automatically with the `figureLabelsTextBefore` and `figureLabelsTextAfter` parameters in `config.yml`. |
 | `class` | `is-pulled-right`, `is-pulled-left`, `is-full-width`, `is-centered-small` | Sets the style of the figure image. |
-
-See: [Figure Images](/guide/figure-images/) and [Figure YAML](/api-docs/yaml#figure)
 
 ### `q-figure-group`
 
-Sample: `{{</* q-figure-group id="3.1, 3.2, 3.3" */>}}`
+*Like `q-figure`, but with handling for multiple images at once. See [Figure Images](/guide/figure-images/) and [Figure YAML](/api-docs/yaml#figure).*
 
-Basic Usage: Like `q-figure`, but with handling for multiple images at once.
+`{{</* q-figure-group id=" , , " grid="" src="" label="" caption="" credit="" class="" */>}}`
 
-| Named Parameters | Expected Value  | Description |
+| Parameter | Expected Value  | Description |
 | --- | --- | --- |
 |`id` | string | One or more comma-separated `id`s that match corresponding values in the project’s `data/figures.yml` file. |
 | `caption` | string | The caption to appear below the figure group. Special characters are allowed. Use Markdown for formatting. Overrides any caption information provided in `data/figures.yml`. |
@@ -428,7 +411,6 @@ Basic Usage: Like `q-figure`, but with handling for multiple images at once.
 | `class` | `is-pulled-right`, `is-pulled-left`, `is-full-width`, `is-centered-small` | Sets the style of the group of figures overall. |
 | `grid` |  `1`, `2`, `3`, `4`, `5`, `6` | Determines the horizontal width (in number of images) of the image grid. If no grid is set, the images will stack on top of one another vertically. |
 
-See: [Figure Images](/guide/figure-images/) and [Figure YAML](/api-docs/yaml#figure)
 
 ### Other Potential Shortcodes
 
@@ -493,3 +475,7 @@ See: [Figures](/guide/figure-images/)
 Note: Not sure we‘ll do this. Might be better to build in with JS rather than have a separate shortcode just for URLs.
 
 See: [Working with Text](/guide/pages/)
+
+---
+
+<sup id="positional">†</sup> Positional parameters are included in shortcodes without a name defining them. See [`q-class`](#q-class), and [`q-cite`](q-cite).
