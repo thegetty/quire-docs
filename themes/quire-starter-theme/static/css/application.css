@@ -117,6 +117,12 @@
   font-weight: 700;
   font-style: italic; }
 
+@font-face {
+  font-family: "Noto Sans Mono";
+  src: url(/fonts/notosansmono-medium.woff2) format("woff2"), url(/fonts/notosansmono-medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
 /**
 * Load material icon font
 */

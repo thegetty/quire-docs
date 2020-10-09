@@ -162,6 +162,20 @@
   font-style: italic;
 }
 
+////
+// Noto Sans Mono
+// https://www.google.com/get/noto/#sans-mono
+// Open Font License 1.1 (https://scripts.sil.org/OFL)
+//
+// Noto Sans Mono Medium
+@font-face {
+  font-family: "Noto Sans Mono";
+  src: url("../fonts/noto-sans-mono/notosansmono-medium.woff2") format("woff2"),
+       url("../fonts/noto-sans-mono/notosansmono-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 /**
 * Load material icon font
 */
