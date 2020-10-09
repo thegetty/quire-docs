@@ -171,7 +171,7 @@ project_list:
     customization_level: moderate
     github_user:
       - geealbers
-    note: "This publication represents typical reserach proceedings, however, it was additionally customized to accomodate a 7" x 10" print size."
+    note: "This publication represents typical reserach proceedings, however, it was additionally customized to accomodate a 7 in. x 10 in. print size."
 
   - id: "tour_toolkit"
     src: /screenshots/_tour_toolkit.png
@@ -236,4 +236,4 @@ project_list:
     customization_level: minor
     github_user:
       - shineslike
-    note: "This publication was written, edited and published by students in George Washington University's "Museums and Digital Technology" class. Each student was responsible for creating a 3,000-4,000-word essay that explores a specific area of museum digital practice today."
+    note: "This publication was written, edited and published by students in George Washington University's Museums and Digital Technology class. Each student was responsible for creating an essay that explores a specific area of museum digital practice today."
