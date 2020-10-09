@@ -318,3 +318,11 @@ figure_list:
   - id: "plain-text"
     src: /screenshots/plain-text.jpg
     caption: "**Simple structure** | Keep content in human-readable format"
+
+  - id: "map-inline"
+    src: /screenshots/map-inline.png
+    caption: "When you insert an interactive map with the `q-figure-zoom` shortcode, it will display a static image of the map when you’re on the page."
+
+  - id: "map-zoom"
+    src: /screenshots/map-zoom.png
+    caption: "When you click on a map inserted with the `q-figure-zoom` shortcode, it will load an interactive version centered on latititue and longitude points you specified, and displaying labels and points from your geojson data file."
