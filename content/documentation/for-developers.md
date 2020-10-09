@@ -402,7 +402,7 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 `{{</* q-figure-group id=" , , " grid="" src="" label="" caption="" credit="" class="" */>}}`
 
-| Parameter | Expected Value  | Description |
+| Parameter | Expected Value | Description |
 | --- | --- | --- |
 |`id` | string | One or more comma-separated `id`s that match corresponding values in the project’s `data/figures.yml` file. |
 | `caption` | string | The caption to appear below the figure group. Special characters are allowed. Use Markdown for formatting. Overrides any caption information provided in `data/figures.yml`. |
@@ -411,70 +411,13 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 | `class` | `is-pulled-right`, `is-pulled-left`, `is-full-width`, `is-centered-small` | Sets the style of the group of figures overall. |
 | `grid` |  `1`, `2`, `3`, `4`, `5`, `6` | Determines the horizontal width (in number of images) of the image grid. If no grid is set, the images will stack on top of one another vertically. |
 
+### `q-figure-zoom`
 
-### Other Potential Shortcodes
+*In progress. Documentation to come.*
 
-The following have been used previously but are not yet implemented in Quire. They are under consideration.
-
-#### `q-link-list`
-
-Sample: `{{</* q-link-list "other-formats" */>}}`
-
-Basic Usage: Creates an unordered list of links. Makes use of the `link-list.html` partial in the site templates.
-
-Parameters:
-
-| Parameter Position | Expected Value                       | Description                              |
-| ------------------ | ------------------------------------ | ---------------------------------------- |
-| 0 *                | "other-formats", "related-resources" | Values point to corresponding values in `publication.yml` |
-
-Parameters are not named, but instead defined by their position, starting at 0.
-
-See: [Copyright & About Pages](/guide/copyright-about-pages/)
-
-#### `q-copyright`
-
-Sample: `{{</* q-copyright */>}}`
-
-Basic Usage: Adds a copyright statement and licensing information as you’ve defined it in your `publication.yml` file. Commonly used on Copyright and About pages. The shortcode itself makes use of the `copyright.html` partial in your site templates.
-
-Parameters: None.
-
-See: [Copyright & About Pages](/guide/copyright-about-pages/)
-
-#### `q-loc`
-
-Sample: `{{</* q-loc */>}}`
-
-Basic Usage: Adds formatted Library of Congress Cataloging-in-Publication Data to the page, from values in `publication.yml`.
-
-Parameters: None
-
-See: [Copyright & About Pages](/guide/copyright-about-pages/)
-
-#### `q-revision-history`
-
-Sample: `{{</* q-revision-history */>}}`
-
-Basic Usage: Adds a revision history to the page, based on values in `publication.yml`.
-
-| Named Parameters | Expected Value  | Description                              |
-| ---------------- | --------------- | ---------------------------------------- |
-| format           | "short", "full" | "short" will show only the first publication date and most recently updated date. "long" shows all dates and list of changes for each. |
-
-See: [Copyright & About Pages](/guide/copyright-about-pages/)
-
-#### `q-table`
-
-Note: Original version of this was tabled. Still looking for better solution for complex tables.
-
-See: [Figures](/guide/figure-images/)
-
-#### `q-url-link`
-
-Note: Not sure we‘ll do this. Might be better to build in with JS rather than have a separate shortcode just for URLs.
-
-See: [Working with Text](/guide/pages/)
+| Parameter | Expected Value  | Description |
+| --- | --- | --- |
+| id | string | |
 
 ---
 
