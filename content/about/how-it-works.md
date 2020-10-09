@@ -3,6 +3,7 @@ title: How It Works
 weight: 1400
 type: essay
 menu: false
+toc: false
 ---
 
 At the heart of Quire is the [Quire CLI](https://github.com/gettypubs/quire-cli), or {{< q-def "command-line interface" >}}. It is used for creating, previewing, and outputting projects. (Read more in [Quire CLI Commands](/documentation/quire-cli/).)

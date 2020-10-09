@@ -2,6 +2,7 @@
 title: Implementation Considerations
 type: essay
 weight: 3999
+abstract: "Is Quire right for you and your project?"
 ---
 
 ## Technology Requirements

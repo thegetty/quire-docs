@@ -322,6 +322,19 @@ on the page and adjusts to different window widths */
 .quire-menu .page-item.active .quire__heading-links .main-heading a {
   color: var(--accent-color) !important;
 }
+.quire-menu .page-item.active > a,
+.quire-menu .section-item.active > a,
+.quire-menu .section-item > a {
+  font-weight: 700;
+}
+/* Even out row and column spacing in grid */
+.quire-contents-list.grid ul li a {
+  padding: 0;
+}
+.quire-contents-list.grid ul li .card {
+  margin: .625rem;
+}
+
 
 /* Make main section headings stand out visually */
 .quire-menu .section-item > .list-header,
@@ -723,4 +736,13 @@ dt code {
 /* Remove unneeded margin from definition lists */
 .quire-page__content .content dl {
   margin-left: 0;
+}
+/* Section landing pages */
+.quire-contents-list.grid ul li .card.no-image .card-content .title,
+.quire-contents-list.grid ul li .card.no-image .card-content .abstract  {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+.quire-contents-list.grid ul li .card.no-image .card-content .abstract {
+  font-weight: 400;
 }
