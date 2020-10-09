@@ -4,59 +4,52 @@ weight: 4101
 type: essay
 ---
 
-## Quire Repositories
+## Repositories
+
+There are four repositories that make up Quire, which is currently in closed beta Please sign-up to [request access](https://forms.gle/m1fgZu5BHKhddMrW7).
 
 ### `quire-cli`
 
-Quire CLI is written in JavaScript and requires [Node.js 12.18.3 LTS](https://nodejs.org) to run. The following commands are available:
+https://github.com/gettypubs/quire-cli
 
-| Command | Description |
-| -------------- | -------------- |
-| `quire -V` or `quire --version` | Output the version number. |
-| `quire -h` or `quire --help` | Output usage information. |
-| `quire new project-name` | Create a new Quire project named `project-name` in the current directory. Name can be anything, but shouldn’t contain spaces. |
-| `quire preview` | Run a local server to preview the project in a browser. Defaults to previewing at http://localhost:1313/, but will use other port numbers (such as http://localhost:6532/) if `1313` is busy. The specific address will be listed in your command line terminal after running the command. |
-| `quire build` | Build the files of the current project into the `public` directory. These can then be hosted on any web server. |
-| `quire pdf` | Generate a PDF version of the current project. |
-| `quire epub` | Generate an EPUB version of the current project. |
-
-Read more in [Quire CLI Commands](/documentation/quire-cli/).
+The command-line interface for Quire. It is written in JavaScript and requires [Node.js 12.18.3 LTS](https://nodejs.org) to run. Commands include `quire preview`, `quire pdf`, `quire epub`, and more. A complete reference can be found in [Quire CLI Commands](/documentation/quire-cli/).
 
 ### `quire-starter`
 
-Quire Starter ([quire-starter](https://github.com/gettypubs/quire-starter)) is a starter content repository used as placeholder content when starting a new Quire project with the `quire new` command. It comes with some pre-defined example content and pages with which to get started.
+https://github.com/gettypubs/quire-starter
 
-{{< q-figure id="1.2" >}}
+A starter content repository used as placeholder content when starting a new Quire project with the `quire new` command. It comes with some pre-defined example content and pages with which to get started.
 
 ### `quire-starter-theme`
 
-Quire Starter Theme ([quire-starter-theme](https://github.com/gettypubs/quire-starter-theme)) is the basic theme that is included when starting a new Quire project with the `quire new` command. It is designed to broadly cover a full range of use-cases and to demonstrate the range of Quire content model, without being overly specific or complex, making it easy to customize and build from. Read more about the use of themes in [Customizing Styles](/guide/styles-customization).
+https://github.com/gettypubs/quire-starter-theme
 
-{{< q-figure id="1.3" >}}
-
-More themes will be added in the future.
+The theme that is included when starting a new Quire project with the `quire new` command. It is designed to broadly cover a full range of use-cases and to demonstrate the range of Quire content model.
 
 ### `quire`
 
-Quire ([quire](https://github.com/gettypubs/quire)) is the repository for the guide and documentation you are currently reading.
+https://github.com/gettypubs/quire
 
-## YAML
+The Quire website, and the central location for issues and discussion forum posts.
 
-### Configuration
 
-Location: `config.yml`
+## Configuration
 
-Type: Object
+*General [configuration options](https://gohugo.io/getting-started/configuration/) for a project.*
+
+Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory | Type: Object
 
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
 | `baseURL` | url | The base url for your project. |
-| `blackfriday` | [object](#black-friday-markdown) | Options for Blackfriday, Hugo’s markdown renderer. See below. |
+| `blackfriday` | [object](#black-friday-markdown) | Options for Blackfriday, Hugo’s markdown renderer. Quire v0.18.0 and below. See below. |
+| `buildDrafts` | | |
 | `canonifyURLs` |  boolean | Converts all internal links to being in complete canonical format. Default is `false`. |
 | `disableKinds` | | |
 | `footnoteReturnLinkContents` | string | Controls the appearance of the link added to the end of footnotes. Default is "↩". |
 | `googleAnalytics` | | |
 | `languageCode` | | |
+| `markup` | [object](#markup) | Options for Hugo’s markdown rendering. Quire v0.19.0 and above. See below. |
 | `metaDataFormat` | "yaml", "toml", "json" | Default is "yaml". |
 | `params` | [object](#quire-parameters) | Additional parameters for Quire. See below. |
 | `pluralizeListTitles` | | |
@@ -65,51 +58,56 @@ Type: Object
 | `title` | | |
 | `theme` | url/id | The name of the theme, in the `theme` directory you’re using. Quire starter kit default is `quire-base-theme`. |
 
-See: [Additional Hugo configuration options](https://gohugo.io/getting-started/configuration/#yaml-configuration)
+### `blackfriday`
 
-#### Black Friday Markdown
+*Configuration for the [Blackfriday](https://gohugo.io/getting-started/configuration-markup#blackfriday) markdown rendering engine. See *
 
-Location: `blackfriday` in `config.yml`
-
-Type: Object
+Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory | Type: Object | Compatibility: Quire v0.18.0 and below
 
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
 | `fractions` | boolean | When set to `true` any numbers separated by a slash are automatically converted to fractions. Default is `false`. Though even then 1/4, 1/2 and 3/4 are still converted. Recommend always using proper unicode fractions: ¼, ½, ¾, ⅛, ⅜, ⅝, ⅞. |
 | `hrefTargetBlank` | boolean | When set to true, any Markdown links to external pages and resources will open in a new tab/window for the user. |
 
-See: [Additional Blackfriday markdown configurations options](https://gohugo.io/getting-started/configuration/#blackfriday-options)
+### `markup`
 
-#### Quire Parameters
+*Configuration for the markdown rendering engine. See [Hugo’s Markup Configuration](https://gohugo.io/getting-started/configuration-markup/) for more options and information.*
 
-Location: `params` in `config.yml`
+Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory | Type: Object | Compatibility: Quire v0.19.0 and above
 
-Type: Object
+| Object Properties | Expected Value | Description |
+| --- | --- | --- |
+| `goldmark.renderer.unsafe` | boolean | "true" (default) or "false", allows the inclusion of HTML markup in markdown pages. |
+
+### `params`
+
+*Quire-specific project parameters.*
+
+Location: `config.yml` | Type: Object
 
 | Parameter | Expected Value | Description |
 | --------- | -------------- | ----------- |
-| `searchEnabled` | boolean | Turn on or off the built-in text search capability for users |
-| `licenseIcons` | boolean | Whether or not to display Creative Commons license icons |
-| `pageLabelDivider` | string | ". " default, determines the text/spacing to be inserted between page .label and page .title |
-| `citationPageLocationDivider` | string | ", " default, determines the text/spacing to be inserted between the citation and the page number in the q-cite shortcode |
-| `displayBiblioShort` | boolean | Whether a bibliography generated with the q-cite or q-bibliography shortcodes should display the short form of the reference, along with the long |
-| `imageDir` | string | "img" default, the directory in the `/static/` directory where you put your images |
-| `tocType` | "full", "short" | "short" will hide all sub-section pages |
-| `menuType` | "full", "short" |  "short" will hide all sub-section pages |
-| `prevPageButtonText` | string | "Back" default |
-| `nextPageButtonText` | string | "Next" default |
-| `entryPageSideBySideLayout` | boolean | Entry pages can have a side-by-side layout with image on the left and text on the right, this can be controlled by `class: side-by-side` in the page YAML, or globally with this parameter |
-| `entryPageObjectLinkText` | string | "View in Collection" default |
-| `figureLabelLocation` | "on-top", "below" | Whether the figure label is "on-top" of the image in the upper left corner, or "below" it with the caption |
+| `searchEnabled` | boolean | Turn on or off the built-in text search capability for users. |
+| `licenseIcons` | boolean | Whether or not to display Creative Commons license icons. |
+| `pageLabelDivider` | string | ". " default, determines the text/spacing to be inserted between page .label and page .title. |
+| `citationPageLocationDivider` | string | ", " default, determines the text/spacing to be inserted between the citation and the page number in the q-cite shortcode. |
+| `displayBiblioShort` | boolean | Whether a bibliography generated with the q-cite or q-bibliography shortcodes should display the short form of the reference, along with the long. |
+| `imageDir` | string | "img" default, the directory in the `/static/` directory where you put your images. |
+| `tocType` | "full", "short" | "short" will hide all sub-section pages. |
+| `menuType` | "full", "short" |  "short" will hide all sub-section pages. |
+| `prevPageButtonText` | string | "Back" default. |
+| `nextPageButtonText` | string | "Next" default. |
+| `entryPageSideBySideLayout` | boolean | Entry pages can have a side-by-side layout with image on the left and text on the right, this can be controlled by `class: side-by-side` in the page YAML, or globally with this parameter. |
+| `entryPageObjectLinkText` | string | "View in Collection" default. |
+| `figureLabelLocation` | "on-top", "below" | Whether the figure label is "on-top" of the image in the upper left corner, or "below" it with the caption. |
 | `figureModal` | boolean | If figures should be clickable to open into a full-screen modal window. |
-| `figureModalIcons` | boolean | Whether to display icons with the figure modal links |
-| `figureZoom` | boolean | Whether figures should zoom or not inside the modal |
+| `figureModalIcons` | boolean | Whether to display icons with the figure modal links. |
+| `figureZoom` | boolean | Whether figures should zoom or not inside the modal. |
+| `citationPopupStyle` | "icon", "text" | Displays the citation pop-up links with an icon, or without. |
 
-### Publication
+## Publication API
 
-Location: `publication.yml`
-
-Type: Object
+Location: `publication.yml` | Type: Object
 
 | Object Properties | Expected Value | Description |
 | --- | --- | --- |
@@ -119,7 +117,7 @@ Type: Object
 | `reading_line` | string | An additional title line for your publication. |
 | `url` | url | The full URL of your final publication. |
 | `pub_type` | "book", "journal-periodical", "other" | Can be one of three values. Determines how key search-engine metadata is defined. |
-| `pub-date` | YYYY-MM-DD | The first date your publication will be released. |
+| `pub_date` | YYYY-MM-DD | The first date your publication will be released. |
 | `language` | 2-letter ISO 639-1 language code(s) | Taken from the the list at https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes. List multiple languages using a comma-separated list. |
 | `identifier` | [object](#identifier) | See below. |
 | `publisher` | [array](#publisher) | See below. |
@@ -137,9 +135,9 @@ Type: Object
 | `revision_history` | [array](#revision-history) | See below. |
 | `repository_url` | url | A public repository of the source code and revision history for the publication. |
 
-#### Publisher
+### `publisher`
 
-Location: `publisher` in `publication.yml`
+Location: `publication.yml`
 
 Type: Array
 
@@ -149,9 +147,9 @@ Type: Array
 | `location` | string | Publisher location, city. |
 | `url` | url | Publisher homepage. |
 
-#### Description
+### `description`
 
-Location: `description` in `publication.yml`
+Location: `publication.yml`
 
 Type: Object
 
@@ -162,9 +160,9 @@ Type: Object
 | `online` | string | The `online` and `pdf_ebook` fields allow you to add additional text to the `full` description that is specific to either the online, or the PDF/EPUB/MOBI editions and will only show up there. For instance, in order to point to special features in one or the other of the formats. |
 | `pdf_ebook` | string | |
 
-#### Subject
+### `subject`
 
-Location: `subject` in `publication.yml`
+Location: `publication.yml`
 
 Type: Array
 
@@ -175,9 +173,9 @@ Type: Array
 | `identifier` | string |  |
 
 
-#### License
+### `license`
 
-Location: `license` in `publication.yml`
+Location: `publication.yml`
 
 Type: Object
 
@@ -191,9 +189,9 @@ Type: Object
 | `online_text` | string | Markdown okay. Will override the automatically generated license text for the online edition only. |
 | `pdf_ebook_text` | string | Markdown okay. Will override the automatically generated license text for the PDF and e-book editions only. |
 
-#### Resource Link
+### `resource_link`
 
-Location: `resource_link` in `publication.yml`
+Location: `publication.yml`
 
 Type: Array
 
@@ -209,9 +207,9 @@ Type: Array
 | `icon` | url |  |
 
 
-#### Revision History
+### `revision_history`
 
-Location: `revision_history` in `publication.yml`
+Location: `publication.yml`
 
 Type: Array
 
@@ -220,9 +218,9 @@ Type: Array
 | `date` | YYYY-MM-DD |  |
 | `summary` | list |  |
 
-### Identifier
+### `identifier`
 
-Location: `identifier` in top level of `publication.yml`, in any `.Page.Params.`, or in any `resource_link`
+Location: `publication.yml`, in any `.Page.Params.`, or in any `resource_link`
 
 Type: Object
 
@@ -233,9 +231,9 @@ Type: Object
 | `doi` | string | Not yet implemented. |
 | `uuid` | string | Not yet implemented. |
 
-### Contributor
+### `contributor`
 
-Location: `contributor` in publication.yml or in any `.Page.Params.`
+Location: `publication.yml` or in any `.Page.Params.`
 
 Type: Array
 
@@ -253,9 +251,9 @@ Type: Array
 | `bio` | | Markdown okay. |
 | `pic` |  |  |
 
-### Figure
+### `figure_list`
 
-Location: `figure_list` in `figures.yml`
+Location: `figures.yml`
 
 Type: Array
 
@@ -271,9 +269,9 @@ Type: Array
 | `aspect_ratio` | "standard", "widescreen" | For use with video `media_type`s to properly scale video embeds. When no value is provided, the default is "widescreen". |
 | `label_text` | string | Used for the `q-figure-group` shortcode only. A short text label added to the image, usually just under the image depending on your theme. If no text is provided here, a label is automatically generated from the provided `id` value along with the `imageLabelContentBefore` and `imageLabelContentAfter` values defined in your `config.yml` file.  |
 
-### Bibliography
+### `entries`
 
-Location: `entries` in `references.yml`
+Location: `references.yml`
 
 Type: Array
 
@@ -282,9 +280,9 @@ Type: Array
 | `short` | string | The short form of the citation, ie., Brown 1984. |
 | `full` | string | The full form of the citation, ie.,  |
 
-### Object
+### `object_list`
 
-Location: `object_list` in `objects.yml`
+Location: `objects.yml`
 
 Type: Array
 
@@ -300,7 +298,7 @@ Objects also support arbitrary attributes, which might include `title`, `artist`
 
 See: [Guide on Collection Catalogues](/guide/collection-catalogues/)
 
-### Page
+## Page API
 
 Location: Any Markdown page in the `/content/` directory.
 
@@ -329,7 +327,7 @@ The `object` and `contributor` attributes above are arrays of one or more items.
 
 Pages with `type: contents` can have class `list` (default), `brief`, `abstract`, or `grid`. Pages with `type: entry` can have class `landscape` (default) or `side-by-side`.
 
-## Shortcodes
+## Shortcodes API
 
 ### `q-class`
 
