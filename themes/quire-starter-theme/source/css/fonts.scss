@@ -175,6 +175,14 @@
   font-weight: 500;
   font-style: normal;
 }
+// Noto Sans Mono Bold
+@font-face {
+  font-family: "Noto Sans Mono";
+  src: url("../fonts/noto-sans-mono/notosansmono-bold.woff2") format("woff2"),
+       url("../fonts/noto-sans-mono/notosansmono-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 
 /**
 * Load material icon font

@@ -692,6 +692,9 @@ code {
   font-family: 'Noto Sans Mono';
   font-weight: 500;
 }
+dt code {
+  font-weight: 700;
+}
 
 /* TYPOGRAPHY
 ============================================================================= */
@@ -716,4 +719,8 @@ code {
 }
 .backmatter {
   margin-top: 6rem;
+}
+/* Remove unneeded margin from definition lists */
+.quire-page__content .content dl {
+  margin-left: 0;
 }
