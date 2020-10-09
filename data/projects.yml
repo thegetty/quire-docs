@@ -201,26 +201,26 @@ project_list:
     github_user:
     note:
 
- - id: "humanizing_the_digital"
-   src: /screenshots/_humanizing_the_digital.png
-   alt: "Screenshot of publication cover: black text on a white background with anthropomorphized computer file folders smattered across two wavy registers of qr-code"
-   type: Conference Proceedings
-   publisher: Ad Hoc Museum Collective
-   title_info: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, edited by Suse Anderson, Isabella Bruno, Hannah Hethmon, Seema Rao, Ed Rodley, and Rachel Ropeik"
-   pub_date: 2019
-   url: https://ad-hoc-museum-collective.github.io/humanizing-the-digital/
-   customization_level:
-   github_user:
-   note:
+  - id: "humanizing_the_digital"
+    src: /screenshots/_humanizing_the_digital.png
+    alt: "Screenshot of publication cover: black text on a white background with anthropomorphized computer file folders smattered across two wavy registers of qr-code"
+    type: Conference Proceedings
+    publisher: Ad Hoc Museum Collective
+    title_info: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, edited by Suse Anderson, Isabella Bruno, Hannah Hethmon, Seema Rao, Ed Rodley, and Rachel Ropeik"
+    pub_date: 2019
+    url: https://ad-hoc-museum-collective.github.io/humanizing-the-digital/
+    customization_level:
+    github_user:
+    note:
 
- - id: "state_of_museum_dig"
-   src: /screenshots/_state_of_museum_dig.png
-   alt: "Screenshot of publication cover: myriad strands of twinkle lights hung in two horizontal registers across a large architectural space"
-   type: Graduate Student/Class Project
-   publisher: Ad Hoc Museum Collective
-   title_info: "*The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses*, by Suse Anderson, Cristin Guinan-Wiley, Jonathan Edelman, Rachel Rosenfeld, Mary McCulla, Sheridan Small, Cynthia Kurtz, Amy Pollard, Corrie Brady, Melissa Garcia, Caitlin Hepner, Sydney Thatcher, Laura Dickson, and Rebecca Brockette"
-   pub_date: 2019
-   url: https://ad-hoc-museum-collective.github.io/GWU-museum-digital-practice-2019/
-   customization_level:
-   github_user:
-   note:
+  - id: "state_of_museum_dig"
+    src: /screenshots/_state_of_museum_dig.png
+    alt: "Screenshot of publication cover: myriad strands of twinkle lights hung in two horizontal registers across a large architectural space"
+    type: Graduate Student/Class Project
+    publisher: Ad Hoc Museum Collective
+    title_info: "*The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses*, by Suse Anderson, Cristin Guinan-Wiley, Jonathan Edelman, Rachel Rosenfeld, Mary McCulla, Sheridan Small, Cynthia Kurtz, Amy Pollard, Corrie Brady, Melissa Garcia, Caitlin Hepner, Sydney Thatcher, Laura Dickson, and Rebecca Brockette"
+    pub_date: 2019
+    url: https://ad-hoc-museum-collective.github.io/GWU-museum-digital-practice-2019/
+    customization_level:
+    github_user:
+    note:
