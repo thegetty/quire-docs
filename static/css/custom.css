@@ -619,7 +619,7 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 /* CODE
 ============================================================================= */
 code {
-  color: #000;
+  color: inherit;
   background-color: inherit;
   padding: 0 .25em;
   font-family: 'Noto Sans Mono';
