@@ -3,14 +3,6 @@ figure_list:
     src: /screenshots/content-model.png
     caption: "Quire content model "
     credit: " "
-  - id: "1.2"
-    src: /screenshots/file-structure.png
-    caption: "File structure "
-    credit: " "
-  - id: "1.3"
-    src: /screenshots/quire_starter_theme.png
-    caption: "Starter Theme"
-    credit: " "
   - id: "1.4"
     src: /screenshots/quire-work-environment.gif
     caption: "When you work in Quire, you’ll be using a text editor (left), a command-line shell (center), and a web browser (right)."
