@@ -625,3 +625,15 @@ code {
   font-family: 'Noto Sans Mono';
   font-weight: 500;
 }
+
+/* TYPOGRAPHY
+============================================================================= */
+/* Better alignment on text inside tables */
+.content table td:first-child,
+.content table th:first-child {
+  padding-left: 0;
+}
+.content table td:last-child,
+.content table th:last-child {
+  padding-right: 0;
+}
