@@ -2,7 +2,6 @@
 title: Roadmap
 weight: 1700
 type: essay
-menu: false
 ---
 
 The Quire team at Getty continues work on Quire as a whole, including making improvements to the installation process, the overall architecture, and ongoing enhancements for web accessibility.

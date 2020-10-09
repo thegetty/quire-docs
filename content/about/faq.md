@@ -3,6 +3,7 @@ title: FAQ
 weight: 1200
 type: essay
 menu: false
+toc: false
 ---
 
 **Why is it called Quire?**
