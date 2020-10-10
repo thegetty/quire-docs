@@ -7,6 +7,9 @@
   specific projects to display in the showcase. If the "projects" parameter
   isn’t given, all projects will be included.
 
+  Use an optional "class" parameter to add a custom class to
+  <ul class="showcase"> for styling.
+
 */}}
 {{- $imgDir := "" -}}
 {{- if isset .Site.Params "imagedir" -}}
@@ -18,7 +21,7 @@
 {{- $projects = .Get "projects" -}}
 {{- end -}}
 
-<ul class="showcase">
+<ul class="showcase{{ with .Get "class" }} {{ . }}{{ end }}">
 {{ range sort .Site.Data.projects.project_list "pub_date" "desc" }}
 {{ if or (eq $projects "") (in $projects .id) }}
 <li class="showcase-project">
