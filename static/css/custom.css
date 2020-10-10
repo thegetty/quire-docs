@@ -638,8 +638,6 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
   grid-template-columns: 1fr 1fr;
   column-gap: 1.5rem;
   margin: 2rem 0;
-  padding-top: 1rem;
-  border-top: solid 1px var(--accent-color);
 }
 @media screen and (max-width: 500px) {
   .quire-page__content .container .content ul.showcase {
@@ -694,6 +692,24 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 .quire-page__content .container .content ul li.showcase-project figure a:hover img {
   transition: box-shadow 0.35s;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Full width variant used on the homepage */
+.quire-page__content .container .content ul.showcase.full-width-slider {
+  width: 100vw;
+  margin-left: calc((100vw - 720px + 5rem) / 2 * -1) !important;
+  display: flex;
+  overflow-x: scroll;
+  padding: 0 1.5rem;
+}
+.quire-page__content .container .content ul.showcase.full-width-slider.slider-sm li.showcase-project figure {
+  width: 280px;
+}
+.quire-page__content .container .content ul.showcase.full-width-slider.slider-md li.showcase-project figure {
+  width: 420px;
+}
+.quire-page__content .container .content ul.showcase.full-width-slider.slider-lg li.showcase-project figure {
+  width: 600px;
 }
 
 /* CODE

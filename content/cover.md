@@ -20,7 +20,7 @@ slug: .
 
 </div>
 
-{{< q-figure-group id="thomas_rife, ancient_ambers, artists_studios_paris, bending_lines, fault_lines, state_of_convergence, tilt_west, heritage_management,  cva" grid="11" class="slider slider-large" >}}
+{{< q-showcase projects="thomas_rife, ancient_ambers, artists_studios_paris, bending_lines, fault_lines, state_of_convergence, tilt_west, heritage_management, cva" class="full-width-slider slider-lg" >}}
 
 <div class="action-button">
 
