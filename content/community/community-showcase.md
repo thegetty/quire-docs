@@ -10,6 +10,6 @@ Developed by Getty, Quire is now being used by a growing community of scholars, 
 
 <div class="action-button-center">
 
-[Submit Your Quire Project](#)
+[Submit Your Quire Project](https://forms.gle/DusYi8PaDAbmcAGn6)
 
 </div>
