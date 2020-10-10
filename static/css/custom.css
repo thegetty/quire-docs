@@ -746,3 +746,26 @@ dt code {
 .quire-contents-list.grid ul li .card.no-image .card-content .abstract {
   font-weight: 400;
 }
+
+/* GRID LAYOUT -- JOIN US PAGE
+============================================================================= */
+.image-list {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-template-rows: auto 1fr auto;
+  column-gap: 1.5rem;
+  margin-top: 4rem;
+}
+.image-list h2,
+.image-list p,
+.image-list ul,
+.image-list div {
+  grid-column-start: 2;
+}
+.image-list p:last-of-type {
+  grid-column-start: 1;
+  grid-row: 1 / span 3;
+}
+.quire-page__content .container .content .image-list .action-button a {
+  margin: 1rem 0;
+}
