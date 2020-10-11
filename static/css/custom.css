@@ -198,6 +198,24 @@
   background-color: transparent;
 }
 
+@media screen and (max-width: 500px) {
+  #cover .quire-page__content .header-quote h1 {
+    font-size: 3rem;
+  }
+  #cover .quire-page__content .container .content .feature-cards ul {
+    flex-direction: column;
+  }
+  #cover .quire-page__content .container .content .feature-cards ul li:first-of-type {
+    margin-bottom: 0;
+  }
+  #cover .quire-page__content .container .content .feature-cards ul li img {
+    max-width: 70%;
+  }
+  #cover .quire-page__content .container .content .feature-cards ul li a {
+    padding: 1rem;
+  }
+}
+
 /* TIP/ALERT BOXES
 ============================================================================= */
 /* Implement with shortcode q-class "box warning" or q-class "box tip" */
@@ -647,6 +665,20 @@ a.quire-navbar-controls__site-logo img {
 .quire-figure--group.full-width-slider.slider-lg .quire-figure--group__item {
   min-width: 600px;
 }
+@media screen and (max-width: 500px) {
+  .quire-page__content .container .content ul.showcase.full-width-slider.slider-sm li.showcase-project figure,
+  .quire-figure--group.full-width-slider.slider-sm .quire-figure--group__item {
+    min-width: 240px;
+  }
+  .quire-page__content .container .content ul.showcase.full-width-slider.slider-md li.showcase-project figure,
+  .quire-figure--group.full-width-slider.slider-md .quire-figure--group__item {
+    min-width: 380px;
+  }
+  .quire-page__content .container .content ul.showcase.full-width-slider.slider-lg li.showcase-project figure,
+  .quire-figure--group.full-width-slider.slider-lg .quire-figure--group__item {
+    min-width: 480px;
+  }
+}
 
 /* Adjustments for the features image grid version */
 #cover .quire-figure--group.full-width-slider .quire-figure--group__row {
@@ -755,4 +787,23 @@ dt code {
 }
 .quire-page__content .container .content .image-list .action-button a {
   margin: 1rem 0;
+}
+@media screen and (max-width: 500px) {
+  .image-list {
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+  }
+  .image-list h2,
+  .image-list p,
+  .image-list ul,
+  .image-list div {
+    grid-column-start: 1;
+  }
+  .image-list p:last-of-type {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .image-list p:last-of-type img {
+    width: 70%;
+  }
 }
