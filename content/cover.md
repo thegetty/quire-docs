@@ -119,7 +119,7 @@ Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1
 [Explore Ways to Get Involved](/community/join-us/)
 </div>
 
-<div class="feature-cards">
+<div class="feature-cards cover-footer">
 
 - [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](#)
 
@@ -131,6 +131,10 @@ Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1
 
 </div>
 
----
+<div class="cover-footer">
 
-[GitHub](https://github.com/gettypubs/quire/) | [About](/about/quire/) | [Contact](mailto:edunigan@getty.edu)
+[About](/about/) | [Community](/community/) | [Doumentation](/documentation/) | [Learn](/learn/) | [Request Access](https://forms.gle/m1fgZu5BHKhddMrW7)
+
+[GitHub](https://github.com/gettypubs/quire/) | [Contact](mailto:quire@getty.edu)
+
+</div>

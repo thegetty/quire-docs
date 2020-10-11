@@ -183,6 +183,21 @@
   margin-top: 0;
 }
 
+/* Cover footer styling */
+#cover .cover-footer {
+  margin-top: 6rem;
+}
+#cover .quire #main {
+  background-image: url('../img/illustrations/footer-graphic.png');
+  background-position-x: center;
+  background-position-y: bottom -3rem;
+  background-size: 105%;
+  background-repeat: no-repeat;
+}
+#cover .quire-splash .quire-page__content .container .content {
+  background-color: transparent;
+}
+
 /* TIP/ALERT BOXES
 ============================================================================= */
 /* Implement with shortcode q-class "box warning" or q-class "box tip" */
