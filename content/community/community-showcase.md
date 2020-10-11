@@ -8,7 +8,7 @@ Developed by Getty, Quire is now being used by a growing community of scholars, 
 
 {{< q-showcase >}}
 
-<div class="action-button-center">
+<div class="action-button">
 
 [Submit Your Quire Project](https://forms.gle/DusYi8PaDAbmcAGn6)
 

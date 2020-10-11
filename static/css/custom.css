@@ -65,9 +65,10 @@
   display: none;
 }
 /* Button-like links used for calls to action
-   div class="action-button" */
+   div class="" */
 .quire-page__content .container .content .action-button {
-  display: inline-block;
+  text-align: center;
+  margin: 2rem auto;
 }
 .quire-page__content .container .content .action-button a {
   border-radius: 4px;
@@ -75,30 +76,20 @@
   background-color: var(--accent-color);
   color: white;
   padding: .75rem 1.5rem;
-  margin: 1rem;
   display: inline-block;
 }
 .quire-page__content .container .content .action-button a:hover {
   color: white !important;
   background-color: var(--accent-color-dark);
 }
-/* Button-like links used for calls to action centered on page
-   div class="action-button-center" */
-.quire-page__content .container .content .action-button-center {
-  text-align: center;
-}
-.quire-page__content .container .content .action-button-center a {
+.quire-page__content .container .content .action-button.coming-soon p {
   border-radius: 4px;
   font-size: 1rem;
-  background-color: var(--accent-color);
-  color: white;
+  background-color: #eee;
+  color: #888;
   padding: .75rem 1.5rem;
-  margin: 1rem;
-  display: inline-block;
-}
-.quire-page__content .container .content .action-button-center a:hover {
-  color: white !important;
-  background-color: var(--accent-color-dark);
+  width: max-content;
+  font-style: italic;
 }
 /* A two-column list, with <strong> initial word large and accent-colored
    div class="feature-list" */
@@ -765,6 +756,10 @@ dt code {
 .quire-contents-list.grid ul li .card.no-image .card-content .abstract {
   font-weight: 400;
 }
+/* More space at bottom of page */
+.quire-page__content .container .content {
+  padding-bottom: 8rem;
+}
 
 /* GRID LAYOUT -- JOIN US PAGE
 ============================================================================= */
@@ -785,8 +780,9 @@ dt code {
   grid-column-start: 1;
   grid-row: 1 / span 3;
 }
-.quire-page__content .container .content .image-list .action-button a {
-  margin: 1rem 0;
+.quire-page__content .container .content .image-list .action-button {
+  margin: 0;
+  text-align: left;
 }
 @media screen and (max-width: 500px) {
   .image-list {
