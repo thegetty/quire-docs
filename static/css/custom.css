@@ -697,16 +697,26 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
 /* Full width variant used on the homepage */
 .quire-page__content .container .content ul.showcase.full-width-slider {
   width: 100vw;
-  margin-left: calc((100vw - 720px + 5rem) / 2 * -1) !important;
+  margin-left: -2.25rem !important;
   display: flex;
   overflow-x: scroll;
   padding: 0 1.5rem;
 }
+@media screen and (min-width: 501px) {
+  .quire-page__content .container .content ul.showcase.full-width-slider {
+    margin-left: -3.5rem !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  .quire-page__content .container .content ul.showcase.full-width-slider {
+    margin-left: calc((100vw - 720px + 5rem) / 2 * -1) !important;
+  }
+}
 .quire-page__content .container .content ul.showcase.full-width-slider.slider-sm li.showcase-project figure {
-  width: 280px;
+  width: 360px;
 }
 .quire-page__content .container .content ul.showcase.full-width-slider.slider-md li.showcase-project figure {
-  width: 420px;
+  width: 500px;
 }
 .quire-page__content .container .content ul.showcase.full-width-slider.slider-lg li.showcase-project figure {
   width: 600px;
