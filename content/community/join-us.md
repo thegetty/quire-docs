@@ -18,7 +18,7 @@ We welcome users at all levels of technical expertise and publishing experience.
 
 <div class="action-button">
 
-[Become a User](https://forms.gle/m1fgZu5BHKhddMrW7)
+[Sign up for Free](https://forms.gle/m1fgZu5BHKhddMrW7)
 
 </div>
 
@@ -31,9 +31,9 @@ We welcome users at all levels of technical expertise and publishing experience.
 
 Here you will find community-based support to help you navigate the ins and outs of Quire. Ask and answer questions, share ideas, raise issues, collaborate, and assist your fellow community members.
 
-<div class="action-button">
+<div class="action-button coming-soon">
 
-[Participate in Forum](/community/forum/)
+Coming Soon ...
 
 </div>
 
@@ -44,11 +44,11 @@ Here you will find community-based support to help you navigate the ins and outs
 
 ## Become an Ambassador
 
-***Coming Soon...*** We are looking for Quire lovers and super users who are passionate about bringing Quire into their own communities and expanding its reach.
+We are looking for Quire lovers and super users who are passionate about bringing Quire into their own communities and expanding its reach.
 
-<div class="action-button">
+<div class="action-button coming-soon">
 
-[Become an Ambassador](#)
+Coming Soon ...
 
 </div>
 
@@ -63,7 +63,7 @@ We hope to see you at future Quire workshops and events. We'd also love to know 
 
 <div class="action-button">
 
-[Attend an Event](/community/news-events)
+[Check the Calendar](/community/news-events/)
 
 </div>
 
@@ -72,13 +72,14 @@ We hope to see you at future Quire workshops and events. We'd also love to know 
 </div>
 <div class="image-list">
 
-## Submit Your Work
+## Share Your Work
 
-We love celebrating Quire accomplishments. Send us your finished Quire publications and we will add them to our **[Community Showcase](/community/community-showcase/)** and feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
+We love celebrating Quire accomplishments. Send us your finished Quire publications and we will add them to our **[Community Showcase](/community/community-showcase/)** and possibly feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
 
 <div class="action-button">
 
-[Submit Your Work](https://forms.gle/DusYi8PaDAbmcAGn6)
+[Fill Out the Form](https://forms.gle/DusYi8PaDAbmcAGn6)
+
 </div>
 
 ![Explore icon](/img/illustrations/undraw_done_a34v.png)
@@ -92,15 +93,9 @@ As an open-source community, all members have an opportunity to help mold Quire 
 
 Before getting started, we kindly request that you review our **[Contributor Guidelines](/community/contributor-guidelines/)** for information on best practices, guidelines, and recommendations for contributing.
 
-Quire on GitHub:
-
-[Quire Starter Theme Repository](https://github.com/gettypubs/quire-starter-theme)
-
-[Quire CLI Repository](https://github.com/gettypubs/quire-cli)
-
 <div class="action-button">
 
-[Contribute Code](/community/contributor-guidelines)
+[Find Us on GitHub](https://github.com/gettypubs/quire/)
 
 </div>
 
@@ -111,7 +106,7 @@ Quire on GitHub:
 
 ## Submit a Bug
 
-Bugs are sneaky, and we need your help spotting them! If you come across something broken or that just doesn't look right, please add it to our bug tracker and we'll work on getting the issue resolved ASAP.
+Bugs are sneaky, and we need your help spotting them! If you come across something broken or that just doesn't look right, please add it to our issues list and we'll work on getting the issue resolved ASAP.
 
 Please remember to label your issue and include the following information when submitting a bug:
 
@@ -122,7 +117,7 @@ Please remember to label your issue and include the following information when s
 
 <div class="action-button">
 
-[Submit a Bug](https://github.com/gettypubs/quire/issues)
+[Post to Our Issues List](https://github.com/gettypubs/quire/issues/)
 
 </div>
 
@@ -133,11 +128,11 @@ Please remember to label your issue and include the following information when s
 
 ## Add to Documentation
 
-The Quire documentation is a work in progress and we value your contributions. We invite you to dive in and help us add to and refine our user manual.
+The [Quire Documentation](/documentation/) is a work in progress and we value your contributions. We invite you to dive in and help us add to and refine our user manual.
 
 <div class="action-button">
 
-[Add to Documentation](https://github.com/gettypubs/quire)
+[Read Our Contributor Guidelines](/community/contributor-guidelines/)
 
 </div>
 
