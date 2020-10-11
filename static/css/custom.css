@@ -478,106 +478,6 @@ a.quire-navbar-controls__site-logo img {
   display: none;
 }
 
-/* HORIZONATAL SCROLLING IMAGES
-============================================================================= */
-/* Use with q-figure-group shortcode by aadding
-class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
-.quire-figure--group.slider {
-  overflow-x: scroll;
-  width: 100vw;
-  margin-left: -2.25rem;
-  border-width: 0;
-}
-/* Ensure image widths even on mobile, add support for higher grid numbers */
-.quire-figure--group.slider .quire-grid--2 {
-  width: 49%;
-}
-.quire-figure--group.slider .quire-grid--3 {
-  width: 32%;
-}
-.quire-figure--group.slider .quire-grid--4 {
-  width: 23.5%;
-}
-.quire-figure--group.slider .quire-grid--5 {
-  width: 18.4%;
-}
-.quire-figure--group.slider .quire-grid--6 {
-  width: 15%;
-}
-.quire-figure--group.slider .quire-grid--7 {
-  width: 12.57%;
-}
-.quire-figure--group.slider .quire-grid--8 {
-  width: 10.75%;
-}
-.quire-figure--group.slider .quire-grid--9 {
-  width: 9.33%;
-}
-/* Ensure slider stretches full-width at different screen sizes */
-@media screen and (min-width: 501px) {
-  .quire-figure--group.slider {
-    margin-left: -3.5rem;
-  }
-}
-@media screen and (min-width: 750px) {
-  .quire-figure--group.slider {
-    margin-left: calc((100vw - 720px + 5rem) / 2 * -1);
-  }
-}
-/* Set the length of the slider, larger ones mean larger images */
-.quire-figure--group.slider .quire-figure--group__row {
-  display: flex;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0 1rem 1rem 1rem;
-}
-.quire-figure--group.slider.slider-small .quire-figure--group__row {
-  width: 200vw;
-}
-.quire-figure--group.slider.slider-medium .quire-figure--group__row {
-  width: 300vw;
-}
-.quire-figure--group.slider.slider-large .quire-figure--group__row {
-  width: 400vw;
-}
-.quire-figure--group.slider.slider-xlarge .quire-figure--group__row {
-  width: 500vw;
-}
-/* Adds add styles tooltip text below scrolling area */
-.quire-figure--group.slider::after {
-  /* content: "< - - - Built with Quire - - - >"; */
-  font-size: .875rem;
-  font-weight: bold;
-  color: var(--accent-color);
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  position: absolute;
-  margin-left: -81.5px;
-}
-/* Color and style the figure captions */
-.quire-figure--group.slider .quire-figure__modal {
-  display: none;
-}
-.quire-figure--group.slider figure .quire-figure__caption {
-  padding: 0 .9rem;
-  margin-top: 0;
-  color: var(--accent-color);
-  font-size: 1rem;
-}
-.quire-figure--group.slider figure .quire-figure__caption strong {
-  color: var(--accent-color);
-}
-/* Use with q-figure shortcode by adding class="small-image" */
-.small-image {
-  width: 50%;
-  height: 50%;
-}
-/* Use with q-figure shortcode by adding class="xsmall-image" */
-.xsmall-image {
-  width: 20%;
-  height: 20%;
-}
-
 /* OFF SITE INDICATORS FOR MENU AND NAVIGATION
 ============================================================================= */
 .section-item a[target=_blank]::after,
@@ -694,34 +594,58 @@ class="slider-small", "slider-medium", "slider-large", or "slider-xlarge" */
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* Full width variant used on the homepage */
-.quire-page__content .container .content ul.showcase.full-width-slider {
+/* FULL-WIDTH-SLIDER - COVER - COMMUNITY SHOWCASE & FEATURES
+============================================================================= */
+.quire-page__content .container .content ul.showcase.full-width-slider,
+.quire-figure--group.full-width-slider .quire-figure--group__row {
   width: 100vw;
   margin-left: -2.25rem !important;
   display: flex;
+  flex-wrap: nowrap;
   overflow-x: scroll;
   padding: 0 1.5rem;
 }
+.quire-figure--group.full-width-slider {
+  border-width: 0;
+}
 @media screen and (min-width: 501px) {
-  .quire-page__content .container .content ul.showcase.full-width-slider {
+  .quire-page__content .container .content ul.showcase.full-width-slider,
+  .quire-figure--group.full-width-slider .quire-figure--group__row {
     margin-left: -3.5rem !important;
   }
 }
 @media screen and (min-width: 750px) {
-  .quire-page__content .container .content ul.showcase.full-width-slider {
+  .quire-page__content .container .content ul.showcase.full-width-slider,
+  .quire-figure--group.full-width-slider .quire-figure--group__row {
     margin-left: calc((100vw - 720px + 5rem) / 2 * -1) !important;
   }
 }
-.quire-page__content .container .content ul.showcase.full-width-slider.slider-sm li.showcase-project figure {
-  width: 360px;
+.quire-page__content .container .content ul.showcase.full-width-slider.slider-sm li.showcase-project figure,
+.quire-figure--group.full-width-slider.slider-sm .quire-figure--group__item {
+  min-width: 360px;
 }
-.quire-page__content .container .content ul.showcase.full-width-slider.slider-md li.showcase-project figure {
-  width: 500px;
+.quire-page__content .container .content ul.showcase.full-width-slider.slider-md li.showcase-project figure,
+.quire-figure--group.full-width-slider.slider-md .quire-figure--group__item {
+  min-width: 500px;
 }
-.quire-page__content .container .content ul.showcase.full-width-slider.slider-lg li.showcase-project figure {
-  width: 600px;
+.quire-page__content .container .content ul.showcase.full-width-slider.slider-lg li.showcase-project figure,
+.quire-figure--group.full-width-slider.slider-lg .quire-figure--group__item {
+  min-width: 600px;
 }
 
+/* Adjustments for the features image grid version */
+#cover .quire-figure--group.full-width-slider .quire-figure--group__row {
+  padding-left: .5rem;
+}
+#cover .quire-figure--group.full-width-slider .quire-figure__caption {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#cover .quire-figure--group.full-width-slider .quire-figure__modal {
+  display: none;
+}
+
+/* Adjustments for the community showcase*/
 #cover .quire-page__content .container .content ul.showcase.full-width-slider {
   margin-bottom: 0;
 }

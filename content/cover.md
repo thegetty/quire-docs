@@ -100,7 +100,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 ## Key Features & Functionality
 
-{{< q-figure-group id="collection-catalogue, custom-styles, multiformat, video-embeds, plain-text" grid="9" class="slider slider-small" >}}
+{{< q-figure-group id="multiformat, video-embeds, collection-catalogue, custom-styles, plain-text" grid="5" class="full-width-slider slider-md" >}}
 
 <div class="action-button">
 
