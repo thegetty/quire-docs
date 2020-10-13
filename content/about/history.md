@@ -91,7 +91,7 @@ Quire’s beta community grows to nearly 200 members, with more than a dozen [pu
 
 **We invite you to become part of Quire's history. Sign-up for beta access and join the Quire community today!**
 
-<div class="action-button-center">
+<div class="action-button">
 
 [Request Access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
 </div>

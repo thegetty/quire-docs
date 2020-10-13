@@ -20,7 +20,7 @@ slug: .
 
 </div>
 
-{{< q-figure-group id="thomas_rife, ancient_ambers, artists_studios_paris, bending_lines, fault_lines, state_of_convergence, tilt_west, heritage_management,  cva" grid="11" class="slider slider-large" >}}
+{{< q-showcase projects="thomas_rife, ancient_ambers, artists_studios_paris, bending_lines, fault_lines, state_of_convergence, tilt_west, heritage_management, cva" class="full-width-slider slider-md" >}}
 
 <div class="action-button">
 
@@ -100,7 +100,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 ## Key Features & Functionality
 
-{{< q-figure-group id="collection-catalogue, custom-styles, multiformat, video-embeds, plain-text" grid="9" class="slider slider-small" >}}
+{{< q-figure-group id="multiformat, video-embeds, collection-catalogue, custom-styles, plain-text" grid="5" class="full-width-slider slider-md" >}}
 
 <div class="action-button">
 
@@ -119,7 +119,7 @@ Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1
 [Explore Ways to Get Involved](/community/join-us/)
 </div>
 
-<div class="feature-cards">
+<div class="feature-cards cover-footer">
 
 - [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](#)
 
@@ -131,6 +131,10 @@ Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1
 
 </div>
 
----
+<div class="cover-footer">
 
-[GitHub](https://github.com/gettypubs/quire/) | [About](/about/quire/) | [Contact](mailto:edunigan@getty.edu)
+[About](/about/) | [Community](/community/) | [Doumentation](/documentation/) | [Learn](/learn/) | [Request Access](https://forms.gle/m1fgZu5BHKhddMrW7)
+
+[GitHub](https://github.com/gettypubs/quire/) | [Contact](mailto:quire@getty.edu)
+
+</div>

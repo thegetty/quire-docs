@@ -2,14 +2,28 @@
 
   Community showcase
 
+  Use an optional "projects" parameter in the shortcode with a list of
+  one or more comma-separated ids matching those in projects.yml to choose
+  specific projects to display in the showcase. If the "projects" parameter
+  isn’t given, all projects will be included.
+
+  Use an optional "class" parameter to add a custom class to
+  <ul class="showcase"> for styling.
+
 */}}
-{{ $imgDir := "" }}
-{{ if isset .Site.Params "imagedir" }}
-  {{ $imgDir = .Site.Params.imageDir }}
-{{ end }}
-<ul class="showcase">
+{{- $imgDir := "" -}}
+{{- if isset .Site.Params "imagedir" -}}
+  {{- $imgDir = .Site.Params.imageDir -}}
+{{- end -}}
+
+{{- $projects := "" -}}
+{{- if .Get "projects" -}}
+{{- $projects = .Get "projects" -}}
+{{- end -}}
+
+<ul class="showcase{{ with .Get "class" }} {{ . }}{{ end }}">
 {{ range sort .Site.Data.projects.project_list "pub_date" "desc" }}
-{{ if ne .id "" }}
+{{ if or (eq $projects "") (in $projects .id) }}
 <li class="showcase-project">
 {{ if .src }}
 <figure>
@@ -18,12 +32,16 @@
   </a>
 </figure>
 {{ end }}
-<p><span class="publisher">{{ .publisher }}</span></p>
-<p>{{ .type }} | {{ dateFormat "2006" .pub_date }}</p>
-{{ with .github_user }}{{ $len := len . }}<p>Quire user{{ if gt $len 1 }}s{{ end }}: {{ range . }}<a href="https://github.com/{{ . }}/" target="_blank">@{{ . }}</a> {{ end }}</p>{{ end }}
-<p>
-<span class="quire-citation expandable"><span class="quire-citation__button glossary-button" role="button" tabindex="0" aria-expanded="false">More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg></span><span hidden class="quire-citation__content">{{ with .note }}{{ markdownify . }}<br />{{ end }}{{ with .customization_level }}<br />Customization: {{ . | title }}{{ end }}</span></span>
-<a href="{{ .url }}" target="_blank" class="view-link">View <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5z"/></svg></a>
+{{ with .publisher }}<p class="publisher">{{ . }}</p>{{ end }}
+{{ if or .type .pub_date }}<p class="type-pub-date">{{ with .type }}<span class="type">{{ . }}</span>{{ end }}{{ if and .type .pub_date }}<span class="type-pub-date-divider"> | </span>{{ end }}{{ with .pub_date }}<span class="pub-date">{{ dateFormat "2006" . }}</span>{{ end }}</p>{{ end }}
+{{ with .github_user }}{{ $len := len . }}<p class="user">Quire user{{ if gt $len 1 }}s{{ end }}: {{ range . }}<a href="https://github.com/{{ . }}/" target="_blank">@{{ . }}</a> {{ end }}</p>{{ end }}
+<p class="more-link-view-link">
+{{ if or .note .customization_level }}
+<span class="quire-citation expandable more-link"><span class="quire-citation__button glossary-button" role="button" tabindex="0" aria-expanded="false">More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg></span><span hidden class="quire-citation__content">{{ with .note }}{{ markdownify . }}<br />{{ end }}{{ with .customization_level }}<br />Customization: {{ . | title }}{{ end }}</span></span>
+{{ end }}
+{{ with .url }}
+<a href="{{ . }}" target="_blank" class="view-link">View <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 5v2h6.59L4 18.59 5.41 20 17 8.41V15h2V5z"/></svg></a>
+{{ end }}
 </p>
 </li>
 {{ end }}
