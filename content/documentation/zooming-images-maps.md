@@ -2,7 +2,7 @@
 title: Zooming Images & Maps
 weight: 4900
 type: essay
-abstract: "Tips and tricks for including maps and zoomable images"
+abstract: "Tips and tricks for including interactive maps and images"
 ---
 
 ## Zooming Images
