@@ -747,7 +747,7 @@ dt code {
 .quire-page__content .content dl {
   margin-left: 0;
 }
-/* Section landing pages */
+/* Add abstract lines to section landing page grid and style */
 .quire-contents-list.grid ul li .card.no-image .card-content .title,
 .quire-contents-list.grid ul li .card.no-image .card-content .abstract  {
   font-size: 1.5rem;
@@ -755,6 +755,10 @@ dt code {
 }
 .quire-contents-list.grid ul li .card.no-image .card-content .abstract {
   font-weight: 400;
+}
+/* Hide abstracts on individual pages */
+.quire-page__content .quire-page__abstract {
+  display: none;
 }
 /* More space at bottom of page */
 .quire-page__content .container .content {
