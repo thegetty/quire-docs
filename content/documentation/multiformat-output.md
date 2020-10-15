@@ -2,6 +2,7 @@
 title: Output & Deploy Your Site
 weight: 5700
 type: essay
+abstract: "Produce online, PDF, and EPUB versions of your publication"
 ---
 
 Text to come.

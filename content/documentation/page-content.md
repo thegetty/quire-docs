@@ -2,6 +2,7 @@
 title: Page Content
 type: essay
 weight: 4700
+abstract: "Format publication content, including adding features and links"
 ---
 
 ## Format Text Content with Markdown

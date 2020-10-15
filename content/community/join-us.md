@@ -2,6 +2,7 @@
 title: Join Us
 weight: 2300
 type: essay
+abstract: "Learn exciting ways to get involved with the Quire community"
 ---
 
 ***Welcome to the Quire Community!***

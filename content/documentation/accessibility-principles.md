@@ -2,6 +2,7 @@
 title: Accessibility Principles
 weight: 5800
 type: essay
+abstract: "Learn about key principles guiding Quire's development"
 ---
 
 As a publishing tool, Quire’s goal is to maintain accessibility for keyboard and screen reader navigation, as well as for devices and browsers of varying sizes and capabilities and with limited functionality, such as those operating without JavaScript and/or CSS.

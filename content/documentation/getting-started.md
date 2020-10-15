@@ -2,6 +2,7 @@
 title: Get Started
 type: essay
 weight: 4100
+abstract: "Dive in to creating your first Quire publication" 
 ---
 
 ## Start a New Project
