@@ -16,7 +16,7 @@ In the following sections, we’ll learn more about these interconnected compone
 
 The first thing you’ll need is a command-line shell. Along with using it to run Quire, we’ll also use it to install some of Quire’s dependencies (the other programs required for Quire to function, such as Pandoc to create the e-book files and Node.js to run javascript).
 
-Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder (or press Command–Space Bar and type “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/) which comes with a shell called Git BASH.
+Macs already have a good shell installed. It’s called Terminal and it can be found in the Applications/Utilities folder (or press Command–Space Bar and type “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/), which comes with a shell called Git BASH.
 
 The shell is a text-based view of the contents of your computer, and a space where you can run program commands. It's the equivalent of opening a Finder or File Explorer window on your computer that shows the contents of a particular folder (also known as a directory). When you open your shell, you will be in your {{< q-def "home directory">}} by default. When installing Quire, all the relevant files will automatically be saved in this location.
 
@@ -88,7 +88,7 @@ The metadata for your publication (its title, subtitle, contributors, publicatio
 
 All publication metadata is in the `publication.yml` file for your project, which you’ll find in the `data` directory.
 
-Open the `publication.yml` file and try changing the title and subtitle, saving the changes, and then looking at the preview running in your browser. You’ll see that the cover is updated with your new title. It’s also updated in the top navigation bar and in the expandable menu on the site. As much as possible, Quire works on the principle of having content exist only in one place in your files and using code to display it in multiple places in the publication as needed. This means when you make a change to something, you only do it once and it changes everywhere.
+Open the `publication.yml` file and try changing the title and subtitle, saving the changes, and then looking at the preview running in your browser. You’ll see that the cover is updated with your new title. It’s also updated in the top navigation bar and in the expandable menu on the site. As much as possible, Quire works on the principle of having content exist only in one place in your files and using code to display it in multiple places in the publication as needed. This means when you make a change to something you only do it once and it changes everywhere.
 
 {{< q-figure id="quire-starter-metadata-change" >}}
 
@@ -114,13 +114,13 @@ The three other metadata files in the `data` directory—`figures.yml`, `referen
 
 Next let’s look at the `content` directory of your publication. In this directory are a series of {{< q-def "Markdown" >}} files (`.md`) that hold the content of the publication. Each one represents a page of your website. The filename becomes part of the URL for that page in your final publication, so it’s always lowercase and includes no spaces or special characters.
 
-Open the `about.md` file. At the top you’ll see a small block of YAML surrounded in two sets of three dashes `---`. Just like the overall publication has metadata, each page has metadata as well. Page metadata appears at the top of every Markdown file. Included in this example are the three most basic types of page YAML that you’ll want to always include: the `title`, `type` and `weight`.
+Open the `about.md` file. At the top you’ll see a small block of YAML surrounded in two sets of three dashes `---`. Just like the overall publication has metadata, each page has metadata as well. Page metadata appears at the top of every Markdown file. Included in this example are the three most basic types of page YAML that you’ll want to always include: the `title`, `type`, and `weight`.
 
 Let’s make some changes to the `about.md` file to make it the Preface in our demo book:
 
 1. Change the `title` to `"Preface"`.
 2. Leave the `type` as `"page"`. [Other page types available](/guide/pages#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
-3. Change the `weight` of this page to `"2.5"`, which will order it after the `contents.md` page which has a `weight` of `"2"` and before the `intro.md` page which has a `weight` of `"3"`. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in alphabetical order based on their filenames.
+3. Change the `weight` of this page to `"2.5"`, which will order it after the `contents.md` page, which has a `weight` of `"2"`, and before the `intro.md` page, which has a `weight` of `"3"`. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in alphabetical order based on their filenames.
 4. Change the name of the file from `about.md` to `preface.md`. Do this by right clicking (or control clicking on a Mac) on the file in your text editor and selecting “Rename”. Note that this will also change the URL of the page.
 5. Page content goes below the YAML block. Delete the text that is there and copy-and-paste the following text as a test:
 *The quick brown fox jumps over the lazy dog.*
@@ -167,7 +167,7 @@ For more specialized features (especially images, multimedia, and citations), Qu
 ```
 2. Save the change, and check the preview in your browser.
 
-You’ll see this added a figure and caption, the text for which is stored in the project’s `figures.yml` file under the `id` of "fig-1". If you update the information stored in `figures.yml` it will update on your page as well as anywhere else that figure is used.
+You’ll see this added a figure and caption, the text for which is stored in the project’s `figures.yml` file under the `id` of "fig-1". If you update the information stored in `figures.yml`, it will update on your page as well as anywhere else that figure is used.
 
 {{< q-figure id="quire-starter-content-change-2" >}}
 
@@ -187,13 +187,13 @@ image: figures/lange-house.jpg
 ```
 3. Save the file, and preview the results in the browser.
 
-The image itself is stored in the `static/img` directory of your project, put any image file you’d like in there to use it as background image. You’ll see that this is also where images are stored for use with the `q-figure` shortcode demonstrated above.
+The image itself is stored in the `static/img` directory of your project, put any image file you’d like in there to use it as a background image. You’ll see that this is also where images are stored for use with the `q-figure` shortcode demonstrated above.
 
 You can also change the colors used in various elements of the site design. Let's try it out.
 
 1. Look inside the `themes` directory for the `quire-starter-theme/source/css` subdirectory and inside that, the `variables.scss` file. Here you’ll find a number of variables, prefixed with a dollar sign, that are descriptive of what they control. For instance `$quire-navbar-color` is the background color of the navigation bar at the top of every page.
 2. You can choose from a variety of hex color values that can be found [here](https://www.w3schools.com/colors/colors_hexadecimal.asp), or from one of the standard 140 color names found [here](https://www.w3schools.com/colors/colors_names.asp). Like with changes to YAML files, changes to theme styles may require you to refresh the browser, or even to stop and restart the `quire preview` process in your command-line shell.
-3. While in the variables.scss file, go to the section "Declare the navbar color style: normal/accent" and switch the value to *accent*.
+3. While in the `variables.scss` file, go to the section "Declare the navbar color style: normal/accent" and switch the value to *accent*.
 
 ```scss
 $navbar: accent;

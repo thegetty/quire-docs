@@ -15,7 +15,7 @@ Getty Foundation launches the [Online Scholarly Catalogue Initiative (OSCI)](ht
 
 ## 2012
 
-Getty Publications experiments with a number of different digital formats including EPUB and MOBI e-books, a mobile app, an online collection catalogue, and two titles created in Apple’s iBooks Author tool ([*Visions of Tondal*](https://books.apple.com/us/book/the-visions-of-tondal/id567895177) and [*Looking East*](https://books.apple.com/us/book/looking-east/id605969649) ).
+Getty Publications experiments with a number of different digital formats including EPUB and MOBI e-books, a mobile app, an online collection catalogue, and two titles created in Apple’s iBooks Author tool ([*Visions of Tondal*](https://books.apple.com/us/book/the-visions-of-tondal/id567895177) and [*Looking East*](https://books.apple.com/us/book/looking-east/id605969649)).
 
 ## 2013
 
@@ -43,7 +43,7 @@ Getty Publications editor, Ruth Evans Lane, writes an article for Getty's blog, 
 
 OSCI concludes. While the program transformed the digital publishing landscape for museums [notable challenges remained](https://www.getty.edu/publications/osci-report//remaining-challenges/), particularly around the discoverability, longevity, and objectness of digital catalogues. (Read the [*OSCI Final Report*](https://www.getty.edu/publications/osci-report//).)
 
-Greg Albers and Eric Gardner, begin building Quire with the goal of enabling other museums and publishers to do multiformat publishing on their own. Albers and Gardner envision a free and flexible tool to create beautiful, accessible, discoverable, and enduring publications.
+Greg Albers and Eric Gardner begin building Quire with the goal of enabling other museums and publishers to do multiformat publishing on their own. Albers and Gardner envision a free and flexible tool to create beautiful, accessible, discoverable, and enduring publications.
 
 Getty uses early Quire prototype to develop and publish [*Artistry in Bronze*](https://www.getty.edu/publications/artistryinbronze/).
 
@@ -57,7 +57,7 @@ Early successes with the development of Quire encourage Getty to move the tool t
 
 As a result of the successful MCN Quire workshop in 2017, [Journal 18](http://www.journal18.org/issue5_williams/about/), the first external Quire publication, launches.
 
-Developer Eric Gardner leaves Getty Publications. From Getty’s centralized digital department, David Newbury (Head of Software), and Mantas Andrijauskas and Nick Hulea (Software Engineers) work as part of the Quire core team.
+Developer Eric Gardner leaves Getty Publications. From Getty’s centralized digital department, David Newbury (Head of Software) and Mantas Andrijauskas and Nick Hulea (Software Engineers) work as part of the Quire core team.
 
 ## 2019
 

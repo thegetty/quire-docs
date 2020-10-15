@@ -81,12 +81,12 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 - **Richly Featured & Interactive**  Add images, videos, audio clips, maps, and zooming features
 - **Flexible and Customizable** Designed to be adaptable to your unique content
 - **Discoverable** Increase visibility by publishing as PDF, ebook, website, or print-on-demand
-- **Empowering** Can be used by anyone from nontechnical content creators to developers
-- **Booklike** Built-in understanding of high-quality scholarly publishing
+- **Empowering** Can be used by anyone, from nontechnical content creators to developers
+- **Booklike** Built-in understanding of high-quality, scholarly publishing
 - **Beautiful** Optimized for visual imagery with a clean, modern design
 - **Accessible** Logical reading over, alt texts, language codes, semantic section elements, and more
 - **Open-Source** Adheres to open-source standards with goal to officially launch as open source in 2022
-- **Sustainable** Based around plain text files, so no need to worry about your publication going obsolete
+- **Sustainable** Based around plain text files, so no need to worry about your publication becoming obsolete
 
 </div>
 
@@ -110,7 +110,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 ## The Quire Community
 
-Developed by Getty, Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales.  We support and empower our community at every level of technical experience. All are welcome.
+Developed by Getty, Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
 Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1fgZu5BHKhddMrW7), [participating in the forum](https://github.com/gettypubs/quire/discussions), [contributing to code](https://quire.netlify.app/community/contributor-guidelines/), or [attending/hosting a Quire event](https://quire.netlify.app/community/news-events/), among other exciting opportunities.  
 
