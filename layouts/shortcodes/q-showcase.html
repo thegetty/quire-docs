@@ -10,20 +10,44 @@
   Use an optional "class" parameter to add a custom class to
   <ul class="showcase"> for styling.
 
+  Use an optional "sort" parameter with a value of "false" to sort in the order
+  the projects were listed in the shortcode, rather than by the default pub_date
+
 */}}
-{{- $imgDir := "" -}}
-{{- if isset .Site.Params "imagedir" -}}
-  {{- $imgDir = .Site.Params.imageDir -}}
-{{- end -}}
 
 {{- $projects := "" -}}
 {{- if .Get "projects" -}}
 {{- $projects = .Get "projects" -}}
 {{- end -}}
 
-<ul class="showcase{{ with .Get "class" }} {{ . }}{{ end }}">
-{{ range sort .Site.Data.projects.project_list "pub_date" "desc" }}
-{{ if or (eq $projects "") (in $projects .id) }}
+{{- $sort := "true" -}}
+{{- with .Get "sort" -}}
+{{- $sort = . -}}
+{{- end -}}
+
+{{- if eq $sort "false" -}}
+  <ul class="showcase{{ with .Get "class" }} {{ . }}{{ end }}">
+  {{- range (split $projects ",") -}}
+  {{- $id := . -}}
+  {{- range $.Site.Data.projects.project_list -}}
+  {{- if in $id .id -}}
+    {{ template "showcase-item" . }}
+  {{- end -}}
+  {{- end -}}
+  {{- end -}}
+  </ul>
+{{- else -}}
+  <ul class="showcase{{ with .Get "class" }} {{ . }}{{ end }}">
+  {{- range sort .Site.Data.projects.project_list "pub_date" "desc" -}}
+  {{- if or (eq $projects "") (in $projects .id) -}}
+    {{ template "showcase-item" . }}
+  {{- end -}}
+  {{- end -}}
+  </ul>
+{{- end -}}
+
+{{- define "showcase-item" -}}
+{{- $imgDir := "img" -}}
 <li class="showcase-project">
 {{ if .src }}
 <figure>
@@ -44,6 +68,4 @@
 {{ end }}
 </p>
 </li>
-{{ end }}
-{{ end }}
-</ul>
+{{- end -}}
