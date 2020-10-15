@@ -2,6 +2,7 @@
 title: News & Events
 weight: 2600
 type: essay
+abstract: "Get the latest news and info on upcoming Quire events"
 ---
 
 ## News

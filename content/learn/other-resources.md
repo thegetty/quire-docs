@@ -2,6 +2,7 @@
 title: Resources
 weight: 6200
 type: essay
+abstract: "List of helpful tools and additional resources"
 ---
 
 The following is a list of helpful links to guide your experience and exploration of Quire. It is a work in progress, and we welcome suggestions for tools and other resources that you find helpful.

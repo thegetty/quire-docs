@@ -2,6 +2,7 @@
 title: Citations and Bibliographies
 weight: 5000
 type: essay
+abstract: "Add citations and bibliographies to your text"
 ---
 
 In-text citations and bibliographies are all available in Quire. Designed to meet scholarly needs and multiple citation styles, they are easy to implement in your publications. While bibliographic references are formatted in YAML and stored in a YAML file (you can consult our [YAML syntax fundamentals](/guide/fundamentals/) for more information), citation and bibliography shortcodes are used to integrate the references in your publication.

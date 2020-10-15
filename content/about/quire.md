@@ -2,6 +2,7 @@
 title: What Is Quire?
 weight: 1000
 type: essay
+abstract: "Learn what Quire is, how it works, and whether it's right for you" 
 ---
 
 Created by [Getty](https://www.getty.edu), Quire is a modern digital publishing tool that empowers people to create scholarly, visually rich publications in a variety of formats, including online, ebook, and print.

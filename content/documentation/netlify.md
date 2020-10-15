@@ -2,6 +2,7 @@
 title: Netlify for Quire
 weight: 5600
 type: essay
+abstract: "Recommended platform for deploying your website"
 ---
 
 ## Netlify

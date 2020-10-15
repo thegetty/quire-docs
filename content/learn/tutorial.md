@@ -1,8 +1,9 @@
 ---
 title: "Tutorial: Quire Basics"
-subtitle: "A Step-by-Step Walkthrough of the Fundamental Parts of Quire"
+subtitle:
 weight: 6000
 type: essay
+abstract: "A step-by-step walkthrough of the fundamental parts of Quire"
 ---
 
 As you get started with Quire, it is important to familiarize yourself with the three core components that you will use to create, edit, and output your Quire project: a {{< q-def "text editor" >}}, a {{< q-def "command-line shell" >}}, and a {{< q-def "web browser" >}}. You will use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real-time.

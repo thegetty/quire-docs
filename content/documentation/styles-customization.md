@@ -2,6 +2,7 @@
 title: Style Customization
 weight: 5400
 type: essay
+abstract: "Customize your publication by adding new styles and themes "
 ---
 
 The look and feel of your Quire publication can be customized at four different levels of complexity:
