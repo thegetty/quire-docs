@@ -6,7 +6,7 @@ type: essay
 
 Created by [Getty](https://www.getty.edu), Quire is a modern digital publishing tool that empowers people to create scholarly, visually rich publications in a variety of formats, including online, ebook, and print.
 
-Quire offers an elegant and affordable publishing solution.  No matter the size or scale, an institution that publishes with Quire isn’t locked into proprietary software or a long-term technology choice. It is also not required to have staff with advanced technical skills. Quire was designed with its users in mind and is used both internally at Getty and externally by scholars, publishers, curators, developers, and digitally curious individuals.
+Quire offers an elegant and affordable publishing solution. No matter the size or scale, an institution that publishes with Quire isn’t locked into proprietary software or a long-term technology choice. It is also not required to have staff with advanced technical skills. Quire was designed with its users in mind and is used both internally at Getty and externally by scholars, publishers, curators, developers, and digitally curious individuals.
 
 Quire is also flexible and feature-rich. It can be used in its most basic configuration or can be heavily customized. It adapts to an endless number of use cases, from collection catalogues and research projects to online exhibitions, reports, and journal articles.
 
@@ -20,7 +20,7 @@ Quire is also flexible and feature-rich. It can be used in its most basic config
 - ![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)
 </div>
 
-Quire is designed to ensure that digital books and their content are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables robust preservation and distribution of works in a simplified and accessible format.
+Quire is designed to ensure that digital books and their contents are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables robust preservation and distribution of works in a simplified and accessible format.
 
 <div class="action-button">
 

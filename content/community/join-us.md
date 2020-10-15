@@ -74,7 +74,7 @@ We hope to see you at future Quire workshops and events. We'd also love to know 
 
 ## Share Your Work
 
-We love celebrating Quire accomplishments. Send us your finished Quire publications and we will add them to our **[Community Showcase](/community/community-showcase/)** and possibly feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
+We love celebrating Quire accomplishments. Send us your finished Quire publications, and we will add them to our **[Community Showcase](/community/community-showcase/)** and possibly feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
 
 <div class="action-button">
 

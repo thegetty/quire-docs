@@ -17,7 +17,7 @@ abstract: "Is Quire right for you and your project?"
 
 - Quire does not offer a graphical user interface, but requires using a {{< q-def "command-line shell" >}} and a {{< q-def "text editor" >}} to create a publication. While this can be a new and somewhat intimidating way to work, we‘ve found that most users can fairly quickly master the basics.
 
-- Quire can be used "out of the box" by any individual, no matter their skill level, using Quire [tutorials](/learn/tutorial/) and documentation as support. However, in order to customize the Quire starter theme, advanced knowledge of CSS, HTML, and static-site generation, is required.
+- Quire can be used "out of the box" by any individual, no matter their skill level, using Quire [tutorials](/learn/tutorial/) and documentation as support. However, in order to customize the Quire starter theme, advanced knowledge of CSS, HTML, and static-site generation is required.
 
 - We do provide documentation and additional [resources](/learn/other-resources/) to aid non-technical users in gaining the skills and knowledge to use Quire in a more advanced way.
 
@@ -27,13 +27,13 @@ Quire is free to use, however, there are occasionally associated costs:
 
 - In order to output your Quire publication as a PDF you will need to use Prince XML, which requires purchasing a license for commercial or non-watermarked use. [Learn more about Prince's pricing plan.](https://www.princexml.com/purchase/).
 
-- If you are at a small institution, you may want to hire a developer for general technical support, design customization and deployment.
+- If you are at a small institution, you may want to hire a developer for general technical support, design customization, and deployment.
 
 ## Content Compatibility
 
 - Quire is optimized for book-like projects. Especially those that rely on visual illustrations and/or scholarly apparatus like citations, bibliographies, and footnoting.
 
-- For those looking to publish more non-textual image-intensive presentations, like an online exhibition, or a fully illustrated children’s book or graphic novel, Quire may not be the right fit.
+- For those looking to publish more non-textual, image-intensive presentations, like an online exhibition or a fully illustrated children’s book or graphic novel, Quire may not be the right fit.
 
 - Using Quire for journal publishing is also an option, though not yet fully developed.
 
