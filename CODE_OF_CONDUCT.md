@@ -1,12 +1,4 @@
----
-title: Code of Conduct
-weight: 2500
-type: essay
-menu: false
-toc: false
----
-
-## QUIRE CODE OF CONDUCT
+# Quire Code of Conduct
 
 Version 1.0 (dated September 2, 2020)
 

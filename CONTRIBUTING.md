@@ -1,10 +1,5 @@
----
-title: Contributor Guidelines
-weight: 2501
-type: essay
-menu: false
-toc: false
----
+# Contributor Guidelines
+
 ## Introduction
 
 Thank you for your interest in contributing to Quire! The following Contributor Guidelines will ensure streamlined and effective communication, and will help the Quire team develop and improve Quire in a timely and efficient manner. Thank you for taking the time to read through the following considerations.
