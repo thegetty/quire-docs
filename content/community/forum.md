@@ -34,4 +34,4 @@ Examples of topics you will find covered in our forums include: **support, tips 
 
 - No attacks on other people.
 
-Please see our **[Quire Code of Conduct](https://quire/getty.edu/community/code-of-conduct)** for more information regarding appropriate behavior, as well as our anti-harassment policy.
+Please see our **[Quire Code of Conduct](https://github.com/gettypubs/quire/blob/master/CODE_OF_CONDUCT.md)** for more information regarding appropriate behavior, as well as our anti-harassment policy.
