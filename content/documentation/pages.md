@@ -2,7 +2,7 @@
 title: Page Types & Structure
 type: essay
 weight: 4600
-abstract: "Learn how to use YAML to define and structure your page contents"
+abstract: "Define and structure your page contents with YAML"
 ---
 
 Every page in a Quire publication starts with a block of {{< q-def "YAML" >}}. The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes at the very top of the page.
