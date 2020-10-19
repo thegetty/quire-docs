@@ -92,7 +92,7 @@ We love celebrating Quire accomplishments. Send us your finished Quire publicati
 
 As an open-source community, all members have an opportunity to help mold Quire into a digital publishing solution that meets a diverse set of needs. This is your opportunity to contribute to the code and directly impact the development of the tool.
 
-Before getting started, we kindly request that you review our **[Contributor Guidelines](/community/contributor-guidelines/)** for information on best practices, guidelines, and recommendations for contributing.
+Before getting started, we kindly request that you review our **[Contributor Guidelines](https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md)** for information on best practices, guidelines, and recommendations for contributing.
 
 <div class="action-button">
 
@@ -133,7 +133,7 @@ The [Quire Documentation](/documentation/) is a work in progress and we value yo
 
 <div class="action-button">
 
-[Read Our Contributor Guidelines](/community/contributor-guidelines/)
+[Read Our Contributor Guidelines](https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md)
 
 </div>
 

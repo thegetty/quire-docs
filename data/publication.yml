@@ -86,6 +86,12 @@ resource_link:
     name: GitHub
     url: https://github.com/gettypubs/quire/
   - type: footer-link
+    name: Contributing
+    url: https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md
+  - type: footer-link
+    name: Code of Conduct
+    url: https://github.com/gettypubs/quire/blob/master/CODE_OF_CONDUCT.md
+  - type: footer-link
     name: About
     link_relation: about
     url: /about/quire/
