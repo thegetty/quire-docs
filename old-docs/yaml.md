@@ -164,7 +164,7 @@ Type: Array
 | `name` | string | How the link will be named. |
 | `type` | "other-format", "related-resource", "footer-link" |  |
 | `media_type` | string | Taken from the list at https://www.iana.org/assignments/media-types/media-types.xhtml |
-| `link_relation` | string | Taken from the list at http://www.iana.org/assignments/link-relations/link-relations.xhtml |
+| `link_relation` | string | Taken from the list at https://www.iana.org/assignments/link-relations/link-relations.xhtml |
 | `url` | url | URL to web resource or to download. |
 | `identifier` | [object](#identifier) | See below. |
 | `file_size_mb` | integer | For downloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |

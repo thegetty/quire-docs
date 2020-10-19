@@ -2,7 +2,7 @@
 title: What Is Quire?
 weight: 1000
 type: essay
-abstract: "Learn what Quire is, how it works, and whether it's right for you" 
+abstract: "Learn what Quire is, how it works, and whether it's right for you"
 ---
 
 Created by [Getty](https://www.getty.edu), Quire is a modern digital publishing tool that empowers people to create scholarly, visually rich publications in a variety of formats, including online, ebook, and print.
@@ -90,8 +90,8 @@ Here are some things to consider:
 - Quire is compatible with most operating systems, whether you're using a MAC, PC, or Linux. [Visit our installation guidelines.](/documentation/install-uninstall/)
 - No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or, if you have more advanced resources, you can heavily customize and adapt Quire to your unique content. [Visit our documentation.](/documentation/getting-started/)
 - We know how intimidating learning new technology can be, but we've got you covered. We've created helpful tutorials to guide you through each step of using Quire, from installation to deployment and everything in between. [Learn more.](/learn/tutorial/)
-- We have a vibrant and diverse community of users that are here to help. [Visit our Community Forum.](/community/forum)
-- We are moving Quire towards an open-source, community-supported model, and we are currently following open-source software standards. Our goal is to launch an officially open-source Quire by 2022. [Learn more about the benefits of open-source development.](/about/open-source)
+- We have a vibrant and diverse community of users that are here to help. [Visit our Community Forum.](/community/forum/)
+- We are moving Quire towards an open-source, community-supported model, and we are currently following open-source software standards. Our goal is to launch an officially open-source Quire by 2022. [Learn more about the benefits of open-source development.](/about/open-source/)
 
 <div class="action-button">
 

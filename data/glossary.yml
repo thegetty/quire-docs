@@ -54,7 +54,7 @@ entries:
   - term: "id"
     definition: "In an HTML document, the CSS ID selector matches an element based on the value of its id attribute."
   - term: Image Optimization
-    definition: "Set of techniques that compress image for the web. For more information about web image sizing and optimization, visit Google's Web Fundamentals guide on Image Optimization [https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#top_of_page](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#top_of_page)."
+    definition: "Set of techniques that compress image for the web. For more information about web image sizing and optimization, visit Google's Web Fundamentals guide on Image Optimization [https://web.dev/fast/#optimize-your-images](https://web.dev/fast/#optimize-your-images)."
   - term: ISBN
     definition: "The International Standard Book Number, or ISBN, identifies books or book-like products, as well as their publishers. There is one ISBN agency per country, the U.S. ISBN Agency can be found at: [https://www.isbn.org/](https://www.isbn.org/)"
   - term: "ISO 8601 format"

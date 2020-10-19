@@ -35,4 +35,4 @@ Quire is centered around [Hugo](https://github.com/gohugoio/hugo), and uses [Pri
 
 © 2019 J. Paul Getty Trust
 
-This documentation is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+This documentation is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).

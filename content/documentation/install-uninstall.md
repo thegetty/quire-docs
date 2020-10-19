@@ -43,7 +43,7 @@ Open your Terminal {{< q-def "command-line shell" >}} (found in your Application
     cd
     ```
 
-5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli) chapter of our guide. Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
+5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
 
     ```text
     git clone https://github.com/gettypubs/quire-cli.git
@@ -302,7 +302,7 @@ To update the version of a theme you have:
 3. Still in the command-line shell, type `quire install` and press enter to install the theme dependencies for your project. (This is done automatically when running `quire new`, but needs to be done manually when adding a new or replacement theme.)
 
 {{< q-class "box warning" >}}
-- Be sure to save any [customizations you’ve made](/documentation/styles-customization) inside your theme. (Typically style changes to the `variables.scss` file.) You’ll have to copy these over into the new theme manually once it is installed.
+- Be sure to save any [customizations you’ve made](/documentation/styles-customization/) inside your theme. (Typically style changes to the `variables.scss` file.) You’ll have to copy these over into the new theme manually once it is installed.
 {{< /q-class >}}
 
 ## Install a New Theme
