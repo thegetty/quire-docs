@@ -1,0 +1,14 @@
+{{/*
+
+  THIS OVERRIDE VERSION ALLOWS FOR mailto: LINKS
+
+  Reusable partial to display a list of links.
+*/}}
+
+<ul class="menu-list">
+  {{ range . }}
+  <li>
+    <a href="{{ if .url }}{{ if hasPrefix .url "mailto:" }}{{ .url }}{{ else }}{{ printf "%s" .url | relURL }}{{ end }}{{ else }}#{{ end }}" target="_blank" {{ with .link_relation }}rel="{{ . }}"{{ end }} {{ with .media_type }}type="{{ . }}"{{ end }}>{{ .name }}</a>
+  </li>
+  {{ end }}
+</ul>
