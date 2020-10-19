@@ -7,7 +7,7 @@ abstract: Meet Quire’s core team and contributors
 
 ## Core Team
 
-Quire was created at [Getty](https://www.getty.edu), and as we work toward a full open-source release, the core team are Getty staff who work on Quire as part of their job. Contact us at [quire@getty.edu](mailto:quire@getty.edu).
+Quire was developed by [Getty](https://www.getty.edu) and the core team working on Quire is currently comprised of Getty staff members. Together we are working toward a full open-source release by 2022. Feel free to contact us at [quire@getty.edu](mailto:quire@getty.edu).
 
 **Greg Albers** ([@geealbers](https://github.com/geealbers)), product manager<br />
 Greg Albers is the Digital Publications Manager at Getty, where he oversees Quire, the production of Getty’s own Quire publications, and other digital publishing initiatives like the Virtual Library. He is a co-founder of the Museum Publishing Digital Interest Group, and a former Board Member of MCN. He speaks regularly on digital publishing, digital literacy, workplace culture and community building, and open source software development.
@@ -19,7 +19,7 @@ David Newbury, is the Head of Software at Getty …
 Matthew Hrudka, is a Software Architect at Getty …
 
 **Erin Cecele Dunigan** ([@Erin-Cecele](https://github.com/Erin-Cecele)), community manager<br />
-Erin Cecele Dunigan, is the Quire Community Manager at Getty …
+Erin Cecele Dunigan, is the Quire Community Manager at Getty, where she is cultivating a diverse community of Quire users and contributors. She works closely with the Project Manager and Getty developers to communicate user needs and develop helpful tools and resources to aid the community in Quire adoption. She has worked in art book publishing for over a decade, including positions at ARTBOOK | D.A.P. and Chronicle Books. She is also a co-founder of the San Francisco Art Book Fair. 
 
 ## Contributors
 
