@@ -2,7 +2,7 @@
 title: Figure Images
 weight: 4800
 type: essay
-abstract: "Incorporate multiple images, videos, and other multimedia" 
+abstract: "Incorporate multiple images, videos, and other multimedia"
 ---
 
 Quire books are visual and the framework is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-the-q-figure-shortcode).
@@ -23,7 +23,7 @@ Quire does not require a specific image file format or size, but we have some re
 
 ## Create a figures.yml File for Figure Image Metadata
 
-For most publications, or, at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file, which should be placed in your `data` folder. This figure image metadata can then be called from wherever you need it in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/api-docs/yaml/#figure), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
+For most publications, or, at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file, which should be placed in your `data` folder. This figure image metadata can then be called from wherever you need it in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/documentation/for-developers/#figure_list), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
 
 ```yaml
 - id: "1.1"
@@ -164,7 +164,7 @@ If you are not using a `figures.yml` file, figures—including still images and 
 
 Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in this manner.
 
-Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [Accessibility Principles](/resources/accessibility-principals/)
+Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [Accessibility Principles](/documentation/accessibility-principles/)
 
 ```go
 {{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}

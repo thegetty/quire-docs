@@ -7,13 +7,13 @@ abstract: "Update crucial information before deploying your publication"
 
 Quire uses two {{< q-def "YAML" >}} files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yml` and `publication.yml`. By default, both `config.yml` and `publication.yml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.
 
-You can read more about [*YAML syntax basics*](/resources/cheatsheet/) and check out a sample of the [*`publication.yml` file*](/resources/sample-publication-file/) in other chapters of this guide.
+You can read more about YAML syntax basics in [“Fundamentals: YAML & Markdown”](/documentation/fundamentals/#yaml-basics).
 
 ## Adjust the Default Publication Settings in config.yml File
 
 The `config.yml` file is a standard and required file for {{< q-def "Hugo" >}}, and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yml` file inside the `data` directory for that purpose [(see below)](#adding-and-editing-important-metadata-in-the-publication-yml-file).
 
-The properties in the `config.yml` file are individually documented in the [*API/Docs section*](/api-docs/yaml/), however, a few key items to note:
+The properties in the `config.yml` file are individually documented in the [*Developers section*](/documentation/for-developers/), however, a few key items to note:
 
 - While Quire exclusively uses the `title` value as defined in your `publication.yml` file, other {{< q-def "Hugo" >}} projects require a `title` value in the `config.yml` file, so it is a good idea to include it here as well.
 
@@ -25,7 +25,7 @@ The properties in the `config.yml` file are individually documented in the [*API
 
 The `publication.yml` file in the `/data` directory is *the* source of metadata for your publication. While the only value that is truly required is the one for the property `title`, it is a good idea to fill out the `publication.yml` file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support {{< q-def "Search Engine Optimization (SEO)" >}} and general discovery.
 
-Some key areas are summed up below, and match headings in the `publication.yml` file itself, but there is a detailed documentation of individual properties and their values in the [*API/Docs section*](/api-docs/yaml/) of this guide.
+Some key areas are summed up below, and match headings in the `publication.yml` file itself, but there is a detailed documentation of individual properties and their values in the [*Developers section*](/documentation/for-developers/) of this guide.
 
 ### Title & Description
 
@@ -71,7 +71,7 @@ An optional `contributor_as_it_appears` value allows for more fine-grained contr
 
 The editors, designers, developers, and others who worked on the title may be listed as contributors with the `project-team` value. This information is usually then listed on the *About* and *Copyright* pages of the publication.
 
-Read more about this matter in the [*Contributors*](/guide/contributors/) chapter of this guide.
+Read more about this matter in the [*Contributors*](/documentation/contributors/) chapter of this guide.
 
 ### Copyright & License
 
@@ -138,4 +138,4 @@ subjects:
 
 A history of post-publication revisions made to the publication typically appears on the *About* page. Any number of revision history property items can be added and each must include the attributes `date` and a `summary` of changes made on that date. The `summary` attribute supports Markdown formatting, and would typically be in list form.
 
-If you are using {{< q-def "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yml` can act as an overview. For more, see [our revision history policy document](https://github.com/gettypubs/digpublishing-guide/blob/master/updates-and-revisions.md).
+If you are using {{< q-def "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yml` can act as an overview. For more, see [our revision history policy document](https://github.com/thegetty/digpublishing-guide/blob/master/updates-and-revisions.md).

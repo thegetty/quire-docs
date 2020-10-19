@@ -43,7 +43,7 @@ Open your Terminal {{< q-def "command-line shell" >}} (found in your Application
     cd
     ```
 
-5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli) chapter of our guide. Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
+5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
 
     ```text
     git clone https://github.com/gettypubs/quire-cli.git
@@ -82,7 +82,7 @@ When complete, type `quire --version` to confirm proper installation. It should 
 
     This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with the name of your computer and your username once it's complete.
 
-6.  The **Quire CLI** ({{< q-def "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](https://gettypubs.github.io/quire/guide/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
+6.  The **Quire CLI** ({{< q-def "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
 
     ```tx
     git clone https://github.com/gettypubs/quire-cli
@@ -137,7 +137,7 @@ If you chose a different distribution of Linux there are more instructions here 
 
 3. Install node js and npm through nvm
 
-Detailed information about this installation can be found in this link [https://github.com/creationix/nvm#install-script](https://github.com/creationix/nvm#install-script).
+Detailed information about this installation can be found in this link [https://github.com/nvm-sh/nvm#install-script](https://github.com/nvm-sh/nvm#install-script).
 
 To install or update nvm, you can use the install script using cURL:
 
@@ -176,7 +176,7 @@ If the above doesn't fix the problem, open your `.bash_profile` and add the foll
   source ~/.bashrc
   ```
 
-For more information about this issue and possible workarounds, please [refer here](https://github.com/creationix/nvm/issues/576)
+For more information about this issue and possible workarounds, please [refer here](https://github.com/nvm-sh/nvm/issues/576)
 to verify that nvm has been installed, do:
 
   ```sh
@@ -302,7 +302,7 @@ To update the version of a theme you have:
 3. Still in the command-line shell, type `quire install` and press enter to install the theme dependencies for your project. (This is done automatically when running `quire new`, but needs to be done manually when adding a new or replacement theme.)
 
 {{< q-class "box warning" >}}
-- Be sure to save any [customizations you’ve made](/documentation/styles-customization) inside your theme. (Typically style changes to the `variables.scss` file.) You’ll have to copy these over into the new theme manually once it is installed.
+- Be sure to save any [customizations you’ve made](/documentation/styles-customization/) inside your theme. (Typically style changes to the `variables.scss` file.) You’ll have to copy these over into the new theme manually once it is installed.
 {{< /q-class >}}
 
 ## Install a New Theme
@@ -329,7 +329,7 @@ To uninstall Quire:
 
 **Downloading the Quire CLI to your computer from GitHub through the Terminal**
 
-If you have {{< q-def "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token), or you can follow the instructions below.
+If you have {{< q-def "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), or you can follow the instructions below.
 
 Follow these steps:
 

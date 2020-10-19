@@ -108,7 +108,7 @@ figure_list:
     caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each main page. Sub-section pages have been optionally hidden using the `tocType: short` option in the config.yml file."
   - id: "modern-contents-grid"
     src: /screenshots/modern-contents-grid.png
-    caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/guide/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
+    caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/documentation/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
   - id: "modern-splash"
     src: /screenshots/modern-splash.png
     caption: "**`type: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."

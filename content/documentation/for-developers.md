@@ -216,7 +216,7 @@ Type: Array
 | `name` | string | How the link will be named. |
 | `type` | "other-format", "related-resource", "footer-link" |  |
 | `media_type` | string | Taken from the list at https://www.iana.org/assignments/media-types/media-types.xhtml. |
-| `link_relation` | string | Taken from the list at http://www.iana.org/assignments/link-relations/link-relations.xhtml. |
+| `link_relation` | string | Taken from the list at https://www.iana.org/assignments/link-relations/link-relations.xhtml. |
 | `url` | url | URL to web resource or to download. |
 | `identifier`[\*](#asterisked) | [object](#identifier) | See below. |
 | `file_size_mb`[\*](#asterisked) | integer | For downloads, file size in megabytes. Often appended to `name` in the interface, depending on your theme. |
@@ -243,7 +243,7 @@ Type: Object
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 | `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased individually or in packages at http://www.isbn.org/.  |
-| `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
+| `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through https://www.issn.org/. |
 | `doi`[\*](#asterisked) | string | Not yet implemented. |
 | `uuid`[\*](#asterisked) | string | Not yet implemented. |
 | `url` |  | Possibly replacing `url` in general Publication level?? |

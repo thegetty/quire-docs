@@ -15,7 +15,7 @@ For Quire, Netlify can automatically generate a preview site to share with your 
 
 ## Steps to deploy to Netlify
 
-- [As stated in the previous page add your code to Github repository](/guide/github/)
+- Add your code to Github repository
 - Next sign up to Netlify here -> https://app.netlify.com/signup
 - Connect your Netlify account to your Github or Gitlab account
 

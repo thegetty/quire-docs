@@ -16,7 +16,7 @@ entries:
   - term: "Copyright"
     definition: "Copyright is a form of protection granted by law for original works of authorship fixed in a tangible medium of expression. For more information about U.S. copyright visit: [https://www.copyright.gov/help/faq/faq-general.html#what](https://www.copyright.gov/help/faq/faq-general.html#what)"
   - term: "Creative Commons Licenses"
-    definition: "Creative Commons licenses are public copyright licenses that enable the free distribution of a work. Every license helps creators retain copyright while allowing others to copy, distribute, and make some non-commercial uses of their work. You can check the different types of Creative Commons licenses at: [https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/](https://creativecommons.org/share-your-work/licensing-types-examples/licensing-examples/)"
+    definition: "Creative Commons licenses are public copyright licenses that enable the free distribution of a work. Every license helps creators retain copyright while allowing others to copy, distribute, and make some non-commercial uses of their work. You can check the different types of Creative Commons licenses at: [https://creativecommons.org/about/cclicenses/](https://creativecommons.org/about/cclicenses/)"
   - term: "class"
     definition: "The CSS class selector selects elements with a specific class attribute. The selector starts with a period `.` "
   - term: "CSS"
@@ -44,7 +44,7 @@ entries:
   - term: "HEX color value"
     alternates:
       - "HEX color values"
-    definition: "Hexadecimal color values that represent specific colors. Colors are specified by hexadecimal integers between 00 and FF. For more information visit: [http://www.color-hex.com/](http://www.color-hex.com/)"
+    definition: "Hexadecimal color values that represent specific colors. Colors are specified by hexadecimal integers between 00 and FF. For more information visit: [https://www.color-hex.com/](https://www.color-hex.com/)"
   - term: "home directory"
     definition: "A home directory is a file system directory on a multi-user operating system that serves as the repository for a user's personal files, applications, music, movies, downloads, etc. The directory name usually defaults to the system user's name. You can find the directory by opening your Finder or File Explorer window and typing Command-Shift-H."
   - term: "Hugo"
@@ -54,7 +54,7 @@ entries:
   - term: "id"
     definition: "In an HTML document, the CSS ID selector matches an element based on the value of its id attribute."
   - term: Image Optimization
-    definition: "Set of techniques that compress image for the web. For more information about web image sizing and optimization, visit Google's Web Fundamentals guide on Image Optimization [https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#top_of_page](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization#top_of_page)."
+    definition: "Set of techniques that compress image for the web. For more information about web image sizing and optimization, visit Google's Web Fundamentals guide on Image Optimization [https://web.dev/fast/#optimize-your-images](https://web.dev/fast/#optimize-your-images)."
   - term: ISBN
     definition: "The International Standard Book Number, or ISBN, identifies books or book-like products, as well as their publishers. There is one ISBN agency per country, the U.S. ISBN Agency can be found at: [https://www.isbn.org/](https://www.isbn.org/)"
   - term: "ISO 8601 format"
@@ -62,7 +62,7 @@ entries:
   - term: "ISO 639-1 language code"
     definition: "ISO 639 is the International Standard for language codes. More information about the standard can be found at the ISO website: [https://www.iso.org/iso-639-language-codes.html](https://www.iso.org/iso-639-language-codes.html)"
   - term: ISSN
-    definition: "The International Standard Serial Number, or ISSN, identifies newspapers, journals, magazines and periodicals of all kinds and on all media–print and electronic. For more information visit: [http://www.issn.org/](http://www.issn.org/)"
+    definition: "The International Standard Serial Number, or ISSN, identifies newspapers, journals, magazines and periodicals of all kinds and on all media–print and electronic. For more information visit: [https://www.issn.org/](https://www.issn.org/)"
   - term: "Markdown"
     definition: "Markdown is a text formatting standard that defines the use of very simple text character combinations in order to indicate structure and formatting that can easily be transferred to more complicated HTML (web markup). For example, something surrounded in asterisks in Markdown turns into italics in the final publication: `*emphasis*` =  *emphasis*."
   - term: "Markdown file"
@@ -72,7 +72,7 @@ entries:
   - term: Open Access
     definition: "Open access (OA) refers to free, unrestricted online access to content, frequently research outputs."
   - term: Pandoc
-    definition: "An open source, command-line text conversion tool that is included as part of the basic Quire installation. You can visit the [Pandoc Demos page](http://pandoc.org/demos.html) that lists the commands for the most frequent types of file conversion."
+    definition: "An open source, command-line text conversion tool that is included as part of the basic Quire installation. You can visit the [Pandoc Demos page](https://pandoc.org/demos.html) that lists the commands for the most frequent types of file conversion."
   - term: "RGB Color Values"
     definition: "The RGB model define colors according to their red, green, and blue components by using hexadecimal and functional notations. An RGB color value calculator can be found at: [https://www.w3schools.com/colors/colors_rgb.asp](https://www.w3schools.com/colors/colors_rgb.asp)"
   - term: "Search Engine Optimization (SEO)"
@@ -85,7 +85,7 @@ entries:
   - term: "Shortcode"
     alternates:
       - "shortcodes"
-    definition: "A shortcode is a simple snippet used inside a Markdown file, that Quire will render using a predefined template. Quire suports [a range of shortcodes](/api-docs/shortcodes/), and custom shortcodes can also be added."
+    definition: "A shortcode is a simple snippet used inside a Markdown file, that Quire will render using a predefined template. Quire suports [a range of shortcodes](/documentation/for-developers/#shortcodes-api), and custom shortcodes can also be added."
   - term: "theme"
     alternates:
       - "themes"
@@ -112,8 +112,8 @@ entries:
   - term: "Variable"
     alternates:
       - "variables"
-    definition: "CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a document. For more information about CSS variables visit: [https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)."
+    definition: "CSS variables are entities defined by CSS authors that contain specific values to be reused throughout a document. For more information about CSS variables visit: [https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)."
   - term: "Version control"
     definition: "Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. Git is the version control system that Github host. You can learn more about version control at: [https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)."
   - term: "YAML"
-    definition: "YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix `yml`, or inside a Markdown (`.md`) file. Read more in the [*Fundamentals: YAML & Markdown*](/guide/fundamentals/) chapter of this guide."
+    definition: "YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix `yml`, or inside a Markdown (`.md`) file. Read more in the [*Fundamentals: YAML & Markdown*](/documentation/fundamentals/) chapter of this guide."

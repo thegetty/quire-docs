@@ -65,7 +65,7 @@ contributor:
 
 ### Contributors in the Page Heading
 
-For most [page types](/guide/pages/#defining-page-types), you will see in previewing your site that contributors to a page will be automatically listed at the top of the page just under the title, in the order they appear in the YAML. By default, they will appear with their names and, if given, their titles and affiliations. You can override this by specifying a new value either on a page-by-page basis, or globally.
+For most [page types](/documentation/pages/#defining-page-types), you will see in previewing your site that contributors to a page will be automatically listed at the top of the page just under the title, in the order they appear in the YAML. By default, they will appear with their names and, if given, their titles and affiliations. You can override this by specifying a new value either on a page-by-page basis, or globally.
 
 On an individual page, in the page YAML:
 
@@ -134,7 +134,7 @@ The `"align"` value will align the text. If no value is given, text alignment wi
 | `center` | Align the names and text in the center. |
 |`right` | Align the names and text to the right. |
 
-See the [`q-contributor` shortcode reference](/api-docs/shortcodes#q-contributor) for details on each of the standard contributor attributes.
+See the [`q-contributor` shortcode reference](/documentation/for-developers/#shortcodes-api) for details on each of the standard contributor attributes.
 
 #### Sort Contributor Lists
 

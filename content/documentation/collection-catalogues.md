@@ -5,7 +5,7 @@ type: essay
 abstract: "Learn how to publish a collection catalogue with Quire"
 ---
 
-Along with monographs, edited volumes, and serial publications, Quire is also designed with the publication of museum collection catalogues in mind and has a specific page `type` for them (See all page types in the [*Defining Page Types* section](/guide/pages#defining-page-types) of the *Pages and Plain Text* page of this guide). Collection catalogues typically feature a page for each object, featuring images of the object, information about it, and an essay or entry text. To publish a catalogue with Quire, you’ll capture each object data, create the object pages, and then, optionally, display a list of the objects included in your publication. Essays in object pages work in the same way as any other pages, and you can visit our [*Markdown fundamentals*](/guide/fundamentals/) page for reference.
+Along with monographs, edited volumes, and serial publications, Quire is also designed with the publication of museum collection catalogues in mind and has a specific page `type` for them (See all page types in the [*Defining Page Types* section](/documentation/pages/#defining-page-types) of the *Pages and Plain Text* page of this guide). Collection catalogues typically feature a page for each object, featuring images of the object, information about it, and an essay or entry text. To publish a catalogue with Quire, you’ll capture each object data, create the object pages, and then, optionally, display a list of the objects included in your publication. Essays in object pages work in the same way as any other pages, and you can visit our [*Markdown fundamentals*](/documentation/fundamentals/) page for reference.
 
 ## Capture Object Data
 
@@ -84,7 +84,7 @@ If you add multiple figures of the object, the figures are displayed in a rotati
 
 ## Generate Object Lists/Grids
 
-In a collection catalogue, there will typically be a visual table of contents for just the catalogue entries. To create a page with a list or visual grid of all the object entries, the entries themselves need to be grouped in their own section. In Quire, this means putting them in a subdirectory within the main `content` directory (Read more about it in the [*Pages and Plain Text*](/guide/pages/) page of this guide).
+In a collection catalogue, there will typically be a visual table of contents for just the catalogue entries. To create a page with a list or visual grid of all the object entries, the entries themselves need to be grouped in their own section. In Quire, this means putting them in a subdirectory within the main `content` directory (Read more about it in the [*Pages and Plain Text*](/documentation/pages/) page of this guide).
 
 In this example, inside the `content` directory, we have a folder called `catalogue` and inside that, three numbered entries and an overview page:
 
@@ -109,6 +109,6 @@ slug: .
 
 {{< q-class "box tip" >}}
 
-- The `slug` value in the sample above, will change the URL of the page. Instead of being `/catalogue/overview` it will be simply `/catalogue`. Read more about the function of `slug` in the [*Pages and Plain Text*](/guide/pages/) page of this guide.
+- The `slug` value in the sample above, will change the URL of the page. Instead of being `/catalogue/overview` it will be simply `/catalogue`. Read more about the function of `slug` in the [*Pages and Plain Text*](/documentation/pages/) page of this guide.
 
 {{< /q-class >}}

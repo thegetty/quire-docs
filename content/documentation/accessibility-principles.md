@@ -9,7 +9,7 @@ As a publishing tool, Quire’s goal is to maintain accessibility for keyboard a
 
 The principles outlined below have been informed in particular by:
 
-- [The 18F Accessibility Guide](https://pages.18f.gov/accessibility)
+- [The 18F Accessibility Guide](https://accessibility.18f.gov/)
 - [Carnegie Museums of Pittsburgh Web Accessibility Guidelines](http://web-accessibility.carnegiemuseums.org)
 - [*Adaptive Web Design*](https://adaptivewebdesign.info), by [@AaronGustafson](https://twitter.com/AaronGustafson) https://adaptivewebdesign.info
 - [*Inclusive Design Patterns*](https://shop.smashingmagazine.com/products/inclusive-design-patterns), by [@heydonworks](https://twitter.com/heydonworks)

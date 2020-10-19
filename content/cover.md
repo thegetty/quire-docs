@@ -59,7 +59,7 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 
 <div class="action-button">
 
-[Discover Quire](/about/quire)
+[Discover Quire](/about/quire/)
 
 </div>
 <br>
@@ -67,7 +67,7 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 <div class="feature-cards">
 
 - [Quire Roadmap ![Explore icon](/img/illustrations/roadmap_transparent.png)](/about/roadmap/)
-- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started)
+- [Read our Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started/)
 
 </div>
 
@@ -112,7 +112,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 Developed by Getty, Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
-Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1fgZu5BHKhddMrW7), [participating in the forum](https://github.com/gettypubs/quire/discussions), [contributing to code](https://quire.netlify.app/community/contributor-guidelines/), or [attending/hosting a Quire event](https://quire.netlify.app/community/news-events/), among other exciting opportunities.  
+Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1fgZu5BHKhddMrW7), [participating in the forum](https://github.com/gettypubs/quire/discussions), [contributing to code](https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](https://quire.netlify.app/community/news-events/), among other exciting opportunities.  
 
 <div class="action-button">
 

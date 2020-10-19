@@ -35,7 +35,7 @@ slug:
 ---
 ```
 
-For more details on this full list of possible attributes that Quire can use in page YAML, see the [Page YAML](/api-docs/yaml/#page) section of the Quire API docs.
+For more details on this full list of possible attributes that Quire can use in page YAML, see the [Page API](/documentation/for-developers/#page-api) section of the Developer documentation.
 
 ## Define Page Types
 
@@ -137,5 +137,5 @@ epub:
 This allows you to do things like including an About page in your online edition, but a more traditional Copyright page in print. Or to substitute a simple splash page as a section break in the print, for the more elaborate contents grid you might use online.
 
 {{< q-class "box tip" >}}
-- Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files in the `/site/` directory, simply delete any unneeded ones. Read [more about site deployment](/guide/multiformat-output/) in the chapter on *Multi-Format Output*.
+- Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files in the `/site/` directory, simply delete any unneeded ones. Read [more about site deployment](/documentation/multiformat-output/) in the chapter on *Multi-Format Output*.
 {{< /q-class >}}

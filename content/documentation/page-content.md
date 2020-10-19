@@ -7,7 +7,7 @@ abstract: "Format publication content, including adding features and links"
 
 ## Format Text Content with Markdown
 
-The main content of your page appears after the YAML block at the top ([*Page Types & Structure*](/guide/pages/)), and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and one set of asterisks wrapping around the text turns it *italic*.
+The main content of your page appears after the YAML block at the top ([*Page Types & Structure*](/documentation/pages/)), and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and one set of asterisks wrapping around the text turns it *italic*.
 
 The markdown file for this page starts like this:
 
@@ -21,7 +21,7 @@ weight: 206
 ## Format Text Content with Markdown
 
 The main content of your page appears after the YAML block at
-the top ([*Page Types & Structure*](/guide/pages/)), and will be
+the top ([*Page Types & Structure*](/documentation/pages/)), and will be
 formatted in Markdown. Markdown is a very simple, plain text
 markup language that uses a few text rules to structure content
 for easy conversion into HTML. For example, a hash or pound sign
@@ -29,7 +29,7 @@ at the beginning of a line makes a heading, and asterisks
 wrapping text turns it *italic*.
 ```
 
-You can read all about Markdown syntax and how it is used in Quire in the [*Fundamentals: YAML & Markdown*](/guide/fundamentals/) chapter of this guide.
+You can read all about Markdown syntax and how it is used in Quire in the [*Fundamentals: YAML & Markdown*](/documentation/fundamentals/) chapter of this guide.
 
 ## Use Shortcodes to Add Features
 
@@ -41,7 +41,7 @@ Shortcodes are always formatted with a combination of curly brackets and angle b
 {{</* q-figure id="3.1" */>}}
 ```
 
-While most Quire shortcodes work like `q-figure` as a single instance, the `q-class` shortcode acts as wrapper around other text and so it appears as a paired opening and closing shortcode. The closing code has a slash `/` preceding the shortcode name, much like you’d find in HTML markup. This example adds the class "alert" to the the phrase "Text goes here", which could be used to facilitate [custom styling](/guide/styles-customization/).
+While most Quire shortcodes work like `q-figure` as a single instance, the `q-class` shortcode acts as wrapper around other text and so it appears as a paired opening and closing shortcode. The closing code has a slash `/` preceding the shortcode name, much like you’d find in HTML markup. This example adds the class "alert" to the the phrase "Text goes here", which could be used to facilitate [custom styling](/documentation/styles-customization/).
 
 ```go
 {{</* q-class "alert" */>}}
@@ -57,14 +57,14 @@ Text goes here
     ```
 {{< /q-class >}}
 
-The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes api reference](/api-docs/shortcodes/).
+The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes api reference](/documentation/for-developers/#shortcodes-api).
 
 - `q-class`: As demonstrated above, wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom styles or interactions as needed.
-- [`q-bibliography`](/guide/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yml` file.
-- [`q-cite`](/guide/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
-- [`q-contributor`](/guide/contributor/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
-- [`q-figure`](/guide/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
-- [`q-figure-group`](/guide/figure-images/): Like `q-figure`, but with handling for multiple images at once.
+- [`q-bibliography`](/documentation/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yml` file.
+- [`q-cite`](/documentation/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
+- [`q-contributor`](/documentation/contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
+- [`q-figure`](/documentation/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
+- [`q-figure-group`](/documentation/figure-images/): Like `q-figure`, but with handling for multiple images at once.
 
 ## Apply Different Types of Links
 
@@ -97,7 +97,7 @@ There are several types of linking between features, text, or objects on a singl
 
 #### Links to Figures
 
-This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images*](/guide/figure-images/) chapter of this guide. They are proceeded by the # symbol when used as a link address.
+This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images*](/documentation/figure-images/) chapter of this guide. They are proceeded by the # symbol when used as a link address.
 
 ```md
 [number or name of figure](#figureid)
@@ -134,7 +134,7 @@ Following the formula for internal links between pages, you can also specify an 
 
 #### Linked Footnotes
 
-When creating [footnotes with Markdown](/guide/fundamentals/#footnotes), links are automatically created between the footnote number in the text and the note itself at the bottom of the page. To link to a note from other locations, you can use its automatically generated ID, which always follows the format `fn:#` where # is the number of the footnote.
+When creating [footnotes with Markdown](/documentation/fundamentals/#footnotes), links are automatically created between the footnote number in the text and the note itself at the bottom of the page. To link to a note from other locations, you can use its automatically generated ID, which always follows the format `fn:#` where # is the number of the footnote.
 
 ```md
 [referencetolink](#fn:#)
@@ -148,4 +148,4 @@ When the citation shortcode `{{</* q-cite "author date" "page #" */>}}` is used 
 
 When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
 
-For more information see the [Citations & Bibliography](/guide/citation-bibliographies/) section of this guide.
+For more information see the [Citations & Bibliography](/documentation/citation-bibliographies/) section of this guide.

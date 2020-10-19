@@ -59,7 +59,7 @@ copyright: © 2017 J. Paul Getty Trust
 license:
   name: Creative Commons Attribution 4.0 International License
   abbreviation: CC BY
-  url: http://creativecommons.org/licenses/by/4.0/
+  url: https://creativecommons.org/licenses/by/4.0/
   scope: full # full | text-only | some-exceptions
 
 # ------------------------------------------------------------------------------
@@ -97,7 +97,7 @@ resource_link:
     url: /about/quire/
   - type: footer-link
     name: Contact
-    url: mailto:edunigan@getty.edu
+    url: mailto:quire@getty.edu
   - type: footer-link
     name: Privacy Policy
     url: https://www.getty.edu/legal/privacy.html
