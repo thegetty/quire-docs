@@ -44,9 +44,9 @@ With the shell open, you can type `ls` (list) to list the folders and files in y
 
 Follow the links below to install Quire:
 
-- [MacOS](/documentation/install-uninstall#macos-installation)
-- [Windows](/documentation/install-uninstall#windows-installation)
-- [Linux](/documentation/install-uninstall#linux-installation)
+- [MacOS](/documentation/install-uninstall/#macos-installation)
+- [Windows](/documentation/install-uninstall/#windows-installation)
+- [Linux](/documentation/install-uninstall/#linux-installation)
 
 ## 3. Create a New Project
 

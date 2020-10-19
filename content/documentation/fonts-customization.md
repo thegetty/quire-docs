@@ -9,7 +9,7 @@ Typography is an important element of style in your Quire publication. Quire all
 
 ## Customize Fonts
 
-The `quire-starter-theme` includes three embedded, open license fonts: ["Noto Sans"](https://github.com/googlei18n/noto-fonts), ["Noto Serif"](https://github.com/googlei18n/noto-fonts), and ["IBM Plex Sans Condensed"](https://github.com/IBM/plex). You can adjust which fonts are used where in the "variables" file of your {{< q-def "theme" >}}, `source/css/variables.scss`:
+The `quire-starter-theme` includes three embedded, open license fonts: ["Noto Sans"](https://github.com/googlefonts/noto-fonts), ["Noto Serif"](https://github.com/googlefonts/noto-fonts), and ["IBM Plex Sans Condensed"](https://github.com/IBM/plex). You can adjust which fonts are used where in the "variables" file of your {{< q-def "theme" >}}, `source/css/variables.scss`:
 
 ```scss
 $ibm-sans: 'IBM Plex Sans Condensed', sans-serif;

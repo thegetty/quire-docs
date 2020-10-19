@@ -85,7 +85,7 @@ entries:
   - term: "Shortcode"
     alternates:
       - "shortcodes"
-    definition: "A shortcode is a simple snippet used inside a Markdown file, that Quire will render using a predefined template. Quire suports [a range of shortcodes](/api-docs/shortcodes/), and custom shortcodes can also be added."
+    definition: "A shortcode is a simple snippet used inside a Markdown file, that Quire will render using a predefined template. Quire suports [a range of shortcodes](/documentation/for-developers/#shortcodes-api), and custom shortcodes can also be added."
   - term: "theme"
     alternates:
       - "themes"
@@ -116,4 +116,4 @@ entries:
   - term: "Version control"
     definition: "Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. Git is the version control system that Github host. You can learn more about version control at: [https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)."
   - term: "YAML"
-    definition: "YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix `yml`, or inside a Markdown (`.md`) file. Read more in the [*Fundamentals: YAML & Markdown*](/guide/fundamentals/) chapter of this guide."
+    definition: "YAML is a plain-text, human-readable format for writing and storing data. YAML can be used in a standalone file with the file suffix `yml`, or inside a Markdown (`.md`) file. Read more in the [*Fundamentals: YAML & Markdown*](/documentation/fundamentals/) chapter of this guide."

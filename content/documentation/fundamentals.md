@@ -123,7 +123,7 @@ Headings are created with hashmarks. The number of hashmarks corresponds to the 
 #### Heading 4
 ##### Heading 5
 
-Start your content headings with Heading 2 tags rather than Heading 1. Heading 1 should be reserved for the page title and will be automatically generated in Quire. And, for truly accessible documents, headings should be thought of as levels of your content outline, not as sizes large to small. See our [*Accessibility Principals*](/documentation/accessibility-principals/) for more on this.
+Start your content headings with Heading 2 tags rather than Heading 1. Heading 1 should be reserved for the page title and will be automatically generated in Quire. And, for truly accessible documents, headings should be thought of as levels of your content outline, not as sizes large to small. See our [*Accessibility Principals*](/documentation/accessibility-principles/) for more on this.
 
 ### Italic and Bold
 

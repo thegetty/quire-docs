@@ -164,7 +164,7 @@ If you are not using a `figures.yml` file, figures—including still images and 
 
 Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in this manner.
 
-Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [Accessibility Principles](/documentation/accessibility-principals/)
+Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [Accessibility Principles](/documentation/accessibility-principles/)
 
 ```go
 {{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}
