@@ -243,7 +243,7 @@ Type: Object
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 | `isbn` | 10- or 13-digit ISBN | For use with `pub-type` of "book". ISBNs can be purchased individually or in packages at http://www.isbn.org/.  |
-| `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through http://www.issn.org/. |
+| `issn` | 8-digit ISSN | For use with `pub-type` of "journal-periodical". ISSNs can be requested through https://www.issn.org/. |
 | `doi`[\*](#asterisked) | string | Not yet implemented. |
 | `uuid`[\*](#asterisked) | string | Not yet implemented. |
 | `url` |  | Possibly replacing `url` in general Publication level?? |

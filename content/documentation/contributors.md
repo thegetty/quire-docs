@@ -134,7 +134,7 @@ The `"align"` value will align the text. If no value is given, text alignment wi
 | `center` | Align the names and text in the center. |
 |`right` | Align the names and text to the right. |
 
-See the [`q-contributor` shortcode reference](/api-docs/shortcodes#q-contributor) for details on each of the standard contributor attributes.
+See the [`q-contributor` shortcode reference](/documentation/for-developers/#shortcodes-api) for details on each of the standard contributor attributes.
 
 #### Sort Contributor Lists
 

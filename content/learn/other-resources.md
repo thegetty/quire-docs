@@ -16,7 +16,6 @@ The following is a list of helpful links to guide your experience and exploratio
 
 - [Git and GitHub for Poets, The Coding Train | Video Series](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
 - [GitHub Desktop Documentation](https://docs.github.com/en/free-pro-team@latest/desktop)
-- [“GitHub for Quire”](/learn/github/)
 
 ## HTML & CSS
 

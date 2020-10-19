@@ -123,7 +123,7 @@ Headings are created with hashmarks. The number of hashmarks corresponds to the 
 #### Heading 4
 ##### Heading 5
 
-Start your content headings with Heading 2 tags rather than Heading 1. Heading 1 should be reserved for the page title and will be automatically generated in Quire. And, for truly accessible documents, headings should be thought of as levels of your content outline, not as sizes large to small. See our [*Accessibility Principals*](/resources/accessibility-principals/) for more on this.
+Start your content headings with Heading 2 tags rather than Heading 1. Heading 1 should be reserved for the page title and will be automatically generated in Quire. And, for truly accessible documents, headings should be thought of as levels of your content outline, not as sizes large to small. See our [*Accessibility Principals*](/documentation/accessibility-principals/) for more on this.
 
 ### Italic and Bold
 
@@ -227,7 +227,7 @@ Footnotes can also include Markdown formatting, including lists and even multipl
 You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Styles Customization*](/documentation/styles-customization/) chapter of this guide.) Note, however, that you can do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode.
 
 {{< q-class "box tip" >}}
-- For the things Markdown can’t do, Quire includes number of useful shortcodes. You’ll read more about them in other chapters of this guide. A complete list is available in the [shortcode reference section](/api-docs/shortcodes/).
+- For the things Markdown can’t do, Quire includes number of useful shortcodes. You’ll read more about them in other chapters of this guide. A complete list is available in the [shortcode reference section](/documentation/for-developers/#shortcodes-api).
 
 {{< / q-class >}}
 
@@ -281,7 +281,7 @@ Commonly, project content will start from Microsoft Word documents rather than b
 There are some easy things you can do in the Word document prior to conversion to ensure the best possible results:
 
 - We recommend not inserting any images and media into the Word document before conversion.
-- Headings should be formatted [by applying Word styles](https://support.office.com/en-us/article/Apply-styles-f8b96097-4d25-4fac-8200-6139c8093109) instead of by manually changing font formats.
+- Headings should be formatted [by applying Word styles](https://support.microsoft.com/en-us/office/apply-styles-f8b96097-4d25-4fac-8200-6139c8093109) instead of by manually changing font formats.
 - Don’t use any font color or color highlighting, it will not convert to Markdown.
 - Save as .docx rather than .doc
 

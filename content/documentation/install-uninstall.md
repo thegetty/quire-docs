@@ -137,7 +137,7 @@ If you chose a different distribution of Linux there are more instructions here 
 
 3. Install node js and npm through nvm
 
-Detailed information about this installation can be found in this link [https://github.com/creationix/nvm#install-script](https://github.com/creationix/nvm#install-script).
+Detailed information about this installation can be found in this link [https://github.com/nvm-sh/nvm#install-script](https://github.com/nvm-sh/nvm#install-script).
 
 To install or update nvm, you can use the install script using cURL:
 
@@ -176,7 +176,7 @@ If the above doesn't fix the problem, open your `.bash_profile` and add the foll
   source ~/.bashrc
   ```
 
-For more information about this issue and possible workarounds, please [refer here](https://github.com/creationix/nvm/issues/576)
+For more information about this issue and possible workarounds, please [refer here](https://github.com/nvm-sh/nvm/issues/576)
 to verify that nvm has been installed, do:
 
   ```sh
@@ -329,7 +329,7 @@ To uninstall Quire:
 
 **Downloading the Quire CLI to your computer from GitHub through the Terminal**
 
-If you have {{< q-def "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token), or you can follow the instructions below.
+If you have {{< q-def "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), or you can follow the instructions below.
 
 Follow these steps:
 

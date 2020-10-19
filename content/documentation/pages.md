@@ -35,7 +35,7 @@ slug:
 ---
 ```
 
-For more details on this full list of possible attributes that Quire can use in page YAML, see the [Page YAML](/api-docs/yaml/#page) section of the Quire API docs.
+For more details on this full list of possible attributes that Quire can use in page YAML, see the [Page API](/documentation/for-developers/#page-api) section of the Developer documentation.
 
 ## Define Page Types
 

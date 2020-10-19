@@ -2,7 +2,7 @@
 title: Get Started
 type: essay
 weight: 4100
-abstract: "Dive in to creating your first Quire publication" 
+abstract: "Dive in to creating your first Quire publication"
 ---
 
 ## Start a New Project
@@ -135,7 +135,7 @@ The names of the files will effect the final URLs of your publication. By defaul
 | The `section-overview.md` file inside the `part-two` directory | `mypublication.com/part-two/section-overview/` |
 
 {{< q-class "box tip">}}
-- To have URLs for your homepage or section landing pages that don’t include the Markdown file name, add `slug: .` to the page YAML of that file. Read more in the [*Pages*](/documentation/pages#creating-section-landing-pages) section of this guide.
+- To have URLs for your homepage or section landing pages that don’t include the Markdown file name, add `slug: .` to the page YAML of that file. Read more in the [*Pages*](/documentation/pages/#creating-section-landing-pages) section of this guide.
 {{< /q-class >}}
 
 For the ordering of the pages, in the example above we’ve listed the files and directories as they would appear in the publication’s table of contents. When looking in the actual `content` directory on your computer or in your text editor, however, they will almost certainly not appear in the proper publication order. More likely, they’ll appear alphabetically or by date modified, which is also how Quire will order them when building and previewing your publication. You can adjust this by [assigning a `weight` to each page](/documentation/pages/) in its page YAML.
@@ -168,7 +168,7 @@ Quire lets you preview the current version of your site in a web browser, and wi
 
 Some tips for previewing your publication outline:
 
-1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about YAML in [*Fundamentals: Markdown & YAML*](/documentation/fundamentals#yaml-basics)
+1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about YAML in [*Fundamentals: Markdown & YAML*](/documentation/fundamentals/#yaml-basics)
 
 2. **Use menu:false to hide a page from the table of contents view.** If you want to hide a page from the table of contents include `menu:false` in the YAML.
 

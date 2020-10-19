@@ -9,23 +9,24 @@ Typography is an important element of style in your Quire publication. Quire all
 
 ## Customize Fonts
 
-The `quire-starter-theme` includes three embedded, open license fonts: ["Merriweather"](https://fonts.google.com/specimen/Merriweather), ["Lato"](https://fonts.google.com/specimen/Lato), and ["Aleo"](http://www.fontfabric.com/aleo-free-font/). You can adjust which fonts are used where in the "variables" file of your {{< q-def "theme" >}}, `source/css/variables.scss`:
+The `quire-starter-theme` includes three embedded, open license fonts: ["Noto Sans"](https://github.com/googlei18n/noto-fonts), ["Noto Serif"](https://github.com/googlei18n/noto-fonts), and ["IBM Plex Sans Condensed"](https://github.com/IBM/plex). You can adjust which fonts are used where in the "variables" file of your {{< q-def "theme" >}}, `source/css/variables.scss`:
 
 ```scss
-$serif: Merriweather, Georgia, serif;
-$sans-serif: Lato, Helvetica, sans-serif;
-$slab-serif: Aleo, Rockwell, "Trebuchet MS", sans-serif;
+$ibm-sans: 'IBM Plex Sans Condensed', sans-serif;
+$noto-sans: 'Noto Sans', sans-serif;
+$noto-serif: 'Noto Serif', serif;
 
-$family-primary: $serif;
-// body text: $serif, $sans-serif, $slab-serif
-
-$family-secondary: $sans-serif;
-// headings and navigation items: $serif, $sans-serif, $slab-serif
+$quire-primary-font: null; // body and menu text
+$quire-headings-font: null; // headings
+$quire-footnotes-font: null; // footnotes and page backmatter
+$quire-navigation-font: null; // navbar and next/prev buttons
 ```
 
-The `$serif`, `$sans-serif` and  `$slab-serif` variables tell your publication what fonts to use. For example, the variable `$serif: Merriweather, Georgia, serif;` tells Quire to use "Merriweather" as serif font. "Georgia" and a generic "serif", the comma-separated fonts declared after our custom font, are fallbacks in case the browser doesn’t load or support our custom one (in this case "Merriweather"). You want your fallbacks to be of the same basic type as your custom one, and go from most to least specific in the list. [Read more about fallbacks and `font-family` usage on Mozilla’s web docs.](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+The `$quire-primary-font`, `$quire-headings-font`, `$quire-footnotes-font`, and `$quire-navigation-font` variables are listed first with "null" values. Left as is, Quire will use the default fonts as specified elsewhere in the templates. You can choose your own combinations by using a defined font in place of "null":
 
-The variables `$family-primary` and `$family-secondary` tell your publication where to use the fonts you specify with the above variables. If the `$family-primary` font of your publication is `$serif`, "Merriweather" (and its fallback options) will be used in the body text of the publication pages.
+```scss
+$quire-headings-font: $noto-serif;
+```
 
 ## Add a New Font
 

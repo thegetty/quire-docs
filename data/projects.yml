@@ -131,7 +131,7 @@ project_list:
     url: https://1000camels.github.io/jen-bervin/
     customization_level: moderate
     github_user:
-      - cjmattison
+      - tipeslowly
     note: "This is the first volume in UMAG's Digital Chapbook series."
 
   - id: "ancient_ambers"

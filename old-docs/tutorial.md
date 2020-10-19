@@ -3,7 +3,7 @@ title: "Tutorial: Quire Basics"
 subtitle: A Step-by-Step Walkthrough of the Fundamental Parts of Quire
 weight: 2
 type: essay
-menu: false 
+menu: false
 ---
 
 As you get started with Quire, it is important to familiarize yourself with the three core components that you will use to create, edit, and output your Quire project: a {{< q-glossary "text editor" >}}, a {{< q-glossary "command-line shell" >}}, and a {{< q-glossary "web browser" >}}. You will use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real-time.
@@ -108,7 +108,7 @@ While not always necessary, it’s usually a good idea to wrap any information y
 
 The three other metadata files in the `data` directory—`figures.yml`, `references.yml`, and `objects.yml`—are data for figure images, bibliographic references, and catalogue/artwork objects. If your publication won’t have figures, a bibliography, or a catalogue section you can remove these. The `publication.yml` file, however, is always required and the more complete you can make it, the better.
 
-*Read more in the [“Metadata & Configuration”](/guide/metadata-configuration/) chapter of this guide and our [“Quire YAML”](/api-docs/yaml/) reference.*
+*Read more in the [“Metadata & Configuration”](/guide/metadata-configuration/) chapter of this guide and our [“Developers”](/documentation/for-developers/) reference.*
 
 ## 6. Editing Content
 
