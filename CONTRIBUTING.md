@@ -70,7 +70,7 @@ If there’s a section you think it missing or could be improved, we’d love fo
 
 - [Propose a new section or edit](https://github.com/gettypubs/quire/issues/new)
 - [Find an existing issue](https://github.com/gettypubs/quire/issues?q=is%3Aissue+is%3Aopen+label%3Aquire-website)
-- Read the Quire Documentation Style Guide — *in progress*
+- [Read the Quire Documentation Style Guide](https://github.com/gettypubs/quire/wiki/Quire-Documentation-Style-Guide)
 
 ### Translate the Documentation
 
@@ -101,7 +101,7 @@ If you’re interested in it being added to the core Quire starter theme, keep i
 Even if you plan on developing your custom theme/feature independently and offering it to the Quire community as an add on, we highly recommend posting about it on the Quire issue tracker. This lets people know what you’re working on, gives them a chance to offer to help, and can bring you valuable feedback and exposure for your work.
 
 - [View the current roadmap]((https://gettypubs.github.io/quire/documentation/))
-- Read the Quire Technical Style Guide — *in progress*
+- [Read the Quire Technical Style Guide](https://github.com/gettypubs/quire/wiki/Quire-Technical-Style-Guide)
 - [Post your feature idea](https://github.com/gettypubs/quire/issues/new)
 
 Quire is very extensible and we’re eager to see more development work come from you as you create and customize your own publications in ways that can then be shared back. Quire is in the early stages of defining how this kind of contribution will work, please don’t hesitate to [email us](mailto:quire@getty.edu) with your questions or ideas.
