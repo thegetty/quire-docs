@@ -6,15 +6,15 @@ Striving toward becoming a fully open-source project, we encourage contributions
 
 There are [many ways to contribute](#identify-a-contribution-to-make) including fixing bugs, and improving the documentation, to creating a new feature or theme.
 
-The following guidelines focus on contributions to one of our four code repositories (including the repository for the Quire website and documentation). Please read through them carefully. Our goal is to make the process as effective and transparent as possible, and to ensure that your every contribution can become part of Quire. Thank you for taking the time.
+The following guidelines focus on contributions to one of [our four code repositories](#quire-code-repositories) (including the repository for the Quire website and documentation). Please read through them carefully. Our goal is to make the process as effective and transparent as possible, and to ensure that your every contribution can become part of Quire. Thank you for taking the time.
 
-Read about [even more ways of getting involved](https://gettypubs.github.io/community/join-us/) beyond our code and documentation repositories, including participating in our forum, becoming a Quire ambassador, and attending or leading workshops, events, and training sessions.
+There are [even more ways of getting involved](https://gettypubs.github.io/community/join-us/) beyond our code and documentation repositories listed on the Quire website. They include participating in our forum, becoming a Quire ambassador, and attending or leading workshops, events, and training sessions.
 
 🗣**CALLING ALL FIRST-TIMERS!** — We can’t stress enough that Quire is open to contributors at all levels. That could mean making a modest fix to some Quire CSS styles or JavaScript, or copyediting one of our documentation pages. Here are a few resources especially for you:
 
-- Quire’s current [“good first issue”](https://github.com/gettypubs/quire/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
-- Quire video on “Making Your First Contribution” —TK
-- [First Timers Only](http://www.firsttimersonly.com/)
+- Find the [“good first issues”](https://github.com/gettypubs/quire/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) tagged in our issue tracker
+- Read the Quire guide to Making Your First Contribution — *in progress*
+- Learn more about contributing to open source at [First Timers Only](http://www.firsttimersonly.com/)
 
 ## Important Resources
 
@@ -70,7 +70,7 @@ If there’s a section you think it missing or could be improved, we’d love fo
 
 - [Propose a new section or edit](https://github.com/gettypubs/quire/issues/new)
 - [Find an existing issue](https://github.com/gettypubs/quire/issues?q=is%3Aissue+is%3Aopen+label%3Aquire-website)
-- Read the Quire Documentation Style Guide -- TK
+- Read the Quire Documentation Style Guide — *in progress*
 
 ### Translate the Documentation
 
@@ -101,7 +101,7 @@ If you’re interested in it being added to the core Quire starter theme, keep i
 Even if you plan on developing your custom theme/feature independently and offering it to the Quire community as an add on, we highly recommend posting about it on the Quire issue tracker. This lets people know what you’re working on, gives them a chance to offer to help, and can bring you valuable feedback and exposure for your work.
 
 - [View the current roadmap]((https://gettypubs.github.io/quire/documentation/))
-- Read the Quire Technical Style Guide -- TK
+- Read the Quire Technical Style Guide — *in progress*
 - [Post your feature idea](https://github.com/gettypubs/quire/issues/new)
 
 Quire is very extensible and we’re eager to see more development work come from you as you create and customize your own publications in ways that can then be shared back. Quire is in the early stages of defining how this kind of contribution will work, please don’t hesitate to [email us](mailto:quire@getty.edu) with your questions or ideas.
@@ -146,4 +146,4 @@ Learn more in the *Open Source Guide*’s [“How to Contribute to Open Source�
 
 ---
 
-**At this point, you're ready to contribute! Feel free to [ask for help](mailto:quire@getty.edu), remember [everyone’s a beginner at first](https://firstpr.me/). And thank you again for your interest in making Quire a better tool for all!** 🦄
+**At this point, we hope you feel ready to contribute! But don’t hesitate to [ask for help or clarification](mailto:quire@getty.edu), everyone’s a beginner at first. And thank you again for your interest in making Quire a better tool for all!** 🦄
