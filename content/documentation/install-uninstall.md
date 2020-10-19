@@ -82,7 +82,7 @@ When complete, type `quire --version` to confirm proper installation. It should 
 
     This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with the name of your computer and your username once it's complete.
 
-6.  The **Quire CLI** ({{< q-def "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](https://gettypubs.github.io/quire/guide/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
+6.  The **Quire CLI** ({{< q-def "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](https://gettypubs.github.io/quire/documentation/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
 
     ```tx
     git clone https://github.com/gettypubs/quire-cli

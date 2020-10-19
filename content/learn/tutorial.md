@@ -44,9 +44,9 @@ With the shell open, you can type `ls` (list) to list the folders and files in y
 
 Follow the links below to install Quire:
 
-- [MacOS](/guide/install-uninstall#macos-installation)
-- [Windows](/guide/install-uninstall#windows-installation)
-- [Linux](/guide/install-uninstall#linux-installation)
+- [MacOS](/documentation/install-uninstall#macos-installation)
+- [Windows](/documentation/install-uninstall#windows-installation)
+- [Linux](/documentation/install-uninstall#linux-installation)
 
 ## 3. Create a New Project
 
@@ -108,7 +108,7 @@ While not always necessary, it’s usually a good idea to wrap any information y
 
 The three other metadata files in the `data` directory—`figures.yml`, `references.yml`, and `objects.yml`—are data for figure images, bibliographic references, and catalogue/artwork objects. If your publication won’t have figures, a bibliography, or a catalogue section you can remove these. The `publication.yml` file, however, is always required and the more complete you can make it, the better.
 
-*Read more in the [“Metadata & Configuration”](/guide/metadata-configuration/) chapter of this guide and our [“Quire YAML”](/api-docs/yaml/) reference.*
+*Read more in the [“Metadata & Configuration”](/documentation/metadata-configuration/) chapter of this guide and our [“Quire YAML”](/api-docs/yaml/) reference.*
 
 ## 6. Edit Content
 
@@ -119,7 +119,7 @@ Open the `about.md` file. At the top you’ll see a small block of YAML surround
 Let’s make some changes to the `about.md` file to make it the Preface in our demo book:
 
 1. Change the `title` to `"Preface"`.
-2. Leave the `type` as `"page"`. [Other page types available](/guide/pages#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
+2. Leave the `type` as `"page"`. [Other page types available](/documentation/pages#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
 3. Change the `weight` of this page to `"2.5"`, which will order it after the `contents.md` page, which has a `weight` of `"2"`, and before the `intro.md` page, which has a `weight` of `"3"`. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in alphabetical order based on their filenames.
 4. Change the name of the file from `about.md` to `preface.md`. Do this by right clicking (or control clicking on a Mac) on the file in your text editor and selecting “Rename”. Note that this will also change the URL of the page.
 5. Page content goes below the YAML block. Delete the text that is there and copy-and-paste the following text as a test:
@@ -128,7 +128,7 @@ Let’s make some changes to the `about.md` file to make it the Preface in our d
 
 {{< q-figure id="quire-starter-content-change-1" >}}
 
-Quire content is written in Markdown. Markdown allows you to express content structure as minimally as possible, using simple text indicators. For longer texts and publications, you’ll want to use a [Microsoft Word to Markdown conversion](/guide/fundamentals#microsoft-word-to-markdown-conversion) process, but you can also write Markdown directly in the text editor.
+Quire content is written in Markdown. Markdown allows you to express content structure as minimally as possible, using simple text indicators. For longer texts and publications, you’ll want to use a [Microsoft Word to Markdown conversion](/documentation/fundamentals#microsoft-word-to-markdown-conversion) process, but you can also write Markdown directly in the text editor.
 
 Markdown is used to add style and elements to your text. Here are some examples of what you can do with Markdown:
 
@@ -155,7 +155,7 @@ of students let loose in the halls of art.
 2. Save the change, and check the preview in your browser. You will notice the text has been formatted for you.
 
 {{< q-class "box tip" >}}
-- [A complete Markdown reference](/guide/fundamentals/) is available in the “Fundamentals” chapter of this guide, but for quick rules and tips, refer to our [Markdown cheatsheet](/resources/cheatsheet/).
+- [A complete Markdown reference](/documentation/fundamentals/) is available in the “Fundamentals” chapter of this guide, but for quick rules and tips, refer to our [Markdown cheatsheet](/resources/cheatsheet/).
 {{< /q-class >}}
 
 For more specialized features (especially images, multimedia, and citations), Quire extends Markdown’s capabilities with a set of {{< q-def "shortcodes" >}}.
@@ -171,7 +171,7 @@ You’ll see this added a figure and caption, the text for which is stored in th
 
 {{< q-figure id="quire-starter-content-change-2" >}}
 
-*Read more about Page YAML, Markdown, and Quire shortcodes in the [“Pages”](/guide/pages/) chapter of this guide, and more about figure shortcodes in [“Figure Images”](/guide/figure-images/).*
+*Read more about Page YAML, Markdown, and Quire shortcodes in the [“Pages”](/documentation/pages/) chapter of this guide, and more about figure shortcodes in [“Figure Images”](/documentation/figure-images/).*
 
 ## 7. Customize Styles
 
@@ -209,7 +209,7 @@ Make sure there’s always a space between the colon and the value you enter, an
 
 {{< q-figure id="quire-starter-styles-change" >}}
 
-*Read more about applying your own custom CSS styles, altering page templates, and creating a new theme in the [“Customizing Styles”](/guide/styles-customization/) chapter of this guide.*
+*Read more about applying your own custom CSS styles, altering page templates, and creating a new theme in the [“Customizing Styles”](/documentation/styles-customization/) chapter of this guide.*
 
 ## 8. Output Your Publication
 
@@ -221,7 +221,7 @@ In your Terminal, stop the `quire preview` process by typing Control-C. To creat
 
 For the online edition, type `quire site` and press enter. A `site` directory will be created in your project, with all the website files inside. The files in `site` can then be copied onto virtually any web server or hosting service. They include all the page content, images, and styles for the site and are all you need for the site to look and run just as it does when running `quire preview` on your own computer.
 
-*Read more about outputting your publication files and deploying your site in the [“Multiformat Output”](/guide/multiformat-output/) chapter of this guide.*
+*Read more about outputting your publication files and deploying your site in the [“Multiformat Output”](/documentation/multiformat-output/) chapter of this guide.*
 
 ## Congratulations! Now What?
 

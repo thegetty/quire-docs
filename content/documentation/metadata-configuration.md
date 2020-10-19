@@ -71,7 +71,7 @@ An optional `contributor_as_it_appears` value allows for more fine-grained contr
 
 The editors, designers, developers, and others who worked on the title may be listed as contributors with the `project-team` value. This information is usually then listed on the *About* and *Copyright* pages of the publication.
 
-Read more about this matter in the [*Contributors*](/guide/contributors/) chapter of this guide.
+Read more about this matter in the [*Contributors*](/documentation/contributors/) chapter of this guide.
 
 ### Copyright & License
 
