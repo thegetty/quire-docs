@@ -45,7 +45,7 @@ Coming Soon ...
 
 ## Become an Ambassador
 
-We are looking for Quire lovers and super users who are passionate about bringing Quire into their own communities and expanding its reach.
+We are looking for Quire lovers and super users passionate about bringing Quire into their own communities and expanding its reach.
 
 <div class="action-button coming-soon">
 
@@ -75,7 +75,7 @@ We hope to see you at future Quire workshops and events. We'd also love to know 
 
 ## Share Your Work
 
-We love celebrating Quire accomplishments. Send us your finished Quire publications, and we will add them to our **[Community Showcase](/community/community-showcase/)** and possibly feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
+We love celebrating Quire accomplishments. Send us your finished Quire publications! We will add them to our **[Community Showcase](/community/community-showcase/)** and possibly feature them on our homepage. We also welcome the submission of papers, articles, and presentations that you have written about Quire.
 
 <div class="action-button">
 
@@ -108,13 +108,6 @@ Before getting started, we kindly request that you review our **[Contributor Gui
 ## Submit a Bug
 
 Bugs are sneaky, and we need your help spotting them! If you come across something broken or that just doesn't look right, please add it to our issues list and we'll work on getting the issue resolved ASAP.
-
-Please remember to label your issue and include the following information when submitting a bug:
-
-  - What were you doing or what you tried to do
-  - What your desired results were
-  - What actually happened
-  - Include code or screenshot if possible
 
 <div class="action-button">
 
