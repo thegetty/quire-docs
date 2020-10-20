@@ -5,11 +5,11 @@ type: essay
 abstract: "Learn what Quire is, how it works, and whether it's right for you"
 ---
 
-Created by [Getty](https://www.getty.edu), Quire is a modern digital publishing tool that empowers people to create scholarly, visually rich publications in a variety of formats, including online, ebook, and print.
+Developed by [Getty](https://www.getty.edu), Quire is a modern digital publishing tool that empowers people to create scholarly, visually rich publications in a variety of formats, including online, ebook, and print. Quire offers an elegant and affordable publishing solution that doesn't require any proprietary software or long-term technology choices.
 
-Quire offers an elegant and affordable publishing solution. No matter the size or scale, an institution that publishes with Quire isn’t locked into proprietary software or a long-term technology choice. It is also not required to have staff with advanced technical skills. Quire was designed with its users in mind and is used both internally at Getty and externally by scholars, publishers, curators, developers, and digitally curious individuals.
+Quire is flexible and feature-rich. It can be used in its most basic configuration, or it can be customized, adapting to a vast array of use cases, from collection catalogues and research projects to online exhibitions, reports, and journal articles.
 
-Quire is also flexible and feature-rich. It can be used in its most basic configuration or can be heavily customized. It adapts to an endless number of use cases, from collection catalogues and research projects to online exhibitions, reports, and journal articles.
+Our community members represent a broad spectrum of institutions, both large and small, providing vital scholarship in the arts and sciences. In addition to being used at Getty, the Quire community includes a growing number of scholars, curators, editors, designers, and web developers, and the digitally curious. Individuals at all levels of technical experience are welcome, from content creators to developers. We provide tools and resources to empower and educate our community.
 
 <div class="action-button">
 
@@ -21,7 +21,7 @@ Quire is also flexible and feature-rich. It can be used in its most basic config
 - ![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)
 </div>
 
-Quire is designed to ensure that digital books and their contents are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables robust preservation and distribution of works in a simplified and accessible format.
+Quire is designed to ensure that digital books and their contents are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables robust preservation and distribution of works in an simplified and accessible format.
 
 <div class="action-button">
 
@@ -33,7 +33,7 @@ Quire is designed to ensure that digital books and their contents are not only a
 - ![Explore icon](/img/illustrations/undraw_in_progress_ql66.png)
 </div>
 
-Currently under development for potential release as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating enduring and discoverable digital publications.
+Currently under development for potential release as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating sustainable and discoverable digital publications.
 
 <div class="action-button">
 
@@ -88,10 +88,10 @@ Here are some things to consider:
 - Quire is free to use, and no proprietary software or ongoing maintenance is required. [Visit our Implementation Considerations to learn more.](/documentation/implementation/)
 - Multiformat output means E-book files are distribution-ready for Amazon, Apple, and other vendors; PDF files are print-on-demand ready, and the online edition can be hosted on any web server. [Learn more about Quire's multiformat output capabilities.](/documentation/quire-cli/#outputting-files)
 - Quire is compatible with most operating systems, whether you're using a MAC, PC, or Linux. [Visit our installation guidelines.](/documentation/install-uninstall/)
-- No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or, if you have more advanced resources, you can heavily customize and adapt Quire to your unique content. [Visit our documentation.](/documentation/getting-started/)
-- We know how intimidating learning new technology can be, but we've got you covered. We've created helpful tutorials to guide you through each step of using Quire, from installation to deployment and everything in between. [Learn more.](/learn/tutorial/)
+- No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or, if you have more advanced resources, you can customize and adapt Quire to your unique content. [Visit our documentation.](/documentation/getting-started/)
+- We know how intimidating learning new technology can be, but we've got you covered. We've created a helpful tutorial to guide you through each step of using Quire, and additional tools and resources are coming soon. [Learn more.](/learn/tutorial/)
 - We have a vibrant and diverse community of users that are here to help. [Visit our Community Forum.](/community/forum/)
-- We are moving Quire towards an open-source, community-supported model, and we are currently following open-source software standards. Our goal is to launch an officially open-source Quire by 2022. [Learn more about the benefits of open-source development.](/about/open-source/)
+- We are moving Quire towards an open-source, community-supported model, and are currently following open-source software standards. Our goal is to launch an officially open-source Quire by 2022. [Learn more about the benefits of open-source development.](/about/open-source/)
 
 <div class="action-button">
 
