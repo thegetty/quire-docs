@@ -16,7 +16,12 @@ As Quire continues to evolve, our goal is to launch as fully open source by 2022
 
 <div class="feature-cards">
 
-- [Sign up for Beta Access! ![Explore icon](/img/illustrations/undraw_responsive_6c8s.png)](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
+- ![Explore icon](/img/illustrations/undraw_responsive_6c8s.png)
+</div>
+
+<div class="action-button">
+
+[Sign Up for Access Today!](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
 </div>
 
 To learn more about open-source software development visit [Digital Curation Center](https://www.dcc.ac.uk/faq/open-source-software-and-open-standards) and [Open Source Initiative](https://opensource.org/faq#osd).

@@ -87,12 +87,12 @@ Quire’s beta community grows to nearly 200 members, with more than a dozen [pu
 
 <div class="feature-cards">
 
-- ![Explore icon](/img/illustrations/undraw_community_8nwl.png)
+- ![Explore icon](/img/illustrations/undraw_done_a34v.png)
 </div>
 
 **We invite you to become part of Quire's history. Sign-up for beta access and join the Quire community today!**
 
 <div class="action-button">
 
-[Request Access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
+[Sign Up Now](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
 </div>

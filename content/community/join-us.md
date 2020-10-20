@@ -23,7 +23,7 @@ We welcome users at all levels of technical expertise and publishing experience.
 
 </div>
 
-![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)
+![Explore icon](/img/illustrations/undraw_add_user_ipe3.png)
 
 </div>
 <div class="image-list">
@@ -83,7 +83,7 @@ We love celebrating Quire accomplishments. Send us your finished Quire publicati
 
 </div>
 
-![Explore icon](/img/illustrations/undraw_done_a34v.png)
+![Explore icon](/img/illustrations/undraw_organize_resume_utk5.png)
 
 </div>
 <div class="image-list">
