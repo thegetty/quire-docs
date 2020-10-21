@@ -14,7 +14,7 @@ slug: .
 
 <div class="action-button">
 
-[Sign Up for Free Access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
+[Get Free Access to Quire](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
 
 </div>
 
@@ -133,7 +133,7 @@ Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1
 
 <div class="cover-footer">
 
-[About](/about/) | [Community](/community/) | [Doumentation](/documentation/) | [Learn](/learn/) | [Request Access](https://forms.gle/m1fgZu5BHKhddMrW7)
+[About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Get Access](https://forms.gle/m1fgZu5BHKhddMrW7)
 
 [GitHub](https://github.com/gettypubs/quire/) | [Contact](mailto:quire@getty.edu)
 

@@ -351,6 +351,10 @@ on the page and adjusts to different window widths */
 .quire-menu .section-item > a {
   font-weight: 700;
 }
+/* Hide page links on History page because they're just years */
+#about-history .quire-menu .page-item.active .quire__heading-links {
+  display: none;
+}
 /* Even out row and column spacing in grid */
 .quire-contents-list.grid ul li a {
   padding: 0;
@@ -703,7 +707,7 @@ a.quire-navbar-controls__site-logo img {
 }
 #cover ul.showcase.full-width-slider .publisher::after,
 #cover ul.showcase.full-width-slider .type-pub-date::after {
-  content: " | ";
+  content: "\0000a0|\0000a0";
 }
 
 /* CODE

@@ -5,7 +5,8 @@
 # YAML KEY:
 # ---------
 # - id:                     lowercase, no spaces or special characters
-#   src:                    Screenshot of homepage, 1200px x 668px or at least that ratio
+#   src:                    Screenshot of homepage, 1200px x 668px downsized to
+#                             900px x 501px or at least that ratio
 #   type:                   Try to use existing types if possible
 #   publisher:              Or "Self-Published" if not publisher/institution
 #   title_info:             Markdown ok, typically: "*Title of Publication*, by Author Name"
@@ -31,7 +32,7 @@
 project_list:
 
   - id: "thomas_rife"
-    src: /screenshots/_thomas_rife.png
+    src: /screenshots/_thomas_rife.jpg
     alt: "Screenshot of publication cover: a color drawing of a western scene with four cowboys and a wagon"
     type: Family History
     publisher: Self-Published
@@ -44,7 +45,7 @@ project_list:
     note: "This project updates the starter theme with a new font and custom css for in the typography."
 
   - id: "artists_studios_paris"
-    src: /screenshots/_artists_studios_paris.png
+    src: /screenshots/_artists_studios_paris.jpg
     alt: "Screenshot of publication cover: an old painting of a large building in Paris and a cloud yellow-blue sky"
     type: Journal Article
     publisher: Journal18
@@ -57,7 +58,7 @@ project_list:
     note: "This project has the distinction of being the first Quire project published outside Getty. It’s an article published as part of the Spring 2018 issue of *Journal18* on [Digital Mapping & Eighteenth-Century Visual, Material, and Built Cultures](https://www.journal18.org/past-issues/5-coordinates-spring-2018/)."
 
   - id: "bending_lines"
-    src: /screenshots/_bending_lines.png
+    src: /screenshots/_bending_lines.jpg
     alt: "Screenshot of publication cover: a stylized map of the world in shades of deep blue, with a thick red dashed line curving across it"
     type: Online Exhibition
     publisher: Leventhal Map & Education Center, Boston Public Library
@@ -70,7 +71,7 @@ project_list:
     note: "This online exhibition was orignally slated to be a physical gallery exhibition, but it was put on indefinite hold due the COVID-19 pandemic. The project features a wide range of style customizations."
 
   - id: "fault_lines"
-    src: /screenshots/_fault_lines.png
+    src: /screenshots/_fault_lines.jpg
     alt: "Screenshot of publication cover: a distorted and cropped photograph of a lower arm in front of a dark background"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
@@ -83,7 +84,7 @@ project_list:
     note: "Due to the COVID-19 pandemic, the Mills College 2020 BFA Senior Thesis Exhibition was canceled. This digital catalogue doubles as an online exhibition, providing Mills' graduating studio arts majors and minors with an opportunity to showcase their work."
 
   - id: "in_plain_sight"
-    src: /screenshots/_in_plain_sight.png
+    src: /screenshots/_in_plain_sight.jpg
     alt: "Screenshot of publication cover: a wall of multiple framed and hung pieces of art viewed behind a sheet of partially opaque material"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
@@ -96,7 +97,7 @@ project_list:
     note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable opportunity."
 
   - id: "state_of_convergence"
-    src: /screenshots/_state_of_convergence.png
+    src: /screenshots/_state_of_convergence.jpg
     alt: "Screenshot of publication cover: a fist punches through a sheet, onto which an image of mountains and trees is projected"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
@@ -109,7 +110,7 @@ project_list:
     note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable opportunity."
 
   - id: "tilt_west"
-    src: /screenshots/_tilt_west.png
+    src: /screenshots/_tilt_west.jpg
     alt: "Screenshot of publication cover: a collage of scraps of text and brown, red, and green geometric shapes on a yellow background"
     type: Journal
     publisher: Tilt West
@@ -122,7 +123,7 @@ project_list:
     note: "Inaugural issue of *Title West Journal.* Previously, content existed on their SoundCloud stream or via comissioned Medium articles. Quire enabled the *Tilt West* team to meaningfully expand their programming."
 
   - id: "silk_poems"
-    src: /screenshots/_silk_poems.png
+    src: /screenshots/_silk_poems.jpg
     alt: "Screenshot of publication cover: a dark grey mottled line loops multiple times across the page set against a light grey background"
     type: Exhibition Catalogue
     publisher: Hong Kong University Museum of Art Gallery
@@ -135,7 +136,7 @@ project_list:
     note: "This is the first volume in UMAG's Digital Chapbook series."
 
   - id: "ancient_ambers"
-    src: /screenshots/_ancient_ambers.png
+    src: /screenshots/_ancient_ambers.jpg
     alt: "Screenshot of publication cover: a humanoid figurine carved out of dark red amber"
     type: Collection Catalogue
     publisher: Getty Publications
@@ -148,7 +149,7 @@ project_list:
     note: "Devleoped by Getty, this publication is a good example of a standard collection catalogue built using Quire."
 
   - id: "cva"
-    src: /screenshots/_cva.png
+    src: /screenshots/_cva.jpg
     alt: "Screenshot of publication cover: black text in Latin and French on an off-white background"
     type: Corpus Vasorum Antiquorum
     publisher: Getty Publications
@@ -161,7 +162,7 @@ project_list:
     note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other instiutions down the road."
 
   - id: "heritage_management"
-    src: /screenshots/_heritage_management.png
+    src: /screenshots/_heritage_management.jpg
     alt: "Screenshot of publication cover: a patinated bronze sculpture covered in graffiti is being lifted off its pedestal with a crane as onlookers watch"
     type: Proceedings
     publisher: Getty Publications
@@ -174,7 +175,7 @@ project_list:
     note: "This publication represents typical reserach proceedings, however, it was additionally customized to accomodate a 7 in. x 10 in. print size."
 
   - id: "tour_toolkit"
-    src: /screenshots/_tour_toolkit.png
+    src: /screenshots/_tour_toolkit.jpg
     alt: "Screenshot of publication cover: a docent gives a tour to a group of schoolchildren inside a museum gallery"
     type: Informational Pamphlet
     publisher: Minneapolis Institute of Art
@@ -187,7 +188,7 @@ project_list:
     note: "This publication is an excellent example of how Quire can be used to produce shorter form publications like pamphlets and other educational handouts. Customziations include font, branding, and other aesthetic considerations."
 
   - id: "alcohols_empire"
-    src: /screenshots/_alcohols_empire.png
+    src: /screenshots/_alcohols_empire.jpg
     alt: "Screenshot of publication cover: three cocktails sit on a stone table with sprigs of rosemary superimposed onto the photograph"
     type: Interactive Publication
     publisher: Minneapolis Institute of Art
@@ -200,7 +201,7 @@ project_list:
     note: "With this project, Mia staff sought to evaluate Quire and its potential for future use at the museum. *Alcohol’s Empire* was a good test publication as it was a collaborative project with three distinct contributing partners. The project also included two public events and received national media coverage, which positively impacted its distribution."
 
   - id: "mozoomdar_at_sea"
-    src: /screenshots/_mozoomdar_at_sea.png
+    src: /screenshots/_mozoomdar_at_sea.jpg
     alt: "Screenshot of publication cover: a watercolor and pencil image of the 1893 Columbian Exposition from a bird's eye perspective"
     type: Research Project
     publisher: Self-Published
@@ -213,7 +214,7 @@ project_list:
     note: "This digital exhibit includes mainly archival materials, manuscripts, and maps. The publication content lent itself well to a digital storytelling platform."
 
   - id: "humanizing_the_digital"
-    src: /screenshots/_humanizing_the_digital.png
+    src: /screenshots/_humanizing_the_digital.jpg
     alt: "Screenshot of publication cover: black text on a white background with anthropomorphized computer file folders smattered across two wavy registers of qr-code"
     type: Proceedings
     publisher: Ad Hoc Museum Collective
@@ -226,7 +227,7 @@ project_list:
     note: "This publication contains 17 conference-inspired responses to the state of museum technology in 2018, including essays, reflections, case studies, conversations, and an experimental in-book zine."
 
   - id: "state_of_museum_dig"
-    src: /screenshots/_state_of_museum_dig.png
+    src: /screenshots/_state_of_museum_dig.jpg
     alt: "Screenshot of publication cover: myriad strands of twinkle lights hung in two horizontal registers across a large architectural space"
     type: Graduate Student Project
     publisher: Ad Hoc Museum Collective

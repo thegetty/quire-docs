@@ -2,8 +2,7 @@
 title: Why Open Source?
 weight: 1500
 type: essay
-menu: false
-toc: false
+online: false
 ---
 
 Open source is a way of developing software where the code is free and available for others to use and adapt. Open-source software relies on both transparency and an engaged community of users. The community works together to both use and contribute to the development of the software and its code.

@@ -110,7 +110,7 @@ figure_list:
     src: /screenshots/modern-contents-grid.png
     caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/documentation/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
   - id: "modern-splash"
-    src: /screenshots/modern-splash.png
+    src: /screenshots/modern-splash.jpg
     caption: "**`type: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."
   - id: "modern-essay"
     src: /screenshots/modern-essay.png
@@ -123,7 +123,7 @@ figure_list:
     caption: "**`type: entry`** <br /> **`class: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `entryPageSideBySideLayout: true` in the config.yml file of the project."
 
   - id: "modern_contributors-cover"
-    src: /screenshots/modern_contributors-cover.png
+    src: /screenshots/modern_contributors-cover.jpg
     caption: "Sample publication cover with the contributors listed using the `contributor_as_it_appears` option in the publication.yml file, which allows for specific language and formatting to be applied."
 
   - id: "modern_contributors-page"
@@ -246,19 +246,19 @@ figure_list:
     full_caption: "*The State of Museum Digital Practice in 2019: A collection of graduate essays and responses*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
 
   - id: "quire_demo"
-    src: /screenshots/quire_demo.png
+    src: /screenshots/quire_demo.jpg
     media_id: VVYe0qR5DnM
     media_type: youtube
     caption: "A six-minute introduction to working in a static site generator like the one that powers Quire."
 
   - id: "mcn_2017"
-    src: /screenshots/mcn_2017.png
+    src: /screenshots/mcn_2017.jpg
     media_id: oFBHi5ed5OU
     media_type: youtube
     caption: "Eric Gardner presents some of the thinking behind Quire in “Data Driven Approaches to Publishing” at MCN (Museum Computer Network) in Pittsburgh, 2017."
 
   - id: "the_gang"
-    src: /screenshots/the_gang.png
+    src: /screenshots/the_gang.jpg
     caption: "Eric Gardner (Digital Publications Developer), Ruth Evans Lane (Editor), and Greg Albers (Digital Publications Manager) with multiple formats of Getty’s [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/) publication."
 
   - id: "mcn_2013"
@@ -268,7 +268,7 @@ figure_list:
     caption: "Greg Albers moderates a panel at MCN (Museum Computer Network) in Montreal, 2013, exploring the intersections between print and digital publishing."
 
   - id: "virtual-library"
-    src: /screenshots/virtual-library.png
+    src: /screenshots/virtual-library.jpg
     caption: "Getty Publications’ [Virtual Library](https://www.getty.edu/publications/virtuallibrary/), featuring more than 300 of its past books, for free online reading and PDF download."
 
   - id: "getty-center"
@@ -312,9 +312,9 @@ figure_list:
     caption: "**Simple structure** | Keep content in human-readable format"
 
   - id: "map-inline"
-    src: /screenshots/map-inline.png
+    src: /screenshots/map-inline.jpg
     caption: "When you insert an interactive map with the `q-figure-zoom` shortcode, it will display a static image of the map when you’re on the page."
 
   - id: "map-zoom"
-    src: /screenshots/map-zoom.png
+    src: /screenshots/map-zoom.jpg
     caption: "When you click on a map inserted with the `q-figure-zoom` shortcode, it will load an interactive version centered on latititue and longitude points you specified, and displaying labels and points from your geojson data file."

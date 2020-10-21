@@ -57,31 +57,33 @@ contributor_as_it_appears:
 copyright: © 2017 J. Paul Getty Trust
 
 license:
-  name: Creative Commons Attribution 4.0 International License
-  abbreviation: CC BY
-  url: https://creativecommons.org/licenses/by/4.0/
+  name: Creative Commons Attribution-NonCommercial 4.0 International License
+  abbreviation: CC BY-NC
+  url: https://creativecommons.org/licenses/by-nc/4.0/
   scope: full # full | text-only | some-exceptions
+  online_text: |
+     This documentation is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). Site illusrataions courtesy of [unDraw](https://undraw.co).
 
 # ------------------------------------------------------------------------------
 # Formats, Resources & Links
 # ------------------------------------------------------------------------------
 
 resource_link:
-  - type: other-format
-    name: PDF
-    media_type: application/pdf
-    link_relation: alternate
-    url: /downloads/output.pdf
-  - type: other-format
-    name: EPUB
-    media_type: application/epub+zip
-    link_relation: alternate
-    url: /downloads/output.epub
-  - type: other-format
-    name: MOBI/Kindle
-    media_type: application/mobi
-    link_relation: alternate
-    url: /downloads/output.mobi
+  # - type: other-format
+  #   name: PDF
+  #   media_type: application/pdf
+  #   link_relation: alternate
+  #   url: /downloads/output.pdf
+  # - type: other-format
+  #   name: EPUB
+  #   media_type: application/epub+zip
+  #   link_relation: alternate
+  #   url: /downloads/output.epub
+  # - type: other-format
+  #   name: MOBI/Kindle
+  #   media_type: application/mobi
+  #   link_relation: alternate
+  #   url: /downloads/output.mobi
   - type: footer-link
     name: GitHub
     url: https://github.com/gettypubs/quire/
