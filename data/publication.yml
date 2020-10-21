@@ -69,21 +69,21 @@ license:
 # ------------------------------------------------------------------------------
 
 resource_link:
-  - type: other-format
-    name: PDF
-    media_type: application/pdf
-    link_relation: alternate
-    url: /downloads/output.pdf
-  - type: other-format
-    name: EPUB
-    media_type: application/epub+zip
-    link_relation: alternate
-    url: /downloads/output.epub
-  - type: other-format
-    name: MOBI/Kindle
-    media_type: application/mobi
-    link_relation: alternate
-    url: /downloads/output.mobi
+  # - type: other-format
+  #   name: PDF
+  #   media_type: application/pdf
+  #   link_relation: alternate
+  #   url: /downloads/output.pdf
+  # - type: other-format
+  #   name: EPUB
+  #   media_type: application/epub+zip
+  #   link_relation: alternate
+  #   url: /downloads/output.epub
+  # - type: other-format
+  #   name: MOBI/Kindle
+  #   media_type: application/mobi
+  #   link_relation: alternate
+  #   url: /downloads/output.mobi
   - type: footer-link
     name: GitHub
     url: https://github.com/gettypubs/quire/
