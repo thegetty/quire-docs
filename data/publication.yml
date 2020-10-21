@@ -57,10 +57,12 @@ contributor_as_it_appears:
 copyright: © 2017 J. Paul Getty Trust
 
 license:
-  name: Creative Commons Attribution 4.0 International License
-  abbreviation: CC BY
-  url: https://creativecommons.org/licenses/by/4.0/
+  name: Creative Commons Attribution-NonCommercial 4.0 International License
+  abbreviation: CC BY-NC
+  url: https://creativecommons.org/licenses/by-nc/4.0/
   scope: full # full | text-only | some-exceptions
+  online_text: |
+     This documentation is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). Site illusrataions courtesy of [unDraw](https://undraw.co).
 
 # ------------------------------------------------------------------------------
 # Formats, Resources & Links
