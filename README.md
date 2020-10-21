@@ -8,7 +8,7 @@ Online • Print • E-book
 
 https://gettypubs.github.io/quire/
 
-**Quire is currently in closed development. To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform) form.**
+**Quire is currently in closed development. For access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform) form.**
 
 Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever paying a fee, or setting up and maintaining a complicated server.
 
