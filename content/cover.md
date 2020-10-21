@@ -14,7 +14,7 @@ slug: .
 
 <div class="action-button">
 
-[Sign Up for Free Access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
+[Get Free Access to Quire](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
 
 </div>
 
