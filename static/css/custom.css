@@ -703,7 +703,7 @@ a.quire-navbar-controls__site-logo img {
 }
 #cover ul.showcase.full-width-slider .publisher::after,
 #cover ul.showcase.full-width-slider .type-pub-date::after {
-  content: " | ";
+  content: "\0000a0|\0000a0";
 }
 
 /* CODE
