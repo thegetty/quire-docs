@@ -5,23 +5,37 @@ type: page
 abstract: "Step-by-step guides and additional support"
 ---
 
-## Articles
-
-[Why Open Source Quire?](/about/open-source/)
-
-[How Does Quire Work?](/about/how-it-works)
-
 ## How-To Guides
+
+*Step-by-step tutorials exploring the basic features and functionality of Quire.*
 
 [Learning Command-Line (MacOS)](/learn/command-line/)
 
 [Learning GitHub](/learn/github/)
 
 
-## Videos
+## Articles
 
-{{< q-figure id="opf_2020" >}}
+*Learn how quire works and why certain decisions were made when developing the tool.*
+
+[Why Open Source Quire?](/about/open-source/)
+
+[What is Static Site Generation?](/about/how-it-works)
+
+
+## Webinars & Demos
+
+*Watch videos guiding you through the steps of using Quire.*
+
+{{< q-figure id="90-min-webinar" >}}
 
 {{< q-figure id="quire_demo" >}}
 
-{{< q-figure id="90-min-webinar" >}}
+
+## Presentations
+
+*Watch videos of recent Quire presentations from Getty staff and the community.*
+
+{{< q-figure id="opf_2020" >}}
+
+**Interested in writing an article or step-by-step guide? Have a demo or presentation about Quire you'd like to submit? Please contact us at quire@getty.edu.**
