@@ -2,12 +2,12 @@
 title: Articles & Videos
 weight: 6600
 type: page
-abstract: "Step-by-step guides and additional support"
+abstract: "How-to guides, demos, webinars, and more"
 ---
 
 ## How-To Guides
 
-*Step-by-step tutorials exploring the basic features and functionality of Quire.*
+*Step-by-step guides exploring the basic features and functionality of Quire.*
 
 [Learning Command-Line (MacOS)](/learn/command-line/)
 
