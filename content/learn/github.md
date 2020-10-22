@@ -1,7 +1,8 @@
 ---
 title: GitHub for Quire
-weight: 214
+weight: 6800
 type: essay
+online: false
 ---
 
 GitHub is a project management platform centered around git-based version control. That means it’s a good place to host your project and track changes to it, whether you’re working on your own, or with a team of collaborators. The Getty uses GitHub to manage all of its publications, as well as Quire itself.

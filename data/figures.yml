@@ -318,3 +318,17 @@ figure_list:
   - id: "map-zoom"
     src: /screenshots/map-zoom.jpg
     caption: "When you click on a map inserted with the `q-figure-zoom` shortcode, it will load an interactive version centered on latititue and longitude points you specified, and displaying labels and points from your geojson data file."
+
+  - id: "90-min-webinar"
+    src: /screenshots/90-min-webinar.jpg
+    media_id: kFTcJLbMDxs
+    media_type: youtube
+    caption: "Digital Publication Manager, Greg Albers, gives a 90-minute webinar walking users through the basic functions of Quire."
+
+  - id: "spotlight"
+    src: /screenshots/spotlight.jpg
+    caption: "Pressing Command-Spacebar pulls up the Spotlight search bar."
+
+  - id: "spotlight-terminal"
+    src: /screenshots/spotlight-terminal.jpg
+    caption: "Search for “Terminal” and double-click."
