@@ -16,7 +16,7 @@ abstract: "How-to guides, demos, webinars, and more"
 
 ## Articles
 
-*Learn how quire works and why certain decisions were made when developing the tool.*
+*Learn how Quire works and why certain decisions were made when developing the tool.*
 
 [Why Open Source Quire?](/about/open-source/)
 
