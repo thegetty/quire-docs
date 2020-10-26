@@ -181,7 +181,7 @@
 #cover .quire #main {
   background-image: url('../img/illustrations/footer-graphic.png');
   background-position-x: center;
-  background-position-y: bottom -3rem;
+  background-position-y: bottom;
   background-size: 105%;
   background-repeat: no-repeat;
 }
