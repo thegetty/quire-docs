@@ -47,3 +47,11 @@ We also plan to develop a number of specific features in conjunction with forthc
 
 -  ![Explore icon](/img/illustrations/roadmap.png)
 </div>
+
+Sign-up for our monthly newsletter to get the latest on Quire updates, fixes, and new feature releases.
+
+<div class="action-button">
+
+[Stay updated](http://eepurl.com/hg8ROf)
+
+</div>
