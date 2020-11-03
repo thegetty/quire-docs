@@ -121,7 +121,7 @@ Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1
 
 <div class="feature-cards cover-footer">
 
-- [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](#)
+- [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](http://eepurl.com/hg8ROf)
 
   For news, updates, and events, <br />sign up for our mailing list
 
