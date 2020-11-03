@@ -28,6 +28,21 @@ We welcome users at all levels of technical expertise and publishing experience.
 </div>
 <div class="image-list">
 
+## Stay Updated
+
+Sign-up to receive our monthly newsletter, your source for all things Quire, from news and events to feature updates and highlights from the community.
+
+<div class="action-button">
+
+[Subscribe Now](http://eepurl.com/hg8ROf)
+
+</div>
+
+![Explore icon](/img/illustrations/undraw_Newsletter_re_wrob.png)
+
+</div>
+<div class="image-list">
+
 ## Participate in Forum
 
 Here you will find community-based support to help you navigate the ins and outs of Quire. Ask and answer questions, share ideas, raise issues, and assist your fellow community members.
