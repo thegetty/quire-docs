@@ -4,6 +4,7 @@ weight: 2200
 type: essay
 abstract: "Connect with Quire users to answer questions and share ideas"
 external_url: https://github.com/gettypubs/quire/discussions
+search: false
 ---
 
 Welcome to the Quire forum! Here you will find community-based support to help you navigate the ins and outs of Quire. We encourage you to ask and answer questions, share ideas, raise issues, collaborate, and assist your fellow community members.
