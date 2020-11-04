@@ -88,11 +88,11 @@ resource_link:
     name: GitHub
     url: https://github.com/gettypubs/quire/
   - type: footer-link
+    name: Newsletter
+    url: http://eepurl.com/hg8ROf
+  - type: footer-link
     name: Contributing
     url: https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md
-  - type: footer-link
-    name: Code of Conduct
-    url: https://github.com/gettypubs/quire/blob/master/CODE_OF_CONDUCT.md
   - type: footer-link
     name: About
     link_relation: about
@@ -100,6 +100,9 @@ resource_link:
   - type: footer-link
     name: Contact
     url: mailto:quire@getty.edu
+  - type: footer-link
+    name: Code of Conduct
+    url: https://github.com/gettypubs/quire/blob/master/CODE_OF_CONDUCT.md
   - type: footer-link
     name: Privacy Policy
     url: https://www.getty.edu/legal/privacy.html
