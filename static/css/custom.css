@@ -515,6 +515,10 @@ a.quire-navbar-controls__site-logo img {
   width: 1em;
   margin-left: .25em;
 }
+/* Use dark gray arrow in page items */
+.section-item ul .page-item a[target=_blank]::after {
+  content: url('../img/icons/right-up-arrow--dark-gray.svg');
+}
 /* Make these links the accent color */
 .quire-navbar a[target=_blank],
 .quire-menu__list > ul > .page-item a[target=_blank] {
@@ -767,6 +771,10 @@ dt code {
 /* More space at bottom of page */
 .quire-page__content .container .content {
   padding-bottom: 8rem;
+}
+/* Tilt arrows when link if external */
+.quire-contents-list .arrow-offsite svg {
+  transform: rotate(-45deg);
 }
 
 /* GRID LAYOUT -- JOIN US PAGE
