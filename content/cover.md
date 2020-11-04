@@ -112,7 +112,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 Developed by Getty, Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
-Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1fgZu5BHKhddMrW7), [participating in the forum](https://github.com/gettypubs/quire/discussions), [contributing to code](https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](https://quire.netlify.app/community/news-events/), among other exciting opportunities.  
+Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1fgZu5BHKhddMrW7), [participating in the forum](https://github.com/gettypubs/quire/discussions), [contributing to code](https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](https://quire.netlify.app/community/news-events/), among other exciting opportunities.
 
 <div class="action-button">
 
@@ -135,6 +135,6 @@ Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1
 
 [About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Get Access](https://forms.gle/m1fgZu5BHKhddMrW7)
 
-[GitHub](https://github.com/gettypubs/quire/) | [Contact](mailto:quire@getty.edu)
+[GitHub](https://github.com/gettypubs/quire/) | [Newsletter](http://eepurl.com/hg8ROf) | [Contact](mailto:quire@getty.edu)
 
 </div>
