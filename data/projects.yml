@@ -33,7 +33,7 @@ project_list:
 
   - id: "thomas_rife"
     src: /screenshots/_thomas_rife.jpg
-    alt: "Screenshot of publication cover: a color drawing of a western scene with four cowboys and a wagon"
+    alt: "The Alamo Keeper: Thomas C. Rife"
     type: Family History
     publisher: Self-Published
     title_info: "*The Alamo Keeper: Thomas C. Rife*, by Philip Mullins and George Mullins"
@@ -46,7 +46,7 @@ project_list:
 
   - id: "artists_studios_paris"
     src: /screenshots/_artists_studios_paris.jpg
-    alt: "Screenshot of publication cover: an old painting of a large building in Paris and a cloud yellow-blue sky"
+    alt: "Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World"
     type: Journal Article
     publisher: Journal18
     title_info: "“Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World,” by Hannah Williams"
@@ -59,7 +59,7 @@ project_list:
 
   - id: "bending_lines"
     src: /screenshots/_bending_lines.jpg
-    alt: "Screenshot of publication cover: a stylized map of the world in shades of deep blue, with a thick red dashed line curving across it"
+    alt: "Bending Lines: Maps and Data from Distortion to Deception"
     type: Online Exhibition
     publisher: Leventhal Map & Education Center, Boston Public Library
     title_info: "*Bending Lines: Maps and Data from Distortion to Deception*"
@@ -72,7 +72,7 @@ project_list:
 
   - id: "fault_lines"
     src: /screenshots/_fault_lines.jpg
-    alt: "Screenshot of publication cover: a distorted and cropped photograph of a lower arm in front of a dark background"
+    alt: "Fault Lines: 2020 Senior Thesis Exhibition"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
     title_info: "*Fault Lines: 2020 Senior Thesis Exhibition*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir"
@@ -85,7 +85,7 @@ project_list:
 
   - id: "in_plain_sight"
     src: /screenshots/_in_plain_sight.jpg
-    alt: "Screenshot of publication cover: a wall of multiple framed and hung pieces of art viewed behind a sheet of partially opaque material"
+    alt: "In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
     title_info: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor"
@@ -98,7 +98,7 @@ project_list:
 
   - id: "state_of_convergence"
     src: /screenshots/_state_of_convergence.jpg
-    alt: "Screenshot of publication cover: a fist punches through a sheet, onto which an image of mountains and trees is projected"
+    alt: "State of Convergence"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
     title_info: "*State of Convergence*"
@@ -111,7 +111,7 @@ project_list:
 
   - id: "tilt_west"
     src: /screenshots/_tilt_west.jpg
-    alt: "Screenshot of publication cover: a collage of scraps of text and brown, red, and green geometric shapes on a yellow background"
+    alt: "Tilt West Journal, vol. 1, Art and Language"
     type: Journal
     publisher: Tilt West
     title_info: "*Tilt West Journal, vol. 1, Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson"
@@ -124,7 +124,7 @@ project_list:
 
   - id: "silk_poems"
     src: /screenshots/_silk_poems.jpg
-    alt: "Screenshot of publication cover: a dark grey mottled line loops multiple times across the page set against a light grey background"
+    alt: "Silk Poem"
     type: Exhibition Catalogue
     publisher: Hong Kong University Museum of Art Gallery
     title_info: "*Silk Poems*"
@@ -137,7 +137,7 @@ project_list:
 
   - id: "ancient_ambers"
     src: /screenshots/_ancient_ambers.jpg
-    alt: "Screenshot of publication cover: a humanoid figurine carved out of dark red amber"
+    alt: "Ancient Carved Ambers in the J. Paul Getty Museum"
     type: Collection Catalogue
     publisher: Getty Publications
     title_info: "*Ancient Carved Ambers in the J. Paul Getty Museum*, by Faya Causey"
@@ -150,7 +150,7 @@ project_list:
 
   - id: "cva"
     src: /screenshots/_cva.jpg
-    alt: "Screenshot of publication cover: black text in Latin and French on an off-white background"
+    alt: "Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters"
     type: Corpus Vasorum Antiquorum
     publisher: Getty Publications
     title_info: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis"
@@ -163,7 +163,7 @@ project_list:
 
   - id: "heritage_management"
     src: /screenshots/_heritage_management.jpg
-    alt: "Screenshot of publication cover: a patinated bronze sculpture covered in graffiti is being lifted off its pedestal with a crane as onlookers watch"
+    alt: "Values in Heritage Management: Emerging Approaches and Research Directions"
     type: Proceedings
     publisher: Getty Publications
     title_info: "*Values in Heritage Management: Emerging Approaches and Research Directions*, by Erica Avrami, Susan MacDonald, Randall Madison, and David Myers"
@@ -176,7 +176,7 @@ project_list:
 
   - id: "tour_toolkit"
     src: /screenshots/_tour_toolkit.jpg
-    alt: "Screenshot of publication cover: a docent gives a tour to a group of schoolchildren inside a museum gallery"
+    alt: "Tour Toolkit: Developing an Inclusive Tour"
     type: Informational Pamphlet
     publisher: Minneapolis Institute of Art
     title_info: "*Tour Toolkit: Developing an Inclusive Tour*, by Minneapolis Institute of Art"
@@ -189,7 +189,7 @@ project_list:
 
   - id: "alcohols_empire"
     src: /screenshots/_alcohols_empire.jpg
-    alt: "Screenshot of publication cover: three cocktails sit on a stone table with sprigs of rosemary superimposed onto the photograph"
+    alt: "Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World"
     type: Interactive Publication
     publisher: Minneapolis Institute of Art
     title_info: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*, edited by Nicole LaBouff and Emily Beck"
@@ -202,7 +202,7 @@ project_list:
 
   - id: "mozoomdar_at_sea"
     src: /screenshots/_mozoomdar_at_sea.jpg
-    alt: "Screenshot of publication cover: a watercolor and pencil image of the 1893 Columbian Exposition from a bird's eye perspective"
+    alt: "Mozoomdar at Sea"
     type: Research Project
     publisher: Self-Published
     title_info: "*Mozoomdar at Sea*, by Nick Tackes"
@@ -215,7 +215,7 @@ project_list:
 
   - id: "humanizing_the_digital"
     src: /screenshots/_humanizing_the_digital.jpg
-    alt: "Screenshot of publication cover: black text on a white background with anthropomorphized computer file folders smattered across two wavy registers of qr-code"
+    alt: "Humanizing the Digital: Unproceedings from the MCN 2018 Conference"
     type: Proceedings
     publisher: Ad Hoc Museum Collective
     title_info: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, edited by Suse Anderson, Isabella Bruno, Hannah Hethmon, Seema Rao, Ed Rodley, and Rachel Ropeik"
@@ -228,7 +228,7 @@ project_list:
 
   - id: "state_of_museum_dig"
     src: /screenshots/_state_of_museum_dig.jpg
-    alt: "Screenshot of publication cover: myriad strands of twinkle lights hung in two horizontal registers across a large architectural space"
+    alt: "The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses"
     type: Graduate Student Project
     publisher: Ad Hoc Museum Collective
     title_info: "*The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses*, by Suse Anderson, Cristin Guinan-Wiley, Jonathan Edelman, Rachel Rosenfeld, Mary McCulla, Sheridan Small, Cynthia Kurtz, Amy Pollard, Corrie Brady, Melissa Garcia, Caitlin Hepner, Sydney Thatcher, Laura Dickson, and Rebecca Brockette"
