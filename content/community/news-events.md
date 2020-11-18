@@ -15,6 +15,12 @@ abstract: "Get the latest news and info about upcoming events"
 - Mar 9, 2020: Welcome to our new community manager, Erin Cecele Dunigan!
 - Feb 3, 2020: Quire [v0.18.0](https://github.com/gettypubs/quire-starter-theme/releases/tag/v0.18.0) released
 
+<div class="action-button">
+
+[Sign-up for Newsletter](http://eepurl.com/hg8ROf)
+
+</div>
+
 
 ## Upcoming Events
 
@@ -39,5 +45,3 @@ abstract: "Get the latest news and info about upcoming events"
 | Making Scholarly Digital Publications | April 5–6, 2018 | A two-day convening hosted by Getty, USC, and Brown University, and including teams from a variety of platforms: Quire, [Fulcrum](https://www.fulcrum.org/), [Editoria](https://editoria.pub/), [Scalar](https://scalar.me/), and [Manifold](https://manifoldapp.org/). |
 | College Art Association (CAA) | Feb 23, 2018 | “Open-Source Digital Publishing with Quire,” a workshop with Greg Albers and Sarah Wambold. |
 | MCN (Museum Computer Network) | November 7, 2017 | “Hands on with Static-Site Generators: Publishing Modern Sites with a 1990s Approach,” a half-day Quire workshop with Greg Albers and Eric Gardner. |
-
-
