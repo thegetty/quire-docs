@@ -238,3 +238,16 @@ project_list:
     github_user:
       - shineslike
     note: "This publication was written, edited and published by students in George Washington University's Museums and Digital Technology class. Each student was responsible for creating an essay that explores a specific area of museum digital practice today."
+
+  - id: "50_x_50"
+    src: /screenshots/_50x50.jpg
+    alt: "50x50: Stories of Visionary Artists from the Collection: A digital publication on the 50th Anniversary of San José Museum of Art."
+    type: Collection Catalogue
+    publisher: San José Museum of Art
+    title_info: "*50x50: Stories of Visionary Artists from the Collection*"
+    pub_date: 2020-07-31
+    url: https://50x50.sjmusart.org/
+    customization_level: extensive
+    github_user:
+      - sheltonsjma
+    note: "This publication is in honor of the museum's 50th anniversary. The collection catalogue has been extensively customized, including changes to the theme template and significant alterations to layout and functionality of the object entry pages."
