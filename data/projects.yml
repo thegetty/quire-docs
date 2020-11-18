@@ -33,7 +33,7 @@ project_list:
 
   - id: "thomas_rife"
     src: /screenshots/_thomas_rife.jpg
-    alt: "The Alamo Keeper: Thomas C. Rife"
+    alt: "The Alamo Keeper: Thomas C. Rife by Philip Mullins and George Mullins"
     type: Family History
     publisher: Self-Published
     title_info: "*The Alamo Keeper: Thomas C. Rife*, by Philip Mullins and George Mullins"
@@ -46,7 +46,7 @@ project_list:
 
   - id: "artists_studios_paris"
     src: /screenshots/_artists_studios_paris.jpg
-    alt: "Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World"
+    alt: "Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World by Hannah Williams"
     type: Journal Article
     publisher: Journal18
     title_info: "“Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World,” by Hannah Williams"
@@ -137,7 +137,7 @@ project_list:
 
   - id: "ancient_ambers"
     src: /screenshots/_ancient_ambers.jpg
-    alt: "Ancient Carved Ambers in the J. Paul Getty Museum"
+    alt: "Ancient Carved Ambers in the J. Paul Getty Museum by Faya Causey"
     type: Collection Catalogue
     publisher: Getty Publications
     title_info: "*Ancient Carved Ambers in the J. Paul Getty Museum*, by Faya Causey"
@@ -150,7 +150,7 @@ project_list:
 
   - id: "cva"
     src: /screenshots/_cva.jpg
-    alt: "Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters"
+    alt: "Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters by Despoina Tsiafakis"
     type: Corpus Vasorum Antiquorum
     publisher: Getty Publications
     title_info: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis"
@@ -189,7 +189,7 @@ project_list:
 
   - id: "alcohols_empire"
     src: /screenshots/_alcohols_empire.jpg
-    alt: "Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World"
+    alt: "Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World edited by Nicole LaBouff and Emily Beck"
     type: Interactive Publication
     publisher: Minneapolis Institute of Art
     title_info: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*, edited by Nicole LaBouff and Emily Beck"
@@ -202,7 +202,7 @@ project_list:
 
   - id: "mozoomdar_at_sea"
     src: /screenshots/_mozoomdar_at_sea.jpg
-    alt: "Mozoomdar at Sea"
+    alt: "Mozoomdar at Sea by Nick Tackes"
     type: Research Project
     publisher: Self-Published
     title_info: "*Mozoomdar at Sea*, by Nick Tackes"
