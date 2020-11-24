@@ -251,3 +251,16 @@ project_list:
     github_user:
       - sheltonsjma
     note: "This publication is in honor of the museum's 50th anniversary. The collection catalogue has been extensively customized, including changes to the theme template and significant alterations to layout and functionality of the object entry pages."
+
+  - id: "atelier_17"
+    src: /screenshots/_atelier_17.jpg
+    alt: "The Women of Atelier 17: The Biographical Supplement by Christina Weyl"
+    type: Collection Catalogue
+    publisher: Self-Published
+    title_info: "“Documentation.” *The Women of Atelier 17: The Biographical Supplement*"
+    pub_date: 2019-01-01
+    url: https://atelier17.christinaweyl.com/
+    customization_level: minor
+    github_user:
+      - christinaweyl
+    note: "This catalogue was produced as a digital companion to a print publication by the same author. It's an excellent example of how the digital can complement print publishing."
