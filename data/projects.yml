@@ -264,3 +264,16 @@ project_list:
     github_user:
       - christinaweyl
     note: "This catalogue was produced as a digital companion to a print publication by the same author. It's an excellent example of how the digital can complement print publishing."
+
+  - id: "ray_komai"
+    src: /screenshots/_ray_komai.jpg
+    alt: "Ray Komai: *Architectural Forum* Covers 1953-1963"
+    type: Exhibition Catalogue
+    publisher: The Graphics Office
+    title_info: "*RAY KOMAI: *Architectural Forum* covers, 1953-1963*"
+    pub_date: 2020-11-06
+    url: https://raykomai.org/
+    customization_level: minor
+    github_user:
+      - natalienardello
+    note: "This project accompanies a book about Ray Komai by Doug Clouse of the Graphics Office, published by Counselor Books. It was inspired by an exhibition based on the book at Fordham University in 2019. This publication marks The Graphics Office's first foray into digital publishing."
