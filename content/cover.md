@@ -20,7 +20,7 @@ slug: .
 
 </div>
 
-{{< q-showcase projects="50_x_50, bending_lines, fault_lines, ray_komai, heritage_management" class="full-width-slider slider-md" sort="false" >}}
+{{< q-showcase projects="50_x_50, bending_lines, fault_lines, ray_komai, tilt_art_community" class="full-width-slider slider-md" sort="false" >}}
 
 <div class="action-button">
 
