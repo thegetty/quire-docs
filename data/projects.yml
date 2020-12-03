@@ -111,7 +111,7 @@ project_list:
 
   - id: "tilt_west"
     src: /screenshots/_tilt_west.jpg
-    alt: "Tilt West Journal, vol. 1, Art and Language"
+    alt: "Tilt West Journal, Art & Language, Vol. 1 - March 2020"
     type: Journal
     publisher: Tilt West
     title_info: "*Tilt West Journal, vol. 1, Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson"
@@ -120,7 +120,7 @@ project_list:
     customization_level: minor
     github_user:
       - swambold1
-    note: "Inaugural issue of *Title West Journal.* Previously, content existed on their SoundCloud stream or via comissioned Medium articles. Quire enabled the *Tilt West* team to meaningfully expand their programming."
+    note: "Inaugural issue of *Tilt West Journal.* Previously, content existed on their SoundCloud stream or via comissioned Medium articles. Quire enabled the *Tilt West* team to meaningfully expand their programming."
 
   - id: "silk_poems"
     src: /screenshots/_silk_poems.jpg
@@ -277,3 +277,16 @@ project_list:
     github_user:
       - natalienardello
     note: "This project accompanies a book about Ray Komai by Doug Clouse of the Graphics Office, published by Counselor Books. It was inspired by an exhibition based on the book at Fordham University in 2019. This publication marks The Graphics Office's first foray into digital publishing."
+
+  - id: "tilt_art_community"
+    src: /screenshots/_tilt_west_2.jpg
+    alt: "Art & Community, Tilt West Journal, Vol. 2, December 2020"
+    type: Journal
+    publisher: Tilt West
+    title_info: "*Tilt West Journal, Vol. 2, Art and Language* by Wisdom Amouzou, Gio Barabadze, Stephen Brackett, Gregg Deal, Asia Dorsey, Cory Feder, Anthony Garcia, Sr., Cory Minkah Montalvo, Bryánne E. Mitchell-Gonzales, Kai Lee Mykels, Shelsea Ochoa, Kim Shively, Dujie Tahat, and Motus Theater."
+    pub_date: 2020-12-03
+    url: http://journal.tiltwest.org/vol2/
+    customization_level: moderate
+    github_user:
+      - swambold1
+    note: "The Second issue of *Tilt West Journal* features an animated cover and is further enriched with audio and video components. While printed copies are still available for purchase, the Tilt West team uses Quire to expand the boundaries of what digital journal publishing can encompass."
