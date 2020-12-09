@@ -232,9 +232,6 @@ git clone https://github.com/gettypubs/quire-cli
 cd quire-cli
 ```
 
-```sh
-git checkout pc-dev
-```
 Install Dependencies
 
 ```sh
