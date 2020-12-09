@@ -21,7 +21,7 @@ Our community members represent a broad spectrum of institutions, both large and
 - ![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)
 </div>
 
-Quire is designed to ensure that digital books and their contents are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables robust preservation and distribution of works in an simplified and accessible format.
+Quire is designed to ensure that digital books and their contents are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables robust preservation and distribution of works in a simplified and accessible format.
 
 <div class="action-button">
 
@@ -50,11 +50,9 @@ Currently under development for potential release as [open-source software](/abo
 
 <div class="feature-list">
 
-- **Operating System Compatibility** Work on your Mac, Windows, or Linux computer
-- **Responsive Web Design** Publish books that will work equally on tablets, desktops, and smartphones
 - **Multiformat Output** Generate publications as websites, EPUB and MOBI ebooks, and PDFs
 - **Realtime Publication Preview** Make changes and view them live in your browser
-- **Web Accessibility** Adhere to [WCAG2.0](https://www.w3.org/TR/WCAG20/) web accessibility principles
+- **Web Accessibility** Include logical reading order, alt texts, language codes, semantic section elements, and more
 - **SEO Optimization** Include metadata and tags for enhanced {{< q-def "search engine optimization" >}}
 - **Single-source Publishing** Change content once to change it across all formats, without duplicating effort
 - **Customizable Styles & Fonts** Customize your publication's look and feel to suit your needs
@@ -89,7 +87,7 @@ Here are some things to consider:
 - Multiformat output means E-book files are distribution-ready for Amazon, Apple, and other vendors; PDF files are print-on-demand ready, and the online edition can be hosted on any web server. [Learn more about Quire's multiformat output capabilities.](/documentation/quire-cli/#outputting-files)
 - Quire is compatible with most operating systems, whether you're using a MAC, PC, or Linux. [Visit our installation guidelines.](/documentation/install-uninstall/)
 - No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or, if you have more advanced resources, you can customize and adapt Quire to your unique content. [Visit our documentation.](/documentation/getting-started/)
-- We know how intimidating learning new technology can be, but we've got you covered. We've created a helpful tutorial to guide you through each step of using Quire, and additional tools and resources are coming soon. [Learn more.](/learn/tutorial/)
+- We know how intimidating learning new technology can be, but we've got you covered. We're creating helpful tutorials to guide you through each step of using Quire, and additional tools and resources are coming soon. [Learn more.](/learn/tutorial/)
 - We have a vibrant and diverse community of users that are here to help. [Visit our Community Forum.](/community/forum/)
 - We are moving Quire towards an open-source, community-supported model, and are currently following open-source software standards. Our goal is to launch an officially open-source Quire by 2022. [Learn more about the benefits of open-source development.](/about/open-source/)
 
