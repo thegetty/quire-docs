@@ -13,4 +13,4 @@ Developed by Getty, Quire is now being used by a growing community of scholars, 
 
 </div>
 
-{{< q-showcase >}}
+{{< q-showcase >}} 

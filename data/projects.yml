@@ -111,7 +111,7 @@ project_list:
 
   - id: "tilt_west"
     src: /screenshots/_tilt_west.jpg
-    alt: "Tilt West Journal, vol. 1, Art and Language"
+    alt: "Tilt West Journal, Art & Language, Vol. 1 - March 2020"
     type: Journal
     publisher: Tilt West
     title_info: "*Tilt West Journal, vol. 1, Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson"
@@ -120,20 +120,20 @@ project_list:
     customization_level: minor
     github_user:
       - swambold1
-    note: "Inaugural issue of *Title West Journal.* Previously, content existed on their SoundCloud stream or via comissioned Medium articles. Quire enabled the *Tilt West* team to meaningfully expand their programming."
+    note: "Inaugural issue of *Tilt West Journal.* Previously, content existed on their SoundCloud stream or via comissioned Medium articles. Quire enabled the *Tilt West* team to meaningfully expand their programming."
 
   - id: "silk_poems"
     src: /screenshots/_silk_poems.jpg
     alt: "Silk Poem"
     type: Exhibition Catalogue
-    publisher: Hong Kong University Museum of Art Gallery
+    publisher: Hong Kong University Museum and Art Gallery
     title_info: "*Silk Poems*"
     pub_date: 2020-06-05
     url: https://1000camels.github.io/jen-bervin/
     customization_level: moderate
     github_user:
       - tipeslowly
-    note: "This is the first volume in UMAG's Digital Chapbook series."
+    note: "Text to come"
 
   - id: "ancient_ambers"
     src: /screenshots/_ancient_ambers.jpg
@@ -238,3 +238,81 @@ project_list:
     github_user:
       - shineslike
     note: "This publication was written, edited and published by students in George Washington University's Museums and Digital Technology class. Each student was responsible for creating an essay that explores a specific area of museum digital practice today."
+
+  - id: "50_x_50"
+    src: /screenshots/_50x50.jpg
+    alt: "50x50: Stories of Visionary Artists from the Collection: A digital publication on the 50th Anniversary of San José Museum of Art."
+    type: Collection Catalogue
+    publisher: San José Museum of Art
+    title_info: "*50x50: Stories of Visionary Artists from the Collection*"
+    pub_date: 2020-07-31
+    url: https://50x50.sjmusart.org/
+    customization_level: extensive
+    github_user:
+      - sheltonsjma
+    note: "This publication is in honor of the museum's 50th anniversary. The collection catalogue has been extensively customized, including changes to the theme template and significant alterations to layout and functionality of the object entry pages."
+
+  - id: "atelier_17"
+    src: /screenshots/_atelier_17.jpg
+    alt: "The Women of Atelier 17: The Biographical Supplement by Christina Weyl"
+    type: Collection Catalogue
+    publisher: Self-Published
+    title_info: "“Documentation.” *The Women of Atelier 17: The Biographical Supplement*"
+    pub_date: 2019-01-01
+    url: https://atelier17.christinaweyl.com/
+    customization_level: minor
+    github_user:
+      - christinaweyl
+    note: "This catalogue was produced as a digital companion to a print publication by the same author. It's an excellent example of how the digital can complement print publishing."
+
+  - id: "ray_komai"
+    src: /screenshots/_ray_komai.jpg
+    alt: "Ray Komai: *Architectural Forum* Covers 1953-1963"
+    type: Exhibition Catalogue
+    publisher: The Graphics Office
+    title_info: "*RAY KOMAI: *Architectural Forum* covers, 1953-1963*"
+    pub_date: 2020-11-06
+    url: https://raykomai.org/
+    customization_level: minor
+    github_user:
+      - natalienardello
+    note: "This project accompanies a book about Ray Komai by Doug Clouse of the Graphics Office, published by Counselor Books. It was inspired by an exhibition based on the book at Fordham University in 2019. This publication marks The Graphics Office's first foray into digital publishing."
+
+  - id: "tilt_art_community"
+    src: /screenshots/_tilt_west_2.jpg
+    alt: "Art & Community, Tilt West Journal, Vol. 2, December 2020"
+    type: Journal
+    publisher: Tilt West
+    title_info: "*Tilt West Journal, Vol. 2, Art and Language* by Wisdom Amouzou, Gio Barabadze, Stephen Brackett, Gregg Deal, Asia Dorsey, Cory Feder, Anthony Garcia, Sr., Cory Minkah Montalvo, Bryánne E. Mitchell-Gonzales, Kai Lee Mykels, Shelsea Ochoa, Kim Shively, Dujie Tahat, and Motus Theater."
+    pub_date: 2020-12-03
+    url: http://journal.tiltwest.org/vol2/
+    customization_level: moderate
+    github_user:
+      - swambold1
+    note: "The Second issue of *Tilt West Journal* features an animated cover and is further enriched with audio and video components. While printed copies are still available for purchase, the Tilt West team uses Quire to expand the boundaries of what digital journal publishing can encompass."
+
+  - id: "pictorial_silks"
+    src: /screenshots/_pictorial_silks.jpg
+    alt: "Pictorial Silk: Chinese Textiles from UMAG, University Museum and Art Gallery"
+    type: Exhibition Catalogue
+    publisher: Hong Kong Universitiy Museum and Art Gallery
+    title_info: "*Pictorial Silk: Chinese Textiles from UMAG*"
+    pub_date: 2020-12-09
+    url: https://tipeslowly.github.io/textiles/
+    customization_level: moderate
+    github_user:
+      - tipeslowly
+    note: "Text to come"
+
+  - id: "clouds_of_ink"
+    src: /screenshots/_clouds_of_ink.jpg
+    alt: "Clouds of Ink Pools of Color, Hou Beiren, UMAG"
+    type: Exhibition Catalogue
+    publisher: Hong Kong Universitiy Museum and Art Gallery
+    title_info: "*Clouds of Ink Pools of Color: Hou Beiren*"
+    pub_date: 2020-12-09
+    url: https://tipeslowly.github.io/HBR/
+    customization_level: moderate
+    github_user:
+      - tipeslowly
+    note: "Text to come"
