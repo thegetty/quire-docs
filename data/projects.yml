@@ -126,14 +126,14 @@ project_list:
     src: /screenshots/_silk_poems.jpg
     alt: "Silk Poem"
     type: Exhibition Catalogue
-    publisher: Hong Kong University Museum of Art Gallery
+    publisher: Hong Kong University Museum and Art Gallery
     title_info: "*Silk Poems*"
     pub_date: 2020-06-05
     url: https://1000camels.github.io/jen-bervin/
     customization_level: moderate
     github_user:
       - tipeslowly
-    note: "This is the first volume in UMAG's Digital Chapbook series."
+    note: "Text to come"
 
   - id: "ancient_ambers"
     src: /screenshots/_ancient_ambers.jpg
@@ -290,3 +290,29 @@ project_list:
     github_user:
       - swambold1
     note: "The Second issue of *Tilt West Journal* features an animated cover and is further enriched with audio and video components. While printed copies are still available for purchase, the Tilt West team uses Quire to expand the boundaries of what digital journal publishing can encompass."
+
+  - id: "pictorial_silks"
+    src: /screenshots/_pictorial_silks.jpg
+    alt: "Pictorial Silk: Chinese Textiles from UMAG, University Museum and Art Gallery"
+    type: Exhibition Catalogue
+    publisher: Hong Kong Universitiy Museum and Art Gallery
+    title_info: "*Pictorial Silk: Chinese Textiles from UMAG*"
+    pub_date: 2020-12-09
+    url: https://tipeslowly.github.io/textiles/
+    customization_level: moderate
+    github_user:
+      - tipeslowly
+    note: "Text to come"
+
+  - id: "clouds_of_ink"
+    src: /screenshots/_clouds_of_ink.jpg
+    alt: "Clouds of Ink Pools of Color, Hou Beiren, UMAG"
+    type: Exhibition Catalogue
+    publisher: Hong Kong Universitiy Museum and Art Gallery
+    title_info: "*Clouds of Ink Pools of Color: Hou Beiren*"
+    pub_date: 2020-12-09
+    url: https://tipeslowly.github.io/HBR/
+    customization_level: moderate
+    github_user:
+      - tipeslowly
+    note: "Text to come"
