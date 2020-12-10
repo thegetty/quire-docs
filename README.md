@@ -51,7 +51,7 @@ Thank you to all our growing list of contributors who have made Quire what it is
 - [@daniel-keller](https://github.com/daniel-keller)
 - [@egardner](https://github.com/egardner)
 - [@fchasen](https://github.com/fchasen)
-- [hbalenda](https://github.com/hbalenda)
+- [@hbalenda](https://github.com/hbalenda)
 - [@kalvarenga](https://github.com/kalvarenga)
 - [@kristhayer11](https://github.com/kristhayer11)
 - [@mandrijauskas](https://github.com/mandrijauskas)
