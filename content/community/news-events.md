@@ -7,8 +7,9 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## News
 
-*Check out the [latest issue of our e-newsletter](#) for more.*
+*Check out the [latest issue of our monthly e-newsletter](#) or [sign up to receive updates.](http://eepurl.com/hg8ROf)*
 
+- Dec. 1, 2020: Quire [newsletter](https://getty.us2.list-manage.com/subscribe?u=1c7a128ace0f62e28a54549a3&id=b5e9f0e027) and [community forum](https://github.com/gettypubs/quire/discussions) are launched
 - Oct 3, 2020: [Six new features](/about/roadmap/) added to our roadmap
 - Sept 30, 2020: Quire team selected to beta test [*It Takes A Village: Open Source Software Sustainability*](https://www.lyrasis.org/programs/Pages/IMLS-OSS.aspx) tools
 - Sept 16, 2020: Welcome to Getty’s development team, Hannah Balenda!
@@ -39,5 +40,3 @@ abstract: "Get the latest news and info about upcoming events"
 | Making Scholarly Digital Publications | April 5–6, 2018 | A two-day convening hosted by Getty, USC, and Brown University, and including teams from a variety of platforms: Quire, [Fulcrum](https://www.fulcrum.org/), [Editoria](https://editoria.pub/), [Scalar](https://scalar.me/), and [Manifold](https://manifoldapp.org/). |
 | College Art Association (CAA) | Feb 23, 2018 | “Open-Source Digital Publishing with Quire,” a workshop with Greg Albers and Sarah Wambold. |
 | MCN (Museum Computer Network) | November 7, 2017 | “Hands on with Static-Site Generators: Publishing Modern Sites with a 1990s Approach,” a half-day Quire workshop with Greg Albers and Eric Gardner. |
-
-

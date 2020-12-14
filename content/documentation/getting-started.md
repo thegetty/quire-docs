@@ -5,9 +5,11 @@ weight: 4100
 abstract: "Dive in to creating your first Quire publication"
 ---
 
+Before getting started, if you have not done so already, we recommend taking some time to review our beginner's guide [*Tutorial: Quire Basics*](/learn/tutorial.md/) which is step-by-step introduction to the fundamentals of Quire. 
+
 ## Start a New Project
 
-Now that you have [installed Quire](/documentation/install-uninstall/) its time to get started on your first publication. To create a new project you will be running the `quire new` command. You can learn more about various commands in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
+Now that you have taken the [tutorial](/learn/tutorial.md/) and [installed Quire](/documentation/install-uninstall/) its time to get started on your first publication. To create a new project you will be running the `quire new` command. You can learn more about various commands in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
 
 ```tx
 quire new project-name

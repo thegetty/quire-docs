@@ -15,15 +15,15 @@ We also plan to develop a number of specific features in conjunction with forthc
 
 - **IIIF Image Tiling**
 
-    Adds deep-zooming to any image, using the open [IIIF](https://iiif.io/) specification. Either point Quire to an existing IIIF repository, or add high-resolutions images into a Quire project directly.
+    Adds deep-zooming to any image, using the open [IIIF](https://iiif.io/) specification. Either point Quire to an existing IIIF repository, or add high-resolution images into a Quire project directly.
 
-    *Expected release: Fall 2020*
+    *Expected release: Winter 2020*
 
 - **Multi-level Subsections**
 
-    Enables Quire publications to be authored with an arbitrary depth of content subsections that are supported by the table of contents and content navigation.
+    Enables Quire publications to be authored with an arbitrary depth of content subsections supported by the table of contents and content navigation.
 
-    *Expected release: Fall 2020*  
+    *Expected release: Winter 2020*  
 
 - **360º Images**
 
@@ -48,7 +48,7 @@ We also plan to develop a number of specific features in conjunction with forthc
 -  ![Explore icon](/img/illustrations/roadmap.png)
 </div>
 
-Sign-up for our monthly newsletter to get the latest on Quire updates, fixes, and new feature releases.
+**Sign-up for our monthly newsletter to get the latest on Quire updates, fixes, and new feature releases.**
 
 <div class="action-button">
 
