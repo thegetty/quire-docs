@@ -17,13 +17,13 @@ We also plan to develop a number of specific features in conjunction with forthc
 
     Adds deep-zooming to any image, using the open [IIIF](https://iiif.io/) specification. Either point Quire to an existing IIIF repository, or add high-resolution images into a Quire project directly.
 
-    *Expected release: Winter 2020*
+    *Expected release: Winter 2021*
 
 - **Multi-level Subsections**
 
     Enables Quire publications to be authored with an arbitrary depth of content subsections supported by the table of contents and content navigation.
 
-    *Expected release: Winter 2020*  
+    *Expected release: Winter 2021*  
 
 - **360º Images**
 
