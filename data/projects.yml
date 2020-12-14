@@ -133,7 +133,7 @@ project_list:
     customization_level: moderate
     github_user:
       - tipeslowly
-    note: "Text to come"
+    note: "Jen Bervin's *Silk Poems* was UMAG's first Quire project. Thanks to support from the US Consulate in Hong Kong, UMAG was able to cut their teeth on the Quire CLI and Github, while creating a platform to document Jen Bervin's exhibition and participation at International Poetry Nights in Hong Kong."
 
   - id: "ancient_ambers"
     src: /screenshots/_ancient_ambers.jpg
@@ -302,17 +302,17 @@ project_list:
     customization_level: moderate
     github_user:
       - tipeslowly
-    note: "Text to come"
+    note: "*Pictorial Silks* presents highlights from UMAG's collection of Qing dynasty silk textiles. The online platform was designed in Quire to complement an exhibition and print publication originally scheduled for release in December 2020."
 
   - id: "clouds_of_ink"
     src: /screenshots/_clouds_of_ink.jpg
-    alt: "Clouds of Ink Pools of Color, Hou Beiren, UMAG"
+    alt: "Clouds of Ink, Pools of Colour, Hou Beiren, UMAG"
     type: Exhibition Catalogue
     publisher: Hong Kong Universitiy Museum and Art Gallery
-    title_info: "*Clouds of Ink Pools of Color: Hou Beiren*"
+    title_info: "*Clouds of Ink, Pools of Colour: Hou Beiren*"
     pub_date: 2020-12-09
     url: https://tipeslowly.github.io/HBR/
     customization_level: moderate
     github_user:
       - tipeslowly
-    note: "Text to come"
+    note: "*Clouds of Ink, Pools of Colour* was developed as a snapshot of the print publication of Hou Beiren's work, and as a catalogue for a series of his paintings recently donated to UMAG."
