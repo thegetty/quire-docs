@@ -6,7 +6,7 @@
 
 Online • Print • E-book
 
-https://gettypubs.github.io/quire/
+https://thegetty.github.io/quire/
 
 **Quire is currently in closed development. For access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform) form.**
 
@@ -21,14 +21,14 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 - Persists without ongoing maintenance or updates once published
 - Empowers users at any skill level to create dynamic feature-rich digital publications
 
-Check out [the demo site](https://gettypubs.github.io/quire-starter/), and [some of the Getty’s books developed with early versions of Quire.](http://www.getty.edu/publications/digital/digitalpubs.html)
+Check out [the demo site](https://thegetty.github.io/quire-starter/), and [some of the Getty’s books developed with early versions of Quire.](http://www.getty.edu/publications/digital/digitalpubs.html)
 
 Quire is centered around [**Hugo**](https://github.com/gohugoio/hugo), and uses [PrinceXML](http://www.princexml.com/) for PDF generation, [pandoc](https://pandoc.org/) for EPUBs, and [Kindle Previewer](https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765261) for MOBIs. It consists of four primary repositories, all of which but this one are private during development ([sign up for access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link)):
 
-- [quire](https://github.com/gettypubs/quire) (website and documentation)
-- [quire-cli](https://github.com/gettypubs/quire-cli)
-- [quire-starter](https://github.com/gettypubs/quire-starter)
-- [quire-starter-theme](https://github.com/gettypubs/quire-starter-theme)
+- [quire](https://github.com/thegetty/quire) (documentation and homepage)
+- [quire-cli](https://github.com/thegetty/quire-cli)
+- [quire-starter](https://github.com/thegetty/quire-starter)
+- [quire-starter-theme](https://github.com/thegetty/quire-starter-theme)
 
 ## Quire Contributors
 
