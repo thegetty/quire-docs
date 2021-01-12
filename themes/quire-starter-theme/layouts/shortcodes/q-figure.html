@@ -61,23 +61,23 @@ we start with media figures
             <iframe id='{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
             title='{{ if $.Get "title" }}{{ $.Get "title" | markdownify }}{{ else if .title }}{{ .title | markdownify }}{{ end }}'
             class='{{ if eq $.Site.Params.pdf true }} visually-hidden {{ end }}'
-            width="100%" 
-            height="166" 
-            scrolling="no" 
-            frameborder="no" 
-            allow="autoplay" 
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ $.Get "media_id" }}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>   
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ $.Get "media_id" }}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
         {{ end }}
-        {{ else if eq (.Get "media_type") "soundcloud" }} 
+        {{ else if eq (.Get "media_type") "soundcloud" }}
             <iframe id='{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
             title='{{ if $.Get "title" }}{{ $.Get "title" | markdownify }}{{ else if .title }}{{ .title | markdownify }}{{ end }}'
             class=' {{ if eq $.Site.Params.pdf true }} visually-hidden {{ end }}'
-            width="100%" 
-            height="166" 
-            scrolling="no" 
-            frameborder="no" 
-            allow="autoplay" 
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ $.Get "media_id" }}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>  
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ $.Get "media_id" }}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
         {{ else if eq (.Get "media_type") "website" }}
         <iframe id='{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
                 class='quire-figure__media'
@@ -90,7 +90,7 @@ we start with media figures
     {{ if eq $.Site.Params.figureLabelLocation "on-top" }}
       <span class="fig no-fullscreen {{ if and (eq ($.Get "label") "") (eq (isset . "label") false) }} visually-hidden {{ end }}">
       {{ if or (isset . "label") ($.Get "label") }}
-      <strong>    
+      <strong>
           {{ if $.Get "label" }}
           {{ $.Get "label" | markdownify }}
           {{ else if isset . "label" }}
@@ -164,14 +164,14 @@ we start with media figures
 <figure data="q-figure" class='quire-figure {{ with $.Get "class" }}{{ . }}{{ end }}'>
 
 
-  <div 
+  <div
   class="leaflet-control-fullscreen leaflet-bar leaflet-control"
   >
     <a
-    id="toggleFullscreen" 
-    class="leaflet-control-fullscreen-button leaflet-bar-part" 
-    href="#" 
-    title="View Fullscreen" 
+    id="toggleFullscreen"
+    class="leaflet-control-fullscreen-button leaflet-bar-part"
+    href="#"
+    title="View Fullscreen"
     style="outline: none;">
     </a>
   </div>
@@ -185,17 +185,17 @@ we start with media figures
 
   {{ $Id := now.UnixNano }}
 
-  <figure   
-  id="deepzoom-{{ $Id }}" 
-  {{ if .Get "caption" }}  
-  title='{{ .Get "caption" | markdownify | safeHTML }}' {{ end }} 
+  <figure
+  id="deepzoom-{{ $Id }}"
+  {{ if .Get "caption" }}
+  title='{{ .Get "caption" | markdownify | safeHTML }}' {{ end }}
   class="quire-figure leaflet-outer-wrapper mfp-hide Get">
-    <div 
+    <div
     id="js-deepzoom-{{ now.UnixNano }}"
-    class="quire-deepzoom inset leaflet-inner-wrapper " 
-    aria-live="polite" 
-    role="application" 
-    aria-label="Zoomable image" 
+    class="quire-deepzoom inset leaflet-inner-wrapper "
+    aria-live="polite"
+    role="application"
+    aria-label="Zoomable image"
     src="{{ with .Get "src"}}{{ printf "%s/%s" ($.Scratch.Get "imageDir") . | relURL }}{{ end }}">
     </div>
     <span class="figure-caption visually-hidden">
@@ -211,15 +211,15 @@ we start with media figures
 
   {{ if eq $.Site.Params.figureModal true }}
     <a
-    href="#deepzoom-{{ $Id }}" 
+    href="#deepzoom-{{ $Id }}"
     class='inline popup'
-    data-type='inline' 
+    data-type='inline'
     {{ if .Get "caption" }}  title='{{ .Get "caption" | markdownify | safeHTML }}' {{ end }}>
   {{ end }}
 
       <img
       id='{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
-      class="quire-figure__image" 
+      class="quire-figure__image"
       src='{{ with .Get "src"}}{{ printf "%s/%s" ($.Scratch.Get "imageDir") . | relURL }}{{ end }}'
       alt='{{ with .Get "alt" }}{{ . }}{{ end }}' />
 
@@ -234,8 +234,8 @@ we start with media figures
   {{ partial "error-message.html" $errorNoSourceNoId }}
   {{ end }}
   {{ else }}
-  <img 
-     class="quire-figure__image"  
+  <img
+     class="quire-figure__image"
      id='{{ with .Get "id" }}{{ . | urlize }}{{ end }}'
      src='{{ with .Get "src"}}{{ printf "%s/%s" ($.Scratch.Get "imageDir") . | relURL }}{{ end }}'
      alt='{{ if $.Get "alt" }}{{ $.Get "alt" }}{{ end }}' />
@@ -249,17 +249,17 @@ we start with media figures
   {{ if and (ne (.Get "media_type") "audio") (ne (.Get "media_type") "soundcloud") (ne (.Get "media_type") "vimeo") (ne (.Get "media_type") "youtube") (ne (.Get "media_type") "website") (eq $.Site.Params.figureModal true) }}
 
   {{ if eq $.Site.Params.figureModalIcons true }}
-    <span class="fig"><span class="material-icons md-24 material-fullscreen" aria-hidden="true">fullscreen</span> 
+    <span class="fig"><span class="material-icons md-24 material-fullscreen" aria-hidden="true">fullscreen</span>
   {{ else }}
     <span class="fig no-fullscreen {{ if and (eq ($.Get "label") "") (eq (isset . "label") false) }} visually-hidden {{ end }}">
-  {{ end }} 
+  {{ end }}
 
   {{ else }}
     <span class="fig no-fullscreen {{ if and (eq ($.Get "label") "") (eq (isset . "label") false) }} visually-hidden {{ end }}">
   {{ end }}
 
 {{ if or (isset . "label") ($.Get "label") }}
-  <strong>    
+  <strong>
       {{ if $.Get "label" }}
       {{ $.Get "label" | markdownify }}
       {{ else if isset . "label" }}
@@ -416,23 +416,23 @@ render the figure from matching values found ther
       <iframe id='{{ .id }}'
           title='{{ if $.Get "title" }}{{ $.Get "title" | markdownify }}{{ else if .title }}{{ .title | markdownify }}{{ end }}'
           class='{{ if eq $.Site.Params.pdf true }} visually-hidden {{ end }}'
-          width="100%" 
-          height="166" 
-          scrolling="no" 
-          frameborder="no" 
-          allow="autoplay" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .media_id }}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>   
+          width="100%"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .media_id }}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
       {{ end }}
-      {{ else if eq .media_type "soundcloud" }} 
+      {{ else if eq .media_type "soundcloud" }}
       <iframe id='{{ .id }}'
           title='{{ if $.Get "title" }}{{ $.Get "title" | markdownify }}{{ else if .title }}{{ .title | markdownify }}{{ end }}'
           class=' {{ if eq $.Site.Params.pdf true }} visually-hidden {{ end }}'
-          width="100%" 
-          height="166" 
-          scrolling="no" 
-          frameborder="no" 
-          allow="autoplay" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .media_id }}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>  
+          width="100%"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .media_id }}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
       {{ else if eq .media_type "website" }}
       <iframe id='{{ .id }}'
               class='quire-figure__media'
@@ -456,9 +456,9 @@ render the figure from matching values found ther
   {{ $Id := now.UnixNano }}
 
   <div class="q-figure__wrapper">
-    <figure 
+    <figure
       id="deepzoom-{{ $Id }}"
-      {{ if .caption }} title='{{ .caption | markdownify | safeHTML }}' {{ end }}  
+      {{ if .caption }} title='{{ .caption | markdownify | safeHTML }}' {{ end }}
       class="quire-figure leaflet-outer-wrapper mfp-hide notGet">
         {{ if eq .media_type "table" }}
           <div
@@ -468,15 +468,15 @@ render the figure from matching values found ther
           role="application"
           aria-label="Zoomable table">
           {{ $tableSrc := printf "%s/%s/%s" "static" ($.Scratch.Get "imageDir") .src }}
-          <figure class="leaflet-table">{{ readFile $tableSrc | safeHTML }}</figure>        
+          <figure class="leaflet-table">{{ readFile $tableSrc | safeHTML }}</figure>
           </div>
         {{ else }}
-          <div 
-          id="js-deepzoom-{{ now.UnixNano }}" 
-          class="quire-deepzoom inset leaflet-inner-wrapper " 
-          aria-live="polite" 
+          <div
+          id="js-deepzoom-{{ now.UnixNano }}"
+          class="quire-deepzoom inset leaflet-inner-wrapper "
+          aria-live="polite"
           role="application"
-          aria-label="Zoomable image" 
+          aria-label="Zoomable image"
           src="{{ printf "%s/%s" ($.Scratch.Get "imageDir") .src | relURL }}">
           </div>
           <span class="figure-caption visually-hidden">
@@ -506,8 +506,8 @@ render the figure from matching values found ther
       {{ else}}
         <img
         id='{{ .id }}'
-        class="quire-figure__image" 
-        src='{{ printf "%s/%s" ($.Scratch.Get "imageDir") .src | relURL }}' 
+        class="quire-figure__image"
+        src='{{ printf "%s/%s" ($.Scratch.Get "imageDir") .src | relURL }}'
         alt='{{ with .alt }}{{ . }}{{ end }}' />
       {{ end }}
   {{ else }}
@@ -516,14 +516,14 @@ render the figure from matching values found ther
       {{ if eq $.Site.Params.figureModal true }}
       <a class="image popup" href='{{ printf "%s/%s" ($.Scratch.Get "imageDir") .src | relURL }}' {{ if .caption }} title='{{ .caption | markdownify | safeHTML }}' {{ end }}>
       {{ end }}
-    <img 
-       class="quire-figure__image"  
+    <img
+       class="quire-figure__image"
        id='{{ .id }}'
        src='{{ printf "%s/%s" ($.Scratch.Get "imageDir") .src | relURL }}'
        alt='{{ with .alt }}{{ . }}{{ end }}' />
 
   {{ end }}
-    
+
   {{ end }}
   {{/* -------------------- END IMAGE BLOCK -------------------- */}}
 
@@ -533,7 +533,7 @@ render the figure from matching values found ther
   {{ if and (ne .media_type "audio") (ne .media_type "soundcloud") (ne .media_type "vimeo") (ne .media_type "youtube") (ne .media_type "website") (eq $.Site.Params.figureModal true) }}
 
   {{ if eq $.Site.Params.figureModalIcons true }}
-  <span class="fig"><span class="material-icons md-24 material-fullscreen" aria-hidden="true">fullscreen</span> 
+  <span class="fig"><span class="material-icons md-24 material-fullscreen" aria-hidden="true">fullscreen</span>
   {{ else }}
   <span class="fig no-fullscreen {{ if and (eq ($.Get "label") "") (eq (isset . "label") false) }} visually-hidden {{ end }}">
   {{ end }}
@@ -543,7 +543,7 @@ render the figure from matching values found ther
   {{ end }}
 
   {{ if or (isset . "label") ($.Get "label") }}
-  <strong>  
+  <strong>
       {{ if $.Get "label" }}
       {{ $.Get "label" | markdownify }}
       {{ else if isset . "label" }}
@@ -669,14 +669,6 @@ If the shortcode has no src, and no id, post an error message.
 <iframe id='{{ .map.id }}' class='quire-figure__media' src='{{ .map.media_id }}'></iframe>
 {{ end }}
 
-{{ else if (.site.Get "media_type") "website"}}
-
-{{ if eq .site.Site.Params.epub true }}
-<span class="fallback-image"><img src='{{ .site.Scratch.Get "imageDir" | relURL }}/icons/baseline-website-24px.png'/></span>
-{{ else }}
-<iframe id='{{ .site.Get "id" }}' class='quire-figure__media' src='{{ .site.Get "media_id"}}'></iframe>
-{{ end }}
-
 {{ else }}
 
 {{ if isset .map "src" }}
@@ -698,7 +690,7 @@ If the shortcode has no src, and no id, post an error message.
     {{ if isset .map "media_type" }}
 
     {{- if or (eq .map.media_type "youtube")  (eq .map.media_type "vimeo") }}
-    {{ if eq .site.Site.Params.pdf true }} <i class="material-icons md-24">videocam</i> {{ else }} <span class="fallback-image"><img src='{{ .site.Scratch.Get "imageDir" | relURL }}/icons/baseline-videocam-24px.png'/></span> {{ end }} 
+    {{ if eq .site.Site.Params.pdf true }} <i class="material-icons md-24">videocam</i> {{ else }} <span class="fallback-image"><img src='{{ .site.Scratch.Get "imageDir" | relURL }}/icons/baseline-videocam-24px.png'/></span> {{ end }}
     {{ end }}
     {{- if or (eq .map.media_type "soundcloud")  (eq .map.media_type "audio") }}
     {{ if eq .site.Site.Params.pdf true }} <i class="material-icons md-24 audio">headset</i> {{ else }} <span class="fallback-image"><img src='{{ .site.Scratch.Get "imageDir" | relURL }}/icons/baseline-headset-24px.png'/></span> {{ end }}
@@ -753,7 +745,7 @@ If the shortcode has no src, and no id, post an error message.
     {{- if eq (.site.Get "media_type") "soundcloud" }}
     <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .site.Get.media_id }}" alt="" title="" target="_blank" ><em>https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .site.Get "media_id" }}</em></a>
     {{ end }}
-    
+
     </p>
 
     {{ end }}
@@ -785,13 +777,13 @@ If the shortcode has no src, and no id, post an error message.
     {{ if isset .map "media_type" }}
 
     {{- if or (eq .map.media_type "youtube")  (eq .map.media_type "vimeo") }}
-    {{ if eq .site.Site.Params.pdf true }} <i class="material-icons md-24">videocam</i> {{ else }} <span class="fallback-image"><img src='{{ .site.Scratch.Get "imageDir" | relURL }}/icons/baseline-videocam-24px.png'/></span> {{ end }} 
+    {{ if eq .site.Site.Params.pdf true }} <i class="material-icons md-24">videocam</i> {{ else }} <span class="fallback-image"><img src='{{ .site.Scratch.Get "imageDir" | relURL }}/icons/baseline-videocam-24px.png'/></span> {{ end }}
     {{ end }}
     {{- if or (eq .map.media_type "soundcloud")  (eq .map.media_type "audio") }}
     {{ if eq .site.Site.Params.pdf true }} <i class="material-icons md-24 audio">headset</i> {{ else }} <span class="fallback-image"><img src='{{ .site.Scratch.Get "imageDir" | relURL }}/icons/baseline-headset-24px.png'/></span> {{ end }}
     {{ end }}
 
-    {{ else }} 
+    {{ else }}
 
     {{- if or (eq (.site.Get "media_type") "youtube")  (eq (.site.Get "media_type") "vimeo") }}
     {{ if eq .site.Site.Params.pdf true }} <i class="material-icons md-24">videocam</i> {{ else }} <span class="fallback-image"><img src='{{ .site.Scratch.Get "imageDir" | relURL }}/icons/baseline-videocam-24px.png'/></span> {{ end }}
@@ -840,11 +832,11 @@ If the shortcode has no src, and no id, post an error message.
     {{- if eq (.site.Get "media_type") "soundcloud" }}
     <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .site.Get.media_id }}" alt="" title="" target="_blank" ><em>https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ .site.Get "media_id" }}</em></a>
     {{ end }}
-    
+
     </p>
 
     {{ end }}
-    
+
     {{ end }}
 
 {{- end -}}
