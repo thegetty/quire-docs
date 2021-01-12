@@ -11,14 +11,42 @@ In-text citations and bibliographies are all available in Quire. Designed to mee
 
 Bibliographic references for your publication can be listed in a `references.yml` file in the `data` directory (along with the `publication.yml`, `figures.yml` and `objects.yml` files).
 
-Each entry in the `references.yml` file should include a `short` and a `full` form of the reference.
+Each entry in the `references.yml` file should include a `full` form of the reference, and then an `id` to reference it by.
 
 ```yaml
 entries:
-  - short: "Faure 1909"
+  - id: "Faure 1909"
     full: "Faure, Élie. *Histoire de l’Art*. Vol. 1, *L’Art antique*. Paris: Gallimard, 1909"
-  - short: "de Goncourt 1851"
+  - id: "de Goncourt 1851"
     full: "de Goncourt, Edmond. *Journal des Goncourt: Mémoires de la vie littéraire.* Paris; G. Charpentier et cie, 1851."
+```
+
+As in the example above, the `id` would typically be the short form of the reference in author-date format. However, you can also specify the short form as a separate line of the YAML.
+
+```yaml
+entries:
+  - id: "fre09"
+    short: "Faure 1909"
+    full: "Faure, Élie. *Histoire de l’Art*. Vol. 1, *L’Art antique*. Paris: Gallimard, 1909"
+  - id: "degncrt51"
+    short: "de Goncourt 1851"
+    full: "de Goncourt, Edmond. *Journal des Goncourt: Mémoires de la vie littéraire.* Paris; G. Charpentier et cie, 1851."
+```
+
+### Sort Order
+
+By default, when they are output in your publication Quire will sort the entries alphabetically by the text of the `full` reference. However, there may be some times when the sort does not output the expected results, in which case you can specify a specific `sort` value.
+
+```yaml
+entries:
+  - id: "fre09"
+    short: "Faure 1909"
+    full: "Faure, Élie. *Histoire de l’Art*. Vol. 1, *L’Art antique*. Paris: Gallimard, 1909"
+    sort: "faure"
+  - id: "degncrt51"
+    short: "de Goncourt 1851"
+    full: "de Goncourt, Edmond. *Journal des Goncourt: Mémoires de la vie littéraire.* Paris; G. Charpentier et cie, 1851."
+    sort: "goncourt"
 ```
 
 These references can then be called individually from within text using the `q-cite` shortcode, or in their entirety as a generated bibliography using the `q-bibliography` shortcode. Both of which are detailed below.
@@ -56,7 +84,9 @@ The `q-cite` shortcode can be used anywhere in your Markdown text, including wit
 
 ## Display a Bibliography
 
-Pages in your publication will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode. However, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yml` file, you can use the `q-bibliography` shortcode. The resulting bibliography will be output in the order in which it appears in the references file.
+Pages in your publication will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode. A heading can be customized to go above the page bibliography with the `biblioHeading` parameter in your `config.yml` file. The default is "Bibliography".
+
+Additionally, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yml` file, you can use the `q-bibliography` shortcode. The resulting bibliography will be output in the order in which it appears in the references file.
 
 ```go
 {{</* q-bibliography */>}}
@@ -65,13 +95,13 @@ Pages in your publication will automatically include a page-level bibliography l
 {{< q-figure id="modern-bibliography" >}}
 
 
-This shortcode accepts an optional `sort` value, which will sort the list by whatever key from the entries is given. Often `"short"` or `"full"`, though a custom key could be added, such as `"sort_as"`, for fine-grained control. Without a `sort` value given, the bibliography will be output in the order in which it appears in the references file.
+This shortcode accepts an optional `sort` value, which will sort the list by whatever key from the entries is given. Often `"short"`, `"full"`, or `"sort"`, though a custom key could be added. Without a `sort` value given, the bibliography will be output in the order in which it appears in the references file.
 
 ```go
 {{</* q-bibliography sort="short" */>}}
 ```
 
-You may find in some cases that the system’s default sort method is suboptimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key like `"sort_as"` could be added to all entries in the `references.yml` file for fine-grained control.
+You may find in some cases that the system’s default sort method is suboptimal. In particular, the sort is case sensitive and will sort uppercase, before lower. So a reference for “e.e. cummings” would be listed after those for “Emily Dickinson”. In these cases a custom key like `"sort"` could be added to all entries in the `references.yml` file for fine-grained control.
 
 ```yaml
 entries:

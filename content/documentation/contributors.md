@@ -16,6 +16,7 @@ At minimum, each contributor must have a `first_name` and `last_name`, or just `
 ```YAML
 - id:
   type:
+  role:
   first_name:
   last_name:
   full_name:
@@ -30,6 +31,8 @@ At minimum, each contributor must have a `first_name` and `last_name`, or just `
 ## Display Contributors on Your Cover
 
 Any contributor listed in your publication.yml file that has a `type: primary` will be considered a main author for your project and will be listed on the cover page, in the site menu, and in the metadata included in the project code. For publications with more than one author, names will be listed in the order they appear in the publication.yml file.
+
+If the primary authors are editors of the book, you can specify that with `role: editor`.
 
 Sometimes, rather than a plain list, you may want your contributors listed in a particular way. Such as, “Edited by Author Name and Author Name”. In these cases, you can add your custom text in the publication.yml file under `contributor_as_it_appears` which can also take Markdown and HTML tags as needed.
 
