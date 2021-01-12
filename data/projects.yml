@@ -1,0 +1,318 @@
+#
+# PROJECT INFOMATION FOR COMMUNITY SHOWCASE:
+# ==================================================================
+#
+# YAML KEY:
+# ---------
+# - id:                     lowercase, no spaces or special characters
+#   src:                    Screenshot of homepage, 1200px x 668px downsized to
+#                             900px x 501px or at least that ratio
+#   type:                   Try to use existing types if possible
+#   publisher:              Or "Self-Published" if not publisher/institution
+#   title_info:             Markdown ok, typically: "*Title of Publication*, by Author Name"
+#   pub_date:               YYYY-MM-DD format, only year will display
+#   url:                    URL to homepage/cover of the publication
+#   customization_level:    "none", "minor", "moderate", "significant", "extensive", or "full"
+#   github_user:            GitHub username(s) in a list format as shown
+#     - name
+#     - name
+#   note:                   Markdown ok, should focus on it as a Quire project:
+#                             What's new? What features did the use? How was it
+#                             customized?
+#
+# CUSTOMIZATION LEVELS:
+# --------------------
+# "none": No customization
+# "minor": Style variables manipulated
+# "moderate": New fonts used, some custom CSS
+# "significant": Templates/shortcodes customized, more custom CSS
+# "extensive": New templates/shortcodes written, more custom CSS, custom JS
+# "full": Fully new theme/design
+
+project_list:
+
+  - id: "thomas_rife"
+    src: /screenshots/_thomas_rife.jpg
+    alt: "The Alamo Keeper: Thomas C. Rife by Philip Mullins and George Mullins"
+    type: Family History
+    publisher: Self-Published
+    title_info: "*The Alamo Keeper: Thomas C. Rife*, by Philip Mullins and George Mullins"
+    pub_date: 2020-06-21
+    url: http://www.thomasrife.com/
+    customization_level: moderate
+    github_user:
+      - halfempty
+    note: "This project updates the starter theme with a new font and custom css for in the typography."
+
+  - id: "artists_studios_paris"
+    src: /screenshots/_artists_studios_paris.jpg
+    alt: "Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World by Hannah Williams"
+    type: Journal Article
+    publisher: Journal18
+    title_info: "“Artists’ Studios in Paris: Digitally Mapping the 18th-Century Art World,” by Hannah Williams"
+    pub_date: 2018-04-01
+    url: https://www.journal18.org/issue5_williams/
+    customization_level: minor
+    github_user:
+      - nancyum
+    note: "This project has the distinction of being the first Quire project published outside Getty. It’s an article published as part of the Spring 2018 issue of *Journal18* on [Digital Mapping & Eighteenth-Century Visual, Material, and Built Cultures](https://www.journal18.org/past-issues/5-coordinates-spring-2018/)."
+
+  - id: "bending_lines"
+    src: /screenshots/_bending_lines.jpg
+    alt: "Bending Lines: Maps and Data from Distortion to Deception"
+    type: Online Exhibition
+    publisher: Leventhal Map & Education Center, Boston Public Library
+    title_info: "*Bending Lines: Maps and Data from Distortion to Deception*"
+    pub_date: 2020-05-01
+    url: https://www.leventhalmap.org/digital-exhibitions/bending-lines/
+    customization_level: moderate
+    github_user:
+      - garrettdashnelson
+    note: "This online exhibition was orignally slated to be a physical gallery exhibition, but it was put on indefinite hold due the COVID-19 pandemic. The project features a wide range of style customizations."
+
+  - id: "fault_lines"
+    src: /screenshots/_fault_lines.jpg
+    alt: "Fault Lines: 2020 Senior Thesis Exhibition"
+    type: Exhibition Catalogue
+    publisher: Mills College Art Museum
+    title_info: "*Fault Lines: 2020 Senior Thesis Exhibition*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir"
+    pub_date: 2020-05-20
+    url: https://mcam.mills.edu/publications/faultlines/index.html
+    customization_level: minor
+    github_user:
+      - MillsArtMuseum
+    note: "Due to the COVID-19 pandemic, the Mills College 2020 BFA Senior Thesis Exhibition was canceled. This digital catalogue doubles as an online exhibition, providing Mills' graduating studio arts majors and minors with an opportunity to showcase their work."
+
+  - id: "in_plain_sight"
+    src: /screenshots/_in_plain_sight.jpg
+    alt: "In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya"
+    type: Exhibition Catalogue
+    publisher: Mills College Art Museum
+    title_info: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor"
+    pub_date: 2019-09-19
+    url: https://mcam.mills.edu/publications/inplainsight/index.html
+    customization_level: minor
+    github_user:
+      - MillsArtMuseum
+    note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable opportunity."
+
+  - id: "state_of_convergence"
+    src: /screenshots/_state_of_convergence.jpg
+    alt: "State of Convergence"
+    type: Exhibition Catalogue
+    publisher: Mills College Art Museum
+    title_info: "*State of Convergence*"
+    pub_date: 2020-01-20
+    url: https://mcam.mills.edu/publications/stateofconvergence/index.html
+    customization_level: minor
+    github_user:
+      - stephaniehanor
+    note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable opportunity."
+
+  - id: "tilt_west"
+    src: /screenshots/_tilt_west.jpg
+    alt: "Tilt West Journal, Art & Language, Vol. 1 - March 2020"
+    type: Journal
+    publisher: Tilt West
+    title_info: "*Tilt West Journal, vol. 1, Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson"
+    pub_date: 2020-03-01
+    url: http://journal.tiltwest.org/vol1/
+    customization_level: minor
+    github_user:
+      - swambold1
+    note: "Inaugural issue of *Tilt West Journal.* Previously, content existed on their SoundCloud stream or via comissioned Medium articles. Quire enabled the *Tilt West* team to meaningfully expand their programming."
+
+  - id: "silk_poems"
+    src: /screenshots/_silk_poems.jpg
+    alt: "Silk Poem"
+    type: Exhibition Catalogue
+    publisher: Hong Kong University Museum and Art Gallery
+    title_info: "*Silk Poems*"
+    pub_date: 2020-06-05
+    url: https://1000camels.github.io/jen-bervin/
+    customization_level: moderate
+    github_user:
+      - tipeslowly
+    note: "Jen Bervin's *Silk Poems* was UMAG's first Quire project. Thanks to support from the US Consulate in Hong Kong, UMAG was able to cut their teeth on the Quire CLI and Github, while creating a platform to document Jen Bervin's exhibition and participation at International Poetry Nights in Hong Kong."
+
+  - id: "ancient_ambers"
+    src: /screenshots/_ancient_ambers.jpg
+    alt: "Ancient Carved Ambers in the J. Paul Getty Museum by Faya Causey"
+    type: Collection Catalogue
+    publisher: Getty Publications
+    title_info: "*Ancient Carved Ambers in the J. Paul Getty Museum*, by Faya Causey"
+    pub_date: 2019-11-26
+    url: https://www.getty.edu/publications/ambers/
+    customization_level: minor
+    github_user:
+      - geealbers
+    note: "Devleoped by Getty, this publication is a good example of a standard collection catalogue built using Quire."
+
+  - id: "cva"
+    src: /screenshots/_cva.jpg
+    alt: "Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters by Despoina Tsiafakis"
+    type: Corpus Vasorum Antiquorum
+    publisher: Getty Publications
+    title_info: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis"
+    pub_date: 2019-07-16
+    url: https://www.getty.edu/publications/cva10/
+    customization_level: extensive
+    github_user:
+      - geealbers
+    note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other instiutions down the road."
+
+  - id: "heritage_management"
+    src: /screenshots/_heritage_management.jpg
+    alt: "Values in Heritage Management: Emerging Approaches and Research Directions"
+    type: Proceedings
+    publisher: Getty Publications
+    title_info: "*Values in Heritage Management: Emerging Approaches and Research Directions*, by Erica Avrami, Susan MacDonald, Randall Madison, and David Myers"
+    pub_date: 2019-09-16
+    url: https://www.getty.edu/publications/heritagemanagement/
+    customization_level: moderate
+    github_user:
+      - geealbers
+    note: "This publication represents typical reserach proceedings, however, it was additionally customized to accomodate a 7 in. x 10 in. print size."
+
+  - id: "tour_toolkit"
+    src: /screenshots/_tour_toolkit.jpg
+    alt: "Tour Toolkit: Developing an Inclusive Tour"
+    type: Informational Pamphlet
+    publisher: Minneapolis Institute of Art
+    title_info: "*Tour Toolkit: Developing an Inclusive Tour*, by Minneapolis Institute of Art"
+    pub_date: 2019-12-01
+    url: https://artsmia.github.io/tour-toolkit/
+    customization_level: moderate
+    github_user:
+      - kristhayer11
+    note: "This publication is an excellent example of how Quire can be used to produce shorter form publications like pamphlets and other educational handouts. Customziations include font, branding, and other aesthetic considerations."
+
+  - id: "alcohols_empire"
+    src: /screenshots/_alcohols_empire.jpg
+    alt: "Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World edited by Nicole LaBouff and Emily Beck"
+    type: Interactive Publication
+    publisher: Minneapolis Institute of Art
+    title_info: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*, edited by Nicole LaBouff and Emily Beck"
+    pub_date: 2019-02-04
+    url: https://artsmia.github.io/alcohols-empire/
+    customization_level: moderate
+    github_user:
+      - kristhayer11
+    note: "With this project, Mia staff sought to evaluate Quire and its potential for future use at the museum. *Alcohol’s Empire* was a good test publication as it was a collaborative project with three distinct contributing partners. The project also included two public events and received national media coverage, which positively impacted its distribution."
+
+  - id: "mozoomdar_at_sea"
+    src: /screenshots/_mozoomdar_at_sea.jpg
+    alt: "Mozoomdar at Sea by Nick Tackes"
+    type: Research Project
+    publisher: Self-Published
+    title_info: "*Mozoomdar at Sea*, by Nick Tackes"
+    pub_date: 2019-04-01
+    url: https://mozoomdar-at-sea.netlify.app/
+    customization_level: minor
+    github_user:
+      - jtackesiii
+    note: "This digital exhibit includes mainly archival materials, manuscripts, and maps. The publication content lent itself well to a digital storytelling platform."
+
+  - id: "humanizing_the_digital"
+    src: /screenshots/_humanizing_the_digital.jpg
+    alt: "Humanizing the Digital: Unproceedings from the MCN 2018 Conference"
+    type: Proceedings
+    publisher: Ad Hoc Museum Collective
+    title_info: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, edited by Suse Anderson, Isabella Bruno, Hannah Hethmon, Seema Rao, Ed Rodley, and Rachel Ropeik"
+    pub_date: 2019-04-01
+    url: https://ad-hoc-museum-collective.github.io/humanizing-the-digital/
+    customization_level: minor
+    github_user:
+      - shineslike
+    note: "This publication contains 17 conference-inspired responses to the state of museum technology in 2018, including essays, reflections, case studies, conversations, and an experimental in-book zine."
+
+  - id: "state_of_museum_dig"
+    src: /screenshots/_state_of_museum_dig.jpg
+    alt: "The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses"
+    type: Graduate Student Project
+    publisher: Ad Hoc Museum Collective
+    title_info: "*The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses*, by Suse Anderson, Cristin Guinan-Wiley, Jonathan Edelman, Rachel Rosenfeld, Mary McCulla, Sheridan Small, Cynthia Kurtz, Amy Pollard, Corrie Brady, Melissa Garcia, Caitlin Hepner, Sydney Thatcher, Laura Dickson, and Rebecca Brockette"
+    pub_date: 2019-12-23
+    url: https://ad-hoc-museum-collective.github.io/GWU-museum-digital-practice-2019/
+    customization_level: minor
+    github_user:
+      - shineslike
+    note: "This publication was written, edited and published by students in George Washington University's Museums and Digital Technology class. Each student was responsible for creating an essay that explores a specific area of museum digital practice today."
+
+  - id: "50_x_50"
+    src: /screenshots/_50x50.jpg
+    alt: "50x50: Stories of Visionary Artists from the Collection: A digital publication on the 50th Anniversary of San José Museum of Art."
+    type: Collection Catalogue
+    publisher: San José Museum of Art
+    title_info: "*50x50: Stories of Visionary Artists from the Collection*"
+    pub_date: 2020-07-31
+    url: https://50x50.sjmusart.org/
+    customization_level: extensive
+    github_user:
+      - sheltonsjma
+    note: "This publication is in honor of the museum's 50th anniversary. The collection catalogue has been extensively customized, including changes to the theme template and significant alterations to layout and functionality of the object entry pages."
+
+  - id: "atelier_17"
+    src: /screenshots/_atelier_17.jpg
+    alt: "The Women of Atelier 17: The Biographical Supplement by Christina Weyl"
+    type: Collection Catalogue
+    publisher: Self-Published
+    title_info: "“Documentation.” *The Women of Atelier 17: The Biographical Supplement*"
+    pub_date: 2019-01-01
+    url: https://atelier17.christinaweyl.com/
+    customization_level: minor
+    github_user:
+      - christinaweyl
+    note: "This catalogue was produced as a digital companion to a print publication by the same author. It's an excellent example of how the digital can complement print publishing."
+
+  - id: "ray_komai"
+    src: /screenshots/_ray_komai.jpg
+    alt: "Ray Komai: *Architectural Forum* Covers 1953-1963"
+    type: Exhibition Catalogue
+    publisher: The Graphics Office
+    title_info: "*RAY KOMAI: *Architectural Forum* covers, 1953-1963*"
+    pub_date: 2020-11-06
+    url: https://raykomai.org/
+    customization_level: minor
+    github_user:
+      - natalienardello
+    note: "This project accompanies a book about Ray Komai by Doug Clouse of the Graphics Office, published by Counselor Books. It was inspired by an exhibition based on the book at Fordham University in 2019. This publication marks The Graphics Office's first foray into digital publishing."
+
+  - id: "tilt_art_community"
+    src: /screenshots/_tilt_west_2.jpg
+    alt: "Art & Community, Tilt West Journal, Vol. 2, December 2020"
+    type: Journal
+    publisher: Tilt West
+    title_info: "*Tilt West Journal, Vol. 2, Art and Language* by Wisdom Amouzou, Gio Barabadze, Stephen Brackett, Gregg Deal, Asia Dorsey, Cory Feder, Anthony Garcia, Sr., Cory Minkah Montalvo, Bryánne E. Mitchell-Gonzales, Kai Lee Mykels, Shelsea Ochoa, Kim Shively, Dujie Tahat, and Motus Theater."
+    pub_date: 2020-12-03
+    url: http://journal.tiltwest.org/vol2/
+    customization_level: moderate
+    github_user:
+      - swambold1
+    note: "The Second issue of *Tilt West Journal* features an animated cover and is further enriched with audio and video components. While printed copies are still available for purchase, the Tilt West team uses Quire to expand the boundaries of what digital journal publishing can encompass."
+
+  - id: "pictorial_silks"
+    src: /screenshots/_pictorial_silks.jpg
+    alt: "Pictorial Silk: Chinese Textiles from UMAG, University Museum and Art Gallery"
+    type: Exhibition Catalogue
+    publisher: Hong Kong Universitiy Museum and Art Gallery
+    title_info: "*Pictorial Silk: Chinese Textiles from UMAG*"
+    pub_date: 2020-12-09
+    url: https://tipeslowly.github.io/textiles/
+    customization_level: moderate
+    github_user:
+      - tipeslowly
+    note: "*Pictorial Silks* presents highlights from UMAG's collection of Qing dynasty silk textiles. The online platform was designed in Quire to complement an exhibition and print publication originally scheduled for release in December 2020."
+
+  - id: "clouds_of_ink"
+    src: /screenshots/_clouds_of_ink.jpg
+    alt: "Clouds of Ink, Pools of Colour, Hou Beiren, UMAG"
+    type: Exhibition Catalogue
+    publisher: Hong Kong Universitiy Museum and Art Gallery
+    title_info: "*Clouds of Ink, Pools of Colour: Hou Beiren*"
+    pub_date: 2020-12-09
+    url: https://tipeslowly.github.io/HBR/
+    customization_level: moderate
+    github_user:
+      - tipeslowly
+    note: "*Clouds of Ink, Pools of Colour* was developed as a snapshot of the print publication of Hou Beiren's work, and as a catalogue for a series of his paintings recently donated to UMAG."
