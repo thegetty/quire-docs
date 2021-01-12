@@ -3,123 +3,123 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thegetty.github.io/quire/</loc>
+    <loc>https://quire.netlify.app/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/contents/</loc>
+    <loc>https://quire.netlify.app/contents/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/tutorial/</loc>
+    <loc>https://quire.netlify.app/tutorial/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/install-uninstall/</loc>
+    <loc>https://quire.netlify.app/guide/install-uninstall/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/quire-cli/</loc>
+    <loc>https://quire.netlify.app/guide/quire-cli/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/getting-started/</loc>
+    <loc>https://quire.netlify.app/guide/getting-started/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/fundamentals/</loc>
+    <loc>https://quire.netlify.app/guide/fundamentals/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/metadata-configuration/</loc>
+    <loc>https://quire.netlify.app/guide/metadata-configuration/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/pages/</loc>
+    <loc>https://quire.netlify.app/guide/pages/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/page-content/</loc>
+    <loc>https://quire.netlify.app/guide/page-content/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/figure-images/</loc>
+    <loc>https://quire.netlify.app/guide/figure-images/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/zooming-images-maps/</loc>
+    <loc>https://quire.netlify.app/guide/zooming-images-maps/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/citation-bibliographies/</loc>
+    <loc>https://quire.netlify.app/guide/citation-bibliographies/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/collection-catalogues/</loc>
+    <loc>https://quire.netlify.app/guide/collection-catalogues/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/copyright-about-pages/</loc>
+    <loc>https://quire.netlify.app/guide/copyright-about-pages/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/contributors/</loc>
+    <loc>https://quire.netlify.app/guide/contributors/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/styles-customization/</loc>
+    <loc>https://quire.netlify.app/guide/styles-customization/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/fonts-customization/</loc>
+    <loc>https://quire.netlify.app/guide/fonts-customization/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/multiformat-output/</loc>
+    <loc>https://quire.netlify.app/guide/multiformat-output/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/github/</loc>
+    <loc>https://quire.netlify.app/guide/github/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/guide/netlify/</loc>
+    <loc>https://quire.netlify.app/guide/netlify/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/api-docs/yaml/</loc>
+    <loc>https://quire.netlify.app/api-docs/yaml/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/api-docs/shortcodes/</loc>
+    <loc>https://quire.netlify.app/api-docs/shortcodes/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/api-docs/dependency-guide/</loc>
+    <loc>https://quire.netlify.app/api-docs/dependency-guide/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/resources/cheatsheet/</loc>
+    <loc>https://quire.netlify.app/resources/cheatsheet/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/resources/default-styleguide/</loc>
+    <loc>https://quire.netlify.app/resources/default-styleguide/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/resources/sample-publication-file/</loc>
+    <loc>https://quire.netlify.app/resources/sample-publication-file/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/resources/accessibility-principals/</loc>
+    <loc>https://quire.netlify.app/resources/accessibility-principals/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/about/</loc>
+    <loc>https://quire.netlify.app/about/</loc>
   </url>
   
   <url>
-    <loc>https://thegetty.github.io/quire/search.json</loc>
+    <loc>https://quire.netlify.app/search.json</loc>
   </url>
   
 </urlset>
