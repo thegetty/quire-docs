@@ -1,0 +1,9 @@
+# License
+
+© 2017 J. Paul Getty Trust
+
+The content of the Quire documentation is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+
+Quire itself is currently in closed beta as we work toward releasing it as fully open source software. In the meantime, users [who request and are given access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform) agree to the following license terms.
+
+If you (the “Tester”) decide to help us (the “Getty”) beta test Quire, this agreement governs how we will provide you with Quire, and the terms and conditions of the beta testing. The Getty grants Tester a nonexclusive, royalty-free, nontransferable license to use Quire, for the purpose of testing and evaluating it, and for as long as the Getty and Tester agree to continue such testing and evaluation. Tester acknowledges that Quire belongs to the Getty, including all copyright, trademark, and patent rights. While the Getty intends to make Quire available under an open license, the Getty is under no obligation to do so and has not yet done so. By beta testing Quire, Tester acquires no ownership interest in Quire.  Tester will not modify, reverse engineer, decompile, create other works from, or disassemble Quire. Tester assigns to the Getty all right, title, and interest (including any patent rights, design rights, copyrights and trade secrets) in any modifications, improvements, or feedback that Tester, or Tester and the Getty jointly, may propose or make in the course of beta testing. QUIRE (INCLUDING THE SOFTWARE, IF ANY, AND DOCUMENTATION) IS PROVIDED "AS IS". THE GETTY DISCLAIMS ALL WARRANTIES IN CONNECTION WITH QUIRE, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, NONINFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE.

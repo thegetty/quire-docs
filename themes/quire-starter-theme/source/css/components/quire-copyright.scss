@@ -9,12 +9,20 @@
 // -----------------------------------------------------------------------------
 .quire-copyright {
   padding: 0 1em;
+  font-family: $quire-navigation-font;
 
   &__icon {
     height: 2.5em;
     max-width: 100%;
     & img {
       max-height: 100%;
+    }
+    &__logo {
+      height: 3em;
+      margin-bottom: .25em;
+      margin-right: 1em;
+      max-width: 100%;
+      display: inline-block;
     }
   }
 }

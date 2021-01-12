@@ -1,4 +1,8 @@
 {{/*
+
+  THIS OVERRIDE VERSION OF THE FILE MOVES THE PAGE HEADER INTO THE CONTENT AREA
+  WHEN menuView: "fixed" IS SELECTED IN config.yml. BETTER DESIGN.
+  
   Essay layout. This layout describes a single-page template that has been
   augmented with the ability to display a frontmatter-defined abstract (in
   markdown format) as well as bibliography references.
@@ -6,33 +10,20 @@
 
 {{ define "main" }}
 <article class="{{ partial "page-class.html" . }} quire-essay" id="main" role="main">
-  {{ partial "page-header.html" . }}
-
-  {{ if .Params.abstract }}
-  {{ partial "page-abstract.html" . }}
-  {{ end }}
-
-  {{ $headers := findRE "<h[2].*?>(.|\n])+?</h[2]>" .Content }}
-  {{ if gt (len $headers) 1 }}
-  <div class="container quire-page__page-navigation">
-    <ul class="page-navigation__list">
-    {{ range $headers }}
-      {{ $text := . | replaceRE "<[/]*h[1-6].*?>" "" }}
-      {{ $anchorId := $text | plainify | htmlUnescape | anchorize }}
-      <li {{ if findRE "<h[2].*?>" . }}class="main-heading"{{ else }}class="sub-heading"{{ end }}><a href="#{{ $anchorId }}">{{ $text | safeHTML }}</a></li>
-    {{ end }}
-    </ul>
-  </div>
-  {{ end }}
+  {{ if ne .Site.Params.menuView "fixed" }}{{ partial "page-header.html" . }}{{ end }}
 
   <section id="content" class="section quire-page__content">
+    {{ if .Params.abstract }}
+    {{ partial "page-abstract.html" . }}
+    {{ end }}
     <div class="container">
       <div class="content">
+        {{ if eq .Site.Params.menuView "fixed" }}{{ partial "page-header.html" . }}{{ end }}
         {{ .Content }}
         {{ partial "page-bibliography.html" . }}
       </div>
+      {{ partial "footer-buttons.html" . }}
     </div>
   </section>
-
 </article>
 {{ end }}

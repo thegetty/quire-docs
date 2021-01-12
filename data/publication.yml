@@ -14,7 +14,10 @@ subtitle: Multiformat Book Publishing
 reading_line:
 short_title:
 
+site_logo: quire-logo--sm.png
+
 description:
+  tagline: The best free tool for creating beautiful digital books that last
   one_line:
   full: >-
     Quire is a digital publishing framework built on top of the Hugo static site generator. Generate Web, PDF, and print books (with Epub coming soon) from a single set of text files.
@@ -33,7 +36,7 @@ identifier:
 publisher:
   - name: J. Paul Getty Trust
     location: Los Angeles
-    url: http://www.getty.edu
+    url: https://www.getty.edu
     logo: logo-getty.png
 
 # ------------------------------------------------------------------------------
@@ -45,7 +48,7 @@ contributor_as_it_appears:
 # contributor:
 #   - type: primary
 #     full_name: J. Paul Getty Trust
-#     url: http://www.getty.edu/
+#     url: https://www.getty.edu/
 
 # ------------------------------------------------------------------------------
 # Copright & License
@@ -54,38 +57,58 @@ contributor_as_it_appears:
 copyright: © 2017 J. Paul Getty Trust
 
 license:
-  name: Creative Commons Attribution 4.0 International License
-  abbreviation: CC BY
-  url: http://creativecommons.org/licenses/by/4.0/
+  name: Creative Commons Attribution-NonCommercial 4.0 International License
+  abbreviation: CC BY-NC
+  url: https://creativecommons.org/licenses/by-nc/4.0/
   scope: full # full | text-only | some-exceptions
+  online_text: |
+     This documentation is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). Site illusrataions courtesy of [unDraw](https://undraw.co).
 
 # ------------------------------------------------------------------------------
 # Formats, Resources & Links
 # ------------------------------------------------------------------------------
 
 resource_link:
-  - type: other-format
-    name: PDF
-    media_type: application/pdf
-    link_relation: alternate
-    url: /downloads/output.pdf
-  - type: other-format
-    name: EPUB
-    media_type: application/epub+zip
-    link_relation: alternate
-    url: /downloads/output.epub
-  - type: other-format
-    name: MOBI/Kindle
-    media_type: application/mobi
-    link_relation: alternate
-    url: /downloads/output.mobi
-  - type: footer-link
-    name: About
-    link_relation: about
-    url: /about/
+  # - type: other-format
+  #   name: PDF
+  #   media_type: application/pdf
+  #   link_relation: alternate
+  #   url: /downloads/output.pdf
+  # - type: other-format
+  #   name: EPUB
+  #   media_type: application/epub+zip
+  #   link_relation: alternate
+  #   url: /downloads/output.epub
+  # - type: other-format
+  #   name: MOBI/Kindle
+  #   media_type: application/mobi
+  #   link_relation: alternate
+  #   url: /downloads/output.mobi
   - type: footer-link
     name: GitHub
     url: https://github.com/gettypubs/quire/
+  - type: footer-link
+    name: Newsletter
+    url: http://eepurl.com/hg8ROf
+  - type: footer-link
+    name: Contributing
+    url: https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md
+  - type: footer-link
+    name: About
+    link_relation: about
+    url: /about/quire/
+  - type: footer-link
+    name: Contact
+    url: mailto:quire@getty.edu
+  - type: footer-link
+    name: Code of Conduct
+    url: https://github.com/gettypubs/quire/blob/master/CODE_OF_CONDUCT.md
+  - type: footer-link
+    name: Privacy Policy
+    url: https://www.getty.edu/legal/privacy.html
+  - type: footer-link
+    name: Terms of Use
+    url: https://www.getty.edu/legal/copyright.html
 
 # ------------------------------------------------------------------------------
 # Subjects
@@ -93,24 +116,7 @@ resource_link:
 
 subject:
   - type: keyword
-    name: lemons, oranges, marmalade
-  - type: bisac
-    name: ART HISTORY / English / Jams
-    identifer: ART0009210
-  - type: getty
-    name: Paul Cézanne
-    identifier: "http://vocab.getty.edu/ulan/500004793"
-  - type: keyword
-    name: still life
-  - type: getty
-    name: Hampshire
-    identifier: "http://vocab.getty.edu/tgn/7008139"
-  - type: getty
-    name: oil pastels
-    identifier: "http://vocab.getty.edu/aat/300230810"
-  - type: getty
-    name: Still Life with Blue Pot
-    identifier: "http://www.getty.edu/cona/CONAFullSubject.aspx?subid=700002042"
+    name: digital publishing, open source, static site generator, musetech, museum technology, scholarly communications, ebook, web book
 
 # ------------------------------------------------------------------------------
 # Revision History

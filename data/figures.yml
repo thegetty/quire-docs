@@ -3,14 +3,6 @@ figure_list:
     src: /screenshots/content-model.png
     caption: "Quire content model "
     credit: " "
-  - id: "1.2"
-    src: /screenshots/file-structure.png
-    caption: "File structure "
-    credit: " "
-  - id: "1.3"
-    src: /screenshots/quire_starter_theme.png
-    caption: "Starter Theme"
-    credit: " "
   - id: "1.4"
     src: /screenshots/quire-work-environment.gif
     caption: "When you work in Quire, you’ll be using a text editor (left), a command-line shell (center), and a web browser (right)."
@@ -80,16 +72,16 @@ figure_list:
     caption: "When working on a Quire project in a text editor like Atom or Visual Studio Code you can see and access all your project files from the sidebar at the left."
   - id: "quire-starter-metadata-change"
     src: /screenshots/quire-starter-metadata-change.png
-    caption: "Basic publication information lives in the `publication.yml` file, and is used throughout the site. Here we see the title being used on the cover, in the top navigation bar and in the side navigation."
+    caption: "Basic publication information lives in the `publication.yml` file, and is used throughout the site. Here we see the title being used on the cover, in the PDF version of the publication, and in the side navigation."
   - id: "quire-starter-content-change-1"
     src: /screenshots/quire-starter-content-change-1.png
     caption: "Changing the page `title`, `weight` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
   - id: "quire-starter-content-change-2"
-    src: /screenshots/quire-starter-content-change-2.gif
-    caption: "The main text of a Quire publication is written in Markdown. Simple text formatting indicates structure. Like asterisks for italics (`*italics*`) and hashmarks for headings (`## Heading`). Figures are added with a “shortcode” that references a listing in your `figures.yml` file: `{{< q-figure id=\"1.1\" >}}`"
+    src: /screenshots/quire-starter-content-change-2.png
+    caption: "The main text of a Quire publication is written in Markdown. Simple text formatting indicates structure. Like asterisks for italics (`*italics*`) and hashmarks for headings (`## Heading`). Figures are added with a “shortcode” that references a listing in your `figures.yml` file: `{{< q-figure id=\"fig-1\" >}}`"
   - id: "quire-starter-styles-change"
     src: /screenshots/quire-starter-styles-change.png
-    caption: "A background image can be added to the cover by adding it to the page YAML of your `cover.md` page (`images: cover_bg.jpg`). Colors and other styles can be customized in the `variables.scss` file of your project’s theme."
+    caption: "A background image can be added to the cover by adding it to the page YAML of your `cover.md` page (`images: cover_2.jpg`). Colors and other styles can be customized in the `variables.scss` file of your project’s theme."
   - id: "command-line-drag-and-drop"
     src: /screenshots/command-line-drag-and-drop.gif
     caption: ""
@@ -113,12 +105,12 @@ figure_list:
     caption: "**`type: contents`** <br /> **`class: abstract`** <br /> A maximal version of the contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
   - id: "modern-contents-brief"
     src: /screenshots/modern-contents-brief.png
-    caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each main page. Sub-section pages have been optionally hidden using the `tocType: short` option in the config.yml file."  
+    caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each main page. Sub-section pages have been optionally hidden using the `tocType: short` option in the config.yml file."
   - id: "modern-contents-grid"
     src: /screenshots/modern-contents-grid.png
-    caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/guide/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."  
+    caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/documentation/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
   - id: "modern-splash"
-    src: /screenshots/modern-splash.png
+    src: /screenshots/modern-splash.jpg
     caption: "**`type: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."
   - id: "modern-essay"
     src: /screenshots/modern-essay.png
@@ -129,39 +121,214 @@ figure_list:
   - id: "modern-entry-side"
     src: /screenshots/modern-entry-side.png
     caption: "**`type: entry`** <br /> **`class: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `entryPageSideBySideLayout: true` in the config.yml file of the project."
-    
+
   - id: "modern_contributors-cover"
-    src: /screenshots/modern_contributors-cover.png
-    caption: "Sample publication cover with the contributors listed using the `contributor_as_it_appears` option in the publication.yml file, which allows for specific language and formatting to be applied."  
-  
+    src: /screenshots/modern_contributors-cover.jpg
+    caption: "Sample publication cover with the contributors listed using the `contributor_as_it_appears` option in the publication.yml file, which allows for specific language and formatting to be applied."
+
   - id: "modern_contributors-page"
     src: /screenshots/modern_contributors-page.png
     caption: "By default, page contributors are listed in the page header, under the title. Contributor professional `title` and `affiliation` will be included unless `contributor_byline: false` is set in the page YAML, or `contributorByline: false` is set in your config.yml file."
-  
+
   - id: "modern_contributors-name-title-block"
     src: /screenshots/modern_contributors-name-title-block.png
     caption: "The `q-contributor` shortcode can be used to add a list of contributors anywhere on a page. In this case it is the page author formated with the `name-title-block` option."
-  
+
   - id: "modern_contributors-initials"
     src: /screenshots/modern_contributors-initials.png
     caption: "Quire also includes an `initials` format which will list the author names onluy by initials."
-    
+
   - id: "modern_contributors-bio"
     src: /screenshots/modern_contributors-bio.png
     caption: "The most full-featured way to list contirbutors is with the `bio` format. It includes the contributor’s name, bio, picture, an offsite link to their personal site, and a link to any contributions they made to the publication."
-  
+
   - id: "modern-citation-hover"
     src: /screenshots/modern-citation-hover.png
     caption: "By using the `q-cite` shortcode, you can add citations that appear when hovering over the linked text. Clicking the link brings you to a bibliography at the bottom of the page."
-  
+
   - id: "modern-bibliography-page"
     src: /screenshots/modern-bibliography-page.png
     caption: "Any citations added to a page with `q-cite` are automatically added to a bibliography list at the bottom of the page."
-  
+
   - id: "modern-bibliography"
     src: /screenshots/modern-bibliography.png
     caption: "A bibliography of all works in your project’s references.yml file can be added to any page with the `q-bibliography` shortcode."
-    
+
   - id: "netlify-logo"
     src: full-logo-light.png
-    
+
+  - id: "digitalpipeline-traditional"
+    src: /screenshots/digitalpipeline-traditional.gif
+    caption: "In traditional website publishing, a content management system (CMS) is connected to collections and image databases and set up on a server."
+
+  - id: "digitalpipeline-static"
+    src: /screenshots/digitalpipeline-static.gif
+    caption: "In static-site publishing, the CMS is just software and a folder of files on your, the publisher’s, computer that are used to build the site."
+
+  - id: "thomas_rife"
+    src: /screenshots/_thomas_rife.png
+    caption: "**Family history**"
+    full_caption: "*The Alamo Keeper: Thomas C. Rife* , by Philip Mullins and George Mullins. Austin Texas: Self-published, 2020."
+
+  - id: "artists_studios_paris"
+    src: /screenshots/_artists_studios_paris.png
+    caption: "**Journal article** | Journal18"
+    full_caption: "This article was published in *Journal18: a journal of eighteenth-century art and culture*, Issue 5: *Coordinates: Digital Mapping and 18th-Century Visual, Material, and Built Cultures* (Spring 2018), co-edited by Nancy Um and Carrie Anderson."
+
+  - id: "bending_lines"
+    src: /screenshots/_bending_lines.png
+    caption: "**Online exhibition** | Leventhal Map & Education Center, Boston Public Library"
+    full_caption: "*Bending Lines: Maps and Data from Distortion to Deception.* Boston: Leventhal Map & Education Center at the Boston Public Library, 2020."
+
+  - id: "fault_lines"
+    src: /screenshots/_fault_lines.png
+    caption: "**Senior thesis show** | Mills College Art Museum"
+    full_caption: "*Fault Lines: 2020 Senior Thesis*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir. Oakland, CA: Mills College Art Museum, 2020."
+
+  - id: "in_plain_sight"
+    src: /screenshots/_in_plain_sight.png
+    caption: "**Exhibition catalogue** | Mills College Art Museum"
+    full_caption: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor. Oakland: Mills College Art Museum, 2019."
+
+  - id: "state_of_convergence"
+    src: /screenshots/_state_of_convergence.png
+    caption: "**Exhibition catalogue** | Mills College Art Museum"
+    full_caption: "*State of Convergence*, Oakland: Mills College Art Museum, 2020."
+
+  - id: "tilt_west"
+    src: /screenshots/_tilt_west.png
+    caption: "**Journal** | Tilt West ([view](http://journal.tiltwest.org/vol1/))"
+    full_caption: "“Art and Language.” In *Art and Language*, by Nora Burnett Abrams, Noel Black, Angie Eng, Rick Griffith, Paul Miller, Juan Morales, Kelly Sears, Suzi Q. Smith, and Joel Swanson. Denver: Tilt West, 2020."
+
+  - id: "silk_poems"
+    src: /screenshots/_silk_poems.png
+    caption: "**Exhibition catalogue** | The University of Hong Kong Museum and Art Gallery"
+    full_caption: "*Silk Poems: Jen Bervin*, by Jen Bervin, The University Museum and Art Gallery, The University of Hong Kong, 2019."
+
+  - id: "ancient_ambers"
+    src: /screenshots/_ancient_ambers.png
+    caption: "**Collection catalogue** | Getty Publications"
+    full_caption: "*Ancient Carved Ambers in the J. Paul Getty Museum*, J. Paul Getty Museum."
+
+  - id: "cva"
+    src: /screenshots/_cva.png
+    caption: "**Corpus Vasorum Antiquorum** | Getty Publications"
+    full_caption: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis, J. Paul Getty Museum, 2019."
+
+  - id: "heritage_management"
+    src: /screenshots/_heritage_management.png
+    caption: "**Research proceedings** | Getty Publications"
+    full_caption: "Values in Heritage Management: Emerging Approaches and Research Directions, by Erica Avrami, et al, The Getty Conservation Institute, 2019."
+
+  - id: "tour_toolkit"
+    src: /screenshots/_tour_toolkit.png
+    caption: "**Informational Pamphlet** | Minneapolis Institute of Art"
+    full_caption: "*Tour Toolkit: Developing an Inclusive Tour*, by Minneapolis Institue of Art, 2019."
+
+  - id: "alcohols_empire"
+    src: /screenshots/_alcohols_empire.png
+    caption: "**Online Exhibition** | Minneapolis Institute of Art"
+    full_caption: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*. Minneapolis Institute of Art, 2019."
+
+  - id: "mozoomdar_at_sea"
+    src: /screenshots/_mozoomdar_at_sea.png
+    caption: "**Student Research Project**"
+    full_caption: "*Mozoomdar at Sea*, by Nick Tackes, 2018."
+
+  - id: "humanizing_the_digital"
+    src: /screenshots/_humanizing_the_digital.png
+    caption: "**Conference Proceedings** | Ad Hoc Museum Collective"
+    full_caption: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
+
+  - id: "state_of_museum_dig"
+    src: /screenshots/_state_of_museum_dig.png
+    caption: "**Graduate Essays** | Ad Hoc Museum Collective"
+    full_caption: "*The State of Museum Digital Practice in 2019: A collection of graduate essays and responses*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
+
+  - id: "quire_demo"
+    src: /screenshots/quire_demo.jpg
+    media_id: VVYe0qR5DnM
+    media_type: youtube
+    caption: "A six-minute introduction to working in a static site generator like the one that powers Quire."
+
+  - id: "mcn_2017"
+    src: /screenshots/mcn_2017.jpg
+    media_id: oFBHi5ed5OU
+    media_type: youtube
+    caption: "Eric Gardner presents some of the thinking behind Quire in “Data Driven Approaches to Publishing” at MCN (Museum Computer Network) in Pittsburgh, 2017."
+
+  - id: "the_gang"
+    src: /screenshots/the_gang.jpg
+    caption: "Eric Gardner (Digital Publications Developer), Ruth Evans Lane (Editor), and Greg Albers (Digital Publications Manager) with multiple formats of Getty’s [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/) publication."
+
+  - id: "mcn_2013"
+    src: /screenshots/mcn_2013.png
+    media_id: Gp67HS3m_Pg
+    media_type: youtube
+    caption: "Greg Albers moderates a panel at MCN (Museum Computer Network) in Montreal, 2013, exploring the intersections between print and digital publishing."
+
+  - id: "virtual-library"
+    src: /screenshots/virtual-library.jpg
+    caption: "Getty Publications’ [Virtual Library](https://www.getty.edu/publications/virtuallibrary/), featuring more than 300 of its past books, for free online reading and PDF download."
+
+  - id: "getty-center"
+    src: /screenshots/getty.jpg
+    caption: "Getty Center, Los Angeles, California (2001)."
+
+  - id: "opf_2020"
+    src: /screenshots/opf_2020.png
+    media_id: SB1Y5GfDP7c
+    media_type: youtube
+    caption: "“Quire: Multiformat Publishing Solutions for Art Books and Beyond,” featuring Jayna Swartzman-Brosky (Mills College Art Museum), Nancy Um (Binghamton University), and Amanda Helton (San José Museum of Art)."
+
+  - id: "cva_podcast"
+    src: /screenshots/cva_podcast.png
+    media_id: 809104705
+    media_type: soundcloud
+    caption: "“Moving a Hundred-Year-Old Series Online: Getty’s Corpus Vasorum Antiquorum,” from Getty’s *Art & Ideas* podcast."
+
+  - id: "roadmap"
+    src: /illustrations/roadmap.png
+    caption: "The journey ahead."
+
+  - id: "collection-catalogue"
+    src: /screenshots/collection-catalogue.jpg
+    caption: "**Scholar approved** | Optimized for visual, scholarly publishing"
+
+  - id: "custom-styles"
+    src: /screenshots/custom-styles.jpg
+    caption: "**Customizable styles** | Change colors, fonts and more"
+
+  - id: "multiformat"
+    src: /screenshots/multiformat.jpg
+    caption: "**Multiformat** | Publish online, as an e-book, and in print"
+
+  - id: "video-embeds"
+    src: /screenshots/video-embeds.jpg
+    caption: "**Multimedia** | Embed videos, audio, and still images"
+
+  - id: "plain-text"
+    src: /screenshots/plain-text.jpg
+    caption: "**Simple structure** | Keep content in human-readable format"
+
+  - id: "map-inline"
+    src: /screenshots/map-inline.jpg
+    caption: "When you insert an interactive map with the `q-figure-zoom` shortcode, it will display a static image of the map when you’re on the page."
+
+  - id: "map-zoom"
+    src: /screenshots/map-zoom.jpg
+    caption: "When you click on a map inserted with the `q-figure-zoom` shortcode, it will load an interactive version centered on latititue and longitude points you specified, and displaying labels and points from your geojson data file."
+
+  - id: "90-min-webinar"
+    src: /screenshots/90-min-webinar.jpg
+    media_id: kFTcJLbMDxs
+    media_type: youtube
+    caption: "Digital Publication Manager, Greg Albers, gives a 90-minute webinar walking users through the basic functions of Quire."
+
+  - id: "spotlight"
+    src: /screenshots/spotlight.jpg
+    caption: "Pressing Command-Spacebar pulls up the Spotlight search bar."
+
+  - id: "spotlight-terminal"
+    src: /screenshots/spotlight-terminal.jpg
+    caption: "Search for “Terminal” and double-click."
