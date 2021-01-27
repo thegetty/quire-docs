@@ -6,7 +6,7 @@
 # ---------
 # - id:                     lowercase, no spaces or special characters
 #   src:                    Screenshot of homepage, 1200px x 668px downsized to
-#                             900px x 501px or at least that ratio
+#                             900px x 563px or at least that ratio
 #   type:                   Try to use existing types if possible
 #   publisher:              Or "Self-Published" if not publisher/institution
 #   title_info:             Markdown ok, typically: "*Title of Publication*, by Author Name"
@@ -316,3 +316,16 @@ project_list:
     github_user:
       - tipeslowly
     note: "*Clouds of Ink, Pools of Colour* was developed as a snapshot of the print publication of Hou Beiren's work, and as a catalogue for a series of his paintings recently donated to UMAG."
+
+  - id: "shifting_perspectives"
+    src: /screenshots/_shifting_perspectives.jpg
+    alt: "Shifting Perspectives: Stephanie Hanor, Simone Gage, Sage Gaspar, Sydney Pearce, Melika Sebihi, and Taya Wyatt"
+    type: Exhibition Catalogue
+    publisher: Mills College Art Museum
+    title_info: "*Shifting Perspectives*"
+    pub_date: 2020-12-02
+    url: https://mcam.mills.edu//publications/shiftingperspectives/index.html
+    customization_level: minor
+    github_user:
+      - MillsArtMuseum
+    note: "*Shifting Perspectives is a digital exhibition examining contemporary artists’ critiques of traditional visual representations of race, culture, and gender. The publication complements a virtual collection exhibition created by Mills College's museum studies class."
