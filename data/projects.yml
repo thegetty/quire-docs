@@ -324,7 +324,7 @@ project_list:
     publisher: Mills College Art Museum
     title_info: "*Shifting Perspectives*"
     pub_date: 2020-12-02
-    url: https://mcam.mills.edu//publications/shiftingperspectives/index.html
+    url: https://mcam.mills.edu/publications/shiftingperspectives/index.html
     customization_level: minor
     github_user:
       - MillsArtMuseum
