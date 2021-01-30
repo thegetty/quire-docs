@@ -5,7 +5,7 @@ weight: 4100
 abstract: "Dive in to creating your first Quire publication"
 ---
 
-Before getting started, if you have not done so already, we recommend taking some time to review our beginner's guide [*Tutorial: Quire Basics*](/learn/tutorial.md/) which is step-by-step introduction to the fundamentals of Quire. 
+Before getting started, if you have not done so already, we recommend taking some time to review our beginner's guide [*Tutorial: Quire Basics*](/learn/tutorial.md/) which is step-by-step introduction to the fundamentals of Quire.
 
 ## Start a New Project
 
@@ -55,7 +55,7 @@ Inside each Quire project, you will find the following directories and files. Co
 
 #### 📁 content
 
-The central part of Quire is the `content` directory where almost all of a publication’s text content will live as individual {{< q-def "Markdown" >}} files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Pages*](/documentation/pages/).
+The central part of Quire is the `content` directory where almost all of a publication’s text content will live as individual {{< q-def "Markdown" >}} files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Page Types & Structure*](/documentation/pages/).
 
 {{< q-class "box tip" >}}
 - New Quire projects started with the `quire new` command come with some demo content, images, and data as samples to start. These materials can be written over, re-used, or deleted altogether as you’d like.
