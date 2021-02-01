@@ -70,7 +70,7 @@ If there’s a section you think it missing or could be improved, we’d love fo
 
 - [Propose a new section or edit](https://github.com/thegetty/quire/issues/new)
 - [Find an existing issue](https://github.com/thegetty/quire/issues?q=is%3Aissue+is%3Aopen+label%3Aquire-website)
-- [Read the Quire Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Documentation-Style-Guide)
+- [Read the Quire Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide)
 
 ### Translate the Documentation
 
