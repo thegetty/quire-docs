@@ -53,4 +53,4 @@ params:
   objectLinkText: "View in Collection"
   frontmatterPageStart: 0
   bodyPageStart: 100
-  backmatterPageStart: 1000
+  backmatterPageStart: 6000
