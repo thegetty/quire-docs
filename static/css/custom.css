@@ -164,7 +164,7 @@
 @media only screen and (min-width: 1000px) {
   /* add graphic lines connecting menu item and page navigation */
 
-  .quire-page__page-navigation::before {
+  /* .quire-page__page-navigation::before {
     content: "";
     position: absolute;
     width: calc((100vw - 936px - 4rem) / 2);
@@ -194,16 +194,16 @@
     position: absolute;
     width: calc(30px + 2rem + 1px);
     height: 800px;
-    /* left: 270px; */
     left: 263px;
     border-bottom: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
     margin-top: calc(-800px - 1rem);
     border-bottom-right-radius: 30px;
-  }
+  } */
 
   /* turns lines downward for top list items */
 
+  /* #documentation-implementation .quire-page__page-navigation ul::before,
   #tutorial .quire-page__page-navigation ul::before,
   #guide-install-uninstall .quire-page__page-navigation ul::before,
   #guide-quire-cli .quire-page__page-navigation ul::before,
@@ -219,6 +219,7 @@
     left: calc((((100vw - 936px - 4rem) / 2) + 1px) * -1);
   }
 
+  #documentation-implementation .quire-page__page-navigation::before,
   #tutorial .quire-page__page-navigation::before,
   #guide-install-uninstall .quire-page__page-navigation::before,
   #guide-quire-cli .quire-page__page-navigation::before,
@@ -231,6 +232,7 @@
     left: calc((((100vw - 936px - 4rem) / 2) + 1px) * -1);
   }
 
+  #documentation-implementation .page-item.this-page.with-page-nav::after,
   #tutorial .page-item.this-page.with-page-nav::after,
   #guide-install-uninstall .page-item.this-page.with-page-nav::after,
   #guide-quire-cli .page-item.this-page.with-page-nav::after,
@@ -242,11 +244,11 @@
     border-top-right-radius: 30px;
     border-bottom-right-radius: 0px;
     width: calc(30px + 2rem);
-  }
+  } */
 
   /* reduces border radius of line for page that's almost even */
 
-  #guide-metadata-configuration .quire-page__page-navigation ul::before,
+  /* #guide-metadata-configuration .quire-page__page-navigation ul::before,
   #guide-pages .quire-page__page-navigation ul::before {
     top: calc(50%);
     height: 20px;
@@ -261,7 +263,7 @@
   #guide-pages .page-item.this-page.with-page-nav::after {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-  }
+  } */
 }
 
 .quire-page__page-navigation ul li a {
@@ -545,4 +547,13 @@ pre code {
 dt {
   margin-top: 1rem;
   margin-bottom: 0.25rem;
+}
+
+
+/* Fixes to get the old site working with the new content and new Quire */
+.quire-page__abstract {
+  display: none;
+}
+.quire-navbar-page-controls {
+  transform: rotate(180deg);
 }
