@@ -32,7 +32,7 @@ Erin Cecele Dunigan ([@Erin-Cecele](https://github.com/Erin-Cecele)), community 
 
 Contact us at [quire@getty.edu](mailto:quire@getty.edu)
 
-**All are welcome.** As an open-source community, Quire is committed to providing a safe, welcoming, transparent, and inclusive environment for all our community members and those wishing to become involved. Please see our **[Code of Conduct](https://github.com/thegetty/quire/blob/master/CODE_OF_CONDUCT.md)** for more on the expecations and protections for our community members.
+**All are welcome.** As an open-source community, Quire is committed to providing a safe, welcoming, transparent, and inclusive environment for all our community members and those wishing to become involved. Please see our **[Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md)** for more on the expecations and protections for our community members.
 
 ## Quire Code Repositories
 
