@@ -332,3 +332,7 @@ figure_list:
   - id: "spotlight-terminal"
     src: /screenshots/spotlight-terminal.jpg
     caption: "Search for “Terminal” and double-click."
+
+  - id: "iris-zoom"
+    src: /screenshots/iiif-iris-zoom.jpg
+    caption: "An example of deep zooming."
