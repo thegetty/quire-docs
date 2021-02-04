@@ -7,7 +7,16 @@ abstract: "Tips and tricks for including interactive maps and images"
 
 ## Zooming Images
 
-TK
+### IIIF & Deep Zooming
+
+IIIF (referred to when speaking as "Triple I F"), stands for the International Image Interoperability Framework. It is a shared set of standards for storing images and image data that allows for seamless and regularized sharing and display of high-resolution images across different uses within an institution, or across different institutions.
+
+This feature adds deep-zooming to any image. You can either point Quire to an existing IIIF repository of images, or add high-resolution images into a Quire project directly.
+
+When adding your own images, Quire processes them into hundreds of individual image tiles. Each tile comprises a portion of the image at a particular zoom level to then be displayed in our existing zooming image viewer. Because the images have been tiled, users of your Quire project only need their browsers to load the tiles of the image portion and zoom level they're looking at at the moment. This means much faster page loads, and higher-resolution images.
+
+{{< q-figure id="iris-zoom" >}}
+
 
 ## Maps
 
