@@ -6,36 +6,43 @@ abstract: "Get set up to use Quire on macOS, Window, or Linux"
 ---
 
 {{< q-class "box warning" >}}
-- Quire is in a closed beta. Installation will not work unless you have [requested and been given access](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
+- Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open source software. For a free license to use Quire for your publication projects (and for additional access to support from Getty staff) [please sign up](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
 {{< /q-class >}}
 
 ## macOS Installation
 
-Open your Terminal {{< q-def "command-line shell" >}} (found in your Applications/Utilities folder or by pressing Command–Space Bar and type “Terminal” ) and follow the steps below to first install the support software for Quire, and then Quire itself. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
+Installing and running Quire requires using the Terminal {{< q-def "command-line shell" >}}. Open it from your Applications/Utilities folder or by pressing Command–Space Bar and typing “Terminal”. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
 
-1. **Apple’s Xcode** is a set of developer tools for your mac. More information can be found [here](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
+### Quick Install
+
+If you’re eager to get started, this will install the complete Quire package but without e-book or PDF output capability. These may be added later, by following steps 2–4 in the Full Install guidelines below.
+
+1. Install the **LTS** version of Node.js: [https://nodejs.org](https://nodejs.org)
+2. In Terminal, install the Quire CLI with: `npm install --global @thegetty/quire-cli`
+3. Confirm installation: `quire --help`
+
+The CLI installation process may take several minutes, during which time there will be considerable messaging output in Terminal. The only messages of any concern are those labeled as Error or ERR. These likely indicate a failed installation, as would seeing "command not found" after entering `quire --help` in step 3. Refer to the [*Troubleshooting*](#troubleshooting) section below.
+
+### Full Install
+
+Follow the steps below to first install the support software for Quire, and then Quire itself.
+
+1. **Node.js** enables you to run javascript on your computer. Visit the Node.js site, and download and install the older LTS (long-term support) version, which is sufficient and more stable than the higher “Current” version that is also available for download: [https://nodejs.org](https://nodejs.org).
+
+2. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Visit the Pandoc repository on GitHub, and download the macOS .pkg file of the latest release: [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/). Install by double clicking the icon and following the prompts.
+
+3. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and downoad the Mac version: https://kdp.amazon.com/en_US/help/topic/G202131170. Install by double clicking the icon and following the prompts.
+
+4. **PrinceXML** enables you to create a PDF version of your Quire project with the `quire pdf` command. Visit the PrinceXML site, download the Mac OS version, uncompress the folder, and rename it to "prince": [http://www.princexml.com/download/](http://www.princexml.com/download/).
+
+    Open Terminal and type these lines in, hitting enter after each:
 
     ```text
-    xcode-select --install
+    cd Downloads/prince
+    sudo ./install.sh
     ```
 
-2. **Node.js** enables you to run javascript on your computer. Visit the Node.js site, and download and install the current LTS (long-term support) version: [https://nodejs.org](https://nodejs.org).
-
-3. **Pandoc** serves two purposes in Quire. You can use it to convert Word documents to Markdown, and you can also use it to create e-book files of your Quire project. Visit the Pandoc repository on GitHub, and download the macOS .pkg file of the latest release: [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/). Install by double clicking the icon and following the prompts.
-
-4. **PrinceXML** enables you to create a PDF version of your Quire project. Visit the PrinceXML site, download the Mac OS version, and uncompress the folder: [http://www.princexml.com/download/](http://www.princexml.com/download/).
-
-    Copy and paste the following two lines in a blank Word or Notes document:
-
-      ```text
-      cd Downloads/prince-XX.X-macosx
-      sudo ./install.sh
-      ```
-    Before you can proceed, you need to update **prince-XX.X-macosx** with the correct version number.
-
-    Go to the Downloads folder to make sure the Prince zip file is there. The Prince folder should have a number listed in its title. Make sure XX.X in Word or Notes document matches this number by deleting and replacing with the correct version numbers. The line may end in macos or macosx. Make sure the it matches exactly what the program looks like in your Downloads folder and delete the "x" if necessary.
-
-    Once updated, paste the two lines together in Terminal. You will be prompted to enter your computer password. Press enter. You should receive a message that PrinceXML will be installed in the `/usr/local` directory. Press enter again. If successful you will see a message in the Terminal saying "installation complete."
+    You will be prompted to enter your computer password. Press enter. You should receive a message that PrinceXML will be installed in the `/usr/local` directory. Press enter again. If successful you will see a message in the Terminal saying "installation complete." Or, if you get a "no such file or directory" message after the first line, the file you dowloaded is either not in your Downloads folder, or is not named "prince". Correct as necessary and try again.
 
     When complete, type `cd` into the Terminal to return to your home directory.
 
@@ -43,24 +50,13 @@ Open your Terminal {{< q-def "command-line shell" >}} (found in your Application
     cd
     ```
 
-5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into your Terminal to download the Quire CLI to your computer from GitHub.
+5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into your Terminal to install.
 
     ```text
-    git clone https://github.com/gettypubs/quire-cli.git
+    npm install --global @thegetty/quire-cli
     ```
 
-    You may be asked to enter your GitHub username and password. When complete, install the CLI by copying and pasting the following commands into your Terminal and pressing enter. The first resets user permissions for your local directory, the second installs Quire.
-
-    ```text
-    sudo chown -R $USER /usr/local
-    ```
-
-    ```text
-    cd quire-cli
-    npm install -g
-    ```
-
-When complete, type `quire --version` to confirm proper installation. It should return a version number, otherwise, if it says `command not found`, the Quire CLI has not been properly installed. Refer to the [*Troubleshooting*](#troubleshooting) section below.
+The CLI installation process may take several minutes, during which time there will be considerable messaging output in Terminal. The only messages of any concern are those labeled as Error or ERR. These likely indicate a failed installation, as would seeing "command not found" after entering `quire --help` in step 3. Refer to the [*Troubleshooting*](#troubleshooting) section below.
 
 ## Windows Installation
 
