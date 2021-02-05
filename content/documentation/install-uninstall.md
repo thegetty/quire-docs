@@ -6,7 +6,7 @@ abstract: "Get set up to use Quire on macOS, Window, or Linux"
 ---
 
 {{< q-class "box warning" >}}
-- Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open source software. For a free license to use Quire for your publication projects (and for additional access to support from Getty staff) [please sign up](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
+- Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open source software. For a free license to use Quire for your publication projects (and for additional access to support) [please sign up](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
 {{< /q-class >}}
 
 ## macOS Installation
@@ -18,10 +18,10 @@ Installing and running Quire requires using the Terminal {{< q-def "command-line
 If you’re eager to get started, this will install the complete Quire package but without e-book or PDF output capability. These may be added later, by following steps 2–4 in the Full Install guidelines below.
 
 1. Install the **LTS** version of Node.js: [https://nodejs.org](https://nodejs.org)
-2. In Terminal, install the Quire CLI with: `npm install --global @thegetty/quire-cli`
+2. In Terminal, install Quire with: `npm install --global @thegetty/quire-cli`
 3. Confirm installation: `quire --help`
 
-The CLI installation process may take several minutes, during which time there will be considerable messaging output in Terminal. The only messages of any concern are those labeled as Error or ERR. These likely indicate a failed installation, as would seeing "command not found" after entering `quire --help` in step 3. Refer to the [*Troubleshooting*](#troubleshooting) section below.
+The Quire installation process may take several minutes, during which time there will be considerable messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation, as would seeing "command not found" after entering `quire --help` in step 3. Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 
 ### Full Install
 
@@ -44,19 +44,27 @@ Follow the steps below to first install the support software for Quire, and then
 
     You will be prompted to enter your computer password. Press enter. You should receive a message that PrinceXML will be installed in the `/usr/local` directory. Press enter again. If successful you will see a message in the Terminal saying "installation complete." Or, if you get a "no such file or directory" message after the first line, the file you dowloaded is either not in your Downloads folder, or is not named "prince". Correct as necessary and try again.
 
-    When complete, type `cd` into the Terminal to return to your home directory.
+    When complete, type `cd` into the Terminal to return to your {{< q-def "home directory">}}.
 
     ```text
     cd
     ```
 
-5. The **Quire CLI** ({{< q-def "command-line interface" >}}) is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into your Terminal to install.
+5. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
 
     ```text
     npm install --global @thegetty/quire-cli
     ```
 
-The CLI installation process may take several minutes, during which time there will be considerable messaging output in Terminal. The only messages of any concern are those labeled as Error or ERR. These likely indicate a failed installation, as would seeing "command not found" after entering `quire --help` in step 3. Refer to the [*Troubleshooting*](#troubleshooting) section below.
+    The Quire installation process may take several minutes, during which time there will be considerable messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation.
+
+    To verify installation, enter the command below. This will give you a list of [commands](/documentation/quire-cli/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
+
+    ```text
+    quire --help
+    ```
+
+    Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 
 ## Windows Installation
 
@@ -244,9 +252,14 @@ If version number is returned, quire-cli was installed correctly. You can now le
 cd ~
 ```
 
-## Update the Quire CLI
+## Update Quire
 
-As we develop, you may also want/need to update your Quire CLI. The CLI is pegged to a particular version of the Quire Starter Theme (at least for now), so if you’re using an older CLI, any new projects you start will have the corresponding older version of the theme.
+As we develop, you may also want/need to update Quire. Updating Quire will mean that any new projects you start will have the newest updates. It will not effect existing projects, with one exception.
+
+As Quire is updated, Quire commands may change
+
+This means that running
+
 
 1. In your command-line shell, to first uninstall and discard the existing version of the CLI, enter the following four commands in order:
 
@@ -317,60 +330,3 @@ To uninstall Quire:
     ```
 
 2. In the folder/finder view, go to your user/home directory where you initially installed Quire, look for the `quire-cli` folder and delete it.
-
-## Troubleshooting
-
-**Downloading the Quire CLI to your computer from GitHub through the Terminal**
-
-If you have {{< q-def "two-factor authentication" >}} set-up, you may need to create a personal access token in GitHub to get Quire CLI to download properly. More information on creating a personal access token can be found [here](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), or you can follow the instructions below.
-
-Follow these steps:
-
-1. Run
-
-    ```text
-    git clone https://github.com/gettypubs/quire-cli.git
-    ```
-
-2. For username: enter your Github Username
-
-   For Password: **follow the directions below.**
-
-3. In GitHub follow this link (https://github.com/settings/tokens) to access the personal token access token page. Or, while on Github.com, navigate to the upper-right corner of any page, click your profile photo, then click **Settings**. In the left sidebar, click **Developer settings**. In the left sidebar, click **Personal access tokens**.
-
-6. Click **generate new token**.
-
-7. Give your token a descriptive name.
-
-8. This page allows you to select the scopes or permissions you'd like to grant this token. In this instance, click **repo** at the very top.
-
-9. Scroll down to the bottom of the page and click **generate token**.
-
-10. Copy the token to your clipboard before closing this window. For security reasons, after you navigate off the page, you will not be able to see the token again.(Treat your tokens like passwords, and keep them secret.)
-
-**Resetting user permission for local directory**
-
-When entering
-
-  ```text
-  sudo chown -R $USER /usr/local
-  ```
-
-You will be prompted to enter a password and may receive the following error, *Operation not permitted*.
-
-Please note, on some computers you may not need to run this command.
-
-Try to continue with the installation process to see if everything is running smoothly:
-
-  ```text
-  cd quire-cli
-  npm install -g
-  ```
-
-If this works, then you can ignore the *sudo chown* command.
-
-When you have finished these steps, type the following command to confirm proper installation:
-
-  ```text
-  quire --version
-  ```
