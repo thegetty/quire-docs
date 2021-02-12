@@ -15,11 +15,12 @@ Installing and running Quire requires using the Terminal {{< q-def "command-line
 
 ### Quick Install
 
-If you’re eager to get started, this will install the complete Quire package but without e-book or PDF output capability. These may be added later, by following steps 2–4 in the Full Install guidelines below.
+If you’re eager to get started, this will install the complete Quire package but without e-book or PDF output capability. These may be added later, by following steps 3–5 in the Full Install guidelines below.
 
-1. Install the **LTS** version of Node.js: [https://nodejs.org](https://nodejs.org)
-2. In Terminal, install Quire with: `npm install --global @thegetty/quire-cli`
-3. Confirm installation: `quire --help`
+1. In Terminal, install Apple’s Xcode with: `xcode-select --install`
+2. Download and install the **LTS** version of Node.js: [https://nodejs.org](https://nodejs.org)
+3. In Terminal, install Quire with: `npm install --global @thegetty/quire-cli`
+4. Confirm installation: `quire --help`
 
 The Quire installation process may take several minutes, during which time there will be considerable messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation, as would seeing "command not found" after entering `quire --help` in step 3. Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 
@@ -27,13 +28,19 @@ The Quire installation process may take several minutes, during which time there
 
 Follow the steps below to first install the support software for Quire, and then Quire itself.
 
-1. **Node.js** enables you to run javascript on your computer. Visit the Node.js site, and download and install the older LTS (long-term support) version, which is sufficient and more stable than the higher “Current” version that is also available for download: [https://nodejs.org](https://nodejs.org).
+1. **Apple’s Xcode** is a set of developer tools for your mac. More information can be found [here](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
 
-2. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Visit the Pandoc repository on GitHub, and download the macOS .pkg file of the latest release: [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/). Install by double clicking the icon and following the prompts.
+  ```text
+  xcode-select --install
+  ```
 
-3. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and downoad the Mac version: https://kdp.amazon.com/en_US/help/topic/G202131170. Install by double clicking the icon and following the prompts.
+2. **Node.js** enables you to run javascript on your computer. Visit the Node.js site, and download and install the older LTS (long-term support) version, which is sufficient and more stable than the higher “Current” version that is also available for download: [https://nodejs.org](https://nodejs.org).
 
-4. **PrinceXML** enables you to create a PDF version of your Quire project with the `quire pdf` command. Visit the PrinceXML site, download the Mac OS version, uncompress the folder, and rename it to "prince": [http://www.princexml.com/download/](http://www.princexml.com/download/).
+3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Visit the Pandoc repository on GitHub, and download the macOS .pkg file of the latest release: [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/). Install by double clicking the icon and following the prompts.
+
+4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and downoad the Mac version: https://kdp.amazon.com/en_US/help/topic/G202131170. Install by double clicking the icon and following the prompts.
+
+5. **PrinceXML** enables you to create a PDF version of your Quire project with the `quire pdf` command. Visit the PrinceXML site, download the Mac OS version, uncompress the folder, and rename it to "prince": [http://www.princexml.com/download/](http://www.princexml.com/download/).
 
     Open Terminal and type these lines in, hitting enter after each:
 
@@ -50,7 +57,7 @@ Follow the steps below to first install the support software for Quire, and then
     cd
     ```
 
-5. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
+6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
 
     ```text
     npm install --global @thegetty/quire-cli
@@ -255,11 +262,6 @@ cd ~
 ## Update Quire
 
 As we develop, you may also want/need to update Quire. Updating Quire will mean that any new projects you start will have the newest updates. It will not effect existing projects, with one exception.
-
-As Quire is updated, Quire commands may change
-
-This means that running
-
 
 1. In your command-line shell, to first uninstall and discard the existing version of the CLI, enter the following four commands in order:
 
