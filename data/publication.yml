@@ -33,7 +33,7 @@ identifier:
 publisher:
   - name: J. Paul Getty Trust
     location: Los Angeles
-    url: http://www.getty.edu
+    url: https://www.getty.edu
     logo: logo-getty.png
 
 # ------------------------------------------------------------------------------
@@ -45,7 +45,7 @@ contributor_as_it_appears:
 # contributor:
 #   - type: primary
 #     full_name: J. Paul Getty Trust
-#     url: http://www.getty.edu/
+#     url: https://www.getty.edu/
 
 # ------------------------------------------------------------------------------
 # Copright & License
@@ -79,10 +79,7 @@ resource_link:
   #   media_type: application/mobi
   #   link_relation: alternate
   #   url: /downloads/output.mobi
-  - type: footer-link
-    name: About
-    link_relation: about
-    url: /about/
+  
   - type: footer-link
     name: GitHub
     url: https://github.com/thegetty/quire/
@@ -110,7 +107,7 @@ subject:
     identifier: "http://vocab.getty.edu/aat/300230810"
   - type: getty
     name: Still Life with Blue Pot
-    identifier: "http://www.getty.edu/cona/CONAFullSubject.aspx?subid=700002042"
+    identifier: "https://www.getty.edu/cona/CONAFullSubject.aspx?subid=700002042"
 
 # ------------------------------------------------------------------------------
 # Revision History

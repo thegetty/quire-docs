@@ -22,7 +22,7 @@ Quire books are scholarly, visual, and built for discoverability and longevity. 
 - Web accessibility and SEO optimized
 - Outputs to web, PDF, and EPUB formats
 
-Check out [the demo site](https://gettypubs.github.io/quire-starter/), and [some of the Getty’s books developed with early versions of Quire.](http://www.getty.edu/publications/digital/digitalpubs.html)
+Check out [the demo site](https://gettypubs.github.io/quire-starter/), and [some of the Getty’s books developed with early versions of Quire.](https://www.getty.edu/publications/digital/digitalpubs.html)
 
 Quire is centered around [Hugo](https://github.com/gohugoio/hugo), and uses [PrinceXML](http://www.princexml.com/) for PDF generation and [pandoc](https://pandoc.org/) for EPUBs. It consists of four primary repositories, all of which but this one are closed during development.
 

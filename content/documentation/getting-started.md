@@ -5,11 +5,11 @@ weight: 4100
 abstract: "Dive in to creating your first Quire publication"
 ---
 
-Before getting started, if you have not done so already, we recommend taking some time to review our beginner's guide [*Tutorial: Quire Basics*](/learn/tutorial.md/) which is step-by-step introduction to the fundamentals of Quire. 
+Before getting started, if you have not done so already, we recommend taking some time to review our beginner's guide [*Tutorial: Quire Basics*](/learn/tutorial.md/) which is step-by-step introduction to the fundamentals of Quire.
 
 ## Start a New Project
 
-Now that you have taken the [tutorial](/learn/tutorial.md/) and [installed Quire](/documentation/install-uninstall/) its time to get started on your first publication. To create a new project you will be running the `quire new` command. You can learn more about various commands in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
+Now that you have taken the [tutorial](/learn/tutorial.md/) and [installed Quire](/documentation/install-uninstall/) its time to get started on your first publication. To create a new project you will be running the `quire new` command. You can learn more about various commands in the [*Quire Commands*](/documentation/quire-commands) chapter of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
 
 ```tx
 quire new project-name
@@ -103,11 +103,11 @@ This is an additional configuration directory. While most Quire configuration ha
 
 #### 📁 site
 
-This is where the built pages of the Quire website will live. This folder and its contents are automatically generated with the `quire site` command-in the Quire CLI, and should not be edited directly. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
+This is where the built pages of the Quire website will live. This folder and its contents are automatically generated with the `quire site` command, and should not be edited directly. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
 
 #### 📁 themes
 
-The `themes` directory contains one or more {{< q-def "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command-in the Quire CLI, the default theme is `quire-starter-theme`. Read more in [*Customizing Styles*](/documentation/styles-customization/).
+The `themes` directory contains one or more {{< q-def "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command, the default theme is `quire-starter-theme`. Read more in [*Customizing Styles*](/documentation/styles-customization/).
 
 ## Create a Publication Outline
 
