@@ -36,7 +36,7 @@ Follow the steps below to first install the support software for Quire, and then
 
 2. **Node.js** enables you to run javascript on your computer. Visit the Node.js site, and download and install the older LTS (long-term support) version, which is sufficient and more stable than the higher “Current” version that is also available for download: [https://nodejs.org](https://nodejs.org).
 
-3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Visit the Pandoc repository on GitHub, and download the macOS .pkg file of the latest release: [https://github.com/jgm/pandoc/releases/](https://github.com/jgm/pandoc/releases/). Install by double clicking the icon and following the prompts.
+3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the macOS installer, double-click it and follow the prompst to install: https://pandoc.org/installing.html
 
 4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and downoad the Mac version: https://kdp.amazon.com/en_US/help/topic/G202131170. Install by double clicking the icon and following the prompts.
 
@@ -75,57 +75,54 @@ Follow the steps below to first install the support software for Quire, and then
 
 ## Windows Installation
 
-1. Download **Git for Windows** by clicking on "Download" at https://gitforwindows.org/. An exe file will be downloaded, click on it and hit "run", you should see a setup wizard screen that will install Git for Windows. During the installation, use the default settings.
+Installing Quire requires using Windows PowerShell {{< q-def "command-line shell" >}} as an Administrator. Open it by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
 
-2. **Node.js** and **npm** enable you to run javascript on your computer. Download and install Node.js and npm at https://nodejs.org/en/download/. Make sure you get the LTS version of Node.js, npm will be installed during the same process. The Windows installer will be downloaded, just open it and a setup wizard screen will guide you through the process. Node.js
+### Quick Install
 
-3. **PrinceXML** enables you to create a PDF version of your Quire project. You will need to download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Prince you can follow the instructions at their site: https://www.princexml.com/doc-install/#windows
+If you’re eager to get started, this will install the complete Quire package but without e-book or PDF output capability. These may be added later, by following steps 3–5 in the Full Install guidelines below.
 
-4. **Pandoc** serves two purposes in Quire. You can use it to convert Word documents to Markdown, and you can also use it to create e-book files of your Quire project. You will need to download either the 32-bit installer or the 64-bit installer depending on your operating system. To install Pandoc you can either download the .msi or download the .zip file and run the .exe file in the directory. Either way works and will install Pandoc onto your system.
+1. Download and install Git for Windows: https://gitforwindows.org/
+2. Download and install the **LTS** version of Node.js: [https://nodejs.org](https://nodejs.org)
+3. In Windows PowerShell (Admin), install Quire with: `npm install --global @thegetty/quire-cli`
+4. Confirm installation: `quire --help`
 
-5. Open **PowerShell** (that should be installed by default in your Windows computer) and run it as administrator. To do so, right click on the icon and select "run as administrator" from the context menu.
+The Quire installation process may take several minutes, during which time there will be considerable messaging output in PowerShell. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation, as would seeing "command not found" after entering `quire --help` in step 3. Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 
-    Then once you get the administrator PowerShell window, type the following command:
+### Full Install
 
-    ```tx
+1. **Git for Windows** at https://gitforwindows.org/. An EXE file will be downloaded, click on it and hit "run", you should see a setup wizard screen that will install Git for Windows. During the installation, use the default settings.
+
+2. **Node.js** enables you to run javascript on your computer. Visit the Node.js site, and download and install the older LTS (long-term support) version, which is sufficient and more stable than the higher “Current” version that is also available for download. The MSI installer will be downloaded, open it and a setup wizard screen will guide you through the process: [https://nodejs.org](https://nodejs.org).
+
+3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the Pandoc MSI installer file, open it and a setup wizard screen will guide you through the process: https://pandoc.org/installing.html
+
+4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and downoad the Widows version: https://kdp.amazon.com/en_US/help/topic/G202131170. Install by double clicking the icon and following the prompts.
+
+5. **PrinceXML** enables you to create a PDF version of your Quire project. At https://www.princexml.com/download/, download either the 32-bit or 64-bit EXE installer depending on your operating system. (If you’re not sure of your system  open the Settings app by pressing Windows+I. Go to System > About and look for the “System type” entry on the right side.) Click on the downloaded file and hit "run", you should see a setup wizard screen that will guide you through install.
+
+6. **Windows Build Tools** is a set of developer tools for your PC. To install them, open PowerShell as administrator, type the following command, and hit enter:
+
+    ```text
     npm install --g --production windows-build-tools
     ```
 
-    This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you'll see the prompt with the name of your computer and your username once it's complete.
+    This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you’ll see the starting prompt with the name of your computer once it’s complete.
 
-6.  The **Quire CLI** ({{< q-def "command-line interface" >}})is the core of Quire. It is used for creating, previewing, and outputting projects. You can learn more about the Quire CLI in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. To download Quire CLI to your computer from GitHub, continue using PowerShell, but this time it's not required to run it as administrator (you can close the administrator window and open a new one). Type the following command:
-
-    ```tx
-    git clone https://github.com/gettypubs/quire-cli
-    ```
-
-    A pop up window may emerge and ask you to type your GitHub username and password, then the download starts.
-
-    Change directory to the `quire-cli` folder:
+6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Windows PowerShell with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into PowerShell to install Quire:
 
     ```text
-    cd quire-cli
+    npm install --global @thegetty/quire-cli
     ```
 
-    The following command will install dependencies:
+    The Quire installation process may take several minutes, during which time there will be considerable messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation.
 
-    ```tx
-    npm install -g
+    To verify installation, enter the command below. This will give you a list of [commands](/documentation/quire-cli/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
+
+    ```text
+    quire --help
     ```
 
-    Installing the dependencies takes some time, and you'll notice multiple text strings being generated on the screen during the process. Wait until the prompt with your username shows up and then, to verify that `quire-cli` has been installed correctly, type:
-
-    ```tx
-    quire -V
-    ```
-
-    If the version number is returned, it means that the install is correct.
-
-7. Lastly, to navigate to your home directory and create a new project or publication type:
-
-    ```tx
-    cd ~
-    ```
+    Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 
 ## Linux Installation
 
