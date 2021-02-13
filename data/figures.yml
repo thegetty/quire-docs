@@ -45,7 +45,7 @@ figure_list:
     credit:
   - id: "1.12"
     src: /screenshots/style1.png
-    caption: "screenshot of the `variables.scss` file in the quire-starter-theme directory"
+    caption: "screenshot of the `variables.scss` file in the default theme directory"
   - id: "1.13"
     src: /screenshots/style2.png
     caption: "screenshot of the custom.css file in the static directory"
