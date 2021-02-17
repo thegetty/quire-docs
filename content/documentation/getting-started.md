@@ -44,7 +44,7 @@ Inside each Quire project, you will find the following directories and files. Co
 ```tx
 📁 bin
 📁 config
-📄 config.yml  
+📄 config.yml
 📁 content     <-- Markdown files with publication text.
 📁 data        <-- YAML files with publication data.
 📄 README.md
@@ -107,7 +107,7 @@ This is where the built pages of the Quire website will live. This folder and it
 
 #### 📁 themes
 
-The `themes` directory contains one or more {{< q-def "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command, the default theme is `quire-starter-theme`. Read more in [*Customizing Styles*](/documentation/styles-customization/).
+The `themes` directory contains one or more {{< q-def "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command, the theme is `default`. Read more in [*Customizing Styles*](/documentation/styles-customization/).
 
 ## Create a Publication Outline
 

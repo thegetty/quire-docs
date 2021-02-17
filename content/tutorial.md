@@ -50,7 +50,7 @@ Follow the links below to install Quire:
 
 ## 3. Create a New Project
 
-To start a new Quire project, open your command-line shell and type `quire new my-project`. Quire will download a new starter project into a folder named “my-project” in your home directory. If you are using the Beta version of Quire, you may need to enter your GitHub username and password twice during the download process: once for the starter kit and again for the starter theme.
+To start a new Quire project, open your command-line shell and type `quire new my-project`. Quire will download a new starter project (a sample publication including content, images, and relevant metadata that you can build off of) into a folder named “my-project” in your home directory.
 
 {{< q-class "box tip" >}}
 - You can call your project anything you want, it doesn’t have to be `my-project`, but don’t use spaces, and we recommend lowercase.
@@ -191,7 +191,7 @@ The image itself is stored in the `static/img` directory of your project, put an
 
 You can also change the colors used in various elements of the site design. Let's try it out.
 
-1. Look inside the `themes` directory for the `quire-starter-theme/source/css` subdirectory and inside that, the `variables.scss` file. Here you’ll find a number of variables, prefixed with a dollar sign, that are descriptive of what they control. For instance `$quire-navbar-color` is the background color of the navigation bar at the top of every page.
+1. Look inside the `themes` directory for the `default/source/css` subdirectory and inside that, the `variables.scss` file. Here you’ll find a number of variables, prefixed with a dollar sign, that are descriptive of what they control. For instance `$quire-navbar-color` is the background color of the navigation bar at the top of every page.
 2. You can choose from a variety of hex color values that can be found [here](https://www.w3schools.com/colors/colors_hexadecimal.asp), or from one of the standard 140 color names found [here](https://www.w3schools.com/colors/colors_names.asp). Like with changes to YAML files, changes to theme styles may require you to refresh the browser, or even to stop and restart the `quire preview` process in your command-line shell.
 3. While in the `variables.scss` file, go to the section "Declare the navbar color style: normal/accent" and switch the value to *accent*.
 

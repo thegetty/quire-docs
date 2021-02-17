@@ -87,4 +87,4 @@ You’ll see there are some issues with the interface here (such as the duplicat
 
 The map is fully zoomable and global. The open-source images come from [OpenStreetMap](https://www.openstreetmap.org/). Just note that this is an external resource to your Quire project and is subject to change within your publication over time as OpenStreetMap updates its maps or changes its service.
 
-For the advanced user, is possible to further configure your map, and potentially point to different map image tiles in `/themes/quire-starter-theme/source/js/map.js`.
+For the advanced user, is possible to further configure your map, and potentially point to different map image tiles in `/themes/default/source/js/map.js`.

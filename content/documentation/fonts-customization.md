@@ -5,11 +5,11 @@ type: essay
 abstract: "Add external fonts to your publication"
 ---
 
-Typography is an important element of style in your Quire publication. Quire allows different levels of font customization, from using the already embedded open license fonts in the `quire-starter-theme` to adding new external fonts.
+Typography is an important element of style in your Quire publication. Quire allows different levels of font customization, from using the already embedded open license fonts in the default Quire theme (`themes/default`), to adding new external fonts.
 
 ## Customize Fonts
 
-The `quire-starter-theme` includes three embedded, open license fonts: ["Noto Sans"](https://github.com/googlefonts/noto-fonts), ["Noto Serif"](https://github.com/googlefonts/noto-fonts), and ["IBM Plex Sans Condensed"](https://github.com/IBM/plex). You can adjust which fonts are used where in the "variables" file of your {{< q-def "theme" >}}, `source/css/variables.scss`:
+Quire’s defualt theme includes three embedded, open license fonts: ["Noto Sans"](https://github.com/googlefonts/noto-fonts), ["Noto Serif"](https://github.com/googlefonts/noto-fonts), and ["IBM Plex Sans Condensed"](https://github.com/IBM/plex). You can adjust which fonts are used where in the "variables" file of your {{< q-def "theme" >}}, `themes/default/source/css/variables.scss`:
 
 ```scss
 $ibm-sans: 'IBM Plex Sans Condensed', sans-serif;
@@ -58,7 +58,7 @@ All the fonts you’d like to add should go in a folder named after the font, an
   📄 cooper-hewitt-bolditalic.woff2
 ```
 
-In your `themes/quire-starter-theme` folder, all fonts are stored in `source/fonts`. Move your folder of fonts there.
+In your `themes/default` folder, all fonts are stored in `source/fonts`. Move your folder of fonts there.
 
 ```
 cooper-hewitt

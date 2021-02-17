@@ -17,7 +17,7 @@ abstract: "Is Quire right for you and your project?"
 
 - Quire does not offer a graphical user interface, but requires using a {{< q-def "command-line shell" >}} and a {{< q-def "text editor" >}} to create a publication. While this can be a new and somewhat intimidating way to work, we‘ve found that most users can fairly quickly master the basics.
 
-- Quire can be used "out of the box" by any individual, no matter their skill level, using Quire [tutorials](/learn/tutorial/) and documentation as support. However, in order to customize the Quire starter theme, advanced knowledge of CSS, HTML, and static-site generation is required.
+- Quire can be used "out of the box" by any individual, no matter their skill level, using Quire [tutorials](/learn/tutorial/) and documentation as support. However, in order to customize the layouts and features of the default Quire theme beyond what is provided out of the box, advanced knowledge of CSS, HTML, and static-site generation is required.
 
 - We do provide documentation and additional [resources](/learn/other-resources/) to aid non-technical users in gaining the skills and knowledge to use Quire in a more advanced way.
 
@@ -43,9 +43,6 @@ Quire is free to use, however, there are occasionally associated costs:
 
 - Quire is beta software. While fully functioning, changes and improvements are continuing to be made to it which may lead to incompatibility across versions.
 
-- Quire projects, once published, no longer require Quire to keep running. After publication, a compatible version of Quire would only be necessary to make new updates and re-output the various file formats. Older versions can be downloaded on GitHub:
+- Quire projects, once published, no longer require Quire to keep running. After publication, a compatible version of Quire would only be necessary to make new updates and re-output the various file formats. Older versions can be downloaded on GitHub: https://github.com/gettypubs/quire/releases
 
-  - Quire CLI: https://github.com/gettypubs/quire-cli/releases
-  - Quire Starter Theme: https://github.com/gettypubs/quire-starter-theme/releases
-
-- Beta access enables users to create publications with Quire and distribute as they see fit. Users can modify the starter theme in any way that suits their needs. However, we ask that users **don’t redistribute Quire itself.**
+- Beta access enables users to create publications with Quire and distribute as they see fit. Users can modify the default theme in any way that suits their needs. However, we ask that users **don’t redistribute Quire itself.**
