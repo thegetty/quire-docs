@@ -51,13 +51,14 @@ contributor_as_it_appears:
 # Copright & License
 # ------------------------------------------------------------------------------
 
-copyright: © 2017 J. Paul Getty Trust
+copyright: © 2017, 2021 J. Paul Getty Trust
 
 license:
   name: Creative Commons Attribution-NonCommercial 4.0 International License
   abbreviation: CC BY-NC
   url: http://creativecommons.org/licenses/by-nc/4.0/
   scope: full # full | text-only | some-exceptions
+  online_text: This documentation is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/) 
 
 # ------------------------------------------------------------------------------
 # Formats, Resources & Links
@@ -79,7 +80,7 @@ resource_link:
   #   media_type: application/mobi
   #   link_relation: alternate
   #   url: /downloads/output.mobi
-  
+
   - type: footer-link
     name: GitHub
     url: https://github.com/thegetty/quire/
