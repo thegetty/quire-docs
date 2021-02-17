@@ -1,3 +1,4 @@
+
 ---
 title: Quire
 subtitle: The Getty’s Multiformat Publishing Framework
@@ -7,9 +8,9 @@ type: cover
 slug: .
 ---
 
-**Quire is currently in closed development. To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link) form.**
+**Quire is in a limited beta and not yet released as open source software. For a free license to use Quire for your publication projects, and for additional access to support, [please sign up](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).**
 
-Created by [the Getty](https://www.getty.edu/publications), Quire is a modern, multiformat publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
+Created by [Getty](https://www.getty.edu/), Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
 
 Quire books are scholarly, visual, and built for discoverability and longevity. They feature:
 
@@ -25,6 +26,12 @@ Quire books are scholarly, visual, and built for discoverability and longevity. 
 - Web accessibility and SEO optimized
 - Outputs to web, PDF, and EPUB formats
 
-Check out [the demo site](https://gettypubs.github.io/quire-starter/), and [some of the Getty’s books developed with early versions of Quire.](https://www.getty.edu/publications/digital/digitalpubs.html)
+See these features in action in [the demo site](https://gettypubs.github.io/quire-starter/), and in [Getty books](https://www.getty.edu/publications/digital/digitalpubs.html) developed with Quire.
 
-*For more information, contact Greg Albers, Digital Publications Manager at the J. Paul Getty Trust, at [galbers@getty.edu](mailto:galbers@getty.edu).*
+---
+
+[GitHub](https://github.com/thegetty/quire)
+
+[Community Forum](https://github.com/thegetty/quire/discussions)
+
+[quire@getty.edu](mailto:quire@getty.edu)
