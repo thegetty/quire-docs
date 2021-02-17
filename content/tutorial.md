@@ -50,7 +50,7 @@ Follow the links below to install Quire:
 
 ## 3. Create a New Project
 
-To start a new Quire project, open your command-line shell and type `quire new my-project`. Quire will download a new starter project into a folder named “my-project” in your home directory.
+To start a new Quire project, open your command-line shell and type `quire new my-project`. Quire will download a new starter project (a sample publication including content, images, and relevant metadata that you can build off of) into a folder named “my-project” in your home directory.
 
 {{< q-class "box tip" >}}
 - You can call your project anything you want, it doesn’t have to be `my-project`, but don’t use spaces, and we recommend lowercase.
