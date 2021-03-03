@@ -329,3 +329,16 @@ project_list:
     github_user:
       - MillsArtMuseum
     note: "*Shifting Perspectives* is a digital exhibition catalogue examining contemporary artists’ critiques of traditional visual representations of race, culture, and gender. The publication complements a virtual collection exhibition created by Mills College's museum studies class."
+
+  - id: "french_paintings"
+    src: /screenshots/_french_paintings.jpg
+    alt: "French Paintings and Pastels, 1600-1945: The Collections of the Nelson-Atkins Museum of Art, Edited by Aimee Marcereau DeGalan"
+    type: Collection Catalogue
+    publisher: The Nelson-Atkins Museum of Art
+    title_info: "*French Paintings and Pastels, 1600-1945: The Collections of the Nelson-Atkins Museum of Art*"
+    pub_date: 2021-02-26
+    url: https://www.nelson-atkins.org/fpc
+    customization_level: extensive
+    github_user:
+      - salger1
+    note: "At the core of this digital publication, Nelson-Atkins kept the Quire framework as scaffolding to build a more robust, searchable platform for an extensive catalogue. Through the incorporation of an adjustable reading space and image viewer, along with enhanced footnotes and glossary terms, they created an accessible publication. Collection-wide and individual essays and a custom-built timeline guide the reader through the museum’s French paintings collection. Nelson-Atkins is offering their [NAMA theme on GitHub](https://github.com/Nelson-Atkins-Museum/NAMA-Quire-Theme) to help Quire become an institutional standard for museum publishing."
