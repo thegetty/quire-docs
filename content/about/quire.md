@@ -84,16 +84,16 @@ Here are some things to consider:
 
 - Getty is committed to Quire's success. This publishing tool is developed, tested, and used internally by Getty. [Learn more about Getty's digital publishing program](https://www.getty.edu/publications/digital/digitalpubs.html).
 - Quire is free to use, and no proprietary software or ongoing maintenance is required. [Visit our Implementation Considerations to learn more.](/documentation/implementation/)
-- Multiformat output means E-book files are distribution-ready for Amazon, Apple, and other vendors; PDF files are print-on-demand ready, and the online edition can be hosted on any web server. [Learn more about Quire's multiformat output capabilities.](/documentation/quire-cli/#outputting-files)
+- Multiformat output means E-book files are distribution-ready for Amazon, Apple, and other vendors; PDF files are print-on-demand ready, and the online edition can be hosted on any web server. [Learn more about Quire's multiformat output capabilities.](/documentation/multiformat-output)
 - Quire is compatible with most operating systems, whether you're using a MAC, PC, or Linux. [Visit our installation guidelines.](/documentation/install-uninstall/)
-- No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or, if you have more advanced resources, you can customize and adapt Quire to your unique content. [Visit our documentation.](/documentation/getting-started/)
-- We know how intimidating learning new technology can be, but we've got you covered. We're creating helpful tutorials to guide you through each step of using Quire, and additional tools and resources are coming soon. [Learn more.](/learn/tutorial/)
-- We have a vibrant and diverse community of users that are here to help. [Visit our Community Forum.](/community/forum/)
+- No pre-existing technical skills are necessary. We've worked hard to make Quire accessible for a broad range of users. You can use Quire in its most basic configuration, or, if you have more advanced resources, you can customize and adapt Quire to your unique content. [Visit our documentation.](/documentation/get-started/)
+- We know how intimidating learning new technology can be, but we've got you covered. We're creating helpful tutorials to guide you through each step of using Quire, and additional tools and resources are coming soon. [Take our tutorial.](/learn/tutorial/)
+- We have a vibrant and diverse community of users that are here to help. [Visit our Community Forum.](https://github.com/thegetty/quire/discussions)
 - We are moving Quire towards an open-source, community-supported model, and are currently following open-source software standards. Our goal is to launch an officially open-source Quire by 2022. [Learn more about the benefits of open-source development.](/about/open-source/)
 
 <div class="action-button">
 
-[**Get Started Now!**](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
+[**Get Started Now!**](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 </div>
 
 <div class="feature-cards">
