@@ -23,11 +23,12 @@ Erin Cecele Dunigan, is the Quire Community Manager at Getty, where she is culti
 
 ## Contributors
 
-Thank you to all our growing list of contributors who have made Quire what it is, and are working on what it will be! They’ve contributed code, written and edited documentation, run events, and blogged and spoken about Quire.
+Thank you to all our growing list of contributors who have made Quire what it is, and are working on what it will be! They’ve contributed code, written and edited documentation, answered questions on our forum, run events, and blogged and spoken about Quire.
 
 - [@aheltonsjma](https://github.com/aheltonsjma)
 - [@anderspollack](https://github.com/anderspollack)
 - [@antoinentl](https://github.com/antoinentl)
+- [@chrisdiaz](https://github.com/chrisdaaz)
 - [@daniel-keller](https://github.com/daniel-keller)
 - [@egardner](https://github.com/egardner)
 - [@fchasen](https://github.com/fchasen)
