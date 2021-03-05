@@ -9,7 +9,7 @@ Open source is a way of developing software where the code is free and available
 
 For the past four years, Getty has been using Quire to advance its internal publishing needs. This work has enabled us to test and refine the software. By open-sourcing Quire and supporting its ongoing use in the field, other institutions can leverage Getty's work to create their own digital publications and meaningfully contribute to Quire's growth and health as a publishing tool.
 
- Beta users have full access to Quire and can create, customize, and distribute their digital projects any way they'd like. We encourage users to share questions, frustrations, and positive reactions, and we use this feedback to inform developments and new feature considerations. In return, our users not only have access to Getty staff for assistance, but they also have access to other beta users who can provide additional support and inspiration. The one thing we ask is that users do NOT redistribute Quire itself.
+ Quire users have full access and can create, customize, and distribute their digital projects any way they'd like. We encourage users to share questions, frustrations, and positive reactions, and we use this feedback to inform developments and new feature considerations. In return, our users not only have access to Getty staff for assistance, but they also have access to other beta users who can provide additional support and inspiration. The one thing we ask is that users do NOT redistribute Quire itself.
 
 As Quire continues to evolve, our goal is to launch as fully open source by 2022 and expand Quire’s reach beyond our dedicated group of beta users. A community-supported model would enable Quire to remain free to use and would ensure a long lifespan beyond Getty.
 
@@ -20,7 +20,7 @@ As Quire continues to evolve, our goal is to launch as fully open source by 2022
 
 <div class="action-button">
 
-[Sign Up for Access Today!](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
+[Sign Up to Use Quire Today!](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 </div>
 
 **To learn more about open-source software development visit:**
