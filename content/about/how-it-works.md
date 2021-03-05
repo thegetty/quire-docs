@@ -5,9 +5,7 @@ type: essay
 online: false
 ---
 
-At the heart of Quire is the [Quire CLI](https://github.com/gettypubs/quire-cli), or {{< q-def "command-line interface" >}}. It is used for creating, previewing, and outputting projects. (Read more in [Quire CLI Commands](/documentation/quire-cli/).)
-
-In order to work its magic, the Quire CLI packages together a number of programs. These components play a critical role in the longterm discoverability, longevity, and multiformat output capabilities of Quire publications.
+In order to work its magic, Quire packages together a number of programs. These components play a critical role in the longterm discoverability, longevity, and multiformat output capabilities of Quire publications.
 
 - [Apple’s Xcode](https://developer.apple.com/support/xcode/) is a set of developer tools for your Mac. (Does not apply to Windows users.)
 
@@ -15,7 +13,7 @@ In order to work its magic, the Quire CLI packages together a number of programs
 
 - [PrinceXML](http://www.princexml.com/) is used to generate PDF/print versions of your publication.
 
-- [Pandoc](https://github.com/jgm/pandoc/releases/) is used to generate EPUBs.
+- [Pandoc](https://github.com/jgm/pandoc/releases/) is used to generate EPUBs and MOBIs.
 
 - [Kindle Previewer](https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765261) is used to generate the MOBI.
 
