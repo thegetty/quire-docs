@@ -37,12 +37,14 @@ Quire is free to use, however, there are occasionally associated costs:
 
 - Using Quire for journal publishing is also an option, though not yet fully developed.
 
-## Beta Status & Licensing
+## Licensing
 
-- Quire is in a closed testing phase. We are happy to grant [access upon request](https://forms.gle/m1fgZu5BHKhddMrW7).
+- A Quire license enables users to create publications with Quire and distribute as they see fit. Users can modify the default theme in any way that suits their needs. However, we ask that users **don’t redistribute Quire itself.**
 
-- Quire is beta software. While fully functioning, changes and improvements are continuing to be made to it which may lead to incompatibility across versions.
+- For a free license to use Quire for your publication projects, and for additional access to support, [please sign up](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform).
+
+## Versioning
+
+- Quire is in limited beta. While fully functioning, changes and improvements are continuing to be made to it which may lead to incompatibility across versions.
 
 - Quire projects, once published, no longer require Quire to keep running. After publication, a compatible version of Quire would only be necessary to make new updates and re-output the various file formats. Older versions can be downloaded on GitHub: https://github.com/gettypubs/quire/releases
-
-- Beta access enables users to create publications with Quire and distribute as they see fit. Users can modify the default theme in any way that suits their needs. However, we ask that users **don’t redistribute Quire itself.**
