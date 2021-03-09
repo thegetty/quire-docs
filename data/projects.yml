@@ -359,3 +359,16 @@ project_list:
       - tipeslowly
       - 1000camels
     note: "The site was built to coincide with an exhibition currently running in the HKU Library of Song-Ming rare books from special collections that all deal with “Music in Print”. The primary material is excerpted from a forthcoming book by an HKU Prof on Music and Confucian rites. This publication will be evenly split between discussions on ethnomusicology and issues of materiality and book culture."
+
+  - id: "nuclear_comp"
+    src: /screenshots/_nuclear_comp.jpg
+    alt: "Nuclear Compensation: Lessons from Fukushima (Meridian 180 Forums, Interviews with Experts and Intellectuals), Edited by Hirokazu Miyazaki"
+    type: Monograph
+    publisher: Northwestern University Libraries
+    title_info: "*Nuclear Compensation: Lessons from Fukushima (Meridian 180 Forums, Interviews with Experts and Intellectuals)*"
+    pub_date: 2021-03-09
+    url: https://nuclear-compensation.northwestern.pub/
+    customization_level: significant
+    github_user:
+      - chrisdaaz
+    note: "This was a standard monograph project for which Quire was an excellent choice because of its strong support for bibliographic references, endnotes, and multiformat outputs. Adjustments were made to the partials due to stakeholder requests (separating title and subtitle on different lines, Copyright page layout) and slight confusion about baseURLs (relURL vs absURL filters). Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multi-format academic publications."
