@@ -69,6 +69,8 @@ entries:
     definition: "A file formatted in Markdown that generates a Web page. Markdown files have a YAML block at the top containing the metadata of the page."
   - term: "Markdown Processor"
     definition: "A Markdown processor parses Markdown code and generates the formatted text we get on the screen."
+  - term: Media query
+    definition: "A media query is a method in CSS of applying styles to only specific media. For instance, only to print, or only to screens of a certain minimum or maxium width such as in responsive design. Read more in [https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)"
   - term: Open Access
     definition: "Open access (OA) refers to free, unrestricted online access to content, frequently research outputs."
   - term: Pandoc
