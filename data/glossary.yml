@@ -77,6 +77,8 @@ entries:
     definition: "An open source, command-line text conversion tool that is included as part of the basic Quire installation. You can visit the [Pandoc Demos page](https://pandoc.org/demos.html) that lists the commands for the most frequent types of file conversion."
   - term: "RGB Color Values"
     definition: "The RGB model define colors according to their red, green, and blue components by using hexadecimal and functional notations. An RGB color value calculator can be found at: [https://www.w3schools.com/colors/colors_rgb.asp](https://www.w3schools.com/colors/colors_rgb.asp)"
+  - term: "reflowable"
+    definition: "A “reflowable” format is one where the text and images are not fixed in static layout like that of a printed book, but rather reflow or rearrange depending on the type and size device they are viewed on. Both web browsers and e-book readers are considered reflowable mediums."
   - term: "Search Engine Optimization (SEO)"
     alternates:
       - search engine optimization
