@@ -133,6 +133,7 @@ project_list:
     customization_level: moderate
     github_user:
       - tipeslowly
+      - 1000camels
     note: "Jen Bervin's *Silk Poems* was UMAG's first Quire project. Thanks to support from the US Consulate in Hong Kong, UMAG was able to cut their teeth on the Quire CLI and Github, while creating a platform to document Jen Bervin's exhibition and participation at International Poetry Nights in Hong Kong."
 
   - id: "ancient_ambers"
@@ -302,6 +303,7 @@ project_list:
     customization_level: moderate
     github_user:
       - tipeslowly
+      - 1000camels
     note: "*Pictorial Silks* presents highlights from UMAG's collection of Qing dynasty silk textiles. The online platform was designed in Quire to complement an exhibition and print publication originally scheduled for release in December 2020."
 
   - id: "clouds_of_ink"
@@ -315,6 +317,7 @@ project_list:
     customization_level: moderate
     github_user:
       - tipeslowly
+      - 1000camels
     note: "*Clouds of Ink, Pools of Colour* was developed as a snapshot of the print publication of Hou Beiren's work, and as a catalogue for a series of his paintings recently donated to UMAG."
 
   - id: "shifting_perspectives"
@@ -342,3 +345,17 @@ project_list:
     github_user:
       - salger1
     note: "At the core of this digital publication, Nelson-Atkins kept the Quire framework as scaffolding to build a more robust, searchable platform for an extensive catalogue. Through the incorporation of an adjustable reading space and image viewer, along with enhanced footnotes and glossary terms, they created an accessible publication. Collection-wide and individual essays and a custom-built timeline guide the reader through the museum’s French paintings collection. Nelson-Atkins is offering their [NAMA theme on GitHub](https://github.com/Nelson-Atkins-Museum/NAMA-Quire-Theme) to help Quire become an institutional standard for museum publishing."
+
+  - id: "rainbow_screen"
+    src: /screenshots/_rainbow_screen.jpg
+    alt: "From the Rainbow Screen: Shen Cai, YANG Yuanzheng"
+    type: Online Exhibition
+    publisher: Hong Kong University Libraries
+    title_info: "*From the Rainbow Screen*"
+    pub_date: 2021-02-01
+    url: http://www.shencai.lib.hku.hk
+    customization_level: minor
+    github_user:
+      - tipeslowly
+      - 1000camels
+    note: "The site was built to coincide with an exhibition currently running in the HKU Library of Song-Ming rare books from special collections that all deal with “Music in Print”. The primary material is excerpted from a forthcoming book by an HKU Prof on Music and Confucian rites. This publication will be evenly split between discussions on ethnomusicology and issues of materiality and book culture."
