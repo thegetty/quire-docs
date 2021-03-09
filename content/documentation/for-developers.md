@@ -15,7 +15,7 @@ Quire is centered around the static-site generator, [Hugo](https://github.com/go
 
 https://github.com/thegetty/quire
 
-This repo contains the command-line interface for Quire (packages/cli), default starter content, (starters/default) used as placeholder content when starting a new Quire project, and a default theme (themes/default), designed to broadly cover a full range of use-cases and demonstrate the range of Quire's content model. 
+This repo contains the command-line interface for Quire, default starter content used as placeholder content when starting a new Quire project, and a default theme designed to broadly cover a full range of use-cases and demonstrate the range of Quire's content model.
 
 ### quire-docs
 
