@@ -47,4 +47,4 @@ Quire is free to use, however, there are occasionally associated costs:
 
 - Quire is in limited beta. While fully functioning, changes and improvements are continuing to be made to it which may lead to incompatibility across versions.
 
-- Quire projects, once published, no longer require Quire to keep running. After publication, a compatible version of Quire would only be necessary to make new updates and re-output the various file formats
+- Quire projects, once published, no longer require Quire to keep running. After publication, a compatible version of Quire would only be necessary to make new updates and re-output the various file formats.
