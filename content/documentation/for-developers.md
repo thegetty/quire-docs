@@ -5,34 +5,23 @@ type: essay
 abstract: "API docs and Quire repository guide"
 ---
 
+Quire is in a limited beta and not yet released as open source software. For a free license to use Quire for your publication projects, and for additional access to support, [please sign up](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+
+Quire is centered around the static-site generator, [Hugo](https://github.com/gohugoio/hugo). Quire's command-line interface is written in JavaScript and requires [Node.js LTS](https://nodejs.org/en/) to run.
+
 ## Repositories
 
-There are four repositories hosted on GitHub that make up Quire, which is currently in closed beta. Please [sign-up for access](https://forms.gle/m1fgZu5BHKhddMrW7).
+### quire
 
-### `quire-cli`
+https://github.com/thegetty/quire
 
-https://github.com/gettypubs/quire-cli
+This repo contains the command-line interface for Quire, default starter content used as placeholder content when starting a new Quire project, and a default theme designed to broadly cover a full range of use-cases and demonstrate the range of Quire's content model.
 
-The command-line interface for Quire. It can be installed on macOS, Windows or Linux. It is written in JavaScript and requires [Node.js 12.18.3 LTS](https://nodejs.org) to run. Commands include `quire preview`, `quire pdf`, `quire epub`, and more. A complete reference can be found in [Quire CLI Commands](/documentation/quire-cli/).
+### quire-docs
 
-### `quire-starter-theme`
+https://github.com/thegetty/quire-docs
 
-https://github.com/gettypubs/quire-starter-theme
-
-The theme that is included when starting a new Quire project with the `quire new` command. It is designed to broadly cover a full range of use-cases and to demonstrate the range of Quire content model. The theme is where all the page templates and layout logic exist. Quire is built on [Hugo](https://gohugo.io/).
-
-### `quire-starter`
-
-https://github.com/gettypubs/quire-starter
-
-A starter content repository used as placeholder content when starting a new Quire project with the `quire new` command. It comes with some pre-defined example content and pages with which to get started.
-
-### `quire`
-
-https://github.com/gettypubs/quire
-
-The Quire website, and the central location for issues and discussion forum posts.
-
+This repo is specifically for the Quire website and documentation.
 
 ## Configuration
 
