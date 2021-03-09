@@ -5,9 +5,7 @@ type: essay
 abstract: "Produce online, PDF, and E-Book versions of your publication"
 ---
 
-## Site Output
-
-*Text to come.*
+Quire is designed to create a website version, a PDF version and two e-book versions of your project from the same source files. Each can be customized in various ways as described below, and then be deployed to the web.
 
 ## E-Book Output
 
@@ -120,4 +118,18 @@ For example, this would hide all `video` elements in the print output:
 
 Some of the CSS used in styling the PDF is from the CSS Paged Media Specification. This is a set of CSS rules designed specifically to style things in a page-like manner, inlcuding controlling left and right page rules, page numbering, and running feet and heads. There is good information about this [in PrinceXML’s documentation](https://www.princexml.com/doc/paged/).
 
+## Site Output
+
+Create the HTML files for your project by running `quire site` in your command-line shell. The files will be built into your project’s `site` folder along with all the necessary static assets like image files, stylesheets and script files. The `site` file will be updated and overwritten each time you run `quire site`.
+
+{{< q-class "box tip" >}}
+- If you are including PDF and e-book downloads as part of your online site (this is Quire’s default) you’ll need to update those files by running `quire epub`, `quire mobi`, and `quire pdf` as described above **before** running `quire site`.
+{{< /q-class >}}
+
+You can hide specific pages of your project from the site output by adding `online: false` to the page YAML. Or conversely, you can add pages exclusively to the site output, by adding `epub: false` and `pdf: false` to the page YAML and leaving the `online` attribute unset, or set to `true`.
+
+Unlike `epub: false` and `pdf: false`, adding `online: false` does not stop a page from being built and included in the site output. Rather, it just unlinks those pages and adds a metadata tag to them to avoid them being indexed by search engines. You may want to manually delete them from the `site` folder after outputting and before uploading to a web server if you want to be fully certain the pages can’t be accessed online under any circumstances.
+
 ## Deploy Your Project
+
+*Text to come.*
