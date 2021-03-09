@@ -19,7 +19,7 @@ We welcome users at all levels of technical expertise and publishing experience.
 
 <div class="action-button">
 
-[Sign up for Free](https://forms.gle/m1fgZu5BHKhddMrW7)
+[Sign up for Free](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
 </div>
 
@@ -49,7 +49,7 @@ Here you will find community-based support to help you navigate the ins and outs
 
 <div class="action-button">
 
-[Join the Discussion](https://github.com/gettypubs/quire/discussions)
+[Join the Discussion](https://github.com/thegetty/quire/discussions)
 
 </div>
 
@@ -96,11 +96,11 @@ We love celebrating Quire accomplishments. Send us your finished Quire publicati
 
 <div class="action-button">
 
-[Add to Showcase](https://forms.gle/DusYi8PaDAbmcAGn6)
+[Add to Showcase](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
 
 </div>
 
-<br> We also welcome the submission of articles and how-tos about specific aspects of working in Quire. Share your article idea [here](https://github.com/gettypubs/quire/issues/new).
+<br> We also welcome the submission of articles and how-tos about specific aspects of working in Quire. Share your article idea [here](https://github.com/thegetty/quire/issues/new).
 
 ![Explore icon](/img/illustrations/undraw_organize_resume_utk5.png)
 
@@ -111,11 +111,11 @@ We love celebrating Quire accomplishments. Send us your finished Quire publicati
 
 As an open-source community, all members have an opportunity to help mold Quire into a digital publishing solution that meets a diverse set of needs. This is your opportunity to contribute to the code and directly impact the development of the tool. Contributions can be as small as fixing broken links and typos or as intensive as developing new features and themes.
 
-Before getting started, we kindly request that you review our **[Contributor Guidelines](https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md)** for information on best practices, guidelines, and recommendations for contributing.
+Before getting started, we kindly request that you review our **[Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md)** for information on best practices, guidelines, and recommendations for contributing.
 
 <div class="action-button">
 
-[Find Us on GitHub](https://github.com/gettypubs/quire/)
+[Find Us on GitHub](https://github.com/thegetty/quire/)
 
 </div>
 
@@ -130,7 +130,7 @@ Bugs are sneaky, and we need your help spotting them! If you come across somethi
 
 <div class="action-button">
 
-[Post to Our Issues List](https://github.com/gettypubs/quire/issues/)
+[Post to Our Issues Tracker](https://github.com/thegetty/quire/issues/)
 
 </div>
 
@@ -145,7 +145,7 @@ The [Quire Documentation](/documentation/) is a work in progress and we value yo
 
 <div class="action-button">
 
-[Read Our Contributor Guidelines](https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md)
+[Read Our Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md)
 
 </div>
 

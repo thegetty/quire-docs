@@ -9,7 +9,7 @@ abstract: "Get the latest news and info about upcoming events"
 
 *Check out the [latest issue of our monthly e-newsletter](#) or [sign up to receive updates.](http://eepurl.com/hg8ROf)*
 
-- Dec. 1, 2020: Quire [newsletter](https://getty.us2.list-manage.com/subscribe?u=1c7a128ace0f62e28a54549a3&id=b5e9f0e027) and [community forum](https://github.com/gettypubs/quire/discussions) are launched
+- Dec. 1, 2020: Quire [newsletter](https://getty.us2.list-manage.com/subscribe?u=1c7a128ace0f62e28a54549a3&id=b5e9f0e027) and [community forum](https://github.com/thegetty/quire/discussions) are launched
 - Oct 3, 2020: [Six new features](/about/roadmap/) added to our roadmap
 - Sept 30, 2020: Quire team selected to beta test [*It Takes A Village: Open Source Software Sustainability*](https://www.lyrasis.org/programs/Pages/IMLS-OSS.aspx) tools
 - Sept 16, 2020: Welcome to Getty’s development team, Hannah Balenda!

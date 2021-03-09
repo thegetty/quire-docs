@@ -53,7 +53,7 @@ The first in-person Quire workshop takes place at MCN (Museum Computer Network) 
 
 ## 2018
 
-Early successes with the development of Quire encourage Getty to move the tool towards an open-source model. [Beta access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform) is enabled. Over fifty new community members sign-up as beta testers within the first year.
+Early successes with the development of Quire encourage Getty to move the tool towards an open-source model. Beta access is enabled. Over fifty new community members sign-up as beta testers within the first year.
 
 As a result of the successful MCN Quire workshop in 2017, [Journal 18](http://www.journal18.org/issue5_williams/about/), the first external Quire publication, launches.
 
@@ -94,5 +94,5 @@ Quire’s beta community grows to nearly 200 members, with more than a dozen [pu
 
 <div class="action-button">
 
-[Sign Up Now](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform)
+[Sign Up Now](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 </div>

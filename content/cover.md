@@ -14,7 +14,7 @@ slug: .
 
 <div class="action-button">
 
-[Get Free Access to Quire](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
+[Sign-Up for Quire](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
 </div>
 
@@ -39,7 +39,7 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 <div class="feature-cards">
 
 - [Quire Basics <br />Step‑by‑Step ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](/learn/tutorial/)
-- [Demo <br />Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](https://gettypubs.github.io/quire-starter/)
+- [Demo <br />Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](https://thegetty.github.io/quire-starter/)
 
 </div>
 
@@ -96,7 +96,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 <div class="action-button">
 
-[Try It for Yourself](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
+[Try It for Yourself](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
 </div>
 
@@ -114,7 +114,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 Developed by Getty, Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
-Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1fgZu5BHKhddMrW7), [participating in the forum](https://github.com/gettypubs/quire/discussions), [contributing to code](https://github.com/gettypubs/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](https://quire.netlify.app/community/news-events/), among other exciting opportunities.
+Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [participating in the forum](https://github.com/thegetty/quire/discussions), [contributing to code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
 
 <div class="action-button">
 
@@ -127,16 +127,16 @@ Joining the Quire community is as easy as [becoming a user](https://forms.gle/m1
 
   For news, updates, and events, <br />sign up for our mailing list
 
-- [Get Started ![illustration](/img/illustrations/undraw_blogging_vpvv.png)](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?embedded=true)
+- [Get Started ![illustration](/img/illustrations/undraw_blogging_vpvv.png)](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
-  To try Quire for yourself, <br />sign up for free beta access
+  Sign up now to try Quire for yourself <br />
 
 </div>
 
 <div class="cover-footer">
 
-[About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Get Access](https://forms.gle/m1fgZu5BHKhddMrW7)
+[About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Sign up](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
-[GitHub](https://github.com/gettypubs/quire/) | [Newsletter](http://eepurl.com/hg8ROf) | [Contact](mailto:quire@getty.edu)
+[GitHub](https://github.com/thegetty/quire/) | [Newsletter](http://eepurl.com/hg8ROf) | [Contact](mailto:quire@getty.edu)
 
 </div>
