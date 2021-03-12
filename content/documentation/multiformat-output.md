@@ -118,6 +118,32 @@ For example, this would hide all `video` elements in the print output:
 
 Some of the CSS used in styling the PDF is from the CSS Paged Media Specification. This is a set of CSS rules designed specifically to style things in a page-like manner, inlcuding controlling left and right page rules, page numbering, and running feet and heads. There is good information about this [in PrinceXML’s documentation](https://www.princexml.com/doc/paged/).
 
+### Tips for PDF Design and Development
+
+For developers and designers interested in making more extensive changes to the PDF output, you can make the process easier by using a PDF reader that will autoreload, and displaying a version of the PDF output in your browser.
+
+When working on improving or modifying the styling of your PDF output, the basic methodology is to output the PDF with `quire pdf`, open it, look at what you want to change, write/modify your CSS accordingly, run `quire pdf` again, open it, look to see if the CSS change had the desired effect, rinse and repeat. It is, in a word, cumbersome. But there are some things that will make this process a litte easier.
+
+#### Use an Auto-Reloading PDF Reader
+
+Adobe Acrobat (a popular PDF reader) won’t reload the PDF you’re looking at if the file has been changed. We recommend instead using a PDF reader, like [Skim](https://skim-app.sourceforge.io/) for macOS, that will reload the PDF everytime it’s changed. For Quire development, this means you can open the PDF to a page you want to make a style change to, make the change in your project, run `quire pdf` and see that change happen as soon as the PDF process is finished running. It takes away the wasted time of closing PDFs, opening new versions and finding your place in them again, time and time again.
+
+#### Display the PDF Verion in a Browser
+
+You can use your browser to display a decent, though not exact, preview of what the print output will be. It won’t have the correct page sizes or margins and page numbering, but you'll see the overall text sizes and styles, figures, spacing between these elements, and other parts generally as they'll look in the PDF. This means that you can make changes to your CSS and see a live preview in the browser without having to output the PDF every time.
+
+1. Open the `config.yml` file and at the bottom of the list of `params` temporarily add `pdf: true`, which tells Quire to build the PDF version of your site. Be sure to delete this line when you’re done working on the PDF.
+
+2. Open your site preview in Firefox or Chrome, it will look a little different and some elements may be missing or altered.
+
+3. Right or Control-Click anywhere on the preview:
+
+    Firefox: Select Inspect Element and then click the small page icon in the upper right of the window that opens. (On hover, the icon will say “Toggle print media simulation for the page”.)
+
+    Chrome: Select Inspect, click the three-dots menu icon in the upper right of the window that opens, select More Tools, and then Rendering. In the area that opens, scroll down to “Emulate CSS media type” and select “print”.
+
+You can also use the web inspector to help track down different HTML elements and CSS selectors that are effecting the final PDF output. This can make it easier to make changes that will have the desired effect.
+
 ## Site Output
 
 Create the HTML files for your project by running `quire site` in your command-line shell. The files will be built into your project’s `site` folder along with all the necessary static assets like image files, stylesheets and script files. The `site` file will be updated and overwritten each time you run `quire site`.
