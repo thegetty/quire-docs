@@ -11,24 +11,19 @@ Quire is designed to create a website version, a PDF version and two e-book vers
 
 Quire can output two different {{< q-def "reflowable" >}} e-book formats: EPUB and MOBI. EPUB is the most widely used format and will work on most devices and for most e-book vendors. EPUB is an official specification of the World Wide Web Consortium (W3C), and Quire outputs the latest version: EPUB 3.2.
 
-Very cosely related to EPUB, the MOBI format is used almost exclusively by Amazon’s Kindle. Making it available in your project will allow Kindle readers to load the e-book onto their devices directly. (Amazon itself asks for EPUBs when selling/distributing through them, which it then converts to MOBI and other proprietary fomrats as needed.)
+Very closely related to EPUB, the MOBI format is used almost exclusively by Amazon’s Kindle. Making it available in your project will allow Kindle readers to load the e-book onto their devices directly. (Amazon itself asks for EPUBs when selling/distributing through them, which it then converts to MOBI and other proprietary formats as needed.)
 
 The MOBI file is derived directly from the EPUB version of your project, and does not have styling or customization options separate from the EPUB.
 
 You can remove specific pages of your project from the e-book outputs by adding `epub: false` to the page YAML. Or conversely, you can add pages exclusively to the e-book outputs, by adding `online: false` and `pdf: false` to the page YAML and leaving the `epub` attribute unset, or set to `true`.
 
-For developers creating custom templates, you can use templating logic to create spefic outputs for the e-books by querying `if eq .Site.Data.params.epub true`. This parameter is set in the `config/epub.yml` file.
+For developers creating custom templates, you can use templating logic to create specific outputs for the e-books by querying `if eq .Site.Data.params.epub true`. This parameter is set in the `config/epub.yml` file.
 
-## Create and View the E-Book Files
+### Create and View the E-Book Files
 
 Create an EPUB of your project by running `quire epub` in your command-line shell. An `output.epub` file will be created and saved to your project’s `static/downloads/` folder. This file will be updated and overwritten each time you run `quire epub`.
 
 Create a MOBI of your project by running `quire mobi` in your command-line shell. An `output.mobi` file will be created and saved to your project’s `static/downloads/` folder. This file will be updated and overwritten each time you run `quire mobi`.
-
-{{< q-class "box tip" >}}
-- Links to download the EPUB, MOBI, and PDF versions are automatically included in the sidebar menu of the onkline version of your project. These links can be removed or modified by making changes to the `resource_link` information in your `data/publication.yml` file.
-- You can add links to these files from anywhere in your markdown files by linking to `/downloads/output.epub`, `/downloads/output.mobi`, and `/downloads/output.pdf` respectively.
-{{< /q-class >}}
 
 EPUB files can be viewed on the default Books app on macOS, or on a number of free EPUB readers available for both Windows and Mac.
 
@@ -36,7 +31,7 @@ MOBI files can be viewed with [Kindle Previewer](https://www.amazon.com/gp/featu
 
 ### EPUBCheck Validation
 
-If you will be distributing your EPUB file via e-book vendors/distributors, it will have to pass validation with [EPUBCheck](https://github.com/w3c/epubcheck). EPUBCheck verifies that the file conforms to EPUB standards which ensures that it will work properly across the multiplicity of devices it may be read on. A valid EPUB will also ensure a valid MOBI file.
+If you will be distributing your EPUB file via e-book vendors/distributors, it will have to pass validation with [EPUBCheck](https://github.com/w3c/epubcheck). EPUBCheck verifies that the file conforms to EPUB standards which ensures that it will work properly across devices. A valid EPUB will also ensure a valid MOBI file.
 
 Quire’s default output will pass EPUBCheck, but the EPUB standard is very strict and a number of things can lead to an invalid file. By far the most common errors are broken internal links in markdown files to other files or to heading or image anchors within the file.
 
@@ -50,7 +45,7 @@ While there is an online validator for smaller files (10MB or less) it is likely
 EPUBCheck will output a list of any errors or warnings that exist in your file. Only the errors need to be addressed for the file to be considered valid by most e-book vendors. Warnings are optional. Errors will be referenced by filename and line number. The filenames will be internal EPUB naming and not correspond to anything in your markdown project files. See the tip below for looking inside the EPUB file to track down the source of these listed errors.
 
 {{< q-class "box tip" >}}
-- Look inside an EPUB file by opening it in a text editor like Atom, or by mannually changing the file suffix to ZIP and uncompressing the file. Just note that you can’t/shouldn’t make change to an EPUB file this way. Rather, make changes in the source markdown and YAML files of your project and re-output the EPUB file.
+- Look inside an EPUB file by opening it in a text editor like Atom, or by manually changing the file suffix to ZIP and uncompressing the file. Just note that you can’t/shouldn’t make change to an EPUB file this way. Rather, make changes in the source markdown and YAML files of your project and re-output the EPUB file.
 {{< /q-class >}}
 
 ### EPUB Styles
@@ -58,6 +53,11 @@ EPUBCheck will output a list of any errors or warnings that exist in your file. 
 EPUBs in Quire have their own style sheet separate from any styles applied to the online version of your project. EPUB styles can be modified and added to in the `themes/default/source/css/epub.scss` file.
 
 Quire uses [Pandoc](https://pandoc.org) to create the EPUB files, and while consistent in outputting valid EPUB files, Pandoc also strips out a lot of the class names and other structure you may normally use to add custom styling. See the tip above for looking into the EPUB file, and use that to find class names and HTML structures as Pandoc outputs them for use as selectors in your CSS.
+
+{{< q-class "box tip" >}}
+- Links to download the EPUB, MOBI, and PDF versions are automatically included in the sidebar menu of the online version of your project. These links can be removed or modified by making changes to the `resource_link` information in your `data/publication.yml` file.
+- You can add links to these files from anywhere in your markdown files by linking to `/downloads/output.epub`, `/downloads/output.mobi`, and `/downloads/output.pdf` respectively.
+{{< /q-class >}}
 
 ## PDF/Print Output
 
@@ -156,6 +156,46 @@ You can hide specific pages of your project from the site output by adding `onli
 
 Unlike `epub: false` and `pdf: false`, adding `online: false` does not stop a page from being built and included in the site output. Rather, it just unlinks those pages and adds a metadata tag to them to avoid them being indexed by search engines. You may want to manually delete them from the `site` folder after outputting and before uploading to a web server if you want to be fully certain the pages can’t be accessed online under any circumstances.
 
-## Deploy Your Project
+### Deploy Your Project on Netlify
 
-*Text to come.*
+Netlify is an excellent option for deployment. You can use it to build a quick preview site or link it to your Github account to automatically generate an updated preview site every time you push changes to your project. You can also use it to host your final project when it's ready to publish.
+
+#### Manual Deploy
+
+*This is a great option if you have a small site or want to run a quick preview. Keep in mind, with this option, you will need to go through the process of rebuilding the site, compressing files, and reuploading to Netlify each time you make an update, which may be burdensome if you have lots of images or larger files. For continuous deployment please see [Deploys from GitHub](#continuous-deploys-from-github).*
+
+1. Create a Netlify account [here](https://app.netlify.com/signup?_ga=2.167644094.168823645.1615583363-1141534382.1615320952). You have the option to sign-up through GitHub, GitLab, BitBucket, or via your email.
+
+2. In your Finder navigate to your project and compress the site folder.
+
+3. to launch a preview of your site, go to Netlify Drop: [https://app.netlify.com/drop](https://app.netlify.com/drop). Make sure you are logged in to your account and then drag-and-drop your compressed site folder into the indicated area.
+
+4. Once the site has been deployed you will be given a default URL to preview your project. You can rename this URL by navigating to “Site settings” and changing the site name. (You also have the option to buy a domain or set-up a domain you already own.)
+
+If you make further edits to your project and would like to preview them you will need to repeat this process.
+
+1. Delete the old compressed site folder.
+
+2. Run `quire site` again (your files will be automatically overwritten.)
+
+3. Compress the newly updated site folder.
+
+4. In Netlify, navigate to “Deploys” at the top of the page. You will see a blank space that reads, “Need to update your site." Simply drag-and-drop the newly compressed site folder here and it will automatically update your link.
+
+#### Continuous Deploys from GitHub
+
+To use this option you will need to create a repository for your project on GitHub, if you haven’t already. We recommend using GitHub Desktop to add your repository. You can find directions [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-a-repository-from-your-local-computer-to-github-desktop).
+Next you will need to add two files to your repo: package.json and netlify.toml. You can download these two files [here](https://drive.google.com/drive/folders/1aLS2Y0GXNHLLNBin89LJld2xHTk1n0r1?usp=sharing). Make sure to save them in your repository as markdown files.
+Make sure you are logged into [Netlify](https://app.netlify.com/). On the “Team Overview” page you will see a button the right side of the screen that says “Net Site from Git”, click this button.  
+For continuous deployment, you must first “Connect to Git Provider.” Choose the GitHub option.
+If you see “no repositories found” you will be prompted to configure Netlify on GitHub. Click this button.
+You will be asked if you would like to install Netlify. Click on your GitHub user name.
+You have the choice to install for all repositories or only select repositories. This is a personal preference.
+Now click the green button for install.
+If you have multiple repositories, find the one for this particular project on the list.
+The owner will be your Netlify user name
+For a branch to deploy, it should be master, main, or choose a specific branch you are working on.
+Under Basic build settings for “build command,” it should be` npm run build` and for “publish directory” it should be “site directory”
+Hit Deploy Site
+Depending on the size of your project, this may take a few moments.
+You may want to go into site settings and update the URL where it says “change site name”
