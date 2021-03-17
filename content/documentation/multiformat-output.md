@@ -24,13 +24,22 @@ Unlike `epub: false` and `pdf: false`, adding `online: false` does not stop a pa
 - You can add links to these files from anywhere in your markdown files by linking to `/downloads/output.epub`, `/downloads/output.mobi`, and `/downloads/output.pdf` respectively.
 {{< /q-class >}}
 
-### Deploy Your Project on Netlify
+## Deploy Your Project on Online
 
-Netlify is an excellent option for deployment. You can use it to build a quick preview site or link it to your Github account to automatically generate an updated preview every time you push changes to your project. You can also use it to host your final project when it's ready to publish. Create a Netlify account [here](https://app.netlify.com/signup?_ga=2.167644094.168823645.1615583363-1141534382.1615320952). We recommend signing up through your GitHub or GitLab account.
+A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from any hosting service you might sign up for. You do not need any special back-end setup.
 
-#### Manual Deploy
+When hosting a site this way, you will typically follow these steps:
 
-Manual deploy is ideal if you have a small site or want to run a quick preview. Keep in mind, with this option, you will need to go through the process of rebuilding the site, compressing files, and reuploading to Netlify each time you make an update, which may be burdensome if you have lots of images or larger files. For continuous deployment please see [*Continuous Deploy from GitHub*](#continuous-deploys-from-github).
+1. Output your PDF and e-book files following the directions above, if you are going to include them as part of your published project
+2. Update the baseURL in config/site.yml to match the URL where the site will ultimately be hosted
+3. Output your site following the directions above
+4. Upload the contents of the site folder to your web host based on the directions they provide
+
+If you do not already have a web server or hosting plan, we’ve found that [Netlify](https://www.netlify.com/?_ga=2.127713933.1882208577.1616011630-1141534382.1615320952) offers a couple excellent options.
+
+### Manual Deploy with Netlify
+
+Manual deploy is ideal if you have a small site or want to run a quick preview. Keep in mind, with this option, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify each time you make an update, which may be burdensome if you have lots of images or larger files. For continuous deployment please see [*Continuous Deploy from GitHub*](#continuous-deploys-from-github).
 
 1. Navigate to your project and compress the `site` folder.
 
@@ -48,7 +57,7 @@ If you make further edits to your project and would like to preview them you wil
 
 4. In Netlify, navigate to “Deploys” at the top of the page. You will see a blank space that reads, “Need to update your site." Simply drag-and-drop your new compressed `site` folder here and your link will be automatically updated.
 
-#### Continuous Deploy from GitHub
+### Continuous Deploy with Netlify
 
 By linking GitHub directly to your Netlify account, any time you merge changes in Github, your preview link will be automatically updated. This process requires a few extra steps to get set-up, but will save time in the long run.
 
