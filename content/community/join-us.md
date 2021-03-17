@@ -34,7 +34,7 @@ Sign-up to receive our monthly newsletter, your source for all things Quire, fro
 
 <div class="action-button">
 
-[Subscribe Now](http://eepurl.com/hg8ROf)
+[Subscribe Now](https://newsletters.getty.edu/t/t-DFDC53BEAACB81BA2540EF23F30FEDED)
 
 </div>
 
