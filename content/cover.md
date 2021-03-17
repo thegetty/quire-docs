@@ -34,6 +34,6 @@ See these features in action in [the demo site](https://thegetty.github.io/quire
 
 [Community Forum](https://github.com/thegetty/quire/discussions)
 
-[Newsletter Sign-Up](https://getty.us2.list-manage.com/subscribe?u=1c7a128ace0f62e28a54549a3&id=b5e9f0e027)
+[Newsletter Sign-Up](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
 
 [Contact Us](mailto:quire@getty.edu)
