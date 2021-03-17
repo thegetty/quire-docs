@@ -123,7 +123,7 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 <div class="feature-cards cover-footer">
 
-- [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](http://eepurl.com/hg8ROf)
+- [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
 
   For news, updates, and events, <br />sign up for our mailing list
 
@@ -137,6 +137,6 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 [About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Sign up](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
-[GitHub](https://github.com/thegetty/quire/) | [Newsletter](http://eepurl.com/hg8ROf) | [Contact](mailto:quire@getty.edu)
+[GitHub](https://github.com/thegetty/quire/) | [Newsletter](https://newsletters.getty.edu/h/t/3482055B10CD0F24) | [Contact](mailto:quire@getty.edu)
 
 </div>

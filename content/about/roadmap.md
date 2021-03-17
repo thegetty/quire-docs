@@ -49,6 +49,6 @@ We also plan to develop a number of specific features in conjunction with forthc
 
 <div class="action-button">
 
-[Stay updated](http://eepurl.com/hg8ROf)
+[Stay updated](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
 
 </div>
