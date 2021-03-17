@@ -12,7 +12,7 @@ Quire is designed to create a website version, a PDF version and two e-book vers
 Create the HTML files for your project by running `quire site` in your command-line shell. The files will be built into your project’s `site` folder along with all the necessary static assets like image files, stylesheets and script files. The `site` file will be updated and overwritten each time you run `quire site`.
 
 {{< q-class "box tip" >}}
-- If you are including PDF and e-book downloads as part of your online site (this is Quire’s default) you’ll need to update those files by running `quire epub`, `quire mobi`, and `quire pdf` as described above **before** running `quire site`.
+- If you are including PDF and e-book downloads as part of your online site (this is Quire’s default) you’ll need to update those files by running `quire epub`, `quire mobi`, and `quire pdf` as described below **before** running `quire site`.
 {{< /q-class >}}
 
 You can hide specific pages of your project from the site output by adding `online: false` to the page YAML. Or conversely, you can add pages exclusively to the site output, by adding `epub: false` and `pdf: false` to the page YAML and leaving the `online` attribute unset, or set to `true`.
