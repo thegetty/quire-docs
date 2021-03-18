@@ -30,16 +30,16 @@ A Quire site is designed to be hosted on virtually any web server, either one yo
 
 When hosting a site this way, you will typically follow these steps:
 
-1. Output your PDF and e-book files following the directions above, if you are going to include them as part of your published project
-2. Update the `baseURL` in `config/site.yml` to match the URL where the site will ultimately be hosted
-3. Output your site following the directions above
-4. Upload the contents of the `site` folder to your web host based on the directions they provide
+1. Output your PDF and e-book files following the directions above, if you are going to include them as part of your published project.
+2. Update the `baseURL` in `config/site.yml` to match the URL where the site will ultimately be hosted.
+3. Output your site following the directions above.
+4. Upload the contents of the `site` folder to your web host based on the directions they provide.
 
 If you do not already have a web server or hosting plan, we’ve found that [Netlify](https://www.netlify.com) offers a couple excellent options.
 
 ### Manual Deploy with Netlify
 
-Manual deploy is ideal if you have a small site or want to run a quick preview. Keep in mind, with this option, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify each time you make an update, which may be burdensome if you have lots of images or larger files. For continuous deployment please see [*Continuous Deploy with Netlify*](#continuous-deploy-with-netlify).
+Manual deploy is ideal if you have a small site or want to run a quick preview. Keep in mind, with this option, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify each time you make an update, which may be burdensome if you have a lot of images or larger files. For continuous deployment please see [*Continuous Deploy with Netlify*](#continuous-deploy-with-netlify).
 
 1. Navigate to your project and compress the `site` folder.
 
@@ -59,11 +59,13 @@ If you make further edits to your project and would like to preview them you wil
 
 ### Continuous Deploy with Netlify
 
+*This deployment option requires a basic understanding of how to create a repository, and commit and merge changes in GitHub. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/github) to learn by topic or checking out the [GitHub for Quire](/documentation/github) section of our documentation. We also encourage you to check out Coding Train’s video series is a great resource as well [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).*
+
 By linking GitHub directly to your Netlify account, any time you merge changes in Github, your preview link will be automatically updated. This process requires a few extra steps to get set-up, but will save time in the long run. This process also works with GitLab and Bitbucket.
 
-1. If you haven't already, create a repository for your project on GitHub. You can find directions in the [*GitHub*](/documentation/gitub) section of our documentation.
+1. If you haven't already, create a repository for your project on GitHub.
 
-2. To proceed with deployment, you will need to add two files to your repo: `netlify.toml` and `package.json`. [Download them](/downloads/site-deploy.zip), add them to your repo, and merge changes before proceeding.
+2. To proceed with deployment, you will need to add two files to your repository: `netlify.toml` and `package.json`. [Download them](/downloads/site-deploy.zip), add them to your repo, and merge changes before proceeding.
 
 3. Log in to [Netlify](https://app.netlify.com/). On the “Team Overview” page, click the button that says “New Site from Git.”
 
