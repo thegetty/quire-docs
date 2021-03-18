@@ -17,6 +17,9 @@ The following is a list of helpful links to guide your experience and exploratio
 - [Git and GitHub for Poets, The Coding Train | Video Series](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
 - [GitHub Desktop Documentation](https://docs.github.com/en/free-pro-team@latest/desktop)
 - [GitHub Learning Lab](https://lab.github.com/)
+- [GitHub Glossary](https://docs.github.com/en/github/getting-started-with-github/github-glossary)
+- [Git Large File Storage (LFS)](https://git-lfs.github.com/)
+
 
 ## HTML & CSS
 
@@ -45,6 +48,13 @@ IIIF (International Image Interoperability Framework) is an emerging standard fo
 - [10-minute Markdown Tutorial](https://commonmark.org/help/)
 - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 - [The Programming Historian: Getting Started with Markdown](https://programminghistorian.org/en/lessons/getting-started-with-markdown)
+
+## Netlify
+
+With Netlify, you can build a quick preview site or link directly to your Github account to automatically generate an updated preview every time make changes. You can also use it to host your final project when it’s ready to publish.
+
+- [Netlify Documentation](https://docs.netlify.com/)
+- [Deploy Instructions](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git)
 
 ## PDFs and PrinceXML
 
