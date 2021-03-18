@@ -67,11 +67,11 @@ What content doesn’t live in `content` directory as a Markdown file, will live
 
 #### 📁 static
 
-The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s {{< q-def "static-site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/documentation/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Outputting & Deploying Your Site*](/documentation/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/documentation/figure-images/)).
+The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s {{< q-def "static-site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/documentation/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Output Your Project*](/documentation/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/documentation/figure-images/)).
 
 #### 📄 README.md
 
-The `README.md` file is a code convention, and is a free space for information about the publication. **It is not used in the output Quire publication at all.** However, if you host your Quire project on {{< q-def "GitHub" >}} or other similar `git` project management sites, the `README.md` file is used for the repository’s front page description. Often it will include notes on development, on what usage is allowed, on how issues will be handled, and if contributions should be considered. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
+The `README.md` file is a code convention, and is a free space for information about the publication. **It is not used in the output Quire publication at all.** However, if you host your Quire project on {{< q-def "GitHub" >}} or other similar `git` project management sites, the `README.md` file is used for the repository’s front page description. Often it will include notes on development, on what usage is allowed, on how issues will be handled, and if contributions should be considered.
 
 ## Files for Developers
 
@@ -91,7 +91,7 @@ Inside each Quire project, you will find the following directories and files. De
 
 #### 📁 bin
 
-Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
+Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages, which you can learn more about in the [*Deploy Your Project*](documentation/deploy/#preview-your-project-with-github-pages).
 
 #### 📄 config.yml
 
@@ -99,11 +99,11 @@ This is a standard, required file for {{< q-def "Hugo" >}} and also for Quire. I
 
 #### 📁 config
 
-This is an additional configuration directory. While most Quire configuration happens in the [`config.yml`](#config-yml) file as explained above, the `config` directory gives more specific controls for different output formats and development environments. In most cases, changes won’t need to be made to these files until you are deploying your site. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
+This is an additional configuration directory. While most Quire configuration happens in the [`config.yml`](#config-yml) file as explained above, the `config` directory gives more specific controls for different output formats and development environments. In most cases, changes won’t need to be made to these files until you are deploying your site. Read more in [*Output Your Project*](/documentation/multiformat-output/).
 
 #### 📁 site
 
-This is where the built pages of the Quire website will live. This folder and its contents are automatically generated with the `quire site` command, and should not be edited directly. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
+This is where the built pages of the Quire website will live. This folder and its contents are automatically generated with the `quire site` command, and should not be edited directly. Read more in [*Output Your Project*](/documentation/multiformat-output/).
 
 #### 📁 themes
 
