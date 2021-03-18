@@ -61,9 +61,9 @@ If you make further edits to your project and would like to preview them you wil
 
 ### Continuous Deploy with Netlify
 
-*This deployment option requires a basic understanding of how to create a repository, and commit and merge changes in GitHub. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/github) to learn by topic or checking out the [GitHub for Quire](/documentation/github) section of our documentation. We also encourage you to check out Coding Train’s video series is a great resource as well [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).*
+*This deployment option requires a basic understanding of how to create a repository, and commit and merge changes changes in GitHub, GitLab, or Bitbucket. We use GitHub and our documentation uses that as an example throughout. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/github) to learn by topic or checking out the [GitHub for Quire](/documentation/github) section of our documentation. We also encourage you to check out Coding Train’s video series is a great resource as well [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).*
 
-By keeping your project files on GitHub and linking them directly to your Netlify account, any time you merge changes in Github, your preview link will be automatically updated. This process requires a few extra steps to get set-up, but will save time in the long run. This process also works with GitLab and Bitbucket.
+By keeping your project files on GitHub and linking them directly to your Netlify account, any time you merge changes in Github, your preview link will be automatically updated. This process requires a few extra steps to get set-up, but will save time in the long run.
 
 1. If you haven't already, create a repository for your project on GitHub.
 
@@ -83,7 +83,7 @@ By keeping your project files on GitHub and linking them directly to your Netlif
 
 9. You will be given a default URL to preview your project. You can rename this URL by navigating to “Site settings” and changing the site name. (You also have the option to buy a domain or set-up a domain you already own.)
 
-10. Should you need to make any updates to your site, simply merge the changes and Netlify will automatically update your preview link. You can check "Production Deploys" in the site overview section to these track changes.
+10. Should you need to make any updates to your site, just merge the changes and Netlify will automatically update your preview link. You can check "Production Deploys" in the site overview section to these track changes.
 
 {{< q-class "box tip" >}}
 - Now that you have linked Netlify to your Github account, you'll see notifications about Netlify testing the site each time you submit a new pull request. If the checks pass, you can click the bottom-most link to launch a preview of your site. If the checks fail, there may be broken links, incorrect YAML, or other issues with your project files.
