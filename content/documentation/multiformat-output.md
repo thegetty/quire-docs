@@ -41,11 +41,13 @@ If you do not already have a web server or hosting plan, we’ve found that [Net
 
 Manual deploy is ideal if you have a small site or want to run a quick preview. Keep in mind, with this option, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify each time you make an update, which may be burdensome if you have a lot of images or larger files. For continuous deployment please see [*Continuous Deploy with Netlify*](#continuous-deploy-with-netlify).
 
-1. Navigate to your project and compress the `site` folder.
+1. When you are ready to launch your project, run `quire site` in your command-line shell.
 
-2. Go to Netlify Drop: [https://app.netlify.com/drop](https://app.netlify.com/drop). Make sure you are logged in to your account and then drag-and-drop your compressed `site` folder into the indicated area.
+2. Navigate to your project in your home directory and compress the `site` folder.
 
-3. You will be given a default URL to preview your project. Rename this URL by navigating to “Site settings” and changing the site name. (You also have the option to buy a domain or set-up a domain you already own.)
+3. Go to Netlify Drop: [https://app.netlify.com/drop](https://app.netlify.com/drop). Make sure you are logged in to your account and then drag-and-drop your compressed `site` folder into the indicated area.
+
+4. You will be given a default URL to preview your project. Rename this URL by navigating to “Site settings” and changing the site name. (You also have the option to buy a domain or set-up a domain you already own.)
 
 If you make further edits to your project and would like to preview them you will need to repeat this process.
 
@@ -61,7 +63,7 @@ If you make further edits to your project and would like to preview them you wil
 
 *This deployment option requires a basic understanding of how to create a repository, and commit and merge changes in GitHub. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/github) to learn by topic or checking out the [GitHub for Quire](/documentation/github) section of our documentation. We also encourage you to check out Coding Train’s video series is a great resource as well [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).*
 
-By linking GitHub directly to your Netlify account, any time you merge changes in Github, your preview link will be automatically updated. This process requires a few extra steps to get set-up, but will save time in the long run. This process also works with GitLab and Bitbucket.
+By keeping your project files on GitHub and linking them directly to your Netlify account, any time you merge changes in Github, your preview link will be automatically updated. This process requires a few extra steps to get set-up, but will save time in the long run. This process also works with GitLab and Bitbucket.
 
 1. If you haven't already, create a repository for your project on GitHub.
 
