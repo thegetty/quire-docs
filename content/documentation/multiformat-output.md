@@ -1,5 +1,5 @@
 ---
-title: Output & Deploy Your Project
+title: Output Your Project
 weight: 5700
 type: essay
 abstract: "Produce online, PDF, and E-Book versions of your publication"
@@ -22,71 +22,6 @@ Unlike `epub: false` and `pdf: false`, adding `online: false` does not stop a pa
 {{< q-class "box tip" >}}
 - Links to download the EPUB, MOBI, and PDF versions are automatically included in the sidebar menu of the online version of your project. These links can be removed or modified by making changes to the `resource_link` information in your `data/publication.yml` file.
 - You can add links to these files from anywhere in your markdown files by linking to `/downloads/output.epub`, `/downloads/output.mobi`, and `/downloads/output.pdf` respectively.
-{{< /q-class >}}
-
-## Deploy Your Project Online
-
-A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from any hosting service you might sign up for. You do not need any special back-end setup.
-
-When hosting a site this way, you will typically follow these steps:
-
-1. Output your PDF and e-book files following the directions above, if you are going to include them as part of your published project.
-2. Update the `baseURL` in `config/site.yml` to match the URL where the site will ultimately be hosted.
-3. Output your site following the directions above.
-4. Upload the contents of the `site` folder to your web host based on the directions they provide.
-
-If you do not already have a web server or hosting plan, we’ve found that [Netlify](https://www.netlify.com) offers a couple excellent options.
-
-### Manual Deploy with Netlify
-
-Manual deploy is ideal if you have a small site or want to run a quick preview. Keep in mind, with this option, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify each time you make an update, which may be burdensome if you have a lot of images or larger files. For continuous deployment please see [*Continuous Deploy with Netlify*](#continuous-deploy-with-netlify).
-
-1. When you are ready to launch your project, run `quire site` in your command-line shell.
-
-2. Navigate to your project in your home directory and compress the `site` folder.
-
-3. Go to Netlify Drop: [https://app.netlify.com/drop](https://app.netlify.com/drop). Make sure you are logged in to your account and then drag-and-drop your compressed `site` folder into the indicated area.
-
-4. You will be given a default URL to preview your project. Rename this URL by navigating to “Site settings” and changing the site name. (You also have the option to buy a domain or set-up a domain you already own.)
-
-If you make further edits to your project and would like to preview them you will need to repeat this process.
-
-1. Delete the old compressed `site` folder.
-
-2. Run `quire site` again (your files will be automatically overwritten.)
-
-3. Compress the newly updated `site` folder.
-
-4. In Netlify, navigate to “Deploys” at the top of the page. You will see a blank space that reads, “Need to update your site." Simply drag-and-drop your new compressed `site` folder here and your link will be automatically updated.
-
-### Continuous Deploy with Netlify
-
-*This deployment option requires a basic understanding of how to create a repository, and commit and merge changes changes in GitHub, GitLab, or Bitbucket. We use GitHub and our documentation uses that as an example throughout. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/github) to learn by topic or checking out the [GitHub for Quire](/documentation/github) section of our documentation. We also encourage you to check out Coding Train’s video series is a great resource as well [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).*
-
-By keeping your project files on GitHub and linking them directly to your Netlify account, any time you merge changes in Github, your preview link will be automatically updated. This process requires a few extra steps to get set-up, but will save time in the long run.
-
-1. If you haven't already, create a repository for your project on GitHub.
-
-2. To proceed with deployment, you will need to add two files to your repository: `netlify.toml` and `package.json`. [Download them](/downloads/site-deploy.zip), add them to your repo, and merge changes before proceeding.
-
-3. Log in to [Netlify](https://app.netlify.com/). On the “Team Overview” page, click the button that says “New Site from Git.”
-
-4. Next you'll want to “Connect to Git Provider.”
-
-5. If you see “no repositories found” you will be prompted to configure Netlify on GitHub.
-
-6. Once this configuration is complete, choose the repository you would like to preview.
-
-7. Set the "build command" as `npm run build` and the "publish directory" as `site`.  
-
-8. Hit "Deploy Site." Depending on the size of your project, this may take a few moments. Follow along with the build process (and check for errors) by navigating to "Publication Deploys" section and scrolling down to the "Deploy Log".
-
-9. You will be given a default URL to preview your project. You can rename this URL by navigating to “Site settings” and changing the site name. (You also have the option to buy a domain or set-up a domain you already own.)
-
-10. Should you need to make any updates to your site, just merge the changes and Netlify will automatically update your preview link. You can check "Production Deploys" in the site overview section to these track changes.
-
-{{< q-class "box tip" >}}
-- Now that you have linked Netlify to your Github account, you'll see notifications about Netlify testing the site each time you submit a new pull request. If the checks pass, you can click the bottom-most link to launch a preview of your site. If the checks fail, there may be broken links, incorrect YAML, or other issues with your project files.
 {{< /q-class >}}
 
 ## E-Book Output
