@@ -17,6 +17,9 @@ The following is a list of helpful links to guide your experience and exploratio
 - [Git and GitHub for Poets, The Coding Train | Video Series](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
 - [GitHub Desktop Documentation](https://docs.github.com/en/free-pro-team@latest/desktop)
 - [GitHub Learning Lab](https://lab.github.com/)
+- [GitHub Glossary](https://docs.github.com/en/github/getting-started-with-github/github-glossary)
+- [Git Large File Storage (LFS)](https://git-lfs.github.com/)
+
 
 ## HTML & CSS
 
@@ -39,10 +42,6 @@ IIIF (International Image Interoperability Framework) is an emerging standard fo
 - [IIF Awesome](https://github.com/IIIF/awesome-iiif)
 - [IIIF Apps & Demos](https://iiif.io/apps-demos/#image-servers)
 
-## Large File Storage
-
-- [Git Large File Storage](https://git-lfs.github.com/)
-
 ## Markdown
 
 - [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
@@ -52,9 +51,9 @@ IIIF (International Image Interoperability Framework) is an emerging standard fo
 
 ## Netlify
 
-With Netlify, you can build a quick preview site or link it to your Github account to automatically generate an updated preview every time you push changes to your project. You can also use it to host your final project when it’s ready to publish. 
+With Netlify, you can build a quick preview site or link directly to your Github account to automatically generate an updated preview every time make changes. You can also use it to host your final project when it’s ready to publish.
 
-- [Netlify Documentation](https://docs.netlify.com/?utm_medium=email&_hsmi=90174540&_hsenc=p2ANqtz-9n3XbaCpnuVnhAyXWNnU_uaKGJiH9tDe0mHei6hnuBrx87Cblx6xfQyMgkoklqEw9xBplyoRaii6-GNIB7sx5UwcEyvw&utm_content=90174540&utm_source=hs_automation)
+- [Netlify Documentation](https://docs.netlify.com/)
 - [Deploy Instructions](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git)
 
 ## PDFs and PrinceXML
