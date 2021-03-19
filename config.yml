@@ -9,9 +9,9 @@
 
 baseURL: ""
 
-title: "Quire Starter"
+title: "Quire Docs"
 languageCode: "en-us"
-theme: "quire-starter-theme"
+theme: "default"
 publishDir: site
 
 footnoteReturnLinkContents: "↩"
