@@ -1,17 +1,156 @@
 /* Colors */
 :root {
   --basic-black: #333;
+  --light-gray: #e6e6e6;
   --accent-color: #1a47b8; /* Getty Blue */
   /* --warning-color: #dab836; */
+
+  --menu-width: calc(380px - 2em);
+}
+
+/* FIXED MENU
+============================================================================= */
+
+@media screen and (min-width: 900px) {
+
+  /* Position fixed wide menu */
+  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__secondary {
+    top: 5rem;
+    overflow-y: scroll;
+    transform: none;
+    width: var(--menu-width);
+  }
+  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__secondary .quire-menu {
+    display: block;
+    margin-bottom: 12rem;
+  }
+
+  /* Determine widths of main page elements */
+  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary {
+    width: calc(100% - var(--menu-width));
+  }
+  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary .container {
+    width: calc(100vw - var(--menu-width) - 3rem);
+  }
+  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar {
+    width: 100vw
+  }
+
+  /* Hide menu button, and add margin to make up for missing element */
+  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar .quire-navbar-button.menu-button {
+    display: none;
+  }
+  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar .quire-navbar-button.search-button {
+    margin-right: 1rem;
+  }
+}
+
+/* Make some fixes to the way the content area appears
+on the page and adjusts to different window widths */
+@media screen and (max-width: 500px),
+       screen and (max-width: calc(720px + 2rem)) {
+  .quire-page__content .container {
+    width: auto;
+    margin: 0 1rem;
+  }
+  .quire-page__content .container .content {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: calc(1050px + 3rem)) and (min-width: 900px) {
+  body:not(.cover).quire-page__content .container {
+    width: auto;
+    margin: 0 1.5rem;
+  }
+}
+
+/* Add borders between sections, move flush left, and even out spacing */
+.quire-menu .page-item a,
+.quire-menu .section-item a {
+  line-height: 1.2;
+}
+.quire-menu ul {
+  border-bottom: 1px solid var(--light-gray);
+}
+.quire-menu ul li ul {
+  border-bottom-width: 0;
+}
+.quire-menu .section-item,
+.quire-menu .page-item {
+  border-top: 1px solid var(--light-gray);
+  padding: .5rem 0;
+}
+.quire-menu .section-item .section-item,
+.quire-menu .section-item .page-item {
+  border-top-width: 0;
+  padding: 0;
+}
+.quire-menu .menu-list li ul {
+  margin: 0;
+  padding: 0;
+}
+.quire-menu .section-item > .list-header,
+.quire-menu__list > ul > .page-item {
+  font-weight: 500;
+}
+
+/* Style heading links in side menu */
+.quire-menu .page-item .quire__heading-links {
+  display: none;
+}
+.quire-menu .page-item.active .quire__heading-links {
+  display: block;
+  font-size: 1em;
+  margin-left: 1rem;
+}
+.quire-menu .page-item.active .quire__heading-links .main-heading a {
+  color: var(--accent-color) !important;
+}
+.quire-menu .page-item.active > a,
+.quire-menu .section-item.active > a,
+.quire-menu .section-item > a {
+  font-weight: 500;
+}
+/* Hide page links on History page because they're just years */
+#about-history .quire-menu .page-item.active .quire__heading-links {
+  display: none;
+}
+
+/* Style footer with spacing and borders */
+.quire-menu__footer .menu-list {
+  display: block;
+  columns: 2;
+  column-gap: 0;
+  margin-top: 1rem;
+}
+.quire-menu__footer .menu-list li {
+  border-top: 1px solid var(--light-gray);
+}
+.quire-menu__footer .menu-list a {
+  padding: .5em 0;
+}
+.quire-menu__footer {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+.quire-menu__footer .quire-copyright {
+  padding: 0;
 }
 
 /* NAVBAR
 ============================================================================= */
 
-/* Set overall typography */
+/* Set overall typography and positioning */
 .quire-navbar {
   font-size: 1rem;
   font-weight: 500;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+}
+#main {
+  margin-top: 5rem;
+  min-height: calc(100vh - 5rem);
 }
 .quire-navbar a {
   padding: 0;
