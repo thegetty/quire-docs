@@ -236,3 +236,27 @@ a.quire-navbar-controls__site-logo img {
 .quire-search__close-button:hover svg {
   fill: var(--basic-black);
 }
+
+/* OFF SITE INDICATORS FOR MENU AND NAVIGATION
+============================================================================= */
+.section-item a[target=_blank]::after,
+.page-item a[target=_blank]::after {
+  content: url('../img/icons/right-up-arrow.svg');
+  display: inline-flex;
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
+/* Use dark gray arrow in page items */
+.section-item ul .page-item a[target=_blank]::after {
+  content: url('../img/icons/right-up-arrow--dark-gray.svg');
+}
+/* Make these links the accent color */
+.quire-navbar a[target=_blank],
+.quire-menu__list > ul > .page-item a[target=_blank] {
+  color: var(--accent-color) !important;
+}
+.quire-navbar a[target=_blank]:hover,
+.quire-menu__list > ul > .page-item a[target=_blank]:hover {
+  border-color: var(--accent-color) !important;
+}
