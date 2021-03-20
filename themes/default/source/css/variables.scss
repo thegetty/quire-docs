@@ -6,9 +6,9 @@
 // To avoid errors, variables names should not be changed or deleted, and be
 // sure to leave the colons (:) and semi-colons (;) in place.
 
-$accent-color: null;
+$accent-color: #1a47b8;
 $content-background-color: null; // main text area background color
-$secondary-background-color: null; // only for modern theme
+$secondary-background-color: $white; // only for modern theme
 
 // Declare the theme: modern/classic
 $theme: modern;
@@ -100,8 +100,8 @@ $quire-navigation-font: null; // navbar and next/prev buttons
 
 // Navbar
 // -----------------------------------------------------------------------------
-$navbar-height: 3rem;
-$quire-progress-bar-height: 2px;
+$navbar-height: 5rem;
+$quire-progress-bar-height: 0;
 
 // Declare navbar colors
 $quire-navbar-color: null;

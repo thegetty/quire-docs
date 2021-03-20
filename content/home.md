@@ -1,16 +1,16 @@
 ---
 title: Quire
-# subtitle: The Getty’s Multiformat Publishing Tool
 reading_line: The best free tool for creating beautiful digital books that last.
 weight: 1
 menu: false
-type: splash
+type: page
 slug: .
 ---
 
-<div class="header-quote">
 
-# Create scholarly, visually rich <br />digital books that last <span class="sub-head">Online • Print • E-book</span>
+Create scholarly, visually rich digital books that last <br />Online • Print • E-book
+
+Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
 
 <div class="action-button">
 
@@ -28,13 +28,6 @@ slug: .
 
 </div>
 
-<div class="logo">
-
-![logo](/img/quire-logo--sm.png)
-
-</div>
-
-Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
 
 <div class="feature-cards">
 
