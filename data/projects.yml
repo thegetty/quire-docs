@@ -42,7 +42,7 @@ project_list:
     customization_level: moderate
     github_user:
       - halfempty
-    note: "This project updates the starter theme with a new font and custom css for in the typography."
+    note: "This project updates the starter theme with a new font and custom css for the typography."
 
   - id: "artists_studios_paris"
     src: /screenshots/_artists_studios_paris.jpg
@@ -81,7 +81,7 @@ project_list:
     customization_level: minor
     github_user:
       - MillsArtMuseum
-    note: "Due to the COVID-19 pandemic, the Mills College 2020 BFA Senior Thesis Exhibition was canceled. This digital catalogue doubles as an online exhibition, providing Mills' graduating studio arts majors and minors with an opportunity to showcase their work."
+    note: "Due to the COVID-19 pandemic, the Mills College 2020 BFA Senior Thesis Exhibition was cancelled. This digital catalogue doubles as an online exhibition, providing Mills' graduating studio arts majors and minors with an opportunity to showcase their work."
 
   - id: "in_plain_sight"
     src: /screenshots/_in_plain_sight.jpg
@@ -94,7 +94,7 @@ project_list:
     customization_level: minor
     github_user:
       - MillsArtMuseum
-    note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable opportunity."
+    note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable alternative."
 
   - id: "state_of_convergence"
     src: /screenshots/_state_of_convergence.jpg
@@ -107,7 +107,7 @@ project_list:
     customization_level: minor
     github_user:
       - stephaniehanor
-    note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable opportunity."
+    note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable alternative."
 
   - id: "tilt_west"
     src: /screenshots/_tilt_west.jpg
@@ -120,7 +120,7 @@ project_list:
     customization_level: minor
     github_user:
       - swambold1
-    note: "Inaugural issue of *Tilt West Journal.* Previously, content existed on their SoundCloud stream or via comissioned Medium articles. Quire enabled the *Tilt West* team to meaningfully expand their programming."
+    note: "This project is the inaugural issue of *Tilt West Journal.* Previously, content existed on their SoundCloud stream or via comissioned Medium articles. Quire enabled the *Tilt West* team to meaningfully expand their programming."
 
   - id: "silk_poems"
     src: /screenshots/_silk_poems.jpg
@@ -134,7 +134,7 @@ project_list:
     github_user:
       - tipeslowly
       - 1000camels
-    note: "Jen Bervin's *Silk Poems* was UMAG's first Quire project. Thanks to support from the US Consulate in Hong Kong, UMAG was able to cut their teeth on the Quire CLI and Github, while creating a platform to document Jen Bervin's exhibition and participation at International Poetry Nights in Hong Kong."
+    note: "Jen Bervin's *Silk Poems* was UMAG's first Quire project. Thanks to support from the US Consulate in Hong Kong, UMAG was able to test out the Quire CLI and Github, while creating a platform to document Jen Bervin's exhibition and participation at International Poetry Nights in Hong Kong."
 
   - id: "ancient_ambers"
     src: /screenshots/_ancient_ambers.jpg
@@ -147,7 +147,7 @@ project_list:
     customization_level: minor
     github_user:
       - geealbers
-    note: "Devleoped by Getty, this publication is a good example of a standard collection catalogue built using Quire."
+    note: "Developed by Getty, this publication is a good example of a standard collection catalogue built using Quire."
 
   - id: "cva"
     src: /screenshots/_cva.jpg
@@ -160,7 +160,7 @@ project_list:
     customization_level: extensive
     github_user:
       - geealbers
-    note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other instiutions down the road."
+    note: "This publication marks the first-ever born digital, open-access version of the century-old reference series *Corpus Vasorum Antiquorum*. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other instiutions down the road."
 
   - id: "heritage_management"
     src: /screenshots/_heritage_management.jpg
@@ -173,7 +173,7 @@ project_list:
     customization_level: moderate
     github_user:
       - geealbers
-    note: "This publication represents typical reserach proceedings, however, it was additionally customized to accomodate a 7 in. x 10 in. print size."
+    note: "This publication represents typical research proceedings, however, it was additionally customized to accomodate a 7 in. x 10 in. print size."
 
   - id: "tour_toolkit"
     src: /screenshots/_tour_toolkit.jpg
@@ -186,7 +186,7 @@ project_list:
     customization_level: moderate
     github_user:
       - kristhayer11
-    note: "This publication is an excellent example of how Quire can be used to produce shorter form publications like pamphlets and other educational handouts. Customziations include font, branding, and other aesthetic considerations."
+    note: "This publication is an excellent example of how Quire can be used to produce shorter form publications like pamphlets and other educational handouts. Customizations include font, branding, and other aesthetic considerations."
 
   - id: "alcohols_empire"
     src: /screenshots/_alcohols_empire.jpg
@@ -238,7 +238,7 @@ project_list:
     customization_level: minor
     github_user:
       - shineslike
-    note: "This publication was written, edited and published by students in George Washington University's Museums and Digital Technology class. Each student was responsible for creating an essay that explores a specific area of museum digital practice today."
+    note: "This publication was written, edited, and published by students in George Washington University's Museums and Digital Technology class. Each student was responsible for creating an essay that explores a specific area of contemporary museum digital practice."
 
   - id: "50_x_50"
     src: /screenshots/_50x50.jpg
@@ -252,7 +252,7 @@ project_list:
     github_user:
       - sheltonsjma
       - egardner
-    note: "Quire is optimized for longevity and discoverability by allowing output in multiple formats from plain-text files and print-on-demand PDF files. These factors were critical in the Museum's decision to use this platform for a milestone anniversary publication and offered a timely opportunity to examine sustainability in the digital publishing realm. In determining what type of software to use for the Museum's fiftieth-anniversary catalogue, concerns around ongoing maintenance, future migration, and accessibility were carefully weighed against available options, especially considering the catalogue's purpose as a testament to the history and evolution of the collection. The San José Museum of Art customized this project to be more visually driven, including new templates for displaying artwork on a single page in a grid and removing the banner/hero image at the top of the page."
+    note: "Quire is optimized for longevity and discoverability by allowing output in multiple formats from plain-text files to print-on-demand PDF files. These factors were critical in the San José Museum of Art's decision to use this platform for a milestone anniversary publication and offered a timely opportunity to examine sustainability in the digital publishing realm. In determining what type of software to use for the Museum's fiftieth-anniversary catalogue, concerns around ongoing maintenance, future migration, and accessibility were carefully weighed against available options, especially considering the catalogue's purpose as a testament to the history and evolution of the collection. The museum customized this project to be less linear and more visually driven, including adding new templates for displaying artwork on a single page in a grid and removing the banner/hero image at the top of the page."
 
   - id: "atelier_17"
     src: /screenshots/_atelier_17.jpg
@@ -359,7 +359,7 @@ project_list:
     github_user:
       - tipeslowly
       - 1000camels
-    note: "The site was built to coincide with an exhibition currently running in the HKU Library of Song-Ming rare books from special collections that all deal with “Music in Print”. The primary material is excerpted from a forthcoming book by an HKU Prof on Music and Confucian rites. This publication will be evenly split between discussions on ethnomusicology and issues of materiality and book culture."
+    note: "This site was built to coincide with an exhibition currently running in the HKU Library of Song-Ming rare books from special collections, which all deal with “Music in Print”. The primary material is excerpted from a forthcoming book by an HKU Professor on music and Confucian rites. This publication will be evenly split between discussions on ethnomusicology and issues of materiality and book culture."
 
   - id: "nuclear_comp"
     src: /screenshots/_nuclear_comp.jpg
@@ -385,4 +385,4 @@ project_list:
     customization_level: moderate
     github_user:
       - swroberts
-    note: "The Candler School chose Quire for its ability to publish in multiple formats, making the course catalog more discoverable and searchable. The Candler School primarily customized the look and feel of the Quire theme in order to make it visually interesting while presenting mostly textual content."
+    note: "The Candler School of Theology chose Quire for its ability to publish in multiple formats, making the course catalogue more discoverable and searchable. The Candler School primarily customized the look and feel of the Quire theme in order to make it visually interesting while presenting mostly textual content."
