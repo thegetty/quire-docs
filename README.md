@@ -1,38 +1,40 @@
-![Quire logo](static/img/quire_logo_tm.png)
-
 # Quire
 
-https://gettypubs.github.io/quire/
+Developed by Getty, Quire is a new, multiformat publishing tool available for immediate access and use. Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open-source software. 
 
-**Quire is currently in closed development. To request access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link) form.**
+**Please see our main repository wwww.github.com/thegetty/quire to learn more about Quire, obtain a license, participate in the forum, submit issues, and more.**
 
-Quire is a modern, multiformat publishing framework designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever signing-up for an account, paying a fee, or setting up and maintaining a complicated server.
+## Help Us Improve the Quire Docs & Website
 
-Quire books are scholarly, visual, and built for discoverability and longevity. They feature:
+One way you can contribute to Quire is by helping us improve our documentation and website. These resources are a work in progress and we value your contributions. No matter what level of experience you have, we welcome all contributions, big and small.
 
-- Page-level citation
-- Footnotes
-- Bibliographies
-- Figure images and image groups
-- Zooming images and maps
-- Video and audio embeds
-- Dynamic tables of contents and menus
-- Full-text search
-- Responsive web design
-- Web accessibility and SEO optimized
-- Outputs to web, PDF, and EPUB formats
+Please see our [Contributing Guidelines](https://github.com/thegetty/quire/edit/main/CONTRIBUTING.md) for more detailed guideliens on making contributions to Quire. 
 
-Check out [the demo site](https://gettypubs.github.io/quire-starter/), and [some of the Getty’s books developed with early versions of Quire.](https://www.getty.edu/publications/digital/digitalpubs.html)
+Examples of good documentation and website contributions include:
 
-Quire is centered around [Hugo](https://github.com/gohugoio/hugo), and uses [PrinceXML](http://www.princexml.com/) for PDF generation and [pandoc](https://pandoc.org/) for EPUBs. It consists of four primary repositories, all of which but this one are closed during development.
+- Propose a new section
+- Copyedit sections
+- Correct one-off typos
+- Write new content
+- Translate our documentation
 
-- [quire](https://github.com/gettypubs/quire) (documentation and homepage)
-- [quire-cli](https://github.com/gettypubs/quire-cli)
-- [quire-starter](https://github.com/gettypubs/quire-starter)
-- [quire-starter-theme](https://github.com/gettypubs/quire-starter-theme)
+### Get Started
 
-## License
+1. Post a new issue or comment on an existing issue [in our issue tracker](https://github.com/thegetty/quire-docs/issues). Please label your issues to the best of your abilities.
 
-© 2019 J. Paul Getty Trust
+2. Clone this repository by following [these instructions](https://quire.getty.edu/documentation/github/#installing-an-existing-quire-project-from-github). 
+  - We recommend using [GitHub Desktop](https://desktop.github.com/) to clone your repository and manage any changes. Refer to [GitHub Desktop documentation](https://docs.github.com/en/desktop) for further details. 
+  - Be sure to run `quire install` before proceeding. 
 
-This documentation is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+3. [Create a new branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-branches) and make your changes. 
+  - Please review our [Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide) and ensure you are contributing in the style of the project to the best of your abiltiies.
+  - Test your changes by running `quire preview`. 
+
+4. Submit a pull request through GitHub.
+  - Reference any relevant issues or supporting documentation in your pull request description (for example, “Closes #203.”)
+  - Explain what the changes do, and what your approach was. If there were alternate ways of doing it, mention them and tell us why you didn’t choose them.
+  - If this is a Work in Progress pull request, comment on where you are and what your next steps are.
+
+5. See your changes merged into the documentation and website! 
+
+
