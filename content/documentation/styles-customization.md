@@ -13,7 +13,7 @@ The look and feel of your Quire publication can be customized at four different 
   4. Creating an entirely new Quire theme.
 
 {{< q-class "box tip" >}}
-- A default theme is installed with every new Quire project. This default theme includes a number of default style variables intended to allow relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](documentation/variables) includes information about the customizations available.
+- A default theme is installed with every new Quire project. This default theme includes a number of default style variables intended to allow relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](/documentation/variables) includes information about the customizations available.
 {{< /q-class >}}
 
 ## Change the Theme Style Variables

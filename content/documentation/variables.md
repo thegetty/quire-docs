@@ -1,5 +1,5 @@
 ---
-title: Style Variables for Default Theme
+title: Default Theme Style Variables
 weight: 5401
 type: essay
 online: false
