@@ -13,7 +13,7 @@ The look and feel of your Quire publication can be customized at four different 
   4. Creating an entirely new Quire theme.
 
 {{< q-class "box tip" >}}
-- A default theme is installed with every new Quire project. The [README file](https://github.com/thegetty/quire/blob/main/themes/default/README.md) for that theme includes complete information about the customizations available within it.
+- A default theme is installed with every new Quire project. This default theme includes a number of default style variables intended to allow relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](documentation/variables) includes information about the customizations available.
 {{< /q-class >}}
 
 ## Change the Theme Style Variables
@@ -103,6 +103,7 @@ In the above example, we are selecting the element with a {{< q-def "class" >}} 
 - Exceptionally, if somewhere there is a more specific {{< q-def "CSS selector" >}} that’s applying a style to an element, it will override the less specific one — even if it’s in your `custom.css` file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your {{< q-def "CSS selector" >}} is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The "Inspect element" tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.
 
 {{< /q-class >}}
+
 
 ## Override Theme Templates
 
