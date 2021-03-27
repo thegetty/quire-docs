@@ -110,3 +110,14 @@ When naming commits, think of them as meaningful bundles that could be undone wi
 ### Push Changes
 
 Even after saving your changes in your text editor and committing them in GitHub Desktop, GitHub still doesn’t know about them. For that you need to [push](https://docs.github.com/en/github/getting-started-with-github/github-glossary#push) your commits to GitHub. Use the "Push origin" link in the upper-right corner. Pushing can include one or many commits, and you can push as often as you’d like, but it’s typically good to do it at least a couple times day when actively working on a project.
+
+## Manage Large File Sizes with Git LFS
+
+Individual large files (greater than 100MB) will be blocked by GitHub if you commit them into your project and then try to push them up. You will receive the error message:
+
+> The following files are over 100MB. IF you commit these files, you will no longer be able to push this repository to GitHub.com We recommend you avoid committing these files or use Git LFS to store large files on GitHub.com.
+
+[Git Large File Storage (LFS)](https://git-lfs.github.com/) is a tool that moves your large files elsewhere and in their place stores references pointing to them in your repo. GitHub then uses these references as a guide to locate your large files.
+Another use for Git LFS is avoided bloated repository sizes. One of GitHub’s key advantages is version control. Git tracks all activity in your project over the course of its history enabling you to restore earlier versions. That means git keeps track of every file that’s ever been associated with that project, (even the deleted ones). This can lead to slowed performance. We recommend adapting Git LFS as part of your workflow to avoid issues further down the road.
+
+For additional information on managing large file sizes and instructions for downloading Git LFS please refer to the [GitHub documentation](https://docs.github.com/en/github/managing-large-files/installing-git-large-file-storage).  
