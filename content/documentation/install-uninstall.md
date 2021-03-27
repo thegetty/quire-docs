@@ -24,6 +24,16 @@ If you’re eager to get started, this will install the complete Quire package b
 
 The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. If you see these errors, or if you see "command not found" after entering `quire --help` in step 4., search our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 
+
+{{< q-class "box warning tip" >}}
+- Don't fret if you see see an error (ERR!) message in your Terminal that reads: "permission denied." Type the following command and hit enter:
+```
+cd
+sudo chown -R $USER /usr/local
+```
+You'll be asked to type your computer password (it will be invisible) and will most likely receive an error message reading “operation not permitted” or "operation denied". Ignore this! Go back to \#3. and run the install command again.
+{{< /q-class >}}
+
 ### Full Install
 
 Follow the steps below to first install the support software for Quire, and then Quire itself.
