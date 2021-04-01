@@ -12,13 +12,9 @@ The look and feel of your Quire publication can be customized at four different 
   3. Overriding specific theme {{< q-def "templates" >}} with your own custom version
   4. Creating an entirely new Quire theme.
 
-{{< q-class "box tip" >}}
-- A default theme is installed with every new Quire project. This default theme includes a number of default style variables intended to allow relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](/documentation/variables) includes information about the customizations available.
-{{< /q-class >}}
-
 ## Change the Theme Style Variables
 
-Every Quire project has a theme inside the `themes` directory. When you first start a new project by typing the `quire new` command in your command-line interface, the default theme included is Quire’s default theme. In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents, and more.
+When you first start a new Quire project by running the command `quire new`, a default theme is installed in the project's `themes` directory. This default theme includes a number of default style variables that will let you update text and background colors, some element sizes, fonts, paragraph indents, and more. This allows relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](/documentation/variables) includes information about the customizations available.
 
 To find the variables, open the `themes/default` directory, navigate to the `source` sub-directory, and then `css`, and open the file called `variables.scss`.
 
