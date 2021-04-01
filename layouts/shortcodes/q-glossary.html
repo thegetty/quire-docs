@@ -1,0 +1,56 @@
+{{/*
+
+  A shortcode to create a glossary of terms from a data/glossary.yml file that
+  includes `term` and `definition` attributes for each term.
+
+  This shortcode also adds a linked alphabetic menu at the top for users to
+  jump down to certain letters. Letters that do not have any associated terms
+  will not be linked.
+
+*/}}
+
+{{- $.Scratch.Set "letters" "" -}}
+{{- $alphabet := slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z" -}}
+
+{{/* Stash an array of letters that have associated glossary terms */}}
+{{/* ---------------------------------------------------------------------- */}}
+{{- range .Site.Data.glossary.entries -}}
+  {{- $letter := substr .term 0 1 | upper -}}
+  {{- if in ($.Scratch.Get "letters") $letter -}}
+  {{- else -}}
+    {{- $.Scratch.Add "letters" $letter -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* Create an alphabet list at the top of the glossary
+     and link those letters that have associated glossary terms */}}
+{{/* ---------------------------------------------------------------------- */}}
+<ul class="quire-glossary__key remove-from-pdf remove-from-epub" id="key">
+{{ range $alphabet -}}
+  {{- if in ($.Scratch.Get "letters") . -}}
+    <li><a href="#{{ . }}">{{ . }}</a></li>
+  {{- else -}}
+    <li>{{ . }}</li>
+  {{- end -}}
+{{- end }}
+</ul>
+{{- $.Scratch.Delete "letters" -}}
+
+<hr class="remove-from-pdf remove-from-epub" />
+
+{{/* Create the glossary
+     add IDs to the first term in each letter of the alphabet  */}}
+{{/* ---------------------------------------------------------------------- */}}
+<dl class="quire-glossary">
+{{ $.Scratch.Set "letters" "" -}}
+{{- range .Site.Data.glossary.entries -}}
+  {{- $letter := substr .term 0 1 | upper -}}
+  {{- if in ($.Scratch.Get "letters") $letter -}}
+    <dt>{{ .term | markdownify }}{{ if $.Site.Params.glossaryTermDivider }}{{ $.Site.Params.glossaryTermDivider }}{{ else }}: {{ end }}</dt>
+  {{- else -}}
+    {{- $.Scratch.Add "letters" $letter -}}
+    <dt id="{{ $letter | safeHTMLAttr }}">{{ .term | markdownify }}{{ if $.Site.Params.glossaryTermDivider }}{{ $.Site.Params.glossaryTermDivider }}{{ else }}: {{ end }}</dt>
+  {{- end -}}
+  <dd>{{ .definition | markdownify }}</dd>
+{{- end }}
+</dl>
