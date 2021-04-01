@@ -6,9 +6,9 @@ Developed by Getty, Quire is a new, multiformat publishing tool available for im
 
 ## Help Us Improve the Quire Docs & Website
 
-One way you can contribute to Quire is by helping us improve our documentation and website. These resources are a work in progress and we value your contributions. No matter what level of experience you have, we welcome all contributions, big and small.
+One way you can contribute to Quire is by helping us improve our documentation and website. These resources are a work in progress, and we value your contributions. No matter what level of experience you have, we welcome all contributions, big and small.
 
-Please see our [Contributing Guidelines](https://github.com/thegetty/quire/edit/main/CONTRIBUTING.md) for more detailed guideliens on making contributions to Quire. 
+Please see our [Contributing Guidelines](https://github.com/thegetty/quire/edit/main/CONTRIBUTING.md) for more detailed guidelines on making contributions to Quire. 
 
 Examples of good documentation and website contributions include:
 
@@ -32,9 +32,13 @@ Examples of good documentation and website contributions include:
 
 4. Submit a pull request through GitHub.
   - Reference any relevant issues or supporting documentation in your pull request description (for example, “Closes #203.”)
-  - Explain what the changes do, and what your approach was. If there were alternate ways of doing it, mention them and tell us why you didn’t choose them.
+  - Explain what the changes do and what your approach was. If there were alternate ways of doing it, mention them and tell us why you didn’t choose them.
   - If this is a Work in Progress pull request, comment on where you are and what your next steps are.
 
 5. See your changes merged into the documentation and website! 
 
+## License
 
+© 2021 J. Paul Getty Trust
+
+The text and images of Quire’s documentation is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
