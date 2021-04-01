@@ -115,23 +115,3 @@ GitHub enables you to not only host your project code, but you can also use it t
 7. For "Source" switch the branch to `gh-pages` and save.
 
 8. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
-
-## GitHub Best Practices
-
-If you’re using GitHub or a related service to manage your Quire projects (whether deploying with Netlify or GitHub Pages), you should be mindful of how you handle third-party assets (like images you license for use), as well as files with large files sizes (like high-resolution images and even the PDF and e-book outputs from Quire itself). Neither should be committed into a git repository without some careful forethought.
-
-One of the amazing things about git/GitHub is that a project tracked with git can be rolled back and fully restored to any point in its history. That means that git keeps track of every file that’s ever been associated with the project. This includes deleted files, which by design are never truly deleted. They're kept in version control in case you want to revert back to an older version that uses that file. Keep in mind that these deleted files can contribute to the overall size of your repository.
-
-### Third-Party Licensed Assets
-
-If you plan to make your repository visibility public at some point, we highly recommend not committing third-party licensed assets into it, as this can expose those assets to easy, unlicensed use by other people. We recommend putting these images in a secondary repository that always remains private but can be connected to the main repo through a [git submodule](https://github.blog/2016-02-01-working-with-submodules/).
-
-### Large Files
-
-Individual large files (greater than 100MB) will be blocked by GitHub if you commit them into your project and then try to push them up. Also, multiple large files of even more modest size can quickly lead to bloated repository sizes and slowed performance.
-
-Deleting committed files doesn’t clear up issues with GitHub or reduce the repo's overall size because these files remain in your git version history. You’ll find you need to jump through some technical hoops to remove the files and rewrite the git history permanently. It is best not to commit them in at all.
-
-As a solution, when you are working with larger file sizes, we recommend utilizing GitHub's [LFS (Large File Storage)](https://git-lfs.github.com/). This allows larger files to be stored in a separate location that can be linked to your repository.
-
-If you are working on a larger project in GitHub, it’s a good idea to set up and start using LFS from the beginning. It will save you many headaches down the road. Read more about [managing large files](https://docs.github.com/en/github/managing-large-files) in GitHub’s docs.
