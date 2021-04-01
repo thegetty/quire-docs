@@ -578,7 +578,8 @@ dt {
 }
 .quire-page__content .content dl.quire-glossary dt {
   display: inline;
-  margin-right: .3rem
+  margin-right: .3rem;
+  font-weight: 700;
 }
 .quire-page__content .content dl.quire-glossary dd {
   display: inline;
