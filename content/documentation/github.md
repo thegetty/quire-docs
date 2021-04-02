@@ -4,7 +4,9 @@ weight: 4150
 type: essay
 ---
 
-[GitHub](https://github.com) is a project management platform centered around git-based version control. While it was originally developed as a useful tool for developers, it is now used by artists, writers, and other non-tech professionals. In fact, Getty uses GitHub to manage all of its publications, as well as Quire itself. We strongly recommend using GitHub as a tool for managing your Quire projects (whether collaborating or working solo). Here are some of GitHub's main advantages:
+[GitHub](https://github.com) is a project management platform centered around git-based version control. While it was originally developed as a useful tool for developers, it is now used by artists, writers, and other non-tech professionals. In fact, Getty uses GitHub to manage all of its publications, as well as Quire itself. We strongly recommend using GitHub as a tool for managing your Quire projects (whether collaborating or working solo).
+
+**Here are some of GitHub's main advantages:**
 
 - GitHub is free to use.
 - It's a secure platform for hosting your project's code and creating an electronic back-up of your work.
@@ -60,7 +62,7 @@ Alternately, you can copy this project directly from GitHub.com. Navigate to the
 
 You now have a copy of that project on your computer that is still connected to the original code on GitHub. You are ready to collaborate!
 
-[[Mention forking somewhere. Explanations about forking: https://github.community/t/the-difference-between-forking-and-cloning-a-repository/10189 and https://opensource.com/article/17/12/fork-clone-difference and https://thenewstack.io/getting-legit-with-git-and-github-cloning-and-forking/]] 
+[[Mention forking somewhere. Explanations about forking: https://github.community/t/the-difference-between-forking-and-cloning-a-repository/10189 and https://opensource.com/article/17/12/fork-clone-difference and https://thenewstack.io/getting-legit-with-git-and-github-cloning-and-forking/]]
 
 
 ## Manage Project Changes on GitHub
@@ -110,7 +112,7 @@ Now the changes to your project have been successfully saved in GitHub!
 One of the main advantages of using GitHub is that it's an excellent tool for managing projects what have multiple people working on it. Once the project is on GitHub and either forked or cloned by you and your colleagues, you can all make changes and commits to the same project. Just remember to add your colleagues as collaborators on your project and give them the appropriate permissions.
 
 {{< q-class "box tip" >}}
-When setting-up a new repository you have [two options](https://docs.github.com/en/github/getting-started-with-github/types-of-github-accounts): you can you can invite users to become collaborators to your personal repository or groups of people can collaborate across many projects at the same time in organization accounts. Each has different options for [managing settings and permissions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-user-account-settings).
+- When setting-up a new repository you have [two options](https://docs.github.com/en/github/getting-started-with-github/types-of-github-accounts): you can you can invite users to become collaborators to your personal repository or groups of people can collaborate across many projects at the same time in organization accounts. Each has different options for [managing settings and permissions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-user-account-settings).
 {{< /q-class >}}
 
 Clear communication is vital when collaborating with GitHub. If multiple people are working on a project and all making changes to the same files, there’s a good chance you will run into conflicts. While git is specifically designed to deal with these sorts of issues, it's important to avoid working on the same sections at the same time.
