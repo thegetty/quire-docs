@@ -16,6 +16,7 @@
   --gray-70: #5b5b5b;
   --gray-90: #1a1a1a;
   --garden-30: #56dfc1;
+  --garden-50: #13b692;
   --garden-60: #009877;
 
   /* --warning-color: #dab836;
@@ -77,6 +78,46 @@
 }
 .quire-page h3:not(:first-child) {
   margin-top: 2rem;
+}
+
+/* TIP/ALERT BOXES
+============================================================================= */
+/* Implement with shortcode q-class "box warning" or q-class "box tip" */
+.box {
+  box-shadow: none;
+  font-weight: bold;
+  border-radius: 0;
+  border-top: 6px solid var(--gray-90);
+  border-bottom: 6px solid var(--gray-90);
+  padding: .5rem;
+  margin: 1.5rem 0;
+}
+.box.warning {
+  border-color: var(--yellow-40);
+}
+.box.tip {
+  border-color: var(--garden-50);
+}
+.box > ul > li {
+  margin-left: 2.5rem !important;
+}
+.quire-page__content .container .content .box ul li::before {
+  content: "";
+}
+.quire-page__content .container .content .box.warning > ul > li:first-of-type::before,
+.quire-page__content .container .content .box.tip > ul > li:first-of-type::before {
+  position: absolute;
+  margin-top: -1.5rem;
+  font-size: 3.5rem;
+  margin-left: -4.25rem;
+}
+.quire-page__content .container .content .box.warning > ul > li:first-of-type::before {
+  content: "⚠";
+  color: var(--yellow-40);
+}
+.quire-page__content .container .content .box.tip > ul > li:first-of-type::before {
+  content: "✓";
+  color: var(--garden-50);
 }
 
 /* FIXED MENU
