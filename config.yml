@@ -17,8 +17,7 @@ publishDir: site
 footnoteReturnLinkContents: "↩"
 metaDataFormat: "yaml"
 googleAnalytics: ""
-pygmentsCodefences: true
-pygmentsStyle: "friendly"
+pygmentsUseClasses: true # must be set to style code samples
 
 pluralizeListTitles: true
 disableKinds:
