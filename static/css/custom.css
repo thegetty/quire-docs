@@ -1,13 +1,12 @@
 /* Colors */
 :root {
-  --basic-black: #333;
+
 
   --blue-60: #1a47b8; /* Getty Blue */
   --blue-80: #042165;
   --bronze-50: #bc7c44;
   --magenta-60: #b32572;
   --orange-50: #e0592a;
-  --sky-50: #41c4dd;
   --sky-50: #27aec8;
   --sunset-30: #f5846c;
   --yellow-10: #fff9cc;
@@ -15,6 +14,7 @@
   --gray-20: #e6e6e6;
   --gray-50: #9e9e9e;
   --gray-70: #5b5b5b;
+  --gray-90: #1a1a1a;
   --garden-30: #56dfc1;
   --garden-60: #009877;
 
@@ -37,7 +37,7 @@
   text-align: left;
   margin-top: 5rem;
   padding: 2.5rem;
-  border-bottom: 1px solid var(--basic-black);
+  border-bottom: 1px solid var(--gray-90);
 }
 .quire-page__heading-links ul {
   columns: 2;
@@ -228,7 +228,7 @@ on the page and adjusts to different window widths */
   margin: 0 .75rem;
 }
 .quire-navbar a:hover {
-  border-bottom: 1px solid var(--basic-black);
+  border-bottom: 1px solid var(--gray-90);
 }
 .quire-navbar-controls {
   line-height: 1.2;
@@ -238,7 +238,7 @@ on the page and adjusts to different window widths */
   background-color: transparent !important;
 }
 .quire-navbar-controls button:hover svg {
-  fill: var(--basic-black);
+  fill: var(--gray-90);
 }
 .quire-navbar-controls button {
   width: auto;
@@ -305,7 +305,7 @@ a.quire-navbar-controls__site-logo img {
   background-color: transparent !important;
 }
 .quire-search__close-button:hover svg {
-  fill: var(--basic-black);
+  fill: var(--gray-90);
 }
 
 /* OFF SITE INDICATORS FOR MENU AND NAVIGATION
@@ -363,7 +363,7 @@ dt code {
  */
 /* Background */ .chroma { background-color: whitesmoke }
 /* Other */ .chroma .x {  }
-/* Error */ .chroma .err { color: var(--basic-black); background-color: var(--sunset-30) }
+/* Error */ .chroma .err { color: var(--gray-90); background-color: var(--sunset-30) }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
 /* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: var(--yellow-10) }

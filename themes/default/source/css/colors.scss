@@ -3,14 +3,15 @@
 // Change the color variables once at the top, or change elements individually
 // below. Colors are typically Hex values, or one of 140 standard color names/
 
-$black: #000000;
-$off-black: #333333;
-$gray: #CCCCCC;
-$white: #ffffff;
-$off-white: #EEF2F3;
-$red: #CF4747;
-$blue: #6A8EB8;
-$light-yellow: #F9F9A3;
+$black: #000000; // --gray-100
+$off-black: #1a1a1a; // --gray-90
+$gray: #CCCCCC; // --gray-30
+$white: #ffffff; // white
+$off-white: #e7eeff; // --blue-5
+$red: #cd4b2b; // --sunset-50
+$blue: #1a47b8; // --blue-60, Getty Blue
+$light-yellow: #fff9cc; // --yellow-10
 $off-black-semi-transparent: rgba(0, 0, 0, .5);
 $black-semi-transparent: rgba(0, 0, 0, 0.75);
 $rich-black: cmyk(50%, 50%, 50%, 100%);
+
