@@ -4,6 +4,103 @@
 // Custom font declarations (if any) can be imported here
 
 ////
+// Graphik
+// https://commercialtype.com/catalog/graphik
+// © Commercial Type
+// Must me licensed and added to repository locally
+//
+// Graphik Regular
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Regular-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Graphik Regular Italic
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-RegularItalic-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-RegularItalic-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Graphik Medium
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Medium-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Graphik Medium Italic
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-MediumItalic-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-MediumItalic-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+// Graphik Semibold
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Semibold-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-Semibold-Web.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+// Graphik Semibold Italic
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-SemiboldItalic-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-SemiboldItalic-Web.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+// Graphik Regular
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Regular-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Graphik Regular Italic
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-RegularItalic-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-RegularItalic-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Graphik Medium
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-Medium-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Graphik Medium Italic
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/graphik/Graphik-MediumItalic-Web.woff2") format("woff2"),
+       url("../fonts/graphik/Graphik-MediumItalic-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+////
 // Roboto Mono
 // https://fonts.google.com/specimen/Roboto+Mono
 // Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)

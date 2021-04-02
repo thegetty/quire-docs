@@ -73,10 +73,10 @@ $print-entry-image-display: all; // first | all
 // Themes
 // -----------------------------------------------------------------------------
 // Declare theme variables
-$quire-primary-font: null; // body and menu text
-$quire-headings-font: null; // headings
-$quire-footnotes-font: null; // footnotes and page backmatter
-$quire-navigation-font: null; // navbar and next/prev buttons
+$quire-primary-font: "Graphik", Helvetica, Arial, sans-serif; // body and menu text
+$quire-headings-font: "Graphik", Helvetica, Arial, sans-serif; // headings
+$quire-footnotes-font: "Graphik", Helvetica, Arial, sans-serif; // footnotes and page backmatter
+$quire-navigation-font: "Graphik", Helvetica, Arial, sans-serif; // navbar and next/prev buttons
 
 @if $theme == classic {
   // Classic Theme
