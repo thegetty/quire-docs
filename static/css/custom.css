@@ -8,6 +8,61 @@
   --menu-width: calc(380px - 2em);
 }
 
+
+/* GENERAL PAGE STYLES
+============================================================================= */
+
+/* Style the header area and heading links */
+.quire-page__header .container .content,
+.quire-page__content .container .content {
+  padding: 1.5rem 0 !important;
+}
+.quire-page__header .content {
+  text-align: left;
+  margin-top: 5rem;
+  padding: 2.5rem;
+  border-bottom: 1px solid var(--basic-black);
+}
+.quire-page__heading-links ul {
+  columns: 2;
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 1.5rem;
+}
+.quire-page__heading-links ul a {
+  color: var(--accent-color);
+}
+.quire-page__heading-links ul a:hover {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+/* Hide the abstract, it’s included in the custom header instead */
+.quire-page__abstract {
+  display: none;
+}
+
+/* Overall line height */
+.quire-page__content .container .content p {
+    line-height: 1.5;
+}
+
+/* Headings */
+.quire-page h2 {
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+.quire-page h2:not(:first-child) {
+  margin-top: 6rem;
+}
+.quire-page h3 {
+  text-transform: none;
+  margin-bottom: 2rem;
+  font-style: normal;
+}
+.quire-page h3:not(:first-child) {
+  margin-top: 2rem;
+}
+
 /* FIXED MENU
 ============================================================================= */
 
