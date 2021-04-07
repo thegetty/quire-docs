@@ -29,7 +29,7 @@ Netlify enables you to create a quick preview site by using your project's `site
 
 ### Manual Deploy with Netlify
 
-Manual deploy is ideal if you have a small site or want to run a quick preview. You can also use this option without needing a GitHub account. However, each time oyu make an update, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify, which may be burdensome if you have a lot of images or larger files. For continuous deployment please see [*Continuous Deploy with Netlify*](#continuous-deploy-with-netlify).
+Manual deploy is ideal if you have a small site or want to run a quick preview. You can also use this option without needing a GitHub account. However, each time you make an update, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify, which may be burdensome if you have a lot of images or larger files. For continuous deployment please see [*Continuous Deploy with Netlify*](#continuous-deploy-with-netlify).
 
 1. When you are ready to launch your project, run the `quire site` command in your command-line shell.
 
@@ -48,6 +48,10 @@ If you make further edits to your project and would like to preview them you wil
 3. Compress the newly updated `site` folder.
 
 4. In Netlify, navigate to “Deploys” at the top of the page. You will see a blank space that reads, “Need to update your site." Simply drag-and-drop your new compressed `site` folder here and your link will be automatically updated.
+
+{{< q-class "box tip" >}}
+- One downside to manual deploys is that they can sometimes get stuck while uploading. To ensure a reliable deploy, use this option for Quire sites under 50MB and avoid individual files over 10MB. It's also recommended that you use the latest version of the Chrome browser. For more tips visit the [Netlify Support Forum](https://answers.netlify.com/t/support-guide-my-drag-and-drop-deploy-is-stuck-in-uploading-status/112).
+{{< /q-class >}}
 
 ### Continuous Deploy with Netlify
 
@@ -101,7 +105,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 4. Set the `canonifyURLs` to `true`.
 
-5. Next, navigate to `themes/quire-starter-theme/webpack/webpack.config.prod.js`. 
+5. Next, navigate to `themes/quire-starter-theme/webpack/webpack.config.prod.js`.
 
 6. Change line 80 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/img/"` And change line 92 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/fonts/"`.
 
