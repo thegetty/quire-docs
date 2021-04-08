@@ -340,7 +340,7 @@ Pages with `type: contents` can have class `list` (default), `brief`, `abstract`
 
 ### `q-class`
 
-Wrapping any Markdown text in this shortcode will wrap it in a `<div>` with the given class name in the HTML output. Used for styling.
+Used for styling. Wrapping any Markdown text in this shortcode will wrap it in a `<div>` with the given class name in the HTML output. 
 
 `{{</* q-class "" */>}}  {{</* /q-class */>}}`
 

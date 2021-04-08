@@ -5,7 +5,7 @@ type: essay
 abstract: "Cite sources with pop-ups and generate reference lists"
 ---
 
-In-text citations and bibliographies are all available in Quire. Designed to meet scholarly needs and multiple citation styles, they are easy to implement in your publications. While bibliographic references are formatted in YAML and stored in a YAML file (you can consult our [YAML syntax fundamentals](/documentation/fundamentals/) for more information), citation and bibliography shortcodes are used to integrate the references in your publication.
+In-text citations and bibliographies are all available in Quire. Designed to meet scholarly needs and multiple citation styles, they are easy to implement in your publications. While bibliographic references are formatted in YAML and stored in a YAML file (you can consult our [YAML syntax fundamentals](/documentation/fundamentals/) for more information), citation and bibliography {{< q-def "shortcodes" >}} are used to integrate the references in your publication.
 
 ## Capture Bibliographic Information in YAML
 
