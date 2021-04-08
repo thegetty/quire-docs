@@ -89,7 +89,7 @@ entries:
   - term: "Shortcode"
     alternates:
       - "shortcodes"
-    definition: "A shortcode is a simple snippet used inside a Markdown file, that Quire will render using a predefined template. Quire suports [a range of shortcodes](/documentation/for-developers/#shortcodes-api), and custom shortcodes can also be added."
+    definition: "A shortcode is a simple snippet of code inserted in a Markdown file that pulls in information from other files in your project. In Quire, shortcodes are used for styling, figure images, citations, bibliographies, and collaborators. Quire suports [a range of shortcodes](/documentation/for-developers/#shortcodes-api), and custom shortcodes can also be added."
   - term: "theme"
     alternates:
       - "themes"
