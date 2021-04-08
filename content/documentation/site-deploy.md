@@ -5,7 +5,7 @@ type: essay
 abstract: "Preview & Deploy Your Project Online"
 ---
 
-A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from the hosting service of your choice. You do not need any special back-end setup. If you plan to include PDF and e-book files as part of you published project, it's important that you start by following the directions in the [*Output Your Project*](documentation/multiformat-output) section of the documentation before proceeding.
+A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from the hosting service of your choice. You do not need any special back-end setup. If you plan to include PDF and e-book files as part of you published project, it's important that you start by following the directions in the [*Output Your Project*](/documentation/multiformat-output/) section of the documentation before proceeding.
 
 ## Basic Deploy
 
@@ -25,11 +25,13 @@ If you do not already have a web server or hosting plan, we recommend using eith
 
 Netlify enables you to create a quick preview site by using your project's `site` files or by connecting it with your Github account to generate a shareable preview site that automatically updates every time you push changes to GitHub. (Please note, while we use GitHub and reference it throughout our documentation, you can also link Netlify to your GitLab or BitBucket account.) You can also use Netlify to host your final project when it's ready to publish.
 
-[Sign up](https://app.netlify.com/signup) for a Netlify account and, optionally, connect it with your GitHub account.
+To learn more about connecting domains, build configuration, private submodules, and using Git Large File Storage with Netlify, see [*Additional Netlify Tips*](/documentation/netlify/). 
 
-### Manual Deploy with Netlify
+To get started, [sign up](https://app.netlify.com/signup) for a Netlify account and, optionally, connect it with your GitHub account.
 
-Manual deploy is ideal if you have a small site or want to run a quick preview. You can also use this option without needing a GitHub account. However, each time you make an update, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify, which may be burdensome if you have a lot of images or larger files. For continuous deployment please see [*Continuous Deploy with Netlify*](#continuous-deploy-with-netlify).
+### Manual Deployment with Netlify
+
+Manual deploy is ideal if you have a small site or want to run a quick preview. You can also use this option without needing a GitHub account. However, each time you make an update, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify, which may be burdensome if you have a lot of images or larger files. For continuous deployment please see [*Continuous Deployment with Netlify*](#continuous-deployment-with-netlify).
 
 1. When you are ready to launch your project, run the `quire site` command in your command-line shell.
 
@@ -53,7 +55,7 @@ If you make further edits to your project and would like to preview them you wil
 - One downside to manual deploys is that they can sometimes get stuck while uploading. To ensure a reliable deploy, use this option for Quire sites under 50MB and avoid individual files over 10MB. It's also recommended that you use the latest version of the Chrome browser. For more tips visit the [Netlify Support Forum](https://answers.netlify.com/t/support-guide-my-drag-and-drop-deploy-is-stuck-in-uploading-status/112).
 {{< /q-class >}}
 
-### Continuous Deploy with Netlify
+### Continuous Deployment with Netlify
 
 By keeping your project files on GitHub and linking them directly to your Netlify account, any time you merge changes in Github, your preview link will be automatically updated. This process requires a few extra steps to get set-up, but will save time in the long run.
 
@@ -81,16 +83,6 @@ By keeping your project files on GitHub and linking them directly to your Netlif
 - Now that you have linked Netlify to your Github account, you'll see notifications about Netlify testing the site each time you submit a new pull request. If the checks pass, you can click the bottom-most link to launch a preview of your site. If the checks fail, there may be broken links, incorrect YAML, or other issues with your project files.
 {{< /q-class >}}
 
-### Connecting Domains to Netlify
-
-There 3 ways of connecting a domain to Netlify
-
-- Purchase your domain through Netlify and run your DNS through their interface
-- Add a proxy to your webserver
-- Add an alias CNAME to your DNS to point to your Netlify domain
-
-Any of these will work, it is more specific to what you want your domain to be.
-
 ## GitHub Pages
 
 GitHub enables you to not only host your project code, but you can also use it to host a live version of your site. Learn more on the [GitHub Pages](https://pages.github.com/) website.
@@ -107,7 +99,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 5. Next, navigate to `themes/quire-starter-theme/webpack/webpack.config.prod.js`.
 
-6. Change line 80 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/img/"` And change line 92 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/fonts/"`.
+6. So that the site fonts display properly, change line 80 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/img/"` And change line 92 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/fonts/"`.
 
 7. Commit and merge these changes to the repo.
 
