@@ -80,6 +80,17 @@
   margin-top: 2rem;
 }
 
+/* Hide all Back/Next buttons */
+.quire-contents-buttons {
+  display: none;
+}
+/* Add some space to the bottom of the page on screen */
+@media screen {
+  .quire-page__content {
+    margin-bottom: 15rem;
+  }
+}
+
 
 /* CONTENTS GRID
 ============================================================================= */
