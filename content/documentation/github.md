@@ -12,7 +12,7 @@ type: essay
 - It's a secure platform for hosting your project's code and creating an electronic back-up of your work.
 - GitHub saves the entire version history of your project (including deleted files) enabling you to track changes, revert changes, and restore earlier versions.
 - You can use GitHub to create test versions of your project and experiment with new ideas before officially incorporating them.
-- Github makes working with collaborators easy. You and your colleagues can work in different versions of the project, review and comment on one another's work, and incorporate any approved changes into the master project.
+- Github makes working with collaborators easy. You and your colleagues can work in different versions of the project, review and comment on one another's work, and consolidate any approved changes into the master project.
 - In the case of Quire, we also use GitHub to host our [community forum](https://github.com/thegetty/quire/discussions) where you can ask and answer questions, share ideas, and assist fellow Quire community members.
 
 {{< q-class "box tip" >}}
@@ -72,7 +72,6 @@ There are three basic steps for making and managing changes to your project on G
 1. Save changes in your text editor
 2. Commit those changes to the git repository
 3. Push those commits up to GitHub
-4. Merge those changes into the master version of your project
 
 ### Save Changes
 
@@ -109,11 +108,9 @@ Now the changes to your project have been successfully saved in GitHub!
 
 ## Collaborate with Others using GitHub
 
-One of the main advantages of using GitHub is that it's an excellent tool for managing projects what have multiple people working on it. Once the project is on GitHub and either forked or cloned by you and your colleagues, you can all make changes and commits to the same project. Just remember to add your colleagues as collaborators on your project and give them the appropriate permissions.
+One of the main advantages of using GitHub is that it's an excellent tool for managing projects what have multiple people working on it. Once the project is on GitHub and either forked or cloned by you and your colleagues, you can all make changes and commits to the same project.
 
-{{< q-class "box tip" >}}
-- When setting-up a new repository you have [two options](https://docs.github.com/en/github/getting-started-with-github/types-of-github-accounts): you can you can invite users to become collaborators to your personal repository or groups of people can collaborate across many projects at the same time in organization accounts. Each has different options for [managing settings and permissions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-user-account-settings).
-{{< /q-class >}}
+When setting-up a new repository you have [two options](https://docs.github.com/en/github/getting-started-with-github/types-of-github-accounts): you can you can invite users to become collaborators to your personal repository or groups of people can collaborate across many projects at the same time in organization accounts. Each has different options for [managing settings and permissions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-user-account-settings).
 
 Clear communication is vital when collaborating with GitHub. If multiple people are working on a project and all making changes to the same files, there’s a good chance you will run into conflicts. While git is specifically designed to deal with these sorts of issues, it's important to avoid working on the same sections at the same time.
 
@@ -125,11 +122,11 @@ A good way to manage users' changes and avoid conflicts is by using [branches](h
 
 ### Submit a Pull Request & Merge Changes
 
-Once you have pushed your changes you will be promoted to submit a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). This is a request for your collaborators to review and comment on changes before incorporating them into the main project. Once approved, you can [merge](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request#about-pull-request-merges), or incorporate, these changes into the master version of your project.
+Once you have pushed the changes on your branch you will be promoted to submit a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). This is a request for your collaborators to review and comment on changes. Once approved, you can [merge](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request#about-pull-request-merges) these changes into the master version of your project.
 
 ## Manage Third Party Assets with GitHub
 
-If you plan to make your repository visibile to the public at some point, we highly recommend not committing third-party licensed assets into it, as this can expose those assets to easy, unlicensed use by other people. We recommend putting these images in a secondary repository that always remains private but can be connected to the main repo through a [git submodule](https://github.blog/2016-02-01-working-with-submodules/).
+If you plan to make your repository visible to the public at some point, we highly recommend not committing third-party licensed assets into it, as this can expose those assets to easy, unlicensed use by other people. We recommend putting these images in a secondary repository that always remains private but can be connected to the main repo through a [git submodule](https://github.blog/2016-02-01-working-with-submodules/).
 
 [[Is there more info we can add about this?]]
 
