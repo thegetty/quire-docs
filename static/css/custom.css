@@ -397,19 +397,35 @@ a.quire-navbar-controls__site-logo img {
 
 /* OFF SITE INDICATORS FOR MENU AND NAVIGATION
 ============================================================================= */
+
+/* Add offsite arrow icons */
 .section-item a[target=_blank]::after,
-.page-item a[target=_blank]::after {
-  content: url('../img/icons/right-up-arrow.svg');
-  display: inline-flex;
+.page-item a[target=_blank]::after,
+.quire-contents-list.grid .section-item a[target=_blank] .title::after,
+.quire-contents-list.grid .page-item a[target=_blank] .title::after {
+  content: url('../img/icons/offsite--blue-60.svg');
+  width: .875em;
+  display: inline-block;
+  margin-left: .25em;
   position: relative;
-  top: 2px;
-  left: 1px;
+  top: 1px;
 }
-/* Use dark gray arrow in page items */
-.section-item ul .page-item a[target=_blank]::after {
-  content: url('../img/icons/right-up-arrow--dark-gray.svg');
+/* Remove secondary icon in grid layout */
+.quire-contents-list.grid .section-item a[target=_blank]::after,
+.quire-contents-list.grid .page-item a[target=_blank]::after {
+  content: "";
 }
-/* Make these links the accent color */
+/* Darken icon color on hover in grid layout */
+.quire-contents-list.grid .section-item a[target=_blank]:hover .title::after,
+.quire-contents-list.grid .page-item a[target=_blank]:hover .title::after {
+  content: url('../img/icons/offsite--blue-80.svg');
+}
+/* Use dark gray icon in menu page items */
+.quire-menu .section-item .page-item a[target=_blank]::after {
+  content: url('../img/icons/offsite--gray-90.svg');
+}
+
+/* Make the Get Access links the accent color */
 .quire-navbar a[target=_blank],
 .quire-menu__list > ul > .page-item a[target=_blank] {
   color: var(--blue-60) !important;
