@@ -372,8 +372,9 @@ a.quire-navbar-controls__site-logo img {
   padding-left: .5rem;
   padding-right: 1.5rem;
 }
+.quire-navbar-button.search-button svg,
 .quire-navbar-button.menu-button svg {
-  top: 4px;
+  max-width: auto;
 }
 
 /* With search moved to right side, move search close button there too
