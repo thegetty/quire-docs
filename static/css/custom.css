@@ -80,6 +80,52 @@
   margin-top: 2rem;
 }
 
+
+/* CONTENTS GRID
+============================================================================= */
+/* Make full width */
+.quire-page--grid .quire-page__header .container {
+  max-width: inherit;
+}
+.quire-page--grid .quire-page__content .container {
+  padding: 0;
+}
+/* Remove default bottom border from header */
+.quire-page--grid .quire-page__header .container .content {
+  border-bottom: none;
+}
+/* Adjust grid spacing */
+.quire-contents-list.grid ul {
+  grid-gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.quire-contents-list.grid ul li {
+  border-top: 1px solid var(--gray-70);
+}
+.quire-contents-list.grid ul li > a {
+  padding: 1.5rem 0;
+}
+.quire-contents-list.grid ul li .card.no-image {
+  min-height: 200px;
+  margin: 0;
+}
+.quire-contents-list.grid ul li .card.no-image .card-content {
+  padding: 0;
+}
+/* Adjust font styles */
+.quire-contents-list.grid ul li .card.no-image .card-content .title {
+  font-size: 1.75rem;
+  line-height: 1.15;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.quire-contents-list.grid ul li .card.no-image .card-content .abstract {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+
 /* TIP/ALERT BOXES
 ============================================================================= */
 /* Implement with shortcode q-class "box warning" or q-class "box tip" */

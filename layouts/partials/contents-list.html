@@ -190,7 +190,7 @@
       {{- end -}}
       <div class="card-content">
         <div class="title">
-        {{- with .Page.Params.label }}{{ . }}{{ $.Site.Params.pageLabelDivider }}{{ end }}{{ if and .Page.Params.short_title (in .class "brief")}}{{ .Page.Params.short_title | markdownify }}{{ else if in .class "brief" }}{{ .Page.Title | markdownify }}{{ else }}{{ partial "page-title.html" . | markdownify }}{{ if .Page.Params.contributor }}<span class="contributor"> — {{ partial "contributor-list.html" (dict "range" .Page.Params.contributor "contributorType" "all" "listType" "string" "Site" .Site) }}</span>{{- end -}}{{- end -}}<span class="arrow{{ if .Page.Params.external_url }} arrow-offsite{{ end }} remove-from-epub">&nbsp;{{- partial "icon.html" (dict "type" "arrow-forward" "description" "") -}}</span></div>
+        {{- with .Page.Params.label }}{{ . }}{{ $.Site.Params.pageLabelDivider }}{{ end }}{{ if and .Page.Params.short_title (in .class "brief")}}{{ .Page.Params.short_title | markdownify }}{{ else if in .class "brief" }}{{ .Page.Title | markdownify }}{{ else }}{{ partial "page-title.html" . | markdownify }}{{ if .Page.Params.contributor }}<span class="contributor"> — {{ partial "contributor-list.html" (dict "range" .Page.Params.contributor "contributorType" "all" "listType" "string" "Site" .Site) }}</span>{{- end -}}{{- end -}}</div>
         {{ with .Page.Params.abstract }}<div class="abstract">{{ . | markdownify | truncate 80 }}</div>{{ end }}
       </div>
     </div></a>
