@@ -2,6 +2,7 @@
 title: History
 weight: 1300
 type: essay
+heading_links: false
 abstract: "View a timeline of key milestones in Quire's development"
 ---
 

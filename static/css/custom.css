@@ -485,10 +485,6 @@ on the page and adjusts to different window widths */
 .quire-menu .section-item > a {
   font-weight: 500;
 }
-/* Hide page links on History page because they're just years */
-#about-history .quire-menu .page-item.active .quire__heading-links {
-  display: none;
-}
 
 /* Style footer with spacing and borders */
 .quire-menu__footer .menu-list {

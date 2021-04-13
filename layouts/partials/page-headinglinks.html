@@ -1,8 +1,9 @@
 {{/*
-  
+
   This partial creates a list of links based on H2 headings on the page.
 
 */}}
+{{ if ne .Params.heading_links false }}
 {{ $headers := findRE "<h[2].*?>(.|\n])+?</h[2]>" .Content }}
 {{ if gt (len $headers) 1 }}
   <ul class="quire__heading-links">
@@ -12,4 +13,5 @@
     <li {{ if findRE "<h[2].*?>" . }}class="main-heading"{{ else }}class="sub-heading"{{ end }}><a href="#{{ $anchorId }}">{{ $text | safeHTML }}</a></li>
   {{ end }}
   </ul>
+{{ end }}
 {{ end }}
