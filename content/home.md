@@ -5,10 +5,22 @@ weight: 1
 menu: false
 type: page
 slug: .
+class: home
 ---
 
+<div class="home-block home-block--first">
 
-Create scholarly, visually rich digital books that last <br />Online • Print • E-book
+
+<div class="head">
+
+Create scholarly, visually rich digital books that last
+
+</div>
+<div class="subhead">
+
+Online ∙ Print ∙ E-book
+
+</div>
 
 Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
 
@@ -19,56 +31,29 @@ Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publis
 </div>
 
 </div>
+<div class="home-block">
+<div class="home-block__header">
 
-{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider slider-md" sort="false" >}}
+## Why Quire?
 
-<div class="action-button">
+<div class="more-link">
 
-[Visit Our Community Showcase](/community/community-showcase/)
-
-</div>
-
-
-<div class="feature-cards">
-
-- [Quire Basics <br />Step‑by‑Step ![School icon](/img/illustrations/undraw_book_reading_kx9s.png)](/learn/tutorial/)
-- [Demo <br />Website ![Website icon](/img/illustrations/undraw_usability_testing_2xs4.png)](https://thegetty.github.io/quire-starter/)
+[Learn If Quire Is Right for You](/documentation/implementation/)
 
 </div>
-
-***“Quire allows for greater preservation and digital distribution of works in a simplified format.”*** — Kris Thayer, Minneapolis Institute of Art
-
-## Quire in Action
-<br>
-
-<div class="feature-list">
-
-- <span class="checkmark">✓</span> Outputs publications in multiple formats (web, ebook, PDF, print-on-demand)
-- <span class="checkmark">✓</span> Keeps source content in nonspecialized plain text to ensure reusability
-- <span class="checkmark">✓</span> Supports visually rich scholarship in the tradition of print publishing
-- <span class="checkmark">✓</span> Allows for a wide range of possible custom features and styles
-- <span class="checkmark">✓</span> Persists without ongoing maintenance or updates once published
-- <span class="checkmark">✓</span> Empowers users at any skill level to create dynamic feature-rich digital publications
-
-<div class="action-button">
-
-[Discover Quire](/about/quire/)
-
 </div>
-<br>
-
-<div class="feature-cards">
-
-- [Quire Roadmap ![Explore icon](/img/illustrations/undraw_map_1r69.png)](/about/roadmap/)
-- [Documentation ![School icon](/img/illustrations/undraw_knowledge_g5gf.png)](/documentation/getting-started/)
-
-</div>
-
-## Why Use Quire?
+<div class="home-block__body">
 
 Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digital book optimized for visual imagery and designed to ensure its content is widely accessible and stable.
 
-<div class="feature-list">
+<div class="home-block__quote">
+
+***“Quire allows for greater preservation and digital distribution of works in a simplified format.”***
+
+Kris Thayer, Minneapolis Institute of Art
+
+</div>
+<div class="feature-list two-column">
 
 - **Affordable** No proprietary software or ongoing maintenance fees required
 - **Compatible** Available for Mac, Windows, and Linux
@@ -85,25 +70,38 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 </div>
 
-![illustration](/img/illustrations/undraw_researching_22gp.png)
-
 <div class="action-button">
 
 [Try It for Yourself](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
 </div>
 
-## Key Features & Functionality
+</div>
+</div>
+<div class="home-block">
 
-{{< q-figure-group id="multiformat, video-embeds, collection-catalogue, custom-styles, plain-text" grid="5" class="full-width-slider slider-md" >}}
+<div class="home-block__header">
 
-<div class="action-button">
+## See Quire in Action
 
-[See the Complete Feature List](/about/quire/#features--functionality)
+<div class="more-link">
+
+[Visit Our Community Showcase](/community/community-showcase/)
+
+</div>
+</div>
+
+{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider slider-md" sort="false" >}}
 
 </div>
 
+<div class="home-block">
+<div class="home-block__header">
+
 ## The Quire Community
+
+</div>
+<div class="home-block__body">
 
 Developed by Getty, Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
@@ -112,17 +110,83 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 <div class="action-button">
 
 [Explore Ways to Get Involved](/community/join-us/)
+
 </div>
 
-<div class="feature-cards cover-footer">
+</div>
+</div>
 
-- [Stay in Touch ![illustration](/img/illustrations/undraw_newspaper_k72w.png)](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
+<div class="home-block">
+<div class="home-block__header">
+
+## Key Features & Functionality
+
+<div class="more-link">
+
+[See the Complete Feature List](/about/quire/#features--functionality)
+
+</div>
+</div>
+<div class="home-block__body">
+
+<div class="image-list">
+
+**Multiformat Output**
+
+Outputs publications in multiple formats (web, ebook, PDF, print-on-demand)
+
+![The same Quire book on a laptop, an e-reader, and as a printed book](/img/screenshots/multiformat.jpg)
+
+</div>
+
+<div class="image-list">
+
+**Multimedia Support**
+
+Supports visually rich scholarship in the tradition of print publishing
+
+![A Quire page with an embedded video](/img/screenshots/video-embeds.jpg)
+
+</div>
+
+<div class="image-list">
+
+**Customization**
+
+Allows for a wide range of possible custom features and styles
+
+![Two variations of custom styling on a Quire page](/img/screenshots/custom-styles.jpg)
+
+</div>
+
+<div class="image-list">
+
+**Simple Structure**
+
+Keeps source content in nonspecialized plain text to ensure reusability
+
+![Screenshot of plain-text editor interface, showing chapter from Quire book](/img/screenshots/plain-text.jpg)
+
+</div>
+
+</div>
+
+<div class="home-block">
+
+- [Stay in Touch](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
 
   For news, updates, and events, <br />sign up for our mailing list
 
-- [Get Started ![illustration](/img/illustrations/undraw_blogging_vpvv.png)](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+- [Get Started ](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
   Sign up now to try Quire for yourself <br />
+
+
+- [Quire Roadmap](/about/roadmap/)
+- [Documentation](/documentation/getting-started/)
+- [Quire Basics Step‑by‑Step](/learn/tutorial/)
+- [Demo Website](https://thegetty.github.io/quire-starter/)
+
 
 </div>
 
