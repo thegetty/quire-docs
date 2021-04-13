@@ -13,36 +13,18 @@ We also plan to develop a number of specific features in conjunction with forthc
 
 <div class="feature-list">
 
-- **IIIF Image Tiling**
+- **IIIF Image Tiling** Adds deep-zooming to any image, using the open [IIIF](https://iiif.io/) specification. Either point Quire to an existing IIIF repository, or add high-resolution images into a Quire project directly.
 
-    Adds deep-zooming to any image, using the open [IIIF](https://iiif.io/) specification. Either point Quire to an existing IIIF repository, or add high-resolution images into a Quire project directly.
+- **Multi-level Subsections** Enables Quire publications to be authored with an arbitrary depth of content subsections supported by the table of contents and content navigation.
 
-- **Multi-level Subsections**
+- **360º Images** Implements 360° rotating images as a standard feature for Quire publications.
 
-    Enables Quire publications to be authored with an arbitrary depth of content subsections supported by the table of contents and content navigation.
+- **Deep Linking** Implements functionality for deep linking to IIIF image regions and image annotation layers within a Quire publication.
 
+- **Accordion Sections** Allows sections of primary content to be collapsed/expanded by a reader. Accordion sections are defined by an author using Quire markup short-codes and templates.
 
-- **360º Images**
+- **Catalogue Filters** Adds a set of HTML user interface elements to online Quire publications that allow a reader to update the objects displayed, showing only those that match the selected filter criteria. Catalogue filters will be based on the object meta-data fields defined in the objects.yml and the display of filters will be configurable by authors.
 
-    Implements 360° rotating images as a standard feature for Quire publications.
-
-- **Deep Linking**
-
-    Implements functionality for deep linking to IIIF image regions and image annotation layers within a Quire publication.
-
-- **Accordion Sections**
-
-    Allows sections of primary content to be collapsed/expanded by a reader. Accordion sections are defined by an author using Quire markup short-codes and templates.
-
-- **Catalogue Filters**
-
-    Adds a set of HTML user interface elements to online Quire publications that allow a reader to update the objects displayed, showing only those that match the selected filter criteria. Catalogue filters will be based on the object meta-data fields defined in the objects.yml and the display of filters will be configurable by authors.
-
-</div>
-
-<div class="feature-cards">
-
--  ![Explore icon](/img/illustrations/roadmap.png)
 </div>
 
 **Sign-up for our monthly newsletter to get the latest on Quire updates, fixes, and new feature releases.**

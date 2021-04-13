@@ -13,11 +13,6 @@ For the past four years, Getty has been using Quire to advance its internal publ
 
 As Quire continues to evolve, our goal is to launch as fully open source by 2022 and expand Quire’s reach beyond our dedicated group of beta users. A community-supported model would enable Quire to remain free to use and would ensure a long lifespan beyond Getty.
 
-<div class="feature-cards">
-
-- ![Explore icon](/img/illustrations/undraw_responsive_6c8s.png)
-</div>
-
 <div class="action-button">
 
 [Sign Up to Use Quire Today!](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)

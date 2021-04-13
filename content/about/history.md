@@ -86,11 +86,6 @@ Anders Pollack and Hannah Balenda (Software Engineers) join Getty and begin work
 
 Quire’s beta community grows to nearly 200 members, with more than a dozen [published Quire projects](/community/community-showcase/) among them.
 
-<div class="feature-cards">
-
-- ![Explore icon](/img/illustrations/undraw_done_a34v.png)
-</div>
-
 **We invite you to become part of Quire's history. Sign-up for beta access and join the Quire community today!**
 
 <div class="action-button">

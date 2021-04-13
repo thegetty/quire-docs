@@ -9,6 +9,9 @@ Developed by [Getty](https://www.getty.edu), Quire is a modern digital publishin
 
 Quire is flexible and feature-rich. It can be used in its most basic configuration, or it can be customized, adapting to a vast array of use cases, from collection catalogues and research projects to online exhibitions, reports, and journal articles.
 
+
+<div class="image-list">
+
 Our community members represent a broad spectrum of institutions, both large and small, providing vital scholarship in the arts and sciences. In addition to being used at Getty, the Quire community includes a growing number of scholars, curators, editors, designers, and web developers, and the digitally curious. Individuals at all levels of technical experience are welcome, from content creators to developers. We provide tools and resources to empower and educate our community.
 
 <div class="action-button">
@@ -16,10 +19,10 @@ Our community members represent a broad spectrum of institutions, both large and
 [**See What Our Community Is Creating**](/community/community-showcase/)
 </div>
 
-<div class="feature-cards small-card">
+![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)
 
-- ![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)
 </div>
+<div class="image-list">
 
 Quire is designed to ensure that digital books and their contents are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables robust preservation and distribution of works in a simplified and accessible format.
 
@@ -28,10 +31,10 @@ Quire is designed to ensure that digital books and their contents are not only a
 [**Learn How Quire Works**](/about/how-it-works/)
 </div>
 
-<div class="feature-cards small-card">
+![Explore icon](/img/illustrations/undraw_in_progress_ql66.png)
 
-- ![Explore icon](/img/illustrations/undraw_in_progress_ql66.png)
 </div>
+<div class="image-list">
 
 Currently under development for potential release as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating sustainable and discoverable digital publications.
 
@@ -40,13 +43,11 @@ Currently under development for potential release as [open-source software](/abo
 [**Join the Quire Community Today**](/community/join-us/)
 </div>
 
-<div class="feature-cards small-card">
+![Explore icon](/img/illustrations/undraw_celebration_0jvk.png)
 
-- ![Explore icon](/img/illustrations/undraw_celebration_0jvk.png)
 </div>
 
-### Features & Functionality
-<br>
+## Features & Functionality
 
 <div class="feature-list">
 
@@ -72,13 +73,7 @@ Currently under development for potential release as [open-source software](/abo
 [**Learn About Other Features in Development**](/about/roadmap/)
 </div>
 
-<div class="feature-cards small-card">
-
-- ![Explore icon](/img/illustrations/undraw_moving_forward_lhhd.png)
-</div>
-
-### Is Quire Right for You?
-<br>
+## Is Quire Right for You?
 
 Here are some things to consider:
 
@@ -96,7 +91,3 @@ Here are some things to consider:
 [**Get Started Now!**](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 </div>
 
-<div class="feature-cards">
-
-- ![Explore icon](/img/illustrations/undraw_web_developer_p3e5.png)
-</div>
