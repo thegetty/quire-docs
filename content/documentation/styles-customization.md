@@ -12,13 +12,9 @@ The look and feel of your Quire publication can be customized at four different 
   3. Overriding specific theme {{< q-def "templates" >}} with your own custom version
   4. Creating an entirely new Quire theme.
 
-{{< q-class "box tip" >}}
-- A default theme is installed with every new Quire project. The [README file](https://github.com/thegetty/quire/blob/main/themes/default/README.md) for that theme includes complete information about the customizations available within it.
-{{< /q-class >}}
-
 ## Change the Theme Style Variables
 
-Every Quire project has a theme inside the `themes` directory. When you first start a new project by typing the `quire new` command in your command-line interface, the default theme included is Quire’s default theme. In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents, and more.
+When you first start a new Quire project by running the command `quire new`, a default theme is installed in the project's `themes` directory. This default theme includes a number of default style variables that will let you update text and background colors, some element sizes, fonts, paragraph indents, and more. This allows relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](/documentation/variables) includes information about the customizations available.
 
 To find the variables, open the `themes/default` directory, navigate to the `source` sub-directory, and then `css`, and open the file called `variables.scss`.
 
@@ -103,6 +99,7 @@ In the above example, we are selecting the element with a {{< q-def "class" >}} 
 - Exceptionally, if somewhere there is a more specific {{< q-def "CSS selector" >}} that’s applying a style to an element, it will override the less specific one — even if it’s in your `custom.css` file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your {{< q-def "CSS selector" >}} is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The "Inspect element" tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.
 
 {{< /q-class >}}
+
 
 ## Override Theme Templates
 

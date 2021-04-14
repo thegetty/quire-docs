@@ -557,3 +557,36 @@ dt {
 .quire-navbar-page-controls {
   transform: rotate(180deg);
 }
+
+/* GLOSSARY
+============================================================================= */
+.content ul.quire-glossary__key {
+  margin-left: 0;
+  text-align: center;
+  display: table;
+  margin-bottom: 2rem;
+}
+.quire-page__content .container .content ul.quire-glossary__key li::before {
+  content: "";
+}
+.quire-page__content .container .content ul.quire-glossary__key li {
+  margin: .5rem .75rem;
+  display: inline-block;
+}
+.quire-page__content .content dl.quire-glossary {
+  margin: 2rem 0;
+}
+.quire-page__content .content dl.quire-glossary dt {
+  display: inline;
+  margin-right: .3rem;
+  font-weight: 700;
+}
+.quire-page__content .content dl.quire-glossary dd {
+  display: inline;
+  margin-left: .2em;
+}
+.quire-page__content .content dl.quire-glossary dd::after {
+  content: " ";
+  display: block;
+  margin-bottom: 1rem;
+}
