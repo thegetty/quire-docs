@@ -91,7 +91,7 @@ Kris Thayer, Minneapolis Institute of Art
 </div>
 </div>
 
-{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider slider-md" sort="false" >}}
+{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
 
 </div>
 

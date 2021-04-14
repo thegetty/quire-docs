@@ -123,58 +123,10 @@
   display: block;
 }
 
-/* SHOWCASE -- HOMEPAGE
-============================================================================= */
-.quire-page__content .container .content ul.showcase.full-width-slider,
-.quire-figure--group.full-width-slider .quire-figure--group__row {
-  overflow-x: scroll;
-  white-space: nowrap;
-  margin: 0;
-  padding-bottom: 2rem;
-  margin-left: 2rem;
-}
-.quire-page__content .container .content ul.showcase.full-width-slider li.showcase-project {
-  width: 35vw;
-  display: inline-block;
-  margin: 0 2rem 0 0;
-}
-.quire-page__content .container .content ul.showcase.full-width-slider li.showcase-project:last-child {
-  margin-right: 0;
-}
-/* Hide default UL markers */
-.quire-page__content .container .content ul.showcase li::before {
-  content: "";
-}
-.quire-page__content .container .content ul.showcase.full-width-slider li.showcase-project figure {
-  margin: 0 0 .5rem;
-  border: 1px solid var(--gray-50);
-}
-.quire-page__content .container .content ul.showcase.full-width-slider li.showcase-project figure a {
-  border-bottom-width: 0;
-}
-.quire-page__content .container .content ul.showcase.full-width-slider li.showcase-project p {
-  margin-bottom: 0;
-}
-.quire-page--home ul.showcase .publisher {
-  font-weight: 600;
-}
-.quire-page--home ul.showcase .view-link {
-  border-bottom-width: 0;
-}
-.quire-page--home ul.showcase .view-link svg {
-  width: .875em;
-  position: relative;
-  top: 1px;
-}
-.quire-page--home ul.showcase .type-pub-date-divider,
-.quire-page--home ul.showcase .pub-date,
-.quire-page--home ul.showcase .user,
-.quire-page--home ul.showcase .more-link {
-  display: none;
-}
-
 /* SHOWCASE
 ============================================================================= */
+
+/*  Set basic grid version */
 .quire-page__content .container .content ul.showcase {
   margin-left: 0;
   width: 100%;
@@ -188,20 +140,62 @@
     grid-template-columns: 1fr;
   }
 }
-.quire-page__content .container .content ul li.showcase-project::before {
+
+/* Set full-width horizontal scroll version */
+.quire-page__content .container .content ul.showcase.full-width-slider {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin: 0;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+.quire-page__content .container .content ul.showcase.full-width-slider li.showcase-project {
+  width: 35vw;
+  display: inline-block;
+  margin: 0 2rem 0 0;
+}
+
+/* Hide default UL markers and remove left margin */
+.quire-page__content .container .content ul.showcase li::before {
   content: "";
+}
+.quire-page__content .container .content ul.showcase li {
   margin-left: 0;
 }
-.quire-page__content .container .content ul li.showcase-project {
-  margin-left: 0;
-  margin-top: 2rem;
+
+/* Adjust figure image display for both versions */
+.quire-page__content .container .content ul.showcase.full-width-slider li.showcase-project figure {
+  margin: 0 0 .5rem;
+  border: 1px solid var(--gray-50);
 }
-.quire-page__content .container .content ul li.showcase-project p {
+.quire-page__content .container .content ul.showcase.full-width-slider li.showcase-project figure a {
+  border-bottom-width: 0;
+}
+.quire-page__content .container .content ul li.showcase-project figure {
+  margin: 0;
+}
+.quire-page__content .container .content ul li.showcase-project figure a {
+  border-bottom-width: 0;
+}
+
+/* Style text info that comes below figure image */
+.quire-page__content .container .content ul.showcase li.showcase-project p {
   margin-bottom: 0;
 }
-.quire-page__content .container .content ul li.showcase-project .publisher {
-  font-weight: bold;
+.quire-page__content .container .content ul.showcase .publisher {
+  font-weight: 600;
 }
+
+/* Hide some info on the home page version */
+.quire-page--home ul.showcase .type-pub-date-divider,
+.quire-page--home ul.showcase .pub-date,
+.quire-page--home ul.showcase .user,
+.quire-page--home ul.showcase .more-link {
+  display: none;
+}
+
+/* Style More Info & View links and icons*/
 .quire-page__content .container .content ul li.showcase-project .quire-citation,
 .quire-page__content .container .content ul li.showcase-project a.view-link {
   margin-right: .5rem;
@@ -217,11 +211,6 @@
   font-size: .875rem;
   letter-spacing: .5px;
 }
-.quire-page__content .container .content ul li.showcase-project a.view-link svg {
-  width: .875em;
-  position: relative;
-  top: 2px;
-}
 .quire-page__content .container .content ul li.showcase-project a.view-link:hover {
   border-bottom-width: 0 !important;
 }
@@ -230,16 +219,16 @@
   fill: var(--blue-60);
   vertical-align: text-top;
   pointer-events: none;
+  position: relative;
 }
-.quire-page__content .container .content ul li.showcase-project figure {
-  margin: 0;
+.quire-page__content .container .content ul li.showcase-project .quire-citation__button svg {
+  width: 1.2em;
+  top: -1px;
+  left: -2px;
 }
-.quire-page__content .container .content ul li.showcase-project figure a {
-  border-bottom-width: 0;
-}
-.quire-page__content .container .content ul li.showcase-project figure a:hover img {
-  transition: box-shadow 0.35s;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+.quire-page__content .container .content ul li.showcase-project a.view-link svg {
+  width: .875em;
+  top: 1px;
 }
 
 /* IMAGE LIST
