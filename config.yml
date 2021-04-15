@@ -57,3 +57,4 @@ params:
   menuSide: right # left | right (default)
   navView: main-pages # none | tagline | main-pages | next-prev (default)
   navType: short # short | full (default)
+  footerButtons: false
