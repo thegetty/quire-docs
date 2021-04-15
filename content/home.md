@@ -170,30 +170,69 @@ Keeps source content in nonspecialized plain text to ensure reusability
 </div>
 
 </div>
-
-<div class="home-block">
-
-- [Stay in Touch](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
-
-  For news, updates, and events, <br />sign up for our mailing list
-
-- [Get Started ](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
-
-  Sign up now to try Quire for yourself <br />
+</div>
 
 
-- [Quire Roadmap](/about/roadmap/)
-- [Documentation](/documentation/getting-started/)
-- [Quire Basics Step‑by‑Step](/learn/tutorial/)
-- [Demo Website](https://thegetty.github.io/quire-starter/)
+<div class="home-block home-block--footer">
 
+<div class="footer-grid">
+
+<div class="footer-item">
+
+![laptop icon](/img/icons/laptop.png)
+
+### Get Started
+
+Try Quire for yourself
+
+[Sign up now for free access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+
+</div>
+<div class="footer-item">
+
+![map icon](/img/icons/map.png)
+
+### Product Roadmap
+
+Find out what’s coming coming next
+
+[See Quire roadmap](#)
+
+</div>
+<div class="footer-item">
+
+![document icon](/img/icons/document.png)
+
+### Documentation
+
+Dive into code, customization, and more
+
+[Read documentaion](#)
+
+</div>
+<div class="footer-item">
+
+![mail icon](/img/icons/mail.png)
+
+### Stay in Touch
+
+For news, updates, and events
+
+[Sign up for our mailing list](#)
 
 </div>
 
-<div class="cover-footer">
+</div>
+
+<div class="home-block__body">
+
+![Quire logo](/img/quire-logo--sm.png)
 
 [About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Sign up](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
 [GitHub](https://github.com/thegetty/quire/) | [Newsletter](https://newsletters.getty.edu/h/t/3482055B10CD0F24) | [Contact](mailto:quire@getty.edu)
 
+© J. Paul Getty Trust
+
+</div>
 </div>
