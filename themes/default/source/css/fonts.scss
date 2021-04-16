@@ -187,6 +187,15 @@
 // https://fonts.google.com/specimen/Roboto+Mono
 // Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
 //
+// Roboto Mono Light
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/roboto-mono/roboto-mono-light.woff2") format("woff2"),
+       url("../fonts/roboto-mono/roboto-mono-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
 // Roboto Mono Regular
 @font-face {
   font-family: "Roboto Mono";
@@ -196,14 +205,34 @@
   font-style: normal;
 }
 
+// Roboto Mono Medium
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/roboto-mono/roboto-mono-medium.woff2") format("woff2"),
+       url("../fonts/roboto-mono/roboto-mono-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Roboto Mono Semi-Bold
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/roboto-mono/roboto-mono-semi-bold.woff2") format("woff2"),
+       url("../fonts/roboto-mono/roboto-mono-semi-bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
 // Roboto Mono Bold
 @font-face {
   font-family: "Roboto Mono";
-  src: url("../fonts/roboto-mono/roboto-mono-regular.woff2") format("woff2"),
-       url("../fonts/roboto-mono/roboto-mono-regular.woff") format("woff");
+  src: url("../fonts/roboto-mono/roboto-mono-bold.woff2") format("woff2"),
+       url("../fonts/roboto-mono/roboto-mono-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
+
+
 
 ////
 // IBM Plex Sans Condensed
