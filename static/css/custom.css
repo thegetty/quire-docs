@@ -18,6 +18,7 @@
   --garden-30: #56dfc1;
   --garden-50: #13b692;
   --garden-60: #009877;
+  --warm-gray-10: #f4f3f2;
 
   /* --warning-color: #dab836;
     should change to --yellow-40 */
@@ -25,6 +26,22 @@
   --menu-width: calc(380px - 2em);
 }
 
+/*
+Css Sections:
+  HOME PAGE
+  FEATURE LIST
+  SHOWCASE
+  IMAGE LIST
+  ACTION BUTTONS
+  GENERAL PAGE STYLES
+  CONTENTS GRID
+  TIP/ALERT BOXES
+  FIXED MENU
+  NAVBAR
+  OFF SITE INDICATORS
+  GLOSSARY
+  CODE
+*/
 
 /* HOME PAGE
 ============================================================================= */
@@ -584,6 +601,31 @@ s  }
   }
 }
 
+/* Figure images */
+.content figure:not(:first-child) {
+  margin-top: 0;
+  padding-top: .5rem;
+}
+.content figure:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.quire-figure {
+  border-color: var(--gray-90);
+  border-top-width: 0;
+}
+.content figure .quire-figure__caption {
+  min-height: 1em;
+  margin-top: 1em;
+}
+.quire-figure__modal {
+  top: .4em;
+  height: auto;
+  margin-right: .125rem;
+}
+.quire-figure__modal .material-fullscreen {
+  top: 2px;
+  color: var(--gray-90);
+}
 
 /* CONTENTS GRID
 ============================================================================= */
@@ -971,112 +1013,31 @@ a.quire-navbar-controls__site-logo img {
 
 /* CODE
 ============================================================================= */
+.highlight:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.highlight:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
 code {
   color: inherit;
   background-color: inherit;
   padding: 0 .1em;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
-  font-size: .95rem;
+  font-size: .95em;
 }
 dt code {
   font-weight: 700;
 }
 
 /*  The styles below are for the Chroma syntax highlighter built in to Hugo.
-    This particular set is the "autumn" theme, but with Getty colors
-    substituted in. Other themes can be seen at:
-    https://xyproto.github.io/splash/docs/longer/all.html.
-
-    To get the CSS for other themes, you can run a Hugo command and it will
-    output a stylesheet. For instance, this will output the "autumn" theme
-    into a file called syntax-autumn.css:
-
-    hugo gen chromastyles --style=autumn > syntax-autumn.css
-
     Read more at: https://gohugo.io/content-management/syntax-highlighting/
 
     `pygmentsUseClasses: true` must be set in config.yml
  */
-/* Background */ .chroma { background-color: whitesmoke }
-/* Other */ .chroma .x {  }
-/* Error */ .chroma .err { color: var(--gray-90); background-color: var(--sunset-30) }
-/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
-/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
-/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: var(--yellow-10) }
-/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: var(--gray-70) }
-/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: var(--gray-70) }
-/* Keyword */ .chroma .k { color: var(--blue-60) }
-/* KeywordConstant */ .chroma .kc { color: var(--blue-60) }
-/* KeywordDeclaration */ .chroma .kd { color: var(--blue-60) }
-/* KeywordNamespace */ .chroma .kn { color: var(--blue-60) }
-/* KeywordPseudo */ .chroma .kp { color: var(--blue-60) }
-/* KeywordReserved */ .chroma .kr { color: var(--blue-60) }
-/* KeywordType */ .chroma .kt { color: var(--garden-30) }
-/* Name */ .chroma .n {  }
-/* NameAttribute */ .chroma .na { color: var(--sky-50) }
-/* NameBuiltin */ .chroma .nb { color: var(--garden-30) }
-/* NameBuiltinPseudo */ .chroma .bp {  }
-/* NameClass */ .chroma .nc { color: var(--garden-60); text-decoration: underline }
-/* NameConstant */ .chroma .no { color: var(--orange-50) }
-/* NameDecorator */ .chroma .nd { color: var(--gray-50) }
-/* NameEntity */ .chroma .ni { color: var(--orange-50); font-weight: bold }
-/* NameException */ .chroma .ne {  }
-/* NameFunction */ .chroma .nf { color: var(--garden-60) }
-/* NameFunctionMagic */ .chroma .fm {  }
-/* NameLabel */ .chroma .nl {  }
-/* NameNamespace */ .chroma .nn { color: var(--garden-30); text-decoration: underline }
-/* NameOther */ .chroma .nx {  }
-/* NameProperty */ .chroma .py {  }
-/* NameTag */ .chroma .nt { color: var(--sky-50); font-weight: bold }
-/* NameVariable */ .chroma .nv { color: var(--orange-50) }
-/* NameVariableClass */ .chroma .vc {  }
-/* NameVariableGlobal */ .chroma .vg {  }
-/* NameVariableInstance */ .chroma .vi {  }
-/* NameVariableMagic */ .chroma .vm {  }
-/* Literal */ .chroma .l {  }
-/* LiteralDate */ .chroma .ld {  }
-/* LiteralString */ .chroma .s { color: var(--bronze-50) }
-/* LiteralStringAffix */ .chroma .sa { color: var(--bronze-50) }
-/* LiteralStringBacktick */ .chroma .sb { color: var(--bronze-50) }
-/* LiteralStringChar */ .chroma .sc { color: var(--bronze-50) }
-/* LiteralStringDelimiter */ .chroma .dl { color: var(--bronze-50) }
-/* LiteralStringDoc */ .chroma .sd { color: var(--bronze-50) }
-/* LiteralStringDouble */ .chroma .s2 { color: var(--bronze-50) }
-/* LiteralStringEscape */ .chroma .se { color: var(--bronze-50) }
-/* LiteralStringHeredoc */ .chroma .sh { color: var(--bronze-50) }
-/* LiteralStringInterpol */ .chroma .si { color: var(--bronze-50) }
-/* LiteralStringOther */ .chroma .sx { color: var(--bronze-50) }
-/* LiteralStringRegex */ .chroma .sr { color: var(--garden-60) }
-/* LiteralStringSingle */ .chroma .s1 { color: var(--bronze-50) }
-/* LiteralStringSymbol */ .chroma .ss { color: var(--blue-60) }
-/* LiteralNumber */ .chroma .m { color: var(--garden-60) }
-/* LiteralNumberBin */ .chroma .mb { color: var(--garden-60) }
-/* LiteralNumberFloat */ .chroma .mf { color: var(--garden-60) }
-/* LiteralNumberHex */ .chroma .mh { color: var(--garden-60) }
-/* LiteralNumberInteger */ .chroma .mi { color: var(--garden-60) }
-/* LiteralNumberIntegerLong */ .chroma .il { color: var(--garden-60) }
-/* LiteralNumberOct */ .chroma .mo { color: var(--garden-60) }
-/* Operator */ .chroma .o {  }
-/* OperatorWord */ .chroma .ow { color: var(--blue-60) }
-/* Punctuation */ .chroma .p {  }
-/* Comment */ .chroma .c { color: var(--gray-50); font-style: italic }
-/* CommentHashbang */ .chroma .ch { color: var(--gray-50); font-style: italic }
-/* CommentMultiline */ .chroma .cm { color: var(--gray-50); font-style: italic }
-/* CommentSingle */ .chroma .c1 { color: var(--gray-50); font-style: italic }
-/* CommentSpecial */ .chroma .cs { color: var(--blue-60); font-style: italic }
-/* CommentPreproc */ .chroma .cp { color: var(--garden-60) }
-/* CommentPreprocFile */ .chroma .cpf { color: var(--garden-60) }
-/* Generic */ .chroma .g {  }
-/* GenericDeleted */ .chroma .gd { color: var(--orange-50) }
-/* GenericEmph */ .chroma .ge { font-style: italic }
-/* GenericError */ .chroma .gr { color: var(--orange-50) }
-/* GenericHeading */ .chroma .gh { color: var(--blue-80); font-weight: bold }
-/* GenericInserted */ .chroma .gi { color: var(--garden-60) }
-/* GenericOutput */ .chroma .go { color: var(--gray-50) }
-/* GenericPrompt */ .chroma .gp { color: var(--gray-70) }
-/* GenericStrong */ .chroma .gs { font-weight: bold }
-/* GenericSubheading */ .chroma .gu { color: var(--magenta-60); font-weight: bold }
-/* GenericTraceback */ .chroma .gt { color: var(--orange-50) }
-/* GenericUnderline */ .chroma .gl { text-decoration: underline }
-/* TextWhitespace */ .chroma .w { color: var(--gray-20) }
+.chroma {
+  background-color: var(--warm-gray-10);
+  color: var(--gray-90);
+}
