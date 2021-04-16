@@ -6,3 +6,5 @@ site
 node_modules
 .tmp
 graphik
+sabon-next
+themes/default/static/fonts

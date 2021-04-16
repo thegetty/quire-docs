@@ -50,6 +50,7 @@
 }
 .quire-page--home .quire-page__content .container .home-block__header h2 + .more-link {
   float: right;
+  margin-top: .5rem;
 }
 .quire-page--home .quire-page__content .container .home-block__header h2 + .more-link a {
   border-bottom-width: 0;
@@ -95,14 +96,14 @@
 }
 .quire-page--home .quire-page__content .container .home-block--first .head p {
   font-size: 3rem;
-  font-weight: 700;
-  font-family: Times, serif;
+  font-weight: 600;
+  font-family: 'Sabon Next', Sabon, serif;
   max-width: 14em;
   line-height: 1.1;
 }
 .quire-page--home .quire-page__content .container .home-block--first .subhead p {
   font-size: 2.25rem;
-  font-family: Times, serif;
+  font-family: 'Sabon Next', Sabon, serif;
   font-weight: 400;
   font-style: italic;
   letter-spacing: -1px;
@@ -111,16 +112,20 @@
 /* Define home page section quote blocks */
 .quire-page__content .container .content .home-block__quote {
   float: right;
-  max-width: 26em;
-  margin-left: 3em;
-  margin-top: 2em;
+  max-width: 36rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
 }
 .quire-page__content .container .content .home-block__quote strong {
-  font-size: 2em;
+  font-size: 2.8em;
+  font-family: 'Sabon Next', Sabon, serif;
+  font-weight: 600;
+  line-height: 1.2;
 }
-.quire-page__content .container .content .home-block__quote p {
-  padding-left: .25em;
-  text-indent: -.5em;
+.quire-page__content .container .content .home-block__quote strong::before {
+  content: url('../img/icons/quotes.svg');
+  width: 1.8em;
+  display: block;
 }
 
 /* Footer */
@@ -204,6 +209,11 @@
 }
 .quire-page__content .container .content .feature-list.two-column ul {
   column-count: 2;
+}
+@media screen and (max-width: 900px) {
+  .quire-page__content .container .content .feature-list.two-column ul {
+    column-count: 1;
+  }
 }
 .quire-page__content .container .content .feature-list ul li {
   margin-left: 0;

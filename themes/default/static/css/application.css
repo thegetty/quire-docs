@@ -94,6 +94,48 @@
   font-style: italic; }
 
 @font-face {
+  font-family: 'Sabon Next';
+  src: url(/fonts/8a42b408-0d26-4db6-97b6-8d77df99b333.woff2) format("woff2"), url(/fonts/74c3a9bd-b9d3-42c7-8fb3-23307e7b7963.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: 'Sabon Next';
+  src: url(/fonts/81213dba-27ec-4f80-9d9d-0a7156302022.woff2) format("woff2"), url(/fonts/e52e3ef6-221e-425e-acb7-0408f485ad9d.woff) format("woff");
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: 'Sabon Next';
+  src: url(/fonts/533ce8a9-a0a4-4a40-96c5-76aa564a3d7f.woff2) format("woff2"), url(/fonts/952c2825-2ba9-448a-8375-492e78886fc9.woff) format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: 'Sabon Next';
+  src: url(/fonts/a868a4e8-5f86-4ab4-91d6-af840757cc63.woff2) format("woff2"), url(/fonts/e5fcd2e6-2ba1-4d60-98ec-11a62cfeb8f4.woff) format("woff");
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: 'Sabon Next';
+  src: url(/fonts/d913b226-c0d7-49e2-b231-1fc570fcdc9a.woff2) format("woff2"), url(/fonts/9bbfbdbd-1ab0-4d8f-80d8-c690ab217070.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: 'Sabon Next';
+  src: url(/fonts/665097c7-8110-499e-b4db-12cf6081477b.woff2) format("woff2"), url(/fonts/a1a8e1e5-7387-45ce-96bb-70af11ca66c0.woff) format("woff");
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal; }
+
+@font-face {
   font-family: "Roboto Mono";
   src: url(/fonts/roboto-mono-regular.woff2) format("woff2"), url(/fonts/roboto-mono-regular.woff) format("woff");
   font-weight: 400;
