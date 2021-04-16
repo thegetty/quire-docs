@@ -127,7 +127,7 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 </div>
 </div>
-<div class="home-block__body">
+<div class="home-block__body feature-grid">
 
 <div class="image-list">
 
@@ -135,7 +135,7 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 Outputs publications in multiple formats (web, ebook, PDF, print-on-demand)
 
-![The same Quire book on a laptop, an e-reader, and as a printed book](/img/screenshots/multiformat.jpg)
+![document icon](/img/icons/document-center.png)
 
 </div>
 
@@ -145,7 +145,7 @@ Outputs publications in multiple formats (web, ebook, PDF, print-on-demand)
 
 Supports visually rich scholarship in the tradition of print publishing
 
-![A Quire page with an embedded video](/img/screenshots/video-embeds.jpg)
+![document icon](/img/icons/document-center.png)
 
 </div>
 
@@ -155,7 +155,7 @@ Supports visually rich scholarship in the tradition of print publishing
 
 Allows for a wide range of possible custom features and styles
 
-![Two variations of custom styling on a Quire page](/img/screenshots/custom-styles.jpg)
+![document icon](/img/icons/document-center.png)
 
 </div>
 
@@ -165,7 +165,7 @@ Allows for a wide range of possible custom features and styles
 
 Keeps source content in nonspecialized plain text to ensure reusability
 
-![Screenshot of plain-text editor interface, showing chapter from Quire book](/img/screenshots/plain-text.jpg)
+![document icon](/img/icons/document-center.png)
 
 </div>
 

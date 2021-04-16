@@ -63,6 +63,18 @@
   max-width: 48em;
 }
 
+
+@media screen and (max-width: 752px) {
+  .quire-page--home .quire-page__content .container {
+    width: auto;
+  }
+  .quire-page--home .quire-page__content .container .home-block__header,
+  .quire-page--home .quire-page__content .container .home-block__body {
+    margin: 0;
+  }
+}
+
+
 /* Hide default page header and make custom headline styles for top block */
 .quire-page--home .quire-page__header,
 .quire-page--home .quire-page__heading-links {
@@ -71,6 +83,12 @@
 .quire-page--home .quire-page__content .container .home-block:not(:last-child).home-block--first {
   padding-top: 4rem;
   padding-left: 4rem;
+}
+@media screen and (max-width: 752px) {
+  .quire-page--home .quire-page__content .container .home-block:not(:last-child).home-block--first {
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
 }
 .quire-page--home .quire-page__content .container .home-block--first p {
   max-width: 48em;
@@ -119,7 +137,7 @@
 }
 .footer-item {
   border-right: 1px solid var(--gray-20);
-  padding-left: 1rem;
+  padding: 0 1rem;
   height: 240px;
   display: flex;
   flex-direction: column;
@@ -160,6 +178,21 @@
   color: var(--gray-90) !important;
   border-bottom-color: var(--gray-90) !important;
   margin: 0 .5rem;
+}
+@media screen and (max-width: 752px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+  }
+  .footer-item {
+    height: auto;
+  }
+  .footer-item:nth-child(2) {
+    border-right-width: 0;
+  }
+  .footer-item:nth-child(3) {
+    padding-left: 0;
+  }
 }
 
 /* FEATURE LIST
@@ -214,6 +247,14 @@
   width: 35vw;
   display: inline-block;
   margin: 0 2rem 0 0;
+}
+@media screen and (max-width: 752px) {
+  .quire-page__content .container .content ul.showcase.full-width-slider  {
+    padding-left: 0;
+  }
+  .quire-page__content .container .content ul.showcase {
+    width: calc(100vw - 1rem);
+  }
 }
 
 /* Hide default UL markers and remove left margin */
@@ -309,6 +350,43 @@
 .image-list p:last-of-type {
   grid-column-start: 1;
   grid-row: 1 / span 3;
+}
+/* Feature grid */
+.home-block__body.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  margin: 0 auto !important;
+  max-width: 80%;
+}
+@media screen and (max-width: 900px) {
+  .home-block__body.feature-grid {
+    max-width: 100%;
+    margin: 0 2rem !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home-block__body.feature-grid {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+}
+.feature-grid .image-list {
+  grid-template-columns: 160px 1fr;
+}
+.feature-grid .image-list p:last-of-type {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  background-color: var(--sunset-30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-grid .image-list p:last-of-type img {
+  width: 100px;
+  height: min-content;
 }
 .quire-page__content .container .content .image-list .action-button {
   margin: 0;
@@ -535,7 +613,7 @@
 
 /* Make some fixes to the way the content area appears
 on the page and adjusts to different window widths */
-@media screen and (max-width: 500px),
+/* @media screen and (max-width: 500px),
        screen and (max-width: calc(720px + 2rem)) {
   .quire-page__content .container {
     width: auto;
@@ -549,6 +627,13 @@ on the page and adjusts to different window widths */
   body:not(.cover).quire-page__content .container {
     width: auto;
     margin: 0 1.5rem;
+  }
+} */
+
+@media screen and (max-width: 752px) {
+  .container {
+    margin: 0 1.5rem !important;
+    max-width: calc(100% - 3rem);
   }
 }
 
