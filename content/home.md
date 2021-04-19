@@ -198,7 +198,7 @@ Try Quire for yourself
 
 Find out what’s coming coming next
 
-[See Quire roadmap](#)
+[See Quire roadmap](/about/roadmap/)
 
 </div>
 <div class="footer-item">
@@ -209,7 +209,7 @@ Find out what’s coming coming next
 
 Dive into code, customization, and more
 
-[Read documentaion](#)
+[Read documentaion](/documentation/)
 
 </div>
 <div class="footer-item">
@@ -220,7 +220,7 @@ Dive into code, customization, and more
 
 For news, updates, and events
 
-[Sign up for our mailing list](#)
+[Sign up for our mailing list](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
 
 </div>
 
