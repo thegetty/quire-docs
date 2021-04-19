@@ -318,7 +318,7 @@ s  }
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 6rem 0;
 }
 @media screen and (max-width: 500px) {
   .quire-page__content .container .content ul.showcase {
@@ -345,7 +345,7 @@ s  }
     padding-left: 0;
   }
   .quire-page__content .container .content ul.showcase {
-    width: calc(100vw - 1rem);
+    width: calc(100vw - 3rem);
   }
 }
 @media screen and (max-width: 500px) {
@@ -567,6 +567,20 @@ s  }
 }
 .quire-page__heading-links ul a:hover {
   border-bottom: 1px solid var(--blue-60);
+}
+@media screen and (max-width: 500px) {
+  .quire-page__heading-links ul {
+    columns: 1;
+    list-style-type: initial;
+  }
+  .quire-page__heading-links ul::before {
+    content: "Jump to:";
+    margin-bottom: .25em;
+    display: block;
+  }
+  .quire-page__heading-links ul {
+    margin-left: 1rem;
+  }
 }
 
 /* Hide the abstract, it’s included in the custom header instead */
