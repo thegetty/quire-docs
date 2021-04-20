@@ -489,7 +489,7 @@ s  }
 }
 .feature-grid .image-list p:last-of-type img {
   width: 100px;
-  height: min-content;
+  height: auto;
 }
 .quire-page__content .container .content .image-list .action-button {
   margin: 0;
@@ -1074,7 +1074,7 @@ code {
   padding: 0 .25em;
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
-  font-size: .95em;
+  font-size: .9em;
 }
 dt code {
   font-weight: 700;
