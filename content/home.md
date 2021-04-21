@@ -189,22 +189,22 @@ Try Quire for yourself
 
 ![map icon](/img/icons/map.png)
 
-### Product Roadmap
+### Community Forum
 
-Find out what’s coming coming next
+Ask and answer questions
 
-[See Quire roadmap](/about/roadmap/)
+[Join the conversation](/community/forum/)
 
 </div>
 <div class="footer-item">
 
 ![document icon](/img/icons/document.png)
 
-### Documentation
+### Contact Us
 
-Dive into code, customization, and more
+Reach out to learn more
 
-[Read documentaion](/documentation/)
+[Email the Quire Team](mailto:quire@getty.edu)
 
 </div>
 <div class="footer-item">
