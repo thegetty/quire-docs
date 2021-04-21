@@ -75,48 +75,11 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 </div>
 </div>
-<div class="home-block">
-
-<div class="home-block__header">
-
-## See Quire in Action
-
-<div class="more-link">
-
-[Visit Our Community Showcase](/community/community-showcase/)
-
-</div>
-</div>
-
-{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
-
-</div>
 
 <div class="home-block">
 <div class="home-block__header">
 
-## The Quire Community
-
-</div>
-<div class="home-block__body">
-
-Developed by Getty, Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
-
-Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [participating in the forum](https://github.com/thegetty/quire/discussions), [contributing to code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
-
-<div class="action-button">
-
-[Explore Ways to Get Involved](/community/join-us/)
-
-</div>
-
-</div>
-</div>
-
-<div class="home-block">
-<div class="home-block__header">
-
-## Key Features & Functionality
+## Features & Functionality
 
 <div class="more-link">
 
@@ -128,9 +91,9 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 <div class="image-list">
 
-**Multiformat Output**
+**Flexible Design**
 
-Outputs publications in multiple formats (web, ebook, PDF, print-on-demand)
+Allows for a wide range of possible custom features and styles
 
 ![document icon](/img/icons/document-center.png)
 
@@ -148,9 +111,9 @@ Supports visually rich scholarship in the tradition of print publishing
 
 <div class="image-list">
 
-**Customization**
+**Single-source Publishing**
 
-Allows for a wide range of possible custom features and styles
+Change content once to change it across all formats, without duplicating effort
 
 ![document icon](/img/icons/document-center.png)
 
@@ -158,7 +121,7 @@ Allows for a wide range of possible custom features and styles
 
 <div class="image-list">
 
-**Simple Structure**
+**Simplified Structure**
 
 Keeps source content in nonspecialized plain text to ensure reusability
 
@@ -169,6 +132,43 @@ Keeps source content in nonspecialized plain text to ensure reusability
 </div>
 </div>
 
+<div class="home-block">
+<div class="home-block__header">
+
+## The Quire Community
+
+</div>
+<div class="home-block__body">
+
+Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
+
+Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [participating in the forum](https://github.com/thegetty/quire/discussions), [contributing to code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
+
+<div class="action-button">
+
+[Explore Ways to Get Involved](/community/join-us/)
+
+</div>
+
+</div>
+</div>
+
+<div class="home-block">
+
+<div class="home-block__header">
+
+## Quire Publications
+
+<div class="more-link">
+
+[Visit Our Community Showcase](/community/community-showcase/)
+
+</div>
+</div>
+
+{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
+
+</div>
 
 <div class="home-block home-block--footer">
 
