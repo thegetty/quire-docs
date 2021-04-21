@@ -372,3 +372,29 @@ project_list:
     github_user:
       - chrisdaaz
     note: "This was a standard monograph project for which Quire was an excellent choice because of its strong support for bibliographic references, endnotes, and multiformat outputs. Adjustments were made to the partials due to stakeholder requests (separating title and subtitle on different lines, Copyright page layout) and slight confusion about baseURLs (relURL vs absURL filters). Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multi-format academic publications."
+
+  - id: "candler_school"
+    src: /screenshots/_candler_school.jpg
+    alt: "Emory Candler School of Theology: Catalog and Handbook 2020-2021"
+    type: Course Catalog and Handbook
+    publisher: Pitts Theology Library, Candler School of Theology, Emory University
+    title_info: "Candler School of Theology 2020-21 Catalog and Handbook"
+    pub_date: 2020-09-15
+    url: https://catalog.candler.emory.edu/
+    customization_level: moderate
+    github_user:
+      - swroberts
+    note: "The Candler School of Theology chose Quire for its ability to publish in multiple formats, making the course catalogue more discoverable and searchable. The Candler School primarily customized the look and feel of the Quire theme in order to make it visually interesting while presenting mostly textual content."
+
+  - id: "duke_wired"
+    src: /screenshots/_duke_wired.jpg
+    alt: "Celebrating 10+ Years of Wired!, 2009-2021, edited by Kristin Love Huffman, Hannah L. Jacobs, and Paul B. Jaskot"
+    type: Report
+    publisher: Duke University Digital Art History & Visual Culture Research Lab
+    title_info: "Celebrating 10+ Years of Wired!"
+    pub_date: 2021-03-10
+    url: https://reports.dahvc.org/2021/
+    customization_level: moderate
+    github_user:
+      - hlj24
+    note: "In celebration of the first ten years of the Wired! Lab at Duke University (now the Digital Art History & Visual Culture Research Lab), the staff and faculty created a born-digital report that not only shares the lab's work with the world but also demonstrates the possibilities for Quire and static site generators for digital publication. The lab's members are committed to using sustainable methods for digital publishing while also exploring emerging platforms."

@@ -22,7 +22,7 @@ Online ∙ Print ∙ E-book
 
 </div>
 
-Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
+Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
 
 *Created by [Getty](https://www.getty.edu), free to use.*
 
@@ -46,7 +46,7 @@ Quire is a modern, multiformat publishing tool designed to create books as autho
 </div>
 <div class="home-block__body">
 
-Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digital book optimized for visual imagery and designed to ensure its content is widely accessible and stable.
+Quire is an ideal solution for anyone seeking to publish beautiful digital books optimized for visual imagery and designed to ensure widely accessible and stable content.
 
 <div class="home-block__quote">
 
@@ -58,33 +58,28 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 <div class="feature-list two-column">
 
 - **Affordable** No proprietary software or ongoing maintenance fees required
-- **Compatible** Available for Mac, Windows, and Linux
-- **Responsive** Web design adapts to smartphones, tablets, and desktops
-- **Richly Featured & Interactive**  Add images, videos, audio clips, maps, and zooming features
-- **Flexible and Customizable** Designed to be adaptable to your unique content
 - **Discoverable** Increase visibility by publishing as PDF, ebook, website, or print-on-demand
-- **Empowering** Can be used by anyone, from nontechnical content creators to developers
-- **Booklike** Built-in understanding of high-quality, scholarly publishing
-- **Beautiful** Optimized for visual imagery with a clean, modern design
-- **Accessible** Adheres to WCAG2.0 Web Accessibility Principles
-- **Open-Source** Follows open-source standards with goal to officially launch as open source in 2022
 - **Sustainable** Based around static site generation and plain text files ensuring stability
+- **Book-like** Built-in understanding of high-quality, scholarly publishing with clean, modern design
+- **Accessible** Adheres to WCAG2.0 Web Accessibility Principles
+- **Open Access** Follows open-source standards with goal to officially launch as open source in 2022
 
 </div>
 
 <div class="action-button">
 
-[Try It for Yourself](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[View our Fact Sheet](/downloads/quire-fact-sheet.pdf)
 
 </div>
 
 </div>
 </div>
+
 <div class="home-block">
 
 <div class="home-block__header">
 
-## See Quire in Action
+## Quire Publications
 
 <div class="more-link">
 
@@ -100,28 +95,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 <div class="home-block">
 <div class="home-block__header">
 
-## The Quire Community
-
-</div>
-<div class="home-block__body">
-
-Developed by Getty, Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
-
-Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [participating in the forum](https://github.com/thegetty/quire/discussions), [contributing to code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
-
-<div class="action-button">
-
-[Explore Ways to Get Involved](/community/join-us/)
-
-</div>
-
-</div>
-</div>
-
-<div class="home-block">
-<div class="home-block__header">
-
-## Key Features & Functionality
+## Features & Functionality
 
 <div class="more-link">
 
@@ -133,9 +107,9 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 <div class="image-list">
 
-**Multiformat Output**
+**Flexible Design**
 
-Outputs publications in multiple formats (web, ebook, PDF, print-on-demand)
+Allows for a wide range of possible custom features and styles
 
 ![document icon](/img/icons/document-center.png)
 
@@ -153,9 +127,9 @@ Supports visually rich scholarship in the tradition of print publishing
 
 <div class="image-list">
 
-**Customization**
+**Single-source Publishing**
 
-Allows for a wide range of possible custom features and styles
+Change content once to change it across all formats, without duplicating effort
 
 ![document icon](/img/icons/document-center.png)
 
@@ -163,7 +137,7 @@ Allows for a wide range of possible custom features and styles
 
 <div class="image-list">
 
-**Simple Structure**
+**Simplified Structure**
 
 Keeps source content in nonspecialized plain text to ensure reusability
 
@@ -171,9 +145,31 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 </div>
 
+<div class="image-list">
+
 </div>
 </div>
 
+<div class="home-block">
+<div class="home-block__header">
+
+## The Quire Community
+
+</div>
+<div class="home-block__body">
+
+Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
+
+Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [participating in the forum](https://github.com/thegetty/quire/discussions), [contributing to code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
+
+<div class="action-button">
+
+[Explore Ways to Get Involved](/community/join-us/)
+
+</div>
+
+</div>
+</div>
 
 <div class="home-block home-block--footer">
 
@@ -194,11 +190,11 @@ Try Quire for yourself
 
 ![map icon](/img/icons/map.png)
 
-### Product Roadmap
+### Community Forum
 
-Find out what’s coming coming next
+Ask and answer questions
 
-[See Quire roadmap](/about/roadmap/)
+[Join the conversation](/community/forum/)
 
 </div>
 <div class="footer-item">
@@ -209,7 +205,7 @@ Find out what’s coming coming next
 
 Dive into code, customization, and more
 
-[Read documentaion](/documentation/)
+[Read documentation](/documentation/)
 
 </div>
 <div class="footer-item">
