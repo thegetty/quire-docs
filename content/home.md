@@ -22,7 +22,7 @@ Online ∙ Print ∙ E-book
 
 </div>
 
-Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
+Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
 
 *Created by [Getty](https://www.getty.edu), free to use.*
 
@@ -46,7 +46,7 @@ Quire is a modern, multiformat publishing tool designed to create books as autho
 </div>
 <div class="home-block__body">
 
-Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digital book optimized for visual imagery and designed to ensure its content is widely accessible and stable.
+Quire is an ideal solution for anyone seeking to publish beautiful digital books optimized for visual imagery and designed to ensure widely accessible and stable content.
 
 <div class="home-block__quote">
 
@@ -60,7 +60,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 - **Affordable** No proprietary software or ongoing maintenance fees required
 - **Discoverable** Increase visibility by publishing as PDF, ebook, website, or print-on-demand
 - **Sustainable** Based around static site generation and plain text files ensuring stability
-- **Scholarly** Built-in understanding of high-quality, scholarly publishing
+- **Book-like** Built-in understanding of high-quality, scholarly publishing with clean modern design
 - **Accessible** Adheres to WCAG2.0 Web Accessibility Principles
 - **Open Access** Follows open-source standards with goal to officially launch as open source in 2022
 
@@ -129,7 +129,26 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 </div>
 
+<div class="image-list">
+
 </div>
+</div>
+
+<div class="home-block">
+
+<div class="home-block__header">
+
+## Quire Publications
+
+<div class="more-link">
+
+[Visit Our Community Showcase](/community/community-showcase/)
+
+</div>
+</div>
+
+{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
+
 </div>
 
 <div class="home-block">
@@ -151,23 +170,6 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 </div>
 
 </div>
-</div>
-
-<div class="home-block">
-
-<div class="home-block__header">
-
-## Quire Publications
-
-<div class="more-link">
-
-[Visit Our Community Showcase](/community/community-showcase/)
-
-</div>
-</div>
-
-{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
-
 </div>
 
 <div class="home-block home-block--footer">
