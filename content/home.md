@@ -69,7 +69,7 @@ Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digi
 
 <div class="action-button">
 
-[Try It for Yourself](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[View our Fact Sheet](/downloads/quire-fact-sheet.pdf)
 
 </div>
 
