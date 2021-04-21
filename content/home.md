@@ -60,10 +60,9 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 - **Affordable** No proprietary software or ongoing maintenance fees required
 - **Discoverable** Increase visibility by publishing as PDF, ebook, website, or print-on-demand
 - **Sustainable** Based around static site generation and plain text files ensuring stability
-- **Book-like** Built-in understanding of high-quality, scholarly publishing with clean modern design
+- **Book-like** Built-in understanding of high-quality, scholarly publishing with clean, modern design
 - **Accessible** Adheres to WCAG2.0 Web Accessibility Principles
 - **Open Access** Follows open-source standards with goal to officially launch as open source in 2022
-
 
 </div>
 
@@ -74,6 +73,23 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 </div>
 
 </div>
+</div>
+
+<div class="home-block">
+
+<div class="home-block__header">
+
+## Quire Publications
+
+<div class="more-link">
+
+[Visit Our Community Showcase](/community/community-showcase/)
+
+</div>
+</div>
+
+{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
+
 </div>
 
 <div class="home-block">
@@ -135,23 +151,6 @@ Keeps source content in nonspecialized plain text to ensure reusability
 </div>
 
 <div class="home-block">
-
-<div class="home-block__header">
-
-## Quire Publications
-
-<div class="more-link">
-
-[Visit Our Community Showcase](/community/community-showcase/)
-
-</div>
-</div>
-
-{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
-
-</div>
-
-<div class="home-block">
 <div class="home-block__header">
 
 ## The Quire Community
@@ -202,11 +201,11 @@ Ask and answer questions
 
 ![document icon](/img/icons/document.png)
 
-### Contact Us
+### Documentation
 
-Reach out to learn more
+Dive into code, customization, and more
 
-[Email the Quire Team](mailto:quire@getty.edu)
+[Read documentation](/documentation/)
 
 </div>
 <div class="footer-item">
