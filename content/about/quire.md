@@ -5,47 +5,39 @@ type: essay
 abstract: "Learn what Quire is, how it works, and whether it's right for you"
 ---
 
-Developed by [Getty](https://www.getty.edu), Quire is a modern digital publishing tool that empowers people to create scholarly, visually rich publications in a variety of formats, including online, ebook, and print. Quire offers an elegant and affordable publishing solution that doesn't require any proprietary software or long-term technology choices.
+## About Quire
 
-Quire is flexible and feature-rich. It can be used in its most basic configuration, or it can be customized, adapting to a vast array of use cases, from collection catalogues and research projects to online exhibitions, reports, and journal articles.
+Developed by Getty, Quire offers an elegant and affordable digital publishing solution ideal for creating dynamic
+publications in a variety of formats, including web, print, and e-book. In addition to being optimized for scholarly
+and visually rich publishing, Quire books are designed for longevity, sustainability, and discoverability.
 
+Through the use of static site generation and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format. Quire is flexible and feature-rich and can be used in its most basic configuration, or it can be customized, adapting to a  vast array of use cases. Individuals at all levels of technical experience can use Quire. Our rapidly growing community includes scholars, curators, editors, designers, web developers, and the digitally curious.
 
-<div class="image-list">
+Currently under development for potential release as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating digital books that are not only as beautiful as the print books we know and love but are equally as enduring.
 
-Our community members represent a broad spectrum of institutions, both large and small, providing vital scholarship in the arts and sciences. In addition to being used at Getty, the Quire community includes a growing number of scholars, curators, editors, designers, and web developers, and the digitally curious. Individuals at all levels of technical experience are welcome, from content creators to developers. We provide tools and resources to empower and educate our community.
+Institutions currently publishing with Quire:
+
+Getty / Hong Kong Museum and Art Gallery, Hong Kong  University / Mills College Art Museum / Minneapolis Institute  of Art / Tilt West / The Graphics O ice / Leventhal Map &  Education Center, Boston Public Library / Ad Hoc Museum  Collective / San Jose Museum of Art  
+
+Quire has been used to produce:
+
+Collection catalogues / exhibition catalogues / journals /online exhibitions / proceedings volumes / research projects / supplements to print publications /personal histories / guides and toolkits
 
 <div class="action-button">
 
 [**See What Our Community Is Creating**](/community/community-showcase/)
 </div>
 
-![Explore icon](/img/illustrations/undraw_Group_chat_unwm.png)
-
-</div>
-<div class="image-list">
-
-Quire is designed to ensure that digital books and their contents are not only as beautiful as the print books we know and love but are equally as enduring. Optimized for discoverability and longevity, Quire enables robust preservation and distribution of works in a simplified and accessible format.
-
 <div class="action-button">
 
 [**Learn How Quire Works**](/about/how-it-works/)
 </div>
-
-![Explore icon](/img/illustrations/undraw_in_progress_ql66.png)
-
-</div>
-<div class="image-list">
-
-Currently under development for potential release as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating sustainable and discoverable digital publications.
 
 <div class="action-button">
 
 [**Join the Quire Community Today**](/community/join-us/)
 </div>
 
-![Explore icon](/img/illustrations/undraw_celebration_0jvk.png)
-
-</div>
 
 ## Features & Functionality
 
@@ -90,4 +82,3 @@ Here are some things to consider:
 
 [**Get Started Now!**](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 </div>
-
