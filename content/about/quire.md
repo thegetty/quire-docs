@@ -5,8 +5,6 @@ type: essay
 abstract: "Learn what Quire is, how it works, and whether it's right for you"
 ---
 
-## About Quire
-
 Developed by Getty, Quire offers an elegant and affordable digital publishing solution ideal for creating dynamic
 publications in a variety of formats, including web, print, and e-book. In addition to being optimized for scholarly
 and visually rich publishing, Quire books are designed for longevity, sustainability, and discoverability.
