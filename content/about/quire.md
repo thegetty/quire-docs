@@ -41,7 +41,7 @@ Collection catalogues / exhibition catalogues / journals / online exhibitions / 
 - **Single-source Publishing** Change content once to change it across all formats, without duplicating effort
 - **Customizable Styles & Fonts** Customize your publication's look and feel to suit your needs
 - **Figure Images & Image Groups** Include high quality images in a variety of configurations
-- **Zooming Images** Enable zooming capabilities on images (with [IIIF](https://iiif.io/) compatibility in the works)
+- **Zooming Images** Enable zooming capabilities on images. [IIIF](https://iiif.io/) compatible.
 - **Video & Audio Embeds** Insert audio and video clips with ease (includes Soundcloud, YouTube, and Vimeo)
 - **Dynamic Navigation**  Use table of contents and menus to navigate and jump to other sections
 - **Full-text Search** Perform global search throughout your publication
