@@ -36,15 +36,15 @@ Getty publishes its first multiformat collection catalogue, [*Ancient Terracotta
 
 Also released this year are [*Roman Mosaics*](https://www.getty.edu/publications/romanmosaics/) and the third edition of [*Introduction to Metadata*](https://www.getty.edu/publications/intrometadata/). [ARLIS/NA's *Multimedia & Technology Reviews*](https://arlisna.org/publications/multimedia-technology-reviews/1025-roman-mosaics-in-the-j-paul-getty-museum) writes that *Roman Mosaics* has a "dynamic design that encourages further discovery and scholarship."
 
-Getty Publications editor, Ruth Evans Lane, writes an article for Getty's blog, *The Iris*. [“An Editor's View of Digital Publishing”](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/) details her experience working on *Terracottas* and *Mosaics*.
+Getty Publications editor, Ruth Evans Lane, writes an article, [“An Editor's View of Digital Publishing,”](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/) for Getty's blog, *The Iris*, detailing her experience working on *Ancient Terracottas* and *Roman Mosaics*.
 
 {{< q-figure id="the_gang" >}}
 
 ## 2017
 
-OSCI concludes. While the program transformed the digital publishing landscape for museums [notable challenges remained](https://www.getty.edu/publications/osci-report//remaining-challenges/), particularly around the discoverability, longevity, and objectness of digital catalogues. (Read the [*OSCI Final Report*](https://www.getty.edu/publications/osci-report//).)
+OSCI concludes. While the program transformed the digital publishing landscape for museums [notable challenges remained](https://www.getty.edu/publications/osci-report//remaining-challenges/), particularly around the discoverability, longevity, and objectness of digital catalogues. (Read the full [*OSCI Final Report*](https://www.getty.edu/publications/osci-report//).)
 
-Greg Albers and Eric Gardner begin building Quire with the goal of enabling other museums and publishers to do multiformat publishing on their own. Albers and Gardner envision a free and flexible tool to create beautiful, accessible, discoverable, and enduring publications.
+Greg Albers and Eric Gardner begin building Quire with the goal of enabling other museums and publishers to do multiformat publishing. Albers and Gardner envision a free and flexible tool to create beautiful, accessible, discoverable, and enduring publications.
 
 Getty uses early Quire prototype to develop and publish [*Artistry in Bronze*](https://www.getty.edu/publications/artistryinbronze/).
 
@@ -54,7 +54,7 @@ The first in-person Quire workshop takes place at MCN (Museum Computer Network) 
 
 ## 2018
 
-Early successes with the development of Quire encourage Getty to move the tool towards an open-source model. Beta access is enabled. Over fifty new community members sign-up as beta testers within the first year.
+Early successes with the development of Quire encourage Getty to move the tool towards an open-source model. Beta access is enabled and over fifty new community members sign-up as beta testers within the first year.
 
 As a result of the successful MCN Quire workshop in 2017, [Journal 18](http://www.journal18.org/issue5_williams/about/), the first external Quire publication, launches.
 
@@ -76,7 +76,7 @@ A landmark [cross-institutional user study](https://digpublishing.github.io/cata
 
 ## 2020
 
-The Quire team hires a Community Manager, Erin Dunigan, to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
+The Quire team hires a Community Manager, Erin Cecele Dunigan, to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
 
 Quire is invited to participate in the inaugural [Open Publishing Fest](https://www.openpublishingfest.org/). The Quire team discusses the history and future of the tool, and three Quire community members reflect on their experience publishing with Quire and demo their recent projects.
 
@@ -86,9 +86,7 @@ Anders Pollack and Hannah Balenda (Software Engineers) join Getty and begin work
 
 Quire’s beta community grows to nearly 200 members, with more than a dozen [published Quire projects](/community/community-showcase/) among them.
 
-**We invite you to become part of Quire's history. Sign-up for beta access and join the Quire community today!**
-
 <div class="action-button">
 
-[Sign Up Now](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[Become part of Quire's history today!](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 </div>
