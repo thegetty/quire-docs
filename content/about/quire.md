@@ -17,11 +17,11 @@ Currently under development for potential release as [open-source software](/abo
 
 Institutions currently publishing with Quire:
 
-Getty / Hong Kong Museum and Art Gallery, Hong Kong  University / Mills College Art Museum / Minneapolis Institute  of Art / Tilt West / The Graphics O ice / Leventhal Map &  Education Center, Boston Public Library / Ad Hoc Museum  Collective / San Jose Museum of Art  
+Getty / Hong Kong Museum and Art Gallery, Hong Kong University / Mills College Art Museum / Minneapolis Institute of Art / Tilt West / The Graphics Office / Leventhal Map &  Education Center, Boston Public Library / Ad Hoc Museum  Collective / San Jose Museum of Art / Nelson-Atkins Museum of Art / Pitts Theology Library, Emory University / Duke University / Northwestern University Libraries
 
 Quire has been used to produce:
 
-Collection catalogues / exhibition catalogues / journals /online exhibitions / proceedings volumes / research projects / supplements to print publications /personal histories / guides and toolkits
+Collection catalogues / exhibition catalogues / journals / online exhibitions / proceedings volumes / research projects / supplements to print publications / personal histories / guides and toolkits
 
 <div class="action-button">
 
