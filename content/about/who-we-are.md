@@ -7,7 +7,7 @@ abstract: Meet Quire’s core team and contributors
 
 ## Core Team
 
-Quire was developed by [Getty](https://www.getty.edu) and the core team working on Quire is currently comprised of Getty staff members. Together we are working toward a full open-source release by 2022. Feel free to contact us at [quire@getty.edu](mailto:quire@getty.edu).
+Quire is developed by [Getty](https://www.getty.edu) and the core team working on Quire is currently comprised of Getty staff members. Together we are working toward a full open-source release by 2022. Feel free to contact us at [quire@getty.edu](mailto:quire@getty.edu).
 
 <div class="feature-list">
 
@@ -23,8 +23,9 @@ Quire was developed by [Getty](https://www.getty.edu) and the core team working 
 
 ## Contributors
 
-Thank you to all our growing list of contributors who have made Quire what it is, and are working on what it will be! They’ve contributed code, written and edited documentation, answered questions on our forum, run events, and blogged and spoken about Quire.
+Thank you to all our growing list of contributors who have made Quire what it is, and are working on what it will be! They’ve contributed code, written and edited documentation, answered questions or shared their work on our forum, run events, and blogged or spoken about Quire.
 
+- [@1000camels](https://github.com/1000camels)
 - [@aheltonsjma](https://github.com/aheltonsjma)
 - [@anderspollack](https://github.com/anderspollack)
 - [@antoinentl](https://github.com/antoinentl)
@@ -32,9 +33,13 @@ Thank you to all our growing list of contributors who have made Quire what it is
 - [@daniel-keller](https://github.com/daniel-keller)
 - [@egardner](https://github.com/egardner)
 - [@fchasen](https://github.com/fchasen)
+- [@garrettdashnelson](https://github.com/garrettdashnelson)
 - [@ggarcia0596](https://github.com/ggarcia0596)
+- [@hbalenda](https://github.com/hbalenda)
+- [@hlj24](https://github.com/hlj24)
 - [@kalvarenga](https://github.com/kalvarenga)
 - [@kristhayer11](https://github.com/kristhayer11)
+- [@mgray4](https://github.com/mgray4)
 - [@mandrijauskas](https://github.com/mandrijauskas)
 - [@MillsArtMuseum](https://github.com/MillsArtMuseum)
 - [@mbelhu](https://github.com/mbelhu)
@@ -42,6 +47,8 @@ Thank you to all our growing list of contributors who have made Quire what it is
 - [@nancyum](https://github.com/nancyum)
 - [@oncletom](https://github.com/oncletom)
 - [@swambold1](https://github.com/swambold1)
+- [@swroberts](https://github.com/swroberts)
+- [@tipeslowly](https://github.com/tipeslowly)
 - [@victoriabarry](https://github.com/victoriabarry)
 
 Special acknowledgement is due to Eric Gardner ([@egardner](https://github.com/egardner)) who served as Digital Publications Developer at Getty from 2014 to 2018, and who conceived and spearheaded the original development of Quire. Thank you, Eric!
