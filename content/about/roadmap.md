@@ -5,15 +5,11 @@ type: essay
 abstract: Learn about forthcoming features and other software updates
 ---
 
-The Quire team at Getty continues work on Quire as a whole, including making improvements to the installation process, the overall architecture, and ongoing enhancements for web accessibility.
-
-We also plan to develop a number of specific features in conjunction with forthcoming Getty Publications’ books, which will also be built into Quire and released to the community.
+The Quire team at Getty continues its work on Quire, including making improvements to the installation process, the overall architecture, and ongoing enhancements for web accessibility. A number of specific features with be developed in conjunction with forthcoming Getty Publications’ books, and released to the Quire community.
 
 ## Quire Features in Development
 
 <div class="feature-list">
-
-- **IIIF Image Tiling** Adds deep-zooming to any image, using the open [IIIF](https://iiif.io/) specification. Either point Quire to an existing IIIF repository, or add high-resolution images into a Quire project directly.
 
 - **Multi-level Subsections** Enables Quire publications to be authored with an arbitrary depth of content subsections supported by the table of contents and content navigation.
 
