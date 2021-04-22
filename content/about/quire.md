@@ -11,7 +11,7 @@ Developed by Getty, Quire offers an elegant and affordable digital publishing so
 publications in a variety of formats, including web, print, and e-book. In addition to being optimized for scholarly
 and visually rich publishing, Quire books are designed for longevity, sustainability, and discoverability.
 
-Through the use of [static site generation](/about/how-it-works/) and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format. Quire is flexible and feature-rich and can be used in its most basic configuration, or it can be customized, adapting to a  vast array of use cases. Individuals at all levels of technical experience can use Quire. Our rapidly growing community includes scholars, curators, editors, designers, web developers, and the digitally curious.
+Through the use of [static site generation](/about/how-it-works/) and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format. Quire is flexible and feature-rich and can be used in its most basic configuration, or it can be customized, adapting to a  vast array of use cases. Individuals at all levels of technical experience can use Quire. Our rapidly growing [community](http://localhost:1313/community/community-showcase/) includes scholars, curators, editors, designers, web developers, and the digitally curious.
 
 Currently under development for potential release as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating digital books that are not only as beautiful as the print books we know and love but are equally as enduring.
 
@@ -22,6 +22,11 @@ Getty / Hong Kong Museum and Art Gallery, Hong Kong University / Mills College A
 **Quire has been used to produce**:
 
 Collection catalogues / exhibition catalogues / journals / online exhibitions / proceedings volumes / research projects / supplements to print publications / personal histories / guides and toolkits
+
+<div class="action-button">
+
+[**How to Get Involved**](/community/join-us/)
+</div>
 
 ## Features & Functionality
 
@@ -49,7 +54,7 @@ Collection catalogues / exhibition catalogues / journals / online exhibitions / 
 
 <div class="action-button">
 
-[**Learn About Other Features in Development**](/about/roadmap/)
+[**Additional Features in Development**](/about/roadmap/)
 </div>
 
 ## Is Quire Right for You?
