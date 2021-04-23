@@ -363,6 +363,7 @@ s  }
 }
 .quire-page__content .container .content ul.showcase li {
   margin-left: 0;
+  margin-bottom: 2rem;
 }
 
 /* Adjust figure image display for both versions */
@@ -394,6 +395,10 @@ s  }
 .quire-page--home ul.showcase .user,
 .quire-page--home ul.showcase .more-link {
   display: none;
+}
+
+.quire-page__content .container .content ul li.showcase-project .user a {
+  border-bottom-width: 0px;
 }
 
 /* Style More Info & View links and icons*/
@@ -430,7 +435,7 @@ s  }
 }
 .quire-page__content .container .content ul li.showcase-project a.view-link svg {
   width: .875em;
-  top: 1px;
+  top: 2px;
 }
 
 /* IMAGE LIST
@@ -651,10 +656,11 @@ s  }
 .quire-citation__button {
   border-bottom: 2px dotted var(--garden-60);
 }
-.quire-citation__button:hover {
+p:not(.more-link-view-link) .quire-citation__button:hover {
   color: var(--garden-60) !important;
   border-bottom: 1px solid var(--garden-60);
 }
+.quire-citation__button:hover
 .quire-page__content .content a {
   border-bottom-width: 2px;
 }
