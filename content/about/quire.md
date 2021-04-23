@@ -28,8 +28,6 @@ Collection catalogues / exhibition catalogues / journals / online exhibitions / 
 
 ## Features & Functionality
 
-{{< q-figure-group id= "custom-styles, plain-text, video-embeds, collection-catalogue" class="is-pulled-right" >}}
-
 <div class="feature-list">
 
 - **Multiformat Output** Generate publications as websites, EPUB and MOBI ebooks, and PDFs
