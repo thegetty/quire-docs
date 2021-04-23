@@ -761,35 +761,43 @@ s  }
 @media screen and (min-width: 900px) {
 
   /* Position fixed wide menu */
-  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__secondary {
+  body:not(.hide-menu) .quire:not(.no-js).menu-view--fixed .quire__secondary {
     top: 5rem;
     overflow-y: scroll;
     transform: none;
     width: var(--menu-width);
   }
-  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__secondary .quire-menu {
-    display: block;
+  body:not(.hide-menu) .quire:not(.no-js).menu-view--fixed .quire__secondary .quire-menu {
+    display: block !important;
     margin-bottom: 12rem;
+    margin-top: 105px;
   }
 
   /* Determine widths of main page elements */
-  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary {
+  body:not(.hide-menu) .quire:not(.no-js).menu-view--fixed .quire__primary {
     width: calc(100% - var(--menu-width));
   }
-  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary .container {
+  body:not(.hide-menu) .quire:not(.no-js).menu-view--fixed .quire__primary .container {
     width: calc(100vw - var(--menu-width) - 3rem);
   }
-  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar {
+  body:not(.hide-menu) .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar {
     width: 100vw
   }
 
   /* Hide menu button, and add margin to make up for missing element */
-  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar .quire-navbar-button.menu-button {
+  body:not(.hide-menu) .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar .quire-navbar-button.menu-button {
     display: none;
   }
-  body:not(#home) .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar .quire-navbar-button.search-button {
+  body:not(.hide-menu) .quire:not(.no-js).menu-view--fixed .quire__primary .quire-navbar .quire-navbar-button.search-button {
     margin-right: 1rem;
   }
+}
+
+body:not(#home).hide-menu .quire:not(.no-js) .quire__primary #main {
+  padding: 0 1.5rem;
+}
+body:not(#home).hide-menu .quire-page--grid .quire-page__header .container {
+  width: 100%;
 }
 
 /* Make some fixes to the way the content area appears

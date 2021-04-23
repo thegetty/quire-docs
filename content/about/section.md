@@ -1,7 +1,7 @@
 ---
 title: About
 type: contents
-class: grid
+class: grid hide-menu
 slug: .
 weight: 900
 ---

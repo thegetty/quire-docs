@@ -1,7 +1,7 @@
 ---
 title: Learn
 type: contents
-class: grid
+class: grid hide-menu
 slug: .
 weight: 5900
 ---

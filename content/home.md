@@ -5,7 +5,7 @@ weight: 1
 menu: false
 type: page
 slug: .
-class: home
+class: home hide-menu
 ---
 
 <div class="home-block home-block--first">
