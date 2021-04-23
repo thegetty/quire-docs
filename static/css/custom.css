@@ -134,10 +134,14 @@ s  }
   display: none;
 }
 .quire-page--home .quire-page__content .container .home-block:not(:last-child).home-block--first {
-  padding-top: 8rem;
   padding-left: 4rem;
   background-color: var(--garden-60);
   color: var(--white);
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 5rem - 4.5rem);
+  min-height: 600px;
+  padding-bottom: 0;
 }
 .quire-page--home .quire-page__content .container .home-block:not(:last-child).home-block--first a {
   color: var(--white);
@@ -957,6 +961,12 @@ on the page and adjusts to different window widths */
   margin-top: 5rem;
   min-height: calc(100vh - 5rem);
 }
+#home #main {
+  margin-top: 0;
+}
+#home .quire-navbar {
+  position: relative;
+}
 .quire-navbar a {
   padding: 0;
   margin: 0 .75rem;
@@ -1081,6 +1091,16 @@ a.quire-navbar-controls__site-logo img {
 .quire-navbar a[target=_blank]:hover,
 .quire-menu__list > ul > .page-item a[target=_blank]:hover {
   border-color: var(--blue-60) !important;
+}
+
+#home .quire-navbar a[target=_blank] {
+  color: var(--garden-10) !important;
+}
+#home .quire-navbar a[target=_blank]:hover {
+  border-color: var(--garden-10) !important;
+}
+#home .quire-navbar .page-item a[target="_blank"]::after {
+  content: url('../img/icons/offsite--garden-10.svg');
 }
 
 /* GLOSSARY

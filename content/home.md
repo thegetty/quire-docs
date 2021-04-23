@@ -9,7 +9,7 @@ class: home hide-menu
 ---
 
 <div class="home-block home-block--first">
-
+<div class="home-block__body">
 
 <div class="head">
 
@@ -24,7 +24,7 @@ Online ∙ Print ∙ E-book
 
 Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
 
-*Created by [Getty](https://www.getty.edu), free to use.*
+Created by [Getty](https://www.getty.edu), free to use.
 
 <div class="action-button">
 
@@ -32,6 +32,7 @@ Quire is a modern, multiformat publishing tool designed to create books as autho
 
 </div>
 
+</div>
 </div>
 <div class="home-block">
 <div class="home-block__header">
