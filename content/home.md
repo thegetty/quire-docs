@@ -212,11 +212,11 @@ Dive into code, customization, and more
 
 ![mail icon](/img/icons/mail.png)
 
-### Stay in Touch
+### Stay Updated
 
 For news, updates, and events
 
-[Sign up for our mailing list](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
+[Subscribe to our mailing list](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
 
 </div>
 
