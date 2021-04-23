@@ -71,21 +71,6 @@ Send us your finished Quire publications and we will add them to our [Community 
 ![Explore icon](/img/illustrations/undraw_organize_resume_utk5.png)
 
 </div>
-<div class="image-list">
-
-## Write an Article
-
- We also welcome the submission of articles about specific aspects of working in Quire to be included in the [Learn](/learn/articles-videos/) section of our website.
-
- <div class="action-button">
-
- [Share Your Idea](https://github.com/thegetty/quire/issues/new)
-
- </div>
-
- ![Explore icon](/img/illustrations/undraw_Wall_post_re_y78d.png)
-
- </div>
  <div class="image-list">
 
 ## Attend or Organize an Event
@@ -146,6 +131,21 @@ The [Quire Documentation](/documentation/) is a work in progress and we value yo
 </div>
 
 ![Explore icon](/img/illustrations/undraw_add_document_0hek.png)
+
+</div>
+<div class="image-list">
+
+## Write an Article
+
+We also welcome the submission of articles about specific aspects of working in Quire to be included in the [Learn](/learn/articles-videos/) section of our website.
+
+<div class="action-button">
+
+[Share Your Idea](https://github.com/thegetty/quire/issues/new)
+
+</div>
+
+![Explore icon](/img/illustrations/undraw_Wall_post_re_y78d.png)
 
 </div>
 <div class="image-list">
