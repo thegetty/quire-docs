@@ -534,7 +534,7 @@ s  }
   border-radius: 50%;
   width: 160px;
   height: 160px;
-  background-color: var(--sunset-30);
+  background-color: var(--magenta-60);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -542,6 +542,7 @@ s  }
 .feature-grid .image-list p:last-of-type img {
   width: 100px;
   height: auto;
+  filter: invert(1);
 }
 .quire-page__content .container .content .image-list .action-button {
   margin: 0;
