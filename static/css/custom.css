@@ -596,6 +596,27 @@ s  }
   margin: -1px;
 }
 
+/* Specialty style for GitHub link under first button on homepage */
+.quire-page__content .container .content .action-button.with-sub-action-button {
+  margin-bottom: .5rem;
+}
+.quire-page__content .container .content .sub-action-button a {
+  border-bottom-width: 0;
+  margin-left: 1.2rem;
+  color: var(--garden-10) !important;
+}
+.quire-page--home .quire-page__content .container .home-block:not(:last-child).home-block--first .sub-action-button a:hover,
+.quire-page__content .container .content .sub-action-button a:hover {
+  color: var(--garden-10) !important;
+  border-bottom-color: var(--garden-10) !important;
+}
+.quire-page__content .container .content .sub-action-button a img {
+  height: 18px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
 /* GENERAL PAGE STYLES
 ============================================================================= */
 

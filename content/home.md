@@ -26,11 +26,18 @@ Quire is a modern, multiformat publishing tool designed to create books as autho
 
 Created by [Getty](https://www.getty.edu), free to use.
 
-<div class="action-button">
+<div class="action-button with-sub-action-button">
 
 [Sign-Up for Quire](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
 </div>
+
+<div class="sub-action-button">
+
+[View on GitHub ![logo](/img/icons/github.svg) ](https://github.com/thegetty/quire/)
+
+</div>
+
 
 </div>
 </div>
@@ -120,7 +127,7 @@ Allows for a wide range of possible custom features and styles
 
 **Multimedia Support**
 
-Supports visually rich scholarship in the tradition of print publishing
+Expands rich scholarship with embedded audio, video, deep-zooming images and more
 
 ![document icon](/img/icons/document-center.png)
 
@@ -130,7 +137,7 @@ Supports visually rich scholarship in the tradition of print publishing
 
 **Single-source Publishing**
 
-Change content once to change it across all formats, without duplicating effort
+Multiformat output from a single set of source files speeds production without duplicating effort
 
 ![document icon](/img/icons/document-center.png)
 
@@ -206,7 +213,7 @@ Ask and answer questions
 
 Dive into code, customization, and more
 
-[Read documentation](/documentation/)
+[Read the documentation](/documentation/)
 
 </div>
 <div class="footer-item">
@@ -227,7 +234,7 @@ For news, updates, and events
 
 ![Quire logo](/img/quire-logo--sm.png)
 
-[About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Sign up](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Get Access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
 [GitHub](https://github.com/thegetty/quire/) | [Newsletter](https://newsletters.getty.edu/h/t/3482055B10CD0F24) | [Contact](mailto:quire@getty.edu)
 
