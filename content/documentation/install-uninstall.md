@@ -29,9 +29,9 @@ The Quire installation process may take a minute or two, during which time there
 - Don't fret if you see see an error (ERR!) message in your Terminal that reads: "permission denied." Type the following command and hit enter:
 ```
 cd
-sudo chown -R $USER /usr/local
+sudo npm install --global @thegetty/quire-cli
 ```
-You'll be asked to type your computer password (it will be invisible) and will most likely receive an error message reading “operation not permitted” or "operation denied". Ignore this! Go back to \#3. and run the install command again.
+You will be prompted to enter your password. If you have administrator access you should be able to go back to \#3 and install Quire properly. If you do not have administrator access, you will need to contact your IT team for assistance.
 {{< /q-class >}}
 
 ### Full Install
