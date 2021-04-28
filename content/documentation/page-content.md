@@ -33,7 +33,7 @@ You can read all about Markdown syntax and how it is used in Quire in the [*Fund
 
 ## Use Shortcodes to Add Features
 
-Quire adds a number of specialty shortcodes which extend the functionality and possibilities of plain Markdown. While {{< q-def "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
+Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. While {{< q-def "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
 
 Shortcodes are always formatted with a combination of curly brackets and angle brackets with the name of the shortcode inside (`{{</* q-shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
 

@@ -9,7 +9,7 @@ Before getting started, if you have not done so already, we recommend taking som
 
 ## Start a New Project
 
-Now that you have taken the [tutorial](/learn/tutorial.md/) and [installed Quire](/documentation/install-uninstall/) its time to get started on your first publication. To create a new project you will be running the `quire new` command. You can learn more about various commands in the [*Quire CLI Commands*](/documentation/quire-cli/) chapter of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
+Now that you have taken the [tutorial](/learn/tutorial.md/) and [installed Quire](/documentation/install-uninstall/) its time to get started on your first publication. To create a new project you will be running the `quire new` command. You can learn more about various commands in the [*Quire Commands*](/documentation/quire-commands) chapter of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
 
 ```tx
 quire new project-name
@@ -44,7 +44,7 @@ Inside each Quire project, you will find the following directories and files. Co
 ```tx
 📁 bin
 📁 config
-📄 config.yml  
+📄 config.yml
 📁 content     <-- Markdown files with publication text.
 📁 data        <-- YAML files with publication data.
 📄 README.md
@@ -55,7 +55,7 @@ Inside each Quire project, you will find the following directories and files. Co
 
 #### 📁 content
 
-The central part of Quire is the `content` directory where almost all of a publication’s text content will live as individual {{< q-def "Markdown" >}} files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Page Types & Structure*](/documentation/pages/).
+The central part of Quire is the `content` directory where almost all of a publication’s text content will live as individual {{< q-def "Markdown" >}} files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Pages*](/documentation/pages/).
 
 {{< q-class "box tip" >}}
 - New Quire projects started with the `quire new` command come with some demo content, images, and data as samples to start. These materials can be written over, re-used, or deleted altogether as you’d like.
@@ -67,11 +67,11 @@ What content doesn’t live in `content` directory as a Markdown file, will live
 
 #### 📁 static
 
-The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s {{< q-def "static-site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/documentation/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Outputting & Deploying Your Site*](/documentation/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/documentation/figure-images/)).
+The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s {{< q-def "static-site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/documentation/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Output Your Project*](/documentation/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/documentation/figure-images/)).
 
 #### 📄 README.md
 
-The `README.md` file is a code convention, and is a free space for information about the publication. **It is not used in the output Quire publication at all.** However, if you host your Quire project on {{< q-def "GitHub" >}} or other similar `git` project management sites, the `README.md` file is used for the repository’s front page description. Often it will include notes on development, on what usage is allowed, on how issues will be handled, and if contributions should be considered. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
+The `README.md` file is a code convention, and is a free space for information about the publication. **It is not used in the output Quire publication at all.** However, if you host your Quire project on {{< q-def "GitHub" >}} or other similar `git` project management sites, the `README.md` file is used for the repository’s front page description. Often it will include notes on development, on what usage is allowed, on how issues will be handled, and if contributions should be considered.
 
 ## Files for Developers
 
@@ -91,7 +91,7 @@ Inside each Quire project, you will find the following directories and files. De
 
 #### 📁 bin
 
-Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
+Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages, which you can learn more about in the [*Deploy Your Project*](documentation/deploy/#preview-your-project-with-github-pages).
 
 #### 📄 config.yml
 
@@ -99,15 +99,15 @@ This is a standard, required file for {{< q-def "Hugo" >}} and also for Quire. I
 
 #### 📁 config
 
-This is an additional configuration directory. While most Quire configuration happens in the [`config.yml`](#config-yml) file as explained above, the `config` directory gives more specific controls for different output formats and development environments. In most cases, changes won’t need to be made to these files until you are deploying your site. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
+This is an additional configuration directory. While most Quire configuration happens in the [`config.yml`](#config-yml) file as explained above, the `config` directory gives more specific controls for different output formats and development environments. In most cases, changes won’t need to be made to these files until you are deploying your site. Read more in [*Output Your Project*](/documentation/multiformat-output/).
 
 #### 📁 site
 
-This is where the built pages of the Quire website will live. This folder and its contents are automatically generated with the `quire site` command-in the Quire CLI, and should not be edited directly. Read more in [*Outputting & Deploying Your Site*](/documentation/multiformat-output/).
+This is where the built pages of the Quire website will live. This folder and its contents are automatically generated with the `quire site` command, and should not be edited directly. Read more in [*Output Your Project*](/documentation/multiformat-output/).
 
 #### 📁 themes
 
-The `themes` directory contains one or more {{< q-def "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command-in the Quire CLI, the default theme is `quire-starter-theme`. Read more in [*Customizing Styles*](/documentation/styles-customization/).
+The `themes` directory contains one or more {{< q-def "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command, the theme is `default`. Read more in [*Customizing Styles*](/documentation/styles-customization/).
 
 ## Create a Publication Outline
 

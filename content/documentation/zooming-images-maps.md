@@ -15,7 +15,8 @@ This feature adds deep-zooming to any image. You can either point Quire to an ex
 
 When adding your own images, Quire processes them into hundreds of individual image tiles. Each tile comprises a portion of the image at a particular zoom level to then be displayed in our existing zooming image viewer. Because the images have been tiled, users of your Quire project only need their browsers to load the tiles of the image portion and zoom level they're looking at at the moment. This means much faster page loads, and higher-resolution images.
 
-{{<q-figure id="iris-zoom" >}}
+{{< q-figure id="iris-zoom" >}}
+
 
 ## Maps
 
@@ -86,4 +87,4 @@ You’ll see there are some issues with the interface here (such as the duplicat
 
 The map is fully zoomable and global. The open-source images come from [OpenStreetMap](https://www.openstreetmap.org/). Just note that this is an external resource to your Quire project and is subject to change within your publication over time as OpenStreetMap updates its maps or changes its service.
 
-For the advanced user, is possible to further configure your map, and potentially point to different map image tiles in `/themes/quire-starter-theme/source/js/map.js`.
+For the advanced user, is possible to further configure your map, and potentially point to different map image tiles in `/themes/default/source/js/map.js`.

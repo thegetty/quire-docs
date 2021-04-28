@@ -12,15 +12,11 @@ The look and feel of your Quire publication can be customized at four different 
   3. Overriding specific theme {{< q-def "templates" >}} with your own custom version
   4. Creating an entirely new Quire theme.
 
-{{< q-class "box tip" >}}  
-- The default theme installed with every new Quire project is the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). The README file of that repository includes complete information about the customizations available in that specific theme.
-{{< /q-class >}}
-
 ## Change the Theme Style Variables
 
-Every Quire project has a theme inside the `themes` directory. When you first start a new project by typing the `quire new` command in your command-line interface, the default theme included is the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). In it, you can access simple text variables that will let you update text and background colors, some element sizes, fonts, paragraph indents, and more.
+When you first start a new Quire project by running the command `quire new`, a default theme is installed in the project's `themes` directory. This default theme includes a number of default style variables that will let you update text and background colors, some element sizes, fonts, paragraph indents, and more. This allows relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](/documentation/variables) includes information about the customizations available.
 
-To find the variables, open the `themes/quire-starter-theme` directory, navigate to the `source` sub-directory, and then `css`, and open the file called `variables.scss`.
+To find the variables, open the `themes/default` directory, navigate to the `source` sub-directory, and then `css`, and open the file called `variables.scss`.
 
 {{< q-figure id="1.12" >}}
 
@@ -104,6 +100,7 @@ In the above example, we are selecting the element with a {{< q-def "class" >}} 
 
 {{< /q-class >}}
 
+
 ## Override Theme Templates
 
 {{< q-def "CSS" >}} changes like those mentioned above are best for restyling existing elements. If you’d like to make a more structural change, say, to rearrange elements on the page, or add new elements altogether, you’ll need to alter the {{< q-def "template" >}} files that come in the {{< q-def "theme" >}}. That said, other than changing the {{< q-def "Variables" >}} in `variables.scss` file, as described above, it’s usually best not to make other changes directly in the theme itself. By not doing so, it’s easier to update your theme or switch out other themes later, not to mention easier to undo changes you’ve made.
@@ -164,39 +161,3 @@ By default, Quire has a number of pre-defined page types like `"essay"`, `"entry
 Whether in the {{< q-def "theme" >}} or in your project directory, all shortcodes go in the `layouts` directory and `shortcodes` sub-directory. The name of the shortcode file corresponds to the way the shortcode is called in the {{< q-def "Markdown" >}} files. So `q-figure.html` is the shortcode `{{</* q-figure */>}}`.
 
 And if you make a mistake or change your mind later, you can simply delete the copy of the file and Quire will go back to using the original template as provided in the theme. This method can also be used to add completely new templates and even new shortcodes.
-
-## Create a New Quire Theme
-
-TK
-
-## Update Your Theme to a Newer Version
-
-Before updating your {{< q-def "theme" >}}, make note of any changes you made to it as these will need to be manually copied over to the updated version of the theme if you want to keep them. Usually, this would only be changes to the [style variables](#changing-the-style-variables-in-the-theme).
-
-1. In the theme repository on GitHub, use the “Clone or download” button to download a ZIP file of the most current version of the theme or go to the repository’s Releases page to choose a particular release.
-
-2. Once downloaded, unzip the package.
-
-3. In the `themes` folder of your Quire project, delete the existing folder there and replace it with the one you just downloaded. The replacement folder must be named the same as the original.
-
-4. In your {{< q-def "command-line interface" >}}, navigate to your project folder and run the command `quire install`. This will install your theme’s dependencies.
-
-5. Once the install process is complete, manually copy over any changes/customizations to the theme that had been made previously, and run `quire preview` to confirm.
-
-You may also need to clear your browser cache to get the new theme stylesheets to reload.
-
-## Change to a New Theme
-
-1. In the theme repository on GitHub, use the “Clone or download” button to download a ZIP file of the most current version of the theme or go to the repository’s Releases page to choose a particular release.
-
-2. Once downloaded, unzip the package.
-
-3. Add the new theme package to the `themes` folder of your Quire project. Leave the old theme there for now, until you confirm your new theme works and you are sure you want to use it.
-
-4. In your project’s `config.yml` file, change the name listed under `theme` from `"quire-starter-theme"` to the name of the new theme.
-
-5. In your {{< q-def "command-line interface" >}}, navigate to your project folder and run the command `quire install`. This will install your theme’s dependencies.
-
-6. Once the install process is complete, run `quire preview` to confirm.
-
-You may also need to clear your browser cache to get the new theme stylesheets to reload.
