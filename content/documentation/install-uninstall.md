@@ -25,7 +25,7 @@ If you’re eager to get started, this will install the complete Quire package b
 The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. If you see these errors, or if you see "command not found" after entering `quire --help` in step 4., search our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 
 
-{{< q-class "box warning tip" >}}
+{{< q-class "box warning" >}}
 - The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. In particular, if you see error messages that say "permission denied" you will need to run the install command as an administrator or "super user". You can do this with the `sudo` ("superuser do") command:
 ```
 sudo npm install --global @thegetty/quire-cli
