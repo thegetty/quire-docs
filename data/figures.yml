@@ -336,3 +336,7 @@ figure_list:
   - id: "iris-zoom"
     src: /screenshots/iiif-iris-zoom.jpg
     caption: "An example of deep zooming."
+
+  - id: "markdown_example"
+    src: /markdown_example.jpg
+    caption: ""
