@@ -7,7 +7,14 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## News
 
-*Check out the [latest issue of our monthly e-newsletter](#) or [sign up to receive updates.](https://newsletters.getty.edu/h/t/3482055B10CD0F24)*
+*Check out the [latest issue of our monthly e-newsletter](https://newsletters.getty.edu/campaigns/reports/viewCampaign.aspx?d=t&c=D97F4668808A2800&ID=E8AED17B4070D5EC2540EF23F30FEDED&temp=False&tx=0&source=Report) or [sign up to receive updates.](https://newsletters.getty.edu/h/t/3482055B10CD0F24)*
+
+**2021**
+
+- May 13, 2021: New feature added - IIIF compatibility
+- April 6, 2021: Quire v0.19.0 released
+
+**2020**
 
 - Dec. 1, 2020: Quire [newsletter](https://newsletters.getty.edu/t/t-DFDC53BEAACB81BA2540EF23F30FEDED) and [community forum](https://github.com/thegetty/quire/discussions) are launched
 - Oct 3, 2020: [Six new features](/about/roadmap/) added to our roadmap
@@ -21,7 +28,8 @@ abstract: "Get the latest news and info about upcoming events"
 
 | Event | Date | Description |
 | -- | -- | -- |
-| MCN | Nov 10, 2020 | “Quire—A Sustainable Digital Publishing Solution for Museums of All Sizes,” with Amanda Helton and Kathryn Wade from the San José Museum of Art, https://sched.co/dfXr.  |
+| -- | -- | -- |
+| NMPS | Date TBA| “Digital Publishing Today: Three Case Studies” moderated by Erin Cecele Dunigan, with Alex Bortolot presenting on Minneapolis Institute of Art's forthcoming Quire publication, alongside other panelists presenting recent collections-based digital publishing projects. |
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
@@ -29,11 +37,13 @@ abstract: "Get the latest news and info about upcoming events"
 
 | Event | Date | Description |
 | -- | -- | -- |
+| -- | -- | -- |
+| MCN | Nov 10, 2020 | “Quire—A Sustainable Digital Publishing Solution for Museums of All Sizes,” with Amanda Helton and Kathryn Wade from the San José Museum of Art, https://sched.co/dfXr.  |
 | Museum Publishing Now (NMPS) | July 2020 | “Think Digital, Part 1: Conceptualizing; Part 2: Implementing,” with Greg Albers. [Recording available with event registration](https://grahamschool.regfox.com/digital-nmps2020). |
 | Open Publishing Fest | May 28, 2020 | “Quire: Multiformat Publishing Solutions for Art Books and Beyond,” with Greg Albers, Erin Dunigan, Jayna Swartzman-Brosky, Nancy Um, and Amanda Helton, https://youtu.be/SB1Y5GfDP7c. |
 | MCN (Museum Computer Network) | Nov 3, 2019 | “Plague Water for Everyone! How open source digital publishing can organize & amplify multi-partner research projects,” with Alex Bortolot and Kris Thayer from the Minneapolis Institute of Art. Later reprised in January 2020 for the Museum Publishing Digital Interest Group, https://youtu.be/gE8JrMLrOQM. |
 | Webinar: Quire Demo | July 11 & 26, 2018 | A 90-minute webinar demonstrating Quire installation and basic operation, https://youtu.be/kFTcJLbMDxs. |
-| Association of University Presses (AUP) | June 18, 2018 | “Publishing Digital Projects,” with Greg Albers presenting on Quire alongside panelists represeting other projects from the University of British Columbia Press, Stanford University Press, and Wayne State University Libraries. |
+| Association of University Presses (AUP) | June 18, 2018 | “Publishing Digital Projects,” with Greg Albers presenting on Quire alongside panelists representing other projects from the University of British Columbia Press, Stanford University Press, and Wayne State University Libraries. |
 | Library Publishing Forum (LPF) | May 21, 2018 | “Owned by the Academy: A Preconference on Open Source Publishing Software,” with Greg Albers presenting Quire in a lightning talk and showcase session. |
 | National Museum Publishing Seminar (NMPS) | May 3, 2018 | “Quire Digital Publishing Platform: Demo and Q&A,” with Greg Albers and Sarah Wambold. |
 | Museums and the Web (MW) | April 18, 2018 | “Sustainable Multi-Format Digital Publishing with Quire,” a half-day workshop with Greg Albers and Sarah Wambold. |
