@@ -1,5 +1,5 @@
 ---
-title: Quire CLI Commands
+title: Quire Commands
 weight: 4200
 type: essay
 abstract: "Learn how to start and preview projects, output files, and more"
