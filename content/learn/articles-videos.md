@@ -9,7 +9,7 @@ abstract: "How-to guides, demos, webinars, and more"
 
 *Step-by-step guides exploring the basic features and functionality of Quire.*
 
-[Learning Command-Line (MacOS)](/learn/command-line/)
+[Learning Command Line (MacOS)](/learn/command-line/)
 
 [Learning GitHub](/learn/github/)
 
