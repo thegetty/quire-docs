@@ -115,7 +115,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 
 <div class="image-list">
 
-**Flexible Design**
+**Customizable Design**
 
 Allows for a wide range of possible custom features and styles
 
