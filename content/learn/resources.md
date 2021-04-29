@@ -16,9 +16,9 @@ abstract: "List of helpful tools and other resources"
 
 Command line is a text-based interface that enables you to navigate your computer's files and perform tasks by running certain commands.
 
-- [Command-line Crash Course](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
+- [Command line Crash Course](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
 - [Codeacademy: Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line)
-- [Video: Really Friendly Command Line Intro, Tracy Osborn](https://www.youtube.com/watch?v=d9s8co9POYY&feature=youtu.be)
+- [Video: Really Friendly Command Line Intro](https://www.youtube.com/watch?v=d9s8co9POYY&feature=youtu.be)
 
 ## GitHub
 
@@ -28,12 +28,12 @@ GitHub is a project management platform centered around git-based version contro
 - [GitHub Learning Lab](https://lab.github.com/)
 - [GitHub Glossary](https://docs.github.com/en/github/getting-started-with-github/github-glossary)
 - [Git Large File Storage (LFS)](https://git-lfs.github.com/)
-- [Video: Git and GitHub for Poets, The Coding Train](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
+- [Video: Git and GitHub for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
 
 
 ## HTML & CSS
 
-HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are two important technologies for building web pages. HTML primarily controls page structure, while CSS controls the visual layout.  
+HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are two important programming languages for building web pages. HTML primarily controls page structure, while CSS controls the visual layout.  
 
 - [Interneting is Hard](https://www.internetingishard.com/)
 - [w3schools.com](https://www.w3schools.com/html/default.asp)
@@ -44,7 +44,7 @@ HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are two import
 Hugo is the {{< q-def "static-site generator" >}} underlying Quire. Their documentation and training materials are a great place to go if you’re interested in customizing Quire’s templates or shortcodes.
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
-- [Video: Mike Dane's Hugo - Static Site Generator Tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1)
+- [Video: Hugo - Static Site Generator Tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1)
 
 ## IIIF
 
@@ -56,7 +56,7 @@ IIIF (International Image Interoperability Framework) is an emerging standard fo
 
 ## Markdown
 
-Markdown is a markup language used to format plain-text documents.
+Markdown is a markup language used to format plain-text documents. It is used when working in a text editor.
 
 - [GitHub: Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 - [GitHub: Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
@@ -74,24 +74,23 @@ With Netlify, you can build a quick preview site or link directly to your Github
 
 PrinceXML powers Quire’s PDF output by applying customizable print CSS styles to the web preview of a Quire publication.
 
-- [“Designing For Print With CSS,” Rachel Andrew](https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
+- [Designing For Print With CSS](https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
 - [PrinceXML Documentation](https://www.princexml.com/doc/intro-userguide/)
 
 ## Pandoc
 
 Pandoc is used for Quire’s EPUB output, but it is also a useful tool for converting text documents like Word, into Markdown.
 
-- [“Microsoft Word to Markdown Conversion”](/documentation/fundamentals/#microsoft-word-to-markdown-conversion)
 - [Pandoc User's Guide](https://pandoc.org/MANUAL.html)
 
 ## Text Editors
 
 A text editor is a computer program that allows you to create an edit plain text files, such as Atom or Visual Studio Code.
 
-- [“Text editor tips and tricks”, Alejandro Bezdjian](https://dev.to/alebian/text-editor-tips-and-tricks-to-boost-your-productivity-2gc5)
-- [RegexOne: Learn Regular Expressions](https://regexone.com)
+- [Text Editor Tips and Tricks](https://dev.to/alebian/text-editor-tips-and-tricks-to-boost-your-productivity-2gc5)
 - [Atom Flight Manual](https://flight-manual.atom.io/)
 - [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
+- [RegexOne: Learn Regular Expressions](https://regexone.com)
 
 ## YAML
 
