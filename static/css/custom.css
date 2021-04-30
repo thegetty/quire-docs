@@ -1172,9 +1172,9 @@ a.quire-navbar-controls__site-logo img {
 code {
   color: inherit;
   background-color: var(--warm-gray-10);
-  padding: 0 .25em;
+  padding: 0 .35em;
   font-family: 'Roboto Mono', monospace;
-  font-weight: 300;
+  font-weight: inherit;
   font-size: .9em;
 }
 dt code {
