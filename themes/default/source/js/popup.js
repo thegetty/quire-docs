@@ -25,6 +25,12 @@ export default function(gallerySelector, mapArr) {
   `;
 
   /**
+  * Popup Leaflet instances
+  */
+  let deepzoom;
+  let map;
+
+  /**
    * @description Find all instances of soundcloud players
    * and stop them
    */
@@ -56,16 +62,16 @@ export default function(gallerySelector, mapArr) {
     const setCaption = self => {
       if (self) {
         $(".mfp-title").hide();
-        self.caption =
-          $(self.currItem.el)
-            .find(".figure-caption")
-            .html() ||
-          $(self.currItem.el)
-            .parent()
-            .find("figcaption")
-            .html();
-        if (self.caption !== undefined) {
-          self.captionCont = `<div class="quire-caption-container"><span class="caption">${self.caption}</span></div>`;
+        const figureWrapper = $(self.currItem.el).closest('.q-figure__wrapper');
+        const captionParts = ['label-text', 'caption-content', 'credit'];
+        const captionWrapper =$(`<span class="caption"></span>`);
+        captionParts.forEach((item) => {
+          const content = $(figureWrapper).find(`.quire-figure__${item}`).prop('outerHTML');
+          content ? captionWrapper.append(content) : null;
+        })
+        if (captionWrapper.html()) {
+          self.captionCont = `
+            <div class="quire-caption-container">${captionWrapper.prop('outerHTML')}</div>`;
           $(".mfp-wrap").prepend(self.captionCont);
         }
       } else {
@@ -88,6 +94,22 @@ export default function(gallerySelector, mapArr) {
       default:
         setCaption();
         break;
+    }
+  };
+
+  /**
+   * If map or deepzoom leaflet instances are defined, removes them.
+   * There should only be one defined at a time
+   * @todo The Map and Deepzoom classes should be refactored, at least to have the same signature
+   */
+  const tearDownMap = () => {
+    if (deepzoom) {
+      deepzoom.map.remove();
+      return;
+    }
+    if (map) {
+      map.remove();
+      return;
     }
   };
 
@@ -188,6 +210,7 @@ export default function(gallerySelector, mapArr) {
         }
       },
       change: function() {
+        tearDownMap();
         this.current = this.index + 1;
         if (document.querySelector(".counter")) {
           document.querySelector(
@@ -200,7 +223,7 @@ export default function(gallerySelector, mapArr) {
         if (id !== "" || id !== undefined) {
           if (id.indexOf("map") !== -1) {
             setTimeout(() => {
-              new Map(id);
+              map = new Map(id);
             }, waitForDOMUpdate);
           }
           if (id.indexOf("deepzoom") !== -1) {
@@ -209,13 +232,13 @@ export default function(gallerySelector, mapArr) {
               let image = new Image();
               image.src = url;
               image.onload = function() {
-                new DeepZoom(id, mapArr);
+                deepzoom = new DeepZoom(id, mapArr);
               };
             }, waitForDOMUpdate);
           }
           if (id.indexOf("iiif") !== -1) {
             setTimeout(() => {
-              new DeepZoom(id, mapArr);
+              deepzoom = new DeepZoom(id, mapArr);
             }, waitForDOMUpdate);
           }
         }
