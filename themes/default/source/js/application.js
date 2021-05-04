@@ -104,7 +104,7 @@ window["toggleSearch"] = () => {
  * @description Set up the simple image slider used on catalogue entry pages for
  * objects with multiple figure images. See also slideImage function below.
  */
-function sliderSetup() {
+async function sliderSetup() {
   toggleFullscreen(
     mapArr,
     document.getElementById("toggleFullscreen"),
@@ -132,17 +132,16 @@ function sliderSetup() {
     firstImage.css("display", "flex");
     lastImage.addClass("last-image");
   });
-  let images = [...document.querySelectorAll(".quire-deepzoom-entry")]
-    .filter(v => {
+  const images = [...document.querySelectorAll(".quire-deepzoom-entry")];
+  const imageSrcs = images.filter(v => {
       return v.getAttribute("src") !== null ? v : "";
     })
     .map(v => {
       return v.getAttribute("src");
     });
-  preloadImages(images, () => {
-    mapSetup(".quire-map-entry");
-    deepZoomSetup(".quire-deepzoom-entry", mapArr);
-  });
+  await preloadImages(imageSrcs);
+  mapSetup(".quire-map-entry");
+  deepZoomSetup(".quire-deepzoom-entry", mapArr);
 }
 
 /**
@@ -193,6 +192,7 @@ function scrollToHash() {
     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
+    .not('.popup')
     .click(function(event) {
       // only override default link behavior if it points to the same page
       if (this.pathname.includes(window.location.pathname)) {
@@ -482,7 +482,8 @@ function validateSize(map) {
 * @param {object} container element
 * @param {number} container margin
 */
-function setPositionInContainer(el, container, margin = 0) {
+function setPositionInContainer(el, container) {
+  const margin = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--gap'));
   const elRect = el.getBoundingClientRect();
   const containerRect = container.getBoundingClientRect();
 

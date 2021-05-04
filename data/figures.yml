@@ -335,7 +335,13 @@ figure_list:
 
   - id: "iris-zoom"
     src: /screenshots/iiif-iris-zoom.jpg
-    caption: "An example of deep zooming."
+    caption: "Three IIIF image tiles from the same painting, at three different levels of zoom. Each zoom level can be comprised of hundreds or even thousands of individual tiles."
+
+  - id: "irises"
+    src: /screenshots/irises.jpg
+    media_type: iiif
+    iiif: "/img/iiif/processed/00094701/info.json"
+    caption: "A sample high-resolution IIIF image (*Irises*, Vincent Van Gogh, 1889. J. Paul Getty Museum.) with six levels of zoom, created from a source image that was 8,448px on the longest side using the `quire process --iiif` command. The image files for this are in the `static/img/iiif/processed` directory of this Quire publication."
 
   - id: "markdown_example"
     src: /markdown_example.jpg

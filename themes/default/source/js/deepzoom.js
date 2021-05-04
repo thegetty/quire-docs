@@ -5,7 +5,8 @@ import "leaflet-iiif";
 class DeepZoom {
   // add map array to access map objects outside of Deepzoom class
   constructor(id, mapArr) {
-    this.el = id;
+    this.id = id;
+    this.el = document.querySelector(`#${this.id}`);
 
     // remove and refresh before init
     // @ts-ignore
@@ -22,8 +23,21 @@ class DeepZoom {
       }
     }
 
-    this.imageURL = $(`#${this.el}`).attr("src");
-    this.iiif = $(`#${this.el}`).data("iiif");
+    this.catalogueEntry = this.el.getAttribute("data-catalogue-entry");
+    this.imageURL = this.el.getAttribute("src");
+    this.iiif = this.el.getAttribute("data-iiif");
+
+    /** 
+     * Leaflet options object
+     * https://leafletjs.com/reference-1.7.1.html#map-option
+     */
+    const options = {
+      maxZoom: this.el.getAttribute('data-zoom-max') || 6,
+      minZoom: 1,
+      scrollWheelZoom: !this.catalogueEntry,
+      touchZoom: !this.catalogueEntry,
+      zoom: 1
+    };
 
     if (this.imageURL) {
       let image = new Image();
@@ -33,16 +47,10 @@ class DeepZoom {
           this.imgHeight = arr.height;
           this.imgWidth = arr.width;
           this.center = [0, 0];
-          this.defaultZoom = 0;
-          let zoom = {
-            min: 0,
-            default: 1,
-            max: 5
-          };
-          this.map = this.createMap(zoom);
+          this.map = this.createMap(options);
           // add leaflet objects to array
           mapArr.push(this.map);
-          if ($(`#${this.el}`).data("catalogue-entry") === undefined) {
+          if (this.catalogueEntry === undefined) {
             window["mapID"] = this.map;
           }
           this.southWest = this.map.unproject(
@@ -61,29 +69,16 @@ class DeepZoom {
         .catch(error => console.error(error));
     } else if (this.imageURL && this.iiif) {
       this.center = [0, 0];
-      this.defaultZoom = 0;
-      let zoom = {
-        min: 0.5,
-        default: 0,
-        max: 4
-      };
-      this.map = this.createMap(zoom);
-      if ($(`#${this.el}`).data("catalogue-entry") === undefined) {
-        // @ts-ignore
+      this.map = this.createMap(options);
+      if (this.catalogueEntry === undefined) {
         window["mapID"] = this.map;
       }
       this.addLayer(this.iiif, this.map);
       this.runMapTimeouts(this.map);
     } else {
       this.center = [0, 0];
-      this.defaultZoom = 0;
-      let zoom = {
-        min: 0.5,
-        default: 0,
-        max: 4
-      };
-      this.map = this.createMap(zoom);
-      if ($(`#${this.el}`).data("catalogue-entry") === undefined) {
+      this.map = this.createMap(options);
+      if (this.catalogueEntry === undefined) {
         window["mapID"] = this.map;
       }
       this.addLayer(this.iiif, this.map);
@@ -153,15 +148,15 @@ class DeepZoom {
     });
   }
 
-  /** @param {object} zoom must be an object */
-  createMap(zoom) {
-    return L.map(this.el, {
+  /** 
+   * @param {object} Leaflet options
+   */
+  createMap(options) {
+    return L.map(this.id, {
       center: [0, 0],
       crs: L.CRS.Simple,
-      zoom: zoom.default,
-      minZoom: zoom.min,
-      maxZoom: zoom.max,
-      renderer: L.canvas()
+      renderer: L.canvas(),
+      ...options
     });
   }
 

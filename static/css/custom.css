@@ -1181,6 +1181,11 @@ dt code {
   font-weight: 700;
 }
 
+/* For code in captions, in the figure modals */
+div.quire-caption-container > span code {
+  background-color: var(--gray-70);
+}
+
 /*  The styles below are for the Chroma syntax highlighter built in to Hugo.
     Read more at: https://gohugo.io/content-management/syntax-highlighting/
 
