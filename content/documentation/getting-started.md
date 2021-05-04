@@ -91,7 +91,7 @@ Inside each Quire project, you will find the following directories and files. De
 
 #### 📁 bin
 
-Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages, which you can learn more about in the [*Deploy Your Project*](documentation/deploy/#preview-your-project-with-github-pages).
+Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages, which you can learn more about in the [*Deploy Your Project*](documentation/site-deploy/#preview-your-project-with-github-pages).
 
 #### 📄 config.yml
 
