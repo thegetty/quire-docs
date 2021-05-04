@@ -97,7 +97,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 4. Set the `canonifyURLs` to `true`.
 
-5. Next, navigate to `themes/quire-starter-theme/webpack/webpack.config.prod.js`.
+5. Next, navigate to `themes/default/webpack/webpack.config.prod.js`.
 
 6. So that the site fonts display properly, change line 80 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/img/"` And change line 92 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/fonts/"`.
 
