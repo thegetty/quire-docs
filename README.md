@@ -1,84 +1,44 @@
-![](static/img/quire-logo--sm.png)
-
 # Quire
 
-**Create scholarly, visually rich digital books that last**
+Developed by Getty, Quire is a new, multiformat publishing tool available for immediate access and use. Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open-source software.
 
-Online • Print • E-book
+**Please see our main repository wwww.github.com/thegetty/quire to learn more about Quire, obtain a license, participate in the forum, submit issues, and more.**
 
-https://thegetty.github.io/quire/
+## Help Us Improve the Quire Docs & Website
 
-**Quire is currently in closed development. For access, please fill out our [Quire Beta Request](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform) form.**
+One way you can contribute to Quire is by helping us improve our documentation and website. These resources are a work in progress, and we value your contributions. No matter what level of experience you have, we welcome all contributions, big and small.
 
-Created by [Getty](https://www.getty.edu), Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web, from a single set of plain text files. All without ever paying a fee, or setting up and maintaining a complicated server.
+Please see our [Contributing Guidelines](https://github.com/thegetty/quire/edit/main/CONTRIBUTING.md) for more detailed guidelines on making contributions to Quire.
 
-Quire is an ideal tool for anyone seeking to publish a beautiful, scholarly digital book optimized for visual imagery and designed to ensure its content is widely accessible and stable.
+Examples of good documentation and website contributions include:
 
-- Outputs publications in multiple formats (web, ebook, PDF, print-on-demand)
-- Keeps source content in nonspecialized plain text to ensure reusability
-- Supports visually rich scholarship in the tradition of print publishing
-- Allows for a wide range of possible custom features and styles
-- Persists without ongoing maintenance or updates once published
-- Empowers users at any skill level to create dynamic feature-rich digital publications
+- Propose a new section
+- Copyedit sections
+- Correct one-off typos
+- Write new content
+- Translate our documentation
 
-Check out [the demo site](https://thegetty.github.io/quire-starter/), and [some of the Getty’s books developed with early versions of Quire.](http://www.getty.edu/publications/digital/digitalpubs.html)
+### Get Started
 
-Quire is centered around [**Hugo**](https://github.com/gohugoio/hugo), and uses [PrinceXML](http://www.princexml.com/) for PDF generation, [pandoc](https://pandoc.org/) for EPUBs, and [Kindle Previewer](https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765261) for MOBIs. It consists of four primary repositories, all of which but this one are private during development ([sign up for access](https://docs.google.com/forms/d/e/1FAIpQLSckvPWWyyfZJko6JTqf3slcXCV8vcCgQjAzoW4MfHEt9hDuxQ/viewform?usp=sf_link)):
+1. Post a new issue or comment on an existing issue [in our issue tracker](https://github.com/thegetty/quire-docs/issues). Please label your issues to the best of your abilities.
 
-- [quire](https://github.com/thegetty/quire) (documentation and homepage)
-- [quire-cli](https://github.com/thegetty/quire-cli)
-- [quire-starter](https://github.com/thegetty/quire-starter)
-- [quire-starter-theme](https://github.com/thegetty/quire-starter-theme)
+2. Clone this repository by following [these instructions](https://quire.getty.edu/documentation/github/#installing-an-existing-quire-project-from-github).
+  - We recommend using [GitHub Desktop](https://desktop.github.com/) to clone your repository and manage any changes. Refer to [GitHub Desktop documentation](https://docs.github.com/en/desktop) for further details.
+  - Be sure to run `quire install` before proceeding.
 
-## Quire Contributors
+3. [Create a new branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-branches) and make your changes.
+  - Please review our [Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide) and ensure you are contributing in the style of the project to the best of your abiltiies.
+  - Test your changes by running `quire preview`.
 
-### Core Team
+4. Submit a pull request through GitHub.
+  - Reference any relevant issues or supporting documentation in your pull request description (for example, “Closes #203.”)
+  - Explain what the changes do and what your approach was. If there were alternate ways of doing it, mention them and tell us why you didn’t choose them.
+  - If this is a Work in Progress pull request, comment on where you are and what your next steps are.
 
-- Greg Albers ([@geealbers](https://github.com/geealbers)), product manager
-- David Newbury ([@workergnome](https://github.com/workergnome)), product manager
-- Matthew Hrudka ([@mphstudios](https://github.com/mphstudios)), lead maintainer
-- Erin Cecele Dunigan ([@Erin-Cecele](https://github.com/Erin-Cecele)), community manager
+5. See your changes merged into the documentation and website!
 
-Contact us at [quire@getty.edu](mailto:quire@getty.edu).
+## License
 
-### Contributors
+© 2021 J. Paul Getty Trust
 
-Thank you to all our growing list of contributors who have made Quire what it is, and are working on what it will be! They’ve contributed code, written and edited documentation, run events, and blogged and spoken about Quire.
-
-- [@aheltonsjma](https://github.com/aheltonsjma)
-- [@anderspollack](https://github.com/anderspollack)
-- [@antoinentl](https://github.com/antoinentl)
-- [@daniel-keller](https://github.com/daniel-keller)
-- [@egardner](https://github.com/egardner)
-- [@fchasen](https://github.com/fchasen)
-- [@hbalenda](https://github.com/hbalenda)
-- [@kalvarenga](https://github.com/kalvarenga)
-- [@kristhayer11](https://github.com/kristhayer11)
-- [@mandrijauskas](https://github.com/mandrijauskas)
-- [@MillsArtMuseum](https://github.com/MillsArtMuseum)
-- [@mbelhu](https://github.com/mbelhu)
-- [@naeluh](https://github.com/naeluh)
-- [@nancyum](https://github.com/nancyum)
-- [@oncletom](https://github.com/oncletom)
-- [@swambold1](https://github.com/swambold1)
-- [@victoriabarry](https://github.com/victoriabarry)
-
-## This Repository
-
-This repository, https://github.com/gettypubs/quire, is the central hub for Quire, and is also the Quire website and documention, which is built with Quire.
-
-This repo was last built with the following software versions:
-
-- Quire 0.18.0
-- Node 12.18.3 / npm 6.14.6
-- Hugo 0.72
-- PrinceXML 13.5
-- Pandoc 2.10.1
-
-While v0.18.0 of the core Quire Starter Theme was used, a number of customizations were made:
-
-- Add custom cover layout and style options for the homepage
-- Display the sidebar menu as always visible and fixed when the screen is wide enough
-- Add custom shortcodes for the pop-up glossary definitions, and the community showcase
-
-Within the theme itself, changes were made to the `source/css/variables.scss` file. Outside of the theme, customizations can be found in the project’s `layouts` directory, and in `static/css/custom.css`.
+The text and images of Quire’s documentation is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
