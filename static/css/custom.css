@@ -1150,9 +1150,11 @@ a.quire-navbar-controls__site-logo img {
 .quire-page__content .content dl.quire-glossary dt {
   display: inline;
   margin-right: .3rem
+  font-weight: 700
 }
 .quire-page__content .content dl.quire-glossary dd {
   display: inline;
+  margin-left: .2em
 }
 .quire-page__content .content dl.quire-glossary dd::after {
   content: " ";
