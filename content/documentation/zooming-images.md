@@ -23,7 +23,11 @@ To include existing IIIF images in your project, you will need the URL for the `
 
 The `info.json` file is [a required component of all IIIF images](https://iiif.io/api/image/3.0/#5-image-information) and includes basic information about the full image and the availability of image tiles at different zoom levels.
 
-If you are working with your own institution’s IIIF repository, your digital department will be able to help you identify the `info.json` URLs you need. If you are working with other, open IIIF repositories, you may need to do some digging to find the right URLs. Oftentimes, institutions will provide public access to the IIIF `manifest.json` file for a given object in their collection. This is a more fullsome IIIF document that includes much more information about the image and the resources available. Within that `manifest.json` file however, you can look under `sequences[0].canvases[0].images[0].resource.service.@id`. The URL in the `@id` field, when appended with `/info.json`, will be what you need to add the image to your Quire project.
+If you are working with your own institution’s IIIF repository, your digital department will be able to help you identify the `info.json` URLs you need.
+
+If you are working with other, open IIIF repositories, more often than not you will find a URL to the IIIF `manifest.json` file, rather than an `info.json` file. For instance the Art Institute of Chicago has the [IIIF Manifest URL available in plain text](https://www.artic.edu/artworks/14586/the-poet-s-garden#h-iiif-manifest) on every page of its collection where IIIF is available. The Getty Museum instead includes [a IIIF logo on the artwork page](https://www.getty.edu/art/collection/objects/826/vincent-van-gogh-irises-dutch-1889/#iiif_logo), from which you can extract the `manifest.json` URL which appears at the end of the URL when you click.
+
+The `manifest.json` file is a more fullsome IIIF document that includes much more information about the image and the resources available. Within that `manifest.json` file however, you can look under `sequences[0].canvases[0].images[0].resource.service.@id`. The URL in the `@id` field, when appended with `/info.json`, will be what you need to add the image to your Quire project.
 
 In this example `manifest.json` file, the URL in the last `@id` field is what we’re looking for.
 
@@ -89,15 +93,19 @@ Once you’ve identified the URL to the proper `info.json` file, you can jump to
 You can create your own deep-zooming IIIF images directly within Quire. But there are a couple things you should know from the outset:
 
 1. **Processing IIIF image tiles is a labor intensive process.** It is highly dependent on the processing power of the computer you’re working on. We’ve found that processing a single 130MB image on an average to good machine can take upwards of 20 minutes or more. Three 6–7MB images may take only two or three minutes. Dedicate time to IIIF processing in batches when you’re not running other software on your computer.
-2. **You may need to setup an additional hosting service for IIIF image files, outside your main project files.** Though small in individual file size, the sheer quantity of files (hundreds and sometimes thousands) that are associated with deep-zooming images can cause preview and build issues within your Quire project. If you have more than around 12 IIIF images you’ll want to store them outside your project as detailed below.
+2. **You may need to setup an additional hosting service for IIIF image files, outside your main project files.** Though small in individual file size, the sheer quantity of files (hundreds and sometimes thousands) that are associated with deep-zooming images can cause preview and build issues within your Quire project. If you have more than around 12 IIIF images you’ll want to [host them outside your project](#3-host-the-iiif-image-tiles).
 
 ### 1. Prepare High-Resolution Source Images
 
-We recommend using uncompressed, full-qualtiy JPEG (jpg) or JPEG 2000 (jp2/jpf/jpx) files for IIIF processing. TIFs can also work, but are typically much larger file sizes and don’t necessarily provide better end results. Quire can also process SVG and PNG files.
+Because the IIIF image tiles are ultimately saved as JPEGs, **we recommend starting with uncompressed, full-qualtiy JPEG (jpg) or JPEG 2000 (jp2/jpf/jpx) files for IIIF processing**. TIFs can also work, but are typically much larger file sizes and don’t necessarily provide better end results. Quire can also process SVG and PNG files.
 
-Use the table below to size your source images prior to IIIF processing. Note that images larger than the recommended size for a zoom level will work, but will be downsized to the final image size regardless and will cause the image processing to take longer due to the excess file size.
+Use the table below to size your source images prior to IIIF processing. Images that deviate from the recommend size guidelines for source images can also end up with misalignments and glitches at some zoom levels. The longest pixel dimension should be divisible by the 256px tile size, and be as close as possible to the final tiled image size without being equal to that size.
 
-Images that deviate from the recommend size guidelines for source images can also end up with misalignments and glitches at some zoom levels. The longest pixel dimension should be divisible by the 256px tile size, and be as close as possible to the final tiled image size without being equal to that size.
+{{< q-class "box tip" >}}
+
+- Save some time! Images larger than the recommended size for a zoom level will work, but will be downsized to the final image size regardless and will cause the image processing to take longer due to the excess file size.
+
+{{< /q-class >}}
 
 | Desired Zoom Levels | Final Size of Tiled Image on Longest Side | Recommended Size of Source Image on Longest Side |
 | ---------------------- | -------------- | -------------- |
@@ -129,7 +137,7 @@ You will need the path to the `info.json` file in order to include it in your `f
 
 ### 3. Host the IIIF Image Tiles
 
-IIIF image tiles can be hosted statically (meaning you don’t need a special server setup), just like the website edition of your Quire edition. In fact, a modest number of IIIF images (around a dozen or so) can even be hosted within the project itself. In these cases, the IIIF files you’ve processed with the `quire process --iiif` command can be left where they are. It is also fine to move the processed IIIF image folders into different locations within your `static` directory, you will just need to update the paths to their `info.json` files accordingly when you’re adding them to your `figures.yml` file as explained below.
+IIIF image tiles can be hosted statically (meaning you don’t need a special server setup), just like the website edition of your Quire edition. In fact, a modest number of IIIF images (around a dozen or so) can even be hosted within the project itself. In these cases, the IIIF files you’ve processed with the `quire process --iiif` command can be left where they are. It is also fine to move the processed IIIF image folders into different locations within your `static` directory, you will just need to update the paths to their `info.json` files accordingly when you’re adding them to your `figures.yml` file as explained in the next section.
 
 With more IIIF images than twelve or so, you’re going to need to host them elsewhere, and then point to them from your project. This is because though small in individual file size, the sheer quantity of files (hundreds and sometimes thousands) that are associated with deep-zooming images can cause issues when trying to run `quire preview`, as well as if you’re using GitHub or a related service to host your project code.
 
@@ -151,7 +159,7 @@ For hosting the image tiles, of you have institutional support, your digital dep
 
 To display a IIIF image in your project, you need to point to a IIIF `info.json` file for the image. Either one you’ve identified from an [external source](#use-existing-iiif-images), or one you’ve [created yourself](#creating-your-own-iiif-images) with `quire process --iiif`. If it is an image you processed yourself and it is still in the `processed/` directory, the path to the JSON file would be `/img/iiif/processed/FILENAME/info.json`.
 
-Along with the path to the `info.json` file, you also need to include `media_type: "iiif"` and a path to a lower-res version of the image, hosted in your project’s `static/img` directory (which again is used for Quire’s PDF and e-book outputs). All of this goes in your `figures.yml` file.
+Along with the path to the `info.json` file, you also need to include `media_type: "iiif"` and a path to a [lower-res static fallback version](#include-a-static-fallback-image) of the image, hosted in your project’s `static/img` directory (which again is used for Quire’s PDF and e-book outputs). All of this goes in your `figures.yml` file.
 
 ```yaml
 - id: "irises"
@@ -160,7 +168,7 @@ Along with the path to the `info.json` file, you also need to include `media_typ
   iiif: "https://data.getty.edu/museum/api/iiif/671108/info.json"
 ```
 
-The image can then be added to your Markdown files using the `q-figure-zoom` shortcode. This will display the static image on the page, and then when clicked, will open the figure viewer for the fully zoomable IIIF version.
+The image can then be added to your Markdown files using the `q-figure-zoom` shortcode, as shown below. This will display the static image on the page, and then when clicked, will open the figure viewer for the fully zoomable IIIF version. (See the page on [*Figure Images*](/documentation/figure-images/) for more information on the `figures.yml` file and other figure shortcodes.)
 
 ```go
 {{</* q-figure-zoom id="irises" */>}}
@@ -200,8 +208,27 @@ Quire will, by default, show six levels of zoom. If the IIIF image you are point
 - id: "irises"
   src: "figures/irises.jpg"
   media_type: "iiif"
-  iiif: "https://data.getty.edu/museum/api/iiif/671108/info.json"
-  zoom_max: 5
+  iiif: "/img/iiif/processed/07138601/info.json"
+  zoom_max: 4
+```
+
+The number of zoom levels will be determined by the [size of the source file](#create-your-own-iiif-images), but you can also tell by looking a the processed image in the `static/img/iiif/processed/` directory. The number of directories there that start with “0,0,” will be equal to the number of zoom levels. In the following example, image `07138601` has four levels of zoom.
+
+```text
+static
+  img
+    iiif
+      processed
+        07138601
+          0,0,256,256
+          0,0,512,512
+          0,0,1024,1024
+          0,0,2048,1919
+          0,256,256,256
+          0,512,256,256
+          0,512,512,512
+          0,768,256,256
+          ...
 ```
 
 Currently, six levels of zoom is the maxiumum Quire is set to display. This can be expanded within your individual project, but requires a code change to both the Quire CLI and the JavaScript of your project’s theme.
