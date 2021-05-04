@@ -415,7 +415,7 @@ Like `q-figure`, but with handling for multiple images at once. See [*Figure Ima
 
 ### `q-figure-zoom`
 
-In progress. Documentation to come.
+Uses IIIF to add high resolution images with deep-zoom capabilities. See [*Zooming Images with IIIF*](/documentation/zooming-images/)
 
 | Parameter | Expected Value  | Description |
 | --- | --- | --- |
