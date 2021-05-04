@@ -211,7 +211,7 @@ Make sure there’s always a space between the colon and the value you enter, an
 
 *Read more about applying your own custom CSS styles, altering page templates, and creating a new theme in the [“Customizing Styles”](/documentation/styles-customization/) chapter of this guide.*
 
-## 8. Output Your Publication
+## 8. Output Your Project
 
 In your Terminal, stop the `quire preview` process by typing Control-C. To create the PDF version of your publication type `quire pdf` and press enter. For the EPUB, type `quire epub` and press enter. Both files will be created and saved into your project’s `static/downloads` directory. View them by right clicking (or control clicking on a Mac) on the file name in the lefthand sidebar of your text editor and selecting “Show in Finder” or “Show in File Explorer”.
 
@@ -221,7 +221,7 @@ In your Terminal, stop the `quire preview` process by typing Control-C. To creat
 
 For the online edition, type `quire site` and press enter. A `site` directory will be created in your project, with all the website files inside. The files in `site` can then be copied onto virtually any web server or hosting service. They include all the page content, images, and styles for the site and are all you need for the site to look and run just as it does when running `quire preview` on your own computer.
 
-*Read more about outputting your publication files and deploying your site in the [“Multiformat Output”](/documentation/multiformat-output/) chapter of this guide.*
+*Read more about outputting your publication files and deploying your project in the [“Output Your Project”](/documentation/multiformat-output/)and ["Deploy Your Project"](/documentation/deploy/) sections of this guide.*
 
 ## Congratulations! Now What?
 
