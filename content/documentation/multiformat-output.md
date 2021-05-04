@@ -140,7 +140,7 @@ When working on improving or modifying the styling of your PDF output, the basic
 
 Adobe Acrobat (a popular PDF reader) won’t reload the PDF you’re looking at if the file has been changed. We recommend instead using a PDF reader, like [Skim](https://skim-app.sourceforge.io/) for macOS, that will reload the PDF every time it’s changed. For Quire development, this means you can open the PDF to a page you want to make a style change to, make the change in your project, run `quire pdf` and see that change happen as soon as the PDF process is finished running. It takes away the wasted time of closing PDFs, opening new versions and finding your place in them time and time again.
 
-#### Display the PDF Verion in a Browser
+#### Display the PDF Version in a Browser
 
 You can use your browser to display a decent, though not exact, preview of what the print output will be. It won’t have the correct page sizes or margins and page numbering, but you'll see the overall text sizes and styles, figures, spacing between these elements, and other parts generally as they'll look in the PDF. This means that you can make changes to your CSS and see a live preview in the browser without having to output the PDF every time.
 
