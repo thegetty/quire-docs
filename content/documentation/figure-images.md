@@ -7,7 +7,6 @@ abstract: "Incorporate multiple images, videos, and other multimedia"
 
 Quire books are visual and the framework is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-the-q-figure-shortcode). As a reminder, a shortcode is a simple snippet of code inserted in a Markdown file that pulls in information from other files in your project.
 
-
 ## Include Figure Image Files in Your Publication
 
 Figure image files should be placed in the `static/img/` directory. It is defined in your project's `config.yml` file with the parameter `imageDir: "/img/"` and the directory can be changed if needed.
@@ -17,9 +16,12 @@ Figure image files should be placed in the `static/img/` directory. It is define
 Quire does not require a specific image file format or size, but we have some recommended best practices:
 
 - Use JPEG, PNG, or GIF.
-- Only include images at as big a size as most readers will need. 800px on the longest side is fine for most figures, up to 1200px on the longest side for modest zooming. We find these size also work well enough in print.
+- If your project is web-only, 800 pixels is fine for most images, whereas 1,800 pixels on the longest side will provide both a decent web experience and work for printing in the PDF without being too large a file size. 
 - Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use {{< q-def "Image Optimization" >}} software when possible, and consider the total number of images on a given page when choosing sizes.
 
+{{< q-class "box tip" >}}
+To include deep-zooming images in your Quire project please see the [*Zooming Images with IIIF*](/documentation/zooming-images) section of the documentation.
+{{< /q-class >}}
 
 ## Create a figures.yml File for Figure Image Metadata
 
