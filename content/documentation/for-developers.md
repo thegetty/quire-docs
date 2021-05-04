@@ -320,7 +320,7 @@ Type: Object
 | `subtitle` | string | |
 | `short_title` | string | Used in navigation items where a long title would be too unwieldy. |
 | `type` | "page" (default), "essay", "entry", "cover", "contents", "splash", or "data" | See [*Define Page Types*](/documentation/pages/#define-page-types) for examples |
-| `class` | string | Can accept any string, which will be included as a class in the main page element to facilitate style customization. A number of pre-defined classes also exist in the [Quire Starter Theme](https://github.com/gettypubs/quire-starter-theme). Pages with `type: contents` can have class `list` (default), `brief`, `abstract`, or `grid`. Pages with `type: entry` can have class `landscape` (default) or `side-by-side`. |
+| `class` | string | Can accept any string, which will be included as a class in the main page element to facilitate style customization. A number of pre-defined classes also exist in the [Quire Default Theme](https://github.com/thegetty/quire/tree/main/themes/default). Pages with `type: contents` can have class `list` (default), `brief`, `abstract`, or `grid`. Pages with `type: entry` can have class `landscape` (default) or `side-by-side`. |
 | `weight` | integer | Controls ordering of pages in the publication. |
 | `object` | [array](#object_list) | See [*Catalogue Entries*](/documentation/collection-catalogues/). |
 | `contributor` | [array](#contributor) | See [*Contributors*](/documentation/contributors/). |
