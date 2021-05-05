@@ -398,3 +398,29 @@ project_list:
     github_user:
       - hlj24
     note: "In celebration of the first ten years of the Wired! Lab at Duke University (now the Digital Art History & Visual Culture Research Lab), the staff and faculty created a born-digital report that not only shares the lab's work with the world but also demonstrates the possibilities for Quire and static site generators for digital publication. The lab's members are committed to using sustainable methods for digital publishing while also exploring emerging platforms."
+
+  - id: "marrow_report"
+    src: /screenshots/_marrow_report.jpg
+    alt: "Getty Foundation: Getty Marrow Internship Program Impact Report"
+    type: Report
+    publisher: Getty Foundation
+    title_info: "Getty Marrow Internship Program Impact Report"
+    pub_date: 2020-10-22
+    url: https://www.getty.edu/interns-2020/report/
+    customization_level: moderate
+    github_user:
+      - geealbers
+    note: "This 2020 report assesses the impact of nearly 30 years of the Getty Marrow Undergraduate internship program, a program dedicated to diversifying the staff of museums and visual arts organizations. This is the first year Quire has been used to present report from the Getty Foundation. Many elements of Quire were customized, including fonts, graphics, and layout, to match the brand identity of the internship program."
+
+  - id: "mupudig_study"
+    src: /screenshots/_mupudig_study.jpg
+    alt: "Digital Catalogues Study: A cross-institutional user study of online museum collection catalogues, November 2019, Key Findings"
+    type: Report
+    publisher: "Chicago: Art Institute of Chicago"
+    title_info: "Digital Catalogues Study: A Cross-Institutional User Study of Online Museum Collection Catalogues."
+    pub_date: 2019-11-18
+    url: https://digpublishing.github.io/catalogues-study/
+    customization_level: none
+    github_user:
+      - geealbers
+    note: "Quire was used to present the findings of a study of online scholarly catalogues, commissioned by the Art Institute of Chicago, the J. Paul Getty Museum, the National Gallery of Art, and the Philadelphia Museum of Art. The study's goal was to better understand the digital publishing landscape for museums as well as the catalogue readers' experience and needs."
