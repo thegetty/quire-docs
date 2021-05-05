@@ -49,6 +49,8 @@ entries:
     definition: "A home directory is a file system directory on a multi-user operating system that serves as the repository for a user's personal files, applications, music, movies, downloads, etc. The directory name usually defaults to the system user's name. You can find the directory by opening your Finder or File Explorer window and typing Command-Shift-H."
   - term: "Hugo"
     definition: "The static site generator that powers Quire: [https://gohugo.io/](https://gohugo.io/)"
+  - term: "JSON"
+    definition: "JSON (JavaScript Object Notation) is a human-readable, open-standard file format written with JavaScript. It is used to store and exchange data through value types like strings, numbers, booleans, lists, objects, and null." 
   - term: IANA
     definition: "Internet Assigned Numbers Authority (IANA) is responsible for coordinating Internet’s globally unique identifiers. DNS Root, IP addressing, and other Internet protocol resources are performed as the Internet Assigned Numbers Authority (IANA) functions. For more information visit:[https://www.iana.org/](https://www.iana.org/)"
   - term: "id"
