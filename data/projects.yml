@@ -410,13 +410,13 @@ project_list:
     customization_level: moderate
     github_user:
       - geealbers
-    note: "This 2020 report assesses the impact of nearly 30 years of the Getty Marrow Undergraduate internship program, a program dedicated to diversifying the staff of museums and visual arts organizations. This is the first year Quire has been used to present report from the Getty Foundation. Many elements of Quire were customized, including fonts, graphics, and layout, to match the brand identity of the internship program."
+    note: "This 2020 report assesses the impact of nearly 30 years of the Getty Marrow Undergraduate internship program, a program dedicated to diversifying the staff of museums and visual arts organizations in Los Angeles. Designed by [Picnic Design](https://www.picnicdesign.org/), the report has a number of customized visual elements, including fonts, graphics, and layout, to match Getty’s brand identity."
 
   - id: "mupudig_study"
     src: /screenshots/_mupudig_study.jpg
     alt: "Digital Catalogues Study: A cross-institutional user study of online museum collection catalogues, November 2019, Key Findings"
     type: Report
-    publisher: "Chicago: Art Institute of Chicago"
+    publisher: "Museum Publishing Digital Interest Group"
     title_info: "Digital Catalogues Study: A Cross-Institutional User Study of Online Museum Collection Catalogues."
     pub_date: 2019-11-18
     url: https://digpublishing.github.io/catalogues-study/
