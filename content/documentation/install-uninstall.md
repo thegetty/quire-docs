@@ -1,6 +1,6 @@
 ---
 title: Install or Update
-weight: 4000
+weight: 4050
 type: essay
 abstract: "Get set up to use Quire on macOS, Window, or Linux"
 ---
@@ -106,7 +106,7 @@ The Quire installation process may take a minute or two, during which time there
 
 3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the Pandoc MSI installer file, open it and a setup wizard screen will guide you through the process: https://pandoc.org/installing.html
 
-4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and downoad the Widows version: https://kdp.amazon.com/en_US/help/topic/G202131170. Install by double clicking the icon and following the prompts.
+4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and download the Widows version: https://kdp.amazon.com/en_US/help/topic/G202131170. Install by double clicking the icon and following the prompts.
 
 5. **PrinceXML** enables you to create a PDF version of your Quire project. At https://www.princexml.com/download/, download either the 32-bit or 64-bit EXE installer depending on your operating system. (If you’re not sure of your system  open the Settings app by pressing Windows+I. Go to System > About and look for the “System type” entry on the right side.) Click on the downloaded file and hit "run", you should see a setup wizard screen that will guide you through install.
 
@@ -146,7 +146,7 @@ To update Quire to the latest version, you can run the single install command ag
 npm install --global @thegetty/quire-cli
 ```
 
-Note that while any *new* projects you start at this point will use the latest version of Quire just installed, older, previously started projects will remain untouched. This is to avoid any unforeseen and unintended changes to publications that are completed or in progress as the version of Quire you use can effect layouts of a page, availablility of features, etcetera.
+Note that while any *new* projects you start at this point will use the latest version of Quire just installed, older, previously started projects will remain untouched. This is to avoid any unforeseen and unintended changes to publications that are completed or in progress as the version of Quire you use can effect layouts of a page, availability of features, etcetera.
 
 While it will not make changes to older projects, you should still be able to run commands from the new version of Quire on old Quire projects. Commands like `quire preview` and `quire pdf`. If you run into trouble with this and find commands do not run as intended or you see errors logged in your command-line, search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) for help.
 
@@ -169,4 +169,4 @@ In your command-line shell (Terminal on macOS and PowerShell in Administrator mo
 npm uninstall --global @thegetty/quire-cli
 ```
 
-This will only uninstall Quire itself. External software you installed as part of Quire (inlcuding Node.js, Pandoc, Kindle Previewer, and PrinceXML) will need to be uninstalled individually according to the directions they provide.
+This will only uninstall Quire itself. External software you installed as part of Quire (including Node.js, Pandoc, Kindle Previewer, and PrinceXML) will need to be uninstalled individually according to the directions they provide.

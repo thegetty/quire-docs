@@ -17,7 +17,7 @@ Any of these will work, it is more specific to what you want your domain to be.
 
 ## Netlify Build Configuration
 
-Instead of providing a `Production` directory or `Build` directory, you can create a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts block in the your `package.json` file.  In quire-starter-theme the path is `themes/quire-starter-theme/package.json`. Quire comes with a Netlify build command already, but as you will read below it is very easy to add or modify your own.
+Instead of providing a `Production` directory or `Build` directory, you can create a `netlify.toml` file which will run commands from the root directory. These commands are set in the scripts block in the your `package.json` file.  In Quire the path is `quire/themes/default/package.json`. Quire comes with a Netlify build command already, but as you will read below it is very easy to add or modify your own.
 
 ```json
 "scripts": {
@@ -32,13 +32,13 @@ Now let's create the `netlify.toml` in the root directory. Copy and paste this t
 ```toml
 # netlify.toml
 # The prefix is the path to your package.json file in your theme
-# Change the path of your theme if it is not themes/quire-starter-theme.
+# Change the path of your theme if it is not quire/themes/default.
 
 # This section is the production configuration and is all you need to deploy
 
 [build]
 # Base is the path to your themes package.json file.
-base = "themes/quire-starter-theme"
+base = "themes/default"
 command = "npm run build:netlify"
 
 [context.production.environment]
@@ -51,7 +51,7 @@ HUGO_ENABLEGITINFO = "true"
 # This section is the pull request configuration
 [context.deploy-preview]
 # Base is the path to your themes package.json file.
-base = "themes/quire-starter-theme"
+base = "themes/default"
 command = "npm run build:netlify"
 
 [context.deploy-preview.environment]
@@ -60,7 +60,7 @@ HUGO_VERSION = "0.55.5"
 # This section is the branch configuration
 [context.branch-deploy]
 # Base is the path to your themes package.json file.
-base = "themes/quire-starter-theme"
+base = "themes/default"
 command = "npm run build:netlify"
 
 [context.branch-deploy.environment]
@@ -69,7 +69,7 @@ HUGO_VERSION = "0.55.5"
 # This section is the branch configuration but targets a specific branch and also runs a different command
 [context.stage]
 # Base is the path to your themes package.json file.
-base = "themes/quire-starter-theme"
+base = "themes/default"
 command = "npm run build:stage"
 
 [context.stage.environment]

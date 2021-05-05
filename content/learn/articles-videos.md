@@ -1,6 +1,6 @@
 ---
 title: Articles & Videos
-weight: 6600
+weight: 6100
 type: page
 abstract: "How-to guides, demos, webinars, and more"
 ---

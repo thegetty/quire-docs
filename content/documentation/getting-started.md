@@ -15,7 +15,7 @@ Now that you have taken the [tutorial](/learn/tutorial.md/) and [installed Quire
 quire new project-name
 ```
 
-The process may take a minute as Quire installs the starter kit, configures the project, sets up the theme, and installs the dependencies. You may need to enter your GitHub username and password twice during the download process: once for the starter kit and again for the starter theme.
+Quire will download a new starter project into a folder named “my-project” in your home directory. The process may take a minute as Quire installs a new starter project (a sample publication including content, images, and relevant metadata that you can build off of) into a folder named `my-project` in your home directory.
 
 The project is ready when you see the message: “Theme and dependencies successfully installed.”
 
@@ -91,7 +91,7 @@ Inside each Quire project, you will find the following directories and files. De
 
 #### 📁 bin
 
-Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages, which you can learn more about in the [*Deploy Your Project*](documentation/deploy/#preview-your-project-with-github-pages).
+Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages, which you can learn more about in the [*Deploy Your Project*](documentation/site-deploy/#preview-your-project-with-github-pages).
 
 #### 📄 config.yml
 
