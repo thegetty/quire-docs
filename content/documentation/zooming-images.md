@@ -21,7 +21,7 @@ You can either point Quire to an existing IIIF repository of images or add high-
 
 To include existing IIIF images in your project, you will need the URL for the `info.json` file for that image, as well as a static fallback version of the image (typically a JPG) for use in Quire’s PDF and e-book outputs.
 
-The `info.json` file is a {{< q-def "JSON" >}}-formatted collection of useful information about a file, and [a required component of all IIIF images](https://iiif.io/api/image/3.0/#5-image-information) and includes basic information about the full image and the availability of image tiles at different zoom levels.
+The `info.json` file is a {{< q-def "JSON" >}}-formatted collection of useful information a file. It is [a required component of all IIIF images](https://iiif.io/api/image/3.0/#5-image-information) and includes basic object data about the full image and the availability of image tiles at different zoom levels.
 
 If you are working with your own institution’s IIIF repository, your digital department will be able to help you identify the `info.json` URLs you need.
 
