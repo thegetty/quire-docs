@@ -4,7 +4,7 @@
   "description": "scripts to run webpack to build js & css",
   "private": true,
   "scripts": {
-    "build": "cd themes/quire-starter-theme && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml"
+    "build": "cd themes/default && webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
