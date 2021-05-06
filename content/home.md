@@ -208,7 +208,7 @@ Try Quire for yourself
 
 Ask and answer questions
 
-[Join the conversation](/community/forum/)
+[Join the conversation](https://github.com/thegetty/quire/discussions) ![offsite](/img/icons/offsite--blue-60.svg)
 
 </div>
 <div class="footer-item">
