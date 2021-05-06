@@ -1,7 +1,8 @@
 ---
 title: Quire Cheatsheet
-weight: 5810
+weight: 6300
 type: essay
+abstract: Quick tips for Markdown, YAML, and other formatting elements in Quire
 ---
 
 ## Markdown
