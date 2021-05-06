@@ -119,7 +119,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 
 Allows for a wide range of possible custom features and styles
 
-![document icon](/img/icons/document-center.png)
+![icon showing a wrench and a pencil crossed](/img/illustrations/illustration-customize--magenta-60.svg)
 
 </div>
 
@@ -129,7 +129,7 @@ Allows for a wide range of possible custom features and styles
 
 Expands rich scholarship with embedded audio, video, deep-zooming images and more
 
-![document icon](/img/icons/document-center.png)
+![icon indicating a picture, a video player and an audio player](/img/illustrations/illustration-multimedia--magenta-60.svg)
 
 </div>
 
@@ -139,7 +139,7 @@ Expands rich scholarship with embedded audio, video, deep-zooming images and mor
 
 Multiformat output from a single set of source files speeds production without duplicating effort
 
-![document icon](/img/icons/document-center.png)
+![icon showing a computer, book, and tablet](/img/illustrations/illustration-multiformat--magenta-60.svg)
 
 </div>
 
@@ -149,7 +149,7 @@ Multiformat output from a single set of source files speeds production without d
 
 Keeps source content in nonspecialized plain text to ensure reusability
 
-![document icon](/img/icons/document-center.png)
+![icon showing a plain text document](/img/illustrations/illustration-file-text--magenta-60.svg)
 
 </div>
 
@@ -162,6 +162,11 @@ Keeps source content in nonspecialized plain text to ensure reusability
 <div class="home-block__header">
 
 ## The Quire Community
+
+</div>
+<div class="home-block__image-float">
+
+![illustration showing a diverse array of stylized people’s faces in multiple colors](/img/illustrations/illustration-diverse-community.png)
 
 </div>
 <div class="home-block__body">
@@ -177,6 +182,7 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 </div>
 
 </div>
+
 </div>
 
 <div class="home-block home-block--footer">
@@ -196,7 +202,7 @@ Try Quire for yourself
 </div>
 <div class="footer-item">
 
-![map icon](/img/icons/map.png)
+![speech bubble icon](/img/icons/speech.png)
 
 ### Community Forum
 
@@ -218,7 +224,7 @@ Dive into code, customization, and more
 </div>
 <div class="footer-item">
 
-![mail icon](/img/icons/mail.png)
+![envelope icon](/img/icons/mail.png)
 
 ### Stay Updated
 
