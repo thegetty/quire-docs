@@ -50,7 +50,7 @@ entries:
   - term: "Hugo"
     definition: "The static site generator that powers Quire: [https://gohugo.io/](https://gohugo.io/)"
   - term: "JSON"
-    definition: "JSON (JavaScript Object Notation) is a human-readable, open-standard file format written with JavaScript. It is used to store and exchange data through value types like strings, numbers, booleans, lists, objects, and null." 
+    definition: "JSON (JavaScript Object Notation) is a human-readable, open-standard file format written with JavaScript. It is used to store and exchange data through value types like strings, numbers, booleans, lists, objects, and null."
   - term: IANA
     definition: "Internet Assigned Numbers Authority (IANA) is responsible for coordinating Internet’s globally unique identifiers. DNS Root, IP addressing, and other Internet protocol resources are performed as the Internet Assigned Numbers Authority (IANA) functions. For more information visit:[https://www.iana.org/](https://www.iana.org/)"
   - term: "id"
@@ -86,7 +86,7 @@ entries:
       - search engine optimization
       - seo
     definition: "Search engine optimization, SEO, is the process of increasing the online visibility of a website or a web page in a web search engine's unpaid results."
-  - term: "Static-site Generator"
+  - term: "Static site Generator"
     definition: "A static site generator is a framework that generates a static website from source files."
   - term: "Shortcode"
     alternates:
