@@ -353,7 +353,7 @@ project_list:
     publisher: Hong Kong University Libraries
     title_info: "*From the Rainbow Screen*"
     pub_date: 2021-02-01
-    url: http://www.shencai.lib.hku.hk
+    url: http://shencai.lib.hku.hk
     customization_level: minor
     github_user:
       - tipeslowly
