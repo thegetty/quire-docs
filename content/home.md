@@ -22,7 +22,7 @@ Online ∙ Print ∙ E-book
 
 </div>
 
-Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print, and as vibrant and feature-rich as the web from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
+Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print and as vibrant and feature-rich as the web from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
 
 Created by [Getty](https://www.getty.edu), free to use.
 
@@ -66,7 +66,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 <div class="feature-list two-column">
 
 - **Affordable** No proprietary software or ongoing maintenance fees required
-- **Discoverable** Increase visibility by publishing as PDF, ebook, website, or print-on-demand
+- **Discoverable** Increase visibility by publishing as PDF, e-book, website, or print-on-demand
 - **Sustainable** Based around static site generation and plain text files ensuring stability
 - **Book-like** Built-in understanding of high-quality, scholarly publishing with clean, modern design
 - **Accessible** Adheres to WCAG2.0 Web Accessibility Principles
@@ -96,7 +96,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 </div>
 </div>
 
-{{< q-showcase projects="50_x_50, french_paintings, shifting_perspectives, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
+{{< q-showcase projects="50_x_50, duke_wired, french_paintings, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
 
 </div>
 
@@ -171,9 +171,9 @@ Keeps source content in nonspecialized plain text to ensure reusability
 </div>
 <div class="home-block__body">
 
-Quire is now being used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
+Quire is used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
-Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [participating in the forum](https://github.com/thegetty/quire/discussions), [contributing to code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
+Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [participating in the forum](https://github.com/thegetty/quire/discussions), [contributing code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
 
 <div class="action-button">
 
@@ -242,7 +242,7 @@ For news, updates, and events
 
 [About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Get Access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
-[GitHub](https://github.com/thegetty/quire/) | [Newsletter](https://newsletters.getty.edu/h/t/3482055B10CD0F24) | [Contact](mailto:quire@getty.edu)
+[GitHub](https://github.com/thegetty/quire/) | [Contributing](https://github.com/thegetty/quire/blob/main/CONTRIBUTING.md) | [Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md) | [Contact](mailto:quire@getty.edu)
 
 © J. Paul Getty Trust
 
