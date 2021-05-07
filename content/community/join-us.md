@@ -30,7 +30,7 @@ We welcome users at all levels of technical expertise and publishing experience.
 
 ## Participate in Forum
 
-Ask and answer questions, share ideas, raise issues, and assist your fellow community members. Topics include get help, troubleshooting, development, announcements, and more.
+Ask and answer questions, share ideas, raise issues, and assist fellow community members. Topics include get help, troubleshooting, development, announcements, and more.
 
 <div class="action-button">
 
@@ -60,7 +60,7 @@ Sign-up to receive our monthly newsletter for news, events, feature updates, and
 
 ## Share Your Work
 
-Send us your finished Quire publications and we will add them to our [Community Showcase](/community/community-showcase/) and newsletter. We also invite you to share your publication with the community on our [forum](https://github.com/thegetty/quire/discussions/categories/show-tell).
+Send us your finished Quire publications and we will add them to our [Community Showcase](/community/community-showcase/) and [newsletter](https://newsletters.getty.edu/h/t/3482055B10CD0F24). We also invite you to share your publication with the community on our [forum](https://github.com/thegetty/quire/discussions/categories/show-tell).
 
 <div class="action-button">
 
@@ -75,7 +75,7 @@ Send us your finished Quire publications and we will add them to our [Community 
 
 ## Attend or Organize an Event
 
-We hope to see you at future Quire workshops, webinars, conferences, and other events. We'd also love to know about any Quire-related events that you may be hosting. Please email [quire@getty.edu](mailto:quire@getty.edu).
+We hope to see you at future Quire workshops, webinars, conferences, and other events. We'd also love to know about any Quire-related events you may be hosting. Please email [quire@getty.edu](mailto:quire@getty.edu).
 
 <div class="action-button">
 
@@ -122,7 +122,7 @@ Bugs are sneaky, and we need your help spotting them! If you come across somethi
 
 ## Add to Documentation
 
-The [Quire Documentation](/documentation/) is a work in progress and we value your contributions. We invite you to dive in and help us add to and refine our user manual. We also want to translate our documentation into other languages.
+The [Quire Documentation](/documentation/) is a work in progress and we value your contributions. We invite you to dive in and help us add to and refine our user manual. We also want to translate our documentation into other languages. Let us know if you are interested in helping.
 
 <div class="action-button">
 
@@ -137,7 +137,7 @@ The [Quire Documentation](/documentation/) is a work in progress and we value yo
 
 ## Write an Article
 
-We also welcome the submission of articles about specific aspects of working in Quire to be included in the [Learn](/learn/articles-videos/) section of our website.
+We welcome the submission of articles about specific aspects of working in Quire to be included in the [Learn](/learn/articles-videos/) section of our website.
 
 <div class="action-button">
 
