@@ -331,7 +331,7 @@ Type: Object
 | `menu` | boolean | Default is "true". Page will not display in menu if "false". |
 | `online` | boolean | Default is "true". Page will not display in the online edition if "false". |
 | `pdf` | boolean | Default is "true". Page will not display in the PDF edition if "false". |
-| `epub` | boolean | Default is "true". Page will not display in either the EPUB or MOPBI ebook editions if "false". |
+| `epub` | boolean | Default is "true". Page will not display in either the EPUB or MOPBI e-book editions if "false". |
 | `image` | url | |
 
 Pages with `type: contents` can have class `list` (default), `brief`, `abstract`, or `grid`. Pages with `type: entry` can have class `landscape` (default) or `side-by-side`.
