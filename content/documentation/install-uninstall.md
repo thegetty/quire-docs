@@ -6,7 +6,7 @@ abstract: "Get set up to use Quire on macOS, Window, or Linux"
 ---
 
 {{< q-class "box warning" >}}
-- Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open source software. For a free license to use Quire for your publication projects (and for additional access to support) [please sign up](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
+- Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open-source software. For a free license to use Quire for your publication projects (and for additional access to support) [please sign up](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
 {{< /q-class >}}
 
 ## macOS Installation
