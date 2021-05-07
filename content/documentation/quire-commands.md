@@ -5,7 +5,7 @@ type: essay
 abstract: "Learn how to start and preview projects, output files, and more"
 ---
 
-The [Quire CLI](https://github.com/gettypubs/quire-cli), or command-line interface, is the control for creating, previewing, and outputting Quire projects. Quire CLI is typically run from Terminal on a Mac and Git Bash (or its equivalent) on a PC. The following commands are available.
+Quire Commands are typically run from Terminal on a Mac and Git Bash (or its equivalent) on a PC. They control creating, previewing, and outputting Quire projects. The following commands are available.
 
 {{< q-class "box tip" >}}
 - Run `quire --help` in your command-line shell for a full list of the Quire commands and options defined below.
