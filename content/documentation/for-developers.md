@@ -7,7 +7,7 @@ abstract: "API docs and Quire repository guide"
 
 Quire is in a limited beta and not yet released as open-source software. For a free license to use Quire for your publication projects, and for additional access to support, [please sign up](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
-Quire is centered around the static-site generator, [Hugo](https://github.com/gohugoio/hugo). Quire's command-line interface is written in JavaScript and requires [Node.js LTS](https://nodejs.org/en/) to run.
+Quire is centered around the static site generator, [Hugo](https://github.com/gohugoio/hugo). Quire's command-line interface is written in JavaScript and requires [Node.js LTS](https://nodejs.org/en/) to run.
 
 ## Repositories
 

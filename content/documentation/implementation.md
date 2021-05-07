@@ -23,7 +23,7 @@ abstract: "Is Quire right for you and your project?"
 
 - Quire does not offer a graphical user interface, but requires using a {{< q-def "command-line shell" >}} and a {{< q-def "text editor" >}} to create a publication. While this can be a new and somewhat intimidating way to work, we‘ve found that most users can fairly quickly master the basics.
 
-- Quire can be used "out of the box" by any individual, no matter their skill level, using Quire [tutorials](/learn/tutorial/) and documentation as support. However, in order to customize the layouts and features of the default Quire theme beyond what is provided out of the box, advanced knowledge of CSS, HTML, and static-site generation is required.
+- Quire can be used "out of the box" by any individual, no matter their skill level, using Quire [tutorials](/learn/tutorial/) and documentation as support. However, in order to customize the layouts and features of the default Quire theme beyond what is provided out of the box, advanced knowledge of CSS, HTML, and static site generation is required.
 
 - We do provide documentation and additional [resources](/learn/other-resources/) to aid non-technical users in gaining the skills and knowledge to use Quire in a more advanced way.
 

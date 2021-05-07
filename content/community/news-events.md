@@ -50,4 +50,4 @@ abstract: "Get the latest news and info about upcoming events"
 | Museums and the Web (MW) | April 18, 2018 | “Sustainable Multi-Format Digital Publishing with Quire,” a half-day workshop with Greg Albers and Sarah Wambold. |
 | Making Scholarly Digital Publications | April 5–6, 2018 | A two-day convening hosted by Getty, USC, and Brown University, and including teams from a variety of platforms: Quire, [Fulcrum](https://www.fulcrum.org/), [Editoria](https://editoria.pub/), [Scalar](https://scalar.me/), and [Manifold](https://manifoldapp.org/). |
 | College Art Association (CAA) | Feb 23, 2018 | “Open-Source Digital Publishing with Quire,” a workshop with Greg Albers and Sarah Wambold. |
-| Museum Computer Network (MCN) | November 7, 2017 | “Hands on with Static-Site Generators: Publishing Modern Sites with a 1990s Approach,” a half-day Quire workshop with Greg Albers and Eric Gardner. |
+| Museum Computer Network (MCN) | November 7, 2017 | “Hands on with Static Site Generators: Publishing Modern Sites with a 1990s Approach,” a half-day Quire workshop with Greg Albers and Eric Gardner. |

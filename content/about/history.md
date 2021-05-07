@@ -32,7 +32,7 @@ Getty Publications hires its first Digital Publications Developer, [Eric Gardner
 
 ## 2016
 
-Getty publishes its first multiformat collection catalogue, [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/). The publication is made available online and in e-book and print editions. Custom built with the [Middleman](https://middlemanapp.com/) static-site generator, *Terracottas* serves as a precursor to future Quire titles.
+Getty publishes its first multiformat collection catalogue, [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/). The publication is made available online and in e-book and print editions. Custom built with the [Middleman](https://middlemanapp.com/) static site generator, *Terracottas* serves as a precursor to future Quire titles.
 
 Also released this year are [*Roman Mosaics*](https://www.getty.edu/publications/romanmosaics/) and the third edition of [*Introduction to Metadata*](https://www.getty.edu/publications/intrometadata/). [ARLIS/NA's *Multimedia & Technology Reviews*](https://arlisna.org/publications/multimedia-technology-reviews/1025-roman-mosaics-in-the-j-paul-getty-museum) writes that *Roman Mosaics* has a "dynamic design that encourages further discovery and scholarship."
 
