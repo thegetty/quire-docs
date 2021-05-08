@@ -170,7 +170,7 @@ Quire lets you preview the current version of your site in a web browser, and wi
 
 Some tips for previewing your publication outline:
 
-1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about YAML in [*Fundamentals: Markdown & YAML*](/documentation/fundamentals/#yaml-basics)
+1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about YAML in [*Markdown & YAML*](/documentation/fundamentals/#yaml-basics)
 
 2. **Use menu:false to hide a page from the table of contents view.** If you want to hide a page from the table of contents include `menu:false` in the YAML.
 

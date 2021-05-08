@@ -29,7 +29,7 @@ at the beginning of a line makes a heading, and asterisks
 wrapping text turns it *italic*.
 ```
 
-You can read all about Markdown syntax and how it is used in Quire in the [*Fundamentals: YAML & Markdown*](/documentation/fundamentals/) chapter of this guide.
+You can read all about Markdown syntax and how it is used in Quire in the [*YAML & Markdown*](/documentation/fundamentals/) chapter of this guide.
 
 ## Use Shortcodes to Add Features
 
