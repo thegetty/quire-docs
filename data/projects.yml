@@ -250,7 +250,7 @@ project_list:
     url: https://50x50.sjmusart.org/
     customization_level: extensive
     github_user:
-      - sheltonsjma
+      - aheltonsjma
     note: "This publication is in honor of the museum's 50th anniversary. The collection catalogue has been extensively customized, including changes to the theme template and significant alterations to layout and functionality of the object entry pages."
 
   - id: "atelier_17"
