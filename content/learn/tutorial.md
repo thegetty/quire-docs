@@ -155,7 +155,7 @@ of students let loose in the halls of art.
 2. Save the change, and check the preview in your browser. You will notice the text has been formatted for you.
 
 {{< q-class "box tip" >}}
-- [A complete Markdown reference](/documentation/fundamentals/) is available in the “Fundamentals” chapter of this guide, but for quick rules and tips, check out this [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
+- [A complete Markdown reference](/documentation/fundamentals/) is available in the *YAML & Markdown* chapter of this guide, but for quick rules and tips, check out this [Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 {{< /q-class >}}
 
 For more specialized features (especially images, multimedia, and citations), Quire extends Markdown’s capabilities with a set of {{< q-def "shortcodes" >}}.
@@ -221,7 +221,7 @@ In your Terminal, stop the `quire preview` process by typing Control-C. To creat
 
 For the online edition, type `quire site` and press enter. A `site` directory will be created in your project, with all the website files inside. The files in `site` can then be copied onto virtually any web server or hosting service. They include all the page content, images, and styles for the site and are all you need for the site to look and run just as it does when running `quire preview` on your own computer.
 
-*Read more about outputting your publication files and deploying your project in the [“Output Your Project”](/documentation/multiformat-output/)and ["Deploy Your Project"](/documentation/deploy/) sections of this guide.*
+*Read more about outputting your publication files and deploying your project in the [“Output Your Project”](/documentation/multiformat-output/)and ["Deploy Your Project"](/documentation/site-deploy/) sections of this guide.*
 
 ## Congratulations! Now What?
 

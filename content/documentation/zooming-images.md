@@ -17,6 +17,10 @@ You can either point Quire to an existing IIIF repository of images or add high-
 
 {{<q-figure id="iris-zoom" >}}
 
+{{< q-class "box tip" >}}
+- For a deep dive into IIIF and its implementation in museums read [*Getty Common Image Service: Research & Design Report*](/downloads/gcis_r+d_report-2019.pdf/). 
+{{< /q-class >}}
+
 ## Use Existing IIIF Images
 
 To include existing IIIF images in your project, you will need the URL for the `info.json` file for that image, as well as a static fallback version of the image (typically a JPG) for use in Quire’s PDF and e-book outputs.

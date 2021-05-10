@@ -6,7 +6,7 @@ abstract: "Get set up to use Quire on macOS, Window, or Linux"
 ---
 
 {{< q-class "box warning" >}}
-- Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open source software. For a free license to use Quire for your publication projects (and for additional access to support) [please sign up](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
+- Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open-source software. For a free license to use Quire for your publication projects (and for additional access to support) [please sign up](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
 {{< /q-class >}}
 
 ## macOS Installation
@@ -66,7 +66,7 @@ Follow the steps below to first install the support software for Quire, and then
     cd
     ```
 
-6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
+6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-commands/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
 
     ```text
     npm install --global @thegetty/quire-cli
@@ -74,7 +74,7 @@ Follow the steps below to first install the support software for Quire, and then
 
     The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation.
 
-    To verify installation, enter the command below. This will give you a list of [commands](/documentation/quire-cli/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
+    To verify installation, enter the command below. This will give you a list of [commands](/documentation/quire-commands/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
 
     ```text
     quire --help
@@ -118,7 +118,7 @@ The Quire installation process may take a minute or two, during which time there
 
     This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you’ll see the starting prompt with the name of your computer once it’s complete.
 
-6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Windows PowerShell with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-cli/) chapter of our guide. Copy and paste the following line into PowerShell to install Quire:
+6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Windows PowerShell with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-commands/) chapter of our guide. Copy and paste the following line into PowerShell to install Quire:
 
     ```text
     npm install --global @thegetty/quire-cli
@@ -126,7 +126,7 @@ The Quire installation process may take a minute or two, during which time there
 
     The Quire installation process may take a minute or two, during which time there will be messaging output in PowerShell. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation.
 
-    To verify installation, enter the command below. This will give you a list of [commands](/documentation/quire-cli/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
+    To verify installation, enter the command below. This will give you a list of [commands](/documentation/quire-commands/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
 
     ```text
     quire --help

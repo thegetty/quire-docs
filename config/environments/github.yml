@@ -11,5 +11,5 @@
 
 # Use these settings for GH Pages
 
-baseURL: "https://gettypubs.github.io/quire-starter/" # Needs trailing slash
+baseURL: "https://quire.getty.edu/" # Needs trailing slash
 canonifyURLs: false

@@ -7,7 +7,7 @@ abstract: "Update crucial information before deploying your publication"
 
 Quire uses two {{< q-def "YAML" >}} files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yml` and `publication.yml`. By default, both `config.yml` and `publication.yml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.
 
-You can read more about YAML syntax basics in [“Fundamentals: YAML & Markdown”](/documentation/fundamentals/#yaml-basics).
+You can read more about YAML syntax basics in [“YAML & Markdown”](/documentation/fundamentals/#yaml-basics).
 
 ## Adjust the Default Publication Settings in config.yml File
 

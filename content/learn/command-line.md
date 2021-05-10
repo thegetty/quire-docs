@@ -25,6 +25,6 @@ Now, open your {{< q-def "home directory">}} (open Finder and press Command-Shif
 
 You can continue to use the `cd` command paired with a [folder name] to navigate deeper into your files. If you get lost you can enter `cd` by itself and hit enter to get back to the main directly.
 
-Terminal is also used as a tool for running program commands, and, for our purposes, can be used to tell Quire what to do. For example the command `quire new` can be used to start a new project and `quire pdf` can be used to generate the PDF version of your site. Learn more about how to start and preview projects, output files, and more in the [*Quire CLI Commands*](/documentaton/quire-cli/) section of our documentation or enter the command `quire --help` for a list of available commands.
+Terminal is also used as a tool for running program commands, and, for our purposes, can be used to tell Quire what to do. For example the command `quire new` can be used to start a new project and `quire pdf` can be used to generate the PDF version of your site. Learn more about how to start and preview projects, output files, and more in the [*Quire CLI Commands*](/documentaton/quire-commands/) section of our documentation or enter the command `quire --help` for a list of available commands.
 
 ![cli-commands](/img/screenshots/cli-commands.jpg/)

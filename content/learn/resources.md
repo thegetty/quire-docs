@@ -15,7 +15,7 @@ abstract: "List of helpful tools and other resources"
 
 ## GitHub
 
-*GitHub is a project management platform centered around git-based version control and highly recommended for hosting your Quire project, tracking changes and revisions, and working with collaborators.*
+*GitHub is a project management platform centered around git-based version control, and highly recommended for hosting your Quire project, tracking changes, and working with collaborators.*
 
 - [GitHub Desktop Documentation](https://docs.github.com/en/free-pro-team@latest/desktop)
 - [GitHub Learning Lab](https://lab.github.com/)
@@ -34,7 +34,7 @@ abstract: "List of helpful tools and other resources"
 
 ## Hugo  
 
-*Hugo is the {{< q-def "static-site generator" >}} underlying Quire. Their documentation and training materials are a great place to go if you’re interested in customizing Quire’s templates or shortcodes.*
+*Hugo is the {{< q-def "static site generator" >}} underlying Quire. Hugo's documentation and training materials are an excellent resource for learning how to customize Quire’s templates and shortcodes.*
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
 - [Video: Hugo - Static Site Generator Tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1)
@@ -72,13 +72,13 @@ abstract: "List of helpful tools and other resources"
 
 ## Pandoc
 
-*Pandoc is used for Quire’s EPUB output, but it is also a useful tool for converting text documents like Word, into Markdown.*
+*Pandoc is used for Quire’s EPUB output, but it is also a useful tool for converting text documents, like Word, into Markdown.*
 
 - [Pandoc User's Guide](https://pandoc.org/MANUAL.html)
 
 ## Text Editors
 
-*A text editor is a computer program that allows you to create an edit plain text files, such as Atom or Visual Studio Code.*
+*A text editor is a computer program that allows you to create and edit plain text files, such as Atom or Visual Studio Code.*
 
 - [Text Editor Tips and Tricks](https://dev.to/alebian/text-editor-tips-and-tricks-to-boost-your-productivity-2gc5)
 - [Atom Flight Manual](https://flight-manual.atom.io/)

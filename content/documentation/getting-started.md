@@ -150,7 +150,7 @@ There are some other important rules and tips to keep in mind:
 
 3. **Sub-directories can’t have other sub-directories within them.** Quire currently supports only one level of nesting.
 
-4. **Don't use `index.md` or `_index.md` files.** Though common for users with previous static-site or web development experience, you should not use `index.md` or `_index.md` files in your Quire project. Because of the way {{< q-def "Hugo" >}} is modeled, these work against the linear ordering of the publication and break the *Next* and *Previous* page navigation in Quire.
+4. **Don't use `index.md` or `_index.md` files.** Though common for users with previous static site or web development experience, you should not use `index.md` or `_index.md` files in your Quire project. Because of the way {{< q-def "Hugo" >}} is modeled, these work against the linear ordering of the publication and break the *Next* and *Previous* page navigation in Quire.
 
 ## Prepare Images and Text
 
@@ -170,7 +170,7 @@ Quire lets you preview the current version of your site in a web browser, and wi
 
 Some tips for previewing your publication outline:
 
-1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about YAML in [*Fundamentals: Markdown & YAML*](/documentation/fundamentals/#yaml-basics)
+1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about YAML in [*Markdown & YAML*](/documentation/fundamentals/#yaml-basics)
 
 2. **Use menu:false to hide a page from the table of contents view.** If you want to hide a page from the table of contents include `menu:false` in the YAML.
 

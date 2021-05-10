@@ -11,7 +11,7 @@ For the past four years, Getty has been using Quire to advance its internal publ
 
  Quire users have full access and can create, customize, and distribute their digital projects any way they'd like. We encourage users to share questions, frustrations, and positive reactions, and we use this feedback to inform developments and new feature considerations. In return, our users not only have access to Getty staff for assistance, but they also have access to other beta users who can provide additional support and inspiration. The one thing we ask is that users do NOT redistribute Quire itself.
 
-As Quire continues to evolve, our goal is to launch as fully open source by 2022 and expand Quire’s reach beyond our dedicated group of beta users. A community-supported model would enable Quire to remain free to use and would ensure a long lifespan beyond Getty.
+As Quire continues to evolve, our goal is to launch as fully open source by 2022 and expand Quire’s reach beyond our dedicated group of beta users. A community-supported model would enable Quire to remain free to use and ensure a long lifespan beyond Getty.
 
 <div class="action-button">
 
