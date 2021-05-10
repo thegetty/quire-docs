@@ -47,7 +47,7 @@ abstract: "Get the latest news and info about upcoming events"
 | Association of University Presses (AUP) | June 18, 2018 | “Publishing Digital Projects,” with Greg Albers presenting on Quire alongside panelists representing other projects from the University of British Columbia Press, Stanford University Press, and Wayne State University Libraries. |
 | Library Publishing Forum (LPF) | May 21, 2018 | “Owned by the Academy: A Preconference on Open Source Publishing Software,” with Greg Albers presenting Quire in a lightning talk and showcase session. |
 | National Museum Publishing Seminar (NMPS) | May 3, 2018 | “Quire Digital Publishing Platform: Demo and Q&A,” with Greg Albers and Sarah Wambold. |
-| Museums and the Web (MW) | April 18, 2018 | “Sustainable Multi-Format Digital Publishing with Quire,” a half-day workshop with Greg Albers and Sarah Wambold. |
+| Museums and the Web (MW) | April 18, 2018 | “Sustainable MultiFormat Digital Publishing with Quire,” a half-day workshop with Greg Albers and Sarah Wambold. |
 | Making Scholarly Digital Publications | April 5–6, 2018 | A two-day convening hosted by Getty, USC, and Brown University, and including teams from a variety of platforms: Quire, [Fulcrum](https://www.fulcrum.org/), [Editoria](https://editoria.pub/), [Scalar](https://scalar.me/), and [Manifold](https://manifoldapp.org/). |
 | College Art Association (CAA) | Feb 23, 2018 | “Open-Source Digital Publishing with Quire,” a workshop with Greg Albers and Sarah Wambold. |
 | Museum Computer Network (MCN) | November 7, 2017 | “Hands on with Static Site Generators: Publishing Modern Sites with a 1990s Approach,” a half-day Quire workshop with Greg Albers and Eric Gardner. |

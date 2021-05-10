@@ -371,7 +371,7 @@ project_list:
     customization_level: significant
     github_user:
       - chrisdaaz
-    note: "This was a standard monograph project for which Quire was an excellent choice because of its strong support for bibliographic references, endnotes, and multiformat outputs. Adjustments were made to the partials due to stakeholder requests (separating title and subtitle on different lines, Copyright page layout) and slight confusion about baseURLs (relURL vs absURL filters). Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multi-format academic publications."
+    note: "This was a standard monograph project for which Quire was an excellent choice because of its strong support for bibliographic references, endnotes, and multiformat outputs. Adjustments were made to the partials due to stakeholder requests (separating title and subtitle on different lines, Copyright page layout) and slight confusion about baseURLs (relURL vs absURL filters). Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multiformat academic publications."
 
   - id: "candler_school"
     src: /screenshots/_candler_school.jpg
