@@ -4650,7 +4650,7 @@ a.list-item {
 
 .navbar {
   background-color: #ffffff;
-  min-height: 5rem;
+  min-height: 4.5rem;
   position: relative;
   z-index: 30; }
   .navbar.is-white {
@@ -5108,7 +5108,7 @@ a.list-item {
             align-items: stretch;
     display: -webkit-box;
     display: flex;
-    min-height: 5rem;
+    min-height: 4.5rem;
     width: 100%; }
   .navbar.has-shadow {
     box-shadow: 0 2px 0 0 whitesmoke; }
@@ -5126,11 +5126,11 @@ a.list-item {
 
 html.has-navbar-fixed-top,
 body.has-navbar-fixed-top {
-  padding-top: 5rem; }
+  padding-top: 4.5rem; }
 
 html.has-navbar-fixed-bottom,
 body.has-navbar-fixed-bottom {
-  padding-bottom: 5rem; }
+  padding-bottom: 4.5rem; }
 
 .navbar-brand,
 .navbar-tabs {
@@ -5139,7 +5139,7 @@ body.has-navbar-fixed-bottom {
   display: -webkit-box;
   display: flex;
   flex-shrink: 0;
-  min-height: 5rem; }
+  min-height: 4.5rem; }
 
 .navbar-brand a.navbar-item:focus, .navbar-brand a.navbar-item:hover {
   background-color: transparent; }
@@ -5154,9 +5154,9 @@ body.has-navbar-fixed-bottom {
   color: #4a4a4a;
   cursor: pointer;
   display: block;
-  height: 5rem;
+  height: 4.5rem;
   position: relative;
-  width: 5rem;
+  width: 4.5rem;
   margin-left: auto; }
   .navbar-burger span {
     background-color: currentColor;
@@ -5233,7 +5233,7 @@ a.navbar-item,
     flex-shrink: 1; }
   .navbar-item.is-tab {
     border-bottom: 1px solid transparent;
-    min-height: 5rem;
+    min-height: 4.5rem;
     padding-bottom: calc(0.5rem - 1px); }
     .navbar-item.is-tab:focus, .navbar-item.is-tab:hover {
       background-color: transparent;
@@ -5303,14 +5303,14 @@ a.navbar-item,
     top: 0; }
   .navbar.is-fixed-top .navbar-menu, .navbar.is-fixed-top-touch .navbar-menu {
     -webkit-overflow-scrolling: touch;
-    max-height: calc(100vh - 5rem);
+    max-height: calc(100vh - 4.5rem);
     overflow: auto; }
   html.has-navbar-fixed-top-touch,
   body.has-navbar-fixed-top-touch {
-    padding-top: 5rem; }
+    padding-top: 4.5rem; }
   html.has-navbar-fixed-bottom-touch,
   body.has-navbar-fixed-bottom-touch {
-    padding-bottom: 5rem; } }
+    padding-bottom: 4.5rem; } }
 
 @media screen and (min-width: 700px) {
   .navbar,
@@ -5322,7 +5322,7 @@ a.navbar-item,
     display: -webkit-box;
     display: flex; }
   .navbar {
-    min-height: 5rem; }
+    min-height: 4.5rem; }
     .navbar.is-spaced {
       padding: 1rem 2rem; }
       .navbar.is-spaced .navbar-start,
@@ -5452,16 +5452,16 @@ a.navbar-item,
     top: 0; }
   html.has-navbar-fixed-top-desktop,
   body.has-navbar-fixed-top-desktop {
-    padding-top: 5rem; }
+    padding-top: 4.5rem; }
   html.has-navbar-fixed-bottom-desktop,
   body.has-navbar-fixed-bottom-desktop {
-    padding-bottom: 5rem; }
+    padding-bottom: 4.5rem; }
   html.has-spaced-navbar-fixed-top,
   body.has-spaced-navbar-fixed-top {
-    padding-top: 7rem; }
+    padding-top: 6.5rem; }
   html.has-spaced-navbar-fixed-bottom,
   body.has-spaced-navbar-fixed-bottom {
-    padding-bottom: 7rem; }
+    padding-bottom: 6.5rem; }
   a.navbar-item.is-active,
   .navbar-link.is-active {
     color: #000000; }
@@ -5472,7 +5472,7 @@ a.navbar-item,
     background-color: #fafafa; } }
 
 .hero.is-fullheight-with-navbar {
-  min-height: calc(100vh - 5rem); }
+  min-height: calc(100vh - 4.5rem); }
 
 .pagination {
   font-size: 1rem;
@@ -8069,12 +8069,12 @@ html {
   position: sticky;
   z-index: 1;
   background-color: #ffffff;
-  min-height: 5rem;
+  min-height: 4.5rem;
   top: 0 !important;
   width: 100%; }
   .quire-navbar svg {
-    height: calc(5rem * .65);
-    width: calc(5rem * .65);
+    height: calc(4.5rem * .65);
+    width: calc(4.5rem * .65);
     max-height: 1rem;
     max-width: 1rem;
     vertical-align: sub; }
@@ -8126,18 +8126,18 @@ html {
   flex-wrap: no-wrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  line-height: 5rem;
-  height: 5rem; }
+  line-height: 4.5rem;
+  height: 4.5rem; }
   .quire-navbar-controls__left {
     align-self: flex-start;
     -webkit-box-flex: 0;
-            flex: 0 1 5rem; }
+            flex: 0 1 4.5rem; }
   .quire-navbar-controls__center {
     -webkit-box-flex: 1;
             flex: 1 1 auto; }
   .quire-navbar-controls__right {
     -webkit-box-flex: 0;
-            flex: 0 1 5rem;
+            flex: 0 1 4.5rem;
     text-align: right; }
   .quire-navbar-controls__left button, .quire-navbar-controls__right button, .quire-navbar-controls .quire-navbar-page-controls__item button {
     background-color: transparent; }
@@ -8166,7 +8166,7 @@ html {
           justify-content: center; }
   .quire-navbar-page-controls__item {
     padding: 0 1rem;
-    max-height: 5rem;
+    max-height: 4.5rem;
     overflow: hidden;
     display: none; }
     .quire-navbar-page-controls__item a, .quire-navbar-page-controls__item svg {
@@ -8226,8 +8226,8 @@ html {
   appearance: none;
   background-color: transparent;
   border: 0;
-  height: 5rem;
-  width: 5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   padding: 0; }
   .quire-navbar-button svg {
     position: relative;
@@ -8237,8 +8237,8 @@ html {
       top: 0;
       left: 0; }
   .quire-navbar-button.search-button svg, .quire-navbar-button.menu-button svg {
-    height: calc(5rem * .75);
-    width: calc(5rem * .75);
+    height: calc(4.5rem * .75);
+    width: calc(4.5rem * .75);
     max-height: 1.25rem;
     max-width: 1.25rem; }
     .quire-navbar-button.search-button svg img, .quire-navbar-button.menu-button svg img {
@@ -8246,8 +8246,8 @@ html {
   .quire-navbar-button.arrow-button {
     text-align: center; }
     .quire-navbar-button.arrow-button svg {
-      height: calc(5rem * .65);
-      width: calc(5rem * .65);
+      height: calc(4.5rem * .65);
+      width: calc(4.5rem * .65);
       max-height: 1rem;
       max-width: 1rem; }
       .quire-navbar-button.arrow-button svg img {
@@ -8266,8 +8266,8 @@ html {
   .quire-navbar-button.play-button, .quire-navbar-button.home-button {
     text-align: center; }
     .quire-navbar-button.play-button svg, .quire-navbar-button.home-button svg {
-      height: calc(5rem * .65);
-      width: calc(5rem * .65);
+      height: calc(4.5rem * .65);
+      width: calc(4.5rem * .65);
       max-height: 2.5rem;
       max-width: 2.5rem;
       top: 0;
@@ -8289,8 +8289,8 @@ html {
 .quire-navbar-skip-link:focus {
   background-color: #f2f2f2;
   clip: unset;
-  height: 5rem;
-  line-height: 5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
   position: absolute;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -8417,14 +8417,14 @@ html {
   .quire-search.is-active {
     display: block; }
   .quire-search__inner .input-bar {
-    padding-top: 5rem;
+    padding-top: 4.5rem;
     height: 100%; }
     .quire-search__inner .input-bar span {
       float: right;
       padding-top: 1.25em; }
       .quire-search__inner .input-bar span svg {
-        height: calc(5rem * .65);
-        width: calc(5rem * .65);
+        height: calc(4.5rem * .65);
+        width: calc(4.5rem * .65);
         max-height: 1.5rem;
         max-width: 1.5rem; }
   .quire-search__inner .input {
@@ -8467,12 +8467,12 @@ html {
       background-color: transparent;
       border: 0;
       border-radius: 0;
-      height: 5rem;
-      width: 5rem;
+      height: 4.5rem;
+      width: 4.5rem;
       padding: 0; }
     .quire-search__close-button svg {
-      height: calc(5rem * .55);
-      width: calc(5rem * .55);
+      height: calc(4.5rem * .55);
+      width: calc(4.5rem * .55);
       fill: #1a1a1a; }
       .quire-search__close-button svg img {
         max-height: 1.15rem;
@@ -8509,7 +8509,7 @@ html {
                                   supported by Chrome and Opera */ }
 
 .quire-page {
-  min-height: calc(100vh - 5rem - 0); }
+  min-height: calc(100vh - 4.5rem - 0); }
   .quire-page h1,
   .quire-page h2,
   .quire-page h3,
@@ -8887,9 +8887,9 @@ html {
       .quire-splash .quire-page__header.hero-image + .quire-page__content figure:first-child {
         padding-top: 1.375in; } }
   .quire-splash .quire-page__header--full-height {
-    height: calc(100vh - 5rem - 0); }
+    height: calc(100vh - 4.5rem - 0); }
     .quire-splash .quire-page__header--full-height.hero-image {
-      height: calc(100vh - 5rem - 0);
+      height: calc(100vh - 4.5rem - 0);
       max-height: initial; }
       @media print {
         .quire-splash .quire-page__header--full-height.hero-image .hero-body {
@@ -9076,7 +9076,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: calc(95vh - 5rem - 0);
+  min-height: calc(95vh - 4.5rem - 0);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -9089,7 +9089,7 @@ html {
   background-image: -webkit-gradient(linear, left top, right top, from(#1a47b8), to(#1a47b8));
   background-image: linear-gradient(90deg, #1a47b8, #1a47b8);
   position: relative;
-  min-height: calc(95vh - 5rem - 0) !important;
+  min-height: calc(95vh - 4.5rem - 0) !important;
   text-align: left;
   display: -webkit-box;
   display: flex;
@@ -9251,8 +9251,8 @@ html {
   box-shadow: none;
   background-color: transparent; }
   .quire-contents-list svg {
-    height: calc(5rem * .65);
-    width: calc(5rem * .65);
+    height: calc(4.5rem * .65);
+    width: calc(4.5rem * .65);
     max-height: 1em;
     max-width: 1em;
     vertical-align: baseline;
@@ -10157,7 +10157,7 @@ div.multimedia {
 
 .quire-entry__image {
   background-color: #000000;
-  min-height: calc(100vh - 6rem - 5rem - 0);
+  min-height: calc(100vh - 6rem - 4.5rem - 0);
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -10192,7 +10192,7 @@ div.multimedia {
     -webkit-box-flex: 1;
             flex: 1 1 100%;
     width: 100%;
-    height: calc(100vh - 6rem - 5rem - 0);
+    height: calc(100vh - 6rem - 4.5rem - 0);
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
@@ -10249,7 +10249,7 @@ div.multimedia {
         margin-top: 6px; }
   .quire-entry__image.fullscreen img {
     margin: 0 auto;
-    max-height: calc(100vh - 6rem - 5rem - 0); }
+    max-height: calc(100vh - 6rem - 4.5rem - 0); }
     @media screen and (max-width: 700px) {
       .quire-entry__image.fullscreen img {
         max-height: 60vh; } }
@@ -10519,7 +10519,7 @@ div.multimedia {
     .quire-entry div.side-by-side div.quire-entry__image-wrap div.quire-entry__image {
       position: relative;
       width: 100%;
-      height: calc(100vh - 6rem - 5rem - 0); }
+      height: calc(100vh - 6rem - 4.5rem - 0); }
       @media screen and (min-width: 1184px) {
         .quire-entry div.side-by-side div.quire-entry__image-wrap div.quire-entry__image {
           position: fixed;
@@ -10533,7 +10533,7 @@ div.multimedia {
           min-height: inherit; } }
       @media screen and (min-width: 1184px) {
         .quire-entry div.side-by-side div.quire-entry__image-wrap div.quire-entry__image .quire-entry__image__group-container figure {
-          height: calc(100vh - 5rem - 0); } }
+          height: calc(100vh - 4.5rem - 0); } }
       .quire-entry div.side-by-side div.quire-entry__image-wrap div.quire-entry__image.fullscreen {
         width: 100vw; }
         .quire-entry div.side-by-side div.quire-entry__image-wrap div.quire-entry__image.fullscreen .quire-entry__image__group-container figure {

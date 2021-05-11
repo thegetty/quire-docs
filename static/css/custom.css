@@ -51,7 +51,7 @@ Css Sections:
 ============================================================================= */
 
 body#home .quire-navbar,
-body#home .quire-navbar a {
+body#home .quire-navbar a:not(.quire-navbar-controls__site-logo) {
   background-color: var(--garden-60);
 }
 
@@ -1081,7 +1081,7 @@ on the page and adjusts to different window widths */
   font-size: 1rem;
   font-weight: 500;
   position: fixed;
-  background-color: white;
+  background-color: transparent;
   z-index: 100;
 }
 #main {
@@ -1124,15 +1124,53 @@ on the page and adjusts to different window widths */
 }
 
 /* Size and position Quire logo on left side */
-a.quire-navbar-controls__site-logo,
-a.quire-navbar-controls__site-logo:hover {
+.quire-navbar-controls__left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--gray-90);
+  border-radius: 0 0 4px 0;
+}
+.quire-navbar-controls__left a.quire-navbar-controls__site-logo {
+  padding: 1rem 2rem;
+  margin: 0;
   background-color: transparent;
   border-bottom-width: 0px;
-  padding-left: .75rem;
 }
-a.quire-navbar-controls__site-logo img {
+.quire-navbar-controls__left a.quire-navbar-controls__site-logo:hover {
+  background-color: transparent;
+  border-bottom-width: 0px;
+}
+.quire-navbar-controls__left a.quire-navbar-controls__site-logo img {
   max-height: 2rem;
-  margin-top: -.25rem;
+  filter: invert();
+  margin-top: 4px;
+}
+.quire-navbar-controls__center {
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 3rem;
+  height: 4.5rem;
+  padding: 1.75rem 0 1.5rem 2rem;
+  border-radius: 0 0 0 4px;
+}
+.quire-navbar-controls__right {
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4.5rem;
+  width: 3rem;
+  padding-top: 1.75rem;
+}
+body#home .quire-navbar-controls__center {
+  background-color: var(--garden-60);
+  right: 6rem;
+}
+body#home .quire-navbar-controls__right {
+  background-color: var(--garden-60);
+  width: 6rem;
 }
 
 /* Style center text items when .Site.Params.navType is "main-pages" */
@@ -1145,12 +1183,14 @@ a.quire-navbar-controls__site-logo img {
   .quire-navbar-controls__center {
     display: none;
   }
+  .quire-navbar-controls__right {
+    width: 6rem;
+  }
 }
 
 /* Adjust positioning of right side buttons */
 .quire-navbar-button.search-button {
-  padding-left: .5rem;
-  padding-right: .15rem;
+  padding-right: .35rem;
 }
 .quire-navbar-button.menu-button {
   padding-left: .5rem;
