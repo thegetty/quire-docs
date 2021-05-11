@@ -5,11 +5,11 @@ weight: 4100
 abstract: "Dive in to creating your first Quire publication"
 ---
 
-Before getting started, if you have not done so already, we recommend taking some time to review our beginner's guide [*Tutorial: Quire Basics*](/learn/tutorial.md/) which is step-by-step introduction to the fundamentals of Quire.
+Before getting started, if you have not done so already, we recommend taking some time to review our beginner's guide [*Tutorial: Quire Basics*](/learn/tutorial/) which is step-by-step introduction to the fundamentals of Quire.
 
 ## Start a New Project
 
-Now that you have taken the [tutorial](/learn/tutorial.md/) and [installed Quire](/documentation/install-uninstall/) its time to get started on your first publication. To create a new project you will be running the `quire new` command. You can learn more about various commands in the [*Quire Commands*](/documentation/quire-commands) chapter of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
+Now that you have taken the [tutorial](/learn/tutorial) and [installed Quire](/documentation/install-uninstall/) its time to get started on your first publication. To create a new project you will be running the `quire new` command. You can learn more about various commands in the [*Quire Commands*](/documentation/quire-commands) chapter of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
 
 ```tx
 quire new project-name
@@ -67,7 +67,7 @@ What content doesn’t live in `content` directory as a Markdown file, will live
 
 #### 📁 static
 
-The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s {{< q-def "static-site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/documentation/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Output Your Project*](/documentation/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/documentation/figure-images/)).
+The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s {{< q-def "static site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Customizing Styles*](/documentation/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Output Your Project*](/documentation/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/documentation/figure-images/)).
 
 #### 📄 README.md
 
@@ -91,7 +91,7 @@ Inside each Quire project, you will find the following directories and files. De
 
 #### 📁 bin
 
-Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages, which you can learn more about in the [*Deploy Your Project*](documentation/site-deploy/#preview-your-project-with-github-pages).
+Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages, which you can learn more about in the [*Deploy Your Project*](/documentation/site-deploy/#preview-your-project-with-github-pages).
 
 #### 📄 config.yml
 

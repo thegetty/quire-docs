@@ -40,7 +40,7 @@ abstract: "Get the latest news and info about upcoming events"
 | -- | -- | -- |
 | -- | -- | -- |
 | Museum Computer Network (MCN) | Nov 10, 2020 | “Quire—A Sustainable Digital Publishing Solution for Museums of All Sizes,” with Amanda Helton and Kathryn Wade from the San José Museum of Art, https://sched.co/dfXr.  |
-| National Museum Publishing Seminar (NMPS) | July 2020 | “Think Digital, Part 1: Conceptualizing; Part 2: Implementing,” with Greg Albers. [Recording available with event registration](https://grahamschool.regfox.com/digital-nmps2020). |
+| National Museum Publishing Seminar (NMPS) | July 2020 | “Think Digital, Part 1: Conceptualizing; Part 2: Implementing,” with Greg Albers. |
 | Open Publishing Fest | May 28, 2020 | “Quire: Multiformat Publishing Solutions for Art Books and Beyond,” with Greg Albers, Erin Dunigan, Jayna Swartzman-Brosky, Nancy Um, and Amanda Helton, https://youtu.be/SB1Y5GfDP7c. |
 | Museum Computer Network (MCN) | Nov 3, 2019 | “Plague Water for Everyone! How open source digital publishing can organize & amplify multi-partner research projects,” with Alex Bortolot and Kris Thayer from the Minneapolis Institute of Art. Later reprised in January 2020 for the Museum Publishing Digital Interest Group, https://youtu.be/gE8JrMLrOQM. |
 | Webinar: Quire Demo | July 11 & 26, 2018 | A 90-minute webinar demonstrating Quire installation and basic operation, https://youtu.be/kFTcJLbMDxs. |
