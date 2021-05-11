@@ -9,6 +9,11 @@ class: home hide-menu
 ---
 
 <div class="home-block home-block--first">
+<div class="home-block__image-float--first">
+
+<img src="/img/illustrations/illustration-multiformat--ambers.png" id="homepage-banner-image" />
+
+</div>
 <div class="home-block__body">
 
 <div class="head">
