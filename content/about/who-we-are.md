@@ -34,7 +34,7 @@ Thank you to all our growing list of contributors who have made Quire what it is
 - [@egardner](https://github.com/egardner)
 - [@fchasen](https://github.com/fchasen)
 - [@garrettdashnelson](https://github.com/garrettdashnelson)
-- [@ggarcia0596](https://github.com/ggarcia0596)
+- @ggarcia0596
 - [@hbalenda](https://github.com/hbalenda)
 - [@hlj24](https://github.com/hlj24)
 - [@kalvarenga](https://github.com/kalvarenga)

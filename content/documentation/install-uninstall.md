@@ -33,7 +33,7 @@ The Quire installation process may take a minute or two, during which time there
 
 Follow the steps below to first install the support software for Quire, and then Quire itself.
 
-1. **Apple’s Xcode** is a set of developer tools for your mac. More information can be found [here](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional alert notification will pop up. Click “Install” and follow the prompts.
+1. **Apple’s Xcode** is a set of [developer tools for your mac](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional notification will pop up. Click “Install” and follow the prompts.
 
     ```text
     xcode-select --install
@@ -41,9 +41,9 @@ Follow the steps below to first install the support software for Quire, and then
 
 2. **Node.js** enables you to run javascript on your computer. Visit the Node.js site, and download and install the older LTS (long-term support) version, which is sufficient and more stable than the higher “Current” version that is also available for download: [https://nodejs.org](https://nodejs.org).
 
-3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the macOS installer, double-click it and follow the prompts to install: https://pandoc.org/installing.html
+3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/documentation/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the macOS installer, double-click it and follow the prompts to install: [https://pandoc.org/installing.html](https://pandoc.org/installing.html)
 
-4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and download the Mac version: https://kdp.amazon.com/en_US/help/topic/G202131170. Install by double clicking the icon and following the prompts.
+4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and download the Mac version: [https://kdp.amazon.com/en_US/help/topic/G202131170](https://kdp.amazon.com/en_US/help/topic/G202131170). Install by double clicking the icon and following the prompts.
 
 5. **PrinceXML** enables you to create a PDF version of your Quire project with the `quire pdf` command. Visit the PrinceXML site, download the Mac OS version, uncompress the folder, and rename it to "prince": [http://www.princexml.com/download/](http://www.princexml.com/download/).
 
@@ -86,7 +86,7 @@ Installing Quire requires using Windows PowerShell {{< q-def "command-line shell
 
 If you’re eager to get started, this will install the complete Quire package but without e-book or PDF output capability. These may be added later, by following steps 3–5 in the Full Install guidelines below.
 
-1. Download and install Git for Windows: https://gitforwindows.org/
+1. Download and install Git for Windows: [https://gitforwindows.org/](https://gitforwindows.org/)
 2. Download and install the **LTS** version of Node.js: [https://nodejs.org](https://nodejs.org)
 3. In Windows PowerShell (Admin), install Windows Build Tools with: `npm install --g --production windows-build-tools`
 4. In Windows PowerShell (Admin), install Quire with: `npm install --global @thegetty/quire-cli`
@@ -96,15 +96,15 @@ The Quire installation process may take a minute or two, during which time there
 
 ### Full Install
 
-1. **Git for Windows** installs useful version control software on your computer. Download the EXE installer file at https://gitforwindows.org/, click on it and hit "run", you should see a setup wizard screen that will install Git for Windows. During the installation, use the default settings.
+1. **Git for Windows** installs useful version control software on your computer. Download the EXE installer file at [https://gitforwindows.org](https://gitforwindows.org/), click on it and hit "run", you should see a setup wizard screen that will install Git for Windows. During the installation, use the default settings.
 
 2. **Node.js** enables you to run javascript on your computer. Visit the Node.js site, and download and install the older LTS (long-term support) version, which is sufficient and more stable than the higher “Current” version that is also available for download. The MSI installer will be downloaded, open it and a setup wizard screen will guide you through the process: [https://nodejs.org](https://nodejs.org).
 
-3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the Pandoc MSI installer file, open it and a setup wizard screen will guide you through the process: https://pandoc.org/installing.html
+3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/documentation/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the Pandoc MSI installer file, open it and a setup wizard screen will guide you through the process: [https://pandoc.org/installing.html](https://pandoc.org/installing.html)
 
-4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and download the Widows version: https://kdp.amazon.com/en_US/help/topic/G202131170. Install by double clicking the icon and following the prompts.
+4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and download the Widows version: [https://kdp.amazon.com/en_US/help/topic/G202131170](https://kdp.amazon.com/en_US/help/topic/G202131170). Install by double clicking the icon and following the prompts.
 
-5. **PrinceXML** enables you to create a PDF version of your Quire project. At https://www.princexml.com/download/, download either the 32-bit or 64-bit EXE installer depending on your operating system. (If you’re not sure of your system  open the Settings app by pressing Windows+I. Go to System > About and look for the “System type” entry on the right side.) Click on the downloaded file and hit "run", you should see a setup wizard screen that will guide you through install.
+5. **PrinceXML** enables you to create a PDF version of your Quire project. At [https://www.princexml.com/download/](https://www.princexml.com/download/), download either the 32-bit or 64-bit EXE installer depending on your operating system. (If you’re not sure of your system  open the Settings app by pressing Windows+I. Go to System > About and look for the “System type” entry on the right side.) Click on the downloaded file and hit "run", you should see a setup wizard screen that will guide you through install.
 
 6. **Windows Build Tools** is a set of developer tools for your PC. To install them, open PowerShell as administrator, type the following command, and hit enter:
 

@@ -129,7 +129,7 @@ project_list:
     publisher: Hong Kong University Museum and Art Gallery
     title_info: "*Silk Poems*"
     pub_date: 2020-06-05
-    url: https://1000camels.github.io/jen-bervin/
+    url: https://digitalpub.umag.hku.hk/jen-bervin/
     customization_level: moderate
     github_user:
       - tipeslowly
@@ -299,7 +299,7 @@ project_list:
     publisher: Hong Kong Universitiy Museum and Art Gallery
     title_info: "*Pictorial Silk: Chinese Textiles from UMAG*"
     pub_date: 2020-12-09
-    url: https://tipeslowly.github.io/textiles/
+    url: https://digitalpub.umag.hku.hk/textiles/
     customization_level: moderate
     github_user:
       - tipeslowly

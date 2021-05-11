@@ -89,7 +89,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 ### Preview Your Project with Github Pages
 
-1. First, if you haven't already, follow the steps in the [*GitHub*](documentation/github/#hosting-your-project-code-on-github) section of our docs to create a repository for your project.
+1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/documentation/github) section of our documentation to create a repository for your project.
 
 2. In your text editor, open the `config/environments/github.yml` file.
 

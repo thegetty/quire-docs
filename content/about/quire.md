@@ -59,7 +59,7 @@ Collection catalogues / exhibition catalogues / guides and toolkits / journals /
 - Quire is free to use. No proprietary software or ongoing maintenance is required. Learn more about [how quire works](/about/how-it-works/).
 - E-book files are distribution-ready for Amazon, Apple, and other vendors; PDF files are print-on-demand ready, and the online edition can be hosted on any web server. Learn how to [output](/documentation/multiformat-output/) and [deploy](/documentation/site-deploy/) your site.
 - Quire is compatible with most operating systems, including macOS and Windows. See our [installation guidelines](/documentation/install-uninstall/) for more information.
-- No pre-existing technical skills are necessary. We are developing helpful tools and resources to support our users. Take our [tutorial](/learn/tutorial/) and browse our list of [resources](/learn/other-resources/).
+- No pre-existing technical skills are necessary. We are developing helpful tools and resources to support our users. Take our [tutorial](/learn/tutorial/) and browse our list of [resources](/learn/resources/).
 - We have a vibrant and diverse community of users who are available to answer your questions and provide guidance. Visit our [Quire Community Forum](https://github.com/thegetty/quire/discussions).
 - We are moving Quire towards an open-source, community-supported model, and are currently following open-source software standards. Learn why we choose an [open-source](/about/open-source/) model.
 - For more detailed information about whether Quire is right for you, visit our [Implementation Considerations](/documentation/implementation/).

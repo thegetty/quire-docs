@@ -25,7 +25,7 @@ abstract: "Is Quire right for you and your project?"
 
 - Quire can be used "out of the box" by any individual, no matter their skill level, using Quire [tutorials](/learn/tutorial/) and documentation as support. However, in order to customize the layouts and features of the default Quire theme beyond what is provided out of the box, advanced knowledge of CSS, HTML, and static site generation is required.
 
-- We do provide documentation and additional [resources](/learn/other-resources/) to aid non-technical users in gaining the skills and knowledge to use Quire in a more advanced way.
+- We do provide documentation and additional [resources](/learn/resources/) to aid non-technical users in gaining the skills and knowledge to use Quire in a more advanced way.
 
 ## Affiliated Costs
 
