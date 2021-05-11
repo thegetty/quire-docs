@@ -427,6 +427,6 @@ Uses IIIF to add high resolution images with deep-zoom capabilities. See [*Zoomi
 
 <sup id="asterisked">*</sup> Attributes with an asterisk are in the process of being reviewed as they may not be currently being used and/or may be deprecated.
 
-<sup id="positional">†</sup> Positional parameters are included in shortcodes without a name defining them. See [`q-class`](#q-class), and [`q-cite`](q-cite).
+<sup id="positional">†</sup> Positional parameters are included in shortcodes without a name defining them. See [`q-class`](#q-class), and [`q-cite`](#q-cite).
 
 </div>
