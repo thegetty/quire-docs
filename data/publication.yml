@@ -20,7 +20,8 @@ description:
   tagline: The best free tool for creating beautiful digital books that last
   one_line:
   full: >-
-    Quire is a digital publishing framework built on top of the Hugo static site generator. Generate Web, PDF, and print books (with Epub coming soon) from a single set of text files.
+    Quire is a modern, multiformat publishing tool for creating scholarly, visually rich digital books that last. Online, print, and e-book.
+
 
 # ------------------------------------------------------------------------------
 # Publication Details
@@ -132,4 +133,4 @@ repository_url:
 # Promo Image
 # ------------------------------------------------------------------------------
 
-promo_image: promo_image.png
+promo_image: homepage.jpg
