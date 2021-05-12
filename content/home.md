@@ -53,7 +53,7 @@ Created by [Getty](https://www.getty.edu), free to use.
 
 <div class="more-link">
 
-[Learn If Quire Is Right for You](/documentation/implementation/)
+[Learn If Quire Is Right for You](/about/quire/#is-quire-right-for-you)
 
 </div>
 </div>
@@ -112,7 +112,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 
 <div class="more-link">
 
-[See the Complete Feature List](/about/quire/#features--functionality)
+[See the Complete Feature List](/about/quire/#features-functionality)
 
 </div>
 </div>
@@ -247,7 +247,7 @@ For news, updates, and events
 
 [About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Get Access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
-[GitHub](https://github.com/thegetty/quire/) | [Contributing](https://github.com/thegetty/quire/blob/main/CONTRIBUTING.md) | [Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md) | [Contact](mailto:quire@getty.edu)
+[GitHub](https://github.com/thegetty/quire/) | [Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md) | [Contact](mailto:quire@getty.edu)
 
 © J. Paul Getty Trust
 
