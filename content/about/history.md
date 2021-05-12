@@ -76,7 +76,7 @@ A landmark [cross-institutional user study](https://digpublishing.github.io/cata
 
 ## 2020
 
-The Quire team hires a Community Manager, Erin Cecele Dunigan, to advance the goal of launching Quire as an open-source tool and to fostering a thriving community of users and developers.
+The Quire team hires a Community Manager, Erin Cecele Dunigan, to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
 
 Quire is invited to participate in the inaugural [Open Publishing Fest](https://www.openpublishingfest.org/). The Quire team discusses the history and future of the tool, and three Quire community members reflect on their experience publishing with Quire and demo their recent projects.
 
