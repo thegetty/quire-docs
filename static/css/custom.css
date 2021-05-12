@@ -332,13 +332,17 @@ s  }
 @media screen and (max-width: 768px) {
   .home-block__image-float {
     margin-right: 0;
+    width: 55vw;
   }
 }
 @media screen and (max-width: 500px) {
+  .home-block__flex-container {
+    flex-direction: column;
+  }
   .home-block__image-float {
     margin-left: 0;
+    margin-bottom: 1rem;
     width: auto;
-    float: none;
   }
 }
 
