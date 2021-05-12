@@ -11,7 +11,7 @@ class: home hide-menu
 <div class="home-block home-block--first">
 <div class="home-block__image-float--first">
 
-<img src="/img/illustrations/illustration-multiformat--ambers.png" id="homepage-banner-image" />
+<img src="" id="homepage-banner-image" />
 
 </div>
 <div class="home-block__body">
@@ -23,7 +23,7 @@ Create scholarly, visually rich digital books that last
 </div>
 <div class="subhead">
 
-Online ∙ Print ∙ E-book
+Online ∙ Print ∙ E‑book
 
 </div>
 
@@ -65,7 +65,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 
 **Quire allows for greater preservation and digital distribution of works in a simplified format.**
 
-—Kris Thayer, Minneapolis Institute of Art
+—Kris Thayer, Minneapolis Institute of&nbsp;Art
 
 </div>
 <div class="feature-list two-column">
@@ -169,6 +169,7 @@ Keeps source content in nonspecialized plain text to ensure reusability
 ## The Quire Community
 
 </div>
+<div class="home-block__flex-container">
 <div class="home-block__image-float">
 
 ![illustration showing a diverse array of stylized people’s faces in multiple colors](/img/illustrations/illustration-diverse-community.png)
@@ -186,6 +187,7 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 </div>
 
+</div>
 </div>
 
 </div>
@@ -248,8 +250,6 @@ For news, updates, and events
 [About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Get Access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
 [GitHub](https://github.com/thegetty/quire/) | [Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md) | [Contact](mailto:quire@getty.edu)
-
-© J. Paul Getty Trust
 
 </div>
 </div>
