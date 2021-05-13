@@ -26,7 +26,20 @@ The Quire installation process may take a minute or two, during which time there
 
 
 {{< q-class "box warning" >}}
-- The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. If you receive an error message or get a "command not found" message after entering `quire --help` in step 4., visit our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
+- The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR.
+
+- In particular, if you see error messages that say "permission denied" you will need to run the install command as an administrator or "super user" and recursively set ownership and permissions for global node modules directories.
+
+1. Click on your computer background and press Shift-Command-G. Navigate to /usr/local/lib and delete the node_modules folder.
+2. Reinstall the LTS version of Node.js: https://nodejs.org/en/.
+3. Run the following `sudo` ("superuser do") command:
+
+```
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+```
+4. Try reinstalling Quire.
+
+If, after running the  `sudo` command, the permission errors are not resolved, you see other errors, or you get a "command not found" message after entering `quire --help` in step 4., visit our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 {{< /q-class >}}
 
 ### Full Install
