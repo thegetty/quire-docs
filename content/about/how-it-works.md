@@ -3,6 +3,8 @@ title: How It Works
 weight: 1400
 type: essay
 online: false
+pdf: false
+epub: false
 ---
 
 To work its magic, Quire packages together a number of programs, which play a critical role in the long-term discoverability, longevity, and multiformat output capabilities of Quire publications.

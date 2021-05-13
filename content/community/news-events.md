@@ -3,6 +3,8 @@ title: News & Events
 weight: 2600
 type: essay
 abstract: "Get the latest news and info about upcoming events"
+pdf: false
+epub: false
 ---
 
 ## News

@@ -3,6 +3,8 @@ title: Articles & Videos
 weight: 6100
 type: page
 abstract: "How-to guides, demos, webinars, and more"
+pdf: false
+epub: false
 ---
 
 ## How-To Guides

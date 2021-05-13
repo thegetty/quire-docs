@@ -3,6 +3,8 @@ title: Roadmap
 weight: 1700
 type: essay
 abstract: Learn about forthcoming features and other software updates
+pdf: false
+epub: false
 ---
 
 The Quire team at Getty continues its work on Quire, including improving the installation process and overall architecture, in addition to ongoing enhancements for web accessibility. A number of specific features will be developed in conjunction with forthcoming Getty Publications’ books and released to the Quire community.

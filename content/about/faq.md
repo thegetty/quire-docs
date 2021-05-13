@@ -3,6 +3,8 @@ title: FAQ
 weight: 1200
 type: essay
 online: false
+pdf: false
+epub: false
 ---
 
 **Why is it called Quire?**

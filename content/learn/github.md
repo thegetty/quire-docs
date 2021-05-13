@@ -3,6 +3,8 @@ title: Learning GitHub
 weight: 6800
 type: page
 online: false
+pdf: false
+epub: false
 ---
 
 ## Steps for Using Quire and GitHub Together

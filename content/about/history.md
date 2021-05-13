@@ -4,6 +4,8 @@ weight: 1300
 type: essay
 heading_links: false
 abstract: "View a timeline of key milestones in Quire's development"
+pdf: false
+epub: false
 ---
 
 For over sixty years, [Getty](https://www.getty.edu/) has celebrated the world's artistic legacy through the publication of award-winning books and journals. Over the last two decades, the internet has become a vital platform for creating and disseminating critical scholarship online. Yet, the field of digital publishing still lacks reliable, affordable, and sustainable tools for presenting visually rich narratives that are globally accessible across devices and borders. Getty is uniquely positioned to build on its expertise in the field and advance this effort. Keep reading to learn how Quire evolved as the cornerstone of the institution's pioneering [digital publishing work](https://www.getty.edu/publications/digital/index.html).

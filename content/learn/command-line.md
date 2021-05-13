@@ -3,6 +3,8 @@ title: Learning Command Line
 weight: 6700
 type: page
 online: false
+pdf: false
+epub: false
 ---
 
 The {{< q-def "command-line shell" >}} is a text-based way of looking at your computer’s file contents. On Mac computers you’ll most often use a shell called Terminal.
