@@ -37,7 +37,7 @@ The following steps are examples of a potential workflow when using GitHub as a 
 quire install
 quire preview
 ```
-4. Go to http://localhost:1313 to view the changes live.
+4. Go to [http://localhost:1313](http://localhost:1313) to view the changes live.
 
 ### Open Your Project in GitHub Desktop
 *You will use GitHub to save, manage, and track any changes made to your Quire project.*

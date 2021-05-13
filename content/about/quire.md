@@ -9,13 +9,13 @@ Developed by Getty, Quire offers an elegant and affordable digital publishing so
 publications in a variety of formats, including web, print, and e-book. In addition to being optimized for scholarly
 and visually rich publishing, Quire books are designed for longevity, sustainability, and discoverability.
 
-Through the use of [static site generation](/about/how-it-works/) and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format. Quire is flexible and feature-rich and can be used in its most basic configuration, or it can be customized, adapting to a  vast array of use cases. Individuals at all levels of technical experience can use Quire. Our rapidly growing [community](http://localhost:1313/community/community-showcase/) includes scholars, curators, editors, designers, web developers, and the digitally curious.
+Through the use of [static site generation](/about/how-it-works/) and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format. Quire is flexible and feature-rich and can be used in its most basic configuration, or it can be customized, adapting to a  vast array of use cases. Individuals at all levels of technical experience can use Quire. Our rapidly growing [community](/community/community-showcase/) includes scholars, curators, editors, designers, web developers, and the digitally curious.
 
 Currently under development for potential release as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating digital books that are not only as beautiful as the print books we know and love but are equally as enduring.
 
-**Institutions currently publishing with Quire**:
+**Institutions that have published using Quire**:
 
-Ad Hoc Museum Collective / Duke University (Digital Art History & Visual Culture Research Lab) / / The Graphics Office / The University of Hong Kong (Libraries & Museum and Art Gallery) / J Paul Getty Trust (Museum & Publications) / Boston Public Library (Leventhal Map &  Education Center) / Mills College Art Museum / Minneapolis Institute of Art / The Nelson-Atkins Museum of Art / Northwestern University (Libraries) / Emory University (Pitts Theology Library, Candler School of Theology) / San Jose Museum of Art / Tilt West
+Ad Hoc Museum Collective / Duke University (Digital Art History & Visual Culture Research Lab) / The Graphics Office / The University of Hong Kong (Libraries + Museum and Art Gallery) / J Paul Getty Trust (Museum + Publications) / Boston Public Library (Leventhal Map & Education Center) / Mills College Art Museum / Minneapolis Institute of Art / The Nelson-Atkins Museum of Art / Northwestern University (Libraries) / Emory University (Pitts Theology Library, Candler School of Theology) / San Jose Museum of Art / Tilt West
 
 **Quire has been used to produce**:
 
