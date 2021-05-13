@@ -65,7 +65,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 
 **Quire allows for greater preservation and digital distribution of works in a simplified format.**
 
-—Kris Thayer, Minneapolis Institute of&nbsp;Art
+—Kris Thayer, Minneapolis Institute of Art
 
 </div>
 <div class="feature-list two-column">
