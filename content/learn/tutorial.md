@@ -119,7 +119,7 @@ Open the `about.md` file. At the top you’ll see a small block of YAML surround
 Let’s make some changes to the `about.md` file to make it the Preface in our demo book:
 
 1. Change the `title` to `"Preface"`.
-2. Leave the `type` as `"page"`. [Other page types available](/documentation/pages/#defining-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
+2. Leave the `type` as `"page"`. [Other page types available](/documentation/pages/#define-page-types) are `"essay"`, `"entry"`, `"cover"`, and `"contents"`. Each displays the page content and data differently. The default is `"page"`.
 3. Change the `weight` of this page to `"2.5"`, which will order it after the `contents.md` page, which has a `weight` of `"2"`, and before the `intro.md` page, which has a `weight` of `"3"`. The `weight` value creates the ordering of pages in your book. Without a `weight` value, Quire will automatically put the pages in alphabetical order based on their filenames.
 4. Change the name of the file from `about.md` to `preface.md`. Do this by right clicking (or control clicking on a Mac) on the file in your text editor and selecting “Rename”. Note that this will also change the URL of the page.
 5. Page content goes below the YAML block. Delete the text that is there and copy-and-paste the following text as a test:

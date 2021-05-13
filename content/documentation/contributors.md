@@ -68,7 +68,7 @@ contributor:
 
 ### Contributors in the Page Heading
 
-For most [page types](/documentation/pages/#defining-page-types), you will see in previewing your site that contributors to a page will be automatically listed at the top of the page just under the title, in the order they appear in the YAML. By default, they will appear with their names and, if given, their titles and affiliations. You can override this by specifying a new value either on a page-by-page basis, or globally.
+For most [page types](/documentation/pages/#define-page-types), you will see in previewing your site that contributors to a page will be automatically listed at the top of the page just under the title, in the order they appear in the YAML. By default, they will appear with their names and, if given, their titles and affiliations. You can override this by specifying a new value either on a page-by-page basis, or globally.
 
 On an individual page, in the page YAML:
 
