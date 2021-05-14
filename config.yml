@@ -59,4 +59,4 @@ params:
   navType: short # short | full (default)
   footerButtons: false
   repository: https://github.com/thegetty/quire-docs/
-  defaultBranche: main
+  defaultBranch: main
