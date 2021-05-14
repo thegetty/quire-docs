@@ -16,6 +16,11 @@
       <div class="content">
         {{ .Content }}
         {{ partial "page-bibliography.html" . }}
+        {{ if eq .Section "documentation" }}
+        <div class="action-button source">
+          <p><a href="{{ .Site.Params.repository }}tree/{{ .Site.Params.defaultBranche }}/content/{{ .Path }}">Improve this page</a></p>
+        </div>
+      {{ end }}
       </div>
       {{ partial "footer-buttons.html" . }}
     </div>
