@@ -76,6 +76,13 @@ abstract: "List of helpful tools and other resources"
 
 - [Pandoc User's Guide](https://pandoc.org/MANUAL.html)
 
+## Static Site Generation
+
+*Static site generation keeps files in a simple, human-readable, plain-text format. That means the the complexity of building a website remains at the point of publication. They also allow for the conversion of content into formats other than online sites, including PDF, e-book, and print. Ultimately, static site generators, like [Hugo](#hugo), ensure website stability and longevity.*
+
+- [Static Web Publishing for Digital Scholarship: Lesson Plan](https://chrisdaaz.github.io/static-web-scholcomm/teaching-resources/lesson-plan/)
+- [Introduction to Static Site Generators](https://chrisdaaz.github.io/static-web-scholcomm/tutorials/static-site-generators/)
+
 ## Text Editors
 
 *A text editor is a computer program that allows you to create and edit plain text files, such as Atom or Visual Studio Code.*
