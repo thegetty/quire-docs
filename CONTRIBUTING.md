@@ -4,7 +4,7 @@
 
 Developed by Getty, Quire is a new, multiformat publishing tool available for immediate access and use. Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open-source software. **For a free license to use Quire, please complete [this form](http://bit.ly/quire-signup).**
 
-Striving toward becoming a fully open-source project, we encourage contributions from our community members. No matter what level of experience you have, we welcome all contributions, big and small.
+Striving toward becoming a fully open-source project by spring 2022, we encourage contributions from our community members. No matter what level of experience you have, we welcome all contributions, big and small.
 
 There are [many ways to contribute](#identify-a-contribution-to-make) including fixing bugs, improving the documentation, and creating a new feature or theme. Please read the following guidelines carefully. Our goal is to make the process as effective and transparent as possible, and to ensure that your every contribution can become part of Quire. Thank you for taking the time.
 
@@ -17,8 +17,9 @@ There are [many ways to contribute](#identify-a-contribution-to-make) including 
 
 ## Important Resources
 
+- [Website](https://quire.getty.edu) 
 - [Issue Tracking](https://github.com/thegetty/quire/issues/)
-- [Documentation](https://quire.getty.edu/)
+- [Documentation](https://quire.getty.edu/documentation)
 - [Forum](https://github.com/thegetty/quire/discussions)
 
 **Quire Core Team:**
@@ -79,7 +80,7 @@ If you’re interested in adding your new feature to the core Quire default them
 
 Even if you plan on developing your custom theme/feature independently and offering it to the Quire community as an add on, we highly recommend posting about it on the Quire issue tracker. This lets people know what you’re working on, gives them a chance to offer help, and can bring you valuable feedback and exposure for your work.
 
-[View the current roadmap](https://github.com/thegetty/quire/discussions/13)<br />
+[View the current roadmap](https://quire.getty.edu/about/roadmap)<br />
 [Read the Quire Technical Style Guide](https://github.com/thegetty/quire/wiki/Quire-Technical-Style-Guide)<br />
 [Post your feature idea](https://github.com/thegetty/quire/issues/new)
 
@@ -95,12 +96,12 @@ We’re always interested in adding articles about specific aspects of working i
 
 ### Improve the Documentation
 
-The Quire documentation is hosted in a separate repository along with the website, and can be found [here](https://github.com/thegetty/quire-doc). The Quire documentation is continuously being updated for clarity and completeness, but it’s not always easy to keep up with the pace of Quire’s development!
+The Quire documentation is hosted in a separate repository along with the website, and can be found [here](https://github.com/thegetty/quire-docs). The Quire documentation is continuously being updated for clarity and completeness, but it’s not always easy to keep up with the pace of Quire’s development!
 
 If there’s a section you think it missing or could be improved, we’d love for your help. And the documentation is itself a Quire site, so it should be familiar to work in.
 
 [Propose a new section or edit](https://github.com/thegetty/quire-docs/issues)<br />
-[Find an existing issue](https://github.com/thegetty/quire-docs/issues)<br />
+[Find an existing issue to work on](https://github.com/thegetty/quire-docs/issues)<br />
 [Read the Quire Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide)
 
 ### Translate the Documentation
@@ -111,7 +112,7 @@ The Quire community is global and we hope to be able to continue to expand acces
 
 ## Submit Your Contribution
 
-*We manage Quire through GitHub. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github) to learn by topic, and for a broad overview, [GitHub Guides](https://guides.github.com/). We also encourage you to check out Coding Train’s video series as a great resource as well [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV). GitHub can be accessed through the command line or [GitHub Desktop](https://desktop.github.com/).*
+*We manage Quire through GitHub. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github) to learn by topic, and for a broad overview, [GitHub Guides](https://guides.github.com/). We also encourage you to check out Coding Train’s fantastic video series [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV). GitHub can be accessed through the command line or [GitHub Desktop](https://desktop.github.com/).*
 
 Once you’ve identified your contribution on our GitHub [issues board](https://github.com/thegetty/quire/issues), you’ll next work on it and prepare to submit it to us for review as a pull request. A pull request says, “Hey, I did something useful for you, want to pull it in and merge it into your project?”
 
@@ -133,7 +134,7 @@ This is something like what the development process may look like for you:
   - Contribute in the style of the project to the best of your abilities. We’re going to be writing Quire’s Style Guides to help with this, but in the meantime, please try to follow the patterns you see in the existing pages, for instance in naming classes, structuring page templates, and commenting your code for technical contributions, or in heading structure, tone, and tense for documentation contributions.
   - Test your changes by running `quire preview`. Depending on the changes you’ve made you may also need to run `quire pdf` and `quire epub` to your changes worked. You may need to check various mobile views as well, which you can do using responsive design mode in your browser. In general, your goal with testing is to make sure your changes don’t break Quire’s existing styles or functionality. Of course, the project’s core team will be doing this too and can help guide you if something’s not working as expected.
 3. Submit a pull request through GitHub.
-  - If this is your first time putting in a pull request on a project like this, we recommend the [*First Contributions* command line](https://github.com/firstcontributions/first-contributions), or [GitHub Desktop]((https://github.com/firstcontributions/first-contributions/blob/master/gui-tool-tutorials/github-desktop-tutorial.md) tutorial. Or, Kent C. Dodds' video series [“How to Contribute to an Open Source Project on GitHub”](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
+  - If this is your first time putting in a pull request on a project like this, we recommend the [*First Contributions* command line](https://github.com/firstcontributions/first-contributions), or [GitHub Desktop](https://github.com/firstcontributions/first-contributions/blob/master/gui-tool-tutorials/github-desktop-tutorial.md) tutorial. Or, Kent C. Dodds' video series, [“How to Contribute to an Open Source Project on GitHub”](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
   - Reference any relevant issues or supporting documentation in your pull request description (for example, “Closes #203.”)
   - Explain what the changes do, and what your approach was. If there were alternate ways of doing it, mention them and tell us why you didn’t choose them.
   - If this is a Work in Progress pull request, comment on where you are and what your next steps are.
@@ -145,6 +146,36 @@ This is something like what the development process may look like for you:
 
 Learn more in the *Open Source Guide*’s [“How to Contribute to Open Source”](https://opensource.guide/how-to-contribute/).
 
----
-
 **At this point, we hope you feel ready to contribute! But don’t hesitate to [ask for help or clarification](mailto:quire@getty.edu), everyone’s a beginner at first. And thank you again for your interest in making Quire a better tool for all!** 🦄
+
+## Quire Contributors
+
+Thank you to all our growing list of contributors who have made Quire what it is, and are working on what it will be! They’ve contributed code, written and edited documentation, answered questions or shared their work on our forum, run events, and blogged or spoken about Quire.
+
+- [@1000camels](https://github.com/1000camels)
+- [@aheltonsjma](https://github.com/aheltonsjma)
+- [@anderspollack](https://github.com/anderspollack)
+- [@antoinentl](https://github.com/antoinentl)
+- [@chrisdiaz](https://github.com/chrisdaaz)
+- [@daniel-keller](https://github.com/daniel-keller)
+- [@fchasen](https://github.com/fchasen)
+- [@garrettdashnelson](https://github.com/garrettdashnelson)
+- [@ggarcia0596](https://github.com/ggarcia0596)
+- [@hbalenda](https://github.com/hbalenda)
+- [@hlj24](https://github.com/hlj24)
+- [@kalvarenga](https://github.com/kalvarenga)
+- [@kristhayer11](https://github.com/kristhayer11)
+- [@mgray4](https://github.com/mgray4)
+- [@mandrijauskas](https://github.com/mandrijauskas)
+- [@MillsArtMuseum](https://github.com/MillsArtMuseum)
+- [@mbelhu](https://github.com/mbelhu)
+- [@naeluh](https://github.com/naeluh)
+- [@nancyum](https://github.com/nancyum)
+- [@oncletom](https://github.com/oncletom)
+- [@swambold1](https://github.com/swambold1)
+- [@swroberts](https://github.com/swroberts)
+- [@tipeslowly](https://github.com/tipeslowly)
+- [@victoriabarry](https://github.com/victoriabarry)
+
+Special acknowledgement is due to Eric Gardner ([@egardner](https://github.com/egardner)) who served as Digital Publications Developer at Getty from 2014 to 2018, and who conceived and spearheaded the original development of Quire. Thank you, Eric!
+
