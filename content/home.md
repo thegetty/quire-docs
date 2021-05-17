@@ -168,6 +168,12 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 ## The Quire Community
 
+<div class="more-link">
+
+[Explore Ways to Get Involved](/community/join-us/)
+
+</div>
+
 </div>
 <div class="home-block__flex-container">
 <div class="home-block__image-float">
@@ -179,11 +185,11 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 Quire is used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
-Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [participating in the forum](https://github.com/thegetty/quire/discussions), [contributing code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
+Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [sharing your work](/community/community-showcase/), [contributing code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
 
 <div class="action-button">
 
-[Explore Ways to Get Involved](/community/join-us/)
+[Visit our Community Forum](https://github.com/thegetty/quire/discussions)
 
 </div>
 
