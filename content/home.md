@@ -27,7 +27,7 @@ Online ∙ Print ∙ E‑book
 
 </div>
 
-Quire is a modern, multiformat publishing tool optimized for longevity, discoverability, and scholarship. Quire uses a single set a plain text files to create books as authoritative and enduring as print and as vibrant and feature-rich as the web. All without paying a fee or setting up and maintaining a complicated server.
+Quire is a modern, multiformat publishing tool designed for longevity, discoverability, and scholarship. Using a single set of plain text files, Quire creates books as authoritative and enduring as print and as vibrant and feature-rich as the web, all without paying a fee or maintaining a complicated server.
 
 Created by [Getty](https://www.getty.edu), free to use.
 
