@@ -22,11 +22,12 @@ If you’re eager to get started, this will install the complete Quire package b
 3. In Terminal, install Quire with: `npm install --global @thegetty/quire-cli`
 4. Confirm installation by pulling up a list of Quire commands: `quire --help`
 
-{{< q-class "box warning" >}}
-- The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of concern are those labeled as ERROR or ERR. If you see error messages that say "permission denied" jump to the section on [troubleshooting macOS install](#troubleshooting-macos-install) below. If you see other error messages or "command not found" after entering `quire --help` in step 4., search our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues or post a new issue. 
+ The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal.
+
+{{< q-class "box tip" >}}
+- The only Terminal messages of concern are those labeled as ERROR or ERR. For error messages that say "permission denied," jump to the section on [troubleshooting macOS install](#troubleshooting-macos-install) below. For other error messages or if you receive "command not found" after entering `quire --help` in step 4., search our [Discussions Forum](https://github.com/thegetty/quire/discussions) or post a new discussion.
 {{< /q-class >}}
 
-The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR.
 
 ### Full Install
 
@@ -90,7 +91,7 @@ sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 ```
 4. Try reinstalling Quire.
 
-If, after running the  `sudo` command, the permission errors are not resolved, search our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues or post a new issue.
+If, after running the  `sudo` command, the permission errors are not resolved, search our [Discussions Forum](https://github.com/thegetty/quire/discussions) for further troubleshooting advice or to post a new discussion.
 
 ## Windows Installation
 
