@@ -1,7 +1,5 @@
 {{/*
-  Essay layout. This layout describes a single-page template that has been
-  augmented with the ability to display a frontmatter-defined abstract (in
-  markdown format) as well as bibliography references.
+  This override version of the essay layout from the default theme.
 */}}
 
 {{ define "main" }}
@@ -16,6 +14,11 @@
       <div class="content">
         {{ .Content }}
         {{ partial "page-bibliography.html" . }}
+        {{ if eq .Section "documentation" }}
+        <div class="action-button source">
+          <p><a href="{{ .Site.Params.repository }}tree/{{ .Site.Params.defaultBranch }}/content/{{ .Path }}">Improve this page</a></p>
+        </div>
+        {{ end }}
       </div>
       {{ partial "footer-buttons.html" . }}
     </div>
