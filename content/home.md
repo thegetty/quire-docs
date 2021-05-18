@@ -189,7 +189,7 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 <div class="action-button">
 
-[Visit our Community Forum](https://github.com/thegetty/quire/discussions)
+[Chat with the Community](https://github.com/thegetty/quire/discussions)
 
 </div>
 
