@@ -39,6 +39,13 @@ In static site publishing, the CMS is just software, and a folder of files on yo
 
 And yet, despite the name, static sites can be as dynamic and interactive as you want them to be, thanks to the full support of the complete web platform (HTML5, CSS3, and JavaScript). Zoomable images, interactive maps, and embedded video and audio clips are just a few of the features that can be included.
 
+### Additional Resources on Static Site Generation
+
+The following resources were created by Quire community member, Chris Diaz [(@chrisdaaz)](https://github.com/chrisdaaz), for a website he developed as a teaching tool for librarians interested in static site generators as digital publishing tools.
+
+[Static Web Publishing for Digital Scholarship: Lesson Plan](https://chrisdaaz.github.io/static-web-scholcomm/teaching-resources/lesson-plan/) </br>
+[Introduction to Static Site Generators](https://chrisdaaz.github.io/static-web-scholcomm/tutorials/static-site-generators/)
+
 ### See It in Action
 
 {{< q-figure id="quire_demo" >}}

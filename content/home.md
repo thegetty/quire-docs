@@ -27,7 +27,7 @@ Online ∙ Print ∙ E‑book
 
 </div>
 
-Quire is a modern, multiformat publishing tool designed to create books as authoritative and enduring as print and as vibrant and feature-rich as the web from a single set of plain text files. All without paying a fee or setting up and maintaining a complicated server.
+Quire is a modern, multiformat publishing tool designed for longevity, discoverability, and scholarship. Using a single set of plain text files, Quire creates books as authoritative and enduring as print and as vibrant and feature-rich as the web—all without paying a fee or maintaining a complicated server.
 
 Created by [Getty](https://www.getty.edu), free to use.
 
@@ -72,10 +72,10 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 
 - **Affordable** No proprietary software or ongoing maintenance fees required
 - **Discoverable** Increase visibility by publishing as PDF, e-book, website, or print-on-demand
-- **Sustainable** Based around static site generation and plain text files ensuring stability
+- **Sustainable** Based around static site generation and plain text files ensuring stability and longevity
 - **Book-like** Built-in understanding of high-quality, scholarly publishing with clean, modern design
 - **Accessible** Outputs accessible online editions, targeting full WCAG2.0 conformance
-- **Open Access** Follows open-source standards with goal to officially launch as open source in 2022
+- **Open Access** Follows open-source standards with goal of official open-source launch in spring 2022
 
 </div>
 
@@ -168,6 +168,12 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 ## The Quire Community
 
+<div class="more-link">
+
+[Explore Ways to Get Involved](/community/join-us/)
+
+</div>
+
 </div>
 <div class="home-block__flex-container">
 <div class="home-block__image-float">
@@ -179,11 +185,11 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 Quire is used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
-Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [participating in the forum](https://github.com/thegetty/quire/discussions), [contributing code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
+Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [sharing your work](/community/community-showcase/), [contributing code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
 
 <div class="action-button">
 
-[Explore Ways to Get Involved](/community/join-us/)
+[Chat with Our Users](https://github.com/thegetty/quire/discussions)
 
 </div>
 

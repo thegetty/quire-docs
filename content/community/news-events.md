@@ -7,7 +7,7 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## News
 
-*Check out the [latest issue of our monthly e-newsletter](https://newsletters.getty.edu/campaigns/reports/viewCampaign.aspx?d=t&c=D97F4668808A2800&ID=E8AED17B4070D5EC2540EF23F30FEDED&temp=False&tx=0&source=Report) or [sign up to receive updates.](https://newsletters.getty.edu/h/t/3482055B10CD0F24)*
+*Check out the [latest issue of our monthly e-newsletter](https://newsletters.getty.edu/t/t-8C009AD08751AA0D2540EF23F30FEDED) or [sign up to receive updates.](https://newsletters.getty.edu/h/t/3482055B10CD0F24)*
 
 **2021**
 
@@ -30,7 +30,7 @@ abstract: "Get the latest news and info about upcoming events"
 | -- | -- | -- |
 | -- | -- | -- |
 | National Museum Publishing Seminar (NMPS) | August 2, 2021 | “Digital Publishing Today: Three Case Studies” moderated by Erin Cecele Dunigan, with Alex Bortolot (Minneapolis Institute of Art), Heather Brand (Museum of Fine Arts, Houston), and Emmet Byrne (Walker Art Center) presenting recent collections-based digital publishing projects. |
-| IIIF Annual Conference | June 23, 2021 | "Quire & IIIF: Implementing a User-Friendly Workflow for Digital Publishing,” with Greg Albers, Erin Dunigan, Matthew Hrudka, and Hannah Balenda. [https://iiif.io/event/2021/annual_conference/#agenda](https://iiif.io/event/2021/annual_conference/#agenda) |
+| IIIF Annual Conference | June 23, 2021 | "Quire & IIIF: Implementing a User-Friendly Workflow for Digital Publishing,” with Greg Albers, Erin Cecele Dunigan, Matthew Hrudka, and Hannah Balenda. [https://iiif.io/event/2021/annual_conference/#agenda](https://iiif.io/event/2021/annual_conference/#agenda) |
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 

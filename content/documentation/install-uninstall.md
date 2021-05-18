@@ -22,12 +22,12 @@ If you’re eager to get started, this will install the complete Quire package b
 3. In Terminal, install Quire with: `npm install --global @thegetty/quire-cli`
 4. Confirm installation by pulling up a list of Quire commands: `quire --help`
 
-The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. If you see these errors, or if you see "command not found" after entering `quire --help` in step 4., search our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
+ The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal.
 
-
-{{< q-class "box warning" >}}
-- The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. If you receive an error message or get a "command not found" message after entering `quire --help` in step 4., visit our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
+{{< q-class "box tip" >}}
+- The only Terminal messages of concern are those labeled as ERROR or ERR. For error messages that say "permission denied," jump to the section on [troubleshooting macOS install](#troubleshooting-macos-install) below. For other error messages or if you receive "command not found" after entering `quire --help` in step 4., search our [Discussions Forum](https://github.com/thegetty/quire/discussions) or post a new discussion.
 {{< /q-class >}}
+
 
 ### Full Install
 
@@ -77,6 +77,21 @@ Follow the steps below to first install the support software for Quire, and then
     ```
 
     Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
+
+### Troubleshooting macOS Install
+
+During install, you may come across an error message that says "permission denied." This is related to the ownership and permissions settings for the global node modules directories installed in step 2. To fix this issue, you will need to run a special command as an administrator or "super user."
+
+1. Click on your computer background and press Shift-Command-G. Navigate to /usr/local/lib and delete the node_modules folder.
+2. Reinstall the LTS version of Node.js: https://nodejs.org/en/.
+3. Run the following `sudo` ("superuser do") command:
+
+```
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+```
+4. Try reinstalling Quire.
+
+If, after running the  `sudo` command, the permission errors are not resolved, search our [Discussions Forum](https://github.com/thegetty/quire/discussions) for further troubleshooting advice or to post a new discussion.
 
 ## Windows Installation
 
