@@ -706,8 +706,9 @@ s  }
   margin: -1px;
 }
 
+/* Special style for the source button */
 .quire-page__content .container .content .source {
-  margin-top: 3.5rem;
+  margin-top: 6rem;
 }
 
 /* Specialty style for GitHub link under first button on homepage */
