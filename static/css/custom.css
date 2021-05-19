@@ -706,6 +706,11 @@ s  }
   margin: -1px;
 }
 
+/* Special style for the source button */
+.quire-page__content .container .content .source {
+  margin-top: 6rem;
+}
+
 /* Specialty style for GitHub link under first button on homepage */
 .quire-page__content .container .content .action-button.with-sub-action-button {
   margin-bottom: .5rem;
