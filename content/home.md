@@ -221,7 +221,7 @@ Try Quire for yourself
 
 Get a one-on-one consultation
 
-[Email us to schedule today](mailto:quire@getty.edu)
+[Email us to schedule a call](mailto:quire@getty.edu)
 
 </div>
 <div class="footer-item">
