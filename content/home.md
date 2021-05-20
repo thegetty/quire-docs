@@ -81,7 +81,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 
 <div class="action-button">
 
-[View our Fact Sheet](/downloads/quire-fact-sheet.pdf)
+[View Our Fact Sheet](/downloads/quire-fact-sheet.pdf)
 
 </div>
 
@@ -189,7 +189,7 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 <div class="action-button">
 
-[Chat with Our Users](https://github.com/thegetty/quire/discussions)
+[Visit Our Community Forum](https://github.com/thegetty/quire/discussions)
 
 </div>
 
@@ -217,11 +217,11 @@ Try Quire for yourself
 
 ![speech bubble icon](/img/icons/speech.png)
 
-### Community Forum
+### Chat with Us
 
-Ask and answer questions
+Get a one-on-one consultation
 
-[Join the conversation](https://github.com/thegetty/quire/discussions) ![offsite](/img/icons/offsite--blue-60.svg)
+[Email us to schedule a call](mailto:quire@getty.edu)
 
 </div>
 <div class="footer-item">
