@@ -88,7 +88,7 @@ Quire’s beta community grows to nearly 200 members, with more than a dozen [pu
 
 ## 2021
 
-The Quire team launches a [newsletter](https://newsletters.getty.edu/h/t/3482055B10CD0F24), [community forum](https://github.com/thegetty/quire/discussions), and [new website](https://quire.getty.edu/).
+The Quire team launches a [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4), [community forum](https://github.com/thegetty/quire/discussions), and [new website](https://quire.getty.edu/).
 
 Quire version 0.19.0 is released. Quire users now have the ability to include deep zooming images with [IIIF](/documentation/zooming-images).
 <br/>

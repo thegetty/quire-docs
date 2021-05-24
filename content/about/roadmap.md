@@ -27,6 +27,6 @@ The Quire team at Getty continues its work on Quire, including improving the ins
 
 <div class="action-button">
 
-[Stay updated](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
+[Stay updated](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4)
 
 </div>

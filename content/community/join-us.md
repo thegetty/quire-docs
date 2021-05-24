@@ -49,7 +49,7 @@ Sign-up to receive our monthly newsletter for news, events, feature updates, and
 
 <div class="action-button">
 
-[Subscribe Today](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
+[Subscribe Today](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4)
 
 </div>
 
@@ -60,7 +60,7 @@ Sign-up to receive our monthly newsletter for news, events, feature updates, and
 
 ## Share Your Work
 
-Send us your finished Quire publications and we will add them to our [Community Showcase](/community/community-showcase/) and [newsletter](https://newsletters.getty.edu/h/t/3482055B10CD0F24). We also invite you to share your publication with the community on our [forum](https://github.com/thegetty/quire/discussions/categories/show-tell).
+Send us your finished Quire publications and we will add them to our [Community Showcase](/community/community-showcase/) and [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4). We also invite you to share your publication with the community on our [forum](https://github.com/thegetty/quire/discussions/categories/show-tell).
 
 <div class="action-button">
 
