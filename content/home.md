@@ -243,7 +243,7 @@ Dive into code, customization, and more
 
 For news, updates, and events
 
-[Subscribe to our mailing list](https://newsletters.getty.edu/h/t/3482055B10CD0F24)
+[Subscribe to our mailing list](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4)
 
 </div>
 
