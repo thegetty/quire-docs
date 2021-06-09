@@ -35,8 +35,8 @@ abstract: "Get the latest news and info about upcoming events"
 | Event | Date | Description |
 | -- | -- | -- |
 | -- | -- | -- |
-| National Museum Publishing Seminar (NMPS) | August 2, 2021 | “Digital Publishing Today: Three Case Studies” moderated by Erin Cecele Dunigan, with Alex Bortolot (Minneapolis Institute of Art), Heather Brand (Museum of Fine Arts, Houston), and Emmet Byrne (Walker Art Center) presenting recent collections-based digital publishing projects. |
 | IIIF Annual Conference | June 23, 2021 | "Quire & IIIF: Implementing a User-Friendly Workflow for Digital Publishing,” with Greg Albers, Erin Cecele Dunigan, Matthew Hrudka, and Hannah Balenda. [https://iiif.io/event/2021/annual_conference/#agenda](https://iiif.io/event/2021/annual_conference/#agenda) |
+| National Museum Publishing Seminar (NMPS) | August 2, 2021 | “Digital Publishing Today: Three Case Studies” moderated by Erin Cecele Dunigan (Quire), with Alex Bortolot (Minneapolis Institute of Art), Heather Brand (Museum of Fine Arts, Houston), and Emmet Byrne (Walker Art Center) presenting recent collections-based digital publishing projects. [https://www.eventbrite.com/e/nmps-presents-museum-publishing-now-2021-tickets-157672882837](https://www.eventbrite.com/e/nmps-presents-museum-publishing-now-2021-tickets-157672882837) |
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
