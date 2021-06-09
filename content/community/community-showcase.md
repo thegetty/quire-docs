@@ -9,6 +9,6 @@ abstract: "Browse Quire publications from our community"
 
 <div class="action-button">
 
-[Submit Your Quire Project](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
+[Submit Your Quire Project](https://docs.google.com/forms/d/e/1FAIpQLSeJWyTA9OUjdQnw8JsmJudJuIzGRAzTeTL7BWr_L6u6C67bCA/viewform)
 
 </div>
