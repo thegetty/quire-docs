@@ -149,7 +149,7 @@ Now you have the opportunity to review changes, provide feedback, or request edi
 4. Hover over the section of text you would like to comment on.
 5. You will see a blue square with a plus mark pop-up. Write your comments here.
 6. When you are done commenting click, "Start a Review." You will have the option to comment, approve, and request changes.
-7. Once the pull request has been approved, provided there are no conflicts, you will see a green-button that says "merge pull request." Click this and, voila, your changes are not incorporated.
+7. Once the pull request has been approved, provided there are no conflicts, you will see a green-button that says "merge pull request." Click this and, voila, your changes are now incorporated.
 
 {{< q-class "box tip" >}}
 Merge conflicts will happen when you attempt to merge branches that have competing commits. Read more about [addressing and resolving merge conflicts](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts) in the GitHub documentation.
