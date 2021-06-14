@@ -5,6 +5,17 @@ type: essay
 online: false
 ---
 
+2020
+
+- [December 2020]()
+
+2021
+
+- [January 2021](https://mailchi.mp/a37708de5fe9/quire-newsletter-january-2021)
+- [February 2021](https://mailchi.mp/1560ae4535e7/quire-newsletter-february-2021?e=5c4361e9ac)
+- March 2021
+- April 2021
+- May 2021
 <script type="text/javascript" src="https://newsletters.getty.edu/t/t/p/hulye/0/1/0/0/0/"></script>
 
 <div class="action-button">
