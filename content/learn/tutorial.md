@@ -28,8 +28,6 @@ With the shell open, you can type `ls` (list) to list the folders and files in y
 
 {{< q-class "box tip" >}}
 
-#### Command-Line Quick Reference
-
 - `ls` lists all the files in the directory you’re in
 - `cd` followed by a space and a directory name, will move you into that directory: `cd my-project`
 - `cd` by itself will return you to your home directory
