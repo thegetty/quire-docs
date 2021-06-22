@@ -226,6 +226,6 @@ For the online edition, type `quire site` and press enter. A `site` directory wi
 Congratulations on completing the tutorial! We’ve touched on Quire’s core concepts and functionality, but of course there’s more to learn and do.
 
 - [Watch a 90-minute webinar recording](https://youtu.be/kFTcJLbMDxs) that walks through many of the steps in this tutorial.
-- [Sign up for beta access](https://goo.gl/forms/IaQ8kHH6Y2YyVlgr1), if you haven’t already, to work with Quire on your own.
+- [Sign up for access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), if you haven’t already, to work with Quire on your own.
 - Continue reading the docs.
 - Start working on your own Quire project.
