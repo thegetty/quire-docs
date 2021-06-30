@@ -9,11 +9,11 @@ abstract: "Get the latest news and info about upcoming events"
 
 <div class="action-button">
 
-[Subscribe to Our Newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4)
+[Subscribe to Quire Newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4)
 
 </div>
 
-*Newsletter archive coming soon.*
+*Visit our [newsletter archive](/community/newsletter-archive/).*
 
 **2021**
 
