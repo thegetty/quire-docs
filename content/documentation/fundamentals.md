@@ -290,19 +290,19 @@ While there are a number of free tools, we recommend using Pandoc, which is incl
 To convert a single Word document (in this example it has a file name of MyFile.docx) into Markdown:
 
 ```
-pandoc --atx-header --wrap=none -s MyFile.docx -t markdown-smart -o MyFile.md
+pandoc --markdown-headings=atx --wrap=none -s MyFile.docx -t markdown-smart -o MyFile.md
 ```
 
 To convert all the Word documents in the folder and compile them into a **single** Markdown document:
 
 ```
-pandoc --atx-header --wrap=none -s *.docx -t markdown-smart -o MyFile.md
+pandoc --markdown-headings=atx --wrap=none -s *.docx -t markdown-smart -o MyFile.md
   ```
 
 To convert all the Word documents in the folder into **individual** Markdown files:
 
 ```
-for f in *.docx; do pandoc --atx-header --wrap=none "$f" -s -t markdown-smart -o "${f%.docx}.md"; done
+for f in *.docx; do pandoc --markdown-headings=atx --wrap=none "$f" -s -t markdown-smart -o "${f%.docx}.md"; done
 ```
 
 Note that the `--atx-header` and `--wrap=none` options in the above commands are optional, but recommended for Quire.
@@ -313,11 +313,11 @@ Note that the `--atx-header` and `--wrap=none` options in the above commands are
 The order of the extensions doesn't matter, and you can either type:
 
 ```
-pandoc --atx-header --wrap=none -s MyFile.docx -t markdown -o MyFile.md
+pandoc --markdown-headings=atx --wrap=none -s MyFile.docx -t markdown -o MyFile.md
 ```
 
 or
 
 ```
-pandoc -s MyFile.docx -t markdown --atx-header --wrap=none -o MyFilemd
+pandoc -s MyFile.docx -t markdown --markdown-headings=atx --wrap=none -o MyFilemd
 ```
