@@ -429,7 +429,7 @@ project_list:
     src: /screenshots/_materia_vol_1.jpg
     alt: "Materia: Journal of Technical Art History Vol. 1, Issue 1"
     type: Journal
-    publisher: Materia: Journal of Technical Art History
+    publisher: "Materia: Journal of Technical Art History"
     title_info: "Materia: Journal of Technical Art History (Vol. 1, Issue 1)"
     pub_date: 2021-06-28
     url: https://volume-1-issue-1.materiajournal.com/
@@ -437,4 +437,4 @@ project_list:
     github_user:
       - materiajournal
       - sophielamb
-    note: "Materia used Quire to create its first journal issue, which was then linked back to the main journal website. The Materia team customized the issue by changing fonts, banner sizes, and colors and by adding in an icon (a microscope) to denote if articles had been peer-reviewed. Materia chose Quire as it offered the ability to deliver free technical art history content to the world and provided a means of achieving ISSN/library status and increased funding."
+    note: "Materia used Quire to create its inaugural journal issue. The Materia team customized the issue by changing fonts, banner sizes, and colors and by adding in an icon (a microscope) to denote if articles had been peer-reviewed. Materia chose Quire as it offered the ability to deliver free technical art history content to the world and provided a means of achieving ISSN/library status."
