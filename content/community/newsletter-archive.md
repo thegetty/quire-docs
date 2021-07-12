@@ -5,13 +5,6 @@ type: essay
 online: false
 ---
 
-<div class="action-button">
-
-[Subscribe to Quire Newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4)
-
-</div>
-
-
 2021
 
 <script type="text/javascript" src="https://newsletters.getty.edu/t/t/p/hulye/0/1/0/0/0/"></script>
@@ -25,3 +18,9 @@ online: false
 2020
 
 - [December 2020](https://mailchi.mp/d030942ba347/quire-a-year-in-review?e=5c4361e9ac)
+
+<div class="action-button">
+
+[Subscribe to Quire Newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4)
+
+</div>
