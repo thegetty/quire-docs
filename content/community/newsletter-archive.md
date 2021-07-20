@@ -17,7 +17,7 @@ online: false
 
 2020
 
-- [December 2020](https://mailchi.mp/d030942ba347/quire-a-year-in-review?e=5c4361e9ac)
+- [December 2020](https://mailchi.mp/d030942ba347/quire-a-year-in-review?e=5c4361e9ac): Quire: A Year in Review, New Releases, Thank You Contributors, Looking Ahead to the Future
 
 <div class="action-button">
 
