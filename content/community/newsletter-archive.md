@@ -13,7 +13,7 @@ online: false
 - [April 2021](/downloads/april.html)
 - [March 2021](/downloads/march.html)
 - [February 2021](https://mailchi.mp/1560ae4535e7/quire-newsletter-february-2021?e=5c4361e9ac)
-- [January 2021](https://mailchi.mp/a37708de5fe9/quire-newsletter-january-2021)
+- [January 2021](https://mailchi.mp/a37708de5fe9/quire-newsletter-january-2021): Quire Repository Migration, Forthcoming Quire Features, Call for Freelance Developers
 
 2020
 
