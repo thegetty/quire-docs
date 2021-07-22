@@ -1,6 +1,8 @@
 ---
 title: Who We Are
 weight: 1800
+pdf: false
+epub: false
 type: essay
 abstract: Meet Quire’s core team and contributors
 ---
