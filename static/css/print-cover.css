@@ -1,0 +1,186 @@
+/* Colors */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+
+  --print-width: 5.5in;
+  --print-height: 8.5in;
+  --print-spine: .54in;
+  --print-bleed: .125in;
+  --print-wrap-width: 11.54in;
+}
+
+@media screen {
+  :root {
+    --garden-60: #009877;
+  }
+}
+@media print {
+  :root {
+    --garden-60: cmyk(94%, 11%, 71%, 0%);
+  }
+}
+
+/* Graphik Regular */
+@font-face {
+  font-family: "Graphik";
+  src: url("https://static.getty.edu/fonts/graphik/Graphik-Regular-Web.woff2") format("woff2"),
+       url("https://static.getty.edu/fonts/graphik/Graphik-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Graphik Regular Italic */
+@font-face {
+  font-family: "Graphik";
+  src: url("https://static.getty.edu/fonts/graphik/Graphik-RegularItalic-Web.woff2") format("woff2"),
+       url("https://static.getty.edu/fonts/graphik/Graphik-RegularItalic-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Graphik Medium */
+@font-face {
+  font-family: "Graphik";
+  src: url("https://static.getty.edu/fonts/graphik/Graphik-Medium-Web.woff2") format("woff2"),
+       url("https://static.getty.edu/fonts/graphik/Graphik-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Graphik Medium Italic */
+@font-face {
+  font-family: "Graphik";
+  src: url("https://static.getty.edu/fonts/graphik/Graphik-MediumItalic-Web.woff2") format("woff2"),
+       url("https://static.getty.edu/fonts/graphik/Graphik-MediumItalic-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Graphik Semibold */
+@font-face {
+  font-family: "Graphik";
+  src: url("https://static.getty.edu/fonts/graphik/Graphik-Semibold-Web.woff2") format("woff2"),
+       url("https://static.getty.edu/fonts/graphik/Graphik-Semibold-Web.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Graphik Semibold Italic */
+@font-face {
+  font-family: "Graphik";
+  src: url("https://static.getty.edu/fonts/graphik/Graphik-SemiboldItalic-Web.woff2") format("woff2"),
+       url("https://static.getty.edu/fonts/graphik/Graphik-SemiboldItalic-Web.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@page {
+  size: var(--print-wrap-width) var(--print-height);
+  prince-bleed: var(--print-bleed);
+  bleed: var(--print-bleed);
+  prince-trim: calc( var(--print-bleed) * 2 );
+  marks: crop;
+  margin: 0;
+  margin-bottom: calc( var(--print-bleed) * -1 );
+  margin-right: calc( var(--print-bleed) * -1 );
+}
+
+.quire-print-cover {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: 'Graphik';
+  margin-left: calc( var(--print-bleed) * -1 );
+  margin-top: calc( var(--print-bleed) * -1 );
+  max-width: calc( var(--print-wrap-width) + var(--print-bleed) + var(--print-bleed) );
+}
+
+.quire-print-cover__top-banner {
+  position: absolute;
+  top: calc( var(--print-bleed) * -1 );
+  left: calc( var(--print-bleed) * -1 );
+  height: .8125in;
+  background-color: var(--black);
+  border-radius: 0 0 4px 0;
+  width: 8.6125in;
+  z-index: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.quire-print-cover__top-banner img {
+  max-height: .325in;
+  text-align: right;
+  margin-right: .1875in;
+  margin-top: .325in;
+}
+
+
+.quire-print-cover__front-cover,
+.quire-print-cover__back-cover {
+  width: calc( var(--print-width) + var(--print-bleed) );
+  height: calc( var(--print-height) + var(--print-bleed) + var(--print-bleed));
+  background-color: var(--garden-60);
+  overflow: hidden;
+  position: relative;
+  line-height: 1.5;
+}
+.quire-print-cover__front-cover__heading {
+  margin: 2.25in .5in 0;
+  color: var(--white);
+}
+.quire-print-cover__front-cover__heading .title {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 1.5rem;
+}
+
+.quire-print-cover__front-cover__image {
+  position: absolute;
+  bottom: 0;
+  right: -1.5in;
+  width: 6in;
+}
+
+.quire-print-cover__back-cover__description {
+  color: var(--white);
+  margin: 2.25in 1in 0 .5in;
+}
+
+.quire-print-cover__spine {
+  width: var(--print-spine);
+  height: calc( var(--print-height) + var(--print-bleed) + var(--print-bleed));
+  background-color: var(--garden-60);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.quire-print-cover__spine__title {
+  --translate-x: 1in;
+  --translate-y: calc( var(--print-spine) * .5 * -1 );
+  transform: rotate(90deg) translate(var(--translate-x),var(--translate-y));
+  transform-origin: left center;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.quire-print-cover__spine__publisher {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: .625in;
+}
+.quire-print-cover__spine__publisher.rotated {
+  height: var(--print-spine);
+  transform: rotate(90deg);
+  align-items: center;
+}
+.quire-print-cover__spine__publisher__logo {
+  width: 1in;
+  max-width: calc( var(--print-spine) * .8 );
+}
+.quire-print-cover__spine__publisher.rotated .quire-print-cover__spine__publisher__logo {
+  height: .625in;
+  max-height: calc( var(--print-spine) * .5 );
+  width: auto;
+  max-width: none;
+}

@@ -1,0 +1,112 @@
+{{/*
+Cover page layout. This controls the home page of the publication.
+*/}}
+<!DOCTYPE html>
+<html lang="{{ .Site.Data.publication.language }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  {{ if eq .Params.online false -}}
+  <meta name="robots" content="noindex, nofollow">
+  {{- end }}
+
+  {{- $printCoverCSS := "css/print-cover.css" | relURL -}}
+  <link rel="stylesheet" href="{{ $printCoverCSS }}">
+
+  </head>
+  <body class="quire-print-cover">
+
+{{ if isset $.Site.Params "imagedir" }}
+{{ $.Scratch.Set "imageDir" $.Site.Params.imageDir }}
+{{ else }}
+{{ $.Scratch.Set "imageDir" "" }}
+{{ end }}
+
+  <section class="quire-print-cover__top-banner">
+    {{ $logoPath := printf "%s/%s" ($.Scratch.Get "imageDir") "quire-logo--white.png" }}
+    <img class="quire-print-cover__top-banner__image" src="{{ $logoPath | relURL }}" />
+  </section>
+
+    <section class="quire-print-cover__front-cover">
+      <div class="quire-print-cover__front-cover__overlay"></div>
+
+    <div class="quire-print-cover__front-cover__heading">
+        {{/* Use .Site.Data.publication info if available */}}
+        {{ if .Site.Data.publication }}
+
+        {{- $endPunctuation := findRE "[!|?]$" .Site.Data.publication.title -}}
+        <h1 class="title">
+          {{ .Site.Data.publication.title | markdownify }}
+          {{- with .Site.Data.publication.subtitle -}}
+          <span class="subtitle">{{ . | markdownify }}</span>
+          {{ end }}
+        </h1>
+
+        {{ with .Site.Data.publication.cover_tagline }}
+        <p class="reading-line">{{ . | markdownify }}</p>
+        {{ end }}
+
+        <div class="contributor">
+        {{- if .Site.Data.publication.contributor_as_it_appears -}}
+        {{ .Site.Data.publication.contributor_as_it_appears | markdownify }}
+        {{ else }}
+
+          {{/* List primary contributors unless none are marked as primary
+               in which case list all contributors in publication.yml */}}
+          {{/* ------------------------------------------------------------ */}}
+          {{- range .Site.Data.publication.contributor -}}
+            {{- if .type -}}
+              {{ $.Scratch.Set "type" true }}
+            {{- end -}}
+          {{- end -}}
+          {{ if eq ($.Scratch.Get "type") true }}
+            <em>{{ partial "contributor-list.html" (dict "range" .Site.Data.publication.contributor "contributorType" "primary" "listType" "string" "Site" $.Site) }}</em>
+          {{- else -}}
+            <em>{{ partial "contributor-list.html" (dict "range" .Site.Data.publication.contributor "contributorType" "all" "listType" "string" "Site" $.Site) }}</em>
+          {{- end -}}
+        {{- end -}}
+        </div>
+
+        {{ else }}
+        {{/* Fallback for when no publication.yml data is present */}}
+        <h1 class="title">{{ .Site.Title }}</h1>
+        {{ end }}
+      </div>
+
+      {{ $coverImgPath := printf "%s/%s" ($.Scratch.Get "imageDir") .Params.image }}
+      <img class="quire-print-cover__front-cover__image" src="{{ $coverImgPath | relURL }}" />
+
+
+  </section>
+  {{/* End full-page cover section */}}
+
+
+  <section class="quire-print-cover__spine">
+    <div class="quire-print-cover__spine__title">
+    {{ .Site.Data.publication.title | markdownify | truncate 60 }}
+    </div>
+    <div class="quire-print-cover__spine__publisher{{ if in .Params.class "rotate-spine-logo" }} rotated{{ end }}">
+      {{ range .Site.Data.publication.publisher }}
+      {{ if .logo }}
+      {{ $logoPath := printf "%s/%s" ($.Scratch.Get "imageDir") .logo }}
+      <img class="quire-print-cover__spine__publisher__logo" src="{{ $logoPath | relURL }}" />
+      {{ else if .name }}
+      {{ .name }}
+      {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
+
+  <section class="quire-print-cover__back-cover">
+    {{ with .Content }}
+    <div class="quire-print-cover__back-cover__description">
+      {{ . }}
+    </div>
+    {{ end }}
+  </section>
+
+</body>
+</html>

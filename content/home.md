@@ -3,6 +3,8 @@ title: Quire
 reading_line: The best free tool for creating beautiful digital books that last.
 weight: 1
 menu: false
+pdf: false
+epub: false
 type: page
 slug: .
 class: home hide-menu
