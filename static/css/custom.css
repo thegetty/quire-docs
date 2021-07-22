@@ -44,6 +44,7 @@ Css Sections:
   OFF SITE INDICATORS
   GLOSSARY
   CODE
+  PRINT
 */
 
 /* HOME PAGE
@@ -1098,6 +1099,11 @@ on the page and adjusts to different window widths */
   margin-top: 5rem;
   min-height: calc(100vh - 5rem);
 }
+@media print {
+  #main {
+    margin-top: -.125in;
+  }
+}
 #home #main {
   margin-top: 0;
 }
@@ -1348,4 +1354,36 @@ div.quire-caption-container > span code {
   background-color: #f4f3f2;
   color: #1a1a1a;
   line-height: 2;
+}
+
+/* PRINT
+============================================================================= */
+@media print {
+
+  .quire-page__heading-links,
+  .action-button {
+    display: none;
+  }
+  .quire-citation__button {
+    border-bottom-width: 0;
+  }
+  .quire-page__header {
+    margin-bottom: .5in;
+  }
+  .quire-page__header .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .quire-page h2:not(:first-child) {
+    margin-top: 2rem;
+  }
+  .fullPageBreak:first-child {
+    display: none;
+  }
+  .list {
+    background-color: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+  }
+
 }

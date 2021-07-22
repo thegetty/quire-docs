@@ -8,16 +8,16 @@
 
 // Variables (others in the variables.scss file)
 // -----------------------------------------------------------------------------
-$print-base-text-column-width: 4.5in;
+$print-base-text-column-width: 4.125in;
 
-$print-bottom-margin: 0.875in;
-$print-top-margin: 0.75in;
-$print-outer-margin: 0.625in;
-$print-inner-margin: 0.875in;
+$print-bottom-margin: 0.75in;
+$print-top-margin: 0.875in;
+$print-outer-margin: 0.75in;
+$print-inner-margin: 0.625in;
 
-@if $print-width <= 7 {
-  $print-inner-margin: $print-width - $print-base-text-column-width - $print-outer-margin;
-}
+// @if $print-width <= 7 {
+//   $print-inner-margin: $print-width - $print-base-text-column-width - $print-outer-margin;
+// }
 
 @if $print-height <= 10 {
   $print-top-margin: 0.5in;
