@@ -9,6 +9,8 @@ online: false
 
 <script type="text/javascript" src="https://newsletters.getty.edu/t/t/p/hulye/0/1/0/0/0/"></script>
 
+- [July 2021](/downloads/july.html): It Takes a Village: Developing Open-Source Tools, Forum Documentation Now Available, Quire Version 0.19.2 🚀 , National Museum Publishing Seminar, Materia: Journal of Technical Art History
+- [June 2021](/downloads/june.html): Call for Quire Website Feedback, New GitHub Documentation Available, Help Us Improve the Quire Docs, IIIF Annual Conference, National Museum Publishing Seminar, 2019 Publication From Ad Hoc Museum Collective
 - [May 2021](/downloads/may.html): Announcing the New Quire Website, IIIF is Now Available for Quire, Digital Catalogues Study, Getty Marrow Internship Program Impact Report
 - [April 2021](/downloads/april.html): New Quire Resources: Glossary & Cheatsheet, Deploy Your Quire Project with Netlify Drop, New Publications from Pitts Theology Library, Candler School of Theology, Emory University and Duke University Digital Art History & Visual Culture Research Lab
 - [March 2021](/downloads/march.html): How to Set Up Forum Notifications, Reminder to Update Quire, New Quire License, New Publications from Hong Kong University Libraries, Nelson-Atkins Museum of Art, and Northwestern University Libraries
