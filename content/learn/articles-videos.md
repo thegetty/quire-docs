@@ -38,4 +38,6 @@ abstract: "How-to guides, demos, webinars, and more"
 
 {{< q-figure id="opf_2020" >}}
 
+{{< q-figure id="2021-iiif-annual-conference" >}}
+
 **Interested in writing an article or step-by-step guide? Have a demo or presentation about Quire you'd like to submit? Please contact us at quire@getty.edu.**
