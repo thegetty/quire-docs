@@ -48,7 +48,7 @@ Contact us at [quire@getty.edu](mailto:quire@getty.edu)
 
 ## Identify a Contribution to Make
 
-**The first step to any contribution** is to post a new issue or comment on an existing issue [on our issue tracker](https://github.com/thegetty/quire-docs/issues/). Be sure to briefly describe your proposed solution and say whether you may need help with any aspect of it. This approach has several advantages:
+The first step to any contribution is to post a new issue or comment on an existing issue [on our issue tracker](https://github.com/thegetty/quire-docs/issues/). This helps avoid changes being rejected before you've done too much work. Be sure to briefly describe your proposed solution and say whether you may need help with any aspect of it. This approach has several advantages:
 
 - Lets people know you’re working on it
 - Gives the core team and the community a chance to give feedback before you do any work
@@ -58,12 +58,25 @@ Below is a list of possible contribution types.
 
 ### Fix a Typo or Broken Link
 
-No need to post an issue. Just follow the steps in [Start Work on Contribution](#start-work-on-contribution) to make your changes. Then follow the steps in [Submit Your Contribution](#submit-your-contribution). 
+Sometimes little things like typos or broken links can slip through the cracks. That's where we could use your help. These types of small edits make for good first issues.  
+
+[Identify a typo or broken link](https://github.com/thegetty/quire/issues/new)
 
 ### Copyedit Text 
 
+If you see a section of the text that can be improved or clarified, please flag it for us and feel free to jump in and make the changes you see fit. 
+
+[Share your copyediting idea](https://github.com/thegetty/quire/issues/new)
+
 ### Propose/Write a New Section
 
+If you've recently contributed a new feature to our main [Quire repository](https://github.com/thegetty/quire) and have the time to add the appropriate documentation please do so. 
+
+If you come across a TK section and would like to complete it, let us know. 
+
+Finally, if you have an idea for a section that needs to be added to help extend Quire's usability, let us know or write it yourself. 
+
+[Share your new section idea](https://github.com/thegetty/quire/issues/new)
 
 ### Propose/Write an Article for the Website 
 
@@ -79,24 +92,23 @@ The Quire community is global and we hope to be able to continue to expand acces
 
 [Volunteer to do some translation](https://github.com/thegetty/quire-docs/issues)
 
-
 ## Start Work on Contribution
 
 Now that you've identified the contribution you'd like to make and posted about it on our [issues board](https://github.com/thegetty/quire/issues), you're ready to get to work actually working in Quire. Please follow these steps:
 
-2. Clone this repository by following [these instructions](https://quire.getty.edu/documentation/github/#installing-an-existing-quire-project-from-github).
-  - We recommend using [GitHub Desktop](https://desktop.github.com/) to clone your repository and manage any changes. Refer to [GitHub Desktop documentation](https://docs.github.com/en/desktop) for further details.
-  - Be sure to run `quire install` before proceeding.
+1. Clone this repository by following [these instructions](https://quire.getty.edu/documentation/github/#installing-an-existing-quire-project-from-github).
+- We recommend using [GitHub Desktop](https://desktop.github.com/) to clone your repository and manage any changes. Refer to [GitHub Desktop documentation](https://docs.github.com/en/desktop) for further details.
+- Be sure to run `quire install` before proceeding.
 
-3. [Create a new branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-branches) and make your changes.
-  - Please review our [Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide) and ensure you are contributing in the style of the project to the best of your abiltiies.
-  - Test your changes by running `quire preview`.
+2. [Create a new branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-branches) and make your changes.
+- Please review our [Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide) and ensure you are contributing in the style of the project to the best of your abiltiies.
+- Test your changes by running `quire preview`.
 
 ## Submit Your Contribution
 
 *We manage Quire through GitHub. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github) to learn by topic, and for a broad overview, [GitHub Guides](https://guides.github.com/). We also encourage you to check out Coding Train’s fantastic video series [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV). GitHub can be accessed through the command line or [GitHub Desktop](https://desktop.github.com/).*
 
-Once your changes are conplete you will prepare to submit it to us for review as a pull request. A pull request says, “Hey, I did something useful for you, want to pull it in and merge it into your project?”
+Once you've identified your contribution and started work on your contribution, you will prepare to submit it to us for review as a pull request. A pull request says, “Hey, I did something useful for you, want to pull it in and merge it into your project?”
 
 A pull request is a chance for Quire’s core team to evaluate the proposed changes made and decide whether to:
 
@@ -104,9 +116,7 @@ A pull request is a chance for Quire’s core team to evaluate the proposed chan
 - merge them in with changes
 - reject them
 
-To avoid changes being rejected, we recommend you post about proposed changes on our issues board before you start work (which gives the core team and the community the chance to give feedback and raise any concerns ahead of time), and also to submit the pull request while work is still in progress.
-
-A pull request doesn’t have to represent finished work. We always recommend opening a pull request early on, so others can watch or give feedback on your progress. Just mark it as a “WIP” (Work in Progress) in the subject line. As you make new commits to that branch and push them to GitHub, they’ll automatically be added to the open pull request.
+A pull request doesn’t have to represent finished work. **We always recommend opening a pull request early on, so others can watch or give feedback on your progress. Just mark it as a “WIP” (Work in Progress) in the subject line.** As you make new commits to that branch and push them to GitHub, they’ll automatically be added to the open pull request.
 
 This is something like what the development process may look like for you:
 
