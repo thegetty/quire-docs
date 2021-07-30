@@ -296,7 +296,7 @@ project_list:
     src: /screenshots/_pictorial_silks.jpg
     alt: "Pictorial Silk: Chinese Textiles from UMAG, University Museum and Art Gallery"
     type: Exhibition Catalogue
-    publisher: Hong Kong Universitiy Museum and Art Gallery
+    publisher: Hong Kong University Museum and Art Gallery
     title_info: "*Pictorial Silk: Chinese Textiles from UMAG*"
     pub_date: 2020-12-09
     url: https://digitalpub.umag.hku.hk/textiles/
@@ -310,7 +310,7 @@ project_list:
     src: /screenshots/_clouds_of_ink.jpg
     alt: "Clouds of Ink, Pools of Colour, Hou Beiren, UMAG"
     type: Exhibition Catalogue
-    publisher: Hong Kong Universitiy Museum and Art Gallery
+    publisher: Hong Kong University Museum and Art Gallery
     title_info: "*Clouds of Ink, Pools of Colour: Hou Beiren*"
     pub_date: 2020-12-09
     url: https://tipeslowly.github.io/HBR/
