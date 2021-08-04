@@ -2,7 +2,7 @@
 
 >**All are welcome.** As an open-source community, Quire is committed to providing a safe, welcoming, transparent, and inclusive environment for all our community members and those wishing to become involved. Please see our **[Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md)** for more on the expectations and protections for our community members.
 
-**Thank you for your interest in contributing to Quire!** Here is the process we would like you to follow. 
+**Thank you for your interest in contributing to Quire!** Here is the process we would like you to follow.
 
 - [Learn About Contributing To Quire](#about-contributing-to-quire)
 - [Identify a Contribution to Make](#identify-a-contribution-to-make)
@@ -14,23 +14,16 @@
 
 Developed by Getty, Quire is a new, multiformat publishing tool available for immediate access and use. Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open-source software. **For a free license to use Quire, please complete [this form](http://bit.ly/quire-signup).**
 
-Striving toward becoming a fully open-source project by spring 2022, we encourage contributions from our community members. No matter what level of experience you have, we welcome all contributions, big and small. 
+Striving toward becoming a fully open-source project by spring 2022, we encourage contributions from our community members. No matter what level of experience you have, we welcome all contributions, big and small.
 
 There are two Quire repositories hosted on GitHub that can contribute to:
 
 - [**quire**](https://github.com/thegetty/quire):  Core Quire code including command-line interface, default starter content, and default theme.
 - [**quire-docs**](https://github.com/thegetty/quire-docs): Quire website and documentation.
 
-You are currently in the **quire-docs** repository. The Quire website and documentation are actually built using Quire, so if you haven't already, you will need to [install Quire](https://quire.getty.edu/documentation/install-uninstall/) before making any contributions. Our website and docs are updated continuously for clarity and completeness but it’s not always easy to keep up with the pace of Quire’s development. We invite you to share your ideas or jump in and make edits yourself. There are [several ways to contribute](#identify-a-contribution-to-make) to the Quire website and documentation including:
+You are currently in the **quire-docs** repository. The Quire website and documentation are actually built using Quire, so if you haven't already, you will need to [install Quire](https://quire.getty.edu/documentation/install-uninstall/) before making any contributions.
 
-- Correct one-off typos
-- Fix broken links 
-- Copyedit text
-- Propose/write a new section
-- Propose/write an article for the website
-- Translate our documentation
-
-Before getting started, please read both our [Quire Website & Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide) and the Contributing Guidelines as they follow below. Our goal is to make the process as effective and transparent as possible, and to ensure that your every contribution can become part of Quire. Thank you for taking the time. 
+Before getting started, please read both our [Quire Website & Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide) and the Contributing Guidelines as they follow below. Our goal is to make the process as effective and transparent as possible, and to ensure that your every contribution can become part of Quire. Thank you for taking the time.
 
 >🗣**CALLING ALL FIRST-TIMERS!** — We can’t stress enough that Quire is open to contributors at all levels. Here are a few resources especially for you:
 >- Find [“good first issues”](https://github.com/thegetty/quire-docs/issues) tagged in our issue tracker for the thegetty/quire-docs repo
@@ -39,13 +32,29 @@ Before getting started, please read both our [Quire Website & Documentation Styl
 
 ## Identify a Contribution to Make
 
-There are several ways to identify a contribution:
+Our website and docs are updated continuously for clarity and completeness but it’s not always easy to keep up with the pace of Quire’s development. We invite you to share your ideas or jump in and make edits yourself. There are several ways to contribute to the Quire website and documentation.
 
-1. **Work on an existing issue**
+**Fix a Typo or Broken Link:** Sometimes little things like typos or broken links can slip through the cracks, and every small fix you make really helps.
 
-If you are working on a previously posted issue, please comment on that issue and let us know you are working on it. That prevents duplicating efforts or having your changes rejected because someone else is working on it. 
+**Copyedit Text:** As a regular user of Quire, you’ll likely find sections of the text that can be improved or clarified for other users. You’ll know best!
 
-2. **Post a new issue** 
+**Propose/Write a New Section:** Have you recently contributed a new feature to our main [Quire repository](https://github.com/thegetty/quire) and have the time to add the corresponding documentation? Have you come across a TK section (shorthand for “to come”) and would like to complete it? Do you have an idea for a new section? We’d love your help!
+
+**Propose/Write an Article for the Website:** We’re always interested in adding articles about specific aspects of working in Quire to our Learn knowledge base. Maybe you have some tips on modifying shortcodes or styling is CSS in the custom.css.
+
+**Translate the Documentation:** The Quire community is global and we hope to be able to continue to expand access to Quire, including to non-English speakers. If you are interested in translating our documentation or even just sections of the documentation we'd love to talk to you about it.
+
+### Use the Issue Tracker
+
+We use GitHub’s [issue tracker](https://github.com/thegetty/quire-docs/issues/) to track work needs to be done, that is currently being done, or that is proposed to be done.
+
+You can use it to find an existing issue to work on, to post about a new issue that you’d propose working on, or to post about a new issue you’ve found that someone else might work on.
+
+#### Work on an Existing Issue
+
+If you are working on a previously posted issue, please comment on that issue and let us know you are working on it. That prevents duplicating efforts or having your changes rejected because someone else is working on it.
+
+#### Post a New Issue
 
 If your changes are small or straightforward then there is no need to create a new issue. Just dive in and get to work. However, if you are proposing or attempting a large/complex change please post a new issue [on our issue tracker](https://github.com/thegetty/quire-docs/issues/) before proceeding. This helps avoid changes being rejected before you've done too much work. Be sure to briefly describe your proposed solution and say whether you may need help with any aspect of it. This approach has several advantages:
 
@@ -53,47 +62,21 @@ If your changes are small or straightforward then there is no need to create a n
 - Gives the core team and the community a chance to give feedback before you do any work
 - Helps to ensure your contribution will be accepted and successfully merged in
 
-Below is a list of possible contribution types. 
-
-### Fix a Typo or Broken Link
-
-Sometimes little things like typos or broken links can slip through the cracks. That's where we could use your help. Please feel free to dive right in and make your changes. If you don't feel like working on these yourself, please add them to the [issue tracker](https://github.com/thegetty/quire-docs/issues/) as small edits make for good first issues.  
-
-### Copyedit Text 
-
-If you see a section of the text that can be improved or clarified, please either jump in and make corrections or add it to the [issue tracker](https://github.com/thegetty/quire-docs/issues/) for someone else to work on. 
-
-### Propose/Write a New Section
-
-If you've recently contributed a new feature to our main [Quire repository](https://github.com/thegetty/quire) and have the time to add the corresponding documentation, please do so. Or add it to the [issue tracker](https://github.com/thegetty/quire-docs/issues/) to let us know we need to write it.
-
-If you come across a TK section and would like to complete it, please let us know you are working on it by posting on our [issue tracker](https://github.com/thegetty/quire-docs/issues/).  
-
-Finally, if you have an idea for a new section, add it to our [issue tracker](https://github.com/thegetty/quire-docs/issues/) before getting started or suggesting it for someone else to work on.
-
-### Propose/Write an Article for the Website 
-
-We’re always interested in adding articles about specific aspects of working in Quire to our Learn knowledge base. Maybe you have some tips on modifying shortcodes or styling is CSS in the custom.css. Please add it to our [issue tracker](https://github.com/thegetty/quire-docs/issues/) to let us know you are working on it. Chances are the community would love to read about it. 
-
-### Translate the Documentation
-
-The Quire community is global and we hope to be able to continue to expand access to Quire, including to non-English speakers. If you are interested in translating our documentation or even just sections of the documentation please let us know in the [issue tracker](https://github.com/thegetty/quire-docs/issues/). We'd love to talk to you about it.
-
 ## Start Work on Contribution
 
-Now that you've identified your contribution, your next step will be to use GitHub and Atom to make the desired changes. 
+Now that you've identified your contribution, your next step will be to use GitHub and Atom to make the desired changes.
 
 >We use GitHub to manage all our work on Quire. If you are new to GitHub, we recommend downloading [GitHub Desktop](https://desktop.github.com/). Before getting started, review the [GitHub Desktop documenation](https://docs.github.com/en/desktop) and the [Project Management with GitHub] section of the Quire documentation. An abbreviated explantion of how to submit changes via GitHub included below.
 
 **Download Your Quire Project from Github**
 1. Open GitHub Desktop.
 2. Click on the upper left-hand corner of the application window, where it says “Current Repository”. Click “Add” and choose the option to “Clone repository…”
-3. Click the URL menu option and cut-and-paste the following URL: https://github.com/thegetty/quire-docs. 
+3. Click the URL menu option and cut-and-paste the following URL: https://github.com/thegetty/quire-docs.
 4. Save the cloned `quire-docs` repo in your home directory.
 
 **Preview Your Quire Publication**
 1. Next, pull up your [command line](https://quire.getty.edu/learn/tutorial/#1-work-in-a-command-line-shell) to navigate through your computer files.
-2. Use the cd command to navigate to your computer's home directory and then navigate into your `quire-docs` folder. 
+2. Use the cd command to navigate to your computer's home directory and then navigate into your `quire-docs` folder.
 3. Once you are in your `quire-docs` folder, run the following commands:
 ```
 quire install
@@ -102,7 +85,7 @@ quire preview
 4. Go to [http://localhost:1313](http://localhost:1313) the project as you work on it.
 
 **Open Your Project in GitHub Desktop**
-1. At the top right, click "Current Repository" and choose the `quire-docs` repo. 
+1. At the top right, click "Current Repository" and choose the `quire-docs` repo.
 
 **Create a New Branch in GitHub Desktop**
 1. Navigate to where it says “Current Branch” at the top of your GitHub Desktop window.
@@ -147,12 +130,12 @@ A pull request is a chance for Quire’s core team to evaluate the proposed chan
 3. You can leave the default title or type a new title and description for your pull request.
 4. On the right-hand side, you will see an option to choose a reviewer. Choose **@erin-cecele** and she will receive a notification of your pull request.
 5. Click the green-button that says “Create Pull Request” if all your changes are ready for review. Or click the drop-down arrow and choose “Create Draft Pull Request” if you are still making changes that will be included in this particular pull request.
-6. Once your pull request has been reviewed and approved, you will see your work merged into the Quire documentation and website!! 
+6. Once your pull request has been reviewed and approved, you will see your work merged into the Quire documentation and website!!
 
 Here are a few tips when submitting your pull request:
 - If this is your first time putting in a pull request on a project like this, we recommend the [*First Contributions* command line](https://github.com/firstcontributions/first-contributions), or Kent C. Dodds' video series, [“How to Contribute to an Open Source Project on GitHub”](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
 - Reference any relevant issues or supporting documentation in your pull request description (for example, “Closes #203.”)
-- Follow the pull request remplate to explain what the changes do and what your approach was. 
+- Follow the pull request remplate to explain what the changes do and what your approach was.
 - Include screenshots of the before and after if relevant.
 - You may receive feedback or requests for changes to your pull request from Quire’s core team before your work can be merged. Answer questions in the pull request comments, make changes and new commits if needed, or suggest alternate solutions if you have them.
 
@@ -165,7 +148,7 @@ Thank your for reading our `quire-docs` Contributing Guidelines. To learn more i
 - [Code of Conduct](https://github.com/thegetty/quire-docs/blob/main/CODE_OF_CONDUCT.md)
 - [Website & Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide)
 - [GitHub Desktop Documentation](https://docs.github.com/en/desktop)
-- [Website](https://quire.getty.edu) 
+- [Website](https://quire.getty.edu)
 - [Issue Tracking](https://github.com/thegetty/quire-docs/issues/)
 - [Documentation](https://quire.getty.edu/documentation)
 - [Community Forum](https://github.com/thegetty/quire/discussions)
