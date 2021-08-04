@@ -159,22 +159,26 @@ With more than twelve or so IIIF images, you’re going to need to host them els
 
 For hosting the image tiles, if you have institutional support, your digital department should be able to provide a solution. If you’re on your own, virtually any web hosting service will work. You might check out [Amazon S3](https://aws.amazon.com/s3/), which is very performant and self-serve but requires some technical savvy to get set up, or an independent hosting service like [Reclaim Hosting](https://reclaimhosting.com/shared-hosting/), which caters to the academic sector.
 
+Regardless of your hosting solution, there are two things that will need to be done to ensure that you will be able to access and display the tiles within your Quire project or elsewhere.
+
 1. **Set File Permissions**
 
-    After processing your IIIF files, run the following two commands in your command-line shell to ensure the permissions on the files are set for web hosting:
+    First, to correctly set web hosting permissions on the files, run the following two commands in your command-line shell after processing your IIIF files. This first sets the permissions to [755](http://www.filepermissions.com/file-permission/755) for all the directories, and then to [644](http://www.filepermissions.com/file-permission/644) for all the individual files. (Learn more at http://www.filepermissions.com/.)
 
     ```
     find ./static/img/iiif/processed -type d -exec chmod 755 {} \;
     find ./static/img/iiif/processed -type f -exec chmod 644 {} \;
     ```
 
-2. **Set Site-to-Site Sharing ([CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS))**
+2. **Set Site-to-Site Sharing**
 
-    After uploading your IIIF image tiles to your web host,
+    Second, so that you can host your image tiles on one domain, and then display them on another domain, you need to have the proper Cross-Origin Resource Sharing ([CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)) configuration settings applied to your tiles. (This includes hosting the tiles on an external server/domain and seeing them on the http://localhost:1313/ domain when you’re running `quire preview`.)
 
-    If you're using a standard web hosting service like Reclaim Hosting, open your site’s [.htaccess file](https://community.reclaimhosting.com/t/understanding-htaccess/2521) and add the following to it in order to allow access to the files from different domains.
+    Configuring your CORS settings is done after uploading your IIIF image tiles to your web host.
 
-    ```
+    If you're using a standard web hosting service like Reclaim Hosting, create an [.htaccess file](https://community.reclaimhosting.com/t/understanding-htaccess/2521) with the following snippet and add it to the directory where your IIIF image tiles are stored.
+
+    ```html
     <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
     Header set Access-Control-Allow-Headers "authorization, accept, origin, x-requested-with, content-type"
@@ -184,8 +188,19 @@ For hosting the image tiles, if you have institutional support, your digital dep
     </IfModule>
     ```
 
-    For Amazon S3,
+    For Amazon S3, the CORS configurations are controlled via a JSON snippet. [Amazon’s documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enabling-cors-examples.html) details several ways of adding it to your hosting bucket.
 
+    ```json
+    [
+      {
+        "AllowedHeaders":[ "authorization", "accept", "origin", "x-requested-with", "content-type" ],
+        "AllowedMethods":[ "GET", "HEAD" ],
+        "AllowedOrigins":[ "*" ],
+        "ExposeHeaders":[ ],
+        "MaxAgeSeconds":86400
+      }
+    ]
+    ```
 
 ## Display IIIF Images in Your Project
 
