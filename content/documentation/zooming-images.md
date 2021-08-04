@@ -18,7 +18,7 @@ You can either point Quire to an existing IIIF repository of images or add high-
 {{<q-figure id="iris-zoom" >}}
 
 {{< q-class "box tip" >}}
-- For a deep dive into IIIF and its implementation in museums read [*Getty Common Image Service: Research & Design Report*](/downloads/gcis_r+d_report-2019.pdf/). 
+- For a deep dive into IIIF and its implementation in museums read [*Getty Common Image Service: Research & Design Report*](/downloads/gcis_r+d_report-2019.pdf/).
 {{< /q-class >}}
 
 ## Use Existing IIIF Images
@@ -157,7 +157,35 @@ With more than twelve or so IIIF images, you’re going to need to host them els
 
 {{< /q-class >}}
 
-For hosting the image tiles, if you have institutional support, your digital department should be able to provide a solution. If you’re on your own, there are any number of options. You might check out [Amazon S3](https://aws.amazon.com/s3/), which is very performant and self-serve but requires some technical savvy to get set up, or an independent hosting service like [Reclaim Hosting](https://reclaimhosting.com/shared-hosting/), which caters to the academic sector.
+For hosting the image tiles, if you have institutional support, your digital department should be able to provide a solution. If you’re on your own, virtually any web hosting service will work. You might check out [Amazon S3](https://aws.amazon.com/s3/), which is very performant and self-serve but requires some technical savvy to get set up, or an independent hosting service like [Reclaim Hosting](https://reclaimhosting.com/shared-hosting/), which caters to the academic sector.
+
+1. **Set File Permissions**
+
+    After processing your IIIF files, run the following two commands in your command-line shell to ensure the permissions on the files are set for web hosting:
+
+    ```
+    find ./static/img/iiif/processed -type d -exec chmod 755 {} \;
+    find ./static/img/iiif/processed -type f -exec chmod 644 {} \;
+    ```
+
+2. **Set Site-to-Site Sharing ([CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS))**
+
+    After uploading your IIIF image tiles to your web host,
+
+    If you're using a standard web hosting service like Reclaim Hosting, open your site’s [.htaccess file](https://community.reclaimhosting.com/t/understanding-htaccess/2521) and add the following to it in order to allow access to the files from different domains.
+
+    ```
+    <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Headers "authorization, accept, origin, x-requested-with, content-type"
+    Header set Access-Control-Allow-Methods "GET, OPTIONS, HEAD"
+    Header set Access-Control-Max-Age "86400"
+    Header set Access-Control-Allow-Credentials "true"
+    </IfModule>
+    ```
+
+    For Amazon S3,
+
 
 ## Display IIIF Images in Your Project
 
