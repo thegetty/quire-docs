@@ -323,7 +323,13 @@ figure_list:
     src: /screenshots/90-min-webinar.jpg
     media_id: kFTcJLbMDxs
     media_type: youtube
-    caption: "Digital Publication Manager, Greg Albers, gives a 90-minute webinar walking users through the basic functions of Quire."
+    caption: "Digital Publications Manager, Greg Albers, gives a 90-minute webinar walking users through the basic functions of Quire."
+
+  - id: "2021-iiif-annual-conference"
+    src: /screenshots/2021-iiif-annual-conference.jpg
+    media_id: mXnk79MBguU
+    media_type: youtube
+    caption: "Digital Publications Manager, Greg Albers, Community Manager, Erin Dunigan, Software Engineer, Hannah Balenda, and Speaker, Matthew Hrudka give a 20-minute presentation introducing the integration of Quire and IIIF at the 2021 IIIF Annual Conference."
 
   - id: "spotlight"
     src: /screenshots/spotlight.jpg

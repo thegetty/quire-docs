@@ -76,11 +76,7 @@ Macs and PCs come with some simple text editors built in, but we recommend using
 - [Atom](https://atom.io/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-<<<<<<< Updated upstream
-Once installed, open your text editor, navigate to File, and open the `my-project` directory you created in Step 3 above. You should see all of the directory’s contents listed.
-=======
 Once installed, open your text editor, navigate to File, and open the `my-project` directory you created in Step 3 above. The `my-project` directory also lives in your {{< q-def "home directory">}}. You should see all of the directory’s contents listed.
->>>>>>> Stashed changes
 
 {{< q-figure id="text-editor" >}}
 
