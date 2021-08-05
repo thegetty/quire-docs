@@ -44,6 +44,7 @@ body:
     - Propose/write new section
     - Propose/Write article
     - Translate documentation
+    - Other
 - type: textarea
   id: supporting_info
   attributes:
