@@ -1,0 +1,54 @@
+name: 📖 Website & Documentation Suggestion
+description: Help us improve the Quire website and documentation
+labels: [feature]
+assignees:
+- erin-cecele
+- geealbers
+body:
+- type: markdown
+  attributes:
+    value: |
+   
+      **Thank you for opening a new issue!**
+    
+      ⚠ Before submitting your proposal, please review our [Contributing Guidelines](##).
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description:
+    options:
+    - label: I have searched the existing issues
+      required: true    
+- type: input
+  id: number
+  attributes:
+    label: Issue number
+    description: If there is an existing issue, what is the number, please include it below.
+  validations:
+    required: false
+- type: textarea
+  id: reproduce
+  attributes:
+    label: Idea being proposed
+    description: Describe your desired contribution and how it will improve the documentation and/or website.
+  validations:
+    required: true
+- type: dropdown
+  id: type
+  attributes:
+    label: What contribution type category does your proposal fall under.
+    multiple: true
+    options:
+    - Fix typo/broken link
+    - Copyedit text
+    - Propose/write new section
+    - Propose/Write article
+    - Translate documentation
+    - Other
+- type: textarea
+  id: supporting_info
+  attributes:
+    label: Supporting Information
+    description: If you have additional files that would be useful in describing your contribution, such as screenshots, attach them by dragging and dropping in the comments below.
+  validations:
+    required: false
