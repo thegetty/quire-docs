@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+- name: 💬 Community Forum 
+  url: https://github.com/thegetty/quire/discussions
+  about: If you have questions, please post them in our GitHub Discussions forum.
+- name: 📝 Contributing Guidelines
+  url: https://github.com/thegetty/quire-docs/blob/main/CONTRIBUTING.md 
+  about: Please take time to review our CONTRIBUTING.md file. 
+- name: Website & Documentation Style Guide
+  url: https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide
+  about: Please take time to review our style guide.
+- name: 🖥️ Website 
+  url: https://quire.getty.edu
+  about: Visit our website to learn more about Quire and find contact information.
