@@ -35,7 +35,7 @@ body:
 - type: dropdown
   id: type
   attributes:
-    label: What contribution type category does your proposal fall under.
+    label: What contribution category does your proposal fall under.
     multiple: true
     options:
     - Fix typo/broken link
