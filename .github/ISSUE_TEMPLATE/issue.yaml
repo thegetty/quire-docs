@@ -35,6 +35,8 @@ body:
     - Propose/Write article
     - Translate documentation
     - Other
+  validations:
+    required: true
 - type: textarea
   id: supporting_info
   attributes:
