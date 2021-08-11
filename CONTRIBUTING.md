@@ -2,13 +2,14 @@
 
 >**All are welcome.** As an open-source community, Quire is committed to providing a safe, welcoming, transparent, and inclusive environment for all our community members and those wishing to become involved. Please see our **[Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md)** for more on the expectations and protections for our community members.
 
-**Thank you for your interest in contributing to Quire!** Here is the process we would like you to follow.
+**Thank you for your interest in contributing to Quire!** 
 
-- [Learn About Contributing To Quire](#about-contributing-to-quire)
-- [Identify a Contribution to Make](#identify-a-contribution-to-make)
-- [Start Work on Contribution](#start-work-on-contribution)
-- [Submit Your Contribution](#submit-your-contribution)
-- [Review Important Resources](#important-resources)
+We recommend following the process outlined below to ensure a smooth contributing experience. Our goal is to make the process as effective and transparent as possible, and to ensure that your every contribution can become part of Quire.   
+
+1. [Learn About Contributing To Quire](#about-contributing-to-quire)
+2. [Identify a Contribution to Make](#identify-a-contribution-to-make)
+3. [Start Work on Contribution](#start-work-on-contribution)
+4. [Submit Your Contribution](#submit-your-contribution)
 
 ## About Contributing to Quire
 
@@ -21,9 +22,7 @@ There are two Quire repositories hosted on GitHub that can contribute to:
 - [**quire**](https://github.com/thegetty/quire):  Core Quire code including command-line interface, default starter content, and default theme.
 - [**quire-docs**](https://github.com/thegetty/quire-docs): Quire website and documentation.
 
-You are currently in the **quire-docs** repository. The Quire website and documentation are actually built using Quire, so if you haven't already, you will need to [install Quire](https://quire.getty.edu/documentation/install-uninstall/) before making any contributions.
-
-Before getting started, please read both our [Quire Website & Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide) and the Contributing Guidelines as they follow below. Our goal is to make the process as effective and transparent as possible, and to ensure that your every contribution can become part of Quire. Thank you for taking the time.
+You are currently in the **quire-docs** repository. The Quire website and documentation are actually built using Quire. That means contributing to this repo will give you an opportunity to work on a live Quire project. For some, the process may be familiar and for others it will be a good way to familiarize yourself with the tool. If you haven't already, please [install Quire](https://quire.getty.edu/documentation/install-uninstall/) to get started. 
 
 >🗣**CALLING ALL FIRST-TIMERS!** — We can’t stress enough that Quire is open to contributors at all levels. Here are a few resources especially for you:
 >- Find [“good first issues”](https://github.com/thegetty/quire-docs/issues) tagged in our issue tracker for the thegetty/quire-docs repo
@@ -64,9 +63,9 @@ If your changes are small or straightforward then there is no need to create a n
 
 ## Start Work on Contribution
 
-Now that you've identified your contribution, your next step will be to use GitHub and Atom to make the desired changes.
+Now that you've identified your contribution, your next step will be to use GitHub and a text editor (such as Atom) to make the desired changes.
 
->We use GitHub to manage all our work on Quire. If you are new to GitHub, we recommend downloading [GitHub Desktop](https://desktop.github.com/). Before getting started, review the [GitHub Desktop documenation](https://docs.github.com/en/desktop) and the [Project Management with GitHub] section of the Quire documentation. An abbreviated explantion of how to submit changes via GitHub included below.
+>We use GitHub to manage all our work on Quire. If you are new to GitHub, we recommend downloading [GitHub Desktop](https://desktop.github.com/). Before getting started, review the [GitHub Desktop documenation](https://docs.github.com/en/desktop) and the [Project Management with GitHub](https://quire.getty.edu/documentation/github/) section of the Quire documentation. An abbreviated explantion of how to submit changes via GitHub included below.
 
 **Download Your Quire Project from Github**
 1. Open GitHub Desktop.
@@ -143,7 +142,7 @@ Thank your for reading our `quire-docs` Contributing Guidelines. To learn more i
 
 **At this point, we hope you feel ready to contribute! But don’t hesitate to [ask for help or clarification](mailto:quire@getty.edu), everyone’s a beginner at first. And thank you again for your interest in making Quire a better tool for all!** 🦄
 
-## Important Resources
+## Helpful Resources
 
 - [Code of Conduct](https://github.com/thegetty/quire-docs/blob/main/CODE_OF_CONDUCT.md)
 - [Website & Documentation Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide)
