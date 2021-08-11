@@ -7,9 +7,8 @@ assignees:
 body:
 - type: markdown
   attributes:
-    value: |
-   
-      **Thank you for opening a new issue!**
+    value: | 
+      # Thank you for opening a new issue!
     
       ⚠ Before submitting your proposal, please review our [Contributing Guidelines](##).
 - type: checkboxes
@@ -36,7 +35,7 @@ body:
 - type: dropdown
   id: type
   attributes:
-    label: What contribution type category does your proposal fall under.
+    label: What contribution category does your proposal fall under?
     multiple: true
     options:
     - Fix typo/broken link
