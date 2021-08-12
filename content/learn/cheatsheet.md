@@ -100,3 +100,9 @@ A shortcode is a snippet of code inserted in a content (`.md`) file that pulls i
 {{</* q-contributor range="xxxx" type="xxxx" */>}}
 
 ```
+
+## Design Guide
+
+Here is an example of how Markdown, YAML, and shortcodes can be used to create a content page in Quire. [Download a PDF](/downloads/quire-design-guide.pdf) of the Quire Design Guide to take a closer look. 
+
+{{< q-figure id="design_guide" >}}
