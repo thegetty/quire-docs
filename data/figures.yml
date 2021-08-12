@@ -351,4 +351,8 @@ figure_list:
 
   - id: "markdown_example"
     src: /markdown_example.jpg
-    caption: ""
+    caption: " "
+
+  - id: "design_guide"
+    src: /design_guide.jpg
+    caption: " "
