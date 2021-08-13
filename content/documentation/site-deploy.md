@@ -29,6 +29,10 @@ To learn more about connecting domains, build configuration, private submodules,
 
 To get started, [sign up](https://app.netlify.com/signup) for a Netlify account and, optionally, connect it with your GitHub account.
 
+{{< q-class "box tip" >}}
+- If you try the [GitHub Pages](#github-pages) option before trying Netlify, undo the changes you made to `themes/default/webpack/webpack.config.prod.js` before proceeding. Otherwise, deploy will not work.
+{{< /q-class >}}
+
 ### Manual Deployment with Netlify
 
 Manual deploy is ideal if you have a small site or want to run a quick preview. You can also use this option without needing a GitHub account. However, each time you make an update, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify, which may be burdensome if you have a lot of images or larger files. For continuous deployment please see [*Continuous Deployment with Netlify*](#continuous-deployment-with-netlify).
@@ -87,19 +91,23 @@ By keeping your project files on GitHub and linking them directly to your Netlif
 
 GitHub enables you to not only host your project code, but you can also use it to host a live version of your site. Learn more on the [GitHub Pages](https://pages.github.com/) website.
 
+{{< q-class "box tip" >}}
+- If you try the [Netlify](#netlify) option before trying GitHub Pages, remove the `site.zip` folder before making any commits. This will not break anything but it will add an unnecessary file to your project.  
+{{< /q-class >}}
+
 ### Preview Your Project with Github Pages
 
 1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/documentation/github) section of our documentation to create a repository for your project.
 
 2. In your text editor, open the `config/environments/github.yml` file.
 
-3. Update the `baseURL` to correspond to your own GitHub site. It will follow the pattern: https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME. So, if your GitHub username is bonjovi and your project file is blaze-of-glory, your `baseURL` would be https://bonjovi.github.io/blaze-of-glory.
+3. Update the `baseURL` to correspond to your own GitHub site. It will follow the pattern: https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME/. So, if your GitHub username is bonjovi and your project file is blaze-of-glory, your `baseURL` would be https://bonjovi.github.io/blaze-of-glory/. (Note: your GitHub username can also be your organization name if that is how your account is set-up in GitHub.)
 
 4. Set the `canonifyURLs` to `true`.
 
 5. Next, navigate to `themes/default/webpack/webpack.config.prod.js`.
 
-6. So that the site fonts display properly, change line 80 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/img/"` And change line 92 to `outputPath: "[YOUR-PROJECT-DIRECTORY-NAME]/fonts/"`.
+6. So that the site fonts display properly, change line 80 to `outputPath: "YOUR-PROJECT-DIRECTORY-NAME/img/"` And change line 92 to `outputPath: "YOUR-PROJECT-DIRECTORY-NAME/fonts/"`.
 
 7. Commit and merge these changes to the repo.
 
@@ -111,10 +119,10 @@ GitHub enables you to not only host your project code, but you can also use it t
 
     This runs a script to deploy your site to GitHub pages. The script may ask for your GitHub username and password. (Remember that the password cursor won’t move to show that you’re typing. Just type the password and hit enter.)
 
-9. If your repository is private, you will need to navigate to your repository on GitHub and update your settings.
+9. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change project visibility" and change the visibility to public.
 
-10. In "Settings" scroll down to the "Danger Zone" and click on "Change project visibility."
+10. For "Source" switch the branch to `gh-pages` in the `/(root)` folder and save.
 
-11. For "Source" switch the branch to `gh-pages` and save.
+11. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
 
-12. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
+If you make changes to your project and want to view them live, you will need to run the `bin/deploy.sh` script to update your project files. Navigate to your GitHub account settings and choose "Pages" from the lefthand menu. Your refreshed link will be at the top of the page. A green box indicates the site has been published and is now live. 
