@@ -45,9 +45,9 @@ Our website and docs are updated continuously for clarity and completeness but i
 
 ### Use the Issue Tracker
 
-We use GitHub’s [issue tracker](https://github.com/thegetty/quire-docs/issues/) to track work needs to be done, that is currently being done, or that is proposed to be done.
+We use GitHub’s [issue tracker](https://github.com/thegetty/quire-docs/issues/) to track work that needs to be done, is currently being done, or is proposed to be done. 
 
-You can use it to find an existing issue to work on, to post about a new issue that you’d propose working on, or to post about a new issue you’ve found that someone else might work on.
+You can use it to find an existing issue to work on, post about a new issue that you’d propose working on, or post about a new issue you’ve found that someone else might work on.
 
 #### Work on an Existing Issue
 
@@ -65,55 +65,61 @@ If your changes are small or straightforward then there is no need to create a n
 
 Now that you've identified your contribution, your next step will be to use GitHub and a text editor (such as Atom) to make the desired changes.
 
->We use GitHub to manage all our work on Quire. If you are new to GitHub, we recommend downloading [GitHub Desktop](https://desktop.github.com/). Before getting started, review the [GitHub Desktop documenation](https://docs.github.com/en/desktop) and the [Project Management with GitHub](https://quire.getty.edu/documentation/github/) section of the Quire documentation. An abbreviated explantion of how to submit changes via GitHub included below.
+>We use GitHub to manage all our work on Quire. If you are new to GitHub, we recommend creating a [new GitHub account](https://github.com/join) and downloading [GitHub Desktop](https://desktop.github.com/). Before getting started, review the [GitHub Desktop documenation](https://docs.github.com/en/desktop) and the [Project Management with GitHub](https://quire.getty.edu/documentation/github/) section of the Quire documentation. An abbreviated explantion of how to submit changes via GitHub included below.
 
 **Download Your Quire Project from Github**
 1. Open GitHub Desktop.
-2. Click on the upper left-hand corner of the application window, where it says “Current Repository”. Click “Add” and choose the option to “Clone repository…”
-3. Click the URL menu option and cut-and-paste the following URL: https://github.com/thegetty/quire-docs.
-4. Save the cloned `quire-docs` repo in your home directory.
+2. Click on the upper left-hand corner of the application window, where it says “Current Repository”. Click “Add” and choose the option to “Clone repository…”. (If this is your first time using GitHub Desktop, you will see a button to "Clone a Repository from the Internet" instead.
+3. Click the URL menu option and cut-and-paste the following URL: https://github.com/thegetty/quire-docs and click the "Clone" button. (Be sure to adjust the local path so the `quire-docs` repo is saved in your `home directory`.)
 
 **Preview Your Quire Publication**
 1. Next, pull up your [command line](https://quire.getty.edu/learn/tutorial/#1-work-in-a-command-line-shell) to navigate through your computer files.
-2. Use the cd command to navigate to your computer's home directory and then navigate into your `quire-docs` folder.
+2. Use the `cd` command to navigate to your computer's home directory and then navigate into your `quire-docs` folder.
 3. Once you are in your `quire-docs` folder, run the following commands:
 ```
 quire install
+```
+and then 
+```
 quire preview
 ```
-4. Go to [http://localhost:1313](http://localhost:1313) the project as you work on it.
-
-**Open Your Project in GitHub Desktop**
-1. At the top right, click "Current Repository" and choose the `quire-docs` repo.
+4. Go to [http://localhost:1313](http://localhost:1313) to preview the project as you work on it.
 
 **Create a New Branch in GitHub Desktop**
-1. Navigate to where it says “Current Branch” at the top of your GitHub Desktop window.
-2. Click the drop-down arrow and select “new branch” to the right of the Filter box.
-3. Name your branch.
-4. Select “main” where it says “Create branch based on.” This means you are creating a new branch that runs parallel to the main project.
+1. In GitHub desktop, make sure you are in the correct repository. At the top right, under "Current Repository" it should say `quire-docs`. If not, click the down arrow and choose the docs repo from the menu. 
+2. Navigate to where it says “Current Branch” at the top of your GitHub Desktop window.
+3. Click the drop-down arrow and select “new branch” to the right of the Filter box.
+4. Name your branch following this branch naming convention: `docs/action-section being edited_github name`. (For example: `docs/edit-deploy_quire-user`)
+5. Make sure the branch it is based on is the `main` branch. 
 
-**Open Project File in Atom**
-1. Open Atom
-2. Click File > Open
-3. Navigate to your home directory and your select `quire-docs` folder.
-5. In Atom, expand the contents folder to see the editable markdown files and look for the file you'd like to make your changes in.
+**Fork Repository**
+1. Once your branch has been created, click the "Publish branch" button at the right of your screen.
+2. A message will pop-up asking if you'd like to "fork this repository". Forking a repository means you are making a copy of it. This will allow you to freely experiment with changes without affecting the original project. In other words, it is a safe and protected way of working. Click "Fork This Repository". 
+3. You will be asked how you plan to use this fork. Choose "To contribute to the parent project" and click "Continue". 
+4. Click "Publish Branch" again. Now you are ready to get to work!
 
-**Save Changes in Atom**
+**Open Project File in Text Editor**
+1. Open the text editor of your choice. (We suggest using [Atom](atom.io).) 
+2. Select File > Open in your menu bar.
+3. Navigate to your home directory and select your `quire-docs` folder.
+4. In your text editor, expand the `content` folder to see the editable markdown files and look for the file you'd like to make your changes in.
+
+**Save Changes in Text Editor**
 1. To save changes, hit File > Save or Command-S (Mac) or Control-S (PC).
-2. If working on multiple markdown files, make sure to save each file individually. You will see a little blue dot at the top of the page if there are any unsaved changes.
+2. If working on multiple markdown files, make sure to save each file individually. 
 3. Double check that your changes look right by previewing at [http://localhost:1313](http://localhost:1313).
 
 **Make Commits in GitHub Desktop**
-1. At the bottom left, above where it says description, write a short name for your commit. You have the option to include a description as well.
+1. At the bottom left, above where it says description, write a short and meaningful name for your commit. You have the option to include a description as well.
 2. Press the blue button that says “Commit to [branch name].”
 
 **Push Changes in GitHub**
-1. After you have made all your commits, click on the "Publish Branch" and then “Push Origin” button at the top right.
-2. Now the changes to your project have been successfully saved to your branch on GitHub.
+1. You will given the option to "Push orgin". Click this button. 
+2. Now the changes you've made have been successfully saved to your branch on GitHub.
 
 ## Submit Your Contribution
 
-Once you've identified your contribution and submitted changes through GitHub Desktop, you will prepare to submit it to us for review as a pull request. A pull request says, “Hey, I did something useful for you, want to pull it in and merge it into your project?”
+Once you've identified your contribution and pushed those changes through GitHub Desktop, you will submit it to us for review as a pull request. A pull request says, “Hey, I did something useful for you, want to pull it in and merge it into your project?”
 
 A pull request is a chance for Quire’s core team to evaluate the proposed changes made and decide whether to:
 
@@ -125,20 +131,19 @@ A pull request is a chance for Quire’s core team to evaluate the proposed chan
 
 **Create a Pull Request in GitHub**
 1. Click the blue-button that says “Create Pull Request.” This will take you to GitHub.com.
-2. Confirm that the branch in the base drop-down menu is the `main` branch of the `quire-docs` repo.
-3. You can leave the default title or type a new title and description for your pull request.
-4. On the right-hand side, you will see an option to choose a reviewer. Choose **@erin-cecele** and she will receive a notification of your pull request.
-5. Click the green-button that says “Create Pull Request” if all your changes are ready for review. Or click the drop-down arrow and choose “Create Draft Pull Request” if you are still making changes that will be included in this particular pull request.
-6. Once your pull request has been reviewed and approved, you will see your work merged into the Quire documentation and website!!
+2. Confirm that the branch in the base repository drop-down menu is the `main` branch of the `thegetty/quire-docs` repo. The head repository will be `GitHub-username/quire-docs`. (For example, `quire-user/quire docs`.) The compare branch should be the one you just created.  
+3. You can leave the default title or type a new title and description.
+4. Click the green-button that says “Create Pull Request” if all your changes are ready for review. Or click the drop-down arrow and choose “Create Draft Pull Request” if you are still making changes.
+5. Once your pull request has been reviewed and approved, you will see your work merged into the Quire documentation and website!!
 
 Here are a few tips when submitting your pull request:
 - If this is your first time putting in a pull request on a project like this, we recommend the [*First Contributions* command line](https://github.com/firstcontributions/first-contributions), or Kent C. Dodds' video series, [“How to Contribute to an Open Source Project on GitHub”](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
 - Reference any relevant issues or supporting documentation in your pull request description (for example, “Closes #203.”)
-- Follow the pull request remplate to explain what the changes do and what your approach was.
-- Include screenshots of the before and after if relevant.
-- You may receive feedback or requests for changes to your pull request from Quire’s core team before your work can be merged. Answer questions in the pull request comments, make changes and new commits if needed, or suggest alternate solutions if you have them.
+- Follow the pull request template to explain what the changes do and what your approach was. (*Coming soon*.)
+- Include screenshots of the before and after, if relevant.
+- You may receive feedback or requests for changes to your pull request from the Quire team before your work can be merged. Answer questions in the pull request comments, make changes and new commits if needed, or suggest alternate solutions if you have them.
 
-Thank your for reading our `quire-docs` Contributing Guidelines. To learn more in the *Open Source Guide*’s [“How to Contribute to Open Source”](https://opensource.guide/how-to-contribute/).
+Thank your for reading our `quire-docs` Contributing Guidelines. To learn more about contributing to open-source projects check out the *Open Source Guide*’s [“How to Contribute to Open Source”](https://opensource.guide/how-to-contribute/).
 
 **At this point, we hope you feel ready to contribute! But don’t hesitate to [ask for help or clarification](mailto:quire@getty.edu), everyone’s a beginner at first. And thank you again for your interest in making Quire a better tool for all!** 🦄
 
