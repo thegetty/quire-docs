@@ -1,41 +1,41 @@
 # Quire
 
-Developed by Getty, Quire is a new, multiformat publishing tool available for immediate access and use. Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open-source software.
+Developed by Getty, Quire is a new, multiformat publishing tool available for immediate access and use. Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open-source software. **For a free license to use Quire, please complete [this form](http://bit.ly/quire-signup).**
 
-**Please see our main repository wwww.github.com/thegetty/quire to learn more about Quire, obtain a license, participate in the forum, submit issues, and more.**
+Striving toward becoming a fully open-source project by spring 2022, we encourage contributions from our community members. No matter what level of experience you have, we welcome all contributions, big and small.
 
-## Help Us Improve the Quire Docs & Website
+There are two Quire repositories hosted on GitHub that can contribute to:
 
-One way you can contribute to Quire is by helping us improve our documentation and website. These resources are a work in progress, and we value your contributions. No matter what level of experience you have, we welcome all contributions, big and small.
+- [**quire**](https://github.com/thegetty/quire):  Core Quire code including command-line interface, default starter content, and default theme.
+- [**quire-docs**](https://github.com/thegetty/quire-docs): Quire website and documentation.
 
-Please see our [Contributing Guidelines](https://github.com/thegetty/quire/edit/main/CONTRIBUTING.md) for more detailed guidelines on making contributions to Quire.
+Please see the [README.md](https://github.com/thegetty/quire/blob/main/README.md) in our main repository [wwww.github.com/thegetty/quire](wwww.github.com/thegetty/quire) to learn more about the technical aspects of Quire, participate in the forum, submit bugs, and more.
 
-Examples of good documentation and website contributions include:
+## Quire-Docs Repository
 
-- Propose a new section
-- Copyedit sections
-- Correct one-off typos
-- Write new content
-- Translate our documentation
+You are currently in the [**quire-docs**](https://github.com/thegetty/quire-docs) repository. If you are new to Quire, contributing to this repository is an excellent way to get hands-on experience because the website and docs were actually built using Quire! We try to keep our site updated continuously for clarity and completeness, but it’s not always easy to keep up with the pace of Quire’s development. We invite you to read our [Contributing Guidelines](https://github.com/thegetty/quire-docs/blob/main/CONTRIBUTING.md) and learn how you can help us develop and refine these resources for the community.
 
-### Get Started
+There are four main sections to the website:
 
-1. Post a new issue or comment on an existing issue [in our issue tracker](https://github.com/thegetty/quire-docs/issues). Please label your issues to the best of your abilities.
+- [About](https://quire.getty.edu/about/): Learn about what Quire can do, its history, and the team behind the project.
+- [Community](https://quire.getty.edu/community/): Connect with other users, see what other's are creating with Quire, learn how to get involved.
+- [Documentation](https://quire.getty.edu/documentation/): Instructions for how to use Quire from installation to deployment and everything in between.
+- [Learn](https://quire.getty.edu/learn/): Get started by taking the Quire tutorial and peruse other helpful tools and resources to increase your Quire skillset.
 
-2. Clone this repository by following [these instructions](https://quire.getty.edu/documentation/github/#installing-an-existing-quire-project-from-github).
-  - We recommend using [GitHub Desktop](https://desktop.github.com/) to clone your repository and manage any changes. Refer to [GitHub Desktop documentation](https://docs.github.com/en/desktop) for further details.
-  - Be sure to run `quire install` before proceeding.
+### Development Notes
 
-3. [Create a new branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-branches) and make your changes.
-  - Please review our [Style Guide](https://github.com/thegetty/quire-docs/wiki/Quire-Website-&-Documentation-Style-Guide) and ensure you are contributing in the style of the project to the best of your abiltiies.
-  - Test your changes by running `quire preview`.
+This project was last built with the following software versions:
 
-4. Submit a pull request through GitHub.
-  - Reference any relevant issues or supporting documentation in your pull request description (for example, “Closes #203.”)
-  - Explain what the changes do and what your approach was. If there were alternate ways of doing it, mention them and tell us why you didn’t choose them.
-  - If this is a Work in Progress pull request, comment on where you are and what your next steps are.
+- Quire 
+- Node 
+- Hugo 
+- PrinceXML 
+- Pandoc 
 
-5. See your changes merged into the documentation and website!
+While v0.18.2 of the core Quire Starter Theme was used, a number of customizations were made:
+
+Custom cover design and fonts to match J. Paul Getty Trust brand guidelines.
+Within the theme itself, changes were made to the source/css/variables.scss and source/css/print.scss files. Outside of the theme, customizations can be found in the project’s layouts directory, and in static/css/custom.css.
 
 ## License
 
