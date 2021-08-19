@@ -442,7 +442,7 @@ project_list:
   - id: "mcn_2020_scholars"
     src: /screenshots/_mcn_2020_scholars_.jpg
     alt: "What's Emerging in the Field? Essays from the MCN 2020 VIRTUAL Scholarship Program Recipients"
-    type: Essay
+    type: Essays
     publisher: "Museum Computer Network (MCN)"
     title_info: "What's Emerging in the Field?"
     pub_date: 2021-08-09
