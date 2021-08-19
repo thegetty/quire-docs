@@ -438,3 +438,16 @@ project_list:
       - materiajournal
       - sophielamb
     note: "Materia used Quire to create its inaugural journal issue. The Materia team customized the issue by changing fonts, banner sizes, and colors and by adding in an icon (a microscope) to denote if articles had been peer-reviewed. Materia chose Quire as it offered the ability to deliver free technical art history content to the world and provided a means of achieving ISSN/library status."
+
+  - id: "mcn_2020_scholars"
+    src: /screenshots/_mcn_2020_scholars_.jpg
+    alt: "What's Emerging in the Field? Essays from the MCN 2020 VIRTUAL Scholarship Program Recipients"
+    type: Essays
+    publisher: "Museum Computer Network (MCN)"
+    title_info: "What's Emerging in the Field?"
+    pub_date: 2021-08-09
+    url: https://publications.mcn.edu/2020-scholars/
+    customization_level: moderate
+    github_user:
+      - geealbers
+    note: "While their 2020 cohort of scholars didn’t have an in-person conference to attend, the Museum Computer Network (MCN) instead offered them the opportunity to contribute to a unique publication that would focus on the current state of museum technology and sustainability. With ten essays in hand, Quire offered MCN a free and relatively easy way of creating the book and getting it online. MCN also made the title available on Amazon in print and e-book through the Kindle Direct Publishing service (https://kdp.amazon.com). A grant from Kress supported the scholars, editing, and the modest cost of printing and shipping author copies of the book, as well as copies to recent MCN Board members and supporters."
