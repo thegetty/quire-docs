@@ -5,6 +5,12 @@ type: essay
 abstract: Quick tips for Markdown, YAML, and other formatting elements in Quire
 ---
 
+## Design Guide
+
+Here is an example of how Markdown, YAML, and shortcodes can be used to create a content page in Quire. [Download a PDF](/downloads/quire-design-guide.pdf) of the Quire Design Guide to take a closer look and continue reading to learn more about formatting your content in Quire.
+
+{{< q-figure id="design_guide" >}}
+
 ## Markdown
 
 Markdown is designed to be a simple, plain-text markup language that uses a few text rules to structure content for easy conversion into HTML. A quick overview of the key markdown rules used in Quire are below.
