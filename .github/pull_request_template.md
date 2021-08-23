@@ -1,8 +1,10 @@
-Thank you for contributing to the Quire website and documentation! Please complete the form below to submit your pull request for review. 
+Thank you for contributing to the Quire Documentation & Website! Please complete the form below to submit your pull request for review.
+
+*For the Title of this pull request, please use the format "Type/Issue-#: Brief description." For Type, the options are Edit, Add, Translate. Issue-# is only needed if this pull request addresses an exisiting issue.*
 
 ### Checklist 
 
-Please put an `x` next to the boxes that apply
+Please put an X within the brackets that apply `[X]`.
 
 - [ ] I have read the [CONTRIBUTING.md](https://github.com/thegetty/quire/blob/main/CONTRIBUTING.md) file.
 
@@ -15,7 +17,7 @@ Please put an `x` next to the boxes that apply
 
 
 
-### Please describe the goal of this pull request.
+### Please describe the goal of this pull request and the changes that were made.
 
 
 
