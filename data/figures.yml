@@ -105,7 +105,7 @@ figure_list:
     caption: "**`type: contents`** <br /> **`class: abstract`** <br /> A maximal version of the contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
   - id: "modern-contents-brief"
     src: /screenshots/modern-contents-brief.png
-    caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each main page. Sub-section pages have been optionally hidden using the `tocType: short` option in the config.yml file."
+    caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each top-level page or section."
   - id: "modern-contents-grid"
     src: /screenshots/modern-contents-grid.png
     caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/documentation/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
