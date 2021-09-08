@@ -70,8 +70,7 @@ Outside of the theme files themselves, a Quire project will also have a config.y
 | citationPageLocationDivider | string | ", " default, determines the text/spacing to be inserted between the citation and the page number in the q-cite shortcode |
 | displayBiblioShort| boolean | Whether a bibilography generated with the q-cite or q-bibliography shorcodes should display the short form of the reference, along with the long. |
 | imageDir | string | "img" default, the directory in the `/static/` directory where you put your images |
-| tocType | "full", "short" | "short" will hide all sub-section pages |
-| menuType | "full", "short" |  "short" will hide all sub-section pages |
+| `menuClass` | "brief", "list" |  "list" is the default, "brief" will show only top-level pages and sections, no sub-sections. |
 | prevPageButtonText | string | "Back" default |
 | nextPageButtonText | string | "Next" default |
 | entryPageSideBySideLayout | boolean | Entry pages can have a side-by-side layout with image on the left and text on the right, this can be controlled by `class: side-by-side` in the page YAML, or globally with this parameter |
