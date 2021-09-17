@@ -64,6 +64,7 @@ Outside of the theme files themselves, a Quire project will also have a config.y
 
 | Parameter | Expected Value | Description |
 | --------- | -------------- | ----------- |
+| runTests | boolean | Turn on or off the built-in tests that check for certain common errors and post error messages in the CLI output. |
 | searchEnabled | boolean | Turn on or off the built-in text search capability for users |
 | licenseIcons | boolean | Whether or not to display Creative Commons license icons |
 | pageLabelDivider | string | ". " default, etermines the text/spacing to be inserted between page .label and page .title |
