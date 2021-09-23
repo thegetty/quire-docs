@@ -46,6 +46,18 @@ While the TOC is generated automatically by Quire based on the Markdown pages in
 Adding `toc: false` will only remove the page’s listing in the TOC. To entirely hide a page from Quire’s outputs use `online: false`, `pdf: false`, and `epub: false`.
 {{< /q-class >}}
 
+### Page Numbering in the PDF
+
+When you output your project as a PDF, page numbers will automatically be added to the pages and to the corresponding entries in the Table of Contents.
+
+The frontmatter pages of books are usually numbered in lowercase Roman numerals (i, ii, iii, iv, etc.). The Arabic numeral 1 is then assigned to the first page of true “content” for the book. Usually the first chapter, or an introduction. Quire handles things the same way.
+
+To assign a particular section to be page 1 of your project, add `class: page-one` to the Markdown file. This tag means that this section is page 1 (in Arabic numerals), and everything before it is frontmatter and so will be numbered in lowercase Roman.
+
+{{< q-class "box warning" >}}
+Only one page in your project can have the `class: page-one` tag.
+{{< /q-class >}}
+
 ## Sidebar Menu
 
 Like the TOC, the sidebar Menu is generated automatically by Quire based on the structure of the files in your `content` directory and the metadata of each page.
