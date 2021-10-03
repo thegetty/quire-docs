@@ -2,7 +2,7 @@
 title: Install or Update
 weight: 4050
 type: essay
-abstract: "Get set up to use Quire on macOS, Window, or Linux"
+abstract: "Get set up to use Quire on macOS, Windows, or Linux"
 ---
 
 {{< q-class "box warning" >}}
