@@ -5,9 +5,9 @@ type: essay
 abstract:  "Funding, conferences, awards, and more for your Quire project"
 ---
 
-## PRE-PUBLICATION
+## Pre-Publication
 
-#### Funding
+### Funding
 *Apply for grants, awards, and other funding before getting started*
 
 * [ARIAH Digital Development Award for Art History](http://www.ariah.info/ARIAHAWARDS.html)  
@@ -24,10 +24,10 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [National Endowment for the Humanities (NEH)](https://www.neh.gov/divisions/odh/resources-for-applicants-to-the-NEH-office-of-digital-humanities)
 
-## POST-PUBLICATION
+## Post-Publication
 
-#### Showcase
-*Share your finished project with other professionals and the public*
+### Showcase
+*Share your Quire project with other professionals and the public*
 
 * [Quire Community Showcase](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
 
@@ -35,8 +35,8 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 <br/>
 
-#### Conferences
-*Speak about your Quire project at conferences*
+### Conferences
+*Present your Quire project at conferences*
 
 * [Art Libraries Society of North America (ARLIS/NA)](https://www.arlisna.org/conferences)
 
@@ -56,8 +56,8 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 <br/>
 
-#### Awards
-*Submit your finished project for award consideration*
+### Awards
+*Submit your Quire project for award consideration*
 
 * [American Alliance of Museums (AAM) Media & Technology MUSE Awards](https://www.aam-us.org/programs/awards-competitions/media-technology-muse-awards/)
 
@@ -78,7 +78,7 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 <br/>
 
-#### Reviews
+### Reviews
 *Get the word out about your Quire project in journals and other international sources*
 
 * [ACLS Humanities E-Book](https://www.humanitiesebook.org/about)
