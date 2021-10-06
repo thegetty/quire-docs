@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/demo*"
-  to = "https://quire-demo.netlify.app:splat"
+  from = "/demo/*"
+  to = "https://quire-demo.netlify.app/:splat"
   status = 200
   force = true
 
