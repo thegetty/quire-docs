@@ -1,3 +1,9 @@
+[[redirects]]
+  from = "/demo/*"
+  to = "https://quire-demo.netlify.app/:splat"
+  status = 301
+  force = true
+
 [build]
 publish = "site"
 command = "npm run build"
