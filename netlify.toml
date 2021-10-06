@@ -1,10 +1,4 @@
 [[redirects]]
-  from = "/demo"
-  to = "/demo/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/demo/*"
   to = "https://quire-demo.netlify.app/:splat"
   status = 200
