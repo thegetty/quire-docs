@@ -1,7 +1,7 @@
 [[redirects]]
   from = "/demo/*"
   to = "https://quire-demo.netlify.app/:splat"
-  status = 301
+  status = 200
   force = true
 
 [build]
