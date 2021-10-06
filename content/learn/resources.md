@@ -1,8 +1,8 @@
 ---
-title: Resources
+title: Technical Resources
 weight: 6200
 type: essay
-abstract: "List of helpful tools and other resources"
+abstract: "Helpful tools, explanations, and links"
 ---
 
 ## Command Line
