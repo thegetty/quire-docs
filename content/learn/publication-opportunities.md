@@ -22,12 +22,12 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 ## Post-Publication
 
-### 🎭 Showcase 🎭
+### 🙌 Show & Tell 🙌
 *Share your Quire project with other professionals and the public*
 
-* [Quire Community Showcase](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
-
 * [Museum Publishing Digital Interest Group (MuPuDIG)](https://docs.google.com/forms/d/e/1FAIpQLSeKK2mwSG9fpMgAFoE5qkjKvYUQK7U4596QikNxBB3mE9-ODQ/viewform)
+
+* [Quire Community Showcase](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
 
 <br/>
 
@@ -115,7 +115,7 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [Journal of the Text Encoding Initiative (TEI)](https://journal.tei-c.org/index.php/journal/about/submissions)
 
-* [Nineteenth-Century Art Worldwide](https://www.19thc-artworldwide.org/submissions)
+* [Nineteenth-Century Art Worldwide (NCAW)](https://www.19thc-artworldwide.org/submissions)
 
 * [Panorama: Journal of the Association of Historians of American Art (AHAA)](https://editions.lib.umn.edu/panorama/submissions/)
 
