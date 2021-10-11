@@ -10,14 +10,15 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 ### 💰 Funding 💰
 *Apply for grants, awards, and other funding before getting started*
 
-|Granting Body|Acronym|Description|
+|Shortform|Granting Body|Description|
 |--|--|--|
-|Association of Research Institutes in Art History|ARiAH|[Digital Development Award for Art History](http://www.ariah.info/ARIAHAWARDS.html)|
-|College Art Association|CAA|[Publishing Grants](https://www.collegeart.org/programs/publishing-grants)|
-|Institute of Museum and Library Services|IMLS|[Digital Humanities Advancement Grants](https://www.imls.gov/grants/available/digital-humanities-advancement-grants)|
-|John S. and James L. Knight Foundation|Knight|[Arts Funding](https://knightfoundation.org/apply/)|
-|The Kress Foundation|Kress|[Digital Art History Grants](https://www.kressfoundation.org/Programs/Grants/Digital-Art-History)|
-|The Andrew W. Mellon Foundation|Mellon |[Grants](https://mellon.org/grants/grantmaking-policies-and-guidelines/grant-proposal-guidelines/)|
+|ARiAH|Association of Research Institutes in Art History|[Digital Development Award for Art History](http://www.ariah.info/ARIAHAWARDS.html)|
+|CAA|College Art Association|[Publishing Grants](https://www.collegeart.org/programs/publishing-grants)|
+|IMLS|Institute of Museum and Library Services|[Digital Humanities Advancement Grants](https://www.imls.gov/grants/available/digital-humanities-advancement-grants)|
+|Knight|John S. and James L. Knight Foundation|[Arts Funding](https://knightfoundation.org/apply/)|
+|Kress|The Kress Foundation|[Digital Art History Grants](https://www.kressfoundation.org/Programs/Grants/Digital-Art-History)|
+|Mellon|The Andrew W. Mellon Foundation |[Grants](https://mellon.org/grants/grantmaking-policies-and-guidelines/grant-proposal-guidelines/)|
+|NEH|National Endowment for the Humanities|[Digital Humanities Advancement Grants](https://www.neh.gov/grants/odh/digital-humanities-advancement-grants)|
 
 ## Post-Publication
 
