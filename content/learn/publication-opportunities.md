@@ -87,11 +87,11 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [Cultural Analytics](https://culturalanalytics.org/for-authors)
 
-* [Digital Research Infrastructure for the Arts and Humanities (DARIAH–EU)](https://www.dariah.eu/about/publications/)
-
 * [Digital Humanities Now](https://digitalhumanitiesnow.org/faq/)
 
 * [Digital Humanities Quarterly (DHQ)](http://www.digitalhumanities.org/dhq/submissions/index.html)
+
+* [Digital Research Infrastructure for the Arts and Humanities (DARIAH–EU)](https://www.dariah.eu/about/publications/)
 
 * [Digital Scholarship in the Humanities (DSH)](https://academic.oup.com/dsh/pages/General_Instructions)
 
