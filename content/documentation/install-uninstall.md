@@ -167,7 +167,7 @@ If you have an existing project that you want to migrate to a newer version of Q
 
 1. Update Quire following the instructions above.
 2. Start a new quire project.
-3. Delete the `content`, `data`, `static` and `layouts` folders in the new project, and replace them with those from your old project.
+3. Delete the `content`, `data`, and `static` folders in the new project, and replace them with those from your old project.
 4. Copy over any style customization changes you made in the `themes/default/layouts/source/css/variables.scss` file or others. (In older versions of Quire this file would be `themes/quire-starter-theme/layouts/source/css/variables.scss`.)
 
 Run `quire preview --verbose` to test. If you see errors logged in the command-line, or if the preview doesn’t display as intended on http://localhost:1313/, search our [Discussions Forum](https://github.com/thegetty/quire/discussions) for help.
