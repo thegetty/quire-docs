@@ -8,7 +8,7 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 ## Pre-Publication
 
 ### 💰 Funding 💰
-*Apply for grants, awards, and other funding before getting started*
+*Apply for grants, awards, and other funding while you are getting started*
 
 * [Association of Research Institutes in Art History (ARiAH) Digital Development Award](http://www.ariah.info/ARIAHAWARDS.html)
 
@@ -16,7 +16,7 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [Institute of Museum and Library Services (IMLS) Digital Humanities Advancement Grants](https://www.imls.gov/grants/available/digital-humanities-advancement-grants)
 
-* [Knight Foundation Arts Funding](https://knightfoundation.org/apply/)
+* [Knight Foundation Funding](https://knightfoundation.org/apply/)
 
 * [Kress Digital Art History Grants](https://www.kressfoundation.org/Programs/Grants/Digital-Art-History)
 
@@ -40,11 +40,11 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [Art Libraries Society of North America (ARLIS/NA)](https://www.arlisna.org/conferences)
 
-* [Association of University Presses (AUP)](https://aupresses.org/programs-events/annual-meeting/)
+* [Association of University Presses (AUPresses)](https://aupresses.org/programs-events/annual-meeting/)
 
 * [College Art Association (CAA)](https://www.collegeart.org/programs/conference/proposals)
 
-* [Library Publishing Forum (LPF)](https://librarypublishing.org/forum/)
+* [Library Publishing Forum](https://librarypublishing.org/forum/)
 
 * [Museum Computer Network (MCN)](https://mcn.edu/mcn2021/)
 
