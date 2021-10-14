@@ -32,7 +32,7 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-Check out [this list of conferences](http://localhost:1313/learn/publication-opportunities/#post-publication) to plan ahead.
+Check out [this list of conferences](https://quire.getty.edu/learn/publication-opportunities/#post-publication) to plan ahead.
 
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
@@ -41,7 +41,7 @@ Check out [this list of conferences](http://localhost:1313/learn/publication-opp
 
 | Event | Date | Description |
 | -- | -- | -- |
-| MuseumNext: Digital Collection Summit | October 6, 2021 | "Opening Access: Getty's Approach to Digital Collection Catalogues," with Erin Cecele Dunigan. Learn more about MuseumNext and the 2021 summit on their [website](https://www.museumnext.com/events/digital-collections-summit/). |
+| MuseumNext: Digital Collections Summit | October 6, 2021 | "Opening Access: Getty's Approach to Digital Collection Catalogues," with Erin Cecele Dunigan. |
 | National Museum Publishing Seminar (NMPS) | August 2, 2021 | “Digital Publishing Today: Three Case Studies” moderated by Erin Cecele Dunigan (Quire), with Alex Bortolot (Minneapolis Institute of Art), Heather Brand (Museum of Fine Arts, Houston), and Emmet Byrne (Walker Art Center) presenting recent collections-based digital publishing projects. |
 | IIIF Annual Conference | June 23, 2021 | "Quire & IIIF: Implementing a User-Friendly Workflow for Digital Publishing,” with Greg Albers, Erin Cecele Dunigan, Matthew Hrudka, and Hannah Balenda. |
 | Museum Computer Network (MCN) | Nov 10, 2020 | “Quire—A Sustainable Digital Publishing Solution for Museums of All Sizes,” with Amanda Helton and Kathryn Wade from the San José Museum of Art, https://sched.co/dfXr.  |
