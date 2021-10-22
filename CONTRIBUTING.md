@@ -46,7 +46,9 @@ Before starting your contribution, search our [issue tracker](https://github.com
 
 ## Use the Issue Tracker
 
-We use GitHub’s [issue tracker](https://github.com/thegetty/quire-docs/issues/) to track work that needs to be done, is currently being done, or is proposed to be done. Unless your changes are small and very straightforward, we ask that all contributions are recorded in the issue tracker either by commenting on a existing issue or proposing a new one. Be sure to briefly describe your proposed solution and say whether you may need help with any aspect of it. This approach has several advantages:
+We use GitHub’s [issue tracker](https://github.com/thegetty/quire-docs/issues/) to track work that needs to be done, is currently being done, or is proposed to be done. Unless your changes are small and very straightforward, we ask that all contributions are recorded in the issue tracker either by commenting on a existing issue or proposing a new one. Click [new issue](https://github.com/thegetty/quire-docs/issues/new/choose), follow the prompts in the "Website & Documentation Suggestion" form and submit!
+
+This approach has several advantages:
 
 - Lets people know you’re working on it
 - Gives the core team and the community a chance to give feedback before you do any work
