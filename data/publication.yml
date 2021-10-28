@@ -90,7 +90,7 @@ resource_link:
     url: https://github.com/thegetty/quire/
   - type: footer-link
     name: Newsletter
-    url: http://eepurl.com/hg8ROf
+    url: https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4
   - type: footer-link
     name: Contributing
     url: https://github.com/thegetty/quire/blob/main/CONTRIBUTING.md
