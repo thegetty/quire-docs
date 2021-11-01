@@ -1,6 +1,6 @@
 Thank you for contributing to the Quire Documentation & Website! Please complete the form below to submit your pull request for review.
 
-*For the Title of this pull request, please use the format "Type/Issue-#: Brief description." For Type, the options are Edit, Add, Translate. Issue-# is only needed if this pull request addresses an exisiting issue.*
+*For the Title of this pull request, please use the format "Type/Issue-#: Brief description." For Type, the options are Edit, Add, Translate. Issue-# is only needed if this pull request addresses an existing issue.*
 
 ### Checklist 
 
