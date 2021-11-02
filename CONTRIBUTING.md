@@ -2,18 +2,10 @@
 
 *Thank you for your interest in contributing to Quire! No matter what level of experience you have, we welcome all contributions, big and small.*
 
-**Take some time to learn about GitHub and the contributing process:**
+Below you will find information about this respository, the types of contributions we are seeking, and a step-by-step guide for submitting contributions via Github. Keep reading to learn more about contributing to Quire or proceed to the **[Get Started with a Contribution](#get-started-with-a-contribution)** section. **[Helpful Resources](#helpful-resources)** can be found at the end of these guidelines.
 
-[Learn About Contributing To Quire](#about-contributing-to-quire)<br/>
-[Identify a Contribution to Make](#identify-a-contribution-to-make)
 
-**Jump right in with a contribution:**
-
-[Use the Issue Tracker](#use-the-issue-tracker)<br/>
-[Start Work on Contribution](#start-work-on-contribution)<br/>
-[Submit Your Contribution](#submit-your-contribution)
-
-## About Contributing to Quire
+## Learn About Contributing to Quire
 
 Developed by Getty, Quire is a new, multiformat publishing tool available for immediate access and use. Quire is in limited beta, © J. Paul Getty Trust, and not yet released as open-source software. **For a free license to use Quire, please complete [this form](http://bit.ly/quire-signup).**
 
@@ -44,7 +36,9 @@ Before starting your contribution, search our [issue tracker](https://github.com
 
 >If this is your first time contributing and you don't know where to start, check the [issue tracker](https://github.com/thegetty/quire-docs/issues) for posts that include the “good first issues” label. These are small and approachable edits we could use your help with!
 
-## Use the Issue Tracker
+## Get Started with a Contribution
+
+### 1. Use the Issue Tracker
 
 We use GitHub’s [issue tracker](https://github.com/thegetty/quire-docs/issues/) to track work that needs to be done, is currently being done, or is proposed to be done. Unless your changes are small and very straightforward, we ask that all contributions are recorded in the issue tracker either by commenting on a existing issue or proposing a new one. Click [new issue](https://github.com/thegetty/quire-docs/issues/new/choose), follow the prompts in the "Website & Documentation Suggestion" form and submit!
 
@@ -62,7 +56,7 @@ If you are working on a previously posted issue, please comment on that issue an
 
 Post a new issue that you found and would like to tackle. You can also post a new issue and leave it for someoen else to take on.
 
-## Start Work on Contribution
+### 2. Start Work on Contribution
 
 Now that you've identified your contribution, your next step will be to use GitHub and a text editor (such as Atom) to make the desired changes. We use GitHub to manage all our work on Quire. If you are new to GitHub, we recommend creating a [new GitHub account](https://github.com/join) and downloading [GitHub Desktop](https://desktop.github.com/). Instructions follow.
 
@@ -107,7 +101,7 @@ Now that you've identified your contribution, your next step will be to use GitH
 1. You will be given the option to "Push origin." Click this button.
 2. Now the changes you've made have been successfully saved to your branch on GitHub.
 
-## Submit Your Contribution
+### 3. Submit Your Contribution
 
 Once you've pushed your suggested changes through GitHub Desktop, you will submit it to us for review as a pull request. A pull request says, “Hey, I did something useful for you, want to pull it in and merge it into your project?” It's a chance for Quire’s core team to evaluate the proposed changes made and decide whether to:
 
