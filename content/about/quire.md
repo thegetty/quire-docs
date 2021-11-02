@@ -54,7 +54,7 @@ Collection catalogues / exhibition catalogues / guides and toolkits / journals /
 ## Is Quire Right for You?
 
 - Quire is developed, tested, and used by Getty. Getty is committed to Quire's continued use and growth in the field. Learn about Quire's [history](/about/history/).
-- Quire is free to use. No proprietary software or ongoing maintenance is required. Learn more about [how quire works](/about/how-it-works/).
+- Quire is free to use. No proprietary software or ongoing maintenance is required. Learn more about [how Quire works](/about/how-it-works/).
 - E-book files are distribution-ready for Amazon, Apple, and other vendors; PDF files are print-on-demand ready, and the online edition can be hosted on any web server. Learn how to [output](/documentation/multiformat-output/) and [deploy](/documentation/site-deploy/) your site.
 - Quire is compatible with most operating systems, including macOS and Windows. See our [installation guidelines](/documentation/install-uninstall/) for more information.
 - No pre-existing technical skills are necessary. We are developing helpful tools and resources to support our users. Take our [tutorial](/learn/tutorial/) and browse our list of [resources](/learn/resources/).
