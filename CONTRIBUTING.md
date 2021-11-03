@@ -114,11 +114,9 @@ A pull request doesn’t have to represent finished work. We always recommend op
 4. Click the green button that says “Create Pull Request” if all your changes are ready for review. Or click the drop-down arrow and choose “Create Draft Pull Request” if you are still making changes.
 5. Once your pull request has been reviewed and approved, you will see your work merged into the Quire documentation and website!!
 
-***
 
-**At this point, we hope you feel ready to contribute! But don’t hesitate to [ask for help or clarification](mailto:quire@getty.edu); everyone’s a beginner at first. And thank you again for your interest in making Quire a better tool for all!** 🦄
+>**At this point, we hope you feel ready to contribute! But don’t hesitate to [ask for help or clarification](mailto:quire@getty.edu); everyone’s a beginner at first. And thank you again for your interest in making Quire a better tool for all!** 🦄
 
-***
 
 ## Helpful Resources
 
