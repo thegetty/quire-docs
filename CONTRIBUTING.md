@@ -68,8 +68,8 @@ Now that you've identified your contribution, your next step will be to use GitH
 1. In GitHub desktop, make sure you are in the correct repository. At the top right, under "Current Repository," it should say `quire-docs`.
 2. Navigate to where it says “Current Branch” in your GitHub Desktop window.
 3. Select “new branch” to the right of the Filter box.
-4. Name your branch following this branch naming convention: `Type/Issue#/Description` (For example, "Edit/#20/Fix-typo".)
->For Type, the options are: **Edit, Add, Translate.** Issue-# is only needed if this pull request addresses an existing issue. 
+4. Name your branch following this branch naming convention: `Type/Issue#/Description`. (For example, "Edit/#20/Fix-typo".)<br/>
+**For Type, the options are: **Edit, Add, Translate.** Issue-# is only needed if this pull request addresses an existing issue.** <br/>
 5. Make sure it is based on the `main` branch.
 6. Click "Publish Branch."
 
