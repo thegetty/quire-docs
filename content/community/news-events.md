@@ -41,7 +41,8 @@ Check out [this list of conferences](https://quire.getty.edu/learn/publication-o
 
 | Event | Date | Description |
 | -- | -- | -- |
-| MuseumNext: Digital Collections Summit | October 6, 2021 | "Opening Access: Getty's Approach to Digital Collection Catalogues," with Erin Cecele Dunigan. |
+| Open Publishing Fest | November 11, 2021 | “Quire: Getty’s Open-Source Digital Publishing Tool,” with Erin Cecele Dunigan and Greg Albers. |
+| MuseumNext: Digital Collections Summit | October 6, 2021 | “Opening Access: Getty's Approach to Digital Collection Catalogues,” with Erin Cecele Dunigan. |
 | National Museum Publishing Seminar (NMPS) | August 2, 2021 | “Digital Publishing Today: Three Case Studies” moderated by Erin Cecele Dunigan (Quire), with Alex Bortolot (Minneapolis Institute of Art), Heather Brand (Museum of Fine Arts, Houston), and Emmet Byrne (Walker Art Center) presenting recent collections-based digital publishing projects. |
 | IIIF Annual Conference | June 23, 2021 | "Quire & IIIF: Implementing a User-Friendly Workflow for Digital Publishing,” with Greg Albers, Erin Cecele Dunigan, Matthew Hrudka, and Hannah Balenda. |
 | Museum Computer Network (MCN) | Nov 10, 2020 | “Quire—A Sustainable Digital Publishing Solution for Museums of All Sizes,” with Amanda Helton and Kathryn Wade from the San José Museum of Art, https://sched.co/dfXr.  |
