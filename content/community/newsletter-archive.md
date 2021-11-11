@@ -7,6 +7,7 @@ online: false
 
 2021
 
+- [November 2021](https://newsletters.getty.edu/t/t-F81AAF9D69C92E1E2540EF23F30FEDED): Contribute to the Quire-Docs Repository, Coming Soon: End-of-Year Quire Survey, Update to Node.js Installation Instructions, Getty Publications
 - [October 2021](https://newsletters.getty.edu/t/t-1A51C0381B6ED3762540EF23F30FEDED): Quire at MuseumNext: Digital Collections Summit, New List of Digital Publishing Resources, Contributing to the Quire Website & Documentation, Minneapolis Institute of Art
 - [September 2021](https://newsletters.getty.edu/t/t-636BF3B756B3461C2540EF23F30FEDED): New Feature Launch: Multi-level Subsections, Quire Design Guide for YAML & Markdown, Introducing Pull Request Templates, MuseumNext: Digital Collections Summit, Tilt West Journal
 - [August 2021](http://newsletters.getty.edu/t/t-189F8F6A8C8EEF432540EF23F30FEDED): Quire at the 2021 IIIF Annual Conference, Museum Publishing Digital Interest Group, Introducing Bug Report Forms, Museum Computer Network
