@@ -60,7 +60,7 @@ Collection catalogues / exhibition catalogues / guides and toolkits / journals /
 - No pre-existing technical skills are necessary. We are developing helpful tools and resources to support our users. Take our [tutorial](/learn/tutorial/) and browse our list of [resources](/learn/resources/).
 - We have a vibrant and diverse community of users who are available to answer your questions and provide guidance. Visit our [Quire Community Forum](https://github.com/thegetty/quire/discussions).
 - We are moving Quire towards an open-source, community-supported model, and are currently following open-source software standards. Learn why we choose an [open-source](/about/open-source/) model.
-- For more detailed information about whether Quire is right for you, visit our [Implementation Considerations](/documentation/implementation/).
+- For more detailed information about whether Quire is right for you, see our [Implementation Considerations](/documentation/implementation/).
 
 **Still not sure? Feel free to [contact us](mailto:quire@getty.edu) for a one-on-one consultation to determine if Quire is right for you.**
 
