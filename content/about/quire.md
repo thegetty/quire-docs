@@ -9,7 +9,7 @@ Developed by Getty, Quire offers an elegant and affordable digital publishing so
 
 Through the use of [static site generation](/about/how-it-works/) and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format. Quire is flexible and feature-rich and can be used in its most basic configuration, or it can be customized, adapting to a  vast array of use cases. Individuals at all levels of technical experience can use Quire. Our rapidly growing [community](/community/community-showcase/) includes scholars, curators, editors, designers, web developers, and the digitally curious.
 
-Currently under development for potential release as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating digital books that are not only as beautiful as the print books we know and love but are equally as enduring.
+Currently, under development for potential released as [open-source software](/about/open-source/), Quire builds upon Getty’s expertise in traditional book publishing and is the cornerstone of the institution’s pioneering [digital publishing program](https://www.getty.edu/publications/digital/index.html). Through the development of Quire, Getty is carving a path forward for individuals and institutions looking to solve the challenges of creating digital books that are not only as beautiful as the print books we know and love but are equally as enduring.
 
 **Institutions that have published using Quire**:
 
@@ -29,7 +29,7 @@ Collection catalogues / exhibition catalogues / guides and toolkits / journals /
 <div class="feature-list">
 
 - **Multiformat Output** Generate publications as websites, EPUB and MOBI e-books, and PDFs
-- **Realtime Publication Preview** Make changes and view them live in your browser
+- **Realtime Publication Preview** Make changes and views them live in your browser
 - **Web Accessibility** Include logical reading order, alt texts, language codes, semantic section elements, and more
 - **SEO Optimization** Include metadata and tags for enhanced {{< q-def "search engine optimization" >}}
 - **Single-source Publishing** Change content once to change it across all formats, without duplicating effort
