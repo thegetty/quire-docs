@@ -36,8 +36,10 @@ abstract: "How-to guides, demos, webinars, and more"
 
 *Watch videos of recent Quire presentations from Getty staff and the community.*
 
-{{< q-figure id="opf_2020" >}}
+{{< q-figure id="opf_2021" >}}
 
 {{< q-figure id="2021-iiif-annual-conference" >}}
+
+{{< q-figure id="opf_2020" >}}
 
 **Interested in writing an article or step-by-step guide? Have a demo or presentation about Quire you'd like to submit? Please contact us at quire@getty.edu.**
