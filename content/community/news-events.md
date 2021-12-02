@@ -17,12 +17,14 @@ abstract: "Get the latest news and info about upcoming events"
 
 **2021**
 
+- September 9, 2021: Quire [v0.20.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0200) is released, including the new multilevel subsection feature
 - May 13, 2021: The new Quire [website](https://quire.getty.edu/) is launched to the community
-- April 6, 2021: Quire v0.19.0 released, including IIIF compatibility
+- April 6, 2021: Quire [v0.19.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0190) released, including IIIF compatibility
+- February 18, 2021: Quire [community forum](https://github.com/thegetty/quire/discussions) is launched via GitHub Discussions
 
 **2020**
 
-- Dec. 1, 2020: Quire [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4) and [community forum](https://github.com/thegetty/quire/discussions) are launched
+- Dec. 1, 2020: Quire [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4) is launched
 - Oct 3, 2020: [Six new features](/about/roadmap/) added to our roadmap
 - Sept 30, 2020: Quire team selected to beta test [*It Takes A Village: Open Source Software Sustainability*](https://www.lyrasis.org/programs/Pages/IMLS-OSS.aspx) tools
 - Sept 16, 2020: Welcome to Getty’s development team, Hannah Balenda!
