@@ -11,8 +11,6 @@ The Quire team at Getty continues its work on Quire, including improving the ins
 
 <div class="feature-list">
 
-- **Multi-level Subsections** Enables Quire publications to be authored with an arbitrary depth of content subsections supported by the table of contents and content navigation.
-
 - **360º Images** Implements 360° rotating images as a standard feature for Quire publications.
 
 - **Deep Linking** Implements functionality for deep linking to IIIF image regions and image annotation layers within a Quire publication.
