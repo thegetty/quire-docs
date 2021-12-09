@@ -7,7 +7,7 @@ online: false
 
 2021
 
-- [December 2021](https://newsletters.getty.edu/t/t-182F4DDE523E25DE2540EF23F30FEDED): New Publications from the Community, Quire by the Numbers, Looking Forward to 2022, Quire at Open Publishing Fest, Complete the Community Survey by 12/10, Community Forum in Action, What do you love about Quire?, Thank you Contributors
+- [December 2021](https://newsletters.getty.edu/t/t-182F4DDE523E25DE2540EF23F30FEDED): New Publications from the Community, Quire by the Numbers, Looking Forward to 2022, Quire at Open Publishing Fest, Complete the Community Survey by 12/10, What do you love about Quire?, Thank you Contributors
 - [November 2021](https://newsletters.getty.edu/t/t-F81AAF9D69C92E1E2540EF23F30FEDED): Contribute to the Quire-Docs Repository, Coming Soon: End-of-Year Quire Survey, Update to Node.js Installation Instructions, Getty Publications
 - [October 2021](https://newsletters.getty.edu/t/t-1A51C0381B6ED3762540EF23F30FEDED): Quire at MuseumNext: Digital Collections Summit, New List of Digital Publishing Resources, Contributing to the Quire Website & Documentation, Minneapolis Institute of Art
 - [September 2021](https://newsletters.getty.edu/t/t-636BF3B756B3461C2540EF23F30FEDED): New Feature Launch: Multi-level Subsections, Quire Design Guide for YAML & Markdown, Introducing Pull Request Templates, MuseumNext: Digital Collections Summit, Tilt West Journal
