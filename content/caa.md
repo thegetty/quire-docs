@@ -34,8 +34,4 @@ Quire is a digital publishing tool, developed by [Getty](https://getty.edu). It 
 
 ### Use Cases
 
-{{< q-figure-group grid=2 id="highpoint_editions, duke_wired" >}}
-
-{{< q-figure-group grid=2 id="heritage_management, materia_vol_1" >}}
-
-{{< q-figure-group grid=2 id="state_of_museum_2021, mcn_2020_scholars" >}}
+{{< q-showcase projects="highpoint_editions, duke_wired,  materia_vol_1,  mcn_2020_scholars, heritage_management, _state_of_museum_dig,"  sort="false" >}}
