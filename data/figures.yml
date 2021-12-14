@@ -215,11 +215,6 @@ figure_list:
     caption: "**Corpus Vasorum Antiquorum** | Getty Publications"
     full_caption: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis, J. Paul Getty Museum, 2019."
 
-  - id: "heritage_management"
-    src: /screenshots/_heritage_management.png
-    caption: "**Research proceedings** | Getty Publications"
-    full_caption: "Values in Heritage Management: Emerging Approaches and Research Directions, by Erica Avrami, et al, The Getty Conservation Institute, 2019."
-
   - id: "tour_toolkit"
     src: /screenshots/_tour_toolkit.png
     caption: "**Informational Pamphlet** | Minneapolis Institute of Art"
@@ -362,3 +357,27 @@ figure_list:
     media_id: UR6j2bcR5ro
     media_type: youtube
     caption: "“Quire: Getty's Open Source Digital Publishing Tool“ was presented at the 2021 Open Publishing Fest by Erin Cecele Dunigan, Community Manager for Quire. The presentation offers a general overview of what Quire is, how it works, and the Quire community."
+
+  - id: "highpoint_editions"
+    src: /screenshots/_highpoint_editions.jpg
+    caption: "[**Catalogue Raisonné** | Minneapolis Institue of Art](https://artsmia.org/highpoint-editions/)"
+
+  - id: "duke_wired"
+    src: /screenshots/_duke_wired.jpg
+    caption: "[**Report** | Duke University Digital Art History & Visual Culture Research Lab](https://reports.dahvc.org/2021/)"
+
+  - id: "materia_vol_1"
+    src: /screenshots/_materia_vol_1.jpg
+    caption: "[**Academic Journal** | Materia: Journal of Technical Art History](https://volume-1-issue-1.materiajournal.com/)"
+
+  - id: "heritage_management"
+    src: /screenshots/_heritage_management.jpg
+    caption: "[**Research Proceedings** | Getty Publications](https://www.getty.edu/publications/heritagemanagement/)"
+
+  - id: "mcn_2020_scholars"
+    src: /screenshots/_mcn_2020_scholars_.jpg
+    caption: "[**Essays** | Museum Computer Network (MCN)](https://publications.mcn.edu/2020-scholars/)"
+
+  - id: "state_of_museum_2021"
+    src: /screenshots/_state_of_museum_2021.jpg
+    caption: "[**Class Project** | George Washington University](https://ad-hoc-museum-collective.github.io/Museum-Digital-Practice-2021)"
