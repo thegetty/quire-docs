@@ -30,7 +30,7 @@ You can also email us at [quire@getty.edu](quire@getty.edu) if you know you'll b
 
 *Create enduring, discoverable, book-like publishing projects in a sustainable way*
 
-Quire is a digital publishing tool developed by [Getty](https://getty.edu). It is free to use and ideal for museums, universities, academic journals, and digital art historians looking to produce scholarly, highly illustrated publications in multiple formats (website, PDF, e-book, print.)
+Quire is a digital publishing tool developed by [Getty](https://getty.edu). It is free to use and ideal for museums, universities, academic journals, and digital humanists looking to produce scholarly, highly illustrated publications in multiple formats (website, PDF, e-book, print.)
 
 [View Our Fact Sheet](/downloads/quire-fact-sheet.pdf)
 
