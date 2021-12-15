@@ -215,11 +215,6 @@ figure_list:
     caption: "**Corpus Vasorum Antiquorum** | Getty Publications"
     full_caption: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis, J. Paul Getty Museum, 2019."
 
-  - id: "heritage_management"
-    src: /screenshots/_heritage_management.png
-    caption: "**Research proceedings** | Getty Publications"
-    full_caption: "Values in Heritage Management: Emerging Approaches and Research Directions, by Erica Avrami, et al, The Getty Conservation Institute, 2019."
-
   - id: "tour_toolkit"
     src: /screenshots/_tour_toolkit.png
     caption: "**Informational Pamphlet** | Minneapolis Institute of Art"
@@ -362,3 +357,5 @@ figure_list:
     media_id: UR6j2bcR5ro
     media_type: youtube
     caption: "“Quire: Getty's Open Source Digital Publishing Tool“ was presented at the 2021 Open Publishing Fest by Erin Cecele Dunigan, Community Manager for Quire. The presentation offers a general overview of what Quire is, how it works, and the Quire community."
+
+  
