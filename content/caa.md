@@ -24,13 +24,11 @@ If you cannot attend one of our live demos, schedule a one-on-one meeting at our
 
 </div>
 
+You can also email us at [quire@getty.edu](quire@getty.edu) if you know you'll be attending but aren't ready to schedule a meeting yet.
+
 ### About Quire
 
-*Create enduring, discoverable, book-like publishing projects in a sustainable way*
-
-Quire is a digital publishing tool, developed by [Getty](https://getty.edu). It is free to use and ideal for museums, universities, and academic journals looking to produce scholarly, highly illustrated publications in multiple formats (website, PDF, e-book, print.)
-
-[View Our Fact Sheet](/downloads/quire-fact-sheet.pdf)
+With Quire, you can create enduring, discoverable, book-like publishing projects in a sustainable way. Quire is a digital publishing tool developed by [Getty](https://getty.edu). It is free to use and ideal for museums, universities, academic journals, and digital humanists looking to produce scholarly, highly illustrated publications in multiple formats (website, PDF, e-book, print.) Experience with coding is helpful but not required. Read our [*Implentation Considerations*](https://quire.getty.edu/documentation/implementation/) for more information or [view the Quire Fact Sheet](/downloads/quire-fact-sheet.pdf)
 
 ### Use Cases
 
