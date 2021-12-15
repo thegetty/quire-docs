@@ -6,7 +6,7 @@ abstract: Learn more about Quire or schedule an in-person meeting with team
 ---
 ![CAA](/img/illustrations/caa-banner.jpg)
 
-
+**College Art Association Annual Conference** <br/>
 **February 16-19, 2022** <br/>
 **Hilton Chicago Hotel** <br/>
 [CAA Website](https://www.collegeart.org/programs/conference/conference2022)
@@ -16,7 +16,7 @@ Booth # 500 <br/>
 Thursday & Friday <br/>
 1:30 - 2:00 PM
 
-If you aren't able to attend one of our live demos, you can also find a time to discuss how Quire can meet your unique needs, schedule a one-on-one demo, or pick a time to swing by and say hello.
+If you cannot attend one of our live demos, schedule a one-on-one meeting at our booth instead. We're available to discuss how Quire can meet your unique needs, host a private demo, or just say hello.
 
 <div class="action-button">
 
