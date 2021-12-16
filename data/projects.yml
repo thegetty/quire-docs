@@ -109,7 +109,7 @@ project_list:
       - stephaniehanor
     note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable opportunity."
 
-  - id: "tilt_west"
+  - id: "tilt_west_art_language"
     src: /screenshots/_tilt_west.jpg
     alt: "Tilt West Journal, Art & Language, Vol. 1 - March 2020"
     type: Journal
@@ -466,7 +466,7 @@ project_list:
       - kjell
     note: "Mia wished to publish a digital catalogue raisonne that 1) met the requirements of academic publishing (ie: stable, findable, citable) 2) provided a book-like structure and user experience (ie: bounded content, mostly linear structure, and straightforward navigability), and 3) could act as the digital front end for an archive whose data is housed in Mia's digital asset management systems. Quire supports all but the last of these. To create the catalogue section, Mia's developers mapped collections data from Mia's DAMS into Quire's objects.yml file based on the object IDs of artworks referenced in the publication. While the data pull is automated, the connection is not “live;” a fresh data pull will coincide with the publication of subsequent editions of the catalogue, to be noted in the back matter."
 
-  - id: "tilt_west_3"
+  - id: "tilt_west_art_labor"
     src: /screenshots/_tilt_west_3.jpg
     alt: "Art and Labor, Tilt West Journal, Vol. 3 — September 2021, Phil America, Sam Bodkin, Jessica Brunecky, Patrisse Cullors, Jessica Herring, Dulce Soledad Ibarra, Bobby LeFebre, Muna Malik, Stacey Putka, Lynde Rosario, Amy Shimshon-Santo, Mike Shum, and Rachel Woolf"
     type: Journal
