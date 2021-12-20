@@ -160,7 +160,7 @@ project_list:
     customization_level: extensive
     github_user:
       - geealbers
-    note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other instiutions down the road."
+    note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other institutions down the road."
 
   - id: "heritage_management"
     src: /screenshots/_heritage_management.jpg
