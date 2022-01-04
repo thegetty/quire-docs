@@ -2,7 +2,7 @@
 title: Visit Us at CAA
 type: page
 weight: 9000
-abstract: Learn more about Quire or schedule an in-person meeting with team
+abstract: Learn more about Quire or schedule an in-person meeting with the team
 ---
 ![CAA](/img/illustrations/caa-banner.jpg)
 
