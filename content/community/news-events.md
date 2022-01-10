@@ -34,9 +34,7 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-Quire will have a booth at this year's College Art Association Annual Conference, February 16–19, 2022, in Chicago, IL. Will you be attending CAA 2022? If so, we'd love to hear from you! Details and booth number are forthcoming, but in the meantime, please write to us at quire@getty.edu to schedule a meeting.
-
-Check out [this list of conferences](https://quire.getty.edu/learn/publication-opportunities/#post-publication) to plan ahead.
+No upcoming events.
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
