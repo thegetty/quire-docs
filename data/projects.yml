@@ -231,7 +231,7 @@ project_list:
     src: /screenshots/_state_of_museum_dig.jpg
     alt: "The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses"
     type: Graduate Student Project
-    publisher: Ad Hoc Museum Collective (George Washington University)
+    publisher: Museum Studies at the George Washington University
     title_info: "*The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses*, by Suse Anderson, Cristin Guinan-Wiley, Jonathan Edelman, Rachel Rosenfeld, Mary McCulla, Sheridan Small, Cynthia Kurtz, Amy Pollard, Corrie Brady, Melissa Garcia, Caitlin Hepner, Sydney Thatcher, Laura Dickson, and Rebecca Brockette"
     pub_date: 2019-12-23
     url: https://ad-hoc-museum-collective.github.io/GWU-museum-digital-practice-2019/
@@ -477,7 +477,7 @@ project_list:
     customization_level: significant
     github_user:
       - swambold1
-    note: "Tilt West Journal, Vol. 3: Art and Labor is the latest volume of Tilt West'sjournal, a publication dedicated to critical discourse with a focus on arts and culture in Denver, Colorado and beyond. Featuring meditations on the theme of Art and Labor, this volume incorporates multimedia components like audio and videos with poetry, essays, and photography. Art and Labor is available both online and as a limited-edition paperback. This is the journal's third publication with Quire. Previous volumes of Tilt West Journal include Art and Language (March 2020) and Art and Community (December 2020)."
+    note: "Tilt West Journal, Vol. 3: Art and Labor is the latest volume of Tilt West's journal, a publication dedicated to critical discourse with a focus on arts and culture in Denver, Colorado and beyond. Featuring meditations on the theme of Art and Labor, this volume incorporates multimedia components like audio and videos with poetry, essays, and photography. Art and Labor is available both online and as a limited-edition paperback. This is the journal's third publication with Quire. Previous volumes of Tilt West Journal include Art and Language (March 2020) and Art and Community (December 2020)."
 
   - id: "akron_art_mail_1"
     src: /screenshots/_akron_art_mail_1.jpg
@@ -491,4 +491,17 @@ project_list:
     github_user:
       - halfempty
       - pancaketents
-    note: "The Akron Art Museum digitized Akron Art Mail: a mail art project from the community of Akron, Ohio, with the collaboration of the Akron-Summit County Public Library. This project was modified to be an image-heavy presentation, and much of the customization lay in resizing images and poetry to fit certain page dimensions. We chose Quire because it seemed like the best possible option for digitizing publications and preparing digital material for print. In a time of COVID-19 lockdown, Akron Art Mail made sharing art with the community possible. Quire extends the museum's reach and makes it possible for anyone with internet access to experience Akron Art Mail."
+    note: "The Akron Art Museum digitized Akron Art Mail: a mail art project from the community of Akron, Ohio, with the collaboration of the Akron-Summit County Public Library. This project was modified to be an image-heavy presentation, and much of the customization lay in resizing images and poetry to fit certain page dimensions. The museum chose Quire because it seemed like the best possible option for digitizing publications and preparing digital material for print. In a time of COVID-19 lockdown, Akron Art Mail made sharing art with the community possible. Quire extends the museum's reach and makes it possible for anyone with internet access to experience Akron Art Mail."
+
+  - id: "museum_digital_practice_2021"
+    src: /screenshots/_museum_digital_practice_2021.jpg
+    alt: "The State of Museum Digital Practice | 2021: A collection of graduate essays and responses, Museums and Technology | George Washington University"
+    type: Essays
+    publisher: Museum Studies at the George Washington University
+    title_info: "The State of Museum Digital Practice | 2021: A collection of graduate essays and responses"
+    pub_date: 2021-12-08
+    url: https://ad-hoc-museum-collective.github.io/Museum-Digital-Practice-2021/
+    customization_level: minor
+    github_user:
+      - shineslike
+    note: "This project was created as the major assignment in a Museums and Technology course, in the Museum Studies program at the George Washington University. Using Quire exposes students to cutting edge thinking and technology powering digital publishing within the museum field, introduces them to the supportive team at the Getty, and gives them a beautiful final product in which to share their research and thinking from across the semester. The intent of the project includes offering students a deep engagement with a topic of personal or professional interest through a research project; experience in a collaborative creative environment through the peer review process; and practical skills in Markdown language. At the end of the semester, each student has a published piece to share with peers, colleagues and friends. To date, there is no better platform to achieve these goals than Quire."
