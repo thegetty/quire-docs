@@ -231,7 +231,7 @@ project_list:
     src: /screenshots/_state_of_museum_dig.jpg
     alt: "The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses"
     type: Graduate Student Project
-    publisher: Ad Hoc Museum Collective (George Washington University)
+    publisher: Museum Studies at the George Washington University
     title_info: "*The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses*, by Suse Anderson, Cristin Guinan-Wiley, Jonathan Edelman, Rachel Rosenfeld, Mary McCulla, Sheridan Small, Cynthia Kurtz, Amy Pollard, Corrie Brady, Melissa Garcia, Caitlin Hepner, Sydney Thatcher, Laura Dickson, and Rebecca Brockette"
     pub_date: 2019-12-23
     url: https://ad-hoc-museum-collective.github.io/GWU-museum-digital-practice-2019/
@@ -491,7 +491,7 @@ project_list:
     github_user:
       - halfempty
       - pancaketents
-    note: "The Akron Art Museum digitized Akron Art Mail: a mail art project from the community of Akron, Ohio, with the collaboration of the Akron-Summit County Public Library. This project was modified to be an image-heavy presentation, and much of the customization lay in resizing images and poetry to fit certain page dimensions. We chose Quire because it seemed like the best possible option for digitizing publications and preparing digital material for print. In a time of COVID-19 lockdown, Akron Art Mail made sharing art with the community possible. Quire extends the museum's reach and makes it possible for anyone with internet access to experience Akron Art Mail."
+    note: "The Akron Art Museum digitized Akron Art Mail: a mail art project from the community of Akron, Ohio, with the collaboration of the Akron-Summit County Public Library. This project was modified to be an image-heavy presentation, and much of the customization lay in resizing images and poetry to fit certain page dimensions. The museum chose Quire because it seemed like the best possible option for digitizing publications and preparing digital material for print. In a time of COVID-19 lockdown, Akron Art Mail made sharing art with the community possible. Quire extends the museum's reach and makes it possible for anyone with internet access to experience Akron Art Mail."
 
   - id: "museum_digital_practice_2021"
     src: /screenshots/_museum_digital_practice_2021.jpg
