@@ -16,7 +16,7 @@ Figure image files should be placed in the `static/img/` directory. It is define
 Quire does not require a specific image file format or size, but we have some recommended best practices:
 
 - Use JPEG, PNG, or GIF.
-- If your project is web-only, 800 pixels is fine for most images, whereas 1,800 pixels on the longest side will provide both a decent web experience and work for printing in the PDF without being too large a file size. 
+- If your project is web-only, 800 pixels is fine for most images, whereas 1,800 pixels on the longest side will provide both a decent web experience and work for printing in the PDF without being too large a file size.
 - Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use {{< q-def "Image Optimization" >}} software when possible, and consider the total number of images on a given page when choosing sizes.
 
 {{< q-class "box tip" >}}
@@ -155,6 +155,25 @@ Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo
 - Note that on YouTube, videos can be filed as “Unlisted” and this will let you embed the video, but will not include the video on your channel page, or in YouTube’s general search engine.
 
 {{< /q-class >}}
+
+## Add Tables
+
+Tables can be embedded in your publication as HTML files. If your table exists in a Word document, resave the Word document as an .html file. In the `static/image/` directory of your project create a new folder called `tables`. Place the .html files in that folder.
+
+Similarly, to embedding videos, you will need to add a `media_type` to the entry in the `figures.yml`. In this case, the type would be `table`. Make sure the `src` has the .html suffix rather than .jpg.
+
+```YAML
+- id: "table-1-1"
+  src: "tables/table-1-1.html"
+  media_type: table
+  label: "Table 1.1"
+```
+
+Then use the `q-figure` shortcode as normal to insert the table in to the page:
+
+```go
+{{</* q-figure id="table-1-1" */>}}
+```
 
 ## Add Basic Figures
 
