@@ -96,12 +96,6 @@ Additionally, to create a complete bibliography for your entire publication, fro
 {{< q-figure id="modern-bibliography" >}}
 
 
-The `q-bibliography` shortcode also accepts an optional `sort` value, which will sort the list by whatever value from the entries is given, such as `short` or `sort`. In this instance, all `references.yml` entries would need to include either the `short` or `sort` value.
-
-```go
-{{</* q-bibliography sort="short" */>}}
-```
-
 ### Display the Short Reference in Bibliographies
 
 Bibliographies displayed automatically at the bottom of pages, and those generated with the `q-bibliography` shortcode, can be a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.
