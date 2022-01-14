@@ -5,6 +5,10 @@ type: essay
 online: false
 ---
 
+2022
+
+- [January 2022](https://newsletters.getty.edu/t/t-4F6F9B38F0A42AE32540EF23F30FEDED): Community Survey Results, Contributing to the Quire Website & Documentation, Akron Art Museum, The State of Museum Digital Practice 2021
+
 2021
 
 - [December 2021](https://newsletters.getty.edu/t/t-182F4DDE523E25DE2540EF23F30FEDED): New Publications from the Community, Quire by the Numbers, Looking Forward to 2022, Quire at Open Publishing Fest, Complete the Community Survey by 12/10, What do you love about Quire?, Thank you Contributors
