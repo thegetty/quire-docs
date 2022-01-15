@@ -158,9 +158,44 @@ Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo
 
 ## Add Tables
 
-Tables can be embedded in your publication as HTML files. If your table exists in a Word document, resave the Word document as an .html file. In the `static/image/` directory of your project create a new folder called `tables`. Place the .html files in that folder.
+Zoomable tables can be embedded in your publication as HTML files. In the `static/image/` directory of your project create a new folder called `tables`. Create an .html file in that folder that follows the structure below:
 
-Similarly, to embedding videos, you will need to add a `media_type` to the entry in the `figures.yml`. In this case, the type would be `table`. Make sure the `src` has the .html suffix rather than .jpg.
+``` go
+<table>
+  <thead>
+    <tr>
+      <th>Heading 1</th>
+      <th>Heading 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>table data row 1 column 1</td>
+      <td>table data row 1 column 2%</td>
+    </tr>
+    <tr>
+      <td>table data row 2 column 1</td>
+      <td>table data row 2 column 2%</td>
+    </tr>
+    <tr>
+      <td>table data row 3 column 1</td>
+      <td>table data row 3 column 1%</td>
+    </tr>
+  </tbody>
+</table>
+
+<span class="table-key">you can include an optional table key</span>
+```
+
+For more information on HTML tables check out [W3 School's tutorial](https://www.w3schools.com/html/html_tables.asp).
+
+{{< q-class "box tip" >}}
+
+- Another option is to insert your table as Mardown. Read more about Markdown tables on the [Programming Historian's Markdown guide](https://programminghistorian.org/en/lessons/getting-started-with-markdown#tables).
+
+{{< /q-class >}}
+
+Now that you've created your .html fle you will need to add the table to the `figures.yml` file. Similarly, to embedding videos, you will need to add a `media_type` to the entry. In this case, the type would be `table`. Make sure the `src` matches the name of the .html file you added to the `static/img/` directory.
 
 ```YAML
 - id: "table-1-1"
