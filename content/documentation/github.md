@@ -63,6 +63,10 @@ If you are collaborating on a project, and one of your colleagues has already ho
 - To view a preview of a Quire project cloned from GitHub, you’ll need to first run the `quire install` command in your command-line shell. Then run `quire preview` and navigate to [http://localhost:1313/](http://localhost:1313/).
 {{< /q-class >}}
 
+{{< q-class "box tip" >}}
+- Learn how to take an existing Quire project in GitHub and use it as the basis for a new one (for a journal or other serial publication for instance) in our [*Create a New Quire Project from an Existing One*](/documentation/serial-publications/) section.
+{{< /q-class >}}
+
 ## Manage Project Changes on GitHub
 
 There are three basic steps for making and managing changes to your project on GitHub:
