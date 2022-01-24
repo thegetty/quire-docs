@@ -7,14 +7,14 @@ abstract: "Learn exciting ways to join the Quire community"
 
 **Welcome to the Quire Community!**
 
-As an open-source tool and ever-evolving initiative, our community members' participation, feedback, and contributions are what enable us to continue fine-tuning, developing, and spreading the word about Quire. No matter what level of experience you have, we welcome all contributions, big and small.
+As an open-source tool and ever-evolving initiative, our community members' participation, feedback, and contributions are what enable us to continue developing, improving, and spreading the word about Quire. No matter what level of experience you have, we recognize and celebrate all community contributions, big and small.
 
 <div class="image-list">
 
 
 ## Answer Forum Questions
 
-Our [community forum](https://github.com/thegetty/quire/discussions) is a great place for Quire users to ask questions and have them answered by their peers. We welcome you to jump in and help your fellow community members navigate Quire.
+Our [community forum](https://github.com/thegetty/quire/discussions) is a great place for Quire users to seek advice and technical support from their peers. We encourage our community members to assist fellow Quire users and answer questions whenever possible.
 
 <div class="action-button">
 
@@ -29,26 +29,26 @@ Our [community forum](https://github.com/thegetty/quire/discussions) is a great 
 
 ## Share Your Work
 
-Send us your finished Quire publications and we will add them to our [Community Showcase](/community/community-showcase/) and [newsletter](/community/newsletter-archive). We also invite you to share your publication on our [forum](https://github.com/thegetty/quire/discussions/categories/show-tell).
+We love celebrating the work of our community members. Share your finished publications with the Quire team and we will feature them on our [Community Showcase](/community/community-showcase/) and in our monthly [newsletter](/community/newsletter-archive).
 
 <div class="action-button">
 
-[Submit your Project](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
+[Submit Your Project](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
 
 </div>
 
 ![Hands icon](/img/illustrations/show.png)
 
 </div>
- <div class="image-list">
+<div class="image-list">
 
- ## Present About Quire
+## Present About Quire
 
-Are you interested in sharing your Quire projects with a wider audience? We invite you to present about Quire at upcoming conferences and events. Please let us know if you're planning on presenting so we can help promote your participation. Email us at [quire@getty.edu](mailto:quire@getty.edu).
+We encourage you to present your Quire projects at [annual academic conferences](/learn/publication-opportunities/#post-publication). Let us know if you plan on presenting so we can promote your participation.
 
  <div class="action-button">
 
- [View List of Conferences](/learn/publication-opportunities/#post-publication)
+ [Notify Us of a Presentation](mailto:quire@getty.edu)
 
  </div>
 
@@ -59,11 +59,11 @@ Are you interested in sharing your Quire projects with a wider audience? We invi
 
 ## Organize an Event
 
-We welcome opportunities for our community members to organize Quire workshops, webinars, and other events. Let us know how we can help [quire@getty.edu](mailto:quire@getty.edu).
+We welcome opportunities for our community members to organize Quire workshops, webinars, and other events. Let us know how we can help promote and support your event.
 
 <div class="action-button">
 
-[View Events Calendar](/community/news-events/)
+[Share Your Event](mailto:quire@getty.edu)
 
 </div>
 
@@ -74,11 +74,11 @@ We welcome opportunities for our community members to organize Quire workshops, 
 
 ## Contribute Code
 
-Before getting started, please review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) for information on best practices, guidelines, and recommendations on the types of contributions we are looking for.
+We's love to hear suggestions for possible new Quire features. Please review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) for information on best practices, guidelines, and recommendations on the types of contributions we are looking for.
 
 <div class="action-button">
 
-[Find Us on GitHub](https://github.com/thegetty/quire/)
+[Propose a Contribution](https://github.com/thegetty/quire/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=suggestion_box.yaml)
 
 </div>
 
@@ -89,11 +89,11 @@ Before getting started, please review our [Contributor Guidelines](https://githu
 
 ## Submit a Bug
 
-Bugs are sneaky, and we need your help spotting them! If you come across something broken or just doesn't look right, please add it to our issues list and we'll work on getting it resolved ASAP.
+Bugs are sneaky, and we need your help spotting them! If you come across something broken or that just doesn't look right, please add it to our issues list and we'll work on getting it resolved ASAP.
 
 <div class="action-button">
 
-[Use Our Issue Tracker](https://github.com/thegetty/quire/issues/new/choose)
+[Create a Bug Report](https://github.com/thegetty/quire/issues/new?assignees=erin-cecele%2Cgeealbers&labels=bug&template=bug_report.yaml)
 
 </div>
 
@@ -104,11 +104,11 @@ Bugs are sneaky, and we need your help spotting them! If you come across somethi
 
 ## Add to/Translate Documentation
 
-The [Quire Documentation](/documentation/) is a work in progress and we value your contributions. We invite you to dive in and help us add to and refine our user manual. We also want to translate our documentation into other languages. Let us know if you are interested by posting an issue on our [Quire-docs repo](https://github.com/thegetty/quire-docs/issues/new/choose).
+The [Quire Documentation](/documentation/) is a perpetual work in progress. We invite you to dive in and help us add to, refine, and translate our user manual.
 
 <div class="action-button">
 
-[Learn More](https://github.com/thegetty/quire-docs/blob/main/CONTRIBUTING.md)
+[Suggest an Improvement to Docs ](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
 
 </div>
 
@@ -123,7 +123,7 @@ We welcome the submission of articles about specific aspects of working in Quire
 
 <div class="action-button">
 
-[Make a Suggestion](https://github.com/thegetty/quire/issues/new/choose)
+[Suggest an Improvement to Website](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
 
 </div>
 
@@ -132,13 +132,13 @@ We welcome the submission of articles about specific aspects of working in Quire
 </div>
 <div class="image-list">
 
-## Test Documentation *
+## Test Documentation
 
-Help us improve our documentation's usability by filling out a friction log and providing critical feedback. Email us at [quire@getty.edu](mailto:quire@getty.edu) if interested in participating.
+Provide critical feedback and help us improve our documentation's usability by filling out a [friction log](https://www.trychameleon.com/blog/friction-logs). This is a potentially compensated opportunity.
 
 <div class="action-button">
 
-[Learn about Friction Logs](https://www.trychameleon.com/blog/friction-logs)
+[Volunteer to be a Tester](mailto:quire@getty.edu)
 
 </div>
 
@@ -147,9 +147,9 @@ Help us improve our documentation's usability by filling out a friction log and 
 </div>
 <div class="image-list">
 
-## Design for Quire *
+## Design for Quire
 
-We are looking for designers in the Quire community that can contribute exciting designs for marketing collateral and other opportunities.
+We are looking for designers in the Quire community that can help us create exciting branded products and marketing collateral. This is a potentially compensated opportunity.
 
 <div class="action-button">
 
@@ -178,5 +178,3 @@ Coming Soon ...
 </div>
 
 <br/>
-
-**Indicates potentially compensated opportunities*
