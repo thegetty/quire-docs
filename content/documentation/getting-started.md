@@ -39,7 +39,7 @@ In addition to starting a Quire project from scratch as described in the previou
 
 <div class="box tip">
 
-- Learn how to take an existing Quire project in GitHub and use it as the basis for a new one in our [*Use Existing Quire Projects as a Template*](/documentation/serial-publications/) section. This is especially useful for serial publications such as journals.
+- Learn how to take an existing Quire project in GitHub and use it as the basis for a new one in our [*Use an Existing Quire Project as a Template*](/documentation/serial-publications/) section. This is especially useful for serial publications such as journals.
 
 </div>
 

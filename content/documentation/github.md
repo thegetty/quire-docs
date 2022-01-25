@@ -64,7 +64,7 @@ If you are collaborating on a project, and one of your colleagues has already ho
 {{< /q-class >}}
 
 {{< q-class "box tip" >}}
-- Learn how to take an existing Quire project in GitHub and use it as the basis for a new one in our [*Use Existing Quire Projects as a Template*](/documentation/serial-publications/) section. This is especially useful for serial publications such as journals.
+- Learn how to take an existing Quire project in GitHub and use it as the basis for a new one in our [*Use an Existing Quire Project as a Template*](/documentation/serial-publications/) section. This is especially useful for serial publications such as journals.
 {{< /q-class >}}
 
 ## Manage Project Changes on GitHub

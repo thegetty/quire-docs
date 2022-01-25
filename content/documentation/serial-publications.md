@@ -1,5 +1,5 @@
 ---
-title: Use Existing Quire Projects as a Template
+title: Use an Existing Quire Project as a Template
 weight: 4155
 type: essay
 online: false
