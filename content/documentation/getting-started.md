@@ -21,7 +21,7 @@ The project is ready when you see the message: “Theme and dependencies success
 
 ## Copy an Existing Project
 
-In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you were on a team working on a publication together and are sharing the files via GitHub or another service, or if you wanted to use a previous Quire project as a template for a new one.
+In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you were on a team working on a publication sharing files via GitHub or another service.
 
 1. Copy the Quire project directory into your {{< q-def "home directory">}} (typically from a thumb drive, Dropbox or Google Drive, or GitHub).
 
@@ -34,6 +34,12 @@ In addition to starting a Quire project from scratch as described in the previou
 - You can also type `cd` and a space in your shell and then drag and drop the Quire directory icon into it. This will copy the full file path.
 
 ![Drag-and-drop](/img/screenshots/command-line-drag-and-drop.gif)
+
+</div>
+
+<div class="box tip">
+
+- Learn how to take an existing Quire project in GitHub and use it as the basis for a new one in our [*Use Existing Quire Projects as a Template*](/documentation/serial-publications/) section. This is especially useful for serial publications such as journals.
 
 </div>
 
