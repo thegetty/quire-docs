@@ -160,7 +160,7 @@ Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo
 
 Zoomable tables can be embedded in your publication as HTML files. In the `static/image/` directory of your project create a new folder called `tables`. Create an .html file in that folder that follows the structure below:
 
-``` go
+``` html
 <table>
   <thead>
     <tr>
@@ -171,15 +171,15 @@ Zoomable tables can be embedded in your publication as HTML files. In the `stati
   <tbody>
     <tr>
       <td>table data row 1 column 1</td>
-      <td>table data row 1 column 2%</td>
+      <td>table data row 1 column 2</td>
     </tr>
     <tr>
       <td>table data row 2 column 1</td>
-      <td>table data row 2 column 2%</td>
+      <td>table data row 2 column 2</td>
     </tr>
     <tr>
       <td>table data row 3 column 1</td>
-      <td>table data row 3 column 1%</td>
+      <td>table data row 3 column 1</td>
     </tr>
   </tbody>
 </table>
