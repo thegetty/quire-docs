@@ -505,3 +505,16 @@ project_list:
     github_user:
       - shineslike
     note: "This project was created as the major assignment in a Museums and Technology course, in the Museum Studies program at the George Washington University. Using Quire exposes students to cutting edge thinking and technology powering digital publishing within the museum field, introduces them to the supportive team at the Getty, and gives them a beautiful final product in which to share their research and thinking from across the semester. The intent of the project includes offering students a deep engagement with a topic of personal or professional interest through a research project; experience in a collaborative creative environment through the peer review process; and practical skills in Markdown language. At the end of the semester, each student has a published piece to share with peers, colleagues and friends. To date, there is no better platform to achieve these goals than Quire."
+
+  - id: "unseen_the_hidden_labor_of_women"
+    src: /screenshots/_unseen_the_hidden_labor_of_women.jpg
+    alt: "Unseen: The Hidden Labor of Women –– Stephanie Hanor, O. O. Roberts, Susan Prier, Mollie Schottstaedt, and Jenny Varner"
+    type: Exhibition Catalogue
+    publisher: Mills College Art Museum
+    title_info: "Unseen: The Hidden Labor of Women"
+    pub_date: 2022-01-22
+    url: https://mcam.mills.edu/publications/unseen/index.html
+    customization_level: none
+    github_user:
+      - shanor
+    note: "*Unseen: The Hidden Labor of Women* is the third digital publication produced in conjunction with the annual student-curated exhibition at the Mills College Art Museum (MCAM). The Quire format allows MCAM to easily showcase student research featuring works from the museum's collection."
