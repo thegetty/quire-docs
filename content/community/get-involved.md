@@ -12,9 +12,9 @@ As an ever-evolving, open-source tool, our community members' participation, fee
 <div class="image-list">
 
 
-## Post on the Forum
+## Answer Forum Questions
 
-Seek and offer advice and technical support on our [community forum](https://github.com/thegetty/quire/discussions), where Quire users meet to help their peers.
+Help your peers navigate Quire by offering advice and technical support on our [community forum](https://github.com/thegetty/quire/discussions).
 
 <div class="action-button">
 
@@ -22,22 +22,22 @@ Seek and offer advice and technical support on our [community forum](https://git
 
 </div>
 
-![Question icon](/img/illustrations/question.png)
+![Question icon](/img/illustrations/chat.png)
 
 </div>
 <div class="image-list">
 
 ## Share Your Work
 
-Share your finished publications with the Quire team so we can feature them on our [Community Showcase](/community/community-showcase/) and in our monthly [newsletter](/community/newsletter-archive). We love celebrating the work of the Quire community.
+Share your finished publications with the Quire team so we can feature them on our [Community Showcase](/community/community-showcase/) and in our monthly [newsletter](/community/newsletter-archive).
 
 <div class="action-button">
 
-[Submit Your Project](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
+[Submit Your Project](https://forms.gle/M7STUbW6L4NHAnSy5)
 
 </div>
 
-![Placard icon](/img/illustrations/placard.png)
+![Placard icon](/img/illustrations/display.png)
 
 </div>
 <div class="image-list">
@@ -59,7 +59,7 @@ Present your Quire projects at [annual academic, museum, and publishing conferen
 
 ## Organize an Event
 
-Organize Quire workshops, webinars, and other events. Let us know how we can help support and promote your event.
+Organize Quire workshops, webinars, and other events. Let us know how we can help support and promote your event. In the meantime, browse other [upcoming Quire events](/community/news-events/).
 
 <div class="action-button">
 
@@ -74,7 +74,7 @@ Organize Quire workshops, webinars, and other events. Let us know how we can hel
 
 ## Contribute Code
 
-Contribute suggestions for possible new Quire features or resolve an existing issue. Please review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) for information on the types of contributions we are looking for, how to get started, and best practices.
+Make suggestions for possible new Quire features or themes. Before getting started, review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) for information on the types of contributions we are looking for, how to get started, and best practices. And view our [Roadmap](/about/roadmap/) to see what's already on the horizon.
 
 <div class="action-button">
 
@@ -87,13 +87,15 @@ Contribute suggestions for possible new Quire features or resolve an existing is
 </div>
 <div class="image-list">
 
-## Submit a Bug
+## Submit or Fix a Bug
 
-Bugs are sneaky, and we need your help spotting them! If you come across something broken or that just doesn't look right, please add it to our issues list and we'll work on getting it resolved ASAP.
+Bugs are sneaky, and we need your help spotting and fixing them! If you come across something broken or that just doesn't look right, please add it to our issues list. Or pick an issue from the list to tackle.
 
 <div class="action-button">
 
-[Create a Bug Report](https://github.com/thegetty/quire/issues/new?assignees=erin-cecele%2Cgeealbers&labels=bug&template=bug_report.yaml)
+[Report a Bug](https://github.com/thegetty/quire/issues/new?assignees=erin-cecele%2Cgeealbers&labels=bug&template=bug_report.yaml)
+
+[Choose a Bug to Fix](https://github.com/thegetty/quire/issues/)
 
 </div>
 
@@ -104,11 +106,13 @@ Bugs are sneaky, and we need your help spotting them! If you come across somethi
 
 ## Edit Documentation
 
-Dive in and help us add to, refine, and translate our user manual. The [Quire Documentation](/documentation/) is a perpetual work in progress.
+The [Quire Documentation](/documentation/) is a perpetual work in progress. Dive in and help us add to, refine, and translate our user manual. 
 
 <div class="action-button">
 
-[Suggest an Improvement to Docs ](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
+[Suggest an Improvement to Docs](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
+
+[Choose and Improvement to Make](https://github.com/thegetty/quire-docs/issues/)
 
 </div>
 
@@ -123,11 +127,11 @@ Submit an article about a specific aspect of working in Quire to be included in 
 
 <div class="action-button">
 
-[Suggest an Improvement to Website](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
+[Propose a Topic](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
 
 </div>
 
-![Memo icon](/img/illustrations/memo.png)
+![Memo icon](/img/illustrations/pencil.png)
 
 </div>
 <div class="image-list">
@@ -143,7 +147,7 @@ Provide critical feedback and help us improve our documentation's usability by f
 
 </div>
 
-![Clipboard icon](/img/illustrations/clipboard.png)
+![Clipboard icon](/img/illustrations/computertest.png)
 
 </div>
 <div class="image-list">
