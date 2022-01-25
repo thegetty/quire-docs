@@ -2,19 +2,19 @@
 title: Get Involved
 weight: 2300
 type: essay
-abstract: "Learn exciting ways to join the Quire community"
+abstract: "Join the Quire community"
 ---
 
 **Welcome to the Quire Community!**
 
-As an open-source tool and ever-evolving initiative, our community members' participation, feedback, and contributions are what enable us to continue developing, improving, and spreading the word about Quire. No matter what level of experience you have, we recognize and celebrate all community contributions, big and small.
+As an ever-evolving, open-source tool, our community members' participation, feedback, and contributions are what enable us to continue developing, improving, and spreading the word about Quire. No matter what level of experience you have, we recognize and celebrate all community contributions, big and small.
 
 <div class="image-list">
 
 
-## Answer Forum Questions
+## Post on the Forum
 
-Our [community forum](https://github.com/thegetty/quire/discussions) is a great place for Quire users to seek advice and technical support from their peers. We encourage our community members to assist fellow Quire users and answer questions whenever possible.
+Seek and offer advice and technical support on our [community forum](https://github.com/thegetty/quire/discussions), where Quire users meet to help their peers.
 
 <div class="action-button">
 
@@ -29,7 +29,7 @@ Our [community forum](https://github.com/thegetty/quire/discussions) is a great 
 
 ## Share Your Work
 
-We love celebrating the work of our community members. Share your finished publications with the Quire team and we will feature them on our [Community Showcase](/community/community-showcase/) and in our monthly [newsletter](/community/newsletter-archive).
+Share your finished publications with the Quire team so we can feature them on our [Community Showcase](/community/community-showcase/) and in our monthly [newsletter](/community/newsletter-archive). We love celebrating the work of the Quire community.
 
 <div class="action-button">
 
@@ -37,14 +37,14 @@ We love celebrating the work of our community members. Share your finished publi
 
 </div>
 
-![Hands icon](/img/illustrations/show.png)
+![Placard icon](/img/illustrations/placard.png)
 
 </div>
 <div class="image-list">
 
-## Present About Quire
+## Present Your Project
 
-We encourage you to present your Quire projects at [annual academic conferences](/learn/publication-opportunities/#post-publication). Let us know if you plan on presenting so we can promote your participation.
+Present your Quire projects at [annual academic, museum, and publishing conferences](/learn/publication-opportunities/#post-publication). Let us know if you plan on presenting so we can promote your participation.
 
  <div class="action-button">
 
@@ -59,7 +59,7 @@ We encourage you to present your Quire projects at [annual academic conferences]
 
 ## Organize an Event
 
-We welcome opportunities for our community members to organize Quire workshops, webinars, and other events. Let us know how we can help promote and support your event.
+Organize Quire workshops, webinars, and other events. Let us know how we can help support and promote your event.
 
 <div class="action-button">
 
@@ -74,7 +74,7 @@ We welcome opportunities for our community members to organize Quire workshops, 
 
 ## Contribute Code
 
-We's love to hear suggestions for possible new Quire features. Please review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) for information on best practices, guidelines, and recommendations on the types of contributions we are looking for.
+Contribute suggestions for possible new Quire features or resolve an existing issue. Please review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) for information on the types of contributions we are looking for, how to get started, and best practices.
 
 <div class="action-button">
 
@@ -102,9 +102,9 @@ Bugs are sneaky, and we need your help spotting them! If you come across somethi
 </div>
 <div class="image-list">
 
-## Add to/Translate Documentation
+## Edit Documentation
 
-The [Quire Documentation](/documentation/) is a perpetual work in progress. We invite you to dive in and help us add to, refine, and translate our user manual.
+Dive in and help us add to, refine, and translate our user manual. The [Quire Documentation](/documentation/) is a perpetual work in progress.
 
 <div class="action-button">
 
@@ -119,7 +119,7 @@ The [Quire Documentation](/documentation/) is a perpetual work in progress. We i
 
 ## Write an Article
 
-We welcome the submission of articles about specific aspects of working in Quire to be included in the [Learn](/learn/articles-videos/) section of our website.
+Submit an article about a specific aspect of working in Quire to be included in the [Learn](/learn/articles-videos/) section of our website.
 
 <div class="action-button">
 
@@ -127,30 +127,32 @@ We welcome the submission of articles about specific aspects of working in Quire
 
 </div>
 
-![Write icon](/img/illustrations/write.png)
+![Memo icon](/img/illustrations/memo.png)
 
 </div>
 <div class="image-list">
 
 ## Test Documentation
 
-Provide critical feedback and help us improve our documentation's usability by filling out a [friction log](https://www.trychameleon.com/blog/friction-logs). This is a potentially compensated opportunity.
+Provide critical feedback and help us improve our documentation's usability by filling out a [friction log](https://www.trychameleon.com/blog/friction-logs).
 
+*This is a potentially compensated opportunity.*
 <div class="action-button">
 
 [Volunteer to be a Tester](mailto:quire@getty.edu)
 
 </div>
 
-![Test icon](/img/illustrations/test.png)
+![Clipboard icon](/img/illustrations/clipboard.png)
 
 </div>
 <div class="image-list">
 
 ## Design for Quire
 
-We are looking for designers in the Quire community that can help us create exciting branded products and marketing collateral. This is a potentially compensated opportunity.
+Create exciting branded products and marketing collateral for Quire. We are looking for designers in the Quire community that can help us!
 
+*This is a potentially compensated opportunity.*
 <div class="action-button">
 
 Coming Soon ...
@@ -165,15 +167,14 @@ Coming Soon ...
 
 ## Become an Ambassador
 
-We are looking for Quire lovers and super users passionate about bringing Quire into their own communities and expanding its reach.
-
+Bring Quire into your community and beyond. We are looking for Quire lovers and super users passionate about Quire to expand its access and use!
 <div class="action-button coming-soon">
 
 Coming Soon ...
 
 </div>
 
-![Ambassador icon](/img/illustrations/ambassador.png)
+![Megaphone icon](/img/illustrations/megaphone.png)
 
 </div>
 
