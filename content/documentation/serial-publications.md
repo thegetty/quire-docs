@@ -1,5 +1,5 @@
 ---
-title: Create a New Quire Project from an Existing One
+title: Use Existing Quire Projects as a Template
 weight: 4155
 type: essay
 online: false
