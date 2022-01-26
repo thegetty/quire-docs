@@ -29,7 +29,7 @@ Help your peers navigate Quire by offering advice and technical support on our [
 
 ## Share Your Work
 
-Share your finished publications with the Quire team so we can feature them on our [Community Showcase](/community/community-showcase/) and in our monthly [newsletter](/community/newsletter-archive).
+Share your finished publications with the Quire team so we can feature them on our [Community Showcase](/community/community-showcase/) and in our [monthly newsletter](/community/newsletter-archive).
 
 <div class="action-button">
 
@@ -74,7 +74,7 @@ Organize Quire workshops, webinars, and other events. Let us know how we can hel
 
 ## Contribute Code
 
-Make suggestions for possible new Quire features or themes. Before getting started, review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) for information on the types of contributions we are looking for, how to get started, and best practices. And view our [Roadmap](/about/roadmap/) to see what's already on the horizon.
+Make suggestions for possible new Quire features or themes. Before getting started, review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) to learn about the types of contributions we are looking for, how to get started, and best practices. And view our [Roadmap](/about/roadmap/) to see what's already on the horizon.
 
 <div class="action-button">
 
@@ -106,13 +106,13 @@ Bugs are sneaky, and we need your help spotting and fixing them! If you come acr
 
 ## Edit Documentation
 
-The [Quire Documentation](/documentation/) is a perpetual work in progress. Dive in and help us add to, refine, and translate our user manual. 
+The [Quire Documentation](/documentation/) is a perpetual work in progress. Dive in and help us add to, refine, and translate our user manual.
 
 <div class="action-button">
 
 [Suggest an Improvement to Docs](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
 
-[Choose and Improvement to Make](https://github.com/thegetty/quire-docs/issues/)
+[Choose an Improvement to Make](https://github.com/thegetty/quire-docs/issues/)
 
 </div>
 
@@ -171,7 +171,7 @@ Coming Soon ...
 
 ## Become an Ambassador
 
-Bring Quire into your community and beyond. We are looking for Quire lovers and super users passionate about Quire to expand its access and use!
+Bring Quire into your community and beyond. We are looking for Quire lovers and super users interested in helping us expand the tool's access and use!
 <div class="action-button coming-soon">
 
 Coming Soon ...
