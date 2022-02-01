@@ -101,7 +101,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 </div>
 </div>
 
-{{< q-showcase projects="50_x_50, duke_wired, french_paintings, ray_komai, tilt_art_community" class="full-width-slider" sort="false" >}}
+{{< q-showcase projects="french_paintings, highpoint_editions, materia_vol_1, ray_komai, museum_digital_practice_2021" class="full-width-slider" sort="false" >}}
 
 </div>
 
@@ -170,7 +170,7 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 <div class="more-link">
 
-[Explore Ways to Get Involved](/community/join-us/)
+[Explore Ways to Get Involved](/community/get-involved/)
 
 </div>
 
