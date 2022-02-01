@@ -29,10 +29,11 @@ With the shell open, you can type `ls` (list) to list the folders and files in y
 {{< q-class "box tip" >}}
 
 - `ls` lists all the files in the directory you’re in
-- `cd` followed by a space and a directory name, will move you into that directory: `cd my-project`
+- `cd` followed by a space and a directory name, will move you into that directory: `cd my-project`.
 - `cd` by itself will return you to your home directory
 - `!!` will re-run the last command you entered
 - Pressing Control–C will stop any process running
+- Typing `cd` and then dragging and dropping the Quire directory icon into your shell will copy the full file path.
 
 {{< /q-class >}}
 
