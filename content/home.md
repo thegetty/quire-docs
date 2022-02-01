@@ -170,7 +170,7 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 <div class="more-link">
 
-[Explore Ways to Get Involved](/community/join-us/)
+[Explore Ways to Get Involved](/community/get-involved/)
 
 </div>
 
