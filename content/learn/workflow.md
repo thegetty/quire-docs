@@ -33,13 +33,13 @@ Production
 
 3. Assess the content model of the book to identify unique attributes or places where the pattern of the book diverges from the norm. Quire is built to look for patterns so this is a critical step that will inform the data structuring of the publication and YAML formatting.
 
+-   The **lead project editor** gives the **copy editor** a memo outlining the tagging instructions. The **copy editor** enters the **authors'** changes and simultaneously “tags” the manuscript.
+
 <div class="box tip">
 
-- See our recommended [*Manuscript Prep*](/learn/manuscript-prep/) for more information.
+- See our recommended [*Manuscript Prep*](/learn/manuscript-prep/) for information on how to prepare Word documents for a smooth conversion to Markdown.
 
 </div>
-
--   The **lead project editor** gives the **copy editor** a memo outlining the tagging instructions. The **copy editor** enters the **authors'** changes and simultaneously “tags” the manuscript.
 
 ## Transmittal
 
@@ -53,7 +53,7 @@ Production
 
 -   The **digital team** uses [GitHub Desktop](/documentation/github/) to clone the project repository and a `first-pages` branch is created. This marks the beginning of the "first-pages" (or first digital draft) phase.
 
--   The **digital team** uses a text editor to open the project and create placeholder Markdown files and landing pages structured according to the publication Table of Contents. The converted Markdown text is then added to the corresponding content files. See our [*Text-Editing Guide*](/learn/text-editing/) for the steps we follow to add content to a Quire project via text editor.
+-   The **digital team** uses a text editor to open the project and create placeholder Markdown files and landing pages structured according to the publication Table of Contents. The converted Markdown text is then added to the corresponding content files.
 
 -   In addition to adding the publication content, the **digital team** also creates the publications data files (`publication.yml`, `figures.yml`, `references.yml` etc.) and cleans up the YAML formatting on the Markdown pages.
 
@@ -61,15 +61,15 @@ Production
 
 -   Once the submodule is ready, then images can be placed in the Markdown files using the figure shortcode. Other [shortcodes](/documentation/page-content/#use-shortcodes-to-add-features) are added where necessary.
 
--   Any additional tweaks or customizations to the "first-pages" version of the publication can either be made in the `first-pages` branch or they can be made in task-specific branches. Task-specific branches should always be reviewed before being merged in the main `first-pages` branch. The review process gets a second set of eyes on the project to catch any potential errors. It’s helpful if the person reviewing has a good understanding of Quire and GitHub but it’s not required. Changes can be merged once they have been approved. Note: Changes are not merged into the `master` branch until the very end of the publication process.
-
--   Once all the content has been added, formatting/customization is complete, and branches have been merged into the `first-pages` branch of the project is output for review. The **digital team** deploys a preview version of the website via Netlify and sends the URL, PDF, and hard copies of the publication to the **lead project editor**.
-
 <div class="box tip">
 
-- Preview sites are always marked with an “uncorrected proof” banner.
+- See our [*Text-Editing Guide*](/learn/text-editing/) for the steps we follow to add content to a Quire project via text editor.
 
 </div>
+
+-   Any additional tweaks or customizations to the "first-pages" version of the publication can either be made in the `first-pages` branch or they can be made in task-specific branches. Task-specific branches should always be reviewed before being merged in the main `first-pages` branch. The review process gets a second set of eyes on the project to catch any potential errors. It’s helpful if the person reviewing has a good understanding of Quire and GitHub but it’s not required. Changes can be merged once they have been approved. Note: Changes are not merged into the `master` branch until the very end of the publication process.
+
+-   Once all the content has been added, formatting/customization is complete, and branches have been merged into the `first-pages` branch of the project is output for review. The **digital team** deploys a preview version of the website via Netlify and sends the URL, PDF, and hard copies of the publication to the **lead project editor**. Preview sites are always marked with an “uncorrected proof” banner.
 
 -   These files are then sent to the **proofreader**, **volume editors**, and **authors** for review.
 

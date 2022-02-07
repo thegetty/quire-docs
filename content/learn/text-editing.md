@@ -18,6 +18,6 @@ online: false
 - [ ] Add images to project (use a git submodule if working in a public repository to protect third part assets)
 - [ ] Format image and table callouts and internal links between pages as hyperlinks
 - [ ] Insert figure images using the figure shortcode
-- [ ] Use regex to replace double curly quotes for author date citations (and any other pop-ups)
+- [ ] Use Regular Expression (or RegEx) to replace double curly quotes for author date citations (and any other pop-ups)
 
 {{< /q-checklist >}}
