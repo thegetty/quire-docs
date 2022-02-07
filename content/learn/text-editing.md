@@ -6,6 +6,8 @@ abstract:  "Our process for adding publication content and data into Quire via t
 online: false
 ---
 
+{{< q-checklist >}}
+
 - [ ] Open project in text editor
 - [ ] Delete starter content
 - [ ] Complete the `publication.yml`
@@ -17,3 +19,5 @@ online: false
 - [ ] Format image and table callouts and internal links between pages as hyperlinks
 - [ ] Insert figure images using the figure shortcode
 - [ ] Use regex to replace double curly quotes for author date citations (and any other pop-ups)
+
+{{< /q-checklist >}}

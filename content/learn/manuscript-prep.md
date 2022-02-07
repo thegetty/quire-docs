@@ -10,7 +10,8 @@ online: false
 
 {{< q-checklist >}}
 
-- [ ] Format section headings, block quotes, bullets, and numbered lists using Word styles
+- [ ] Format section headings, superscript numbers, block quotes, bullets, and numbered lists using Word styles <br/>
+- [ ] Use Word References to add endnotes
 - [ ] Format figure and table callouts as hyperlinks using the figure # as the link
 - [ ] If using [internal links](/documentation/page-content/#apply-different-types-of-links) to objects, figures, or other catalogue entries, format those callouts as hyperlinks using the catalogue section, figure number, object number etc. as the link
 - [ ] Add placeholder [YAML fields](/documentation/pages/) to the top of each essay or [object entry page](/documentation/collection-catalogues/#create-object-pages)
@@ -23,6 +24,10 @@ online: false
 
 ## Formatting required for data (`.yml`) files
 
+{{< q-checklist >}}
+
 - [ ] Format captions for the [`figures.yml`](/documentation/figure-images/#create-a-figuresyml-file-for-figure-image-metadata) file
 - [ ] If using inline text citations, format author date info for the [`references.yml`](/documentation/citation-bibliographies/#capture-bibliographic-information-in-yaml) file
 - [ ] For collection catalogues, format object information for the [`objects.yml`](/documentation/figure-images/#create-a-figuresyml-file-for-figure-image-metadata) file
+
+{{< /q-checklist >}}
