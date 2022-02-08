@@ -5,7 +5,7 @@ type: essay
 online: false
 ---
 
-Follow the steps below to use GitHub to create a new project based on an preexisting one. This is especially useful for journals and other serial publications.
+Follow the steps below to use GitHub to create a new project based on a preexisting one. This is especially useful for journals and other serial publications.
 
 1. In your Finder (macOS) or File Explorer (Windows) find the project you want to make a new version of and duplicate the entire project folder and give it a new name. (If the original project is not already on your computer, clone a fresh copy from GitHub.)
 
