@@ -20,16 +20,10 @@ weight: 206
 
 ## Format Text Content with Markdown
 
-The main content of your page appears after the YAML block at
-the top ([*Page Types & Structure*](/documentation/pages/)), and will be
-formatted in Markdown. Markdown is a very simple, plain text
-markup language that uses a few text rules to structure content
-for easy conversion into HTML. For example, a hash or pound sign
-at the beginning of a line makes a heading, and asterisks
-wrapping text turns it *italic*.
-```
+The main content of your page appears after the YAML block at the top ([*Page Types & Structure*](/documentation/pages/)), and will be
+formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it *italic*.
 
-You can read all about Markdown syntax and how it is used in Quire in the [*YAML & Markdown*](/documentation/fundamentals/) chapter of this guide.
+You can read all about Markdown syntax and how it is used in Quire in the [*YAML & Markdown*](/documentation/fundamentals/) chapter of this guide. If your source files are Microsoft Word files then we recommend using [Pandoc](/documentation/fundamentals/#microsoft-word-to-markdown-conversion) for conversion into Markdown. We also recommend reviewing our [Manuscript Prep](/learn/manuscript-prep/) when using Pandoc.
 
 ## Use Shortcodes to Add Features
 
@@ -51,7 +45,8 @@ Text goes here
 
 {{< q-class "box tip" >}}
 - Quire includes one pre-defined class called "backmatter". This is typically used to wrap bibliographies, appendices, and other related content at the end of an article or page, and will style them to match the default footnote styling.
-    ```
+
+    ```go
     {{</* q-class "backmatter" */>}} ...
     {{</* /q-class */>}}
     ```
