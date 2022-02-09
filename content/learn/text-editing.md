@@ -20,6 +20,6 @@ online: false
 - [ ] Add images to project (use a git submodule if working in a public repository to protect third part assets)
 - [ ] Format image and table callouts and internal links between pages as [hyperlinks](/documentation/page-content/#apply-different-types-of-links)
 - [ ] [Insert figure images](/documentation/figure-images/#insert-figure-images-with-q-figure-shortcode) using the figure shortcode
-- [ ] Use [Regular Expression (or RegEx)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) to find and replace double curly quotes for author date citations (and any other pop-ups). Use `\{(.*?)\}` for find and `{{< q-cite "$1" >}}` for replace.
+- [ ] Use [Regular Expression (or RegEx)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) to find and replace double curly quotes for author date citations (and any other pop-ups). 
 
 {{< /q-checklist >}}
