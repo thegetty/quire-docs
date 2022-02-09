@@ -248,7 +248,7 @@ You will see a `fractions` attribute with a value of "false" in the `config.yml`
 
 1. The built in Markdown processor will incorrectly create links even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses.
 
-    ```
+    ``` md
     [^1] &#40;Some aside text here)
     [^1] \(Some aside text here)
     ```
@@ -289,19 +289,19 @@ While there are a number of free tools, we recommend using Pandoc, which is incl
 
 To convert a single Word document (in this example it has a file name of MyFile.docx) into Markdown:
 
-```
+``` go
 pandoc --markdown-headings=atx --wrap=none -s MyFile.docx -t markdown-smart -o MyFile.md
 ```
 
 To convert all the Word documents in the folder and compile them into a **single** Markdown document:
 
-```
+``` go
 pandoc --markdown-headings=atx --wrap=none -s *.docx -t markdown-smart -o MyFile.md
   ```
 
 To convert all the Word documents in the folder into **individual** Markdown files:
 
-```
+``` go
 for f in *.docx; do pandoc --markdown-headings=atx --wrap=none "$f" -s -t markdown-smart -o "${f%.docx}.md"; done
 ```
 
@@ -312,12 +312,12 @@ Note that the `--atx-header` and `--wrap=none` options in the above commands are
 
 The order of the extensions doesn't matter, and you can either type:
 
-```
+``` go
 pandoc --markdown-headings=atx --wrap=none -s MyFile.docx -t markdown -o MyFile.md
 ```
 
 or
 
-```
+``` go
 pandoc -s MyFile.docx -t markdown --markdown-headings=atx --wrap=none -o MyFilemd
 ```
