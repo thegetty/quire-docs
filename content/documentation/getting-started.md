@@ -5,7 +5,7 @@ weight: 4100
 abstract: "Dive in to creating your first Quire publication"
 ---
 
-Before getting started, if you have not done so already, we recommend taking some time to review our beginner's guide [*Tutorial: Quire Basics*](/learn/tutorial/) which is step-by-step introduction to the fundamentals of Quire.
+Before getting started, if you have not done so already, we recommend taking some time to review our beginner's guide [*Tutorial: Quire Basics*](/learn/tutorial/) which is step-by-step introduction to the fundamentals of Quire. We also encourage you to review our [Sample Quire Workflow](/learn/workflow/) to get a sense of how to approach your publication and breakdown of responsibilities. 
 
 ## Start a New Project
 

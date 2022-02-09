@@ -5,7 +5,7 @@ type: essay
 abstract: "Cite sources with pop-ups and generate reference lists"
 ---
 
-Inline citations and bibliographies are all available in Quire. Designed to meet scholarly needs and multiple citation styles, they are easy to implement in your publications. While bibliographic references are formatted in YAML and stored in a YAML file (you can consult our [YAML syntax fundamentals](/documentation/fundamentals/) for more information), citation and bibliography {{< q-def "shortcodes" >}} are used to integrate the references in your publication.
+In-text citations and bibliographies are all available in Quire. Designed to meet scholarly needs and multiple citation styles, they are easy to implement in your publications. While bibliographic references are formatted in YAML and stored in a YAML file (you can consult our [YAML syntax fundamentals](/documentation/fundamentals/) for more information), citation and bibliography {{< q-def "shortcodes" >}} are used to integrate the references in your publication.
 
 ## Capture Bibliographic Information in YAML
 
@@ -46,7 +46,7 @@ entries:
 
 These references can then be called individually from within text using the `q-cite` shortcode, or in their entirety as a generated bibliography using the `q-bibliography` shortcode. Both of which are detailed below.
 
-## Add Inline Text Citations
+## Add In-text Citations
 
 The `q-cite` shortcode adds a linked Author Date citation reference to the text and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which is output as a page-level bibliography, as explained [below](#displaying-a-bibliography).
 

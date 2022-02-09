@@ -1,0 +1,4 @@
+{{ $list := replace .Inner "[ ] " "<input type='checkbox'>" }}
+<div class="checklist">
+{{ $list | markdownify }}
+</div>

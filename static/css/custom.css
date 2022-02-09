@@ -852,6 +852,11 @@ p:not(.more-link-view-link) .quire-citation__button:hover {
   border-bottom: 1px solid #042165;
 }
 
+/* Remove custom markers from a UL inside and OL */
+.quire-page__content .container .content ul ol li::before {
+  content: "";
+}
+
 /* CONTENTS GRID
 ============================================================================= */
 /* Make full width */
@@ -1316,6 +1321,19 @@ body#home .quire-navbar-controls__right {
   content: " ";
   display: block;
   margin-bottom: 1rem;
+}
+
+/* CHECKLIST USING q-checklist SHORTCODE
+============================================================================= */
+.quire-page__content .container .content .checklist ul li::before {
+  content: "";
+}
+.quire-page__content .container .content .checklist ul li {
+  margin-left: 0;
+  text-indent: -2rem;
+}
+.quire-page__content .container .content .checklist ul li input {
+  width: 2rem;
 }
 
 /* CODE
