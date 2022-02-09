@@ -18,7 +18,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 | **Proofreader** | checks for formatting errors and inconsistencies |
 | **Production** | manages the creation of the physical publication, and some multiformat design features |
 
-*Note: The project editor and copy editor have a basic understanding of Quire and GitHub, while the digital team has more advanced and specialized technical knowledge.*
+*The project editor and copy editor have a basic understanding of Quire and GitHub, while the digital team has more advanced and specialized technical knowledge.*
 
 ## Pre-transmittal
 
