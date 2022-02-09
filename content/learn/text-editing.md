@@ -1,5 +1,5 @@
 ---
-title: Text-Editing Workflow
+title: Text-Editing Guide
 weight: 6800
 type: page
 abstract:  "Our process for adding publication content and data into Quire via text editor"
