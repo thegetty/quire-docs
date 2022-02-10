@@ -7,6 +7,7 @@ online: false
 
 2022
 
+- [February 2022](https://newsletters.getty.edu/t/t-7029ED74D2C80EB52540EF23F30FEDED): Introducing a Sample Quire Workflow, Pandoc: Converting Word files into Markdown, New & Updated Documentation, Museum Publishing Digital Interest Group, Philadelphia Museum of Art, Mills College Museum of Art
 - [January 2022](https://newsletters.getty.edu/t/t-4F6F9B38F0A42AE32540EF23F30FEDED): Community Survey Results, Contributing to the Quire Website & Documentation, Akron Art Museum, The State of Museum Digital Practice 2021
 
 2021
