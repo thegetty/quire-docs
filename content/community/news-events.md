@@ -34,7 +34,9 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-No upcoming events.
+| Event | Date | Description |
+| -- | -- | -- |
+| [Museum Publishing Digital Interest Group (MuPuDig) Webinar](https://getty.zoom.us/j/95013186457?pwd=eTMvMkJ4U1RQd3FsblVUeVRJYUkrQT09) | 12pm PT on February 22, 2022 | Reflections on the one-year anniversary of Quire publication, *Paintings and Pastels, 1600–1945: The Collections of the Nelson-Atkins Museum of Art*, with Stephanie Alger (Digital Publishing Assistant), Brigid Boyle (Block Family Foundation Doctoral Fellow), and Meghan Gray (Project Manager, Curatorial Associate in European Arts). | 
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
