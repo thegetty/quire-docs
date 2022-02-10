@@ -22,7 +22,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 ## Pre-transmittal
 
-*This phase of the publishing process precedes the transmittal of the manuscript from editorial to the digital team.*
+    *This phase of the publishing process precedes the transmittal of the manuscript from editorial to the digital team.*
 
 - The **authors** submit the manuscript as Word files to the **project editor**.
 
@@ -34,7 +34,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 
     2. Special requirements such as the use of videos, pop-ups, IIIF images, etc.
 
-    3. The Content model of the book is reviewed to identify unique attributes or places where the pattern of the book diverges from the default. Quire is built to look for patterns so this is a critical step that will inform the data structuring of the publication and YAML formatting.
+    3. The content model of the book is reviewed to identify unique attributes or places where the pattern of the book diverges from the default. Quire is built to look for patterns so this is a critical step that will inform the data structuring of the publication and YAML formatting.
 
 - A prototype is created to work through the project structure and any complex needs or concepts.
 
@@ -42,7 +42,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 <div class="box tip">
 
-- See our recommended [*Manuscript Prep*](/learn/manuscript-prep/) for information on how to prepare Word documents for a smooth conversion into Markdown.
+- See our recommended [*Manuscript Prep Checklist*](/learn/manuscript-prep/) for information on how to prepare Word documents for a smooth conversion into Markdown.
 
 </div>
 
@@ -72,11 +72,11 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 -   Any additional changes or customizations to the *first pages* version of the publication can either be made in the `first-pages` branch or in task-specific branches. Task-specific branches should always be reviewed before being merged into the `first-pages` branch. The review process allows for a second set of eyes on the project to catch any potential errors. It’s helpful if the person reviewing has a good understanding of Quire and GitHub, but it’s not required. Changes can be merged once they have been approved.
 
-*Changes are not merged into the `master` branch until the very end of the publication process.*
+    *Changes are not merged into the `master` branch until the very end of the publication process.*
 
 -   Once all the publication content and data is added, formatting and customization are complete, and all ancillary branches are merged into the `first-pages` branch, the project is output for review. The **digital team** deploys a preview version of the website via Netlify and sends the URL, PDF, and hard copies of the publication to the **project editor**.
 
-*Preview sites are always marked with an “uncorrected proof” banner.*
+    *Preview sites are always marked with an “uncorrected proof” banner.*
 
 -   These files are then sent to the **proofreader** and **authors** for review.
 
@@ -90,7 +90,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 -   The **digital team** tackles these edits in Github. Anything that cannot be immediately resolved is added to the repository’s [issue tracker](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) for more thorough review and problem-solving.
 
--   Once all *second pages* changes are complete, the **digital team** deploys a another preview version of the website via Netlify and sends the URL, PDF, and hard copies of the publication to the **project editor**.
+-   When all the *second pages* changes are complete, the **digital team** deploys a another preview version of the website via Netlify and sends the URL, PDF, and hard copies of the publication to the **project editor**.
 
 -   A print-on-demand version of the publication is printed and reviewed by **production** and the **digital team**, with special attention to image quality.
 
@@ -102,7 +102,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 -   Once the final (ideally, few and minor) changes are approved and merged, a PDF is sent to a short-run digital printer. A final proof is printed and reviewed.
 
--   Once the final printed proof is approved, the publication is considered ready for launch.
+-   When the printed proof is approved, the publication is considered ready for launch.
 
 ## Launch
 
