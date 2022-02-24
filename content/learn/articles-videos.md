@@ -36,6 +36,8 @@ abstract: "How-to guides, demos, webinars, and more"
 
 *Watch videos of recent Quire presentations from Getty staff and the community.*
 
+
+
 {{< q-figure id="opf_2021" >}}
 
 {{< q-figure id="2021-iiif-annual-conference" >}}
