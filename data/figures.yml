@@ -358,4 +358,8 @@ figure_list:
     media_type: youtube
     caption: "“Quire: Getty's Open Source Digital Publishing Tool“ was presented at the 2021 Open Publishing Fest by Erin Cecele Dunigan, Community Manager for Quire. The presentation offers a general overview of what Quire is, how it works, and the Quire community."
 
-  
+  - id: "MuPuDig_NA_2022"
+    src: /screenshots/mupudig_na_2022.png
+    media_id: 2KG5I6TLF8Y
+    media_type: youtube
+    caption: "An in-depth walk-through of the Nelson-Atkins Museum of Art's first Quire publication, *French Paintings and Pastels, 1600–1945: The Collections of the Nelson-Atkins Museum of Art*, from conception and development to design and distribution, with Stephanie Alger (Digital Publishing Assistant), Brigid Boyle (Block Family Foundation Doctoral Fellow), and Meghan Gray (Project Manager, Curatorial Associate in European Arts)."
