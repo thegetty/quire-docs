@@ -40,7 +40,7 @@ abstract: "Get the latest news and info about upcoming events"
 
 | Event | Date | Description |
 | -- | -- | -- |
-| [Museum Publishing Digital Interest Group (MuPuDig) Webinar](https://www.youtube.com/watch?v=2KG5I6TLF8Y) | February 22, 2022 | Reflections on the one-year anniversary of Quire publication, *Paintings and Pastels, 1600–1945: The Collections of the Nelson-Atkins Museum of Art*, with Stephanie Alger (Digital Publishing Assistant), Brigid Boyle (Block Family Foundation Doctoral Fellow), and Meghan Gray (Project Manager, Curatorial Associate in European Arts). | 
+| Museum Publishing Digital Interest Group (MuPuDig) Webinar | February 22, 2022 | Reflections on the one-year anniversary of Quire publication, *French Paintings and Pastels, 1600–1945: The Collections of the Nelson-Atkins Museum of Art*, with Stephanie Alger (Digital Publishing Assistant), Brigid Boyle (Block Family Foundation Doctoral Fellow), and Meghan Gray (Project Manager, Curatorial Associate in European Arts), https://www.youtube.com/watch?v=2KG5I6TLF8Y. | 
 | Open Publishing Fest | November 11, 2021 | “Quire: Getty’s Open-Source Digital Publishing Tool,” with Erin Cecele Dunigan and Greg Albers. |
 | MuseumNext: Digital Collections Summit | October 6, 2021 | “Opening Access: Getty's Approach to Digital Collection Catalogues,” with Erin Cecele Dunigan. |
 | National Museum Publishing Seminar (NMPS) | August 2, 2021 | “Digital Publishing Today: Three Case Studies” moderated by Erin Cecele Dunigan (Quire), with Alex Bortolot (Minneapolis Institute of Art), Heather Brand (Museum of Fine Arts, Houston), and Emmet Byrne (Walker Art Center) presenting recent collections-based digital publishing projects. |
