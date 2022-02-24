@@ -36,7 +36,7 @@ abstract: "How-to guides, demos, webinars, and more"
 
 *Watch videos of recent Quire presentations from Getty staff and the community.*
 
-
+{{< q-figure id="MuPuDig_NA_2022" >}}
 
 {{< q-figure id="opf_2021" >}}
 
