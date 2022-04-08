@@ -531,3 +531,16 @@ project_list:
     github_user:
       - lizneely
     note: "The Georgia O'Keeffe Museum wanted to feature the work of their first artist-in-residence, Josephine Halvorson, with a publication accompanying the gallery exhibition. The digital format extends global access and longevity beyond the exhibition. In addition the format also met the goals of the artist and her gallery in that it could be printed. The museum has wanted to try Quire and this seemed like the perfect project to get started. The catalogue was also translated and published [in Spanish]( https://publications.okeeffemuseum.org/halvorson/es/)."
+
+  - id: "materia_issue_2"
+    src: /screenshots/_materia_issue_2.jpg
+    alt: "Materia: Journal of Technical Art History Issue 2"
+    type: Journal
+    publisher: "Materia: Journal of Technical Art History"
+    title_info: "Materia: Journal of Technical Art History (Issue 2)"
+    pub_date: 2022-04-04
+    url: https://issue-2.materiajournal.com/
+    customization_level: moderate
+    github_user:
+      - materiajournal
+    note: "*Materia* used Quire to create its second journal issue, including zoomable images and dynamic footnotes, and customizing fonts, logos, colors, and a few tables. For the team at *Materia*, Quire has been a great, easy way to publish their peer-reviewed articles on a twice-annual basis!"
