@@ -5,11 +5,9 @@ weight: 4700
 abstract: "Format publication content, including adding features and links"
 ---
 
-## Format Text Content with Markdown
+## Start with Page YAML
 
-The main content of your page appears after the YAML block at the top ([*Page Types & Structure*](/documentation/pages/)), and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and one set of asterisks wrapping around the text turns it *italic*.
-
-The markdown file for this page starts like this:
+As outlined in [*Page Types & Structure*](/documentation/pages/), in Quire, a content or `.md` file will always start off with a YAML block at the top of the page. For example, The markdown file for this page starts with the following YAML:
 
 ```md
 ---
@@ -20,16 +18,13 @@ weight: 206
 
 ## Format Text Content with Markdown
 
-The main content of your page appears after the YAML block at the top ([*Page Types & Structure*](/documentation/pages/)), and will be
-formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it *italic*.
+The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it *italic*.
 
-You can read all about Markdown syntax and how it is used in Quire in the [*YAML & Markdown*](/documentation/fundamentals/) chapter of this guide. If your source files are Microsoft Word files then we recommend using [Pandoc](/documentation/fundamentals/#microsoft-word-to-markdown-conversion) for conversion into Markdown. We also recommend reviewing our [Manuscript Prep](/learn/manuscript-prep/) when using Pandoc.
+You can read all about Markdown syntax and how it is used in Quire in the [*YAML & Markdown*](/documentation/fundamentals/) chapter of this guide. If your source files are Microsoft Word files then we recommend using [Pandoc](/documentation/fundamentals/#microsoft-word-to-markdown-conversion) for conversion into Markdown. We also recommend reviewing our [Manuscript Prep](/learn/manuscript-prep/) guide when using Pandoc.
 
 ## Use Shortcodes to Add Features
 
-Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. While {{< q-def "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`.
-
-Shortcodes are always formatted with a combination of curly brackets and angle brackets with the name of the shortcode inside (`{{</* q-shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
+Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. While {{< q-def "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`. Shortcodes are always formatted with a combination of curly brackets and angle brackets with the name of the shortcode inside (`{{</* q-shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
 
 ```go
 {{</* q-figure id="3.1" */>}}
@@ -56,7 +51,7 @@ The following shortcodes are currently available in Quire. You’ll find more ab
 
 - `q-class`: As demonstrated above, wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom styles or interactions as needed.
 - [`q-bibliography`](/documentation/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yml` file.
-- [`q-cite`](/documentation/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
+- [`q-cite`](/documentation/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and an in-text (or hover pop-up) citation. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
 - [`q-contributor`](/documentation/contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
 - [`q-figure`](/documentation/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
 - [`q-figure-group`](/documentation/figure-images/): Like `q-figure`, but with handling for multiple images at once.
@@ -139,8 +134,8 @@ See [note 3, chapter 2](/chapter-2/#fn:3)
 
 #### Citations
 
-When the citation shortcode `{{</* q-cite "author date" "page #" */>}}` is used in a body of text and corresponds to the short and full bibliographic information provided in the references.yml file, an in-page bibliography will be generated and linked to. This linking is completed automatically.
+When the citation shortcode `{{</* q-cite "author date" "page #" */>}}` is used in a body of text and corresponds to the short and full bibliographic information provided in the `references.yml` file, an in-page bibliography will be generated and linked to. This linking is completed automatically.
 
 When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
 
-For more information see the [Citations & Bibliography](/documentation/citation-bibliographies/) section of this guide.
+For more information see the [*Citations and Bibliography*](/documentation/citation-bibliographies/) section of this guide.
