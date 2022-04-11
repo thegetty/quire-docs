@@ -5,7 +5,7 @@ type: essay
 abstract: "Incorporate multiple images, videos, and other multimedia"
 ---
 
-Quire books are visual and the framework is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-the-q-figure-shortcode). As a reminder, a shortcode is a simple snippet of code inserted in a Markdown file that pulls in information from other files in your project.
+Quire books are visual and the tool is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-the-q-figure-shortcode). As a reminder, a shortcode is a simple snippet of code inserted in a Markdown file that pulls in information from other files in your project.
 
 ## Include Figure Image Files in Your Publication
 
@@ -46,7 +46,7 @@ Also available are the attributes `caption`, `credit`, `media_id`, `media_type`,
 
 ## Insert Figure Images with q-figure Shortcode
 
-Assuming each YAML figure entry in the `figures.yml` file includes a unique `id` (with a value in quotes: "1.1" not 1.1), you can insert a figure in your publication with only the `id` attribute in the shortcode, and all of the other attributes defined in the YAML for that figure will be automatically included.
+Assuming each YAML figure entry in the `figures.yml` file includes a unique `id` (with a value in quotes: "1.1" not 1.1), you can insert a figure in your publication with only the `id` attribute in the shortcode, and all of the other attributes, such as captions or credits, defined in the YAML for that figure will be automatically included.
 
 Figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
 
