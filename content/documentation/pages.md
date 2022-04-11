@@ -5,6 +5,8 @@ weight: 4600
 abstract: "Define and structure your page contents with YAML"
 ---
 
+## Page YAML
+
 Every page in a Quire publication starts with a block of {{< q-def "YAML" >}}. The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes at the very top of the page.
 
 ```yaml
@@ -14,6 +16,8 @@ type:
 weight:
 ---
 ```
+
+Since YAML information is often found in multiple places through your publication, if, for example, you need to make a change to an essay title that appears in the top navigation, sidebar menu, contents pages, running footer, or the essay itself, that change will need to be made in the page YAML of the essay Markdown file.
 
 Much more information about the page than just these three attributes can be included. A more complete example would be:
 
@@ -83,7 +87,7 @@ class: landscape (default) | side-by-side
 weight:
 ```
 
-In the following example publication outline, we’ve listed the files and directories as we would like them to appear in the publication’s table of contents.
+In the following example publication outline, we’ve listed the files and directories as we would like them to appear in the publication’s table of contents. 
 
 ```md
 📄 cover.md
