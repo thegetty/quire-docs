@@ -9,7 +9,7 @@ In-text citations and bibliographies are all available in Quire. Designed to mee
 
 ## Capture Bibliographic Information in YAML
 
-Bibliographic references for your publication should be listed in a `references.yml` file in the `data` directory (along with the `publication.yml`, `figures.yml` and `objects.yml` files).
+Bibliographic references for your publication should be listed in a `references.yml` file in the `data` directory.
 
 Each entry in the `references.yml` file must include a `full` form of the reference, and then an `id` to reference it by.
 
@@ -48,7 +48,7 @@ These references can then be called individually from within text using the `q-c
 
 ## Add In-text Citations
 
-The `q-cite` shortcode adds a linked Author Date citation reference to the text and a hover pop-up with the full citation text. It also adds the citation to a list of all cited works on that page, which is output as a page-level bibliography, as explained [below](#displaying-a-bibliography).
+The `q-cite` shortcode adds a linked Author Date citation reference to the text and an in-text citation (a hover pop-up with the full reference text). It also adds the citation to a list of all cited works on that page, which is output as a page-level bibliography, as explained [below](#displaying-a-bibliography).
 
 {{< q-figure id="modern-citation-hover" >}}
 
@@ -81,6 +81,9 @@ In using this third parameter, you still need to have the second parameter even 
 The text element between the Author Date citation and the page can be changed with the `citationPageLocationDivider` property in `config.yml`. The humanities tend to favor comma separation (which is the default in Quire), whereas the sciences typically favor a colon.
 
 The `q-cite` shortcode can be used anywhere in your Markdown text, including within footnotes.
+
+If a publication includes in-text citations and appears to have missing bibliographic entries, there is most likely an incorrect or missing `q-cite` shortcode in the essay end notes. You can find those in the essay Markdown file. The quoted text that follows `q-cite` should exactly match the “id” in the `references.yml` files. Any changes made to a bibliographic citation should be made first to the `references.yml` file, and then to every instance of that citation throughout the text. Failure to make changes in all places will result in broken links. The `q-cite` shortcode also plays an important role when generating a bibliography. So a missing or misspelled `q-cite` shortcode will result in the entry entry being left out of the bibliography completely.
+
 
 
 ## Display a Bibliography
