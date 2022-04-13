@@ -61,7 +61,7 @@ The central part of Quire is the `content` directory where almost all of a publi
 
 ### 📁 data
 
-The publication information that doesn’t live in `content` directory as a Markdown file, will live in the `data` directory as a {{< q-def "YAML" >}} (`.yml`) file. This information is considered data because it can usually be found in multiple places throughout the publication. Rather than re-entering that information each time it appears, Quire has been designed to simplify this process by storing information that appears in multiple paces as YAML which is then pulled into the Markdown files through the use of identifiers.
+The publication information that doesn’t live in the `content` directory as a Markdown file, will live in the `data` directory as a {{< q-def "YAML" >}} (`.yml`) file. This information is considered data because it can usually be found in multiple places throughout the publication. Rather than re-entering that information each time it appears, Quire has been designed to simplify this process by storing information that appears in multiple paces as YAML which is then pulled into the Markdown files through the use of identifiers.
 
 Publication metadata including title, subtitle, contributors, copyright information, etc. can be found in the `publication.yml` file, which is required in all Quire projects. Read more in [*Publication Metadata & Configuration*](/documentation/metadata-configuration/)). YAML is also stored at the top of each Markdown file. Learn more in the [*Page Types & Structures*](/documentation/pages/#page-yaml/) section of this guide. A Quire project may additionally include `references.yml`; `figures.yml`; and `objects.yml` files.
 
@@ -71,15 +71,15 @@ Publication metadata including title, subtitle, contributors, copyright informat
 
 #### `Objects.yml`
 
-This file includes information on catalogue objects including artist name, artwork year, dimensions, medium, location, link to work, etc. Learn more in the [*Collection Catalogue*](/documentation/collection-catalogues/) section of this guide.
+This file includes information on catalogue objects including artist name, artwork year, dimensions, medium, location, link to work, etc. Read more in [*Collection Catalogues*](/documentation/collection-catalogues/).
 
 #### `Figures.yml`
 
-This file includes information for figure images and figure groups including captions, credits, and alt text. Learn more in the [*Figure Images*](/documentation/figure-images/) section of this guide.
+This file includes information for figure images and figure groups including captions, credits, and alt text. Read more in [*Figure Images*](/documentation/figure-images/).
 
 #### `References.yml`
 
-This file includes reference information used to create in-text citations and bibliographies designed to meet scholarly needs. Learn more in the [*Citations and Bibliographies*](/documentation/citations-bibliographies/) section of this guide.
+This file includes reference information used to create in-text citations and bibliographies that are designed to meet scholarly needs. Read more in [*Citations and Bibliographies*](/documentation/citations-bibliographies/).
 
 ### 📁 static
 
@@ -115,7 +115,7 @@ This is a standard, required file for {{< q-def "Hugo" >}} and also for Quire. I
 
 ### 📁 config
 
-This is an additional configuration directory. While most Quire configuration happens in the [`config.yml`](#config-yml) file as explained above, the `config` directory gives more specific controls for different output formats and development environments. In most cases, changes won’t need to be made to these files until you are deploying your site. Read more in [*Output Your Project*](/documentation/multiformat-output/).
+This is an additional configuration directory. While most Quire configuration happens in the [`config.yml`] file as explained above, the `config` directory gives more specific controls for different output formats and development environments. In most cases, changes won’t need to be made to these files until you are deploying your site. Read more in [*Output Your Project*](/documentation/multiformat-output/).
 
 ### 📁 site
 
@@ -127,7 +127,7 @@ The `themes` directory contains one or more {{< q-def "themes" >}} that define t
 
 ## Create a Publication Outline
 
-It is a good idea to start any project by creating a basic outline of your publication. To get started with your outline, if you haven't already, you will need to download a {{< q-def "text editor" >}}. We recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/), two free and fully featured options. Once the text editor has been installed, open your Quire project in it. You will see the directory contents listed on the left sidebar. The way you organize the Markdown files in the `content` directory of your project will define the structure of your publication and how the *Table of Contents* is organized. Learn more in the [*Table of Contents & Sidebar Menu*](/documentation/contents-menu/) section of this guide.  
+It is a good idea to start any project by creating a basic outline of your publication. To get started with your outline, if you haven't already, you will need to download a {{< q-def "text editor" >}}. We recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/), two free and fully featured options. Once the text editor has been installed, open your Quire project in it. You will see the directory contents listed on the left sidebar. The way you organize the Markdown files in the `content` directory of your project will define the structure of your publication and how the *Table of Contents* is organized. (Learn more in the [*Table of Contents & Sidebar Menu*](/documentation/contents-menu/) section of this guide.)  
 
 Here’s an outline showing the order, organization, and file names for a sample publication:
 
@@ -184,9 +184,9 @@ Quire lets you preview the current version of your site in a web browser, and wi
 
 Some tips for previewing your publication outline:
 
-1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about YAML in [*Markdown & YAML*](/documentation/fundamentals/#yaml-basics)
+1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about YAML in [*Page Types & Structures*](/documentation/pages/)
 
-2. **Use menu:false to hide a page from the table of contents view.** If you want to hide a page from the table of contents include `menu:false` in the YAML.
+2. **Hide pages from the table of contents view.** If you want to hide a page from the table of contents include `menu:false` in the YAML.
 
 {{< q-class "box warning" >}}
 

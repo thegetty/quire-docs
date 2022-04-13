@@ -87,7 +87,7 @@ class: landscape (default) | side-by-side
 weight:
 ```
 
-In the following example publication outline, we’ve listed the files and directories as we would like them to appear in the publication’s table of contents. 
+In the following example publication outline, we’ve listed the files and directories as we would like them to appear in the publication’s table of contents.
 
 ```md
 📄 cover.md
@@ -141,5 +141,5 @@ epub:
 This allows you to do things like including an About page in your online edition, but a more traditional Copyright page in print. Or to substitute a simple splash page as a section break in the print, for the more elaborate contents grid you might use online.
 
 {{< q-class "box tip" >}}
-- Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files in the `/site/` directory, simply delete any unneeded ones. Read [more about site deployment](/documentation/site-deploy/) in the *Deploy Your Project* section of the documentation.
+- Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files in the `/site/` directory, simply delete any unneeded ones. Read more about site deployment in the [*Deploy Your Project*](/documentation/site-deploy/) section of this guide.
 {{< /q-class >}}

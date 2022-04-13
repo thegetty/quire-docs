@@ -18,9 +18,9 @@ weight: 206
 
 ## Format Text Content with Markdown
 
-The main content of your page appears after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it *italic*.
+The main content of your page comes after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it *italic*.
 
-You can read all about Markdown syntax and how it is used in Quire in the [*YAML & Markdown*](/documentation/fundamentals/) chapter of this guide. If your source files are Microsoft Word files then we recommend using [Pandoc](/documentation/fundamentals/#microsoft-word-to-markdown-conversion) for conversion into Markdown. We also recommend reviewing our [Manuscript Prep](/learn/manuscript-prep/) guide when using Pandoc.
+You can read all about Markdown syntax and how it is used in Quire in the [*YAML & Markdown*](/documentation/fundamentals/) section of this guide. If your source files are Microsoft Word files then we recommend using [Pandoc](/documentation/fundamentals/#microsoft-word-to-markdown-conversion) for conversion into Markdown. We also recommend reviewing our [Manuscript Prep](/learn/manuscript-prep/) guide when using Pandoc.
 
 ## Use Shortcodes to Add Features
 
@@ -58,7 +58,7 @@ The following shortcodes are currently available in Quire. You’ll find more ab
 
 ## Apply Different Types of Links
 
-As seen in the example above, a link is created by combining the text of the link in brackets with the url of the link in parentheses: `[Link text](Link URL)` There are several types of linking that can be applied to text on your page. Stylization such as bolding, italics, underlining, and more can also be applied to linked text.
+A link is created by combining the text of the link in brackets with the url of the link in parentheses: `[Link text](Link URL)` There are several types of linking that can be applied to text on your page. Stylization such as bolding, italics, underlining, and more can also be applied to linked text.
 
 ### External Links
 
@@ -138,4 +138,4 @@ When the citation shortcode `{{</* q-cite "author date" "page #" */>}}` is used 
 
 When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
 
-For more information see the [*Citations and Bibliography*](/documentation/citation-bibliographies/) section of this guide.
+For more information see the [*Citations and Bibliography*](/documentation/citation-bibliographies) section of this guide.

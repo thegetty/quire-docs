@@ -9,7 +9,7 @@ Along with monographs, edited volumes, and serial publications, Quire is also de
 
 ## Capture Object Data
 
-Much like `figures.yml` or `references.yml`, all catalogue object metadata should be captured in a single `objects.yml` file in the `data` directory of your project and then identified as needed in the different Markdown pages of your publication. Here is a brief sample:
+Much like `figures.yml` or `references.yml`, all catalogue object metadata should be captured in a single `objects.yml` file in the `data` directory of your project and then identified as needed in the different Markdown pages of your publication. Here is a brief sample of an `objects.yml` file:
 
 ```yaml
 object_display_order:
