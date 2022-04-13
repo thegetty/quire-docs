@@ -1,5 +1,5 @@
 ---
-title: Citations and Bibliographies
+title: Citations & Bibliographies
 weight: 5000
 type: essay
 abstract: "Cite sources with pop-ups and generate reference lists"
@@ -48,7 +48,7 @@ These references can then be called individually from within text using the `q-c
 
 ## Add In-text Citations
 
-The `q-cite` shortcode adds a linked Author Date citation reference to the text and an in-text citation (a hover pop-up with the full reference text). It also adds the citation to a list of all cited works on that page, which is output as a page-level bibliography, as explained [below](#displaying-a-bibliography).
+The `q-cite` shortcode adds a linked Author Date citation reference to the text and an in-text citation (a hover pop-up with the full reference text). It also adds the citation to a list of all cited works on that page, which is output as a page-level bibliography, as explained [below](#display-a-bibliography).
 
 {{< q-figure id="modern-citation-hover" >}}
 

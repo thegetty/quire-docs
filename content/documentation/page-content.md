@@ -30,7 +30,7 @@ Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the fun
 {{</* q-figure id="3.1" */>}}
 ```
 
-While most Quire shortcodes work like `q-figure` as a single instance, the `q-class` shortcode acts as wrapper around other text and so it appears as a paired opening and closing shortcode. The closing code has a slash `/` preceding the shortcode name, much like you’d find in HTML markup. This example adds the class "alert" to the the phrase "Text goes here", which could be used to facilitate [custom styling](/documentation/styles-customization/).
+While most Quire shortcodes work like `q-figure` as a single instance, the `q-class` shortcode acts as wrapper around other text and so it appears as a paired opening and closing shortcode. The closing code has a slash `/` preceding the shortcode name, much like you’d find in HTML markup. This example adds the class "alert" to the the phrase "Text goes here", which could be used to facilitate [style customization](/documentation/styles-customization/).
 
 ```go
 {{</* q-class "alert" */>}}
@@ -47,7 +47,7 @@ Text goes here
     ```
 {{< /q-class >}}
 
-The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes api reference](/documentation/for-developers/#shortcodes-api).
+The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes API reference](/documentation/for-developers/#shortcodes-api).
 
 - `q-class`: As demonstrated above, wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom styles or interactions as needed.
 - [`q-bibliography`](/documentation/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yml` file.
@@ -138,4 +138,4 @@ When the citation shortcode `{{</* q-cite "author date" "page #" */>}}` is used 
 
 When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
 
-For more information see the [*Citations and Bibliography*](/documentation/citation-bibliographies) section of this guide.
+For more information see the [*Citations & Bibliographies*](/documentation/citation-bibliographies) section of this guide.
