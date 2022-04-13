@@ -111,7 +111,7 @@ Currently, it only contains a `deploy.sh` script file for deploying a Quire proj
 
 ### 📄 config.yml
 
-This is a standard, required file for {{< q-def "Hugo" >}} and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire/Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire uses the `publication.yml` file inside the `data` directory instead. Read more in [*PMetadata & Configuration*](/documentation/metadata-configuration/).
+This is a standard, required file for {{< q-def "Hugo" >}} and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire/Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire uses the `publication.yml` file inside the `data` directory instead. Read more in [*Metadata & Configuration*](/documentation/metadata-configuration/).
 
 ### 📁 config
 
