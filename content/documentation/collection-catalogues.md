@@ -84,7 +84,7 @@ If you add multiple figures of the object, the figures are displayed in a rotati
 
 ## Generate Object Lists/Grids
 
-In a collection catalogue, there will typically be a visual table of contents for just the catalogue entries. To create a page with a list or visual grid of all the object entries, the entries themselves need to be grouped in their own section. In Quire, this means putting them in a subdirectory within the main `content` directory. (Read more about it in the [*Pages Types and Structure*](/documentation/pages/) section of this guide).
+In a collection catalogue, there will typically be a visual table of contents for just the catalogue entries. To create a page with a list or visual grid of all the object entries, the entries themselves need to be grouped in their own section. In Quire, this means putting them in a subdirectory within the main `content` directory. (Read more about it in the [*Pages Types & Structure*](/documentation/pages/) section of this guide).
 
 In this example, inside the `content` directory, we have a folder called `catalogue` and inside that, three numbered entries and an overview page:
 
@@ -109,6 +109,6 @@ slug: .
 
 {{< q-class "box tip" >}}
 
-- The `slug` value in the sample above, will change the URL of the page. Instead of being `/catalogue/overview` it will be simply `/catalogue`. Read more about the function of `slug` in the [*Pages Types & Structure*](/documentation/pages/) page of this guide.
+- The `slug` value in the sample above, will change the URL of the page. Instead of being `/catalogue/overview` it will be simply `/catalogue`. Read more about the function of `slug` in the [*Pages Types & Structure*](/documentation/pages/) section of this guide.
 
 {{< /q-class >}}

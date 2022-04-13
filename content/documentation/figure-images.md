@@ -70,7 +70,7 @@ If you include an attribute in the shortcode that is also in the `figures.yml` f
 
 ## Label Figure Images
 
-By default, all figure images are labeled automatically, either at the start of the caption or just under the image itself in the case of a figure group with a single, group caption [(see below)](#creating-and-styling-figure-groups-with-the-q-figure-group-shortcode). You can turn off this behavior in the `config.yml` file by switching the value `figureLabels: true` to `figureLabels: false`.
+By default, all figure images are labeled automatically, either at the start of the caption or just under the image itself in the case of a figure group with a single group caption [(see below)](#create-and-style-figure-groups-with-q-figure-group-shortcode). You can turn off this behavior in the `config.yml` file by switching the value `figureLabels: true` to `figureLabels: false`.
 
 Figure labels are constructed  with the `id` of the image and the `figureLabelsTextBefore` `figureLabelsTextAfter` values defined in your `config.yml` file. For example, if the `id` value is "12.3" and the `figureLabelsTextBefore` value is "Figure ", and `figureLabelsTextAfter` value is ". ", the resulting label would be "Figure 12.3".
 
@@ -186,7 +186,7 @@ Zoomable tables can be embedded in your publication as HTML files. In the `stati
 <span class="table-key">you can include an optional table key</span>
 ```
 
-For more information on HTML tables check out [W3 School's tutorial](https://www.w3schools.com/html/html_tables.asp).
+For more information on HTML tables check out this [W3 Schools tutorial](https://www.w3schools.com/html/html_tables.asp).
 
 {{< q-class "box tip" >}}
 
@@ -221,7 +221,7 @@ Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in t
 
 ## Using Alt Text
 
-Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [*Accessibility Principles*](/documentation/accessibility-principles/)
+Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [*Accessibility Principles*](/documentation/accessibility-principles/).
 
 ```go
 {{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}
