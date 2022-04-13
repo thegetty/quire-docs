@@ -5,6 +5,8 @@ weight: 4600
 abstract: "Define and structure your page contents with YAML"
 ---
 
+## Page YAML
+
 Every page in a Quire publication starts with a block of {{< q-def "YAML" >}}. The three core attributes you’re probably going to define on every page are `title`, `type`, and `weight`. All page YAML, no matter how many attributes it has, goes between a set of three dashes at the very top of the page.
 
 ```yaml
@@ -14,6 +16,8 @@ type:
 weight:
 ---
 ```
+
+Since YAML information is often found in multiple places through your publication, if, for example, you need to make a change to an essay title that appears in the top navigation, sidebar menu, contents pages, running footer, or the essay itself, that change will need to be made in the page YAML of the essay Markdown file.
 
 Much more information about the page than just these three attributes can be included. A more complete example would be:
 
@@ -137,5 +141,5 @@ epub:
 This allows you to do things like including an About page in your online edition, but a more traditional Copyright page in print. Or to substitute a simple splash page as a section break in the print, for the more elaborate contents grid you might use online.
 
 {{< q-class "box tip" >}}
-- Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files in the `/site/` directory, simply delete any unneeded ones. Read [more about site deployment](/documentation/site-deploy/) in the *Deploy Your Project* section of the documentation.
+- Note that when setting `online: false`, the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files in the `/site/` directory, simply delete any unneeded ones. Read more about site deployment in the [*Deploy Your Project*](/documentation/site-deploy/) section of this guide.
 {{< /q-class >}}

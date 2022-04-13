@@ -5,7 +5,7 @@ type: essay
 abstract: "Incorporate multiple images, videos, and other multimedia"
 ---
 
-Quire books are visual and the framework is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure` shortcode](#inserting-figure-images-with-the-q-figure-shortcode). As a reminder, a shortcode is a simple snippet of code inserted in a Markdown file that pulls in information from other files in your project.
+Quire books are visual and as a publishing tool, it is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. We recommend using the `figures.yml` file to manage all the information about your images, and then inserting them into your Markdown documents where they are needed with the [`q-figure`](#inserting-figure-images-with-the-q-figure-shortcode) shortcode. As a reminder, a shortcode is a simple snippet of code inserted in a Markdown file that pulls in information from other files in your project.
 
 ## Include Figure Image Files in Your Publication
 
@@ -20,7 +20,7 @@ Quire does not require a specific image file format or size, but we have some re
 - Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use {{< q-def "Image Optimization" >}} software when possible, and consider the total number of images on a given page when choosing sizes.
 
 {{< q-class "box tip" >}}
-To include deep-zooming images in your Quire project please see the [*Zooming Images with IIIF*](/documentation/zooming-images) section of the documentation.
+To include deep-zooming images in your Quire project please see the [*Zooming Images with IIIF*](/documentation/zooming-images) section of this guide.
 {{< /q-class >}}
 
 ## Create a figures.yml File for Figure Image Metadata
@@ -40,13 +40,13 @@ Also available are the attributes `caption`, `credit`, `media_id`, `media_type`,
 
 {{< q-class "box warning" >}}
 
-- You can organize your images in the If your figures are organized in sub-directories within your `static/img/` directory. They should appear as part of the file path under `src`, otherwise, only the filename is needed.
+- If your figures are organized in sub-directories within your `static/img/` directory they should appear as part of the file path under `src`, otherwise, only the filename is needed.
 
 {{< /q-class >}}
 
 ## Insert Figure Images with q-figure Shortcode
 
-Assuming each YAML figure entry in the `figures.yml` file includes a unique `id` (with a value in quotes: "1.1" not 1.1), you can insert a figure in your publication with only the `id` attribute in the shortcode, and all of the other attributes defined in the YAML for that figure will be automatically included.
+Assuming each YAML figure entry in the `figures.yml` file includes a unique `id` (with a value in quotes: "1.1" not 1.1), you can insert a figure in your publication with only the `id` attribute in the shortcode, and all of the other attributes, such as captions or credits, defined in the YAML for that figure will be automatically included.
 
 Figure shortcodes should be inserted on their own line of your Markdown file, not within the text of a paragraph. A basic use of the `q-figure` shortcode would look like this:
 
@@ -74,7 +74,7 @@ By default, all figure images are labeled automatically, either at the start of 
 
 Figure labels are constructed  with the `id` of the image and the `figureLabelsTextBefore` `figureLabelsTextAfter` values defined in your `config.yml` file. For example, if the `id` value is "12.3" and the `figureLabelsTextBefore` value is "Figure ", and `figureLabelsTextAfter` value is ". ", the resulting label would be "Figure 12.3".
 
-To customize the label text on a figure-by-figure basis, use the `label_text` attribute in the YAML attributes for your figure. Any text there will override the automatically constructed version.
+To customize the label text on a figure-by-figure basis, use the `label` attribute in the YAML attributes for your figure. Any text there will override the automatically constructed version.
 
 To remove a label from a specific figure or a group of figures, add `label="false"` to the shortcode. Or, in reverse, if you already have `figureLabels: false` set in your `config.yml` file, use `label="true"` in the shortcode to show a label for that figure.
 
@@ -124,8 +124,7 @@ In addition to all the attributes available to the `q-figure` shortcode, the `q-
 
 {{< q-class "box warning" >}}
 
-- Note that this is only a **preferred** grid width. With Quire’s responsively designed templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stack one on top of another.
-    This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures individually.
+- Note that this is only a **preferred** grid width. With Quire’s responsively designed templates, the specific width of images is variable and their position relative to one another may also change depending on a reader’s device. For instance, on a large monitor, four images in a group may appear side-by-side in a row, whereas on a phone, they would most likely be in a 2 x 2 grid, or stacked one on top of another. This responsiveness also means that group captions that use language like “From left to right” or "Clockwise from upper left," will only be correct some of the time. To avoid this issue and ensure a clear reading experience across all devices and publication formats we recommend labeling figures individually.
 
 {{< /q-class >}}
 
@@ -146,7 +145,7 @@ Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo
 
 - The `src` image provided in this example is a frame from the video and will be used in place of the video in the PDF and EPUB versions of your publication. In Quire this is referred to as a fallback. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
 
-    Like the [image labels](#labeling-figure-images) this is controlled in the project’s `config.yml` file with `videoFigureFallbackText: true`, `videoFigureFallbackTextBefore: "Watch the video at "` and `videoFigureFallbackTextAfter: "."`.
+  Like the [image labels](#labeling-figure-images) this is controlled in the project’s `config.yml` file with `videoFigureFallbackText: true`, `videoFigureFallbackTextBefore: "Watch the video at "` and `videoFigureFallbackTextAfter: "."`.
 
 {{< /q-class >}}
 
@@ -191,11 +190,11 @@ For more information on HTML tables check out [W3 School's tutorial](https://www
 
 {{< q-class "box tip" >}}
 
-- Another option is to insert your table as Mardown. Read more about Markdown tables on the [Programming Historian's Markdown guide](https://programminghistorian.org/en/lessons/getting-started-with-markdown#tables).
+- Another option is to insert your table as Markdown. Read more about Markdown tables on the [Programming Historian's Markdown guide](https://programminghistorian.org/en/lessons/getting-started-with-markdown#tables).
 
 {{< /q-class >}}
 
-Now that you've created your .html fle you will need to add the table to the `figures.yml` file. Similarly, to embedding videos, you will need to add a `media_type` to the entry. In this case, the type would be `table`. Make sure the `src` matches the name of the .html file you added to the `static/img/` directory.
+Now that you've created your .html fle you will need to add the table information to the `figures.yml` file. Similarly, to embedding videos, you will need to add a `media_type` to the entry. In this case, the type would be `table`. Make sure the `src` matches the name of the .html file you added to the `static/img/` directory.
 
 ```YAML
 - id: "table-1-1"
@@ -220,7 +219,9 @@ If you are not using a `figures.yml` file, figures—including still images and 
 
 Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in this manner.
 
-Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [Accessibility Principles](/documentation/accessibility-principles/)
+## Using Alt Text
+
+Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [*Accessibility Principles*](/documentation/accessibility-principles/)
 
 ```go
 {{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}
