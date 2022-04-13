@@ -83,7 +83,7 @@ Follow the steps below to first install the support software for Quire, and then
 During install, you may come across an error message that says "permission denied." This is related to the ownership and permissions settings for the global node modules directories installed in step 2. To fix this issue, you will need to run a special command as an administrator or "super user."
 
 1. Click on your computer background and press Shift-Command-G. Navigate to /usr/local/lib and delete the node_modules folder.
-2. Reinstall the LTS version of Node.js: https://nodejs.org/en/.
+2. Reinstall the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg)
 3. Run the following `sudo` ("superuser do") command:
 
 ```
