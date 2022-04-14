@@ -7,6 +7,7 @@ online: false
 
 2022
 
+- [April 2022](https://newsletters.getty.edu/t/t-3DFAD249A0870AD92540EF23F30FEDED): Library Publishing Forum, YAML: Create Once and Publish Everywhere, IIIF Museums Community Group, Museum Publishing Digital Interest Group (MuPuDIG), Materia: Journal of Technical Art History
 - [March 2022](https://newsletters.getty.edu/t/t-9B4B490039BF8BDE2540EF23F30FEDED): Quire Case Study: Nelson-Atkins Museum of Art, Customize Quire with Style Variables, The Georgia O'Keeffe Museum
 - [February 2022](https://newsletters.getty.edu/t/t-7029ED74D2C80EB52540EF23F30FEDED): Introducing a Sample Quire Workflow, Pandoc: Converting Word files into Markdown, New & Updated Documentation, Museum Publishing Digital Interest Group, Philadelphia Museum of Art, Mills College Museum of Art
 - [January 2022](https://newsletters.getty.edu/t/t-4F6F9B38F0A42AE32540EF23F30FEDED): Community Survey Results, Contributing to the Quire Website & Documentation, Akron Art Museum, The State of Museum Digital Practice 2021
