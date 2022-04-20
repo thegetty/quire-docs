@@ -19,6 +19,10 @@ Quire will download a new starter project into a folder named “my-project” t
 
 The project is ready when you see the message: “Theme and dependencies successfully installed.”
 
+{{< q-class "box warning" >}}
+- If you are a Mac user and receive an error message when previewing a new project or an [existing project](#copy-an-existing-project), check to see what operating system you are on. If you are on Monterey, follow this link to install Python 2: https://www.python.org/downloads/release/python-2718/. Click the "macOS 64-bit installer" and follow the install prompts. Then navigate to `themes/default` folder in your new project, delete the `node_modules` folder, then run `quire install` followed by `quire preview.`
+{{< /q-class >}}
+
 ## Copy an Existing Project
 
 In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you were collaborating with others on a publication via GitHub or another service.
