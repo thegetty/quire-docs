@@ -78,6 +78,11 @@ Follow the steps below to first install the support software for Quire, and then
 
     Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 
+{{< q-class "box warning" >}}
+- If you are working on the macOS Monterey, you will need to also install **Python 2**. Follow this link: https://www.python.org/downloads/release/python-2718/, click the "macOS 64-bit installer," and follow the install prompts.
+{{< /q-class >}}
+
+
 ### Troubleshooting macOS Install
 
 During install, you may come across an error message that says "permission denied." This is related to the ownership and permissions settings for the global node modules directories installed in step 2. To fix this issue, you will need to run a special command as an administrator or "super user."
@@ -92,6 +97,7 @@ sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 4. Try reinstalling Quire.
 
 If, after running the  `sudo` command, the permission errors are not resolved, search our [Discussions Forum](https://github.com/thegetty/quire/discussions) for further troubleshooting advice or to post a new discussion.
+
 
 ## Windows Installation
 
