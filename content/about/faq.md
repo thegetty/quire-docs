@@ -2,6 +2,7 @@
 title: FAQs
 weight: 1200
 type: essay
+online: false
 ---
 
 ### What is Eleventy (11ty)?
@@ -42,7 +43,7 @@ We are looking for contributions to help support the creation of developer-centr
 
 ### Can I explore 11ty for myself?
 
-We will have an 11ty branch of Quire available for people to play around with and offer feedback in the coming weeks. 
+We will have an 11ty branch of Quire available for people to play around with and offer feedback in the coming weeks.
 
 ### What are some other Quire developments underway?
 
