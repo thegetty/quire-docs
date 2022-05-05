@@ -7,11 +7,11 @@ online: false
 
 ### What is Eleventy (11ty)?
 
-Eleventy (11ty) is a simple yet powerful static site generator based on JavaScript. It was created as an alternative to [Jekyll](https://jekyllrb.com/) and [Hugo](https://gohugo.io/), our former static site generator. 11ty transforms a directory of varying types of templates into HTML. It is popular for its ability to mix multiple templating languages (including: HTML, Markdown, JavaScript, Liquid, Nunjucks, Handlebars, Mustache, EJS, Haml, Pug, and Custom). It has been released as open source under the MIT License. Read more on the [11ty website](https://www.11ty.dev/).
+Eleventy (11ty) is a simple yet powerful static site generator based on JavaScript. It was created as an alternative to [Jekyll](https://jekyllrb.com/) and [Hugo](https://gohugo.io/), our former static site generator. 11ty transforms a directory of various templates into HTML and is popular for its ability to mix multiple templating languages (including: HTML, Markdown, JavaScript, Liquid, Nunjucks, Handlebars, Mustache, EJS, Haml, Pug, and Custom). It has been released as open source under the MIT License. Read more on the [11ty website](https://www.11ty.dev/).
 
 ### What are the benefits of 11ty?
 
-11ty is light and flexible and has a significantly faster processing time. With the move to 11ty we have reworked the overall file structure of Quire projects to simplify navigation and make essential project files more accessible. On the development side of things, one of 11ty's great strengths is its ability to mix templating languages. For Quire projects, Liquid would be used where simple markup needs to be generated, and JavaScript where data manipulation is required (more on those two langauge below.) Other templating languages may also be used. Above all, the move to 11ty will enable the expansion of advanced features, a more robust set of CLI options for Quire, and improve developer support and contribution opportunities.
+11ty has a significantly faster processing time than other static site generators. With the move to 11ty, we have reworked the overall file structure of Quire projects to simplify navigation and make essential project files more accessible. On the development side, one of 11ty's great strengths is its ability to mix templating languages. For example, in Quire projects, Liquid can be used for generating simple markup while JavaScript can be used where data manipulation is required (more on those two langauge below.) Other templating languages may also be used. Above all, the move to 11ty will enable the expansion of advanced features, a more robust set of CLI options, and improve developer support and contribution opportunities.
 
 ### What is JavaScript?
 
