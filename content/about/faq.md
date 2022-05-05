@@ -25,7 +25,7 @@ Liquid is an open-source templating language written in [Ruby](https://www.ruby-
 
 ### What is Vite?
 
-[Vite (Vite.js)](https://vitejs.dev/) will replace [Webpack](https://webpack.js.org/) as a tool to compile styles and scripts as well as bundle files.  
+[Vite (Vite.js)](https://vitejs.dev/) is a JavaScript bundler and development web server. It will replace [Webpack](https://webpack.js.org/) as a tool to compile styles, scripts, and bundle files in Quire. 
 
 ### What is our timeline for transitioning to 11ty?
 
