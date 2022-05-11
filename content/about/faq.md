@@ -5,7 +5,7 @@ type: essay
 abstract: "Learn about our new static site generator and other Quire developments"
 ---
 
-In advance of Quire's upcoming open-source launch, we are undertaking significant work to improve the tool's functionality and create a better infrastructure for future developments and new features. As part of that work we are transitioning to a new  static site generator called Eleventy (11ty). Keep reading to understand how these changes will affect and improve Quire.
+In advance of Quire's Fall 2022 open-source launch, we have been undertaking significant work to improve the tool's functionality and create a better infrastructure for new features and future developments. As part of that work we are transitioning to a new  static site generator called Eleventy (11ty). Keep reading to understand how these changes will affect and improve Quire.
 
 ### What is Eleventy (11ty)?
 
@@ -13,7 +13,25 @@ Eleventy (11ty) is a simple yet powerful [static site generator](https://quire.g
 
 ### What are the benefits of 11ty?
 
-With the move to 11ty, we have reworked the overall file structure of Quire projects to simplify navigation and make essential project files more accessible. On the development side, one of 11ty's great strengths is its ability to mix templating languages. For example, in Quire projects, Liquid will be used to generate simple markup while JavaScript will be used where data manipulation is required (more on those two langauges below.) Other templating languages may also be used. Above all, the move to 11ty will enable the expansion of advanced features, a more robust set of CLI options, and improve developer support and contribution opportunities.
+For editors and content creators:
+
+- The current functionality and design of Quire websites, PDFs, and ebooks will remain the same
+- There will be minor differences within the Markdown files, such as a new format for shortcodes:  `{% figure id="x" %}` 
+- Core configuration variables will be restructured to be more user-friendly
+- Changes to the overall file structure will make key project files more accessible and simplify navigation
+- Development support will be easier to access due to a more familiar and approachable technology stack
+
+For developers:
+
+- Quire is now entirely Javascript, and knowledge of Go will no longer be necessary to take full advantage of its features
+- It will be easier to create new templates that work with publication data or that use data from remote sources
+- 11ty allows for the mixing of templating languages; Quire will primarily use Liquid for simple markup and JavaScript where data manipulation is required
+- To better organize the templates and code, they have been refactored and implemented as functional, stateless, 11ty shortcode components using JavaScript
+- Interactive elements, such as the image lightbox, have been reimplemented using Web Components
+- To enable deeper integration with the IIIF APIs, Leaflet.js has been replaced with the CanvasPanel web components
+- The themes folder will be eliminated; customizing projects is now based on the 11ty framework structure for includes and plugins
+- The move to 11ty has also resulted in significant clean-up to simplify templates
+- There will be improved developer support and contribution opportunities
 
 ### What is JavaScript?
 
@@ -21,21 +39,25 @@ JavaScript is a popular text-based programming language that turns static web pa
 
 ### What is Liquid?
 
-Liquid is an open-source templating language written in [Ruby](https://www.ruby-lang.org/en/). It was created by the e-commerce company [Shopify](https://www.shopify.com/) in 2006. It is the backbone of all Shopify themes and is used to load dynamic content on website storefronts. Read more about Liquid on the [Shopify.dev website](https://shopify.dev/api/liquid).
+Liquid is an open-source templating language written in [Ruby](https://www.ruby-lang.org/en/). It was created by the e-commerce company [Shopify](https://www.shopify.com/) in 2006. It is utilized in all Shopify themes to load dynamic content on website storefronts. Read more about Liquid on the [Shopify.dev website](https://shopify.dev/api/liquid).
 
 ### What is Vite?
 
-[Vite (Vite.js)](https://vitejs.dev/) is a JavaScript bundler and development web server. It will replace [Webpack](https://webpack.js.org/) as a tool to compile styles, scripts, and bundle files in Quire. 
+[Vite (Vite.js)](https://vitejs.dev/) is a JavaScript bundler and development web server. It will replace Webpack as a tool to bundle scripts and styles for the web
+
+### What is CanvasPanel?
+
+CanvasPanel works as a user interface to render IIIF deep-zooming images. It allows for more complexity in how images are displayed, such as layered images or annotated images.  Read more about CanvasPanel on the [Digirati website](https://canvas-panel.digirati.com/#/about).
 
 ### What is our timeline for transitioning to 11ty?
 
-We expect the bulk of development work to be done by July 2022 with Quire's official open-source launch scheduled for the Fall. We look to the Quire community for feedback and to help us spot bugs that the transition may have generated. The move will be a gradual work in progress, and we appreciate our users' patience.
+Work on 11ty is still underway and we hope to complete the transition by July 2022. We look to the Quire community to help us spot any bugs that the switch from Hugo to 11ty may have generated. The move will be a gradual work in progress, and we appreciate our users' feedback and patience.
 
 ### How does this affect older or in-process Quire projects?
 
-Quire projects built with the Hugo version of Quire, can be manually migrated to the 11ty version as needed by making a handful of global changes to Markdown files and copying over various configuration values. Documentation will be provided and our team is available for support. You can also install an earlier version of Quire with `npm install @thegetty/quire-cli@0.20.2` to run older Hugo-based projects, but that version will only be supported for a limited time.
+Quire projects built with the Hugo can be manually migrated to the 11ty version as needed by making a handful of global changes to Markdown files and by copying over various configuration values. Documentation will be provided and our team is available for support. You can also install an earlier version of Quire with `npm install @thegetty/quire-cli@0.20.2` to run older Hugo-based projects, but that version will only be supported for a limited time.
 
-Let us know if you will be starting any new Quire projects as early as June 2022. It will be advantageous to adopt the 11ty version of Quire early, even though our implementation will still be underway. We are happy to work closely with you to troubleshoot your use of Quire during this transition period. Reach out to us at [quire@getty.edu](mailto:quire@getty.edu).
+Let us know if you will be starting any new projects as early as June 2022. It will be advantageous to adopt the 11ty version of Quire early, even though our implementation will still be underway. We are happy to work closely with you to troubleshoot your use of Quire during this transition period. Reach out to us at [quire@getty.edu](mailto:quire@getty.edu).
 
 ### Will there be new documentation?  
 
@@ -45,12 +67,11 @@ We are looking for contributions to help support the creation of developer-centr
 
 ### Can I explore 11ty for myself?
 
-We will have an 11ty branch of Quire available for people to play around with and offer feedback in the coming weeks.
+We will have an 11ty branch of Quire available for people to play around with and offer feedback in the coming weeks. If you are interested in getting access to this branch, reach out to us at [quire@getty.edu](mailto:quire@getty.edu)
 
 ### What are some other Quire developments underway?
 
-In addition to our work on 11ty, we are also working on switching our image viewing from Leaflet to [CanvasPanel](https://canvas-panel.digirati.com/#/about). We are also greatly improving our IIIF capabilities, including adding the ability to layer images. We are also working to replace Prince XML with the open-source PDF generator, [Paged.js](https://pagedjs.org/). All this development work is still underway. We thank you for your patience.  
+ We working to replace Prince XML with the open-source PDF generator, [Paged.js](https://pagedjs.org/). This development work is still underway.
 
 
-
-*Last updated May 5, 2022*
+*Last updated May 11, 2022*
