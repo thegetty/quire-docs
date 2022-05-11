@@ -29,7 +29,7 @@ For developers:
 - Built-in ability to mix templating languages; Quire will primarily use Liquid for simple markup and JavaScript where data manipulation is required
 - Templates and code will be refactored and implemented as functional, stateless, 11ty shortcode components using JavaScript
 - Interactive elements, such as the image lightbox, will be reimplemented using Web Components
-- To enable deeper integration with the IIIF APIs, Leaflet.js will be replaced with the CanvasPanel web components
+- To enable deeper integration with the IIIF APIs, Leaflet.js will be replaced with the Canvas Panel web components
 - The themes folder will be eliminated so customizing projects will be based on the 11ty framework structure for includes and plugins
 - Improved developer support and contribution opportunities
 
