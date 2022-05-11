@@ -5,7 +5,7 @@ type: essay
 abstract: "Learn about our new static site generator and other Quire developments"
 ---
 
-In advance of Quire's Fall 2022 open-source launch, we have been undertaking significant work to improve the tool's functionality and create a better infrastructure for new features and future developments. As part of that work we are transitioning to a new  static site generator called Eleventy (11ty). Keep reading to understand how these changes will affect and improve Quire.
+In advance of Quire's Fall 2022 open-source launch, we have been undertaking significant work to improve the tool's functionality and create a better infrastructure for new features and future developments. As part of that work we are transitioning to a new static site {{< q-def "static site generator" >}} generator called Eleventy (11ty). Keep reading to understand how these changes will affect and improve Quire.
 
 ### What is Eleventy (11ty)?
 
@@ -18,20 +18,21 @@ For editors and content creators:
 - The current functionality and design of Quire websites, PDFs, and ebooks will remain the same
 - There will be minor differences within the Markdown files, such as a new format for shortcodes:  `{% figure id="x" %}` 
 - Core configuration variables will be restructured to be more user-friendly
-- Changes to the overall file structure will make key project files more accessible and simplify navigation
+- Key project files will become more accessible and simplify navigation
 - Development support will be easier to access due to a more familiar and approachable technology stack
 
 For developers:
 
-- Quire is now entirely Javascript, and knowledge of Go will no longer be necessary to take full advantage of its features
-- It will be easier to create new templates that work with publication data or that use data from remote sources
-- 11ty allows for the mixing of templating languages; Quire will primarily use Liquid for simple markup and JavaScript where data manipulation is required
-- To better organize the templates and code, they have been refactored and implemented as functional, stateless, 11ty shortcode components using JavaScript
-- Interactive elements, such as the image lightbox, have been reimplemented using Web Components
-- To enable deeper integration with the IIIF APIs, Leaflet.js has been replaced with the CanvasPanel web components
-- The themes folder will be eliminated; customizing projects is now based on the 11ty framework structure for includes and plugins
-- The move to 11ty has also resulted in significant clean-up to simplify templates
-- There will be improved developer support and contribution opportunities
+- Quire will be entirely JavaScript
+- Knowledge of Go will not be necessary to take full advantage of Quire's features
+- It will be easier to create new templates that work with publication data or use data from remote sources
+- Built-in ability to mix templating languages; Quire will primarily use Liquid for simple markup and JavaScript where data manipulation is required
+- Templates and code will be refactored and implemented as functional, stateless, 11ty shortcode components using JavaScript
+- Interactive elements, such as the image lightbox, will be reimplemented using Web Components
+- To enable deeper integration with the IIIF APIs, Leaflet.js will be replaced with the CanvasPanel web components
+- The themes folder will be eliminated so customizing projects will be based on the 11ty framework structure for includes and plugins
+- Simplified templates
+- Improved developer support and contribution opportunities
 
 ### What is JavaScript?
 
