@@ -45,9 +45,9 @@ Liquid is an open-source templating language written in [Ruby](https://www.ruby-
 
 Vite is a JavaScript bundler and development web server. It will replace Webpack as a tool to bundle scripts and styles for the web. Learn more on the [Vite website](https://vitejs.dev/).
 
-### What is CanvasPanel?
+### What is Canvas Panel?
 
-CanvasPanel works as a user interface to render IIIF deep-zooming images. It allows for more complexity in how images are displayed, such as layered images or annotated images.  Learn more about CanvasPanel on the [Digirati website](https://canvas-panel.digirati.com/#/about).
+Canvas Panel works as a user interface to render IIIF deep-zooming images. It allows for more complexity in how images are displayed, such as layered images or annotated images.  Learn more on the [Canvas Panel website](https://iiif-canvas-panel.netlify.app/about).
 
 ### What is our timeline for transitioning to 11ty?
 
