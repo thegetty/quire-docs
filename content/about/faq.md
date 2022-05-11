@@ -31,7 +31,6 @@ For developers:
 - Interactive elements, such as the image lightbox, will be reimplemented using Web Components
 - To enable deeper integration with the IIIF APIs, Leaflet.js will be replaced with the CanvasPanel web components
 - The themes folder will be eliminated so customizing projects will be based on the 11ty framework structure for includes and plugins
-- Simplified templates
 - Improved developer support and contribution opportunities
 
 ### What is JavaScript?
@@ -40,23 +39,23 @@ JavaScript is a popular text-based programming language that turns static web pa
 
 ### What is Liquid?
 
-Liquid is an open-source templating language written in [Ruby](https://www.ruby-lang.org/en/). It was created by the e-commerce company [Shopify](https://www.shopify.com/) in 2006. It is utilized in all Shopify themes to load dynamic content on website storefronts. Read more about Liquid on the [Shopify.dev website](https://shopify.dev/api/liquid).
+Liquid is an open-source templating language written in [Ruby](https://www.ruby-lang.org/en/). It was created by the e-commerce company [Shopify](https://www.shopify.com/) in 2006. It is utilized in all Shopify themes to load dynamic content on website storefronts. Learn more about Liquid on the [Shopify.dev website](https://shopify.dev/api/liquid).
 
 ### What is Vite?
 
-[Vite (Vite.js)](https://vitejs.dev/) is a JavaScript bundler and development web server. It will replace Webpack as a tool to bundle scripts and styles for the web
+Vite is a JavaScript bundler and development web server. It will replace Webpack as a tool to bundle scripts and styles for the web. Learn more on the [Vite website](https://vitejs.dev/).
 
 ### What is CanvasPanel?
 
-CanvasPanel works as a user interface to render IIIF deep-zooming images. It allows for more complexity in how images are displayed, such as layered images or annotated images.  Read more about CanvasPanel on the [Digirati website](https://canvas-panel.digirati.com/#/about).
+CanvasPanel works as a user interface to render IIIF deep-zooming images. It allows for more complexity in how images are displayed, such as layered images or annotated images.  Learn more about CanvasPanel on the [Digirati website](https://canvas-panel.digirati.com/#/about).
 
 ### What is our timeline for transitioning to 11ty?
 
-Work on 11ty is still underway and we hope to complete the transition by July 2022. We look to the Quire community to help us spot any bugs that the switch from Hugo to 11ty may have generated. The move will be a gradual work in progress, and we appreciate our users' feedback and patience.
+Work on 11ty is still underway. We hope to complete the transition by July 2022. We look to the Quire community to help us spot any bugs that the switch from Hugo to 11ty may have generated. The move will be a gradual work in progress, and we appreciate our users' feedback and patience.
 
 ### How does this affect older or in-process Quire projects?
 
-Quire projects built with the Hugo can be manually migrated to the 11ty version as needed by making a handful of global changes to Markdown files and by copying over various configuration values. Documentation will be provided and our team is available for support. You can also install an earlier version of Quire with `npm install @thegetty/quire-cli@0.20.2` to run older Hugo-based projects, but that version will only be supported for a limited time.
+Quire projects built with Hugo can be manually migrated to the 11ty version as needed by making a handful of global changes to Markdown files and by copying over various configuration values. Documentation will be provided and our team is available for support. You can also install an earlier version of Quire with `npm install @thegetty/quire-cli@0.20.2` to run older Hugo-based projects, but that version will only be supported for a limited time.
 
 Let us know if you will be starting any new projects as early as June 2022. It will be advantageous to adopt the 11ty version of Quire early, even though our implementation will still be underway. We are happy to work closely with you to troubleshoot your use of Quire during this transition period. Reach out to us at [quire@getty.edu](mailto:quire@getty.edu).
 
