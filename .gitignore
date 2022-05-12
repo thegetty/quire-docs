@@ -8,3 +8,5 @@ node_modules
 graphik
 sabon-next
 themes/default/static/fonts
+static/img/magick
+static/img/magick-output
