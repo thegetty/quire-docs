@@ -1184,13 +1184,15 @@ on the page and adjusts to different window widths */
   width: 3rem;
   padding-top: 1.75rem;
 }
-body#home .quire-navbar-controls__center {
-  background-color: #009877;
+body.hide-menu .quire-navbar-controls__center {
   right: 6rem;
 }
+body.hide-menu .quire-navbar-controls__right {
+  width: 6rem;
+}
+body#home .quire-navbar-controls__center,
 body#home .quire-navbar-controls__right {
   background-color: #009877;
-  width: 6rem;
 }
 
 /* Style center text items when .Site.Params.navType is "main-pages" */
