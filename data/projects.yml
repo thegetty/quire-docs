@@ -137,7 +137,7 @@ project_list:
     note: "Jen Bervin's *Silk Poems* was UMAG's first Quire project. Thanks to support from the US Consulate in Hong Kong, UMAG was able to cut their teeth on the Quire CLI and Github, while creating a platform to document Jen Bervin's exhibition and participation at International Poetry Nights in Hong Kong."
 
   - id: "ancient_ambers"
-    src: /screenshots/_ancient_ambers.jpg
+    src: /screenshots/_getty_ancient_ambers.jpg
     alt: "Ancient Carved Ambers in the J. Paul Getty Museum by Faya Causey"
     type: Collection Catalogue
     publisher: Getty Publications
@@ -150,7 +150,7 @@ project_list:
     note: "Devleoped by Getty, this publication is a good example of a standard collection catalogue built using Quire."
 
   - id: "cva"
-    src: /screenshots/_cva.jpg
+    src: /screenshots/_getty_cva.jpg
     alt: "Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters by Despoina Tsiafakis"
     type: Corpus Vasorum Antiquorum
     publisher: Getty Publications
@@ -163,7 +163,7 @@ project_list:
     note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other instiutions down the road."
 
   - id: "heritage_management"
-    src: /screenshots/_heritage_management.jpg
+    src: /screenshots/_getty_heritage_management.jpg
     alt: "Values in Heritage Management: Emerging Approaches and Research Directions"
     type: Proceedings
     publisher: Getty Publications
@@ -400,7 +400,7 @@ project_list:
     note: "In celebration of the first ten years of the Wired! Lab at Duke University (now the Digital Art History & Visual Culture Research Lab), the staff and faculty created a born-digital report that not only shares the lab's work with the world but also demonstrates the possibilities for Quire and static site generators for digital publication. The lab's members are committed to using sustainable methods for digital publishing while also exploring emerging platforms."
 
   - id: "marrow_report"
-    src: /screenshots/_marrow_report.jpg
+    src: /screenshots/_getty_marrow_report.jpg
     alt: "Getty Foundation: Getty Marrow Internship Program Impact Report"
     type: Report
     publisher: Getty Foundation
