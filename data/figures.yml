@@ -206,12 +206,12 @@ figure_list:
     full_caption: "*Silk Poems: Jen Bervin*, by Jen Bervin, The University Museum and Art Gallery, The University of Hong Kong, 2019."
 
   - id: "ancient_ambers"
-    src: /screenshots/_ancient_ambers.png
+    src: /screenshots/_getty_ancient_ambers.png
     caption: "**Collection catalogue** | Getty Publications"
     full_caption: "*Ancient Carved Ambers in the J. Paul Getty Museum*, J. Paul Getty Museum."
 
   - id: "cva"
-    src: /screenshots/_cva.png
+    src: /screenshots/_getty_cva.png
     caption: "**Corpus Vasorum Antiquorum** | Getty Publications"
     full_caption: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis, J. Paul Getty Museum, 2019."
 
