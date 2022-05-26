@@ -544,3 +544,16 @@ project_list:
     github_user:
       - materiajournal
     note: "*Materia* used Quire to create its second journal issue, including zoomable images and dynamic footnotes, and customizing fonts, logos, colors, and a few tables. For the team at *Materia*, Quire has been a great, easy way to publish their peer-reviewed articles on a twice-annual basis!"
+
+  - id: "clowes_collection"
+    src: /screenshots/_clowes_collection.jpg
+    alt: "The Clowes Collection: Paintings"
+    type: Collection Catalogue
+    publisher: "Indianapolis Museum of Art at Newfields"
+    title_info: "The Clowes Colletion: Paintings"
+    pub_date: 2022-05-20
+    url: https://paintings.theclowescollection.org/
+    customization_level: extensive
+    github_user:
+      - daniel-keller
+    note: "In developing the Clowes Collection, the focus of the team at the Indianapolis Museum of Art at Newfields was to build a sustainable publication of art-historical catalogue entries and technical examination reports. While they reworked many of the default layouts and shortcodes, Quire laid a solid framework for developing and deploying a museum-centric publication without the need to maintain a server, database, search engine, or other systems."
