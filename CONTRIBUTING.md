@@ -31,13 +31,11 @@ Our website and docs are updated continuously for clarity and completeness, but 
 
 **Translate the Documentation:** The Quire community is global, and we hope to be able to continue to expand access to Quire, including to non-English speakers. If you are interested in translating our documentation or even just sections of the documentation, we'd love to talk to you about it.
 
->If this is your first time contributing and you don't know where to start, check the [issue tracker](https://github.com/thegetty/quire-docs/issues) for posts that include the “good first issues” label. These are small and approachable edits we could use your help with!
-
 ## Get Started with a Contribution
 
 ### 1. Use the Issue Tracker
 
-We use GitHub’s [issue tracker](https://github.com/thegetty/quire-docs/issues/) to track work that needs to be done, is currently being done, or is proposed to be done. Unless your changes are small and very straightforward, we ask that all contributions are recorded in the issue tracker either by commenting on a existing issue or proposing a new one. Click [new issue](https://github.com/thegetty/quire-docs/issues/new/choose), follow the prompts in the "Website & Documentation Suggestion" form, and submit!
+We use GitHub’s [issue tracker](https://github.com/thegetty/quire-docs/issues/) to track work that needs to be done, is currently being done, or is proposed to be done. Unless your changes are small and very straightforward, we ask that all contributions are recorded in the issue tracker either by commenting on a existing issue or proposing a new one. 
 
 This approach has several advantages:
 
@@ -49,13 +47,17 @@ This approach has several advantages:
 
 If you are working on a previously posted issue, please comment on that issue and let us know you are working on it. That prevents duplicating efforts or having your changes rejected because someone else is working on it.
 
+> If this is your first time contributing and you don't know where to start, check the [issue tracker](https://github.com/thegetty/quire-docs/issues) for posts that include the “good first issues” label. These are small and approachable edits we could use your help with!
+
 #### Post a New Issue
 
-Post a new issue that you found and would like to tackle. You can also post a new issue and leave it for someoen else to take on.
+Post a new issue that you found and would like to tackle. You can also post a new issue and leave it for someoen else to take on. 
+
+> To post a new issue, click [new issue](https://github.com/thegetty/quire-docs/issues/new/choose), follow the prompts in the "Website & Documentation Suggestion" form, and submit!
 
 ### 2. Start Work on Your Contribution
 
-Now that you've identified your contribution, your next step will be to use GitHub and a text editor (such as Atom) to make the desired changes. We use GitHub to manage all our work on Quire. If you are new to GitHub, we recommend creating a [new GitHub account](https://github.com/join) and downloading [GitHub Desktop](https://desktop.github.com/). Instructions follow.
+Now that you've identified your contribution, your next step will be to use GitHub and a text editor to make the desired changes. We use GitHub to manage all our work on Quire. If you are new to GitHub, we recommend creating a [new GitHub account](https://github.com/join) and downloading [GitHub Desktop](https://desktop.github.com/). Instructions follow.
 
 **Fork & Clone Your Quire Project from Github**
 1. Go to the [quire-docs repository](https://github.com/thegetty/quire-docs) on GitHub.com.
