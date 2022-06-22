@@ -43,7 +43,7 @@ GitHub uses something called "git" to track changes in project files. When you s
 
 {{< q-figure id="github-desktop-initial-commit" >}}
 
-4. Click the blue-button that says "Publish Repository." This will push your repository up to GitHub.com. In the pop-window, keep the name as is and add a description if you would like. Then click "Publish Repository."
+4. Click the blue button that says "Publish Repository." This will push your repository up to GitHub.com. In the pop-window, keep the name as is and add a description if you would like. Then click "Publish Repository."
 
 {{< q-figure id="github-desktop-publish" >}}
 
