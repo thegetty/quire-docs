@@ -79,7 +79,7 @@ Follow the steps below to first install the support software for Quire, and then
     Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
 
 {{< q-class "box warning" >}}
-- If you are working on the macOS Monterey, you will need to also install **Python 2**. Follow this link: https://www.python.org/downloads/release/python-2718/, click the "macOS 64-bit installer," and follow the install prompts.
+- If you are working on the macOS Monterey, you will need to also install **Python 2**. Follow this link: [https://www.python.org/downloads/release/python-2718/](https://www.python.org/downloads/release/python-2718/), click the "macOS 64-bit installer," and follow the install prompts.
 {{< /q-class >}}
 
 
