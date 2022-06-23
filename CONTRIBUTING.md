@@ -69,16 +69,16 @@ Now that you've identified your contribution, your next step will be to use GitH
 **Create a New Branch to Work In**
 1. In GitHub desktop, make sure you are in the correct repository. At the top right, under "Current Repository," it should say `quire-docs`.
 2. Navigate to where it says “Current Branch” in your GitHub Desktop window.
-3. Select “new branch” to the right of the Filter box.
+3. Click “new branch” to the right of the Filter box.
 4. Name your branch following this branch naming convention: `Type/Issue#/Description`. (For example, "Edit/#20/Fix-typo".)<br/>
 **For Type, the options are: **Edit, Add, Translate.** Issue-# is only needed if this pull request addresses an existing issue.** <br/>
 5. Make sure it is based on the `main` branch.
-6. Click "Publish Branch."
+6. Click "Create Branch."
 
 **Open Project File in Text Editor**
 1. Open the text editor of your choice. (We suggest using [Atom](atom.io).)
 2. Select File > Open in your menu bar.
-3. Navigate to your home directory and select your `quire-docs` folder.
+3. Use the search function to find the `quire-docs` folder on your computer. Make note of where it has been saved.
 4. In your text editor, expand the `content` folder to see the editable markdown files and look for the file you'd like to make your changes in.
 
 **Save Changes in Text Editor**
@@ -86,8 +86,8 @@ Now that you've identified your contribution, your next step will be to use GitH
 2. If working on multiple markdown files, make sure to save each file individually.
 
 **Preview Your Changes Live**
-1. Pull up your [command line](https://quire.getty.edu/learn/tutorial/#1-work-in-a-command-line-shell) to navigate through your computer files.
-2. Use the `cd` command to navigate to your computer's home directory and then use `cd` to navigate into your `quire-docs` folder.
+1. Pull up your [command line shell](https://quire.getty.edu/learn/tutorial/#1-work-in-a-command-line-shell) to navigate through your computer files.
+2. Use the `cd` command to navigate to where your `quire-docs` folder lives. Once you find it, run the command `cd quire-docs` to enter the project folder.
 3. Once you are in your `quire-docs` folder, run the following commands: `quire install` followed by `quire preview` when the install is complete.
 4. Go to [http://localhost:1313](http://localhost:1313) to preview the project as you work on it.
 
@@ -96,7 +96,7 @@ Now that you've identified your contribution, your next step will be to use GitH
 2. Press the blue button that says, “Commit to [branch name].”
 
 **Push Changes in GitHub**
-1. You will be given the option to "Push origin." Click this button.
+1. Click the button that says "Push origin." 
 2. Now the changes you've made have been successfully saved to your branch on GitHub.
 
 ### 3. Submit Your Contribution
