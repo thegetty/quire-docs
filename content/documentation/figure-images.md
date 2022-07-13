@@ -157,7 +157,7 @@ Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo
 
 ## Add Tables
 
-In addition inserting tables in your Project as Markdown, can you also embed zoomable tables as HTML files. In the `static/img/` directory of your project create a new folder called `tables`. Create an .html file in that folder that follows the structure below:
+In addition inserting tables in your project as Markdown, can you also embed tables as HTML files (a format which enables more complex formatting). In the `static/img/` directory of your project create a new folder called `tables`. Create an .html file in that folder that follows the structure below:
 
 ``` html
 <table>
