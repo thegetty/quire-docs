@@ -157,7 +157,7 @@ Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo
 
 ## Add Tables
 
-Zoomable tables can be embedded in your publication as HTML files. In the `static/image/` directory of your project create a new folder called `tables`. Create an .html file in that folder that follows the structure below:
+In addition inserting tables in your project as Markdown, can you also embed tables as HTML files (a format which enables more complex formatting). In the `static/img/` directory of your project create a new folder called `tables`. Create an .html file in that folder that follows the structure below:
 
 ``` html
 <table>
@@ -182,19 +182,15 @@ Zoomable tables can be embedded in your publication as HTML files. In the `stati
     </tr>
   </tbody>
 </table>
-
-<span class="table-key">you can include an optional table key</span>
 ```
-
-For more information on HTML tables check out this [W3 Schools tutorial](https://www.w3schools.com/html/html_tables.asp).
 
 {{< q-class "box tip" >}}
 
-- Another option is to insert your table as Markdown. Read more about Markdown tables on the [Programming Historian's Markdown guide](https://programminghistorian.org/en/lessons/getting-started-with-markdown#tables).
+-  Use a free conversion tool like [Text Fixer](https://www.textfixer.com/html/) to quickly convert Word tables to HTML. You may still need to clean up the HTML, but for long tables, it is much faster than creating them by hand.
 
 {{< /q-class >}}
 
-Now that you've created your .html fle you will need to add the table information to the `figures.yml` file. Similarly, to embedding videos, you will need to add a `media_type` to the entry. In this case, the type would be `table`. Make sure the `src` matches the name of the .html file you added to the `static/img/` directory.
+Now that you've created your .html file you will need to add the table information to the `figures.yml`. Similarly to embedding audio clips and videos, you will need to add a `media_type` to the entry. In this case, the type would be `table`. Make sure the `src` matches the name of the .html file you added to the `static/img/` directory.
 
 ```YAML
 - id: "table-1-1"
@@ -203,11 +199,13 @@ Now that you've created your .html fle you will need to add the table informatio
   label: "Table 1.1"
 ```
 
-Then use the `q-figure` shortcode as normal to insert the table in to the page:
+Then use the `q-figure` shortcode as normal to insert the table into the page:
 
 ```go
 {{</* q-figure id="table-1-1" */>}}
 ```
+
+For more information on HTML tables check out the [Mozilla website](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics).
 
 ## Add Basic Figures
 
