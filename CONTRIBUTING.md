@@ -62,24 +62,26 @@ Now that you've identified your contribution, your next step will be to use GitH
 **Fork & Clone Your Quire Project from Github**
 1. Go to the [quire-docs repository](https://github.com/thegetty/quire-docs) on GitHub.com.
 2. Click the "Fork" button at the top right. This creates a parallel version of the project for you to work in.
-3. Click the green button that says "Code."
-4. Choose the option to "Open with GitHub Desktop." This copies (or clones) the forked repository to your computer.
-5. You may be asked how you plan to use this fork. Choose "To contribute to the parent project" and click "Continue."
+3. You will be prompted to confirm that you are creating a fork in your personal account. Click "Create Fork."
+4. You will be brought back to the main repo page. At the top right, click the green button that says "Code."
+5. Choose the option to "Open with GitHub Desktop." This copies (or clones) the forked repository to your computer.
+6. You will be asked to choose a "local path" for where you would like the project to be saved. Wherever you choose, remember this location. (GitHub will most likely default to your Documents folder.)
+7. Click "Clone". It may take a few moments for the cloning to complete. 
+8. You may also be asked how you plan to use this fork. Select "To contribute to the parent project" and click "Continue."
 
 **Create a New Branch to Work In**
-1. In GitHub desktop, make sure you are in the correct repository. At the top right, under "Current Repository," it should say `quire-docs`.
+1. In GitHub desktop, make sure you are in the correct repository. At the top left, under "Current Repository," it should say `quire-docs`.
 2. Navigate to where it says “Current Branch” in your GitHub Desktop window.
 3. Click “new branch” to the right of the Filter box.
-4. Name your branch following this branch naming convention: `Type/Issue#/Description`. (For example, "Edit/#20/Fix-typo".)<br/>
-**For Type, the options are: **Edit, Add, Translate.** Issue-# is only needed if this pull request addresses an existing issue.** <br/>
+4. Name your branch following this branch naming convention: `Type/Issue#/Description`. (For example, "Edit/#20/Fix-typo".) For Type, the options are: **Edit, Add, Translate.** Issue-# is only needed if this pull request addresses an existing issue. Use all lowercase letters and hyphens between words when naming branches.
 5. Make sure it is based on the `main` branch.
 6. Click "Create Branch."
 
 **Open Project File in Text Editor**
 1. Open the text editor of your choice. (We suggest using [Atom](atom.io).)
 2. Select File > Open in your menu bar.
-3. Use the search function to find the `quire-docs` folder on your computer. Make note of where it has been saved.
-4. In your text editor, expand the `content` folder to see the editable markdown files and look for the file you'd like to make your changes in.
+3. Navigate to where you saved the `quire-docs` folder in step 6 of **Fork & Clone Your Quire Project** and open the project in your text editor. 
+4. Expand the `content` folder to see the editable markdown files and look for the file you'd like to make your changes in.
 
 **Save Changes in Text Editor**
 1. To save changes, hit File > Save or Command-S (Mac) or Control-S (PC).
@@ -92,7 +94,7 @@ Now that you've identified your contribution, your next step will be to use GitH
 4. Go to [http://localhost:1313](http://localhost:1313) to preview the project as you work on it.
 
 **Make Commits in GitHub Desktop**
-1. At the bottom left, _above_ where it says “Description“, write a short and meaningful name for your commit. You have the option to include a description as well.
+1. At the bottom left, _above_ where it says “Description“, write a short and meaningful name for your commit in the present imperative tense. For example: "fix typo" or "write new text". You have the option to include a description as well.
 2. Press the blue button that says, “Commit to [branch name].”
 
 **Push Changes in GitHub**
