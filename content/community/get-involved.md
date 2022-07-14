@@ -152,23 +152,6 @@ Provide critical feedback and help us improve our documentation's usability by f
 </div>
 <div class="image-list">
 
-## Design for Quire
-
-Create exciting branded products and marketing collateral for Quire. We are looking for designers in the Quire community that can help us!
-
-*This is a potentially compensated opportunity.*
-<div class="action-button">
-
-Coming Soon ...
-
-</div>
-
-![Art icon](/img/illustrations/art.png)
-
-</div>
-<div class="image-list">
-
-
 ## Become an Ambassador
 
 Bring Quire into your community and beyond. We are looking for Quire lovers and super users interested in helping us expand the tool's access and use!
