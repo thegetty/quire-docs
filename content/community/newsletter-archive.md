@@ -7,6 +7,7 @@ online: false
 
 2022
 
+- [July 2022](https://newsletters.getty.edu/t/t-33ED8590F59EEAD02540EF23F30FEDED): Quire Office Hours, Zoomable Tables, Inclusion & Accessibility in Digital Publications, Multimodal Digital Monographs Report, Getty Conservation Institute
 - [June 2022](https://newsletters.getty.edu/t/t-61FFEB8FD01FF7362540EF23F30FEDED): The Transition to Eleventy (11ty), Introducing Quire Office Hours, macOS Monterey & Python, Indianapolis Museum of Art at Newfields
 - [May 2022](https://newsletters.getty.edu/t/t-BCD0F34A2740395C2540EF23F30FEDED): Exciting Development News, What You Need to Know About 11ty & Quire, Next Steps
 - [April 2022](https://newsletters.getty.edu/t/t-3DFAD249A0870AD92540EF23F30FEDED): Library Publishing Forum, YAML: Create Once and Publish Everywhere, IIIF Museums Community Group, Museum Publishing Digital Interest Group (MuPuDIG), Materia: Journal of Technical Art History
