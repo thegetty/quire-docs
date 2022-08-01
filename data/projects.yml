@@ -557,3 +557,17 @@ project_list:
     github_user:
       - daniel-keller
     note: "In developing the Clowes Collection, the focus of the team at the Indianapolis Museum of Art at Newfields was to build a sustainable publication of art-historical catalogue entries and technical examination reports. While they reworked many of the default layouts and shortcodes, Quire laid a solid framework for developing and deploying a museum-centric publication without the need to maintain a server, database, search engine, or other systems."
+
+  - id: "scream_emory"
+    src: /screenshots/_scream_emory.jpg
+    alt: "And I Must Scream, curated by Amanda H. Hellman"
+    type: Exhibition Catalogue
+    publisher: "Michael C. Carlos Museum, Emory University"
+    title_info: "And I Must Scream, curated by Amanda H. Hellman"
+    pub_date: 2022-05-15
+    url: https://carlos.emory.edu/publications/AndIMustScream/
+    github_user:
+      - anniemcewen
+      - ellenarchie
+      - margaretnagawa
+    note: "*And I Must Scream* is the first digital catalogue published by the Michael C. Carlos Museum to utilize the Quire platform. For this initial foray into Quire, the team used the standard Quire features to produce a catalogue that includes essays and entries for each artist's contribution that explores ”the monstrous expression of our global crises” as a permanent, freely available extension of the special exhibition that debuted in 2022. Funding for this project was made possible by the Andrew W. Mellon Foundation."
