@@ -46,6 +46,16 @@ Css Sections:
   CODE
 */
 
+.version-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--yellow-40);
+  width: 100%;
+  padding: 1rem;
+  z-index: 100;
+}
+
 /* HOME PAGE
 ============================================================================= */
 

@@ -18,6 +18,9 @@
 <html lang="{{ .Site.Data.publication.language }}">
   {{ partial "head.html" . }}
   <body id="{{ with .Section }}{{ . | urlize }}-{{ end }}{{ .File.BaseFileName | lower }}"{{ if or .Page.Type .Page.Params.class }} class="{{ with .Page.Type }}quire-page-type--{{ . }}{{ end }}{{ with .Page.Params.class }} {{ . }}{{ end }}"{{ end }}>
+    {{- if eq .Section "documentation-v1" -}}
+    <div class="version-banner"><strong>Please note:</strong> This is the in-progress documentation for the forthcoming version of Quire, built on Eleventy. <br />Read our <a href="{{ relref . "/about/faq.md" }}">FAQ for more information</a> on this change. View the <a href="{{ relref . "/documentation/section.md" }}">documentation for the current version</a>, built on Hugo.</div>
+    {{- end -}}
     {{ partial "icons.html" . }}
     {{- if eq .Site.Params.licenseIcons true -}}
       {{ partial "icons-cc.html" . }}
