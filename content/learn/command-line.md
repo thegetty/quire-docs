@@ -1,6 +1,6 @@
 ---
 title: Learning Command Line
-weight: 6700
+weight: 7500
 type: page
 online: false
 ---

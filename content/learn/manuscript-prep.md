@@ -1,6 +1,6 @@
 ---
 title: Manuscript Prep
-weight: 6700
+weight: 7600
 type: page
 abstract:  "Tags we recommend adding to a manuscript Word document before Pandoc conversion"
 online: false

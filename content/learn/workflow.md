@@ -1,6 +1,6 @@
 ---
 title: Sample Quire Workflow
-weight: 6600
+weight: 7300
 type: page
 abstract:  "An example of the Getty Publications workflow for Quire books"
 ---

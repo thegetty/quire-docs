@@ -1,6 +1,6 @@
 ---
 Title: Pre- & Post-Publication Opportunities
-weight: 6400
+weight: 7250
 type: essay
 abstract:  "Funding, conferences, awards, and more for your Quire project"
 ---

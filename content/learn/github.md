@@ -1,6 +1,6 @@
 ---
 title: Learning GitHub
-weight: 6800
+weight: 7550
 type: page
 online: false
 ---

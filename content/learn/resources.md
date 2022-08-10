@@ -1,6 +1,6 @@
 ---
 title: Technical Resources
-weight: 6200
+weight: 7150
 type: essay
 abstract: "Helpful tools, explanations, and links"
 ---
@@ -26,13 +26,13 @@ abstract: "Helpful tools, explanations, and links"
 
 ## HTML & CSS
 
-*HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are two important programming languages for building web pages. HTML primarily controls page structure, while CSS controls the visual layout.*  
+*HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are two important programming languages for building web pages. HTML primarily controls page structure, while CSS controls the visual layout.*
 
 - [Interneting is Hard](https://www.internetingishard.com/)
 - [w3schools.com](https://www.w3schools.com/html/default.asp)
 - [CSS-Tricks](https://css-tricks.com/)
 
-## Hugo  
+## Hugo
 
 *Hugo is the {{< q-def "static site generator" >}} underlying Quire. Hugo's documentation and training materials are an excellent resource for learning how to customize Quire’s templates and shortcodes.*
 

@@ -1,7 +1,7 @@
 ---
-title: Learn
+title: Docs V.1
 type: contents
 class: grid hide-menu
 slug: .
-weight: 7000
+weight: 6000
 ---
