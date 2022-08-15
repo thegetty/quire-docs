@@ -7,7 +7,7 @@ abstract: "Is Quire right for you and your project?"
 
 ## Licensing
 
-TK
+As of 2022, Quire was released as open-source software under a [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause). 
 
 ## Technology Requirements
 
