@@ -7,33 +7,29 @@ abstract: "Is Quire right for you and your project?"
 
 ## Licensing
 
-- For a free license to use Quire for your publication projects, and for additional access to support, [please sign up](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform).
-
-- A Quire license enables users to create publications with Quire and distribute as they see fit. Users can modify the default theme in any way that suits their needs. However, we ask that users **don’t redistribute Quire itself.**
+TK
 
 ## Technology Requirements
 
 - Quire is compatible with macOS and Windows. Currently, support is better for macOS.
 
-- [Installing Quire](/documentation/install-uninstall/) also requires installing a number of third-party applications. It is recommended to do so with care, and to consult with your institution’s technology department if you’re using a work machine.
+- Quire is powered by [11ty](https://www.11ty.dev/), a static site generator, and includes programs such as [Vite](https://vitejs.dev/), [Paged.js](https://pagedjs.org/), [CanvasPanel](https://iiif-canvas-panel.netlify.app/about/), and [IIIF](https://iiif.io/).
 
-- A standard web server / hosting service is required for publishing your project, but no special server software or setup is required.
+- Installing Quire also requires installing several third-party applications: [Node.js](https://nodejs.org/en/), [xCode](https://developer.apple.com/xcode) (for Mac users), [GitHub Desktop](https://desktop.github.com/) (optional), and a text editor (such as [Atom](https://atom.io/)).
+
+- A standard web server/hosting service is required for publishing your project, but no special server software or setup is required. For site deploy, we recommend using either [Netlify](https://www.netlify.com) or [GitHub Pages](https://pages.github.com/).
 
 ## Skill Requirements
 
-- Quire does not offer a graphical user interface, but requires using a {{< q-def "command-line shell" >}} and a {{< q-def "text editor" >}} to create a publication. While this can be a new and somewhat intimidating way to work, we‘ve found that most users can fairly quickly master the basics.
+- Quire does not offer a graphical user interface. Instead, publications are built using the {{< q-def "command-line shell" >}} and a {{< q-def "text editor" >}}. Working in human-readable plain text files is key to ensuring the stability and longevity of Quire publications.
 
-- Quire can be used "out of the box" by any individual, no matter their skill level, using Quire [tutorials](/learn/tutorial/) and documentation as support. However, in order to customize the layouts and features of the default Quire theme beyond what is provided out of the box, advanced knowledge of CSS, HTML, and static site generation is required.
+- Quire can be used "out of the box" by any individual, no matter their skill level. We provide [documentation](/documentation/) and additional [resources](/learn/resources/) to aid non-technical users in gaining the skills necessary to use Quire.
 
-- We do provide documentation and additional [resources](/learn/resources/) to aid non-technical users in gaining the skills and knowledge to use Quire in a more advanced way.
+- Advanced knowledge of CSS, HTML, JavaScript, and [Liquid](https://shopify.dev/api/liquid) is required to customize Quire beyond its basic configuration.
 
 ## Affiliated Costs
 
-Quire is free to use, however, there are occasionally associated costs:
-
-- In order to output your Quire publication as a PDF you will need to use Prince XML, which requires purchasing a license for commercial or non-watermarked use. [Learn more about Prince's pricing plan](https://www.princexml.com/purchase/).
-
-- If you are at a small institution, you may want to hire a developer for general technical support, design customization, and deployment.
+- Quire is free to use, however, depending on the nature of the project it can be helpful to hire a developer for general technical support, design customization, and deployment. Please reach out to us (mailto:quire@getty.edu) if you would like freelance developer recommendations.
 
 ## Content Compatibility
 
@@ -41,10 +37,8 @@ Quire is free to use, however, there are occasionally associated costs:
 
 - For those looking to publish more non-textual, image-intensive presentations, like an online exhibition or a fully illustrated children’s book or graphic novel, Quire may not be the right fit.
 
-- Using Quire for journal publishing is also an option, though not yet fully developed.
+- Using Quire for journal publishing is also an option, though not yet fully developed. Please see our [Community Showcase](/community/community-showcase) for current examples of journals created using Quire.
 
 ## Versioning
 
-- Quire is in limited beta. While fully functioning, changes and improvements are continuing to be made to it which may lead to incompatibility across versions.
-
-- Quire projects, once published, no longer require Quire to keep running. After publication, a compatible version of Quire would only be necessary to make new updates and re-output the various file formats.
+- Quire projects, once published, no longer require Quire to keep running. After publication, a compatible version of Quire would only be necessary to make new updates and re-output the various file formats. To update your version of Quire please see the [Install or Update section](/documentation/install-uninstall/#update-quire) of this guide.
