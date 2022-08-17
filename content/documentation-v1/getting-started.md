@@ -154,9 +154,11 @@ There are some other important rules and tips to keep in mind:
 
 1. **To create a new file, right-click on the `content` directory and select "New File".**
 
-2. **File names should be lowercase, with no spaces.**
+2. **File names should be lowercase**
 
-3. **Always include the .md suffix.**
+3. **Use hyphen in place of spaces**
+
+4. **Always include the .md suffix.**
 
 ## Add Text and Images
 
