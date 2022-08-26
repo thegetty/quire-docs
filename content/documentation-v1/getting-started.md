@@ -5,11 +5,11 @@ weight: 6080
 abstract: "Dive in to creating your first Quire publication"
 ---
 
-Before getting started, make sure you have [installed Quire](/documentation/install-uninstall/) and downloaded a {{< q-def "text editor" >}}. We recommend reviewing the [*Quire Basics Tutorial*](/learn/tutorial/). This beginner's guide is a step-by-step introduction to the fundamentals of Quire.
+Before getting started, make sure you have [installed Quire](/documentation/install-uninstall/) and downloaded a freely available {{< q-def "text editor" >}}. We also recommend reviewing the [*Quire Basics Tutorial*](/learn/tutorial/), a step-by-step introduction to the fundamentals of Quire.
 
 ## Start a New Project
 
-To create a new project run the `quire new` command. You can learn more about various commands in the [*Quire Commands*](/documentation/quire-commands) section of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `my-project` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
+To create a new project run the `quire new` command. You can learn more about various commands in the [*Quire Commands*](/documentation/quire-commands) section of this guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `my-project` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
 
 ```tx
 quire new my-project
@@ -44,17 +44,23 @@ Content creators and editors will primarily use the `content` directory. In addi
 
 ### 📁 content
 
-The central part of Quire is the `content` directory where almost all of a publication’s textual content will live as individual {{< q-def "Markdown" >}} (`.md`) files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Page Types & Structure*](/documentation/pages/) section of this guide. You can create additional directories in the content folder if your publication has sub-sections, such a catalogue entries for example. Learn more in the [Create Section Landing Pages](/documentation/pages/#create-section-landing-pages) section of this guide.
+The central part of Quire is the `content` directory where almost all of a publication’s textual content will live as individual {{< q-def "Markdown" >}} (`.md`) files. Every Markdown file is a *page* of the publication. You can create additional directories in the content folder if your publication has sub-sections, such a catalogue entries. You can read more about how to structure the publication content in the [*Page Types & Structure*](/documentation/pages/) section of this guide.
 
 ### 📁 _data
 
-Important publication information, such as captions, references, and object metadata, lives in the `_data` directory and is stored as {{< q-def "YAML" >}} (`.yaml`) files. This information is considered data because it can usually be found in multiple places throughout the publication. Rather than re-entering the information each time it appears, Quire has been designed to simplify this process by storing it as YAML which is then pulled into the Markdown files through the use of identifiers.
+Important publication information, such as captions, references, and object metadata, lives in the `_data` directory and is stored as {{< q-def "YAML" >}} (`.yaml`) file. This information is considered data because it can usually be found in multiple places throughout the publication. Rather than re-entering the information each time it appears, Quire has been designed to simplify this process by storing it as YAML which is then pulled into the Markdown files through the use of identifiers. The key YAML files that you might make use of in a Quire project include `publication.yaml`, `config.yaml`, `objects.yaml`, `figures.yaml`, and `references.yaml`.
 
-Publication metadata including title, subtitle, contributors, copyright information, etc. can be found in the `publication.yaml` file, which is required in all Quire projects. Read more in [*Metadata & Configuration*](/documentation/metadata-configuration/)). YAML is also stored at the top of each Markdown file. Learn more in the [*Page Types & Structure*](/documentation/pages/#page-yaml/) section of this guide. A Quire project may additionally include `references.yaml`; `figures.yaml`; and `objects.yaml` files.
+#### 📄 publication.yaml
+
+This file includes publication metadata including title, subtitle, contributors, copyright information, etc. This file is a requirement for all Quire projects and is also used for {{< q-def "search engine optimization" >}} (SEO).
+
+#### 📄 config.yaml
+
+This file is used for configuring different built-in layout options and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire projects will note that they typically use the `config.yaml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire uses the `publication.yaml` explained above instead. Read more in [*Metadata & Configuration*](/documentation/metadata-configuration/) section of this guide.
 
 #### 📄 objects.yaml
 
-This file includes information on catalogue objects including artist name, artwork year, dimensions, medium, location, link to work, etc. Read more in [*Collection Catalogues*](/documentation/collection-catalogues/).
+This file includes information on catalogue objects including artist name, artwork year, dimensions, medium, location, link to work, etc. This file is only required when using the `entry` page type to create object entry pages (as you would find in a collection catalogue). Read more in [*Collection Catalogues*](/documentation/collection-catalogues/).
 
 #### 📄 figures.yaml
 
@@ -94,7 +100,6 @@ Developers will primarily use the `_includes`, `_layouts`, `_plugins` directorie
 📁 _layouts
 📁 _plugins
 📁 content
-  📁 _data    <-- Includes config.yaml file
   📁 _assets  <-- Includes javascript directory
 ```
 
@@ -103,10 +108,6 @@ Developers will primarily use the `_includes`, `_layouts`, `_plugins` directorie
 ### 📁 _layouts
 
 ### 📁 _plugins
-
-### 📁 _data
-
-This directory also contains the `config.yaml` file which is used expressly for configuring how Quire operates and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire projects will note that they typically use the `config.yaml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire uses the `publication.yaml` file inside the `_data` directory instead. Read more in [*Metadata & Configuration*](/documentation/metadata-configuration/).
 
 ### 📁 _assets
 
@@ -166,7 +167,7 @@ Once an outline has been created, text and images can be added to the project.
 
 In many cases, text will originate as a Word document. You can use Pandoc to convert Word documents into Markdown. Instructions can be found in the [YAML & Markdown](/documentation/fundamentals/#microsoft-word-to-markdown-conversion) section of this guide.
 
-Once images are added to the `_assets/images` folder and entries have been added to the `figures.yaml`, then you can use shortcodes to insert the images into their respective Markdown files. More information can be found in the [Figure Images](/documentation/figure-images/) section of this guide.
+Once images are added to the `_assets/images/` folder and entries have been added to the `figures.yaml`, then you can use shortcodes to insert the images into their respective Markdown files. More information can be found in the [Figure Images](/documentation/figure-images/) section of this guide.
 
 ## Preview and Edit a Project
 
