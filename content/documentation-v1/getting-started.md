@@ -5,146 +5,135 @@ weight: 6080
 abstract: "Dive in to creating your first Quire publication"
 ---
 
-Before getting started, make sure you have [installed Quire](/documentation/install-uninstall/) and downloaded a {{< q-def "text editor" >}}. We recommend reviewing the [*Quire Basics Tutorial*](/learn/tutorial/). This beginner's guide is a step-by-step introduction to the fundamentals of Quire. We also encourage you to check out our [Sample Quire Workflow](/learn/workflow/) to get a sense of how to approach your publication and the breakdown of responsibilities.
+Before getting started, make sure you have [installed Quire](/documentation/install-uninstall/) and downloaded a freely available {{< q-def "text editor" >}}. We also recommend reviewing the [*Quire Basics Tutorial*](/learn/tutorial/), a step-by-step introduction to the fundamentals of Quire.
 
 ## Start a New Project
 
-To create a new project run the `quire new` command. You can learn more about various commands in the [*Quire Commands*](/documentation/quire-commands) section of our guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `project-name` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
+To create a new project run the `quire new` command. You can learn more about various commands in the [*Quire Commands*](/documentation/quire-commands) section of this guide. Open your {{< q-def "command-line shell" >}} and copy and paste the text below, replacing `my-project` with what you would like your project folder to be called. (Don’t use spaces or special characters in your project name, and lowercase is recommended.)
 
 ```tx
-quire new project-name
+quire new my-project
 ```
 
-Quire will download a new starter project into a folder named “my-project” that can be found in your {{< q-def "home directory" >}}. The process may take a minute as Quire installs a new starter project (a sample publication including content, images, and relevant metadata that you can build off of) in the `my-project` folder.
+Quire will download a new starter project into a folder called “my-project” that can be found in your {{< q-def "home directory" >}}. The process may take a few minutes. The project is ready when you see the message: “Theme and dependencies successfully installed.”
 
-The project is ready when you see the message: “Theme and dependencies successfully installed.”
-
-{{< q-class "box warning" >}}
-- If you are a Mac user and receive an error message when previewing a new project or an [existing project](#copy-an-existing-project), check to see what operating system you are on. If you are on Monterey, follow this link to install Python 2: https://www.python.org/downloads/release/python-2718/. Click the "macOS 64-bit installer" and follow the prompts. Then navigate to `themes/default` folder in your new project, delete the `node_modules` folder, then run `quire install` followed by `quire preview.`
+{{< q-class "box tip" >}}
+- Projects started with `quire new` will include demo content, images, and data. This information can be written over, re-used, or deleted altogether as you’d like.
 {{< /q-class >}}
 
 ## Copy an Existing Project
 
-In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you were collaborating with others on a publication via GitHub or another service.
+In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you are collaborating with others on a publication. Keep in mind that changes are made locally. A hosting service such as GitHub or GitLab is recommended to share changes with other collaborators .
 
-1. Copy the Quire project directory into your {{< q-def "home directory">}} (typically from a thumb drive, Dropbox/Google Drive, or GitHub).
+1. Copy the Quire project directory into your home directory (typically from a thumb drive, Dropbox/Google Drive, or hosting service).
 
 2. Open your command-line shell and navigate to the project directory using the `cd` (change directory) command. For example, if your project directory was called `my-project` and it was in your home directory, you would enter `cd my-project`.
 
 3. Still in the command-line shell, type `quire install` and press enter to install the theme dependencies for your project. (This is done automatically when running `quire new`, but needs to be done manually when working on pre-existing projects.)
 
-<div class="box tip">
-
-- Learn how to take an existing Quire project in GitHub and use it as the basis for a new one in our [*Use an Existing Quire Project as a Template*](/documentation/serial-publications/) section. This is especially useful for serial publications such as journals.
-
-</div>
-
 ## Files for Content Creators and Editors
 
-Inside each Quire project, you will find the following directories and files. Content creators and editors will primarily use the `content`, `data`, and `static` directories.
+Content creators and editors will primarily use the `content` directory. In addition to containing the Markdown files that comprise a publication, this directory also includes the `_data`, `_computed`, and `_assets` directories.
 
 ```tx
-📁 bin
-📁 config
-📄 config.yml
-📁 content     <-- Markdown files with publication text.
-📁 data        <-- YAML files with publication data.
-📄 README.md
-📁 site
-📁 static      <-- Images / Style overrides / PDF, EPUB & MOBI
-📁 themes          files that are output with `quire pdf` etc.
+📁 content     <-- Markdown files with publication text
+  📁 _data     <-- YAML files with publication data
+  📁 _computed <-- Default `eleventyComputed.js` file
+  📁 _assets   <-- Fonts, images, and styles
 ```
-
-{{< q-class "box tip" >}}
-- Projects started with `quire new` will include demo content, images, and data in the `content`, `static`, and `data` folders. This information can be written over, re-used, or deleted altogether as you’d like.
-{{< /q-class >}}
 
 ### 📁 content
 
-The central part of Quire is the `content` directory where almost all of a publication’s textual content will live as individual {{< q-def "Markdown" >}} (`.md`) files. Every Markdown file is a *page* of the publication. You can read more about how to structure the publication content in [*Page Types & Structure*](/documentation/pages/) section of this guide.
+The central part of Quire is the `content` directory where almost all of a publication’s textual content will live as individual {{< q-def "Markdown" >}} (`.md`) files. Every Markdown file is a *page* of the publication. You can create additional directories in the content folder if your publication has sub-sections, such a catalogue entries. You can read more about how to structure the publication content in the [*Page Types & Structure*](/documentation/pages/) section of this guide.
 
-### 📁 data
+### 📁 _data
 
-The publication information that doesn’t live in the `content` directory as a Markdown file, will live in the `data` directory as a {{< q-def "YAML" >}} (`.yml`) file. This information is considered data because it can usually be found in multiple places throughout the publication. Rather than re-entering that information each time it appears, Quire has been designed to simplify this process by storing information that appears in multiple paces as YAML which is then pulled into the Markdown files through the use of identifiers.
+Important publication information, such as captions, references, and object metadata, lives in the `_data` directory and is stored as {{< q-def "YAML" >}} (`.yaml`) file. This information is considered data because it can usually be found in multiple places throughout the publication. Rather than re-entering the information each time it appears, Quire has been designed to simplify this process by storing it as YAML which is then pulled into the Markdown files through the use of identifiers. The key YAML files that you might make use of in a Quire project include `publication.yaml`, `config.yaml`, `objects.yaml`, `figures.yaml`, and `references.yaml`.
 
-Publication metadata including title, subtitle, contributors, copyright information, etc. can be found in the `publication.yml` file, which is required in all Quire projects. Read more in [*Metadata & Configuration*](/documentation/metadata-configuration/)). YAML is also stored at the top of each Markdown file. Learn more in the [*Page Types & Structure*](/documentation/pages/#page-yaml/) section of this guide. A Quire project may additionally include `references.yml`; `figures.yml`; and `objects.yml` files.
+#### 📄 publication.yaml
 
-{{< q-class "box tip" >}}
-- Learn how the `data` and `content` files work together through the use of {{< q-def "shortcodes" >}} in the [*Page Content*](/documentation/page-content/#use-shortcodes-to-add-features/) section of this guide.
-{{< /q-class >}}
+This file includes publication metadata including title, subtitle, contributors, copyright information, etc. This file is a requirement for all Quire projects and is also used for {{< q-def "search engine optimization" >}} (SEO).
 
-#### `Objects.yml`
+#### 📄 config.yaml
 
-This file includes information on catalogue objects including artist name, artwork year, dimensions, medium, location, link to work, etc. Read more in [*Collection Catalogues*](/documentation/collection-catalogues/).
+This file is used for configuring different built-in layout options and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire projects will note that they typically use the `config.yaml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire uses the `publication.yaml` explained above instead. Read more in [*Metadata & Configuration*](/documentation/metadata-configuration/) section of this guide.
 
-#### `Figures.yml`
+#### 📄 objects.yaml
+
+This file includes information on catalogue objects including artist name, artwork year, dimensions, medium, location, link to work, etc. This file is only required when using the `entry` page type to create object entry pages (as you would find in a collection catalogue). Read more in [*Collection Catalogues*](/documentation/collection-catalogues/).
+
+#### 📄 figures.yaml
 
 This file includes information for figure images and figure groups including captions, credits, and alt text. Read more in [*Figure Images*](/documentation/figure-images/).
 
-#### `References.yml`
+#### 📄 references.yaml
 
 This file includes reference information used to create in-text citations and bibliographies that are designed to meet scholarly needs. Read more in [*Citations & Bibliographies*](/documentation/citation-bibliographies/).
 
-### 📁 static
+### 📁 _computed
 
-The `static` directory includes anything that will be included in your final publication, but that doesn’t have to first be processed through Quire’s {{< q-def "static site generator" >}}. By default, this includes a `css` directory for directly overriding theme styles (read more in [*Style Customization*](/documentation/styles-customization/)); a `downloads` directory for the multiple Quire formats ([*Output Your Project*](/documentation/multiformat-output/)); and an `img` directory for all image and other media assets ([*Figure Images*](/documentation/figure-images/)).
+TK
 
-### 📄 README.md
+### 📁 _assets
 
-The `README.md` file is a code convention, and is a free space for information about the publication. **It is not used in the output Quire publication at all.** However, if you host your Quire project on {{< q-def "GitHub" >}} or other similar `git` project management sites, the `README.md` file is used for the repository’s front page description. Often it will include notes on development, on what usage is allowed, on how issues will be handled, and if contributions should be considered.
+This directory includes anything that will be included in your final publication that doesn’t have to first be processed through Quire’s {{< q-def "static site generator" >}}, such as `fonts`, `images`, and `styles`. The `javascript` directory will primarily be used by developers. Please see [*Files For Developers*](/documentation/getting-started/#files-for-developers) for more information about how JavaScript is used in Quire.
+
+#### 📁 fonts
+
+This directory is where the default Quire fonts are located including ["Noto Sans"](https://github.com/googlefonts/noto-fonts), ["Noto Serif"](https://github.com/googlefonts/noto-fonts), and ["IBM Plex Sans Condensed"](https://github.com/IBM/plex). Learn how to change and add fonts in the [Font Customization](/documentation/fonts-customization/) section of this guide.
+
+#### 📁 images
+
+This directory is where publication images are stored. The `src` value in the `figures.yaml` file references the files names of the images as they are saved in this directory.
+
+
+#### 📁 styles
+
+This directory includes a `variables.scss` file and a `custom.css` file for directly overriding theme styles (read more in [*Style Customization*](/documentation/styles-customization/)).
 
 ## Files for Developers
 
-Inside each Quire project, you will find the following directories and files. Developers will primarily use the `config.yml` file and the `bin`, `config`, `site`, and `theme` directories.
+Developers will primarily use the `_includes`, `_layouts`, `_plugins` directories and the `config.yaml` file.
 
 ```tx
-📁 bin         <-- Scripts
-📁 config      <-- Secondary/environmental configuration
-📄 config.yml  <-- Main configuration
+📁 _includes
+📁 _layouts
+📁 _plugins
 📁 content
-📁 data
-📄 README.md
-📁 site        <-- The built site output with `quire site`
-📁 static
-📁 themes      <-- Layouts, shortcodes, styles, js
+  📁 _assets  <-- Includes javascript directory
 ```
 
-### 📁 bin
+### 📁 _includes
 
-Currently, it only contains a `deploy.sh` script file for deploying a Quire project to GitHub pages, which you can learn more about in the [*Deploy Your Project*](/documentation/site-deploy/#preview-your-project-with-github-pages).
+### 📁 _layouts
 
-### 📄 config.yml
+### 📁 _plugins
 
-This is a standard, required file for {{< q-def "Hugo" >}} and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire/Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this metadata in formal digital publications, Quire uses the `publication.yml` file inside the `data` directory instead. Read more in [*Metadata & Configuration*](/documentation/metadata-configuration/).
+### 📁 _assets
 
-### 📁 config
-
-This is an additional configuration directory. While most Quire configuration happens in the [`config.yml`] file as explained above, the `config` directory gives more specific controls for different output formats and development environments. In most cases, changes won’t need to be made to these files until you are deploying your site. Read more in [*Output Your Project*](/documentation/multiformat-output/).
-
-### 📁 site
-
-This is where the built pages of the Quire website will live. This folder and its contents are automatically generated with the `quire site` command, and should not be edited directly. Read more in [*Output Your Project*](/documentation/multiformat-output/).
-
-### 📁 themes
-
-The `themes` directory contains one or more {{< q-def "themes" >}} that define the structure and style of the Quire publication. When using the `quire new` command, the theme is `default`. Read more in [*Style Customization*](/documentation/styles-customization/).
+In addition to including `fonts`, `images`, and `styles`, the `_assets` directory also contains a `javascript` directory for adding customizations with Javascript.
 
 ## Create a Publication Outline
 
-It is a good idea to start any project by creating a basic outline of your publication. To get started with your outline, if you haven't already, you will need to download a {{< q-def "text editor" >}}. We recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/), two free and fully featured options. Once the text editor has been installed, open your Quire project in it. You will see the directory contents listed on the left sidebar. The way you organize the Markdown files in the `content` directory of your project will define the structure of your publication and how the *Table of Contents* is organized. (Learn more in the [*Table of Contents & Sidebar Menu*](/documentation/contents-menu/) section of this guide.)
+It is a good idea to start any project by creating a basic outline of your publication. To get started with your outline, open your Quire project in your text editor. You will see the directory contents listed on the left sidebar. The way you organize the Markdown files in the `content` directory of your project will define the structure of your publication and how the table of contents is organized. Learn more in the [*Table of Contents & Sidebar Menu*](/documentation/contents-menu/) section of this guide.
 
 Here’s an outline showing the order, organization, and file names for a sample publication:
 
 ```md
-📄 cover.md
-📄 contents.md
-📁 part-one
-  📄 section-overview.md
-  📄 chapter-01.md
-  📄 chapter-02.md
-📁 part-two
-  📄 section-overview.md
-  📄 chapter-03.md
+📁 content
+  📁 _data     <-- not included in outline
+  📁 _computed <-- not included in outline
+  📁 _assets   <-- not included in outline
+  📄 about.md
+  📄 cover.md
+  📄 index.md
+  📁 part-one
+    📄 section-overview.md
+    📄 chapter-01.md
+    📄 chapter-02.md
+  📁 part-two
+    📄 section-overview.md
+    📄 chapter-03.md
 ```
 
 The names of the files will effect the final URLs of your publication. By default, URLs will be the filename, minus the `.md` suffix. Files nested in a sub-directory within `content` will include that sub-directory in the URL as well.
@@ -157,43 +146,45 @@ The names of the files will effect the final URLs of your publication. By defaul
 | The `section-overview.md` file inside the `part-two` directory | `mypublication.com/part-two/section-overview/` |
 
 {{< q-class "box tip">}}
-- To have URLs for your homepage or section landing pages that don’t include the Markdown file name, add `slug: .` to the page YAML of that file. Read more in the [*Page Types & Structure*](/documentation/pages/#creating-section-landing-pages) section of this guide.
+- To have URLs for your homepage or section landing pages that don’t include the Markdown file name, add `permalink: "/{{ title | slugify }}/"` to the page YAML of that file.
 {{< /q-class >}}
 
-For the ordering of the pages, in the example above we’ve listed the files and directories as they would appear in the publication’s table of contents. When looking in the actual `content` directory on your computer or in your text editor, however, they will almost certainly not appear in the proper publication order. More likely, they’ll appear alphabetically or by date modified, which is also how Quire will order them when building and previewing your publication. You can adjust this by [assigning a `weight` to each page](/documentation/pages/#organize-pages-in-the-right-order) in its page YAML.
+ When looking in the `content` directory on your computer or in your text editor, project files usually either appear alphabetically or by date modified, which is also how Quire will order them when building and previewing your publication. You can adjust this by adding `order` value in page YAML of each Markdown file. Learn more in [*Page Types & Structure*](/documentation/pages/#organize-pages-in-the-right-order).
 
 There are some other important rules and tips to keep in mind:
 
-1. **To create a new file, select "New File" in the text editor menu.** You can also right click or press control click on a folder and select "New File".
+1. **To create a new file, right-click on the `content` directory and select "New File".**
 
-2. **File names should be lowercase, with no spaces. Always include the .md suffix.** If file names contain more than one word, use a hyphen to separate them. Make sure that the file name includes either a `.md` or `.yml` extension.
+2. **File names should be lowercase**
 
-3. **Don't use `index.md` or `_index.md` files.** Though common for users with previous static site or web development experience, you should not use `index.md` or `_index.md` files in your Quire project. Because of the way {{< q-def "Hugo" >}} is modeled, these work against the linear ordering of the publication and break the *Next* and *Previous* page navigation in Quire.
+3. **Use hyphen in place of spaces**
 
-## Prepare Images and Text
+4. **Always include the .md suffix.**
 
-TK
+## Add Text and Images
+
+Once an outline has been created, text and images can be added to the project.
+
+In many cases, text will originate as a Word document. You can use Pandoc to convert Word documents into Markdown. Instructions can be found in the [YAML & Markdown](/documentation/fundamentals/#microsoft-word-to-markdown-conversion) section of this guide.
+
+Once images are added to the `_assets/images/` folder and entries have been added to the `figures.yaml`, then you can use shortcodes to insert the images into their respective Markdown files. More information can be found in the [Figure Images](/documentation/figure-images/) section of this guide.
 
 ## Preview and Edit a Project
 
-Quire lets you preview the current version of your site in a web browser, and will update the preview as you edit the files.
+As you add content to your project, you can preview the site in your web browser. The preview is live and will update as you make changes.
 
 **To run the preview:**
 
-1. Open your command-line shell and navigate to your Quire project directory using the `cd` (change directory) command. For example, if your project directory was called `my-project` and it was in your home directory, you’d enter `cd my-project`.
+1. Open your command-line shell and navigate to your Quire project directory using the `cd` (change directory) command. For example, if your project directory was called `my-project` and it was in your home directory, you would enter `cd my-project`.
 
-2. Still in the command-line shell, type `quire preview` and press enter to start the preview server.
+2. Still in the command-line shell, type `quire preview` and press enter to initiate the preview.
 
-3. Open a web browser and visit [http://localhost:1313](http://localhost:1313) to see the publication. To stop the preview you can either press Control–C or type `quire stop` and press enter.
+3. To view the preview, open a web browser and visit the localhost URL that is provided in the command-line shell output (for example, http://localhost:8080) to see the publication. To stop the preview, you can either press Control–C or type `quire stop` and press enter.
 
-Some tips for previewing your publication outline:
+Some tips for previewing your publication:
 
-1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about YAML in [*Page Types & Structure*](/documentation/pages/)
+1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about page YAML in [*Page Types & Structure*](/documentation/pages/)
 
-2. **Hide pages from the table of contents view.** If you want to hide a page from the table of contents include `menu:false` in the YAML.
+2. **Hide pages from the table of contents view.** If you want to hide a page from the table of contents include `toc:false` in the YAML.
 
-{{< q-class "box warning" >}}
-
-- In some cases, changes to `.yml`, `.scss` and `.css` files may not show up in your preview immediately. You may need to refresh the browser, clear the browser cache, or stop and re-start the `quire preview` command in these cases.
-
-{{< /q-class >}}
+2. **Start and stop the preview to refresh Quire**. In some cases, changes to `.yaml`, `.scss` and `.css` files may not show up in your preview immediately. If this happens, it often helps to stop and re-start `quire preview`.
