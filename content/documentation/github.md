@@ -5,7 +5,7 @@ type: essay
 abstract: Use GitHub to host your project, track changes, and collaborate
 ---
 
-[GitHub](https://github.com) is a project management platform centered around git-based version control. While it was originally developed as a useful tool for developers, it is now used by artists, writers, and other non-tech professionals. In fact, Getty uses GitHub to manage all of its publications, as well as Quire itself. We strongly recommend using GitHub as a tool for managing your Quire projects (whether collaborating or working solo).
+[GitHub](https://github.com) is a project management platform centered around git-based version control. While it was originally developed as a useful tool for developers, it is now used by artists, writers, and other non-tech professionals. In fact, Getty uses GitHub to manage all of its publications, as well as Quire itself. We recommend GitHub as a tool for managing your Quire projects (whether collaborating or working solo).
 
 **Here are some of GitHub's main advantages:**
 
@@ -55,16 +55,16 @@ If you are collaborating on a project, and one of your colleagues has already ho
 
 1. Click on the upper left-hand corner of GitHub Desktop where it says "Current Repository." Click "Add" and choose the option to "Clone repository..."
 
-2. Click the URL menu option and cut and paste the URL for your desired repository. Be sure to choose the local path where you want your project to live on your computer. We recommend creating a GitHub folder in your home directory and storing the project in there. (Alternately, you can copy this project directly from GitHub.com. Navigate to the project on GitHub, click the green “Code” button, select “Open with GitHub Desktop,” and follow the prompts.)
+2. Click the URL menu option and cut and paste the URL for your desired repository. Be sure to choose the local path where you want your project to live on your computer. We recommend creating a GitHub folder in your home directory and storing the project in there. (Alternately, you can copy the project directly from GitHub.com. Navigate to the project on GitHub, click the green “Code” button, select “Open with GitHub Desktop,” and follow the prompts.)
 
 3. You now have a copy of that project on your computer connected to the original code on GitHub. Before you can collaborate, you will need to either add your colleagues as collaborators or host your project in an organizational GitHub account where everyone is a member. Learn more in the [*Collaborate with Others Using GitHub*](/#collaborate-with-others-using-GitHub/) section below.
 
 {{< q-class "box warning" >}}
-- To view a preview of a Quire project cloned from GitHub, you’ll need to first run the `quire install` command in your command-line shell. Then run `quire preview` and navigate to [http://localhost:1313/](http://localhost:1313/).
+- To view a preview of a Quire project cloned from GitHub, you’ll need to first run the `quire install` command in your command-line shell. Then run `quire preview` and navigate to [http://localhost:8080/](http://localhost:8080/).
 {{< /q-class >}}
 
 {{< q-class "box tip" >}}
-- Learn how to take an existing Quire project in GitHub and use it as the basis for a new one in our [*Use an Existing Quire Project as a Template*](/documentation/serial-publications/) section. This is especially useful for serial publications such as journals.
+- Learn how to take an existing Quire project in GitHub and use it as the basis for a new one in our [*Use an Existing Quire Project as a Template*](/docs-v1/serial-publications/) section. This is especially useful for serial publications such as journals.
 {{< /q-class >}}
 
 ## Manage Project Changes on GitHub
@@ -167,7 +167,7 @@ If you plan to make your repository visible to the public at some point, **you s
 
 For anything you do not want to include in git, you can add a listing for it in your project’s main `.gitignore` file (which you can see when viewing your project in your text editor). You can choose to ignore files by name or by extension, or you can ignore entire directories.
 
-For instance, you might add all your third-party licensed images into a `licensed` folder in your `static/img/` folder. By adding `static/img/licensed/` to a new line in your `.gitignore` file, none of those files will be added to the git record and uploaded to GitHub. You’ll only have access to ignored files locally or for collaborators if you provide them copies of the files that they can manually add into their own copies of the repository.
+For instance, you might add all your third-party licensed images into a `licensed` folder in your `content/_assets/images/` folder. By adding `content/_assets/images/licensed/` to a new line in your `.gitignore` file, none of those files will be added to the git record and uploaded to GitHub. You’ll only have access to ignored files locally or for collaborators if you provide them copies of the files that they can manually add into their own copies of the repository.
 
 {{< q-class "box warning" >}}
 
@@ -179,13 +179,13 @@ For instance, you might add all your third-party licensed images into a `license
 
 Where using `.gitignore` can ensure certain sensitive or third-party files won’t get added into a project repository and thus be uploaded to GitHub, it means you have to manually track and manage those files yourself. Another option is to create a second project repository on GitHub to stay private even while your main project is made public. You include that second repository as a submodule within your main repository.
 
-For instance, you might add all your third-party licensed images into a `my-project-licensed-images` repository and then link that repository as a submodule into the `static/img/licensed/` folder of your main project repository. In this way, Quire can still build the site and output files and preview those images as normal. The files will also be under version control with git and connected to your project (so there’s no manual syncing to do), but you’ll be able to keep them private to everyone except your team or collaborators.
+For instance, you might add all your third-party licensed images into a `my-project-licensed-images` repository and then link that repository as a submodule into the `content/_assets/images/licensed` folder of your main project repository. In this way, Quire can still build the site and output files and preview those images as normal. The files will also be under version control with git and connected to your project (so there’s no manual syncing to do), but you’ll be able to keep them private to everyone except your team or collaborators.
 
 There are good directions on [working with submodules](https://github.blog/2016-02-01-working-with-submodules/) on GitHub’s blog. Note, however that managing commits to a submodule repository within a repository can be a little tricky, so it’s best not to go this route unless you are comfortable with git and GitHub already or have access to good support.
 
 ## Manage Large File Sizes with Git LFS
 
-Quire projects are pre-configured to use [Git LFS (Large File Storage)](https://git-lfs.github.com/) to manage all the files in your project’s `static/downloads/` and `static/img/` directories. This is to avoid running into issues with large individual files (GitHub blocks files greater than 100MB) and to keep the overall repository size down to a manageable level. File size issues can be particularly common when it comes to your project’s various output formats, including the PDF, EPUB, and MOBI.
+Quire projects are pre-configured to use [Git LFS (Large File Storage)](https://git-lfs.github.com/) to manage all the files in your project’s `content/_assets/downloads/` and `content/_assets/images/` directories. This is to avoid running into issues with large individual files (GitHub blocks files greater than 100MB) and to keep the overall repository size down to a manageable level. File size issues can be particularly common when it comes to your project’s various output formats, including the PDF, EPUB, and MOBI.
 
 Git LFS is a tool that moves your large files elsewhere and in their place stores references pointing to them in your repo. GitHub then uses these references as a guide to locate your large files. To start, download and install [Git LFS (Large File Storage)](https://docs.github.com/en/github/managing-large-files/installing-git-large-file-storage) if you haven’t already done so.
 
