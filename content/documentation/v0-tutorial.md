@@ -1,5 +1,5 @@
 ---
-title: "Quire Basics Tutorial V.0"
+title: "Quire Basics Tutorial"
 subtitle:
 weight: 3949
 type: essay
