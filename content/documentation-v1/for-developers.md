@@ -27,7 +27,7 @@ This repo is specifically for the Quire website and documentation.
 
 General configuration options for a project. See [*Configure Hugo*](https://gohugo.io/getting-started/configuration/) for more options and information.
 
-Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory
+Location: `config.yaml`, or any of the environment and format specific config files found in the `config` directory
 
 Type: Object
 
@@ -54,7 +54,7 @@ Type: Object
 
 Configuration for the [Blackfriday](https://gohugo.io/getting-started/configuration-markup#blackfriday) markdown rendering engine.
 
-Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory
+Location: `config.yaml`, or any of the environment and format specific config files found in the `config` directory
 
 Type: Object
 
@@ -69,7 +69,7 @@ Compatibility: Quire v0.18.0 and below
 
 Configuration for the markdown rendering engine. See [Hugo’s Markup Configuration](https://gohugo.io/getting-started/configuration-markup/) for more options and information.
 
-Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory
+Location: `config.yaml`, or any of the environment and format specific config files found in the `config` directory
 
 Type: Object
 
@@ -83,7 +83,7 @@ Compatibility: Quire v0.19.0 and above
 
 Quire-specific project parameters.
 
-Location: `config.yml`, or any of the environment and format specific config files found in the `config` directory
+Location: `config.yaml`, or any of the environment and format specific config files found in the `config` directory
 
 Type: Object
 
@@ -110,7 +110,7 @@ Type: Object
 
 ## Publication API
 
-Location: `publication.yml`
+Location: `publication.yaml`
 
 Type: Object
 
@@ -141,7 +141,7 @@ Type: Object
 
 ### `publisher`
 
-Location: `publication.yml`
+Location: `publication.yaml`
 
 Type: Array
 
@@ -154,7 +154,7 @@ Type: Array
 
 ### `description`
 
-Location: `publication.yml`
+Location: `publication.yaml`
 
 Type: Object
 
@@ -167,7 +167,7 @@ Type: Object
 
 ### `subject`
 
-Location: `publication.yml`
+Location: `publication.yaml`
 
 Type: Array
 
@@ -180,7 +180,7 @@ Type: Array
 
 ### `license`
 
-Location: `publication.yml`
+Location: `publication.yaml`
 
 Type: Object
 
@@ -196,7 +196,7 @@ Type: Object
 
 ### `resource_link`
 
-Location: `publication.yml`
+Location: `publication.yaml`
 
 Type: Array
 
@@ -214,7 +214,7 @@ Type: Array
 
 ### `revision_history`
 
-Location: `publication.yml`
+Location: `publication.yaml`
 
 Type: Array
 
@@ -225,7 +225,7 @@ Type: Array
 
 ### `identifier`
 
-Location: `publication.yml`, in any `.Page.Params.`, or in any `resource_link`
+Location: `publication.yaml`, in any `.Page.Params.`, or in any `resource_link`
 
 Type: Object
 
@@ -239,7 +239,7 @@ Type: Object
 
 ### `contributor`
 
-Location: `publication.yml` or in any `.Page.Params.`
+Location: `publication.yaml` or in any `.Page.Params.`
 
 Type: Array
 
@@ -253,20 +253,20 @@ Type: Array
 | `affiliation` |  |  |
 | `url` | url |  |
 | `bio` | | Markdown okay. |
-| `pic` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img` directory (which is defined by the `imageDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`contributors/fig01.jpg`). |
+| `pic` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img` directory (which is defined by the `imageDir` parameter in the `config.yaml` file), it should include that sub-folder name as well (`contributors/fig01.jpg`). |
 | `full_name` |  |  |
 | `file_as` |  |  |
 
 ### `figure_list`
 
-Location: `figures.yml`
+Location: `figures.yaml`
 
 Type: Array
 
 | Item Attributes | Expected Value | Description |
 | --- | --- | --- |
 |`id` | string | Numbers and lowercase letters only, with no spaces or special characters ("001", "fig-01a", "bird-picture", etc). |
-| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img` directory (which is defined by the `imageDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). |
+| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img` directory (which is defined by the `imageDir` parameter in the `config.yaml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). |
 | `alt` | string | For accessibility, all images should have alternative text descriptions. ([Tips on crafting good alt text.](https://webaim.org/techniques/alttext/)) Only ever leave blank if the image is purely decorative. |
 | `caption` | string | The caption to appear below the figure. Special characters are allowed. Use Markdown for formatting. |
 | `credit` | string | Follows the caption. Markdown allowed. |
@@ -279,7 +279,7 @@ Type: Array
 
 ### `entries`
 
-Location: `references.yml`
+Location: `references.yaml`
 
 Type: Array
 
@@ -293,19 +293,19 @@ Type: Array
 
 ### `object_list`
 
-Location: `objects.yml`
+Location: `objects.yaml`
 
 Type: Array
 
 | Attribute | Expected Value | Description |
 | --- | --- | --- |
 | `id` | string | Required. Used to reference objects from entry pages. Should be numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
-| `figure` | [array](#figure_list) | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. |
+| `figure` | [array](#figure_list) | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yaml` file. |
 | `link` | url | A URL link to a page with more/current information on the object. Usually the object in the museum’s online collection pages. |
 | `date_start`, `date_end` | integer | Reserved for future use in Quire. |
 | `dimension_width`, `dimension_height`, `dimension_depth` | integer | Reserved for future use in Quire. |
 
-Objects also support arbitrary attributes, which might include `title`, `artist`, `collection`, etc. Those added will be output in a table on collection catalogue entry pages. The ordering of the display can be controlled with `object_display_order` in `objects.yml`. See [*Guide on Collection Catalogues*](/documentation/collection-catalogues/).
+Objects also support arbitrary attributes, which might include `title`, `artist`, `collection`, etc. Those added will be output in a table on collection catalogue entry pages. The ordering of the display can be controlled with `object_display_order` in `objects.yaml`. See [*Guide on Collection Catalogues*](/documentation/collection-catalogues/).
 
 ## Page API
 
@@ -350,13 +350,13 @@ Used for styling. Wrapping any Markdown text in this shortcode will wrap it in a
 
 ### `q-bibliography`
 
-Generates a bibliography from the entries in the project's `bibliography.yml` file. See [*Citations & Bibliographies*](/documentation/citation-bibliographies/).
+Generates a bibliography from the entries in the project's `bibliography.yaml` file. See [*Citations & Bibliographies*](/documentation/citation-bibliographies/).
 
 `{{</* q-bibliography sort="" */>}}`
 
 | Parameter | Expected Value | Description |
 | --- | --- | --- |
-| `sort` | string | Optional. Value can be any string that matches a key in the entires under `entries` of the `references.yml` file, to indicate which key to alphabetically sort the output bibliography by. Without `sort` the default sort is on "full".  |
+| `sort` | string | Optional. Value can be any string that matches a key in the entires under `entries` of the `references.yaml` file, to indicate which key to alphabetically sort the output bibliography by. Without `sort` the default sort is on "full".  |
 
 ### `q-cite`
 
@@ -366,8 +366,8 @@ Adds a linked Author Date citation reference to the text, and a hover pop-up wit
 
 | Positional Parameter[<sup>†</sup>](#positional) | Expected Value | Description |
 | --- | --- | --- |
-| `0` (author date reference) | string | Should exactly match an `id` value under `entries` in the `references.yml` file. Typically something like "Jones 1974". |
-| `1` (page number) | string | Optional. A page number of the specific citation. Will be appended to the citation text with a text divider defined by `citationPageLocationDivider` in `config.yml` |
+| `0` (author date reference) | string | Should exactly match an `id` value under `entries` in the `references.yaml` file. Typically something like "Jones 1974". |
+| `1` (page number) | string | Optional. A page number of the specific citation. Will be appended to the citation text with a text divider defined by `citationPageLocationDivider` in `config.yaml` |
 | `2` (display text)| string | Optional. Alternate text that should be displayed instead of the default Author Date provided in the first parameter. |
 
 ### `q-contributor`
@@ -384,18 +384,18 @@ Can be used to create a page of contributor biographies, a section of bios for a
 
 ### `q-figure`
 
-Inserts a formatted figure image, label, caption and credit line. If using a `data/figures.yml` file, only an `id` parameter is required for this shortcode. If other values supplied directly in the shortcode they will override any corresponding values in the `data/figures.yml`. See [*Figure Images*](/documentation/figure-images/) and [`figure_list`](#figure_list) above.
+Inserts a formatted figure image, label, caption and credit line. If using a `data/figures.yaml` file, only an `id` parameter is required for this shortcode. If other values supplied directly in the shortcode they will override any corresponding values in the `data/figures.yaml`. See [*Figure Images*](/documentation/figure-images/) and [`figure_list`](#figure_list) above.
 
 `{{</* q-figure id="" src="" label="" caption="" credit="" alt="" class="" */>}}`
 
 | Parameter | Expected Value  | Description |
 | --- | --- | --- |
-|`id` | string | Spaces or special characters should not be used and will be stripped out. When used in a shortcode *without* a corresponding `src` parameter, the shortcode will look for a matching `id` in the project’s `data/figures.yml` file. When used in a shortcode *with* a corresponding `src` parameter, this will create an `id` for the image markup that can be used to link to the image directly (`mypublication.com/chapter01/#fig-3`) and ignores any  potentially corresponding information in the `data/figures.yml` file. |
-| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img` directory (which is defined by the `imageDir` parameter in the `config.yml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). If your project uses `data/figures.yml` file, you shouldn’t use a `src` parameter in the shortcode as it will override all other information.  |
+|`id` | string | Spaces or special characters should not be used and will be stripped out. When used in a shortcode *without* a corresponding `src` parameter, the shortcode will look for a matching `id` in the project’s `data/figures.yaml` file. When used in a shortcode *with* a corresponding `src` parameter, this will create an `id` for the image markup that can be used to link to the image directly (`mypublication.com/chapter01/#fig-3`) and ignores any  potentially corresponding information in the `data/figures.yaml` file. |
+| `src` | url | Should be the file name of a JPG, PNG or GIF image (`fig01.jpg`). Avoid using spaces or special characters, and if it’s in a sub-folder within the main `img` directory (which is defined by the `imageDir` parameter in the `config.yaml` file), it should include that sub-folder name as well (`comparatives/fig01.jpg`). If your project uses `data/figures.yaml` file, you shouldn’t use a `src` parameter in the shortcode as it will override all other information.  |
 | `alt` | string | For accessibility, all images should have alternative text descriptions. ([Tips on crafting good alt text.](https://webaim.org/techniques/alttext/)) Only ever leave blank if the image is purely decorative. |
 | `caption` | string | The caption to appear below the figure. Special characters are allowed. Use Markdown for formatting. |
 | `credit` | string | Follows the caption. Markdown allowed. |
-| `label` | boolean | Default is set to `true`. `true` will add a label to the caption, such as "Figure 1.3", `false` will remove the label. The global label setting is in the `config.yml` file under the parameter `figureLabels`.  |
+| `label` | boolean | Default is set to `true`. `true` will add a label to the caption, such as "Figure 1.3", `false` will remove the label. The global label setting is in the `config.yaml` file under the parameter `figureLabels`.  |
 | `class` | `is-pulled-right`, `is-pulled-left`, `is-full-width`, `is-centered-small` | Sets the style of the figure image. |
 
 ### `q-figure-group`
@@ -406,10 +406,10 @@ Like `q-figure`, but with handling for multiple images at once. See [*Figure Ima
 
 | Parameter | Expected Value | Description |
 | --- | --- | --- |
-|`id` | string | One or more comma-separated `id`s that match corresponding values in the project’s `data/figures.yml` file. |
-| `caption` | string | The caption to appear below the figure group. Special characters are allowed. Use Markdown for formatting. Overrides any caption information provided in `data/figures.yml`. |
-| `credit` | string | Follows the caption. Markdown allowed. Overrides any caption information provided in `data/figures.yml`. |
-| `label` | boolean | Default is set to `true`. `true` will add a label to the caption, such as "Figure 1.3", `false` will remove the label. The global label setting is in the `config.yml` file under the parameter `figureLabels`. If a `caption` is also provided in the shortcode, the labels will be applied on their own directly under each image in the group, rather than as part of the caption. |
+|`id` | string | One or more comma-separated `id`s that match corresponding values in the project’s `data/figures.yaml` file. |
+| `caption` | string | The caption to appear below the figure group. Special characters are allowed. Use Markdown for formatting. Overrides any caption information provided in `data/figures.yaml`. |
+| `credit` | string | Follows the caption. Markdown allowed. Overrides any caption information provided in `data/figures.yaml`. |
+| `label` | boolean | Default is set to `true`. `true` will add a label to the caption, such as "Figure 1.3", `false` will remove the label. The global label setting is in the `config.yaml` file under the parameter `figureLabels`. If a `caption` is also provided in the shortcode, the labels will be applied on their own directly under each image in the group, rather than as part of the caption. |
 | `class` | `is-pulled-right`, `is-pulled-left`, `is-full-width`, `is-centered-small` | Sets the style of the group of figures overall. |
 | `grid` |  `1`, `2`, `3`, `4`, `5`, `6` | Determines the horizontal width (in number of images) of the image grid. If no grid is set, the images will stack on top of one another vertically. |
 

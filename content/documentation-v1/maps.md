@@ -11,7 +11,7 @@ abstract: "Tips and tricks for including basic, interactive maps"
 
 </div>
 
-Start with an entry in your `figures.yml` file. It must include `media_type: map`, latitude (`lat`) and longitude (`long`) points to define where you would like your map centered, a `src` for a static image of your map, and the path to a `geojson` file. When starting a new Quire project, you will find a sample geojson file in `/static/data/sample-geojson.json`.
+Start with an entry in your `figures.yaml` file. It must include `media_type: map`, latitude (`lat`) and longitude (`long`) points to define where you would like your map centered, a `src` for a static image of your map, and the path to a `geojson` file. When starting a new Quire project, you will find a sample geojson file in `/static/data/sample-geojson.json`.
 
 ```yaml
 - id: "map"
@@ -56,7 +56,7 @@ Basic geojson:
 }
 ```
 
-Once you have your entry in `figures.yml` and it’s pointing to your geojson data, you can add a map to the page with the `q-figure-zoom` shortcode:
+Once you have your entry in `figures.yaml` and it’s pointing to your geojson data, you can add a map to the page with the `q-figure-zoom` shortcode:
 
 ```go
 {{</* q-figure-zoom id="map" */>}}

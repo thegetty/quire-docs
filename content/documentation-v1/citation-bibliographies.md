@@ -9,9 +9,9 @@ In-text citations and bibliographies are all available in Quire. Designed to mee
 
 ## Capture Bibliographic Information in YAML
 
-Bibliographic references for your publication should be listed in a `references.yml` file in the `data` directory.
+Bibliographic references for your publication should be listed in a `references.yaml` file in the `data` directory.
 
-Each entry in the `references.yml` file must include a `full` form of the reference, and then an `id` to reference it by.
+Each entry in the `references.yaml` file must include a `full` form of the reference, and then an `id` to reference it by.
 
 ```yaml
 entries:
@@ -54,7 +54,7 @@ The `q-cite` shortcode adds a linked Author Date citation reference to the text 
 
 {{< q-figure id="modern-bibliography-page" >}}
 
-The first positional parameter of the `q-cite` shortcode is a short form citation that should match the `id` value in the `references.yml`. The following sample would output the link as: Faure 1909.
+The first positional parameter of the `q-cite` shortcode is a short form citation that should match the `id` value in the `references.yaml`. The following sample would output the link as: Faure 1909.
 
 ```go
 {{</* q-cite "Faure 1909" */>}}
@@ -78,19 +78,19 @@ In using this third parameter, you still need to have the second parameter even 
 {{</* q-cite "Faure 1909" "" "1909" */>}}
 ```
 
-The text element between the Author Date citation and the page can be changed with the `citationPageLocationDivider` property in `config.yml`. The humanities tend to favor comma separation (which is the default in Quire), whereas the sciences typically favor a colon.
+The text element between the Author Date citation and the page can be changed with the `citationPageLocationDivider` property in `config.yaml`. The humanities tend to favor comma separation (which is the default in Quire), whereas the sciences typically favor a colon.
 
 The `q-cite` shortcode can be used anywhere in your Markdown text, including within footnotes.
 
-If a publication includes in-text citations and appears to have missing bibliographic entries, there is most likely an incorrect or missing `q-cite` shortcode in the essay end notes. You can find those in the essay Markdown file. The quoted text that follows `q-cite` should exactly match the “id” in the `references.yml` files. Any changes made to a bibliographic citation should be made first to the `references.yml` file, and then to every instance of that citation throughout the text. Failure to make changes in all places will result in broken links. The `q-cite` shortcode also plays an important role when generating a bibliography. So a missing or misspelled `q-cite` shortcode will result in the entry entry being left out of the bibliography completely.
+If a publication includes in-text citations and appears to have missing bibliographic entries, there is most likely an incorrect or missing `q-cite` shortcode in the essay end notes. You can find those in the essay Markdown file. The quoted text that follows `q-cite` should exactly match the “id” in the `references.yaml` files. Any changes made to a bibliographic citation should be made first to the `references.yaml` file, and then to every instance of that citation throughout the text. Failure to make changes in all places will result in broken links. The `q-cite` shortcode also plays an important role when generating a bibliography. So a missing or misspelled `q-cite` shortcode will result in the entry entry being left out of the bibliography completely.
 
 
 
 ## Display a Bibliography
 
-Your publication will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode. A heading can be customized to go above the page bibliography with the `biblioHeading` parameter in your `config.yml` file. The default is "Bibliography".
+Your publication will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode. A heading can be customized to go above the page bibliography with the `biblioHeading` parameter in your `config.yaml` file. The default is "Bibliography".
 
-Additionally, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yml` file, you can create a `bibliography.md` file and use the `q-bibliography` shortcode. The resulting bibliography will be output as a page in your publication. By default, your bibliography will automatically be ordered according to the `full` value in your `references.yml` file.
+Additionally, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yaml` file, you can create a `bibliography.md` file and use the `q-bibliography` shortcode. The resulting bibliography will be output as a page in your publication. By default, your bibliography will automatically be ordered according to the `full` value in your `references.yaml` file.
 
 ```go
 {{</* q-bibliography */>}}
@@ -101,4 +101,4 @@ Additionally, to create a complete bibliography for your entire publication, fro
 
 ### Display the Short Reference in Bibliographies
 
-Bibliographies displayed automatically at the bottom of pages, and those generated with the `q-bibliography` shortcode, can be a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.
+Bibliographies displayed automatically at the bottom of pages, and those generated with the `q-bibliography` shortcode, can be a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yaml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.

@@ -5,7 +5,7 @@ type: essay
 abstract: "Understand the basics of working in plain-text format"
 ---
 
-Content is stored in two different plain-text formats in Quire: YAML (*yam-ul*) for data, and Markdown for more narrative or textual content. Markdown is used in standalone `.md` files in the `content` directory of every Quire project. YAML is found in `.yml` files in the `data` directory, in the configuration files, and at the top of every Markdown file.
+Content is stored in two different plain-text formats in Quire: YAML (*yam-ul*) for data, and Markdown for more narrative or textual content. Markdown is used in standalone `.md` files in the `content` directory of every Quire project. YAML is found in `.yaml` files in the `data` directory, in the configuration files, and at the top of every Markdown file.
 
 ## YAML Basics
 
@@ -242,7 +242,7 @@ While some Markdown processors support superscript and subscript formatting with
 - `20<sup>th</sup> Century Sculpture` = 20<sup>th</sup> Century Sculpture
 - `Chrome yellow (PbCrO<sub>4</sub>)` = Chrome yellow (PbCrO<sub>4</sub>)
 
-You will see a `fractions` attribute with a value of "false" in the `config.yml` file of your publication. Changing this to true will automatically render fraction-style superscript and subscript formatting for anything written as an integer followed by a slash and another integer. However, in many instances this will catch things that are not meant to be fractions. For this reason, we recommend leaving `fractions` set to `false`, and manually adding the necessary markup as it’s needed.
+You will see a `fractions` attribute with a value of "false" in the `config.yaml` file of your publication. Changing this to true will automatically render fraction-style superscript and subscript formatting for anything written as an integer followed by a slash and another integer. However, in many instances this will catch things that are not meant to be fractions. For this reason, we recommend leaving `fractions` set to `false`, and manually adding the necessary markup as it’s needed.
 
 ### Markdown Gotchas
 
@@ -264,9 +264,9 @@ Outside of more code-driven text editors, there are also a growing number of Mar
 
 ## Markdown Output Configuration
 
-Hugo has a built-in Markdown processor, {{< q-def "Blackfriday" >}}, which comes with some configuration options that can be applied in your project’s `config.yml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
+Hugo has a built-in Markdown processor, {{< q-def "Blackfriday" >}}, which comes with some configuration options that can be applied in your project’s `config.yaml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
 
-By default, in the `config.yml` file of your Quire project, {{< q-def "Blackfriday" >}}'s `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
+By default, in the `config.yaml` file of your Quire project, {{< q-def "Blackfriday" >}}'s `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
 
 ## Markdown Resources
 

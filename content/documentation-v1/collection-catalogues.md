@@ -9,7 +9,7 @@ Along with monographs, edited volumes, and serial publications, Quire is also de
 
 ## Capture Object Data
 
-Much like `figures.yml` or `references.yml`, all catalogue object metadata should be captured in a single `objects.yml` file in the `data` directory of your project and then identified as needed in the different Markdown pages of your publication. Here is a brief sample of an `objects.yml` file:
+Much like `figures.yaml` or `references.yaml`, all catalogue object metadata should be captured in a single `objects.yaml` file in the `data` directory of your project and then identified as needed in the different Markdown pages of your publication. Here is a brief sample of an `objects.yaml` file:
 
 ```yaml
 object_display_order:
@@ -44,27 +44,27 @@ object_list:
       - id: "cat3b"
 ```
 
-There are two sections in the `objects.yml` file: `object_list` and `object_display_order`:
+There are two sections in the `objects.yaml` file: `object_list` and `object_display_order`:
 
 - The `object_list` is a list of the objects and their individual metadata attributes. With the exception of a few reserved terms, as noted in the table below, any attributes can be included here. These attributes and the associated values will ultimately display on the entry pages for each object.
 
 - You control the specifics of which attributes to display and in what order by listing them under `object_display_order`. Following the sample above, the attributes included on the pages would be: `artist`, `year`, `dimensions`, `medium`, and `location`.
 
-Any images of the object are also included here, under the `figure` attribute. This is a list of one or more images. It is recommended that this list contains only `id` values corresponding with `id`s in your project’s `figures.yml` file. However, if you prefer, you can instead include a `src` attribute with the filename as it appears in your project’s image directory.
+Any images of the object are also included here, under the `figure` attribute. This is a list of one or more images. It is recommended that this list contains only `id` values corresponding with `id`s in your project’s `figures.yaml` file. However, if you prefer, you can instead include a `src` attribute with the filename as it appears in your project’s image directory.
 
 Here are the only defined object attributes, you can include any others you like:
 
 | Attribute | Description |
 | --- | --- |
 | `id` | Required. Used to reference objects from entry pages. Should be numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
-| `figure` | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yml` file. |
+| `figure` | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yaml` file. |
 | `link` | A URL link to a page with more/current information on the object. Usually the object in the museum’s online collection pages. |
 | `date_start`, `date_end` | Reserved for future use in Quire. |
 | `dimension_width`, `dimension_height`, `dimension_depth` | Reserved for future use in Quire. |
 
 ## Create Object Pages
 
-Like all other pages in your publication, object pages are generated from the Markdown files in your `content` directory. To create an object entry page, give the page a `type: entry` in the page YAML block, and list one or more objects by `id` corresponding to those in your `objects.yml` file.
+Like all other pages in your publication, object pages are generated from the Markdown files in your `content` directory. To create an object entry page, give the page a `type: entry` in the page YAML block, and list one or more objects by `id` corresponding to those in your `objects.yaml` file.
 
 ```yaml
 type: entry
@@ -76,10 +76,10 @@ The page will feature any images associated with the object, followed by a table
 
 {{< q-figure id="1.7" >}}
 
-If you add multiple figures of the object, the figures are displayed in a rotating carousel and are arranged in the order they are listed in the object information in `objects.yml`. If any of the object figures have a `caption` and/or `credit`, they will be included as a pop-up window. And if the figure’s `download` attribute is set to `true`, a download icon will be included as well.
+If you add multiple figures of the object, the figures are displayed in a rotating carousel and are arranged in the order they are listed in the object information in `objects.yaml`. If any of the object figures have a `caption` and/or `credit`, they will be included as a pop-up window. And if the figure’s `download` attribute is set to `true`, a download icon will be included as well.
 
 {{< q-class "box tip" >}}
-- If the `object_list` includes a `link`, a “View in Collection” button is generated. The text of this button can be customized with the `objectLinkText` attribute in the project’s `config.yml` file.
+- If the `object_list` includes a `link`, a “View in Collection” button is generated. The text of this button can be customized with the `objectLinkText` attribute in the project’s `config.yaml` file.
 {{< /q-class >}}
 
 ## Generate Object Lists/Grids

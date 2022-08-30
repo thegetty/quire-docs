@@ -22,12 +22,12 @@ online: false
 
 {{< /q-checklist >}}
 
-## Formatting required for data (`.yml`) files
+## Formatting required for data (`.yaml`) files
 
 {{< q-checklist >}}
 
-- [ ] Format captions for the [`figures.yml`](/documentation/figure-images/#create-a-figuresyml-file-for-figure-image-metadata) file
-- [ ] If using in-text citations, format author date information for the [`references.yml`](/documentation/citation-bibliographies/#capture-bibliographic-information-in-yaml) file
-- [ ] For collection catalogues, format object information for the [`objects.yml`](/documentation/figure-images/#create-a-figuresyml-file-for-figure-image-metadata) file
+- [ ] Format captions for the [`figures.yaml`](/documentation/figure-images/#create-a-figuresyml-file-for-figure-image-metadata) file
+- [ ] If using in-text citations, format author date information for the [`references.yaml`](/documentation/citation-bibliographies/#capture-bibliographic-information-in-yaml) file
+- [ ] For collection catalogues, format object information for the [`objects.yaml`](/documentation/figure-images/#create-a-figuresyml-file-for-figure-image-metadata) file
 
 {{< /q-checklist >}}

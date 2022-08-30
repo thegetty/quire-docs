@@ -137,11 +137,11 @@ Quire will then start to process the high-resolution images into IIIF image tile
 
 The processed IIIF files will be placed in a `static/img/iiif/processed` directory with folder names matching the original filenames of the high-resolution images. Each folder includes the hundreds or sometimes thousands of individual image tiles arranged in their own directories that make up the zoomable image. The directory will also include an `info.json` file, which includes basic information about the full image and the availability of image tiles at different zoom levels.
 
-You will need the path to the `info.json` file to include it in your `figures.yml` file when getting ready to display your IIIF images in your project. The paths are also based on the filename of the original high-resolution you processed. For example, if your high-resolution image was `00094701.jpg`, the path to the `info.json` would be `/img/iiif/processed/00094701/info.json`.
+You will need the path to the `info.json` file to include it in your `figures.yaml` file when getting ready to display your IIIF images in your project. The paths are also based on the filename of the original high-resolution you processed. For example, if your high-resolution image was `00094701.jpg`, the path to the `info.json` would be `/img/iiif/processed/00094701/info.json`.
 
 ### 3. Host the IIIF Image Tiles
 
-IIIF image tiles can be hosted statically (meaning you don’t need a special server setup), just like the website edition of your Quire project. In fact, a modest number of IIIF images (around a dozen or so) can even be hosted within the project itself. In these cases, the IIIF files you’ve processed with the `quire process --iiif` command can be left where they are. It is also fine to move the processed IIIF image folders into different locations within your `static` directory. You will just need to update the paths to their `info.json` files accordingly when you’re adding them to your `figures.yml` file, as explained in the next section.
+IIIF image tiles can be hosted statically (meaning you don’t need a special server setup), just like the website edition of your Quire project. In fact, a modest number of IIIF images (around a dozen or so) can even be hosted within the project itself. In these cases, the IIIF files you’ve processed with the `quire process --iiif` command can be left where they are. It is also fine to move the processed IIIF image folders into different locations within your `static` directory. You will just need to update the paths to their `info.json` files accordingly when you’re adding them to your `figures.yaml` file, as explained in the next section.
 
 With more than twelve or so IIIF images, you’re going to need to host them elsewhere and then point to them from your project. This is because, though small in individual file size, the sheer quantity of files (hundreds and sometimes thousands) that are associated with deep-zooming images can cause issues when trying to run `quire preview` or use GitHub or a related service to host your project code.
 
@@ -163,7 +163,7 @@ For hosting the image tiles, if you have institutional support, your digital dep
 
 To display a IIIF image in your project, you need to point to a IIIF `info.json` file for the image. Either one you’ve identified from an [external source](#use-existing-iiif-images), or one you’ve [created yourself](#creating-your-own-iiif-images) with `quire process --iiif`. If it is an image you processed yourself and it is still in the `processed/` directory, the path to the JSON file would be `/img/iiif/processed/FILENAME/info.json`.
 
-Along with the path to the `info.json` file, you also need to include `media_type: "iiif"` and a path to a [lower-res static fallback version](#include-a-static-fallback-image) of the image, hosted in your project’s `static/img` directory (which is used for Quire’s PDF and e-book outputs). All of this goes in your `figures.yml` file.
+Along with the path to the `info.json` file, you also need to include `media_type: "iiif"` and a path to a [lower-res static fallback version](#include-a-static-fallback-image) of the image, hosted in your project’s `static/img` directory (which is used for Quire’s PDF and e-book outputs). All of this goes in your `figures.yaml` file.
 
 ```yaml
 - id: "irises"
@@ -172,13 +172,13 @@ Along with the path to the `info.json` file, you also need to include `media_typ
   iiif: "https://data.getty.edu/museum/api/iiif/671108/info.json"
 ```
 
-The image can then be added to your Markdown files using the `q-figure-zoom` shortcode, as shown below. This will display the static image on the page, and then when clicked, will open the figure viewer for the fully zoomable IIIF version. (See the page on [*Figure Images*](/documentation/figure-images/) for more information on the `figures.yml` file and other figure shortcodes.)
+The image can then be added to your Markdown files using the `q-figure-zoom` shortcode, as shown below. This will display the static image on the page, and then when clicked, will open the figure viewer for the fully zoomable IIIF version. (See the page on [*Figure Images*](/documentation/figure-images/) for more information on the `figures.yaml` file and other figure shortcodes.)
 
 ```go
 {{</* q-figure-zoom id="irises" */>}}
 ```
 
-IIIF Images can also be displayed in the built-in image viewer on [entry pages](/documentation/pages). Do this by including the appropriate `id` in the [object data](/documentation/collection-catalogues/#capture-object-data) in your `objects.yml` file.
+IIIF Images can also be displayed in the built-in image viewer on [entry pages](/documentation/pages). Do this by including the appropriate `id` in the [object data](/documentation/collection-catalogues/#capture-object-data) in your `objects.yaml` file.
 
 ```yaml
 object_list:
@@ -196,7 +196,7 @@ object_list:
 
 ### Include a Static Fallback Image
 
-The static fallback image is required for displaying a version of the IIIF image outside of the zooming image viewer on the online version of your project, as well as for Quire’s PDF and e-book outputs. This is the standard `src` attribute in your `figures.yml` listing.
+The static fallback image is required for displaying a version of the IIIF image outside of the zooming image viewer on the online version of your project, as well as for Quire’s PDF and e-book outputs. This is the standard `src` attribute in your `figures.yaml` listing.
 
 ```yaml
 src: "figures/irises.jpg"
@@ -206,7 +206,7 @@ Like with other non-zooming figure images, these static images for IIIF would ty
 
 ### Set the Zoom Level
 
-Quire will, by default, show six levels of zoom. If the IIIF image you are pointing to has less than that, you can set the number of levels in `figures.yml` with the `zoom_max` property. This will ensure your users can’t zoom further in than the image is sized for, which would result in blurred images.
+Quire will, by default, show six levels of zoom. If the IIIF image you are pointing to has less than that, you can set the number of levels in `figures.yaml` with the `zoom_max` property. This will ensure your users can’t zoom further in than the image is sized for, which would result in blurred images.
 
 ```yaml
 - id: "irises"

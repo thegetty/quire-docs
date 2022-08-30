@@ -5,27 +5,27 @@ type: essay
 abstract: "Update crucial information before deploying your publication"
 ---
 
-Quire uses two {{< q-def "YAML" >}} files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yml` and `publication.yml`. By default, both `config.yml` and `publication.yml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.
+Quire uses two {{< q-def "YAML" >}} files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yaml` and `publication.yaml`. By default, both `config.yaml` and `publication.yaml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.
 
 You can read more about YAML syntax basics in [*YAML & Markdown*](/documentation/fundamentals/#yaml-basics).
 
-## Adjust the Default Publication Settings in config.yml File
+## Adjust the Default Publication Settings in config.yaml File
 
-The `config.yml` file is a standard and required file for {{< q-def "Hugo" >}}, and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yml` file inside the `data` directory for that purpose [(see below)](#add-and-edit-important-metadata-in-publicationyml-file).
+The `config.yaml` file is a standard and required file for {{< q-def "Hugo" >}}, and also for Quire. In Quire, it is used expressly for configuring how Hugo operates, and for defining a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yaml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yaml` file inside the `data` directory for that purpose [(see below)](#add-and-edit-important-metadata-in-publicationyml-file).
 
-The properties in the `config.yml` file are individually documented in the [*For Developers*](/documentation/for-developers/) section, however, a few key items to note:
+The properties in the `config.yaml` file are individually documented in the [*For Developers*](/documentation/for-developers/) section, however, a few key items to note:
 
-- While Quire exclusively uses the `title` value as defined in your `publication.yml` file, other {{< q-def "Hugo" >}} projects require a `title` value in the `config.yml` file, so it is a good idea to include it here as well.
+- While Quire exclusively uses the `title` value as defined in your `publication.yaml` file, other {{< q-def "Hugo" >}} projects require a `title` value in the `config.yaml` file, so it is a good idea to include it here as well.
 
 - The `theme` value should match the name of the folder in the `/themes` directory that contains your theme files; if you've copied the default {{< q-def "theme" >}} and given it a different name make sure to update the value here too.
 
 - The `params` section includes a number of values specific to various Quire layout {{< q-def "templates" >}} and {{< q-def "shortcodes" >}}. All are provided with default values, and should be changed with care. In cases where a value should be deleted entirely, it is usually best to leave it as empty double quotes (`""`) rather than completely deleting it.
 
-## Add and Edit Important Metadata in publication.yml File
+## Add and Edit Important Metadata in publication.yaml File
 
-The `publication.yml` file in the `/data` directory is *the* source of metadata for your publication. While the only value that is truly required is the one for the property `title`, it is a good idea to fill out the `publication.yml` file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support {{< q-def "Search Engine Optimization (SEO)" >}} and general discovery.
+The `publication.yaml` file in the `/data` directory is *the* source of metadata for your publication. While the only value that is truly required is the one for the property `title`, it is a good idea to fill out the `publication.yaml` file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support {{< q-def "Search Engine Optimization (SEO)" >}} and general discovery.
 
-Some key areas are summed up below, and match headings in the `publication.yml` file itself, but there is a detailed documentation of individual properties and their values in the [*For Developers*](/documentation/for-developers/) section of this guide.
+Some key areas are summed up below, and match headings in the `publication.yaml` file itself, but there is a detailed documentation of individual properties and their values in the [*For Developers*](/documentation/for-developers/) section of this guide.
 
 ### Title & Description
 
@@ -138,4 +138,4 @@ subjects:
 
 A history of post-publication revisions made to the publication typically appears on the *About* page. Any number of revision history property items can be added and each must include the attributes `date` and a `summary` of changes made on that date. The `summary` attribute supports Markdown formatting, and would typically be in list form.
 
-If you are using {{< q-def "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yml` can act as an overview. For more, see [our updates and revisions policy document](https://github.com/thegetty/digpublishing-guide/blob/master/updates-and-revisions.md).
+If you are using {{< q-def "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yaml` can act as an overview. For more, see [our updates and revisions policy document](https://github.com/thegetty/digpublishing-guide/blob/master/updates-and-revisions.md).

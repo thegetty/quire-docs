@@ -58,7 +58,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 -   The **digital team** uses a text editor to open the project and create a [publication outline](/documentation/getting-started/#create-a-publication-outline) with placeholder Markdown files and landing pages structured according to the publication's Table of Contents. The converted Markdown is then added to the corresponding content files.
 
--   The **digital team** creates the publication's data files (`publication.yml`, `figures.yml`, `references.yml`, etc.) and cleans up YAML formatting on individual Markdown files.
+-   The **digital team** creates the publication's data files (`publication.yaml`, `figures.yaml`, `references.yaml`, etc.) and cleans up YAML formatting on individual Markdown files.
 
 -   The **digital team** processes the publication images and creates a [git submodule](https://github.blog/2016-02-01-working-with-submodules/) The submodule creates a private repository for third-party assets. It is only required when the main project is a public repository.
 
