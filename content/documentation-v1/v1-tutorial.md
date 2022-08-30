@@ -81,7 +81,7 @@ Quire allows you to preview your work in realtime. All you need is your browser.
 
 Some placeholder content comes with each new Quire project. To start customizing it you’ll need a text editor. Like its name implies, a text editor is simply a program used to edit text. It’s like Microsoft Word, but instead of dealing with text formatted for print, text editors use human-readable code and markup to format the text for conversion to HTML.
 
-Macs and PCs come with some simple text editors built in, but we recommend using one that offers more in terms of auto-formatting as well as being able to see and work in multiple text files at a time. [Visual Studio Code](https://code.visualstudio.com/) and [Sublime Text](https://www.sublimetext.com/) are examples of good, free options.
+Macs and PCs come with some simple text editors built in, but we recommend using one that offers more in terms of auto-formatting as well as being able to see and work in multiple text files at a time. [Visual Studio Code](https://code.visualstudio.com/), [Brackets](https://brackets.io/), and [Sublime Text](https://www.sublimetext.com/) are good options.
 
 {{< q-figure id="text-editor" >}}
 
