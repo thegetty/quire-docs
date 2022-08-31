@@ -73,7 +73,7 @@ YAML values should always be surrounded by straight quotes (" ") to ensure Quire
 description: "*My Chapter* is about colons :)"
 ```
 
-Sometimes a caption or a chapter title will also include the use of quotations. However, two sets of straight quotes will result in an error. To avoid this, surround the caption text with straight quotes, and then use curly quotes within. To achieve this, highlight the phrase that needs curly quotes and press `Option-[`. Another option is to copy and paste them from [https://unicode-table.com/en/](https://unicode-table.com/en/).
+Sometimes a caption or a chapter title will also include the use of quotations. However, two sets of straight quotes will result in an error. To avoid this, surround the caption text with straight quotes, and then use curly quotes within. To achieve this, Mac users can highlight the phrase that needs curly quotes and press `Option-[`. PC users can copy and paste the opening and closing quotes from [https://unicode-table.com/en/sets/quotation-marks/](https://unicode-table.com/en/sets/quotation-marks/).
 
 ```yaml
 title: "“Ah ha!” Curly Quotes for the Win"
@@ -221,6 +221,10 @@ Footnotes can also include Markdown formatting, including lists and even multipl
 
 {{< /q-class >}}
 
+## Markdown Output configuration
+
+Quire's comes with some Markdown configuration options, which are located in the `_plugins/markdown/defaults.js`. This file currently controls the appearance of things like breaks, HTML tags, quotes, and more.
+
 ## Markdown Special Cases
 
 ### Markdown and HTML
@@ -243,8 +247,6 @@ While some Markdown processors support superscript and subscript formatting with
 - `20<sup>th</sup> Century Sculpture` = 20<sup>th</sup> Century Sculpture
 - `Chrome yellow (PbCrO<sub>4</sub>)` = Chrome yellow (PbCrO<sub>4</sub>)
 
-You will see a `fractions` attribute with a value of "false" in the `config.yaml` file of your publication. Changing this to true will automatically render fraction-style superscript and subscript formatting for anything written as an integer followed by a slash and another integer. However, in many instances this will catch things that are not meant to be fractions. For this reason, we recommend leaving `fractions` set to `false`, and manually adding the necessary markup as it’s needed.
-
 ### Markdown Gotchas
 
 1. The built in Markdown processor will incorrectly create links even if there is a space between the bracketed text and the parentheses. For instance, a footnote reference number `[^1]` followed by a space and any text in parentheses, will incorrectly format as a link: `[^1] (Some aside text here)`. To avoid this, you can use the HTML entity reference, `&#40;`, for the first parentheses, or a backslash escape character before the first parentheses.
@@ -258,11 +260,11 @@ You will see a `fractions` attribute with a value of "false" in the `config.yaml
 
 ## Markdown Resources
 
-This guide doesn’t cover all existing Markdown tags, but there are some good sources that will help you find the right syntax to format your text. For example, the Programming Historian provides an [introductory lesson to Markdown](https://programminghistorian.org/lessons/getting-started-with-markdown), and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site [Daring Fireball](https://daringfireball.net/projects/markdown/). 
+This guide doesn’t cover all existing Markdown tags, but there are some good sources that will help you find the right syntax to format your text. For example, the Programming Historian provides an [introductory lesson to Markdown](https://programminghistorian.org/lessons/getting-started-with-markdown), and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site [Daring Fireball](https://daringfireball.net/projects/markdown/).
 
 ## Microsoft Word to Markdown Conversion
 
-Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion using {{< q-def "Pandoc" >}} can be done.
+Commonly, project content will start from Microsoft Word documents rather than being written originally in Markdown. In these cases, a simple file conversion can be done.
 
 There are some easy things you can do in the Word document prior to conversion to ensure the best possible results:
 
@@ -271,7 +273,9 @@ There are some easy things you can do in the Word document prior to conversion t
 - Don’t use any font color or color highlighting, it will not convert to Markdown.
 - Save as .docx rather than .doc
 
-While there are a number of free tools, we recommend using Pandoc, which is included with the basic Quire installation and can be used through the command-line. To convert, open your {{< q-def "command-line shell" >}}, use the `cd` (change directory) command to move to the folder where your .docx documents are saved, and enter the applicable Pandoc command:
+While there are a number of free tools, we recommend using {{< q-def "Pandoc" >}}. Before starting conversion you must first install Pandoc. For Mac users, download the macOS installer, double-click it and follow the prompts to install: [https://pandoc.org/installing.html](https://pandoc.org/installing.html). For PCs users, download the Pandoc MSI installer file, open it and a setup wizard screen will guide you through the process: [https://pandoc.org/installing.html](https://pandoc.org/installing.html).
+
+Once install is complete, open your {{< q-def "command-line shell" >}}, use the `cd` (change directory) command to move to the folder where your .docx documents are saved, and enter the applicable Pandoc command:
 
 To convert a single Word document (in this example it has a file name of MyFile.docx) into Markdown:
 
