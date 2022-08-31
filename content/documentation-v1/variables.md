@@ -60,7 +60,7 @@ This default theme includes a number of style variables intended to allow for re
 
 ## Configuration Parameters
 
-Outside of the theme files themselves, a Quire project will also have a config.yml file which includes a number of parameters the theme relies on.
+Outside of the theme files themselves, a Quire project will also have a config.yaml file which includes a number of parameters the theme relies on.
 
 | Parameter | Expected Value | Description |
 | --------- | -------------- | ----------- |

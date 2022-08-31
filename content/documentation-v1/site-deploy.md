@@ -11,7 +11,7 @@ A Quire site is designed to be hosted on virtually any web server, either one yo
 
 When hosting a Quire site, you will typically follow these steps:
 
-1. Update the `baseURL` in `config/site.yml` to match the URL where the site will ultimately be hosted.
+1. Update the `baseURL` in `config/site.yaml` to match the URL where the site will ultimately be hosted.
 2. Create the HTML files for your project by running `quire site` in your command-line shell. The files will be built into your project’s `site` folder along with all the necessary static assets like image files, stylesheets and script files. The `site` file will be updated and overwritten each time you run `quire site`.
 3. Upload the contents of the `site` folder to your web host based on the directions they provide.
 
@@ -99,7 +99,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/documentation/github) section of our documentation to create a repository for your project.
 
-2. In your text editor, open the `config/environments/github.yml` file.
+2. In your text editor, open the `config/environments/github.yaml` file.
 
 3. Update the `baseURL` to correspond to your own GitHub site. It will follow the pattern: https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME/. So, if your GitHub username is bonjovi and your project file is blaze-of-glory, your `baseURL` would be https://bonjovi.github.io/blaze-of-glory/. (Note: your GitHub username can also be your organization name if that is how your account is set-up in GitHub.)
 

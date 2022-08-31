@@ -64,7 +64,7 @@ Like the TOC, the sidebar Menu is generated automatically by Quire based on the 
 
 Unlike the TOC, the Menu is a built-in part of every Quire project and does not have its own Markdown page.
 
-There are two different Menu styles, `list` (the default) and `brief`, that match those in the [TOC styles](#toc-styles) listed previously. The Menu styles can be chosen with the `menuClass` setting in your Quire project's `config.yml` file.
+There are two different Menu styles, `list` (the default) and `brief`, that match those in the [TOC styles](#toc-styles) listed previously. The Menu styles can be chosen with the `menuClass` setting in your Quire project's `config.yaml` file.
 
 ```yaml
 menuClass: list
@@ -76,7 +76,7 @@ menuClass: list
 
 ### Menu Other Formats & Footer Links
 
-Following the list of contents in the Menu is a section with download links for the other formats of your Quire project. These are listed in the `publication.yml` file of your project in the `resource_link` list. Any link listed here with a `type: other-format` will show up in the “Other Formats” link list in the Menu. The `name` attribute provides the text for the link as it appears.
+Following the list of contents in the Menu is a section with download links for the other formats of your Quire project. These are listed in the `publication.yaml` file of your project in the `resource_link` list. Any link listed here with a `type: other-format` will show up in the “Other Formats” link list in the Menu. The `name` attribute provides the text for the link as it appears.
 
 ```yaml
 - type: other-format
@@ -98,10 +98,10 @@ Read more about [resource links in the *Metadata & Configuration* chapter](/docu
 
 ### Other Menu Items
 
-The publisher logo, copyright statement, and license information found in the Menu are all generated from YAML in the `publication.yml` file of your project.
+The publisher logo, copyright statement, and license information found in the Menu are all generated from YAML in the `publication.yaml` file of your project.
 
 Read more about [copyright and licenses in the *Metadata & Configuration* chapter](/documentation/metadata-configuration/#copyright--license) of this guide.
 
-Similarly, the “Cite This Page” feature in the Menu generates Chicago- and MLA-style citations for the current page based on YAML in the individual page itself, as well as that from the `publication.yml` file.
+Similarly, the “Cite This Page” feature in the Menu generates Chicago- and MLA-style citations for the current page based on YAML in the individual page itself, as well as that from the `publication.yaml` file.
 
 Read more about [citation-related YAML in the *Copyright & About Pages*](/documentation/copyright-about-pages/) chapter of this guide.

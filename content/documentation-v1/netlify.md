@@ -21,7 +21,7 @@ Instead of providing a `Production` directory or `Build` directory, you can crea
 
 ```json
 "scripts": {
- "build:netlify": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml"
+ "build:netlify": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yaml,config/site.yaml"
 }
 ```
 
@@ -84,7 +84,7 @@ Our scripts block will now be
 
 ```json
 "scripts": {
-"build": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yml,config/site.yml",
+"build": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify --config config.yaml,config/site.yaml",
 "build:stage": "webpack --config webpack/webpack.config.prod.js && cd ../../ && hugo --minify -D"
 }
 ```

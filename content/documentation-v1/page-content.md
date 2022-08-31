@@ -24,7 +24,7 @@ You can read all about Markdown syntax and how it is used in Quire in the [*YAML
 
 ## Use Shortcodes to Add Features
 
-Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. While {{< q-def "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`. Shortcodes are always formatted with a combination of curly brackets and angle brackets with the name of the shortcode inside (`{{</* q-shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yml` file.
+Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yaml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. While {{< q-def "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`. Shortcodes are always formatted with a combination of curly brackets and angle brackets with the name of the shortcode inside (`{{</* q-shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yaml` file.
 
 ```go
 {{</* q-figure id="3.1" */>}}
@@ -50,10 +50,10 @@ Text goes here
 The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes API reference](/documentation/for-developers/#shortcodes-api).
 
 - `q-class`: As demonstrated above, wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom styles or interactions as needed.
-- [`q-bibliography`](/documentation/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yml` file.
+- [`q-bibliography`](/documentation/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yaml` file.
 - [`q-cite`](/documentation/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and an in-text (or hover pop-up) citation. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
 - [`q-contributor`](/documentation/contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
-- [`q-figure`](/documentation/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yml` file, or from values supplied directly in the shortcode.
+- [`q-figure`](/documentation/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yaml` file, or from values supplied directly in the shortcode.
 - [`q-figure-group`](/documentation/figure-images/): Like `q-figure`, but with handling for multiple images at once.
 
 ## Apply Different Types of Links
@@ -69,7 +69,7 @@ External links can be included through the following Markdown formatting:
 [Getty Museum](https://www.getty.edu/museum/)
 ```
 
-These are set by default to open in new pages, but you can change that by setting `hrefTargetBlank` to `true` in the config.yml file.
+These are set by default to open in new pages, but you can change that by setting `hrefTargetBlank` to `true` in the config.yaml file.
 
 ### Internal Links Between Pages
 
@@ -87,7 +87,7 @@ There are several types of linking between features, text, or objects on a singl
 
 #### Links to Figures
 
-This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images*](/documentation/figure-images/) chapter of this guide. They are proceeded by the # symbol when used as a link address.
+This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yaml` page as explained in the [*Figure Images*](/documentation/figure-images/) chapter of this guide. They are proceeded by the # symbol when used as a link address.
 
 ```md
 [number or name of figure](#figureid)
@@ -134,7 +134,7 @@ See [note 3, chapter 2](/chapter-2/#fn:3)
 
 #### Citations
 
-When the citation shortcode `{{</* q-cite "author date" "page #" */>}}` is used in a body of text and corresponds to the short and full bibliographic information provided in the `references.yml` file, an in-page bibliography will be generated and linked to. This linking is completed automatically.
+When the citation shortcode `{{</* q-cite "author date" "page #" */>}}` is used in a body of text and corresponds to the short and full bibliographic information provided in the `references.yaml` file, an in-page bibliography will be generated and linked to. This linking is completed automatically.
 
 When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
 
