@@ -7,7 +7,7 @@ online: false
 
 ## Steps for Using Quire and GitHub Together
 
-The following steps are examples of a potential workflow when using GitHub as a project management tool alongside Quire. Creating branches and making pull requests are an optional way of working that provides extra checks and balances. You can learn more about GitHub in the [*Project Management for GitHub*](/documentation/github) section of our documentation.
+The following steps are examples of a potential workflow when using GitHub as a project management tool alongside Quire. Creating branches and making pull requests are an optional way of working that provides extra checks and balances. You can learn more about GitHub in the [*Project Management for GitHub*](/docs-v1/github) section of our documentation.
 
 ### Host Your Quire Project on Github
 *The most common way to get started with GitHub is to upload or host your project on the platform.*

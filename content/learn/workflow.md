@@ -30,7 +30,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 - The **project editor** meets with the **digital team** to review content and begin discussing the form the Quire publication will take. Three things are covered:
 
-    1. Any special tagging that needs to be done to the files to ensure a clear conversion from a Word document into a [Markdown](/documentation/fundamentals/#markdown-basics) file. This helps the text-editing process run smoothly and efficiently.
+    1. Any special tagging that needs to be done to the files to ensure a clear conversion from a Word document into a [Markdown](/docs-v1/fundamentals/#markdown-basics) file. This helps the text-editing process run smoothly and efficiently.
 
     2. Special requirements such as the use of videos, pop-ups, IIIF images, etc.
 
@@ -52,17 +52,17 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 -   The **digital team** creates a repository for the project in GitHub.
 
--   The **digital team** uses Pandoc to convert the manuscript Word files into Markdown files. See our [Pandoc instructions](/documentation/fundamentals/#microsoft-word-to-markdown-conversion) in the Quire documentation for more information about this process.
+-   The **digital team** uses Pandoc to convert the manuscript Word files into Markdown files. See our [Pandoc instructions](/docs-v1/fundamentals/#microsoft-word-to-markdown-conversion) in the Quire documentation for more information about this process.
 
--   The **digital team** uses [GitHub Desktop](/documentation/github/) to clone the project repository and create a `first-pages` branch. This marks the beginning of *first pages* (in other words, the first digital draft of the project).
+-   The **digital team** uses [GitHub Desktop](/docs-v1/github/) to clone the project repository and create a `first-pages` branch. This marks the beginning of *first pages* (in other words, the first digital draft of the project).
 
--   The **digital team** uses a text editor to open the project and create a [publication outline](/documentation/getting-started/#create-a-publication-outline) with placeholder Markdown files and landing pages structured according to the publication's Table of Contents. The converted Markdown is then added to the corresponding content files.
+-   The **digital team** uses a text editor to open the project and create a [publication outline](/docs-v1/getting-started/#create-a-publication-outline) with placeholder Markdown files and landing pages structured according to the publication's Table of Contents. The converted Markdown is then added to the corresponding content files.
 
 -   The **digital team** creates the publication's data files (`publication.yaml`, `figures.yaml`, `references.yaml`, etc.) and cleans up YAML formatting on individual Markdown files.
 
 -   The **digital team** processes the publication images and creates a [git submodule](https://github.blog/2016-02-01-working-with-submodules/) The submodule creates a private repository for third-party assets. It is only required when the main project is a public repository.
 
--   Once the submodule is ready, images can be placed in the Markdown files using the figure shortcode. Other [shortcodes](/documentation/page-content/#use-shortcodes-to-add-features) are added where necessary.
+-   Once the submodule is ready, images can be placed in the Markdown files using the figure shortcode. Other [shortcodes](/docs-v1/page-content/#use-shortcodes-to-add-features) are added where necessary.
 
 <div class="box tip">
 
