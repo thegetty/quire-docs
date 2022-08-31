@@ -5,26 +5,27 @@ type: essay
 abstract: "Understand the basics of working in plain-text format"
 ---
 
-Content is stored in two different plain-text formats in Quire: YAML (*yam-ul*) for data, and Markdown for more narrative or textual content. Markdown is used in standalone `.md` files in the `content` directory of every Quire project. YAML is found in `.yaml` files in the `data` directory, in the configuration files, and at the top of every Markdown file.
+Content is stored in two different plain-text formats in Quire: YAML (*yam-ul*) for data, and Markdown for more narrative or textual content. Markdown is used in standalone `.md` files in the `content` directory of every Quire project. YAML is found in the `.yaml` files in the `content/_data` directory, in the configuration files, and at the top of every Markdown file.
 
 ## YAML Basics
 
 YAML is designed to be a plain-text way of capturing data. The general principal is to have the name of a data item (a key), followed by a colon, a space, and then the data item’s value. A key-value pair.
 
 ```yaml
-title: My Book
+title: My Project
 ```
 
 Each line in YAML is a new item. Dashes represent individual items in a list. In the example below, there are two contributors, each with a first and last name.
 
 ```yaml
-item:
-other_item:
-multiple_items:
-  - item_name:
-    item_description:
-  - item_name:
-    item_description:
+title:
+order:
+layout:
+contributor:
+  - first_name:
+    last_name:
+  - first_name:
+    last_name:
 ```
 
 Note that indentations matter in YAML. If any of the items above were indented even just one space more or less from where they are, the YAML would not be formatted correctly, and the Quire preview and output functions would not work. YAML items and list items should always line up with one another.
@@ -54,28 +55,28 @@ YAML block entries can be in any order. It doesn't matter if you write:
 ```yaml
 ---
 title: Cheatsheet
-type: page
+layout: page
 ---
 ```
 Or:
 
 ```yaml
 ---
-type: page
+layout: page
 title: Cheatsheet
 ---
 ```
 
-Certain formatting and characters (like colons within the text, or lines leading off with asterisks meant to italicize some of the text) can cause issues. In the example above, `title: My Chapter` without *My Chapter* in quotes works just fine, but more complicated cases might arise. In these cases, double quotes will help to avoid issues.
+YAML values should always be surrounded by straight quotes (" ") to ensure Quire reads the data correctly, otherwise, certain formatting and characters (like colons or asterisks) can cause issues.
 
 ```yaml
 description: "*My Chapter* is about colons :)"
 ```
 
-Anything can go within double-quotes, except for other double-quotes. If you need double-quotes, use “curly quotes”, or use a backslash to escape the double quote `\"`.
+Sometimes a caption or a chapter title will also include the use of quotations. However, two sets of straight quotes will result in an error. To avoid this, surround the caption text with straight quotes, and then use curly quotes within. To achieve this, highlight the phrase that needs curly quotes and press `Option-[`. Another option is to copy and paste them from [https://unicode-table.com/en/](https://unicode-table.com/en/).
 
 ```yaml
-title: "“Ah ha!” Amazing Double-quote (\") Tricks!"
+title: "“Ah ha!” Curly Quotes for the Win"
 ```
 
 {{< q-class "box tip" >}}
@@ -224,7 +225,7 @@ Footnotes can also include Markdown formatting, including lists and even multipl
 
 ### Markdown and HTML
 
-You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Styles Customization*](/docs-v1/styles-customization/) chapter of this guide.) Note, however, that you can do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode.
+You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Styles Customization*](/docs-v1/styles-customization/) chapter of this guide.) Note, however, that you can do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags.
 
 {{< q-class "box tip" >}}
 - For the things Markdown can’t do, Quire includes number of useful {{< q-def "shortcodes" >}}. You’ll read more about them in other chapters of this guide. A complete list is available in the [shortcode reference section](/docs-v1/for-developers/#shortcodes-api).
@@ -255,24 +256,9 @@ You will see a `fractions` attribute with a value of "false" in the `config.yaml
 
 2. &#40;c&#41; will automatically render as ©.
 
-
-## Markdown Preview
-
-Many text editors offer a preview function for Markdown, either pre-installed or as an add-on. In Atom for instance, a Markdown file can be previewed by selecting Packages > Markdown Preview > Toggle Preview (or just Shift-Control-M). The preview won’t match the style of your publication site, but will have default styling for headings, blockquotes, links and the like to allow you to confirm proper formatting.
-
-Outside of more code-driven text editors, there are also a growing number of Markdown-specific editors. [Typora](https://typora.io/), for instance, offers a single-page live preview by displaying styled Markdown-formatted text as you type it.
-
-## Markdown Output Configuration
-
-Hugo has a built-in Markdown processor, {{< q-def "Blackfriday" >}}, which comes with some configuration options that can be applied in your project’s `config.yaml` file. Details can be found [in the Hugo documentation](https://gohugo.io/getting-started/configuration/#configure-blackfriday).
-
-By default, in the `config.yaml` file of your Quire project, {{< q-def "Blackfriday" >}}'s `fraction` option has been set to `false` (text that looks like a fraction won’t be automatically formatted as such), and the `hrefTargetBlank` option set to `true` (external links will open in new windows/tabs).
-
 ## Markdown Resources
 
-This guide doesn’t cover all existing Markdown tags, but there are some good sources that will help you find the right syntax to format your text. For example, the Programming Historian provides an [introductory lesson to Markdown](https://programminghistorian.org/lessons/getting-started-with-markdown), and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site [Daring Fireball](https://daringfireball.net/projects/markdown/).
-
-Be aware of the multiple [Markdown flavors](https://github.com/commonmark/CommonMark/wiki/Markdown-Flavors) out there and the fact that not all flavors are supported by Blackfriday.
+This guide doesn’t cover all existing Markdown tags, but there are some good sources that will help you find the right syntax to format your text. For example, the Programming Historian provides an [introductory lesson to Markdown](https://programminghistorian.org/lessons/getting-started-with-markdown), and John Gruber, the creator of Markdown, provides a comprehensive explanation of the basics and syntax on his personal site [Daring Fireball](https://daringfireball.net/projects/markdown/). 
 
 ## Microsoft Word to Markdown Conversion
 
