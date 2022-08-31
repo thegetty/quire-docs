@@ -5,7 +5,7 @@ type: essay
 abstract: "Adding high-resolution zooming images to your project"
 ---
 
-To add high-resolution zooming images to your project, Quire uses the [International Image Interoperability Framework (IIIF)](https://iiif.io/). Within your Quire project, you can either point to existing IIIF assets or create your own. IIIF zooming images can be displayed within your Markdown pages using the `q-figure-zoom` shortcode or  the built-in image viewer on entry pages. (Learn more about entry pages in the [*Collection Catalogues*](/documentation/collection-catalogues) section of this documentation.)
+To add high-resolution zooming images to your project, Quire uses the [International Image Interoperability Framework (IIIF)](https://iiif.io/). Within your Quire project, you can either point to existing IIIF assets or create your own. IIIF zooming images can be displayed within your Markdown pages using the `q-figure-zoom` shortcode or  the built-in image viewer on entry pages. (Learn more about entry pages in the [*Collection Catalogues*](/docs-v1/collection-catalogues) section of this documentation.)
 
 ## What is IIIF?
 
@@ -121,7 +121,7 @@ Use the table below to size your source images prior to IIIF processing. Images 
 
 \* *Currently, Quire is currently set to do a maximum of 6 levels of image tiling. This can be expanded but requires a code change to both the Quire CLI and the JavaScript of your project’s theme.*
 
-For images smaller than 2,304px on the longest side, we recommend including them as regular non-IIIIF images. Typically, a JPEG of around 1,800px on the longest side, and at 70–80% quality, will provide both a decent web experience and work for printing in the PDF, without being too large of a file size. Read more in the [*Figure Images*](/documentation/figure-images/) chapter of the documentation.
+For images smaller than 2,304px on the longest side, we recommend including them as regular non-IIIIF images. Typically, a JPEG of around 1,800px on the longest side, and at 70–80% quality, will provide both a decent web experience and work for printing in the PDF, without being too large of a file size. Read more in the [*Figure Images*](/docs-v1/figure-images/) chapter of the documentation.
 
 ### 2. Process Images Into IIIF Tiles
 
@@ -172,13 +172,13 @@ Along with the path to the `info.json` file, you also need to include `media_typ
   iiif: "https://data.getty.edu/museum/api/iiif/671108/info.json"
 ```
 
-The image can then be added to your Markdown files using the `q-figure-zoom` shortcode, as shown below. This will display the static image on the page, and then when clicked, will open the figure viewer for the fully zoomable IIIF version. (See the page on [*Figure Images*](/documentation/figure-images/) for more information on the `figures.yaml` file and other figure shortcodes.)
+The image can then be added to your Markdown files using the `q-figure-zoom` shortcode, as shown below. This will display the static image on the page, and then when clicked, will open the figure viewer for the fully zoomable IIIF version. (See the page on [*Figure Images*](/docs-v1/figure-images/) for more information on the `figures.yaml` file and other figure shortcodes.)
 
 ```go
 {{</* q-figure-zoom id="irises" */>}}
 ```
 
-IIIF Images can also be displayed in the built-in image viewer on [entry pages](/documentation/pages). Do this by including the appropriate `id` in the [object data](/documentation/collection-catalogues/#capture-object-data) in your `objects.yaml` file.
+IIIF Images can also be displayed in the built-in image viewer on [entry pages](/docs-v1/pages). Do this by including the appropriate `id` in the [object data](/docs-v1/collection-catalogues/#capture-object-data) in your `objects.yaml` file.
 
 ```yaml
 object_list:
@@ -202,7 +202,7 @@ The static fallback image is required for displaying a version of the IIIF image
 src: "figures/irises.jpg"
 ```
 
-Like with other non-zooming figure images, these static images for IIIF would typically be a JPEG of around 1,800px on the longest side and 70–80% quality. These specs provide both a decent web experience and work for printing in the PDF without being too large of a file size. Read more in the [*Figure Images*](/documentation/figure-images/) chapter of the documentation.
+Like with other non-zooming figure images, these static images for IIIF would typically be a JPEG of around 1,800px on the longest side and 70–80% quality. These specs provide both a decent web experience and work for printing in the PDF without being too large of a file size. Read more in the [*Figure Images*](/docs-v1/figure-images/) chapter of the documentation.
 
 ### Set the Zoom Level
 

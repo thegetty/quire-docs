@@ -15,7 +15,7 @@ weight: 2
 type: contents
 ```
 
-From there, Quire will automatically generate the TOC based on the structure of the files in your `content` directory (including assigned page weights and the organization of the section and sub-section directories) and the metadata of each page (the title, subtitle, contributors, etc.) Please see the [*Page Types & Structure*](/documentation/pages/) section of our documentation for more information.
+From there, Quire will automatically generate the TOC based on the structure of the files in your `content` directory (including assigned page weights and the organization of the section and sub-section directories) and the metadata of each page (the title, subtitle, contributors, etc.) Please see the [*Page Types & Structure*](/docs-v1/pages/) section of our documentation for more information.
 
 ### TOC Styles
 
@@ -94,14 +94,14 @@ Similarly, links in the bottom footer of the Menu, are also created from links l
   url: https://www.getty.edu/legal/privacy.html
 ```
 
-Read more about [resource links in the *Metadata & Configuration* chapter](/documentation/metadata-configuration/#formats-resources--links) of this guide.
+Read more about [resource links in the *Metadata & Configuration* chapter](/docs-v1/metadata-configuration/#formats-resources--links) of this guide.
 
 ### Other Menu Items
 
 The publisher logo, copyright statement, and license information found in the Menu are all generated from YAML in the `publication.yaml` file of your project.
 
-Read more about [copyright and licenses in the *Metadata & Configuration* chapter](/documentation/metadata-configuration/#copyright--license) of this guide.
+Read more about [copyright and licenses in the *Metadata & Configuration* chapter](/docs-v1/metadata-configuration/#copyright--license) of this guide.
 
 Similarly, the “Cite This Page” feature in the Menu generates Chicago- and MLA-style citations for the current page based on YAML in the individual page itself, as well as that from the `publication.yaml` file.
 
-Read more about [citation-related YAML in the *Copyright & About Pages*](/documentation/copyright-about-pages/) chapter of this guide.
+Read more about [citation-related YAML in the *Copyright & About Pages*](/docs-v1/copyright-about-pages/) chapter of this guide.

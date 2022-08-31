@@ -43,9 +43,9 @@ In addition to telling Quire what to do, the command-line shell can also be used
 
 Now that you understand how to use the command-line shell, follow the steps in the documentation links below and use it to install Quire:
 
-- [MacOS installation ](/documentation/install-uninstall/#macos-installation)
-- [Windows installation](/documentation/install-uninstall/#windows-installation)
-- [Linux](/documentation/install-uninstall/#linux-installation)
+- [MacOS installation ](/docs-v1/install-uninstall/#macos-installation)
+- [Windows installation](/docs-v1/install-uninstall/#windows-installation)
+- [Linux](/docs-v1/install-uninstall/#linux-installation)
 
 ## 3. Create a New Project
 
@@ -111,7 +111,7 @@ subtitle: "The Works of Dorothea Lange and Walker Evans"
 - If you can't pinpoint what's causing an error, copy and paste your YAML text into an online [YAML validator](https://codebeautify.org/yaml-validator), which will alert you to any formatting issues.
 {{< /q-class >}}
 
-*To learn more about the way metadata is used in Quire, visit the [Metadata & Configuration](/documentation/metadata-configuration/) section of this guide.*
+*To learn more about the way metadata is used in Quire, visit the [Metadata & Configuration](/docs-v1/metadata-configuration/) section of this guide.*
 
 ### Try it for Yourself
 
@@ -136,7 +136,7 @@ order:
 ---
 ```
 
-*Learn more in the [Pages Types & Structures](/documentation/page-types) section of this guide.*
+*Learn more in the [Pages Types & Structures](/docs-v1/page-types) section of this guide.*
 
 ### Try it For Yourself
 
@@ -157,7 +157,7 @@ Here are some of the things you can do with Markdown:
 - Add a second-level heading by putting the text on it’s own line, preceded by two hashmarks: `## Heading 2`.
 - Add a link by putting the link text in square brackets followed by the URL in parentheses: `[click here](http://www.myurl.com)`.
 
-*Learn more in the [YAML & Markdown](/documentation/yaml-markdown) section of this guide.*
+*Learn more in the [YAML & Markdown](/docs-v1/yaml-markdown) section of this guide.*
 
 ### Try it for Yourself
 
@@ -216,7 +216,7 @@ figures/lange-house.jpg
 
 Variables live inside the `content/_assets/styles` folder in a file called `variables.scss`. Here you’ll find a number of variables, prefixed with a dollar sign `$`, that are descriptive of what they control.
 
-*Read more about applying your own custom CSS styles, altering page templates, and creating a new theme in the [“Customizing Styles”](/documentation/styles-customization/) section of this guide.*
+*Read more about applying your own custom CSS styles, altering page templates, and creating a new theme in the [“Customizing Styles”](/docs-v1/styles-customization/) section of this guide.*
 
 ### Try it for Yourself
 
@@ -241,7 +241,7 @@ Once you've played around with adding content and customizing your project, it's
 - You can run the output commands anytime, and re-run them to update as you make changes to your project files.
 {{< /q-class >}}
 
-*Read more about outputting your publication files and deploying your project in the [“Output Your Project”](/documentation/multiformat-output/)and ["Deploy Your Project"](/documentation/site-deploy/) sections of this guide.*
+*Read more about outputting your publication files and deploying your project in the [“Output Your Project”](/docs-v1/multiformat-output/)and ["Deploy Your Project"](/docs-v1/site-deploy/) sections of this guide.*
 
 
 ### Try it For Yourself

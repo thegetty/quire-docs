@@ -123,7 +123,7 @@ Headings are created with hashmarks. The number of hashmarks corresponds to the 
 #### Heading 4
 ##### Heading 5
 
-Start your content headings with Heading 2 tags rather than Heading 1. Heading 1 should be reserved for the page title and will be automatically generated in Quire. And, for truly accessible documents, headings should be thought of as levels of your content outline, not as sizes large to small. See our [*Accessibility Principals*](/documentation/accessibility-principles/) for more on this.
+Start your content headings with Heading 2 tags rather than Heading 1. Heading 1 should be reserved for the page title and will be automatically generated in Quire. And, for truly accessible documents, headings should be thought of as levels of your content outline, not as sizes large to small. See our [*Accessibility Principals*](/docs-v1/accessibility-principles/) for more on this.
 
 ### Italic and Bold
 
@@ -224,10 +224,10 @@ Footnotes can also include Markdown formatting, including lists and even multipl
 
 ### Markdown and HTML
 
-You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Styles Customization*](/documentation/styles-customization/) chapter of this guide.) Note, however, that you can do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode.
+You can also use HTML tags in a Markdown file. This can be convenient for adding HTML elements that Markdown doesn’t support, or for applying special styling. For instance, by wrapping text with a `<span>` tag with a class in order to add custom styling. (See more about this in the [*Styles Customization*](/docs-v1/styles-customization/) chapter of this guide.) Note, however, that you can do the same by wrapping multiple paragraphs of Markdown in `<div>`, `<section>` or other block-level tags. For this, you need the `q-class` shortcode.
 
 {{< q-class "box tip" >}}
-- For the things Markdown can’t do, Quire includes number of useful {{< q-def "shortcodes" >}}. You’ll read more about them in other chapters of this guide. A complete list is available in the [shortcode reference section](/documentation/for-developers/#shortcodes-api).
+- For the things Markdown can’t do, Quire includes number of useful {{< q-def "shortcodes" >}}. You’ll read more about them in other chapters of this guide. A complete list is available in the [shortcode reference section](/docs-v1/for-developers/#shortcodes-api).
 
 {{< / q-class >}}
 

@@ -5,7 +5,7 @@ type: essay
 abstract: "Learn various methods to preview & deploy your project online"
 ---
 
-A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from the hosting service of your choice. You do not need any special back-end setup. If you plan to include PDF and e-book files as part of you published project, it's important that you start by following the directions in the [*Output Your Project*](/documentation/multiformat-output/) section of the documentation before proceeding.
+A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from the hosting service of your choice. You do not need any special back-end setup. If you plan to include PDF and e-book files as part of you published project, it's important that you start by following the directions in the [*Output Your Project*](/docs-v1/multiformat-output/) section of the documentation before proceeding.
 
 ## Basic Deploy
 
@@ -18,14 +18,14 @@ When hosting a Quire site, you will typically follow these steps:
 If you do not already have a web server or hosting plan, we recommend using either [Netlify](https://www.netlify.com) or [GitHub Pages](https://pages.github.com/).
 
 {{< q-class "box tip" >}}
-- Netlify's "Continuous Deployment" option and Github Pages require a basic understanding of how to create a repository, and commit and merge changes changes. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/github) to learn by topic or by visiting the [*Project Management with GitHub*](/documentation/github) section of our documentation. We also encourage you to check out Coding Train’s video series [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).
+- Netlify's "Continuous Deployment" option and Github Pages require a basic understanding of how to create a repository, and commit and merge changes changes. If you are new to GitHub, we recommend starting with [GitHub Docs](https://docs.github.com/en/github) to learn by topic or by visiting the [*Project Management with GitHub*](/docs-v1/github) section of our documentation. We also encourage you to check out Coding Train’s video series [Git and Github for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV).
 {{< /q-class >}}
 
 ## Netlify
 
 Netlify enables you to create a quick preview site by using your project's `site` files or by connecting it with your Github account to generate a shareable preview site that automatically updates every time you push changes to GitHub. (Please note, while we use GitHub and reference it throughout our documentation, you can also link Netlify to your GitLab or BitBucket account.) You can also use Netlify to host your final project when it's ready to publish.
 
-To learn more about connecting domains, build configuration, private submodules, and using Git Large File Storage with Netlify, see [*Additional Netlify Tips*](/documentation/netlify/).
+To learn more about connecting domains, build configuration, private submodules, and using Git Large File Storage with Netlify, see [*Additional Netlify Tips*](/docs-v1/netlify/).
 
 To get started, [sign up](https://app.netlify.com/signup) for a Netlify account and, optionally, connect it with your GitHub account.
 
@@ -97,7 +97,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 ### Preview Your Project with Github Pages
 
-1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/documentation/github) section of our documentation to create a repository for your project.
+1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/docs-v1/github) section of our documentation to create a repository for your project.
 
 2. In your text editor, open the `config/environments/github.yaml` file.
 

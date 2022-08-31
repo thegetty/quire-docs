@@ -305,7 +305,7 @@ Type: Array
 | `date_start`, `date_end` | integer | Reserved for future use in Quire. |
 | `dimension_width`, `dimension_height`, `dimension_depth` | integer | Reserved for future use in Quire. |
 
-Objects also support arbitrary attributes, which might include `title`, `artist`, `collection`, etc. Those added will be output in a table on collection catalogue entry pages. The ordering of the display can be controlled with `object_display_order` in `objects.yaml`. See [*Guide on Collection Catalogues*](/documentation/collection-catalogues/).
+Objects also support arbitrary attributes, which might include `title`, `artist`, `collection`, etc. Those added will be output in a table on collection catalogue entry pages. The ordering of the display can be controlled with `object_display_order` in `objects.yaml`. See [*Guide on Collection Catalogues*](/docs-v1/collection-catalogues/).
 
 ## Page API
 
@@ -319,14 +319,14 @@ Type: Object
 | `title` | string | |
 | `subtitle` | string | |
 | `short_title` | string | Used in navigation items where a long title would be too unwieldy. |
-| `type` | "page" (default), "essay", "entry", "cover", "contents", "splash", or "data" | See [*Define Page Types*](/documentation/pages/#define-page-types) for examples |
+| `type` | "page" (default), "essay", "entry", "cover", "contents", "splash", or "data" | See [*Define Page Types*](/docs-v1/pages/#define-page-types) for examples |
 | `class` | string | Can accept any string, which will be included as a class in the main page element to facilitate style customization. A number of pre-defined classes also exist in the [Quire Default Theme](https://github.com/thegetty/quire/tree/main/themes/default). Pages with `type: contents` can have class `list` (default), `brief`, `abstract`, or `grid`. Pages with `type: entry` can have class `landscape` (default) or `side-by-side`. |
 | `weight` | integer | Controls ordering of pages in the publication. |
-| `object` | [array](#object_list) | See [*Catalogue Entries*](/documentation/collection-catalogues/). |
-| `contributor` | [array](#contributor) | See [*Contributors*](/documentation/contributors/). |
+| `object` | [array](#object_list) | See [*Catalogue Entries*](/docs-v1/collection-catalogues/). |
+| `contributor` | [array](#contributor) | See [*Contributors*](/docs-v1/contributors/). |
 | `contributor_byline` | boolean | |
 | `abstract` | string | Markdown okay. |
-| `slug` | url path | Will change the URL of the page. Or use a period `.` to make the URL be the directory name (homepage). Read more in the [*Page Types & Structure*](/documentation/pages/#creating-section-landing-pages) chapter of this guide.|
+| `slug` | url path | Will change the URL of the page. Or use a period `.` to make the URL be the directory name (homepage). Read more in the [*Page Types & Structure*](/docs-v1/pages/#creating-section-landing-pages) chapter of this guide.|
 | `toc` | boolean | Default is "true". Page will not display in contents page if "false". |
 | `menu` | boolean | Default is "true". Page will not display in menu if "false". |
 | `online` | boolean | Default is "true". Page will not display in the online edition if "false". |
@@ -350,7 +350,7 @@ Used for styling. Wrapping any Markdown text in this shortcode will wrap it in a
 
 ### `q-bibliography`
 
-Generates a bibliography from the entries in the project's `bibliography.yaml` file. See [*Citations & Bibliographies*](/documentation/citation-bibliographies/).
+Generates a bibliography from the entries in the project's `bibliography.yaml` file. See [*Citations & Bibliographies*](/docs-v1/citation-bibliographies/).
 
 `{{</* q-bibliography sort="" */>}}`
 
@@ -360,7 +360,7 @@ Generates a bibliography from the entries in the project's `bibliography.yaml` f
 
 ### `q-cite`
 
-Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages. See [*Citations & Bibliographies*](/documentation/citation-bibliographies/).
+Adds a linked Author Date citation reference to the text, and a hover pop-up with the full citation text. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages. See [*Citations & Bibliographies*](/docs-v1/citation-bibliographies/).
 
 `{{</* q-cite "" "" "" */>}}`
 
@@ -372,7 +372,7 @@ Adds a linked Author Date citation reference to the text, and a hover pop-up wit
 
 ### `q-contributor`
 
-Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs. See [*Contributors*](/documentation/contributors/).
+Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs. See [*Contributors*](/docs-v1/contributors/).
 
 `{{</* q-contributor range="" format="" align="" */>}}`
 
@@ -384,7 +384,7 @@ Can be used to create a page of contributor biographies, a section of bios for a
 
 ### `q-figure`
 
-Inserts a formatted figure image, label, caption and credit line. If using a `data/figures.yaml` file, only an `id` parameter is required for this shortcode. If other values supplied directly in the shortcode they will override any corresponding values in the `data/figures.yaml`. See [*Figure Images*](/documentation/figure-images/) and [`figure_list`](#figure_list) above.
+Inserts a formatted figure image, label, caption and credit line. If using a `data/figures.yaml` file, only an `id` parameter is required for this shortcode. If other values supplied directly in the shortcode they will override any corresponding values in the `data/figures.yaml`. See [*Figure Images*](/docs-v1/figure-images/) and [`figure_list`](#figure_list) above.
 
 `{{</* q-figure id="" src="" label="" caption="" credit="" alt="" class="" */>}}`
 
@@ -400,7 +400,7 @@ Inserts a formatted figure image, label, caption and credit line. If using a `da
 
 ### `q-figure-group`
 
-Like `q-figure`, but with handling for multiple images at once. See [*Figure Images*](/documentation/figure-images/) and [`figure_list`](#figure_list) above.
+Like `q-figure`, but with handling for multiple images at once. See [*Figure Images*](/docs-v1/figure-images/) and [`figure_list`](#figure_list) above.
 
 `{{</* q-figure-group id=" , , " grid="" src="" label="" caption="" credit="" class="" */>}}`
 
@@ -415,7 +415,7 @@ Like `q-figure`, but with handling for multiple images at once. See [*Figure Ima
 
 ### `q-figure-zoom`
 
-Uses IIIF to add high resolution images with deep-zoom capabilities. See [*Zooming Images with IIIF*](/documentation/zooming-images/)
+Uses IIIF to add high resolution images with deep-zoom capabilities. See [*Zooming Images with IIIF*](/docs-v1/zooming-images/)
 
 | Parameter | Expected Value  | Description |
 | --- | --- | --- |
