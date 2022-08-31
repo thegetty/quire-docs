@@ -15,7 +15,7 @@ abstract: "Is Quire right for you and your project?"
 
 - Quire is compatible with macOS and Windows. Currently, support is better for macOS.
 
-- [Installing Quire](/documentation/install-uninstall/) also requires installing a number of third-party applications. It is recommended to do so with care, and to consult with your institution’s technology department if you’re using a work machine.
+- [Installing Quire](/docs-v0/install-uninstall/) also requires installing a number of third-party applications. It is recommended to do so with care, and to consult with your institution’s technology department if you’re using a work machine.
 
 - A standard web server / hosting service is required for publishing your project, but no special server software or setup is required.
 

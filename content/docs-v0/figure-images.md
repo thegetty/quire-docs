@@ -20,12 +20,12 @@ Quire does not require a specific image file format or size, but we have some re
 - Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use {{< q-def "Image Optimization" >}} software when possible, and consider the total number of images on a given page when choosing sizes.
 
 {{< q-class "box tip" >}}
-To include deep-zooming images in your Quire project please see the [*Zooming Images with IIIF*](/documentation/zooming-images) section of this guide.
+To include deep-zooming images in your Quire project please see the [*Zooming Images with IIIF*](/docs-v0/zooming-images) section of this guide.
 {{< /q-class >}}
 
 ## Create a figures.yml File for Figure Image Metadata
 
-For most publications, or, at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file, which should be placed in your `data` folder. This figure image metadata can then be called from wherever you need it in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/documentation/for-developers/#figure_list), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
+For most publications, or, at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yml` file, which should be placed in your `data` folder. This figure image metadata can then be called from wherever you need it in your project with a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/docs-v0/for-developers/#figure_list), but below there is a very simple example with `id` and `src` (required attributes) and `alt` (recommended attribute).
 
 ```yaml
 - id: "1.1"
@@ -219,7 +219,7 @@ Additionally, you can add `caption`, `credit`, `class`, and `id` attributes in t
 
 ## Using Alt Text
 
-Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [*Accessibility Principles*](/documentation/accessibility-principles/).
+Unless the figure is purely decorative, it should always also include an alternate textual description (`alt`) for the use of screen readers and other assistive technologies. We recommend using alternate textual description for accessibility purposes. For more information check our [*Accessibility Principles*](/docs-v0/accessibility-principles/).
 
 ```go
 {{</* q-figure src="fig01.jpg" alt="detail of painting showing diagonal brushstrokes in browns and reds" */>}}

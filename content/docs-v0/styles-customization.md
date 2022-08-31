@@ -14,7 +14,7 @@ The look and feel of your Quire publication can be customized at four different 
 
 ## Change the Theme Style Variables
 
-When you first start a new Quire project by running the command `quire new`, a default theme is installed in the project's `themes` directory. This default theme includes a number of default style variables that will let you update text and background colors, some element sizes, fonts, paragraph indents, and more. This allows relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](/documentation/variables) includes information about the customizations available.
+When you first start a new Quire project by running the command `quire new`, a default theme is installed in the project's `themes` directory. This default theme includes a number of default style variables that will let you update text and background colors, some element sizes, fonts, paragraph indents, and more. This allows relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](/docs-v0/variables) includes information about the customizations available.
 
 To find the variables, open the `themes/default` directory, navigate to the `source` sub-directory, and then `css`, and open the file called `variables.scss`.
 

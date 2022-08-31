@@ -49,4 +49,4 @@ contributor:
 - Contributors identified as type: primary will be included in the citation as the publication’s authors
 - If your publication has one or more editors, rather than authors, they should be type: primary, and role: editor in the YAML.
 
-For more information see the chapter on [Contributors](/documentation/contributors/)
+For more information see the chapter on [Contributors](/docs-v0/contributors/)

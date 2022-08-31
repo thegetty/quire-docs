@@ -41,7 +41,7 @@ Follow the steps below to first install the support software for Quire, and then
 
 2. **Node.js** enables you to run javascript on your computer. Download and install the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg).
 
-3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/documentation/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the macOS installer, double-click it and follow the prompts to install: [https://pandoc.org/installing.html](https://pandoc.org/installing.html).
+3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/docs-v0/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the macOS installer, double-click it and follow the prompts to install: [https://pandoc.org/installing.html](https://pandoc.org/installing.html).
 
 4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and download the Mac version: [https://kdp.amazon.com/en_US/help/topic/G202131170](https://kdp.amazon.com/en_US/help/topic/G202131170). Install by double clicking the icon and following the prompts.
 
@@ -62,7 +62,7 @@ Follow the steps below to first install the support software for Quire, and then
     cd
     ```
 
-6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-commands/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
+6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/docs-v0/quire-commands/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
 
     ```text
     npm install --global @thegetty/quire-cli
@@ -70,7 +70,7 @@ Follow the steps below to first install the support software for Quire, and then
 
     The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation.
 
-    To verify installation, enter the command below. This will give you a list of [commands](/documentation/quire-commands/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
+    To verify installation, enter the command below. This will give you a list of [commands](/docs-v0/quire-commands/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
 
     ```text
     quire --help
@@ -121,7 +121,7 @@ The Quire installation process may take a minute or two, during which time there
 
 2. **Node.js** enables you to run javascript on your computer. Download and install **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi](https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi). The MSI installer will be downloaded, open it and a setup wizard screen will guide you through the process.
 
-3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/documentation/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the Pandoc MSI installer file, open it and a setup wizard screen will guide you through the process: [https://pandoc.org/installing.html](https://pandoc.org/installing.html)
+3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/docs-v0/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the Pandoc MSI installer file, open it and a setup wizard screen will guide you through the process: [https://pandoc.org/installing.html](https://pandoc.org/installing.html)
 
 4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and download the Widows version: [https://kdp.amazon.com/en_US/help/topic/G202131170](https://kdp.amazon.com/en_US/help/topic/G202131170). Install by double clicking the icon and following the prompts.
 
@@ -135,7 +135,7 @@ The Quire installation process may take a minute or two, during which time there
 
     This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you’ll see the starting prompt with the name of your computer once it’s complete.
 
-6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Windows PowerShell with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/documentation/quire-commands/) chapter of our guide. Copy and paste the following line into PowerShell to install Quire:
+6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Windows PowerShell with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/docs-v0/quire-commands/) chapter of our guide. Copy and paste the following line into PowerShell to install Quire:
 
     ```text
     npm install --global @thegetty/quire-cli
@@ -143,7 +143,7 @@ The Quire installation process may take a minute or two, during which time there
 
     The Quire installation process may take a minute or two, during which time there will be messaging output in PowerShell. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation.
 
-    To verify installation, enter the command below. This will give you a list of [commands](/documentation/quire-commands/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
+    To verify installation, enter the command below. This will give you a list of [commands](/docs-v0/quire-commands/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
 
     ```text
     quire --help
