@@ -543,7 +543,7 @@ project_list:
     customization_level: moderate
     github_user:
       - materiajournal
-    note: "*Materia* used Quire to create its second journal issue, including zoomable images and dynamic footnotes, and customizing fonts, logos, colors, and a few tables. For the team at *Materia*, Quire has been a great, easy way to publish their peer-reviewed articles on a twice-annual basis!"
+    note: "*Materia* used Quire to create its second journal issue, including zoomable images and dynamic footnotes, and customizing fonts, logos, colors, and a few tables. For the team at *Materia*, Quire has been a great, easy way to publish their peer-reviewed articles on a twice-annual basis."
 
   - id: "clowes_collection"
     src: /screenshots/_clowes_collection.jpg
