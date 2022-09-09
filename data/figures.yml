@@ -75,7 +75,7 @@ figure_list:
     caption: "Basic publication information lives in the `publication.yaml` file, and is used throughout the site. Here we see the title being used on the cover, in the PDF version of the publication, and in the side navigation."
   - id: "quire-starter-content-change-1"
     src: /screenshots/quire-starter-content-change-1.png
-    caption: "Changing the page `title`, `weight` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
+    caption: "Changing the page `title`, `order` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
   - id: "quire-starter-content-change-2"
     src: /screenshots/quire-starter-content-change-2.png
     caption: "Figures are added with a “shortcode” that references an `id`. The `id` is listed in your project's `figures.yaml` file along with a caption and other YAML values."
@@ -93,34 +93,34 @@ figure_list:
     caption: "When publishing a new project repository to GitHub leave the name the same as your project file. You can add add a description if you’d like, can choose whether to make it private or not if you have a paid account, or publish it to an organization account if you have publishing access to one."
   - id: "modern-cover"
     src: /screenshots/modern-cover.png
-    caption: "**`type: cover`** <br /> Cover page in the default modern theme. A custom cover image can be added in the YAML of the cover page: `image: my-cover-image.jpg`."
+    caption: "**`layout: cover`** <br /> Cover page in the default modern theme. A custom cover image can be added in the YAML of the cover page: `image: my-cover-image.jpg`."
   - id: "modern-page"
     src: /screenshots/modern-page.png
-    caption: "**`type: page`** (default) <br /> The basic, default Quire page with title, page content, links and a list. A general publication page. Used for introductions, forewords, chapters, appendices and other pages. Also showing the progress bar at the top that indicates a reader’s place in the publication."
+    caption: "**`layout: page`** (default) <br /> The basic, default Quire page with title, page content, links and a list. A general publication page. Used for introductions, forewords, chapters, appendices and other pages. Also showing the progress bar at the top that indicates a reader’s place in the publication."
   - id: "modern-contents-list"
     src: /screenshots/modern-contents-list.png
-    caption: "**`type: contents`** <br /> **`class: list `** (default)<br /> The default contents page showing the title, subtitle and contributors for each main page and sub-section page. This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory."
+    caption: "**`layout: contents`** <br /> **`presentation: list `** (default)<br /> The default contents page showing the title, subtitle and contributors for each main page and sub-section page. This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory."
   - id: "modern-contents-abstract"
     src: /screenshots/modern-contents-abstract.png
-    caption: "**`type: contents`** <br /> **`class: abstract`** <br /> A maximal version of the contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
+    caption: "**`layout: contents`** <br /> **`presentation: abstract`** <br /> A maximal version of the contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
   - id: "modern-contents-brief"
     src: /screenshots/modern-contents-brief.png
-    caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each top-level page or section."
+    caption: "**`layout: contents`** <br /> **`presentation: brief`** <br /> A minimal version of the contents page showing only the title for each top-level page or section."
   - id: "modern-contents-grid"
     src: /screenshots/modern-contents-grid.png
-    caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/docs-v1/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
+    caption: "**`layout: contents`** <br /> **`presentation: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/docs-v1/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
   - id: "modern-splash"
     src: /screenshots/modern-splash.jpg
-    caption: "**`type: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."
+    caption: "**`layout: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."
   - id: "modern-essay"
     src: /screenshots/modern-essay.png
-    caption: "**`type: essay`** <br /> An essay page showing a page label, contributor, abstract, figure group, links, and footnotes. The essay is a standalone, self-contained article in a periodical or collected volume. This is also reflected in the metadata embedded in the page, which will include more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole."
+    caption: "**`layout: essay`** <br /> An essay page showing a page label, contributor, abstract, figure group, links, and footnotes. The essay is a standalone, self-contained article in a periodical or collected volume. This is also reflected in the metadata embedded in the page, which will include more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole."
   - id: "modern-entry"
     src: /screenshots/modern-entry.png
-    caption: "**`type: entry`** <br /> **`class: landscape`** (default) <br /> An entry page with entry text below and a nearly full-frame image viewer that supports zooming images, maps and videos."
+    caption: "**`layout: entry`** <br /> **`presentation: landscape`** (default) <br /> An entry page with entry text below and a nearly full-frame image viewer that supports zooming images, maps and videos."
   - id: "modern-entry-side"
     src: /screenshots/modern-entry-side.png
-    caption: "**`type: entry`** <br /> **`class: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `entryPageSideBySideLayout: true` in the config.yaml file of the project."
+    caption: "**`layout: entry`** <br /> **`presentation: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `entryPageSideBySideLayout: true` in the config.yaml file of the project."
 
   - id: "modern_contributors-cover"
     src: /screenshots/modern_contributors-cover.jpg
