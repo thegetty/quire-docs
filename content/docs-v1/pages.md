@@ -12,8 +12,8 @@ Every page in a Quire publication starts with a block of {{< q-def "YAML" >}}. T
 ```yaml
 ---
 title:
+layout:
 order:
-weight:
 ---
 ```
 
@@ -68,10 +68,10 @@ The page `layout` must be one of six possible values: `page`, `essay`, `entry`, 
 
 {{< q-figure id="modern-entry-side" >}}
 
-Along with `layout`, Quire pages can also have a `presentation` style. These are applied specifically to the `contents` and `entry` page types to give further control over the layouts of those pages.
+Along with `layout`, Quire pages can also have a `presentation` style. These are applied specifically to the `table-of-contents` and `entry` page types to give further control over the layouts of those pages.
 
 ```yaml
-layout: contents
+layout: table-of-contents
 presentation: list (default) | brief | abstract | grid
 ```
 
@@ -112,23 +112,34 @@ Numbering should be unique, and use sequential whole numbers, but it can skip nu
 
 ## Create Section Landing Pages
 
-A Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. It is recommended (though not required) to designate one of the pages in each sub-directory to be the section landing page. To do so, name the `.md` file for the desired landing page `index.md`. The `title` of your `index.md` file is not only what will be used in places like the header of that page, the table of contents, and the menu of your site, it will also be used to define the URL. For example, if the `title` value of your `index.md` page is `"Landing Page"` then the URL would appear as `my-project.com/landing-page` rather than `my-project.com/index.md`
+A Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. Each sub-section must include an `index.md `file. This will be the landing page for the section.
+
+Files named `index.md`, always inherit the URL of their parent directory. For example, if you have a `content/sub-section/index.md` file, and your project is hosted at the `domain my-project.com`, the URL for the landing page will be `my-project.com/sub-section/`.
+
+If you want to have a sub-section without a landing page, you can add `outputs: none` to the page YAML of the `index.md` file.
+
+The title of the `index.md` file will be what appears in your project’s menu and table of contents.
 
 ## Create Publication Cover Page
 
 The way to create a publication cover page is similar to creating section landing pages. Name the `.md` file for your cover `index.md` and include the `layout` value of `cover`. The cover is usually given a page `order` of `1`. You can also include an attribute of `image` on your cover page and a link to the file. For example, `figures/my-cover-image.jpg`. You may also want to exclude the cover from the menu and table of contents. Learn how to do that in the following section.
 
+Like in the case of sub-sections explained above, `index.md` files always inherit the URL of their parent directory. The `index.md` file used for your cover is in the root, or top-most, directory, and so the URL for it will be the base URL where you host the site.
+
 ## Hide/Show Pages
 
-By default, every page you create will be included in all formats of your publication (online, PDF/print, and e-book). This can be overridden by including an `outputs` attribute and excluding the undesired formats from the array (`epub`, `pdf`, `online`). For example, if you want your Copyright page to appear in the PDF and EPUB but not in the online version, you would exclude `online` from the YAML.
+By default, every page you create will be included in all formats of your publication (html, PDF/print, and e-book). This can be overridden by including an `outputs` attribute and excluding the undesired formats from the array (`epub`, `pdf`, `html`). For example, if you want your Copyright page to appear in the PDF and EPUB formats but not in the online version, you would only list `epub` and `pdf` as page YAML values.
 
 ```YAML
-outputs: [epub, pdf]
+outputs:
+  - epub
+  - pdf
 ```
-Likewise, if you wanted to include the About page in the online edition only then you would exlcude `pdf` and `epub` from the YAML. 
+Likewise, if you wanted to include the About page in the online version and exclude it from the PDF and EPUB formats, you would only list `html`.
 
 ```yaml
-outputs: [online]
+outputs:
+  - html
 ```
 
 Every page will also automatically be listed in the publication’s menu and contents pages. However, this can be overridden by setting any of the following page YAML attributes to `false`.
