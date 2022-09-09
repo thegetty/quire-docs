@@ -15,7 +15,7 @@ The `config.yaml` file is a required file for Quire. It is used to define a numb
 
 The properties in the `config.yaml` file are individually documented in the [*For Developers*](/docs-v1/for-developers/) section, however, a few key items to note:
 
-TK
+[TK]
 
 ## Add and Edit Important Metadata in publication.yaml File
 
@@ -93,17 +93,34 @@ If the `abbreviation` attribute matches one of the seven Creative Commons Licens
 
 ### Formats, Resources, & Links
 
-A publication can have multiple `resource_link` properties, each with the `type` of `other_format`, `related_resource`, or `footer_link`. These items will appear in the sidebar menu of your publication.
+A publication can have multiple `resource_link` properties, each with the `type` of `other-format`, `related-resource`, or `footer-link`. These items will appear in the sidebar menu of your publication.
 
-- `other_format` will be where you can list the PDF, EPUB, and Paperback editions of your publication that Quire produces.
+- `other-format` will be where you can list the PDF, EPUB, and Paperback editions of your publication under the `name` attribute.
 
-- `related_resource` are for additional items you want to point readers to.
+- `related-resource` are for additional items you want to point readers to.
 
-- `footer_link` are links that appear at the bottom of the sidebar menu and often link to things like privacy policies, your own *About* page, or social media profiles.
+- `footer-link` are links that appear at the bottom of the sidebar menu and often link to things like privacy policies, your own *About* page, or social media profiles.
 
 `resource_link` properties can also be internal pages of the publication or files from your publication, or can point to external resources or other websites. The attributes `type`, `name` (how the resource link will be listed in your publication), and `url` are required.
 
 To facilitate machine readability, it is a good idea to also include `link_relation` and `media_type` attributes from the {{< q-def "IANA" >}} lists if applicable ones for your particular resource are available.
+
+```yaml
+- type: other-format
+    name: EPUB
+    media_type: application/epub+zip
+    link_relation: alternate
+    url: /downloads/my-project.epub
+  - type: other-format
+    name: Paperback
+    media_type: print
+    link_relation: alternate
+    url: https://shop.getty.edu/products/my-project
+  - type: footer-link
+    name: About
+    link_relation: about
+    url: /about/
+```
 
 ### Subjects
 
@@ -134,6 +151,6 @@ subjects:
 
 ### Revision History
 
-A history of post-publication revisions made to the publication typically appears on the *About* page. Any number of revision history property items can be added and each must include the attributes `date` and a `summary` of changes made on that date. The `summary` attribute supports Markdown formatting, and would typically be in list form.
+A history of post-publication revisions made to the publication typically appears on the *About* page. Any number of revision history property items can be added and each must include the attributes `date` and a `summary` of changes made on that date. The `summary` attribute supports Markdown formatting and would typically be in list form.
 
-If you are using {{< q-def "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yaml` can act as an overview. For more, see [our updates and revisions policy document](https://github.com/thegetty/digpublishing-guide/blob/master/updates-and-revisions.md).
+If you are using {{< q-def "GitHub" >}} or a similar service for more granular version control, you may also include the `repository_url` in this section. And in this case the revision history collected in the `publication.yaml` can act as an overview.
