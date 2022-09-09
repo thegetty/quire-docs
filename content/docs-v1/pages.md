@@ -46,7 +46,7 @@ For more details on this full list of possible attributes that Quire can use in 
 layout:
 ```
 
-The page `layout` must be one of six possible values: `page`, `essay`, `entry`, `cover`, `table-of-contents`, or `splash`. If left blank, or if any other value besides these six is entered, the type will default to `page`.
+The page `layout` must be one of six possible values: `page`, `essay`, `entry`, `cover`, `table-of-contents`, or `splash`. If left blank, or if any other value besides these six is entered, the `layout` type will default to `page`.
 
 {{< q-figure id="modern-cover" >}}
 
@@ -150,5 +150,5 @@ menu:
 ```
 
 {{< q-class "box tip" >}}
-- Note that when omitting `online` from `outputs` the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files simply delete any unneeded ones. Read more about site deployment in the [*Deploy Your Project*](/docs-v1/site-deploy/) section of this guide.
+- Note that when omitting `html` from `outputs` the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files simply delete any unneeded ones. Read more about site deployment in the [*Deploy Your Project*](/docs-v1/site-deploy/) section of this guide.
 {{< /q-class >}}
