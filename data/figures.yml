@@ -99,16 +99,16 @@ figure_list:
     caption: "**`layout: page`** (default) <br /> The basic, default Quire page with title, page content, links and a list. A general publication page. Used for introductions, forewords, chapters, appendices and other pages. Also showing the progress bar at the top that indicates a reader’s place in the publication."
   - id: "modern-contents-list"
     src: /screenshots/modern-contents-list.png
-    caption: "**`layout: contents`** <br /> **`presentation: list `** (default)<br /> The default contents page showing the title, subtitle and contributors for each main page and sub-section page. This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory."
+    caption: "**`layout: table-of-contents`** <br /> **`presentation: list `** (default)<br /> The default table of contents page showing the title, subtitle and contributors for each main page and sub-section page. This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory."
   - id: "modern-contents-abstract"
     src: /screenshots/modern-contents-abstract.png
-    caption: "**`layout: contents`** <br /> **`presentation: abstract`** <br /> A maximal version of the contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
+    caption: "**`layout: table-of-contents`** <br /> **`presentation: abstract`** <br /> A maximal version of the table of contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
   - id: "modern-contents-brief"
     src: /screenshots/modern-contents-brief.png
-    caption: "**`layout: contents`** <br /> **`presentation: brief`** <br /> A minimal version of the contents page showing only the title for each top-level page or section."
+    caption: "**`layout: table-of-contents`** <br /> **`presentation: brief`** <br /> A minimal version of the contents page showing only the title for each top-level page or section."
   - id: "modern-contents-grid"
     src: /screenshots/modern-contents-grid.png
-    caption: "**`layout: contents`** <br /> **`presentation: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/docs-v1/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
+    caption: "**`layout: table-of-contents`** <br /> **`presentation: grid`** <br /> A visual grid version of the table of contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/docs-v1/collection-catalogues/). Table of contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
   - id: "modern-splash"
     src: /screenshots/modern-splash.jpg
     caption: "**`layout: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."
