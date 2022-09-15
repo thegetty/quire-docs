@@ -17,8 +17,6 @@ layout: table-of-contents
 
 From there, Quire will automatically generate the TOC based on the structure of the files in your `content` directory including assigned page order and the metadata of each page (the title, subtitle, contributors, etc.) If you add any Markdown to the `.md` file, it will be displayed as formatted text above the contents list. Please see the [*Page Types & Structure*](/docs-v1/pages/) section of our documentation for more information.
 
-In Quire you can multiple levels of sub-sections. Add sections by creating new directories within existing directories. For example, catalogue entries in a collection catalogue would appear within a `/content/catalogue/` directory. You could create additional directories within the `/content/catalogue/` directory to further organize your content.
-
 ### TOC Styles
 
 There are several different ways you can style your TOC's appearance. TOC styles can be defined by adding the attribute `presentation` to the page YAML of your contents `.md` file. The default TOC style is `list`. The three other styles available are `brief`, `abstract`, and `grid`.
@@ -34,7 +32,7 @@ There are several different ways you can style your TOC's appearance. TOC styles
 
 ### TOCs for Individual Sections
 
-As mentioned above, you can create multiple levels of subsections in Quire publications. You can also create TOCs for those individual sections. This can be useful, for example, in collection catalogues where you want a `grid` TOC displaying the objects in that catalogue section, or for a collected papers volume where you want to show the abstracts for the pages in the section.
+In Quire you can include multiple levels of sub-sections. Add sections by creating new directories within existing directories. For example, catalogue entries in a collection catalogue would appear within a `/content/catalogue/` directory. You could create additional directories within the `/content/catalogue/` directory to further organize your content. You would also need to include an  `index.md` file in each sub-section to act as a section landing page and TOC. This can be useful in collection catalogues where you want a `grid` TOC displaying the objects in that catalogue section or for a collected papers volume where you want to show the abstracts for the pages in the section.
 
 Once you have created your sub-section add an `index.md` file with `layout: table-of-contents` included in the page YAML. This will create a landing page that serves as the TOC for that particular sub-section.  The TOC name will match the title used in the page YAML of the `index.md` file.
 
