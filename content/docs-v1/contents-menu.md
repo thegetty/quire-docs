@@ -2,57 +2,64 @@
 title: Table of Contents & Sidebar Menu
 type: essay
 weight: 6160
-abstract: "Adjust the styles of, and individual items in, Quire’s auto-generated contents lists"
+abstract: "Add items and adjust the styles of Quire’s auto-generated contents lists"
 ---
 
 ## Table of Contents
 
-To create a Table of Contents (TOC), add a Markdown file to your project with `type: contents` specified. If you add any Markdown to this file, it will be displayed as formatted text above the TOC list.
+To create a Table of Contents (TOC), add a `.md` file to your project with `layout: table-of-contents` specified.
 
 ```yaml
 title: Contents
-weight: 2
-type: contents
+order: 2
+layout: table-of-contents
 ```
 
-From there, Quire will automatically generate the TOC based on the structure of the files in your `content` directory (including assigned page weights and the organization of the section and sub-section directories) and the metadata of each page (the title, subtitle, contributors, etc.) Please see the [*Page Types & Structure*](/docs-v1/pages/) section of our documentation for more information.
+From there, Quire will automatically generate the TOC based on the structure of the files in your `content` directory including assigned page order and the metadata of each page (the title, subtitle, contributors, etc.) If you add any Markdown to the `.md` file, it will be displayed as formatted text above the contents list. Please see the [*Page Types & Structure*](/docs-v1/pages/) section of our documentation for more information.
 
 ### TOC Styles
 
-There are four different TOC styles. A `class` value may be added to the page YAML to define the TOC format. The default TOC style class is `list`. The three other style classes available are `brief`, `abstract`, and `grid`.
+There are several different ways you can style your TOC's appearance. TOC styles can be defined by adding the attribute `presentation` to the page YAML of your contents `.md` file. The default TOC style is `list`. The three other styles available are `brief`, `abstract`, and `grid`.
 
-```yaml
-class: list
-```
-
-| Class | Description |
+| Presentation | Description |
 | --- | --- |
-| `list` | The default style. Includes `label`, `title,`, `subtitle`, `contributor` information for each page. |
+| `list` | The default style. Can include `label`, `title`, `subtitle`, `contributor` depending on what has been defined in the page YAML for each page. |
 | `brief` | Will only show `title`, or if provided `short_title` for each page, and only for top-level pages and sections. Sub-sections will not display. |
 | `abstract` | Includes everything in `list` as well as an `abstract` for each page if one is given. |
-| `grid` | A graphic layout. Will show a “card” for each page. For `entry` pages, or other pages with `image` specified, the card will display the image, along with any `label`, `title,`, and `subtitle`, pages without an image specified will display only the text. |
+| `grid` | A graphic layout. Will show a “card” for each page. For `entry` pages, or other pages with the `image` attribute included, the card will display the image, along with any `label`, `title`, and `subtitle`. Pages without an image specified will display only the text. |
 
 {{< q-figure-group id="modern-contents-list, modern-contents-brief, modern-contents-abstract, modern-contents-grid" grid="2" >}}
 
 ### TOCs for Individual Sections
 
-A `type: contents` page placed inside a section directory will display the contents just for that section, as well as any of its sub-sections. This can be useful, for example, in collection catalogues where you want a `grid` TOC displaying the objects in that catalogue section, or for a collected papers volume where you want to show the abstracts for the pages in the section.
+In Quire you can include multiple levels of sub-sections. Add sections by creating new directories within existing directories. For example, catalogue entries in a collection catalogue would appear within a `/content/catalogue/` directory. You could create additional directories within the `/content/catalogue/` directory to further organize your content. You would also need to include an  `index.md` file in each sub-section to act as a section landing page and TOC. This can be useful in collection catalogues where you want a `grid` TOC displaying the objects in that catalogue section or for a collected papers volume where you want to show the abstracts for the pages in the section.
+
+Once you have created your sub-section add an `index.md` file with `layout: table-of-contents` included in the page YAML. This will create a landing page that serves as the TOC for that particular sub-section.  The TOC name will match the title used in the page YAML of the `index.md` file.
+
+```YAML
+title: Catalogue
+layout: table-of-contents
+presentation: grid
+order: 9
+```
+
+As mentioned in [*Pages Types & Structures*](/docs-v1/pages/), files named `index.md` always inherit the URL of their parent directory. Using the example above, the URL for the `content/catalogue/index.md` file would be `my-project.com/catalogue/`.
 
 ### Removing Pages from the TOC
 
-While the TOC is generated automatically by Quire based on the Markdown pages in your `content` directory, you can remove or hide pages from the TOC by adding `toc: false` to the YAML for that page. This might be done, for example, for the project’s cover page, which would not typically be included in a traditional book TOC. Or for sub-section pages deep in the book that may clutter the TOC. In any case, hiding the page from the TOC will not change how the page appears when navigating by the Next and Previous buttons and links. Nor will it keep the page from otherwise being linked to or viewed.
+While the TOC is generated automatically by Quire based on the `.md` pages in your `content` directory, you can remove or hide pages from the TOC by adding `toc: false` to the page YAML. This might be done, for example, for the project’s cover page, which would not typically be included in a traditional book TOC. Or for sub-section pages deep in the book that may clutter the TOC. In any case, hiding the page from the TOC will not change how the page appears when navigating by the Next and Previous buttons and links. Nor will it keep the page from otherwise being linked to or viewed.
 
 {{< q-class "box tip" >}}
-Adding `toc: false` will only remove the page’s listing in the TOC. To entirely hide a page from Quire’s outputs use `online: false`, `pdf: false`, and `epub: false`.
+Adding `toc: false` will only remove the page’s listing in the TOC. To entirely hide a page from Quire’s multiple formats use the `outputs` attribute and list the formats where you want that page to appear (`html`, `pdf`, `epub`).  
 {{< /q-class >}}
 
 ### Page Numbering in the PDF
 
 When you output your project as a PDF, page numbers will automatically be added to the pages and to the corresponding entries in the Table of Contents.
 
-The frontmatter pages of books are usually numbered in lowercase Roman numerals (i, ii, iii, iv, etc.). The Arabic numeral 1 is then assigned to the first page of true “content” for the book. Usually the first chapter, or an introduction. Quire handles things the same way.
+Traditionally, the frontmatter pages of books are numbered in lowercase Roman numerals (i, ii, iii, iv, etc.). The Arabic numeral 1 is then assigned to the first page of true “content” for the book. Usually the first chapter, or an introduction. Quire handles things the same way.
 
-To assign a particular section to be page 1 of your project, add `class: page-one` to the Markdown file. This tag means that this section is page 1 (in Arabic numerals), and everything before it is frontmatter and so will be numbered in lowercase Roman.
+To assign a particular `.md` file to be page 1 of your project, add `class: page-one` to the page YAML. This tag defines that page as page 1 (in Arabic numerals), and everything before it is frontmatter and will be numbered in lowercase Roman.
 
 {{< q-class "box warning" >}}
 Only one page in your project can have the `class: page-one` tag.
@@ -60,15 +67,11 @@ Only one page in your project can have the `class: page-one` tag.
 
 ## Sidebar Menu
 
-Like the TOC, the sidebar Menu is generated automatically by Quire based on the structure of the files in your `content` directory and the metadata of each page.
+Like the TOC, the sidebar Menu is generated automatically by Quire based on the structure of the files in your `content` directory and the metadata of each page. Unlike the TOC, the Menu is a built-in part of every Quire project and does not have a corresponding `.md` file.
 
-Unlike the TOC, the Menu is a built-in part of every Quire project and does not have its own Markdown page.
+## Collapsible Menus
 
-There are two different Menu styles, `list` (the default) and `brief`, that match those in the [TOC styles](#toc-styles) listed previously. The Menu styles can be chosen with the `menuClass` setting in your Quire project's `config.yaml` file.
-
-```yaml
-menuClass: list
-```
+TK
 
 ### Removing Pages from the Menu
 
@@ -76,7 +79,7 @@ menuClass: list
 
 ### Menu Other Formats & Footer Links
 
-Following the list of contents in the Menu is a section with download links for the other formats of your Quire project. These are listed in the `publication.yaml` file of your project in the `resource_link` list. Any link listed here with a `type: other-format` will show up in the “Other Formats” link list in the Menu. The `name` attribute provides the text for the link as it appears.
+Following the list of contents in the sidebar Menu is a section with download links for the other formats of your Quire project. These are listed in the `publication.yaml` file of your project in the `resource_link` list. Any link listed here with a `type: other-format` will show up in the “Other Formats” link list in the Menu. The `name` attribute provides the text for the link as it appears.
 
 ```yaml
 - type: other-format
