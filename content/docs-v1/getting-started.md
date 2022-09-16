@@ -179,7 +179,7 @@ As you add content to your project, you can preview the site in your web browser
 
 2. Still in the command-line shell, type `quire preview` and press enter to initiate the preview.
 
-3. To view the preview, open a web browser and visit the localhost URL that is provided in the command-line shell output (for example, http://localhost:8080) to see the publication. To stop the preview, you can either press Control–C or type `quire stop` and press enter.
+3. To view the preview, open a web browser and visit the localhost URL that is provided in the command-line shell output (for example, http://localhost:8080) to see the publication. To stop the preview,  press Control–C.
 
 Some tips for previewing your publication:
 
