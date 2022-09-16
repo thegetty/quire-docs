@@ -6,7 +6,7 @@ type: essay
 abstract: "Get started with a walkthrough of Quire fundamentals"
 ---
 
-As you get started with Quire, it is important to familiarize yourself with the three core components that you will use to create, edit, and output your Quire project: a {{< q-def "text editor" >}}, a {{< q-def "command-line shell" >}}, and a {{< q-def "web browser" >}}. You will use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire pdf` to build the PDF version), and the web browser to preview your work in real-time.
+As you get started with Quire, it is important to familiarize yourself with the three core components that you will use to create, edit, and output your Quire project: a {{< q-def "text editor" >}}, a {{< q-def "command-line shell" >}}, and a {{< q-def "web browser" >}}. You will use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire preview` to preview your project), and the web browser to preview your work in real-time.
 
 {{< q-figure id="1.4" >}}
 
@@ -229,25 +229,15 @@ Variables live inside the `content/_assets/styles` folder in a file called `vari
 
 ## 9. Output Your Project
 
-Once you've played around with adding content and customizing your project, it's time to output it. One of the most significant differences between Quire and other digital publishing tools is the ability to produce your project in multiple formats, including website, E-book, and print. You can create these different versions of your project by running some simple commands:
-
-- The command `quire epub` produces the E-book file.
-
-- The command `quire pdf` produces a PDF version of your project that can also be used for print-on-demand.
-
-- The command `quire site` creates the website version of your project. For the website, a `site` directory will be created in your project, with all the website files inside. The files in `site` can then be copied onto virtually any web server or hosting service. They include all the page content, images, and styles for the site and are all you need for the site to look and run just as it does when running `quire preview` on your own computer.
-
-{{< q-class "box tip" >}}
-- You can run the output commands anytime, and re-run them to update as you make changes to your project files.
-{{< /q-class >}}
+Once you've played around with adding content and customizing your project, it's time to output it. One of the most significant differences between Quire and other digital publishing tools is the ability to produce your project in multiple formats, including website, E-book, and print. You can create these different versions of your project by running the command `quire build`.
 
 *Read more about outputting your publication files and deploying your project in the [“Output Your Project”](/docs-v1/multiformat-output/)and ["Deploy Your Project"](/docs-v1/site-deploy/) sections of this guide.*
 
 
 ### Try it For Yourself
 
-1. In your Terminal, stop the preview process by running the command `quire stop`.
-2. To create the PDF version of your publication type `quire pdf` and press enter.
+1. In your Terminal, stop the preview process by pressing Control-C.
+2. To create the various formats of your publication type `quire build` and press enter.
 3. In your Finder, navigate to the `X` directory and open the PDF to view it.
 
 ## Congratulations! Now What?
