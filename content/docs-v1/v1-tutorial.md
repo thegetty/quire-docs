@@ -6,6 +6,8 @@ type: essay
 abstract: "Get started with a walkthrough of Quire fundamentals"
 ---
 
+Developed by Getty, Quire offers an elegant and affordable digital publishing solution ideal for creating dynamic publications in a variety of formats, including web, print, and e-book. Through the use of static site generation and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format.
+
 As you get started with Quire, it is important to familiarize yourself with the three core components that you will use to create, edit, and output your Quire project: a {{< q-def "text editor" >}}, a {{< q-def "command-line shell" >}}, and a {{< q-def "web browser" >}}. You will use the text editor to edit your publication files, the command-line shell to tell Quire what to do (like `quire new` to start a new project and `quire preview` to preview your project), and the web browser to preview your work in real-time.
 
 {{< q-figure id="1.4" >}}
