@@ -15,6 +15,7 @@ title: Page Content
 layout: essay
 order: 206
 ---
+```
 
 ## Format Text Content with Markdown
 
@@ -24,7 +25,7 @@ You can read all about Markdown syntax and how it is used in Quire in the [*YAML
 
 ## Use Shortcodes to Add Features
 
-Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yaml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. Shortcodes are always formatted with a combination of curly brackets and the percentage sign with the shortcode type and `id` value listed inside (`{% q-shortcode id= %}`). Additional values can be added to the shortcode such as `caption`,  `grid`, or `class` which you can learn more about in the [*Figure Images*](/docs-v1/figure-images/). The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yaml` file.
+Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yaml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. Shortcodes are always formatted with a combination of curly brackets and the percentage sign with the shortcode type and `id` value listed inside: `{% shortcode-type id= %}`. Additional values can be added to the shortcode such as `caption`,  `grid`, or `class` which you can learn more about in the [*Figure Images*](/docs-v1/figure-images/) section of this guide. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yaml` file.
 
 ```go
 {% figure id="3.1" %}
@@ -38,12 +39,27 @@ The following shortcodes are currently available in Quire. You’ll find more ab
 - [`{% figure %}`](/docs-v1/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yaml` file, or from values supplied directly in the shortcode.
 - [`{% figure-group %}`](/docs-v1/figure-images/): Like `{% figure %}`, but with handling for multiple images at once.
 
-In addition to the shortcodes listed above, there are some additional shortcode pairings that are used as wrappers. For example, you can use the `{% backmatter %}` and `{% endbackmatter %}` shortcode pairing to wrap bibliographies, appendices, and other related content at the end of an article or page. This will style whatever is wrapped inside the shortcode pairing to match the default footnote styling.
+{{< q-class "box tip" >}}
+
+- There is an additional shortcode that is use to format backmatter. You can use the pairing of `{% backmatter %}` and `{% endbackmatter %}` to wrap bibliographies, appendices, and other related content at the end of an article or page. Whatever falls inside those two shortcodes will match the default footnote styling.
 
 ```md
 {% backmatter %}
 ## Notes
 {% endbackmatter %}
+```
+
+{{< /q-class >}}
+
+
+## Use HTML to Add Styles
+
+You can also use HTML markup to wrap a block of text and apply certain styles to that text. The example below adds the class “alert” to the the phrase “Text goes here”. This can be useful in facilitating additional [style customizations](/docs-v1/styles-customization).
+
+```md
+<div class="alert">
+Text goes here
+</div>
 ```
 
 ## Apply Different Types of Links
@@ -92,37 +108,33 @@ An ID and the # symbol is also used for other kinds of elements on the same page
 
 - For example, the ID of a heading will often be the name of that heading.
 
-    ```md
-    [referencetolink](#element-id)
-    See [heading 1](#heading-1).
-    ```
+```md
+[referencetolink](#element-id)  
+See [heading 1](#heading-1).
+```
 
 #### Links to Elements on a Separate Page
 
 Following the formula for internal links between pages, you can also specify an element on a separate page as a link destination by adding the # symbol and the element’s ID on to the end of a page link.
 
-      ```  md
-      [referencetolink](/nameofpage/#idname)
-      See the introduction [notes](/introduction/#notes)
-      ```
-
-{{< q-class "box warning" >}}
-- Blackfriday, Quire’s built in Markdown processor, will incorrectly create link when there is some text in brackets followed immediately by more text in parentheses even if there is a space between them. To avoid the linking, you can use a \ (backslash) escape character before the first parentheses, such as: `[not a link] \(1926)`  The \ will not display in the final rendered text.
-{{< /q-class >}}
+```md
+[referencetolink](/nameofpage/#idname)
+See the introduction [notes](/introduction/#notes)
+```
 
 #### Linked Footnotes
 
-When creating [footnotes with Markdown](/docs-v1/fundamentals/#footnotes), links are automatically created between the footnote number in the text and the note itself at the bottom of the page. To link to a note from other locations, you can use its automatically generated ID, which always follows the format `fn:#` where # is the number of the footnote.
+When creating [footnotes with Markdown](/docs-v1/fundamentals/#footnotes), links are automatically created between the footnote number in the text and the note itself at the bottom of the page. To link to a note from other locations, you can use its automatically generated ID, which always follows the format `fn#` where # is the number of the footnote.
 
 ```md
-[referencetolink](#fn:#)
-Also in regards to [note 21](#fn:21)
-See [note 3, chapter 2](/chapter-2/#fn:3)
+[referencetolink](#fn#)
+Also in regards to [note 21](#fn21)
+See [note 3, chapter 2](/chapter-2/#fn3)
 ```
 
 #### Citations
 
-When the citation shortcode `{{</* q-cite "author date" "page #" */>}}` is used in a body of text and corresponds to the short and full bibliographic information provided in the `references.yaml` file, an in-page bibliography will be generated and linked to. This linking is completed automatically.
+When the citation shortcode `{% cite "author date" "page #" %}` is used in a body of text and corresponds to the short and full bibliographic information provided in the `references.yaml` file, an in-page bibliography will be generated and linked to. This linking is completed automatically.
 
 When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
 
