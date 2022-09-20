@@ -12,8 +12,8 @@ As outlined in [*Page Types & Structure*](/docs-v1/pages/), in Quire, a content 
 ```md
 ---
 title: Page Content
-type: essay
-weight: 206
+layout: essay
+order: 206
 ---
 
 ## Format Text Content with Markdown
@@ -24,37 +24,27 @@ You can read all about Markdown syntax and how it is used in Quire in the [*YAML
 
 ## Use Shortcodes to Add Features
 
-Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yaml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. While {{< q-def "Hugo" >}} has a number of built-in shortcodes, which can also work in Quire, Quire-specific shortcodes always start with a `q`. Shortcodes are always formatted with a combination of curly brackets and angle brackets with the name of the shortcode inside (`{{</* q-shortcode */>}}`) and often with some additional information in quotes. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yaml` file.
+Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yaml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. Shortcodes are always formatted with a combination of curly brackets and the percentage sign with the shortcode type and `id` value listed inside (`{% q-shortcode id= %}`). Additional values can be added to the shortcode such as `caption`,  `grid`, or `class` which you can learn more about in the [*Figure Images*](/docs-v1/figure-images/). The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yaml` file.
 
 ```go
-{{</* q-figure id="3.1" */>}}
+{% figure id="3.1" %}
 ```
-
-While most Quire shortcodes work like `q-figure` as a single instance, the `q-class` shortcode acts as wrapper around other text and so it appears as a paired opening and closing shortcode. The closing code has a slash `/` preceding the shortcode name, much like you’d find in HTML markup. This example adds the class "alert" to the the phrase "Text goes here", which could be used to facilitate [style customization](/docs-v1/styles-customization/).
-
-```go
-{{</* q-class "alert" */>}}
-Text goes here
-{{</* /q-class */>}}
-```
-
-{{< q-class "box tip" >}}
-- Quire includes one pre-defined class called "backmatter". This is typically used to wrap bibliographies, appendices, and other related content at the end of an article or page, and will style them to match the default footnote styling.
-
-    ```go
-    {{</* q-class "backmatter" */>}} ...
-    {{</* /q-class */>}}
-    ```
-{{< /q-class >}}
 
 The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes API reference](/docs-v1/for-developers/#shortcodes-api).
 
-- `q-class`: As demonstrated above, wrapping text in this shortcode will allow you to apply a class name to that block of text, which can then be used to apply custom styles or interactions as needed.
-- [`q-bibliography`](/docs-v1/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yaml` file.
-- [`q-cite`](/docs-v1/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and an in-text (or hover pop-up) citation. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
-- [`q-contributor`](/docs-v1/contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
-- [`q-figure`](/docs-v1/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yaml` file, or from values supplied directly in the shortcode.
-- [`q-figure-group`](/docs-v1/figure-images/): Like `q-figure`, but with handling for multiple images at once.
+- [`{% bibliography %}`](/docs-v1/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yaml` file.
+- [`{% cite %}`](/docs-v1/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and an in-text (or hover pop-up) citation. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
+- [`{% contributor %}`](/docs-v1/contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
+- [`{% figure %}`](/docs-v1/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yaml` file, or from values supplied directly in the shortcode.
+- [`{% figure-group %}`](/docs-v1/figure-images/): Like `{% figure %}`, but with handling for multiple images at once.
+
+In addition to the shortcodes listed above, there are some additional shortcode pairings that are used as wrappers. For example, you can use the `{% backmatter %}` and `{% endbackmatter %}` shortcode pairing to wrap bibliographies, appendices, and other related content at the end of an article or page. This will style whatever is wrapped inside the shortcode pairing to match the default footnote styling.
+
+```md
+{% backmatter %}
+## Notes
+{% endbackmatter %}
+```
 
 ## Apply Different Types of Links
 
@@ -68,8 +58,6 @@ External links can be included through the following Markdown formatting:
 [Link text](http://www.linkaddress.com)
 [Getty Museum](https://www.getty.edu/museum/)
 ```
-
-These are set by default to open in new pages, but you can change that by setting `hrefTargetBlank` to `true` in the config.yaml file.
 
 ### Internal Links Between Pages
 
