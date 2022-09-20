@@ -43,9 +43,7 @@ Follow the steps below to first install the support software for Quire, and then
 
 3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/docs-v1/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the macOS installer, double-click it and follow the prompts to install: [https://pandoc.org/installing.html](https://pandoc.org/installing.html).
 
-4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and download the Mac version: [https://kdp.amazon.com/en_US/help/topic/G202131170](https://kdp.amazon.com/en_US/help/topic/G202131170). Install by double clicking the icon and following the prompts.
-
-5. **PrinceXML** enables you to create a PDF version of your Quire project with the `quire pdf` command. Visit the PrinceXML site, download the Mac OS version, uncompress the folder, and rename it to "prince": [http://www.princexml.com/download/](http://www.princexml.com/download/).
+4. **PrinceXML** enables you to create a PDF version of your Quire project with the `quire pdf` command. Visit the PrinceXML site, download the Mac OS version, uncompress the folder, and rename it to "prince": [http://www.princexml.com/download/](http://www.princexml.com/download/).
 
     Open Terminal and type these lines in, hitting enter after each:
 
@@ -62,7 +60,7 @@ Follow the steps below to first install the support software for Quire, and then
     cd
     ```
 
-6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/docs-v1/quire-commands/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
+5. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/docs-v1/quire-commands/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
 
     ```text
     npm install --global @thegetty/quire-cli
@@ -123,11 +121,9 @@ The Quire installation process may take a minute or two, during which time there
 
 3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/docs-v1/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the Pandoc MSI installer file, open it and a setup wizard screen will guide you through the process: [https://pandoc.org/installing.html](https://pandoc.org/installing.html)
 
-4. **Kindle Previewer**, along with Pandoc, enables you to create MOBI e-book files of your Quire project with the `quire mobi` command. Visit Amazon’s Kindle Previewer page and download the Widows version: [https://kdp.amazon.com/en_US/help/topic/G202131170](https://kdp.amazon.com/en_US/help/topic/G202131170). Install by double clicking the icon and following the prompts.
+4. **PrinceXML** enables you to create a PDF version of your Quire project. At [https://www.princexml.com/download/](https://www.princexml.com/download/), download either the 32-bit or 64-bit EXE installer depending on your operating system. (If you’re not sure of your system  open the Settings app by pressing Windows+I. Go to System > About and look for the “System type” entry on the right side.) Click on the downloaded file and hit "run", you should see a setup wizard screen that will guide you through install.
 
-5. **PrinceXML** enables you to create a PDF version of your Quire project. At [https://www.princexml.com/download/](https://www.princexml.com/download/), download either the 32-bit or 64-bit EXE installer depending on your operating system. (If you’re not sure of your system  open the Settings app by pressing Windows+I. Go to System > About and look for the “System type” entry on the right side.) Click on the downloaded file and hit "run", you should see a setup wizard screen that will guide you through install.
-
-6. **Windows Build Tools** is a set of developer tools for your PC. To install them, open PowerShell as administrator, type the following command, and hit enter:
+5. **Windows Build Tools** is a set of developer tools for your PC. To install them, open PowerShell as administrator, type the following command, and hit enter:
 
     ```text
     npm install --g --production windows-build-tools
