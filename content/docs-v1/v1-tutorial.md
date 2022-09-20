@@ -19,7 +19,7 @@ In the following sections, you’ll learn more about these interconnected compon
 
 ## 1. Understand the Command-Line Shell
 
-The first thing you’ll need is a command-line shell. Macs already have a good shell installed called Terminal. It can be found in the Applications/Utilities folder (or by pressing Command–Space Bar and typing “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/), which comes with a shell called Git BASH.
+The first thing you’ll need is a command-line shell, which is an interface that allows you to control your computer through text. Macs already have a good shell installed called Terminal. It can be found in the Applications/Utilities folder (or by pressing Command–Space Bar and typing “Terminal” to search for it). For PCs, we recommend installing [Git for Windows](https://gitforwindows.org/), which comes with a shell called Git BASH.
 
 In addition to telling Quire what to do, the command-line shell can also be used as a text-based way of viewing and navigating your computer's files. You can use command-line shell to list the contents of particular directory (otherwise known as a folder) in the same way you would use Finder or File Explorer. When you open your shell, by default, you will be in your {{< q-def "home directory" >}}.  
 
