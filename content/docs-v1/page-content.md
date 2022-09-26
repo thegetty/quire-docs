@@ -25,10 +25,10 @@ You can read all about Markdown syntax and how it is used in Quire in the [*YAML
 
 ## Use Shortcodes to Add Features
 
-Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yaml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. Shortcodes are always formatted with a combination of curly brackets and the percentage sign with the shortcode type and `id` value listed inside: `{% shortcode-type id= %}`. Additional values can be added to the shortcode such as `caption`,  `grid`, or `class` which you can learn more about in the [*Figure Images*](/docs-v1/figure-images/) section of this guide. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yaml` file.
+Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yaml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. Shortcodes are always formatted with a combination of curly brackets and the percentage sign with the shortcode type and `id` value listed inside: `{% shortcode-type "figure-id" %}`. Additional values can be added to the shortcode such as `caption`,  `grid`, or `class` which you can learn more about in the [*Figure Images*](/docs-v1/figure-images/) section of this guide. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yaml` file.
 
 ```go
-{% figure id="3.1" %}
+{% figure "3.1" %}
 ```
 
 The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes API reference](/docs-v1/for-developers/#shortcodes-api).
