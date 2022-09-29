@@ -1,7 +1,7 @@
 figure_list:
   - id: "1.1"
     src: /screenshots/content-model.png
-    caption: "Quire content model "
+    caption: "Quire content model."
     credit: " "
   - id: "1.4"
     src: /screenshots/quire-work-environment.gif
@@ -17,15 +17,15 @@ figure_list:
     credit: " "
   - id: "1.7"
     src: /screenshots/catalogue-entry-page.jpg
-    caption: "screenshot of catalogue entry page as rendered in the browser"
+    caption: "Screenshot of catalogue entry page as rendered in the browser."
     credit:
   - id: "1.8"
     src: /screenshots/catalogue-entry-grid.jpg
-    caption: "screenshot of catalogue grid page as rendered in the browser"
+    caption: "Screenshot of catalogue grid page as rendered in the browser."
     credit: " "
   - id: "1.9"
     src: /screenshots/left-right.png
-    caption: " "
+    caption: "Examples of figures images with the classes `is-pulled-right` and `is-pulled-left` added to their shortcode."
     credit:
   - id: "1.10"
     src: /screenshots/group-caption.png
@@ -33,11 +33,11 @@ figure_list:
     credit:
   - id: "1.11"
     src: /screenshots/grid.png
-    caption: " "
+    caption: "Examples of various grid layouts."
     credit:
   - id: "1.12"
     src: /screenshots/style1.png
-    caption: "screenshot of the `variables.scss` file in the default-theme directory"
+    caption: "Screenshot of the `variables.scss` file in the default-theme directory."
   - id: "1.13"
     src: /screenshots/style2.png
     caption: "screenshot of the custom.css file in the static directory"
@@ -363,3 +363,6 @@ figure_list:
     media_id: 2KG5I6TLF8Y
     media_type: youtube
     caption: "An in-depth walk-through of the Nelson-Atkins Museum of Art's first Quire publication, *French Paintings and Pastels, 1600–1945: The Collections of the Nelson-Atkins Museum of Art*, from conception and development to design and distribution, with Stephanie Alger (Digital Publishing Assistant), Brigid Boyle (Block Family Foundation Doctoral Fellow), and Meghan Gray (Project Manager, Curatorial Associate in European Arts)."
+
+  - id: "5.5"
+    src: /screenshots/alt-text-example.jpg
