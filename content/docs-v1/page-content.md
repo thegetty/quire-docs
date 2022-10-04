@@ -25,27 +25,28 @@ You can read all about Markdown syntax and how it is used in Quire in the [*YAML
 
 ## Use Shortcodes to Add Features
 
-Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yaml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. Shortcodes are always formatted with a combination of curly brackets and the percentage sign with the shortcode type and `id` value listed inside: `{% shortcode-type "figure-id" %}`. Additional values can be added to the shortcode such as `caption`,  `grid`, or `class` which you can learn more about in the [*Figure Images*](/docs-v1/figure-images/) section of this guide. The example below inserts a figure in your document, matching a corresponding `id` with figure information stored in the publication’s `figures.yaml` file.
+Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the functionality and possibilities of plain Markdown. A shortcode is a simple snippet of code inserted in a Markdown file. The shortcode pulls in information from your data (`.yaml`) files using identifiers. This means that, in most cases, when you edit the YAML file, these changes will be automatically be reflected in all Markdown files that include the respective shortcode. Shortcodes are always formatted with a combination of curly brackets and the percentage sign with the shortcode type and `id` value listed inside within single quotes: `{% shortcode-type 'figure-id' %}`. Additional values can be added to the shortcode such as `grid` or `class` which you can learn more about in the [*Figure Images*](/docs-v1/figure-images/) section of this guide. The example below inserts a figure and any related data that corresponds with the `id` 3.1 as provided in the `figures.yaml` file.
 
-```go
-{% figure "3.1" %}
+```md
+{% figure '3.1' %}
 ```
 
 The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes API reference](/docs-v1/for-developers/#shortcodes-api).
 
-- [`{% bibliography %}`](/docs-v1/citation-bibliographies/): Generates a bibliography from the entries in the project's `bibliography.yaml` file.
 - [`{% cite %}`](/docs-v1/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and an in-text (or hover pop-up) citation. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
-- [`{% contributor %}`](/docs-v1/contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
+- [`{% contributors %}`](/docs-v1/contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
 - [`{% figure %}`](/docs-v1/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yaml` file, or from values supplied directly in the shortcode.
-- [`{% figure-group %}`](/docs-v1/figure-images/): Like `{% figure %}`, but with handling for multiple images at once.
+- [`{% figuregroup %}`](/docs-v1/figure-images/): Like `{% figure %}`, but with handling for multiple images at once.
 
 {{< q-class "box tip" >}}
 
-- There is an additional shortcode that is use to format backmatter. You can use the pairing of `{% backmatter %}` and `{% endbackmatter %}` to wrap bibliographies, appendices, and other related content at the end of an article or page. Whatever falls inside those two shortcodes will match the default footnote styling.
+- There is an additional shortcode that is use to format backmatter. You can use the pairing of `{% backmatter %}` and `{% endbackmatter %}` to wrap bibliographies, appendices, and other related content at the end of an article or page. Whatever falls inside those two shortcodes will match the default footnote styling. In order for the shortcode to work, there must be a line break before and after the word or words that you are styling.
 
 ```md
 {% backmatter %}
+
 ## Notes
+
 {% endbackmatter %}
 ```
 
@@ -58,7 +59,9 @@ You can also use HTML markup to wrap a block of text and apply certain styles to
 
 ```md
 <div class="alert">
+
 Text goes here
+
 </div>
 ```
 
@@ -134,7 +137,7 @@ See [note 3, chapter 2](/chapter-2/#fn3)
 
 #### Citations
 
-When the citation shortcode `{% cite "author date" "page #" %}` is used in a body of text and corresponds to the short and full bibliographic information provided in the `references.yaml` file, an in-page bibliography will be generated and linked to. This linking is completed automatically.
+When the `{% cite %}` shortcode is used, and corresponds to the short and full bibliographic information provided in the `references.yaml` file, an in-page bibliography will be generated and linked. This linking is completed automatically.
 
 When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
 
