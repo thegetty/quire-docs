@@ -55,7 +55,7 @@ The following shortcodes are currently available in Quire. You’ll find more ab
 
 ## Use HTML to Add Styles
 
-You can also use HTML markup to wrap a block of text and apply certain styles to that text. The example below adds the class “alert” to the the phrase “Text goes here”. This can be useful in facilitating additional [style customizations](/docs-v1/styles-customization).
+You can also use HTML markup to wrap a block of text and apply certain styles to that text. The example below adds the class “alert” to the the phrase “Text goes here”.
 
 ```md
 <div class="alert">
@@ -64,6 +64,8 @@ Text goes here
 
 </div>
 ```
+
+Learn more about adding styles in the [Style Customization](/docs-v1/styles-customization) section of this guide.
 
 ## Apply Different Types of Links
 
