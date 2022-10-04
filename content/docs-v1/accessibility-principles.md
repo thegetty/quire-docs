@@ -22,7 +22,7 @@ While not exhaustive, the list below is meant to highlight the *key* principles 
 
 - All non-decorative images should have `alt` descriptive text. ([Tips on crafting good alt text.](https://webaim.org/techniques/alttext/))
 
-- All formats (PDF, EPUB, MOBI, and print) must offer at least basic access to *all* the content of the publication. For example: videos, deep zoom images and maps should appear with fallback images; URLs to online content should be provided in text, and hover-over citations or glossary terms should be printed in full at the bottom of the page or in a separate section.
+- All formats (PDF, EPUB, MOBI, and print) must offer at least basic access to *all* the content of the publication. For example: videos and deep zoom images should appear with fallback images; URLs to online content should be provided in text, and hover-over citations or glossary terms should be printed in full at the bottom of the page or in a separate section.
 
 - A proper background/foreground color contrast ratio must be maintained for all elements. ([Color contrast checker](https://webaim.org/resources/contrastchecker/).)
 
