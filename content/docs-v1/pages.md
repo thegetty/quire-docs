@@ -46,7 +46,7 @@ For more details on this full list of possible attributes that Quire can use in 
 layout:
 ```
 
-The page `layout` must be one of six possible values: `page`, `essay`, `entry`, `cover`, `table-of-contents`, or `splash`. If left blank, or if any other value besides these six is entered, the `layout` type will default to `page`.
+The page `layout` must be one of six possible values: `page`, `essay`, `entry`, `cover`, `table-of-contents`, `bibliography`, `splash`. If left blank, or if any other value besides these six is entered, the `layout` type will default to `page`.
 
 {{< q-figure id="modern-cover" >}}
 
