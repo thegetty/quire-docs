@@ -5,7 +5,7 @@ type: essay
 abstract: "Incorporate multiple images, videos, and other multimedia"
 ---
 
-Quire is optimized for visual publishing. It is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. Use the `figures.yaml` file to store all the information about your images and then insert the images into your Markdown documents with the `{% figure %}` {{< q-def "shortcode" >}}.
+Quire is optimized for visual publishing. It is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. Use the `figures.yaml` file to store all the information about your images and then insert the images into your Markdown documents with the `{% figure %}` and `{% figuregroup %}` {{< q-def "shortcodes" >}}.
 
 ## Include Image Files in Your Publication
 
@@ -23,7 +23,7 @@ Quire does not require a specific image file format or size, but we have some re
 
 ## Create a figures.yaml File for Figure Image Metadata
 
-For most publications, or, at least, those with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yaml` file, which lives in your `/content/_data` directory. The figure image metadata, along with the image itself, can then be pulled into your project through the use of a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/docs-v1/for-developers/#figure_list). Below is an example of two `figures.yaml` entries with the required attributes: `id` and `src`.
+Figures and all their associated attributes should be listed in the `figures.yaml` file, which lives in your `/content/_data` directory. The figure image metadata, along with the image itself, can then be pulled into your project through the use of a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/docs-v1/for-developers/#figure_list). Below is an example of two `figures.yaml` entries with the required attributes: `id` and `src`.
 
 ```yaml
 - id: "1.1"
@@ -32,17 +32,17 @@ For most publications, or, at least, those with more than just a handful of imag
   src: "portrait-of-still.jpg"
 ```
 
-Other available attributes are `alt`, `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, and `label_text`.
+Other available attributes are `alt`, `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, and `label`.
 
 {{< q-class "box warning" >}}
 
-- If your figures are organized in sub-directories within your `/_assets/images` directory they should appear as part of the file path under `src`, otherwise, only the filename is needed. So for example, if the image portrait-of-still.jpg is saved in a subfolder in your `images` directory called `catalogue` the `src` value would be `/catalogue/portrait-of-still.jpg`.s
+- If your figures are organized in sub-directories within your `/_assets/images` directory they should appear as part of the file path under `src`, otherwise, only the filename is needed. So for example, if the image "portrait-of-still.jpg" is saved in a subfolder in your `images` directory called `catalogue` the `src` value would be `/catalogue/portrait-of-still.jpg`.
 
 {{< /q-class >}}
 
 ### Adding Alt Text to Your Project
 
-Unless a figure image is purely decorative, it should also include an alternate textual description under the `alt` attribute. Shortened from “alternative text,” alt text is a short visual description, separate from your captions and other descriptive text. Alt text improves the accessibility of your content for people who use screen readers, people with cognitive differences and diverse learning needs, and people with slower internet connections, among others. We recommend using the `alt` attribute for accessibility purposes. For more information check our [*Accessibility Principles*](/docs-v1/accessibility-principles/).
+Unless a figure image is purely decorative, it should also include an alternate textual description under the `alt` attribute. Shortened from “alternative text,” alt text is a short visual description, separate from your captions and other descriptive text. Alt text improves the accessibility of your content for people who use screen readers, people with cognitive differences and diverse learning needs, and people with slower internet connections, among others. We highly recommend using the `alt` attribute for accessibility purposes. For more information check the [*Accessibility Principles*](/docs-v1/accessibility-principles/) section of this guide.
 
 {{< q-figure id="5.5" >}}
 
@@ -59,7 +59,7 @@ For example, the YAML for the figure above might look like this:
 Once you've saved your images in the `/_assets/images` directory and created entries for each image in your `figures.yaml` file, then you are ready to insert figures into your publication by referencing the assigned `ids` in a shortcode. The shortcode will not only pull in the associated image referenced in the `src` attribute but also all the other attributes you've defined in the YAML for that particular image, such as captions or credits. A basic use of the `{% figure %}` shortcode would look like this:
 
 ```md
-{% figure "1.2" %}
+{% figure '1.2' %}
 ```
 
 Always use the figure shortcodes on their own lines in your Markdown documents, in between paragraphs. Never within a paragraph. Traditionally, figures will be placed directly *after* the paragraph in which they were first referred to.
@@ -72,28 +72,21 @@ Always use the figure shortcodes on their own lines in your Markdown documents, 
 
 ## Style Figure Images
 
-By default, figures will display at the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left` and `is-pulled-right`. This will put the image in-line with the text, either to the right or left. Within the shortcode, the first value is the `id` and the second value is the class type. They should both appear in quotes, separated by a comma.
+By default, figures will display at the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left` and `is-pulled-right`. This will put the image in-line with the text, either to the right or left. Within the shortcode, the first value is the `id` and the second value is the class type. They should both appear within a set of single quotes, separated by a comma.
 
 ```md
-{% figure "1.2", "is-pulled-left" %}
+{% figure '1.2', 'is-pulled-left' %}
 ```
 
 {{< q-figure id="1.9" >}}
 
-## Create and Style Figure Groups with the {% figure-group %} Shortcode
+## Create and Style Figure Groups with the {% figuregroup %} Shortcode
 
-If your project uses a `figures.yaml` file, you can also create groupings of figures by using the `{% figure-group %}` shortcode. Within the shortcode, the `ids` of the images you would like included should appear separated by commas within one set of quotes.
-
-```md
-{% figure-group "1.1, 1.2" %}
-```
-
-The `{% figure-group %}` shortcode additionally supports the ability to specify a preferred grid width. In the below example, the inclusion of `"2"` before the list of `ids` means that the image grid will be 2 images wide at your publication layout’s full-size. Alternately, if you specified `"4"` the grid would be 4 images wide, making each image relatively smaller.
+When you have multiple images that make sense to group together, you can use the `{% figuregroup %}` shortcode. First, you must specify the preferred grid width. For example, if you have six images you could insert `2` in the shortcode to make the grid appear with three rows, each *two* images wide. Alternatively, if you insert `3` then the grid will appear with two rows, each *three* images wide. The figures will scale accordingly. After you have defined the grid width, insert the `ids` of the images you would like included. List the `ids` within one set of single quotes, separated by commas.
 
 ```md
-{% figure-group "2", "1.1, 1.2, 1.3, 1.4" %}
+{% figuregroup '2', '1.1, 1.2, 1.3, 1.4' %}
 ```
-
 {{< q-figure id="1.11" >}}
 
 {{< q-class "box warning" >}}
@@ -106,16 +99,16 @@ The `{% figure-group %}` shortcode additionally supports the ability to specif
 
 Videos can be embedded in your publication the same way as other figure images. The difference being that you’ll also need to include a `media_id` and a `media_type` attribute, along with an optional `aspect_ratio` attribute in the `figures.yaml` file.
 
-Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo (`media_type: vimeo`). The `media_id`s can be found in the URLs of the videos you wish to embed. For example, in https://www.youtube.com/watch?v=VYqDpNmnu8I or https://youtu.be/VYqDpNmnu8I, the `media_id` would be `VYqDpNmnu8I`; and in https://vimeo.com/221426899 it is `221426899`.
+Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo (`media_type: vimeo`). The `media_ids` can be found in the URLs of the videos you wish to embed. For example, in https://www.youtube.com/watch?v=UR6j2bcR5ro or https://youtu.be/UR6j2bcR5ro, the `media_id` would be `UR6j2bcR5ro`; and in https://vimeo.com/672853511/33ca671c7c it is `672853511/33ca671c7c`.
 
 ```yaml
 - id: 1.5
-  src: videostill.jpg
-  media_id: VYqDpNmnu8I
+  poster: videostill.jpg
+  media_id: UR6j2bcR5ro
   media_type: youtube
 ```
 
-The `src` image provided in this example is a frame from the video and will be used in place of the video in the PDF and EPUB versions of your publication. In Quire this is referred to as a fallback. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
+Because Quire is built with multiple formats in mind, when including videos in the online version of the project you will also need to include a video still as a fallback image for the PDF and EPUB versions. Add the `poster` attribute to the YAML entry. Similar to `src`, the value should be the file name of the still you want to use. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
 
 {{< q-class "box tip" >}}
 
@@ -135,11 +128,11 @@ For example, if you wanted to include the audio clip above in a Quire project, y
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/809104705
 ```
 
-You would then grab `809104705` and add that as a `media_id` to the YAML for this audio file.
+You would then grab `809104705` and add that as a `media_id` to the YAML for this audio file. Similar to the videos you will also want to include a `poster` attribute as a fallback for your PDF and EPUB versions of the publication.
 
 ```YAML
 - id: "cva_podcast"
-  src: /screenshots/cva_podcast.png
+  poster: /screenshots/cva_podcast.png
   media_id: 809104705
   media_type: soundcloud
   caption: "“Moving a Hundred-Year-Old Series Online: Getty’s Corpus Vasorum Antiquorum,” from Getty’s *Art & Ideas* podcast."
@@ -180,7 +173,7 @@ In addition to inserting tables in your project [as Markdown](https://www.markdo
 
 {{< /q-class >}}
 
-Now that you've created your .html file you will need to add the table information to the `figures.yaml`. Similarly to embedding audio clips and videos, you will need to add a `media_type` to the entry. In this case, the type would be `table`. Make sure the `src` matches the name of the .html file you added to the `/_assets/images` directory.
+Now that you've created your .html file you will need to add the table information to the `figures.yaml`. Similarly to embedding audio clips and videos, you will need to add a `media_type` to the entry. In this case, the type would be `table`. Make sure the `src` matches the name of the HTML file you added to the `/_assets/images` directory.
 
 ```YAML
 - id: "table-1-1"
@@ -192,7 +185,7 @@ Now that you've created your .html file you will need to add the table informati
 Then use the `{% figure %}` shortcode as normal to insert the table into the page:
 
 ```md
-{% figure "table-1-1" %}
+{% figure 'table-1-1' %}
 ```
 
 For more information on HTML tables check out the [Mozilla website](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics).
