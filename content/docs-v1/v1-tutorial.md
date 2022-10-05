@@ -190,12 +190,13 @@ To add more specialized features to your publication, such as images, multimedia
 ### Try it for Yourself
 
 1. Type the following figure image shortcode on a new line in your `preface.md` file.
+
 ```text
-{% figure id="fig-1" %}
+{% figure 'fig-1' %}
 ```
 2. Save the change and check the preview in your browser. A new image should appear on the Preface page.
-3. Navigate to your project’s `figures.yaml` file and look for the `id` value of `"fig-1"`.
-4. Make edits to the `caption` value for `"fig-1"` and preview your changes.
+3. Navigate to your project’s `figures.yaml` file and look for the `id` value of `fig-1`.
+4. Make edits to the `caption` value for `fig-1` and preview your changes.
 
 
 ## 8. Customize Styles
