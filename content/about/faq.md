@@ -5,7 +5,7 @@ type: essay
 abstract: "Learn about our new static site generator and other Quire developments"
 ---
 
-In advance of Quire's Fall 2022 open-source launch, we have been undertaking significant work to improve the tool's functionality and create a better infrastructure for new features and future developments. As part of that work we are transitioning to a new static site {{< q-def "static site generator" >}} generator called Eleventy (11ty). Keep reading to understand how these changes will affect and improve Quire.
+In advance of Quire's upcoming open-source launch, we have been undertaking significant work to improve the tool's functionality and create a better infrastructure for new features and future developments. As part of that work we are transitioning to a new static site {{< q-def "static site generator" >}} generator called Eleventy (11ty). Keep reading to understand how these changes will affect and improve Quire.
 
 ### What is Eleventy (11ty)?
 
@@ -16,10 +16,10 @@ Eleventy (11ty) is a simple yet powerful [static site generator](https://quire.g
 For editors and content creators:
 
 - The current functionality and design of Quire websites, PDFs, and ebooks will remain the same
-- There will be minor differences within the Markdown files, such as a new format for shortcodes:  `{% figure id="x" %}` 
+- There will be minor differences within the Markdown files, such as a new format for shortcodes (e.g. `{% figure "x" %}`) and new page YAML attributes (e.g. `order` and `layout`)
 - Core configuration variables will be restructured to be more user-friendly
-- Key project files will become more accessible and simplify navigation
-- Development support will be easier to access due to a more familiar and approachable technology stack
+- Key project files will we easier to access and navigate
+- Development support will be more accessible due to a more familiar and approachable technology stack
 
 For developers:
 
@@ -51,13 +51,13 @@ Canvas Panel works as a user interface to render IIIF deep-zooming images. It al
 
 ### What is our timeline for transitioning to 11ty?
 
-Work on 11ty is still underway. We hope to complete the transition by July 2022. We look to the Quire community to help us spot any bugs that the switch from Hugo to 11ty may have generated. The move will be a gradual work in progress, and we appreciate our users' feedback and patience.
+We will launch a pre-release version of Quire in October 2022 that will be fully open source. We look to the community to test out new projects and help us spot bugs that the switch from Hugo to 11ty may have generated. After major issues have been addressed, a 1.0 release of Quire will follow. We appreciate our users' feedback and patience during this transition period.
 
 ### How does this affect older or in-process Quire projects?
 
 Quire projects built with Hugo can be manually migrated to the 11ty version as needed by making a handful of global changes to Markdown files and by copying over various configuration values. Documentation will be provided and our team is available for support. You can also install an earlier version of Quire with `npm install @thegetty/quire-cli@0.20.2` to run older Hugo-based projects, but that version will only be supported for a limited time.
 
-Let us know if you will be starting any new projects as early as June 2022. It will be advantageous to adopt the 11ty version of Quire early, even though our implementation will still be underway. We are happy to work closely with you to troubleshoot your use of Quire during this transition period. Reach out to us at [quire@getty.edu](mailto:quire@getty.edu).
+Please contact us at [quire@getty.edu](mailto:quire@getty.edu) if you plan on starting a new Quire project in the upcoming weeks and months. We are happy to work closely with you to troubleshoot your use of Quire while we work towards a stable version of the tool.
 
 ### Will there be new documentation?  
 
@@ -65,13 +65,9 @@ We will be writing new documentation for the 11ty version of Quire. The older Qu
 
 We are looking for contributions to help support the creation of developer-centric documentation. If you are interested in contributing please see our [Contributor Guidelines](https://github.com/thegetty/quire-docs/blob/main/CONTRIBUTING.md).
 
-### Can I explore 11ty for myself?
-
-We will have an 11ty branch of Quire available for people to play around with and offer feedback in the coming weeks. If you are interested in getting access to this branch, reach out to us at [quire@getty.edu](mailto:quire@getty.edu)
-
 ### What are some other Quire developments underway?
 
  We working to replace Prince XML with the open-source PDF generator, [Paged.js](https://pagedjs.org/). This development work is still underway.
 
 
-*Last updated May 11, 2022*
+*Last updated October 1, 2022*
