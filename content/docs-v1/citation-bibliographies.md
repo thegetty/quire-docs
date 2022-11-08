@@ -5,13 +5,13 @@ type: essay
 abstract: "Cite sources with pop-ups and generate reference lists"
 ---
 
-In-text citations and bibliographies are all available in Quire. Designed to meet scholarly needs and multiple citation styles, they are easy to implement in your publications. While bibliographic references are formatted in YAML and stored in a YAML file (you can consult our [YAML syntax fundamentals](/docs-v1/fundamentals/) for more information), citation and bibliography {{< q-def "shortcodes" >}} are used to integrate the references in your publication.
+In-text citations and bibliographies are all available in Quire. Designed to meet scholarly needs and multiple citation styles, they are easy to implement in your publications. Bibliographic references are formatted in YAML and stored in a YAML file (you can consult our [YAML syntax fundamentals](/docs-v1/fundamentals/) for more information) while citation and bibliography {{< q-def "shortcodes" >}} are used to integrate these references in your publication.
 
 ## Capture Bibliographic Information in YAML
 
-Bibliographic references for your publication should be listed in a `references.yaml` file in the `data` directory.
+Bibliographic references for your publication should be listed in a `references.yaml` file in the `content/_data/` directory.
 
-Each entry in the `references.yaml` file must include a `full` form of the reference, and then an `id` to reference it by.
+Each entry in the `references.yaml` file must include the `full` form of the reference and an `id` that will be used in your citation shortcode.
 
 ```yaml
 entries:
@@ -21,7 +21,7 @@ entries:
     full: "de Goncourt, Edmond. *Journal des Goncourt: Mémoires de la vie littéraire.* Paris; G. Charpentier et cie, 1851."
 ```
 
-As in the example above, the `id` would typically be the short form of the reference in author-date format. However, you can also specify the short form as a separate line of the YAML.
+As in the example above, the `id` would typically be the short form of the reference in Author Date format. However, you can also specify the short form as a separate line of the YAML.
 
 ```yaml
 entries:
@@ -33,72 +33,110 @@ entries:
     full: "de Goncourt, Edmond. *Journal des Goncourt: Mémoires de la vie littéraire.* Paris; G. Charpentier et cie, 1851."
 ```
 
-### Sort Order
+{{< q-class "box tip" >}}
+- By default, Quire will sort bibliographic entries alphabetically by the text of the `full` reference. However, in the event that you want to override alphabetical sorting add a `sort_as` attribute to the YAML entry to change the ordering.
+{{< /q-class >}}
 
-By default, Quire will sort bibliographic entries alphabetically by the text of the `full` reference. However, you may find in some cases that Quire’s default sort method has its drawbacks. For example, the presence of diacritics, lowercase names, or two author names in a citation may affect the proper ordering of your references. Use the `sort` value to override any ordering issues created by the `full` value:
-
-```yaml
-entries:
-  - id: "Mütter 1851"
-    full: "Mütter, Edmond. *Journal des Goncourt: Mémoires de la vie littéraire.* Paris; G. Charpentier et cie, 1851."
-    sort: "Mutter"
-```
-
-These references can then be called individually from within text using the `q-cite` shortcode, or in their entirety as a generated bibliography using the `q-bibliography` shortcode. Both of which are detailed below.
+These references can then be called individually from within text using the `{% cite %}` shortcode, or in their entirety as a generated bibliography using the `{% bibliography %}` shortcode. Both are detailed below.
 
 ## Add In-text Citations
 
-The `q-cite` shortcode adds a linked Author Date citation reference to the text and an in-text citation (a hover pop-up with the full reference text). It also adds the citation to a list of all cited works on that page, which is output as a page-level bibliography, as explained [below](#display-a-bibliography).
+The `{% cite %}` shortcode adds a linked Author Date citation with a hover over pop-up with the full reference to your text. It also adds the citation to a page-level bibliography as explained [in the Display a Bibliography section](#display-a-bibliography). The `{% cite %}` shortcode can be used anywhere in your Markdown text, including the footnotes.
 
 {{< q-figure id="modern-citation-hover" >}}
 
 {{< q-figure id="modern-bibliography-page" >}}
 
-The first positional parameter of the `q-cite` shortcode is a short form citation that should match the `id` value in the `references.yaml`. The following sample would output the link as: Faure 1909.
+This citation can include three values: `{% cite 'author date' 'page #' 'display text' %}`.
 
-```go
-{{</* q-cite "Faure 1909" */>}}
+### Author Date
+
+The first positional parameter of the `{% cite %}` shortcode is a short form citation that should match the `id` value in the `references.yaml`. The following sample would output the link as: <u>Faure 1909</u>.
+
+```md
+{% cite 'Faure 1909' %}
 ```
 
-The second optional parameter is a page reference. The following sample would output the link as: Faure 1909, 54.
+### Page Number
 
-```go
-{{</* q-cite "Faure 1909" "54" */>}}
+The second optional parameter is a page reference. The following sample would output the link as: Faure 1909, <u>54</u>.
+
+```md
+{% cite 'Faure 1909' '54' %}
 ```
 
-A third optional parameter allows you to customize what text appears in the the link rather than the short form of the citation. The following sample would output the link as: 1909, 54.
+### Display Text
 
-```go
-{{</* q-cite "Faure 1909" "54" "1909" */>}}
+A third optional parameter allows you to customize what text appears in the the link rather than the short form of the citation. The following sample would output the link as: 1909, <u>54</u>.
+
+```md
+{% cite 'Faure 1909' '54' '1909' %}
 ```
 
-In using this third parameter, you still need to have the second parameter even if it’s empty. The following sample would output the link as: 1909.
+In using this third parameter, you still need to have the second parameter even if it’s empty. The following sample would output the link as: <u>1909</u>.
 
-```go
-{{</* q-cite "Faure 1909" "" "1909" */>}}
+```md
+{% cite 'Faure 1909' '' '1909' %}
 ```
 
-The text element between the Author Date citation and the page can be changed with the `citationPageLocationDivider` property in `config.yaml`. The humanities tend to favor comma separation (which is the default in Quire), whereas the sciences typically favor a colon.
-
-The `q-cite` shortcode can be used anywhere in your Markdown text, including within footnotes.
-
-If a publication includes in-text citations and appears to have missing bibliographic entries, there is most likely an incorrect or missing `q-cite` shortcode in the essay end notes. You can find those in the essay Markdown file. The quoted text that follows `q-cite` should exactly match the “id” in the `references.yaml` files. Any changes made to a bibliographic citation should be made first to the `references.yaml` file, and then to every instance of that citation throughout the text. Failure to make changes in all places will result in broken links. The `q-cite` shortcode also plays an important role when generating a bibliography. So a missing or misspelled `q-cite` shortcode will result in the entry entry being left out of the bibliography completely.
-
-
+{{< q-class "box tip" >}}
+- The text element between the in-text citation and the page can be changed in the `content/_data/config.yaml` file. The humanities tend to favor comma separation (which is the default in Quire), whereas the sciences typically favor a colon.
+```yaml
+citations:
+  divider: ', '
+```
+{{< /q-class >}}
 
 ## Display a Bibliography
 
-Your publication will automatically include a page-level bibliography listing all works that were cited on that page using the `q-cite` shortcode. A heading can be customized to go above the page bibliography with the `biblioHeading` parameter in your `config.yaml` file. The default is "Bibliography".
+In Quire projects you can include both page-level bibliographies and a complete bibliography for the entire publication.
 
-Additionally, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yaml` file, you can create a `bibliography.md` file and use the `q-bibliography` shortcode. The resulting bibliography will be output as a page in your publication. By default, your bibliography will automatically be ordered according to the `full` value in your `references.yaml` file.
+Both bibliography styles can appear in either a full or short format. This is controlled globally by the `displayShort` attribute found in the `content/_data/config.yaml`.  The default is set to `true`. If you want to list the references in full, change the value to `false`.
 
-```go
-{{</* q-bibliography */>}}
+```yaml
+  bibliography:
+    displayShort: true
 ```
+
+### Page-level Bibliography
+
+If you are using in-text citations your publication will automatically include a page-level bibliography listing all works that were cited on that page using the `{% cite %}` shortcode.
+
+If a publication appears to have missing bibliographic entries there is most likely an incorrect or missing `{% cite %}` shortcode in the essay end notes. The `id` used in the `{% cite %}` shortcode must exactly match the `id` in the `references.yaml` files.
+
+If you want to suppress the page level bibliography but keep the in-text citations, go into the `content/_data/config.yaml` and change the value to `false`:
+
+```yaml
+  bibliography:
+    displayOnPage: false
+```
+
+If you do not want to use in-text citations but still want to include a page-level bibiliography you have a two options:
+
+- Add a page-level biblio using Markdown
+- List the relevant IDs from the `references.yaml` file in the page YAML. Keep in mind, this may be unwieldy if there are a lot of references. You would then use the `{% bibliography %}` shortcode to add the page-level bibliography at the end of the essay.
+
+```yaml
+title: Chapter Title
+weight: 10
+layout: page
+references:
+  - "West 1939"
+  - "Evans 1938"
+  - "Lynd 1929"
+```
+
+For the latter option, the order they’re listed in doesn’t matter. Quire will sort them all alphabetically unless a `sort_as` attribute has been added in the `references.yaml` file.
+
+### Complete Bibliography
+
+Additionally, to create a complete bibliography for your entire publication, from all the entries in the project's `references.yaml` file, you would add a `bibliography.md` file to your `content` directory. Then insert the `{% bibliography %}` shortcode to this `.md` file. The resulting bibliography will be output as a page in your publication. By default, your bibliography will automatically be ordered according to the `full` value in your `references.yaml` file unless the `sort_as` attribute has been applied.
 
 {{< q-figure id="modern-bibliography" >}}
 
+A heading can be customized to go above the page bibliography in your `content/_data/config.yaml` file. The default heading is "Bibliography".
 
-### Display the Short Reference in Bibliographies
-
-Bibliographies displayed automatically at the bottom of pages, and those generated with the `q-bibliography` shortcode, can be a list of the full version of the reference, or can include the short version as well. This is controlled globally (all bibliographies in the project have to be the same format) in the `config.yaml` file with the `displayBiblioShort` property, can be set to `"true"` or `"false"`.
+```yaml
+bibliography:
+  heading: Bibliography
+```
