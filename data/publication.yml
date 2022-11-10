@@ -22,6 +22,17 @@ description:
   full: >-
     Quire is a modern, multiformat publishing tool for creating scholarly, visually rich digital books that last. Online, print, and e-book.
 
+section_banner:
+  - section: "docs-v1"
+    background_color: "#f5ce3e"
+    text_color: "#1a1a1a"
+    text: |
+      **Please note:** This is the in-progress documentation for the forthcoming version of Quire, built on Eleventy. Read our [FAQ for more information](/about/faq/) on this change. View the [documentation for the current version](/docs-v0/), built on Hugo.
+  - section: "docs-v0"
+    background_color: "#bf4116"
+    text_color: "#fff"
+    text: |
+      **Please note:** This is the documentation for old Quire.
 
 # ------------------------------------------------------------------------------
 # Publication Details
