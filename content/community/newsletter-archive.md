@@ -7,6 +7,7 @@ online: false
 
 2022
 
+- [October 2022](https://newsletters.getty.edu/t/t-F6848124C389018D2540EF23F30FEDED): Quire Pre-Release Coming Soon, Add Soundcloud Audio Clips, Quire Office Hours, Museum Publishing Digital Interest Group, Archivo José Carlos Mariátegui, Tilt West Journal
 - [September 2022](https://newsletters.getty.edu/t/t-0029D944C2E9B31D2540EF23F30FEDED): Quire-branded Giveaways and More, Refreshing and Rebooting Quire, Quire Office Hours, Multimodal Digital Monographs and the University Press, Yale Center for British Art
 - [August 2022](https://newsletters.getty.edu/t/t-64867057B182C8F12540EF23F30FEDED): Quire by the Numbers, Adding Alt Text in Quire, Quire Office Hours, Museum Publishing Digital Interest Group (MuPuDIG), Michael C. Carlos Museum at Emory University
 - [July 2022](https://newsletters.getty.edu/t/t-33ED8590F59EEAD02540EF23F30FEDED): Quire Office Hours, Zoomable Tables, Inclusion & Accessibility in Digital Publications, Multimodal Digital Monographs Report, Getty Conservation Institute
