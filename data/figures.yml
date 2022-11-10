@@ -132,7 +132,7 @@ figure_list:
 
   - id: "modern_contributors-name-title-block"
     src: /screenshots/modern_contributors-name-title-block.png
-    caption: "The `q-contributor` shortcode can be used to add a list of contributors anywhere on a page. In this case it is the page author formated with the `name-title-block` option."
+    caption: "The `{% contributor %}` shortcode can be used to add a list of contributors anywhere on a page. In this case it is the page author formated with the `name-title-block` option."
 
   - id: "modern_contributors-initials"
     src: /screenshots/modern_contributors-initials.png
@@ -144,15 +144,15 @@ figure_list:
 
   - id: "modern-citation-hover"
     src: /screenshots/modern-citation-hover.png
-    caption: "By using the `q-cite` shortcode, you can add citations that appear when hovering over the linked text. Clicking the link brings you to a bibliography at the bottom of the page."
+    caption: "By using the `{% cite %}` shortcode, you can add pop-up citations that appear when you click the linked text."
 
   - id: "modern-bibliography-page"
     src: /screenshots/modern-bibliography-page.png
-    caption: "Any citations added to a page with `q-cite` are automatically added to a bibliography list at the bottom of the page."
+    caption: "Any citations added to a page with the `{% cite %}` shortcode are automatically added to a bibliography list at the bottom of the page."
 
   - id: "modern-bibliography"
     src: /screenshots/modern-bibliography.png
-    caption: "A bibliography of all works in your project’s references.yaml file can be added to any page with the `q-bibliography` shortcode."
+    caption: "A bibliography of all works in your project’s `references.yaml` file can be added to any page with the `layout: biblioraphy`."
 
   - id: "netlify-logo"
     src: full-logo-light.png
@@ -308,11 +308,11 @@ figure_list:
 
   - id: "map-inline"
     src: /screenshots/map-inline.jpg
-    caption: "When you insert an interactive map with the `q-figure-zoom` shortcode, it will display a static image of the map when you’re on the page."
+    caption: "When you insert an interactive map with the `{% figure-zoom %}` shortcode, it will display a static image of the map when you’re on the page."
 
   - id: "map-zoom"
     src: /screenshots/map-zoom.jpg
-    caption: "When you click on a map inserted with the `q-figure-zoom` shortcode, it will load an interactive version centered on latititue and longitude points you specified, and displaying labels and points from your geojson data file."
+    caption: "When you click on a map inserted with the `{% figure-zoom %}` shortcode, it will load an interactive version centered on latititue and longitude points you specified, and displaying labels and points from your geojson data file."
 
   - id: "90-min-webinar"
     src: /screenshots/90-min-webinar.jpg
