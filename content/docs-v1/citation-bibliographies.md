@@ -5,7 +5,7 @@ type: essay
 abstract: "Cite sources with pop-ups and generate reference lists"
 ---
 
-In-text citations and bibliographies are available in Quire. They are easy to implement and designed to meet scholarly needs and multiple citation styles. Bibliographic references are stored in a YAML file while citation and bibliography {{< q-def "shortcodes" >}} are used to integrate these references into your publication.
+In-text citations and bibliographies are available in Quire. They are easy to implement and designed to meet scholarly needs and multiple citation styles. Bibliographic references are stored in a YAML file while citation {{< q-def "shortcode" >}} and the `layout` type `bibliography` are used to integrate these references into your publication.
 
 ## Capture Bibliographic Information in YAML
 
@@ -35,7 +35,7 @@ entries:
 - By default, Quire will sort bibliographic entries alphabetically by the text of the `full` reference. In the event that you want to override alphabetical sorting, you can add a `sort_as` attribute to the YAML entry to change the ordering.
 {{< /q-class >}}
 
-These references can then be called individually from within text using the `{% cite %}` shortcode or they can appear in their entirety as a page of your publication by adding a `bibliography.md` file to your project. Both options are detailed below.
+These references can then be called individually from within text using the `{% cite %}` shortcode or they can appear in their entirety as a page of your publication by adding `layout: bibliography` to the page YAML. Both options are detailed below.
 
 ## Add In-text Citations
 
@@ -107,10 +107,10 @@ bibliography:
 ```
 
 {{< q-class "box tip" >}}
-- If entries as missing from your page-level bibliography or you see output in your command-line shell referencing missing entries, then there is most likely an incorrect or absent `{% cite %}` shortcode. The `id` used in the `{% cite %}` shortcode must exactly match the `id` in the `references.yaml` file for it to work.
+- If entries are missing from your page-level bibliography or you see output in your command-line shell referencing missing entries, then there is most likely an incorrect or absent `{% cite %}` shortcode. The `id` used in the `{% cite %}` shortcode must exactly match the `id` in the `references.yaml` file for it to work.
 {{< /q-class >}}
 
-If you want to suppress the page level bibliography but keep the in-text citations, go into the `content/_data/config.yaml` and change the value to `false`.
+If you want to suppress the page-level bibliography but keep the in-text citations, go into the `content/_data/config.yaml` and change the value to `false`.
 
 ```yaml
   bibliography:
@@ -119,7 +119,7 @@ If you want to suppress the page level bibliography but keep the in-text citatio
 
 ### Complete Bibliography
 
-You can also create a complete bibliography for your entire publication from all the entries in the project's `references.yaml` file. To do this add a `bibliography.md` file to your `content` directory and add the `layout` type of `bibliography` to your page YAML.  
+You can also create a complete bibliography for your entire publication from all the entries in the project's `references.yaml` file. To do this, create a `.md` file and add the `layout` type `bibliography` to the page YAML.
 
 ```YAML
 title: Bibliography
