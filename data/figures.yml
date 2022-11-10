@@ -144,7 +144,7 @@ figure_list:
 
   - id: "modern-citation-hover"
     src: /screenshots/modern-citation-hover.png
-    caption: "By using the `{% cite %}` shortcode, you can add citations that appear when hovering over the linked text. Clicking the link brings you to a bibliography at the bottom of the page."
+    caption: "By using the `{% cite %}` shortcode, you can add pop-up citations that appear when you click the linked text."
 
   - id: "modern-bibliography-page"
     src: /screenshots/modern-bibliography-page.png
