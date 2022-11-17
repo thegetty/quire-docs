@@ -120,7 +120,7 @@ figure_list:
     caption: "**`layout: entry`** <br /> **`presentation: landscape`** (default) <br /> An entry page with entry text below and a nearly full-frame image viewer that supports zooming images, maps and videos."
   - id: "modern-entry-side"
     src: /screenshots/modern-entry-side.png
-    caption: "**`layout: entry`** <br /> **`presentation: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `entryPageSideBySideLayout: true` in the config.yaml file of the project."
+    caption: "**`layout: entry`** <br /> **`presentation: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `sidebySide: true` in the `config.yaml` file of the project."
 
   - id: "modern_contributors-cover"
     src: /screenshots/modern_contributors-cover.jpg

@@ -5,11 +5,11 @@ type: essay
 abstract: "Learn how to publish a collection catalogue with Quire"
 ---
 
-Along with monographs, edited volumes, and serial publications, Quire is also designed with the publication of museum collection catalogues in mind and has a specific page `type` for them (See all page types in the [*Page Types & Structure*](/docs-v1/pages/#define-page-types) section of this guide.) Collection catalogues typically feature a page for each object, images of the object, information about it, and an essay or entry text. To publish a catalogue with Quire, you’ll capture object data, create the object pages, and then, optionally, display a list of the objects included in your publication.
+Along with monographs, edited volumes, and serial publications, Quire is also designed with the publication of collection catalogues in mind. This can be achieved by setting `entry` as the `layout` value in the `.md` file's page YAML. For more information see the [*Page Types & Structure*](/docs-v1/pages/#define-page-types) section of this guide. Collection catalogues typically feature a page for each object, images of the object, information about it, and an essay or entry text. To publish a catalogue with Quire, you’ll capture object data, create the object pages, and then, optionally, display a list of the objects included in your publication.
 
 ## Capture Object Data
 
-Much like `figures.yaml` or `references.yaml`, all catalogue object metadata should be captured in a single `objects.yaml` file in the `data` directory of your project and then identified as needed in the different Markdown pages of your publication. Here is a brief sample of an `objects.yaml` file:
+Much like `figures.yaml` or `references.yaml`, all catalogue object metadata should be captured in a single `objects.yaml` file in the `contents/_data/` directory. Here is a brief sample of an `objects.yaml` file:
 
 ```yaml
 object_display_order:
@@ -19,23 +19,23 @@ object_display_order:
   - medium
   - location
 object_list:
-  - id: 2
-    title: Impression, *Sunrise*
-    artist: Claude Monet
-    year: 1872
-    medium: Oil on canvas
-    dimensions: 48 cm × 63 cm (18.9 in × 24.8 in)
-    location: Musée Marmottan Monet, Paris
+  - id: "2"
+    title: "Impression, *Sunrise*"
+    artist: "Claude Monet"
+    year: "1872"
+    medium: "Oil on canvas"
+    dimensions: "48 cm × 63 cm (18.9 in × 24.8 in)"
+    location: "Musée Marmottan Monet, Paris"
     link:
     figure:
       - id: "cat2"
-  - id: 3
-    title: Reading (portrait of Edma Morisot)
-    artist: Berthe Morisot
-    year: 1873
-    medium: Oil on fabric
-    dimensions: 74.2 x 100.3 x 12 cm (29 3/16 x 39 1/2 x 4 11/16 in.)
-    location: Cleveland Museum of Art
+  - id: "3"
+    title: "Reading (portrait of Edma Morisot)"
+    artist: "Berthe Morisot"
+    year: "1873"
+    medium: "Oil on fabric"
+    dimensions: "74.2 x 100.3 x 12 cm (29 3/16 x 39 1/2 x 4 11/16 in.)"
+    location: "Cleveland Museum of Art"
     link: http://www.clevelandart.org/art/1950.89
     download: true
     figure:
@@ -44,71 +44,76 @@ object_list:
       - id: "cat3b"
 ```
 
-There are two sections in the `objects.yaml` file: `object_list` and `object_display_order`:
+There are two sections in the `objects.yaml` file:  `object_display_order` and `object_list`.
 
-- The `object_list` is a list of the objects and their individual metadata attributes. With the exception of a few reserved terms, as noted in the table below, any attributes can be included here. These attributes and the associated values will ultimately display on the entry pages for each object.
+- You `object_display_order` controls the specifics of which attributes included in your `object_list` should be displayed and in what order. Following the sample above, the attributes included on the pages would be: `artist`, `year`, `dimensions`, `medium`, and `location`.
 
-- You control the specifics of which attributes to display and in what order by listing them under `object_display_order`. Following the sample above, the attributes included on the pages would be: `artist`, `year`, `dimensions`, `medium`, and `location`.
-
-Any images of the object are also included here, under the `figure` attribute. This is a list of one or more images. It is recommended that this list contains only `id` values corresponding with `id`s in your project’s `figures.yaml` file. However, if you prefer, you can instead include a `src` attribute with the filename as it appears in your project’s image directory.
-
-Here are the only defined object attributes, you can include any others you like:
+- The `object_list` is a list of the objects and their individual metadata attributes. With the exception of a few reserved terms, as noted in the table below, any attributes can be included here. These attributes and the associated values will ultimately display on the entry pages for each object. These attributes can also be renamed based on your publication's needs. For example, you can use the term `maker` instead of `artist`. To pull object images into the entry pages, the `ids` listed below `figure` attribute should match the `ids` in your project’s `figures.yaml` file.
 
 | Attribute | Description |
 | --- | --- |
-| `id` | Required. Used to reference objects from entry pages. Should be numbers and lowercase letters only, with no spaces or special characters (`001`, `fig-01a`, etc). |
-| `figure` | A list of one or more images of the object. It is recommended that this list be only of `id` values corresponding with `id`s in your project’s `figures.yaml` file. |
+| `id` | Required. Used to reference objects on the entry pages. Only numbers and/or lowercase letters with no spaces or special characters (`001`, `fig-01a`, etc).  |
+| `figure` | A list of one or more images of an object. Use `id` values corresponding with `ids` in your project’s `figures.yaml` file. |
 | `link` | A URL link to a page with more/current information on the object. Usually the object in the museum’s online collection pages. |
-| `date_start`, `date_end` | Reserved for future use in Quire. |
-| `dimension_width`, `dimension_height`, `dimension_depth` | Reserved for future use in Quire. |
 
 ## Create Object Pages
 
-Like all other pages in your publication, object pages are generated from the Markdown files in your `content` directory. To create an object entry page, give the page a `type: entry` in the page YAML block, and list one or more objects by `id` corresponding to those in your `objects.yaml` file.
+Like all other pages in your publication, object pages are created as `.md` files in your `content` directory. An entry page can feature any images associated with the object, a table of object information (or tombstone information), and finally an essay or entry text. To create an object entry page, add `layout: entry` and the object `id` that corresponds with that entry in your project's `objects.yaml` file to the page YAML.
 
 ```yaml
-type: entry
+layout: entry
 object:
   - id: 1
 ```
 
-The page will feature any images associated with the object, followed by a table of object information and finally an essay/entry text included in the page {{< q-def "Markdown file" >}}.
+### Entry Presentation
 
-{{< q-figure id="1.7" >}}
+There are two different ways you can format your object entry pages: `side-by-side` in which the image appears next to the object information or `landscape` in which the image appears above the object information.
 
-If you add multiple figures of the object, the figures are displayed in a rotating carousel and are arranged in the order they are listed in the object information in `objects.yaml`. If any of the object figures have a `caption` and/or `credit`, they will be included as a pop-up window. And if the figure’s `download` attribute is set to `true`, a download icon will be included as well.
+You can determine the format by either adding `presentation: side-by-side` or `presentation: landscape` to each entry's page YAML. Or you can set a default format for all your entry pages in the `content/_data/config.yaml` by choosing either `true` or `false` for the `sidebySide` attribute.
 
-{{< q-class "box tip" >}}
-- If the `object_list` includes a `link`, a “View in Collection” button is generated. The text of this button can be customized with the `objectLinkText` attribute in the project’s `config.yaml` file.
-{{< /q-class >}}
+```yaml
+entryPage:
+  sideBySide: true
+```
+
+{{< q-figure id="modern-entry-side" >}}
+
+### Object Images
+
+You can add more than one image to your object entry page by listing multiple figure `ids` in your `objects.ymal` file. Multiple images are displayed as a rotating carousel and are arranged in the order they are listed in the `objects.yaml` file. If any of the object images have a `caption` and/or `credit`, that information will be included as a pop-up window.
+
+If the figure’s `download` attribute is set to `true`, a download icon will be included as well.
+
+### Object Link
+
+If the `object_list` includes a `link` value, a “View in Collection” button is generated. The text of this button can be customized with the `objectLinkText` attribute in the project’s `content/_data/config.yaml` file.
+
+```yaml
+entryPage:
+  objectLinkText: View in Collection
+  ```
 
 ## Generate Object Lists/Grids
 
-In a collection catalogue, there will typically be a visual table of contents for just the catalogue entries. To create a page with a list or visual grid of all the object entries, the entries themselves need to be grouped in their own section. In Quire, this means putting them in a subdirectory within the main `content` directory. (Read more about it in the [*Pages Types & Structure*](/docs-v1/pages/) section of this guide).
+In a collection catalogue, there is typically a visual table of contents for the catalogue entries. To create a page with a list or visual grid of all the object entries, the entries themselves need to be grouped in their own section. In Quire, this means putting them in a subdirectory within the main `content` directory. Read more about it in the [*Pages Types & Structure*](/docs-v1/pages/#create-section-landing-pages) section of this guide.
 
-In this example, inside the `content` directory, we have a folder called `catalogue` and inside that, three numbered entries and an overview page:
+In the example below, the `content` directory has a subdirectory called `catalogue`. Inside the `catalogue` folder there are three numbered `.md` files and an `index.md` file.
 
 ```md
 📁 catalogue
-  📄 overview.md
+  📄 index.md
   📄 1.md
   📄 2.md
   📄 3.md
 ```
 
-The `overview.md` file is going to be our visual table of contents. To populate it, simply give it the attribute `type` a value of `"contents"` and the attribute `class` a value of  `"brief"`, `"list"`, `"abstract"`, or `"grid"` to determine the style. (The `"grid"` option will include an image from each entry page.) This `"contents"` page type will automatically generate from each of the Markdown files in the folder.
+The `.md` files are the individual object entry pages and the `index.md` file creates the table of contents that displays all three objects. To populate the table of contents, add `layout: table-of-contents` and the attribute `presentation` to the page YAML of the `index.md` file. Give the `presentation` attribute one of the following values: `brief`, `list`, `abstract`, or `grid`. For more information on these different `presentation` styles, take a look at the [*Table of Contents & Sidebar Menu*](/docs-v1/contents-menu) section of this guide.
 
 ```yaml
 title: Catalogue
-type: contents
-class: grid
-slug: .
+layout: table-of-contents
+presentation: grid
 ```
 
-{{< q-figure id="1.8" >}}
-
-{{< q-class "box tip" >}}
-
-- The `slug` value in the sample above, will change the URL of the page. Instead of being `/catalogue/overview` it will be simply `/catalogue`. Read more about the function of `slug` in the [*Pages Types & Structure*](/docs-v1/pages/) section of this guide.
-
-{{< /q-class >}}
+{{< q-figure id="modern-contents-grid" >}}
