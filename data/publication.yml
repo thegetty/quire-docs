@@ -27,12 +27,12 @@ section_banner:
     background_color: "#f5ce3e"
     text_color: "#1a1a1a"
     text: |
-      **PLEASE NOTE:** This is the in-progress documentation for the current version of Quire (v1.0.0). [View the documentation for an older version of Quire.](/docs-v0/)
+      This is the in-progress documentation for the current version of Quire (v1). If you are using a legacy version (v0), [please visit our older documentation.](/docs-v0/)
   - section: "docs-v0"
     background_color: "#bf4116"
     text_color: "#fff"
     text: |
-      **PLEASE NOTE:** This is the documentation for an older version of Quire. [View the in-progress documentation for the current version of Quire (v1.0.0).](/docs-v1/)
+      This is the documentation for a legacy version of Quire (v0). [Switch to the in-progress documentation for the current version of Quire (v1).](/docs-v1/)
 
 # ------------------------------------------------------------------------------
 # Publication Details
