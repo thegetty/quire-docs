@@ -3,6 +3,8 @@ title: Deploy Your Project
 weight: 6400
 type: essay
 abstract: "Learn various methods to preview & deploy your project online"
+aliases:
+  - /documentation/site-deploy/
 ---
 
 A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from the hosting service of your choice. You do not need any special back-end setup. If you plan to include PDF and e-book files as part of you published project, it's important that you start by following the directions in the [*Output Your Project*](/docs-v1/multiformat-output/) section of the documentation before proceeding.

@@ -3,6 +3,8 @@ title: Figure Images
 weight: 6200
 type: essay
 abstract: "Incorporate multiple images, videos, and other multimedia"
+aliases:
+  - /documentation/figure-images/
 ---
 
 Quire is optimized for visual publishing. It is built to support the use of images for scholarly purposes. On this page, we explain where images are placed in the project and how you can manage them. Use the `figures.yaml` file to store all the information about your images and then insert the images into your Markdown documents with the `{% figure %}` and `{% figuregroup %}` {{< q-def "shortcodes" >}}.

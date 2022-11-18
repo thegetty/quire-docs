@@ -3,6 +3,8 @@ title: Project Management with GitHub
 weight: 6100
 type: essay
 abstract: Use GitHub to host your project, track changes, and collaborate
+aliases:
+  - /documentation/github/
 ---
 
 [GitHub](https://github.com) is a project management platform centered around git-based version control. While it was originally developed as a useful tool for developers, it is now used by artists, writers, and other non-tech professionals. In fact, Getty uses GitHub to manage all of its publications, as well as Quire itself. We strongly recommend using GitHub as a tool for managing your Quire projects (whether collaborating or working solo).

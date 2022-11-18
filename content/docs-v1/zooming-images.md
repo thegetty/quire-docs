@@ -3,6 +3,8 @@ title: Zooming Images with IIIF
 weight: 6220
 type: essay
 abstract: "Adding high-resolution zooming images to your project"
+aliases:
+  - /documentation/zooming-images/
 ---
 
 To add high-resolution zooming images to your project, Quire uses the [International Image Interoperability Framework (IIIF)](https://iiif.io/). Within your Quire project, you can either point to existing IIIF assets or create your own. IIIF zooming images can be displayed within your Markdown pages using the `q-figure-zoom` shortcode or  the built-in image viewer on entry pages. (Learn more about entry pages in the [*Collection Catalogues*](/docs-v1/collection-catalogues) section of this documentation.)
