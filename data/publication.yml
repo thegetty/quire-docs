@@ -27,12 +27,12 @@ section_banner:
     background_color: "#f5ce3e"
     text_color: "#1a1a1a"
     text: |
-      **Please note:** This is the in-progress documentation for the forthcoming version of Quire, built on Eleventy. Read our [FAQ for more information](/about/faq/) on this change. View the [documentation for the current version](/docs-v0/), built on Hugo.
+      **PLEASE NOTE:** This is the in-progress documentation for the Quire v1.0.0 pre-release. [View the documentation for an older beta version of Quire.](/docs-v0/)
   - section: "docs-v0"
     background_color: "#bf4116"
     text_color: "#fff"
     text: |
-      **Please note:** This is the documentation for old Quire.
+      **PLEASE NOTE:** This is the documentation for an older beta version of Quire. [View the in-progress documentation for the Quire v1.0.0 pre-release.](/docs-v1/)
 
 # ------------------------------------------------------------------------------
 # Publication Details
