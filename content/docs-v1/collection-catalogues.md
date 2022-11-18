@@ -46,7 +46,7 @@ object_list:
 
 There are two sections in the `objects.yaml` file:  `object_display_order` and `object_list`.
 
-- You `object_display_order` controls the specifics of which attributes included in your `object_list` should be displayed and in what order. Following the sample above, the attributes included on the pages would be: `artist`, `year`, `dimensions`, `medium`, and `location`.
+- Your `object_display_order` controls the specifics of which attributes included in your `object_list` should be displayed and in what order. Following the sample above, the attributes included on the pages would be: `artist`, `year`, `dimensions`, `medium`, and `location`.
 
 - The `object_list` is a list of the objects and their individual metadata attributes. With the exception of a few reserved terms, as noted in the table below, any attributes can be included here. These attributes and the associated values will ultimately display on the entry pages for each object. These attributes can also be renamed based on your publication's needs. For example, you can use the term `maker` instead of `artist`. To pull object images into the entry pages, the `ids` listed below `figure` attribute should match the `ids` in your project’s `figures.yaml` file.
 
@@ -70,7 +70,7 @@ object:
 
 There are two different ways you can format your object entry pages: `side-by-side` in which the image appears next to the object information or `landscape` in which the image appears above the object information.
 
-You can determine the format by either adding `presentation: side-by-side` or `presentation: landscape` to each entry's page YAML. Or you can set a default format for all your entry pages in the `content/_data/config.yaml` by choosing either `true` or `false` for the `sidebySide` attribute.
+You can determine the format by either adding `presentation: side-by-side` or `presentation: landscape` to each entry's page YAML. Or you can set a default format for all your entry pages in the `content/_data/config.yaml` by choosing either `true` or `false` for the `sideBySide` attribute.
 
 ```yaml
 entryPage:
