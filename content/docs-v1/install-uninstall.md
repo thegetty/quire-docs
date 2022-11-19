@@ -32,7 +32,7 @@ Installing and running Quire requires using the Terminal {{< q-def "command-line
 For installation troubleshooting, search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions).
 
 {{< q-class "box tip" >}}
-- If you are using the legacy version of Quire (v0), you will need to install the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg). Node Version Manager (NVM) is a software that can be used to toggle back-and-forth with Node.js versions. More inforamtion can be found at [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
+- If you will still be using the legacy version of Quire (v0) on past projects, you will need to continue to run those with the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg). Node Version Manager (NVM) is a software that can be used to toggle back-and-forth with Node.js versions. More information can be found at [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
 {{< /q-class >}}
 
 ## Install Quire v1 (Windows)
@@ -59,17 +59,9 @@ npm install --global @thegetty/quire-cli@pre-release
 
 TK
 
-## Uninstall Quire v1
+## Uninstall Quire
 
-In your command-line shell (Terminal on macOS and PowerShell in Administrator mode on Windows), type the following text and hit enter:
-
-```text
-npm uninstall --global @thegetty/quire-cli@pre-release
-```
-
-## Uninstall Quire v0
-
-In your command-line shell (Terminal on macOS and PowerShell in Administrator mode on Windows), type the following text and hit enter:
+In your command-line shell (Terminal on macOS and PowerShell in Administrator mode on Windows), type the following text and hit enter to uninstall Quire. Keep in mind, this will only uninstall the Quire CLI and not other related software like Node.js or Apple Xcode.
 
 ```text
 npm uninstall --global @thegetty/quire-cli
