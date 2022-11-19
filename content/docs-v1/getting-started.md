@@ -3,6 +3,8 @@ title: Get Started
 type: essay
 weight: 6080
 abstract: "Dive in to creating your first Quire publication"
+aliases:
+  - /documentation/getting-started/
 ---
 
 Before getting started, make sure you have [installed Quire](/docs-v1/install-uninstall/) and downloaded a freely available {{< q-def "text editor" >}}. We also recommend reviewing the [*Quire Basics Tutorial*](/learn/tutorial/), a step-by-step introduction to the fundamentals of Quire.

@@ -3,11 +3,13 @@ title: Implementation Considerations
 type: essay
 weight: 6020
 abstract: "Is Quire right for you and your project?"
+aliases:
+  - /documentation/implementation/
 ---
 
 ## Licensing
 
-As of 2022, Quire was released as open-source software under a [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause). 
+As of 2022, Quire was released as open-source software under a [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause).
 
 ## Technology Requirements
 

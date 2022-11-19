@@ -2,7 +2,9 @@
 title: Install or Update
 weight: 6060
 type: essay
-abstract: "Get set up to use Quire on macOS and Windows"
+abstract: "Get set up to use Quire on macOS, Windows, or Linux"
+aliases:
+  - /documentation/install-update/
 ---
 
 There is no user interface for Quire so it may look or feel different than other publishing software. This was an intentional decision. The transparency of Quire's backend provides more flexibility and opportunities for customization.

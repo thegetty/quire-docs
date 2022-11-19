@@ -4,6 +4,8 @@ subtitle:
 weight: 6010
 type: essay
 abstract: "Get started with a walkthrough of Quire fundamentals"
+aliases:
+  - /learn/tutorial/
 ---
 
 Developed by Getty, Quire offers an elegant and affordable digital publishing solution ideal for creating dynamic publications in a variety of formats, including web, print, and e-book. Through the use of static site generation and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format.

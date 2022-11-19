@@ -3,6 +3,8 @@ title: Citations & Bibliographies
 weight: 6260
 type: essay
 abstract: "Cite sources with pop-ups and generate reference lists"
+aliases:
+  - /documentation/citations-bibliographies/
 ---
 
 In-text citations and bibliographies are available in Quire. They are easy to implement and designed to meet scholarly needs and multiple citation styles. Bibliographic references are stored in a YAML file while citation {{< q-def "shortcode" >}} and the `layout` type `bibliography` are used to integrate these references into your publication.

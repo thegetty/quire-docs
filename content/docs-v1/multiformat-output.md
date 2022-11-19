@@ -3,6 +3,8 @@ title: Output Your Project
 weight: 6380
 type: essay
 abstract: "Produce online, PDF, and E-Book versions of your publication"
+aliases:
+  - /documentation/multiformat-output/
 ---
 
 Quire is designed to create a website version, a PDF version and two e-book versions of your project from the same source files. Each can be customized in various ways as described below. Once your outputs are ready, visit the [*Deploy Your Project*](/docs-v1/site-deploy/) section of our documentation to learn how to deploy your project to the web.

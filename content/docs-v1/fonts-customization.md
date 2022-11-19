@@ -3,6 +3,8 @@ title: Font Customization
 weight: 6360
 type: essay
 abstract: "Add external fonts to your publication"
+aliases:
+  - /documentation/fonts-customization/
 ---
 
 Typography is an important element of style in your Quire publication. Quire allows different levels of font customization, from using the already embedded open license fonts in the default Quire theme (`themes/default`), to adding new external fonts.
