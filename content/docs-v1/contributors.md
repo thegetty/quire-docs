@@ -3,6 +3,8 @@ title: Contributors
 weight: 6320
 type: essay
 abstract: "Credit and include multiple contributors"
+aliases:
+  - /documentation/contributors/
 ---
 
 Quire is designed to credit and add contributors to publications in a flexible way. Contributors' data is stored in the `publication.yaml` file of your project or in the YAML block of individual pages. The `q-contributor` shortcode offers multiple options to display contributors' data in your publication. As a reminder, a shortcode is a simple snippet of code inserted in a Markdown file that pulls in information from other files in your project.

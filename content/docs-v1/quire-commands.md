@@ -3,6 +3,8 @@ title: Quire Commands
 weight: 6120
 type: essay
 abstract: "Learn how to start and preview projects, output files, and more"
+aliases:
+  - /documentation/quire-commands/
 ---
 
 Quire commands are typically run from Terminal on a Mac and Git Bash (or its equivalent) on a PC. They control creating, previewing, and outputting Quire projects. The following commands are available.
@@ -20,7 +22,7 @@ Quire commands are typically run from Terminal on a Mac and Git Bash (or its equ
 : Run a local server to preview the project in a browser. Defaults to previewing at http://localhost:8080/, but will use other port numbers if 8080 is busy. The specific address will be listed in your command-line terminal after running the command. If you’re having any issue with the preview, try running `quire preview --verbose` instead. This outputs error, warning, and other processing information that can sometimes be useful in troubleshooting.
 
 `quire dev`
-: 
+:
 
 `quire install`
 : Install Quire's dependencies when you clone a Quire project and are preview it for the first time. This command only needs to be run once in a project.

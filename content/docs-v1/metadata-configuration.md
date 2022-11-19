@@ -3,6 +3,8 @@ title: Metadata & Configuration
 weight: 6145
 type: essay
 abstract: "Update crucial information before deploying your publication"
+aliases:
+  - /documentation/metadata-configuration/
 ---
 
 Quire uses two {{< q-def "YAML" >}} files as sources of the metadata and to define how the publication works. In this page, we list the YAML properties and values that need to be defined in the two following files: `config.yaml` and `publication.yaml` both of which live in the `content/_data/` directory. By default, both `config.yaml` and `publication.yaml` will be generated when you create a Quire project, however the values of the properties will be either edited or added to the properties listed as we describe below.

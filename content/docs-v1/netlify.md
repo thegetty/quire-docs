@@ -3,6 +3,8 @@ title: Additional Netlify Tips
 weight: 6500
 type: essay
 online: false
+aliases:
+  - /documentation/netlify/
 ---
 
 ## Connecting Domains to Netlify

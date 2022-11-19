@@ -3,6 +3,8 @@ title: Page Types & Structure
 type: essay
 weight: 6160
 abstract: "Define and structure your page contents with YAML"
+aliases:
+  - /documentation/pages/
 ---
 
 ## Page YAML
