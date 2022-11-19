@@ -2,7 +2,9 @@
 title: Style Customization
 weight: 6340
 type: essay
-abstract: "Alter look and feel with custom styles and themes "
+abstract: "Alter look and feel with custom styles and themes"
+aliases:
+  - /documentation/styles-customization/
 ---
 
 The look and feel of your Quire publication can be customized at four different levels of complexity:

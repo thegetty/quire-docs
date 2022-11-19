@@ -3,6 +3,8 @@ title: Collection Catalogues
 weight: 6280
 type: essay
 abstract: "Learn how to publish a collection catalogue with Quire"
+aliases:
+  - /documentation/collection-catalogues/
 ---
 
 Along with monographs, edited volumes, and serial publications, Quire is also designed with the publication of collection catalogues in mind. This can be achieved by setting `entry` as the `layout` value in the `.md` file's page YAML. For more information see the [*Page Types & Structure*](/docs-v1/pages/#define-page-types) section of this guide. Collection catalogues typically feature a page for each object, images of the object, information about it, and an essay or entry text. To publish a catalogue with Quire, you’ll capture object data, create the object pages, and then, optionally, display a list of the objects included in your publication.

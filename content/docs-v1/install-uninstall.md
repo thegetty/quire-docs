@@ -3,6 +3,8 @@ title: Install or Update
 weight: 6060
 type: essay
 abstract: "Get set up to use Quire on macOS, Windows, or Linux"
+aliases:
+  - /documentation/install-update/
 ---
 
 {{< q-class "box warning" >}}

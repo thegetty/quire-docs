@@ -3,6 +3,8 @@ title: For Developers
 weight: 6040
 type: essay
 abstract: "API docs and Quire repository guide"
+aliases:
+  - /documentation/for-developers/
 ---
 
 Quire is in a limited beta and not yet released as open-source software. For a free license to use Quire for your publication projects, and for additional access to support, [please sign up](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)

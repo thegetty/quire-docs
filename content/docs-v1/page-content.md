@@ -3,6 +3,8 @@ title: Page Content
 type: essay
 weight: 6180
 abstract: "Format publication content, including adding features and links"
+aliases:
+  - /documentation/page-content/
 ---
 
 ## Start with Page YAML

@@ -3,6 +3,8 @@ title: Use an Existing Quire Project as a Template
 weight: 6520
 type: essay
 online: false
+aliases:
+  - /documentation/serial-publications/
 ---
 
 Follow the steps below to use GitHub to create a new project based on a preexisting one. This is especially useful for journals and other serial publications.
