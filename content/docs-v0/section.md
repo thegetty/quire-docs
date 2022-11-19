@@ -1,5 +1,5 @@
 ---
-title: Docs V.0
+title: Docs v0
 type: contents
 class: grid hide-menu
 slug: .
