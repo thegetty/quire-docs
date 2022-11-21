@@ -577,7 +577,7 @@ project_list:
 
   - id: "mariategui_poesia"
     src: /screenshots/_Mariategui_Poesia.jpg
-    alt: "An assortment of Spanish-language publications about Jose Carlos Mariátegui appear on colorful thumbnails"
+    alt: "José Carlos Mariátegui: Escritos Juveniles (La Edad de Piedra). Poesía, Cuento, Teatro, 1."
     type: Monograph
     publisher: "Archivo José Carlos Mariátegui"
     title_info: "Escritos Juveniles de José Carlos Mariátegui"
