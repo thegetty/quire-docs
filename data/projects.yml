@@ -571,3 +571,15 @@ project_list:
       - ellenarchie
       - margaretnagawa
     note: "*And I Must Scream* is the first digital catalogue published by the Michael C. Carlos Museum to utilize the Quire platform. For this initial foray into Quire, the team used the standard Quire features to produce a catalogue that includes essays and entries for each artist's contribution that explores ”the monstrous expression of our global crises” as a permanent, freely available extension of the special exhibition that debuted in 2022. Funding for this project was made possible by the Andrew W. Mellon Foundation."
+
+  - id: "mariategui_poesia"
+    src: /screenshots/_Mariategui_Poesia.jpg
+    alt: "An assortment of Spanish-language publications about Jose Carlos Mariátegui appear on colorful thumbnails"
+    type: Monograph
+    publisher: "Archivo José Carlos Mariátegui"
+    title_info: "Escritos Juveniles de José Carlos Mariátegui"
+    pub_date: 2022-08-11
+    url: https://www.mariategui.org/recursos/publicaciones/
+    github_user:
+      - Mapachosa
+    note: "Archivo Jose Carlos Mariátegui created nine new publications using Quire. These volumes compile poetry, interviews, and other writings by José Carlos Mariátegui, one of Latin America's most influential scholars and thinkers. In addition to creating the online sites with Quire, the publications are also available as PDFs and EPUBs, helping achieve the Archive's goal of making Mariátegui's work more widely available and accessible. Minimal customizations were made."
