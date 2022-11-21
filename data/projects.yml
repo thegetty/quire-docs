@@ -587,3 +587,16 @@ project_list:
     github_user:
       - Mapachosa
     note: "Archivo Jose Carlos Mariátegui created nine new publications using Quire. These volumes compile poetry, interviews, and other writings by José Carlos Mariátegui, one of Latin America's most influential scholars and thinkers. In addition to creating the online sites with Quire, the publications are also available as PDFs and EPUBs, helping achieve the Archive's goal of making Mariátegui's work more widely available and accessible. Minimal customizations were made."
+
+  - id: "amon_artofthescene"
+    src: /screenshots/_amon_artofthescene.jpg
+    alt: "The Art of the Scene: Charles Truett Williams, Katie Robinson Edwards, Jonathan Frembling, S. Janelle Montgomery."
+    type: Monograph
+    publisher: "Amon Carter Museum of American Art"
+    title_info: "The Art of the Scene: Charles Truett Williams"
+    pub_date: 2022-11-01
+    url: https://art-scene.cartermuseum.org/
+    customization_level: minor
+    github_user:
+      - mmpadilla15
+    note: "“The Art of the Scene” is the first digital publication from the Amon Carter Museum of American Art in Fort Worth. The Carter team chose Quire for its ease-of-use and simplicity for a first dive into the ocean of e-publications! They wanted a format that could showcase images and be accessible to researchers who might be looking for content on this understudied artist and his circle. Minimal customizations were made."
