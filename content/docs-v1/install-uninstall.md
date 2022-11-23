@@ -21,15 +21,30 @@ Quire is completely free and open source. Installation instructions can be found
 
 ## Install Quire v1 (macOS)
 
-Installing and running Quire requires using the Terminal {{< q-def "command-line shell" >}}. Open it from your Applications/Utilities folder or by pressing Command–Space Bar and typing “Terminal”.
 
-1. In your Terminal, install Apple’s Xcode (a set of developer tools for your mac) with the command `xcode-select --install`
-2. Download and install the **v18.12.1 release** of Node.js: [https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg](https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg). Node.js enables you to run javascipt on your computer.
-3. Back in your Terminal, install Quire with the command `npm install --global @thegetty/quire-cli@pre-release`
+1. Download and install the **v18.12.1 release** of Node.js: [https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg](https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg). Node.js enables you to run javascipt on your computer.
+2. Installing and running Quire requires using the Terminal {{< q-def "command-line shell" >}}. Open it from your Applications/Utilities folder or by pressing Command–Space Bar and typing “Terminal”.
+3. Install Apple’s Xcode, a set of developer tools for your mac, by cutting and pasting the following command in your Terminal and then hitting "Enter".
+
+    ```text
+    xcode-select --install
+    ```
+
+4. Back in your Terminal, install Quire with the command
+
+    ```text
+    npm install --global @thegetty/quire-cli@pre-release
+    ```
 
     The Quire installation process may take a few minutes, during which time there will be messaging output in your Terminal. The only messages of any concern are those labeled as ERROR or ERR.
 
-4. Confirm installation by running the command `quire --help` in your Terminal. This should bring up a list of Quire commands. If you receive the message "command not found", this means installation was unsuccessful.
+5. Confirm installation by entering the following command in your Terminal.
+
+    ```text
+     quire --help
+     ```
+
+    This should bring up a list of Quire commands. If you receive the message "command not found", this means installation was unsuccessful.
 
 For installation troubleshooting, search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions).
 
@@ -39,8 +54,32 @@ For installation troubleshooting, search or post to our [Discussions Forum](http
 
 ## Install Quire v1 (Windows)
 
-Coming soon...
+1. Download and install Git for Windows: https://gitforwindows.org/. This will install useful version control software on your computer.
+2. Download and install the **v18.12.1 release** of Node.js: [https://nodejs.org/dist/v18.12.1/node-v18.12.1-x86.msi](https://nodejs.org/dist/v18.12.1/node-v18.12.1-x86.msi). Node.js enables you to run javascipt on your computer.
+3. Installing and running Quire requires using Windows PowerShell. Open the PowerShell by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”.
+4. In your PowerShell, install Windows Build Tools, a set of developer tools for your PC, by cutting and pasting the following command
 
+    ```text
+    npm install --g --production windows-build-tools
+    ```
+
+5. Next install Quire with the command
+
+    ```text
+    npm install --global @thegetty/quire-cli@pre-release
+    ```
+
+    The Quire installation process may take a few minutes, during which time there will be messaging output in your PowerShell. If you see an error that includes "UnauthorizedAccess" then run the command `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` and try installing Quire again.
+
+6. Confirm installation by running the following command in your PowerShell:
+
+    ```text
+    quire --help
+    ```
+
+    This should bring up a list of Quire commands. If you receive the message "command not found", this means installation was unsuccessful.
+
+For installation troubleshooting, search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions).
 
 ## Update Quire
 
