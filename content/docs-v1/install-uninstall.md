@@ -24,13 +24,13 @@ Quire is completely free and open source. Installation instructions can be found
 
 1. Download and install the **v18.12.1 release** of Node.js: [https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg](https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg). Node.js enables you to run javascipt on your computer.
 2. Installing and running Quire requires using the Terminal {{< q-def "command-line shell" >}}. Open it from your Applications/Utilities folder or by pressing Command–Space Bar and typing “Terminal”.
-3. Install Apple’s Xcode, a set of developer tools for your mac, by cutting and pasting the following command in your Terminal and then hitting "Enter".
+3. Install Apple’s Xcode, a set of developer tools for your mac, by cutting and pasting the following command in your Terminal and then hitting "Enter":
 
     ```text
     xcode-select --install
     ```
 
-4. Back in your Terminal, install Quire with the command
+4. Back in your Terminal, install Quire with the following command:
 
     ```text
     npm install --global @thegetty/quire-cli@pre-release
@@ -38,7 +38,7 @@ Quire is completely free and open source. Installation instructions can be found
 
     The Quire installation process may take a few minutes, during which time there will be messaging output in your Terminal. The only messages of any concern are those labeled as ERROR or ERR.
 
-5. Confirm installation by entering the following command in your Terminal.
+5. Confirm installation by entering the following command in your Terminal:
 
     ```text
      quire --help
@@ -46,11 +46,26 @@ Quire is completely free and open source. Installation instructions can be found
 
     This should bring up a list of Quire commands. If you receive the message "command not found", this means installation was unsuccessful.
 
-For installation troubleshooting, search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions).
+If you encounter errors see the [Troubleshooting macOS Install](#troubleshooting-macos-install) section below or search/post on our [Discussions Forum](https://github.com/thegetty/quire/discussions) for assistance.
 
 {{< q-class "box tip" >}}
 - If you will still be using the legacy version of Quire (v0) on past projects, you will need to continue to run those with the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg). Node Version Manager (NVM) is a software that can be used to toggle back-and-forth with Node.js versions. More information can be found at [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
 {{< /q-class >}}
+
+### Troubleshooting macOS Install
+
+During install, you may come across an error message that says “permission denied.” This is related to the ownership and permissions settings for the global node modules directories installed in step 1. To fix this issue, you will need to run a special command as an administrator or “super user.”
+
+1. Click on your computer background and press Shift-Command-G. Navigate to /usr/local/lib and delete the node_modules folder.
+2. Reinstall the v18.12.1 release of Node.js: [https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg](https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg)
+3. Run the following sudo (“superuser do”) command:
+
+    ```text
+    sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+    ```
+4. Try reinstalling Quire.
+
+If, after running the sudo command, the permission errors are not resolved, search our [Discussions Forum](https://github.com/thegetty/quire/discussions) for further troubleshooting advice or to post a new discussion.
 
 ## Install Quire v1 (Windows)
 
@@ -79,7 +94,7 @@ For installation troubleshooting, search or post to our [Discussions Forum](http
 
     This should bring up a list of Quire commands. If you receive the message "command not found", this means installation was unsuccessful.
 
-For installation troubleshooting, search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions).
+For installation troubleshooting search or post on our [Discussions Forum](https://github.com/thegetty/quire/discussions).
 
 ## Update Quire
 
@@ -102,8 +117,10 @@ TK
 
 ## Uninstall Quire
 
-In your command-line shell (Terminal on macOS and PowerShell in Administrator mode on Windows), type the following text and hit enter to uninstall Quire. Keep in mind, this will only uninstall the Quire CLI and not other related software like Node.js or Apple Xcode.
+In your command-line shell (Terminal on macOS and PowerShell in Administrator mode on Windows), type the following text and hit enter to uninstall Quire.
 
 ```text
 npm uninstall --global @thegetty/quire-cli
 ```
+
+Keep in mind, this will only uninstall the Quire CLI and not other related software like Node.js, Apple Xcode, or Git for Windows.
