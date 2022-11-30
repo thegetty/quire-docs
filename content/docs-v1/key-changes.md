@@ -1,9 +1,9 @@
 ---
-title: "What's New in Version 1"
+title: "Key Changes in Version 1"
 subtitle:
 weight: 6005
 type: essay
-abstract: "Important changes to note between Quire v0 and v1"
+abstract: "Important differences to note between Quire v0 and v1"
 ---
 
 For users of the legacy version of Quire (v0), this chapter will walk you through some of the key changes and prepare you to make the switch to the new version (v1).
