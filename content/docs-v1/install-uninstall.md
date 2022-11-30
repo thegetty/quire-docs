@@ -7,7 +7,7 @@ aliases:
   - /documentation/install-update/
 ---
 
-Quire is completely free and open source. Installation instructions can be found below.
+Quire is free to use and open source. Quire uses the [3-clause BSD open source license](https://github.com/thegetty/quire/blob/main/LICENSE). Installation instructions can be found below.
 
 When installing Quire, keep in mind, there is no user interface so it may look or feel different than other publishing software. This was an intentional decision. The transparency of Quire's backend provides more flexibility and opportunities for customization.
 
@@ -97,7 +97,7 @@ Updating Quire will not affect your existing projects. It will only take effect 
     ```
 
 {{< q-class "box tip" >}}
-If you are a legacy version (v0) Quire user and are having trouble getting the v1 version to run, try [uninstalling](#uninstall-quire) Quire first. Close your command-line shell and then following the steps above to update to the latest version.
+If you are a legacy version (v0) Quire user and are having trouble getting the v1 version to run, try [uninstalling](#uninstall-quire) Quire first. Close your command-line shell and then follow the steps above to update to the latest version.
 {{< /q-class >}}
 
 ## Re-Install Legacy Versions of Quire
