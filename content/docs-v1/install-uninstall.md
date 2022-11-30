@@ -14,102 +14,94 @@ When you install Quire what you are actually installing is something called a {{
 Quire is completely free and open source. Installation instructions can be found below.
 
 {{< q-class "box warning" >}}
-- Quire v1 is currently in a pre-release/testing phase. Please report any bugs or issues you run across in our [Issue Tracker](https://github.com/thegetty/quire/issues).
-
-    [Sign-up for our newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4) to stay updated on the official release.
+- Quire v1 is currently in a pre-release/testing phase. If you need troubleshooting assistance either search or post on our [Discussions Forum](https://github.com/thegetty/quire/discussions). For bugs, please report them using our [Issue Tracker](https://github.com/thegetty/quire/issues).
 {{< /q-class >}}
 
 ## Install Quire v1 (macOS)
 
 
-1. Download and install the **v18.12.1 release** of Node.js: [https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg](https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg). Node.js enables you to run javascipt on your computer.
-2. Installing and running Quire requires using the Terminal {{< q-def "command-line shell" >}}. Open it from your Applications/Utilities folder or by pressing Command–Space Bar and typing “Terminal”.
-3. Install Apple’s Xcode, a set of developer tools for your mac, by cutting and pasting the following command in your Terminal and then hitting "Enter":
+1. **Node.js** enables you to run javascipt on your computer. Download and install the **LTS version** of Node.js: https://nodejs.org/en/download/.
+2. Installing and running Quire requires using the {{< q-def "command-line shell" >}} which on a Mac is called  **Terminal**. Open it from your Applications/Utilities folder or by pressing Command–Space Bar and typing “Terminal”.
+3. In your Terminal, install **Quire** with the following command:
 
     ```text
-    xcode-select --install
+    npm install --global @thegetty/quire-cli
     ```
 
-4. Back in your Terminal, install Quire with the following command:
+    The Quire installation process may take a few minutes, during which time there will be messaging output in your Terminal. The only messages of any concern are those labeled as ERROR or ERR. You can ignore any messages that tell you to run `npm audit`.
 
-    ```text
-    npm install --global @thegetty/quire-cli@pre-release
-    ```
-
-    The Quire installation process may take a few minutes, during which time there will be messaging output in your Terminal. The only messages of any concern are those labeled as ERROR or ERR.
-
-5. Confirm installation by entering the following command in your Terminal:
-
-    ```text
-     quire --help
-     ```
-
-    This should bring up a list of Quire commands. If you receive the message "command not found", this means installation was unsuccessful.
-
-If you encounter errors see the [Troubleshooting macOS Install](#troubleshooting-macos-install) section below or search/post on our [Discussions Forum](https://github.com/thegetty/quire/discussions) for assistance.
-
-{{< q-class "box tip" >}}
-- If you will still be using the legacy version of Quire (v0) on past projects, you will need to continue to run those with the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg). Node Version Manager (NVM) is a software that can be used to toggle back-and-forth with Node.js versions. More information can be found at [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
-{{< /q-class >}}
-
-### Troubleshooting macOS Install
-
-During install, you may come across an error message that says “permission denied.” This is related to the ownership and permissions settings for the global node modules directories installed in step 1. To fix this issue, you will need to run a special command as an administrator or “super user.”
-
-1. Click on your computer background and press Shift-Command-G. Navigate to /usr/local/lib and delete the node_modules folder.
-2. Reinstall the v18.12.1 release of Node.js: [https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg](https://nodejs.org/download/release/v18.12.1/node-v18.12.1.pkg)
-3. Run the following sudo (“superuser do”) command:
+4. If you receive an error message that says "permission denied", this is related to the ownership and permissions settings for the global node_modules directories installed in step 1. To fix this issue, run the following command:
 
     ```text
     sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
     ```
-4. Try reinstalling Quire.
 
-If, after running the sudo command, the permission errors are not resolved, search our [Discussions Forum](https://github.com/thegetty/quire/discussions) for further troubleshooting advice or to post a new discussion.
+    Then try step 3 again.
+
+4. Confirm installation by running the following command in your Terminal:
+
+    ```text
+     quire --version
+     ```
+
+    You should see a version number that begins with a 1. If you receive the message "command not found", this means installation was unsuccessful.
 
 ## Install Quire v1 (Windows)
 
-1. Download and install Git for Windows: https://gitforwindows.org/. This will install useful version control software on your computer.
-2. Download and install the **v18.12.1 release** of Node.js: [https://nodejs.org/dist/v18.12.1/node-v18.12.1-x86.msi](https://nodejs.org/dist/v18.12.1/node-v18.12.1-x86.msi). Node.js enables you to run javascipt on your computer.
-3. Installing and running Quire requires using Windows PowerShell. Open the PowerShell by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”.
-4. In your PowerShell, install Windows Build Tools, a set of developer tools for your PC, by cutting and pasting the following command
+1. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install useful version control software on your computer.
+2. **Node.js** enables you to run javascipt on your computer. Download and install the **LTS version** of Node.js: https://nodejs.org/en/download/. Bypass any prompts related to installing [Chocolatey](https://chocolatey.org/).  
+3. Installing and running Quire requires using {{< q-def "command-line shell" >}} which on a PC is called **Windows PowerShell**. Open the PowerShell by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”.
+4. In your PowerShell, install **Quire** with the following command:
 
     ```text
-    npm install --g --production windows-build-tools
+    npm install --global @thegetty/quire-cli
     ```
 
-5. Next install Quire with the command
+    The Quire installation process may take a few minutes, during which time there will be messaging output in your PowerShell.
+
+5. If you receive an error message that says "UnauthorizedAccess", this is related to a PowerShell permissions setting. To fix this issue, run the command:
 
     ```text
-    npm install --global @thegetty/quire-cli@pre-release
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted
     ```
-
-    The Quire installation process may take a few minutes, during which time there will be messaging output in your PowerShell. If you see an error that includes "UnauthorizedAccess" then run the command `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` and try installing Quire again.
+    Then try step 4 again.  
 
 6. Confirm installation by running the following command in your PowerShell:
 
     ```text
-    quire --help
+    quire --version
     ```
 
-    This should bring up a list of Quire commands. If you receive the message "command not found", this means installation was unsuccessful.
-
-For installation troubleshooting search or post on our [Discussions Forum](https://github.com/thegetty/quire/discussions).
+    You should see a version number that begins with a 1. If you receive the message "command not found", this means installation was unsuccessful.
 
 ## Update Quire
 
-{{< q-class "box warning" >}}
-- Updating Quire will not effect your existing projects. It will only take effect on any new projects you start after updating.
-{{< /q-class >}}
+Updating Quire will not affect your existing projects. It will only take effect on *new* projects that were started after the update process. While any *new* projects will use the latest version of Quire, older, previously started projects will remain untouched. This is to avoid any unforeseen and unintended changes to publications that are completed or in progress as the version of Quire you use can effect layouts of a page, availability of features, etcetera.
 
-Note that while any *new* projects you start at this point will use the latest version of Quire just installed, older, previously started projects will remain untouched. This is to avoid any unforeseen and unintended changes to publications that are completed or in progress as the version of Quire you use can effect layouts of a page, availability of features, etcetera.
+Follow these steps to update Quire to the latest release:
 
-
-To update Quire to the latest version, you can run the single install command again. In your command-line shell (Terminal on macOS and PowerShell in Administrator mode on Windows), type the following text and hit enter:
+1. Uninstall Quire
 
 ```text
-npm install --global @thegetty/quire-cli@pre-release
+npm uninstall --global @thegetty/quire-cli
 ```
+
+2. Reinstall Quire
+
+```text
+npm install --global @thegetty/quire-cli
+```
+
+3. Confirm what version you are running
+
+    ```text
+    quire --version
+    ```
+You can find Quire's release history here:
+
+{{< q-class "box tip" >}}
+For any Mac users still using the legacy version of Quire (v0) on past projects, you will need to continue to run those with the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg). Node Version Manager (NVM) is a software that can be used to toggle back-and-forth with Node.js versions. More information can be found at [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
+{{< /q-class >}}
 
 ### Update an Existing Project
 
@@ -117,10 +109,10 @@ TK
 
 ## Uninstall Quire
 
-In your command-line shell (Terminal on macOS and PowerShell in Administrator mode on Windows), type the following text and hit enter to uninstall Quire.
+Run the following command in your command-line shell to uninstall Quire.
 
 ```text
 npm uninstall --global @thegetty/quire-cli
 ```
 
-Keep in mind, this will only uninstall the Quire CLI and not other related software like Node.js, Apple Xcode, or Git for Windows.
+Keep in mind, this will only uninstall the Quire CLI and not other related software like Node.js.
