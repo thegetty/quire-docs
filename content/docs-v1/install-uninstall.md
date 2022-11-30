@@ -2,186 +2,128 @@
 title: Install or Update
 weight: 6060
 type: essay
-abstract: "Get set up to use Quire on macOS, Windows, or Linux"
+abstract: "Get set up to use Quire on macOS and Windows"
 aliases:
   - /documentation/install-update/
 ---
 
+Quire is free to use and open source. Quire uses the [3-clause BSD open source license](https://github.com/thegetty/quire/blob/main/LICENSE).
+
+When installing Quire, keep in mind, there is no user interface so it may look or feel different than other publishing software. This was an intentional decision. The transparency of Quire's backend provides more flexibility and opportunities for customization.
+
+When you install Quire what you are actually installing is something called a {{< q-def "command-line interface" >}} or CLI. The CLI enables you to create, preview and output publications using simple commands like `quire new`, `quire preview` and `quire build`. Installation instructions can be found below.
+
 {{< q-class "box warning" >}}
-- Quire is in a limited beta, © J. Paul Getty Trust, and not yet released as open-source software. For a free license to use Quire for your publication projects (and for additional access to support) [please sign up](https://goo.gl/forms/Ih4SOHje0Z9dm3C73).
+- Quire v1 is currently in a pre-release/testing phase. If you need troubleshooting assistance either search or post your questions on our [Discussions Forum](https://github.com/thegetty/quire/discussions). For bugs, please report them using our [Issue Tracker](https://github.com/thegetty/quire/issues).
 {{< /q-class >}}
 
-## macOS Installation
-
-Installing and running Quire requires using the Terminal {{< q-def "command-line shell" >}}. Open it from your Applications/Utilities folder or by pressing Command–Space Bar and typing “Terminal”. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
-
-### Quick Install
-
-If you’re eager to get started, this will install the complete Quire package but without e-book or PDF output capability. These may be added later, by following steps 3–5 in the Full Install guidelines below.
-
-1. In Terminal, install Apple’s Xcode with: `xcode-select --install`
-2. Download and install the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg)
-3. In Terminal, install Quire with: `npm install --global @thegetty/quire-cli`
-4. Confirm installation by pulling up a list of Quire commands: `quire --help`
-
- The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal.
-
-{{< q-class "box tip" >}}
-- The only Terminal messages of concern are those labeled as ERROR or ERR. For error messages that say "permission denied," jump to the section on [troubleshooting macOS install](#troubleshooting-macos-install) below. For other error messages or if you receive "command not found" after entering `quire --help` in step 4., search our [Discussions Forum](https://github.com/thegetty/quire/discussions) or post a new discussion.
-{{< /q-class >}}
+## Install Quire v1 (macOS)
 
 
-### Full Install
-
-Follow the steps below to first install the support software for Quire, and then Quire itself.
-
-1. **Apple’s Xcode** is a set of [developer tools for your mac](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by copying and pasting the following command and pressing enter. If Xcode is not already installed, an additional notification will pop up. Click “Install” and follow the prompts.
-
-    ```text
-    xcode-select --install
-    ```
-
-2. **Node.js** enables you to run javascript on your computer. Download and install the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg).
-
-3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/docs-v1/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the macOS installer, double-click it and follow the prompts to install: [https://pandoc.org/installing.html](https://pandoc.org/installing.html).
-
-4. **PrinceXML** enables you to create a PDF version of your Quire project with the `quire pdf` command. Visit the PrinceXML site, download the Mac OS version, uncompress the folder, and rename it to "prince": [http://www.princexml.com/download/](http://www.princexml.com/download/).
-
-    Open Terminal and type these lines in, hitting enter after each:
-
-    ```text
-    cd Downloads/prince
-    sudo ./install.sh
-    ```
-
-    You will be prompted to enter your computer password. Press enter. You should receive a message that PrinceXML will be installed in the `/usr/local` directory. Press enter again. If successful you will see a message in the Terminal saying "installation complete." Or, if you get a "no such file or directory" message after the first line, the file you dowloaded is either not in your Downloads folder, or is not named "prince". Correct as necessary and try again.
-
-    When complete, type `cd` into the Terminal to return to your {{< q-def "home directory">}}.
-
-    ```text
-    cd
-    ```
-
-5. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Terminal with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/docs-v1/quire-commands/) chapter of our guide. Copy and paste the following line into Terminal to install Quire:
+1. **Node.js** enables you to run javascript on your computer. Download and install the **LTS version** of Node.js: https://nodejs.org/en/download/.
+2. Installing and running Quire requires using the {{< q-def "command-line shell" >}} which on a Mac is called  **Terminal**. Open it by pressing Command–Space Bar and typing “Terminal”.
+3. In your Terminal, install **Quire** with the following command:
 
     ```text
     npm install --global @thegetty/quire-cli
     ```
 
-    The Quire installation process may take a minute or two, during which time there will be messaging output in Terminal. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation.
+    The Quire installation process may take a few minutes, during which time there will be messaging output in your Terminal. The only messages of any concern are those labeled as ERROR or ERR. You can ignore any messages that tell you to run `npm audit`.
 
-    To verify installation, enter the command below. This will give you a list of [commands](/docs-v1/quire-commands/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
-
-    ```text
-    quire --help
-    ```
-
-    Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
-
-{{< q-class "box warning" >}}
-- If you are working on the macOS Monterey, you will need to also install **Python 2**. Follow this link: [https://www.python.org/downloads/release/python-2718/](https://www.python.org/downloads/release/python-2718/), click the "macOS 64-bit installer," and follow the install prompts.
-{{< /q-class >}}
-
-
-### Troubleshooting macOS Install
-
-During install, you may come across an error message that says "permission denied." This is related to the ownership and permissions settings for the global node modules directories installed in step 2. To fix this issue, you will need to run a special command as an administrator or "super user."
-
-1. Click on your computer background and press Shift-Command-G. Navigate to /usr/local/lib and delete the node_modules folder.
-2. Reinstall the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg)
-3. Run the following `sudo` ("superuser do") command:
-
-```
-sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
-```
-4. Try reinstalling Quire.
-
-If, after running the  `sudo` command, the permission errors are not resolved, search our [Discussions Forum](https://github.com/thegetty/quire/discussions) for further troubleshooting advice or to post a new discussion.
-
-
-## Windows Installation
-
-Installing Quire requires using Windows PowerShell {{< q-def "command-line shell" >}} as an Administrator. Open it by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
-
-### Quick Install
-
-If you’re eager to get started, this will install the complete Quire package but without e-book or PDF output capability. These may be added later, by following steps 3–5 in the Full Install guidelines below.
-
-1. Download and install Git for Windows: [https://gitforwindows.org/](https://gitforwindows.org/)
-2. Download and install **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi](https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi)
-3. In Windows PowerShell (Admin), install Windows Build Tools with: `npm install --g --production windows-build-tools`
-4. In Windows PowerShell (Admin), install Quire with: `npm install --global @thegetty/quire-cli`
-5. Confirm installation by pulling up a list of Quire commands: `quire --help`
-
-The Quire installation process may take a minute or two, during which time there will be messaging output in PowerShell. The only messages of any concern are those labeled as ERROR or ERR. If you see these errors, or if you see "command not found" after entering `quire --help` in step 5., search our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
-
-### Full Install
-
-1. **Git for Windows** installs useful version control software on your computer. Download the EXE installer file at [https://gitforwindows.org](https://gitforwindows.org/), click on it and hit "run", you should see a setup wizard screen that will install Git for Windows. During the installation, use the default settings.
-
-2. **Node.js** enables you to run javascript on your computer. Download and install **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi](https://nodejs.org/download/release/v14.18.1/node-v14.18.1-x64.msi). The MSI installer will be downloaded, open it and a setup wizard screen will guide you through the process.
-
-3. **Pandoc** serves two purposes in Quire: You can use it to [convert Word documents to Markdown](/docs-v1/fundamentals/#microsoft-word-to-markdown-conversion), and it enables you to create EPUB e-book files of your Quire project with the `quire epub` command. Download the Pandoc MSI installer file, open it and a setup wizard screen will guide you through the process: [https://pandoc.org/installing.html](https://pandoc.org/installing.html)
-
-4. **PrinceXML** enables you to create a PDF version of your Quire project. At [https://www.princexml.com/download/](https://www.princexml.com/download/), download either the 32-bit or 64-bit EXE installer depending on your operating system. (If you’re not sure of your system  open the Settings app by pressing Windows+I. Go to System > About and look for the “System type” entry on the right side.) Click on the downloaded file and hit "run", you should see a setup wizard screen that will guide you through install.
-
-5. **Windows Build Tools** is a set of developer tools for your PC. To install them, open PowerShell as administrator, type the following command, and hit enter:
+4. If you receive an error message that says "Error: EACCES: permission denied", this is related to the ownership and **permissions settings** for the global node_modules directories installed in step 1. To fix this issue, run the following command:
 
     ```text
-    npm install --g --production windows-build-tools
+    sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
     ```
 
-    This command installs c++ 2015 build tools and python 2 required for node-gyp. The process will take some time and you’ll see the starting prompt with the name of your computer once it’s complete.
+    Then try step 3 again.
 
-6. **Quire** is operated through a {{< q-def "command-line interface" >}} (CLI) that enables you to create, preview and output publications using Windows PowerShell with commands like `quire new`, `quire preview` and `quire site`. You can learn more in the [*Quire Commands*](/docs-v1/quire-commands/) chapter of our guide. Copy and paste the following line into PowerShell to install Quire:
+4. Confirm installation by running the following command in your Terminal:
+
+    ```text
+     quire --version
+     ```
+
+    You should see a version number that begins with a 1. If you receive the message "command not found" this means installation was unsuccessful.
+
+5. Vist the [*Get Started*](/docs-v1/get-started) section of the documentation to begin a new Quire project.
+
+## Install Quire v1 (Windows)
+
+1. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install the necessary version control software on your computer.
+2. **Node.js** enables you to run javascript on your computer. Download and install the **LTS version** of Node.js: https://nodejs.org/en/download/. Bypass any prompts related to installing [Chocolatey](https://chocolatey.org/).  
+3. Installing and running Quire requires using {{< q-def "command-line shell" >}} which on a PC is called **Windows PowerShell**. Open the PowerShell by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. The only time you need to run PowerShell as an Admin is during install.
+4. In your PowerShell, install **Quire** with the following command:
 
     ```text
     npm install --global @thegetty/quire-cli
     ```
 
-    The Quire installation process may take a minute or two, during which time there will be messaging output in PowerShell. The only messages of any concern are those labeled as ERROR or ERR. These likely indicate a failed installation.
+    The Quire installation process may take a few minutes, during which time there will be messaging output in your PowerShell.
 
-    To verify installation, enter the command below. This will give you a list of [commands](/docs-v1/quire-commands/) that will help you get started using and navigating Quire. And if you get "command not found" it means it was not installed correctly.
+5. Once Quire has been installed, change your PowerShell **permissions settings** by running the command:
 
     ```text
-    quire --help
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+    ```
+    A message will pop-up that says "The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks. Do you want to change the execution policy?" Type "Y" to accept this change.
+
+    Please note, this setting can be easily reverted by running the command `  Set-ExecutionPolicy -ExecutionPolicy Restricted`.
+
+6. Confirm installation by running the following command in your PowerShell:
+
+    ```text
+    quire --version
     ```
 
-    Search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) to troubleshoot installation issues.
+    You should see a version number that begins with a 1. If you receive the message "command not found" this means installation was unsuccessful.
+
+7. Before getting started, press `cd ~` to move into your computer's home directory, then visit the [*Get Started*](/docs-v1/get-started) section of the documentation to begin a new Quire project.
 
 ## Update Quire
 
-{{< q-class "box warning" >}}
-- Updating Quire will not effect your existing projects. It will only take effect on any new projects you start after updating.
-{{< /q-class >}}
+Updating Quire will not affect your existing projects. It will only take effect on *new* projects that were started after the update process. While any *new* projects will use the latest version of Quire, older, previously started projects will remain untouched. This is to avoid any unforeseen and unintended changes to publications that are completed or in progress as the version of Quire you use can effect layouts of a page, availability of features, etcetera.
 
-To update Quire to the latest version, you can run the single install command again. In your command-line shell (Terminal on macOS and PowerShell in Administrator mode on Windows), type the following text and hit enter:
+1. Run the following install command to update Quire to the latest release:
+
+    ```text
+    npm install --global @thegetty/quire-cli
+    ```
+
+2. Confirm what version you are running with the following command:
+
+    ```text
+    quire --version
+    ```
+
+## Re-Install Legacy Versions of Quire
+
+Visit [our page on NPM](https://www.npmjs.com/package/@thegetty/quire-cli?activeTab=versions) for an overview of Quire's version release history.
+
+If you need to go back and work on a past project created with a legacy version (v0) of Quire, run the normal Quire install command but add a suffix that includes the version number you would like to install. For example, version 0.20.4 would be re-installed using:
 
 ```text
-npm install --global @thegetty/quire-cli
+npm install --global @thegetty/quire-cli@0.20.4
 ```
 
-Note that while any *new* projects you start at this point will use the latest version of Quire just installed, older, previously started projects will remain untouched. This is to avoid any unforeseen and unintended changes to publications that are completed or in progress as the version of Quire you use can effect layouts of a page, availability of features, etcetera.
+If you are having trouble switching Quire versions try [uninstalling](#uninstall-quire) Quire first. Close your command-line shell and then follow the steps above to update to the latest version.
 
-While it will not make changes to older projects, you should still be able to run commands from the new version of Quire on old Quire projects. Commands like `quire preview` and `quire pdf`. If you run into trouble with this and find commands do not run as intended or you see errors logged in your command-line, search or post to our [Discussions Forum](https://github.com/thegetty/quire/discussions) for help.
+When using v0 versions of Quire, you must revert back to the **v14.18.1 release** of Node.js: [https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg](https://nodejs.org/download/release/v14.18.1/node-v14.18.1.pkg). Otherwise, you will receive errors when running Quire commands.
+
+{{< q-class "box tip" >}}
+Node Version Manager (NVM) is a software for Mac users that helps you easily toggle back-and-forth between Node.js versions. You can even tether different versions of Quire to different versions of node, eliminating the constant need to re-install. More information can be found at [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
+{{< /q-class >}}
 
 ### Update an Existing Project
 
-If you have an existing project that you want to migrate to a newer version of Quire, we recommend the following process:
-
-1. Update Quire following the instructions above.
-2. Start a new quire project.
-3. Delete the `content`, `data`, and `static` folders in the new project, and replace them with those from your old project.
-4. Copy over any style customization changes you made in the `themes/default/layouts/source/css/variables.scss` file or others. (In older versions of Quire this file would be `themes/quire-starter-theme/layouts/source/css/variables.scss`.)
-
-Run `quire preview --verbose` to test. If you see errors logged in the command-line, or if the preview doesn’t display as intended on http://localhost:1313/, search our [Discussions Forum](https://github.com/thegetty/quire/discussions) for help.
+TK
 
 ## Uninstall Quire
 
-In your command-line shell (Terminal on macOS and PowerShell in Administrator mode on Windows), type the following text and hit enter:
+Run the following command in your command-line shell to uninstall Quire.
 
 ```text
 npm uninstall --global @thegetty/quire-cli
 ```
 
-This will only uninstall Quire itself. External software you installed as part of Quire (including Node.js, Pandoc, Kindle Previewer, and PrinceXML) will need to be uninstalled individually according to the directions they provide.
+Keep in mind, this will only uninstall the Quire CLI and not other related software like Node.js.
