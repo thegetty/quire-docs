@@ -82,3 +82,7 @@ Learn more in the [*Pages Types & Structure*](/docs-v1/pages/) section of our v1
 The syntax for shortcodes is also different in the new version of Quire. What was `{{</* q-figure */>}}` is now `{% figure %}`. Note that the wrapping elements have changed from `{{</* */>}}` to `{% %}`, and the name of the shortcode has lost it's `q-` prefix.
 
 Also, the way data and other information is added to shortcodes is different in some cases. For example, you don't specify the `id` value in the figure shortcode like `{{</* q-figure id="fig-01" */>}}`. Instead it’s `{% figure 'fig-01' %}`.
+
+## Preview URL
+
+When you run the command `quire preview` the URL to view you project is now `http://localhost:8080` as opposed to `localhost:1313` in the v0 version of Quire.
