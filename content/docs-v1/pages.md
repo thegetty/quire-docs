@@ -91,14 +91,14 @@ order:
 In the following example of a publication outline, we’ve listed the files and directories as we would like them to appear in the publication’s table of contents.
 
 ```md
-📄 cover.md
 📄 contents.md
+📄 introduction.md
 📁 part-one
-  📄 section-overview.md
+  📄 index.md
   📄 chapter-01.md
   📄 chapter-02.md
 📁 part-two
-  📄 section-overview.md
+  📄 index.md
   📄 chapter-03.md
 ```
 
@@ -115,6 +115,30 @@ Numbering should be unique, and use sequential whole numbers, but it can skip nu
 ## Create Section Landing Pages
 
 A Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. Each sub-section must include an `index.md `file. This will be the landing page for the section.
+
+```tx
+📁 content
+  📄 index.md
+  📄 contents.md
+  📄 introduction.md
+  📁 part-one
+    📄 index.md
+    📄 chapter-01.md
+    📄 chapter-02.md
+```
+Here is an example of the page YAML that might be found in a `content/part-one/index.md` file:
+
+```yaml
+---
+title: Part One
+layout: table-of-contents
+presentation: list
+order: 9
+outputs:
+  - pdf
+  - html
+---
+```
 
 Files named `index.md`, always inherit the URL of their parent directory. For example, if you have a `content/sub-section/index.md` file, and your project is hosted at the `domain my-project.com`, the URL for the landing page will be `my-project.com/sub-section/`.
 
