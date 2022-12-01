@@ -123,35 +123,32 @@ Here’s an outline showing the order, organization, and file names for a sample
 
 ```md
 📁 content
-  📁 _data     <-- not included in outline
-  📁 _computed <-- not included in outline
-  📁 _assets   <-- not included in outline
+  📁 _data      <-- not included in outline
+  📁 _computed  <-- not included in outline
+  📁 _assets    <-- not included in outline
   📄 about.md
-  📄 cover.md
-  📄 index.md
+  📄 index.md   <-- cover
   📁 part-one
-    📄 section-overview.md
+    📄 index.md <-- subsection landing page
     📄 chapter-01.md
     📄 chapter-02.md
   📁 part-two
-    📄 section-overview.md
+    📄 index.md <-- subsection landing page
     📄 chapter-03.md
 ```
 
-The names of the files will effect the final URLs of your publication. By default, URLs will be the filename, minus the `.md` suffix. Files nested in a sub-directory within `content` will include that sub-directory in the URL as well.
+The names of most `.md` files will effect the final URLs of your publication. By default, URLs will be the filename, minus the `.md` suffix. Files nested in a sub-directory within `content` will include that sub-directory in the URL as well.
 
 | File | URL |
 | --- | --- |
-| The `cover.md` file | `mypublication.com/cover/` |
 | The `contents.md` file | `mypublication.com/contents/` |
 | The `chapter-01.md` file inside the `part-one` directory | `mypublication.com/part-one/chapter-01/` |
-| The `section-overview.md` file inside the `part-two` directory | `mypublication.com/part-two/section-overview/` |
 
-{{< q-class "box tip">}}
-- To have URLs for your homepage or section landing pages that don’t include the Markdown file name, add `permalink: "/{{ title | slugify }}/"` to the page YAML of that file.
-{{< /q-class >}}
+Subsection landing pages are named `index.md`. These files always inherit the URL of their parent directory. For example, if you have a `content/part-one/index.md` file, and your project is hosted at the `domain my-project.com`, the URL for the landing page will be `my-project.com/part-one/`.
 
- When looking in the `content` directory on your computer or in your text editor, project files usually either appear alphabetically or by date modified, which is also how Quire will order them when building and previewing your publication. You can adjust this by adding `order` value in page YAML of each Markdown file. Learn more in [*Page Types & Structure*](/docs-v1/pages/#organize-pages-in-the-right-order).
+The same goes for the cover or `index.md` file in the main project directory. Since this file is in the root, or top-most, directory, the URL for it will be the base URL where you host the site.
+
+When looking in the `content` directory on your computer or in your text editor, project files usually either appear alphabetically or by date modified, which is also how Quire will order them when building and previewing your publication. You can adjust this by adding `order` value in page YAML of each Markdown file. Learn more in [*Page Types & Structure*](/docs-v1/pages/#organize-pages-in-the-right-order).
 
 There are some other important rules and tips to keep in mind:
 
@@ -187,6 +184,8 @@ Some tips for previewing your publication:
 
 1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about page YAML in [*Page Types & Structure*](/docs-v1/pages/)
 
-2. **Hide pages from the table of contents view.** If you want to hide a page from the table of contents include `toc:false` in the YAML.
+2. **Hide pages from the table of contents view** If you want to hide a page from the table of contents include `toc:false` in the YAML.
 
-2. **Start and stop the preview to refresh Quire**. In some cases, changes to `.yaml`, `.scss` and `.css` files may not show up in your preview immediately. If this happens, it often helps to stop and re-start `quire preview`.
+2. **Hide pages from the sidebar men.** If you want to hide a page from sidebar menu include `menu:false` in the YAML.
+
+2. **Start and stop the preview to refresh Quire**. In some cases, changes to `.yaml`, `.scss` and `.css` files may not show up in your preview immediately. If this happens, it often helps use Control-C to stop the preview and `quire preview` to restart it.
