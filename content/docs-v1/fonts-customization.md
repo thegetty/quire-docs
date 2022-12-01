@@ -3,6 +3,7 @@ title: Font Customization
 weight: 6360
 type: essay
 abstract: "Add external fonts to your publication"
+menu: false
 aliases:
   - /documentation/fonts-customization/
 ---

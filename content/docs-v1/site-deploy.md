@@ -3,6 +3,7 @@ title: Deploy Your Project
 weight: 6400
 type: essay
 abstract: "Learn various methods to preview & deploy your project online"
+menu: false
 aliases:
   - /documentation/site-deploy/
 ---
