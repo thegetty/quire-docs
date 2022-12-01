@@ -169,7 +169,7 @@ If you plan to make your repository visible to the public at some point, **you s
 
 For anything you do not want to include in git, you can add a listing for it in your project’s main `.gitignore` file (which you can see when viewing your project in your text editor). You can choose to ignore files by name or by extension, or you can ignore entire directories.
 
-For instance, you might add all your third-party licensed images into a `licensed` folder in your `static/img/` folder. By adding `static/img/licensed/` to a new line in your `.gitignore` file, none of those files will be added to the git record and uploaded to GitHub. You’ll only have access to ignored files locally or for collaborators if you provide them copies of the files that they can manually add into their own copies of the repository.
+For instance, you might add all your third-party licensed images into a `licensed` folder in your `content/_assets/images/` folder. By adding `content/_assets/images/licensed` to a new line in your `.gitignore` file, none of those files will be added to the git record and uploaded to GitHub. You’ll only have access to ignored files locally or for collaborators if you provide them copies of the files that they can manually add into their own copies of the repository.
 
 {{< q-class "box warning" >}}
 
@@ -181,18 +181,6 @@ For instance, you might add all your third-party licensed images into a `license
 
 Where using `.gitignore` can ensure certain sensitive or third-party files won’t get added into a project repository and thus be uploaded to GitHub, it means you have to manually track and manage those files yourself. Another option is to create a second project repository on GitHub to stay private even while your main project is made public. You include that second repository as a submodule within your main repository.
 
-For instance, you might add all your third-party licensed images into a `my-project-licensed-images` repository and then link that repository as a submodule into the `static/img/licensed/` folder of your main project repository. In this way, Quire can still build the site and output files and preview those images as normal. The files will also be under version control with git and connected to your project (so there’s no manual syncing to do), but you’ll be able to keep them private to everyone except your team or collaborators.
+For instance, you might add all your third-party licensed images into a `my-project-licensed-images` repository and then link that repository as a submodule into the `content/_assets/images/licensed` folder of your main project repository. In this way, Quire can still build the site and output files and preview those images as normal. The files will also be under version control with git and connected to your project (so there’s no manual syncing to do), but you’ll be able to keep them private to everyone except your team or collaborators.
 
 There are good directions on [working with submodules](https://github.blog/2016-02-01-working-with-submodules/) on GitHub’s blog. Note, however that managing commits to a submodule repository within a repository can be a little tricky, so it’s best not to go this route unless you are comfortable with git and GitHub already or have access to good support.
-
-## Manage Large File Sizes with Git LFS
-
-Quire projects are pre-configured to use [Git LFS (Large File Storage)](https://git-lfs.github.com/) to manage all the files in your project’s `static/downloads/` and `static/img/` directories. This is to avoid running into issues with large individual files (GitHub blocks files greater than 100MB) and to keep the overall repository size down to a manageable level. File size issues can be particularly common when it comes to your project’s various output formats, including the PDF, EPUB, and MOBI.
-
-Git LFS is a tool that moves your large files elsewhere and in their place stores references pointing to them in your repo. GitHub then uses these references as a guide to locate your large files. To start, download and install [Git LFS (Large File Storage)](https://docs.github.com/en/github/managing-large-files/installing-git-large-file-storage) if you haven’t already done so.
-
-When adding your new Quire project repository to GitHub Desktop, you’ll see a message that says: “This repository uses Git LFS. To contribute to it, Git LFS must first be initialized.” You can click the “Initialize Git LFS” button, and then all files will be tracked and stored using LFS.
-
-GitHub accounts currently include 1GB of free Git LFS storage and bandwidth usage, and more can be purchased as necessary. An additional 50GB costs $5/month.
-
-If you do not want to use Git LFS, delete the `.gitattributes` file from your project. This file can also be updated manually or by using the `git lfs track` command from the command line if you want to change or add to what files or folders are being tracked.
