@@ -2,6 +2,7 @@
 title: Project Management with GitHub
 weight: 4150
 type: essay
+menu: false
 abstract: Use GitHub to host your project, track changes, and collaborate
 ---
 

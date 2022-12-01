@@ -2,6 +2,7 @@
 title: Default Theme Style Variables
 weight: 5401
 type: essay
+menu: false
 online: false
 ---
 

@@ -2,6 +2,7 @@
 title: Install or Update
 weight: 4050
 type: essay
+menu: false
 abstract: "Get set up to use Quire on macOS, Windows, or Linux"
 ---
 

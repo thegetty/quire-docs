@@ -1,6 +1,7 @@
 ---
 title: Get Started
 type: essay
+menu: false
 weight: 4100
 abstract: "Dive in to creating your first Quire publication"
 ---

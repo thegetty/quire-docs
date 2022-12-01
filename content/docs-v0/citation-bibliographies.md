@@ -2,6 +2,7 @@
 title: Citations & Bibliographies
 weight: 5000
 type: essay
+menu: false
 abstract: "Cite sources with pop-ups and generate reference lists"
 ---
 

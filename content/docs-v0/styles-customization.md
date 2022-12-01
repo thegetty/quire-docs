@@ -2,6 +2,7 @@
 title: Style Customization
 weight: 5400
 type: essay
+menu: false
 abstract: "Alter look and feel with custom styles and themes "
 ---
 

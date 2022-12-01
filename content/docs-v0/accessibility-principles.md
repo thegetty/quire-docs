@@ -2,6 +2,7 @@
 title: Accessibility Principles
 weight: 5800
 type: essay
+menu: false
 abstract: "Learn about WCAG 2.0 principles guiding Quire's development"
 ---
 

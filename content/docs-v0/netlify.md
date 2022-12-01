@@ -2,6 +2,7 @@
 title: Additional Netlify Tips
 weight: 5600
 type: essay
+menu: false
 online: false
 ---
 

@@ -2,6 +2,7 @@
 title: Collection Catalogues
 weight: 5100
 type: essay
+menu: false
 abstract: "Learn how to publish a collection catalogue with Quire"
 ---
 

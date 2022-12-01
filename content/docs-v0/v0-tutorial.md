@@ -3,6 +3,7 @@ title: "Quire Basics Tutorial"
 subtitle:
 weight: 3949
 type: essay
+menu: false
 abstract: "Get started with a walkthrough of Quire fundamentals"
 ---
 

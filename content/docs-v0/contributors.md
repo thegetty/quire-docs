@@ -2,6 +2,7 @@
 title: Contributors
 weight: 5300
 type: essay
+menu: false
 abstract: "Credit and include multiple contributors"
 ---
 
@@ -157,4 +158,5 @@ Contributor information is also embedded in Quire projects in a way that is opti
 
 - List your project’s main authors in the publication.yml file and give them a `type: primary`
 - List other contributors (like authors of individual papers) in the publication.yml file and give them a `type: secondary`.
-- Whenever using the `contributor_as_it_appears` value (which overrides how contributors are listed on the cover or on individual pages) still include a list of the individual contributors in your YAML. This is especially true for your overall publication, and any pages that have a `type: essay`, the metadata for which is structured to pay particular attention to the authors.
+- Whenever using the `contributor_as_it_appears` value (which overrides how contributors are listed on the cover or on individual pages) still include a list of the individual contributors in your YAML. This is especially true for your overall publication, and any pages that have a `type: essay
+menu: false`, the metadata for which is structured to pay particular attention to the authors.

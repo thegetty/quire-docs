@@ -2,6 +2,7 @@
 title: Output Your Project
 weight: 5700
 type: essay
+menu: false
 abstract: "Produce online, PDF, and E-Book versions of your publication"
 ---
 

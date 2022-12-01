@@ -2,6 +2,7 @@
 title: Metadata & Configuration
 weight: 4500
 type: essay
+menu: false
 abstract: "Update crucial information before deploying your publication"
 ---
 
