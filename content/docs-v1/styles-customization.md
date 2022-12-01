@@ -4,6 +4,7 @@ weight: 6340
 type: essay
 abstract: "Alter look and feel with custom styles and themes"
 menu: false
+toc: false
 aliases:
   - /documentation/styles-customization/
 ---

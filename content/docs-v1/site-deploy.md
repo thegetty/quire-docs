@@ -4,6 +4,7 @@ weight: 6400
 type: essay
 abstract: "Learn various methods to preview & deploy your project online"
 menu: false
+toc: false
 aliases:
   - /documentation/site-deploy/
 ---
