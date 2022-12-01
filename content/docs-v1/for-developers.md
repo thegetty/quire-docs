@@ -3,6 +3,8 @@ title: For Developers
 weight: 6040
 type: essay
 abstract: "API docs and Quire repository guide"
+menu: false
+toc: false
 aliases:
   - /documentation/for-developers/
 ---

@@ -3,6 +3,8 @@ title: Zooming Images with IIIF
 weight: 6220
 type: essay
 abstract: "Adding high-resolution zooming images to your project"
+menu: false
+toc: false
 aliases:
   - /documentation/zooming-images/
 ---
