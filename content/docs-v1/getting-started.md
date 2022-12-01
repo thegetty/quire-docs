@@ -7,7 +7,7 @@ aliases:
   - /documentation/getting-started/
 ---
 
-Before getting started, make sure you have [installed Quire](/docs-v1/install-uninstall/) and downloaded a freely available {{< q-def "text editor" >}}. We also recommend reviewing the [*Quire Basics Tutorial*](/learn/tutorial/), a step-by-step introduction to the fundamentals of Quire.
+Before getting started, make sure you have [installed Quire](/docs-v1/install-uninstall/) and downloaded a freely available {{< q-def "text editor" >}}. We also recommend reviewing the [*Quire Basics Tutorial*](/docs-v1/v1-tutorial/), a step-by-step introduction to the fundamentals of Quire.
 
 ## Start a New Project
 
@@ -25,7 +25,7 @@ Quire will download a new starter project into a folder called “my-project” 
 
 ## Copy an Existing Project
 
-In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you are collaborating with others on a publication. Keep in mind that changes are made locally. A hosting service such as GitHub or GitLab is recommended to share changes with other collaborators .
+In addition to starting a Quire project from scratch as described in the previous section, you can also copy and work on a pre-existing Quire project. You would do this if you are collaborating with others on a publication. Keep in mind that changes are made locally. A hosting service such as GitHub or GitLab is recommended to share changes with other collaborators.
 
 1. Copy the Quire project directory into your home directory (typically from a thumb drive, Dropbox/Google Drive, or hosting service).
 
@@ -88,7 +88,6 @@ This directory is where the default Quire fonts are located including ["Noto San
 
 This directory is where publication images are stored. The `src` value in the `figures.yaml` file references the files names of the images as they are saved in this directory.
 
-
 #### 📁 styles
 
 This directory includes a `variables.scss` file and a `custom.css` file for directly overriding theme styles (read more in [*Style Customization*](/docs-v1/styles-customization/)).
@@ -107,9 +106,15 @@ Developers will primarily use the `_includes`, `_layouts`, `_plugins` directorie
 
 ### 📁 _includes
 
+TK
+
 ### 📁 _layouts
 
+TK
+
 ### 📁 _plugins
+
+TK
 
 ### 📁 _assets
 
@@ -146,11 +151,11 @@ The names of most `.md` files will effect the final URLs of your publication. By
 
 Subsection landing pages are named `index.md`. These files always inherit the URL of their parent directory. For example, if you have a `content/part-one/index.md` file, and your project is hosted at the `domain my-project.com`, the URL for the landing page will be `my-project.com/part-one/`.
 
-The same goes for the cover or `index.md` file in the main project directory. Since this file is in the root, or top-most, directory, the URL for it will be the base URL where you host the site.
+The same goes for the cover which is an `index.md` file in the main project directory. Since this file is in the root, or top-most, directory, the URL for it will be the base URL where you host the site.
 
 When looking in the `content` directory on your computer or in your text editor, project files usually either appear alphabetically or by date modified, which is also how Quire will order them when building and previewing your publication. You can adjust this by adding `order` value in page YAML of each Markdown file. Learn more in [*Page Types & Structure*](/docs-v1/pages/#organize-pages-in-the-right-order).
 
-There are some other important rules and tips to keep in mind:
+There are some other important rules and tips to keep in mind when working in your text editor and creating an outline:
 
 1. **To create a new file, right-click on the `content` directory and select "New File".**
 
@@ -178,14 +183,14 @@ As you add content to your project, you can preview the site in your web browser
 
 2. Still in the command-line shell, type `quire preview` and press enter to initiate the preview.
 
-3. To view the preview, open a web browser and visit the localhost URL that is provided in the command-line shell output (for example, http://localhost:8080) to see the publication. To stop the preview,  press Control–C.
+3. To view the preview, open a web browser and visit the localhost URL that is provided in the command-line shell output (for example, http://localhost:8080) to see the publication. To stop the preview, press Control–C.
 
 Some tips for previewing your publication:
 
 1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about page YAML in [*Page Types & Structure*](/docs-v1/pages/)
 
-2. **Hide pages from the table of contents view** If you want to hide a page from the table of contents include `toc:false` in the YAML.
+2. **Hide pages from the table of contents view** If you want to hide a page from the table of contents include `toc: false` in the YAML.
 
-2. **Hide pages from the sidebar men.** If you want to hide a page from sidebar menu include `menu:false` in the YAML.
+2. **Hide pages from the sidebar menu** If you want to hide a page from sidebar menu include `menu: false` in the YAML.
 
-2. **Start and stop the preview to refresh Quire**. In some cases, changes to `.yaml`, `.scss` and `.css` files may not show up in your preview immediately. If this happens, it often helps use Control-C to stop the preview and `quire preview` to restart it.
+2. **Start and stop the preview to refresh Quire** In some cases, changes to `.yaml`, `.scss` and `.css` files may not show up in your preview immediately. If this happens, use Control-C to stop the preview and `quire preview` to restart it.
