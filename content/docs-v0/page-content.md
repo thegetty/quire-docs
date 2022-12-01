@@ -1,6 +1,7 @@
 ---
 title: Page Content
 type: essay
+menu: false
 weight: 4700
 abstract: "Format publication content, including adding features and links"
 ---
@@ -13,6 +14,7 @@ As outlined in [*Page Types & Structure*](/docs-v0/pages/), in Quire, a content 
 ---
 title: Page Content
 type: essay
+menu: false
 weight: 206
 ---
 

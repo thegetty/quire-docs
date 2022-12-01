@@ -2,6 +2,7 @@
 title: "YAML & Markdown"
 weight: 4300
 type: essay
+menu: false
 abstract: "Understand the basics of working in plain-text format"
 ---
 

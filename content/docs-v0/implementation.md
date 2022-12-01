@@ -1,6 +1,7 @@
 ---
 title: Implementation Considerations
 type: essay
+menu: false
 weight: 3950
 abstract: "Is Quire right for you and your project?"
 ---

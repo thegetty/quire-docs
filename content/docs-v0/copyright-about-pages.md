@@ -2,6 +2,7 @@
 title: Copyright & About Pages
 weight: 5200
 type: essay
+menu: false
 abstract: "Create Chicago and MLA formatted citations for your publication"
 ---
 

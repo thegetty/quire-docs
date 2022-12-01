@@ -1,6 +1,7 @@
 ---
 title: Page Types & Structure
 type: essay
+menu: false
 weight: 4600
 abstract: "Define and structure your page contents with YAML"
 ---

@@ -2,6 +2,7 @@
 title: Use an Existing Quire Project as a Template
 weight: 4155
 type: essay
+menu: false
 online: false
 ---
 

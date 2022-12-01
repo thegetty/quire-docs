@@ -2,6 +2,7 @@
 title: Figure Images
 weight: 4800
 type: essay
+menu: false
 abstract: "Incorporate multiple images, videos, and other multimedia"
 ---
 

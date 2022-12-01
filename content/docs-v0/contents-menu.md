@@ -1,6 +1,7 @@
 ---
 title: Table of Contents & Sidebar Menu
 type: essay
+menu: false
 weight: 4650
 abstract: "Adjust the styles of, and individual items in, Quire’s auto-generated contents lists"
 ---

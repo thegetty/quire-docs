@@ -2,6 +2,7 @@
 title: Maps
 weight: 4910
 type: essay
+menu: false
 abstract: "Tips and tricks for including basic, interactive maps"
 ---
 
