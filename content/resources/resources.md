@@ -32,12 +32,11 @@ abstract: "Helpful tools, explanations, and links"
 - [w3schools.com](https://www.w3schools.com/html/default.asp)
 - [CSS-Tricks](https://css-tricks.com/)
 
-## Hugo
+## Eleventy
 
-*Hugo is the {{< q-def "static site generator" >}} underlying Quire. Hugo's documentation and training materials are an excellent resource for learning how to customize Quire’s templates and shortcodes.*
+*Eleventy (11ty) is the {{< q-def "static site generator" >}} underlying Quire. 11ty transforms a directory of various templates into HTML and is popular for its ability to mix multiple templating languages.*
 
-- [Hugo Documentation](https://gohugo.io/documentation/)
-- [Video: Hugo - Static Site Generator Tutorial](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&index=1)
+- [Eleventy (11ty) Documentation](https://www.11ty.dev/docs/)
 
 ## IIIF
 
@@ -70,15 +69,15 @@ abstract: "Helpful tools, explanations, and links"
 - [Designing For Print With CSS](https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
 - [PrinceXML Documentation](https://www.princexml.com/doc/intro-userguide/)
 
-## Pandoc
+## PDFs and Paged.js
 
-*Pandoc is used for Quire’s EPUB output, but it is also a useful tool for converting text documents, like Word, into Markdown.*
+*Paged.js is an open source tool for generating PDFs in Quire*
 
-- [Pandoc User's Guide](https://pandoc.org/MANUAL.html)
+- [Paged.js Documentation](https://pagedjs.org/documentation/)
 
 ## Static Site Generation
 
-*Static site generation keeps files in a simple, human-readable, plain-text format. That means the the complexity of building a website remains at the point of publication. They also allow for the conversion of content into formats other than online sites, including PDF, e-book, and print. Ultimately, static site generators, like [Hugo](#hugo), ensure website stability and longevity.*
+*Static site generation keeps files in a simple, human-readable, plain-text format. That means the the complexity of building a website remains at the point of publication. They also allow for the conversion of content into formats other than online sites, including PDF, e-book, and print. Ultimately, static site generators, like [Eleventy](#eleventy), ensure website stability and longevity.*
 
 - [Static Web Publishing for Digital Scholarship: Lesson Plan](https://chrisdaaz.github.io/static-web-scholcomm/teaching-resources/lesson-plan/)
 - [Introduction to Static Site Generators](https://chrisdaaz.github.io/static-web-scholcomm/tutorials/static-site-generators/)
