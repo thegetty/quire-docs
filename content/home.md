@@ -179,7 +179,7 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 Quire is used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
-Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [sharing your work](/community/community-showcase/), [contributing code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
+Joining the Quire community is as easy as [becoming a user](/docs-v1/install-uninstall), [sharing your work](/community/community-showcase/), [contributing code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
 
 <div class="action-button">
 
@@ -204,7 +204,7 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 Try Quire for yourself
 
-[Sign up now for free access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[Take the Tutorial](/docs-v1/tutorial)
 
 </div>
 <div class="footer-item">
@@ -247,7 +247,7 @@ For news, updates, and events
 
 ![Quire logo](/img/quire-logo--sm.png)
 
-[About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Resources](/resources/) | [Get Access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[About](/about/) | [Community](/community/) | [Documentation](/docs-v1/) | [Resources](/resources/) | [Get Started](/docs-v1/install-uninstall)
 
 [GitHub](https://github.com/thegetty/quire/) | [Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md) | [Contact](mailto:quire@getty.edu)
 
