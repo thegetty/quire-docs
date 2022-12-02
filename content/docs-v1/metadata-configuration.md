@@ -15,9 +15,7 @@ You can read more about YAML syntax basics in [*YAML & Markdown*](/docs-v1/funda
 
 The `config.yaml` file is a required file for Quire. It is used to define a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yaml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yaml` file for that purpose [(see below)](#add-and-edit-important-metadata-in-publicationyaml-file).
 
-The properties in the `config.yaml` file are individually documented in the [*For Developers*](/docs-v1/for-developers/) section, however, a few key items to note:
-
-[TK]
+Some examples of properties outlined in the `config.yaml` include: location of the figure image directory, format for object entry pages, bibliography format, name of navigation buttons, contributor byline styling, and more. These properties are individually documented in the [*For Developers*](/docs-v1/for-developers/).
 
 ## Add and Edit Important Metadata in publication.yaml File
 
