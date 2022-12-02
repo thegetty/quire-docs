@@ -253,7 +253,7 @@ For news, updates, and events
 
 ![Quire logo](/img/quire-logo--sm.png)
 
-[About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Learn](/learn/) | [Get Access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Resources](/resources/) | [Get Access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
 
 [GitHub](https://github.com/thegetty/quire/) | [Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md) | [Contact](mailto:quire@getty.edu)
 
