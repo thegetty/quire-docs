@@ -33,13 +33,7 @@ Created by [Getty](https://www.getty.edu), free to use.
 
 <div class="action-button with-sub-action-button">
 
-[Sign-Up for Quire](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
-
-</div>
-
-<div class="sub-action-button">
-
-[View on GitHub ![logo](/img/icons/github.svg) ](https://github.com/thegetty/quire/)
+[Take the Tutorial](/docs-v1/tutorial)
 
 </div>
 
