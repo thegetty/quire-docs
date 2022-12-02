@@ -11,6 +11,10 @@ Quire uses two {{< q-def "YAML" >}} files as sources of the metadata and to defi
 
 You can read more about YAML syntax basics in [*YAML & Markdown*](/docs-v1/fundamentals/#yaml-basics).
 
+{{< q-class "box tip" >}}
+- If changes to project YAML don't appear right away when previewing Quire, use Control-C to stop the preview and then run `quire preview` again.
+{{< /q-class >}}
+
 ## Adjust the Default Publication Settings in config.yaml File
 
 The `config.yaml` file is a required file for Quire. It is used to define a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yaml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yaml` file for that purpose [(see below)](#add-and-edit-important-metadata-in-publicationyaml-file).

@@ -20,6 +20,7 @@ abstract: "Get the latest news and info about upcoming events"
 - June 9, 2022: Monthly [Quire office hours](https://newsletters.getty.edu/t/t-61FFEB8FD01FF7362540EF23F30FEDED) are introduced
 - May 12, 2022: [Announcement](https://newsletters.getty.edu/t/t-BCD0F34A2740395C2540EF23F30FEDED) goes out that that Quire will be switching to a new static site generator in advance of the upcoming open-source launch
 - April 14, 2022: Quire is a sponsor of the [2022 Library Publishing Forum](https://librarypublishing.org/forum/)
+- December 2, 2022: The [v1.0.0 pre-release and official open-source launch](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED) are announced. 
 
 **2021**
 

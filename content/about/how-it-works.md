@@ -7,19 +7,19 @@ online: false
 
 To work its magic, Quire packages together a number of programs, which play a critical role in the long-term discoverability, longevity, and multiformat output capabilities of Quire publications.
 
-- [Apple’s Xcode](https://developer.apple.com/support/xcode/) is a set of developer tools for your Mac. (Does not apply to Windows users.)
-
 - [Node.js](https://nodejs.org) enables you to run JavaScript on your computer.
 
-- [PrinceXML](http://www.princexml.com/) is used to generate PDF/print versions of your publication.
+- [PrinceXML](http://www.princexml.com/) is one two options you can use to generate PDF/print versions of your publication.
 
-- [Pandoc](https://github.com/jgm/pandoc/releases/) is used to generate EPUBs and MOBIs.
+- [Paged.js](https://pagedjs.org/) is an open source option for generation PDF/print versions of you publication.
 
-- [Kindle Previewer](https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765261) is used to generate the MOBI.
+- [Vite](https://vitejs.dev/) is a JavaScript bundler and development web server.
 
-- [Hugo](https://gohugo.io/) is the {{< q-def "static site generator" >}} that creates the online version of your publication. The file structure, layout templates, partials, and shortcodes of Quire are all Hugo conventions structured to allow for more formal digital publications. In other words, you can use static site generation to create dynamic websites incorporating traditional print publishing conventions, like tables of contents, copyright and authorship information, linear reading orders, etc. Visit the [Hugo Documentation](https://gohugo.io/documentation/) for more information.
+- [Canval Panel](https://iiif-canvas-panel.netlify.app/about/) works as a user interface to render IIIF deep-zooming images. It allows for more complexity in how images are displayed, such as layered images or annotated images.
 
-(*Note: As of May 11, 2022, we are in the process of transitioning to the Javascript-based static site generator, [Eleventy (11ty)](https://www.11ty.dev/). For more information, please see our [FAQ page](/about/faq/)*.)
+- [Eleventy (11ty)](https://www.11ty.dev/)) is a simple yet powerful static site generator based on JavaScript. 11ty transforms a directory of various templates into HTML and is popular for its ability to mix multiple templating languages. It is available as open source under the MIT License.
+
+(*Note: As of December 2, 2022, Quire no longer uses [Hugo](https://gohugo.io/documentation/) as our static site generator. [Learn what has changed with the transition to 11ty](/docs-v1/key-changes)*.)
 
 ## Static Site Generation
 
@@ -47,7 +47,3 @@ The following resources were created by Quire community member, Chris Diaz [(@ch
 
 [Static Web Publishing for Digital Scholarship: Lesson Plan](https://chrisdaaz.github.io/static-web-scholcomm/teaching-resources/lesson-plan/) </br>
 [Introduction to Static Site Generators](https://chrisdaaz.github.io/static-web-scholcomm/tutorials/static-site-generators/)
-
-### See It in Action
-
-{{< q-figure id="quire_demo" >}}

@@ -86,3 +86,5 @@ Also, the way data and other information is added to shortcodes is different in 
 ## Preview URL
 
 When you run the command `quire preview` the URL to view you project is now `http://localhost:8080` as opposed to `localhost:1313` in the v0 version of Quire.
+
+If you are making changes to YAML files or page YAML and they are not showing immediately, use Control-C to stop the project and then run `quire preview` again. 

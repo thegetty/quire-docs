@@ -5,7 +5,7 @@ weight: 6010
 type: essay
 abstract: "Get started with a walkthrough of Quire fundamentals"
 aliases:
-  - /docs-v1/tutorial/
+  - /learn/tutorial/
 ---
 
 Developed by Getty, Quire offers an elegant and affordable digital publishing solution ideal for creating dynamic publications in a variety of formats, including web, print, and e-book. Through the use of static site generation and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format.
@@ -126,6 +126,7 @@ subtitle: "The Works of Dorothea Lange and Walker Evans"
 2. Change the title and subtitle.
 3. Save the changes.
 4. Preview the work in your browser and notice the changes to the navigation bar and expandable side-bar menu.
+5. If you do not see the changes right away, use Control-C to stop the preview and run `quire preview` again.
 
 ## 7. Edit Content
 
@@ -153,6 +154,7 @@ order:
 3. Change the `layout` value from `splash` to `page`. This change will eliminate the image that appears across the top of the Preface. (You can also delete the YAML `image: figures/lange-house.jpg` as it is no longer necessary.)
 4. Open the `about.md` file.
 5. Change the `order` in the `about.md` file to `7`. If you look at the sidebar menu, you will see this places About directly after the Table of Contents which has `order: 6`, and before Preface (`preface.md`), which has `order: 10`.  
+6. If you do not see the changes right away, use Control-C to stop the preview and run `quire preview` again.
 
 ### Markdown
 
@@ -203,6 +205,7 @@ To add more specialized features to your publication, such as images, multimedia
 2. Save the change and check the preview in your browser. A new image should appear on the About page.
 3. Navigate to your project’s `figures.yaml` file and look for the `id` value of `fig-1`.
 4. Make edits to the `caption` value for `fig-1` and preview your changes.
+5. If you do not see the changes right away, use Control-C to stop the preview and run `quire preview` again.
 
 
 ## 9. Customize Styles
@@ -223,6 +226,7 @@ A background image can be added to most pages by indicating the image in the pag
 figures/lange-house.jpg
 ```
 3. Save the file and preview the results in the browser.
+4. If you do not see the changes right away, use Control-C to stop the preview and run `quire preview` again.
 
 ### CSS Variables
 
@@ -237,14 +241,13 @@ Variables live inside the `content/_assets/styles` folder in a file called `vari
 3. Then scroll down to the section labeled "// Declare navbar colors." These variables control the background color of the navigation bar at the top of every page.
 4. Now change the `$quire-navbar-color` value to `rosybrown`.
 5. Now, save the changes in your text editor and preview it in your browser.
-
+6. If you do not see the changes right away, use Control-C to stop the preview and run `quire preview` again.
 
 ## 10. Output Your Project
 
 Once you've played around with adding content and customizing your project, it's time to output it. One of the most significant differences between Quire and other digital publishing tools is the ability to produce your project in multiple formats, including website, E-book, and print. You can create these different versions of your project by running the command `quire build`.
 
 *Read more about outputting your publication files and deploying your project in the [“Output Your Project”](/docs-v1/multiformat-output/)and ["Deploy Your Project"](/docs-v1/site-deploy/) sections of this guide.*
-
 
 ### Try it For Yourself
 
@@ -257,7 +260,7 @@ Congratulations on completing the tutorial! We’ve touched on Quire’s core co
 Next Steps:
 
 - Continue reading the Quire [documentation](/docs-v1/).
-- Explore the [Resources section](/resources/) of our website for guidance in navgivating Quire.
+- Explore the [Learn section](/learn/) of our website for guidance and resources.
 - Check out the [community forum](https://github.com/thegetty/quire/discussions) on GitHub Discussions.
 - Browse our [community showcase](/community/community-showcase/).
 - Sign up for our [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4).

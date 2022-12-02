@@ -27,13 +27,14 @@ Online ∙ Print ∙ E‑book
 
 </div>
 
-Quire is a modern, multiformat publishing tool designed for longevity, discoverability, and scholarship. Using a single set of plain text files, Quire creates books as authoritative and enduring as print and as vibrant and feature-rich as the web—all without paying a fee or maintaining a complicated server.
+Quire is an open-source multiformat publishing tool designed for longevity, discoverability, and scholarship. Using a single set of plain text files, Quire creates books as authoritative and enduring as print and as vibrant and feature-rich as the web—all without paying a fee or maintaining a complicated server.
 
 Created by [Getty](https://www.getty.edu), free to use.
 
+
 <div class="action-button with-sub-action-button">
 
-[Sign-Up for Quire](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[Get Started](/docs-v1/install-uninstall)
 
 </div>
 
@@ -42,7 +43,6 @@ Created by [Getty](https://www.getty.edu), free to use.
 [View on GitHub ![logo](/img/icons/github.svg) ](https://github.com/thegetty/quire/)
 
 </div>
-
 
 </div>
 </div>
@@ -101,7 +101,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 </div>
 </div>
 
-{{< q-showcase projects="french_paintings, highpoint_editions, materia_vol_1, ray_komai, museum_digital_practice_2021" class="full-width-slider" sort="false" >}}
+{{< q-showcase projects="materia_issue_2, _mosaik_luxemburg, josephine_halvorson, clowes_collection, amon_artofthescene" class="full-width-slider" sort="false" >}}
 
 </div>
 
@@ -185,7 +185,7 @@ Keeps source content in nonspecialized plain text to ensure reusability
 
 Quire is used by a growing community of scholars, publishers, curators, developers, and the digitally curious. The Quire community is vibrant and diverse, representing a broad spectrum of institutions that provide vital scholarship in the arts and humanities, at all sizes and scales. We support and empower our community at every level of technical experience. All are welcome.
 
-Joining the Quire community is as easy as [becoming a user](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform), [sharing your work](/community/community-showcase/), [contributing code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
+Joining the Quire community is as easy as [becoming a user](/docs-v1/install-uninstall), [sharing your work](/community/community-showcase/), [contributing code](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md), or [attending/hosting a Quire event](/community/news-events/), among other exciting opportunities.
 
 <div class="action-button">
 
@@ -208,9 +208,9 @@ Joining the Quire community is as easy as [becoming a user](https://docs.google.
 
 ### Get Started
 
-Try Quire for yourself
+Try it for yourself
 
-[Sign up now for free access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[Install Quire and start using it today](/docs-v1/install-uninstall)
 
 </div>
 <div class="footer-item">
@@ -253,7 +253,7 @@ For news, updates, and events
 
 ![Quire logo](/img/quire-logo--sm.png)
 
-[About](/about/) | [Community](/community/) | [Documentation](/documentation/) | [Resources](/resources/) | [Get Access](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
+[About](/about/) | [Community](/community/) | [Documentation](/docs-v1/) | [Resources](/resources/) | [Get Started](/docs-v1/install-uninstall)
 
 [GitHub](https://github.com/thegetty/quire/) | [Code of Conduct](https://github.com/thegetty/quire/blob/main/CODE_OF_CONDUCT.md) | [Contact](mailto:quire@getty.edu)
 
