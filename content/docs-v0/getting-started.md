@@ -6,7 +6,7 @@ weight: 4100
 abstract: "Dive in to creating your first Quire publication"
 ---
 
-Before getting started, make sure you have [installed Quire](/docs-v0/install-uninstall/) and downloaded a {{< q-def "text editor" >}}. We recommend reviewing the [*Quire Basics Tutorial*](/learn/tutorial/). This beginner's guide is a step-by-step introduction to the fundamentals of Quire. We also encourage you to check out our [Sample Quire Workflow](/learn/workflow/) to get a sense of how to approach your publication and the breakdown of responsibilities.
+Before getting started, make sure you have [installed Quire](/docs-v0/install-uninstall/) and downloaded a {{< q-def "text editor" >}}. We recommend reviewing the [*Quire Basics Tutorial*](/docs-v0/tutorial/). This beginner's guide is a step-by-step introduction to the fundamentals of Quire. We also encourage you to check out our [Sample Quire Workflow](/resources/workflow/) to get a sense of how to approach your publication and the breakdown of responsibilities.
 
 ## Start a New Project
 
