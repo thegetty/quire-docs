@@ -25,7 +25,7 @@ As of 2022, Quire was released as open-source software under a [BSD 3-Clause lic
 
 - Quire does not offer a graphical user interface. Instead, publications are built using the {{< q-def "command-line shell" >}} and a {{< q-def "text editor" >}}. Working in human-readable plain text files is key to ensuring the stability and longevity of Quire publications.
 
-- Quire can be used "out of the box" by any individual, no matter their skill level. We provide [documentation](/docs-v1/) and additional [resources](/learn/resources/) to aid non-technical users in gaining the skills necessary to use Quire.
+- Quire can be used "out of the box" by any individual, no matter their skill level. We provide [documentation](/docs-v1/) and additional [resources](/resources/resources/) to aid non-technical users in gaining the skills necessary to use Quire.
 
 - Advanced knowledge of CSS, HTML, JavaScript, and [Liquid](https://shopify.dev/api/liquid) is required to customize Quire beyond its basic configuration.
 

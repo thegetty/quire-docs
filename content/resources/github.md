@@ -31,7 +31,7 @@ The following steps are examples of a potential workflow when using GitHub as a 
 1. Next, you are going to use the command line to navigate through your computer files.
 - If using a Mac computer, press Command-Spacebar to open Spotlight. Then write “Terminal” and hit enter.
 - For PCs, we recommend installing Git for Windows, which comes with a shell called Git BASH.
-2. Use the cd command to navigate to your computer's home directory and then navigate into your `[quire-project-name]` folder. (For more on using command line see our [*Learning Command Line*](/learn/command-line) article.)
+2. Use the cd command to navigate to your computer's home directory and then navigate into your `[quire-project-name]` folder. (For more on using command line see our [*Learning Command Line*](/resources/command-line) article.)
 3. Once you are in your `[quire-project-name]` folder, run the following commands:
 ```
 quire install

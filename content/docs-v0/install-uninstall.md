@@ -12,7 +12,7 @@ abstract: "Get set up to use Quire on macOS, Windows, or Linux"
 
 ## macOS Installation
 
-Installing and running Quire requires using the Terminal {{< q-def "command-line shell" >}}. Open it from your Applications/Utilities folder or by pressing Command–Space Bar and typing “Terminal”. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
+Installing and running Quire requires using the Terminal {{< q-def "command-line shell" >}}. Open it from your Applications/Utilities folder or by pressing Command–Space Bar and typing “Terminal”. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/docs-v0/tutorial/#1-working-in-a-command-line-shell).
 
 ### Quick Install
 
@@ -102,7 +102,7 @@ If, after running the  `sudo` command, the permission errors are not resolved, s
 
 ## Windows Installation
 
-Installing Quire requires using Windows PowerShell {{< q-def "command-line shell" >}} as an Administrator. Open it by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/learn/tutorial/#1-working-in-a-command-line-shell).
+Installing Quire requires using Windows PowerShell {{< q-def "command-line shell" >}} as an Administrator. Open it by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. If you are new to the command-line, read our tutorial [*Working in a Command-line Shell*](/docs-v0/tutorial/#1-working-in-a-command-line-shell).
 
 ### Quick Install
 
