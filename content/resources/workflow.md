@@ -42,7 +42,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 <div class="box tip">
 
-- See our recommended [*Manuscript Prep Checklist*](/learn/manuscript-prep/) for information on how to prepare Word documents for a smooth conversion into Markdown.
+- See our recommended [*Manuscript Prep Checklist*](/resources/manuscript-prep/) for information on how to prepare Word documents for a smooth conversion into Markdown.
 
 </div>
 
@@ -66,7 +66,7 @@ Below we outline the general workflow Getty Publications follows when creating [
 
 <div class="box tip">
 
-- See our [*Text-Editing Guide*](/learn/text-editing/) for the steps we follow to add content to a Quire project via text editor.
+- See our [*Text-Editing Guide*](/resources/text-editing/) for the steps we follow to add content to a Quire project via text editor.
 
 </div>
 

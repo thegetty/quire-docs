@@ -9,7 +9,7 @@ online: false
 {{< q-checklist >}}
 
 - [ ] Convert Word files into Markdown using [Pandoc](/docs-v1/fundamentals/#microsoft-word-to-markdown-conversion)
-- [ ] Open project in [text editor](/learn/tutorial/#4-work-in-a-text-editor)
+- [ ] Open project in [text editor](/docs-v1/tutorial/#4-work-in-a-text-editor)
 - [ ] Delete starter content
 - [ ] Complete the `publication.yaml`
 - [ ] [Create an outline](/docs-v1/getting-started/#create-a-publication-outline) with placeholder Markdown (`.md`) files and landing pages in the `content` folder

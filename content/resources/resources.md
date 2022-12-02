@@ -9,8 +9,8 @@ abstract: "Helpful tools, explanations, and links"
 
 *Command line is a text-based interface that enables you to navigate your computer's files and perform tasks by running certain commands.*
 
-- [Command line Crash Course](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line)
-- [Codeacademy: Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line)
+- [Command line Crash Course](https://developer.mozilla.org/en-US/docs/resources/Tools_and_testing/Understanding_client-side_tools/Command_line)
+- [Codeacademy: Learn the Command Line](https://www.codecademy.com/resources/learn-the-command-line)
 - [Video: Really Friendly Command Line Intro](https://www.youtube.com/watch?v=d9s8co9POYY&feature=youtu.be)
 
 ## GitHub
