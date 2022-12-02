@@ -1,7 +1,7 @@
 figure_list:
   - id: "1.1"
     src: /screenshots/content-model.png
-    caption: "Quire content model "
+    caption: "Quire content model."
     credit: " "
   - id: "1.4"
     src: /screenshots/quire-work-environment.gif
@@ -17,15 +17,15 @@ figure_list:
     credit: " "
   - id: "1.7"
     src: /screenshots/catalogue-entry-page.jpg
-    caption: "screenshot of catalogue entry page as rendered in the browser"
+    caption: "Screenshot of catalogue entry page as rendered in the browser."
     credit:
   - id: "1.8"
     src: /screenshots/catalogue-entry-grid.jpg
-    caption: "screenshot of catalogue grid page as rendered in the browser"
+    caption: "Screenshot of catalogue grid page as rendered in the browser."
     credit: " "
   - id: "1.9"
     src: /screenshots/left-right.png
-    caption: " "
+    caption: "Examples of figures images with the classes `is-pulled-right` and `is-pulled-left` added to their shortcode."
     credit:
   - id: "1.10"
     src: /screenshots/group-caption.png
@@ -33,11 +33,11 @@ figure_list:
     credit:
   - id: "1.11"
     src: /screenshots/grid.png
-    caption: " "
+    caption: "Examples of various grid layouts."
     credit:
   - id: "1.12"
     src: /screenshots/style1.png
-    caption: "screenshot of the `variables.scss` file in the default-theme directory"
+    caption: "Screenshot of the `variables.scss` file in the default-theme directory."
   - id: "1.13"
     src: /screenshots/style2.png
     caption: "screenshot of the custom.css file in the static directory"
@@ -66,19 +66,19 @@ figure_list:
     credit: " "
   - id: "quire-starter"
     src: /screenshots/quire-starter.png
-    caption: "When your run `quire new` Quire starts you with a demo project with some default content. You can edit, delete and add from there in building your own publication."
+    caption: "When your run `quire new` Quire starts you with a demo project with some default content. You can then preview this project locally in your browser as you make changes."
   - id: "text-editor"
     src: /screenshots/text-editor.png
-    caption: "When working on a Quire project in a text editor like Atom or Visual Studio Code you can see and access all your project files from the sidebar at the left."
+    caption: "When working on a Quire project in a text editor you can see and access all your project files from the sidebar at the left."
   - id: "quire-starter-metadata-change"
     src: /screenshots/quire-starter-metadata-change.png
-    caption: "Basic publication information lives in the `publication.yml` file, and is used throughout the site. Here we see the title being used on the cover, in the PDF version of the publication, and in the side navigation."
+    caption: "Basic publication information lives in the `publication.yaml` file, and is used throughout the site. Here we see the title being used on the cover, in the PDF version of the publication, and in the side navigation."
   - id: "quire-starter-content-change-1"
     src: /screenshots/quire-starter-content-change-1.png
-    caption: "Changing the page `title`, `weight` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
+    caption: "Changing the page `title`, `order` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
   - id: "quire-starter-content-change-2"
     src: /screenshots/quire-starter-content-change-2.png
-    caption: "The main text of a Quire publication is written in Markdown. Simple text formatting indicates structure. Like asterisks for italics (`*italics*`) and hashmarks for headings (`## Heading`). Figures are added with a “shortcode” that references a listing in your `figures.yml` file: `{{< q-figure id=\"fig-1\" >}}`"
+    caption: "Figures are added with a “shortcode” that references an `id`. The `id` is listed in your project's `figures.yaml` file along with a caption and other YAML values."
   - id: "quire-starter-styles-change"
     src: /screenshots/quire-starter-styles-change.png
     caption: "A background image can be added to the cover by adding it to the page YAML of your `cover.md` page (`images: cover_2.jpg`). Colors and other styles can be customized in the `variables.scss` file of your project’s theme."
@@ -93,46 +93,46 @@ figure_list:
     caption: "When publishing a new project repository to GitHub leave the name the same as your project file. You can add add a description if you’d like, can choose whether to make it private or not if you have a paid account, or publish it to an organization account if you have publishing access to one."
   - id: "modern-cover"
     src: /screenshots/modern-cover.png
-    caption: "**`type: cover`** <br /> Cover page in the default modern theme. A custom cover image can be added in the YAML of the cover page: `image: my-cover-image.jpg`."
+    caption: "**`layout: cover`** <br /> Cover page in the default modern theme. A custom cover image can be added in the YAML of the cover page: `image: my-cover-image.jpg`."
   - id: "modern-page"
     src: /screenshots/modern-page.png
-    caption: "**`type: page`** (default) <br /> The basic, default Quire page with title, page content, links and a list. A general publication page. Used for introductions, forewords, chapters, appendices and other pages. Also showing the progress bar at the top that indicates a reader’s place in the publication."
+    caption: "**`layout: page`** (default) <br /> The basic, default Quire page with title, page content, links and a list. A general publication page. Used for introductions, forewords, chapters, appendices and other pages. Also showing the progress bar at the top that indicates a reader’s place in the publication."
   - id: "modern-contents-list"
     src: /screenshots/modern-contents-list.png
-    caption: "**`type: contents`** <br /> **`class: list `** (default)<br /> The default contents page showing the title, subtitle and contributors for each main page and sub-section page. This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory."
+    caption: "**`layout: table-of-contents`** <br /> **`presentation: list `** (default)<br /> The default table of contents page showing the title, subtitle and contributors for each main page and sub-section page. This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory."
   - id: "modern-contents-abstract"
     src: /screenshots/modern-contents-abstract.png
-    caption: "**`type: contents`** <br /> **`class: abstract`** <br /> A maximal version of the contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
+    caption: "**`layout: table-of-contents`** <br /> **`presentation: abstract`** <br /> A maximal version of the table of contents page showing the title, subtitle and contributors for each main page and sub-section page, along with a provided abstract or a generated snippet of the first part of the page’s content."
   - id: "modern-contents-brief"
     src: /screenshots/modern-contents-brief.png
-    caption: "**`type: contents`** <br /> **`class: brief`** <br /> A minimal version of the contents page showing only the title for each top-level page or section."
+    caption: "**`layout: table-of-contents`** <br /> **`presentation: brief`** <br /> A minimal version of the contents page showing only the title for each top-level page or section."
   - id: "modern-contents-grid"
     src: /screenshots/modern-contents-grid.png
-    caption: "**`type: contents`** <br /> **`class: grid`** <br /> A visual grid version of the contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/documentation/collection-catalogues/). Contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
+    caption: "**`layout: table-of-contents`** <br /> **`presentation: grid`** <br /> A visual grid version of the table of contents. Displays an image if one is specified in the page YAML or if the page is an [object entry page](/docs-v1/collection-catalogues/). Table of contents page types can also be used within sections to display the contents of that section, in this case, the Catalogue section."
   - id: "modern-splash"
     src: /screenshots/modern-splash.jpg
-    caption: "**`type: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."
+    caption: "**`layout: splash`** <br /> A splash page to open a section or to set off a particular page. Customizable banner image, drop cap lettering, full-color background. Also showing floating images and a Soundcloud embed."
   - id: "modern-essay"
     src: /screenshots/modern-essay.png
-    caption: "**`type: essay`** <br /> An essay page showing a page label, contributor, abstract, figure group, links, and footnotes. The essay is a standalone, self-contained article in a periodical or collected volume. This is also reflected in the metadata embedded in the page, which will include more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole."
+    caption: "**`layout: essay`** <br /> An essay page showing a page label, contributor, abstract, figure group, links, and footnotes. The essay is a standalone, self-contained article in a periodical or collected volume. This is also reflected in the metadata embedded in the page, which will include more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole."
   - id: "modern-entry"
     src: /screenshots/modern-entry.png
-    caption: "**`type: entry`** <br /> **`class: landscape`** (default) <br /> An entry page with entry text below and a nearly full-frame image viewer that supports zooming images, maps and videos."
+    caption: "**`layout: entry`** <br /> **`presentation: landscape`** (default) <br /> An entry page with entry text below and a nearly full-frame image viewer that supports zooming images, maps and videos."
   - id: "modern-entry-side"
     src: /screenshots/modern-entry-side.png
-    caption: "**`type: entry`** <br /> **`class: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `entryPageSideBySideLayout: true` in the config.yml file of the project."
+    caption: "**`layout: entry`** <br /> **`presentation: side-by-side`** <br /> An entry page with scrolling entry text to the right side and a fixed-position image viewer to the left. All entry pages can be made to be in the side-by-side configuration by including `sidebySide: true` in the `config.yaml` file of the project."
 
   - id: "modern_contributors-cover"
     src: /screenshots/modern_contributors-cover.jpg
-    caption: "Sample publication cover with the contributors listed using the `contributor_as_it_appears` option in the publication.yml file, which allows for specific language and formatting to be applied."
+    caption: "Sample publication cover with the contributors listed using the `contributor_as_it_appears` option in the publication.yaml file, which allows for specific language and formatting to be applied."
 
   - id: "modern_contributors-page"
     src: /screenshots/modern_contributors-page.png
-    caption: "By default, page contributors are listed in the page header, under the title. Contributor professional `title` and `affiliation` will be included unless `contributor_byline: false` is set in the page YAML, or `contributorByline: false` is set in your config.yml file."
+    caption: "By default, page contributors are listed in the page header, under the title. Contributor professional `title` and `affiliation` will be included unless `contributor_byline: false` is set in the page YAML, or `bylineFormat: false` is set in your `config.yaml` file."
 
   - id: "modern_contributors-name-title-block"
     src: /screenshots/modern_contributors-name-title-block.png
-    caption: "The `q-contributor` shortcode can be used to add a list of contributors anywhere on a page. In this case it is the page author formated with the `name-title-block` option."
+    caption: "The `{% contributor %}` shortcode can be used to add a list of contributors anywhere on a page. In this case it is the page author formated with the `name-title-block` option."
 
   - id: "modern_contributors-initials"
     src: /screenshots/modern_contributors-initials.png
@@ -144,15 +144,15 @@ figure_list:
 
   - id: "modern-citation-hover"
     src: /screenshots/modern-citation-hover.png
-    caption: "By using the `q-cite` shortcode, you can add citations that appear when hovering over the linked text. Clicking the link brings you to a bibliography at the bottom of the page."
+    caption: "By using the `{% cite %}` shortcode, you can add pop-up citations that appear when you click the linked text."
 
   - id: "modern-bibliography-page"
     src: /screenshots/modern-bibliography-page.png
-    caption: "Any citations added to a page with `q-cite` are automatically added to a bibliography list at the bottom of the page."
+    caption: "Any citations added to a page with the `{% cite %}` shortcode are automatically added to a bibliography list at the bottom of the page."
 
   - id: "modern-bibliography"
     src: /screenshots/modern-bibliography.png
-    caption: "A bibliography of all works in your project’s references.yml file can be added to any page with the `q-bibliography` shortcode."
+    caption: "A bibliography of all works in your project’s `references.yaml` file can be added to any page with the `layout: biblioraphy`."
 
   - id: "netlify-logo"
     src: full-logo-light.png
@@ -308,11 +308,11 @@ figure_list:
 
   - id: "map-inline"
     src: /screenshots/map-inline.jpg
-    caption: "When you insert an interactive map with the `q-figure-zoom` shortcode, it will display a static image of the map when you’re on the page."
+    caption: "When you insert an interactive map with the `{% figure-zoom %}` shortcode, it will display a static image of the map when you’re on the page."
 
   - id: "map-zoom"
     src: /screenshots/map-zoom.jpg
-    caption: "When you click on a map inserted with the `q-figure-zoom` shortcode, it will load an interactive version centered on latititue and longitude points you specified, and displaying labels and points from your geojson data file."
+    caption: "When you click on a map inserted with the `{% figure-zoom %}` shortcode, it will load an interactive version centered on latititue and longitude points you specified, and displaying labels and points from your geojson data file."
 
   - id: "90-min-webinar"
     src: /screenshots/90-min-webinar.jpg
@@ -363,3 +363,6 @@ figure_list:
     media_id: 2KG5I6TLF8Y
     media_type: youtube
     caption: "An in-depth walk-through of the Nelson-Atkins Museum of Art's first Quire publication, *French Paintings and Pastels, 1600–1945: The Collections of the Nelson-Atkins Museum of Art*, from conception and development to design and distribution, with Stephanie Alger (Digital Publishing Assistant), Brigid Boyle (Block Family Foundation Doctoral Fellow), and Meghan Gray (Project Manager, Curatorial Associate in European Arts)."
+
+  - id: "5.5"
+    src: /screenshots/alt-text-example.jpg

@@ -17,7 +17,7 @@ The Quire team at Getty continues its work on Quire, including improving the ins
 
 - **Accordion Sections** Allows sections of primary content to be collapsed/expanded by a reader. Accordion sections are defined by an author using Quire markup short-codes and templates.
 
-- **Catalogue Filters** Adds a set of HTML user interface elements to online Quire publications that allow a reader to update the objects displayed, showing only those that match the selected filter criteria. Catalogue filters will be based on the object meta-data fields defined in the objects.yml, and the display of filters will be configurable by authors.
+- **Catalogue Filters** Adds a set of HTML user interface elements to online Quire publications that allow a reader to update the objects displayed, showing only those that match the selected filter criteria. Catalogue filters will be based on the object meta-data fields defined in the objects.yaml, and the display of filters will be configurable by authors.
 
 </div>
 

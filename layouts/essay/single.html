@@ -14,7 +14,7 @@
       <div class="content">
         {{ .Content }}
         {{ partial "page-bibliography.html" . }}
-        {{ if eq .Section "documentation" }}
+        {{ if or (eq .Section "docs-v0") (eq .Section "docs-v1") }}
         <div class="action-button source">
           <p><a href="{{ .Site.Params.repository }}tree/{{ .Site.Params.defaultBranch }}/content/{{ .Path }}">Improve this page</a></p>
         </div>

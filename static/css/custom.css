@@ -46,6 +46,31 @@ Css Sections:
   CODE
 */
 
+.version-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--warm-gray-20);
+  width: calc(100% - 460px);
+  border-top-right-radius: 4px;
+  padding: 1rem;
+  z-index: 100;
+}
+.version-banner strong {
+  color: currentColor;
+}
+@media screen and (max-width:1000px) {
+  .version-banner {
+    width: calc(100% - 160px);
+  }
+}
+@media screen and (max-width:700px) {
+  .version-banner {
+    width: 100%;
+    border-top-right-radius: 0px;
+  }
+}
+
 /* HOME PAGE
 ============================================================================= */
 
