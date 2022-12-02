@@ -44,7 +44,7 @@ Share your finished publications with the Quire team so we can feature them on o
 
 ## Present Your Project
 
-Present your Quire projects at [annual academic, museum, and publishing conferences](/learn/publication-opportunities/#post-publication). Let us know if you plan on presenting so we can promote your participation.
+Present your Quire projects at [annual academic, museum, and publishing conferences](/resources/publication-opportunities/#post-publication). Let us know if you plan on presenting so we can promote your participation.
 
  <div class="action-button">
 
@@ -123,7 +123,7 @@ The [Quire Documentation](/documentation/) is a perpetual work in progress. Dive
 
 ## Write an Article
 
-Submit an article about a specific aspect of working in Quire to be included in the [Learn](/learn/articles-videos/) section of our website.
+Submit an article about a specific aspect of working in Quire to be included in the [Resources](/resources/articles-videos/) section of our website.
 
 <div class="action-button">
 
