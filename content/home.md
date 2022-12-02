@@ -206,11 +206,11 @@ Joining the Quire community is as easy as [becoming a user](/docs-v1/install-uni
 
 ![laptop icon](/img/icons/laptop.png)
 
-### Try Quire
+### Get Started
 
-Learn how to use the tool
+Try it for yourself
 
-[Take the Tutorial](/docs-v1/tutorial)
+[Install Quire and start using it today](/docs-v1/install-uninstall)
 
 </div>
 <div class="footer-item">
