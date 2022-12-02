@@ -5,7 +5,7 @@ weight: 6010
 type: essay
 abstract: "Get started with a walkthrough of Quire fundamentals"
 aliases:
-  - /learn/tutorial/
+  - /docs-v1/tutorial/
 ---
 
 Developed by Getty, Quire offers an elegant and affordable digital publishing solution ideal for creating dynamic publications in a variety of formats, including web, print, and e-book. Through the use of static site generation and plain text files, Quire makes it possible to preserve and distribute works in a stable and accessible format.
@@ -257,7 +257,7 @@ Congratulations on completing the tutorial! We’ve touched on Quire’s core co
 Next Steps:
 
 - Continue reading the Quire [documentation](/docs-v1/).
-- Explore the [Learn section](/learn/) of our website for guidance and resources.
+- Explore the [Resources section](/resources/) of our website for guidance in navgivating Quire.
 - Check out the [community forum](https://github.com/thegetty/quire/discussions) on GitHub Discussions.
 - Browse our [community showcase](/community/community-showcase/).
 - Sign up for our [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4).

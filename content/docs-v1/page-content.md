@@ -23,7 +23,7 @@ order: 206
 
 The main content of your page comes after the YAML block at the top, and will be formatted in Markdown. Markdown is a very simple, plain text markup language that uses a few text rules to structure content for easy conversion into HTML. For example, a hash or pound sign at the beginning of a line makes a heading, and asterisks wrapping text turns it *italic*.
 
-You can read all about Markdown syntax and how it is used in Quire in the [*YAML & Markdown*](/docs-v1/fundamentals/) section of this guide. If your source files are Microsoft Word files then we recommend using [Pandoc](/docs-v1/fundamentals/#microsoft-word-to-markdown-conversion) for conversion into Markdown. We also recommend reviewing our [Manuscript Prep](/learn/manuscript-prep/) guide when using Pandoc.
+You can read all about Markdown syntax and how it is used in Quire in the [*YAML & Markdown*](/docs-v1/fundamentals/) section of this guide. If your source files are Microsoft Word files then we recommend using [Pandoc](/docs-v1/fundamentals/#microsoft-word-to-markdown-conversion) for conversion into Markdown. We also recommend reviewing our [Manuscript Prep](/resources/manuscript-prep/) guide when using Pandoc.
 
 ## Use Shortcodes to Add Features
 
