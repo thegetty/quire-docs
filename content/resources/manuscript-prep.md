@@ -26,8 +26,8 @@ online: false
 
 {{< q-checklist >}}
 
-- [ ] Format captions for the [`figures.yaml`](/docs-v1/figure-images/#create-a-figuresyml-file-for-figure-image-metadata) file
+- [ ] Format captions for the [`figures.yaml`](/docs-v1/figure-images/#create-a-figuresyaml-file-for-figure-image-metadata) file
 - [ ] If using in-text citations, format author date information for the [`references.yaml`](/docs-v1/citation-bibliographies/#capture-bibliographic-information-in-yaml) file
-- [ ] For collection catalogues, format object information for the [`objects.yaml`](/docs-v1/figure-images/#create-a-figuresyml-file-for-figure-image-metadata) file
+- [ ] For collection catalogues, format object information for the [`objects.yaml`](/docs-v1/figure-images/#create-a-figuresyaml-file-for-figure-image-metadata) file
 
 {{< /q-checklist >}}
