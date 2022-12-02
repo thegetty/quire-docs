@@ -90,11 +90,10 @@ Quire’s beta community grows to nearly 200 members, with more than a dozen [pu
 
 The Quire team launches a [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4), [community forum](https://github.com/thegetty/quire/discussions), and [new website](https://quire.getty.edu/).
 
-Quire version 0.19.0 is released. Quire users now have the ability to include deep zooming images with [IIIF](/documentation/zooming-images).
-<br/>
-<br/>
+Quire version 0.19.0 is released. Quire users now have the ability to include deep zooming images with [IIIF](/docs-v0/zooming-images).
 
-<div class="action-button">
+## 2022
 
-[Become part of Quire's history today!](https://docs.google.com/forms/d/e/1FAIpQLScKOJEq9ivhwizmdazjuhxBII-s-5SUsnerWmyF8VteeeRBhA/viewform)
-</div>
+The Quire team announces the v1.0.0 pre-release and official open-source launch. This launch also marks the transition from Hugo to [Eleventy (11ty)](https://www.11ty.dev/) as Quire's static site generator.  
+
+Learn about the [key changes](/docs-v1/key-changes) in v1 and view our [3-clause BSD open source license](https://github.com/thegetty/quire/blob/main/LICENSE).
