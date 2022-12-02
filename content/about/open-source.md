@@ -11,7 +11,7 @@ Open source is a way of developing software where the code is free and available
 
 For the past four years, Getty has been using Quire to advance its internal publishing needs. This work has enabled us to test and refine the software. By open-sourcing Quire and supporting its ongoing use in the field, other institutions can leverage Getty's work to create their own digital publications and meaningfully contribute to Quire's growth and health as a publishing tool.
 
-Quire users have full access and can create, customize, and distribute their digital projects any way they'd like. We encourage users to share questions, frustrations, and positive reactions, and we use this feedback to inform developments and new feature considerations. In return, our users not only have access to Getty staff for assistance, but they also have access to other beta users who can provide additional support and inspiration. The one thing we ask is that users do NOT redistribute Quire itself.
+Quire users have full access and can create, customize, and distribute their digital projects any way they'd like. We encourage users to share questions, frustrations, and positive reactions in our [community forum](https://github.com/thegetty/quire/discussions), and we use this feedback to inform developments and new feature considerations.
 
 **To learn more about open-source software development visit:**
 
