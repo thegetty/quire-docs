@@ -83,10 +83,11 @@ title: "“Ah ha!” Curly Quotes for the Win"
 
 {{< q-class "box tip" >}}
 
-- **Our Top 3 YAML Tips:**
+- **Our Top 4 YAML Tips for Quire:**
     1. Use quotes around item values
     2. Watch horizontal spacing to make sure things line up
     3. Check your YAML with a validator
+    4. If changes to project YAML don't appear right away, use Control-C to stop the preview and run `quire preview` again
 
 {{< /q-class >}}
 

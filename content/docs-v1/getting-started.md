@@ -187,10 +187,10 @@ As you add content to your project, you can preview the site in your web browser
 
 Some tips for previewing your publication:
 
-1. **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about page YAML in [*Page Types & Structure*](/docs-v1/pages/)
+- **Include YAML on page for it to be viewable in your web browser** In order for pages to become active, you must have basic YAML included at the top of the page. Learn more about page YAML in [*Page Types & Structure*](/docs-v1/pages/)
 
-2. **Hide pages from the table of contents view** If you want to hide a page from the table of contents include `toc: false` in the YAML.
+- **Hide pages from the table of contents view** If you want to hide a page from the table of contents include `toc: false` in the YAML.
 
-2. **Hide pages from the sidebar menu** If you want to hide a page from sidebar menu include `menu: false` in the YAML.
+- **Hide pages from the sidebar menu** If you want to hide a page from sidebar menu include `menu: false` in the YAML.
 
-2. **Start and stop the preview to refresh Quire** In some cases, changes to `.yaml`, `.scss` and `.css` files may not show up in your preview immediately. If this happens, use Control-C to stop the preview and `quire preview` to restart it.
+- **Start and stop the preview to refresh Quire** In some cases, changes to `.yaml`, `.scss` and `.css` files may not show up in your preview immediately. If this happens, use Control-C to stop the preview and `quire preview` to restart it.
