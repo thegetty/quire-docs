@@ -45,7 +45,7 @@ In addition to telling Quire what to do, the command-line shell is an effective 
 3. Type `cd` followed by the name of a directory you want to navigate to. For example, `cd Downloads` will take you into the Downloads directory.
 4. Run `ls` again to view the contents of that folder.
 5. Pull up your Finder or File Explorer to compare the listed files.
-6. Type `cd` again to go back to your home directory.
+6. Type `cd ~` again to go back to your home directory.
 
 ## 2. Install Quire
 
@@ -248,10 +248,7 @@ Once you've played around with adding content and customizing your project, it's
 
 ### Try it For Yourself
 
-1. In your Terminal, stop the preview process by pressing Control-C.
-2. To create the various formats of your publication type `quire build` and press enter.
-3. Use your Finder or File Explorer to navigate to your project directory.
-4. Navigate to the `public` directory and open the file marked `pdf.html` to view a PDF of your project. 
+TK
 
 ## Congratulations! Now What?
 

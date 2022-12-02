@@ -7,7 +7,7 @@ aliases:
   - /documentation/getting-started/
 ---
 
-Before getting started, make sure you have [installed Quire](/docs-v1/install-uninstall/) and downloaded a freely available {{< q-def "text editor" >}}. We also recommend reviewing the [*Quire Basics Tutorial*](/docs-v1/v1-tutorial/), a step-by-step introduction to the fundamentals of Quire.
+Before getting started, make sure you have [installed Quire](/docs-v1/install-uninstall/) and downloaded a freely available {{< q-def "text editor" >}}. We also recommend reviewing the [*Quire Basics Tutorial*](/docs-v1/tutorial/), a step-by-step introduction to the fundamentals of Quire.
 
 ## Start a New Project
 
