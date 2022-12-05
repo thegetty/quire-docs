@@ -101,7 +101,7 @@ When you have multiple images that make sense to group together, you can use the
 
 Videos can be embedded in your publication the same way as other figure images. The difference being that you’ll also need to include a `media_id` and a `media_type` attribute, along with an optional `aspect_ratio` attribute in the `figures.yaml` file. You will also want to provide a static `poster` image to display in the PDF and EPUB versions of your project.
 
-### Video Hosted on YouTube and Vimeo
+### Video Hosted on Vimeo and YouTube
 
 Quire supports video embeds from either Vimeo (`media_type: vimeo`) or YouTube (`media_type: youtube`). The `media_ids` can be found in the URLs of the videos you wish to embed. For example, in https://vimeo.com/672853511/33ca671c7c, the `media_id` would be `672853511/33ca671c7c`; and in https://www.youtube.com/watch?v=UR6j2bcR5ro or https://youtu.be/UR6j2bcR5ro it is `UR6j2bcR5ro`.
 
