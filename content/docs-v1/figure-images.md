@@ -99,24 +99,51 @@ When you have multiple images that make sense to group together, you can use the
 
 ## Add Video Figures
 
-Videos can be embedded in your publication the same way as other figure images. The difference being that you’ll also need to include a `media_id` and a `media_type` attribute, along with an optional `aspect_ratio` attribute in the `figures.yaml` file.
+Videos can be embedded in your publication the same way as other figure images. The difference being that you’ll also need to include a `media_id` and a `media_type` attribute, along with an optional `aspect_ratio` attribute in the `figures.yaml` file. You will also want to provide a static `poster` image to display in the PDF and EPUB versions of your project.
 
-Quire supports video embeds from either YouTube (`media_type: youtube`) or Vimeo (`media_type: vimeo`). The `media_ids` can be found in the URLs of the videos you wish to embed. For example, in https://www.youtube.com/watch?v=UR6j2bcR5ro or https://youtu.be/UR6j2bcR5ro, the `media_id` would be `UR6j2bcR5ro`; and in https://vimeo.com/672853511/33ca671c7c it is `672853511/33ca671c7c`.
+### Video Hosted on YouTube and Vimeo
+
+Quire supports video embeds from either Vimeo (`media_type: vimeo`) or YouTube (`media_type: youtube`). The `media_ids` can be found in the URLs of the videos you wish to embed. For example, in https://vimeo.com/672853511/33ca671c7c, the `media_id` would be `672853511/33ca671c7c`; and in https://www.youtube.com/watch?v=UR6j2bcR5ro or https://youtu.be/UR6j2bcR5ro it is `UR6j2bcR5ro`.
 
 ```yaml
-- id: 1.5
-  poster: videostill.jpg
+- id: vid-1
+  poster: video-1-still.jpg
   media_id: UR6j2bcR5ro
   media_type: youtube
 ```
 
-Because Quire is built with multiple formats in mind, when including videos in the online version of the project you will also need to include a video still as a fallback image for the PDF and EPUB versions. Add the `poster` attribute to the YAML entry. Similar to `src`, the value should be the file name of the still you want to use. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
-
 {{< q-class "box tip" >}}
 
-- Note that on YouTube, videos can be filed as “Unlisted” and this will let you embed the video, but will not include the video on your channel page, or in YouTube’s general search engine.
+- Note that on both Vimeo and YouTube, you can opt to make your videos embeddable (so they will display in your Quire project) while not including them on your channel page, or in their general search results. This is typically the “Unlisted” setting, as opposed to “Public”, but consult Vimeo and YouTube documentation for specifics.
 
 {{< /q-class >}}
+
+### Video Hosted within Quire
+
+Along with Vimeo and YouTube videos, Quire can also support video that you include directly in your project. Add your MP4, WEBM, or OGG video file to your `_assets/images` directory the way you would with any image file, and then reference it in the `src` attribute (there is no `media_id` needed for this kind of video figure). The required `media_type` in this case is simply `video`.
+
+```yaml
+- id: vid-2
+  poster: video-2-still.jpg
+  src: my-video-file.mp4
+  media_type: video
+```
+
+Adding video directly, rather than through YouTube or Vimeo, means your video resource will always be available within your project along with your other included figure images. Your project will not be dependent on Vimeo or YouTube servers and will not be affected by changes they may make to their service. However, Vimeo and YouTube are going to be better at handling longer videos, providing additional features like transcripts and closed captions, and streaming content generally and especially for readers in other areas of the globe from where your project itself is hosted.
+
+### Fallbacks for PDF and EPUB Outputs
+
+Because Quire is built with multiple formats in mind, when including videos in the online version of the project you will also need to include a video still as a fallback image for the PDF and EPUB versions. Add the `poster` attribute to the YAML entry. Similar to `src`, the value should be the file name of the still you want to use. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
+
+### Starting a Video Figure at a Particular Point
+
+Your video figures can be set to start playing at a particular point, whether you are using Vimeo, YouTube, or self-hosted videos. In each case, you set the time by appending a short string of characters to the `media_id` (in the case of Vimeo and YouTube videos), or to the `src` (in the case of self-hosted video). Refer to the below chart for your specific media type.
+
+| Video Type | Timecode Format | Example | Notes |
+| --- | --- | --- | --- |
+| Vimeo | `#t=__m__s` | `media_id: 672853511/33ca671c7c#t=1m20s` or `media_id: 672853511/33ca671c7c#t=80s` | Insert the timecode in minutes (m) and seconds (s), or just seconds |
+| YouTube | `?start=__` | `media_id: UR6j2bcR5ro?start=80` | Insert the timecode in seconds |
+| Self-hosted | `#t=__,__` | `src: my-video-file.mp4#t=80,230` | Insert the timecode in seconds, followed by a comma and the total length of the video in seconds |
 
 ## Add Soundcloud Files
 
