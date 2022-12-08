@@ -1,8 +1,4 @@
 figure_list:
-  - id: "1.1"
-    src: /screenshots/content-model.png
-    caption: "Quire content model."
-    credit: " "
   - id: "1.4"
     src: /screenshots/quire-work-environment.gif
     caption: "When you work in Quire, you’ll be using a text editor (left), a command-line shell (center), and a web browser (right)."
@@ -10,10 +6,6 @@ figure_list:
   - id: "commandline-vs-folder"
     src: /screenshots/commandline-vs-folder.png
     caption: "Both the command-line shell (left) and the Finder window (right) are views of the same directory on your computer. In this case, we are in a directory called “my-project” in a user account “workstation” and we can see a number of files and sub-directories which happen to make up a Quire project."
-    credit: " "
-  - id: "1.6"
-    src: /screenshots/project-in-atom.png
-    caption: "`my-project` open in Atom"
     credit: " "
   - id: "1.7"
     src: /screenshots/catalogue-entry-page.jpg
@@ -41,24 +33,9 @@ figure_list:
   - id: "1.13"
     src: /screenshots/style2.png
     caption: "screenshot of the custom.css file in the static directory"
-  - id: "1.14"
-    src: /screenshots/markdownstyleguide.jpg
-    caption: "markdown style guide with code"
   - id: "1.15"
     src: /screenshots/outputstyleguide.jpg
     caption: "visual output style guide in quire"
-    credit: " "
-  - id: "1.16"
-    src: /screenshots/hugo-logo.png
-    caption: " "
-    credit: " "
-  - id: "1.17"
-    src: /screenshots/prince-xml-logo.png
-    caption: " "
-    credit: " "
-  - id: "1.18"
-    src: /screenshots/webpack-logo.png
-    caption: " "
     credit: " "
   - id: "command-line-shell"
     src: /screenshots/command-line-shell.png
@@ -285,26 +262,6 @@ figure_list:
   - id: "roadmap"
     src: /illustrations/roadmap.png
     caption: "The journey ahead."
-
-  - id: "collection-catalogue"
-    src: /screenshots/collection-catalogue.jpg
-    caption: "**Scholar approved** | Optimized for visual, scholarly publishing"
-
-  - id: "custom-styles"
-    src: /screenshots/custom-styles.jpg
-    caption: "**Customizable styles** | Change colors, fonts and more"
-
-  - id: "multiformat"
-    src: /screenshots/multiformat.jpg
-    caption: "**Multiformat** | Publish online, as an e-book, and in print"
-
-  - id: "video-embeds"
-    src: /screenshots/video-embeds.jpg
-    caption: "**Multimedia** | Embed videos, audio, and still images"
-
-  - id: "plain-text"
-    src: /screenshots/plain-text.jpg
-    caption: "**Simple structure** | Keep content in human-readable format"
 
   - id: "map-inline"
     src: /screenshots/map-inline.jpg
