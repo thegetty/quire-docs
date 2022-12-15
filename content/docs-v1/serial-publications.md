@@ -27,4 +27,4 @@ Follow the steps below to use GitHub to create a new project based on a preexist
 
 5. Click Publish repository in the upper right to send the files to github.com.
 
-6. Run `quire install` in the project to install the necessary software dependencies before previewing and getting to work adding your new content.
+6. Run `npm run dev` in the project to install the necessary software dependencies before previewing and getting to work adding your new content.

@@ -62,7 +62,7 @@ If you are collaborating on a project, and one of your colleagues has already ho
 3. You now have a copy of that project on your computer connected to the original code on GitHub. Before you can collaborate, you will need to either add your colleagues as collaborators or host your project in an organizational GitHub account where everyone is a member. Learn more in the [*Collaborate with Others Using GitHub*](/#collaborate-with-others-using-GitHub/) section below.
 
 {{< q-class "box warning" >}}
-- To view a preview of a Quire project cloned from GitHub, you’ll need to first run the `quire install` command in your command-line shell. Then run `quire preview` and navigate to [http://localhost:1313/](http://localhost:1313/).
+- To view a preview of a Quire project cloned from GitHub, you’ll need to first run the `npm run dev` command in your command-line shell. Then run `quire preview` and navigate to [http://localhost:1313/](http://localhost:1313/).
 {{< /q-class >}}
 
 {{< q-class "box tip" >}}
