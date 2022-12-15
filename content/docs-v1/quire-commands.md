@@ -22,7 +22,7 @@ Quire commands are typically run from Terminal on a Mac and PowerShell on a PC. 
 
 
 {{< q-class "box warning" >}}
-- Use `npm run dev` to install Quire’s dependencies when you clone a project and preview it for the first time. This command only needs to be run once in a project.
+- Use `npm install` to install Quire’s dependencies when you clone a project and preview it for the first time. This command only needs to be run once in a project.
 {{< /q-class >}}
 
 
