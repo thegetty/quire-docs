@@ -87,4 +87,10 @@ Also, the way data and other information is added to shortcodes is different in 
 
 When you run the command `quire preview` the URL to view you project is now `http://localhost:8080` as opposed to `localhost:1313` in the v0 version of Quire.
 
-If you are making changes to YAML files or page YAML and they are not showing immediately, use Control-C to stop the project and then run `quire preview` again. 
+If you are making changes to YAML files or page YAML and they are not showing immediately, use Control-C to stop the project and then run `quire preview` again.
+
+## CLI Commands
+
+Rather than running `quire install` to install Quire’s dependencies when you clone a project and preview it for the first time, you now need to run `npm run dev`.
+
+Before running `quire epub` or `quire pdf` you must first run `quire build` to create the site files that are needed to build the PDF and EPUB. You no longer need to run `quire site` since this is esentially the same action as `quire build`. 
