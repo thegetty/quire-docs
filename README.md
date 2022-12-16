@@ -1,17 +1,20 @@
 # Quire
 
+**This is the reposistory for the Quire website and documentaiton.**
+
 ## About Quire 
 
-Developed by Getty, Quire is a digital publishing tool that can create dynamic publications in a variety of formats, including web, print, and e-book. Quire is an ideal tool for anyone seeking to publish beautiful, scholarly digital books optimized for visual imagery and designed to ensure their content is widely accessible and stable. 
+Developed by Getty, Quire is a digital publishing tool that can create dynamic publications in a variety of formats, including web, print, and e-book. Quire is an ideal tool for publishing beautiful, scholarly digital books optimized for visual imagery and designed to ensure publication content is widely accessible and stable.
 
 Quire is open source and free to use. View Quire's [3-clause BSD open source license](https://github.com/thegetty/quire/blob/main/LICENSE).  
 
 Please note: Quire v1 is currently in a pre-release phase. Testing and improvements are ongoing.
-There are two Quire repositories hosted on GitHub that you can contribute to:
+
+There are three Quire repositories hosted on GitHub:
 
 - [**quire**](https://github.com/thegetty/quire): Quire’s primary repository, with the command-line interface and 11ty template packages
-- [**quire-starter-default**](https://github.com/thegetty/quire-starter-default) The default starter content for a Quire project 
-- [**quire-docs**](https://github.com/thegetty/quire-docs): The Quire website and documentation.
+- [**quire-starter-default**](https://github.com/thegetty/quire-starter-default): The default starter content for a Quire project
+- [**quire-docs**](https://github.com/thegetty/quire-docs): Quire website and documentation.
 
 Please see the [README.md](https://github.com/thegetty/quire/blob/main/README.md) in our main repository [wwww.github.com/thegetty/quire](wwww.github.com/thegetty/quire) to learn more about the technical aspects of Quire, participate in the forum, submit bugs, and more.
 
@@ -30,13 +33,13 @@ There are four main sections to the website:
 
 This project was last built with the following software versions:
 
-- Quire 0.20.4
-- Node 14.17.3 / npm 6.14.13
+- Quire 0.20.1
+- Node 14.18.1 / npm 6.14.15
 - Hugo 0.72
 - PrinceXML 14.2
-- Pandoc 2.14.1
+- Pandoc 2.18
 
-While v0.20.4 of the core Quire default theme was used, a number of customizations were made, including:
+While v0.20.1 of the core Quire default theme was used, a number of customizations were made, including:
 
 - Custom cover/homepage layout
 - Use of Getty brand fonts
