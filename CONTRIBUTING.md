@@ -7,19 +7,19 @@ Below you will find information about this respository, the types of contributio
 
 ## Learn About Contributing to Quire
 
-Developed by Getty, Quire is a digital publishing tool that can create dynamic publications in a variety of formats, including web, print, and e-book. Quire is an ideal tool for anyone seeking to publish beautiful, scholarly digital books optimized for visual imagery and designed to ensure their content is widely accessible and stable.
+Developed by Getty, Quire is a digital publishing tool that can create dynamic publications in a variety of formats, including web, print, and e-book. Quire is an ideal tool for publishing beautiful, scholarly digital books optimized for visual imagery and designed to ensure publication content is widely accessible and stable.
 
 Quire is open source and free to use. View Quire's [3-clause BSD open source license](https://github.com/thegetty/quire/blob/main/LICENSE). Please note: Quire v1 is currently in a pre-release phase. Testing and improvements are ongoing.
 
-There are the two Quire repositories hosted on GitHub:
+There are three Quire repositories hosted on GitHub:
 
 - [**quire**](https://github.com/thegetty/quire): Quire’s primary repository, with the command-line interface and 11ty template packages
-- [**quire-starter-default**](https://github.com/thegetty/quire-starter-default) The default starter content for a Quire project
+- [**quire-starter-default**](https://github.com/thegetty/quire-starter-default): The default starter content for a Quire project
 - [**quire-docs**](https://github.com/thegetty/quire-docs): Quire website and documentation.
 
 You are currently in the **quire-docs** repository. Our website and documentation are actually built using Quire. That means contributing to this repo will give you an opportunity to work on a live Quire project. The process may be familiar for some, and for others, it will be a good way to familiarize yourself with the tool.
 
-**On the Quire website you will notice two sets of documentation: v0 for the legacy version of Quire and v1 for the latest version. All new projects are created in the latest version of Quire. However, the Quire website is still running on the legacy version. This means that if you plan on contributing the documentation and want to preivew your changes, you must [install the legacy version Quire](https://quire.getty.edu/docs-v1/install-uninstall/#re-install-legacy-versions-of-quire). If you have questions or need assistance email us at quire@getty.edu.**
+**On the Quire website you will notice two sets of documentation: v0 for the legacy version of Quire and v1 for the latest version. All new projects are created in the latest version of Quire. However, the Quire website is still running on the legacy version. This means that if you plan on contributing the documentation and want to preivew your changes, you must [install the legacy version of Quire](https://quire.getty.edu/docs-v1/install-uninstall/#re-install-legacy-versions-of-quire). If you have questions or need assistance email us at quire@getty.edu.**
 
 **We will only be accepting contributions related to the v1 documentation.**
 
@@ -84,7 +84,7 @@ Now that you've identified your contribution, your next step will be to use GitH
 6. Click "Create Branch."
 
 **Open Project File in Text Editor**
-1. Open the text editor of your choice. (We suggest [Visual Studio Code](https://code.visualstudio.com/.)
+1. Open the text editor of your choice. ([Visual Studio Code](https://code.visualstudio.com/), [Brackets](https://brackets.io/), and [Sublime Text](https://www.sublimetext.com/) are good free options.)
 2. Select File > Open in your menu bar.
 3. Navigate to where you saved the `quire-docs` folder in step 6 of **Fork & Clone Your Quire Project** and open the project in your text editor. 
 4. Expand the `content` folder to see the editable markdown files and look for the file you'd like to make your changes in.
@@ -137,7 +137,8 @@ A pull request doesn’t have to represent finished work. We always recommend op
 - [Open Source Guide: “How to Contribute to Open Source”](https://opensource.guide/how-to-contribute/)
 - [Website](https://quire.getty.edu)
 - [Issue Tracking](https://github.com/thegetty/quire-docs/issues/)
-- [Documentation](https://quire.getty.edu/docs-v1)
+- [v0 Documentation](https://quire.getty.edu/docs-v0)
+- [v1 Documentation](https://quire.getty.edu/docs-v1)
 - [Community Forum](https://github.com/thegetty/quire/discussions)
 
 **Quire Core Team:**
