@@ -124,7 +124,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 
 Allows for a wide range of possible custom features and styles
 
-![icon showing a wrench and a pencil crossed](/img/illustrations/illustration-customize--magenta-60.svg)
+![icon showing a wrench and a paintbrush crossed](/img/illustrations/quire-icon-customizable-magenta-300.jpg)
 
 </div>
 
@@ -134,7 +134,7 @@ Allows for a wide range of possible custom features and styles
 
 Expands rich scholarship with embedded audio, video, deep-zooming images and more
 
-![icon indicating a picture, a video player and an audio player](/img/illustrations/illustration-multimedia--magenta-60.svg)
+![icon indicating a picture, a video player and an audio player](/img/illustrations/quire-icon-multimedia-magenta-300.jpg)
 
 </div>
 
@@ -144,7 +144,7 @@ Expands rich scholarship with embedded audio, video, deep-zooming images and mor
 
 Multiformat output from a single set of source files speeds production without duplicating effort
 
-![icon showing a computer, book, and tablet](/img/illustrations/illustration-multiformat--magenta-60.svg)
+![icon showing a computer, book, and tablet](/img/illustrations/quire-icon-singlesourcepublishing-magenta-300.jpg)
 
 </div>
 
@@ -154,7 +154,7 @@ Multiformat output from a single set of source files speeds production without d
 
 Keeps source content in nonspecialized plain text to ensure reusability
 
-![icon showing a plain text document](/img/illustrations/illustration-file-text--magenta-60.svg)
+![icon showing a plain text document](/img/illustrations/quire-icon-simplifiedstructure-magenta-300.jpg)
 
 </div>
 

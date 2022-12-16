@@ -7,7 +7,10 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 ## Pre-Publication
 
-### 💰 Funding 💰
+![Funding icon](/img/illustrations/quire-icon-funding-bw-300.jpg)
+
+### Funding
+
 *Apply for grants, awards, and other funding while you are getting started*
 
 * [Association of Research Institutes in Art History (ARiAH) Digital Development Award](http://www.ariah.info/ARIAHAWARDS.html)
@@ -26,7 +29,10 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 ## Post-Publication
 
-### 🙌 Show & Tell 🙌
+![Sharework icon](/img/illustrations/quire-icon-sharework-bw-300.jpg)
+
+### Share Your Work
+
 *Share your Quire project with other professionals and the public*
 
 * [Museum Publishing Digital Interest Group (MuPuDIG)](https://docs.google.com/forms/d/e/1FAIpQLSeKK2mwSG9fpMgAFoE5qkjKvYUQK7U4596QikNxBB3mE9-ODQ/viewform)
@@ -35,7 +41,9 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 <br/>
 
-### 🎙 Conferences 🎙
+![Present icon](/img/illustrations/quire-icon-present-bw-300.jpg)
+
+### Conferences
 *Present your Quire project at conferences*
 
 * [Art Libraries Society of North America (ARLIS/NA)](https://www.arlisna.org/conferences)
@@ -56,7 +64,9 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 <br/>
 
-### 🏆 Awards 🏆
+![Awards icon](/img/illustrations/quire-icon-awards-bw-300.jpg)
+
+### Awards
 *Submit your Quire project for award consideration*
 
 * [American Alliance of Museums (AAM) Media & Technology MUSE Awards](https://www.aam-us.org/programs/awards-competitions/media-technology-muse-awards/)
@@ -75,10 +85,13 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [Open Publishing Awards](https://openpublishingawards.org/)
 
+* [Roy Rosenzweig Prize for Creativity in Digital History](https://www.historians.org/awards-and-grants/awards-and-prizes/roy-rosenzweig-prize)
 
 <br/>
 
-### 📝 Reviews 📝
+![Reviews icon](/img/illustrations/quire-icon-reviews-bw-300.jpg)
+
+### Reviews
 *Get the word out about your Quire project in journals and other international sources*
 
 * [American Council of Learned Societies (ACLS) Humanities E-Book](https://www.humanitiesebook.org/about)
