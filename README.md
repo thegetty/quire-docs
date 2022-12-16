@@ -1,12 +1,19 @@
 # Quire
 
-Developed by Getty, Quire is a new, multiformat publishing tool available for immediate access and use. Quire is in limited beta, © J. Paul Getty Trust, and not yet released as open-source software. **For a free license to use Quire, please complete [this form](http://bit.ly/quire-signup).**
+**This is the reposistory for the Quire website and documentaiton.**
 
-Striving toward becoming a fully open-source project by spring 2022, we encourage contributions from our community members. No matter what level of experience you have, we welcome all contributions, big and small.
+## About Quire 
 
-There are two Quire repositories hosted on GitHub that you can contribute to:
+Developed by Getty, Quire is a digital publishing tool that can create dynamic publications in a variety of formats, including web, print, and e-book. Quire is an ideal tool for publishing beautiful, scholarly digital books optimized for visual imagery and designed to ensure publication content is widely accessible and stable.
 
-- [**quire**](https://github.com/thegetty/quire):  Core Quire code including command-line interface, default starter content, and default theme.
+Quire is open source and free to use. View Quire's [3-clause BSD open source license](https://github.com/thegetty/quire/blob/main/LICENSE).  
+
+Please note: Quire v1 is currently in a pre-release phase. Testing and improvements are ongoing.
+
+There are three Quire repositories hosted on GitHub:
+
+- [**quire**](https://github.com/thegetty/quire): Quire’s primary repository, with the command-line interface and 11ty template packages
+- [**quire-starter-default**](https://github.com/thegetty/quire-starter-default): The default starter content for a Quire project
 - [**quire-docs**](https://github.com/thegetty/quire-docs): Quire website and documentation.
 
 Please see the [README.md](https://github.com/thegetty/quire/blob/main/README.md) in our main repository [wwww.github.com/thegetty/quire](wwww.github.com/thegetty/quire) to learn more about the technical aspects of Quire, participate in the forum, submit bugs, and more.
@@ -19,20 +26,20 @@ There are four main sections to the website:
 
 - [About](https://quire.getty.edu/about/): Learn about what Quire can do, its history, and the team behind the project.
 - [Community](https://quire.getty.edu/community/): Connect with other users, see what others are creating with Quire, learn how to get involved.
-- [Documentation](https://quire.getty.edu/documentation/): Find instructions for how to use Quire from installation to deployment and everything in between.
-- [Learn](https://quire.getty.edu/learn/): Get started by taking the Quire tutorial and peruse other helpful tools and resources to increase your Quire skillset.
+- [Documentation](https://quire.getty.edu/docs-v1/): Find instructions for how to use Quire from installation to deployment and everything in between. (Currently we have two sets of documentation v1 and v0. The latter is for the legacy version of Quire which will be phased out.)
+- [Resources](https://quire.getty.edu/resources/): Get started by taking the Quire tutorial and peruse other helpful tools and resources to increase your Quire skillset.
 
 ### Development Notes
 
 This project was last built with the following software versions:
 
-- Quire 0.19.0
-- Node 14.17.3 / npm 6.14.13
+- Quire 0.20.1
+- Node 14.18.1 / npm 6.14.15
 - Hugo 0.72
 - PrinceXML 14.2
-- Pandoc 2.14.1
+- Pandoc 2.18
 
-While v0.19.0 of the core Quire default theme was used, a number of customizations were made, including:
+While v0.20.1 of the core Quire default theme was used, a number of customizations were made, including:
 
 - Custom cover/homepage layout
 - Use of Getty brand fonts
@@ -43,6 +50,6 @@ Within the theme itself, changes were made to the source/css/variables.scss file
 
 ## License
 
-© 2021 J. Paul Getty Trust
+© 2022 J. Paul Getty Trust
 
 The text and images of Quire’s documentation is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
