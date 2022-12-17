@@ -70,12 +70,10 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 </div>
 <div class="feature-list two-column">
 
-- **Affordable** No proprietary software or ongoing maintenance fees required
-- **Discoverable** Increase visibility by publishing as PDF, e-book, website, or print-on-demand
+- **Affordable** Open source and does not require proprietary software or ongoing maintenance fees
+- **Discoverable** Increased visibility by publishing as PDF, e-book, website, or print-on-demand
 - **Sustainable** Based around static site generation and plain text files ensuring stability and longevity
 - **Book-like** Built-in understanding of high-quality, scholarly publishing with clean, modern design
-- **Accessible** Outputs accessible online editions, targeting full WCAG2.0 conformance
-- **Open Access** Follows open-source standards with goal of official open-source launch in spring 2022
 
 </div>
 
