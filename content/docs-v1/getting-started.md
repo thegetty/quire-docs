@@ -31,7 +31,7 @@ In addition to starting a Quire project from scratch as described in the previou
 
 2. Open your command-line shell and navigate to the project directory using the `cd` (change directory) command. For example, if your project directory was called `my-project` and it was in your home directory, you would enter `cd my-project`.
 
-3. Still in the command-line shell, type `quire install` and press enter to install the theme dependencies for your project. (This is done automatically when running `quire new`, but needs to be done manually when working on pre-existing projects.)
+3. Still in the command-line shell, type `npm install` and press enter to install the theme dependencies for your project. (This is done automatically when running `quire new`, but needs to be done manually when working on pre-existing projects.)
 
 ## Files for Content Creators and Editors
 

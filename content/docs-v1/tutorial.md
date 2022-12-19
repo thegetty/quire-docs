@@ -245,13 +245,16 @@ Variables live inside the `content/_assets/styles` folder in a file called `vari
 
 ## 10. Output Your Project
 
-Once you've played around with adding content and customizing your project, it's time to output it. One of the most significant differences between Quire and other digital publishing tools is the ability to produce your project in multiple formats, including website, E-book, and print. You can create these different versions of your project by running the command `quire build`.
+Once you've played around with adding content and customizing your project, it's time to output it. One of the most significant differences between Quire and other digital publishing tools is the ability to produce your project in multiple formats, including website, E-book, and print. You can create these different versions of your project by running the command `quire build` which will create the site files that are then used to build the PDF and EPUB. Those formats are then generated with the commands `quire pdf` or `quire epub`.
 
 *Read more about outputting your publication files and deploying your project in the [“Output Your Project”](/docs-v1/multiformat-output/)and ["Deploy Your Project"](/docs-v1/site-deploy/) sections of this guide.*
 
 ### Try it For Yourself
 
-TK
+1. Use Control-C to stop the preview of your project.
+2. While you are still in the project folder, run the command `quire build`.
+3. Once that process is done, run the command `quire pdf`.
+4. Open your Finder and go into your project folder, you should see the PDF for your project there as `pagedjs.pdf`!
 
 ## Congratulations! Now What?
 
@@ -260,7 +263,7 @@ Congratulations on completing the tutorial! We’ve touched on Quire’s core co
 Next Steps:
 
 - Continue reading the Quire [documentation](/docs-v1/).
-- Explore the [Learn section](/learn/) of our website for guidance and resources.
+- Explore the [Resources section](/resources/) of our website for guidance and resources.
 - Check out the [community forum](https://github.com/thegetty/quire/discussions) on GitHub Discussions.
 - Browse our [community showcase](/community/community-showcase/).
 - Sign up for our [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4).
