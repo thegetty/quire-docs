@@ -17,8 +17,8 @@ Quire commands are typically run from Terminal on a Mac and PowerShell on a PC. 
 
 | Command       | Action   | Notes              |
 | ------------- | -------- | ------------------ |
-| **`quire new my-project`** | Create a new Quire project with the default starter content | In this instance the new project is named `my-project` but the name can be anything as long as it doesn't contain spaces or special characters. A folder containing the project files for your new project will be created in your project's home directory. |
-| **`quire preview`** | Run a local server to preview the project in a browser | The default URL for previewing is http://localhost:8080/, but will use other port numbers if 8080 is busy. The specific address will be listed in your command-line shell after running this command. If there are errors in your project, messaging will appear in your command-line shell that point you to issues in your Markdown or YAML. |
+| **`quire new my-project`** | Create a new Quire project with the default starter content | In this instance, the new project is named `my-project` but the name can be anything as long as it doesn't contain spaces or special characters. When you run this command, a folder containing default starter content will be created in your computer's home directory. |
+| **`quire preview`** | Run a local server to preview the project in a browser | The default URL for previewing is http://localhost:8080/. If there are errors in your project, messaging will appear in your command-line shell that point you to issues in your Markdown or YAML. |
 
 
 {{< q-class "box warning" >}}
@@ -43,7 +43,7 @@ Quire commands are typically run from Terminal on a Mac and PowerShell on a PC. 
 | **`quire --help`** | Provide list of Quire commands | This is useful if you need a reminder of commands. |
 
 
-## Coming Soon
+## Not Yet Implemented
 
 These commands are not yet available but are currently under development.
 
@@ -51,14 +51,10 @@ These commands are not yet available but are currently under development.
 | ------------- | -------- | ------------------ |
 | **`quire debug`** | Provide log into about current project | This will produce version numbers for the following: Quire, 11ty, Node, NPM, and your computer's operating system. This information will be requested when logging bugs and requesting troubleshooting support. |
 | **`quire configure`** | Edit the Quire CLI configuration | |
-| ** `quire preview pdf`** | Preview your Quire publication as a PDF |
+| **`quire preview pdf`** | Preview your Quire publication as a PDF |
 | **`quire preview epub`** | Preview your Quire publication as an EPUB |
 | **`quire server`** | Start a local web server to serve a previously built Quire site | |
 | **`quire version`** | Set the Quire version you want to use when running commands | This will be useful when switching between old and new Quire projects. |
-| **`quire version install`** | Install a different version of Quire | This will be useful when updating Quire or switching between projects built with different versions. |
-| **`quire version list`** | List installed versions Quire | This command does not include legacy versions of Quire. |
-| **`quire version prune`** | Remove outdated versions of Quire | This command does not include legacy versions of Quire. |
-| **`quire version remove`** | Uninstall versions of Quire | You can specify which version of Quire you would like to remove. |
 
 ## Helpful Non-Quire commands
 
