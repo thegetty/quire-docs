@@ -827,6 +827,11 @@ s  }
 .quire-page h3:not(:first-child) {
   margin-top: 2rem;
 }
+/* for inline icons */
+.quire-page h3 img {
+  height: 3em;
+  margin-bottom: -1em;
+}
 
 /* Add some space to the bottom of the page on screen */
 @media screen {
