@@ -74,7 +74,7 @@ Organize Quire workshops, webinars, and other events. Let us know how we can hel
 
 ## Contribute Code
 
-Make suggestions for possible new Quire features or themes. Before getting started, review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) to learn about the types of contributions we are looking for, how to get started, and best practices. And view our [Roadmap](/about/roadmap/) to see what's already on the horizon.
+Make suggestions for possible new Quire features or themes. Before getting started, review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) to learn about the types of contributions we are looking for, how to get started, and best practices. 
 
 <div class="action-button">
 
