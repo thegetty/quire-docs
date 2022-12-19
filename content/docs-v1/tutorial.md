@@ -144,7 +144,7 @@ order:
 ---
 ```
 
-*Learn more in the [Pages Types & Structures](/docs-v1/page-types) section of this guide.*
+*Learn more in the [Pages Types & Structures](/docs-v1/pages) section of this guide.*
 
 ### Try it For Yourself
 
@@ -167,7 +167,7 @@ Here are some of the things you can do with Markdown:
 - Add a second-level heading by putting the text on it’s own line, preceded by two hashmarks: `## Heading 2`.
 - Add a link by putting the link text in square brackets followed by the URL in parentheses: `[click here](http://www.myurl.com)`.
 
-*Learn more in the [YAML & Markdown](/docs-v1/yaml-markdown) section of this guide.*
+*Learn more in the [YAML & Markdown](/docs-v1/fundamentals) section of this guide.*
 
 ### Try it for Yourself
 
