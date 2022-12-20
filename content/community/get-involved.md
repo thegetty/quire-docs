@@ -22,7 +22,7 @@ Help your peers navigate Quire by offering advice and technical support on our [
 
 </div>
 
-![Question icon](/img/illustrations/chat.png)
+![Question icon](/img/illustrations/quire-icon-answerquestions-bw-300.jpg)
 
 </div>
 <div class="image-list">
@@ -37,7 +37,7 @@ Share your finished publications with the Quire team so we can feature them on o
 
 </div>
 
-![Placard icon](/img/illustrations/display.png)
+![Placard icon](/img/illustrations/quire-icon-sharework-bw-300.jpg)
 
 </div>
 <div class="image-list">
@@ -52,7 +52,7 @@ Present your Quire projects at [annual academic, museum, and publishing conferen
 
  </div>
 
- ![Mic icon](/img/illustrations/mic.png)
+ ![Mic icon](/img/illustrations/quire-icon-present-bw-300.jpg)
 
  </div>
  <div class="image-list">
@@ -67,7 +67,7 @@ Organize Quire workshops, webinars, and other events. Let us know how we can hel
 
 </div>
 
-![Calendar icon](/img/illustrations/calendar.png)
+![Calendar icon](/img/illustrations/quire-icon-event-bw-300.jpg)
 
 </div>
 <div class="image-list">
@@ -82,7 +82,7 @@ Make suggestions for possible new Quire features or themes. Before getting start
 
 </div>
 
-![Code icon](/img/illustrations/code.png)
+![Code icon](/img/illustrations/quire-icon-contributecode-bw-300.jpg)
 
 </div>
 <div class="image-list">
@@ -99,14 +99,14 @@ Bugs are sneaky, and we need your help spotting and fixing them! If you come acr
 
 </div>
 
-![Bug icon](/img/illustrations/bug.png)
+![Bug icon](/img/illustrations/quire-icon-bug-bw-300.jpg)
 
 </div>
 <div class="image-list">
 
 ## Edit Documentation
 
-The [Quire Documentation](/documentation/) is a perpetual work in progress. Dive in and help us add to, refine, and translate our user manual.
+The [Quire Documentation](/docs-v1/) is a perpetual work in progress. Dive in and help us add to, refine, and translate our user manual.
 
 <div class="action-button">
 
@@ -116,7 +116,7 @@ The [Quire Documentation](/documentation/) is a perpetual work in progress. Dive
 
 </div>
 
-![Docs icon](/img/illustrations/docs.png)
+![Docs icon](/img/illustrations/quire-icon-editdocumentation-bw-300.jpg)
 
 </div>
 <div class="image-list">
@@ -131,7 +131,7 @@ Submit an article about a specific aspect of working in Quire to be included in 
 
 </div>
 
-![Memo icon](/img/illustrations/pencil.png)
+![Memo icon](/img/illustrations/quire-icon-writearticle-bw-300.jpg)
 
 </div>
 <div class="image-list">
@@ -147,7 +147,7 @@ Provide critical feedback and help us improve our documentation's usability by f
 
 </div>
 
-![Clipboard icon](/img/illustrations/computertest.png)
+![Clipboard icon](/img/illustrations/quire-icon-testdocumentation-bw-300.jpg)
 
 </div>
 <div class="image-list">
@@ -161,7 +161,7 @@ Coming Soon ...
 
 </div>
 
-![Megaphone icon](/img/illustrations/megaphone.png)
+![Megaphone icon](/img/illustrations/quire-icon-ambassador-bw-300.jpg)
 
 </div>
 

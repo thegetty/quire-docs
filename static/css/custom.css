@@ -622,7 +622,7 @@ s  }
 ============================================================================= */
 .image-list {
   display: grid;
-  grid-template-columns: 35% 1fr;
+  grid-template-columns: 25% 1fr;
   grid-template-rows: auto 1fr auto;
   column-gap: 1.5rem;
   margin-top: 4rem;
@@ -667,11 +667,12 @@ s  }
   grid-template-columns: 160px 1fr;
 }
 .feature-grid .image-list p:last-of-type {
-  width: 140px;
-  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 180px;
+  margin-left: -10px;
+  margin-top: -30px;
 }
 .feature-grid .image-list p:last-of-type img {
   width: 100%;
@@ -697,7 +698,7 @@ s  }
     grid-row-start: 1;
   }
   .image-list p:last-of-type img {
-    width: 70%;
+    width: 180px;
   }
   .feature-grid .image-list {
     grid-template-columns: 100%;
@@ -756,6 +757,17 @@ s  }
   position: relative;
   top: 2px;
   left: 2px;
+}
+
+/* Color for buttons on Get Involved page */
+
+#community-get-involved .quire-page__content .container .content .action-button a {
+  border-color: #b32572;
+  color: #b32572;
+}
+#community-get-involved .quire-page__content .container .content .action-button a:hover {
+  border-color: #b32572 !important;
+  color: #b32572 !important;
 }
 
 /* GENERAL PAGE STYLES
@@ -825,6 +837,11 @@ s  }
 }
 .quire-page h3:not(:first-child) {
   margin-top: 2rem;
+}
+/* for inline icons */
+.quire-page h3 img {
+  height: 3em;
+  margin-bottom: -1em;
 }
 
 /* Add some space to the bottom of the page on screen */

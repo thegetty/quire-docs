@@ -7,7 +7,10 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 ## Pre-Publication
 
-### 💰 Funding 💰
+<div class="image-list">
+
+### Funding
+
 *Apply for grants, awards, and other funding while you are getting started*
 
 * [Association of Research Institutes in Art History (ARiAH) Digital Development Award](http://www.ariah.info/ARIAHAWARDS.html)
@@ -24,18 +27,28 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [National Endowment for the Humanities (NEH) Digital Humanities Advancement Grants](https://www.neh.gov/grants/odh/digital-humanities-advancement-grants)
 
+![Funding icon](/img/illustrations/quire-icon-funding-bw-300.jpg)
+
+</div>
+
 ## Post-Publication
 
-### 🙌 Show & Tell 🙌
+<div class="image-list">
+
+### Share Your Work
+
 *Share your Quire project with other professionals and the public*
 
 * [Museum Publishing Digital Interest Group (MuPuDIG)](https://docs.google.com/forms/d/e/1FAIpQLSeKK2mwSG9fpMgAFoE5qkjKvYUQK7U4596QikNxBB3mE9-ODQ/viewform)
 
 * [Quire Community Showcase](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
 
-<br/>
+![Sharework icon](/img/illustrations/quire-icon-sharework-bw-300.jpg)
 
-### 🎙 Conferences 🎙
+</div>
+<div class="image-list">
+
+### Conferences
 *Present your Quire project at conferences*
 
 * [Art Libraries Society of North America (ARLIS/NA)](https://www.arlisna.org/conferences)
@@ -54,9 +67,12 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [Society for Scholarly Publishing (SSP)](https://customer.sspnet.org/SSP/Events/2021-Annual-Meeting/ssp/AM21/Home.aspx?hkey=7d306ff0-39b3-4bfd-b495-1aecdf286529)
 
-<br/>
+![Present icon](/img/illustrations/quire-icon-present-bw-300.jpg)
 
-### 🏆 Awards 🏆
+</div>
+<div class="image-list">
+
+### Awards
 *Submit your Quire project for award consideration*
 
 * [American Alliance of Museums (AAM) Media & Technology MUSE Awards](https://www.aam-us.org/programs/awards-competitions/media-technology-muse-awards/)
@@ -75,10 +91,14 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [Open Publishing Awards](https://openpublishingawards.org/)
 
+* [Roy Rosenzweig Prize for Creativity in Digital History](https://www.historians.org/awards-and-grants/awards-and-prizes/roy-rosenzweig-prize)
 
-<br/>
+![Awards icon](/img/illustrations/quire-icon-awards-bw-300.jpg)
 
-### 📝 Reviews 📝
+</div>
+<div class="image-list">
+
+### Reviews
 *Get the word out about your Quire project in journals and other international sources*
 
 * [American Council of Learned Societies (ACLS) Humanities E-Book](https://www.humanitiesebook.org/about)
@@ -126,3 +146,7 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 * [TextGrid](https://textgrid.de/en/)
 
 * [Zeitschrift fur digitale Geisteswissenschaften (ZfdG)](https://zfdg.de/publizieren)
+
+![Reviews icon](/img/illustrations/quire-icon-reviews-bw-300.jpg)
+
+</div>
