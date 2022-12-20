@@ -759,6 +759,17 @@ s  }
   left: 2px;
 }
 
+/* Color for buttons on Get Involved page */
+
+#community-get-involved .quire-page__content .container .content .action-button a {
+  border-color: #b32572;
+  color: #b32572;
+}
+#community-get-involved .quire-page__content .container .content .action-button a:hover {
+  border-color: #b32572 !important;
+  color: #b32572 !important;
+}
+
 /* GENERAL PAGE STYLES
 ============================================================================= */
 
