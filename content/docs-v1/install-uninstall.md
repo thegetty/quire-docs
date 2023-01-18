@@ -46,7 +46,7 @@ When you install Quire what you are actually installing is something called a {{
 
     You should see a version number that begins with a 1. If you receive the message "command not found" this means installation was unsuccessful.
 
-5. Visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/) or [*Get Started*](/docs-v1/get-started) section of the documentation to learn how to use Quire or get started with a new project. 
+5. Visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/) or [*Get Started*](/docs-v1/getting-started) section of the documentation to learn how to use Quire or get started with a new project. 
 
 ## Install Quire v1 (Windows)
 
@@ -78,7 +78,7 @@ When you install Quire what you are actually installing is something called a {{
 
     You should see a version number that begins with a 1. If you receive the message "command not found" this means installation was unsuccessful.
 
-7. Before getting started, press `cd ~` to move into your computer's home directory. Then visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/) or [*Get Started*](/docs-v1/get-started) section of the documentation to learn how to use Quire or get started with a new project.
+7. Before getting started, press `cd ~` to move into your computer's home directory. Then visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/) or [*Get Started*](/docs-v1/getting-started) section of the documentation to learn how to use Quire or get started with a new project.
 
 ## Update Quire
 
