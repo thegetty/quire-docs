@@ -17,15 +17,17 @@ You can read more about YAML syntax basics in [*YAML & Markdown*](/docs-v1/funda
 
 ## Adjust the Default Publication Settings in config.yaml File
 
-The `config.yaml` file is a required file for Quire. It is used to define a number of key values used in Quire {{< q-def "templates" >}}. Users who have worked on other non-Quire Hugo projects will note that they typically use the `config.yaml` file to also store publication metadata. Given the potentially large scope of this kind of metadata in formal digital publications, Quire instead uses the `publication.yaml` file for that purpose [(see below)](#add-and-edit-important-metadata-in-publicationyaml-file).
-
-Some examples of properties outlined in the `config.yaml` include: location of the figure image directory, format for object entry pages, bibliography format, name of navigation buttons, contributor byline styling, and more. These properties are individually documented in the [*For Developers*](/docs-v1/for-developers/).
+The `config.yaml` file is a required file for Quire. It is used to define a number of key values, including the location of the figure image directory, format for object entry pages, bibliography format, name of navigation buttons, contributor byline styling, and more. These properties are individually documented in the [*For Developers*](/docs-v1/for-developers/).
 
 ## Add and Edit Important Metadata in publication.yaml File
 
 The `publication.yaml` file in the `content/_data/` directory is *the* source of metadata for your publication. While the only value that is truly required is the one for the property `title`, it is a good idea to fill out the `publication.yaml` file as completely as possible. Many of the properties are used in the metadata, which is automatically included in the underlying code of every page of the online edition of your publication to support {{< q-def "Search Engine Optimization (SEO)" >}} and general discovery.
 
 Some key areas are summed up below, and match headings in the `publication.yaml` file itself, but there is a detailed documentation of individual properties and their values in the [*For Developers*](/docs-v1/for-developers/) section of this guide.
+
+### Publication Base URL
+
+The base URL is set to `http://localhost:8080` by default. When you are ready to deploy your project update this value to the final URL where your publication will live (its permalink). The URL should include `http://` or `https://` as appropriate. See [*Deploy Your Project*](/docs-v1/site-deploy) for more information. 
 
 ### Title & Description
 
@@ -35,13 +37,9 @@ It is also a good idea to include both `one_line` and `full` descriptions, as th
 
 ### Publication Details
 
-The values of `pub_date`, `language`, and `url` should be filled out.
+The values of `pub_date` and `language` should be filled out. The value of `pub_date` must follow a YYYY-MM-DD format (the {{< q-def "ISO 8601 format" >}}) and should be the projected final publication date. The value of `language` should be a 2-letter {{< q-def "ISO 639-1 language code" >}}. The default value is `en` (English) and other languages can be used.
 
-The value of `pub_date` must follow a YYYY-MM-DD format (the {{< q-def "ISO 8601 format" >}}) and should be the projected final publication date.
-
-The value of `language` should be a 2-letter {{< q-def "ISO 639-1 language code" >}}. The default value is `en` (English) and other languages can be used.
-
-There’s an optional `pub_type` property whose values are `book`, `journal-periodical`, or `other`. If you use the value `book`, it is recommended you also include an {{< q-def "ISBN" >}} as a standard identifier. If you use the value `journal-periodical`, you should include information for the {{< q-def "ISSN" >}}, `series_periodical_name`, and `series_issue_number` attributes if possible.
+There’s an optional `pub_type` property for which the possible values are `book`, `journal-periodical`, or `other`. If you use the value `book`, it is recommended you also include an {{< q-def "ISBN" >}} as a standard `identifier`. If you use the value `journal-periodical`, you should include information for the {{< q-def "ISSN" >}}, `series_periodical_name`, and `series_issue_number` attributes if possible.
 
 Both {{< q-def "ISBN" >}} and {{< q-def "ISSN" >}} are considered if you want libraries to catalog your publication. Along with `isbn` and `issn`, `doi` and `uuid` are also supported so you can add these attributes as identifiers:
 
@@ -59,15 +57,13 @@ identifier:
 
 {{< /q-class >}}
 
-The `url` should be the final URL where your publication will live (its permalink) and should include `http://` or `https://` as appropriate.
-
-Lastly, Quire supports publications with multiple publishers, but at least one `publisher` should be listed with a `name`, `location`, and `url` attributes. In particular, this is used in the citation features as well as in search engine metadata.
+Lastly, Quire supports publications with multiple publishers, but at least one `publisher` should be listed with a `name`, `location`, and `url` attributes. In particular, this is used in the citation features as well as in search engine metadata. 
 
 ### Contributors
 
 Every publication should have at least one `contributor`. The `contributor` item `type` can have one of three values: `primary`, `secondary`, or `project-team`. The `primary` contributors are those who would show up on the *Cover*, *Menu*, and *Title Page* of a publication, and may include authors, editors, translators, and others. Contributors should, at a minimum, be listed with a `first_name` and `last_name` (or alternately just a `full_name`).
 
-Additional attributes include `title`, `affiliation`, and `bio`. An `id` value can be added to the contributor information and referenced in the page YAML of individual essays or catalogue entries to indicate contributions by a particular author.
+Additional attributes include `title`, `affiliation`, `bio`, `url`, and `image`. An `id` value can be added to the contributor information and referenced in the page YAML of individual essays or catalogue entries to indicate contributions by a particular author.
 
 Optional `contributor_as_it_appears` and `additional_contributors` values allow for more fine-grained control in the way contributors are listed. It could be, for example, something like "Edited by Rose Valland and Denis Diderot". Even when using `contributor_as_it_appears`, the contributors should still be individually listed as contributors (with a value of `primary`) for search engine legibility.
 
