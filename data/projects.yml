@@ -613,3 +613,30 @@ project_list:
     github_user:
       - gitgilleszeimet
     note: "The National Museum of History and Art Luxembourg decided to only very minimally adapt the standard theme. Quire allows the museum to create professional looking publications that could otherwise not have been cost effectively produced. The tool also allows the museum to widely disseminate information instead of only making it available via niche publications."
+
+  - id: "_mosaik_luxemburg"
+    src: /screenshots/_mosaik_luxemburg.jpg
+    alt: "City, Public Value, and Capitalism: New Urban Visions and Public Strategies"
+    type: Monograph
+    publisher: "Northwestern University Libraries"
+    title_info: "City, Public Value, and Capitalism: New Urban Visions and Public Strategies"
+    pub_date: 2022-06-17
+    url: https://city-public-value-and-capitalism.northwestern.pub/
+    customization_level: minor
+    github_user:
+      - chrisdaaz
+    note: "This is the second standard monograph project from Northwestern University Libraies that was created with Quire. Quire was chosen because of its strong support for bibliographic references, endnotes, and multiformat outputs. Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multi-format academic publications. This publication was also produced as a print-on-demand book available for sale."
+
+  - id: "_mosaik_luxemburg"
+    src: /screenshots/_mosaik_luxemburg.jpg
+    alt: "Between Failure and Redemption: The Future of the Ethiopian Social Contract"
+    type: Conference Proceedings
+    publisher: "Northwestern University Libraries"
+    title_info: "Between Failure and Redemption: The Future of the Ethiopian Social Contract"
+    pub_date: 2022-12-22
+    url: https://ethiopian-social-contract.northwestern.pub/
+    customization_level: moderate
+    github_user:
+      - davidschober
+      - basiakapolka
+    note: "This volume of conference proceedings is the third Quire publication produced by Northwestern University Libraies. Quire was chosen because of its strong support for bibliographic references, endnotes, and multiformat outputs. Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multi-format academic publications."
