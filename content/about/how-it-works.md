@@ -17,7 +17,7 @@ To work its magic, Quire packages together a number of programs, which play a cr
 
 - [Canval Panel](https://iiif-canvas-panel.netlify.app/about/) works as a user interface to render IIIF deep-zooming images. It allows for more complexity in how images are displayed, such as layered images or annotated images.
 
-- [Eleventy (11ty)](https://www.11ty.dev/)) is a simple yet powerful static site generator based on JavaScript. 11ty transforms a directory of various templates into HTML and is popular for its ability to mix multiple templating languages. It is available as open source under the MIT License.
+- [Eleventy (11ty)](https://www.11ty.dev/) is a simple yet powerful static site generator based on JavaScript. 11ty transforms a directory of various templates into HTML and is popular for its ability to mix multiple templating languages. It is available as open source under the MIT License.
 
 (*Note: As of December 2, 2022, Quire no longer uses [Hugo](https://gohugo.io/documentation/) as our static site generator. [Learn what has changed with the transition to 11ty](/docs-v1/key-changes)*.)
 
