@@ -25,7 +25,11 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [Mellon Foundation Grants](https://mellon.org/grants/grantmaking-policies-and-guidelines/grant-proposal-guidelines/)
 
-* [National Endowment for the Humanities (NEH) Digital Humanities Advancement Grants](https://www.neh.gov/grants/odh/digital-humanities-advancement-grants)
+* [National Endowment for the Humanities (NEH): Digital Humanities Advancement Grants](https://www.neh.gov/grants/odh/digital-humanities-advancement-grants)
+
+* [National Endowment for the Humanities (NEH): Fellowships Open Book Program ](https://www.neh.gov/grants/odh/FOBP) 
+
+* [National Endowment for the Humanities (NEH)-Mellon Fellowships for Digital Publication](https://www.neh.gov/grants/research/neh-mellon-fellowships-digital-publication)
 
 ![Funding icon](/img/illustrations/quire-icon-funding-bw-300.jpg)
 
