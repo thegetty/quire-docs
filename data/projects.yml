@@ -601,7 +601,7 @@ project_list:
       - mmpadilla15
     note: "“The Art of the Scene” is the first digital publication from the Amon Carter Museum of American Art in Fort Worth. The Carter team chose Quire for its ease-of-use and simplicity for a first dive into the ocean of e-publications. They wanted a format that could showcase images and be accessible to researchers who might be looking for content on this understudied artist and his circle. Minimal customizations were made."
 
-  - id: "_mosaik_luxemburg"
+  - id: "mosaik_luxemburg"
     src: /screenshots/_mosaik_luxemburg.jpg
     alt: "Mosaik - Marmor - Musen, Zur baulichen Ausstattung der römischen Großvilla von Vichten (Luxemburg) im Treverergebiet. Rainier Fischer."
     type: Monograph
@@ -614,8 +614,8 @@ project_list:
       - gitgilleszeimet
     note: "The National Museum of History and Art Luxembourg decided to only very minimally adapt the standard theme. Quire allows the museum to create professional looking publications that could otherwise not have been cost effectively produced. The tool also allows the museum to widely disseminate information instead of only making it available via niche publications."
 
-  - id: "_mosaik_luxemburg"
-    src: /screenshots/_mosaik_luxemburg.jpg
+  - id: "northwestern_capitalism"
+    src: /screenshots/_northwestern_capitalism.jpg
     alt: "City, Public Value, and Capitalism: New Urban Visions and Public Strategies"
     type: Monograph
     publisher: "Northwestern University Libraries"
@@ -627,8 +627,8 @@ project_list:
       - chrisdaaz
     note: "This is the second standard monograph project from Northwestern University Libraies that was created with Quire. Quire was chosen because of its strong support for bibliographic references, endnotes, and multiformat outputs. Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multi-format academic publications. This publication was also produced as a print-on-demand book available for sale."
 
-  - id: "_mosaik_luxemburg"
-    src: /screenshots/_mosaik_luxemburg.jpg
+  - id: "northwestern_ethiopian"
+    src: /screenshots/_northwestern_ethiopian.jpg
     alt: "Between Failure and Redemption: The Future of the Ethiopian Social Contract"
     type: Conference Proceedings
     publisher: "Northwestern University Libraries"
@@ -640,3 +640,16 @@ project_list:
       - davidschober
       - basiakapolka
     note: "This volume of conference proceedings is the third Quire publication produced by Northwestern University Libraies. Quire was chosen because of its strong support for bibliographic references, endnotes, and multiformat outputs. Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multi-format academic publications."
+
+  - id: "_ycba_bridget_riley"
+    src: /screenshots/_ycba_brigid_riley.jpg
+    alt: "Bridget Riley: Perceptual Abstraction, Yale Center for British Art"
+    type: Monograph
+    publisher: "Yale Center for British Art"
+    title_info: "Bridget Riley: Perceptual Abstraction"
+    pub_date: 2022-03-03
+    url: https://bridget-riley.publications.britishart.yale.edu/
+    customization_level: minor
+    github_user:
+      - julieannfry
+    note: "This free digital catalogue accompanies a 2022 exhibition at the Yale Center for British Art. The works featured in the exhibition comprise the largest survey of Riley’s work in the United States in twenty years. The publication explores Riley’s long and prolific career and includes essays by Maryam Ohadi-Hamadani, Bridget Riley, and Rachel Stratton."
