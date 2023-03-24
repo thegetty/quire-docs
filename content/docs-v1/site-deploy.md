@@ -3,8 +3,6 @@ title: Deploy Your Project
 weight: 6400
 type: essay
 abstract: "Learn various methods to preview & deploy your project online"
-menu: false
-toc: false
 aliases:
   - /documentation/site-deploy/
 ---
@@ -37,19 +35,25 @@ To get started, [sign up](https://app.netlify.com/signup) for a Netlify account 
 
 Manual deploy is ideal if you have a small site or want to run a quick preview. You can also use this option without needing a GitHub account. However, each time you make an update, you will need to go through the process of rebuilding the site, compressing files, and reuploading them to Netlify, which may be burdensome if you have a lot of images or larger files. For continuous deployment please see [*Continuous Deployment with Netlify*](#continuous-deployment-with-netlify).
 
-1. When you are ready to launch your project, run the `quire build` command in your command-line shell.
+1. When you are ready to launch your project, update the `url` in `contents/_data/publication.yaml` to: `url: 'https://netlify.app'`.
 
-2. Navigate to your project in your home directory and compress the `_site` folder.
+2. Run the `quire build` command in your command-line shell.
 
-3. Go to Netlify Drop: [https://app.netlify.com/drop](https://app.netlify.com/drop). Make sure you are logged in to your account and then drag-and-drop your compressed `_site` folder into the indicated area.
+3. Navigate to your project in your home directory and compress the `_site` folder.
 
-4. You will be given a randomized default URL to preview your project. The site name will be formatted as `https://PROJECT-NAME.netlify.app/`. Rename this URL by navigating to “Site settings” and changing the site name. You also have the option to buy a domain or set-up a domain you already own. Just make sure the URL matches the `url` in the `content/_data/publication.yaml` file. 
+4. Go to Netlify Drop, [https://app.netlify.com/drop](https://app.netlify.com/drop), and drag-and-drop your compressed `_site` folder into the indicated area.
+
+5. You will be given a randomized default URL to preview your project. Rename this URL by logging into your account, navigating to “Site settings” and changing the site name. You also have the option to buy a domain or set-up a domain you already own.
+
+{{< q-class "box warning" >}}
+- Any zooming or layered images will not load properly in your site until you update the `url` in `publication.yaml` to the **full** URL Netlify gives you, or the one you've customized or purchased. Once you finalize the URL you would like to use, update `publication.yaml` and follow the steps below to update your site.
+{{< /q-class >}}
 
 If you make further edits to your project and would like to preview them you will need to repeat this process.
 
 1. Delete the old compressed `_site` folder.
 
-2. Run `quire build` again (your files will be automatically overwritten.)
+2. Run `quire build` again (your files will be automatically overwritten).
 
 3. Compress the newly updated `_site` folder.
 
@@ -65,23 +69,21 @@ By keeping your project files on GitHub and linking them directly to your Netlif
 
 1. If you haven't already, create a repository for your project on GitHub.
 
-2. To proceed with deployment, you will need to add two files to your repository: `netlify.toml` and `package.json`. [Download them](/downloads/site-deploy.zip), add them to your repo, and merge changes before proceeding.
+2. Log in to [Netlify](https://app.netlify.com/). On the “Team Overview” page, click the button that says “Add new site” and then choose "Import an exisitng project".
 
-3. Log in to [Netlify](https://app.netlify.com/). On the “Team Overview” page, click the button that says “Add new site” and then choose "Import an exisitng project".
+3. Next you'll want to “Connect to Git Provider.” Choose the option that best fits your project. You may be asked to "Authorize Netlify". 
 
-4. Next you'll want to “Connect to Git Provider.” Choose the option that best fits your project. You may be asked to "Authorize Netlify". 
+4. If you see “No repositories found” you will be prompted to configure Netlify on GitHub.
 
-5. If you see “no repositories found” you will be prompted to configure Netlify on GitHub.
+5. Once this configuration is complete, choose the repository and the branch you would like to preview.
 
-6. Once this configuration is complete, choose the repository and the branch you would like to preview.
+6. Set the "Build command" as `npx @thegetty/quire-cli build` and the "Publish directory" as `_site`.
 
-7. For the "Basic build settings," you can leave the "Base directory" blank. Set `npm run build` as the "Build command" and `_site` as the "Publish directory".
+7. Hit "Deploy Site." Depending on the size of your project, this may take a few moments. Follow along with the build process (and check for errors) by navigating to "Publication Deploys" section and scrolling down to the "Deploy Log".
 
-8. Hit "Deploy Site." Depending on the size of your project, this may take a few moments. Follow along with the build process (and check for errors) by navigating to "Publication Deploys" section and scrolling down to the "Deploy Log".
+8. You will be given a randomized default URL to preview your project. Rename this URL by navigating to “Site settings” and changing the site name. You also have the option to buy a domain or set-up a domain you already own. Once you've chosen a final URL, update the `url` in your `content/_data/publication.yaml` file to match. Commit that change and push it to GitHub. Netlify will redeploy the site, and the new URL will ensure all your images, stylesheets, and other assets load properly.
 
-9. You will be given a randomized default URL to preview your project. The site name will be formatted as `https://PROJECT-NAME.netlify.app/`. Rename this URL by navigating to “Site settings” and changing the site name. You also have the option to buy a domain or set-up a domain you already own. Just make sure the URL matches the `url` in the `content/_data/publication.yaml` file. 
-
-10. Should you need to make any updates to your site, just merge the changes and Netlify will automatically update your preview link. You can check "Production Deploys" in the site overview section to these track changes.
+Should you need to make any updates to your site, just merge the changes and Netlify will automatically update your preview link. You can check "Production Deploys" in the site overview section to these track changes.
 
 {{< q-class "box tip" >}}
 - Now that you have linked Netlify to your Github account, you'll see notifications about Netlify testing the site each time you submit a new pull request. If the checks pass, you can click the bottom-most link to launch a preview of your site. If the checks fail, there may be broken links, incorrect YAML, or other issues within your project files.
@@ -91,38 +93,28 @@ By keeping your project files on GitHub and linking them directly to your Netlif
 
 GitHub enables you to not only host your project code, but you can also use it to host a live version of your site. Learn more on the [GitHub Pages](https://pages.github.com/) website.
 
-{{< q-class "box tip" >}}
-- If you tried the [Netlify](#netlify) option before trying GitHub Pages, remove the `site.zip` folder before making any commits. This will not break anything but it will add an unnecessary file to your project.
+{{< q-class "box warn" >}}
+- While the below instructions *should* work we have yet to get a fully functioning deploy to work (*as of March 2023*). So please consider these a starting point, which may need further debugging. And if you do debug it, please let us know so that we can update these instructions for others.
 {{< /q-class >}}
 
 ### Preview Your Project with Github Pages
 
 1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/docs-v1/github) section of our documentation to create a repository for your project.
 
-2. In your text editor, open the `config/environments/github.yaml` file.
+2. Update the `url` in `content/_data/publication.yaml` to correspond to your own GitHub site. It will follow the pattern: https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME/. So, if your GitHub username is bonjovi and your project file is blaze-of-glory, your `baseURL` would be https://bonjovi.github.io/blaze-of-glory/. (Note: your GitHub username can also be your organization name if that is how your account is set-up in GitHub.)
 
-3. Update the `url` in the `content/_data/publication.yaml` file to correspond to your own GitHub site. It will follow the pattern: https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME/. So, if your GitHub username is bonjovi and your project file is blaze-of-glory, your `url` would be https://bonjovi.github.io/blaze-of-glory/. (Note: your GitHub username can also be your organization name if that is how your account is set-up in GitHub.)
+3. In your command-line shell run `quire build`
 
-4. Set the `canonifyURLs` to `true`.
+4. In the `_site` directory, add an empty file called `.nojekyll`, which lets GitHub know the site you're publsihing [isn't a Jekyll site](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
 
-5. Next, navigate to `themes/default/webpack/webpack.config.prod.js`.
+5. Next run `git add -f _site && git commit -m "Github pages deploy"` this will add the contents of the `_site` directory to your project's git history so that it can be pushed to GitHub.
 
-6. So that the site fonts display properly, change line 80 to `outputPath: "YOUR-PROJECT-DIRECTORY-NAME/img/"` And change line 92 to `outputPath: "YOUR-PROJECT-DIRECTORY-NAME/fonts/"`.
+6. Run `git subtree push --prefix _site origin gh-pages` to push the committed `_site` files to a new `gh-pages` branch of your repo on GitHub.
 
-7. Commit and merge these changes to the repo.
+7. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change project visibility" and change the visibility to public.
 
-8. Open Terminal, navigate to your project and enter:
+8. For "Source" switch the branch to `gh-pages` in the `/(root)` folder and save.
 
-    ```text
-    bin/deploy.sh
-    ```
+9. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
 
-    This runs a script to deploy your site to GitHub pages. The script may ask for your GitHub username and password. (Remember that the password cursor won’t move to show that you’re typing. Just type the password and hit enter.)
-
-9. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change project visibility" and change the visibility to public.
-
-10. For "Source" switch the branch to `gh-pages` in the `/(root)` folder and save.
-
-11. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
-
-If you make changes to your project and want to view them live, you will need to run the `bin/deploy.sh` script to update your project files. Navigate to your GitHub account settings and choose "Pages" from the lefthand menu. Your refreshed link will be at the top of the page. A green box indicates the site has been published and is now live.
+If you make changes to your project and want to view them live, you will need to repeat stpes 3–6 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the lefthand menu. Your refreshed link will be at the top of the page. A green box indicates the site has been published and is now live.
