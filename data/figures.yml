@@ -319,3 +319,7 @@ figure_list:
 
   - id: "5.5"
     src: /screenshots/alt-text-example.jpg
+
+  - id: "recipe-menu-icons"
+    src: /screenshots/menu-icons.jpg
+    caption: "After some customization to the default template, checkmark icons have been added to the pages that are marked as `peer_review: true` in the pages’ YAML."
