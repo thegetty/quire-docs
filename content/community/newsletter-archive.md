@@ -5,6 +5,12 @@ type: essay
 online: false
 ---
 
+2023
+
+- [March 2023](https://newsletters.getty.edu/t/t-956C22B86783A4152540EF23F30FEDED): College Art Association Conference 2023, New Quire Demo, Quire Office Hours, Museums and the Web, Adventures in Digital Publishing, Georgia O'Keeffe Museum
+- [February 2023](https://newsletters.getty.edu/t/t-9E705F0191033A542540EF23F30FEDED): Quire CAA Schedule, Digital Publishing Resources, Deploying a Quire Site with Netlify, Quire Office Hours, Northwestern University Libraries
+- [January 2023](https://newsletters.getty.edu/t/t-842F21D1971227092540EF23F30FEDED): Visit Quire at CAA, Booth #218, Freelance Quire Developers, New Config.yaml File Layout, Quire Office Hours, Getty Publications
+
 2022
 
 - [Special Announcement](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED): Quire v1 Pre-Release Is Now Available, What We Are Excited About, Next Steps, Quire Office Hours
