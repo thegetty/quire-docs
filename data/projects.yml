@@ -578,7 +578,7 @@ project_list:
   - id: "mariategui_poesia"
     src: /screenshots/_Mariategui_Poesia.jpg
     alt: "José Carlos Mariátegui: Escritos Juveniles (La Edad de Piedra). Poesía, Cuento, Teatro, 1."
-    type: Monograph
+    type: Series
     publisher: "Archivo José Carlos Mariátegui"
     title_info: "Escritos Juveniles de José Carlos Mariátegui"
     pub_date: 2022-08-11
@@ -601,7 +601,7 @@ project_list:
       - mmpadilla15
     note: "“The Art of the Scene” is the first digital publication from the Amon Carter Museum of American Art in Fort Worth. The Carter team chose Quire for its ease-of-use and simplicity for a first dive into the ocean of e-publications. They wanted a format that could showcase images and be accessible to researchers who might be looking for content on this understudied artist and his circle. Minimal customizations were made."
 
-  - id: "_mosaik_luxemburg"
+  - id: "mosaik_luxemburg"
     src: /screenshots/_mosaik_luxemburg.jpg
     alt: "Mosaik - Marmor - Musen, Zur baulichen Ausstattung der römischen Großvilla von Vichten (Luxemburg) im Treverergebiet. Rainier Fischer."
     type: Monograph
@@ -613,3 +613,71 @@ project_list:
     github_user:
       - gitgilleszeimet
     note: "The National Museum of History and Art Luxembourg decided to only very minimally adapt the standard theme. Quire allows the museum to create professional looking publications that could otherwise not have been cost effectively produced. The tool also allows the museum to widely disseminate information instead of only making it available via niche publications."
+
+  - id: "northwestern_capitalism"
+    src: /screenshots/_northwestern_capitalism.jpg
+    alt: "City, Public Value, and Capitalism: New Urban Visions and Public Strategies"
+    type: Monograph
+    publisher: "Northwestern University Libraries"
+    title_info: "City, Public Value, and Capitalism: New Urban Visions and Public Strategies"
+    pub_date: 2022-06-17
+    url: https://city-public-value-and-capitalism.northwestern.pub/
+    customization_level: minor
+    github_user:
+      - chrisdaaz
+    note: "This is the second standard monograph project from Northwestern University Libraies that was created with Quire. Quire was chosen because of its strong support for bibliographic references, endnotes, and multiformat outputs. Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multi-format academic publications. This publication was also produced as a print-on-demand book available for sale."
+
+  - id: "northwestern_ethiopian"
+    src: /screenshots/_northwestern_ethiopian.jpg
+    alt: "Between Failure and Redemption: The Future of the Ethiopian Social Contract"
+    type: Conference Proceedings
+    publisher: "Northwestern University Libraries"
+    title_info: "Between Failure and Redemption: The Future of the Ethiopian Social Contract"
+    pub_date: 2022-12-22
+    url: https://ethiopian-social-contract.northwestern.pub/
+    customization_level: moderate
+    github_user:
+      - davidschober
+      - basiakapolka
+    note: "This volume of conference proceedings is the third Quire publication produced by Northwestern University Libraies. Quire was chosen because of its strong support for bibliographic references, endnotes, and multiformat outputs. Quire supports the library's goals for focusing digital publishing on git-based workflows and static site generators and the university's goals of sharing rapid, multi-format academic publications."
+
+  - id: "ycba_bridget_riley"
+    src: /screenshots/_ycba_brigid_riley.jpg
+    alt: "Bridget Riley: Perceptual Abstraction, Yale Center for British Art"
+    type: Monograph
+    publisher: "Yale Center for British Art"
+    title_info: "Bridget Riley: Perceptual Abstraction"
+    pub_date: 2022-03-03
+    url: https://bridget-riley.publications.britishart.yale.edu/
+    customization_level: minor
+    github_user:
+      - julieannfry
+    note: "This free digital catalogue accompanies a 2022 exhibition at the Yale Center for British Art. The works featured in the exhibition comprise the largest survey of Riley’s work in the United States in twenty years. The publication explores Riley’s long and prolific career and includes essays by Maryam Ohadi-Hamadani, Bridget Riley, and Rachel Stratton."
+
+  - id: "georgia_okeeffe"
+    src: /screenshots/_georgia_okeeffe.jpg
+    alt: "Exhibiting O'Keeffe: The Making of an American Modernist, Georgia O'Keeffe Museum"
+    type: Monograph
+    publisher: "Georgia O'Keeffe Museum"
+    title_info: "Exhibiting O'Keeffe: The Making of an American Modernist"
+    pub_date: 2023-02-21
+    url: https://publications.okeeffemuseum.org/exhibiting-okeeffe/
+    customization_level: major
+    github_user:
+      - lizneely
+      - cbutcosk
+    note: "*Exhibiting O'Keeffe: The Making of an American Modernist* is the latest Quire project from the Georgia O'Keeffe Museum. Exhibiting O'Keeffe looks at the role of select exhibitions in building Georgia O'Keeffe's career and public persona. The museum collaborated with [Design for Context](https://www.linkedin.com/company/design-for-context/) to customize Quire to communicate with the museum's Linked Art-based linked data infrastructure. This extension increases discoverability by providing references between the publication and collection information. The publication can be downloaded as a PDF and is available in both English and Spanish."
+
+  - id: "pitts_theology"
+    src: /screenshots/_pitts_theology.jpg
+    alt: "Elisabeth Creutziger, The Magdeburg Enchiridion, 1536, & Reformation Theology: The Kessler Reformation Lecture, October 18, 1994, Contributors: Robin A. Leaver"
+    type: Series
+    publisher: "Pitts Theology Library, Candler School of Theology, Emory University"
+    title_info: "Digital Publication Series"
+    pub_date: 2023-03-02
+    url: https://digital.pitts.emory.edu/s/digital-collections/item-set/13148
+    customization_level: moderate
+    github_user:
+      - swroberts
+    note: "Pitts Theology Library recently released a digital publications series featuring eight titles related to theology and religious history. The series includes different genres including lectures, translations, and critical editions. Seven of the publications are Quire projects that use a similar theme but incorporate different layouts and materials. The works are findable through Pitts' Digital Collections site that includes links to the Quire sites."
+ 
