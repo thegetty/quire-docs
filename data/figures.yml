@@ -231,6 +231,12 @@ figure_list:
     caption: "**Graduate Essays** | Ad Hoc Museum Collective"
     full_caption: "*The State of Museum Digital Practice in 2019: A collection of graduate essays and responses*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
     
+  - id: "quire_demo_2023"
+    src: /screenshots/quire-demo_2023.jpg
+    media_id: 804066673/a665de952c
+    media_type: vimeo
+    caption: "17-minute demonstration Erin Cecele Dunigan (Community Manager) and Greg Albers (Digital Publications Manager) show viewers how to create and preview a new Quire project, edit text and make simple customizations, and output the publication as a PDF."
+
   - id: "quire_demo"
     src: /screenshots/quire_demo.jpg
     media_id: VVYe0qR5DnM
