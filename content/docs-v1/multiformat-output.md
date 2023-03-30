@@ -3,8 +3,6 @@ title: Output Your Project
 weight: 6380
 type: essay
 abstract: "Produce online, PDF, and E-Book versions of your publication"
-menu: false
-toc: false
 aliases:
   - /documentation/multiformat-output/
 ---
@@ -13,40 +11,29 @@ Quire is designed to create a website version, a PDF version and two e-book vers
 
 ## Site Output
 
-Create the HTML files for your project by running `quire site` in your command-line shell. The files will be built into your project’s `site` folder along with all the necessary static assets like image files, stylesheets and script files. The `site` file will be updated and overwritten each time you run `quire site`.
+Create the HTML files for your project by running `quire build` in your command-line shell. The files will be built into your project’s `_site` folder along with all the necessary static assets like image files, stylesheets and script files. The `_site` file will be updated and overwritten each time you run `quire build`.
+
+Note that `quire build` creates the files for the online edition of your Quire project only. Read about creating EPUB and PDF editions in the sections below.
 
 {{< q-class "box tip" >}}
-- If you are including PDF and e-book downloads as part of your online site (this is Quire’s default) you’ll need to update those files by running `quire epub` and `quire pdf` as described below **before** running `quire site`.
-{{< /q-class >}}
-
-You can hide specific pages of your project from the site output by adding `online: false` to the page YAML. Or conversely, you can add pages exclusively to the site output, by adding `epub: false` and `pdf: false` to the page YAML and leaving the `online` attribute unset, or set to `true`.
-
-Unlike `epub: false` and `pdf: false`, adding `online: false` does not stop a page from being built and included in the site output. Rather, it just unlinks those pages and adds a metadata tag to them to prevent them from being indexed by search engines. You may want to manually delete the pages from the `site` folder after outputting and before uploading to a web server if you want to be fully certain they can’t be accessed online under any circumstances.
-
-{{< q-class "box tip" >}}
-- Links to download the EPUB, MOBI, and PDF versions are automatically included in the sidebar menu of the online version of your project. These links can be removed or modified by making changes to the `resource_link` information in your `data/publication.yaml` file.
-- You can add links to these files from anywhere in your markdown files by linking to `/downloads/output.epub`, `/downloads/output.mobi`, and `/downloads/output.pdf` respectively.
+- Read more about hiding/showing particular pages in particular outputs in the [*Page Types & Structure*](/docs-v1/site-deploy/) section of this guide.
 {{< /q-class >}}
 
 ## E-Book Output
 
-Quire can output two different {{< q-def "reflowable" >}} e-book formats: EPUB and MOBI. EPUB is the most widely used format and will work on most devices and for most e-book vendors. EPUB is an official specification of the World Wide Web Consortium (W3C), and Quire outputs the latest version: EPUB 3.2.
-
-Very closely related to EPUB, the MOBI format is used almost exclusively by Amazon’s Kindle. Making it available in your project will allow Kindle readers to load the e-book onto their devices directly. (Amazon itself asks for EPUBs when selling/distributing through them, which it then converts to MOBI and other proprietary formats as needed.)
-
-The MOBI file is derived directly from the EPUB version of your project, and does not have styling or customization options separate from the EPUB.
-
-You can remove specific pages of your project from the e-book outputs by adding `epub: false` to the page YAML. Or conversely, you can add pages exclusively to the e-book outputs, by adding `online: false` and `pdf: false` to the page YAML and leaving the `epub` attribute unset, or set to `true`.
-
-For developers creating custom templates, you can use templating logic to create specific outputs for the e-books by querying `if eq .Site.Data.params.epub true`. This parameter is set in the `config/epub.yaml` file.
+Quire outputs {{< q-def "reflowable" >}} e-books in the EPUB file format. EPUB is the most widely used format and will work on most devices and for most e-book vendors. EPUB is an official specification of the World Wide Web Consortium (W3C), and Quire outputs the latest version: EPUB 3.2.
 
 ### Create and View the E-Book Files
 
-Create an EPUB of your project by running `quire epub` in your command-line shell. An `output.epub` file will be created and saved to your project’s `static/downloads/` folder. This file will be updated and overwritten each time you run `quire epub`.
+When creating an EPUB, first run `quire build` in your command-line shell to generate files with your latest changes. Next run `quire epub`. An `epubjs.epub` file will be created and saved to your project’s main directory. This file will be updated and overwritten each time you run `quire epub`.
 
 EPUB files can be viewed on the default Books app on macOS, or on a number of free EPUB readers available for both Windows and Mac.
 
-MOBI files can be viewed with [Kindle Previewer](https://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765261) on both Windows and Mac.
+To include the EPUB file as a download from your online edition:
+
+1. Move the `epubjs.epub` file into your `content/_assets/downloads/` directory (also rename the file if you’d like) 
+2. Confirm that the `resource_link` information in your `content/_data/publication.yaml` file to points to the EPUB file you just generated
+3. Run `quire build` again to generate new `_site` files with the EPUB included inside
 
 ### EPUBCheck Validation
 
@@ -69,29 +56,31 @@ EPUBCheck will output a list of any errors or warnings that exist in your file. 
 
 ### EPUB Styles
 
-EPUBs in Quire have their own style sheet separate from any styles applied to the online version of your project. EPUB styles can be modified and added to in the `themes/default/source/css/epub.scss` file.
-
-Quire uses [Pandoc](https://pandoc.org) to create the EPUB files, and while consistent in outputting valid EPUB files, Pandoc also strips out a lot of the class names and other structures you may normally use to add custom styling. See the tip above for looking into the EPUB file, and use that to find class names and HTML structures as Pandoc outputs them for use as selectors in your CSS.
+EPUBs in Quire have their own style sheet separate from any styles applied to the online version of your project. EPUB styles can be modified and added to in the `content/_assets/styles/epub.scss` file.
 
 ## PDF/Print Output
 
-Create a PDF of your project by running `quire pdf` in your command-line shell. An `output.pdf` file will be created and saved to your project’s `static/downloads/` folder. This file will be updated and overwritten each time you run `quire pdf`.
+When creating a PDF, first run `quire build` in your command-line shell to generate files with your latest changes. Next run `quire pdf`. An `pagedjs.pdf` file will be created and saved to your project’s main directory. This file will be updated and overwritten each time you run `quire pdf`.
 
 By default, the PDF is output at full-resolution and with crop marks for professional printing. You may want to manually crop the pages and downsample the file to a smaller file size using a program like Adobe Acrobat if you are only making it available as a digital download.
 
-Quire’s PDF output is generated by [PrinceXML](https://www.princexml.com/) which you should have installed when first [installing Quire](/docs-v1/install-uninstall/). PrinceXML is free to download for non-commercial use, though it does add a logo watermark to the first page of the PDF ouput. A desktop license can be purchased that will remove the watermark and also allow for commercial use.
+Quire’s PDF output is generated by [Paged.js](https://pagedjs.org/), an open source HTML-to-PDF generator. 
 
-You can remove specific pages of your project from the PDF output by adding `pdf: false` to the page YAML. Or conversely, you can add pages exclusively to the PDF output, by adding `online: false` and `epub: false` to the page YAML and leaving the `pdf` attribute unset, or set to `true`.
+Alternatively, you can use [PrinceXML](https://www.princexml.com/) to generate your PDF. PrinceXML is free to download for non-commercial use, though it does add a logo watermark to the first page of the PDF ouput. A desktop license can be purchased that will remove the watermark and also allow for commercial use. With PrinceXML installed, run `quire pdf --lib prince` to generate your PDF.
 
-For developers creating custom templates, you can use templating logic to create specific outputs for the PDF by querying `if eq .Site.Data.params.pdf true`. This parameter is set in the `config/pdf.yaml` file.
+To include the PDF file as a download from your online edition:
+
+1. Move the `pagedjs.pdf` file into your `content/_assets/downloads/` directory (also rename the file if you’d like)
+2. Confirm that the `resource_link` information in your `content/_data/publication.yaml` file to points to the PDF file you just generated
+3. Run `quire build` again to generate new `_site` files with the PDF included inside
 
 ### Modifying and Styling the PDF
 
-PrinceXML creates the PDF from the website version of your Quire site using CSS rules. You can modify Quire’s PDF styles using CSS just like you would modify Quire’s online styles. You can read more about styles in general in the [*Style Customization*](/docs-v1/styles-customization/) section of this guide.
+Quire creates the PDF from the website version of your Quire site using CSS rules. You can modify Quire’s PDF styles using CSS just like you would modify Quire’s online styles. You can read more about styles in general in the [*Style Customization*](/docs-v1/styles-customization/) section of this guide.
 
 There are a number of CSS variables defined in Quire that allow you to adjust various parts of the PDF output, including the page size. The default page size is 8.5 × 11 inches.
 
-In the `themes/default/source/css/variable.scss` file, are a number of key print/PDF-related variables:
+In the `content/_assets/styles/variables.scss` file, are a number of key print/PDF-related variables:
 
 ```scss
 // Print/PDF stylesheet
@@ -110,7 +99,7 @@ $print-entry-caption-color: $white;
 $print-entry-image-display: all; // first | all
 ```
 
-There are even more PDF-related variables that can be modified in the `source/css/print.scss` file. Including page margins, and rules regarding the running feet and page numbering that are included at the bottom of each PDF page.
+There are even more PDF-related variables that can be modified in the `content/_assets/styles/print.scss` file. Including page margins, and rules regarding the running feet and page numbering that are included at the bottom of each PDF page.
 
 {{< q-class "box warning" >}}
 - Beware of a couple known issues with variables:
@@ -118,7 +107,7 @@ There are even more PDF-related variables that can be modified in the `source/cs
 - There is also some well-intentioned but ultimately flawed logic built in that can lead to unexpected results as some margins are automatically adjusted if the print width is less than or equal to 7" and again if it’s less than or equal to 10".
 {{< /q-class >}}
 
-Where a variable is not available, you can also add custom CSS to your `static/css/custom.css` file to achieve the desired result. You can target changes to *only* the print output by wrapping your CSS rules in a {{< q-def "media query">}}.
+Where a variable is not available, you can also add custom CSS to your `content/_assets/styles/custom.css` file to achieve the desired result. You can target changes to *only* the print output by wrapping your CSS rules in a {{< q-def "media query">}}.
 
 For example, this would hide all `video` elements in the print output:
 
@@ -130,7 +119,7 @@ For example, this would hide all `video` elements in the print output:
 }
 ```
 
-Some of the CSS used in styling the PDF is from the CSS Paged Media Specification. This is a set of CSS rules designed specifically to style things in a page-like manner, including controlling left and right page rules, page numbering, and running feet and heads. There is good information about this [in PrinceXML’s documentation](https://www.princexml.com/doc/paged/).
+Some of the CSS used in styling the PDF is from the CSS Paged Media Specification. This is a set of CSS rules designed specifically to style things in a page-like manner, including controlling left and right page rules, page numbering, and running feet and heads. There is good information about this in [Paged.js’s documentation](https://pagedjs.org/documentation/) as well as [in PrinceXML’s documentation](https://www.princexml.com/doc/paged/). For the most part, the CSS rules documented for one are also applicable to the other. The one primary exception are any CSS attributes that begin with a custom `-prince` name.
 
 ### Tips for PDF Design and Development
 
