@@ -1,12 +1,23 @@
 figure_list:
   - id: "1.4"
     src: /screenshots/quire-work-environment.gif
-    caption: "When you work in Quire, you’ll be using a text editor (left), a command-line shell (center), and a web browser (right)."
+    caption: " When you work in Quire, you’ll be using a text editor (left), a command-line shell (center), and a Web browser (right)."
     credit: " "
   - id: "commandline-vs-folder"
     src: /screenshots/commandline-vs-folder.jpg
-    caption: "Both the command-line shell (left) and the Finder window (right) are views of the same directory on your computer. In this case, we are in a directory called “my-project” in a user account “workstation” and we can see a number of files and sub-directories which happen to make up a Quire project."
+    caption: "The command-line shell (left) and the Finder window (right) are views of the same directory on your computer. In this case, we are in the computer’s home directory with a user account called “workstation.”"
     credit: " "
+
+  - id: "new-my-project"
+    src: /screenshots/new_my_project.jpg
+    caption: "Running the command quire new creates a starter publication with demo content in your computer’s home directory. This new project includes text, images, and other important files."
+    credit: " "
+
+  - id: "markdown-example"
+    src: /screenshots/markdown-example.jpg
+    caption: "Your project’s content appears as Markdown that is formatted for easy conversion to HTML."
+    credit: " "
+
   - id: "1.7"
     src: /screenshots/catalogue-entry-page.jpg
     caption: "Screenshot of catalogue entry page as rendered in the browser."
@@ -43,22 +54,25 @@ figure_list:
     credit: " "
   - id: "quire-starter"
     src: /screenshots/quire-starter.jpg
-    caption: "When your run `quire new` Quire starts you with a demo project with some default content. You can then preview this project locally in your browser as you make changes."
+    caption: "You can preview your new project locally in your browser by running the command `quire preview`. Your new project comes loaded with demo content called “New Deal Photography.”"
   - id: "text-editor"
     src: /screenshots/text-editor.jpg
     caption: "When working on a Quire project in a text editor you can see and access all your project files from the sidebar at the left."
   - id: "quire-starter-metadata-change"
     src: /screenshots/quire-starter-metadata-change.jpg
     caption: "Basic publication information lives in the `publication.yaml` file, and is used throughout the site. Here we see the title being used on the cover, in the PDF version of the publication, and in the side navigation."
+  - id: "quire-starter-cover-change"
+    src: /screenshots/quire-starter-cover-change.jpg
+    caption: "A background image can be added to the cover by including the image path in the page YAML of your index.md file."
   - id: "quire-starter-content-change-1"
     src: /screenshots/quire-starter-content-change-1.jpg
     caption: "Changing the page `title`, `order` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
   - id: "quire-starter-content-change-2"
     src: /screenshots/quire-starter-content-change-2.jpg
-    caption: "Figures are added with a “shortcode” that references an `id`. The `id` is listed in your project's `figures.yaml` file along with a caption and other YAML values."
+    caption: "Figures are added with a `{% figure %}` shortcode referencing an `id`. The `id` is listed in your project’s `figures.yaml` file along with a caption and other YAML values."
   - id: "quire-starter-styles-change"
     src: /screenshots/quire-starter-styles-change.jpg
-    caption: "A background image can be added to the cover by adding it to the page YAML of your `cover.md` page (`images: cover_2.jpg`). Colors and other styles can be customized in the `variables.scss` file of your project’s theme."
+    caption: "Colors and other styles can be customized in the `variables.scss` file in your project's `content/_assets/styles` file."
   - id: "command-line-drag-and-drop"
     src: /screenshots/command-line-drag-and-drop.gif
     caption: ""
@@ -216,6 +230,12 @@ figure_list:
     src: /screenshots/_state_of_museum_dig.jpg
     caption: "**Graduate Essays** | Ad Hoc Museum Collective"
     full_caption: "*The State of Museum Digital Practice in 2019: A collection of graduate essays and responses*, by Suse Anderson, et al, Ad Hoc Museum Collective, 2019."
+
+  - id: "quire_demo_2023"
+    src: /screenshots/quire_demo_2023.jpg
+    media_id: 804066673/a665de952c
+    media_type: vimeo
+    caption: "In this 17-minute demonstration Erin Cecele Dunigan (Community Manager) and Greg Albers (Digital Publications Manager) show viewers how to create and preview a new Quire project, edit text and make simple customizations, and output the publication as a PDF."
 
   - id: "quire_demo"
     src: /screenshots/quire_demo.jpg
