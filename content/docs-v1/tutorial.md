@@ -77,6 +77,10 @@ quire new my-project
 ```
 3. When your starter project has finished installing, you will see your computer username appear with a cursor. This means you are ready to preview your project.
 
+{{< q-class "box tip" >}}
+- If you're a Mac user and receive an error message that references "Developer/CommandLineTools" that means you need to install Apple Xcode, a set of developer tools for your Mac. Run the command `xcode-select --install` in your command-line shell. It may take a few minutes to install. Once install is complete, return to step #2. 
+{{< /q-class >}}
+
 ## 4. Preview Your Project
 
 Quire lets you preview your publication in your browser as you work on it. Your project will not be visible to anyone other than you. The preview lives locally on your computer and can be viewed even if you are not connected to the Internet.

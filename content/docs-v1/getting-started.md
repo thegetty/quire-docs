@@ -19,8 +19,10 @@ quire new my-project
 
 Quire will download a new starter project into a folder called “my-project” that can be found in your {{< q-def "home directory" >}}. The process may take a few minutes. The project is ready when you see the message: “Theme and dependencies successfully installed.”
 
+Projects started with `quire new` will include demo content, images, and data. This information can be written over, re-used, or deleted altogether as you’d like.
+
 {{< q-class "box tip" >}}
-- Projects started with `quire new` will include demo content, images, and data. This information can be written over, re-used, or deleted altogether as you’d like.
+- If you're a Mac user and receive an error message that references "Developer/CommandLineTools" that means you need to install Apple Xcode, a set of developer tools for your Mac. Run the command `xcode-select --install`. It may take a few minutes to install. Once install is complete, try creating a new project again. 
 {{< /q-class >}}
 
 ## Copy an Existing Project
