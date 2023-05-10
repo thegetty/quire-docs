@@ -32,17 +32,18 @@ Quire is an open-source multiformat publishing tool designed for longevity, disc
 Created by [Getty](https://www.getty.edu), free to use.
 
 
-<div class="action-button with-sub-action-button">
+<div class="action-button paired-button" >
 
-[Get Started](/docs-v1/install-uninstall)
+[Get Started](/docs-v1/getting-started/)
+
+</div>
+
+<div class="action-button paired-button">
+
+[Watch the Video <svg class="remove-from-epub"><switch><use xlink:href="#start-icon"></use></switch></svg>](https://vimeo.com/820983026/b3a116fb1e)
 
 </div>
 
-<div class="sub-action-button">
-
-[View on GitHub ![logo](/img/icons/github.svg) ](https://github.com/thegetty/quire/)
-
-</div>
 
 </div>
 </div>

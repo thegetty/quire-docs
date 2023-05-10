@@ -370,6 +370,20 @@ s  }
   }
 }
 
+/* Navbar */
+#home .quire-navbar a[target=_blank],
+#home .quire-navbar a[target=_blank] p {
+  color: #bdf6ea !important;
+}
+#home .quire-navbar a[target=_blank]:hover {
+  border-color: #bdf6ea !important;
+}
+#home .quire-navbar a[target=_blank] svg {
+  fill: #bdf6ea !important;
+  position: relative;
+  top: -2px;
+}
+
 /* Footer */
 .home-block--footer {
   border-top: 1px solid #1a1a1a;
@@ -737,26 +751,22 @@ s  }
   margin-top: 6rem;
 }
 
-/* Specialty style for GitHub link under first button on homepage */
-.quire-page__content .container .content .action-button.with-sub-action-button {
-  margin-bottom: .5rem;
+/* Specialty style for paried buttons on homepage */
+.quire-page__content .container .content .action-button.paired-button {
+  margin-bottom: 0;
+  margin-right: 1rem;
+  margin-top: .5rem;
+  display: inline-block;
 }
-.quire-page__content .container .content .sub-action-button a {
-  border-bottom-width: 0;
-  margin-left: 1.2rem;
-  color: #bdf6ea !important;
-}
-.quire-page--home .quire-page__content .container .home-block:not(:last-child).home-block--first .sub-action-button a:hover,
-.quire-page__content .container .content .sub-action-button a:hover {
-  color: #bdf6ea !important;
-  border-bottom-color: #bdf6ea !important;
-}
-.quire-page__content .container .content .sub-action-button a img {
-  height: 18px;
-  width: 18px;
-  position: relative;
-  top: 2px;
-  left: 2px;
+.quire-page__content .container .content .action-button.paired-button  svg {
+  height: 32px;
+  width: 32px;
+  margin-top: 3px;
+  margin-bottom: -6px;
+  margin-left: 6px;
+  margin-right: -12px;
+  fill: #fff;
+  float: right;
 }
 
 /* Color for buttons on Get Involved page */
@@ -1286,52 +1296,11 @@ body#home .quire-navbar-controls__right {
 
 /* OFF SITE INDICATORS FOR MENU AND NAVIGATION
 ============================================================================= */
-
-/* Add offsite arrow icons */
-.section-item a[target=_blank]::after,
-.page-item a[target=_blank]::after,
-.quire-contents-list.grid .section-item a[target=_blank] .title::after,
-.quire-contents-list.grid .page-item a[target=_blank] .title::after {
-  content: url('../img/icons/offsite--blue-60.svg');
-  width: .875em;
-  display: inline-block;
-  margin-left: .25em;
-  position: relative;
-  top: 1px;
-}
-/* Remove secondary icon in grid layout */
-.quire-contents-list.grid .section-item a[target=_blank]::after,
-.quire-contents-list.grid .page-item a[target=_blank]::after {
-  content: "";
-}
-/* Darken icon color on hover in grid layout */
-.quire-contents-list.grid .section-item a[target=_blank]:hover .title::after,
-.quire-contents-list.grid .page-item a[target=_blank]:hover .title::after {
-  content: url('../img/icons/offsite--blue-80.svg');
-}
-/* Use dark gray icon in menu page items */
-.quire-menu .section-item .page-item a[target=_blank]::after {
-  content: url('../img/icons/offsite--gray-90.svg');
-}
-
-/* Make the Get Access links the accent color */
-.quire-navbar a[target=_blank],
-.quire-menu__list > ul > .page-item a[target=_blank] {
-  color: #1a47b8 !important;
-}
-.quire-navbar a[target=_blank]:hover,
-.quire-menu__list > ul > .page-item a[target=_blank]:hover {
-  border-color: #1a47b8 !important;
-}
-
-#home .quire-navbar a[target=_blank] {
-  color: #bdf6ea !important;
-}
-#home .quire-navbar a[target=_blank]:hover {
-  border-color: #bdf6ea !important;
-}
-#home .quire-navbar .page-item a[target="_blank"]::after {
-  content: url('../img/icons/offsite--garden-10.svg');
+.section-item a svg,
+.page-item a svg {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
 }
 
 /* GLOSSARY
