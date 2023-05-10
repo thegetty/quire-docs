@@ -6,4 +6,4 @@
 
 */}}
 {{- $endPunctuation := findRE "[!|?]$" .Page.Params.title -}}
-{{ .Page.Params.title }}{{ with .Page.Params.subtitle }}{{ if $endPunctuation }} {{ else }}: {{ end }}{{ . }}{{ end }}
+{{ .Page.Params.title | safeHTML }}{{ with .Page.Params.subtitle }}{{ if $endPunctuation }} {{ else }}: {{ end }}{{ . | safeHTML }}{{ end }}
