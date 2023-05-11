@@ -1,11 +1,9 @@
 ---
 title: Glossary
-weight: 7370
+weight: 5820
 type: page
+menu: false
 abstract: "Key terms and definitions related to Quire"
-aliases:
-  - /documentation/glossary/
-  - /docs-v0/glossary/
 ---
 
 {{< q-glossary >}}
