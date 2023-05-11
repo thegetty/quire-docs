@@ -1301,6 +1301,7 @@ body#home .quire-navbar-controls__right {
   height: 1em;
   width: 1em;
   fill: currentColor;
+  margin-left: .25em;
 }
 
 /* GLOSSARY
