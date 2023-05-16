@@ -1,10 +1,11 @@
 ---
 title: Accessibility Principles
-weight: 6420
+weight: 7360
 type: essay
 abstract: "Learn about WCAG 2.0 principles guiding Quire's development"
 aliases:
   - /documentation/accessibility-principles/
+  - /docs-v0/accessibility-principles/
 ---
 
 As a publishing tool, Quire’s goal is to maintain accessibility for keyboard and screen reader navigation, as well as for devices and browsers of varying sizes and capabilities and with limited functionality, such as those operating without JavaScript and/or CSS.
