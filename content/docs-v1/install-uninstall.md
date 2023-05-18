@@ -155,6 +155,10 @@ If you are using {{< q-def "git" >}} for version control on your project, you wi
 
 6. Merge your updated git branch into the base branch of your project.
 
+{{< q-class "box tip" >}}
+- If you make customizations to any of the template files in your Quire project (like those found in `_includes` or `_plugins`) we recommend adding a code comment to the top of those customized files to make them easier to identify and carry over when manually updating your project as described above. And also keeping a running list of them in a README file.
+{{< /q-class >}}
+
 ## Re-Install Legacy Versions of Quire
 
 Visit [our page on NPM](https://www.npmjs.com/package/@thegetty/quire-cli?activeTab=versions) for an overview of Quire's version release history.
