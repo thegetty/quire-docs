@@ -82,19 +82,15 @@ When you install Quire what you are actually installing is something called a {{
 
 ## Update Quire
 
-Updating Quire will not affect your existing projects. It will only take effect on *new* projects that were started after the update process. While any *new* projects will use the latest version of Quire, older, previously started projects will remain untouched. This is to avoid any unforeseen and unintended changes to publications that are completed or in progress as the version of Quire you use can effect layouts of a page, availability of features, etcetera.
+By default, every new project you start with Quire will use the most recent version of the Quire project package. So if you install the Quire CLI today and start a new project, that project will use today's version of Quire. If you then start a second project six months from now, that project will use that future version of Quire including any new features or bug fixes that may have been added in the intervening months. Read about updating an existing project in the section below.
 
-1. Run the following install command to update Quire to the latest release:
+You may occasionally want/need to update the version of the Quire CLI you are running. For instance if a particular command or functionality has been added or fixed. To do that:
 
-    ```text
-    npm install --global @thegetty/quire-cli
-    ```
+1. Run `npm install --global @thegetty/quire-cli`
 
-2. Confirm what version you are running with the following command:
+2. Confirm your new version with `quire --version`
 
-    ```text
-    quire --version
-    ```
+Updating the Quire CLI will have **no effect** on your existing projects. The features and functionality of any given project are independent of the version of the CLI you are running. An older or newer version of the CLI is only relevant to the functioning of [Quire commands](/docs-v1/quire-commands/) like `quire preview` or `quire build`.
 
 ## Update an Existing Project
 
