@@ -82,19 +82,82 @@ When you install Quire what you are actually installing is something called a {{
 
 ## Update Quire
 
-Updating Quire will not affect your existing projects. It will only take effect on *new* projects that were started after the update process. While any *new* projects will use the latest version of Quire, older, previously started projects will remain untouched. This is to avoid any unforeseen and unintended changes to publications that are completed or in progress as the version of Quire you use can effect layouts of a page, availability of features, etcetera.
+By default, every new project you start with Quire will use the most recent version of the Quire project package. So if you install the Quire CLI today and start a new project, that project will use today's version of Quire. If you then start a second project six months from now, that project will use that future version of Quire including any new features or bug fixes that may have been added in the intervening months. Read about updating an existing project in the section below.
 
-1. Run the following install command to update Quire to the latest release:
+You may occasionally want/need to update the version of the Quire CLI you are running. For instance if a particular command or functionality has been added or fixed. To do that:
 
-    ```text
-    npm install --global @thegetty/quire-cli
+1. Run `npm install --global @thegetty/quire-cli`
+
+2. Confirm your new version with `quire --version`
+
+Updating the Quire CLI will have **no effect** on your existing projects. The features and functionality of any given project are independent of the version of the CLI you are running. An older or newer version of the CLI is only relevant to the functioning of [Quire commands](/docs-v1/quire-commands/) like `quire preview` or `quire build`.
+
+## Update an Existing Project
+
+Updating an existing Quire project to the latest version of Quire is a manual process. It involves starting a new project and copying your old files into it, or copying the files of the new project into your old one. Unless you are using {{< q-def "git" >}} for version control on your project (see the section below), it will be easier to copy your project files into a new project rather than the other way around.
+
+1. Make a copy of your existing project to keep as a backup in case you need to start over.
+
+2. Start a new project with `quire new my-new-project`. 
+
+3. Delete the following demo files in the new project and replace them with your own:
+
+    a.) All the Markdown (`.md)` files in the `content` directory
+
+    b.) The `content/_assets/images` directory
+
+    c.) All the YAML (.yaml) files in the `content/_data` directory **except** `config.yaml`
+
+4. If you made any changes to `config.yaml`, update those individually into the new `config.yaml` file. (It's best not to replace the entire `config.yaml` file with your old one as there may be new or renamed values there that would conflict with the newer templates.)
+
+5. If you made any changes to the styles of your project, particularly `content/_assets/styles/variables.scss` or `content/_assets/styles/custom.css`, copy those over to the new project.
+
+6. Run `quire preview` to confirm everything is working.
+
+### Update an Existing Project That Uses Git for Version Control
+
+If you are using {{< q-def "git" >}} for version control on your project, you will want to start a new project and copy its files into your existing project in order to maintain your project’s git history.
+
+1. Create a new git branch in your existing project for the update.
+
+2. Start a new project with `quire new my-new-project`.
+
+3. Replace the following files and directories in your project with the copies from the new project:
+
+    ```
+    package.json
+    package-lock.json
+    _plugins/
+    _lib/
+    _layouts/
+    _includes/
+    .node-version
+    .gitignore
+    .eslintrc
+    .env
+    .eleventyignore
+    .eleventy.js
+    .quire
+    content/_computed/
+    content/_assets/fonts/
+    content/_assets/javascript/
+    content/_assets/styles/
+    content/_data/config.yaml
     ```
 
-2. Confirm what version you are running with the following command:
+    If you made any customizations to any of these files previously—for instance to `content/_assets/styles/variables.scss`—you will need to copy those over into the replaced files individually.
 
-    ```text
-    quire --version
-    ```
+    Note that some of these are "hidden" files that you will see in a text editor, but not in your Finder or File Explorer. To show hidden files in Finder on macOS type Shift-Command-Period(.); in File Explorer on Windows 10/11, follow [Microsoft’s instructions](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5).
+
+4. Delete the old `node_modules` in your project and run `npm install` to reinstall them with the latest versions.
+
+5. Run `quire preview` to confirm everything is working.
+
+6. Merge your updated git branch into the base branch of your project.
+
+{{< q-class "box tip" >}}
+- If you make customizations to any of the template files in your Quire project (like those found in `_includes` or `_plugins`) we recommend adding a code comment to the top of those customized files to make them easier to identify and carry over when manually updating your project as described above. And also keeping a running list of them in a README file.
+{{< /q-class >}}
 
 ## Re-Install Legacy Versions of Quire
 
@@ -113,10 +176,6 @@ When using v0 versions of Quire, you must revert back to the **v14.18.1 release*
 {{< q-class "box tip" >}}
 Node Version Manager (NVM) is a software for Mac users that helps you easily toggle back-and-forth between Node.js versions. You can even tether different versions of Quire to different versions of node, eliminating the constant need to re-install. More information can be found at [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
 {{< /q-class >}}
-
-### Update an Existing Project
-
-TK
 
 ## Uninstall Quire
 

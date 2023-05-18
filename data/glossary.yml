@@ -38,9 +38,9 @@ entries:
   - term: "Getty Vocabularies"
     definition: "Controlled vocabularies developed to ensure consistency in cataloging and more efficient retrieval of information. For more information visit: [https://www.getty.edu/research/tools/vocabularies/](https://www.getty.edu/research/tools/vocabularies/)"
   - term: "GitHub"
-    definition: "GitHub is a code hosting platform for version control and collaboration. For an introductory guide to it, visit: [https://guides.github.com/activities/hello-world/#what](https://guides.github.com/activities/hello-world/#what)"
-  - term: "Git project management tool"
-    definition: "Project management tool for software development that uses Git as their version control language. There are multiple tools available in the web."
+    definition: "GitHub is project management platform built around git version control and optimized for team collaboration. For an introductory guide to it, visit: [https://guides.github.com/activities/hello-world/#what](https://guides.github.com/activities/hello-world/#what)"
+  - term: "git"
+    definition: "A version control system that tracks and manages changes to one or more plain-text files including html, markdown, yaml, javascript, and more. Git can be used from the command-line, or with a service like GitHub."
   - term: "HEX color value"
     alternates:
       - "HEX color values"
