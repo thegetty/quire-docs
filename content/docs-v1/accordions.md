@@ -12,7 +12,7 @@ Collapsible accordion sections can be a great way to help readers access the con
 Parameters: `<heading text>`, `<custom id>`, `<open>`
 
 ```
-{% accordion "## Section One" "s1" "open" %}
+{% accordion '## Section One' 's1' 'open' %}
   ...
 {% endaccordion %}
 ```
@@ -32,7 +32,7 @@ The `{% accordion %}` shortcode is a “paired” shortcode and so requires an o
 Also required is a brief heading text that will become the link that expands and collapses the section. Markdown can be used in the heading text, and it will often be some level of heading. `## Section One` is the heading text in the example below.
 
 ```
-{% accordion "## Section One" %}
+{% accordion '## Section One' %}
   ...
 {% endaccordion %}
 ```
@@ -40,7 +40,7 @@ Also required is a brief heading text that will become the link that expands and
 Markdown can also be used in the text within the section, as can shortcodes such as `{% figure %}` and even other `{% accordion %}` sections.
 
 ```
-{% accordion "## Section One" %}
+{% accordion '## Section One' %}
 
 This is the text that will be hidden. It can include **markdown** formatting, 
 footnotes, and other shortcodes.[^1]
@@ -82,7 +82,7 @@ The `copyButton.symbol` can be [any unicode character](https://unicode-table.com
 By default, the URLs for accordion sections are generated from the heading text and prepended with `#section-`. For example, the link to the accordion in the example below, would be: `https://my-publication.com/chapter-1/#section-comparison-of-historical-sources`. 
 
 ```md
-{% accordion "## Comparison of Historical Sources" %}
+{% accordion '## Comparison of Historical Sources' %}
   ...
 {% endaccordion %}
 ```
@@ -90,7 +90,7 @@ By default, the URLs for accordion sections are generated from the heading text 
 Section links can be customized by passing a custom id as an optional second parameter to the shortcode. This can be useful in streamlining otherwise long or unwieldy links for your users, or for internal linking within the project. The link in this new example would be much shorter: `https://my-publication.com/chapter-1/#sources`.
 
 ```md
-{% accordion "## Comparison of Historical Sources" "sources" %}
+{% accordion '## Comparison of Historical Sources' 'sources' %}
   ...
 {% endaccordion %}
 ```
@@ -104,7 +104,7 @@ Section links can be customized by passing a custom id as an optional second par
 By default, all accordion sections will be collapsed when the page first loads. For any accordion sections you would instead like to be open when the page loads, you can add an "open" parameter.
 
 ```
-{% accordion "## Section One" "s1" "open" %}
+{% accordion '## Section One' 's1' 'open' %}
   ...
 {% endaccordion %}
 ```
@@ -112,7 +112,7 @@ By default, all accordion sections will be collapsed when the page first loads. 
 Note that the parameters are positional (defined by the order they are given), and the "open" parameter needs to always be listed third, after the heading text and the custom id. If your accordion does not have a custom id, make sure the quotes are still there but leave them empty.
 
 ```
-{% accordion "## Section One" "" "open" %}
+{% accordion '## Section One' '' 'open' %}
   ...
 {% endaccordion %}
 ```
@@ -129,10 +129,10 @@ You can add links to expand and collapse all the accordions on a page at once us
 ```
 {% accordionGlobalControls %}
 
-{% accordion "## Section One" %}
+{% accordion '## Section One' %}
   ...
 {% endaccordion %}
-{% accordion "## Section Two" %}
+{% accordion '## Section Two' %}
   ...
 {% endaccordion %}
 ```
