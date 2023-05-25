@@ -35,6 +35,7 @@ Quire adds a number of specialty {{< q-def "shortcodes" >}} which extend the fun
 
 The following shortcodes are currently available in Quire. You’ll find more about them in their respective sections of the guide, as well as in the [shortcodes API reference](/docs-v1/for-developers/#shortcodes-api).
 
+-  [`{% accordion %}`](/docs-v1/accordions/): Creates a collapsible section for content that may otherwise too long and unweildy, or that is an aside to the current topic. Also available is the [`{% accordionGlobalControls %}`](/docs-v1/accordions/#add-accordion-global-controls) shortcode.
 - [`{% cite %}`](/docs-v1/citation-bibliographies/): Adds a linked Author Date citation reference to the text, and an in-text (or hover pop-up) citation. It also adds the citation to a map of cited works, which can then be output as a page-level bibliography on essay and entry type pages.
 - [`{% contributors %}`](/docs-v1/contributors/): Can be used to create a page of contributor biographies, a section of bios for a single page, a simple list of contributors, a byline for a particular page, or other similar outputs.
 - [`{% figure %}`](/docs-v1/figure-images/): Inserts a formatted figure image (including audio and video) and caption using data from the project’s `figures.yaml` file, or from values supplied directly in the shortcode.
