@@ -343,3 +343,11 @@ figure_list:
   - id: "recipe-menu-icons"
     src: /screenshots/menu-icons.jpg
     caption: "After some customization to the default template, checkmark icons have been added to the pages that are marked as `peer_review: true` in the pages’ YAML."
+
+  - id: "accordion-collapsed"
+    src: /screenshots/accordion-collapsed.jpg
+    caption: "A content section wrapped with the `{% accordion %}` shortcode and in its collapsed/closed state."
+
+  - id: "accordion-expanded"
+    src: /screenshots/accordion-expanded.jpg
+    caption: "A content section wrapped with the `{% accordion %}` shortcode and in its expanded/open state."

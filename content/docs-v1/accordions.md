@@ -1,6 +1,6 @@
 ---
 title: Accordion Sections
-weight: 6330
+weight: 6190
 type: essay
 abstract: "Add collapsible accordion sections to your pages"
 ---
@@ -9,9 +9,9 @@ Collapsible accordion sections can be a great way to help readers access the con
 
 ## Wrap Content in the Accordion Shortcode
 
-The `{% accordion %}` shortcode is a “paired” shortcode and so requires an opening and closing tag, with the text you want hidden in between.
+The `{% accordion %}` shortcode is a “paired” shortcode and so requires an opening and closing tag surrounding the text you want to be hidden.
 
-Also required is a summary text parameter that will become the link that closes and opens the section. Markdown can be used in the summary text. It will often be some level of heading.
+Also required is a brief summary text that will become the link that expands and collapses the section. Markdown can be used in the summary text, and it will often be some level of heading. `## Section One` is the summary text in the example below.
 
 ```
 {% accordion "## Section One" %}
@@ -22,26 +22,27 @@ Also required is a summary text parameter that will become the link that closes 
 Markdown can also be used in the text within the section, as can shortcodes such as `{% figure %}` and even other `{% accordion %}` sections.
 
 ```
-{% accordion "## Section One" %}
 
 This is the text that will be hidden. It can include **markdown** formatting, 
-as well as other shortcodes.[^1]
+footnotes, and other shortcodes.[^1]
 
 {% figure 'fig-01' %}
 
 {% endaccordion %}
 ```
 
-For web accessibility, an accordion should always have a visual indicator for its open/close functionality. The icon used for this on each accordion section in Quire can be configured globally in the `content/_data/config.yaml` file. The icon can be either an arrow (the default) or a plus-minus symbol.
+{{< q-figure-group id="accordion-collapsed, accordion-expanded" grid="2" caption="An example accordion section in its collapsed and expanded states. Accordion sections can include Markdown formatting as well as other shortcodes." >}}
+
+For web accessibility, an accordion should always have a visual indicator for its expand/collapse functionality. The icon used for this on each accordion section in Quire can be configured globally in the `content/_data/config.yaml` file. The icon can be either an `arrow` (the default) or a `plus-minus` symbol.
 
 ```yaml
 accordion:
-  controls: arrow # arrow | plus-minus
+  controls: arrow
 ```
 
 ## Copy Links to Accordion Sections
 
-When hovering over the summary text and control icon of an accordion section in a web browser, a symbol appears to the left. This is the copy button. Clicking on it will copy the link for the section to your clipboard. 
+When hovering over the heading and control icon of an accordion section in a web browser, a symbol appears to the left. This is the copy button. Clicking on it will copy the link for the section to your clipboard. 
 
 When visiting that copied link, the section will automatically open. (Accordion sections will also automatically open when following a link to an element *within* the section.)
 
@@ -59,25 +60,29 @@ The `copyButton.symbol` can be [any unicode character](https://unicode-table.com
 
 ## Customize Accordion Link Names
 
-By default links to accordion sections are based on the summary text parameter, prepended with `#section-`. For example, the link to `{% accordion "## Section One" %}` would be `#section-section-one`.
-
-Links can be customized by passing an `id` as an optional second parameter to the shortcode. This can be useful in streamlining otherwise long or unwieldy links for your users, or for internal linking within the project.
+By default, the URLs for accordion sections are generated from the summary text and prepended with `#section-`. For example, the link to the accordion in the example below, would be: `https://my-publication.com/chapter-1/#section-comparison-of-historical-sources`. 
 
 ```md
-See the [Comparison of Historical Sources](#sources) sidebar below.
+{% accordion "## Comparison of Historical Sources" %}
+  ...
+{% endaccordion %}
+```
 
+Section links can be customized by passing a custom id as an optional second parameter to the shortcode. This can be useful in streamlining otherwise long or unwieldy links for your users, or for internal linking within the project. The link in this new example would be much shorter: `https://my-publication.com/chapter-1/#sources`.
+
+```md
 {% accordion "## Comparison of Historical Sources" "sources" %}
   ...
 {% endaccordion %}
 ```
 
 {{< q-class "box warning" >}}
-- The `id` parameter should always be lowercase, be unique on the page, and never start with a number or include any spaces or special characters.
+- The custom id parameter should always be lowercase, be unique on the page, and never start with a number or include any spaces or special characters.
 {{< /q-class >}}
 
 ## Set an Accordion to Be Open by Default
 
-By default, all accordion sections will be collapsed when the page first loads. You can set the "open" parameter to any accordion sections you would instead like 
+By default, all accordion sections will be collapsed when the page first loads. For any accordion sections you would instead like to be open when the page loads, you can add an "open" parameter.
 
 ```
 {% accordion "## Section One" "s1" "open" %}
@@ -85,7 +90,7 @@ By default, all accordion sections will be collapsed when the page first loads. 
 {% endaccordion %}
 ```
 
-Note that the parameters are positional (defined by the order they are given), and the "open" parameter need to always be listed third, after the summary text and the id. If your accordion does not have a custom id, make sure the quotes are still there but leave them empty.
+Note that the parameters are positional (defined by the order they are given), and the "open" parameter needs to always be listed third, after the summary text and the custom id. If your accordion does not have a custom id, make sure the quotes are still there but leave them empty.
 
 ```
 {% accordion "## Section One" "" "open" %}
@@ -100,7 +105,7 @@ Note that the parameters are positional (defined by the order they are given), a
 
 ## Add Accordion Global Controls
 
-You can add links to open and close all the accordions on a page at once using the `{% accordionGlobalControls %}` shortcode. It can appear anywhere on the page though would typically be found directly above the first accordion section.
+You can add links to expand and collapse all the accordions on a page at once using the `{% accordionGlobalControls %}` shortcode. It can appear anywhere on the page though would typically be found directly above the first accordion section.
 
 ```
 {% accordionGlobalControls %}
@@ -134,7 +139,6 @@ accordion:
     successText: Copied page section link to clipboard
     symbol: §
   globalControls:
-    enable: true
     collapseText: Collapse All
     expandText: Expand All
 ```
