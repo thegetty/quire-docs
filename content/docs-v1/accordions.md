@@ -7,11 +7,29 @@ abstract: "Add collapsible accordion sections to your pages"
 
 Collapsible accordion sections can be a great way to help readers access the content of an otherwise long page quickly, or to tuck away content that might be an aside or sidebar to what is being said in the text. You can create these sections anywhere in a Quire project with the `{% accordion %}` shortcode. Also available is the `{% accordionGlobalControls %}` shortcode which adds “Expand/Collapse All” links to any page with accordions on it.
 
+### **`{% accordion %}`**
+
+Parameters: `<heading text>`, `<custom id>`, `<open>`
+
+```
+{% accordion "## Section One" "s1" "open" %}
+  ...
+{% endaccordion %}
+```
+
+### **`{% accordionGlobalControls %}`**
+
+Parameters: none
+
+```
+{% accordionGlobalControls %}
+```
+
 ## Wrap Content in the Accordion Shortcode
 
 The `{% accordion %}` shortcode is a “paired” shortcode and so requires an opening and closing tag surrounding the text you want to be hidden.
 
-Also required is a brief summary text that will become the link that expands and collapses the section. Markdown can be used in the summary text, and it will often be some level of heading. `## Section One` is the summary text in the example below.
+Also required is a brief heading text that will become the link that expands and collapses the section. Markdown can be used in the heading text, and it will often be some level of heading. `## Section One` is the heading text in the example below.
 
 ```
 {% accordion "## Section One" %}
@@ -22,6 +40,7 @@ Also required is a brief summary text that will become the link that expands and
 Markdown can also be used in the text within the section, as can shortcodes such as `{% figure %}` and even other `{% accordion %}` sections.
 
 ```
+{% accordion "## Section One" %}
 
 This is the text that will be hidden. It can include **markdown** formatting, 
 footnotes, and other shortcodes.[^1]
@@ -60,7 +79,7 @@ The `copyButton.symbol` can be [any unicode character](https://unicode-table.com
 
 ## Customize Accordion Link Names
 
-By default, the URLs for accordion sections are generated from the summary text and prepended with `#section-`. For example, the link to the accordion in the example below, would be: `https://my-publication.com/chapter-1/#section-comparison-of-historical-sources`. 
+By default, the URLs for accordion sections are generated from the heading text and prepended with `#section-`. For example, the link to the accordion in the example below, would be: `https://my-publication.com/chapter-1/#section-comparison-of-historical-sources`. 
 
 ```md
 {% accordion "## Comparison of Historical Sources" %}
@@ -90,7 +109,7 @@ By default, all accordion sections will be collapsed when the page first loads. 
 {% endaccordion %}
 ```
 
-Note that the parameters are positional (defined by the order they are given), and the "open" parameter needs to always be listed third, after the summary text and the custom id. If your accordion does not have a custom id, make sure the quotes are still there but leave them empty.
+Note that the parameters are positional (defined by the order they are given), and the "open" parameter needs to always be listed third, after the heading text and the custom id. If your accordion does not have a custom id, make sure the quotes are still there but leave them empty.
 
 ```
 {% accordion "## Section One" "" "open" %}
@@ -133,7 +152,7 @@ As noted in the sections above, there are several ways the `{% accordion %}` and
 
 ```yaml
 accordion:
-  controls: arrow # arrow | plus-minus
+  controls: arrow
   copyButton:
     ariaLabel: Copy page section link to clipboard
     successText: Copied page section link to clipboard
