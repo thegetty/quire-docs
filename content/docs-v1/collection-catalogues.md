@@ -81,6 +81,11 @@ entryPage:
 
 {{< q-figure id="modern-entry-side" >}}
 
+Whatever the presentation, you can further organize the content on the page by using Quire’s `{% accordion %}` shortcode to wrap the individual parts of the object entry into collapsible sections. Read more in the [*Accordions*](/docs-v1/accordions/) chapter of this guide.
+
+{{< q-figure id="modern-entry-side-accordion" >}}
+
+
 ### Object Images
 
 You can add more than one image to your object entry page by listing multiple figure `ids` in your `objects.ymal` file. Multiple images are displayed as a rotating carousel and are arranged in the order they are listed in the `objects.yaml` file. If any of the object images have a `caption` and/or `credit`, that information will be included as a pop-up window.

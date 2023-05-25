@@ -1,7 +1,7 @@
 ---
 title: Table of Contents & Sidebar Menu
 type: essay
-weight: 6160
+weight: 6170
 abstract: "Add items and adjust the styles of Quire’s auto-generated contents lists"
 aliases:
   - /documentation/contents-menu/
@@ -70,10 +70,6 @@ Only one page in your project can have the `class: page-one` tag.
 ## Sidebar Menu
 
 Like the TOC, the sidebar Menu is generated automatically by Quire based on the structure of the files in your `content` directory and the metadata of each page. Unlike the TOC, the Menu is a built-in part of every Quire project and does not have a corresponding `.md` file.
-
-## Collapsible Menus
-
-TK
 
 ### Removing Pages from the Menu
 
