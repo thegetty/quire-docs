@@ -124,7 +124,7 @@ Note that the parameters are positional (defined by the order they are given), a
 
 ## Add Accordion Global Controls
 
-You can add links to expand and collapse all the accordions on a page at once using the `{% accordionGlobalControls %}` shortcode. It can appear anywhere on the page though would typically be found directly above the first accordion section.
+You can add links to expand and collapse all the accordions on a page at once using the `{% accordionGlobalControls %}` shortcode. It can appear anywhere on the page though would typically be found directly above the first accordion section. And unlike `{% accordion %}` it is not a paired shortcode so needs no closing tag.
 
 ```
 {% accordionGlobalControls %}
