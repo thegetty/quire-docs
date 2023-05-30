@@ -73,7 +73,7 @@ Every directory you create as a sub-section **must** include an `index.md` file.
     📄 object-entry-02.md
 ```
 
-If you don't want a landing page, you must still create the `index.md` file but add `output: none` to the page YAML.
+If you don't want a landing page, you must still create the `index.md` file but add `outputs: none` to the page YAML.
 
 Learn more in the [*Pages Types & Structure*](/docs-v1/pages/) section of our v1 documentation.
 
