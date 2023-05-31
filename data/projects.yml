@@ -681,3 +681,73 @@ project_list:
       - swroberts
     note: "Pitts Theology Library recently released a digital publications series featuring eight titles related to theology and religious history. The series includes different genres including lectures, translations, and critical editions. Seven of the publications are Quire projects that use a similar theme but incorporate different layouts and materials. The works are findable through Pitts' Digital Collections site that includes links to the Quire sites."
  
+  - id: "denver_her_brush"
+    src: /screenshots/_denver_her_brush.jpg
+    alt: "Her Brush: Japanese Women Artists from the Fong-Johnstone Collection, Denver Museum of Art"
+    type: Exhibitionm Catalogue
+    publisher: "Denver Art Museum"
+    title_info: "Her Brush: Japanese Women Artists from the Fong-Johnstone Collection"
+    pub_date: 2023-02-24
+    url: http://her-brush.denartmus.org/
+    customization_level: extensive
+    github_user:
+      - 1000camels
+      - mpopke
+      - vhellstein
+    note: "Her Brush accompanies an exhibition that showcases a recent gift of works by Japanese women artists and is the Denver Art Museum's first digital publication. The digital platform allowed us to add programming-related material after the exhibition opened to tell a fuller story than the one presented in the galleries. The user-friendly nature of Quire paired with its customizability made Quire the best option for the museum as it embarks on making content available to a much wider audience."
+
+  - id: "materia_issue_3"
+    src: /screenshots/_materia_issue_3.jpg
+    alt: "Materia: Journal of Technical Art History Issue 3"
+    type: Journal
+    publisher: "Materia: Journal of Technical Art History"
+    title_info: "Materia: Journal of Technical Art History Issue 3"
+    pub_date: 2023-05-01
+    url: https://issue-3.materiajournal.com/
+    customization_level: moderate 
+    github_user:
+      - materiajournal
+      - sophielamb
+    note: "This is *Materia's* third journal produced with Quire. The issue includes zoomable images, dynamic footnotes, videos, and customized fonts, logos, and colors. Quire provides the *Materia* team with an easy way to publish free technical art history content and a clear pathway to library circulation."
+
+  - id: "mia_reflections_on_reality"
+    src: /screenshots/_mia_reflections_on_reality.jpg
+    alt: "Reflections on Reality: Drawings and Paintings from the Weisberg Collection. Tom Rassieur, Winifred Smith, and Gabriel P. Weisberg"
+    type: Collection Catalogue
+    publisher: "Minneapolis Institute of Art"
+    title_info: "Reflections on Reality: Drawings and Paintings from the Weisberg Collection"
+    pub_date: 2023-03-29
+    url: https://artsmia.org/weisberg-collection/
+    customization_level: minor
+    github_user:
+      - kristhayer11
+    note: "This digital catalogue documents an extensive group of artworks collected by Yvonne and Gabriel Weisberg and promised in its entirety to the Minneapolis Institute of Art (Mia). The catalogue is being published in connection with Mia’s exhibition of the same name, running May 14, 2022–December 10, 2023. Most of the individual works (all with the advantage of being zoomable) are accompanied by scholarly descriptions, further illuminating the corner of Realism presented here."
+
+  - id: "museum_digital_practice_2022"
+    src: /screenshots/_museum_digital_practice_2022.jpg
+    alt: "The State of Museum Digital Practice | 2022. A collection of graduate essays. Museums and Technology | George Washington University."
+    type: Essay Collection
+    publisher: "GWU Museum Studies"
+    title_info: "The State of Museum Digital Practice | 2022"
+    pub_date: 2023-12-08
+    url: https://gwu-museum-studies.github.io/Museum-Digital-Practice-2022/
+    customization_level: 
+    github_user:
+      - shineslike
+      - gealbers
+    note: "Quire is used for this project to both expose graduate students to one of the most important and innovative publishing platforms in the museum field, and for the ability to create a professional product that represents their work in the best possible light."
+
+  - id: "vancouver_emily_carr"
+    src: /screenshots/_vancouver_emily_carr.jpg
+    alt: "Edith Heath and Emily Carr: From the Earth. Bruce Grenville, Jay Stewart, and Jennifer M. Volland"
+    type: Exhibition Catalogue
+    publisher: "Vancouver Art Gallery"
+    title_info: "Edith Heath and Emily Carr: From the Earth"
+    pub_date: 2023-04-03
+    url: https://fromtheearthexhibition.ca/
+    customization_level: minor
+    github_user:
+      - goodweather-vancouver
+      - ncamachoh
+      - srebick
+    note: "*Edith Heath and Emily Carr: From the Earth* is the first Quire project from the Vancouver Art Gallery. It accompanies the exhibition of the same name that brought Carr’s paintings and works on paper into dialogue with Heath’s ceramics, underscoring their mutual understanding of the land as the source and meaning of their work. We selected Quire for this project for its ease of use and made minimal customizations."
