@@ -721,7 +721,7 @@ project_list:
     customization_level: minor
     github_user:
       - kristhayer11
-    note: "This digital catalogue documents an extensive group of artworks collected by Yvonne and Gabriel Weisberg and promised in its entirety to the Minneapolis Institute of Art (Mia). The catalogue is being published in connection with Mia’s exhibition of the same name, running May 14, 2022–December 10, 2023. Most of the individual works (all with the advantage of being zoomable) are accompanied by scholarly descriptions, further illuminating the corner of Realism presented here."
+    note: "This digital catalogue documents an extensive group of artworks collected by Yvonne and Gabriel Weisberg and promised in its entirety to the Minneapolis Institute of Art (Mia). The catalogue is being published in connection with Mia’s exhibition of the same name which emphasizes the Weisbergs’ devotion to Realism, art that prioritizes everyday life over themes of mythology, history, or the sphere of the powerful. Most of the individual works (all with the advantage of being zoomable) are accompanied by scholarly descriptions, further illuminating the corner of Realism presented here."
 
   - id: "museum_digital_practice_2022"
     src: /screenshots/_museum_digital_practice_2022.jpg
