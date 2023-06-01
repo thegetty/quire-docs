@@ -5,6 +5,46 @@ type: essay
 abstract: "Get the latest news and info about upcoming events"
 ---
 
+## News
+
+<div class="action-button">
+
+[Subscribe to Quire Newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4)
+
+</div>
+
+*Visit our [newsletter archive](/community/newsletter-archive/).*
+
+**2023**
+
+- May 11, 202: Quire [promotional trailer](https://vimeo.com/820983026/b3a116fb1e) released
+- April 4, 2023: Quire presentation at [Museums and the Web Conference](https://mw23.my.mw/)
+- March 9, 2023: New Quire [demo](https://vimeo.com/804066673/a665de952c) available. 
+- February 16-18, 2023: Quire at [College Art Association Conference](https://www.collegeart.org/) 
+
+**2022**
+
+- June 9, 2022: Monthly [Quire office hours](https://newsletters.getty.edu/t/t-61FFEB8FD01FF7362540EF23F30FEDED) are introduced
+- May 12, 2022: [Announcement](https://newsletters.getty.edu/t/t-BCD0F34A2740395C2540EF23F30FEDED) goes out that that Quire will be switching to a new static site generator in advance of the upcoming open-source launch
+- April 14, 2022: Quire is a sponsor of the [2022 Library Publishing Forum](https://librarypublishing.org/forum/)
+- December 2, 2022: The [v1.0.0 pre-release and official open-source launch](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED) are announced
+
+**2021**
+
+- September 9, 2021: Quire [v0.20.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0200) is released, including the new multilevel subsection feature
+- May 13, 2021: The new Quire [website](https://quire.getty.edu/) is launched to the community
+- April 6, 2021: Quire [v0.19.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0190) released, including IIIF compatibility
+- February 18, 2021: Quire [community forum](https://github.com/thegetty/quire/discussions) is launched via GitHub Discussions
+
+**2020**
+
+- Dec. 1, 2020: Quire [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4) is launched
+- Oct 3, 2020: Six new features added to our roadmap
+- Sept 30, 2020: Quire team selected to beta test [*It Takes A Village: Open Source Software Sustainability*](https://www.lyrasis.org/programs/Pages/IMLS-OSS.aspx) tools
+- Sept 16, 2020: Welcome to Getty’s development team, Hannah Balenda!
+- Mar 9, 2020: Welcome to our new community manager, Erin Cecele Dunigan!
+- Feb 3, 2020: Quire [v0.18.0](https://github.com/gettypubs/quire-starter-theme/releases/tag/v0.18.0) released
+
 ## Upcoming Events
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
@@ -54,43 +94,3 @@ TBD <br>
 | Making Scholarly Digital Publications | April 5–6, 2018 | A two-day convening hosted by Getty, USC, and Brown University, and including teams from a variety of platforms: Quire, [Fulcrum](https://www.fulcrum.org/), [Editoria](https://editoria.pub/), [Scalar](https://scalar.me/), and [Manifold](https://manifoldapp.org/). |
 | College Art Association (CAA) | Feb 23, 2018 | “Open-Source Digital Publishing with Quire,” a workshop with Greg Albers and Sarah Wambold. |
 | Museum Computer Network (MCN) | November 7, 2017 | “Hands on with Static Site Generators: Publishing Modern Sites with a 1990s Approach,” a half-day Quire workshop with Greg Albers and Eric Gardner. |
-
-## News
-
-<div class="action-button">
-
-[Subscribe to Quire Newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4)
-
-</div>
-
-*Visit our [newsletter archive](/community/newsletter-archive/).*
-
-**2023**
-
-- May 11, 202: Quire [promotional trailer](https://vimeo.com/820983026/b3a116fb1e) released
-- April 4, 2023: Quire presentation at [Museums and the Web Conference](https://mw23.my.mw/)
-- March 9, 2023: New Quire [demo](https://vimeo.com/804066673/a665de952c) available. 
-- February 16-18, 2023: Quire at [College Art Association Conference](https://www.collegeart.org/) 
-
-**2022**
-
-- June 9, 2022: Monthly [Quire office hours](https://newsletters.getty.edu/t/t-61FFEB8FD01FF7362540EF23F30FEDED) are introduced
-- May 12, 2022: [Announcement](https://newsletters.getty.edu/t/t-BCD0F34A2740395C2540EF23F30FEDED) goes out that that Quire will be switching to a new static site generator in advance of the upcoming open-source launch
-- April 14, 2022: Quire is a sponsor of the [2022 Library Publishing Forum](https://librarypublishing.org/forum/)
-- December 2, 2022: The [v1.0.0 pre-release and official open-source launch](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED) are announced
-
-**2021**
-
-- September 9, 2021: Quire [v0.20.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0200) is released, including the new multilevel subsection feature
-- May 13, 2021: The new Quire [website](https://quire.getty.edu/) is launched to the community
-- April 6, 2021: Quire [v0.19.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0190) released, including IIIF compatibility
-- February 18, 2021: Quire [community forum](https://github.com/thegetty/quire/discussions) is launched via GitHub Discussions
-
-**2020**
-
-- Dec. 1, 2020: Quire [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4) is launched
-- Oct 3, 2020: Six new features added to our roadmap
-- Sept 30, 2020: Quire team selected to beta test [*It Takes A Village: Open Source Software Sustainability*](https://www.lyrasis.org/programs/Pages/IMLS-OSS.aspx) tools
-- Sept 16, 2020: Welcome to Getty’s development team, Hannah Balenda!
-- Mar 9, 2020: Welcome to our new community manager, Erin Cecele Dunigan!
-- Feb 3, 2020: Quire [v0.18.0](https://github.com/gettypubs/quire-starter-theme/releases/tag/v0.18.0) released
