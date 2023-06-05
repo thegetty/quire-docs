@@ -24,3 +24,37 @@ There is currently an issue with `quire build` on Windows 10. It is with one of 
 ### Running `quire new` on macOS
 
 If you're a Mac user and receive an error message that references "Developer/CommandLineTools" that means you need to install Apple Xcode, a set of developer tools for your Mac. Run the command `xcode-select --install`. It may take a few minutes to install. Once install is complete, try creating a new project again. 
+
+## Other Issues
+
+### Working with Very Large Projects
+
+The following error has been seen in projects with a lot of individual Markdown files, a lot of large images, or a lot of shortcode usage. It is caused by node.js running out of memory while trying to process the project files.
+
+```
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+```
+
+The fix is to increase the amount of memory allocated to Node.js following these steps:
+
+1. Determine the amount of memory on your machine. On macOS, go to the Apple () menu and select "About This Mac" and look for Memory. On Windows, go to "About your PC" and look for Installed RAM.
+2. Convert the amount you want to allocate from GB to MB by multiplying the GB number by 1024. You want to allocate as much as you can to Node while leaving a modest portion for other processes. If you have 16GB of memory try allocating 12GB to Node, which would be 12288.
+3. Open your command line shell, change directory (`cd`) into your project, and enter the following line to set the value temporarily in your project using the MB amount from the step above.
+
+    macOS:
+
+    ```
+    export NODE_OPTIONS=--max-old-space-size=12288
+    ```
+
+    Windows:
+
+    ```
+    $env:NODE_OPTIONS = '--max-old-space-size=12288'
+    ```
+
+4. Run `quire preview`
+
+If the error persists try allocating more memory by repeating Step 3 with a larger number. Up to half a GB less than your total memory.
+
+**Note:** setting the `NODE_OPTIONS` in this way will only persist as long as you have the same command-line session running. You will need to use the above `export`/`$env` command each time you start a close and re-open the command-line shell to work on your large project.
