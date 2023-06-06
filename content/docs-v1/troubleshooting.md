@@ -29,7 +29,7 @@ If you're a Mac user and receive an error message that references "Developer/Com
 
 ### Working with Very Large Projects
 
-The following error has been seen in projects with a lot of individual Markdown files, a lot of large images, or a lot of shortcode usage. It is caused by node.js running out of memory while trying to process the project files.
+The following error has been seen in projects with a lot of individual Markdown files, a lot of large images, or a lot of shortcode usage. It is caused by Node.js running out of memory while trying to process the project files.
 
 ```
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
@@ -55,6 +55,6 @@ The fix is to increase the amount of memory allocated to Node.js following these
 
 4. Run `quire preview`
 
-If the error persists try allocating more memory by repeating Step 3 with a larger number. Up to half a GB less than your total memory.
+If the error persists try allocating more memory by repeating Step 3 with a larger number. To a maximum of about a half a GB less than your total memory.
 
-**Note:** setting the `NODE_OPTIONS` in this way will only persist as long as you have the same command-line session running. You will need to use the above `export`/`$env` command each time you start a close and re-open the command-line shell to work on your large project.
+**Note:** setting the `NODE_OPTIONS` in this way will only persist as long as you have the same command-line session running. You will need to use the above `export`/`$env` command each time you close and re-open the command-line shell to work on your large project.
