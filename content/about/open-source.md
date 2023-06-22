@@ -5,7 +5,7 @@ type: essay
 online: false
 ---
 
-**As of December 2022 Quire is officially open source. View our [3-clause BSD open source license](https://github.com/thegetty/quire/blob/main/LICENSE).**
+**As of December 2022 Quire is officially open source. View our [3-clause BSD open-source license](https://github.com/thegetty/quire/blob/main/LICENSE).**
 
 Open source is a way of developing software where the code is free and available for others to use and adapt. Open-source software relies on both transparency and an engaged community of users. The community works together to both use and contribute to the development of the software and its code.
 
