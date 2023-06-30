@@ -147,3 +147,5 @@ When the `{% cite %}` shortcode is used, and corresponds to the short and full b
 When the shortcode is used in the page, the text will appear linked and when clicked upon will take a user to its corresponding bibliography entry on the same page. However, this cannot be done in reverse as the bibliography at the bottom of the page contains no links.
 
 For more information see the [*Citations & Bibliographies*](/docs-v1/citation-bibliographies) section of this guide.
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

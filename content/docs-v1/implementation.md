@@ -44,3 +44,5 @@ As of 2022, Quire was released as open-source software under a [BSD 3-Clause lic
 ## Versioning
 
 - Quire projects, once published, no longer require Quire to keep running. After publication, a compatible version of Quire would only be necessary to make new updates and re-output the various file formats. To update your version of Quire please see the [Install or Update section](/docs-v1/install-uninstall/#update-quire) of this guide.
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

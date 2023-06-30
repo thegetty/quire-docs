@@ -52,3 +52,5 @@ contributor:
 - If your publication has one or more editors, rather than authors, they should be type: primary, and role: editor in the YAML.
 
 For more information see the chapter on [Contributors](/docs-v1/contributors/)
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

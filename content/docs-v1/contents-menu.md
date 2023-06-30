@@ -106,3 +106,5 @@ Read more about [copyright and licenses in the *Metadata & Configuration* chapte
 Similarly, the “Cite This Page” feature in the Menu generates Chicago- and MLA-style citations for the current page based on YAML in the individual page itself, as well as that from the `publication.yaml` file.
 
 Read more about [citation-related YAML in the *Copyright & About Pages*](/docs-v1/copyright-about-pages/) chapter of this guide.
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

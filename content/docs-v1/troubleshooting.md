@@ -58,3 +58,5 @@ The fix is to increase the amount of memory allocated to Node.js following these
 If the error persists try allocating more memory by repeating Step 3 with a larger number. To a maximum of about a half a GB less than your total memory.
 
 **Note:** setting the `NODE_OPTIONS` in this way will only persist as long as you have the same command-line session running. You will need to use the above `export`/`$env` command each time you close and re-open the command-line shell to work on your large project.
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

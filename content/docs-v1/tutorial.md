@@ -296,3 +296,5 @@ Next Steps:
 - Sign up for our [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4).
 - [Contact us](mailto:quire@getty.edu) if you are interested in a one-on-one consultation to determine if Quire is right for you.
 - Watch a 17-minute [Quire demo](https://vimeo.com/804066673/a665de952c)
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

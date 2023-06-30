@@ -178,3 +178,5 @@ menu:
 {{< q-class "box tip" >}}
 - Note that when omitting `html` from `outputs` the page will not be included in the linear ordering of the book or in the menu, table of contents, or search index, but it is still built. When deploying your site from the built files simply delete any unneeded ones. Read more about site deployment in the [*Deploy Your Project*](/docs-v1/site-deploy/) section of this guide.
 {{< /q-class >}}
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

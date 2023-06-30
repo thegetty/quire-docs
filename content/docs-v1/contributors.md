@@ -179,3 +179,5 @@ contributor:
 - Contributors with the same name will override each other and only one will appear, but using a `sort_as` value would fix this. For example, if there are two Jane Smiths, assigning a `sort_as` value of "Smith, Jane 1" and "Smith, Jane 2" will sort them in that order, but their names would still be listed as Jane Smith.
 
 {{< /q-class >}}
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

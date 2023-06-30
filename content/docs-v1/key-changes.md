@@ -94,3 +94,5 @@ If you are making changes to YAML files or page YAML and they are not showing im
 Rather than running `quire install` to install Quire’s dependencies when you clone a project and preview it for the first time, you now need to run `npm install`.
 
 Before running `quire epub` or `quire pdf` you must first run `quire build` to create the site files that are needed to build the PDF and EPUB. You no longer need to run `quire site` since this is esentially the same action as `quire build`.
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

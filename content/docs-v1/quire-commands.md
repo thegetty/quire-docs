@@ -68,3 +68,5 @@ These commands are not yet available but are currently under development.
 {{< q-class "box tip" >}}
 - The key combo `Control-C` can be used to stop the preview of a Quire project. Stopping and restarting the Quire preview is helpful for troubleshooting.
 {{< /q-class >}}
+
+*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*
