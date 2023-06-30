@@ -1,7 +1,7 @@
 {{/*
 
   THIS OVERRIDE FILE ADDS htmlUnescape | safeHTML TO <title> TAG TO ALLOW
-  FOR AMPERSANDS IN PAGE TITLES.
+  FOR AMPERSANDS IN PAGE TITLES. AND ADDS GOOGLE ANALYTICS 4 SUPPORT.
 
   This is the document <head> (without an opening <body> tag; that lives in the
   baseof layout). This document currently links to the CDN verison of JQuery,
@@ -31,6 +31,9 @@
     {{- $.Scratch.Set "homepage" .File.UniqueID -}}
   {{- end -}}
   <title>{{ if ne .File.UniqueID ($.Scratch.Get "homepage") }}{{ with .Title }}{{ . | markdownify | plainify | htmlUnescape | safeHTML }} | {{ end }}{{ end }}{{ .Site.Data.publication.title | markdownify | plainify }}</title>
+  {{ if .Site.Params.GoogleAnalytics4 }}
+  {{ partial "analytics-ga4-head.html" . }}
+  {{ end }}
   {{ partial "metadata.html" . }}
 
   <link rel="icon" href="{{ $icon }}" />

@@ -16,7 +16,7 @@ publishDir: site
 
 footnoteReturnLinkContents: "↩"
 metaDataFormat: "yaml"
-googleAnalytics: "UA-8087223-38"
+# googleAnalytics: "UA-8087223-38"
 pygmentsUseClasses: true # must be set to style code samples
 
 pluralizeListTitles: true
@@ -51,6 +51,7 @@ params:
   figureModalIcons: true
   figureZoom: true
   citationPopupStyle: text # text | icon
+  GoogleAnalytics4: GTM-NRDC63K
   #
   # These are custom attributes for this project:
   menuView: fixed # fixed | hidden (default)

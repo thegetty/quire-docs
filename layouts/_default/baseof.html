@@ -2,7 +2,7 @@
 
   THIS OVERRIDE VERSION OF THE BASE FILE ADDS ADDITIONAL CLASSES TO THE "quire"
   DIV, TO FACILITATE A FIXED MENU LAYOUT OPTION. MAKES USE OF PARAMS IN
-  config.yml: menuView and menuSide
+  config.yml: menuView and menuSide. AND ADDS GOOGLE ANALYTICS 4 SUPPORT.
 
 
   Baseof template. All other files inherit from this layout, so edit it with care.
@@ -18,6 +18,9 @@
 <html lang="{{ .Site.Data.publication.language }}">
   {{ partial "head.html" . }}
   <body id="{{ with .Section }}{{ . | urlize }}-{{ end }}{{ .File.BaseFileName | lower }}"{{ if or .Page.Type .Page.Params.class }} class="{{ with .Page.Type }}quire-page-type--{{ . }}{{ end }}{{ with .Page.Params.class }} {{ . }}{{ end }}"{{ end }}>
+    {{ if .Site.Params.GoogleAnalytics4 }}
+      {{ partial "analytics-ga4-body.html" . }}
+    {{ end }} 
     {{- if .Site.Data.publication.section_banner -}}
       {{ $section := .Section | string }}
       {{ range .Site.Data.publication.section_banner }}
