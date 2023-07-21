@@ -17,7 +17,13 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [College Art Association (CAA) Publishing Grants](https://www.collegeart.org/programs/publishing-grants)
 
-* [Institute of Museum and Library Services (IMLS) Digital Humanities Advancement Grants](https://www.imls.gov/grants/available/digital-humanities-advancement-grants)
+* [Institute of Museum and Library Services (IMLS)](https://www.imls.gov/grants/grant-programs)
+
+    * [Museums Empowered: Professional Development Opportunities for Museum Staff](https://www.imls.gov/grants/available/museums-empowered-professional-development-opportunities-museum-staff ) — Digital Technology category
+
+    * [Museums for America](https://www.imls.gov/grants/available/museums-america) — Collections Stewardship and Access category
+
+    * [National Leadership Grants for Museums](https://www.imls.gov/grants/available/national-leadership-grants-museums) and [Libraries](https://www.imls.gov/grants/available/national-leadership-grants-libraries)
 
 * [Knight Foundation Funding](https://knightfoundation.org/apply/)
 
@@ -25,11 +31,13 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 * [Mellon Foundation Grants](https://mellon.org/grants/grantmaking-policies-and-guidelines/grant-proposal-guidelines/)
 
-* [National Endowment for the Humanities (NEH): Digital Humanities Advancement Grants](https://www.neh.gov/grants/odh/digital-humanities-advancement-grants)
+* [National Endowment for the Humanities (NEH)](https://www.neh.gov/grants)
 
-* [National Endowment for the Humanities (NEH): Fellowships Open Book Program ](https://www.neh.gov/grants/odh/FOBP) 
+    * [Digital Humanities Advancement Grants (with IMLS)](https://www.neh.gov/grants/odh/digital-humanities-advancement-grants) 
 
-* [National Endowment for the Humanities (NEH)-Mellon Fellowships for Digital Publication](https://www.neh.gov/grants/research/neh-mellon-fellowships-digital-publication)
+    * [Fellowships Open Book Program ](https://www.neh.gov/grants/odh/FOBP) 
+
+    * [Mellon Fellowships for Digital Publication](https://www.neh.gov/grants/research/neh-mellon-fellowships-digital-publication)
 
 ![Funding icon](/img/illustrations/quire-icon-funding-bw-300.jpg)
 
