@@ -102,7 +102,7 @@ To include the PDF file as a download from your online edition:
       name: PDF
       media_type: application/pdf
       link_relation: alternate
-      url: /_assets/downloads/output.pdf
+      url: /_assets/downloads/pagedjs.pdf
     ```
 
 4. Run `quire build` again to generate new `_site` files with the PDF included inside
