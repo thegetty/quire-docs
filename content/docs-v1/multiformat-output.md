@@ -31,9 +31,21 @@ EPUB files can be viewed on the default Books app on macOS, or on a number of fr
 
 To include the EPUB file as a download from your online edition:
 
-1. Move the `epubjs.epub` file into your `content/_assets/downloads/` directory (also rename the file if you’d like) 
-2. Confirm that the `resource_link` information in your `content/_data/publication.yaml` file to points to the EPUB file you just generated
-3. Run `quire build` again to generate new `_site` files with the EPUB included inside
+1. Rename the `epubjs.epub` file if you would like
+
+2. Move the EPUB file into your `content/_assets/downloads/` directory (create the `downloads` directory if it does not already exist)
+
+3. Confirm that the `resource_link` information in your `content/_data/publication.yaml` file to points to the EPUB file you just generated
+
+    ```yaml
+    - type: other-format
+      name: EPUB
+      media_type: application/epub+zip
+      link_relation: alternate
+      url: /_assets/downloads/epubjs.epub
+    ```
+
+4. Run `quire build` again to generate new `_site` files with the EPUB included inside
 
 ### EPUBCheck Validation
 
@@ -79,9 +91,21 @@ Alternatively, you can use [PrinceXML](https://www.princexml.com/) to generate y
 
 To include the PDF file as a download from your online edition:
 
-1. Move the `pagedjs.pdf` (or `prince.pdf`) file into your `content/_assets/downloads/` directory (also rename the file if you’d like)
-2. Confirm that the `resource_link` information in your `content/_data/publication.yaml` file to points to the PDF file you just generated
-3. Run `quire build` again to generate new `_site` files with the PDF included inside
+1. Rename the `pagedjs.pdf` (or `prince.pdf`) file if you would like
+
+2. Move the PDF file into your `content/_assets/downloads/` directory (create the `downloads` directory if it does not already exist)
+
+3. Confirm that the `resource_link` information in your `content/_data/publication.yaml` file to points to the PDF file you just generated
+
+    ```yaml
+    - type: other-format
+      name: PDF
+      media_type: application/pdf
+      link_relation: alternate
+      url: /_assets/downloads/output.pdf
+    ```
+
+4. Run `quire build` again to generate new `_site` files with the PDF included inside
 
 ### Modifying and Styling the PDF
 
