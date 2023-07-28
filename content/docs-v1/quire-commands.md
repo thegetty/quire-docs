@@ -18,7 +18,7 @@ Quire commands are typically run from Terminal on a Mac and PowerShell on a PC. 
 | Command       | Action   | Notes              |
 | ------------- | -------- | ------------------ |
 | **`quire new`** | Create a new Quire project with the default starter content | The command must include a project name, for example `quire new my-project`. The name can be anything as long as it doesn't contain spaces or special characters. When you run this command, a folder containing default starter content will be created in your computer's home directory. |
-| **`quire preview`** | Build and server the Quire site in development mode | This command enables you to preview your project at the default URL http://localhost:8080/. If there are errors in your project, messaging will appear in your command-line shell that point you to issues in your Markdown or YAML. |
+| **`quire preview`** | Build and serve the Quire site in development mode | This command enables you to preview your project at the default URL http://localhost:8080/. If there are errors in your project, messaging will appear in your command-line shell that point you to issues in your Markdown or YAML. |
 
 
 {{< q-class "box warning" >}}
@@ -30,10 +30,9 @@ Quire commands are typically run from Terminal on a Mac and PowerShell on a PC. 
 
 | Command       | Action   | Notes              |
 | ------------- | -------- | ------------------ |
-| **`quire build`** | Build Quire publication outputs | This creates the site files for the HTML format of the project. These site files are then used to create the PDF or EPUB versions of the project. This is therefore a necessary step before running the commands `quire epub` and `quire pdf`.|
+| **`quire build`** | Build project site files used to generate the various outputs | This creates the site files for the HTML format of the project. These site files are then used to create the PDF or EPUB versions of the project. This is therefore a necessary step before running the commands `quire epub` and `quire pdf`.|
 | **`quire pdf`** | Build Quire project in PDF format | You must run `quire build` before running this command. |
 | **`quire epub`** | Build Quire project in EPUB format | You must run `quire build` before running this command. |
-| **`quire site`** | Build Quire project in HTML format. | This is similar to running `quire build` command. |
 | **`quire clean`** | Remove old build outputs | This command is distinct from the [quire/11ty package](https://github.com/thegetty/quire/packages/11ty/package.json) script `clean`, to allow different behaviors for Quire editors and developers. |
 
 ## Get Help
