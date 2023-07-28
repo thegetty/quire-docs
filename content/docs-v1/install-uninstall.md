@@ -20,9 +20,17 @@ When you install Quire what you are actually installing is something called a {{
 ## Install Quire v1 (macOS)
 
 
-1. **Node.js** enables you to run javascript on your computer. Download and install the **LTS version** of Node.js: https://nodejs.org/en/download/.
-2. Installing and running Quire requires using the {{< q-def "command-line shell" >}} which on a Mac is called  **Terminal**. Open it by pressing Command–Space Bar and typing “Terminal”.
-3. In your Terminal, install **Quire** with the following command:
+1. **Apple’s Xcode** is a set of [developer tools for your mac](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by entering the following command in your Terminal and pressing enter. 
+
+    ```text
+    xcode-select --install
+    ```
+
+    Some operating systems will already have Xcode installed, in which case you will receive the message "command line tools are already installed". If Xcode is not already installed, an additional notification will pop up. Click “Install” and follow the prompts.
+
+2. **Node.js** enables you to run javascript on your computer. Download and install the **LTS version** of Node.js: https://nodejs.org/en/download/.
+3. Installing and running Quire requires using the {{< q-def "command-line shell" >}} which on a Mac is called  **Terminal**. Open it by pressing Command–Space Bar and typing “Terminal”.
+4. In your Terminal, install **Quire** with the following command:
 
     ```text
     npm install --global @thegetty/quire-cli
@@ -30,15 +38,7 @@ When you install Quire what you are actually installing is something called a {{
 
     The Quire installation process may take a few minutes, during which time there will be messaging output in your Terminal. The only messages of any concern are those labeled as ERROR or ERR. You can ignore any messages that tell you to run `npm audit`.
 
-4. If you receive an error message that says "Error: EACCES: permission denied", this is related to the ownership and **permissions settings** for the global node_modules directories installed in step 1. To fix this issue, run the following command:
-
-    ```text
-    sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
-    ```
-
-    Then try step 3 again.
-
-4. Confirm installation by running the following command in your Terminal:
+5. Confirm installation by running the following command in your Terminal:
 
     ```text
      quire --version
@@ -46,7 +46,12 @@ When you install Quire what you are actually installing is something called a {{
 
     You should see a version number that begins with a 1. If you receive the message "command not found" this means installation was unsuccessful.
 
-5. Visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/) or [*Get Started*](/docs-v1/getting-started) section of the documentation to learn how to use Quire or get started with a new project. 
+6. Visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/) or [*Get Started*](/docs-v1/getting-started) section of the documentation to learn how to use Quire or get started with a new project. 
+
+{{< q-class "box tip" >}}
+- If you receive an error message that says "Error: EACCES: permission denied," this is related to the ownership and **permissions settings** for the global `node_modules` directories installed in step 1. Please see our [*Troubleshooting*](/docs-v1/troubleshooting/#installing-quire-on-macos) section for a solutuion. 
+{{< /q-class >}}
+
 
 ## Install Quire v1 (Windows)
 
