@@ -9,6 +9,10 @@ aliases:
 
 Quire is designed to create a website version, a PDF version and two e-book versions of your project from the same source files. Each can be customized in various ways as described below. Once your outputs are ready, visit the [*Deploy Your Project*](/docs-v1/site-deploy/) section of our documentation to learn how to deploy your project to the web.
 
+{{< q-class "box tip" >}}
+- Read more about hiding/showing particular pages in particular outputs in the [*Page Types & Structure*](/docs-v1/site-deploy/) section of this guide.
+{{< /q-class >}}
+
 ## Site Output
 
 Create the HTML files for your project by running `quire build` in your command-line shell. The files will be built into your project’s `_site` folder along with all the necessary static assets like image files, stylesheets and script files. The `_site` file will be updated and overwritten each time you run `quire build`.
@@ -16,7 +20,7 @@ Create the HTML files for your project by running `quire build` in your command-
 Note that `quire build` creates the files for the online edition of your Quire project only. Read about creating EPUB and PDF editions in the sections below.
 
 {{< q-class "box tip" >}}
-- Read more about hiding/showing particular pages in particular outputs in the [*Page Types & Structure*](/docs-v1/site-deploy/) section of this guide.
+- If you are a Windows user, please visit the [*Troubleshooting*](/docs-v1/troubleshooting/#quire-commands) section of our documentation for a workaround to a known `quire build` related issue. 
 {{< /q-class >}}
 
 ## E-Book Output

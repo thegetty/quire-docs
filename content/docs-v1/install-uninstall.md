@@ -30,14 +30,6 @@ When you install Quire what you are actually installing is something called a {{
 
     The Quire installation process may take a few minutes, during which time there will be messaging output in your Terminal. The only messages of any concern are those labeled as ERROR or ERR. You can ignore any messages that tell you to run `npm audit`.
 
-4. If you receive an error message that says "Error: EACCES: permission denied", this is related to the ownership and **permissions settings** for the global node_modules directories installed in step 1. To fix this issue, run the following command:
-
-    ```text
-    sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
-    ```
-
-    Then try step 3 again.
-
 4. Confirm installation by running the following command in your Terminal:
 
     ```text
@@ -47,6 +39,11 @@ When you install Quire what you are actually installing is something called a {{
     You should see a version number that begins with a 1. If you receive the message "command not found" this means installation was unsuccessful.
 
 5. Visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/) or [*Get Started*](/docs-v1/getting-started) section of the documentation to learn how to use Quire or get started with a new project. 
+
+{{< q-class "box tip" >}}
+- If you receive an error message that says "Error: EACCES: permission denied," this is related to the ownership and **permissions settings** for the global `node_modules` directories installed in step 1. Please see our [*Troubleshooting*](/docs-v1/troubleshooting/#installing-quire-on-macos) section for a solutuion. 
+{{< /q-class >}}
+
 
 ## Install Quire v1 (Windows)
 

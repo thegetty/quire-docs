@@ -22,7 +22,7 @@ Quire will download a new starter project into a folder called “my-project” 
 Projects started with `quire new` will include demo content, images, and data. This information can be written over, re-used, or deleted altogether as you’d like.
 
 {{< q-class "box tip" >}}
-- If you're a Mac user and receive an error message that references "Developer/CommandLineTools" that means you need to install Apple Xcode, a set of developer tools for your Mac. Run the command `xcode-select --install`. It may take a few minutes to install. Once install is complete, try creating a new project again. 
+- If you're a Mac user and receive an error message that references "Developer/CommandLineTools" please see the [*Troubleshooting*](/docs-v1/troubleshooting/#quire-commands) section of this guide for a solution. 
 {{< /q-class >}}
 
 ## Copy an Existing Project
