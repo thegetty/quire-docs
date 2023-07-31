@@ -17,7 +17,8 @@ abstract: "Get the latest news and info about upcoming events"
 
 **2023**
 
-- July 13: New [bug reporting instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) are announced to the communtiy 
+- July 13: New [bug reporting instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) are announced to the communtiy
+- June 14: Minneapolis Institute of Art's Quire publication, *Highpoint Editions: A History & Catalogue, 2001–2021* [is reviewed](https://journalpanorama.org/wp-content/uploads/2023/06/Weyl-review-of-Highpoint-Editions.pdf) in *Panorama*
 - June 8: Collapsible [accordion sections](https://quire.getty.edu/docs-v1/accordions/) are introduced as a new feature
 - May 11: Quire [promotional trailer](https://vimeo.com/820983026/b3a116fb1e) released
 - April 4: Quire presentation at [Museums and the Web Conference](https://mw23.my.mw/)
