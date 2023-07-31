@@ -17,55 +17,53 @@ abstract: "Get the latest news and info about upcoming events"
 
 **2023**
 
-- May 11, 202: Quire [promotional trailer](https://vimeo.com/820983026/b3a116fb1e) released
-- April 4, 2023: Quire presentation at [Museums and the Web Conference](https://mw23.my.mw/)
-- March 9, 2023: New Quire [demo](https://vimeo.com/804066673/a665de952c) available. 
-- February 16-18, 2023: Quire at [College Art Association Conference](https://www.collegeart.org/) 
+- July 13: New [bug reporting instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) are announced to the communtiy 
+- June 8: Collapsible [accordion sections](https://quire.getty.edu/docs-v1/accordions/) are introduced as a new feature
+- May 11: Quire [promotional trailer](https://vimeo.com/820983026/b3a116fb1e) released
+- April 4: Quire presentation at [Museums and the Web Conference](https://mw23.my.mw/)
+- March 9: New Quire [demo](https://vimeo.com/804066673/a665de952c) available. 
+- February 16-18: Quire at [College Art Association Conference](https://www.collegeart.org/) 
 
 **2022**
 
-- June 9, 2022: Monthly [Quire office hours](https://newsletters.getty.edu/t/t-61FFEB8FD01FF7362540EF23F30FEDED) are introduced
-- May 12, 2022: [Announcement](https://newsletters.getty.edu/t/t-BCD0F34A2740395C2540EF23F30FEDED) goes out that that Quire will be switching to a new static site generator in advance of the upcoming open-source launch
-- April 14, 2022: Quire is a sponsor of the [2022 Library Publishing Forum](https://librarypublishing.org/forum/)
-- December 2, 2022: The [v1.0.0 pre-release and official open-source launch](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED) are announced
+- June 9: Monthly [Quire office hours](https://newsletters.getty.edu/t/t-61FFEB8FD01FF7362540EF23F30FEDED) are introduced
+- May 12: [Announcement](https://newsletters.getty.edu/t/t-BCD0F34A2740395C2540EF23F30FEDED) goes out that that Quire will be switching to a new static site generator in advance of the upcoming open-source launch
+- April 14: Quire is a sponsor of the [2022 Library Publishing Forum](https://librarypublishing.org/forum/)
+- December 2: The [v1.0.0 pre-release and official open-source launch](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED) are announced
 
 **2021**
 
-- September 9, 2021: Quire [v0.20.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0200) is released, including the new multilevel subsection feature
-- May 13, 2021: The new Quire [website](https://quire.getty.edu/) is launched to the community
-- April 6, 2021: Quire [v0.19.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0190) released, including IIIF compatibility
-- February 18, 2021: Quire [community forum](https://github.com/thegetty/quire/discussions) is launched via GitHub Discussions
+- September 9: Quire [v0.20.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0200) is released, including the new multilevel subsection feature
+- May 13: The new Quire [website](https://quire.getty.edu/) is launched to the community
+- April 6: Quire [v0.19.0](https://github.com/thegetty/quire/blob/main/CHANGELOG.md#0190) released, including IIIF compatibility
+- February 18: Quire [community forum](https://github.com/thegetty/quire/discussions) is launched via GitHub Discussions
 
 **2020**
 
-- Dec. 1, 2020: Quire [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4) is launched
-- Oct 3, 2020: Six new features added to our roadmap
-- Sept 30, 2020: Quire team selected to beta test [*It Takes A Village: Open Source Software Sustainability*](https://www.lyrasis.org/programs/Pages/IMLS-OSS.aspx) tools
-- Sept 16, 2020: Welcome to Getty’s development team, Hannah Balenda!
-- Mar 9, 2020: Welcome to our new community manager, Erin Cecele Dunigan!
-- Feb 3, 2020: Quire [v0.18.0](https://github.com/gettypubs/quire-starter-theme/releases/tag/v0.18.0) released
+- Dec. 1: Quire [newsletter](https://newsletters.getty.edu/h/t/DDE7B9372AAF01E4) is launched
+- Oct 3: Six new features added to our roadmap
+- Sept 30: Quire team selected to beta test [*It Takes A Village: Open Source Software Sustainability*](https://www.lyrasis.org/programs/Pages/IMLS-OSS.aspx) tools
+- Sept 16: Welcome to Getty’s development team, Hannah Balenda!
+- Mar 9: Welcome to our new community manager, Erin Cecele Dunigan!
+- Feb 3: Quire [v0.18.0](https://github.com/gettypubs/quire-starter-theme/releases/tag/v0.18.0) released
 
 ## Upcoming Events
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
-**Association of Academic Presses (AUP) Biennial Virtual Annual Meeting**<br>
-June 8, 9:00–10:15 a.m. PST <br>
-["Open Publishing Platforms: A User’s Guide Part 1: Platforms Developed by AUPress Members"](https://whova.com/web/TnWNpmx@0XFs-4pSD9eGZ-KC4mIi63bDAaefeNv8ogA=/Agenda/) <br> 
-Moderated by Daniel McShane (Suny Press) with Alison Cobra (University of Calgary Press), Jason Colman (Michigan Publishing Services) and Erin Cecele Dunigan (Quire)
- 
-**Association of Academic Museums and Galleries (AAMG) Annual Conference** <br>
-June 12-15 <br>
-[Sponsor and Exhibitor](https://www.aamg-us.org/conference-2023/) <br>
-University of Kansas <br>
-Lawrence, KS
-
 **National Museum Publishing Seminar (NMPS)** <br>
+
 August 28, 11:30-12:30 p.m. CST <br>
-["Gauging the impact of Digital Publications"](https://graham.uchicago.edu/programs-courses/annual-programs/national-museum-publishing-seminar) <br>
-Moderated by Erin Cecele Dunigan with Allison Levy (Brown University Library), Lauren Makholm (Art Institute of Chicago), and Liz Neely (Georgia O’Keeffe Museum) 
+["Gauging the Impact of Digital Publications"](https://uchicago.app.box.com/s/uri4a415ga944l3gspzqelsgtvnwda7z) <br>
+Moderated by Erin Cecele Dunigan with Allison Levy (Brown University Library), Lauren Makholm (Art Institute of Chicago), and Liz Neely (Georgia O’Keeffe Museum) <br>
+
+August 29, 11:45-12:30 p.m. CST <br>
+[Quire Community Meet-Up](https://uchicago.app.box.com/s/uri4a415ga944l3gspzqelsgtvnwda7z) <br>
+Hosted by Greg Albers and Erin Cecele Dunigan <br>
+
 
 **Museum Computer Network (MCN) Annual Conference** <br>
+
 November 8-10 <br>
 TBD <br>
 [More Information](https://mcn.edu/annual-conference/) 
@@ -74,6 +72,8 @@ TBD <br>
 
 | Event | Date | Description |
 | -- | -- | -- |
+| Association of Academic Presses (AUP) Biennial Virtual Annual Meeting | June 8, 2023 | "Open Publishing Platforms: A User’s Guide Part 1: Platforms Developed by AUPress Members," moderated by Daniel McShane (Suny Press) with Alison Cobra (University of Calgary Press), Jason Colman (Michigan Publishing Services) and Erin Cecele Dunigan (Quire)|
+| Association of Academic Museums and Galleries (AAMG) | June 12-15, 2023 | Sponsor and Exhibitor  |
 | Museums and the Web (MW) | April 14, 2023 | "How to Quire," with Greg Albers and Erin Cecele Dunigan | 
 | College Art Association Conference (CAA)| February 16-18, 2023 | 30-minute Quire demonstrations at Booth # 218 | 
 | IIIF Museums Community Group Meeting | May 10, 2022 | "Leveraging IIIF Resources with Getty’s Open-Source Digital Publishing Tool," with Greg Albers and Erin Cecele Dunigan.|
