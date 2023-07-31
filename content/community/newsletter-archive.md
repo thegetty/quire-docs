@@ -7,6 +7,8 @@ online: false
 
 2023
 
+- [July 2023](https://newsletters.getty.edu/t/t-3F9E79E9A8AA611F2540EF23F30FEDED) Introducing New Bug Reporting Instructions, Review of *Highpoint Editions* in *Panorama*, Quire in thec Midwest, Quire Office Hours, National Museum Publishing Seminar, Materia: Journal of Technical Art History, George Washington University Museum Studies
+- [June 2023](https://newsletters.getty.edu/t/t-48678C44829F4D3B2540EF23F30FEDED) New Feature: Introducing Accordion Sections, Museum Computer Network Annual Conference, A New Multiformat Publication from the Louvre, Museum Publishing Digital Interest Group, AAMG Annual Conference, Denver Art Museum, Minneapolis Institute of Art
 - [May 2023](https://newsletters.getty.edu/t/t-CD5C8433CDC7D9912540EF23F30FEDED): Quire Promotional Trailer, Quire v1 and Windows, Community Shoutout, Modifying and Styling PDF Output, Quire Office Hours, AUP Biennial Virtual Annual Meeting, AAMG Annual Conference, Vancouver Art Gallery
 - [April 2023](https://newsletters.getty.edu/t/t-029A517C40D7A6402540EF23F30FEDED): Museums and the Web 2023, Call for Freelance Digital Production Coordinators, Updated Instructions for Multiformat Output, Quire Office Hours, Museum Publishing Digital Interest Group, Pitts Theology Library
 - [March 2023](https://newsletters.getty.edu/t/t-956C22B86783A4152540EF23F30FEDED): College Art Association Conference 2023, New Quire Demo, Quire Office Hours, Museums and the Web, Adventures in Digital Publishing, Georgia O'Keeffe Museum
