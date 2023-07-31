@@ -731,7 +731,7 @@ project_list:
     title_info: "The State of Museum Digital Practice | 2022"
     pub_date: 2023-12-08
     url: https://gwu-museum-studies.github.io/Museum-Digital-Practice-2022/
-    customization_level: 
+    customization_level: minor
     github_user:
       - shineslike
       - gealbers
@@ -751,3 +751,17 @@ project_list:
       - ncamachoh
       - srebick
     note: "*Edith Heath and Emily Carr: From the Earth* is the first Quire project from the Vancouver Art Gallery. It accompanies the exhibition of the same name that brought Carr’s paintings and works on paper into dialogue with Heath’s ceramics, underscoring their mutual understanding of the land as the source and meaning of their work. We selected Quire for this project for its ease of use and made minimal customizations."
+
+  - id: "yale_italian_paintings"
+    src: /screenshots/_yale_italian_paintings.jpg
+    alt: "Italian Paintings at the Yale University Art Gallery. Laurence Kanter and Pia Palladino"
+    type: Collection Catalogue
+    publisher: "Yale University Art Gallery"
+    title_info: "Italian Paintings at the Yale University Art Gallery"
+    pub_date: 2023-05-31
+    url: https://italian-paintings-live.netlify.app/
+    customization_level: moderate
+    github_user:
+      - tiffanysprague
+      - zsofiaj
+    note: "*Italian Paintings at the Yale University Art Gallery* is the first comprehensive presentation of Yale’s full collection of Italian paintings, ranging from the thirteenth to the eighteenth century. Each catalogue entry is accompanied by high-resolution, zoomable images and features full technical notes, provenance, and published references, as well as a detailed discussion of conservation history (where relevant), attribution, dating, meaning, function, and significance. Yale University Art Gallery chose Quire for the ability to release entries in rolling batches, the fact that the platform is free, and the solid community support behind it."

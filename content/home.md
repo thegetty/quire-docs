@@ -100,7 +100,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 </div>
 </div>
 
-{{< q-showcase projects="materia_issue_2, _mosaik_luxemburg, josephine_halvorson, clowes_collection, amon_artofthescene" class="full-width-slider" sort="false" >}}
+{{< q-showcase projects="_denver_her_brush, _mosaik_luxemburg, clowes_collection, _materia_issue_3, _georgia_okeeffe" class="full-width-slider" sort="false" >}}
 
 </div>
 
