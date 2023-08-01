@@ -5,7 +5,7 @@ type: essay
 abstract: "Create interactive 360-degree rotations from static sequences of images"
 ---
 
-360-degree rotating images are created from a sequence of static image files that show incremental views around the diameter of a three-dimensional object. Quire displays these image sequences in a click-and-drag interface that allows users to freely flip through the sequence and thereby around the object.
+360-degree rotating images are created from a sequence of static image files that show incremental views around the diameter of a three-dimensional object. Quire displays these image sequences in a click-and-drag interface that allows users to freely flip through the sequence and thereby rotate the object.
 
 {{< q-class "box tip" >}}
 While designed for 360-degree rotations around an object, there's nothing to say an image sequence has to be that. The same system could be used on frames of a video, pages of a flip book, a panorama, or any other incremental sequence of images you might think of or create.
@@ -33,7 +33,7 @@ Quire also accepts PNG and SVG files for image sequences.
 
 ### Filenaming
 
-By default, Quire is expecting images in a sequence to be sequentially numbered JPGs or PNGs with three digits and the file suffix as `jpg` or `png` in lowercase: 
+By default, Quire expects image sequences to be sequentially numbered JPGs or PNGs with three digits and the file suffix as `jpg` or `png` in lowercase: 
 
 ```
 001.jpg, 002.jpg, 003.jpg ...
@@ -49,11 +49,13 @@ If your files do not follow the default naming scheme, you can specify this with
 
 ### Add the Images to Your Project
 
-All the images in your sequence should be in the their own directory, the name of which should be lowercase and not contain spaces or special characters. This directory should then be added to your `content/_assets/images/` directory with the rest of your assets. It can also be in a subdirectory if you’d like, just be sure to include that in the `id` path as shown in the next step.
+All the images in your sequence should be in the their own directory within the `content/_assets/images/` directory, along with your other image assets. As always, the name of the directory should be lowercase with no spaces or special characters. For example, `content/_assets/images/rotating-figure/`. 
+
+The image sequence can also be in a subdirectory. For example `content/_assets/images/figures/rotating-figure/`. In that case, just be sure to include the subdirectory path `figures/` in the sequence `id` as shown in the next step. 
 
 ## Write the Figure YAML
 
-To create the YAML for a sequence of images, add a `sequences` entry to the standard figure YAML markup. A sequence item must have an `id` corresponding to the path to the image files and a `behavior` attribute with both `continuous` and `sequence` specified. In this example, the files are in a `rotating-figure` directory inside `content/_assets/images/figures/`.
+To create a `figures.yaml` entry for an image sequence, add the `sequences` attribute to the standard figure YAML markup. Within `sequences`, add an `id` that corresponds with the path of the image files and a `behavior`. 
 
 ```yaml
 - id: "rotating-figure"
@@ -66,11 +68,13 @@ To create the YAML for a sequence of images, add a `sequences` entry to the stan
         - sequence
 ```
 
-(The `behavior` values are based on the [IIIF presentation API](https://iiif.io/api/presentation/3.0/#behavior). Currently only `continuous` and `sequence` are supported in Quire.)
+The `id` refers to the directory where your sequence is located as described in the [Add the Images to Your Project](#add-the-images-to-your-project) section above.
+
+The `behavior` attribute must always include both `continuous` and `sequence`. (The `behavior` values are based on the [IIIF presentation API](https://iiif.io/api/presentation/3.0/#behavior). Currently only `continuous` and `sequence` are supported in Quire.)
 
 ### Change the Direction
 
-By default, the images will be shown one after the other as the user clicks and drags from left to right. This can be changed by declaring the `viewing_direction` as `"right-to-left"`.
+By default, the images will be shown one after the other as the user clicks and drags from left to right. This can be changed by adding a `viewing_direction` attribute with the value `"right-to-left"`.
 
 ```yaml
 - id: "rotating-figure"
@@ -88,7 +92,7 @@ By default, the images will be shown one after the other as the user clicks and 
 
 ### Specify a Start Position
 
-The ordering of your images determines the order they will appear in the rotating sequence. Quire will start the sequence with the first file in order (typically `001.jpg`) but this can be customized by adding a `start` value to the figure YAML. The value should correspond to one of the images in your sequence.
+The naming of your image files determines the order in which they will appear, as described in [Filenaming](#filenaming). Quire will start the sequence with the first file in order (typically `001.jpg`) but this can be customized by adding a `start` value to the figure YAML. The value should correspond to one of the images in your sequence.
 
 ```yaml
 - id: "rotating-figure"
@@ -106,9 +110,9 @@ The `start` image is also what is used in Quire’s PDF and EPUB outputs, in pla
 
 ### Change the Default File Name
 
-As mentioned above, Quire is expecting images in a sequence to be sequentially numbered JPGs of PNGs with three digits and the file suffix as `jpg` or `png` in lowercase: 001.jpg, 002.jpg, 003.jpg, etc. 
+As mentioned above, Quire expects image sequences to be sequentially numbered JPGs or PNGs with three digits and the file suffix as `jpg` or `png` in lowercase: 001.jpg, 002.jpg, 003.jpg, etc. 
 
-If your files do not follow the default naming scheme, or are a different file format, you can specify this with the `regex` (regular expression) attribute in the figures.yaml entry.
+If your files do not follow the default naming scheme, or are a different file format, you can specify this with the `regex` (regular expression) attribute in the `figures.yaml` entry.
 
 For example, if you have image names like img_00001.jpeg, img_00003.jpeg, img_00005.jpeg, etc., the regex pattern would be:
 
@@ -124,7 +128,7 @@ For example, if you have image names like img_00001.jpeg, img_00003.jpeg, img_00
       regex: /img_\d{5}\.jpeg/
 ```
 
-The regex pattern must always be surrounded by slashes. The rest breaks down like this:
+The regex pattern must always be surrounded by slashes (/). The rest breaks down like this:
 
 - `img_`: a string that exactly matches "img_"
 - `\d`: any digit
