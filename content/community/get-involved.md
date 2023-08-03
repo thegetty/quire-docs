@@ -72,24 +72,9 @@ Organize Quire workshops, webinars, and other events. Let us know how we can hel
 </div>
 <div class="image-list">
 
-## Contribute Code
-
-Make suggestions for possible new Quire features or themes. Before getting started, review our [Contributor Guidelines](https://github.com/thegetty/quire/blob/master/CONTRIBUTING.md) to learn about the types of contributions we are looking for, how to get started, and best practices. 
-
-<div class="action-button">
-
-[Propose a Contribution](https://github.com/thegetty/quire/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=suggestion_box.yaml)
-
-</div>
-
-![Code icon](/img/illustrations/quire-icon-contributecode-bw-300.jpg)
-
-</div>
-<div class="image-list">
-
 ## Submit or Fix a Bug
 
-Bugs are sneaky, and we need your help spotting and fixing them! If you come across something broken or that just doesn't look right, please add it to our issues list. Or pick an issue from the list to tackle.
+Bugs are sneaky, and we need your help spotting and fixing them! If you come across something broken or that just doesn't look right, please add it to our issues list. Or pick an issue from the list to tackle. Learn more in our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md). 
 
 <div class="action-button">
 
@@ -110,9 +95,9 @@ The [Quire Documentation](/docs-v1/) is a perpetual work in progress. Dive in an
 
 <div class="action-button">
 
-[Suggest an Improvement to Docs](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
+[Suggest an Edit](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
 
-[Choose an Improvement to Make](https://github.com/thegetty/quire-docs/issues/)
+[Make an Edit](https://github.com/thegetty/quire-docs/issues/)
 
 </div>
 
@@ -121,13 +106,13 @@ The [Quire Documentation](/docs-v1/) is a perpetual work in progress. Dive in an
 </div>
 <div class="image-list">
 
-## Write an Article
+## Write a Recipe
 
-Submit an article about a specific aspect of working in Quire to be included in the [Resources](/resources/articles-videos/) section of our website.
+Share instructions on how to create popular customization in Quire. These recipes are included in the [Resources](/resources/reipes/) section of our website.
 
 <div class="action-button">
 
-[Propose a Topic](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
+[Propose a Recipe](https://github.com/thegetty/quire-docs/issues/new?assignees=erin-cecele%2Cgeealbers&labels=feature&template=issue.yaml)
 
 </div>
 
