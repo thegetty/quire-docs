@@ -1,14 +1,14 @@
 ---
-title: "Figures Images: 360-Degree Rotations"
+title: "Figures Images: Sequences & Rotations"
 weight: 6230
 type: essay
-abstract: "Create interactive 360-degree rotations from static sequences of images"
+abstract: "Create interactive 360-degree rotations and sequences from sets of static images"
 ---
 
-360-degree rotating images are created from a sequence of static image files that show incremental views around the diameter of a three-dimensional object. Quire displays these image sequences in a click-and-drag interface that allows users to freely flip through the sequence and thereby rotate the object.
+Interactive 360-degree rotations and sequences are created from sets of static image files. For rotations, each image is an incremental view around the diameter of a three-dimensional object. Other sequences might be things like frames of a video, pages of a flip book, or sections of a panorama. Quire displays these image sequences in a click-and-drag interface that allows users to freely flip through the sequence and thereby rotate around the object, walk through the video, etcetera.
 
 {{< q-class "box tip" >}}
-While designed for 360-degree rotations around an object, there's nothing to say an image sequence has to be that. The same system could be used on frames of a video, pages of a flip book, a panorama, or any other incremental sequence of images you might think of or create.
+View some [examples on our demo site](https://quire.getty.edu/demo/figures/sequences/).
 {{< /q-class >}}
 
 ## Prepare the Image Files
@@ -17,11 +17,11 @@ In general, the goal should be to **minimize the number of images and their indi
 
 ### Number of Images
 
-For high-quality 360-degree rotations, between 45 and 90 individual images should be sufficient. 
+For high-quality 360-degree rotations, between 45 and 90 individual images should be sufficient. For other sequences, the number of images may be more varied.
 
 There is no upper or lower technical limit to the number of images Quire can display in a sequence. However, the more images are included, the more bandwidth will be used both for you in hosting the site and for your users in visiting it. 
 
-High-end captures may include one image for every one degree around an object, or 360 total images. When taking a subset of those for display in Quire, be sure to take them at equal intervals. For example, if you want 45 total images, they should be taken at 8-degree intervals. Uneven intervals will lead to uneven rotation through the final sequence.
+High-end captures for rotations may include one image for every one degree around an object, or 360 total images. When taking a subset of those for display in Quire, be sure to take them at equal intervals. For example, if you want 45 total images, they should be taken at 8-degree intervals. Uneven intervals will lead to uneven rotation through the final sequence. Likewise, for non-rotating sequences. The more evenly spaced the incremental changes are from image to image, the smoother the final interactive will be.
 
 ### Image Format, Size, and Quality
 
@@ -106,7 +106,7 @@ The naming of your image files determines the order in which they will appear, a
       start: 032.jpg
 ```
 
-The `start` image is also what is used in Quire’s PDF and EPUB outputs, in place of the full interactive sequence.
+The `start` image (whether the default first image, or the one defined with the `start` attribute) is also what is used in Quire’s PDF and EPUB outputs, in place of the full interactive sequence.
 
 ### Change the Default File Name
 
@@ -138,3 +138,28 @@ The regex pattern must always be surrounded by slashes (/). The rest breaks down
 {{< q-class "box tip" >}}
 To learn more about regular expressions, check out the [RegexOne](https://regexone.com/) tutorial for beginners, and [RegEx101](https://regex101.com/) as a good tool to test your regex patterns.
 {{< /q-class >}}
+
+## Display the Images in Your Project
+
+Once the image files are in your project and you have your YAML entry complete, adding the images to your pages can be done with the `{% figure %}` shortcode. Users will be able to interact with the figure in the lightbox modal (by clicking on the image or figure label), but not directly on the page.
+
+```
+{% figure 'rotating-figure' %}
+```
+
+{{< q-class "box warning" >}}
+Sequential images will not be interactive if you have `figures.enableModal` set to `false` in your `config.yaml` file.
+{{< /q-class >}}
+
+Rotating and sequential images can also be added to the lightbox on `layout: entry` pages through `objects.yaml` file (see the [*Collection Catalogues*](/docs-v1/collection-catalogues/) section of this guide). When used in the entry page lightbox, they will be ready to interact with without having to open them full screen.
+
+```yaml
+- id: 'cat-1'
+  title: 'Catalogue Object 1'
+  artist: 'Alicia Q. Sculptor'
+  year: 'YYYY'
+  figure:
+    - id: 'rotating-figure'
+```
+
+Whether the sequence is included via the `{% figure %}` shortcode or the entry page lightbox, the start image (either the first image in the sequence or the image defined as `start` in `figures.yaml`) will be what is displayed in the PDF and EPUB outputs.
