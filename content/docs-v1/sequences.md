@@ -11,7 +11,7 @@ Interactive 360-degree rotations and sequences are created from sets of static i
 View some [examples on our demo site](https://quire.getty.edu/demo/figures/sequences/).
 {{< /q-class >}}
 
-## Prepare the Image Files
+## Prepare the Sequence Image Files
 
 In general, the goal should be to **minimize the number of images and their individual file size as much as possible** while still producing an image that rotates smoothly and looks crisp. You will likely need to test your sequences to find the settings that work best for your case, but following are some basic standards.
 
@@ -139,7 +139,7 @@ The regex pattern must always be surrounded by slashes (/). The rest breaks down
 To learn more about regular expressions, check out the [RegexOne](https://regexone.com/) tutorial for beginners, and [RegEx101](https://regex101.com/) as a good tool to test your regex patterns.
 {{< /q-class >}}
 
-## Display the Images in Your Project
+## Display the Image in Your Project
 
 Once the image files are in your project and you have your YAML entry complete, adding the images to your pages can be done with the `{% figure %}` shortcode. Users will be able to interact with the figure in the lightbox modal (by clicking on the image or figure label), but not directly on the page.
 
