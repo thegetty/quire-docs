@@ -1,5 +1,5 @@
 ---
-title: Zooming Images with IIIF
+title: "Figure Images: Deep Zoom with IIIF"
 weight: 6220
 type: essay
 abstract: "Adding high-resolution zooming images to your project"
