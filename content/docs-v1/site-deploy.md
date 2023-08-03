@@ -118,5 +118,3 @@ GitHub enables you to not only host your project code, but you can also use it t
 9. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
 
 If you make changes to your project and want to view them live, you will need to repeat stpes 3–6 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the lefthand menu. Your refreshed link will be at the top of the page. A green box indicates the site has been published and is now live.
-
-*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

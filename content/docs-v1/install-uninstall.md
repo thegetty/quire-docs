@@ -186,5 +186,3 @@ npm uninstall --global @thegetty/quire-cli
 ```
 
 Keep in mind, this will only uninstall the Quire CLI and not other related software like Node.js.
-
-*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

@@ -196,5 +196,3 @@ Some tips for previewing your publication:
 - **Hide pages from the sidebar menu** If you want to hide a page from sidebar menu include `menu: false` in the YAML.
 
 - **Start and stop the preview to refresh Quire** In some cases, changes to `.yaml`, `.scss` and `.css` files may not show up in your preview immediately. If this happens, use Control-C to stop the preview and `quire preview` to restart it.
-
-*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

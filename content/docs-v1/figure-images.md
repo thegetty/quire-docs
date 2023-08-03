@@ -218,5 +218,3 @@ Then use the `{% figure %}` shortcode as normal to insert the table into the pag
 ```
 
 For more information on HTML tables check out the [Mozilla website](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics).
-
-*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*

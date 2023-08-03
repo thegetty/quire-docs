@@ -132,5 +132,3 @@ order: 300
 This will automatically create a bibliography for your publication. By default, your bibliography will automatically be ordered according to the `full` value in your `references.yaml` file unless the `sort_as` attribute has been applied.
 
 {{< q-figure id="modern-bibliography" >}}
-
-*If Quire is not working as described in this documentation please see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) for next steps.*
