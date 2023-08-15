@@ -109,7 +109,7 @@ The page `order` is a number and will determine the order in which the page appe
 Numbering should be unique, and use sequential whole numbers, but it can skip numbers. So, if there’s no page with `order: 3`, Quire will proceed to look for the next number. Intentionally skipping numbers in your sequence can be useful to leave room for adding content later. For example, your frontmatter might start at "0", your first section might be "100", second section "200" and so on. This makes it much easier to add a page to an early part of your publication, without renumbering every subsequent page.
 
 {{< q-class "box tip" >}}
-- Add `class: page-one` to the page/chapter where you want page 1 to start for the PDF/Print output. This is often an Introduction or first essay rather than the cover, table of contents, or other frontmatter.
+- Add `classes: [page-one]` to the page/chapter where you want page 1 to start for the PDF/Print output. This is often an Introduction or first essay rather than the cover, table of contents, or other frontmatter.
 {{< /q-class >}}
 
 ## Create Section Landing Pages

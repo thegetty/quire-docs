@@ -61,10 +61,17 @@ When you output your project as a PDF, page numbers will automatically be added 
 
 Traditionally, the frontmatter pages of books are numbered in lowercase Roman numerals (i, ii, iii, iv, etc.). The Arabic numeral 1 is then assigned to the first page of true “content” for the book. Usually the first chapter, or an introduction. Quire handles things the same way.
 
-To assign a particular `.md` file to be page 1 of your project, add `class: page-one` to the page YAML. This tag defines that page as page 1 (in Arabic numerals), and everything before it is frontmatter and will be numbered in lowercase Roman.
+To assign a particular `.md` file to be page 1 of your project, add `classes: [page-one]` to the page YAML. It can also be written as:
+
+```yaml
+classes:
+  - page-one
+```
+
+This special class defines that page as page 1 (in Arabic numerals), and everything before it is frontmatter and will be numbered in lowercase Roman. 
 
 {{< q-class "box warning" >}}
-Only one page in your project can have the `class: page-one` tag.
+Only one page in your project can have the `classes: [page-one]` tag.
 {{< /q-class >}}
 
 ## Sidebar Menu
