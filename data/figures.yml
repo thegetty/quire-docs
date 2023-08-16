@@ -355,3 +355,13 @@ figure_list:
   - id: "accordion-expanded"
     src: /screenshots/accordion-expanded.jpg
     caption: "A content section wrapped with the `{% accordion %}` shortcode and in its expanded/open state."
+
+  - id: "quirelogo"
+    src: /illustrations/quire-logo.jpg
+
+  - id: "upennlogo"
+    src: /illustrations/pennlibraries-logo.jpg
+
+  - id: "pricelablogo"
+    src: /illustrations/pricelab-logo.jpg
+
