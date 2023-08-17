@@ -119,6 +119,22 @@ If you want to suppress the page-level bibliography but keep the in-text citatio
     displayOnPage: false
 ```
 
+### Page-level Bibliography with Page YAML
+
+If you do not want to use the `{% cite %}` shortcode to include pop-up citations, but still want a page-level bibliography you can use the page YAML to add additional references toy our essay. Just add a `citations` key to your page YAML and list `ids` that correspond with your desired `references.yaml` entries, as in the example below: 
+
+```YAML
+title: Chapter Title
+order: 10
+layout: page
+citations:
+ - "West 1939"
+ - "Evans 1938"
+ - "Lynd 1929"
+ ```
+
+You can also use a combination of both the `{% cite %}` shortcode and the `citations` page YAML key to add *additional* references to your page-level bibliography. 
+
 ### Complete Bibliography
 
 You can also create a complete bibliography for your entire publication from all the entries in the project's `references.yaml` file. To do this, create a `.md` file and add the `layout` type `bibliography` to the page YAML.
