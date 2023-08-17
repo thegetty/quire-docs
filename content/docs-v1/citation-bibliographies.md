@@ -121,7 +121,7 @@ If you want to suppress the page-level bibliography but keep the in-text citatio
 
 ### Page-level Bibliography with Page YAML
 
-If you do not want to use the `{% cite %}` shortcode to include pop-up citations, but still want a page-level bibliography you can use the page YAML to add additional references to your essay. Just add a `citations` key to your page YAML and list `ids` that correspond with your desired `references.yaml` entries, as in the example below: 
+If you do not want to use the `{% cite %}` shortcode to include pop-up citations, but still want a page-level bibliography you can use the page YAML to add additional references to your essay. Just add a `citations` key to your page YAML and list `id`s that correspond with your desired `references.yaml` entries, as in the example below: 
 
 ```YAML
 title: Chapter Title
