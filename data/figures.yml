@@ -355,3 +355,27 @@ figure_list:
   - id: "accordion-expanded"
     src: /screenshots/accordion-expanded.jpg
     caption: "A content section wrapped with the `{% accordion %}` shortcode and in its expanded/open state."
+
+  - id: "pdf-2column"
+    src: /screenshots/pdf-layout-refinement--2column.png 
+    caption: "A custom CSS style can be defined and applied to enlarge a figure across two columns of text when the PDF is generated with PrinceXML rather than Paged.js."
+
+  - id: "pdf-break"  
+    src: /screenshots/pdf-layout-refinement--break.png 
+    caption: "A custom CSS style can be defined and applied to insert breaks before or after a figure. In addition to breaking before or after a page, PrinceXML can also break before or after individual columns."
+
+  - id: "pdf-float1"
+    src: /screenshots/pdf-layout-refinement--float1.png 
+    caption: "A custom CSS style can be defined and applied to float a figure to the top of the page when the PDF is generated with PrinceXML rather than Paged.js. This allows the text to flow past the figure and fill up preceeding white space."
+
+  - id: "pdf-float2"
+    src: /screenshots/pdf-layout-refinement--float2.png 
+    caption: "PrinceXML’s ability to float figures to the top of the page is useful in achieving a cleaner layout, aligning the figure(s) to the top of the page and eliminating awkward chunks of text that might have been stuck there."
+
+  - id: "pdf-width"
+    src: /screenshots/pdf-layout-refinement--width.png
+    caption: "A custom CSS style can be defined and applied to change the width of a figure to help it fit within the available white space rather than having it bump to the next column or page."
+
+    
+    
+    
