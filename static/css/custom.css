@@ -853,6 +853,9 @@ s  }
   height: 3em;
   margin-bottom: -1em;
 }
+.quire-page h4 {
+  margin: 2rem 0 !important;
+}
 
 /* Add some space to the bottom of the page on screen */
 @media screen {
