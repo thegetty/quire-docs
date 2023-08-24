@@ -100,6 +100,17 @@ To include the PDF file as a download from your online edition:
 
 4. Run `quire build` again to generate new `_site` files with the PDF included inside
 
+### Output the PDF for Print or for Web
+
+By default, the PDF is output at full-resolution and with crop marks for professional printing. Figure images are included in the PDF at the same size they were added to the `content/_assets/images/` directory, except when the images have been designated as zooming with `zoom: true` in the `figures.yaml` file. For zooming images, Quire processes and uses a special image that's 2025px wide for the PDF and EPUB output. These are large enough for a full-page image in a printed book. This value can be changed in `_plugins/figures/iiif/config.js`, for instance to make the images smaller for a web-ready PDF. PDFs can also be downsampled to a smaller file size after they have been generated, using a program like Adobe Acrobat.
+
+Crop marks and bleeds can be removed using the variables in the `content/_assets/styles/variables.scss` file (which is further discussed below).
+
+```scss
+$print-bleed: 0;
+$print-crop-marks: false // true | false
+```
+
 ### Use Built-In Variables to Modify and Style the PDF
 
 Quire creates the PDF from the website version of your Quire site using CSS rules. You can modify Quire’s PDF styles using CSS just like you would modify Quire’s online styles. You can read more about styles in general in the [*Style Customization*](/docs-v1/styles-customization/) section of this guide.
@@ -131,17 +142,7 @@ $print-entry-caption-color: $white;
 $print-entry-image-display: all; // first | all
 ```
 
-By default, the PDF is output at full-resolution and with crop marks for professional printing. Figure images are included in the PDF at the same size they were added to the `content/_assets/images/` directory, except when the images have been designated as zooming with `zoom: true` in the `figures.yaml` file. For zooming images, Quire processes and uses a special image that's 2025px wide for the PDF and EPUB output. These are large enough for a full-page image in a printed book. This value can be changed in `_plugins/figures/iiif/config.js`, for instance to make the images smaller for a web-ready PDF. PDFs can also be downsampled to a smaller file size after they have been generated, using a program like Adobe Acrobat.
-
-Crop marks and bleeds can be removed using the variables in the `variables.scss`.
-
-```scss
-$print-bleed: 0;
-$print-crop-marks: false // true | false
-```
-
 ### Add Custom Styles to Refine the Layout
-
 
 Where a variable is not available, you can instead add custom CSS to your `content/_assets/styles/custom.css` file to achieve the desired result. You can target changes to *only* the print output by wrapping your CSS rules in a {{< q-def "media query">}}.
 
@@ -155,7 +156,9 @@ For example, this would hide all `video` elements in the print output:
 }
 ```
 
-Some of the CSS used in styling the PDF is from the CSS Paged Media Specification. This is a set of CSS rules designed specifically to style things in a page-like manner, including controlling left and right page rules, page numbering, and running feet and heads. There is good information about this in [Paged.js’s documentation](https://pagedjs.org/documentation/) as well as [in PrinceXML’s documentation](https://www.princexml.com/doc/paged/). For the most part, the CSS rules documented for one are also applicable to the other. The one primary exception are any CSS attributes that begin with a custom `-prince` name.
+Some of the CSS used in styling the PDF is from the [CSS Paged Media Specification](https://www.w3.org/TR/css-page-3/). This is a set of CSS rules designed specifically to style things in a page-like manner, including controlling left and right page rules, page numbering, and running feet and heads. There is good information about this in [Paged.js’s documentation](https://pagedjs.org/documentation/) as well as [in PrinceXML’s documentation](https://www.princexml.com/doc/paged/). For the most part, the CSS rules documented for one are also applicable to the other. The one primary exception are any CSS attributes that begin with a custom `-prince` name.
+
+### Use These Copy-and-Paste Styles to Fix Common Figure Issues
 
 Custom CSS can be particularly useful in addressing common layout issues in the PDF output like extra white space or awkward breaks at the end of columns and pages.
 
@@ -165,18 +168,17 @@ The following examples illustrate common scenarios and offer sample CSS that can
 - This level of CSS refinement should be done as late in the publishing process as possible, as any content changes might shift the way the pages flow and undo the CSS work you did.
 {{< /q-class >}}
 
-#### Change the Figure’s Width
+#### Reduce White Space by Changing Figure Width
 
-Extra white space might occur at the bottom of a page or column if a figure is too large to fit there and so bumps to the next column or page. In these cases, CSS can be used to adjust the width of the figure until it is small enough to fit in the open space. In this example, we’ve created a custom CSS style to make the figure 85% of its normal width (`pdf-85-percent-width`), and applied that style to the shortcode for the figure.
+If a figure is too large to fit at the bottom of a page or column, then it will bump to the next page, leaving extra white space in its place. To eliminate this white space, CSS can be used to adjust the width of the figure until it is small enough to fit in the open space. In this example, we’ve created a custom CSS style to make the figure 85% of its normal width (`pdf-85-percent-width`), and applied that style to the shortcode for the figure.
 
 ```
-{% figure 'fig-01' 'pdf-85-percent-width` %}
+{% figure 'fig-01' 'pdf-85-percent-width' %}
 ```
 
 {{< q-figure id="pdf-width" >}}
 
 **CSS**
-
 
 ```css
 @media print {
@@ -191,7 +193,7 @@ Extra white space might occur at the bottom of a page or column if a figure is t
 
 Note that while this CSS is specific for 85% width, this same pattern can be repeated to for any percentage width that might be necessary by changing the class name and the `max-width` value. The `auto` margins ensure the figure and caption are centered. Removing them will align them to the left.
 
-#### Insert a Break Before or After a Figure
+#### Refine Page and Column Breaks Around Figures
 
 CSS can also be used to force a break before or after a figure. This can be useful in scenarios such as the one illustrated here, where a heading has been separated from its main text. Using `pdf-column-break-after` to force a break after the figure in the left-hand column, pushes the heading into a more sensible location. Note that column breaks are supported in PrinceXML but not in Paged.js. Both tools support page breaks.
 
@@ -221,7 +223,7 @@ CSS can also be used to force a break before or after a figure. This can be usef
 }
 ```
 
-#### Float a Figure to the Top of the Page
+#### Eliminate White Space and Align Figures to the Top of the Page
 
 If you use PrinceXML to generate your PDF, there are some additional options available to you. In particular is the ability to float an image to the top of the page. Figures that are floated to the top of the page will allow the text after them to flow past them and into the preceding column or page. This can be useful to fill in white spaces that are too small for a figure even if the figure has a reduced width.
 
