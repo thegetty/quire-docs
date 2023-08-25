@@ -60,7 +60,12 @@ This two-hour workshop led by representatives from Getty and Quire, will provide
 **6:15 p.m.** <br>
 World Cat Live
 
-The MCN Annual Conference kicks off the evening of Nov. 8 with Ignite. This popular event is open to all MCN attendees and registration is not required. 
+The MCN Annual Conference kicks off the evening of Nov. 8 with Ignite. This popular event is open to all MCN attendees. 
 
+<div class="action-button paired-button">
+
+[Register for MCN](https://mcn.edu/registration-now-open/)
+
+</div>
 
 {{< q-figure id="mcnlogo"  >}}
