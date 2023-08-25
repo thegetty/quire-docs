@@ -365,3 +365,9 @@ figure_list:
   - id: "pricelablogo"
     src: /illustrations/pricelab-logo.jpg
 
+  - id: "mcnlogo"
+    src: /illustrations/mcn-logo.png
+
+  - id: "vanpelt"
+    src: /screenshots/van-pelt.jpg
+
