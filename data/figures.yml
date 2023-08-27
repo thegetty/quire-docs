@@ -124,6 +124,11 @@ figure_list:
   - id: "modern_contributors-page"
     src: /screenshots/modern_contributors-page.jpg
     caption: "By default, page contributors are listed in the page header, under the title. Contributor professional `title` and `affiliation` will be included unless `contributor_byline: false` is set in the page YAML, or `bylineFormat: false` is set in your `config.yaml` file."
+  
+  - id: "modern_contributors-page-v1"
+    src: /screenshots/modern_contributors-page.jpg
+    caption: "By default, page contributors are listed in the page header, under the title. The contributor’s `title` and `affiliation` will be displayed if available, or unless `byline_format: false` is set in the page YAML, or `bylineFormat: false` is set in the `config.yaml` file."
+
 
   - id: "modern_contributors-name-title-block"
     src: /screenshots/modern_contributors-name-title-block.jpg
