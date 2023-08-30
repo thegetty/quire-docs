@@ -356,6 +356,21 @@ figure_list:
     src: /screenshots/accordion-expanded.jpg
     caption: "A content section wrapped with the `{% accordion %}` shortcode and in its expanded/open state."
 
+  - id: "quirelogo"
+    src: /illustrations/quire-logo.jpg
+
+  - id: "upennlogo"
+    src: /illustrations/pennlibraries-logo.jpg
+
+  - id: "pricelablogo"
+    src: /illustrations/pricelab-logo.jpg
+
+  - id: "mcnlogo"
+    src: /illustrations/mcn-logo.png
+
+  - id: "vanpelt"
+    src: /screenshots/van-pelt.jpg
+    
   - id: "pdf-2column"
     src: /screenshots/pdf-layout-refinement--2column.png 
     caption: "A custom CSS style can be defined and applied to enlarge a figure across two columns of text when the PDF is generated with PrinceXML rather than Paged.js."
@@ -375,7 +390,3 @@ figure_list:
   - id: "pdf-width"
     src: /screenshots/pdf-layout-refinement--width.png
     caption: "A custom CSS style can be defined and applied to change the width of a figure to help it fit within the available white space rather than having it bump to the next column or page."
-
-    
-    
-    
