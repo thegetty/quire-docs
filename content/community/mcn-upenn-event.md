@@ -3,6 +3,8 @@ title: A Day of Digital Publishing<br/>& Quire
 weight: 2850
 type: page
 abstract: "Free to all, join us at Penn this fall to learn more about digital publishing and Quire"
+menu: false
+online: false
 ---
 
 {{< q-figure id="vanpelt" >}}
