@@ -11,7 +11,7 @@ Quire is designed to credit and add contributors to publications in a flexible w
 
 ## Add Contributors to Your Project
 
-Contributors can be listed under `contributor` in your `publication.yaml file`. Contributors that are specific to a page in your project can also be listed in the page YAML at the top of that particular page.
+Contributors can be listed under `contributor` in your `publication.yaml` file. Contributors that are specific to a page in your project can also be listed in the page YAML at the top of that particular page. For volumes with a large number of contributors of individual papers or essays, it is common practice to put information about the primary, credited authors in the `publication.yaml` file, and the information about the individual authors in the page YAML of their respective contributions.
 
 At minimum, each contributor must have a `first_name` and `last_name`, or just `full_name`. In addition to these, wherever they are listed (`publication.yaml` or page YAML), the following attributes can be used for your contributors:
 
@@ -30,9 +30,9 @@ At minimum, each contributor must have a `first_name` and `last_name`, or just `
   bio:
 ```
 
-Contributor information is embedded in Quire projects in a way that is optimized for search engine discovery. For this reason, we recommend listing all your project’s authors in the `publication.yaml` file. It's advisable to give the main authors `type: primary` and any other contributors (like authors of individual papers) `type: secondary`.
+Quire looks for `type: primary` and `type: secondary` as a way to distinguish between the project’s primary and secondary authors, or in metadata terms, the "creators" versus the "contributors". You can also define your own custom `type` for use with the `{% contributors %}` shortcode (described below), or for other custom needs.
 
-## Display Contributors on Your Cover
+## Format Contributors on Your Cover
 
 Any contributor listed in your `publication.yaml` file that has a `type: primary` will be considered a main author for your project and will be listed on the cover page, in the site menu, and in the metadata included in the project code. For publications with more than one author, names will be listed alphabetically.
 
@@ -50,7 +50,7 @@ contributor_as_it_appears: as told by Beyoncé, Kelly Rowland,
 
 While the `contributor_as_it_appears` value will override any contributor information otherwise listed, it is still recommended that you list the individual authors under the `contributor` area in your `publication.yaml`, as this will be used as metadata for your book and will aid search engines and social media sites in discovering and listing your site.
 
-## Display Contributors on Individual Pages
+## Display and Format Contributors in Page Headers
 
 Individual pages in your publication can have specific authors. Add them to the page YAML either with their names and other information, or by using an `id` that references a corresponding listing in your `publication.yaml` file.
 
@@ -63,44 +63,50 @@ contributor:
 ```
 
 ```YAML
-title: Introduction
-layout: page
+contributor:
+  - full_name: Kelly Roland
+```
+
+```YAML
 contributor:
   - id: kroland
 ```
 
-### Contributors in the Page Heading
+For most [page types](/docs-v1/pages/#define-page-types), contributors to the page will be automatically listed at the top of the page just under the title. By default, they will appear with their names and, if given, their titles and affiliations (the `name-title` format). You can change this by specifying a different format either globally or on a page-by-page basis.
 
-For most [page types](/docs-v1/pages/#define-page-types), you will notice that contributors to a page will be automatically listed at the top of the page just under the title. By default, they will appear with their names and, if given, their titles and affiliations. You can override this by specifying a new value either on a page-by-page basis or globally.
+| Format       | Display |
+| ------------ | ------ |
+| `name-title` | Name, title, and affiliation |
+| `name`       | Name only |
+| `false`      | Nothing |
 
-On an individual page, in the page YAML:
-
-```yaml
-contributor_byline: name | name-title | false
-```
-
-For the entire publication, in the `config.yaml` file:
+The byline format is set globally for the entire publication in the `content/_data/config.yaml` file:
 
 ```yaml
-bylineFormat: name | name-title | false
+bylineFormat: name-title
 ```
-While `name-title` is the default (and will be used if no value is specified), `name` will omit any title or affiliation information, and `false` will remove the contributor listing from the heading of the page altogether.
 
-{{< q-figure id="modern_contributors-page" >}}
+It can be overridden on individual pages in the page’s YAML:
+
+```yaml
+byline_format: false
+```
+
+{{< q-figure id="modern_contributors-page-v1" >}}
 
 {{< q-class "box tip" >}}
 
-- If you specify `bylineFormat: false` in the `config.yaml` you can still have names appear on individual pages by specifying either `contributor_byline: name-title` or `contributor_byline: name` on that page.
+- If you specify `bylineFormat: false` in the `config.yaml` you can still have names appear on an individual page by specifying either `byline_format: name-title` or `byline_format: name` in the YAML for that page.
 
 {{< /q-class >}}
 
-Just as with the cover, if you want to display the contributors in a particular way, such as “Translated by Author Name”, you can do so by specifying a `contributor_as_it_appears` value in the page YAML.
+Just as with the cover, if you want to display the contributors in a particular way, such as “Translated by Author Name”, you can do so by specifying a `contributor_as_it_appears` value in the page YAML. This value will also override the output of the `{% contributors %}` shortcode (see below) if it is used on the page.
 
-### Contributors Elsewhere on the Page
+### List Contributors Within a Page Using the `{% contributors %}` Shortcode
 
-You can also add lists of contributors to the main body of a page using the `{% contributor %}` shortcode. This allows you to create a page of contributor biographies, a section of bios for a single page, a list of contributors, a byline for a particular page, or other similar applications.
+You can also add lists of contributors to the main body of a page using the `{% contributors %}` shortcode. This allows you to create a page of contributor biographies, a section of bios for a single page, a list of contributors, a byline for a particular page, or other similar applications.
 
-The shortcode requires both a `context` and a `format` value, and allows for an optional `type` and `align` value as well.
+The shortcode requires both a `context` and a `format` value, and allows for optional `type` and `align` values as well.
 
 Here is an example of a shortcode that would list all the publication's main authors on a single page, for example a `contributors.md` file:
 
@@ -114,31 +120,47 @@ Here is an example of a shortcode that would list all the authors for an essay o
 {% contributors context=pageContributors format='name-title-block' align='right' %}
 ```
 
-The `context` value determines which contributors will be included in the list. Predefined `context` values are:
+#### List Contributors from the Page or the Entire Publication
+
+The `{% contributors %}` shortcode can list contributors from the page it’s used on, or from across the entire publication. This is specified with the `context` value, which is required. The allowed `context` values are:
 
 | Value | Description |
 | --- | --- |
 |`pageContributors` | Only the contributors listed for the page the shortcode appears on. |
 |`publicationContributors` | All contributors listed in the publication, whether listed on individual pages or in the `publication.yaml` file. |
 
+{{< q-class "box warning" >}}
+- Note that unlike all other shortcode values, the value for `context` never appears in quotes within the shortcode. It should be `context=pageContributors`, not `context='pageContributors'`.
+{{< /q-class >}}
+
+### Choose a Format for the Contributors List
+
 The `format` value determines what information will be listed for each contributor in the `context`, and how it will be formatted. Possible `format` values are:
 
-| Value | Description |
-| --- | --- |
-|`initials` | Looks for the capital letters in a contributor first and last name and combines them together. Jane Pauley becomes J.P.; Ralph Waldo Emerson becomes R.W.E. |
-| `name` | Just the name. |
-| `name-title` | The name and, when available, the title and affiliation; on a single line |
-| `name-title-block` | The name and, when available, the title and affiliation; broken onto separate lines. |
-| `bio` |  The name and, when available, a picture, offsite link to their personal site, and a bio. Plus links to any individual pages in the project for which they are listed as a contributor. |
+| Value | Type | Description |
+| --- | --- | --- |
+| `bio` |  block | The name and, when available, a picture, offsite link to their personal site, and a bio. Plus links to any individual pages in the project for which they are listed as a contributor. |
+|`initials` | inline | Looks for the capital letters in a contributor first and last name and combines them together. Jane Pauley becomes J.P.; Ralph Waldo Emerson becomes R.W.E. Multiple names will be listed with commas, ie. "R.W.E, J.P, and K.R.". |
+| `name` | block | Just the name. |
+| `name-title` | block | The name and, when available, the title and affiliation; on a single line |
+| `name-title-block` | block | The name and, when available, the title and affiliation; broken onto separate lines. |
+| `string` | inline | Just the name. Multiple names will be listed with commas, ie. "Name, Name, and Name". |
 
-
+Formats that are a "block" type will display on their own lines in a `<ul>` (unordered list) block element. Those that are "inline" type will display within running text in a `<span>` inline element, *or* when put on their own lines in the Markdown, the `<span>` will be wrapped in a `<p>` (paragraph) block element.
+ 
 {{< q-figure id="modern_contributors-name-title-block" >}}
 
 {{< q-figure id="modern_contributors-initials" >}}
 
 {{< q-figure id="modern_contributors-bio" >}}
 
-You can also use any contributor `type` you define. So if you give a contributor a `type: primary` (such as for your main publication authors), then a shortcode using `type=primary` will list any of your project’s primary contributors.
+### List Only a Subset of Contributors
+
+While the `{% contributors %}` shortcode will list contributors from the page or the publication based on the `context` as described above, you can choose to list only a subset of those contributors based on their `type`. For example, if you give a contributor a `type: primary` (such as for your main publication authors as described above), then a shortcode using `type='primary'` will list only your project’s primary contributors.
+
+You can use any value for `type` that you’d like and it will work in the shortcode.
+
+### Customize the Alignment of the Text
 
 The `align` value will align the text. If no value is given, text alignment will default to the left. The possible values are:
 
@@ -148,7 +170,9 @@ The `align` value will align the text. If no value is given, text alignment will
 | `center` | Align the names and text in the center. |
 |`right` | Align the names and text to the right. |
 
-See the [`{% contributor %}` shortcode reference](/docs-v1/for-developers/#shortcodes-api) for details on each of the standard contributor attributes.
+{{< q-class "box warning" >}}
+- The `align` value will have no affect on on the "inline" formats described above: `initials` and `string`.
+{{< /q-class >}}
 
 #### Sort Contributor Lists
 
