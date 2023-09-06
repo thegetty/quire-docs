@@ -96,7 +96,7 @@ byline_format: false
 
 {{< q-class "box tip" >}}
 
-- If you specify `bylineFormat: false` in the `config.yaml` you can still have names appear on individual pages by specifying either `byline_format: name-title` or `byline_format: name` on that page.
+- If you specify `bylineFormat: false` in the `config.yaml` you can still have names appear on an individual page by specifying either `byline_format: name-title` or `byline_format: name` in the YAML for that page.
 
 {{< /q-class >}}
 
