@@ -49,7 +49,7 @@ When you install Quire what you are actually installing is something called a {{
 6. Visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/) or [*Get Started*](/docs-v1/getting-started) section of the documentation to learn how to use Quire or get started with a new project. 
 
 {{< q-class "box tip" >}}
-- If you receive an error message that says "Error: EACCES: permission denied," this is related to the ownership and **permissions settings** for the global `node_modules` directories installed in step 1. Please see our [*Troubleshooting*](/docs-v1/troubleshooting/#installing-quire-on-macos) section for a solutuion. 
+- If you receive an error message that says "Error: EACCES: permission denied," this is related to the ownership and **permissions settings** for the global `node_modules` directories installed in step 1. Please see our [*Troubleshooting*](/docs-v1/troubleshooting/#installing-quire-on-macos) section for a solution. 
 {{< /q-class >}}
 
 
