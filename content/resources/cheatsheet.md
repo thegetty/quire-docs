@@ -94,7 +94,7 @@ figure_list:
 
 ## Shortcodes
 
-A shortcode is a snippet of code inserted in a content (`.md`) file that pulls in information from other files in your project. For example, in Quire, the `% figure %` shortcode is used to insert an image from the `content/_assets/images` folder. It additionally references the `id`, `caption`, and other optional information from your `figures.yaml` data file. Other shortcodes include `% cite %`, `% contributors %`, and `% accordion %`. Examples of proper formatting for these shortcodes are below.
+A shortcode is a snippet of code inserted in a content (`.md`) file that pulls in information from other files in your project. For example, in Quire, the `{% figure %}` shortcode is used to insert an image from the `content/_assets/images` folder. It additionally references the `id`, `caption`, and other optional information from your `figures.yaml` data file. Other shortcodes include `{% cite %}`, `{% contributors %}`, and `{% accordion %}`. Examples of proper formatting for these shortcodes are below.
 
 ```go
 {% figure '##' %}
