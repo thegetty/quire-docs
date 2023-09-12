@@ -64,12 +64,12 @@ YAML is used for configuring how Quire works and for providing publication metad
 ```yaml
 ---
 title: Quire Cheatsheet
-weight: 600
+order: 600
 type: essay
 ---
 ```
 
-`.yaml` files are also used for storing information about figures, bibliographic references, and art objects. Let's take the example of `figures.yaml`. For publications with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yaml` file, which lives inside your `data` folder. This figure image metadata can then be called from wherever you need it in your project by using a shortcode. Here is an example of how the `figures.yaml` appears in the Quire default starter.
+`.yaml` files are also used for storing information about figures, bibliographic references, and art objects. Let's take the example of `figures.yaml`. For publications with more than just a handful of images, figures and all their associated attributes can be listed in the `figures.yaml` file, which lives inside your `_data` folder. This figure image metadata can then be called from wherever you need it in your project by using a shortcode. Here is an example of how the `figures.yaml` appears in the Quire default starter.
 
 ```yaml
 figure_list:
@@ -94,17 +94,19 @@ figure_list:
 
 ## Shortcodes
 
-A shortcode is a snippet of code inserted in a content (`.md`) file that pulls in information from other files in your project. For example, in Quire, the `q-figure` shortcode is used to insert an image from the `static/img` folder. It additionally references the `id`, `caption`, and other optional information from your `figures.yaml` data file. Other shortcodes include `q-cite`, `q-bibliography`, and `q-contributor.` Examples of proper formatting for these shortcodes are below.
+A shortcode is a snippet of code inserted in a content (`.md`) file that pulls in information from other files in your project. For example, in Quire, the `% figure %` shortcode is used to insert an image from the `content/_assets/images` folder. It additionally references the `id`, `caption`, and other optional information from your `figures.yaml` data file. Other shortcodes include `% cite %`, `% contributors %`, and `% accordion %`. Examples of proper formatting for these shortcodes are below.
 
 ```go
-{{</* q-figure id="##" */>}}
+{% figure '##' %}
 
-{{</* q-figure-group id="##, ##, ##" */>}}
+{% figuregroup '2' '##, ##' %}
 
-{{</* q-cite "Lastname YYYY" */>}}
+{% cite 'Lastname YYYY' %}
 
-{{</* q-bibliography */>}}
+{% contributors context=pageContributors format='bio' %}
 
-{{</* q-contributor range="xxxx" type="xxxx" */>}}
+{% accordion '## Heading Text' %}
+  ...
+{% endaccordion %}
 
 ```
