@@ -187,7 +187,7 @@ Here are some of the things you can do with Markdown:
 
 ### Try it for Yourself
 
-1. In the `about.md` file, delete all the text that falls below the page YAML, starting with “This starter theme…”.
+1. In the `preface.md` file, delete all the text that falls below the page YAML, starting with “This starter theme…”.
 2. With your page now empty, aside from the page YAML, copy-and-paste the following text that has been formatted with Markdown:
 
 ```md
@@ -246,7 +246,7 @@ A background image can be added to pages with a `layout` type of either `splash`
 ### Try it for Yourself
 
 1. Open the `index.md` file found in the main `content` directory. This is your cover page.
-2. Delete p`attern-spiral-overlay.png` and replace it with the text below:
+2. Delete `spiral-overlay.png` and replace it with the text below:
 ```
 figures/lange-house.jpg
 ```
