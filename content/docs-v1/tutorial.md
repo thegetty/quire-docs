@@ -187,7 +187,7 @@ Here are some of the things you can do with Markdown:
 
 ### Try it for Yourself
 
-1. In the `preface.md` file, delete all the text that falls below the page YAML, starting with “This starter theme…”.
+1. In the `preface.md` file, delete all the text that falls below the page YAML, starting with “Dorothea Lange had an extraordinary life…”.
 2. With your page now empty, aside from the page YAML, copy-and-paste the following text that has been formatted with Markdown:
 
 ```md
