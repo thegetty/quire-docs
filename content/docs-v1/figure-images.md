@@ -169,7 +169,7 @@ You would then grab `809104705` and add that as a `media_id` to the YAML for thi
 
 ## Add Tables
 
-In addition to inserting tables in your project [as Markdown](https://www.markdownguide.org/extended-syntax/#tables), you can also embed tables as HTML files, a format which enables more complex formatting. In the `/_assets/images` directory of your project create a new folder called `tables`. Create an `.html` file in that folder that follows the structure below:
+In addition to inserting tables in your project [as Markdown](https://www.markdownguide.org/extended-syntax/#tables), you can also embed tables as HTML files, a format which enables more complex formatting. In the `/_assets` directory of your project create a new folder called `tables`. Create an `.html` file in that folder that follows the structure below:
 
 ``` html
 <table>
@@ -217,4 +217,12 @@ Then use the `{% figure %}` shortcode as normal to insert the table into the pag
 {% figure 'table-1-1' %}
 ```
 
-For more information on HTML tables check out the [Mozilla website](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics).
+Sometimes, the contents of a table may not fit on the page. To fix this, you can scale the text size down by adding a special class to the shortcode:
+
+```
+{% figure 'table-1-1' 'is-table-scale-7' %}
+```
+
+The built-in options in Quire are `is-table-scale-1` through `is-table-scale-9`. The smaller the number, the smaller the text, so adjust the number as needed to see what looks best for your Quire project.
+
+For more information on HTML tables, check out the [Mozilla website](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics).
