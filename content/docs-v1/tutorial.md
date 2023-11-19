@@ -97,7 +97,7 @@ Quire lets you preview your publication in your browser as you work on it. Your 
 
 To edit the demo content created by running `quire new`, you’ll need a text editor. As its name implies, a text editor is simply a program used to edit text. It’s like Microsoft Word, but instead of dealing with text formatted for print, text editors use human-readable code and markup to format the text for conversion to HTML.
 
-Macs and PCs come with some simple text editors built in, but we recommend using one that offers more in terms of auto-formatting as well as being able to see and work in multiple text files at a time. [Visual Studio Code](https://code.visualstudio.com/), [Brackets](https://brackets.io/), and [Sublime Text](https://www.sublimetext.com/) are good options.
+Macs and PCs come with some simple text editors built in, but we recommend using one that offers more in terms of auto-formatting as well as being able to see and work in multiple text files at a time. [Visual Studio Code](https://code.visualstudio.com/), [Brackets](https://brackets.io/), [Codelobster](https://codelobster.com/) and [Sublime Text](https://www.sublimetext.com/) are good options.
 
 
 {{< q-figure id="text-editor" >}}
