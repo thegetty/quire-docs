@@ -25,7 +25,7 @@ At minimum, each contributor must have a `first_name` and `last_name`, or just `
   file_as:
   title:
   affiliation:
-  pic:
+  image:
   url:
   bio:
 ```
