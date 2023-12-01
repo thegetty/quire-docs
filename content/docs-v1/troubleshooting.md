@@ -39,9 +39,7 @@ The following error has been seen in projects with a lot of individual Markdown 
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 ```
 
-The fix is to increase the amount of memory allocated to Node.js. There are two methods:
-
-**Increase memory with the command-line shell:**
+The fix is to increase the amount of memory allocated to Node.js using your command-line shell.
 
 1. Determine the amount of memory on your machine. On macOS, go to the Apple () menu and select "About This Mac" and look for Memory. On Windows, go to "About your PC" and look for Installed RAM.
 2. Convert the amount you want to allocate from GB to MB by multiplying the GB number by 1024. You want to allocate as much as you can to Node while leaving a modest portion for other processes. If you have 16GB of memory try allocating 12GB to Node, which would be 12288.
@@ -65,11 +63,11 @@ If the error persists try allocating more memory by repeating Step 3 with a larg
 
 Setting the `NODE_OPTIONS` in this way will only persist as long as you have the same command-line session running. You will need to use the above `export`/`$env` command each time you close and re-open the command-line shell to work on your large project.
 
-**Increase memory with Netlify:**
+Additionally, if you are using an automated deploy service like Netlify to publish your site, you will also need to increase the memory allocation there.
  
 1. In Netlify, go to Site Configuration and then Environment Variables. 
 2. Click “Add a variable”. 
-3. Under Key, add “NODE_OPTIONS” and under Values, add “--max-old-space-size=49152” (this is 48GB since Netlify isn’t limited by a personal computer memory size). 
+3. Under Key, add `NODE_OPTIONS` and under Values, add `--max-old-space-size=49152` (Netlify isn’t limited by a personal computer memory size so we recommend using a larger number to make deploy faster.) 
 4. Click “Create variable” to save it.
 5. Trigger a new deploy.
 
