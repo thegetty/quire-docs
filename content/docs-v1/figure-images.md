@@ -25,22 +25,22 @@ Quire does not require a specific image file format or size, but we have some re
 
 ## Create a figures.yaml File for Figure Image Metadata
 
-Figures and all their associated attributes should be listed in the `figures.yaml` file, which lives in your `/content/_data` directory. The figure image metadata, along with the image itself, can then be pulled into your project through the use of a shortcode. See the API-DOCs section for [complete details on possible figure attributes](/docs-v1/for-developers/#figure_list). Below is an example of two `figures.yaml` entries with the required attributes: `id` and `src`.
+Figures and all their associated attributes should be listed in the `figures.yaml` file, which lives in your `/content/_data` directory. The figure image metadata, along with the image itself, can then be pulled into your project through the use of a shortcode. Below is an example of two `figures.yaml` entries with the minimum required attributes: `id` and `src`.
 
 ```yaml
-- id: "1.1"
+- id: "fig-1"
   src: "clyfford-still_untitled96.jpg"
-- id: "1.2"
+```
+```yaml
+- id: "portrait-of-still"
   src: "portrait-of-still.jpg"
 ```
 
-Other available attributes are `alt`, `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, and `label`.
+The `id` is an assigned value that is used to reference the image when using a shortcode. The `id` can be anything as long as it is **all lowercase with no spaces**. You can separate words through the use of dashes (-), as in the two examples above. The use of uppercase letters, periods, spaces, or underscores will cause the preview to break. It is helpful to keep the `id` short, otherwise adding shortcodes can become cumbersome.
 
-{{< q-class "box warning" >}}
+The `src` points to where you have saved your image, with the default being `/_assets/images` unless otherwise noted in the `config.yaml`. You can also create subfolders in the `/_assets/images` directory which then need to be included in the `src`. For example, if you created a folder inside the `/_assets/images` directory called "catalogue" and put the `portrait-of-still.jpg` image in that folder, then the `src` would be `catalogue/portrait-of-still.jpg`.
 
-- If your figures are organized in sub-directories within your `/_assets/images` directory they should appear as part of the file path under `src`, otherwise, only the filename is needed. So for example, if the image "portrait-of-still.jpg" is saved in a subfolder in your `images` directory called `catalogue` the `src` value would be `/catalogue/portrait-of-still.jpg`.
-
-{{< /q-class >}}
+Other available attributes are `alt`, `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, `poster`, and `label`.
 
 ### Adding Alt Text to Your Project
 
@@ -51,33 +51,28 @@ Unless a figure image is purely decorative, it should also include an alternate 
 For example, the YAML for the figure above might look like this:
 
 ```YAML
-- id: "5.5"
-  src: rococo_cat-1.jpg
+- id: "cat-1"
+  label: "Cat. 1"
+  src: catalogue/rococo_cat-1.jpg
   alt: "Frontal view of a long wooden cabinet with six doors, constructed with veneer, gilt bronze, and marble"
 ```
 
 ## Insert Figure Images with {% figure %} Shortcode
 
-Once you've saved your images in the `/_assets/images` directory and created entries for each image in your `figures.yaml` file, then you are ready to insert figures into your publication by referencing the assigned `ids` in a shortcode. The shortcode will not only pull in the associated image referenced in the `src` attribute but also all the other attributes you've defined in the YAML for that particular image, such as captions or credits. A basic use of the `{% figure %}` shortcode would look like this:
+Once you've saved your images in the `/_assets/images` directory and created entries for each image in your `figures.yaml` file, you are ready to insert the figures images into your publication by referencing the assigned `ids` in a `{% figure %}` shortcode. The shortcode will not only pull in the associated image referenced in the `src` attribute but also all the other attributes you've defined in the YAML for that particular image, such as captions or credits. A basic use of the `{% figure %}` shortcode would look like this:
 
 ```md
-{% figure '1.2' %}
+{% figure 'cat-1' %}
 ```
 
-Always use the figure shortcodes on their own lines in your Markdown documents, in between paragraphs. Never within a paragraph. Traditionally, figures will be placed directly *after* the paragraph in which they were first referred to.
-
-{{< q-class "box tip" >}}
-
-- If you would like to label your figure image add a `label` attribute to the image entry in your  `figures.yaml` file.
-
-{{< /q-class >}}
+Always use `{% figure %}` shortcodes on their own lines in your Markdown documents, in between paragraphs. Never within a paragraph. Traditionally, figures will be placed directly *after* the paragraph in which they were first referred to.
 
 ## Style Figure Images
 
 By default, figures will display at the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left` and `is-pulled-right`. This will put the image in-line with the text, either to the right or left. Within the shortcode, the first value is the `id` and the second value is the class type. They should both appear within a set of single quotes, separated by a comma.
 
 ```md
-{% figure '1.2', 'is-pulled-left' %}
+{% figure 'fig-1-2', 'is-pulled-left' %}
 ```
 
 {{< q-figure id="1.9" >}}
@@ -87,7 +82,7 @@ By default, figures will display at the width of the full-column of text. Modifi
 When you have multiple images that make sense to group together, you can use the `{% figuregroup %}` shortcode. First, you must specify the preferred grid width. For example, if you have six images you could insert `2` in the shortcode to make the grid appear with three rows, each *two* images wide. Alternatively, if you insert `3` then the grid will appear with two rows, each *three* images wide. The figures will scale accordingly. After you have defined the grid width, insert the `ids` of the images you would like included. List the `ids` within one set of single quotes, separated by commas.
 
 ```md
-{% figuregroup '2', '1.1, 1.2, 1.3, 1.4' %}
+{% figuregroup '2', 'fig-1-1, fig-1-3, fig-1-3, fig-1-4' %}
 ```
 {{< q-figure id="1.11" >}}
 
@@ -99,7 +94,9 @@ When you have multiple images that make sense to group together, you can use the
 
 ## Add Video Figures
 
-Videos can be embedded in your publication the same way as other figure images. The difference being that you’ll also need to include a `media_id` and a `media_type` attribute, along with an optional `aspect_ratio` attribute in the `figures.yaml` file. You will also want to provide a static `poster` image to display in the PDF and EPUB versions of your project.
+Videos can be embedded in your publication the same way as other figure images. The difference being that you’ll also need to include a `media_id` and a `media_type` attribute, along with an optional `aspect_ratio` attribute in the `figures.yaml` file. 
+
+Because Quire is built with multiple formats in mind, when including videos in the online version of the project you will also need to include a video still as a fallback image for the PDF and EPUB versions.  To do this, add the `poster` attribute to the YAML entry. Similar to `src`, the value should be the file name of the still you want to use. Along with the fallback image, Quire will also automatically append the URL of the video following the caption.
 
 ### Video Hosted on Vimeo and YouTube
 
@@ -131,10 +128,6 @@ Along with Vimeo and YouTube videos, Quire can also support video that you inclu
 
 Adding video directly, rather than through YouTube or Vimeo, means your video resource will always be available within your project along with your other included figure images. Your project will not be dependent on Vimeo or YouTube servers and will not be affected by changes they may make to their service. However, Vimeo and YouTube are going to be better at handling longer videos, providing additional features like transcripts and closed captions, and streaming content generally and especially for readers in other areas of the globe from where your project itself is hosted.
 
-### Fallbacks for PDF and EPUB Outputs
-
-Because Quire is built with multiple formats in mind, when including videos in the online version of the project you will also need to include a video still as a fallback image for the PDF and EPUB versions. Add the `poster` attribute to the YAML entry. Similar to `src`, the value should be the file name of the still you want to use. Along with the fallback image, Quire will also automatically append a link to the video following the caption.
-
 ### Starting a Video Figure at a Particular Point
 
 Your video figures can be set to start playing at a particular point, whether you are using Vimeo, YouTube, or self-hosted videos. In each case, you set the time by appending a short string of characters to the `media_id` (in the case of Vimeo and YouTube videos), or to the `src` (in the case of self-hosted video). Refer to the below chart for your specific media type.
@@ -160,8 +153,8 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/80
 You would then grab `809104705` and add that as a `media_id` to the YAML for this audio file. Similar to the videos you will also want to include a `poster` attribute as a fallback for your PDF and EPUB versions of the publication.
 
 ```YAML
-- id: "cva_podcast"
-  poster: /screenshots/cva_podcast.png
+- id: "cva-podcast"
+  poster: screenshots/cva_podcast.png
   media_id: 809104705
   media_type: soundcloud
   caption: "“Moving a Hundred-Year-Old Series Online: Getty’s Corpus Vasorum Antiquorum,” from Getty’s *Art & Ideas* podcast."
@@ -202,7 +195,7 @@ In addition to inserting tables in your project [as Markdown](https://www.markdo
 
 {{< /q-class >}}
 
-Now that you've created your .html file you will need to add the table information to the `figures.yaml`. Similarly to embedding audio clips and videos, you will need to add a `media_type` to the entry. In this case, the type would be `table`. Make sure the `src` matches the name of the HTML file you added to the `/_assets/images` directory.
+Now that you've created your HTML file you will need to add the table information to the `figures.yaml`. Similarly to embedding audio clips and videos, you will need to add a `media_type` to the entry. In this case, the type would be `table`. Make sure the `src` matches the name of the HTML file you added to the `/_assets/images` directory.
 
 ```YAML
 - id: "table-1-1"
