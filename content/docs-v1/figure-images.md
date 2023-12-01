@@ -38,7 +38,7 @@ Figures and all their associated attributes should be listed in the `figures.yam
 
 The `id` is an assigned value that is used to reference the image when using a shortcode. The `id` can be anything as long as it is **all lowercase with no spaces**. You can separate words through the use of dashes (-), as in the two examples above. The use of uppercase letters, periods, spaces, or underscores will cause the preview to break. It is helpful to keep the `id` short, otherwise adding shortcodes can become cumbersome.
 
-The `src` points to where you have saved your image, with the default being `/_assets/images` unless otherwise noted in the `config.yaml`. You can also create subfolders in the `/_assets/images` directory which then need to be included in the `src`. For example, if you created a folder inside the `/_assets/images` directory called "catalogue" and put the `portrait-of-still.jpg` image in that folder, then the `src` would be `/catalogue/portrait-of-still.jpg`.
+The `src` points to where you have saved your image, with the default being `/_assets/images` unless otherwise noted in the `config.yaml`. You can also create subfolders in the `/_assets/images` directory which then need to be included in the `src`. For example, if you created a folder inside the `/_assets/images` directory called "catalogue" and put the `portrait-of-still.jpg` image in that folder, then the `src` would be `catalogue/portrait-of-still.jpg`.
 
 Other available attributes are `alt`, `caption`, `credit`, `media_id`, `media_type`, `aspect_ratio`, `poster`, and `label`.
 
@@ -53,7 +53,7 @@ For example, the YAML for the figure above might look like this:
 ```YAML
 - id: "cat-1"
   label: "Cat. 1"
-  src: /catalogue/rococo_cat-1.jpg
+  src: catalogue/rococo_cat-1.jpg
   alt: "Frontal view of a long wooden cabinet with six doors, constructed with veneer, gilt bronze, and marble"
 ```
 
@@ -154,7 +154,7 @@ You would then grab `809104705` and add that as a `media_id` to the YAML for thi
 
 ```YAML
 - id: "cva-podcast"
-  poster: /screenshots/cva_podcast.png
+  poster: screenshots/cva_podcast.png
   media_id: 809104705
   media_type: soundcloud
   caption: "“Moving a Hundred-Year-Old Series Online: Getty’s Corpus Vasorum Antiquorum,” from Getty’s *Art & Ideas* podcast."
