@@ -152,6 +152,12 @@ The way to create a publication cover page is similar to creating section landin
 
 Like in the case of sub-sections explained above, `index.md` files always inherit the URL of their parent directory. The `index.md` file used for your cover is in the root, or top-most, directory, and so the URL for it will be the base URL where you host the site.
 
+{{< q-class "box warning" >}}
+
+- Do not leave the `image` attribute blank or remove `image` completely from the page YAML, otherwise the build will break. 
+
+{{< /q-class >}}
+
 ## Hide/Show Pages
 
 By default, every page you create will be included in all formats of your publication (html, PDF/print, and e-book). This can be overridden by including an `outputs` attribute and excluding the undesired formats from the array (`epub`, `pdf`, `html`). For example, if you want your Copyright page to appear in the PDF and EPUB formats but not in the online version, you would only list `epub` and `pdf` as page YAML values.
