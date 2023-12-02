@@ -39,7 +39,7 @@ The following error has been seen in projects with a lot of individual Markdown 
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 ```
 
-The fix is to increase the amount of memory allocated to Node.js following these steps:
+The fix is to increase the amount of memory allocated to Node.js using your command-line shell.
 
 1. Determine the amount of memory on your machine. On macOS, go to the Apple () menu and select "About This Mac" and look for Memory. On Windows, go to "About your PC" and look for Installed RAM.
 2. Convert the amount you want to allocate from GB to MB by multiplying the GB number by 1024. You want to allocate as much as you can to Node while leaving a modest portion for other processes. If you have 16GB of memory try allocating 12GB to Node, which would be 12288.
@@ -61,7 +61,15 @@ The fix is to increase the amount of memory allocated to Node.js following these
 
 If the error persists try allocating more memory by repeating Step 3 with a larger number. To a maximum of about a half a GB less than your total memory.
 
-**Note:** setting the `NODE_OPTIONS` in this way will only persist as long as you have the same command-line session running. You will need to use the above `export`/`$env` command each time you close and re-open the command-line shell to work on your large project.
+Setting the `NODE_OPTIONS` in this way will only persist as long as you have the same command-line session running. You will need to use the above `export`/`$env` command each time you close and re-open the command-line shell to work on your large project.
+
+Additionally, if you are using an automated deploy service like Netlify to publish your site, you will also need to increase the memory allocation there.
+ 
+1. In Netlify, go to Site Configuration and then Environment Variables. 
+2. Click “Add a variable”. 
+3. Under Key, add `NODE_OPTIONS` and under Values, add `--max-old-space-size=49152` (Netlify isn’t limited by a personal computer memory size so we recommend using a larger number to make deploy faster.) 
+4. Click “Create variable” to save it.
+5. Trigger a new deploy.
 
 {{< q-class "box tip" >}}
 - If you encounter a bug that does not have a solution or workaround addressed in this section, please visit our [GitHub Issue Tracker](https://github.com/thegetty/quire/issues). First, check to see if your bug has been reported by another user and if not, please fill out our [bug report form](https://github.com/thegetty/quire/issues/new?assignees=erin-cecele&labels=status%3Atriage+needed&projects=&template=bug_report.yaml). For more information, see our [Bug Reporting Instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md). 
