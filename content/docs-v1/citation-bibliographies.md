@@ -59,7 +59,7 @@ The first positional parameter of the `{% cite %}` shortcode is a short form cit
 
 ### Page Number
 
-The second optional parameter is a page number. The following example would output the link as: Faure 1909, <u>54</u>.
+The second optional parameter is a page number. The following example would output the link as: <u>Faure 1909, 54</u>.
 
 ```md
 {% cite 'Faure 1909' '54' %}
