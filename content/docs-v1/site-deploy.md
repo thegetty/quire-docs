@@ -93,10 +93,6 @@ Should you need to make any updates to your site, just merge the changes and Net
 
 GitHub enables you to not only host your project code, but you can also use it to host a live version of your site. Learn more on the [GitHub Pages](https://pages.github.com/) website.
 
-{{< q-class "box warn" >}}
-- While the below instructions *should* work we have yet to get a fully functioning deploy to work (*as of March 2023*). So please consider these a starting point, which may need further debugging. And if you do debug it, please let us know so that we can update these instructions for others.
-{{< /q-class >}}
-
 ### Publish Your Project with Github Pages
 
 1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/docs-v1/github) section of our documentation to create a repository for your project.
