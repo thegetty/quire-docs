@@ -97,24 +97,30 @@ GitHub enables you to not only host your project code, but you can also use it t
 - While the below instructions *should* work we have yet to get a fully functioning deploy to work (*as of March 2023*). So please consider these a starting point, which may need further debugging. And if you do debug it, please let us know so that we can update these instructions for others.
 {{< /q-class >}}
 
-### Preview Your Project with Github Pages
+### Publish Your Project with Github Pages
 
 1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/docs-v1/github) section of our documentation to create a repository for your project.
 
 2. Update the `url` in `content/_data/publication.yaml` to correspond to your own GitHub site. It will follow the pattern: https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME/. So, if your GitHub username is bonjovi and your project file is blaze-of-glory, your `baseURL` would be https://bonjovi.github.io/blaze-of-glory/. (Note: your GitHub username can also be your organization name if that is how your account is set-up in GitHub.)
 
-3. In your command-line shell run `quire build`
+3. In your command-line shell run `git checkout -b gh-deploy`, which creates a new temporary branch called `gh-deploy` to work in and switches you to that branch.
 
-4. In the `_site` directory, add an empty file called `.nojekyll`, which lets GitHub know the site you're publsihing [isn't a Jekyll site](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
+4. Next run `quire build`.
 
-5. Next run `git add -f _site && git commit -m "Github pages deploy"` this will add the contents of the `_site` directory to your project's git history so that it can be pushed to GitHub.
+5. In your text editor, open the `_site` directory and add an empty file called `.nojekyll`, which lets GitHub know the site you're publishing [isn't a Jekyll site](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
 
-6. Run `git subtree push --prefix _site origin gh-pages` to push the committed `_site` files to a new `gh-pages` branch of your repo on GitHub.
+6. Back in your command-line shell run `git add -f _site && git commit -m "Github pages deploy"`. This will add the contents of the `_site` directory to your project's git history so that it can be pushed to GitHub.
 
-7. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change project visibility" and change the visibility to public.
+7. If you have previously deployed the project to GitHub Pages, delete that old version by running `git push origin --delete gh-pages`. If this is your first deploy, skip this step.
 
-8. For "Source" switch the branch to `gh-pages` in the `/(root)` folder and save.
+8. Run `git subtree push --prefix _site origin gh-pages` to push the committed `_site` files to a new `gh-pages` branch of your repo on GitHub.
 
-9. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
+9. In your command-line shell, run `git checkout main && git branch -D gh-deploy` to delete the temporary deploy branch and to switch back to your `main` branch. If you were publishing from 
 
-If you make changes to your project and want to view them live, you will need to repeat stpes 3–6 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the lefthand menu. Your refreshed link will be at the top of the page. A green box indicates the site has been published and is now live.
+10. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change project visibility" and change the visibility to public.
+
+11. For "Source" switch the branch to `gh-pages` in the `/(root)` folder and save.
+
+12. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
+
+If you make changes to your project and want to view them live, you will need to repeat stpes 3–9 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the lefthand menu. Your refreshed link will be at the top of the page. A green box indicates the site has been published and is now live.
