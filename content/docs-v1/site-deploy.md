@@ -111,7 +111,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 8. Run `git subtree push --prefix _site origin gh-pages` to push the committed `_site` files to a new `gh-pages` branch of your repo on GitHub.
 
-9. In your command-line shell, run `git checkout main && git branch -D gh-deploy` to delete the temporary deploy branch and to switch back to your `main` branch. If you were publishing from 
+9. In your command-line shell, run `git checkout main && git branch -D gh-deploy` to delete the temporary deploy branch and to switch back to your `main` branch. If you were publishing from a branch other than `main`, use than name in here instead, like `git checkout YOUR-BRANCH-NAME && git branch -D gh-deploy`.
 
 10. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change project visibility" and change the visibility to public.
 
