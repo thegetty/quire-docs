@@ -765,3 +765,14 @@ project_list:
       - tiffanysprague
       - zsofiaj
     note: "*Italian Paintings at the Yale University Art Gallery* is the first comprehensive presentation of Yale’s full collection of Italian paintings, ranging from the thirteenth to the eighteenth century. Each catalogue entry is accompanied by high-resolution, zoomable images and features full technical notes, provenance, and published references, as well as a detailed discussion of conservation history (where relevant), attribution, dating, meaning, function, and significance. Yale University Art Gallery chose Quire for the ability to release entries in rolling batches, the fact that the platform is free, and the solid community support behind it."
+
+  - id: "wpi_monet_pastels"
+    src: /screenshots/_wpi_monet_pastels.jpg
+    alt: "Claude Monet, les pastels. Un recueil d’essais et de commentaires pour accompagner le catalogue raisonné. Par Geraldine lefebvre"
+    type: Cataogue Raisonné Companion 
+    publisher: "Wildenstein Plattner Institute"
+    title_info: "Claude Monet, les pastels. Un recueil d’essais et de commentaires pour accompagner le catalogue raisonné"
+    pub_date: 2023-12-05
+    url: https://monet-pastels.wpi.art/
+    customization_level: extensive
+    note: "In addition to their catalogue raisonné, [*Claude Monet: The Revised Catalogue Raisonné; The Pastels*](https://digitalprojects.wpi.art/monet/introduction) the Wildenstein Plattner Institute (WPI) also released a companion publication on the pastels by Monet scholar and curator, Géraldine Lefebvre. *Claude Monet, les pastels. Un recueil d’essais et de commentaires pour accompagner le catalogue raisonné*, can be translated into any language from the original French and features critical essays on select pastels, as well as information on the major themes and early collectors of these works. WPI did extenseive work to customize layouts and shortcodes, extend Quire’s search function, change the navigation and sidebar menu, and more." 
