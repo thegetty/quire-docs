@@ -93,6 +93,10 @@ Should you need to make any updates to your site, just merge the changes and Net
 
 GitHub enables you to not only host your project code, but you can also use it to host a live version of your site. Learn more on the [GitHub Pages](https://pages.github.com/) website.
 
+{{< q-class "box warn" >}}
+- While the below instructions work as of December 2023, we have found that there are occasionally glitches. If you encounter any issues following the instructions below, please post about it on our [community forum](https://github.com/thegetty/quire/discussions) so we can provide assistance and improve our documentation. 
+{{< /q-class >}}
+
 ### Publish Your Project with Github Pages
 
 1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/docs-v1/github) section of our documentation to create a repository for your project.
@@ -107,7 +111,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 6. Back in your command-line shell run `git add -f _site && git commit -m "Github pages deploy"`. This will add the contents of the `_site` directory to your project's git history so that it can be pushed to GitHub.
 
-7. If you have previously deployed the project to GitHub Pages, delete that old version by running `git push origin --delete gh-pages`. If this is your first deploy, skip this step.
+7. If you have previously deployed the project to GitHub Pages, delete that old version by running `git push origin --delete gh-pages`. **If this is your first deploy, skip this step.
 
 8. Run `git subtree push --prefix _site origin gh-pages` to push the committed `_site` files to a new `gh-pages` branch of your repo on GitHub.
 
@@ -119,6 +123,6 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 11. While in your respository's settings page, use the left sidebar to navigate to "Pages". For "Branch," use the drop-down menu to switch to `gh-pages` in the `/(root)` folder and save.
 
-12. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME. 
+12. At the top of the "GitHub Pages" page of your repo, you will find a notification that reads: "Your site is live at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME." Please note it can take a few minutes for the site to go live. 
 
-If you make changes to your project and want to view them live, you will need to repeat steps 3, 4, 6, 7, 8, and 9 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the lefthand menu. Your refreshed link will be at the top of the page. 
+If you make changes to your project and want to view them live, you will need to repeat steps 3-9 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the left sidebar. Your refreshed link will appear at the top of the page as in step 12. 
