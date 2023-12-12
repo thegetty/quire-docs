@@ -111,7 +111,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 6. Back in your command-line shell run `git add -f _site && git commit -m "Github pages deploy"`. This will add the contents of the `_site` directory to your project's git history so that it can be pushed to GitHub.
 
-7. If you have previously deployed the project to GitHub Pages, delete that old version by running `git push origin --delete gh-pages`. **If this is your first deploy, skip this step.
+7. If this is your first deploy, skip this step: if you have previously deployed the project to GitHub Pages, delete that old version by running `git push origin --delete gh-pages`. 
 
 8. Run `git subtree push --prefix _site origin gh-pages` to push the committed `_site` files to a new `gh-pages` branch of your repo on GitHub.
 
