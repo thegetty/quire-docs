@@ -36,7 +36,7 @@ Figures and all their associated attributes should be listed in the `figures.yam
   src: "portrait-of-still.jpg"
 ```
 
-The `id` is an assigned value that is used to reference the image when using a shortcode. The `id` can be anything as long as it is **all lowercase with no spaces**. You can separate words through the use of dashes (-), as in the two examples above. The use of uppercase letters, periods, spaces, or underscores will cause the preview to break. It is helpful to keep the `id` short, otherwise adding shortcodes can become cumbersome.
+The `id` is an assigned value that is used to reference the image when using a shortcode. The `id` can be anything as long as it **starts with a letter, is all lowercase, and uses dashes instead of spaces**. See examples of valid `id`'s above. An `id` that starts with a number or uses uppercase letters, periods, spaces, or underscores will result in a broken preview. It is helpful to keep the `id` short to prevent cumbersome shortcodes.
 
 The `src` points to where you have saved your image, with the default being `/_assets/images` unless otherwise noted in the `config.yaml`. You can also create subfolders in the `/_assets/images` directory which then need to be included in the `src`. For example, if you created a folder inside the `/_assets/images` directory called "catalogue" and put the `portrait-of-still.jpg` image in that folder, then the `src` would be `catalogue/portrait-of-still.jpg`.
 
