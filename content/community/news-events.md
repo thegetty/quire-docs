@@ -17,12 +17,16 @@ abstract: "Get the latest news and info about upcoming events"
 
 **2023**
 
-- July 13: New [bug reporting instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) are announced to the communtiy
+- November 10: Quire presentation at [MCN (Museum Computer Network Conference)](https://mcn2023.sched.com/event/1RYQ6/a-community-effort-digital-publishing-with-open-source-tools)
+- November 8: Quire, Price Lab for Digital Humanities, and Penn Libraries present ["A Day of Digital Publishing & Quire"](https://quire.getty.edu/community/mcn-upenn-event/)
+- August 29: Quire presentation and community-meetup at [National Museum Publishing Seminar](https://graham.uchicago.edu/programs-courses/national-museum-publishing-seminar/2023-nmps-conference-schedule)
+- August 10: [Rotating images](https://quire.getty.edu/docs-v1/sequences/) are introduced as a new feature 
+- July 13: New [bug reporting instructions](https://github.com/thegetty/quire/blob/main/BUG_REPORTING.md) are announced to the community
 - June 14: Minneapolis Institute of Art's Quire publication, *Highpoint Editions: A History & Catalogue, 2001–2021* [is reviewed](https://journalpanorama.org/wp-content/uploads/2023/06/Weyl-review-of-Highpoint-Editions.pdf) in *Panorama*
 - June 8: Collapsible [accordion sections](https://quire.getty.edu/docs-v1/accordions/) are introduced as a new feature
 - May 11: Quire [promotional trailer](https://vimeo.com/820983026/b3a116fb1e) released
 - April 4: Quire presentation at [Museums and the Web Conference](https://mw23.my.mw/)
-- March 9: New Quire [demo](https://vimeo.com/804066673/a665de952c) available. 
+- March 9: New Quire [demo](https://vimeo.com/804066673/a665de952c) available 
 - February 16-18: Quire at [College Art Association Conference](https://www.collegeart.org/) 
 
 **2022**
@@ -52,27 +56,14 @@ abstract: "Get the latest news and info about upcoming events"
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
-**National Museum Publishing Seminar (NMPS)** <br>
-
-August 28, 11:30-12:30 p.m. CST <br>
-["Gauging the Impact of Digital Publications"](https://uchicago.app.box.com/s/uri4a415ga944l3gspzqelsgtvnwda7z) <br>
-Moderated by Erin Cecele Dunigan with Allison Levy (Brown University Library), Lauren Makholm (Art Institute of Chicago), and Liz Neely (Georgia O’Keeffe Museum) <br>
-
-August 29, 11:45-12:30 p.m. CST <br>
-[Quire Community Meet-Up](https://uchicago.app.box.com/s/uri4a415ga944l3gspzqelsgtvnwda7z) <br>
-Hosted by Greg Albers and Erin Cecele Dunigan <br>
-
-
-**Museum Computer Network (MCN) Annual Conference** <br>
-
-November 8-10 <br>
-TBD <br>
-[More Information](https://mcn.edu/annual-conference/) 
-
 ## Past Events
 
 | Event | Date | Description |
 | -- | -- | -- |
+| MCN (Museum Computer Network) | November 10, 2023 | "A Community Effort: Digital Publishing with Open-Source Tools," moderated by Erin Cecele Dunigan (Quire) with Duane Degler (Design for Context) and Caitlin Sweeney (Wildenstein Plattner Institute) | 
+| Price Lab for Digital Humanities and Penn Libraries | November 8, 2023 | "A Day of Digital Publishing & Quire," featuring Cosette Alonso Bruhns (Penn Libraries), Chris Diaz (formerly Northwestern University Libraries),  Erin Cecele Dunigan (Quire), Matt K. Gold (CUNY Graduate Center/Manifold), Liz Neely (Georgia O'Keefe Museum), Stewart Varner (Price Lab for Digital Humanities) | 
+| National Museum Publishing Seminar | August 29, 2023 | Quire Community Meet-Up, featuring Meghan Gray & Stephanie Alger (Nelson-Atkins Museum of Art); Will Gillham (Amon Carter Museum of American Art); Valerie Hellstein (Denver Art Museum); and Stephanie Rebick (Vancouver Gallery of Art)|
+| National Museum Publishing Seminar | August 28, 2023 | "Gauging the Impact of Digital Publications," moderated by Erin Cecele Dunigan (Quire) with Allison Levy (Brown University Library), Lauren Makholm (Art Institute of Chicago), and Liz Neely (Georgia O’Keeffe Museum)|
 | Association of Academic Presses (AUP) Biennial Virtual Annual Meeting | June 8, 2023 | "Open Publishing Platforms: A User’s Guide Part 1: Platforms Developed by AUPress Members," moderated by Daniel McShane (Suny Press) with Alison Cobra (University of Calgary Press), Jason Colman (Michigan Publishing Services) and Erin Cecele Dunigan (Quire)|
 | Association of Academic Museums and Galleries (AAMG) | June 12-15, 2023 | Sponsor and Exhibitor  |
 | Museums and the Web (MW) | April 14, 2023 | "How to Quire," with Greg Albers and Erin Cecele Dunigan | 
@@ -83,7 +74,7 @@ TBD <br>
 | MuseumNext: Digital Collections Summit | October 6, 2021 | “Opening Access: Getty's Approach to Digital Collection Catalogues,” with Erin Cecele Dunigan |
 | National Museum Publishing Seminar (NMPS) | August 2, 2021 | “Digital Publishing Today: Three Case Studies” moderated by Erin Cecele Dunigan (Quire), with Alex Bortolot (Minneapolis Institute of Art), Heather Brand (Museum of Fine Arts, Houston), and Emmet Byrne (Walker Art Center) presenting recent collections-based digital publishing projects. |
 | IIIF Annual Conference | June 23, 2021 | "Quire & IIIF: Implementing a User-Friendly Workflow for Digital Publishing,” with Greg Albers, Erin Cecele Dunigan, Matthew Hrudka, and Hannah Balenda. |
-| Museum Computer Network (MCN) | Nov 10, 2020 | “Quire—A Sustainable Digital Publishing Solution for Museums of All Sizes,” with Amanda Helton and Kathryn Wade from the San José Museum of Art, https://sched.co/dfXr.  |
+| Museum Computer Network (MCN) | Nov 10, 2020 | “Quire—A Sustainable Digital Publishing Solution for Museums of All Sizes,” with Amanda Helton and Kathryn Wade from the San José Museum of Art  |
 | National Museum Publishing Seminar (NMPS) | July 2020 | “Think Digital, Part 1: Conceptualizing; Part 2: Implementing,” with Greg Albers. |
 | Open Publishing Fest | May 28, 2020 | “Quire: Multiformat Publishing Solutions for Art Books and Beyond,” with Greg Albers, Erin Dunigan, Jayna Swartzman-Brosky, Nancy Um, and Amanda Helton, https://youtu.be/SB1Y5GfDP7c. |
 | Museum Computer Network (MCN) | Nov 3, 2019 | “Plague Water for Everyone! How open source digital publishing can organize & amplify multi-partner research projects,” with Alex Bortolot and Kris Thayer from the Minneapolis Institute of Art. Later reprised in January 2020 for the Museum Publishing Digital Interest Group, https://youtu.be/gE8JrMLrOQM. |

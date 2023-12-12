@@ -7,6 +7,10 @@ online: false
 
 2023
 
+- [December 2023] Coming Soon. 
+- [October 2023](https://newsletters.getty.edu/t/t-39592B4DA884F94C2540EF23F30FEDED) MCN 2023, A Day of Digital Publishing & Quire, Request for Community Feedback, Using Pandoc to Convert Word to Markdown, Quire Office Hours, MCN (Museum Computer Network), Ad Hoc Museum Collective. 
+- [September 2023](https://newsletters.getty.edu/t/t-FCE8357CB4E3F1722540EF23F30FEDED) 2023 National Publishing Seminar, A Day of Digital Publishing & Quire, Custom CSS Tips for Styling PDFs, Community Shoutout, Quire Office Hours, Indianapolis Museum of Art at Newfields.
+- [August 2023](https://newsletters.getty.edu/t/t-5C80C6028C78D03C2540EF23F30FEDED) New Feature: Introducing Rotating Images, Quire Demo Site, National Museum Publishing Seminar, Community Shoutout, Quire Office Hours, Museum Publishing Digital Interest Group, Yale University Art Gallery. 
 - [July 2023](https://newsletters.getty.edu/t/t-3F9E79E9A8AA611F2540EF23F30FEDED) Introducing New Bug Reporting Instructions, Review of *Highpoint Editions* in *Panorama*, Quire in thec Midwest, Quire Office Hours, National Museum Publishing Seminar, Materia: Journal of Technical Art History, George Washington University Museum Studies
 - [June 2023](https://newsletters.getty.edu/t/t-48678C44829F4D3B2540EF23F30FEDED) New Feature: Introducing Accordion Sections, Museum Computer Network Annual Conference, A New Multiformat Publication from the Louvre, Museum Publishing Digital Interest Group, AAMG Annual Conference, Denver Art Museum, Minneapolis Institute of Art
 - [May 2023](https://newsletters.getty.edu/t/t-CD5C8433CDC7D9912540EF23F30FEDED): Quire Promotional Trailer, Quire v1 and Windows, Community Shoutout, Modifying and Styling PDF Output, Quire Office Hours, AUP Biennial Virtual Annual Meeting, AAMG Annual Conference, Vancouver Art Gallery
@@ -17,6 +21,7 @@ online: false
 
 2022
 
+- [December 2022](https://newsletters.getty.edu/t/t-DFC34729291CD1802540EF23F30FEDED) 2022: A Year in Review, New Publications from the Community, Quire Highlights, Looking Forward to 2023, What Do You Love About Quire?, Thank You Contributors.   
 - [Special Announcement](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED): Quire v1 Pre-Release Is Now Available, What We Are Excited About, Next Steps, Quire Office Hours
 - [October 2022](https://newsletters.getty.edu/t/t-F6848124C389018D2540EF23F30FEDED): Quire Pre-Release Coming Soon, Add Soundcloud Audio Clips, Quire Office Hours, Museum Publishing Digital Interest Group, Archivo José Carlos Mariátegui, Tilt West Journal
 - [September 2022](https://newsletters.getty.edu/t/t-0029D944C2E9B31D2540EF23F30FEDED): Quire-branded Giveaways and More, Refreshing and Rebooting Quire, Quire Office Hours, Multimodal Digital Monographs and the University Press, Yale Center for British Art
