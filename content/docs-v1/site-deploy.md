@@ -93,13 +93,17 @@ Should you need to make any updates to your site, just merge the changes and Net
 
 GitHub enables you to not only host your project code, but you can also use it to host a live version of your site. Learn more on the [GitHub Pages](https://pages.github.com/) website.
 
+{{< q-class "box warn" >}}
+- While the below instructions work as of December 2023, we have found that there are occasionally glitches. If you encounter any issues following the instructions below, please post about it on our [community forum](https://github.com/thegetty/quire/discussions) so we can provide assistance and improve our documentation. 
+{{< /q-class >}}
+
 ### Publish Your Project with Github Pages
 
 1. First, if you haven't already, follow the steps to host your project's code on GitHub in the [*GitHub*](/docs-v1/github) section of our documentation to create a repository for your project.
 
-2. Update the `url` in `content/_data/publication.yaml` to correspond to your own GitHub site. It will follow the pattern: https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME/. So, if your GitHub username is bonjovi and your project file is blaze-of-glory, your `baseURL` would be https://bonjovi.github.io/blaze-of-glory/. (Note: your GitHub username can also be your organization name if that is how your account is set-up in GitHub.)
+2. Update the `url` in `content/_data/publication.yaml` to correspond to your own GitHub site. It will follow the pattern: https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME/. So, if your GitHub username is bonjovi and your project file is blaze-of-glory, your `baseURL` would be https://bonjovi.github.io/blaze-of-glory/. (Note: your GitHub username can also be your organization name if that is how your account is set-up in GitHub.) Be sure to commit this update and push to origin. 
 
-3. In your command-line shell run `git checkout -b gh-deploy`, which creates a new temporary branch called `gh-deploy` to work in and switches you to that branch.
+3. In your command-line shell, make sure you are in your project folder and run `git checkout -b gh-deploy`, which creates a new temporary branch called `gh-deploy` to work in. This command will automatically switch you to that branch.
 
 4. Next run `quire build`.
 
@@ -107,16 +111,18 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 6. Back in your command-line shell run `git add -f _site && git commit -m "Github pages deploy"`. This will add the contents of the `_site` directory to your project's git history so that it can be pushed to GitHub.
 
-7. If you have previously deployed the project to GitHub Pages, delete that old version by running `git push origin --delete gh-pages`. If this is your first deploy, skip this step.
+7. If this is your first deploy, skip this step: if you have previously deployed the project to GitHub Pages, delete that old version by running `git push origin --delete gh-pages`. 
 
 8. Run `git subtree push --prefix _site origin gh-pages` to push the committed `_site` files to a new `gh-pages` branch of your repo on GitHub.
+
+    If prompted to sign in, do so with your GitHub username and password unless. If you have two-factor authentication enabled, you'll use a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) in place of a password. Remember, you will not be able to see your username or password as you type them. Hit enter once you are done typing to advance.
 
 9. In your command-line shell, run `git checkout main && git branch -D gh-deploy` to delete the temporary deploy branch and to switch back to your `main` branch. If you were publishing from a branch other than `main`, use than name in here instead, like `git checkout YOUR-BRANCH-NAME && git branch -D gh-deploy`.
 
 10. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change project visibility" and change the visibility to public.
 
-11. For "Source" switch the branch to `gh-pages` in the `/(root)` folder and save.
+11. While in your respository's settings page, use the left sidebar to navigate to "Pages". For "Branch," use the drop-down menu to switch to `gh-pages` in the `/(root)` folder and save.
 
-12. Your site should now be published at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME.
+12. At the top of the "GitHub Pages" page of your repo, you will find a notification that reads: "Your site is live at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME." Please note it can take a few minutes for the site to go live. 
 
-If you make changes to your project and want to view them live, you will need to repeat stpes 3–9 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the lefthand menu. Your refreshed link will be at the top of the page. A green box indicates the site has been published and is now live.
+If you make changes to your project and want to view them live, you will need to repeat steps 3-9 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the left sidebar. Your refreshed link will appear at the top of the page as in step 12. 
