@@ -25,6 +25,8 @@ Quire is developed by [Getty](https://www.getty.edu) and the core team working o
 
 Thank you to all our growing list of contributors who have made Quire what it is, and are working on what it will be! They’ve participated in the forum, shared their projects, reported bugs, written/edited documentation, contributed code, and spoken about Quire at conferences.
 
+<div style="column-count: 2; column-gap: 1rem;">
+
 - [@1000camels](https://github.com/1000camels)
 - [@ACMAA](https://github.com/ACMAA)
 - [@aebancroft](https://github.com/aebancroft)
@@ -119,5 +121,8 @@ Thank you to all our growing list of contributors who have made Quire what it is
 - [@workergnome](https://github.com/workergnome)
 - [@yl5682](https://github.com/yl5682)
 - [@zsofiaj](https://github.com/zsofiaj)
+
+</div>
+
 
 Special acknowledgement is due to Eric Gardner ([@egardner](https://github.com/egardner)) who served as Digital Publications Developer at Getty from 2014 to 2018, and who conceived and spearheaded the original development of Quire. Thank you, Eric!
