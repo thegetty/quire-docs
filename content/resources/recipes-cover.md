@@ -6,7 +6,9 @@ type: page
 online: false
 ---
 
-Quire automatically generates the title and subtitle that appear on your project's cover page using information from the `publication.yaml` file. You can hide this information on the cover by using custom CSS. This is especially useful if the image you are using for your cover already includes a title and subtitle. A good example of this is [*The Art of the Scene: Charles Truett Williams*](https://art-scene.cartermuseum.org/) from the Amon Carter Museum of American Art. Please note, this method only hides the title visually. The information is still there for use by assistive reading technology in order to maintain web accessibility.
+Quire automatically generates the title and subtitle that appear on your project's cover page using information from the `publication.yaml` file. You can hide this information on the cover by using custom CSS. This is especially useful if the image you are using for your cover already includes a title and subtitle. A good example of this is [*The Art of the Scene: Charles Truett Williams*](https://art-scene.cartermuseum.org/) from the Amon Carter Museum of American Art. 
+
+Please note, this method only hides the title visually. The information is still there for use by assistive reading technology in order to maintain web accessibility.
 
 
 ## 1. Open the `custom.css` file
