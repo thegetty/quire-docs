@@ -8,7 +8,7 @@ online: false
 
 There are at least a couple of users in the Quire community who have customized their projects to display a custom icon in the sidebar menu to indicate the special status of a particular page. For instance, if that page includes [extra research materials](https://www.nelson-atkins.org/fpc/), or it's an article that has been [peer reviewed](https://volume-1-issue-1.materiajournal.com/).
 
-This is somehting you can do too, and we're going walk through the steps here. In brief, they are:
+This is something you can do too, and we're going walk through the steps here. In brief, they are:
 
 1. Add your custom YAML value into the global page data
 2. Add a new SVG icon into your project
