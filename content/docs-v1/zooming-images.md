@@ -7,17 +7,9 @@ aliases:
   - /documentation/zooming-images/
 ---
 
-
-TO ADD:
-- automatically generated print images and inline images (`_plugins/figures/iiif/config.js`)
-- warning, high-res files added to _site
-- PNG and SVG currently tiling to JPG
-- More on IIIF?
-
-
 ## Create a Zooming Image
 
-Create a zooming image by setting `zoom: true` in the `figures.yaml` file. 
+You can create a zooming image with Quire by adding `zoom: true` to an image entry in your `figures.yaml` file. For example: 
 
 ```yaml
 - id: fig-01
@@ -25,20 +17,21 @@ Create a zooming image by setting `zoom: true` in the `figures.yaml` file.
   zoom: true
 ```
 
-Zooming images can be displayed within your pages using the `{% figure %}` or `{% figuregroup %}` shortcodes, or the built-in image viewer on entry pages. (Learn more about entry pages in the [*Collection Catalogues*](/docs-v0/collection-catalogues) section of this documentation.)
+To learn how this process works, see the [Preview and Build a Project with Zooming Images](/preview-and-build-a-project-with-zooming-images) section below. In the meantime, here are some tips for how to make this process as seamless as possible. 
 
-Quire supports multiple file formats for zooming images: `.jpg`, `.jpeg`, `.tif`, `.tiff`, `.png`, and `.svg`. During processing, JPG and TIF images will be converted to `.jpg` and PNG and and SVG will be converted to `.png` (and will retain any transparency). TIFs are generally much larger files, and because they're converted to JPG during processing, it's recommended to use JPG as a source file if it is available as this can significantly improve processing time.
+As with other figures in Quire, zooming images can be displayed within your Markdown pages using the `{% figure %}` or `{% figuregroup %}` shortcodes, or using the built-in image viewer that appears on entry pages. (Learn more about entry pages in the [*Collection Catalogues*](/docs-v1/collection-catalogues) section of this documentation.)
+
+While Quire supports multiple file formats for zooming images, the tool currently converts `.jpg`, `.jpeg`, `.tif`, `.tiff`, `.png`, and `.svg` files to `.jpg`. Therefore, to significantly improve processing time, we recommend using JPGs as a source file whenever possible. In the future, PNG and SVG files will be converted to `.png` in order to support transparency. 
 
 Images must be larger than 512px on the long side. Setting `zoom: true` on images that are smaller than this will result in them not showing up in the image viewer at all.
 
-There is no maximum size limit for a zooming image, and the larger the source file the deeper the zoom. However, very large files will take longer to process when running `quire preview` or `build`, and longer to load for users. They will also result in very high numbers of image tiles to support the zoom (see [below to learn more about tiles](#)). So, we recommend limiting images to 8,192px on the longest side. This offers a rich zooming experience while not being overly processing and size intensive.
+There is no maximum size limit for a zooming image, and the larger the source file the deeper the zoom. However, very large files will take longer to process when running `quire preview` or `build`, and longer to load for users. For this reason, we recommend limiting images to 8,192px on the longest side. This offers a rich zooming experience without dragging out processing time or being size intensive.
 
 **In short ...**
 
+- File format: `.jpg`, `.jpeg`, `.tif`, `.tiff`, `.png`, or `.svg` (but use JPGs rather than TIFs for source images, as TIFs are large and will be converted to JPG anyway)
 - Minimum image size: Greater than 512px on the long side
 - Maximum image size: None, but we recommend limiting to 8,192px on the long side
-- File format: `.jpg`, `.jpeg`, `.tif`, `.tiff`, `.png`, or `.svg` (but use JPGs rather than TIFs for source images, as TIFs are large and will be converted to JPG anyway)
-
 
 ## Preview and Build a Project with Zooming Images
 
@@ -64,41 +57,21 @@ To speed development time, Quire will skip processing zooming images that have p
 - If you replace a zooming image but keep the same filename, you should delete both the `public` and `_site` directories in your project if they exist, before running `quire preview` or `build` to ensure the replaced image is not skipped by the IIIF image tiler.
 {{< /q-class >}}
 
+
 ## Improve Performance
 
-As you exceed a hundred or more zooming images in a project, you are likely to start seeing performance issues both on the development end (when you're running Quire commands like `preview` and `build`) and on the user end (when a reader is looking at your finished Quire site). There are a number of ways these issues can be mitigated if you see them start to occur.
+As you exceed a hundred or more zooming images in your project, you are likely to encounter some performance issues both on the development end (when running commands like `quire preview` and `quire build`) and on the user end (when a reader is looking at your finished Quire site). 
 
-### Optimize your source images
+If you encounter any difficulties please let us know on the [community forum](https://github.com/thegetty/quire/discussions?discussions_q=is%3Aopen). We are currently working on improving image performance in Quire as you can see in [GitHub issue #815](https://github.com/thegetty/quire/issues/815). When this work is complete, we will share tips for mitigating issues as they start to occur.
 
-While Quire accepts a number of file formats (as noted above) the larger the file size in megabytes, the more time it will take to process when running 
+Some basic tips for now include: 
 
-### Optimize the placement of your zooming images
-
-Don't use too many on one page or in one lightbox
-
-### Use placeholder images until your final deploy
-
-Make a 
-
-### Host images externally
-
-See below
-
-
-
-
-
+- Optimize your source images. The larger the file size in megabytes, the more time it will take to process when your project is building. 
+- Don't use too many on one page or in one lightbox
+- Use placeholder images until ready to build the actual work 
+- Host images externally (see the following section)
 
 
 ## Use Existing External IIIF Images
 
-```yaml
-- id: "irises"    
-  manifestId: https://media.getty.edu/iiif/manifest/53be857e-41e8-4198-b45d-2e0f52d3051b
-  canvasId: https://media.getty.edu/iiif/manifest/canvas/e5d29650-11f8-4897-9540-54a9dd65b04f.json
-  printImage: figures/irises.jpg
-  src: figures/irises.jpg 
-```
-
-## Use Quire to Create IIIF Images to Host Externally
-
+Coming Soon!
