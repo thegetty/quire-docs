@@ -91,3 +91,7 @@ The next attribute you need to include in the `figures.yaml` is the `canvasId`. 
 {{< q-figure id="liz-fischer" >}}
 
 In the `figures.yaml` you will also need to include a `printImage` attribute and a `src` attribute. These point to where you have saved your image in your project. So for the example above, `irises.jpg` is saved in the projects `_assets/images/figures` folder. The `src` value will find the image and add it to your Markdown page and the `printImage` will make sure that image is included in the PDF/print version of your publication. 
+
+{{< q-class "box tip" >}}
+- At the moment the +/- signs typically used to zoom in and out of an image are not available in Quire. Instead zooming can be achieved by scrolling or pinching. Adding these controls back to Quire is part of the work laid out in [GitHub issue #815](https://github.com/thegetty/quire/issues/815) mentioned above.
+{{< /q-class >}}
