@@ -395,3 +395,11 @@ figure_list:
   - id: "pdf-width"
     src: /screenshots/pdf-layout-refinement--width.png
     caption: "A custom CSS style can be defined and applied to change the width of a figure to help it fit within the available white space rather than having it bump to the next column or page."
+
+  - id: "iiif-manifest"
+    src: /screenshots/iiif-manifest.jpg
+    caption: "Scrolling down Getty's collection page for an object that is available as a IIIF image, you will eventually find the manifest URL."
+
+  - id: "liz-fischer"
+    src: /screenshots/liz-fischer.jpg
+    caption: "Liz Fischer offers a IIIF Manifest explorer tool on her website https://www.lizmfischer.com/iiif-tools/manifest to help you indentify important information in the manifest."
