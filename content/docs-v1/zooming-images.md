@@ -33,6 +33,10 @@ There is no maximum size limit for a zooming image, and the larger the source fi
 - Minimum image size: Greater than 512px on the long side
 - Maximum image size: None, but we recommend limiting to 8,192px on the long side
 
+{{< q-class "box tip" >}}
+- The +/- signs typically used to zoom in and out of an image are currently not working in v1. Instead zooming can be achieved by scrolling or pinching. Work is currently underway to add these controls back. Follow our progress in [GitHub issue #815](https://github.com/thegetty/quire/issues/815).
+{{< /q-class >}}
+
 ## Preview and Build a Project with Zooming Images
 
 Quire uses the [International Image Interoperability Framework (IIIF)](https://iiif.io/) to manage its advanced image features including zooming, layered, and [rotating images](/docs-v1/sequences/). IIIF (referred to when speaking as "Triple I F") is a shared, open set of standards for storing images and image data. These standards allow for seamless and regularized sharing and display of those images for various uses within a project, an institution, or across different institutions. IIIF is a growing standard, particularly in the academic, art, and cultural heritage sectors. 
@@ -72,7 +76,10 @@ Some basic tips for now include:
 
 ## Add Existing External IIIF Images
 
-In addition to creating deep zooming images in your Quire project by adding `zoom: true` to a `figures.yaml` entry, you can also use existing external IIIF images. This is achieved by adding a few additional attributes to the `figures.yaml` entry, including `manifestId`, `canvasId`, and `printImage`. 
+In addition to creating deep zooming images in your Quire project by adding `zoom: true` to a `figures.yaml` entry, you can also use existing external IIIF images. This is achieved with two steps: 
+
+1. Download the image from another institution's website (usually there will be either a IIIF logo or language that confirms it's a IIIF image) and then save it to your `_assets/images/` directory.
+2. Add the additional attributes `manifestId`, `canvasId`, and `printImage` to the `figures.yaml` entry as depicted in the example below. 
 
 ```yaml
 - id: "irises"    
@@ -82,7 +89,7 @@ In addition to creating deep zooming images in your Quire project by adding `zoo
   src: figures/irises.jpg 
 ```
 
-The `manifestId` or manifest URL is a link to a JSON file that contains important metadata about an object including things like artist, name, and copyright information. A manifest URL will always accompany a IIIF image, however, each institution displays this information a bit differently. Sometimes there is a IIIF button that will take you to a manifest, other institutions might include the manifest URL below or alongside the tombstone information on an object's collection page. Here is an example of where the manifest URL is found on the Getty collection page for Van Gogh's *Irises*:
+The `manifestId` or manifest URL is a link to a JSON file that contains important metadata about an object including things like artist, name, and copyright information. A manifest URL will always accompany a IIIF image, however, each institution displays this information a bit differently. Sometimes there is a IIIF button that will take you to a manifest, other institutions might include the manifest URL below or alongside the tombstone information on an object's collection page. Here is an example of where the manifest URL is found towards the bottom of the Getty collection page for Van Gogh's *Irises*:
 
 {{< q-figure id="iiif-manifest" >}}
 
@@ -90,8 +97,4 @@ The next attribute you need to include in the `figures.yaml` is the `canvasId`. 
 
 {{< q-figure id="liz-fischer" >}}
 
-In the `figures.yaml` you will also need to include a `printImage` attribute and a `src` attribute. These point to where you have saved your image in your project. So for the example above, `irises.jpg` is saved in the projects `_assets/images/figures` folder. The `src` value will find the image and add it to your Markdown page and the `printImage` will make sure that image is included in the PDF/print version of your publication. 
-
-{{< q-class "box tip" >}}
-- At the moment the +/- signs typically used to zoom in and out of an image are not available in Quire. Instead zooming can be achieved by scrolling or pinching. Adding these controls back to Quire is part of the work laid out in [GitHub issue #815](https://github.com/thegetty/quire/issues/815) mentioned above.
-{{< /q-class >}}
+In the `figures.yaml` you will also need to include a `printImage` attribute and a `src` attribute. These will have the same value, which, rather than pointing to an external URL for the IIIF image, should point to where you have saved your image in your project. For the example above, `irises.jpg` is saved in the projects `_assets/images/figures` folder. In the future, we aim to eliminate this redundancy.  
