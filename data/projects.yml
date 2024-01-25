@@ -776,3 +776,18 @@ project_list:
     url: https://monet-pastels.wpi.art/
     customization_level: extensive
     note: "In addition to their catalogue raisonné, [*Claude Monet: The Revised Catalogue Raisonné; The Pastels*](https://digitalprojects.wpi.art/monet/introduction) the Wildenstein Plattner Institute (WPI) also released a companion publication on the pastels by Monet scholar and curator, Géraldine Lefebvre. *Claude Monet, les pastels. Un recueil d’essais et de commentaires pour accompagner le catalogue raisonné*, can be translated into any language from the original French and features critical essays on select pastels, as well as information on the major themes and early collectors of these works. WPI did extenseive work to customize layouts and shortcodes, extend Quire’s search function, change the navigation and sidebar menu, and more." 
+
+  - id: "perfectly_imperfect_denver"
+    src: /screenshots/_perfectly_imperfect_denver.jpg
+    alt: "Perfectly Imperfect| Korean Buncheong Ceramics. The title also appears in Korean"
+    type: Exhibition Catalogue 
+    publisher: "Denver Art Museum"
+    title_info: "Perfectly Imperfect: Korean Buncheong Ceramics"
+    pub_date: 2023-12-01
+    url: https://buncheong.denartmus.org/
+    customization_level: moderate
+    github_user:
+      - vhellstein
+      - mpopke
+      - cbutcosk
+    note: "*Perfectly Imperfect: Korean Buncheong Ceramics* is an online catalogue published in conjunction with an exhibition organized by the Denver Art Museum and the National Museum of Korea. While the catalogue was initially conceived as an in-gallery, take-away brochure created to accompany the exhibition, the move to Quire allowed the Denver Art Museum to provide more robust content, including 3-D images that enabled the viewers to experience a few objects more thoroughly. Using Quire also eliminated the cost and upkeep of printed brochures over a lengthy period." 

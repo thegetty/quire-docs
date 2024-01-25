@@ -5,6 +5,31 @@ type: essay
 abstract: "Get the latest news and info about upcoming events"
 ---
 
+## Upcoming Events
+
+{{< q-figure id="caa-2024" >}}
+
+**College Art Association 2024** <br>
+February 15–17 <br>
+Hilton Chicago <br>
+Booth #205 
+
+We will be holding 30-minute Quire demos at our booth on the following days:
+
+**Thursday, February 15: 2:00–2:30 PM** <br>
+**Friday, February 16: 10:30–11:00 AM** 
+
+You can also schedule an in-person appointment with Greg Albers and Erin Cecele Dunigan:
+
+<div class="action-button">
+
+[Schedule a Meeting](https://calendly.com/edunigan-getty/caa)
+
+</div> 
+
+*Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
+
+
 ## News
 
 <div class="action-button">
@@ -51,10 +76,6 @@ abstract: "Get the latest news and info about upcoming events"
 - Sept 16: Welcome to Getty’s development team, Hannah Balenda!
 - Mar 9: Welcome to our new community manager, Erin Cecele Dunigan!
 - Feb 3: Quire [v0.18.0](https://github.com/gettypubs/quire-starter-theme/releases/tag/v0.18.0) released
-
-## Upcoming Events
-
-*Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
 ## Past Events
 

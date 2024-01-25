@@ -403,3 +403,7 @@ figure_list:
   - id: "liz-fischer"
     src: /screenshots/liz-fischer.jpg
     caption: "Liz Fischer offers a IIIF Manifest explorer tool on her website https://www.lizmfischer.com/iiif-tools/manifest to help you indentify important information in the manifest."
+
+  - id: "caa-2024"
+    src: /screenshots/caa2024banner.png
+    
