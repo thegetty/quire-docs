@@ -130,8 +130,7 @@ entryPage:
 
 ### Thumbnail 
 
-You can associate a small thumbnail image with your object by using the `thumbnail` attribute and including a path to that image as the value. The image should be small, approximately 300 pixels wide. This attribute is only required if the object image does not include the seetting `zoom: true` in the `figures.yaml`. Thumbnails are primarily used on object grid pages. More information on those can be found in the [*General Object Grids*](#generate-object-grids) section below.
-
+You can associate a small thumbnail image with your object by using the `thumbnail` attribute and including a path to that image as the value. The image should be small, approximately 300 pixels wide. This attribute is only required if the object image does not include the setting `zoom: true` in the `figures.yaml`. Thumbnails are primarily used on object grid pages. More information on those can be found in the [*General Object Grids*](#generate-object-grids) section below.
 
 ## Generate Object Grids
 
@@ -142,6 +141,8 @@ layout: object-grid
 ```
 
 [Include example]
+
+Nothing else needs to be written on this page. 
 
 
 {{< q-class "box warning" >}}
@@ -157,10 +158,12 @@ So for example, if your `object_list` includes  `artist`, `year`, `dimensions`, 
 
 ```yaml
 object_card:
-  - artist:
-    year:
-    location:
+  - artist
+    year
+    location
 ```
+
+
 
 ### Create Filterable Object Cards 
 
@@ -220,9 +223,9 @@ object_list:
 
 ```yaml
 object_card:
-  - artist:
-    year:
-    location:
+  - artist
+    year
+    location
 ```
 
 ```yaml
