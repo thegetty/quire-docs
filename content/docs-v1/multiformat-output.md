@@ -102,7 +102,26 @@ To include the PDF file as a download from your online edition:
 
 ### Output the PDF for Print or for Web
 
-By default, the PDF is output at full-resolution and with crop marks for professional printing. Figure images are included in the PDF at the same size they were added to the `content/_assets/images/` directory, except when the images have been designated as zooming with `zoom: true` in the `figures.yaml` file. For zooming images, Quire processes and uses a special image that's 2025px wide for the PDF and EPUB output. These are large enough for a full-page image in a printed book. This value can be changed in `_plugins/figures/iiif/config.js`, for instance to make the images smaller for a web-ready PDF. PDFs can also be downsampled to a smaller file size after they have been generated, using a program like Adobe Acrobat.
+By default, the PDF is output at full-resolution and with full bleed and crop marks for professional printing. 
+
+#### Image Resolution
+
+Figure images are included in the PDF at the same size they were added to the `content/_assets/images/` directory, except when the images have been designated as zooming with `zoom: true` in the `figures.yaml` file. For zooming images, Quire processes and uses a special image that is 2025px wide for the PDF and EPUB output. These are large enough for a full-page image in a printed book. This value can be changed in `_plugins/figures/iiif/config.js`. To make images smaller for web-only PDF output, you would look for the following bit of code in the `config.js` file and change the `width` to 900 or less. 
+
+```JS 
+/**
+* Transformation applied to IIIF resources for use in PDF and EPUB 
+*/
+{
+ name: 'print-image',
+ resize: {
+   width: 2025,
+   withoutEnlargement: true
+ }
+},
+```
+
+#### Crop Marks and Bleeds
 
 Crop marks and bleeds are controlled by the `content/_assets/styles/variables.scss` file (which is further discussed below). Adding the following two lines to the `variables.scss` file would remove the bleed and crop marks respectively. 
  
@@ -273,6 +292,10 @@ Also specific for PrinceXML output, figure images can be styled to span both col
   }
 }
 ```
+
+{{< q-class "box warning" >}}
+- Anytime you are making tweaks to the `custom.css` and want to review your work, it is advised to delete the `public` folder before rerunning `quire build` and `quire pdf`.  
+{{< /q-class >}}
 
 ### Tips for PDF Design and Development
 
