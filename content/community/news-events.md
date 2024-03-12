@@ -7,25 +7,17 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-{{< q-figure id="caa-2024" >}}
+**2024 Library Publishing Forum**<br>
+[https://librarypublishing.org/forum/](https://librarypublishing.org/forum/)<br>
+May 15-16, 2024<br>
+Minneapolis, Minnesota<br>
+*More information coming soon!*
 
-**College Art Association 2024** <br>
-February 15–17 <br>
-Hilton Chicago <br>
-Booth #205 
-
-We will be holding 30-minute Quire demos at our booth on the following days:
-
-**Thursday, February 15: 2:00–2:30 PM** <br>
-**Friday, February 16: 10:30–11:00 AM** 
-
-You can also schedule an in-person appointment with Greg Albers and Erin Cecele Dunigan:
-
-<div class="action-button">
-
-[Schedule a Meeting](https://calendly.com/edunigan-getty/caa)
-
-</div> 
+**Association of University Presses Annual Meeting**<br>
+[https://aupresses.org/programs-events/annual-meeting/aupresses-2024/](https://aupresses.org/programs-events/annual-meeting/aupresses-2024/)<br>
+June 11-13, 2024<br>
+Montreal, Quebec<br>
+*More information coming soon!*
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
@@ -39,6 +31,10 @@ You can also schedule an in-person appointment with Greg Albers and Erin Cecele 
 </div>
 
 *Visit our [newsletter archive](/community/newsletter-archive/).*
+
+**2024**
+
+- Coming soon!
 
 **2023**
 
@@ -56,10 +52,10 @@ You can also schedule an in-person appointment with Greg Albers and Erin Cecele 
 
 **2022**
 
+- December 2: The [v1.0.0 pre-release and official open-source launch](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED) are announced
 - June 9: Monthly [Quire office hours](https://newsletters.getty.edu/t/t-61FFEB8FD01FF7362540EF23F30FEDED) are introduced
 - May 12: [Announcement](https://newsletters.getty.edu/t/t-BCD0F34A2740395C2540EF23F30FEDED) goes out that that Quire will be switching to a new static site generator in advance of the upcoming open-source launch
 - April 14: Quire is a sponsor of the [2022 Library Publishing Forum](https://librarypublishing.org/forum/)
-- December 2: The [v1.0.0 pre-release and official open-source launch](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED) are announced
 
 **2021**
 
@@ -81,6 +77,7 @@ You can also schedule an in-person appointment with Greg Albers and Erin Cecele 
 
 | Event | Date | Description |
 | -- | -- | -- |
+| College Art Association Conference (CAA)| February 15-17, 2024 | 30-minute Quire demonstrations at Booth # 205 | 
 | MCN (Museum Computer Network) | November 10, 2023 | "A Community Effort: Digital Publishing with Open-Source Tools," moderated by Erin Cecele Dunigan (Quire) with Duane Degler (Design for Context) and Caitlin Sweeney (Wildenstein Plattner Institute) | 
 | Price Lab for Digital Humanities and Penn Libraries | November 8, 2023 | "A Day of Digital Publishing & Quire," featuring Cosette Alonso Bruhns (Penn Libraries), Chris Diaz (formerly Northwestern University Libraries),  Erin Cecele Dunigan (Quire), Matt K. Gold (CUNY Graduate Center/Manifold), Liz Neely (Georgia O'Keefe Museum), Stewart Varner (Price Lab for Digital Humanities) | 
 | National Museum Publishing Seminar | August 29, 2023 | Quire Community Meet-Up, featuring Meghan Gray & Stephanie Alger (Nelson-Atkins Museum of Art); Will Gillham (Amon Carter Museum of American Art); Valerie Hellstein (Denver Art Museum); and Stephanie Rebick (Vancouver Gallery of Art)|
