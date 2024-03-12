@@ -791,3 +791,16 @@ project_list:
       - mpopke
       - cbutcosk
     note: "*Perfectly Imperfect: Korean Buncheong Ceramics* is an online catalogue published in conjunction with an exhibition organized by the Denver Art Museum and the National Museum of Korea. While the catalogue was initially conceived as an in-gallery, take-away brochure created to accompany the exhibition, the move to Quire allowed the Denver Art Museum to provide more robust content, including 3-D images that enabled the viewers to experience a few objects more thoroughly. Using Quire also eliminated the cost and upkeep of printed brochures over a lengthy period." 
+
+  - id: "corning_glassblowing"
+    src: /screenshots/_corning_glassblowing.jpg
+    alt: "In addition to the title, *The Techniques of Roman-Period Glassblowing*, and author, William Gudenrath, the cover page also includes an image, navigation options, and introductory text."
+    type: Monograph
+    publisher: "Corning Museum of Glass"
+    title_info: "The Techniques of Roman-Period Glassblowing"
+    pub_date: 2024-01-29
+    url: https://romanglassblowing.cmog.org/
+    customization_level: significant
+    github_user:
+      - bjhewitt
+    note: "Corning Museum of Glass evaluated several static site generator options for this project and found that Quire's focus on scholarly publications was a good fit for the structure and feature needs such as footnotes, a catalogue grid, and object entries. This particular project relies heavily on images and video, so the easy inclusion of IIIF 360º image players and zoomable images was helpful. The museum heavily customized the theme's styling, and added minor grid template customization to allow for direct links to catalog grid group headings." 
