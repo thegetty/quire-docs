@@ -274,12 +274,13 @@ project_list:
     type: Journal
     publisher: Tilt West
     title_info: "*Tilt West Journal, Vol. 2, Art and Language* by Wisdom Amouzou, Gio Barabadze, Stephen Brackett, Gregg Deal, Asia Dorsey, Cory Feder, Anthony Garcia, Sr., Cory Minkah Montalvo, Bryánne E. Mitchell-Gonzales, Kai Lee Mykels, Shelsea Ochoa, Kim Shively, Dujie Tahat, and Motus Theater."
+    title_info: "*Tilt West Journal, Vol. 2, Art and Community*"
     pub_date: 2020-12-03
     url: http://journal.tiltwest.org/vol2/
     customization_level: moderate
     github_user:
       - swambold1
-    note: "The Second issue of *Tilt West Journal* features an animated cover and is further enriched with audio and video components. While printed copies are still available for purchase, the Tilt West team uses Quire to expand the boundaries of what digital journal publishing can encompass."
+    note: "The second issue of *Tilt West Journal* features an animated cover and is further enriched with audio and video components. While printed copies are still available for purchase, the Tilt West team uses Quire to expand the boundaries of what digital journal publishing can encompass."
 
   - id: "pictorial_silks"
     src: /screenshots/_pictorial_silks.jpg
@@ -416,10 +417,10 @@ project_list:
 
   - id: "materia_vol_1"
     src: /screenshots/_materia_vol_1.jpg
-    alt: "Materia: Journal of Technical Art History Vol. 1, Issue 1"
+    alt: "Materia: Journal of Technical Art History, Issue 1"
     type: Journal
     publisher: "Materia: Journal of Technical Art History"
-    title_info: "Materia: Journal of Technical Art History (Vol. 1, Issue 1)"
+    title_info: "*Materia: Journal of Technical Art History Issue 1*"
     pub_date: 2021-06-28
     url: https://volume-1-issue-1.materiajournal.com/
     customization_level: moderate
@@ -460,13 +461,13 @@ project_list:
     alt: "Art and Labor, Tilt West Journal, Vol. 3 — September 2021, Phil America, Sam Bodkin, Jessica Brunecky, Patrisse Cullors, Jessica Herring, Dulce Soledad Ibarra, Bobby LeFebre, Muna Malik, Stacey Putka, Lynde Rosario, Amy Shimshon-Santo, Mike Shum, and Rachel Woolf"
     type: Journal
     publisher: Tilt West
-    title_info: "Tilt West Journal, Vol. 3: Art and Labor"
+    title_info: "*Tilt West Journal, Vol. 3: Art and Labor*"
     pub_date: 2021-09-01
     url: https://journal.tiltwest.org/vol3/
     customization_level: significant
     github_user:
       - swambold1
-    note: "Tilt West Journal, Vol. 3: Art and Labor is the latest volume of Tilt West's journal, a publication dedicated to critical discourse with a focus on arts and culture in Denver, Colorado and beyond. Featuring meditations on the theme of Art and Labor, this volume incorporates multimedia components like audio and videos with poetry, essays, and photography. Art and Labor is available both online and as a limited-edition paperback. This is the journal's third publication with Quire. Previous volumes of Tilt West Journal include Art and Language (March 2020) and Art and Community (December 2020)."
+    note: "*Tilt West Journal, Vol. 3: Art and Labor* is the latest volume of Tilt West's journal, a publication dedicated to critical discourse with a focus on arts and culture in Denver, Colorado and beyond. Featuring meditations on the theme of Art and Labor, this volume incorporates multimedia components like audio and videos with poetry, essays, and photography. Art and Labor is available both online and as a limited-edition paperback. This is the journal's third publication with Quire. Previous volumes of Tilt West Journal include Art and Language (March 2020) and Art and Community (December 2020)."
 
   - id: "akron_art_mail_1"
     src: /screenshots/_akron_art_mail_1.jpg
@@ -570,7 +571,7 @@ project_list:
     title_info: "Tilt West Journal, Vol. 4: Art and Science"
     pub_date: 2022-10-03
     url: https://journal.tiltwest.org/vol4/
-    customization_level: minor
+    customization_level: moderate
     github_user:
       - swambold1
     note: "Tilt West Journal, Vol. 4: Art and Science is the latest volume of Tilt West's journal, a publication dedicated to critical discourse with a focus on arts and culture in Denver, Colorado, and beyond. As explained in the Editor's Note for Art and Science: “...we highlight myriad ways that the arts and humanities intersect with science in both artistic practice and scientific research. In these pages, you will find examples of art inspired by scientific ideas, art created through cross-disciplinary collaboration, and art that blurs the boundaries between the two fields.”"
@@ -662,7 +663,7 @@ project_list:
     title_info: "Exhibiting O'Keeffe: The Making of an American Modernist"
     pub_date: 2023-02-21
     url: https://publications.okeeffemuseum.org/exhibiting-okeeffe/
-    customization_level: major
+    customization_level: extensive
     github_user:
       - lizneely
       - cbutcosk
@@ -727,7 +728,7 @@ project_list:
     src: /screenshots/_museum_digital_practice_2022.jpg
     alt: "The State of Museum Digital Practice | 2022. A collection of graduate essays. Museums and Technology | George Washington University."
     type: Essay Collection
-    publisher: "GWU Museum Studies"
+    publisher: "Museum Studies at the George Washington University"
     title_info: "The State of Museum Digital Practice | 2022"
     pub_date: 2022-12-08
     url: https://gwu-museum-studies.github.io/Museum-Digital-Practice-2022/
@@ -804,3 +805,16 @@ project_list:
     github_user:
       - bjhewitt
     note: "Corning Museum of Glass evaluated several static site generator options for this project and found that Quire's focus on scholarly publications was a good fit for the structure and feature needs such as footnotes, a catalogue grid, and object entries. This particular project relies heavily on images and video, so the easy inclusion of IIIF 360º image players and zoomable images was helpful. The museum heavily customized the theme's styling, and added minor grid template customization to allow for direct links to catalog grid group headings." 
+
+  - id: "tilt_art_language"
+    src: /screenshots/_tilt_west_1.jpg
+    alt: "Art & Language, Tilt West Journal, Vol. 1, March 2020"
+    type: Journal
+    publisher: Tilt West
+    title_info: "*Tilt West Journal, Vol. 1, Art and Language*"
+    pub_date: 2020-03-01
+    url: https://journal.tiltwest.org/vol1/
+    customization_level: moderate
+    github_user:
+      - swambold1
+    note: "The inaugural issue of *Tilt West Journal* chose Quire as a way to expand the boundaries of what digital journal publishing can encompass. In addition to the website version, printed copies are also available for purchase."
