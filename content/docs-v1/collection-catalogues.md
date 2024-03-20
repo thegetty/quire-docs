@@ -139,7 +139,6 @@ layout: entry
 order:
 object:
   - artist:
-    title: 
     year:
     dimensions:
     medium:
