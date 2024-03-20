@@ -7,13 +7,13 @@ aliases:
   - /documentation/collection-catalogues/
 ---
 
-Along with monographs, edited volumes, and serial publications, Quire is also designed with the publication of collection catalogues in mind. Collection catalogues typically feature a series of pages focused on an individual objects. Each page includes images of an object, data about it, and an essay or analysis text. To publish this style of catalogue with Quire, you’ll capture object data, create the object pages, and then, optionally, display a visual grid of the objects.
+Along with monographs, edited volumes, and serial publications, Quire is also designed with the publication of collection catalogues in mind. Collection catalogues typically feature a series of pages focused on individual objects. Each page includes images of an object, data about it, and an essay or analysis text. To publish this style of catalogue with Quire, you’ll capture object data, create the object pages, and then, optionally, display a visual grid of the objects.
 
 {{< q-figure id="entry-example" >}}
 
 ## Creating an `objects.yaml` File
 
-This first step of creating a collection catalogue in Quire is to capture all the data related to your various objects in an  `objects.yaml` file. Similar to how [*Figure Images*](/docs-v1/figure-images/) are managed with YAML, this data can then be pulled into your Markdown files through the use of an `id`. The primary way this information gets displayed is as a table of information that accompanies each object in the publication. This table is often referred to as a "tombstone". 
+The first step of creating a collection catalogue in Quire is to capture all the data related to your various objects in an  `objects.yaml` file. Similar to how [*Figure Images*](/docs-v1/figure-images/) are managed with YAML, this data can then be pulled into your Markdown files through the use of an `id`. The primary way this information gets displayed is as a table of information that accompanies each object in the publication. This table is often referred to as a "tombstone". 
 
 {{< q-figure id= "tombstone" >}}
 
@@ -29,7 +29,7 @@ object_display_order:
   - location
 ```
 
-Once you have determined the information you want to display, you then create an `object_list`. Similar to entries in a `figures.yaml` file, each entry in this list will reference a different object featured in your publication. The attributes that populate this list should include, but are not limited to the attributes listed under `object_display_order`. For example, you may want categorize object types (painting, sculpture, drawing) for use in the [filterable object grid](#generate-object-grids) but don't require this information to show up in the object tombstone. In that case, you would leave `type` out of `object_display_order` but keep it in your `object_list`. 
+Once you have determined the information you want to display, you then create an `object_list`. Similar to entries in a `figures.yaml` file, each entry in this list will reference a different object featured in your publication. The attributes that populate this list should include, but are not limited to, the attributes listed under `object_display_order`. For example, you may want categorize object types (painting, sculpture, drawing) for use in the [filterable object grid](#generate-object-grids) but don't require this information to show up in the object tombstone. In that case, you would leave `type` out of `object_display_order` but keep it in your `object_list`. 
 
 ```yaml
 object_list:
@@ -63,7 +63,7 @@ The attributes you choose to include for your objects are completely up to you. 
 | --- | --- |
 | `id` | Used to reference objects listed in `objects.yaml` in individual Markdown pages. |
 | `figure` | One or more images related to the object. The `id` values correspond with `ids` in your project’s `figures.yaml` file. |
-| `link` | A URL to an external page with more/current information on the object, such as link to an object page on a museum website.  |
+| `link` | A URL to an external page with more/current information on the object, such as a link to an object page on a museum website.  |
 | `thumbnail` |  A path to a smaller thumbnail image of the object to be displayed on a page with `layout: objects-page`. |
 
 ### Object `id`
@@ -284,7 +284,7 @@ This also applies to capitalization. If the same value is capitalized in one obj
 
 ### Create Multiple Filter Values
 
-Any object you are filtering can have multiple values and each would be filterable as long as the data organized is listed in the `object_list` correctly. In the examples below, all three materials ("graphite", "pastel", and "paper") will be added to the Medium dropdown menu. Please note, that values will not automatically be capitalized. 
+Any object you are filtering can have multiple values and each would be filterable as long as the data is formatted in the `object_list` correctly. In the examples below, all three materials ("graphite", "pastel", and "paper") will be added to the Medium dropdown menu. Please note that the values will not be capitalized automatically. 
 
 ``` yaml
 object_list:

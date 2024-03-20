@@ -115,7 +115,7 @@ figure_list:
 
   - id: "entry-example"
     src: /screenshots/modern-entry-side.jpg
-    caption: "An example of a typical object entry page one might find in a collection catalogue. The entnry includes an image, object data, and essay."
+    caption: "An example of a typical object entry page one might find in a collection catalogue. The entry includes an image, object data, and essay."
 
   - id: "modern-entry-side-accordion"
     src: /screenshots/modern-entry-side-accordion.jpg
