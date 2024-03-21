@@ -68,14 +68,14 @@ project_list:
     customization_level: moderate
     github_user:
       - garrettdashnelson
-    note: "This online exhibition was orignally slated to be a physical gallery exhibition, but it was put on indefinite hold due the COVID-19 pandemic. The project features a wide range of style customizations."
+    note: "This online exhibition was originally slated to be a physical gallery exhibition, but it was put on indefinite hold due the COVID-19 pandemic. The project features a wide range of style customizations."
 
   - id: "fault_lines"
     src: /screenshots/_fault_lines.jpg
-    alt: "Fault Lines: 2020 Senior Thesis Exhibition"
+    alt: "Fault Lines: 2020 Senior Thesis Exhibition, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
-    title_info: "*Fault Lines: 2020 Senior Thesis Exhibition*, by Sequoia Belk-Hurst, Téa Blatt, L.A. Bonet, De'Ana Brownfield, Carla Cardenas, Lexi Castillo, Sarah Frances, Slaone Gershov, Danielle La Fontaine, Thea Moerman, Raissa Palacios, Yana Sternberger-Moye, Ellis Teare, and Rowan Weir"
+    title_info: "*Fault Lines: 2020 Senior Thesis Exhibition*"
     pub_date: 2020-05-20
     url: https://mcam.mills.edu/publications/faultlines/index.html
     customization_level: minor
@@ -85,10 +85,10 @@ project_list:
 
   - id: "in_plain_sight"
     src: /screenshots/_in_plain_sight.jpg
-    alt: "In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya"
+    alt: "In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
-    title_info: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*, by Daniel Nevers, Joanna Fiduccia, Anne Lesley Selcer, and Stephanie Hanor"
+    title_info: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*"
     pub_date: 2019-09-19
     url: https://mcam.mills.edu/publications/inplainsight/index.html
     customization_level: minor
@@ -98,7 +98,7 @@ project_list:
 
   - id: "state_of_convergence"
     src: /screenshots/_state_of_convergence.jpg
-    alt: "State of Convergence"
+    alt: "State of Convergence, by Stephanie Hanor, Janin Escobedo-Garcia, Ely Gann, Fiona Ordway Mosser, Grace Patterson, Isabella Perry, and Emma Sugarbaker"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
     title_info: "*State of Convergence*"
@@ -108,8 +108,6 @@ project_list:
     github_user:
       - stephaniehanor
     note: "This is an exhibition catalogue for a show at Mills College Art Museum. The exhibition was not initially slated to include a catalogue due to high production costs, but Quire provided an affordable opportunity."
-
-
 
   - id: "silk_poems"
     src: /screenshots/_silk_poems.jpg
@@ -130,59 +128,59 @@ project_list:
     alt: "Ancient Carved Ambers in the J. Paul Getty Museum by Faya Causey"
     type: Collection Catalogue
     publisher: Getty Publications
-    title_info: "*Ancient Carved Ambers in the J. Paul Getty Museum*, by Faya Causey"
+    title_info: "*Ancient Carved Ambers in the J. Paul Getty Museum*"
     pub_date: 2019-11-26
     url: https://www.getty.edu/publications/ambers/
     customization_level: minor
     github_user:
       - geealbers
-    note: "Devleoped by Getty, this publication is a good example of a standard collection catalogue built using Quire."
+    note: "Developed by Getty, this publication is a good example of a standard collection catalogue built using Quire."
 
   - id: "cva"
     src: /screenshots/_getty_cva.jpg
     alt: "Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters by Despoina Tsiafakis"
     type: Corpus Vasorum Antiquorum
     publisher: Getty Publications
-    title_info: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*, by Despoina Tsiafakis"
+    title_info: "*Corpus Vasorum Antiquorum, Fascicule 10: Athenian Red-Figure Column- and Volute-Kraters*"
     pub_date: 2019-07-16
     url: https://www.getty.edu/publications/cva10/
     customization_level: extensive
     github_user:
       - geealbers
-    note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other instiutions down the road."
+    note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other institutions down the road."
 
   - id: "heritage_management"
     src: /screenshots/_getty_heritage_management.jpg
-    alt: "Values in Heritage Management: Emerging Approaches and Research Directions"
+    alt: "Values in Heritage Management: Emerging Approaches and Research Directions, by Erica Avrami, Susan MacDonald, Randall Madison, and David Myers"
     type: Proceedings
     publisher: Getty Publications
-    title_info: "*Values in Heritage Management: Emerging Approaches and Research Directions*, by Erica Avrami, Susan MacDonald, Randall Madison, and David Myers"
+    title_info: "*Values in Heritage Management: Emerging Approaches and Research Directions*"
     pub_date: 2019-09-16
     url: https://www.getty.edu/publications/heritagemanagement/
     customization_level: moderate
     github_user:
       - geealbers
-    note: "This publication represents typical reserach proceedings, however, it was additionally customized to accomodate a 7 in. x 10 in. print size."
+    note: "This publication represents typical research proceedings, however, it was additionally customized to accommodate a 7 in. x 10 in. print size."
 
   - id: "tour_toolkit"
     src: /screenshots/_tour_toolkit.jpg
-    alt: "Tour Toolkit: Developing an Inclusive Tour"
+    alt: "Tour Toolkit: Developing an Inclusive Tour, by Minneapolis Institute of Art"
     type: Informational Pamphlet
     publisher: Minneapolis Institute of Art
-    title_info: "*Tour Toolkit: Developing an Inclusive Tour*, by Minneapolis Institute of Art"
+    title_info: "*Tour Toolkit: Developing an Inclusive Tour*"
     pub_date: 2019-12-01
     url: https://artsmia.github.io/tour-toolkit/
     customization_level: moderate
     github_user:
       - kristhayer11
-    note: "This publication is an excellent example of how Quire can be used to produce shorter form publications like pamphlets and other educational handouts. Customziations include font, branding, and other aesthetic considerations."
+    note: "This publication is an excellent example of how Quire can be used to produce shorter form publications like pamphlets and other educational handouts. Customizations include font, branding, and other aesthetic considerations."
 
   - id: "alcohols_empire"
     src: /screenshots/_alcohols_empire.jpg
     alt: "Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World edited by Nicole LaBouff and Emily Beck"
     type: Interactive Publication
     publisher: Minneapolis Institute of Art
-    title_info: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*, edited by Nicole LaBouff and Emily Beck"
+    title_info: "*Alcohol's Empire: Distilled Spirits in the 1700s Atlantic World*"
     pub_date: 2019-02-04
     url: https://artsmia.github.io/alcohols-empire/
     customization_level: moderate
@@ -195,7 +193,7 @@ project_list:
     alt: "Mozoomdar at Sea by Nick Tackes"
     type: Research Project
     publisher: Self-Published
-    title_info: "*Mozoomdar at Sea*, by Nick Tackes"
+    title_info: "*Mozoomdar at Sea*"
     pub_date: 2019-04-01
     url: https://mozoomdar-at-sea.netlify.app/
     customization_level: minor
@@ -205,10 +203,10 @@ project_list:
 
   - id: "humanizing_the_digital"
     src: /screenshots/_humanizing_the_digital.jpg
-    alt: "Humanizing the Digital: Unproceedings from the MCN 2018 Conference"
+    alt: "Humanizing the Digital: Unproceedings from the MCN 2018 Conference, edited by Suse Anderson, Isabella Bruno, Hannah Hethmon, Seema Rao, Ed Rodley, and Rachel Ropeik"
     type: Proceedings
     publisher: Ad Hoc Museum Collective
-    title_info: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*, edited by Suse Anderson, Isabella Bruno, Hannah Hethmon, Seema Rao, Ed Rodley, and Rachel Ropeik"
+    title_info: "*Humanizing the Digital: Unproceedings from the MCN 2018 Conference*"
     pub_date: 2019-04-01
     url: https://ad-hoc-museum-collective.github.io/humanizing-the-digital/
     customization_level: minor
@@ -218,10 +216,10 @@ project_list:
 
   - id: "state_of_museum_dig"
     src: /screenshots/_state_of_museum_dig.jpg
-    alt: "The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses"
+    alt: "The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses, by Suse Anderson, Cristin Guinan-Wiley, Jonathan Edelman, Rachel Rosenfeld, Mary McCulla, Sheridan Small, Cynthia Kurtz, Amy Pollard, Corrie Brady, Melissa Garcia, Caitlin Hepner, Sydney Thatcher, Laura Dickson, and Rebecca Brockette"
     type: Graduate Student Project
     publisher: Museum Studies at the George Washington University
-    title_info: "*The State of Museum Digital Practice in 2019: A Collection of Graduate Essays and Responses*, by Suse Anderson, Cristin Guinan-Wiley, Jonathan Edelman, Rachel Rosenfeld, Mary McCulla, Sheridan Small, Cynthia Kurtz, Amy Pollard, Corrie Brady, Melissa Garcia, Caitlin Hepner, Sydney Thatcher, Laura Dickson, and Rebecca Brockette"
+    title_info: "*The State of Museum Digital Practice | 2019: A collection of graduate essays and responses*"
     pub_date: 2019-12-23
     url: https://ad-hoc-museum-collective.github.io/GWU-museum-digital-practice-2019/
     customization_level: minor
@@ -260,7 +258,7 @@ project_list:
     alt: "Ray Komai: *Architectural Forum* Covers 1953-1963"
     type: Exhibition Catalogue
     publisher: The Graphics Office
-    title_info: "*RAY KOMAI: *Architectural Forum* covers, 1953-1963*"
+    title_info: "*RAY KOMAI: Architectural Forum covers, 1953-1963*"
     pub_date: 2020-11-06
     url: https://raykomai.org/
     customization_level: minor
@@ -270,16 +268,16 @@ project_list:
 
   - id: "tilt_art_community"
     src: /screenshots/_tilt_west_2.jpg
-    alt: "Art & Community, Tilt West Journal, Vol. 2, December 2020"
+    alt: "Art & Community, Tilt West Journal, Vol. 2, December 2020by Wisdom Amouzou, Gio Barabadze, Stephen Brackett, Gregg Deal, Asia Dorsey, Cory Feder, Anthony Garcia, Sr., Cory Minkah Montalvo, Bryánne E. Mitchell-Gonzales, Kai Lee Mykels, Shelsea Ochoa, Kim Shively, Dujie Tahat, and Motus Theater."
     type: Journal
     publisher: Tilt West
-    title_info: "*Tilt West Journal, Vol. 2, Art and Language* by Wisdom Amouzou, Gio Barabadze, Stephen Brackett, Gregg Deal, Asia Dorsey, Cory Feder, Anthony Garcia, Sr., Cory Minkah Montalvo, Bryánne E. Mitchell-Gonzales, Kai Lee Mykels, Shelsea Ochoa, Kim Shively, Dujie Tahat, and Motus Theater."
+    title_info: "*Tilt West Journal, Vol. 2: Art and Community*"
     pub_date: 2020-12-03
     url: http://journal.tiltwest.org/vol2/
     customization_level: moderate
     github_user:
       - swambold1
-    note: "The Second issue of *Tilt West Journal* features an animated cover and is further enriched with audio and video components. While printed copies are still available for purchase, the Tilt West team uses Quire to expand the boundaries of what digital journal publishing can encompass."
+    note: "The second issue of *Tilt West Journal* features an animated cover and is further enriched with audio and video components. While printed copies are still available for purchase, the Tilt West team uses Quire to expand the boundaries of what digital journal publishing can encompass."
 
   - id: "pictorial_silks"
     src: /screenshots/_pictorial_silks.jpg
@@ -380,7 +378,7 @@ project_list:
     alt: "Celebrating 10+ Years of Wired!, 2009-2021, edited by Kristin Love Huffman, Hannah L. Jacobs, and Paul B. Jaskot"
     type: Report
     publisher: Duke University Digital Art History & Visual Culture Research Lab
-    title_info: "Celebrating 10+ Years of Wired!"
+    title_info: "*Celebrating 10+ Years of Wired!*"
     pub_date: 2021-03-10
     url: https://reports.dahvc.org/2021/
     customization_level: moderate
@@ -393,7 +391,7 @@ project_list:
     alt: "Getty Foundation: Getty Marrow Internship Program Impact Report"
     type: Report
     publisher: Getty Foundation
-    title_info: "Getty Marrow Internship Program Impact Report"
+    title_info: "*Getty Marrow Internship Program Impact Report*"
     pub_date: 2020-10-22
     url: https://www.getty.edu/interns-2020/report/
     customization_level: moderate
@@ -406,7 +404,7 @@ project_list:
     alt: "Digital Catalogues Study: A cross-institutional user study of online museum collection catalogues, November 2019, Key Findings"
     type: Report
     publisher: "Museum Publishing Digital Interest Group"
-    title_info: "Digital Catalogues Study: A Cross-Institutional User Study of Online Museum Collection Catalogues."
+    title_info: "*Digital Catalogues Study: A Cross-Institutional User Study of Online Museum Collection Catalogues*"
     pub_date: 2019-11-18
     url: https://digpublishing.github.io/catalogues-study/
     customization_level: none
@@ -416,10 +414,10 @@ project_list:
 
   - id: "materia_vol_1"
     src: /screenshots/_materia_vol_1.jpg
-    alt: "Materia: Journal of Technical Art History Vol. 1, Issue 1"
+    alt: "Materia: Journal of Technical Art History, Issue 1"
     type: Journal
     publisher: "Materia: Journal of Technical Art History"
-    title_info: "Materia: Journal of Technical Art History (Vol. 1, Issue 1)"
+    title_info: "*Materia: Journal of Technical Art History, Issue 1*"
     pub_date: 2021-06-28
     url: https://volume-1-issue-1.materiajournal.com/
     customization_level: moderate
@@ -433,7 +431,7 @@ project_list:
     alt: "What's Emerging in the Field? Essays from the MCN 2020 VIRTUAL Scholarship Program Recipients"
     type: Essays
     publisher: "Museum Computer Network (MCN)"
-    title_info: "What's Emerging in the Field?"
+    title_info: "*What's Emerging in the Field?*"
     pub_date: 2021-08-09
     url: https://publications.mcn.edu/2020-scholars/
     customization_level: moderate
@@ -446,7 +444,7 @@ project_list:
     alt: "Highpoint Editions: A History & Catalogue, 2001–2021: Dennis Michael Jon, Jennifer L. Roberts, and Jill Ahlberg Yohe"
     type: Collection Catalogue
     publisher: Minneapolis Institute of Art
-    title_info: "Highpoint Editions"
+    title_info: "*Highpoint Editions*"
     pub_date: 2021-10-08
     url: https://artsmia.org/highpoint-editions/
     customization_level: significant
@@ -460,20 +458,20 @@ project_list:
     alt: "Art and Labor, Tilt West Journal, Vol. 3 — September 2021, Phil America, Sam Bodkin, Jessica Brunecky, Patrisse Cullors, Jessica Herring, Dulce Soledad Ibarra, Bobby LeFebre, Muna Malik, Stacey Putka, Lynde Rosario, Amy Shimshon-Santo, Mike Shum, and Rachel Woolf"
     type: Journal
     publisher: Tilt West
-    title_info: "Tilt West Journal, Vol. 3: Art and Labor"
+    title_info: "*Tilt West Journal, Vol. 3: Art and Labor*"
     pub_date: 2021-09-01
     url: https://journal.tiltwest.org/vol3/
     customization_level: significant
     github_user:
       - swambold1
-    note: "Tilt West Journal, Vol. 3: Art and Labor is the latest volume of Tilt West's journal, a publication dedicated to critical discourse with a focus on arts and culture in Denver, Colorado and beyond. Featuring meditations on the theme of Art and Labor, this volume incorporates multimedia components like audio and videos with poetry, essays, and photography. Art and Labor is available both online and as a limited-edition paperback. This is the journal's third publication with Quire. Previous volumes of Tilt West Journal include Art and Language (March 2020) and Art and Community (December 2020)."
+    note: "*Tilt West Journal, Vol. 3: Art and Labor* is the latest volume of Tilt West's journal, a publication dedicated to critical discourse with a focus on arts and culture in Denver, Colorado and beyond. Featuring meditations on the theme of Art and Labor, this volume incorporates multimedia components like audio and videos with poetry, essays, and photography. Art and Labor is available both online and as a limited-edition paperback. This is the journal's third publication with Quire. Previous volumes of *Tilt West Journal* include Art and Language (March 2020) and Art and Community (December 2020)."
 
   - id: "akron_art_mail_1"
     src: /screenshots/_akron_art_mail_1.jpg
     alt: "Akron Art Mail Vol. 1"
     type: Exhibition Catalogue
     publisher: Akron Art Museum
-    title_info: "Akron Art Mail Vol. 1"
+    title_info: "*Akron Art Mail Vol. 1*"
     pub_date: 2021-10-08
     url: https://catalogs.akronartmuseum.org/akronartmail1/
     customization_level: moderate
@@ -487,7 +485,7 @@ project_list:
     alt: "The State of Museum Digital Practice | 2021: A collection of graduate essays and responses, Museums and Technology | George Washington University"
     type: Essays
     publisher: Museum Studies at the George Washington University
-    title_info: "The State of Museum Digital Practice | 2021: A collection of graduate essays and responses"
+    title_info: "*The State of Museum Digital Practice | 2021: A collection of graduate essays and responses*"
     pub_date: 2021-12-08
     url: https://ad-hoc-museum-collective.github.io/Museum-Digital-Practice-2021/
     customization_level: minor
@@ -500,7 +498,7 @@ project_list:
     alt: "Unseen: The Hidden Labor of Women –– Stephanie Hanor, O. O. Roberts, Susan Prier, Mollie Schottstaedt, and Jenny Varner"
     type: Exhibition Catalogue
     publisher: Mills College Art Museum
-    title_info: "Unseen: The Hidden Labor of Women"
+    title_info: "*Unseen: The Hidden Labor of Women*"
     pub_date: 2022-01-22
     url: https://mcam.mills.edu/publications/unseen/index.html
     customization_level: none
@@ -513,7 +511,7 @@ project_list:
     alt: "Josephine Halvorson at The Georgia O'Keeffe Museum"
     type: Exhibition Catalogue
     publisher: Georgia O'Keeffe Museum
-    title_info: "Josephine Halvorson at The Georgia O'Keeffe Museum"
+    title_info: "*Josephine Halvorson at The Georgia O'Keeffe Museum*"
     pub_date: 2021-10-08
     url: https://publications.okeeffemuseum.org/halvorson/
     customization_level: minor
@@ -526,7 +524,7 @@ project_list:
     alt: "Materia: Journal of Technical Art History Issue 2"
     type: Journal
     publisher: "Materia: Journal of Technical Art History"
-    title_info: "Materia: Journal of Technical Art History (Issue 2)"
+    title_info: "*Materia: Journal of Technical Art History, Issue 2*"
     pub_date: 2022-04-04
     url: https://issue-2.materiajournal.com/
     customization_level: moderate
@@ -539,7 +537,7 @@ project_list:
     alt: "The Clowes Collection: Paintings"
     type: Collection Catalogue
     publisher: "Indianapolis Museum of Art at Newfields"
-    title_info: "The Clowes Colletion: Paintings"
+    title_info: "*The Clowes Colletion: Paintings*"
     pub_date: 2022-05-20
     url: https://paintings.theclowescollection.org/
     customization_level: extensive
@@ -552,7 +550,7 @@ project_list:
     alt: "And I Must Scream, curated by Amanda H. Hellman"
     type: Exhibition Catalogue
     publisher: "Michael C. Carlos Museum, Emory University"
-    title_info: "And I Must Scream, curated by Amanda H. Hellman"
+    title_info: "*And I Must Scream, curated by Amanda H. Hellman*"
     pub_date: 2022-05-15
     url: https://carlos.emory.edu/publications/AndIMustScream/
     customization_level: minor
@@ -567,20 +565,20 @@ project_list:
     alt: "Art and Science, Tilt West Journal, Vol. 4 - October 2022, Jane Lilly Benale, Jeff Brown, Ann Futterman Collier, Nina Elder, Erin Espelie, Faerthen Felix, Kathie Foley-Meyer, Megan Gafford, Kim Hahn, Newton and Helen Mayer Harrison, Cherish Marquez, Indigo Moor, Radio Healer, Adrien Segal, Livy Onalee Snyder, SWEAT, and Xiuhtezcatl"
     type: Journal
     publisher: "Tilt West"
-    title_info: "Tilt West Journal, Vol. 4: Art and Science"
+    title_info: "*Tilt West Journal, Vol. 4: Art and Science*"
     pub_date: 2022-10-03
     url: https://journal.tiltwest.org/vol4/
-    customization_level: minor
+    customization_level: moderate
     github_user:
       - swambold1
-    note: "Tilt West Journal, Vol. 4: Art and Science is the latest volume of Tilt West's journal, a publication dedicated to critical discourse with a focus on arts and culture in Denver, Colorado, and beyond. As explained in the Editor's Note for Art and Science: “...we highlight myriad ways that the arts and humanities intersect with science in both artistic practice and scientific research. In these pages, you will find examples of art inspired by scientific ideas, art created through cross-disciplinary collaboration, and art that blurs the boundaries between the two fields.”"
+    note: "*Tilt West Journal, Vol. 4: Art and Science* is the latest volume of Tilt West's journal, a publication dedicated to critical discourse with a focus on arts and culture in Denver, Colorado, and beyond. As explained in the Editor's Note for Art and Science: “...we highlight myriad ways that the arts and humanities intersect with science in both artistic practice and scientific research. In these pages, you will find examples of art inspired by scientific ideas, art created through cross-disciplinary collaboration, and art that blurs the boundaries between the two fields.”"
 
   - id: "mariategui_poesia"
     src: /screenshots/_Mariategui_Poesia.jpg
     alt: "José Carlos Mariátegui: Escritos Juveniles (La Edad de Piedra). Poesía, Cuento, Teatro, 1."
     type: Series
     publisher: "Archivo José Carlos Mariátegui"
-    title_info: "Escritos Juveniles de José Carlos Mariátegui"
+    title_info: "*Escritos Juveniles de José Carlos Mariátegui*"
     pub_date: 2022-08-11
     url: https://www.mariategui.org/recursos/publicaciones/
     customization_level: minor
@@ -593,7 +591,7 @@ project_list:
     alt: "The Art of the Scene: Charles Truett Williams, Katie Robinson Edwards, Jonathan Frembling, S. Janelle Montgomery."
     type: Monograph
     publisher: "Amon Carter Museum of American Art"
-    title_info: "The Art of the Scene: Charles Truett Williams"
+    title_info: "*The Art of the Scene: Charles Truett Williams*"
     pub_date: 2022-11-01
     url: https://art-scene.cartermuseum.org/
     customization_level: minor
@@ -606,7 +604,7 @@ project_list:
     alt: "Mosaik - Marmor - Musen, Zur baulichen Ausstattung der römischen Großvilla von Vichten (Luxemburg) im Treverergebiet. Rainier Fischer."
     type: Monograph
     publisher: "National Museum of History and Art Luxembourg"
-    title_info: "Mosaik - Marmor - Musen, Zur baulichen Ausstattung der römischen Großvilla von Vichten (Luxemburg) im Treverergebiet"
+    title_info: "*Mosaik - Marmor - Musen, Zur baulichen Ausstattung der römischen Großvilla von Vichten (Luxemburg) im Treverergebiet*"
     pub_date: 2022-12-01
     url: https://collections.mnha.lu/open/mosaik-marmor-musen/
     customization_level: minor
@@ -619,7 +617,7 @@ project_list:
     alt: "City, Public Value, and Capitalism: New Urban Visions and Public Strategies"
     type: Monograph
     publisher: "Northwestern University Libraries"
-    title_info: "City, Public Value, and Capitalism: New Urban Visions and Public Strategies"
+    title_info: "*City, Public Value, and Capitalism: New Urban Visions and Public Strategies*"
     pub_date: 2022-06-17
     url: https://city-public-value-and-capitalism.northwestern.pub/
     customization_level: minor
@@ -632,7 +630,7 @@ project_list:
     alt: "Between Failure and Redemption: The Future of the Ethiopian Social Contract"
     type: Conference Proceedings
     publisher: "Northwestern University Libraries"
-    title_info: "Between Failure and Redemption: The Future of the Ethiopian Social Contract"
+    title_info: "*Between Failure and Redemption: The Future of the Ethiopian Social Contract*"
     pub_date: 2022-12-22
     url: https://ethiopian-social-contract.northwestern.pub/
     customization_level: moderate
@@ -646,7 +644,7 @@ project_list:
     alt: "Bridget Riley: Perceptual Abstraction, Yale Center for British Art"
     type: Monograph
     publisher: "Yale Center for British Art"
-    title_info: "Bridget Riley: Perceptual Abstraction"
+    title_info: "*Bridget Riley: Perceptual Abstraction*"
     pub_date: 2022-03-03
     url: https://bridget-riley.publications.britishart.yale.edu/
     customization_level: minor
@@ -659,10 +657,10 @@ project_list:
     alt: "Exhibiting O'Keeffe: The Making of an American Modernist, Georgia O'Keeffe Museum"
     type: Monograph
     publisher: "Georgia O'Keeffe Museum"
-    title_info: "Exhibiting O'Keeffe: The Making of an American Modernist"
+    title_info: "*Exhibiting O'Keeffe: The Making of an American Modernist*"
     pub_date: 2023-02-21
     url: https://publications.okeeffemuseum.org/exhibiting-okeeffe/
-    customization_level: major
+    customization_level: extensive
     github_user:
       - lizneely
       - cbutcosk
@@ -686,7 +684,7 @@ project_list:
     alt: "Her Brush: Japanese Women Artists from the Fong-Johnstone Collection, Denver Museum of Art"
     type: Exhibition Catalogue
     publisher: "Denver Art Museum"
-    title_info: "Her Brush: Japanese Women Artists from the Fong-Johnstone Collection"
+    title_info: "*Her Brush: Japanese Women Artists from the Fong-Johnstone Collection*"
     pub_date: 2023-02-24
     url: http://her-brush.denartmus.org/
     customization_level: extensive
@@ -701,7 +699,7 @@ project_list:
     alt: "Materia: Journal of Technical Art History Issue 3"
     type: Journal
     publisher: "Materia: Journal of Technical Art History"
-    title_info: "Materia: Journal of Technical Art History Issue 3"
+    title_info: "*Materia: Journal of Technical Art History, Issue 3*"
     pub_date: 2023-05-01
     url: https://issue-3.materiajournal.com/
     customization_level: moderate 
@@ -715,7 +713,7 @@ project_list:
     alt: "Reflections on Reality: Drawings and Paintings from the Weisberg Collection. Tom Rassieur, Winifred Smith, and Gabriel P. Weisberg"
     type: Collection Catalogue
     publisher: "Minneapolis Institute of Art"
-    title_info: "Reflections on Reality: Drawings and Paintings from the Weisberg Collection"
+    title_info: "*Reflections on Reality: Drawings and Paintings from the Weisberg Collection*"
     pub_date: 2023-03-29
     url: https://artsmia.org/weisberg-collection/
     customization_level: minor
@@ -727,8 +725,8 @@ project_list:
     src: /screenshots/_museum_digital_practice_2022.jpg
     alt: "The State of Museum Digital Practice | 2022. A collection of graduate essays. Museums and Technology | George Washington University."
     type: Essay Collection
-    publisher: "GWU Museum Studies"
-    title_info: "The State of Museum Digital Practice | 2022"
+    publisher: "Museum Studies at the George Washington University"
+    title_info: "*The State of Museum Digital Practice | 2022: A collection of graduate essays and responses*"
     pub_date: 2022-12-08
     url: https://gwu-museum-studies.github.io/Museum-Digital-Practice-2022/
     customization_level: minor
@@ -742,7 +740,7 @@ project_list:
     alt: "Edith Heath and Emily Carr: From the Earth. Bruce Grenville, Jay Stewart, and Jennifer M. Volland"
     type: Exhibition Catalogue
     publisher: "Vancouver Art Gallery"
-    title_info: "Edith Heath and Emily Carr: From the Earth"
+    title_info: "*Edith Heath and Emily Carr: From the Earth*"
     pub_date: 2023-04-03
     url: https://fromtheearthexhibition.ca/
     customization_level: minor
@@ -757,7 +755,7 @@ project_list:
     alt: "Italian Paintings at the Yale University Art Gallery. Laurence Kanter and Pia Palladino"
     type: Collection Catalogue
     publisher: "Yale University Art Gallery"
-    title_info: "Italian Paintings at the Yale University Art Gallery"
+    title_info: "*Italian Paintings at the Yale University Art Gallery*"
     pub_date: 2023-05-31
     url: https://italian-paintings-live.netlify.app/
     customization_level: moderate
@@ -771,7 +769,7 @@ project_list:
     alt: "Claude Monet, les pastels. Un recueil d’essais et de commentaires pour accompagner le catalogue raisonné. Par Geraldine lefebvre"
     type: Cataogue Raisonné Companion 
     publisher: "Wildenstein Plattner Institute"
-    title_info: "Claude Monet, les pastels. Un recueil d’essais et de commentaires pour accompagner le catalogue raisonné"
+    title_info: "*Claude Monet, les pastels. Un recueil d’essais et de commentaires pour accompagner le catalogue raisonné*"
     pub_date: 2023-12-05
     url: https://monet-pastels.wpi.art/
     customization_level: extensive
@@ -782,7 +780,7 @@ project_list:
     alt: "Perfectly Imperfect| Korean Buncheong Ceramics. The title also appears in Korean"
     type: Exhibition Catalogue 
     publisher: "Denver Art Museum"
-    title_info: "Perfectly Imperfect: Korean Buncheong Ceramics"
+    title_info: "*Perfectly Imperfect: Korean Buncheong Ceramics*"
     pub_date: 2023-12-01
     url: https://buncheong.denartmus.org/
     customization_level: moderate
@@ -791,3 +789,29 @@ project_list:
       - mpopke
       - cbutcosk
     note: "*Perfectly Imperfect: Korean Buncheong Ceramics* is an online catalogue published in conjunction with an exhibition organized by the Denver Art Museum and the National Museum of Korea. While the catalogue was initially conceived as an in-gallery, take-away brochure created to accompany the exhibition, the move to Quire allowed the Denver Art Museum to provide more robust content, including 3-D images that enabled the viewers to experience a few objects more thoroughly. Using Quire also eliminated the cost and upkeep of printed brochures over a lengthy period." 
+
+  - id: "corning_glassblowing"
+    src: /screenshots/_corning_glassblowing.jpg
+    alt: "In addition to the title, *The Techniques of Roman-Period Glassblowing*, and author, William Gudenrath, the cover page also includes an image, navigation options, and introductory text."
+    type: Monograph
+    publisher: "Corning Museum of Glass"
+    title_info: "*The Techniques of Roman-Period Glassblowing*"
+    pub_date: 2024-01-29
+    url: https://romanglassblowing.cmog.org/
+    customization_level: significant
+    github_user:
+      - bjhewitt
+    note: "Corning Museum of Glass evaluated several static site generator options for this project and found that Quire's focus on scholarly publications was a good fit for the structure and feature needs such as footnotes, a catalogue grid, and object entries. This particular project relies heavily on images and video, so the easy inclusion of IIIF 360º image players and zoomable images was helpful. The museum heavily customized the theme's styling, and added minor grid template customization to allow for direct links to catalog grid group headings." 
+
+  - id: "tilt_art_language"
+    src: /screenshots/_tilt_west_1.jpg
+    alt: "Art & Language, Tilt West Journal, Vol. 1, March 2020"
+    type: Journal
+    publisher: Tilt West
+    title_info: "*Tilt West Journal, Vol. 1: Art and Language*"
+    pub_date: 2020-03-01
+    url: https://journal.tiltwest.org/vol1/
+    customization_level: moderate
+    github_user:
+      - swambold1
+    note: "The inaugural issue of *Tilt West Journal* chose Quire as a way to expand the boundaries of what digital journal publishing can encompass. In addition to the website version, printed copies are also available for purchase."
