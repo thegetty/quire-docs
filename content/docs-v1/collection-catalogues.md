@@ -128,27 +128,7 @@ object_list:
 
 ## Create Object Pages
 
-Like all other pages in your publication, object pages are created as `.md` files in your `content` directory. To create an object entry page, add `layout: entry` and either the object data or the `id` that corresponds with your `objects.yaml` file to the page YAML. 
-
-**Object data in page YAML:**
-
-```yaml
----
-title: 
-layout: entry
-order:
-object:
-  - artist:
-    title: 
-    year:
-    dimensions:
-    medium:
-    location:
-    type:
-    figure:
-      - id:
----
-```
+Like all other pages in your publication, object pages are created as `.md` files in your `content` directory. To create an object entry page, add `layout: entry` and the `id` that corresponds with your `objects.yaml` file. Another option is to add the object data directly to the page YAML. If you choose to the latter, do this for all objects in your project and make sure the `object_list` of your `objects.yaml` file is empty.
 
 **Object data that references `objects.yaml` file:**
 
@@ -159,6 +139,25 @@ layout: entry
 order:
 object:
   - id: cat-1
+---
+```
+
+**Object data in page YAML:**
+
+```yaml
+---
+title: 
+layout: entry
+order:
+object:
+  - artist:
+    year:
+    dimensions:
+    medium:
+    location:
+    type:
+    figure:
+      - id:
 ---
 ```
 
@@ -177,6 +176,10 @@ Whatever the presentation, you can further organize the content on the page by u
 {{< q-figure id="modern-entry-side-accordion" >}}
 
 ## Generate Object Grids
+
+{{< q-class "box warning" >}}
+- In order to access this feature in an older, preexisting project, it must be running on `quire-11ty@1.0.0-rc.16` or higher. Run the command `quire info --debug` to see what version of `quire-11ty` your project is using. If it is an older version, you will need to start a new project by running the command `quire new [project-name]`, or follow our instructions to [update your existing project](/docs-v1/install-uninstall/#update-an-existing-project). 
+{{< /q-class >}}
 
 In a collection catalogue, there is typically a visual table of contents that unifies all the catalogue entries. In Quire, we call this an object grid. The grid includes a thumbnail of each object accompanied by object data. Each item in the grid hyperlinks to the relevant object page in the catalogue when clicked. 
 
@@ -204,14 +207,14 @@ The object grid is comprised of "object cards". These cards are customizable and
 
 Add `object_card` to your `objects.yaml` file along with a list of the attributes from your `object_list` that you want to populate the card. The `object_card` list not only controls what information appears on the card, but also the order in which it appears.
 
-An image will not automatically appear on the card. You must include the `thumbnail` attribute in the `object_card` list, regardless of whether you are using a `thumbnail` or a figure `id` that has the setting `zoom: true`. 
+An image will not automatically appear on the card. You must include the `thumbnail` attribute in the `object_card` list, regardless of whether you are using a `thumbnail` or a figure `id` that has the setting `zoom: true`. For more information about creating a `thumbnail` for a non-zooming images, see the [*Thumbnail*](#thumbnail) section above. 
 
 ```yaml
 object_card:
   - thumbnail
-    artist
-    title
-    year
+  - artist
+  - title
+  - year
 ```
 
 ### Step 3: Add an `object_filters` list to your `objects.yaml` file
@@ -253,7 +256,7 @@ object_filters:
 
 ### Organize Filterable Data with `Sort`
 
-Data for filters needs to be as refined and clean as possible, and it is important to be mindful of how your values are spelled or worded. For example, `year: 1993` and `year: circa 1993` will create two different filterable values. A solution for this particular issue would be to create a `sort_year` within your `object_list`. 
+Data for filters needs to be as refined and clean as possible, and it is important to be mindful of how your values are spelled or worded. For example, `year: 1993` and `year: circa 1993` will create two different filterable values. A solution for this particular issue would be to create a `sort_year` within your `object_list`. If you implement `sort_year` it must be applied to all object entries within the `object_list`.  
 
 ``` yaml
 object_list:
@@ -270,15 +273,31 @@ object_list:
       - id: 
   ```   
 
-Then, in the object filter, use the `field`/`label` attribute to ensure the data is being filtered by `sort_year` but displays as `year`. You can use this for other attributes such as `sort_location`, etc. 
+  ``` yaml
+object_list:
+  - id: 
+    artist:
+    title: 
+    year: "1993"
+    sort_year: "1993"
+    dimensions:
+    medium:
+    location:
+    type:
+    figure: 
+      - id: 
+  ```   
+
+Then, in the object filter, use the `field`/`label` attribute to ensure the data is being filtered by `sort_year` but displays as `year`. You can use this for other attributes such as `sort_location`, etc. If implementing `sort_year` then make sure not to also include `year` as a separate attribute in the `object_filters` list.
 
 ```yaml
 object_filters:
+  - field: "artist" 
+    label: "Name" 
   - field: "sort_year" 
     label: "Year" 
   - location
   - medium
-  - year
 ```
 This also applies to capitalization. If the same value is capitalized in one object entry but not in another, it will appear as two separate filterable values. 
 
