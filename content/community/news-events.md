@@ -34,7 +34,7 @@ Montreal, Quebec<br>
 
 **2024**
 
-- Coming soon!
+- March 14: [Object Grids & Filters](https://quire.getty.edu/docs-v1/collection-catalogues/#generate-object-grids) are introduced as a new feature 
 
 **2023**
 

@@ -5,6 +5,12 @@ type: essay
 online: false
 ---
 
+2024
+
+- [March 2024](https://newsletters.getty.edu/t/t-359C3BC829E16A742540EF23F30FEDED) New Feature: Object Grids for Collection Catalogues, *Artist Things: Rediscovering Lost Property from Eighteenth-Century France*, CAA Annual Conference Recap, Office Hours, Corning Museum of Glass.
+- [February 2024](https://newsletters.getty.edu/t/t-6FC30DFAF8A283C32540EF23F30FEDED) Visit Quire at CAA: Booth #205, Getty Research Journal at CAA, Wildenstein Plattner Institute at CAA, Share Your Conference Highlights.
+- [January 2024](https://newsletters.getty.edu/t/t-6B3B5FE4A232762B2540EF23F30FEDED) Visit Quire at CAA: Booth #205, Community Survey, Introduce Yourself!, Add Deep Zooming Images to Your Quire Project, Office Hours, Denver Art Museum.
+
 2023
 
 - [December 2023] Coming Soon. 
