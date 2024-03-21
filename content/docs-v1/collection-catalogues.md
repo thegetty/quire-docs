@@ -128,7 +128,19 @@ object_list:
 
 ## Create Object Pages
 
-Like all other pages in your publication, object pages are created as `.md` files in your `content` directory. To create an object entry page, add `layout: entry` and either the object data or the `id` that corresponds with your `objects.yaml` file to the page YAML. Make sure whichever option you choose is consistent across all object entries. 
+Like all other pages in your publication, object pages are created as `.md` files in your `content` directory. To create an object entry page, add `layout: entry` and the `id` that corresponds with your `objects.yaml` file. Another option is to add the object data directly to the page YAML. If you choose to the latter, make the object information is not duplicated in the the `object_list` of your `objects.yaml` page.
+
+**Object data that references `objects.yaml` file:**
+
+```yaml
+---
+title:
+layout: entry
+order:
+object:
+  - id: cat-1
+---
+```
 
 **Object data in page YAML:**
 
@@ -146,18 +158,6 @@ object:
     type:
     figure:
       - id:
----
-```
-
-**Object data that references `objects.yaml` file:**
-
-```yaml
----
-title:
-layout: entry
-order:
-object:
-  - id: cat-1
 ---
 ```
 
