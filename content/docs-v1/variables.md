@@ -50,32 +50,32 @@ This default theme includes a number of style variables intended to allow for re
 | | $quire-headings-font | font name | Controls headings text |
 | | $quire-footnotes-font | font name | Controls footnotes and page backmatter |
 | | $quire-navigation-font | font name | Controls navbar and next/prev buttons |
-| Themes: Classic theme | $quire-primary-font | | 
-| | $quire-headings-font | | |
-| | $quire-footnotes-font | | |
-| | $quire-navigation-font | | |
-| | $accent-color | | |
-| | $content-background-color | | | 
-| | $secondary-background-color | | | 
-| Themes: Modern theme (default) | $quire-primary-font | | 
-| | $quire-headings-font | | | 
-| | $quire-footnotes-font | | | 
-| | $quire-navigation-font | | | 
-| | $accent-color | | | 
-| | $content-background-color | | |
-| | $secondary-background-color | | | 
+| Themes: Classic theme | $quire-primary-font | font name | 
+| | $quire-headings-font |font name | |
+| | $quire-footnotes-font |font name | |
+| | $quire-navigation-font | font name | |
+| | $accent-color | color value | |
+| | $content-background-color | color value | | 
+| | $secondary-background-color | color value | | 
+| Themes: Modern theme (default) | $quire-primary-font | font name | 
+| | $quire-headings-font | font name | | 
+| | $quire-footnotes-font | font name | | 
+| | $quire-navigation-font | font name | | 
+| | $accent-color | color value | | 
+| | $content-background-color | color value | |
+| | $secondary-background-color | color value | | 
 | Navbar | $navbar-height | unit value | 3rem default | 
 | | $quire-progress-bar-height | unit value | 2px default |  
 | | $quire-navbar-color | color value | |
 | | $quire-navbar-hover-color | color value | |
 | | $quire-navbar-text-color | color value | |
-| Navbar: Accent Navbar | $quire-navbar-color | | | 
-| | $quire-navbar-hover-color | | | 
-| | $quire-navbar-text-color | | | 
-| Navbar: Normal Navbar | $quire-navbar-color | | | 
-| | $quire-navbar-hover-color | | | 
-| | $quire-navbar-text-color | | If theme is classic | 
-| | $quire-navbar-text-color | | If theme is modern | 
+| Navbar: Accent Navbar | $quire-navbar-color | color value | | 
+| | $quire-navbar-hover-color | color value | | 
+| | $quire-navbar-text-color | color value | | 
+| Navbar: Normal Navbar | $quire-navbar-color | color value | | 
+| | $quire-navbar-hover-color | color value | | 
+| | $quire-navbar-text-color | color value | If theme is classic | 
+| | $quire-navbar-text-color | color value | If theme is modern | 
 | Cover colors | $quire-cover-color-1 | color value | The cover includes a gradient of two colors, specified here, and a white/transparent wave graphic specified in the cover.md of the content files |
 | | $quire-cover-color-2 | color value | |
 | | $quire-cover-color-1 | color value | If theme is classic | 
@@ -85,35 +85,73 @@ This default theme includes a number of style variables intended to allow for re
 | Layout sizes | $quire-map-height | unit value | 500px default |
 | | $quire-deepzoom-height | unit value | 500px default |
 | Heading Styles | $heading-1-font-size | unit value | 3em default | 
-| $heading-1-line-height | unit value | 1.15 default | 
-| $heading-2-font-size | unit value | 1.75rem default | 
-| $heading-2-line-height | unit value | 1.15 default |
-| $heading-3-font-size | unit value | 1.5rem default |
-| $heading-3-line-height | unit value | 1.25 default |
-| $heading-4-font-size | unit value | 1.375rem default |
-| $heading-4-line-height | unit value | 1.3 default |
-| $heading-5-font-size | unit value | 1.25rem default |
-| $heading-5-line-height | unit value | 1.4 default |
-| $heading-6-font-size | unit value | 1.1875rem default |
-| $heading-6-line-height | unit value | 1.4 default |
+| | $heading-1-line-height | unit value | 1.15 default | 
+| | $heading-2-font-size | unit value | 1.75rem default | 
+| | $heading-2-line-height | unit value | 1.15 default |
+| | $heading-3-font-size | unit value | 1.5rem default |
+| | $heading-3-line-height | unit value | 1.25 default |
+| | $heading-4-font-size | unit value | 1.375rem default |
+| | $heading-4-line-height | unit value | 1.3 default |
+| | $heading-5-font-size | unit value | 1.25rem default |
+| | $heading-5-line-height | unit value | 1.4 default |
+| | $heading-6-font-size | unit value | 1.1875rem default |
+| | $heading-6-line-height | unit value | 1.4 default |
 
-
-## Special Classes
+## YAML Classes
 
 | Class | Description |
 | ----- | ----------- |
 | page-one | For PDF output, should be used on the page/chapter where you want page 1 to start, `class: page-one`, often an Introduction or first essay rather than the Contents pages or other frontmatter |
-| backmatter | Can be applied to Markdown text with the `q-class` shortcode and text will be styled smaller, like the default footnotes style
-| is-pulled-left, is-pulled-right | Can be applied to figures or figure groups with their shortcodes, will make figures roughly half-column width and will float them to the left or right of the text |
-| brief, list, abstract, grid | Can be applied to pages with a `type: contents`, will alter how the contents are displayed |
-| side-by-side, landscape | Can be applied to pages with a `type: entry`, will alter how the image viewer is displayed |
 | copyright-page | For PDF output, should be used for designated copyright page | 
 | half-title-page | For PDF output, should be used for designated half title page |
 | title-page | For PDF output, should be used for designated title page |
 
+```YAML
+layout: page
+order: 5
+classes:
+  - copyright-page
+```
+
+## Shortcode Classes 
+
+| Class | Description | 
+| ------- | ----------- | 
+| is-pulled-left, is-pulled-right | Can be applied to figures or figure groups with their shortcodes, will make figures roughly half-column width and will float them to the left or right of the text. | 
+
+```
+{% figure 'fig-1-2', 'is-pulled-left' %}
+```
+
+## Presentation Classes 
+
+| Presentation | Description | 
+| ------------ | ----------- | 
+| brief, list, abstract, grid | Can be applied to pages with a `layout: table-of-contents`, will alter how the contents are displayed |
+| side-by-side, landscape | Can be applied to pages with a `layout: entry`, will alter how the image viewer is displayed |
+
+
+```YAML
+layout: contents
+presentation: list 
+```
+## Layout Types 
+
+| Layout | Description | 
+| ------ | ----------- | 
+| table-of-contents | | 
+| entry | | 
+| page | | 
+| cover | | 
+| bibliography | | 
+| splash | | 
+| objects-page | | 
+
+
+
 ## Configuration Parameters
 
-Outside of the theme files themselves, a Quire project will also have a config.yml file which includes a number of parameters the theme relies on.
+Outside of the theme files themselves, a Quire project will also have a config.yaml file which includes a number of parameters the theme relies on.
 
 | Parameter | Expected Value | Description |
 | --------- | -------------- | ----------- |
