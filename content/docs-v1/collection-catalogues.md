@@ -128,7 +128,7 @@ object_list:
 
 ## Create Object Pages
 
-Like all other pages in your publication, object pages are created as `.md` files in your `content` directory. To create an object entry page, add `layout: entry` and the `id` that corresponds with your `objects.yaml` file. Another option is to add the object data directly to the page YAML. If you choose to the latter, make the object information is not duplicated in the the `object_list` of your `objects.yaml` page.
+Like all other pages in your publication, object pages are created as `.md` files in your `content` directory. To create an object entry page, add `layout: entry` and the `id` that corresponds with your `objects.yaml` file. Another option is to add the object data directly to the page YAML. If you choose to the latter, do this for all objects in your project and make sure the `object_list` of your `objects.yaml` file is empty.
 
 **Object data that references `objects.yaml` file:**
 
@@ -178,7 +178,7 @@ Whatever the presentation, you can further organize the content on the page by u
 ## Generate Object Grids
 
 {{< q-class "box warning" >}}
-- In order to access this feature, make sure you are using `quire-11ty@1.0.0-rc.16` or higher. Run `quire info --debug` to see what version of `quire-11ty` you are using. If you are on an older version, start a new project by running the command `quire new [project-name]` to update to the latest version of 11ty. 
+- In order to access this feature in an older, preexisting project, it must be running on `quire-11ty@1.0.0-rc.16` or higher. Run the command `quire info --debug` to see what version of `quire-11ty` your project is using. If it is an older version, you will need to start a new project by running the command `quire new [project-name]`, or follow our instructions to [update your existing project](/docs-v1/install-uninstall/#update-an-existing-project). 
 {{< /q-class >}}
 
 In a collection catalogue, there is typically a visual table of contents that unifies all the catalogue entries. In Quire, we call this an object grid. The grid includes a thumbnail of each object accompanied by object data. Each item in the grid hyperlinks to the relevant object page in the catalogue when clicked. 
