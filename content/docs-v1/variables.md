@@ -9,7 +9,7 @@ aliases:
 
 ## Defined Variables
 
-This default theme includes a number of style variables intended to allow for relatively easy customization without having to dig into the stylesheets and CSS markup. They are explained below and can be found and changed in `/source/css/variables.scss` file. Take special note of thee `$theme` variable which can be set to "modern" or "classic", and the `$accent-color` variable which will give your publication a distinct feel in coloring all links, buttons and other navigation elements.
+The default Quire theme includes a number of style variables intended to allow for relatively easy customization without having to dig into the stylesheets and CSS markup. They are explained below and can be found and changed in `content/_assets/styles/variables.scss` file. Take special note of the `$theme` variable which can be set to "modern" or "classic", and the `$accent-color` variable which will give your publication a distinct feel in coloring all links, buttons and other navigation elements.
 
 | Variable Type | Variable | Expected Value | Description |
 | ------------- | -------- | -------------- | ----------- |
@@ -101,16 +101,16 @@ This default theme includes a number of style variables intended to allow for re
 
 | Class | Description |
 | ----- | ----------- |
-| page-one | For PDF output, should be used on the page/chapter where you want page 1 to start, `class: page-one`, often an Introduction or first essay rather than the Contents pages or other frontmatter |
+| page-one | For PDF output, should be used on the page/chapter where you want page 1 to start, often an Introduction or first essay rather than the Contents pages or other frontmatter |
 | copyright-page | For PDF output, should be used for designated copyright page | 
 | half-title-page | For PDF output, should be used for designated half title page |
 | title-page | For PDF output, should be used for designated title page |
 
 ```YAML
 layout: page
-order: 5
+order: 30
 classes:
-  - copyright-page
+  - page-one
 ```
 
 ## Shortcode Classes 
@@ -139,35 +139,41 @@ presentation: list
 
 | Layout | Description | 
 | ------ | ----------- | 
-| table-of-contents | | 
-| entry | | 
-| page | | 
-| cover | | 
-| bibliography | | 
-| splash | | 
-| objects-page | | 
-
+| table-of-contents | This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory. Can be formatted differently by applying different `presentation`: `list`, `brief`, `abstract`, and `grid`.| 
+| entry | Typically used for collection catalogues. Formatted to display images of an object along with data about that object and essays. The default display is `landscape` where the image appears above the text. | 
+| page | The basic, default Quire page shows title, page content, links and a list. Used for introductions, forewords, chapters, appendices and other pages. | 
+| cover | Used for the `index.md` file that serves as the publicaiton cover.| 
+| bibliography | Automatically generates a bibliography based on references.yaml file. | 
+| essay | The essay is a standalone, self-contained article in a periodical or collected volume. This is also reflected in the metadata embedded in the page, which will include more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole. | 
+| splash | A splash page is used to open a section or to set off a particular page. Includes customizable banner image, drop cap lettering, full-color background. | 
+| objects-page | Typically used in collection catalogues. Will create a grid of images and object data for all pages with `object` attribute included in Page YAML. | 
 
 
 ## Configuration Parameters
 
-Outside of the theme files themselves, a Quire project will also have a config.yaml file which includes a number of parameters the theme relies on.
+A Quire project will also have a `config.yaml` file which includes a number of parameters the theme relies on.
 
-| Parameter | Expected Value | Description |
-| --------- | -------------- | ----------- |
-| runTests | boolean | Turn on or off the built-in tests that check for certain common errors and post error messages in the CLI output. |
-| searchEnabled | boolean | Turn on or off the built-in text search capability for users |
-| licenseIcons | boolean | Whether or not to display Creative Commons license icons |
-| pageLabelDivider | string | ". " default, etermines the text/spacing to be inserted between page .label and page .title |
-| citationPageLocationDivider | string | ", " default, determines the text/spacing to be inserted between the citation and the page number in the q-cite shortcode |
-| displayBiblioShort| boolean | Whether a bibilography generated with the q-cite or q-bibliography shorcodes should display the short form of the reference, along with the long. |
-| imageDir | string | "img" default, the directory in the `/static/` directory where you put your images |
-| `menuClass` | "brief", "list" |  "list" is the default, "brief" will show only top-level pages and sections, no sub-sections. |
-| prevPageButtonText | string | "Back" default |
-| nextPageButtonText | string | "Next" default |
-| entryPageSideBySideLayout | boolean | Entry pages can have a side-by-side layout with image on the left and text on the right, this can be controlled by `class: side-by-side` in the page YAML, or globally with this parameter |
-| entryPageObjectLinkText | string | "View in Collection" default |
-| figureLabelLocation | "on-top", "below" | Whether the figure label is "on-top" of the image in the upper left corner, or "below" it with the caption |
-| figureModal | boolean | If figures should be clickable to open into a full-screen modal window |
-| figureModalIcons | boolean | Whether to display icons with the figure modal links |
-| figureZoom | boolean | Whether figures should zoom or not inside the modal |
+## Configuration
+
+| Object | Object Properties | Additional Properties | Expected Value | Description |
+| ------ | ------------------| -------------------- | -------------- | ----------- |
+| `accordion` | `controls` | | "arrow", <br> "plus-minus" | Default symbol for accordion menu is "arrow" |  
+| | `copyButton` | `arialabel` | string | Labels an interactive element for accessibility purposes. The default is "Copy page section link to clipboard" | 
+| | | `successtext` | string | The default is "Copied page section link to clipboard" | 
+| | | `symbol` |  | Symbol that will be used in Markdown. Default is `§` |  
+| | `globalControls` | `collapseText` | string | The default is "Collapse All" | 
+| | | `expandText` | string | Default is  "Expand All" | 
+| `analytics`| `googleId` | |  | Add your Google Analytics tag here. If you don't have one leave the value as `''` | 
+| `bylineFormat` | | | "name",<br> "name-title",<br> "false" | Choose false if you don't want a byline to appear | 
+| `bibliography` | `displayOnPage` | | boolean | If you want to suppress the page-level bibliography but keep the in-text citations, go into the change the value to false | 
+| | `displayShort` | | boolean | Bibliographies can appear with or without the short form of the citation. The default is set to true. If you only want to show the full references, change the value to false |
+| | `heading` | | string | A heading can be customized to go above this bibliography. The default heading is “Bibliography” | 
+| `citations` | `divider` | | string | Determines the separation between short form citation and the page number. The Default is `','` | 
+| | `popupStyle` | | "text", <br> "icon" | Determines if pop-up citation is text or an image. | 
+| `entryPage` | `sideBySide` | | string | Determines if entry page object appears above or side-by-sde object data. Default is to appear above object data (ie. `landscape`) | 
+| | `objectLinkText` | | string | Controls text that links to external URL. Default is "View in Collection | 
+| `epub`| `defaultCoverImage` | | string | Points to the image file for  EPUB cover. Default is `epub-cover.png` | 
+| | `outputDir` | | string | Points to the directory where the EPUB cover file is stored. Default is `_epub`. | 
+| `footnotes` | `backlinkSymbol` | | string | Controls the symbol that takes readers from the footnotes back to the main text. Default is `↩`. | 
+| `figures` | `assetDir` | | string | Determines the location where figures are stored. Default is `/_assets/` | 
+| `figures` | `enableModal` | | boolean | 
