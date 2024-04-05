@@ -8,23 +8,33 @@ aliases:
 ---
 
 
-Quire is incredibly flexible and customizable, and there are a number of ways that you can update the look and feel of your Quire project:
+Quire is incredibly flexible and customizable. There are a number of ways that you can update the look and feel of your Quire project ranging from basic to advanced. 
 
-  1. Changing the style variables in the `variables.scss` file
-  2. Adding new style rules to the `custom.css` file
-  3. Extending 11ty templates
-  4. Creating custom classes
+| Level | Method | 
+| ----- | ------ | 
+| Basic | Change the style variables in the `variables.scss` file | 
+| Moderate | Add new style rules to the `custom.css` file |
+| | Create custom classes | 
+| Advanced | Extend 11ty templates | 
+| | Override theme templates | 
 
-One very important thing to keep in mind when customizing your Quire project is that if you need to update the version of Quire that your project is running on then you will need to manually copy all your customizations (and content) into the new project. This requires carefully documenting what changes you have made and where. For this reason, we recommend either minimizing the number of files you are customizing or limiting updates to when you need to access a new feature or integrate a critical bug fix. In the absence of customizations, updating your Quire project is fairly simple and straight forward. You can learn more in the [*Update and Existing Project*](/docs-v1/install-uninstall/#update-an-existing-project) section of the [*Install or Update*](/docs-v1/install-uninstall) chapter of this guide. 
+One very important thing to keep in mind when customizing your Quire project is when you update the version of Quire that your project is running on you need to manually copy all your customizations (and content) into the new project. This requires carefully documenting what changes you have made and where. Some tips for documenting customizations include:
+
+- Put a comment at the top of the modified file, noting that it has been customized, and in what way.
+- Keep a running list of those modified files in the README of the project, with the filepaths and the same brief descriptions you put in the comment
+
+Due to the potential complexity of this process, we recommend either minimizing the number of files you are customizing or limiting updates to when you need to access a new feature or integrate a critical bug fix. In the absence of customizations, updating your Quire project is fairly straightforward. You can learn more in the [*Update an Existing Project*](/docs-v1/install-uninstall/#update-an-existing-project) section of the [*Install or Update*](/docs-v1/install-uninstall) chapter of this guide. 
+
+## Basic Customization
+
+### Change the Style Variables
+
+When you start a new Quire project by running the command `quire new`, your project comes with default style variables that can be tweaked in the `variables.scss` file. The `variables.scss` file lets you control things like text and background colors, specific element sizes, fonts, paragraph indents, PDF margins, and more, allowing for relatively easy customization without digging into the stylesheets or CSS markup. 
+
+To find the variables, navigate to `content/_assets/styles/variables.scss`. You can also browse a [complete list of these variables](/docs-v1/variables) and the available customizations.
 
 
-## Change the Style Variables
-
-When you first start a new Quire project by running the command `quire new`, your project comes with default style variables that can be tweaked in the `content/_assets/styles/variables.scss`. This file let's you control things like text and background colors, some element sizes, fonts, paragraph indents, and more. This allows relatively easy customization without the need to dig into the stylesheets and CSS markup. A [complete list of these variables](/docs-v1/variables) includes information about the customizations available.
-
-To find the variables, open the `content/_assets` directory, navigate to the `styles` sub-directory, and then `variables.scss`.
-
-The variables are prefixed with a dollar sign and are descriptive of what they control. For instance `$accent-color` is the background color of the navigation bar at the top of every page. To make it red, you delete `null` and change the value to `red`:
+The variables are prefixed with a dollar sign and are descriptive of what they control. For instance `$accent-color` is the background color of the navigation bar at the top of every page. To make it red, you delete `null` and change the value to `red`.
 
 ```css
 $accent-color: red;
@@ -39,50 +49,63 @@ Colors are expressed a number of different ways, none of which are better or mor
 For a comprehensive list of CSS colors visit [W3 Schools website](https://www.w3schools.com/cssref/css_colors.php). 
 
 {{< q-class "box warning" >}}
-- To avoid errors, variables names should not be changed or deleted, and be sure to leave the colons (:) and semi-colons (;) in place.
+- To avoid errors, variable names should not be changed or deleted. Also be sure to leave the colons (:) and semi-colons (;) in place.
 {{< /q-class >}}
 
-## Add Custom Styles
 
-TK
+## Moderate Customizations
 
-## Extending 11ty Templates
+### Add Custom Styles
 
-In the `content/_assets/javascript/application/index.js` you'll find listings of the existing CSS and JS files already included in Quire:
+In the `_assets/styles` directory, there is a blank `custom.css` file, which can be used to customize elements of your project. Any {{< q-def "CSS" >}} you add to this file, will be added to your site’s styles. 
 
-```js
-// Stylesheets
-import '../../fonts/index.scss';
-import '../../styles/application.scss'
-import '../../styles/screen.scss'
-import '../../styles/custom.css'
+[[ Better explanation of what CSS is and how it works before transitioning into next section ]]
 
-// Modules (feel free to define your own and import here)
-import './canvas-panel'
-import './soundcloud-api.min.js'
-import { goToFigureState, setUpUIEventHandlers } from './canvas-panel'
-import Accordion from './accordion'
-import Search from '../../../../_plugins/search/search.js'
-import scrollToHash from './scroll-to-hash'
+Let’s say you’d like a particular line of text in one of your Markdown files to be red. You can wrap that text in `<span>` HTML tags and give it a class.
+
+```html
+<span class="red-text">This text should be red</span>
 ```
 
-New CSS and JS file are placed in the `content/_assets/styles/` and `content/_assets/javascript/` respectively and can be imported into `content/_assets/javascript/application/index.js`.
+And then in your `custom.css` file, add a style rule for that class:
 
-Another option is to add `<script>` and `<style>` tags directly to `_includes/components/head.js`.
+```css
+.red-text {
+  color: red;
+}
+```
 
-Here is some additional best practice advice: 
+Styles added to the `custom.css` file will also override any existing styles already in use in your {{< q-def "theme" >}}. For example, the following option would apply the style to any {{< q-def "element" >}} with a {{< q-def "class" >}} of `"title"` anywhere in your publication.
 
-- Put a comment at the top [(sample)](https://github.com/thegetty/conserving-canvas/blob/main/_includes/components/menu/item.js) of the modified file, noting that it has been customized, and in what way.
-- Keep a running list [(sample)](https://github.com/thegetty/conserving-canvas/tree/main#customizations) of those modified files in the README of the project, with the filepaths and the same brief descriptions you put in the comment
-- When possible, create a new file, rather than modifying an existing one. For example, instead of modifying the existing `_layouts/essay.liquid`, create a `_layouts/essay-custom.liquid` file and use it as `layout: essay-custom` in the page YAML. 
-- Consider using [Liquid templating](https://shopify.github.io/liquid/) directly in the Markdown files themselves, rather then modifying the underlying JS files. (Since the Liquid will travel with the markdown files more easily from project to project, or through Quire template updates.) For example, if you want a list of keywords to appear at the top of the page, you could add `keywords: ['one', 'two', 'three']` to the page YAML and then Liquid `{% for word in keywords %}{{ word }}{% endfor %}` in the page markdown.
+```css
+.title {
+  color: red;
+}
+```
+
+To determine which selectors you need for your CSS, preview your publication in your browser of choice and control-click (Mac) or right click (PC) on the element you would like to tweak. Then select "Inspect element". This will show you the HTML markup for your site, along with all the class names and elements, and even the styles that are currently being applied to that element.
+
+The more specific you can be with your {{< q-def "CSS selectors" >}}, the more likely the style will only be applied to the specific element you want. For example, if you wanted the page title on a specific page to be a different color than the titles on the rest of the pages, you could determine the CSS selector for the element on that particular page and apply a style rule to it without changing the styles on any other element or page. This example limits the style to the title in the page header of one page:
+
+```css
+#chapter-one .quire-page__header .title {
+  color: red;
+}
+```
+
+In the above example, we are selecting the element with a class of `"title"` that is inside an element with the class of `"quire-page__header"`. The use of the period `.` indicates  that the class is inside an element. In this case, the element represents the page itself with an {{< q-def "id" >}} of `"#chapter-one"`. The use of the `#` indicates that it is an id.
+
+In Quire, page ids are unique, and can be found on the `<div>` element that has the class `"quire-primary"`. By using the `id` in your custom CSS, you are targeting only that page, not all `"quire-primary"` elements throughout your publication.
 
 {{< q-class "box tip" >}}
-- And for modifying layout files, you can ignore the `public` directory, it is rebuilt on every run of `quire build`.
+- The use of a more specific {{< q-def "CSS selector" >}} will always override a less specific one — even if it’s in your `custom.css` file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your {{< q-def "CSS selector" >}} is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The "Inspect element" tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.
 {{< /q-class >}}
 
+#### Custom CSS Example
 
-## Add Custom Classes to Pages
+View the [Hide Title and Subtitle from Cover Page with Custom CSS](/resources/recipes/recipes-cover) in the [Recipes](/resources/recipes/) section of the Quire website. 
+
+### Add Custom Classes to Pages
 
 Every `.md` file in a Quire publication has a "class" that controls the styling of that page. The class is applied to the page via the `layout` key. For example, the class `quire-entry` will be applied any time `layout: entry` is used. The `quire-entry` class styles the page so that a single image or object is featured prominently. 
 
@@ -115,10 +138,45 @@ All `classes` are added to the `<main class="quire-page">` element on the page, 
 - You can add more than one class. However, you cannot leave the `classes` key  blank.
 {{< /q-class >}}
 
-### Custom Class Examples
+#### Custom Class Example
 
-View the [Hide Table of Contents Grid in PDF with Custom Class](/resources/recipes/hide-grid) recipe in the [Recipes](/resources/recipes/) section of the Quire website. 
+View the [Hide Table of Contents Grid in PDF with Custom Class](/resources/recipes/hide-grid) in the [Recipes](/resources/recipes/) section of the Quire website. 
 
-## Override Theme Templates
+## Advanced Customizations
+
+### Extending 11ty Templates
+
+In the `content/_assets/javascript/application/index.js` you'll find listings of the existing CSS and JS files already included in Quire.
+
+```js
+// Stylesheets
+import '../../fonts/index.scss';
+import '../../styles/application.scss'
+import '../../styles/screen.scss'
+import '../../styles/custom.css'
+
+// Modules (feel free to define your own and import here)
+import './canvas-panel'
+import './soundcloud-api.min.js'
+import { goToFigureState, setUpUIEventHandlers } from './canvas-panel'
+import Accordion from './accordion'
+import Search from '../../../../_plugins/search/search.js'
+import scrollToHash from './scroll-to-hash'
+```
+
+New CSS and JS file are placed in the `content/_assets/styles/` and `content/_assets/javascript/` respectively and can be imported into `content/_assets/javascript/application/index.js`.
+
+Another option is to add `<script>` and `<style>` tags directly to `_includes/components/head.js`.
+
+Here is some additional best practice advice: 
+
+- When possible, create a new file, rather than modifying an existing one. For example, instead of modifying the existing `_layouts/essay.liquid`, create a `_layouts/essay-custom.liquid` file and use it as `layout: essay-custom` in the page YAML. 
+- Consider using [Liquid templating](https://shopify.github.io/liquid/) directly in the Markdown files themselves, rather then modifying the underlying JS files. (Since the Liquid will travel with the markdown files more easily from project to project, or through Quire template updates.) For example, if you want a list of keywords to appear at the top of the page, you could add `keywords: ['one', 'two', 'three']` to the page YAML and then Liquid `{% for word in keywords %}{{ word }}{% endfor %}` in the page markdown.
+
+{{< q-class "box tip" >}}
+- When modifying layout files, you can ignore the `public` directory, it is rebuilt on every run of `quire build`.
+{{< /q-class >}}
+
+### Override Theme Templates
 
 TK
