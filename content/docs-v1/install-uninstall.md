@@ -138,7 +138,6 @@ If you are using {{< q-def "git" >}} for version control on your project, you wi
     .node-version
     .gitignore
     .eslintrc
-    .env
     .eleventyignore
     .eleventy.js
     .quire

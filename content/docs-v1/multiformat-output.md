@@ -102,13 +102,32 @@ To include the PDF file as a download from your online edition:
 
 ### Output the PDF for Print or for Web
 
-By default, the PDF is output at full-resolution and with crop marks for professional printing. Figure images are included in the PDF at the same size they were added to the `content/_assets/images/` directory, except when the images have been designated as zooming with `zoom: true` in the `figures.yaml` file. For zooming images, Quire processes and uses a special image that's 2025px wide for the PDF and EPUB output. These are large enough for a full-page image in a printed book. This value can be changed in `_plugins/figures/iiif/config.js`, for instance to make the images smaller for a web-ready PDF. PDFs can also be downsampled to a smaller file size after they have been generated, using a program like Adobe Acrobat.
+By default, the PDF is output at full-resolution and with full bleed and crop marks for professional printing. 
 
-Crop marks and bleeds can be removed using the variables in the `content/_assets/styles/variables.scss` file (which is further discussed below).
+#### Image Resolution
 
+Figure images are included in the PDF at the same size they were added to the `content/_assets/images/` directory, except when the images have been designated as zooming with `zoom: true` in the `figures.yaml` file. For zooming images, Quire processes and uses a special image that is 2025px wide for the PDF and EPUB output. These are large enough for a full-page image in a printed book. This value can be changed in `_plugins/figures/iiif/config.js`. To make images smaller for web-only PDF output, you would look for the following bit of code in the `config.js` file and change the `width` to 900 or less. 
+
+```JS 
+/**
+* Transformation applied to IIIF resources for use in PDF and EPUB 
+*/
+{
+ name: 'print-image',
+ resize: {
+   width: 2025,
+   withoutEnlargement: true
+ }
+},
+```
+
+#### Crop Marks and Bleeds
+
+Crop marks and bleeds are controlled by the `content/_assets/styles/variables.scss` file (which is further discussed below). Adding the following two lines to the `variables.scss` file would remove the bleed and crop marks respectively. 
+ 
 ```scss
 $print-bleed: 0;
-$print-crop-marks: false // true | false
+$print-crop-marks: false; // true | false
 ```
 
 ### Use Built-In Variables to Modify and Style the PDF
@@ -125,7 +144,6 @@ In the `content/_assets/styles/variables.scss` file, are a number of key print/P
 $print-width: 8.5in;
 $print-height: 11in;
 $print-bleed: .125in;
-$print-crop-marks: true // true | false
 
 $print-bottom-margin: 0.875in;
 $print-top-margin: 0.75in;
@@ -157,6 +175,8 @@ For example, this would hide all `video` elements in the print output:
 ```
 
 Some of the CSS used in styling the PDF is from the [CSS Paged Media Specification](https://www.w3.org/TR/css-page-3/). This is a set of CSS rules designed specifically to style things in a page-like manner, including controlling left and right page rules, page numbering, and running feet and heads. There is good information about this in [Paged.js’s documentation](https://pagedjs.org/documentation/) as well as [in PrinceXML’s documentation](https://www.princexml.com/doc/paged/). For the most part, the CSS rules documented for one are also applicable to the other. The one primary exception are any CSS attributes that begin with a custom `-prince` name.
+
+You can also apply custom styles to more than one page by associating your custom CSS with a class and then references it in the page YAML with the `classes` key. For more information see the [*Style Customization*](/docs-v1/styles-customization/#add-custom-classes-to-pages) section of this documentation.
 
 ### Use These Copy-and-Paste Styles to Fix Common Figure Issues
 
@@ -272,6 +292,10 @@ Also specific for PrinceXML output, figure images can be styled to span both col
   }
 }
 ```
+
+{{< q-class "box warning" >}}
+- Anytime you are making tweaks to the `custom.css` and want to review your work, it is advised to delete the `public` folder before rerunning `quire build` and `quire pdf`.  
+{{< /q-class >}}
 
 ### Tips for PDF Design and Development
 
