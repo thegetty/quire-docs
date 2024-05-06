@@ -15,7 +15,7 @@ Image files should be placed in the `content/_assets/images` directory. It is de
 
 Quire does not require a specific image file format or size, but we have some recommended best practices:
 
-- Use JPEG, PNG, or GIF.
+- Use JPEG or PNG. Quire additionally supports SVG and TIFF.
 - If your project is web-only, 800 pixels is fine for most images, whereas 1,800 pixels on the longest side will provide both a decent web experience and work for printing in the PDF without being too large a file size.
 - Watch out for file sizes, especially on animated gifs which can get to be multiple megabytes quite quickly. Use {{< q-def "Image Optimization" >}} software when possible, and consider the total number of images on a given page when choosing sizes.
 
