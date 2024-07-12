@@ -840,7 +840,7 @@ project_list:
     customization_level: moderate
     github_user:
       - YLLAM88
-    note: "*Living Pictures: Photography in Southeast Asia* is a groundbreaking exhibition of photographs by artists working in and from Southeast Asia. National Gallery Singapore was drawn to Quire because of the tool's scholarly and interactive features, such as linkable footnotes, page-level citations, multimedia elements like videos, and search function. They also liked that Quire is free to use."
+    note: "*Living Pictures: Photography in Southeast Asia* is a groundbreaking exhibition of photographs by artists working in and from Southeast Asia. National Gallery Singapore was drawn to Quire because of the tool's scholarly and interactive features, such as linkable footnotes, page-level citations, multimedia elements like videos, and a search function. They also liked that Quire is free to use."
 
   - id: "materia_issue4"
     src: /screenshots/_materia_issue4.jpg
@@ -866,7 +866,7 @@ project_list:
     customization_level: significant
     github_user:
       - salger1
-    note: "This is the second Quire publication from The Nelson-Atkins Museum of Art. Comprising nearly three-hundred objects, *The Starr Collection of Portrait Miniatures, 1500–1850* is divided by culture and era into four volumes plus a supplement. The collection of volumes  include deep-zooming images, accordion sections, and pop-up glossary terms along with significant customizations to the template. "
+    note: "This is the second Quire publication from The Nelson-Atkins Museum of Art. Comprising nearly three-hundred objects, *The Starr Collection of Portrait Miniatures, 1500–1850* is divided by culture and era into four volumes plus a supplement. The collection of volumes includes deep-zooming images, accordion sections, and pop-up glossary terms along with significant customizations to the template. "
 
   - id: "denver_biophilia"
     src: /screenshots/_denver_biophilia.jpg
@@ -881,4 +881,4 @@ project_list:
       - vhellstein
       - mpopke
       - 1000camels
-    note: "This is the second Quire publication from the Denver Art Museum. From its conception, *Biophilia: Nature Reimagined* was conceived as a digital catalogue, in part for sustainability reasons. It incorporates zoomable images, video, and audio files, as well as extensive customizations to the template."
+    note: "This is the second Quire publication from the Denver Art Museum. From the start, *Biophilia: Nature Reimagined* was conceived of as a digital catalogue, in part for sustainability reasons. It incorporates zoomable images, video, and audio files, as well as extensive customizations to the template."
