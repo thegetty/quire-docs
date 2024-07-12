@@ -7,16 +7,10 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-**2024 Library Publishing Forum**<br>
-[https://librarypublishing.org/forum/](https://librarypublishing.org/forum/)<br>
-May 15-16, 2024<br>
-Minneapolis, Minnesota<br>
-*More information coming soon!*
-
-**Association of University Presses Annual Meeting**<br>
-[https://aupresses.org/programs-events/annual-meeting/aupresses-2024/](https://aupresses.org/programs-events/annual-meeting/aupresses-2024/)<br>
-June 11-13, 2024<br>
-Montreal, Quebec<br>
+**Museum Computer Network Annual Conference**<br>
+[https://mcn.edu/annual-conference/](https://mcn.edu/annual-conference/)<br>
+October 22-24, 2024<br>
+Lawrence, Kansas<br>
 *More information coming soon!*
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
@@ -34,6 +28,7 @@ Montreal, Quebec<br>
 
 **2024**
 
+- June 4-13: Quire exhibits, sponsors, and presents at  [Library Publishing Forum (LPF)](https://librarypublishing.org/forum/), the [IIIF Annual Conference](https://iiif.io/event/2024/los-angeles/schedule/), and the [AUPresses (AUP) Annual Meeting](https://aupresses.org/programs-events/annual-meeting/aupresses-2024/).
 - March 14: [Object Grids & Filters](https://quire.getty.edu/docs-v1/collection-catalogues/#generate-object-grids) are introduced as a new feature 
 
 **2023**
@@ -77,6 +72,7 @@ Montreal, Quebec<br>
 
 | Event | Date | Description |
 | -- | -- | -- |
+| Library Publishing Forum (LPF) | May 15-16, 2024 | "Path, Many Tools: Publishing Getty’s Open Access Journal," presented by Greg Albers |  
 | College Art Association Conference (CAA)| February 15-17, 2024 | 30-minute Quire demonstrations at Booth # 205 | 
 | MCN (Museum Computer Network) | November 10, 2023 | "A Community Effort: Digital Publishing with Open-Source Tools," moderated by Erin Cecele Dunigan (Quire) with Duane Degler (Design for Context) and Caitlin Sweeney (Wildenstein Plattner Institute) | 
 | Price Lab for Digital Humanities and Penn Libraries | November 8, 2023 | "A Day of Digital Publishing & Quire," featuring Cosette Alonso Bruhns (Penn Libraries), Chris Diaz (formerly Northwestern University Libraries),  Erin Cecele Dunigan (Quire), Matt K. Gold (CUNY Graduate Center/Manifold), Liz Neely (Georgia O'Keefe Museum), Stewart Varner (Price Lab for Digital Humanities) | 
