@@ -815,3 +815,70 @@ project_list:
     github_user:
       - swambold1
     note: "The inaugural issue of *Tilt West Journal* chose Quire as a way to expand the boundaries of what digital journal publishing can encompass. In addition to the website version, printed copies are also available for purchase."
+
+  - id: "leventhal_heaven&earth"
+    src: /screenshots/_leventhal_heaven&earth.jpg
+    alt: "Heaven & Earth: The Blue Maps of China"
+    type: Exhibition Catalogue
+    publisher: "Leventhal Map & Education Center, Boston Public Library"
+    title_info: "*Heaven & Earth: The Blue Maps of China*"
+    pub_date: 2024-05-01
+    url: https://www.leventhalmap.org/digital-exhibitions/heaven-and-earth/
+    customization_level: significant 
+    github_user:
+      - garrettdashnelson
+    note: "The Leventhal Center returned to Quire after first using it for their “Bending Lines” exhibition in 2020. Their latest exhibition, “Heaven & Earth: The Blue Maps of China” required a catalogue-like digital exhibition format for which the Center staff felt Quire was well suited. The digital catalogue includes deep zooming images, accordion sections, and significant customizations to the templates."
+
+  - id: "ngsingapore_living_pictures"
+    src: /screenshots/_ngsingapore_living_pictures.jpg
+    alt: "Living Pictures: Photography in Southeast Asia. Image: Lim Kwong Ling. Hawkers. 1970. Gelatin silver print on paper, 40.4 × 50.7 cm. Gift of the artist and family. Collection of National Gallery Singapore."
+    type: Exhibition Catalogue 
+    publisher: "National Gallery Singapore"
+    title_info: "*Living Pictures*"
+    pub_date: 2024-04-23 
+    url: https://www.nationalgallery.sg/freeresources/living-pictures/
+    customization_level: moderate
+    github_user:
+      - YLLAM88
+    note: "*Living Pictures: Photography in Southeast Asia* is a groundbreaking exhibition of photographs by artists working in and from Southeast Asia. National Gallery Singapore was drawn to Quire because of the tool's scholarly and interactive features, such as linkable footnotes, page-level citations, multimedia elements like videos, and search function. They also liked that Quire is free to use."
+
+  - id: "materia_issue4"
+    src: /screenshots/_materia_issue4.jpg
+    alt: "Materia: Journal of Technical Art History, Issue 4"
+    type: Journal
+    publisher: "Materia: Journal of Technical Art History"
+    title_info: "*Materia: Journal of Technical Art History, Issue 4*"
+    pub_date: 2024-05-30
+    url: https://issue-4.materiajournal.com/
+    customization_level: moderate
+    github_user:
+      - materiajournal
+    note: "This is *Materia's* fourth journal produced with Quire. The focus of this issue is interdisciplinary collaboration."
+
+  - id: "nelsonatkins_starr"
+    src: /screenshots/_nelsonatkins_starr.jpg
+    alt: "NELSON-ATKINS. Starr Collection of Portrait Miniatures Catalogue"
+    type: Collection Catalogue
+    publisher: The Nelson-Atkins Museum of Art
+    title_info: "*Starr Collection of Portrait Miniatures Catalogue*"
+    pub_date: 2024-01-16
+    url: https://www.nelson-atkins.org/starr-catalogue/
+    customization_level: significant
+    github_user:
+      - salger1
+    note: "This is the second Quire publication from The Nelson-Atkins Museum of Art. Comprising nearly three-hundred objects, *The Starr Collection of Portrait Miniatures, 1500–1850* is divided by culture and era into four volumes plus a supplement. The collection of volumes  include deep-zooming images, accordion sections, and pop-up glossary terms along with significant customizations to the template. "
+
+  - id: "denver_biophilia"
+    src: /screenshots/_denver_biophilia.jpg
+    alt: "Biophilia: Nature Reimagined" 
+    type: "Exhibition Catalogue"
+    publisher: "Denver Art Museum"
+    title_info: "Biophilia: Nature Reimagined"
+    pub_date: 2024-05-01
+    url: https://biophilia.denartmus.org/
+    customization_level: extensive
+    github_user:
+      - vhellstein
+      - mpopke
+      - 1000camels
+    note: "This is the second Quire publication from the Denver Art Museum. From its conception, *Biophilia: Nature Reimagined* was conceived as a digital catalogue, in part for sustainability reasons. It incorporates zoomable images, video, and audio files, as well as extensive customizations to the template."
