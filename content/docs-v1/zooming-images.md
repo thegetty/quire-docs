@@ -97,7 +97,7 @@ The next attribute you need to include in the `figures.yaml` is the `canvasId`. 
 
 {{< q-figure id="liz-fischer" >}}
 
-In the `figures.yaml` you will also need to include a `printImage` attribute and a `src` attribute. These will have the same value, which, rather than pointing to an external URL for the IIIF image, should point to where you have saved your image in your project. For the example above, `irises.jpg` is saved in the projects `_assets/images/figures` folder. In the future, we aim to eliminate this redundancy.  
+In the `figures.yaml` you will also need to include a `printImage` attribute and a `src` attribute. These will have the same value, which, rather than pointing to an external URL for the IIIF image, should point to where you have saved the image in your project. For the example above, `irises.jpg` is saved in the projects `_assets/images/figures` folder. In the future, we aim to eliminate this redundancy.  
 
 {{< q-class "box tip" >}}
 - To work properly, external IIIF image manifests must use version 3.0 of the [IIIF Presentation API](https://iiif.io/api/presentation/3.0/). 

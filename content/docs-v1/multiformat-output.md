@@ -121,15 +121,6 @@ Figure images are included in the PDF at the same size they were added to the `c
 },
 ```
 
-#### Crop Marks and Bleeds
-
-Crop marks and bleeds are controlled by the `content/_assets/styles/variables.scss` file (which is further discussed below). Adding the following two lines to the `variables.scss` file would remove the bleed and crop marks respectively. 
- 
-```scss
-$print-bleed: 0;
-$print-crop-marks: false; // true | false
-```
-
 ### Use Built-In Variables to Modify and Style the PDF
 
 Quire creates the PDF from the website version of your Quire site using CSS rules. You can modify Quire’s PDF styles using CSS just like you would modify Quire’s online styles. You can read more about styles in general in the [*Style Customization*](/docs-v1/styles-customization/) section of this guide.
@@ -158,6 +149,19 @@ $print-splash-color: $off-white;
 $print-entry-image-color: $black; // or can use $rich-black with PrinceXML
 $print-entry-caption-color: $white;
 $print-entry-image-display: all; // first | all
+```
+
+#### Crop Marks and Bleeds
+
+Crop marks and bleeds are also controlled by the `content/_assets/styles/variables.scss` file. Adding the following lines to the "Print/PDF stylesheet" section of the `variables.scss` file removes the crop marks that are automatically applied to the PDF. 
+ 
+```scss
+$print-crop-marks: false; // true | false
+```
+To eliminate the bleed, set `print-bleed` to 0 in the same section of the `variables.scss` file:
+
+```scss
+$print-bleed: 0;
 ```
 
 ### Add Custom Styles to Refine the Layout
