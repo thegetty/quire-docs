@@ -28,7 +28,10 @@ When you install Quire what you are actually installing is something called a {{
 
     Some operating systems will already have Xcode installed, in which case you will receive the message "command line tools are already installed". If Xcode is not already installed, an additional notification will pop up. Click “Install” and follow the prompts.
 
-2. **Node.js** enables you to run javascript on your computer. Download and install the **LTS version** of Node.js: https://nodejs.org/en/download/.
+2. **Node.js** enables you to run javascript on your computer. Download and install the **v18.20.4(LTS)** of Node.js: https://nodejs.org/en/download/prebuilt-installer. 
+
+  You can also install a Node.js [package manager](https://nodejs.org/en/download/package-manager) with the command line. A package manager will enable you to install more than one version of Node. This is useful when working on multiple Quire projects, some of which might be tied to either newer or older versions of Node.
+
 3. Installing and running Quire requires using the {{< q-def "command-line shell" >}} which on a Mac is called  **Terminal**. Open it by pressing Command–Space Bar and typing “Terminal”.
 4. In your Terminal, install **Quire** with the following command:
 
@@ -55,7 +58,10 @@ When you install Quire what you are actually installing is something called a {{
 ## Install Quire v1 (Windows)
 
 1. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install the necessary version control software on your computer.
-2. **Node.js** enables you to run javascript on your computer. Download and install the **LTS version** of Node.js: https://nodejs.org/en/download/. Bypass any prompts related to installing [Chocolatey](https://chocolatey.org/).  
+2. **Node.js** enables you to run javascript on your computer. Download and install the **v18.20.4(LTS)** of Node.js: https://nodejs.org/en/download/prebuilt-installer. 
+
+    You can also install a Node.js [package manager](https://nodejs.org/en/download/package-manager) with the command line. A package manager will enable you to install more than one version of Node. This is useful when working on multiple Quire projects, some of which might be tied to either newer or older versions of Node.
+    
 3. Installing and running Quire requires using {{< q-def "command-line shell" >}} which on a PC is called **Windows PowerShell**. Open the PowerShell by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. The only time you need to run PowerShell as an Admin is during install.
 4. In your PowerShell, install **Quire** with the following command:
 
@@ -106,11 +112,11 @@ Updating an existing Quire project to the latest version of Quire is a manual pr
 
 3. Delete the following demo files in the new project and replace them with your own:
 
-    a.) All the Markdown (`.md)` files in the `content` directory
+    a. All the Markdown (`.md`) files in the `content` directory
 
-    b.) The `content/_assets/images` directory
+    b. The `content/_assets/images` directory
 
-    c.) All the YAML (.yaml) files in the `content/_data` directory **except** `config.yaml`
+    c. All the YAML (.yaml) files in the `content/_data` directory **except** `config.yaml`
 
 4. If you made any changes to `config.yaml`, update those individually into the new `config.yaml` file. (It's best not to replace the entire `config.yaml` file with your old one as there may be new or renamed values there that would conflict with the newer templates.)
 
