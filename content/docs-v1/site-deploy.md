@@ -11,13 +11,14 @@ A Quire site is designed to be hosted on virtually any web server, either one yo
 
 Before deploying your project, you can run a test to make sure all the `_site` files are building correctly and that your styles are properly loading:
 
-1. Delete `public`, `_site`, and `epub`
-2. Run `quire build`
-3. `cd` into the `_site` file and run the following command:
+1. *Temporarily* set the URL in `publication.yaml` to [http://localhost:8000/](http://localhost:8000/)
+2. Delete `public`, `_site`, and `epub`
+3. Run `quire build`
+4. `cd` into the `_site` file and run the following command:
 ```
 python -m SimpleHTTPServer 8000
 ```
-4. You should then be able to view the site at [http://localhost:8000/](http://localhost:8000/)
+5. You should then be able to view the site at [http://localhost:8000/](http://localhost:8000/)
 
 If that process runs smoothly, then you can proceed with the deployment process by using of the three following options: [Basic Deploy](#basic-deploy), [Netlify](#netlify), or [GitHub Pages](#github-pages).
 
