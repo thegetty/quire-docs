@@ -12,7 +12,7 @@ A Quire site is designed to be hosted on virtually any web server, either one yo
 Before deploying your project, you can run a test to make sure all the `_site` files are building correctly and that your styles are properly loading:
 
 1. *Temporarily* set the URL in `publication.yaml` to [http://localhost:8000/](http://localhost:8000/)
-2. Delete `public`, `_site`, and `epub`
+2. Delete `public`, `_site`, and `_epub`
 3. Run `quire build`
 4. `cd` into the `_site` file and run the following command:
 ```
