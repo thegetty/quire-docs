@@ -178,7 +178,7 @@ For example, this would hide all `video` elements in the print output:
 
 Some of the CSS used in styling the PDF is from the [CSS Paged Media Specification](https://www.w3.org/TR/css-page-3/). This is a set of CSS rules designed specifically to style things in a page-like manner, including controlling left and right page rules, page numbering, and running feet and heads. There is good information about this in [Paged.js’s documentation](https://pagedjs.org/documentation/) as well as [in PrinceXML’s documentation](https://www.princexml.com/doc/paged/). For the most part, the CSS rules documented for one are also applicable to the other. The one primary exception are any CSS attributes that begin with a custom `-prince` name.
 
-You can also apply custom styles to more than one page by associating your custom CSS with a class and then references it in the page YAML with the `classes` key. For more information see the [*Style Customization*](/docs-v1/styles-customization/#add-custom-classes-to-pages) section of this documentation.
+You can also apply custom styles to more than one page by associating your custom CSS with a class and then referencing it in the page YAML with the `classes` key. For more information see the [*Style Customization*](/docs-v1/styles-customization/#add-custom-classes-to-pages) section of this documentation.
 
 ### Use These Copy-and-Paste Styles to Fix Common Figure Issues
 
