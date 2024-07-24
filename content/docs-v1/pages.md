@@ -48,7 +48,7 @@ For more details on this full list of possible attributes that Quire can use in 
 layout:
 ```
 
-The page `layout` must be one of six possible values: `page`, `essay`, `entry`, `cover`, `table-of-contents`, `bibliography`, `splash`. If left blank, or if any other value besides these six is entered, the `layout` type will default to `page`.
+The page `layout` must be one of six possible values: `page`, `essay`, `entry`, `cover`, `table-of-contents`, `bibliography`, `splash`, and `objects-page`. If left blank, or if any other value besides these six is entered, the `layout` type will default to `page`.
 
 {{< q-figure id="modern-cover" >}}
 
@@ -82,6 +82,58 @@ layout: entry
 presentation: landscape (default) | side-by-side
 ```
 
+## Create Sub-sections 
+
+A Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. Sub-sections are helpful for grouping information within a publication, for example, a "catalogue" sub-section in a collection catalogue would include all the relevant collection objects. 
+
+### Sub-section Landing Pages
+
+ To add a sub-section to your project, create a new folder within the `content` directory and include an `index.md `file along with all the other `.md` files. The `index.md` file will serve as the landing page for the section. Depending on the `layout` chosen, this landing page will automatically have a list of essays or objects included in that section. You can also add additional text at the beginning of the landing page, as with any other `.md` file.
+
+```tx
+📁 content
+  📄 index.md
+  📄 contents.md
+  📄 introduction.md
+  📁 part-one
+    📄 index.md
+    📄 chapter-01.md
+    📄 chapter-02.md
+```
+
+The index.md file can have one of two different `layout` types, either `table-of-contents` or `objects-page`. Here are examples of the page YAML that might be found in`content/part-one/index.md` the landing page of a sub-section called "Part One":
+
+```yaml
+---
+title: Part One
+layout: table-of-contents
+presentation: list
+order: 9
+outputs:
+  - pdf
+  - html
+---
+```
+
+```yaml
+---
+title: Part One
+layout: objects-page
+order: 9
+outputs:
+  - pdf
+  - html
+---
+```
+
+See the [*Collection Catalogue*](/docs-v1/collection-catalogues/) section of this documentation to learn more about the `objects-page` layout. 
+
+Files named `index.md`, always inherit the URL of their parent directory. For example, if you have a `content/sub-section/index.md` file, and your project is hosted at the `domain my-project.com`, the URL for the landing page will be `my-project.com/sub-section/`.
+
+If you want to have a sub-section without a landing page, you can add `outputs: none` to the page YAML of the `index.md` file.
+
+The `title` of the `index.md` file will be what appears in your project’s menu and table of contents.
+
 ## Organize Pages in the Right Order
 
 ```yaml
@@ -111,40 +163,6 @@ Numbering should be unique, and use sequential whole numbers, but it can skip nu
 {{< q-class "box tip" >}}
 - Add `classes: [page-one]` to the page/chapter where you want page 1 to start for the PDF/Print output. This is often an Introduction or first essay rather than the cover, table of contents, or other frontmatter.
 {{< /q-class >}}
-
-## Create Section Landing Pages
-
-A Quire publication can have sub-sections, created by nesting a group of one or more pages inside a sub-directory within the main `content` directory. Each sub-section must include an `index.md `file. This will be the landing page for the section.
-
-```tx
-📁 content
-  📄 index.md
-  📄 contents.md
-  📄 introduction.md
-  📁 part-one
-    📄 index.md
-    📄 chapter-01.md
-    📄 chapter-02.md
-```
-Here is an example of the page YAML that might be found in a `content/part-one/index.md` file:
-
-```yaml
----
-title: Part One
-layout: table-of-contents
-presentation: list
-order: 9
-outputs:
-  - pdf
-  - html
----
-```
-
-Files named `index.md`, always inherit the URL of their parent directory. For example, if you have a `content/sub-section/index.md` file, and your project is hosted at the `domain my-project.com`, the URL for the landing page will be `my-project.com/sub-section/`.
-
-If you want to have a sub-section without a landing page, you can add `outputs: none` to the page YAML of the `index.md` file.
-
-The title of the `index.md` file will be what appears in your project’s menu and table of contents.
 
 ## Create Publication Cover Page
 
