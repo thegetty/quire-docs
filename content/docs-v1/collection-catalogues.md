@@ -191,7 +191,7 @@ To create an object grid, there are three key steps. Add `layout: objects-page` 
 
 ### Step 1: Add `layout: objects-page` to a Markdown file 
 
-You can add `layout: objects-page` to the page YAML of any `.md` file, whether it's a [section landing page](/docs-v1/pages/#create-section-landing-pages) created with an `index.md` file or a regular file in the root directory. 
+You can add `layout: objects-page` to the page YAML of any `.md` file, that file just needs to be located within a sub-section of your `content` folder. The `objects-page` layout will not work in the root directory. Learn more about sub-sections in the [*Page Types & Structure*](/docs-v1/pages/#create-sub-sections/) chapter of this documentation. 
 
 ```yaml
 title:
