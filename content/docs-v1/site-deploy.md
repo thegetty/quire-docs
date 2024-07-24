@@ -9,6 +9,18 @@ aliases:
 
 A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from the hosting service of your choice. You do not need any special back-end setup. If you plan to include PDF and e-book files as part of you published project, it's important that you start by following the directions in the [*Output Your Project*](/docs-v1/multiformat-output/) section of the documentation before proceeding.
 
+Before deploying your project, you can run a test to make sure all the `_site` files are building correctly and that your styles are properly loading:
+
+1. Delete `public`, `_site`, and `epub`
+2. Run `quire build`
+3. `cd` into the `_site` file and run the following command:
+```
+python -m SimpleHTTPServer 8000
+```
+4. You should then be able to view the site at [http://localhost:8000/](http://localhost:8000/)
+
+If that process runs smoothly, then you can proceed with the deployment process by using of the three following options: [Basic Deploy](#basic-deploy), [Netlify](#netlify), or [GitHub Pages](#github-pages).
+
 ## Basic Deploy
 
 When hosting a Quire site, you will typically follow these steps:
