@@ -121,13 +121,11 @@ Figure images are included in the PDF at the same size they were added to the `c
 },
 ```
 
-### Use Built-In Variables to Modify and Style the PDF
+### Use Pre-Defined Variables to Modify and Style the PDF
 
 Quire creates the PDF from the website version of your Quire site using CSS rules. You can modify Quire’s PDF styles using CSS just like you would modify Quire’s online styles. You can read more about styles in general in the [*Style Customization*](/docs-v1/styles-customization/) section of this guide.
 
-There are a number of CSS variables defined in Quire that allow you to adjust various parts of the PDF output, including the page size. The default page size is 8.5 × 11 inches.
-
-In the `content/_assets/styles/variables.scss` file, are a number of key print/PDF-related variables:
+There are a number of pre-defined CSS variables in Quire that allow you to adjust various parts of the PDF output. These can be found in the `content/_assets/styles/variables.scss` file. Look for the section called "Print/PDF stylesheet" to find the default style settings for things like page size, margins, and text color. These variables can be adjusted accordingly. 
 
 ```scss
 // Print/PDF stylesheet
@@ -153,7 +151,7 @@ $print-entry-image-display: all; // first | all
 
 #### Crop Marks and Bleeds
 
-Crop marks and bleeds are also controlled by the `content/_assets/styles/variables.scss` file. Adding the following lines to the "Print/PDF stylesheet" section of the `variables.scss` file removes the crop marks that are automatically applied to the PDF. 
+As mentioned above, by default, the PDF is output with full bleed and crop marks. This default setting can be altered in the `content/_assets/styles/variables.scss` file. Adding the following lines to the "Print/PDF stylesheet" section removes the crop marks that are automatically applied to the PDF. 
  
 ```scss
 $print-crop-marks: false; // true | false
@@ -166,7 +164,7 @@ $print-bleed: 0;
 
 ### Add Custom Styles to Refine the Layout
 
-Where a variable is not available, you can instead add custom CSS to your `content/_assets/styles/custom.css` file to achieve the desired result. You can target changes to *only* the print output by wrapping your CSS rules in a {{< q-def "media query">}}.
+When a pre-defined variable is not available, you can instead add custom CSS to your `content/_assets/styles/custom.css` file to achieve the desired result. You can target changes to *only* the print output by wrapping your CSS rules in a {{< q-def "media query">}}.
 
 For example, this would hide all `video` elements in the print output:
 
