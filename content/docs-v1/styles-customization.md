@@ -20,21 +20,29 @@ Quire is incredibly flexible and customizable. There are a number of ways that y
 
 One very important thing to keep in mind when customizing your Quire project is when you update the version of Quire that your project is running on you need to manually copy all your customizations (and content) into the new project. This requires carefully documenting what changes you have made and where. Some tips for documenting customizations include:
 
-- Put a comment at the top of the modified file, noting that it has been customized, and in what way.
+- Put a comment at the top of the modified file, noting that it has been customized, and in what way. We recommend using the following format for the comment: 
+```
+//
+// CUSTOMIZED FILE
+// Description of change made, line number of change 
+//
+```
 - Keep a running list of those modified files in the README of the project, with the filepaths and the same brief descriptions you put in the comment
 
 Due to the potential complexity of this process, we recommend either minimizing the number of files you are customizing or limiting updates to when you need to access a new feature or integrate a critical bug fix. In the absence of customizations, updating your Quire project is fairly straightforward. You can learn more in the [*Update an Existing Project*](/docs-v1/install-uninstall/#update-an-existing-project) section of the [*Install or Update*](/docs-v1/install-uninstall) chapter of this guide. 
 
 ## Basic Customization
 
+In an effort to make Quire to be approachable to everyone, regardless of technical experience, we've built in style variables that allow for relatively easy customizations without needing to dig into the stylesheets, templates, or CSS markup. 
+
 ### Change the Style Variables
 
-When you start a new Quire project by running the command `quire new`, your project comes with default style variables that can be tweaked in the `variables.scss` file. The `variables.scss` file lets you control things like text and background colors, specific element sizes, fonts, paragraph indents, PDF margins, and more, allowing for relatively easy customization without digging into the stylesheets or CSS markup. 
+When you start a new Quire project by running the command `quire new`, your project comes with default style variables that can be tweaked in the `variables.scss` file. The `variables.scss` file lets you control things like text and background colors, specific element sizes, fonts, paragraph indents, PDF margins, and more.
 
-To find the variables, navigate to `content/_assets/styles/variables.scss`. You can also browse a [complete list of these variables](/docs-v1/variables) and the available customizations.
+To find the variables, navigate to `content/_assets/styles/variables.scss`. You can also browse a [complete list of these variables](/docs-v1/variables) and the available customization options.
 
 
-The variables are prefixed with a dollar sign and are descriptive of what they control. For instance `$accent-color` is the background color of the navigation bar at the top of every page. To make it red, you delete `null` and change the value to `red`.
+The variables are prefixed with a dollar sign and are descriptive of what they control. For instance, `$accent-color` is the background color of the navigation bar at the top of every page. To make it red, you delete `null` and change the value to `red`.
 
 ```css
 $accent-color: red;
@@ -55,11 +63,15 @@ For a comprehensive list of CSS colors visit [W3 Schools website](https://www.w3
 
 ## Moderate Customizations
 
+You can take your Quire customizations a step further by adding custom CSS and custom classes to your project. 
+
 ### Add Custom Styles
 
-In the `_assets/styles` directory, there is a blank `custom.css` file, which can be used to customize elements of your project. Any {{< q-def "CSS" >}} you add to this file, will be added to your site’s styles. 
+In the `_assets/styles` directory, there is a blank `custom.css` file, which can be used to customize elements of your project. Any CSS you add to this file, will be added to your site’s styles. 
 
-[[ Better explanation of what CSS is and how it works before transitioning into next section ]]
+CSS stands for "Cascading Style Sheets". It is a language used to define styles and layouts for webpages written in HTML. For a deeper dive, Mozilla Developers provides a good guide to CSS: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
+
+While HTML describes the contents of a page, CSS controls the style and formatting. CSS also saves a lot of time, as you can apply rules across a website by just editing one file (`custom.css`).
 
 Let’s say you’d like a particular line of text in one of your Markdown files to be red. You can wrap that text in `<span>` HTML tags and give it a class.
 
