@@ -20,7 +20,7 @@ entries:
   - term: "class"
     definition: "The CSS class selector selects elements with a specific class attribute. The selector starts with a period `.` "
   - term: "CSS"
-    definition: "Cascading Style Sheets or CSS is a stylesheet language used to define sytles and layouts for webpages written in HTML. For a deeper dive, Mozilla Developers provides a good guide to CSS: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)"
+    definition: "Cascading Style Sheets or CSS is a stylesheet language used to define styles and layouts for webpages written in HTML. For a deeper dive, Mozilla Developers provides a good guide to CSS: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)"
   - term: "CSS selector"
     alternates:
       - "CSS selectors"
