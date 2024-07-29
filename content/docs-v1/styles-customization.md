@@ -65,7 +65,7 @@ For a comprehensive list of CSS colors visit [W3 Schools website](https://www.w3
 
 You can take your Quire customizations a step further by adding custom CSS and custom classes to your project. 
 
-### Add Custom Styles
+### Add Styles with Custom CSS
 
 In the `_assets/styles` directory, there is a blank `custom.css` file, which can be used to customize elements of your project. Any CSS you add to this file, will be added to your site’s styles. 
 
@@ -87,7 +87,7 @@ And then in your `custom.css` file, add a style rule for that class:
 }
 ```
 
-Styles added to the `custom.css` file will also override any existing styles already in use in your {{< q-def "theme" >}}. For example, the following option would apply the style to any {{< q-def "element" >}} with a {{< q-def "class" >}} of `"title"` anywhere in your publication.
+Styles added to the `custom.css` file will also override any existing styles. For example, the following option would apply the style to any {{< q-def "element" >}} with a {{< q-def "class" >}} of `"title"` anywhere in your publication.
 
 ```css
 .title {
@@ -95,7 +95,7 @@ Styles added to the `custom.css` file will also override any existing styles alr
 }
 ```
 
-To determine which selectors you need for your CSS, preview your publication in your browser of choice and control-click (Mac) or right click (PC) on the element you would like to tweak. Then select "Inspect element". This will show you the HTML markup for your site, along with all the class names and elements, and even the styles that are currently being applied to that element.
+To determine which selectors you need for your CSS, preview your publication in your browser of choice and control-click (Mac) or right click (PC) on the section you would like to tweak. Then select "Inspect element". This will show you the HTML markup for your site, along with all the class names, elements, and even styles that are currently being applied to that section.
 
 The more specific you can be with your {{< q-def "CSS selectors" >}}, the more likely the style will only be applied to the specific element you want. For example, if you wanted the page title on a specific page to be a different color than the titles on the rest of the pages, you could determine the CSS selector for the element on that particular page and apply a style rule to it without changing the styles on any other element or page. This example limits the style to the title in the page header of one page:
 
@@ -183,7 +183,7 @@ Another option is to add `<script>` and `<style>` tags directly to `_includes/co
 Here is some additional best practice advice: 
 
 - When possible, create a new file, rather than modifying an existing one. For example, instead of modifying the existing `_layouts/essay.liquid`, create a `_layouts/essay-custom.liquid` file and use it as `layout: essay-custom` in the page YAML. 
-- Consider using [Liquid templating](https://shopify.github.io/liquid/) directly in the Markdown files themselves, rather then modifying the underlying JS files. (Since the Liquid will travel with the markdown files more easily from project to project, or through Quire template updates.) For example, if you want a list of keywords to appear at the top of the page, you could add `keywords: ['one', 'two', 'three']` to the page YAML and then Liquid `{% for word in keywords %}{{ word }}{% endfor %}` in the page markdown.
+- Consider using [Liquid templating](https://shopify.github.io/liquid/) directly in the Markdown files themselves, rather than modifying the underlying JS files. (Since the Liquid will travel with the markdown files more easily from project to project, or through Quire template updates.) For example, if you want a list of keywords to appear at the top of the page, you could add `keywords: ['one', 'two', 'three']` to the page YAML and then Liquid `{% for word in keywords %}{{ word }}{% endfor %}` in the page markdown.
 
 {{< q-class "box tip" >}}
 - When modifying layout files, you can ignore the `public` directory, it is rebuilt on every run of `quire build`.
