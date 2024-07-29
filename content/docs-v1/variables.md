@@ -18,7 +18,7 @@ The default Quire theme includes a number of style variables intended to allow f
 | | $secondary-background-color | color value  | Additional background color, only for modern version of the theme |
 | | $theme | "modern", "classic" | Shifts the overall feel and typography of the publication  |
 | | $navbar | "normal", "accent" | Predefined options for your navbar, white or the accent color |
-| Pre-defined fonts | $ibm-sans | font name | This theme includes three embedded, open license fonts, (Noto Sans, Noto Serif, and IBM Plex Sans Condensed) and also uses the widely available Times (files of which are not otherwise included here). | 
+| Pre-defined fonts | $ibm-sans | font name, "serif", "sans-serif" | This theme includes three embedded, open license fonts, (Noto Sans, Noto Serif, and IBM Plex Sans Condensed) and also uses the widely available Times (files of which are not otherwise included here). | 
 | | $noto-sans | font name, "serif", "sans-serif"  | See above | 
 | | $noto-serif | font name, "serif", "sans-serif" | See above | 
 | | $time-serif | font name, "serif", "sans-serif" |See above  | 
@@ -26,7 +26,7 @@ The default Quire theme includes a number of style variables intended to allow f
 | | $quire-page-paragraph-style | "line-space", "indent" | Paragraph display styles, either a line space and no indent, or an indent and no line space | 
 | Cover typography | $quire-cover-text-color | color value | |
 | | $quire-cover-text-scale | integer | Use decimal numbers such as .8 or 1.3 to shift the text larger or smaller |
-| Menu | $quire-menu-width: | unit value | 352px default | 
+| Menu | $quire-menu-width | unit value | 352px default | 
 || $quire-menu-color | color value | |
 | | $quire-menu-text-color | color value | |
 | Image viewer colors (pop-up figure viewer & entry page viewer) | $quire-entry-header-height | unit value | 6rem default |
@@ -142,11 +142,11 @@ presentation: list
 | table-of-contents | This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory. Can be formatted differently by applying different `presentation`: `list`, `brief`, `abstract`, and `grid`.| 
 | entry | Typically used for collection catalogues. Formatted to display images of an object along with data about that object and essays. The default display is `landscape` where the image appears above the text. | 
 | page | The basic, default Quire page shows title, page content, links and a list. Used for introductions, forewords, chapters, appendices and other pages. | 
-| cover | Used for the `index.md` file that serves as the publicaiton cover.| 
+| cover | Used for the `index.md` file that serves as the publication cover.| 
 | bibliography | Automatically generates a bibliography based on references.yaml file. | 
 | essay | The essay is a standalone, self-contained article in a periodical or collected volume. This is also reflected in the metadata embedded in the page, which will include more page-specific information than a typical publication page, whose metadata will instead point to the publication as a whole. | 
 | splash | A splash page is used to open a section or to set off a particular page. Includes customizable banner image, drop cap lettering, full-color background. | 
-| objects-page | Typically used in collection catalogues. Will create a grid of images and object data for all pages with `object` attribute included in Page YAML. | 
+| objects-page | Typically used in collection catalogues. Will create a grid of images and object data for all pages with `object` attribute included in Page YAML. Can only be applied inside a subdirectory. | 
 
 
 ## Configuration Parameters
@@ -169,11 +169,22 @@ A Quire project will also have a `config.yaml` file which includes a number of p
 | | `displayShort` | | boolean | Bibliographies can appear with or without the short form of the citation. The default is set to true. If you only want to show the full references, change the value to false |
 | | `heading` | | string | A heading can be customized to go above this bibliography. The default heading is “Bibliography” | 
 | `citations` | `divider` | | string | Determines the separation between short form citation and the page number. The Default is `','` | 
-| | `popupStyle` | | "text", <br> "icon" | Determines if pop-up citation is text or an image. | 
-| `entryPage` | `sideBySide` | | string | Determines if entry page object appears above or side-by-sde object data. Default is to appear above object data (ie. `landscape`) | 
+| | `popupStyle` | | "text", <br> "icon" | Determines if pop-up citation is text or an image | 
+| `entryPage` | `sideBySide` | | boolean | False means the images will appear above object data (ie. `landscape`) | 
 | | `objectLinkText` | | string | Controls text that links to external URL. Default is "View in Collection | 
 | `epub`| `defaultCoverImage` | | string | Points to the image file for  EPUB cover. Default is `epub-cover.png` | 
 | | `outputDir` | | string | Points to the directory where the EPUB cover file is stored. Default is `_epub`. | 
 | `footnotes` | `backlinkSymbol` | | string | Controls the symbol that takes readers from the footnotes back to the main text. Default is `↩`. | 
-| `figures` | `assetDir` | | string | Determines the location where figures are stored. Default is `/_assets/` | 
-| `figures` | `enableModal` | | boolean | 
+| `figures` | `assetDir` | | string | Determines the location where assets, such as figures or fonts, are stored. Default is `/_assets/` | 
+| | `enableModal` | | boolean | Establishes whether to display icons with the figure modal links | 
+| | `imageDir`| | string | Determines the location where figures are stored in the project. Default is `/_assets/images`. This affects the `src` value in the `figures.yaml` file. | 
+| `licenseIcons` | | | boolean | Controls whether the Creative Commons license logo appears in the sidebar menu. Default is `true`. | 
+| `localization` | `defaultLocale` | | string | Determines what language the publication will appear in. | 
+| `menuType` | | | string | Determines the appearance fo the sidebar menu | 
+| `navigation` | `nextButtonText` | | string | Determines the text that appears on the button to progress the publication forward | 
+| | `preButtonText` | | string | Determines the text that appears on the button to move the publication backwards |
+| `pageTitle` | `labelDivider` | | string | Controls what symbol appears after the `object` or `figure` `label` to separate it from the text that follows | 
+| `ref` | `sequenceTransition` | | number | | 
+| `searchEnabled` | | | boolean | Includes search function in the publication |
+| `tableOfContents` | `contributorDivider`| | string | Determines what symbols separates the author name from the essay they contributed to | 
+| `quire_credit_line` | | | boolean | Default text indicating that the publication was producted with Quire | 
