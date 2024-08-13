@@ -42,19 +42,21 @@ When you start a new Quire project by running the command `quire new`, your proj
 To find the variables, navigate to `content/_assets/styles/variables.scss`. You can also browse a [complete list of these variables](/docs-v1/variables) and the available customization options.
 
 
-The variables are prefixed with a dollar sign and are descriptive of what they control. For instance, `$accent-color` is the background color of the navigation bar at the top of every page. To make it red, you delete `null` and change the value to `red`.
+The variables are prefixed with a dollar sign and are descriptive of what they control. For instance, `$content-background-color` changes the color of the main text area background color. To make it light grey, you delete `null` and change the value to `LightGrey`.
 
 ```css
-$accent-color: red;
+$accent-color: LightGrey;
 ```
+
+It's worth noting that some variables effect multiple aspects of a project's appearance. For example, `$accent-color` changes the color of buttons, links, and other navigation elements.
 
 Colors are expressed a number of different ways, none of which are better or more supported than the others, so you can use your preference. The most common are:
 
-- The standard 140 {{< q-def "Color Keywords" >}} such as `red`, `royalblue`, and `honeydew`
+- The standard 140 {{< q-def "Color Keywords" >}} such as `red`, `royalblue`, and `honeydew. (For a comprehensive list of CSS colors visit [W3 Schools website](https://www.w3schools.com/cssref/css_colors.php).)
 - The many possible {{< q-def "HEX color values" >}} like `#FF0000`, `#4169E1`, and `#F0FFF0`
 - {{< q-def "RGB Color Values" >}} like `rgb(255, 0, 0)`, `rgb(65, 105, 225)`, and `rgb(240, 255, 240)`
 
-For a comprehensive list of CSS colors visit [W3 Schools website](https://www.w3schools.com/cssref/css_colors.php). 
+It's always recommended to use a contrast checking tool, like [https://webaim.org/resources/contrastchecker/](https://webaim.org/resources/contrastchecker/) to ensure your color combinations meet web accessibility requirements for those with visual impairments. 
 
 {{< q-class "box warning" >}}
 - To avoid errors, variable names should not be changed or deleted. Also be sure to leave the colons (:) and semi-colons (;) in place.
@@ -105,7 +107,7 @@ The more specific you can be with your {{< q-def "CSS selectors" >}}, the more l
 }
 ```
 
-In the above example, we are selecting the element with a class of `"title"` that is inside an element with the class of `"quire-page__header"`. The use of the period `.` indicates  that the class is inside an element. In this case, the element represents the page itself with an {{< q-def "id" >}} of `"#chapter-one"`. The use of the `#` indicates that it is an id.
+The use of the period (`.`) indicates the selector is a class, whereas, the hashmark (`#`) indicates the selector is an id. In the above example, we are looking at Chapter One of the publication and selecting the element with a class of `"title"` that is inside an element with the class of `"quire-page__header"`.
 
 In Quire, page ids are unique, and can be found on the `<div>` element that has the class `"quire-primary"`. By using the `id` in your custom CSS, you are targeting only that page, not all `"quire-primary"` elements throughout your publication.
 
@@ -119,9 +121,7 @@ View the [Hide Title and Subtitle from Cover Page with Custom CSS](/resources/re
 
 ### Add Custom Classes to Pages
 
-Every `.md` file in a Quire publication has a "class" that controls the styling of that page. The class is applied to the page via the `layout` key. For example, the class `quire-entry` will be applied any time `layout: entry` is used. The `quire-entry` class styles the page so that a single image or object is featured prominently. 
-
-The only hard coded `classes` that are surfaced in the `_content` directory are those found in the page YAML of the PDF pages included in the default starter: `copyright-page`, `half-title-page`, and `title-page`. 
+You can added classes to `.md` files to change the styling of that page. You can view the predefined classes in the [*Page YAML Classes*](/docs-v1/variables/#page-yaml-classes) section of the [*Default Style Variables and Other Configurations*](/docs-v1/variables/) guide.
 
 However, you aren't tied to Quire's predefined `classes`. You can also create your own! This is done by writing custom CSS that defines the function of that class and then using the `classes` key in the page YAML to apply it.  
 
@@ -147,7 +147,7 @@ All `classes` are added to the `<main class="quire-page">` element on the page, 
 ```
 
 {{< q-class "box tip" >}}
-- You can add more than one class. However, you cannot leave the `classes` key  blank.
+- You can add more than one class. However, you cannot leave the `classes` key blank, so be sure to delete it if you're not using it.
 {{< /q-class >}}
 
 #### Custom Class Example
@@ -176,7 +176,7 @@ import Search from '../../../../_plugins/search/search.js'
 import scrollToHash from './scroll-to-hash'
 ```
 
-New CSS and JS file are placed in the `content/_assets/styles/` and `content/_assets/javascript/` respectively and can be imported into `content/_assets/javascript/application/index.js`.
+New CSS and JS file are placed in the `content/_assets/styles/` and `content/_assets/javascript/` respectively and can be imported into `content/_assets/javascript/application/index.js` following the patterns above.
 
 Another option is to add `<script>` and `<style>` tags directly to `_includes/components/head.js`.
 
