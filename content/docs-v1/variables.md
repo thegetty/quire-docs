@@ -1,5 +1,5 @@
 ---
-title: Default Theme Style Variables
+title: Default Style Variables and Other Configurations
 weight: 6540
 type: essay
 online: false
@@ -97,7 +97,7 @@ The default Quire theme includes a number of style variables intended to allow f
 | | $heading-6-font-size | unit value | 1.1875rem default |
 | | $heading-6-line-height | unit value | 1.4 default |
 
-## YAML Classes
+## Page YAML Classes
 
 | Class | Description |
 | ----- | ----------- |
@@ -117,18 +117,18 @@ classes:
 
 | Class | Description | 
 | ------- | ----------- | 
-| is-pulled-left, is-pulled-right | Can be applied to figures or figure groups with their shortcodes, will make figures roughly half-column width and will float them to the left or right of the text. | 
+| is-pulled-left, is-pulled-right | Can be applied to figures with their shortcodes, will make figures roughly half-column width and will float them to the left or right of the text. | 
 
 ```
 {% figure 'fig-1-2', 'is-pulled-left' %}
 ```
 
-## Presentation Classes 
+## Presentation Types 
 
 | Presentation | Description | 
 | ------------ | ----------- | 
 | brief, list, abstract, grid | Can be applied to pages with a `layout: table-of-contents`, will alter how the contents are displayed |
-| side-by-side, landscape | Can be applied to pages with a `layout: entry`, will alter how the image viewer is displayed |
+| side-by-side, landscape | Can be applied to pages with a `layout: entry`, will alter how the image viewer is displayed. The default presentation is `landscape`|
 
 
 ```YAML
@@ -140,7 +140,7 @@ presentation: list
 | Layout | Description | 
 | ------ | ----------- | 
 | table-of-contents | This page type automatically creates a table of contents for your entire publication, or for a section of your publication when used inside a sub-directory. Can be formatted differently by applying different `presentation`: `list`, `brief`, `abstract`, and `grid`.| 
-| entry | Typically used for collection catalogues. Formatted to display images of an object along with data about that object and essays. The default display is `landscape` where the image appears above the text. | 
+| entry | Typically used for collection catalogues. Formatted to display images of an object along with data about that object and essays. | 
 | page | The basic, default Quire page shows title, page content, links and a list. Used for introductions, forewords, chapters, appendices and other pages. | 
 | cover | Used for the `index.md` file that serves as the publication cover.| 
 | bibliography | Automatically generates a bibliography based on references.yaml file. | 
