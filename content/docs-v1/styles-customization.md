@@ -45,7 +45,7 @@ To find the variables, navigate to `content/_assets/styles/variables.scss`. You 
 The variables are prefixed with a dollar sign and are descriptive of what they control. For instance, `$content-background-color` changes the color of the main text area background color. To make it light grey, you delete `null` and change the value to `LightGrey`.
 
 ```css
-$accent-color: LightGrey;
+$content-background-color: LightGrey;
 ```
 
 It's worth noting that some variables effect multiple aspects of a project's appearance. For example, `$accent-color` changes the color of buttons, links, and other navigation elements.
