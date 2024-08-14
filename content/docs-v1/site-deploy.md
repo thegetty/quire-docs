@@ -118,17 +118,17 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 3. In your command-line shell, make sure you are in your project folder and run `git checkout -b gh-deploy`, which creates a new temporary branch called `gh-deploy` to work in. This command will automatically switch you to that branch.
 
-4. Next run `quire build`.
+4. Next run `quire build`. Check to make sure there are no errors mentioned in the Terminal before proceeding. 
 
 5. In your text editor, open the `_site` directory and add an empty file called `.nojekyll`, which lets GitHub know the site you're publishing [isn't a Jekyll site](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/).
 
 6. Back in your command-line shell run `git add -f _site && git commit -m "Github pages deploy"`. This will add the contents of the `_site` directory to your project's git history so that it can be pushed to GitHub.
 
-7. If this is your first deploy, skip this step: if you have previously deployed the project to GitHub Pages, delete that old version by running `git push origin --delete gh-pages`. 
+7. *If this is your first deploy, skip this step.* If you have previously deployed the project to GitHub Pages, delete that old version by running `git push origin --delete gh-pages`. 
 
 8. Run `git subtree push --prefix _site origin gh-pages` to push the committed `_site` files to a new `gh-pages` branch of your repo on GitHub.
 
-    If prompted to sign in, do so with your GitHub username and password unless. If you have two-factor authentication enabled, you'll use a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) in place of a password. Remember, you will not be able to see your username or password as you type them. Hit enter once you are done typing to advance.
+    If prompted to sign in, do so with your GitHub username and password. If you have two-factor authentication enabled, you'll use a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) in place of a password. Remember, you will not be able to see your username or password as you type them. Hit enter once you are done typing to advance. 
 
 9. In your command-line shell, run `git checkout main && git branch -D gh-deploy` to delete the temporary deploy branch and to switch back to your `main` branch. If you were publishing from a branch other than `main`, use than name in here instead, like `git checkout YOUR-BRANCH-NAME && git branch -D gh-deploy`.
 
@@ -138,4 +138,4 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 12. At the top of the "GitHub Pages" page of your repo, you will find a notification that reads: "Your site is live at https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME." Please note it can take a few minutes for the site to go live. 
 
-If you make changes to your project and want to view them live, you will need to repeat steps 3-9 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the left sidebar. Your refreshed link will appear at the top of the page as in step 12. 
+**If you make changes to your project and want to view them live, you will need to repeat steps 3-9 above to update your project files and push them to GitHub. Navigate to your GitHub account settings and choose "Pages" from the left sidebar. Your refreshed link will appear at the top of the page as in step 12.** 
