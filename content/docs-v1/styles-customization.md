@@ -13,8 +13,8 @@ Quire is incredibly flexible and customizable. There are a number of ways that y
 | Level | Method | 
 | ----- | ------ | 
 | Basic | Change the style variables in the `variables.scss` file | 
-| Moderate | Add new style rules to the `custom.css` file |
-| | Create custom classes | 
+| Moderate | Create custom classes |
+| | Override styles with `custom.css` file | 
 | Advanced | Extend 11ty templates | 
 | | Override theme templates | 
 
@@ -41,7 +41,6 @@ When you start a new Quire project by running the command `quire new`, your proj
 
 To find the variables, navigate to `content/_assets/styles/variables.scss`. You can also browse a [complete list of these variables](/docs-v1/variables) and the available customization options.
 
-
 The variables are prefixed with a dollar sign and are descriptive of what they control. For instance, `$content-background-color` changes the color of the main text area background color. To make it light grey, you delete `null` and change the value to `LightGrey`.
 
 ```css
@@ -65,23 +64,47 @@ It's always recommended to use a contrast checking tool, like [https://webaim.or
 
 ## Moderate Customizations
 
-You can take your Quire customizations a step further by adding custom CSS and custom classes to your project. 
-
-### Add Styles with Custom CSS
+You can take your Quire customizations a step further by creating new classes and overriding Quire's default styles with custom CSS
 
 In the `_assets/styles` directory, there is a blank `custom.css` file, which can be used to customize elements of your project. Any CSS you add to this file, will be added to your site’s styles. 
 
 CSS stands for "Cascading Style Sheets". It is a language used to define styles and layouts for webpages written in HTML. For a deeper dive, Mozilla Developers provides a good guide to CSS: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
 
-While HTML describes the contents of a page, CSS controls the style and formatting. CSS also saves a lot of time, as you can apply rules across a website by just editing one file (`custom.css`).
+While HTML describes the contents of a page, CSS controls the style and formatting of elements on your page. CSS also saves a lot of time, as you can apply rules across a website by just editing one file (`custom.css`).
 
-Let’s say you’d like a particular line of text in one of your Markdown files to be red. You can wrap that text in `<span>` HTML tags and give it a class.
+### Create Custom Classes with CSS
+
+Let's say you wanted to center a specific block of text on a page. You can wrap that text in an HTML tags and give it a {{< q-def "class" >}}. This allows you to target that specific {{< q-def "element" >}} and apply the desired new style. 
+
+To apply a new style to a *block* of text use `<div>` tag. To center your block of text, follow the steps below to assign a custom class and define class in your  `_assets/styles/custom.css` file . 
+
+1. Wrap the text you wanted centered in `<div>` tag and name your custom class `centered-text`. 
 
 ```html
-<span class="red-text">This text should be red</span>
+<div class="centered-text">
+*Text you want centered*
+</div>
 ```
 
-And then in your `custom.css` file, add a style rule for that class:
+2. In your `_assets/styles/custom.css` file, add a style rule that defines the new `centered-text` class.
+
+```css
+.centered-text {
+  text-align: center;
+}
+```
+
+3. Preview your project and note that the text has now been centered on the page. 
+
+While the `<div>` tag is used for block of text, you can use the `<span>` HTML tag for *in-line* elements. Follow the steps below to make one sentence within a paragraph red.  
+
+1. Wrap the text you wanted red in `<span>` tag and name your custom class `red-text`.
+
+```html
+Text that precedes red sentence. <span class="red-text">This text should be red.</span> Text that follows red sentence.
+```
+
+2. In your `_assets/styles/custom.css` file, add a style rule that defines the new `red-text` class.
 
 ```css
 .red-text {
@@ -89,7 +112,13 @@ And then in your `custom.css` file, add a style rule for that class:
 }
 ```
 
-Styles added to the `custom.css` file will also override any existing styles. For example, the following option would apply the style to any {{< q-def "element" >}} with a {{< q-def "class" >}} of `"title"` anywhere in your publication.
+3. Preview your project and note that the single line of text within the paragraph is now red. 
+
+For more information about CSS properties (`color:`, `text-align`, etc.) Visit [W3 Schools CSS Reference: CSS Properties](https://www.w3schools.com/cssref/index.php).
+
+### Override Styles with Custom CSS 
+
+You can override existing styles based on the selectors you use to define your `custom.css`. For example, the following option would apply custom the style to any element with a {{< q-def "CSS Selectors" >}} of `title` anywhere in your publication without needing to use HTML tags. 
 
 ```css
 .title {
@@ -97,7 +126,25 @@ Styles added to the `custom.css` file will also override any existing styles. Fo
 }
 ```
 
-To determine which selectors you need for your CSS, preview your publication in your browser of choice and control-click (Mac) or right click (PC) on the section you would like to tweak. Then select "Inspect element". This will show you the HTML markup for your site, along with all the class names, elements, and even styles that are currently being applied to that section.
+To determine which selectors you need for your CSS, preview your publication in your browser of choice and control-click (Mac) or right click (PC) on the section you would like to tweak. Then select "Inspect element". This will show you the HTML markup for your site, along with all the class names, elements, and styles that are currently being applied to that section.
+
+As another example, if you wanted to change width of the text on a page. You would use Inspect element to determine the selector you want to isolate is `.container`. You would also see the default settings: 
+
+```css
+.container {
+  margin: 0 auto;
+  max-width: 720px
+  width: 720px
+}
+```
+You could use Inspect element to edit these settings to test the ideal width. Once you find the right properties and values, you would add those to your `custom.css` to make the text width wider across the publication.
+
+```css
+.container {
+  max-width: 1000px;
+  width: 1000px;
+}
+```
 
 The more specific you can be with your {{< q-def "CSS selectors" >}}, the more likely the style will only be applied to the specific element you want. For example, if you wanted the page title on a specific page to be a different color than the titles on the rest of the pages, you could determine the CSS selector for the element on that particular page and apply a style rule to it without changing the styles on any other element or page. This example limits the style to the title in the page header of one page:
 
@@ -111,11 +158,13 @@ The use of the period (`.`) indicates the selector is a class, whereas, the hash
 
 In Quire, page ids are unique, and can be found on the `<div>` element that has the class `"quire-primary"`. By using the `id` in your custom CSS, you are targeting only that page, not all `"quire-primary"` elements throughout your publication.
 
+For more information about CSS selectors (`.title`, `.container`, etc.) Visit [W3 Schools CSS Reference: CSS Selectors](https://www.w3schools.com/cssref/css_selectors.php).
+
 {{< q-class "box tip" >}}
-- The use of a more specific {{< q-def "CSS selector" >}} will always override a less specific one — even if it’s in your `custom.css` file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your {{< q-def "CSS selector" >}} is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The "Inspect element" tool will point to what combination of CSS selectors are actually applying the final style as it’s seen in the browser window.
+- The use of a more specific CSS selector will always override a less specific one — even if it’s in your `custom.css` file. If you are trying to apply a more global style change like this and you find it’s not working, it may be because your  selector is too generic and there is a more specific rule elsewhere in your theme’s styles that is overriding your more general one. The "Inspect element" tool will point to what combination of selectors is actually applying the final style as it’s seen in the browser window.
 {{< /q-class >}}
 
-#### Custom CSS Example
+#### Custom CSS Recipe
 
 View the [Hide Title and Subtitle from Cover Page with Custom CSS](/resources/recipes/recipes-cover) in the [Recipes](/resources/recipes/) section of the Quire website. 
 
@@ -150,7 +199,7 @@ All `classes` are added to the `<main class="quire-page">` element on the page, 
 - You can add more than one class. However, you cannot leave the `classes` key blank, so be sure to delete it if you're not using it.
 {{< /q-class >}}
 
-#### Custom Class Example
+#### Custom Class Recipe
 
 View the [Hide Table of Contents Grid in PDF with Custom Class](/resources/recipes/hide-grid) in the [Recipes](/resources/recipes/) section of the Quire website. 
 
@@ -188,7 +237,3 @@ Here is some additional best practice advice:
 {{< q-class "box tip" >}}
 - When modifying layout files, you can ignore the `public` directory, it is rebuilt on every run of `quire build`.
 {{< /q-class >}}
-
-### Override Theme Templates
-
-TK
