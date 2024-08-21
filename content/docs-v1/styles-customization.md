@@ -126,7 +126,7 @@ You can override existing styles based on the selectors you use to define your `
 }
 ```
 
-To determine which selectors you need for your CSS, preview your publication in your browser of choice and control-click (Mac) or right click (PC) on the section you would like to tweak. Then select "Inspect element". This will show you the HTML markup for your site, along with all the class names, elements, and styles that are currently being applied to that section. (To learn more about Web Inspector, read Albert Rapp's article "[WebDev4R: Meet the Web Inspector](https://albert-rapp.de/posts/web_dev/01_web_inspector/01_web_inspector)" or visit HubSpot's guide, "[How to Use Inspect Element in Chrome, Safari, & Firefox](https://blog.hubspot.com/website/how-to-inspect)".)
+To determine which selectors you need for your CSS, preview your publication in your browser of choice and control-click (Mac) or right click (PC) on the section you would like to tweak. Then select "Inspect element". This will show you the HTML markup for your site, along with all the class names, elements, and styles that are currently being applied to that section. To learn more about Web Inspector, read Albert Rapp's article "[WebDev4R: Meet the Web Inspector](https://albert-rapp.de/posts/web_dev/01_web_inspector/01_web_inspector)" or visit HubSpot's guide, "[How to Use Inspect Element in Chrome, Safari, & Firefox](https://blog.hubspot.com/website/how-to-inspect)".
 
 As another example, if you wanted to change width of the text on a page. You would use Inspect element to determine the selector you want to isolate is `.container`. You would also see the default settings: 
 
