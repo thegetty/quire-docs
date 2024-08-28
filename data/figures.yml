@@ -414,4 +414,6 @@ figure_list:
   - id: "tombstone"
     src: /screenshots/tombstone.jpg
     caption: "An example of the table of information that accompanies an object in a collection catalogue, typically referred to as a “tombstone“."
-    
+
+  - id: "long-url"
+    src: /screenshots/long-URL-example.png
