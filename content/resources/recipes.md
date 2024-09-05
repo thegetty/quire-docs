@@ -9,3 +9,4 @@ abstract: "Step-by-step guides on creating popular customizations to your projec
 - [Hide Title and Subtitle from Cover Page with Custom CSS](/resources/recipes-cover/)
 - [Hide Table of Contents Grid in PDF with Custom Class](/resources/recipes-hide-grid/)
 - [Fix Long URLs in Pop-Up Citation Boxes with Custom CSS](/resources/recipes-long-urls)
+- [Add Markdown Functionality with Plugins](/resources/recipes-add-plugins)
