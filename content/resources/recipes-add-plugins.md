@@ -38,7 +38,7 @@ You should now be able to use the plugin's functionality in your project's Markd
 
 ### Variations
 
-Please note, some plugins may require a variation to the `const` pattern. For instance [markdown-it-fancy-lists](https://www.npmjs.com/package/markdown-it-fancy-lists), which allows you to create lists with alternate indicators like `a, b, c` and `i, ii, iii`, expects `const fancyListPlugin = require('markdown-it-fancy-lists').markdownItFancyListPlugin)` with the `.markdownItFancyListPlugin` appended at the end of the line. 
+Please note, some plugins may require a variation to the `const` pattern. For instance [markdown-it-fancy-lists](https://www.npmjs.com/package/markdown-it-fancy-lists), which allows you to create lists with alternate indicators like `a, b, c` and `i, ii, iii`, expects `const fancyListPlugin = require('markdown-it-fancy-lists').markdownItFancyListPlugin;` with the `.markdownItFancyListPlugin` appended at the end of the line. 
 
 These variations can be found on the main npm page. We recommend trying the pattern outlined above first, and consulting the npm page if the plugin does not function as expected. Please note, not all plugins are compatible with Quire. 
 
