@@ -8,7 +8,7 @@ online: false
 
 {{< q-figure id="kansas-union" >}}
 
-This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edy), an open-source publishing tool developed by Getty and available for anyone to use for free. Held in conjunction with the annual [MCN](https://mcn.edu/) (Museum Computer Network) conference taking place at Kansas University, this workshop is **free with registration** and open to all levels of technical experience. Attendance is limited to 25 participants. Boxed lunch will be provided. 
+This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edy), an open-source publishing tool developed by Getty and available for anyone to use for free. Held in conjunction with the annual [MCN](https://mcn.edu/) (Museum Computer Network) conference at Kansas University, this workshop is **free with registration** and open to all levels of technical experience. Attendance is limited to 25 participants. Lunch will be provided. 
 
 **Tuesday, October 22, 2024**<br />
 Rock Chalk Room, Kansas Union, 4th Floor<br />
