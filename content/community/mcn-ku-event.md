@@ -86,4 +86,7 @@ Following our digital publishing day, MCN’s annual conference kicks off the ev
   border-bottom-width: 0px !important;
   margin-top: 6rem !important;
 }
+#community-mcn-ku-event .quire-page__content .container .content { 
+  margin-top: 0; 
+}
 </style>
