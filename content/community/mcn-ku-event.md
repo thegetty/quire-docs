@@ -1,15 +1,14 @@
 ---
-title: Hands-on Quire Workshop<br/>at Kansas University
+title: Hands-on Quire Workshop at<br> Kansas University
 weight: 2850
 type: page
-abstract: "Join us at Kansas University for a free, hands-on workshop exploring Quire, Getty's open-source digital publishing tool"
 menu: false
 online: false
 ---
 
 {{< q-figure id="kansas-union" >}}
 
-This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edy), an open source publishing tool developed by Getty and available for anyone to use for free. Held in conjunction with the annual [MCN](https://mcn.edu/) (Museum Computer Network) conference taking place at Kansas University, this workshop is **free with registration** and open to all levels of technical experience. Attendance is limited to 25 participants. Boxed lunch will be provided. 
+This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edy), an open-source publishing tool developed by Getty and available for anyone to use for free. Held in conjunction with the annual [MCN](https://mcn.edu/) (Museum Computer Network) conference taking place at Kansas University, this workshop is **free with registration** and open to all levels of technical experience. Attendance is limited to 25 participants. Boxed lunch will be provided. 
 
 **Tuesday, October 22, 2024**<br />
 Rock Chalk Room, Kansas Union, 4th Floor<br />
@@ -48,7 +47,7 @@ Lawrence, Kansas<br />
 
 The latter half of the day will see these concepts put into practice, with attendees getting their very own Quire projects up and running, editing content, and making customizations. 
 
-*This workshop is designed for individuals at all technical skill levels. Participants must bring their own laptop, and must complete the [Quire installation](/docs-v1/install-uninstall/) and setup requirements prior to the workshop. Details will be provided after registering. Questions can be sent to [quire@getty.edu](mailto:quire@getty.edu).*
+*Participants must bring their own laptop, and must complete the [Quire installation](/docs-v1/install-uninstall/) and setup requirements prior to the workshop. Details will be provided after registering. Questions can be sent to [quire@getty.edu](mailto:quire@getty.edu).*
 
 **About Quire** 
 
