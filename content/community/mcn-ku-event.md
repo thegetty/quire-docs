@@ -12,7 +12,7 @@ This hands-on workshop will serve as an introduction to [Quire](https://quire.ge
 
 **Tuesday, October 22, 2024**<br />
 Rock Chalk Room, Kansas Union, 4th Floor<br />
-Kansas University
+Kansas University<br />
 Lawrence, Kansas<br />
 
 <div class="headless-table">
