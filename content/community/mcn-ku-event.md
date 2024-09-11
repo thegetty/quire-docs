@@ -26,7 +26,7 @@ Lawrence, Kansas<br />
 </div>
 <div class="action-button paired-button">
 
-[Register Now](https://forms.gle/wGiDpDuouQ9jgjZx5)
+[Register Now](https://forms.gle/gJFFRS7pk4hQZdXo9)
 
 </div>
 
