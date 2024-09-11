@@ -417,3 +417,6 @@ figure_list:
 
   - id: "long-url"
     src: /screenshots/long-URL-example.png
+
+  - id: "kansas-union"
+    src: /screenshots/kansas-union.jpg
