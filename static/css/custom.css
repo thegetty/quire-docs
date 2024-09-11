@@ -1389,3 +1389,8 @@ div.quire-caption-container > span code {
   color: #1a1a1a;
   line-height: 2;
 }
+
+
+#community-mcn-ku-event .quire-page__content .container .content { 
+  margin-top: 0; 
+}
