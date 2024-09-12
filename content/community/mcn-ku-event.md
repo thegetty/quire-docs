@@ -1,5 +1,5 @@
 ---
-title: Hands-on Quire Workshop at<br> Kansas University
+title: Hands-on Quire Workshop at<br> The University of Kanasas
 weight: 2850
 type: page
 menu: false
@@ -8,11 +8,11 @@ online: false
 
 {{< q-figure id="kansas-union" >}}
 
-This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edu), an open-source publishing tool developed by Getty and available for anyone to use for free. Held in conjunction with the annual [MCN](https://mcn.edu/) conference at Kansas University, this workshop is **free with registration** and open to all levels of technical experience. Attendance is limited to 25 participants. Boxed lunch will be provided. 
+This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edu), an open-source publishing tool developed by Getty and available for anyone to use for free. Held in conjunction with the annual [MCN](https://mcn.edu/) conference at the [University of Kansas](https://ku.edu/), this workshop is **free with registration** and open to all levels of technical experience. Attendance is limited to 25 participants. Boxed lunch will be provided. 
 
 **Tuesday, October 22, 2024**<br />
 Rock Chalk Room, Kansas Union, 4th Floor<br />
-Kansas University<br />
+University of Kansas<br />
 Lawrence, Kansas<br />
 
 <div class="headless-table">
