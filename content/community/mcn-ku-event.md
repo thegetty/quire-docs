@@ -1,5 +1,5 @@
 ---
-title: Hands-on Quire Workshop at<br> The University of Kanasas
+title: Hands-On Quire Workshop at<br> the University of Kanasas
 weight: 2850
 type: page
 menu: false
