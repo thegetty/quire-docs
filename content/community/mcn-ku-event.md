@@ -8,7 +8,15 @@ online: false
 
 {{< q-figure id="kansas-union" >}}
 
-This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edu), an open-source publishing tool developed by [Getty](https://www.getty.edu/) and available for anyone to use for free. Held in conjunction with the annual [MCN](https://mcn.edu/) conference at the [University of Kansas](https://ku.edu/), this workshop is **free with registration** and open to all levels of technical experience. Attendance is limited to 25 participants. Boxed lunch will be provided. 
+This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edu), an open-source publishing tool developed by [Getty](https://www.getty.edu/) and available for anyone to use for free. Held in conjunction with the annual [MCN](https://mcn.edu/) conference at the [University of Kansas](https://ku.edu/), this workshop is **free** and open to all levels of technical experience. Attendance is limited to 25 participants. Boxed lunch will be provided. 
+
+<div class="action-button paired-button">
+
+[Register Now](https://forms.gle/gJFFRS7pk4hQZdXo9)
+
+</div>
+
+<br />
 
 **Tuesday, October 22, 2024**<br />
 Rock Chalk Room, Kansas Union, 4th Floor<br />
@@ -24,13 +32,6 @@ Lawrence, Kansas<br />
 | 2:00–4:00 p.m. | Part 2: Basic Concepts in Action |
 
 </div>
-<div class="action-button paired-button">
-
-[Register Now](https://forms.gle/gJFFRS7pk4hQZdXo9)
-
-</div>
-
-<br />
 
 *Following these sessions, MCN kicks off with its famous Ignite event, 5:00 p.m. at the nearby Abe and Jake's Landing. Paid conference registration required.*
 
