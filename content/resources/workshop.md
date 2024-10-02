@@ -6,27 +6,9 @@ abstract:
 aliases:
 ---
 
-## About the Workshop
-
-**Topic**: The benefits of using Quire for digital projects, whether for student research or institutional publishing projects. <br>
-**Focus**: Learning the core components that comprise Quire: command-line interface, working in Markdown and YAML, and using a text editor. <br>
-**Methodology**: Brief explanation + inspiring examples + assignments for participants. <br>
-**Intended audience**: No IT knowledge is required. It is suitable for anyone interested in print or digital publishing. Previous participants include UPenn staff and students and attendees of the Museum Computer Network conference in 2023. <br>
-**Practical information**: 4 hours with 30-minute break, in person only 
-
-<div class="action-button">
-
-[Contact Us](mailto:quire@getty.edu)
-
-</div>
-
 ## About Quire 
 
 Quire provides a way for students, researchers, professors, curators, and more to publish multimedia-rich scholarship on the web. These digital books are designed to last a long time. The same set of files used to create the website can also be used to create a pdf, e-book, and print book. No prior coding experience is necessary. 
-
-
-
-
 
 
 ## Quire Benefits 
@@ -41,12 +23,16 @@ Quire provides a way for students, researchers, professors, curators, and more t
 
 {{< q-showcase projects="museum_digital_practice_2022, yale_italian_paintings, materia_issue4, _getty_marrow_report" grid="4" >}}
 
+---
+
 ## Before Getting Started
 
 1. Install Quire: https://quire.getty.edu/docs-v1/install-uninstall/ 
-2. Install Visual Studio Code: https://code.visualstudio.com/
+2. Install Visual Studio Code, a free text-editor: https://code.visualstudio.com/
 
 ## Understanding Quire Basics 
+
+Text TK
 
 ### The Command-Line Interface
 
@@ -54,54 +40,90 @@ Quire provides a way for students, researchers, professors, curators, and more t
 
 A command-line interface (CLI) is a text-based user interface used to run program tasks. In it, the user issues commands in the form of typed strings of text. This is opposed to a graphical user interface (GUI) for a software program, in which the user controls the program through visualized buttons, toggles and menus. 
 
-In Quire, the CLI enables you navigate your computer's files, as well as tell Quire what to do such as create, preview and output publications using simple commands like quire new, quire preview and quire build
+The command-line interface when it is first opened on a Mac computer: ![command line shell](/img/screenshots/command-line-shell.jpg)
 
 **What are the benefits of using the command-line interface?**
 
-The two main benefits of the command line is efficiency. Instead of spending time finding and clicking on individual files, you can use the CLI to perform actions on several files in one text command. Additionally, CLI applications often consume fewer network resources compared to graphical applications.
-
-The command-line interface when it is first opened: ![command line shell](/img/screenshots/command-line-shell.jpg)
+The main benefit of the command line is efficiency. Instead of spending time finding and clicking on individual files, you can use the CLI to perform actions on several files with a single text command. Additionally, CLI applications often consume fewer network resources compared to graphical applications.
 
 **Navigating with the CLI**
 
-
-| Command       | Action   | Notes              |
-| ------------- | -------- | ------------------ |
-| **`cd`** | Used to change project directories | You will use this command to navigate into your Quire project directory. Once you are in the directory you can run commands like `quire preview` and `quire build`. |
-|  **`cd ..`** | Will take you back one directory level | This is especially useful if you keep multiple Quire projects as sub-directories within a main directory. |
-| **`ls`** | Used to list all the files when in a project directory | This can be useful in making sure you are in the right folder. |
-|  **`!!`** | This will re-run the last command you entered | |
-
-Use the command-line to navigate folders: ![commandline vs folder](/img/screenshots/commandline-vs-folder.jpg)
+Use commands like `cd` ("change directory") and `ls` ("list") to navigate your computer's files: ![commandline vs folder](/img/screenshots/commandline-vs-folder.jpg)
 
 #### Try it for Yourself
 
- Mac: 
+Mac: 
 
- 1. Press spacebar to open your computer's Spotlight 
- 2. Type Terminal (Mac's name for the CLI) and hit enter
+ 1. Press Command-Spacebar to open Spotlight 
+ 2. Type "Terminal" (Mac's name for the CLI) and hit enter
  3. Type `ls`to list the contents of your computer's home directory
  4. Open your Finder
- 5. Press command-H and compare the files in that folder with what you see listed in Terminal
+ 5. Press Command-H and compare the files in that folder with what you see listed in the Terminal
 
- PC: 
+PC: 
 
- 1. 
- 2. 
+ 1. Open the Start menu 
+ 2. Select Windows Powershell and hit enter
+ 3. Type `~` and hit enter to ensure you are in User and not Administrator mode.
+ 4. Type `ls` in Powershell to list the contents of your computer's home directory
+ 5. Click File Explorer
+ 6. Click the PC icon and compare the files in that folder with what you see listed in Powershell
 
-**Running Commands with the CLI**
+Go Deeper: 
 
-Use the command-line to tell Quire what to do: ![list of cli commands](/img/screenshots/cli-commands.jpg)
-
-#### Try it for Yourself 
+ 1. Choose a file you want to navigate into
+ 2. Type `cd` and the name of the chosen folder and hit enter
+ 3. Continue exploring 
 
 ### Markdown 
 
 **What is Markdown?**
 
+Markdown is a text formatting standard that defines the use of very simple text character combinations in order to indicate structure and formatting that can easily be transferred to more complicated HTML (web markup). For example, something surrounded in asterisks in Markdown turns into italics in the final publication: *emphasis* = emphasis.
+
 **What are the benefits of using Markdown?**
 
+Markdown enables you to keep your publication's content in a non-proprietary plain-text format. No proprietary software is needed to open and access your files. That means should certain technology go obsolete, your content will remain stable and accessible. 
+
+An alternative to Markdown is writing in HTML: 
+
+```HTML
+<h2>An Unordered HTML List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+```
+
+In Markdown this would simply be: 
+
+```Markdown
+## An Unordered HTML List
+
+- Coffee
+- Tea
+- Milk 
+```
+
 #### Try it Yourself
+
+Mac:
+
+1. Open Visual Studio Code
+2. Go to File and select "New File"
+3. Type "Hi my name is [your name]" 
+4. Type "Hi my name is [your name]" a second time and this time put two asterisks on either side of `**your name**`
+4. Press Command-Shift-V to preview the HTML version 
+5. Press Command-\ to create a split screen and drag one tab over to the right side to view a side-by-side comparison
+
+PC: 
+
+Go Deeper:
+
+1. Visit this page and play around with the different Markdown options: http://quire.getty.edu/docs-v1/fundamentals/#markdown-basics. 
+
 
 ### YAML 
 
@@ -128,6 +150,17 @@ Use the command-line to tell Quire what to do: ![list of cli commands](/img/scre
 #### Try it Yourself
 
 
+
+
+
+
+
+
+**Running Commands with the CLI**
+
+## Start and Preview Projects
+
+Use the command-line to tell Quire what to do: ![list of cli commands](/img/screenshots/cli-commands.jpg)
 
 
 
