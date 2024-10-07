@@ -18,8 +18,8 @@ More TK
 
 ## Quire Benefits 
 
-- Quire is developed, tested, and used by Getty
-- Quire is free to use. No proprietary software or ongoing maintenance is required.
+- Developed, tested, and used by Getty
+- Free to use. No proprietary software or ongoing maintenance is required.
 - One set of files can produce multiple formats: web (primary version), PDF, e-book 
 - No pre-existing technical skills are necessary
 - We have a vibrant and diverse community of users available to provide assistance and inspiration 
