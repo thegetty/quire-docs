@@ -41,7 +41,7 @@ The goal of this workshop is to take the potential challenges of Quire and make 
 
 ## Part 1. Introduction to Basic Concepts 
 
-In this section you will learn about and get hands on experience with the command-line interface (CLI), which is used to navigate your Quire project, and Markdown, which is the language used to write your Quire project. 
+In this section you will learn about, and get hands on experience with, the two main tools that are required to use Quire: the command-line interface (CLI), which is used to navigate and trigger processes in your Quire project, and the text editor, which is the tool used to write and edit your project.  
 
 ### Learning to Love the Command-Line Interface 
 
@@ -87,17 +87,17 @@ Go Deeper:
 
 ### Learning to Love the Text Editor
 
-You can think of your text editor, like the free-tool Visual Studio Code, as a supplement to Microsoft Word. Rather than using buttons to format the appearance of your text, you are using symbols instead. Quire then converts those symbols into HTML. 
+You can think of your text editor, like the free-tool Visual Studio Code, as a supplement to Microsoft Word. A text editor is used to create, change, or edit plain-text files. The beauty of plain-text files is that they do not require proprietary software. Therefore, content is written in a way where, should certain technology go obsolete, your content will remain stable and accessible. The text editor is your primary interface for working on your Quire project, so it's important to get comfortable with it. It is especially important to get comfortable with Markdown, the used format for more narrative or textual content. 
 
 **What is Markdown?**
 
-Markdown is a text formatting standard that defines the use of very simple text character combinations in order to indicate structure and formatting that can easily be transferred to more complicated HTML (web markup). For example, something surrounded in asterisks in Markdown turns into italics in the final publication: *emphasis* = emphasis.
+Markdown might seem strange at first, but it is a very approachable way of formatting text using simple character combinations to indicate structure and visual formatting without needing to write in a complicated language like Rich Text Format (RTFF) or HTML. Rather than using buttons to format the appearance of your text, as you would in Microsoft Word, you are using symbols instead. Quire then does the heavy lifting and converts those symbols into HTML for you. For example, something surrounded in asterisks in Markdown turns into italics in the final publication: *emphasis* = emphasis.
 
 **What are the benefits of using Markdown?**
 
-Markdown enables you to keep your publication's content in a non-proprietary plain-text format. No proprietary software is needed to open and access your files. That means should certain technology go obsolete, your content will remain stable and accessible. 
+Markdown was designed for *readability* and is not heavily marked up with tags like other coding languages. 
 
-An alternative to Markdown is writing in HTML: 
+A list written in HTML:
 
 ```HTML
 <h2>An Unordered HTML List</h2>
@@ -109,7 +109,7 @@ An alternative to Markdown is writing in HTML:
 </ul>  
 ```
 
-In Markdown this would simply be: 
+The same list written in Markdown: 
 
 ```Markdown
 ## An Unordered HTML List
@@ -118,6 +118,8 @@ In Markdown this would simply be:
 - Tea
 - Milk 
 ```
+
+The fact that Markdown is preserved in a human-readable format, makes it very easy to edit and it also helps preserve the longevity of your content. 
 
 #### Try it Yourself
 
@@ -139,11 +141,13 @@ Go Deeper:
 
 ## Part 2. Basic Concepts in Action 
 
-Now that you understand two of the most fundamental, and tricky to wrap your head around, concepts of Quire, using the command-line interface and writing in Markdown, it's time to get a new project up and running and put these concepts in action. 
+Now that you understand two of the most fundamental tools needed to use Quire, it's time to get a new project up and running and put these concepts in action. 
 
 ### Use the CLI to Start and Preview a New Quire Project 
 
 In addition to using the CLI to navigate Quire, as we explored earlier, it can also be used to tell Quire what to do, including create a new project, preview a project, or output a website, pdf, and e-book. In the steps below, we will use the CLI to create a new project, navigate into that project's folder, and preview. 
+
+Please note: The command `quire new` generates a default starter project. It is a sample publication meant to serve as a jumping off point. It serves as a useful template with images and text that can be delete or substituted when creating your own project. 
 
 #### Try it Yourself 
 
@@ -157,7 +161,7 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 
 Now that you have your new project up-and-running, it's time to edit it! First, we must open the project with our text editor and familiarize ourselves with the file structure.  
 
-![Text Editor](/img/screenshots/text-editor.jpg)
+The default starter project when it is first opened in your Text Editor ![Text Editor](/img/screenshots/text-editor.jpg)
 
 #### Try it Yourself
 
@@ -171,7 +175,7 @@ The "content" folder is where pretty much all the action takes place. The most i
 
 | File/Folder | Purpose Served |
 |---|---|
-| Markdown files | Indicated by the `.md` suffix. This is where the vast majority of written content lives, with each file representing a different "page" in your publication | 
+| Markdown files | Indicated by the `.md` suffix. This is where the vast majority of your content lives, with each file representing a different "page" in your publication | 
 | `_data` folder | Contains YAML files. These are a plain-text way of capturing information that appears in multiple places through your publication like captions, chapter titles, object information, etc.|  
 | `_assets` folder | Where a lot of the customization takes place. Includes things like fonts, images, and CSS/JavaScript files. | 
 
@@ -182,7 +186,7 @@ The "content" folder is where pretty much all the action takes place. The most i
 
 ### Making Edits with Visual Studio Code 
 
-Before we dig into the `_data` and `_assets` folder, let's take a closer look at a Markdown file and make some simple edits make on what we learned in Part 1. 
+Let's take a closer look at a Markdown files (indicated by `.md`) and make some simple edits based on what we learned in Part 1. 
 
 #### Try it Yourself  
 
@@ -190,19 +194,27 @@ Before we dig into the `_data` and `_assets` folder, let's take a closer look at
 2. Make any changes you would like to the Markdown
 3. Preview the results 
 
+You can use this page of the Quire documentation as a reference: http://quire.getty.edu/docs-v1/fundamentals/#markdown-basics.
+
 ## Part 3. Going Deeper with YAML  
 
-Now that you are more comfortable with the CLI and working in Markdown, let's dig deeper into the role YAML plays in a Quire project, and take a closer look at the `_data` and `_assets` folders. 
+In addition to Markdown, the other format you will save content in in Quire is YAML. Let's learn more about the different roles YAML plays in your Quire project, taking a closer look at Page YAML the `.yaml` files found in the `_data` folder. 
 
 ### YAML 
 
 **What is YAML?**
 
-YAMl literally stands for "YAML Ain't Markup Language". This hints at the fact that YAML serves a different purpose than Markdown. While YAML is also written in a plain-text, human-readable format, it's primary purpose is saving text/content as data. 
+YAMl literally stands for "YAML Ain't Markup Language". YAML is also written in a plain-text, human-readable format, it's primary purpose is saving text/content as data. It's less about how the content is written and more about how and where the information is saved in your project. YAML is formatted as the name of a data item (a key), followed by a colon, a space, and then the data item’s value. A key-value pair. 
+
+Here is an example of how YAML is formatted: 
+
+`title: My Project`
+
+"Title" represents the key and "My Project" represents the value. 
 
 **What are the benefits of using YAML?**
 
-YAML is a way of capturing information that appears in multiple places throughout your project and is therefore treated like data. This prevents you from needing to write things multiple times. 
+YAML is a way of capturing information that appears in multiple places throughout your project and is therefore treated like data. This prevents you from needing to write things multiple times. YAML is also considered easier to read and write than other data-specific formats, like JSON, especially for non-developers. 
 
 **Examples of YAML in a Quire Project**
 
@@ -214,7 +226,18 @@ There are three types of YAML you will encounter in a Quire project.
 |`Publication.yaml` | Found in the `_data` folder. This is where the metadata for the publication lives. Includes publication title and contributors, copyright information, BISAC codes, publisher, CC license, revision history , etc. |  
 | `figures.yaml`, `objects.yaml`, `references.yaml` etc. |  Also found in the `_data` folder. Where data like captions, references, and tombstone information is stored and assigned an `id`. That `id` can then be used in a `.md` file to pull in the content from the `.yaml` file. | 
 
+
 ### Page YAML 
+
+Every page (indicated by `.md`) in a Quire publication must start with a block of YAML. The three core attributes used to define every page are title, layout, and order. All page YAML, no matter how many attributes it has, appears at the top of a MArkdown page and appears between a set of three dashes.
+
+```YAML
+---
+title:
+layout:
+order:
+---
+```
 
 #### Try it Yourself
 
