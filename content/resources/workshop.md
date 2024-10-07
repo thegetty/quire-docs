@@ -8,9 +8,9 @@ aliases:
 
 ## About Quire 
 
-Quire provides a way for students, researchers, professors, curators, and more to publish multimedia-rich scholarship on the web. Digital publications created with Quire are designed to last a long time. The same set of files used to create the website can also be used to create a pdf, e-book, and print book. No prior coding experience is necessary. 
+Quire is an open-source publishing tool that is developed by Getty and used to create scholarly, visually-rich publications that are designed for discoverability, longevity, and sustainability.
 
-More TK
+The tool provides a way for students, researchers, professors, curators, and more to publish multimedia-rich scholarship on the web. The same set of files used to create the website can also be used to create a pdf, e-book, and print book. 
 
 ## Examples of Quire Publications 
 
@@ -20,9 +20,9 @@ More TK
 
 - Developed, tested, and used by Getty
 - Free to use. No proprietary software or ongoing maintenance is required.
-- One set of files can produce multiple formats: web (primary version), PDF, e-book 
+- One set of files can produce multiple formats
 - No pre-existing technical skills are necessary
-- We have a vibrant and diverse community of users available to provide assistance and inspiration 
+- Vibrant and diverse community of users available to provide assistance and inspiration 
 
 ## Quire Challenges 
 
@@ -30,7 +30,16 @@ More TK
 - You are working with potentially unfamiliar tools like the command line and a text editor
 - You are working with potentially unfamiliar coding languages like Markdown and YAML
 
-The goal of this workshop is to take the potential challenges of Quire and make them feel approachable so that attendees leave feeling confident and excited to continue experimenting and, hopefully, creating their own projects with Quire. 
+## About this Workshop 
+
+This workshop seeks to take the aforementioned challenges of Quire and break the various tools, languages, and processes into approachable and easy to understand concepts. We additionally provide attendees with hands-on experience so they can leave feel comfortable and confident navigating and using Quire. Our hope is that individuals who take this workshop will leave excited to continue experimenting and creating with Quire.
+
+The workshop takes approximately 3 and half hours to complete, with additional excercises and resources at the end to encourage continued learning. Th workshop is broken into the following parts: 
+
+**Part 1**: Introduction to Basic Concepts (Learning to Love the Command Line and Text Editor)
+**Part 2**: Basic Concepts in Action 
+**Part 3**: Going Deeper With YAML and the `_data` folder
+**Part 4**: Going Deeper with the `_assets` folder 
 
 ---
 
