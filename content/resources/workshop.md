@@ -76,7 +76,11 @@ One of the primary functions of the CLI is to easily navigate files on your comp
 
 ![commandline vs folder](/img/screenshots/commandline-vs-folder.jpg)
 
-#### Try it for Yourself
+
+
+#### Try it Yourself
+
+<div class="try-it-yourself">
 
 Mac: 
 
@@ -101,6 +105,8 @@ Go Deeper:
  2. Type `cd` and the name of the chosen folder and hit enter
  3. Continue exploring your computer's files
  4. Close your Terminal/Powershell when you are done 
+
+ </div>
 
 ### Learning to Love the Text Editor
 
@@ -138,7 +144,11 @@ The same list written in Markdown:
 
 The fact that Markdown is preserved in a human-readable format, makes it very easy to edit and it also helps preserve the longevity of your content. 
 
+
+
 #### Try it Yourself
+
+<div class="try-it-yourself">
 
 Mac:
 
@@ -163,6 +173,8 @@ Go Deeper:
 1. Visit this page and play around with the different Markdown options: http://quire.getty.edu/docs-v1/fundamentals/#markdown-basics
 2. Close Visual Studio Code when you are done exploring
 
+</div>
+
 ## Part 2. Basic Concepts: In Action
 
 Now that you understand two of the most fundamental tools needed to use Quire, it's time to get a new project up and running and put these basic concepts in action. 
@@ -175,7 +187,11 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 
 ![Quire Starter Project](/img/screenshots/quire-starter.jpg)
 
+
+
 #### Try it Yourself 
+
+<div class="try-it-yourself">
 
 1. Open your Terminal or Powershell 
 2. Type the command `quire new my-project` and hit enter. The process may take a few minutes. You will see the words "successfully installed" when the process is complete. 
@@ -185,19 +201,27 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 6. When you are ready, type `quire preview` to generate a preview website. Ignore the output in the Terminal/Powershell. Your project is ready to preview when you see http://localhost:8080/. 
 7. Cut-and-paste the URL into your browser. Ta-da! Your new project is up-and-running! 
 
+</div>
+
 ### Open Your Project with Visual Studio Code
 
 Now that you have your new project up-and-running, it's time to edit it! First, we must open the project with our text editor and familiarize ourselves with the file structure.  
 
 This is what the default starter project will look like it is first opened in your Text Editor. ![Text Editor](/img/screenshots/text-editor.jpg)
 
+
+
 #### Try it Yourself
+
+<div class="try-it-yourself">
 
 1. Open Visual Studio Code
 2. Click File>Open and then navigate to your home directory where you should see your `my-project` folder
 3. Select the `my-project` folder, find the `content` folder, and double-click to open it in Visual Studio Code. 
 4. Take a look at the different folders and files that appear on the left side of your window
 5. Go back to File and select Auto Save. This will come in handy later. 
+
+</div>
 
 ### Navigating Files with Visual Studio Code 
 
@@ -209,19 +233,31 @@ The "content" folder is where pretty much all the action takes place. The most i
 | `_data` folder | Contains YAML files. These are a plain-text way of capturing information that appears in multiple places through your publication like captions, chapter titles, object information, etc.|  
 | `_assets` folder | Where a lot of the customization takes place. Includes things like fonts, images, and CSS/JavaScript files. | 
 
+
+
 #### Try it Yourself
+
+<div class="try-it-yourself">
 
 1. Take a moment to explore the various folders and files that make up your Quire project
 2. Locate the `intro.md` file and open it
+
+</div>
 
 ### Making Edits with Visual Studio Code 
 
 Let's take a closer look at a Markdown files (indicated by `.md`) and make some simple edits based on what we learned in Part 1. 
 
+
+
 #### Try it Yourself  
+
+<div class="try-it-yourself">
 
 1. Make any changes you would like to the Markdown of the `intro.md` file
 2. Navigate to your browser and preview the results 
+
+</div>
 
 You can use this page of the Quire documentation as a reference: http://quire.getty.edu/docs-v1/fundamentals/#markdown-basics.
 
@@ -269,7 +305,11 @@ image: figures/lange-house.jpg
 
 The `title` is the title of the essay, the `layout` affects the format of the page, and `order` affects the page order of the publication. Let's make a change to the title of the Introduction. 
 
+
+
 #### Try it Yourself
+
+<div class="try-it-yourself">
 
 1. Change the `title` of the `intro.md` file to anything you like 
 2. In the CLI, press Control-C to stop your preview
@@ -277,17 +317,25 @@ The `title` is the title of the essay, the `layout` affects the format of the pa
 4. Go to your browser, and notice that the title of the essay has changed
 5. Navigate to the table of contents in your project and note how the title of the Introduction has changed there as well
 
+</div>
+
 ### `publication.yaml`
 
 Another role YAML plays in your project is storing important metadata. This information is kept in the `publication.yaml` file and includes things like publication title and contributors, copyright information, BISAC codes, publisher, CC license, revision history , etc. The data in this file is automatically included in the underlying code of every page of your project's online edition, supporting Search Engine Optimization (SEO) and general discovery.
 
 The `publication.yaml` file lives in the `_data` folder along with a number of other YAML files such as `figures.yaml`, `objects.yaml`, and `references.yaml`. We will look at those files a little bit later on. For now, our focus is just on the `publication.yaml` file. 
 
+
+
 #### Try it Yourself
+
+<div class="try-it-yourself">
 
 1. Navigate to the `_data` folder
 2. Open the `_data` folder and find the file called `publication.yaml`
 3. Take some time looking at the content of this file
+
+</div>
 
 ### `publication.yaml` Continued
 
@@ -295,7 +343,11 @@ As previously mentioned, YAML is used for storing information that is used in mu
 
 ![The many places the project titles appears](/img/screenshots/quire-starter-metadata-change.jpg)
 
+
+
 #### Try it Yourself 
+
+<div class="try-it-yourself">
 
 1. In the `publication.yaml` file, navigate to the `# Title & Description` section
 2. Change the `title` and `subtitle` to whatever you want it to be
@@ -303,6 +355,8 @@ As previously mentioned, YAML is used for storing information that is used in mu
 4. Type the command `quire preview` to restart the preview
 5. Navigate to the cover page of your project and note that the title has changed there
 6. Open the sidebar menu and note that the title has changed there as well 
+
+</div>
 
 ## Part 4. Going Deeper: Images
 
@@ -312,17 +366,27 @@ Now that we have changed the title of your Quire project, let's also change the 
 
 The images that comprise your Quire project live in the `_assets` folder in a subfolder called `images`. 
 
+
+
 #### Try it Yourself 
+
+<div class="try-it-yourself">
 
 1. Navigate to the `_assets` folder
 2. Select the `images` folder
 3. Can you locate Dorothea Lange's famous photograph, "Migrant Mother"?
 
+</div>
+
 ### Adding new images to your project 
 
 Images can be easily added and subtracted from your Quire project. When adding new images they should be placed in the `images` folder. There are a few ways to add images to your Quire project. The first is by incluing `image:` and the title of your image file in your page YAML.  
 
+
+
 #### Try it Yourself
+
+<div class="try-it-yourself">
 
 1. Take some time to find an image that has a horizontal orientation
 2. Save it to the `_assets/images/` folder (must be all lowercase and use dashes instead of spaces)
@@ -331,6 +395,8 @@ Images can be easily added and subtracted from your Quire project. When adding n
 5. In your CLI, press Control-C to stop the preview
 6. Type the command `quire preview` to restart the preview
 7. Go to your browser and navigate to the cover page of your project. Note that in addition to the title changing, the cover image has changed too!
+
+</div>
 
 ## Part 5. Going Deeper: Shortcodes 
 
@@ -352,12 +418,18 @@ That `id` is associated with an image file, caption, credit, label, etc.
 
 When you insert that shortcode into a `.md` file, when you preview that page in your browser you will automatically see the image file, caption, credit, label, etc. 
 
-#### Try it For Yourself 
+
+
+#### Try it Yourself 
+
+<div class="try-it-yourself">
 
 1. In Visual Studio Code, navigate to the `essay.md` file
 2. Locate the shortcode that includes `fig-2`
 3. Go to your browser and navigate to the essay "I. American Photographs"
 4. Scroll to the part of the essay that corresponds with the location of the shortcode in the `.md` file. What do you see? 
+
+</div>
 
 ### `figures.yaml`
 
@@ -373,7 +445,11 @@ Here is an example of a `figures.yaml` entry:
 
 The `src` is the path for where the image is stored in the Quire project. In this case the image `evans-sons.jpg` lives in a folder called `figures`. This folder is inside the `images` folder. You can use subfolders to help organize your images, just be sure to include the folder name in the `src` path. 
 
+
+
 #### Try it Yourself
+
+<div class="try-it-yourself">
 
 1. In Visual Studio Code, navigate to the `_data` folder
 2. Now locate the `figures.yaml` file
@@ -383,11 +459,17 @@ The `src` is the path for where the image is stored in the Quire project. In thi
 6. Type the command `quire preview` to restart the preview
 7. Navigate back to your browser and note how the caption has been updated 
 
+</div>
+
 ### Inserting the image 
 
 Inserting a new image is a three-step process. First you must save the image in the `_assets/images/` folder. Next, you must create an entry for that image in the `figures.yaml` file and assign the image an `id`. Finally, decide where in the relevant `.md` file you want the image to appear and enter a shortcode that includes the assigned `id`.
 
+
+
 #### Try it Yourself 
+
+<div class="try-it-yourself">
 
 1. Find any image you want and save it in the `_assets/images/figures/` folder (the file name must be all lowercase and use dashes instead of spaces)
 2. Go to the `figures.yaml` file and create a new entry (the indentations must be aligned with all the other entries or you will receive an error)
@@ -397,6 +479,8 @@ Inserting a new image is a three-step process. First you must save the image in 
 6. In your CLI, press Control-C to stop the preview
 7. Type the command `quire preview` to restart the preview
 8. Navigate back to your browser. You should now see your new image, caption, credit, and label inserted in the text
+
+</div>
 
 ## Part 6. Going Deeper: Customization 
 
@@ -424,7 +508,11 @@ Variables are prefixed with a dollar sign and are descriptive of what they contr
 
 Here is a list of the variables define in Quire and what they control: https://quire.getty.edu/docs-v1/variables/#defined-variables.
 
+
+
 #### Try it Yourself
+
+<div class="try-it-yourself">
 
 1. Navigate to `_assets/styles/variables.scss`
 2. Make the following changes: 
@@ -439,6 +527,8 @@ Go Deeper:
 
 1. Check out this list of potential color choices: https://www.w3schools.com/cssref/css_colors.php
 2. Continue to play around with the variables until you find a color combination that you like!
+
+</div>
 
 ---
 

@@ -1008,6 +1008,20 @@ p:not(.more-link-view-link) .quire-citation__button:hover {
   font-size: 1rem;
 }
 
+/* For "Try it Yourself" section of Workshop */
+
+.try-it-yourself {
+  box-shadow: none;
+  padding: .5rem;
+  margin: 2rem 0 1.5rem;
+  border-left: 12px solid purple;
+  border-radius: 6px;
+}
+
+.quire-page h4#try-it-yourself {
+  color: purple
+}
+
 /* FIXED MENU
 ============================================================================= */
 
@@ -1389,5 +1403,6 @@ div.quire-caption-container > span code {
   color: #1a1a1a;
   line-height: 2;
 }
+
 
 
