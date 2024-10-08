@@ -2,8 +2,7 @@
 title: Quire Workshop
 weight: 7500
 type: essay
-abstract: 
-aliases:
+abstract: Syllabus for our in-person workshops 
 ---
 {{< q-class "box tip" >}}
 The next in-person Quire workshop will be held at the University of Kanasas in Lawrence, KS on Tuesday, October 22 from 12-4pm. 
@@ -441,6 +440,10 @@ Go Deeper:
 1. Check out this list of potential color choices: https://www.w3schools.com/cssref/css_colors.php
 2. Continue to play around with the variables until you find a color combination that you like!
 
+---
 
+## Advanced Quire 
+
+Coming soon . . .
 
 
