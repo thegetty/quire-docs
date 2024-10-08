@@ -24,19 +24,16 @@ Quire is an open-source publishing tool, developed by Getty and used to create p
 
 {{< q-showcase projects="museum_digital_practice_2022, yale_italian_paintings, materia_issue4, _getty_marrow_report" grid="4" >}}
 
-## Quire Benefits 
+## Quire Benefits & Challenges
 
-- Developed, tested, and used by Getty
-- No proprietary software or ongoing maintenance is required
-- One set of files can produce multiple formats
-- Pre-existing technical are not necessary
-- Vibrant international community of individuals and institutions available to provide assistance and inspiration 
+| **Benefits** | **Challenges** |
+|----|----|
+| Developed, tested, and used by Getty | There is no graphical user interface (GUI)
+| No proprietary software or ongoing maintenance is required | You are working with potentially unfamiliar tools like the command line and a text editor
+| One set of files can produce multiple formats | You are working with potentially unfamiliar content formats like Markdown and YAML | 
+| Pre-existing technical skills are not necessary | There is a learning curve | 
+| Vibrant international community of individuals and institutions available to provide assistance and inspiration |  | 
 
-## Quire Challenges 
-
-- There is no graphical user interface (GUI)
-- You are working with potentially unfamiliar tools like the command line and a text editor
-- You are working with potentially unfamiliar content formats like Markdown and YAML
 
 ## About this Workshop 
 
@@ -47,8 +44,9 @@ The workshop takes approximately 3.5 hours to complete, with additional exercise
 **Part 1**: Basic Concepts: An Introduction <br>
 **Part 2**: Basic Concepts: In Action! <br>
 **Part 3**: Going Deeper: YAML <br>
-**Part 4**: Going Deeper: Images & Shortcodes <br>
-**Part 5**: Going Deeper: Customization
+**Part 4**: Going Deeper: Images <br>
+**Part 5**: Going Deeper: Shortcodes <br>
+**Part 6**: Going Deeper: Customization
 
 ---
 
@@ -186,7 +184,7 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 4. Type `cd my project` in your Terminal/Powershell to navigate from your home directory into your new project
 5. Type `ls` to browse the project files that were installed with the command `quire new`
 6. When you are ready, type `quire preview` to generate a preview website. Ignore the output in the Terminal/Powershell. Your project is ready to preview when you see http://localhost:8080/. 
-7. Cut-and-paste the URL into your browser. Ta-da! Your new project is up-and-running!
+7. Cut-and-paste the URL into your browser. Ta-da! Your new project is up-and-running! 
 
 ### Open Your Project with Visual Studio Code
 
@@ -215,7 +213,7 @@ The "content" folder is where pretty much all the action takes place. The most i
 #### Try it Yourself
 
 1. Take a moment to explore the various folders and files that make up your Quire project
-2. Can you find Dorothea Lange's famous "Migrant Mother" image? 
+2. Locate the `intro.md` file and open it
 
 ### Making Edits with Visual Studio Code 
 
@@ -223,9 +221,8 @@ Let's take a closer look at a Markdown files (indicated by `.md`) and make some 
 
 #### Try it Yourself  
 
-1. Open the `intro.md` file
-2. Make any changes you would like to the Markdown
-3. Preview the results 
+1. Make any changes you would like to the Markdown of the `intro.md` file
+2. Navigate to your browser and preview the results 
 
 You can use this page of the Quire documentation as a reference: http://quire.getty.edu/docs-v1/fundamentals/#markdown-basics.
 
@@ -233,17 +230,15 @@ You can use this page of the Quire documentation as a reference: http://quire.ge
 
 In addition to Markdown, the other format you will save content in in Quire is YAML. YAML plays many different roles in your quire project including storing important publication information like title, subtitle, authors, chapter titles, captions, references, and more.  
 
-### YAML 
+### Learning to Love YAML 
 
 **What is YAML?**
 
-YAMl literally stands for "YAML Ain't Markup Language". YAML is also written in a plain-text, human-readable format, it's primary purpose is saving text/content as data. It's less about how the content is written and more about how and where the information is saved in your project. YAML is formatted as the name of a data item (a key), followed by a colon, a space, and then the data item’s value. A key-value pair. 
+YAMl literally stands for "YAML Ain't Markup Language". YAML is also written in a plain-text, human-readable format, it's primary purpose is saving text/content as data. It's less about how the content is written and more about how and where the information is saved in your project. YAML is formatted as the name of a data item, followed by a colon, a space, and then the data item’s value.. 
 
 Here is an example of how YAML is formatted: 
 
 `title: My Project`
-
-"Title" represents the key and "My Project" represents the value. 
 
 **What are the benefits of using YAML?**
 
@@ -278,14 +273,16 @@ The `title` is the title of the essay, the `layout` affects the format of the pa
 #### Try it Yourself
 
 1. Change the `title` of the `intro.md` file to anything you like 
-2. Press Control-C to stop your preview
+2. In the CLI, press Control-C to stop your preview
 3. Type the command `quire preview` to restart the preview (this needs to be done any time there is a change to YAML)
-4. Notice that the title of the essay has changed
+4. Go to your browser, and notice that the title of the essay has changed
 5. Navigate to the table of contents in your project and note how the title of the Introduction has changed there as well
 
 ### `publication.yaml`
 
-Another important role YAML plays in your project is storing important metadata. This information is kept in the `publication.yaml` file. The information in this file is automatically included in the underlying code of every page of your project's online edition, supporting Search Engine Optimization (SEO) and general discovery.
+Another role YAML plays in your project is storing important metadata. This information is kept in the `publication.yaml` file and includes things like publication title and contributors, copyright information, BISAC codes, publisher, CC license, revision history , etc. The data in this file is automatically included in the underlying code of every page of your project's online edition, supporting Search Engine Optimization (SEO) and general discovery.
+
+The `publication.yaml` file lives in the `_data` folder along with a number of other YAML files such as `figures.yaml`, `objects.yaml`, and `references.yaml`. We will look at those files a little bit later on. For now, our focus is just on the `publication.yaml` file. 
 
 #### Try it Yourself
 
@@ -295,43 +292,154 @@ Another important role YAML plays in your project is storing important metadata.
 
 ### `publication.yaml` Continued
 
+As previously mentioned, YAML is used for storing information that is used in multiple places throughout your project. The `publication.yaml` file is a good example of that. For example, the only place the title of your Quire project lives is in this file, but that title is use on the project's cover page, the sidebar menu, in the e-book and PDF version of your publication, and in the metadata used for SEO and discovery. 
 
+![The many places the project titles appears](/img/screenshots/quire-starter-metadata-change.jpg)
 
-## Part 4. Going Deeper: Images & Shortcodes 
+#### Try it Yourself 
+
+1. In the `publication.yaml` file, navigate to the `# Title & Description` section
+2. Change the `title` and `subtitle` to whatever you want it to be
+3. In your CLI, press Control-C to stop the preview
+4. Type the command `quire preview` to restart the preview
+5. Navigate to the cover page of your project and note that the title has changed there
+6. Open the sidebar menu and note that the title has changed there as well 
+
+## Part 4. Going Deeper: Images
+
+Now that we have changed the title of your Quire project, let's also change the cover image. 
 
 ### Where images are stored 
 
-### Shortcodes
+The images that comprise your Quire project live in the `_assets` folder in a subfolder called `images`. 
+
+#### Try it Yourself 
+
+1. Navigate to the `_assets` folder
+2. Select the `images` folder
+3. Can you locate Dorothea Lange's famous photograph, "Migrant Mother"?
+
+### Adding new images to your project 
+
+Images can be easily added and subtracted from your Quire project. When adding new images they should be placed in the `images` folder. There are a few ways to add images to your Quire project. The first is by incluing `image:` and the title of your image file in your page YAML.  
+
+#### Try it Yourself
+
+1. Take some time to find an image that has a horizontal orientation
+2. Save it to the `_assets/images/` folder (must be all lowercase and use dashes instead of spaces)
+3. In Visual Studio Code, navigate to the `index.md` file (this is the cover page fo your project)
+4. In the page YAML, find the `image:` field, delete `spiral-overlay.png`, and add the name of your image file in its place
+5. In your CLI, press Control-C to stop the preview
+6. Type the command `quire preview` to restart the preview
+7. Go to your browser and navigate to the cover page of your project. Note that in addition to the title changing, the cover image has changed too!
+
+## Part 5. Going Deeper: Shortcodes 
+
+The second way to include images in your Quire project is by using shortcodes. 
+
+### Learning to Love Shortcodes
 
 **What are shortcodes?**
 
+A shortcode is a simple snippet of code inserted in a `.md` file that pulls in information from other files in your project. In Quire, shortcodes are used to insert figure images, citations, object information and more. 
+
 **What are the benefits of using shortcodes?**
 
+Shortcodes save a lot of time and energy. Rather than repeating lengthy information in multiple places throughout your project, you can use a shortcode as a shortcut. A shortcode usually references an `id`. For example, the shortcode below is referencing a figure (an image) that has been assigned the id `fig-1`.
+
+`{% figure 'fig-1' %}`
+
+That `id` is associated with an image file, caption, credit, label, etc. 
+
+When you insert that shortcode into a `.md` file, when you preview that page in your browser you will automatically see the image file, caption, credit, label, etc. 
+
+#### Try it For Yourself 
+
+1. In Visual Studio Code, navigate to the `essay.md` file
+2. Locate the shortcode that includes `fig-2`
+3. Go to your browser and navigate to the essay "I. American Photographs"
+4. Scroll to the part of the essay that corresponds with the location of the shortcode in the `.md` file. What do you see? 
+
+### `figures.yaml`
+
+The `id` is assigned in the `figures.yaml` file. This is where you also store information like the image file, caption, credit, label, alt text, etc. As we mentioned before, the beauty of YAML is that you store information in one place and can reference it in multiple places in your publication. This also means that if you are making an edit to a figures caption, rather than changing it everywhere the figure appears in your publication, you only need to update it in the `figures.yaml` file. 
+
+Here is an example of a `figures.yaml` entry:
+
+- id: "fig-2"
+  label: "Figure 2"
+  src: figures/evans-sons.jpg
+  caption: "Walker Evans. *Sons of the American Legion, Bethlehem, Pennsylvania*, 1935."
+  credit: "The J. Paul Getty Museum, Los Angeles"
+
+The `src` is the path for where the image is stored in the Quire project. In this case the image `evans-sons.jpg` lives in a folder called `figures`. This folder is inside the `images` folder. You can use subfolders to help organize your images, just be sure to include the folder name in the `src` path. 
+
 #### Try it Yourself
 
-## Part 5. Going Deeper: Customization 
+1. In Visual Studio Code, navigate to the `_data` folder
+2. Now locate the `figures.yaml` file
+3. In the `figures.yaml` file, find the entry that correspond with the `id: fig-2`
+4. Make an edit to the `caption` for that entry
+5. 5. In your CLI, press Control-C to stop the preview
+6. Type the command `quire preview` to restart the preview
+7. Navigate back to your browser and note how the caption has been updated 
 
-### Variables
+### Inserting the image 
 
-**What are variables?**
+Inserting a new image is a three-step process. First you must save the image in the `_assets/images/` folder. Next, you must create an entry for that image in the `figures.yaml` file and assign the image an `id`. Finally, decide where in the relevant `.md` file you want the image to appear and enter a shortcode that includes the assigned `id`.
 
-**What are the benefits of using variables?**
+#### Try it Yourself 
+
+1. Find any image you want and save it in the `_assets/images/figures/` folder (the file name must be all lowercase and use dashes instead of spaces)
+2. Go to the `figures.yaml` file and create a new entry (the indentations must be aligned with all the other entries or you will receive an error)
+3. Create an `id` for that image (must be all lowercase and use dashes instead of spaces) and write whatever you want for the label, caption, and credit
+4. The `src` will be `figures/` plus the image file name
+5. Now go back to the `essay.md` file, and change the `id` in the shortcode `{% figure 'fig-2' 'is-pulled-right' %}` to the `id` you just created
+6. In your CLI, press Control-C to stop the preview
+7. Type the command `quire preview` to restart the preview
+8. Navigate back to your browser. You should now see your new image, caption, credit, and label inserted in the text
+
+## Part 6. Going Deeper: Customization 
+
+There are a number of ways to customize your Quire project with varying degrees of difficulty. 
+
+In an effort to make Quire to be approachable to everyone, regardless of technical experience, we’ve built in style variables that allow for relatively easy customizations.
+
+### Learning to Love Style Variables
+
+**What are style variables?**
+
+Variables are essentially a list of built-in options for making style customziations. You can use them to control things like text and background colors, specific element sizes, fonts, paragraph indents, PDF margins, and more.
+
+**What are the benefits of using style variables?**
+
+While the style variables have a limited range of customizations you can make, they still give you a lot of feel when it comes to changing the look and feel of your project without needing to learn CSS/HTMl or going deeper into the code and make code changes in the stylesheets.
+
+### Editing Style Variables 
+
+The style variables are located in the `_assets` folder, in a subfolder called `styles`. There you will find a file called `variables.scss`. 
+
+Variables are prefixed with a dollar sign and are descriptive of what they control. For instance, `$content-background-color` changes the color of the main text area background color. The following variable would make the background color appear light grey: 
+
+`$content-background-color: LightGrey;`
+
+Here is a list of the variables define in Quire and what they control: https://quire.getty.edu/docs-v1/variables/#defined-variables.
 
 #### Try it Yourself
 
+1. Navigate to `_assets/styles/variables.scss`
+2. Make the following changes: 
 
+- Change `$accent-color` from `null` to `darkred`
+- Change the `$theme` from `modern` to `classic` 
+- Change `$navbar` from `normal` to `accent`
 
-**Examples of YAML in a Quire Project**
+3. Navigate back to your project. What do you notice has changed? 
 
-There are three types of YAML you will encounter in a Quire project. 
+Go Deeper: 
 
-| File/Folder | Purpose Served |
-|---|---|
-| Page YAML | Appears at the top of a `.md` file. Includes things like page title and contributors, page layout, and order the page appears in the publication | 
-|`Publication.yaml` | Found in the `_data` folder. This is where the metadata for the publication lives. Includes publication title and contributors, copyright information, BISAC codes, publisher, CC license, revision history , etc. |  
-| `figures.yaml`, `objects.yaml`, `references.yaml` etc. |  Also found in the `_data` folder. Where data like captions, references, and tombstone information is stored and assigned an `id`. That `id` can then be used in a `.md` file to pull in the content from the `.yaml` file. | 
-
-
+1. Check out this list of potential color choices: https://www.w3schools.com/cssref/css_colors.php
+2. Continue to play around with the variables until you find a color combination that you like!
 
 
 
