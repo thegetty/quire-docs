@@ -57,9 +57,9 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
 
 1. To use the command-line interface on a PC, right click the Start button and select “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. The only time you need to run PowerShell as an Admin is during install.
 
-1. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install the necessary version control software on your computer.
+2. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install the necessary version control software on your computer.
 
-2. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select v18.20.4 (LTS)**: https://nodejs.org/en/download/prebuilt-installer. 
+3. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select v18.20.4 (LTS)**: https://nodejs.org/en/download/prebuilt-installer. 
 
     You can also install a Node.js [package manager](https://nodejs.org/en/download/package-manager) with the command line. A package manager enables you to install more than one version of Node. This is useful when working on multiple Quire projects, some of which might be tied to either newer or older versions of Node.
     
