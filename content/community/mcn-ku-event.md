@@ -33,6 +33,15 @@ Lawrence, Kansas<br />
 
 </div>
 
+<div class="action-button paired-button">
+
+[Workshop Syllabus](/resources/workshop/)
+
+</div>
+
+<br>
+<br>
+
 *Following these sessions, MCN kicks off with its famous Ignite event, 5:00 p.m. at the nearby Abe and Jake's Landing. Paid conference registration required.*
 
 
