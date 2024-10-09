@@ -17,7 +17,7 @@ The next in-person Quire workshop will be held at the University of Kanasas in L
 
 ## About Quire 
 
-Quire is an open-source publishing tool, developed by Getty and used to create publications that are long-lasting and discoverable. It is not a publishing service or a platform for hosting publications. Instead, Quire provides its users (students, researchers, professors, curators, editors, and more) with the ability to produce multimedia-rich scholarship for the web. The same set of files used to create the website can also be used to create a pdf, e-book, and print book. Quire is a great option for long form book-like projects, especially those that rely on visual illustrations and/or scholarly elements like citations, bibliographies, and footnoting. Quire is freely available for anyone who wants to use it. You can learn more at http://quire.getty.edu. 
+Quire is an open-source publishing tool developed by Getty that is used to create long-lasting and discoverable publications. It is not a publishing service or a platform for hosting publications. Instead, Quire provides its users (students, researchers, professors, curators, editors, and more) with the ability to produce multimedia-rich scholarship for the web. The same set of files used to create the website can also be used to create a PDF, e-book, and print book. Quire is an excellent option for long-form book-like projects, especially those that rely on visual illustrations and scholarly elements like citations, bibliographies, and footnotes. Quire is freely available for anyone who wants to use it. You can learn more at <http://quire.getty.edu>. 
 
 ### Examples of Quire Publications 
 
@@ -28,24 +28,24 @@ Quire is an open-source publishing tool, developed by Getty and used to create p
 | **Benefits** | **Challenges** |
 |----|----|
 | Developed, tested, and used by Getty | There is no graphical user interface (GUI)
-| No proprietary software or ongoing maintenance is required | You are working with potentially unfamiliar tools like the command line and a text editor
-| One set of files can produce multiple formats | You are working with potentially unfamiliar content formats like Markdown and YAML | 
+| No proprietary software or ongoing maintenance | You are working with potentially unfamiliar tools like the command line and a text editor
+| One set of files can produce multiple formats (PDF, e-book, print) | You are working with potentially unfamiliar content formats like Markdown and YAML | 
 | Pre-existing technical skills are not necessary | There is a learning curve | 
 | Vibrant international community of individuals and institutions available to provide assistance and inspiration |  | 
 
 
 ## About this Workshop 
 
-This workshop seeks to take the Quire's potential challenges and break the various tools, formats, and processes into approachable and easy to understand concepts. We additionally provide attendees with hands-on experience so they can leave feel comfortable and confident navigating and using Quire on their own. Our hope is that individuals who take this workshop will leave excited to continue experimenting and creating with Quire.
+The workshop seeks to break down the various tools, formats, and processes necessary for using Quire into approachable and easy-to-understand concepts. We will additionally provide attendees with step-by-step exercises to help them gain confidence in navigating and using the tool. We aim for individuals who take this workshop to leave feeling excited to continue experimenting and creating.
 
-The workshop takes approximately 3.5 hours to complete, with additional exercises and resources at the end to encourage continued learning. Th workshop is broken into the following parts: 
-
-**Part 1**: Basic Concepts: An Introduction <br>
-**Part 2**: Basic Concepts: In Action! <br>
+**Part 1**: Basic Concepts: Learning to Love the Command Line and Text Editor <br>
+**Part 2**: Basic Concepts: The Command Line and Text Editor in Action <br>
 **Part 3**: Going Deeper: YAML <br>
 **Part 4**: Going Deeper: Images <br>
 **Part 5**: Going Deeper: Shortcodes <br>
 **Part 6**: Going Deeper: Customization
+
+*Please note: We created a syllabus outlining the above concepts with brief explanations complemented by hands-on exercises. If we don't cover everything during the four hours allotted for the in-person workshop, we invite people to continue exploring Quire independently.* 
 
 ---
 
@@ -56,19 +56,19 @@ The workshop takes approximately 3.5 hours to complete, with additional exercise
 
 ## Part 1. Basic Concepts: An Introduction
 
-In this section you will learn about, and get hands on experience with, the two main tools that are required to use Quire: the command-line interface (CLI), which is used to navigate your project and tell Quire what processes to run, and the text editor, which is the tool used to organize, write, and edit your project files.  
+In this section, you will learn about and get hands-on experience with the two main tools that are required to use Quire: the command-line interface (CLI), which is used to navigate your project and tell Quire what processes to run, and the text editor, which is the tool used to organize, write, and edit your project files.  
 
 ### Learning to Love the Command-Line Interface 
 
 **What is the command-line interface?**
 
-A command-line interface (CLI) is a text-based interface used to run program tasks. All computers have them. The user types commands, strings of text, into the CLI. This is opposed to a graphical user interface (GUI), in which the user controls the program through visualized buttons, toggles, and menus. 
+A command-line interface (CLI) is a text-based user interface that runs program tasks. All computers have them. The user types commands as strings of text into the CLI. This is opposed to a graphical user interface (GUI), in which the user controls the program through visualized buttons, toggles, and menus. 
 
 This is what the CLI looks like when it is first opened on a Mac computer: ![command line shell](/img/screenshots/command-line-shell.jpg)
 
 **What are the benefits of using the command-line interface?**
 
-The main benefit of the CLI is efficiency. Instead of spending time finding and clicking on individual files, you can use the CLI to perform actions on several files with simple text commands. Additionally, CLI applications often consume fewer network resources compared to graphical applications. It's worth noting that the CLI is a powerful tool, however, it is used in a very basic, straightforward way when working on Quire projects, so don't be intimidated! 
+The main benefit of the CLI is efficiency. Instead of spending time finding and clicking on individual files, you can use the CLI to perform actions on several files with simple text commands. Additionally, CLI applications often consume fewer network resources compared to graphical applications. It's worth noting that the CLI is a powerful tool; however, it is used in a very basic, straightforward way when working on Quire projects, so don't be intimidated! 
 
 **Navigating with the CLI**
 
@@ -110,11 +110,11 @@ One of the primary functions of the CLI is to easily navigate files on your comp
 
 ### Learning to Love the Text Editor
 
-You can think of your text editor, like the free-tool Visual Studio Code, as a supplement to Microsoft Word. A text editor is used to create, change, or edit plain-text files. The beauty of plain-text files is that they do not require proprietary software. Therefore, content is written in a way where, should certain technology go obsolete, your content will remain stable and accessible. The text editor is your primary interface for working on your Quire project, so it's important to get comfortable with it. It is especially important to familiarize yourself with Markdown, the format used for your project's more narrative/textual content. 
+You can think of your text editor, like the free tool Visual Studio Code, as a supplement to Microsoft Word. A text editor is used to create, change, or edit plain-text files. The beauty of plain-text files is that they do not require proprietary software. Therefore, content is written in a way where, should certain technology go obsolete, your content will remain stable and accessible. The text editor is your primary interface for working on your Quire project, so getting comfortable with it is essential. It is especially important to familiarize yourself with Markdown, the format used for your project's more narrative/textual content. 
 
 **What is Markdown?**
 
-Markdown might seem strange at first, but it is a very approachable language that uses simple character combinations to indicate structure and add formatting elements (headings, bulleted lists, URLs). Rather than using buttons to format the appearance of your text, as you would in Microsoft Word, you are using symbols instead. Quire then does the heavy lifting and converts those symbols into HTML for you. For example, something surrounded in asterisks in Markdown turns into italics in the final publication: *emphasis* = emphasis.
+Markdown might seem strange initially, but it is a very approachable language that uses simple character combinations to indicate structure and add formatting elements (headings, bulleted lists, URLs). Rather than using buttons to format the appearance of your text, as you would in Microsoft Word, you are using symbols instead. Quire then does the heavy lifting and converts those symbols into HTML for you. For example, something surrounded by asterisks in Markdown turns into italics in the final publication: *emphasis* = emphasis.
 
 **What are the benefits of using Markdown?**
 
@@ -142,7 +142,7 @@ The same list written in Markdown:
 - Milk 
 ```
 
-The fact that Markdown is preserved in a human-readable format, makes it very easy to edit and it also helps preserve the longevity of your content. 
+The fact that Markdown is preserved in a human-readable format makes it very easy to edit and it also helps preserve the longevity of your content. 
 
 <div class="try-it-yourself">
 
@@ -177,11 +177,11 @@ The fact that Markdown is preserved in a human-readable format, makes it very ea
 
 ## Part 2. Basic Concepts: In Action
 
-Now that you understand two of the most fundamental tools needed to use Quire, it's time to get a new project up and running and put these basic concepts in action. 
+Now that you understand two of the most fundamental tools needed to use Quire, it's time to get a new project up and running and implement these basic concepts. 
 
 ### Use the CLI to Start and Preview a New Quire Project 
 
-In addition to using the CLI to navigate Quire, as we explored earlier, it can also be used to tell Quire what to do, including create a new project, preview a project, or output a website, pdf, and e-book. In the steps below, we will use the CLI to create a new project, navigate into that project's folder, and preview. 
+In addition to using the CLI to navigate Quire, as we explored earlier, it can also be used to tell Quire what to do, including creating a new project, previewing a project, or outputting a website, PDF, and e-book. In the steps below, we will use the CLI to create a new project, navigate into that project's folder, and preview it. 
 
 *Please note: The command `quire new` generates a default starter project. It is a sample publication meant to serve as a jumping off point. It serves as a useful template with images and text that can be delete or substituted when creating your own project.* 
 
@@ -190,8 +190,6 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 <div class="try-it-yourself">
 
 #### Try it Yourself 
-
-
 
 1. Open your Terminal or Powershell 
 2. Type the command `quire new my-project` and hit enter. The process may take a few minutes. You will see the words "successfully installed" when the process is complete. 
@@ -205,7 +203,7 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 
 ### Open Your Project with Visual Studio Code
 
-Now that you have your new project up-and-running, it's time to edit it! First, we must open the project with our text editor and familiarize ourselves with the file structure.  
+Now that you have your new project up and running, it's time to edit it! First, we must open the project with our text editor and familiarize ourselves with the file structure.  
 
 This is what the default starter project will look like it is first opened in your Text Editor. ![Text Editor](/img/screenshots/text-editor.jpg)
 
@@ -230,14 +228,12 @@ The "content" folder is where pretty much all the action takes place. The most i
 | File/Folder | Purpose Served |
 |---|---|
 | Markdown files | Indicated by the `.md` suffix. This is where the vast majority of your content lives, with each file representing a different "page" in your publication | 
-| `_data` folder | Contains YAML files. These are a plain-text way of capturing information that appears in multiple places through your publication like captions, chapter titles, object information, etc.|  
+| `_data` folder | Contains YAML files. These are a plain-text way of capturing information that appears in multiple places throughout your publication like captions, chapter titles, object information, etc.|  
 | `_assets` folder | Where a lot of the customization takes place. Includes things like fonts, images, and CSS/JavaScript files. | 
 
 <div class="try-it-yourself">
 
 #### Try it Yourself
-
-
 
 1. Take a moment to explore the various folders and files that make up your Quire project
 2. Locate the `intro.md` file and open it
@@ -263,13 +259,13 @@ You can use this page of the Quire documentation as a reference: http://quire.ge
 
 ## Part 3. Going Deeper: YAML  
 
-In addition to Markdown, the other format you will save content in in Quire is YAML. YAML plays many different roles in your quire project including storing important publication information like title, subtitle, authors, chapter titles, captions, references, and more.  
+In addition to Markdown, YAML is the other format in which you will save content in Quire. YAML plays many roles in your quire project, including storing important publication information like title, subtitle, authors, chapter titles, captions, references, and more. 
 
 ### Learning to Love YAML 
 
 **What is YAML?**
 
-YAMl literally stands for "YAML Ain't Markup Language". YAML is also written in a plain-text, human-readable format, it's primary purpose is saving text/content as data. It's less about how the content is written and more about how and where the information is saved in your project. YAML is formatted as the name of a data item, followed by a colon, a space, and then the data item’s value.. 
+YAML stands for "YAML Ain't Markup Language". YAML is also written in a plain-text, human-readable format, and its primary purpose is to save text/content as data. It's less about how the content is written and more about how and where the information is saved in your project. YAML is formatted as the name of a data item, followed by a colon, a space, and then the data item's value.
 
 Here is an example of how YAML is formatted: 
 
@@ -277,7 +273,7 @@ Here is an example of how YAML is formatted:
 
 **What are the benefits of using YAML?**
 
-YAML is a way of capturing information that appears in multiple places throughout your project and is therefore treated like data. This prevents you from needing to write things multiple times. YAML is also considered easier to read and write than other data-specific formats, like JSON, especially for non-developers. 
+YAML provides a way of capturing information that appears in multiple places throughout your project and is therefore treated like data. This prevents you from needing to write things multiple times. YAML is also considered easier to read and write than other data-specific formats, like JSON, especially for non-developers. 
 
 ### Page YAML 
 
@@ -303,7 +299,7 @@ image: figures/lange-house.jpg
 ---
 ```
 
-The `title` is the title of the essay, the `layout` affects the format of the page, and `order` affects the page order of the publication. Let's make a change to the title of the Introduction. 
+The `title` is the title of the essay, the `layout` affects the format of the page, and `order` affects the page order of the publication. Let's rename the "Introduction". 
 
 <div class="try-it-yourself">
 
@@ -323,13 +319,11 @@ The `title` is the title of the essay, the `layout` affects the format of the pa
 
 Another role YAML plays in your project is storing important metadata. This information is kept in the `publication.yaml` file and includes things like publication title and contributors, copyright information, BISAC codes, publisher, CC license, revision history , etc. The data in this file is automatically included in the underlying code of every page of your project's online edition, supporting Search Engine Optimization (SEO) and general discovery.
 
-The `publication.yaml` file lives in the `_data` folder along with a number of other YAML files such as `figures.yaml`, `objects.yaml`, and `references.yaml`. We will look at those files a little bit later on. For now, our focus is just on the `publication.yaml` file. 
+The `publication.yaml` file lives in the `_data` folder along with several other YAML files such as `figures.yaml`, `objects.yaml`, and `references.yaml`. We will look at those files a little later on. For now, our focus is just on the `publication.yaml` file. 
 
 <div class="try-it-yourself">
 
 #### Try it Yourself
-
-
 
 1. Navigate to the `_data` folder
 2. Open the `_data` folder and find the file called `publication.yaml`
@@ -339,15 +333,13 @@ The `publication.yaml` file lives in the `_data` folder along with a number of o
 
 ### `publication.yaml` Continued
 
-As previously mentioned, YAML is used for storing information that is used in multiple places throughout your project. The `publication.yaml` file is a good example of that. For example, the only place the title of your Quire project lives is in this file, but that title is use on the project's cover page, the sidebar menu, in the e-book and PDF version of your publication, and in the metadata used for SEO and discovery. 
+As previously mentioned, YAML stores information that is used in multiple places throughout your project. The `publication.yaml` file is a good example of that. For example, the only place the title of your Quire project lives is in this file, but that title is used on the project's cover page, the sidebar menu, in the e-book and PDF version of your publication, and in metadata used for SEO and discovery. 
 
 ![The many places the project titles appears](/img/screenshots/quire-starter-metadata-change.jpg)
 
 <div class="try-it-yourself">
 
 #### Try it Yourself 
-
-
 
 1. In the `publication.yaml` file, navigate to the `# Title & Description` section
 2. Change the `title` and `subtitle` to whatever you want it to be
@@ -386,8 +378,6 @@ Images can be easily added and subtracted from your Quire project. When adding n
 
 #### Try it Yourself
 
-
-
 1. Take some time to find an image that has a horizontal orientation
 2. Save it to the `_assets/images/` folder (must be all lowercase and use dashes instead of spaces)
 3. In Visual Studio Code, navigate to the `index.md` file (this is the cover page fo your project)
@@ -406,7 +396,7 @@ The second way to include images in your Quire project is by using shortcodes.
 
 **What are shortcodes?**
 
-A shortcode is a simple snippet of code inserted in a `.md` file that pulls in information from other files in your project. In Quire, shortcodes are used to insert figure images, citations, object information and more. 
+A shortcode is a simple snippet of code inserted in a `.md` file that pulls in information from other files in your project. In Quire, shortcodes are used to insert figure images, citations, object information, and more. 
 
 **What are the benefits of using shortcodes?**
 
@@ -416,7 +406,7 @@ Shortcodes save a lot of time and energy. Rather than repeating lengthy informat
 
 That `id` is associated with an image file, caption, credit, label, etc. 
 
-When you insert that shortcode into a `.md` file, when you preview that page in your browser you will automatically see the image file, caption, credit, label, etc. 
+When you insert that shortcode into a `.md` file, you will automatically see the image file, caption, credit, label, etc., when you preview that page in your browser. 
 
 Here is an example of a shortcode being used in the `preface.md` to pull in a figure with the `id: fig-1`:
 
@@ -425,8 +415,6 @@ Here is an example of a shortcode being used in the `preface.md` to pull in a fi
 <div class="try-it-yourself">
 
 #### Try it Yourself 
-
-
 
 1. In Visual Studio Code, navigate to the `essay.md` file
 2. Locate the shortcode that includes `fig-2`
@@ -437,7 +425,7 @@ Here is an example of a shortcode being used in the `preface.md` to pull in a fi
 
 ### `figures.yaml`
 
-The `id` is assigned in the `figures.yaml` file. This is where you also store information like the image file, caption, credit, label, alt text, etc. As we mentioned before, the beauty of YAML is that you store information in one place and can reference it in multiple places in your publication. This also means that if you are making an edit to a figures caption, rather than changing it everywhere the figure appears in your publication, you only need to update it in the `figures.yaml` file. 
+The `id` is assigned in the `figures.yaml` file. This is where you also store information like the image file, caption, credit, label, alt text, etc. As we mentioned before, the beauty of YAML is that you store information in one place and can reference it in multiple locations in your publication. This also means that if you edit a figures caption, rather than changing it everywhere the figure appears in your publication, you only need to update it in the `figures.yaml` file. 
 
 Here is an example of a `figures.yaml` entry:
 
@@ -447,8 +435,7 @@ Here is an example of a `figures.yaml` entry:
   caption: "Walker Evans. *Sons of the American Legion, Bethlehem, Pennsylvania*, 1935."
   credit: "The J. Paul Getty Museum, Los Angeles"
 
-The `src` is the path for where the image is stored in the Quire project. In this case the image `evans-sons.jpg` lives in a folder called `figures`. This folder is inside the `images` folder. You can use subfolders to help organize your images, just be sure to include the folder name in the `src` path. 
-
+The `src` is the path for where the image is stored in the Quire project. In this case, the image `evans-sons.jpg` lives in a folder called `figures`. This folder is inside the `images` folder. You can use subfolders to help organize your images; just be sure to include the folder name in the `src` path. 
 
 <div class="try-it-yourself">
 
@@ -467,7 +454,7 @@ The `src` is the path for where the image is stored in the Quire project. In thi
 
 ### Inserting the image 
 
-Inserting a new image is a three-step process. First you must save the image in the `_assets/images/` folder. Next, you must create an entry for that image in the `figures.yaml` file and assign the image an `id`. Finally, decide where in the relevant `.md` file you want the image to appear and enter a shortcode that includes the assigned `id`.
+Inserting a new image is a three-step process. First, save the image in the `_assets/images/` folder. Next, you must create an entry for that image in the `figures.yaml` file and assign the image an `id`. Finally, decide where in the relevant `.md` file you want the image to appear and enter a shortcode with the assigned `id`.
 
 <div class="try-it-yourself">
 
@@ -487,29 +474,28 @@ Inserting a new image is a three-step process. First you must save the image in 
 
 ## Part 6. Going Deeper: Customization 
 
-There are a number of ways to customize your Quire project with varying degrees of difficulty. 
+There are several ways to customize your Quire project with varying degrees of difficulty. 
 
-In an effort to make Quire to be approachable to everyone, regardless of technical experience, we’ve built in style variables that allow for relatively easy customizations.
+To make Quire approachable to everyone, regardless of technical experience, we’ve added built-in style variables that allow for relatively easy customizations.
 
 ### Learning to Love Style Variables
 
 **What are style variables?**
-
 Variables are essentially a list of built-in options for making style customziations. You can use them to control things like text and background colors, specific element sizes, fonts, paragraph indents, PDF margins, and more.
 
 **What are the benefits of using style variables?**
 
-While the style variables have a limited range of customizations you can make, they still give you a lot of feel when it comes to changing the look and feel of your project without needing to learn CSS/HTMl or going deeper into the code and make code changes in the stylesheets.
+While the style variables have a limited range of customizations you can make, they still give you a lot of flexibility when it comes to changing the look and feel of your project without needing to learn CSS/HTML or going deeper into the code and making code changes in the stylesheets.
 
 ### Editing Style Variables 
 
-The style variables are located in the `_assets` folder, in a subfolder called `styles`. There you will find a file called `variables.scss`. 
+The style variables are located in the `_assets` folder, in a subfolder called `styles`. There, you will find a file called `variables.scss`. 
 
-Variables are prefixed with a dollar sign and are descriptive of what they control. For instance, `$content-background-color` changes the color of the main text area background color. The following variable would make the background color appear light grey: 
+Variables are prefixed with a dollar sign and are descriptive of what they control. For instance, `$content-background-color` changes the background color of the main content area. The following variable would make the background color appear light grey: 
 
 `$content-background-color: LightGrey;`
 
-Here is a list of the variables define in Quire and what they control: https://quire.getty.edu/docs-v1/variables/#defined-variables.
+Here is a list of the variables defined in Quire and what they control: https://quire.getty.edu/docs-v1/variables/#defined-variables.
 
 Here is an example of customizations made to the default starter project using the style variables:
 
@@ -518,8 +504,6 @@ Here is an example of customizations made to the default starter project using t
 <div class="try-it-yourself">
 
 #### Try it Yourself
-
-
 
 1. Navigate to `_assets/styles/variables.scss`
 2. Make the following changes: 
@@ -536,6 +520,27 @@ Here is an example of customizations made to the default starter project using t
 2. Continue to play around with the variables until you find a color combination that you like!
 
 </div>
+
+## Next Steps 
+
+You can continue reinforcing the concepts above by creating a new page in your Quire project. 
+
+<div class="try-it-yourself">
+
+#### Try it Yourself
+
+1. In Visual Studio Code, create a new `.md` file by right clicking the `content` folder and choosing "New File". The file name should be all lowercase with dashes instead of spaces and should end in `.md`
+2. Add page YAML to the top of the page and give the page a `title`, `layout`, and `order` 
+3. Add content to the page written in Markdown
+4. Add a new image to the project 
+5. Add a `figures.yaml` entry for that image and give it a `caption`, `credit`, `label`, and include the image path for the `src`
+6. Use a shortcode to insert that image into the `.md` file
+7. In your CLI, press Control-C to stop the preview
+8. Type the command `quire preview` to restart the preview
+
+</div>
+
+If you get stuck at any point, please refer to the [Quire documentation](/docs-v1/) for assistance. 
 
 ---
 
