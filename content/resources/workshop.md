@@ -529,15 +529,16 @@ You can continue reinforcing the concepts above by creating a new page in your Q
 
 #### Try it Yourself
 
-1. In Visual Studio Code, create a new `.md` file in the `content` folder by clicking File>New File (the file name should be all lowercase with dashes instead of spaces)
+1. In Visual Studio Code, create a new `.md` file by right clicking the `content` folder and choosing "New File". The file name should be all lowercase with dashes instead of spaces and should end in `.md`
 2. Add page YAML to the top of the page and give the page a `title`, `layout`, and `order` 
 3. Add content to the page written in Markdown
 4. Add a new image to the project 
 5. Add a `figures.yaml` entry for that image and give it a `caption`, `credit`, `label`, and include the image path for the `src`
 6. Use a shortcode to insert that image into the `.md` file
-7. Use the `variables.scss` file to make customizations to the look and feel of your project
-8. In your CLI, press Control-C to stop the preview
-9. Type the command `quire preview` to restart the preview
+7. In your CLI, press Control-C to stop the preview
+8. Type the command `quire preview` to restart the preview
+
+</div>
 
 If you get stuck at any point, please refer to the [Quire documentation](/docs-v1/) for assistance. 
 
