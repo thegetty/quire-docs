@@ -1013,13 +1013,15 @@ p:not(.more-link-view-link) .quire-citation__button:hover {
 .try-it-yourself {
   box-shadow: none;
   padding: .5rem;
+  padding-left: 1.5rem;
   margin: 2rem 0 1.5rem;
-  border-left: 12px solid purple;
+  border-left: 12px solid var(--magenta-60);
   border-radius: 6px;
 }
 
-.quire-page h4#try-it-yourself {
-  color: purple
+.quire-page .try-it-yourself h4{
+  color: var(--magenta-60);
+  margin-top: 0 !important;
 }
 
 /* FIXED MENU
