@@ -77,12 +77,12 @@ One of the primary functions of the CLI is to easily navigate files on your comp
 ![commandline vs folder](/img/screenshots/commandline-vs-folder.jpg)
 
 
+<div class="try-it-yourself">
 
 #### Try it Yourself
 
-<div class="try-it-yourself">
 
-Mac: 
+**Mac**: 
 
  1. Press Command-Spacebar to open Spotlight 
  2. Type "Terminal" (Mac's name for the CLI) and hit enter
@@ -90,7 +90,7 @@ Mac:
  4. Open your Finder
  5. Press Command-H (to open your "home directory") and compare the files in that folder with what you see listed in the Terminal
 
-PC: 
+**PC**: 
 
  1. Open the Start menu 
  2. Select Windows Powershell and hit enter
@@ -99,7 +99,7 @@ PC:
  5. Click File Explorer
  6. Click the PC icon (to open your "home directory") and compare the files in that folder with what you see listed in Powershell
 
-Go Deeper: 
+**Go Deeper**: 
 
  1. Choose a file you want to navigate into
  2. Type `cd` and the name of the chosen folder and hit enter
@@ -144,13 +144,13 @@ The same list written in Markdown:
 
 The fact that Markdown is preserved in a human-readable format, makes it very easy to edit and it also helps preserve the longevity of your content. 
 
+<div class="try-it-yourself">
 
 
 #### Try it Yourself
 
-<div class="try-it-yourself">
 
-Mac:
+**Mac**:
 
 1. Open Visual Studio Code
 2. Go to File and select "New File"
@@ -159,7 +159,7 @@ Mac:
 4. Press Command-Shift-V to preview the HTML version 
 5. Press Command-\ to create a split screen and drag one tab over to the right side to view a side-by-side comparison
 
-PC: 
+**PC**: 
 
 1. Open Visual Studio Code
 2. Go to File and select "New File"
@@ -168,7 +168,7 @@ PC:
 4. Press Control-Shift-V to preview the HTML version 
 5. Press Control-\ to create a split screen and drag one tab over to the right side to view a side-by-side comparison
 
-Go Deeper:
+**Go Deeper**:
 
 1. Visit this page and play around with the different Markdown options: http://quire.getty.edu/docs-v1/fundamentals/#markdown-basics
 2. Close Visual Studio Code when you are done exploring
@@ -187,18 +187,18 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 
 ![Quire Starter Project](/img/screenshots/quire-starter.jpg)
 
-
+<div class="try-it-yourself">
 
 #### Try it Yourself 
 
-<div class="try-it-yourself">
+
 
 1. Open your Terminal or Powershell 
 2. Type the command `quire new my-project` and hit enter. The process may take a few minutes. You will see the words "successfully installed" when the process is complete. 
 3. Type `ls` to see the contents of your home directory again. This time you will notice a new folder called `my-project`
 4. Type `cd my project` in your Terminal/Powershell to navigate from your home directory into your new project
 5. Type `ls` to browse the project files that were installed with the command `quire new`
-6. When you are ready, type `quire preview` to generate a preview website. Ignore the output in the Terminal/Powershell. Your project is ready to preview when you see http://localhost:8080/. 
+6. When you are ready, type `quire preview` to generate a preview website. Ignore the output in the Terminal/Powershell. Your project is ready to preview when you see <http://localhost:8080/>. 
 7. Cut-and-paste the URL into your browser. Ta-da! Your new project is up-and-running! 
 
 </div>
@@ -210,10 +210,10 @@ Now that you have your new project up-and-running, it's time to edit it! First, 
 This is what the default starter project will look like it is first opened in your Text Editor. ![Text Editor](/img/screenshots/text-editor.jpg)
 
 
+<div class="try-it-yourself">
 
 #### Try it Yourself
 
-<div class="try-it-yourself">
 
 1. Open Visual Studio Code
 2. Click File>Open and then navigate to your home directory where you should see your `my-project` folder
@@ -233,11 +233,11 @@ The "content" folder is where pretty much all the action takes place. The most i
 | `_data` folder | Contains YAML files. These are a plain-text way of capturing information that appears in multiple places through your publication like captions, chapter titles, object information, etc.|  
 | `_assets` folder | Where a lot of the customization takes place. Includes things like fonts, images, and CSS/JavaScript files. | 
 
-
+<div class="try-it-yourself">
 
 #### Try it Yourself
 
-<div class="try-it-yourself">
+
 
 1. Take a moment to explore the various folders and files that make up your Quire project
 2. Locate the `intro.md` file and open it
@@ -248,11 +248,11 @@ The "content" folder is where pretty much all the action takes place. The most i
 
 Let's take a closer look at a Markdown files (indicated by `.md`) and make some simple edits based on what we learned in Part 1. 
 
-
+<div class="try-it-yourself">
 
 #### Try it Yourself  
 
-<div class="try-it-yourself">
+
 
 1. Make any changes you would like to the Markdown of the `intro.md` file
 2. Navigate to your browser and preview the results 
@@ -305,11 +305,11 @@ image: figures/lange-house.jpg
 
 The `title` is the title of the essay, the `layout` affects the format of the page, and `order` affects the page order of the publication. Let's make a change to the title of the Introduction. 
 
-
+<div class="try-it-yourself">
 
 #### Try it Yourself
 
-<div class="try-it-yourself">
+
 
 1. Change the `title` of the `intro.md` file to anything you like 
 2. In the CLI, press Control-C to stop your preview
@@ -325,11 +325,11 @@ Another role YAML plays in your project is storing important metadata. This info
 
 The `publication.yaml` file lives in the `_data` folder along with a number of other YAML files such as `figures.yaml`, `objects.yaml`, and `references.yaml`. We will look at those files a little bit later on. For now, our focus is just on the `publication.yaml` file. 
 
-
+<div class="try-it-yourself">
 
 #### Try it Yourself
 
-<div class="try-it-yourself">
+
 
 1. Navigate to the `_data` folder
 2. Open the `_data` folder and find the file called `publication.yaml`
@@ -343,11 +343,11 @@ As previously mentioned, YAML is used for storing information that is used in mu
 
 ![The many places the project titles appears](/img/screenshots/quire-starter-metadata-change.jpg)
 
-
+<div class="try-it-yourself">
 
 #### Try it Yourself 
 
-<div class="try-it-yourself">
+
 
 1. In the `publication.yaml` file, navigate to the `# Title & Description` section
 2. Change the `title` and `subtitle` to whatever you want it to be
@@ -366,11 +366,11 @@ Now that we have changed the title of your Quire project, let's also change the 
 
 The images that comprise your Quire project live in the `_assets` folder in a subfolder called `images`. 
 
-
+<div class="try-it-yourself">
 
 #### Try it Yourself 
 
-<div class="try-it-yourself">
+
 
 1. Navigate to the `_assets` folder
 2. Select the `images` folder
@@ -382,11 +382,11 @@ The images that comprise your Quire project live in the `_assets` folder in a su
 
 Images can be easily added and subtracted from your Quire project. When adding new images they should be placed in the `images` folder. There are a few ways to add images to your Quire project. The first is by incluing `image:` and the title of your image file in your page YAML.  
 
-
+<div class="try-it-yourself">
 
 #### Try it Yourself
 
-<div class="try-it-yourself">
+
 
 1. Take some time to find an image that has a horizontal orientation
 2. Save it to the `_assets/images/` folder (must be all lowercase and use dashes instead of spaces)
@@ -418,11 +418,15 @@ That `id` is associated with an image file, caption, credit, label, etc.
 
 When you insert that shortcode into a `.md` file, when you preview that page in your browser you will automatically see the image file, caption, credit, label, etc. 
 
+Here is an example of a shortcode being used in the `preface.md` to pull in a figure with the `id: fig-1`:
 
+![Example demonstrating how to insert and image with a shortcode](/img/screenshots/quire-starter-content-change-2.jpg)
+
+<div class="try-it-yourself">
 
 #### Try it Yourself 
 
-<div class="try-it-yourself">
+
 
 1. In Visual Studio Code, navigate to the `essay.md` file
 2. Locate the shortcode that includes `fig-2`
@@ -446,10 +450,10 @@ Here is an example of a `figures.yaml` entry:
 The `src` is the path for where the image is stored in the Quire project. In this case the image `evans-sons.jpg` lives in a folder called `figures`. This folder is inside the `images` folder. You can use subfolders to help organize your images, just be sure to include the folder name in the `src` path. 
 
 
+<div class="try-it-yourself">
 
 #### Try it Yourself
 
-<div class="try-it-yourself">
 
 1. In Visual Studio Code, navigate to the `_data` folder
 2. Now locate the `figures.yaml` file
@@ -465,11 +469,10 @@ The `src` is the path for where the image is stored in the Quire project. In thi
 
 Inserting a new image is a three-step process. First you must save the image in the `_assets/images/` folder. Next, you must create an entry for that image in the `figures.yaml` file and assign the image an `id`. Finally, decide where in the relevant `.md` file you want the image to appear and enter a shortcode that includes the assigned `id`.
 
-
+<div class="try-it-yourself">
 
 #### Try it Yourself 
 
-<div class="try-it-yourself">
 
 1. Find any image you want and save it in the `_assets/images/figures/` folder (the file name must be all lowercase and use dashes instead of spaces)
 2. Go to the `figures.yaml` file and create a new entry (the indentations must be aligned with all the other entries or you will receive an error)
@@ -508,22 +511,26 @@ Variables are prefixed with a dollar sign and are descriptive of what they contr
 
 Here is a list of the variables define in Quire and what they control: https://quire.getty.edu/docs-v1/variables/#defined-variables.
 
+Here is an example of customizations made to the default starter project using the style variables:
 
+![Customizations to Cover Page](/img/screenshots/quire-starter-styles-change.jpg)
+
+<div class="try-it-yourself">
 
 #### Try it Yourself
 
-<div class="try-it-yourself">
+
 
 1. Navigate to `_assets/styles/variables.scss`
 2. Make the following changes: 
 
-- Change `$accent-color` from `null` to `darkred`
-- Change the `$theme` from `modern` to `classic` 
-- Change `$navbar` from `normal` to `accent`
+    - Change `$accent-color` from `null` to `darkred`
+    - Change the `$theme` from `modern` to `classic` 
+    - Change `$navbar` from `normal` to `accent`
 
 3. Navigate back to your project. What do you notice has changed? 
 
-Go Deeper: 
+**Go Deeper**: 
 
 1. Check out this list of potential color choices: https://www.w3schools.com/cssref/css_colors.php
 2. Continue to play around with the variables until you find a color combination that you like!
