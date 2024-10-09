@@ -62,7 +62,7 @@ In this section you will learn about, and get hands on experience with, the two 
 
 **What is the command-line interface?**
 
-A command-line interface (CLI) is a text-based interface used to run program tasks. It is operated through a {{< q-def "command-line shell" >}} which all computers have. The CLI enables the user to type commands as strings of text into the command-line shell. This is opposed to a graphical user interface (GUI), in which the user controls the program through visualized buttons, toggles, and menus. 
+A command-line interface (CLI) is a text-based interface used to run program tasks. It is operated through a {{< q-def "command-line shell" >}} which is referred to as "Terminal" on a Mac and "Powershell" on a PC. The CLI enables the user to type commands as strings of text into the shell. This is opposed to a graphical user interface (GUI), in which the user controls the program through visualized buttons, toggles, and menus. 
 
 When you install Quire, what you are actually installing is the Quire CLI. 
 
