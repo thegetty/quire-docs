@@ -62,9 +62,11 @@ In this section you will learn about, and get hands on experience with, the two 
 
 **What is the command-line interface?**
 
-A command-line interface (CLI) is a text-based interface used to run program tasks. All computers have them. The user types commands, strings of text, into the CLI. This is opposed to a graphical user interface (GUI), in which the user controls the program through visualized buttons, toggles, and menus. 
+A command-line interface (CLI) is a text-based interface used to run program tasks. It is operated through a {{< q-def "command-line shell" >}} which all computers have. The CLI enables the user to type commands as strings of text into the command-line shell. This is opposed to a graphical user interface (GUI), in which the user controls the program through visualized buttons, toggles, and menus. 
 
-This is what the CLI looks like when it is first opened on a Mac computer: ![command line shell](/img/screenshots/command-line-shell.jpg)
+When you install Quire, what you are actually installing is the Quire CLI. 
+
+This is what the command-line shell looks like when it is first opened on a Mac computer: ![command line shell](/img/screenshots/command-line-shell.jpg)
 
 **What are the benefits of using the command-line interface?**
 
@@ -76,11 +78,9 @@ One of the primary functions of the CLI is to easily navigate files on your comp
 
 ![commandline vs folder](/img/screenshots/commandline-vs-folder.jpg)
 
-
 <div class="try-it-yourself">
 
 #### Try it Yourself
-
 
 **Mac**: 
 
@@ -93,7 +93,7 @@ One of the primary functions of the CLI is to easily navigate files on your comp
 **PC**: 
 
  1. Open the Start menu 
- 2. Select Windows Powershell and hit enter
+ 2. Select "Windows Powershell" and hit enter
  3. Type `~` and hit enter to ensure you are in User and not Administrator mode.
  4. Type `ls` in Powershell to list the contents of your computer's home directory
  5. Click File Explorer
