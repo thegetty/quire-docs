@@ -38,14 +38,14 @@ Quire is an open-source publishing tool developed by Getty that is used to creat
 
 The workshop seeks to break down the various tools, formats, and processes necessary for using Quire into approachable and easy-to-understand concepts. We will additionally provide attendees with step-by-step exercises to help them gain confidence in navigating and using the tool. We aim for individuals who take this workshop to leave feeling excited to continue experimenting and creating.
 
-**Part 1**: Basic Concepts: Learning to Love the Command Line and Text Editor <br>
-**Part 2**: Basic Concepts: The Command Line and Text Editor in Action <br>
+**Part 1**: Basic Concepts: Command-Line Interface & Text Editor <br>
+**Part 2**: Basic Concepts in Action <br>
 **Part 3**: Going Deeper: YAML <br>
 **Part 4**: Going Deeper: Images <br>
 **Part 5**: Going Deeper: Shortcodes <br>
 **Part 6**: Going Deeper: Customization
 
-*Please note: We created a syllabus outlining the above concepts with brief explanations complemented by hands-on exercises. If we don't cover everything during the four hours allotted for the in-person workshop, we invite people to continue exploring Quire independently.* 
+*If we don't cover everything during the four hours allotted for the in-person workshop, we invite people to continue exploring Quire independently by following the syllabus below.* 
 
 ---
 
@@ -54,7 +54,7 @@ The workshop seeks to break down the various tools, formats, and processes neces
 1. Install Quire: https://quire.getty.edu/docs-v1/install-uninstall/ 
 2. Install Visual Studio Code, a free text-editor: https://code.visualstudio.com/
 
-## Part 1. Basic Concepts: An Introduction
+## Part 1. Basic Concepts
 
 In this section, you will learn about and get hands-on experience with the two main tools that are required to use Quire: the command-line interface (CLI), which is used to navigate your project and tell Quire what processes to run, and the text editor, which is the tool used to organize, write, and edit your project files.  
 
@@ -175,7 +175,7 @@ The fact that Markdown is preserved in a human-readable format makes it very eas
 
 </div>
 
-## Part 2. Basic Concepts: In Action
+## Part 2. Basic Concepts In Action
 
 Now that you understand two of the most fundamental tools needed to use Quire, it's time to get a new project up and running and implement these basic concepts. 
 
