@@ -9,9 +9,7 @@ aliases:
 
 Quire is free to use and open source. Quire uses the [3-clause BSD open source license](https://github.com/thegetty/quire/blob/main/LICENSE).
 
-When installing Quire, keep in mind, there is no user interface so it may look or feel different than other publishing software. This was an intentional decision. The transparency of Quire's backend provides more flexibility and opportunities for customization.
-
-When you install Quire what you are actually installing is something called a {{< q-def "command-line interface" >}} or CLI. The CLI enables you to create, preview and output publications using simple commands like `quire new`, `quire preview` and `quire build`. Installation instructions can be found below.
+There is no graphical user interface (GUI) for Quire. So using it may look or feel different than other publishing software. This was an intentional decision. The transparency of Quire's backend provides more flexibility and control over customizations. Instead of a GUI you will be using the {{< q-def "command-line shell" >}} (referred to as "Terminal" on a Mac and "Powershell" on a PC) to operate the command-line interface (CLI), a text-based interface used to run program tasks. When you install Quire, you are actually installing the Quire CLI. 
 
 {{< q-class "box warning" >}}
 - Quire v1 is currently in a pre-release/testing phase. If you need troubleshooting assistance either search or post your questions on our [Discussions Forum](https://github.com/thegetty/quire/discussions). For bugs, please report them using our [Issue Tracker](https://github.com/thegetty/quire/issues).
@@ -19,8 +17,9 @@ When you install Quire what you are actually installing is something called a {{
 
 ## Install Quire v1 (macOS)
 
+1. To use the command-line interface on a Mac press Command–Space Bar and type “Terminal”.
 
-1. **Apple’s Xcode** is a set of [developer tools for your mac](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by entering the following command in your Terminal and pressing enter. 
+2. **Apple’s Xcode** is a set of [developer tools for your mac](https://en.wikipedia.org/wiki/Xcode). Install Apple's Xcode by entering the following command in your Terminal and pressing enter. 
 
     ```text
     xcode-select --install
@@ -28,11 +27,10 @@ When you install Quire what you are actually installing is something called a {{
 
     Some operating systems will already have Xcode installed, in which case you will receive the message "command line tools are already installed". If Xcode is not already installed, an additional notification will pop up. Click “Install” and follow the prompts.
 
-2. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select v18.20.4 (LTS)**: https://nodejs.org/en/download/prebuilt-installer. 
+3. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select v18.20.4 (LTS)**: https://nodejs.org/en/download/prebuilt-installer. 
 
     You can also install a Node.js [package manager](https://nodejs.org/en/download/package-manager) with the command line. A package manager enables you to install more than one version of Node. This is useful when working on multiple Quire projects, some of which might be tied to either newer or older versions of Node.
 
-3. Installing and running Quire requires using the {{< q-def "command-line shell" >}} which on a Mac is called  **Terminal**. Open it by pressing Command–Space Bar and typing “Terminal”.
 4. In your Terminal, install **Quire** with the following command:
 
     ```text
@@ -57,12 +55,14 @@ When you install Quire what you are actually installing is something called a {{
 
 ## Install Quire v1 (Windows)
 
-1. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install the necessary version control software on your computer.
-2. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select v18.20.4 (LTS)**: https://nodejs.org/en/download/prebuilt-installer. 
+1. To use the command-line interface on a PC, right click the Start button and select “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. The only time you need to run PowerShell as an Admin is during install.
+
+2. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install the necessary version control software on your computer.
+
+3. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select v18.20.4 (LTS)**: https://nodejs.org/en/download/prebuilt-installer. 
 
     You can also install a Node.js [package manager](https://nodejs.org/en/download/package-manager) with the command line. A package manager enables you to install more than one version of Node. This is useful when working on multiple Quire projects, some of which might be tied to either newer or older versions of Node.
     
-3. Installing and running Quire requires using {{< q-def "command-line shell" >}} which on a PC is called **Windows PowerShell**. Open the PowerShell by right clicking on Start and selecting “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. The only time you need to run PowerShell as an Admin is during install.
 4. In your PowerShell, install **Quire** with the following command:
 
     ```text

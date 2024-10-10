@@ -29,7 +29,7 @@ Lawrence, Kansas<br />
 | --- | --- |
 | 12:00–1:30 p.m. | Part 1: Introduction to Basic Concepts |
 | 1:30–2:00 p.m.| Coffee Break & Troubleshooting |
-| 2:00–4:00 p.m. | Part 2: Basic Concepts in Action |
+| 2:00–4:00 p.m. | Part 2: Basic Concepts in Action + Opportunities to Go Deeper|
 
 </div>
 
@@ -49,13 +49,13 @@ Lawrence, Kansas<br />
 
 **12:00–1:30 p.m.** 
 
-**Erin Cecele Dunigan**, Quire Community Manager, and **Greg Albers**, Digital Publications Manager at Getty, will kick off the four-hour workshop by briefly introducing Quire and its many benefits. Part 1 will focus on introducing attendees to the basic concepts of how the tool functions, including learning to operate the command line, using a text editor to store content and images, and writing in Markdown and YAML.
+**Erin Cecele Dunigan**, Quire Community Manager, and **Greg Albers**, Digital Publications Manager at Getty, will kick off the four-hour workshop by briefly introducing Quire and its many benefits. Part 1 will focus on introducing attendees to the basic concepts of how the tool functions, including learning to operate the command line and using a text editor to store content in Markdown.
 
-### Part 2: Basic Concepts in Action
+### Part 2: Basic Concepts in Action + Opportunities to Go Deeper
 
 **2:00–4:00 p.m.** 
 
-The latter half of the day will see the concepts covered in Part 1 implemented. Attendees will be guided through setting up a new Quire project, editing content, and making customizations. The goal is for participants to get comfortable navigating the tool so they feel confident and empowered to continue working independently on their projects after the workshop.
+The latter half of the day will see the concepts covered in Part 1 implemented. Attendees will be guided through setting up a new Quire project and editing content. The workshop will then dive deeper into storing data in YAML, adding images, using figure shortcodes, and making customizations. The goal is for participants to get comfortable navigating the tool so they feel confident and empowered to continue working independently after the workshop.
 
 *Participants must bring their own laptop and complete the necessary setup requirements before the workshop. Details will be provided after registering. Questions can be sent to [quire@getty.edu](mailto:quire@getty.edu).*
 
