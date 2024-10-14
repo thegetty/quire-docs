@@ -77,7 +77,7 @@ abstract: "Helpful tools, explanations, and links"
 
 ## Static Site Generation
 
-*Static site generation keeps files in a simple, human-readable, plain-text format. That means the the complexity of building a website remains at the point of publication. They also allow for the conversion of content into formats other than online sites, including PDF, e-book, and print. Ultimately, static site generators, like [Eleventy](#eleventy), ensure website stability and longevity.*
+*Static site generation keeps files in a simple, human-readable, plain-text format. That means the complexity of building a website remains at the point of publication. They also allow for the conversion of content into formats other than online sites, including PDF, e-book, and print. Ultimately, static site generators, like [Eleventy](#eleventy), ensure website stability and longevity.*
 
 - [Static Web Publishing for Digital Scholarship: Lesson Plan](https://chrisdaaz.github.io/static-web-scholcomm/teaching-resources/lesson-plan/)
 - [Introduction to Static Site Generators](https://chrisdaaz.github.io/static-web-scholcomm/tutorials/static-site-generators/)
@@ -98,6 +98,7 @@ abstract: "Helpful tools, explanations, and links"
 - [YAML Tutorial: Everything You Need to Get Started in Minutes](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/)
 - [YAML Validator: Code Beautify](https://codebeautify.org/yaml-validator)
 - [YAML Validator: YAML Lint](http://www.yamllint.com/)
+- [YAML Tools: YAMLine](https://yamline.com/)
 
 <br/>
 
