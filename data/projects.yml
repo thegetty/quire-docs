@@ -873,7 +873,7 @@ project_list:
     alt: "Biophilia: Nature Reimagined" 
     type: "Exhibition Catalogue"
     publisher: "Denver Art Museum"
-    title_info: "Biophilia: Nature Reimagined"
+    title_info: "*Biophilia: Nature Reimagined*"
     pub_date: 2024-05-01
     url: https://biophilia.denartmus.org/
     customization_level: extensive
@@ -882,3 +882,32 @@ project_list:
       - mpopke
       - 1000camels
     note: "This is the second Quire publication from the Denver Art Museum. From the start, *Biophilia: Nature Reimagined* was conceived of as a digital catalogue, in part for sustainability reasons. It incorporates zoomable images, video, and audio files, as well as extensive customizations to the template."
+
+  - id: "denver_ueyama"
+    src: /screenshots/_denver_ueyama.jpg
+    alt: "The Life and Art of Tokio Ueyama" 
+    type: "Exhibition Catalogue"
+    publisher: "Denver Art Museum"
+    title_info: "*The Life and Art of Tokio Ueyama*"
+    pub_date: 2024-07-28
+    url: https://ueyama.denartmus.org/
+    customization_level: moderate
+    github_user:
+      - vhellstein
+      - mpopke
+      - 1000camels
+      - lmurrell 
+    note: "This is the third Quire publication from the Denver Art Museum. This born-digital catalog features crosslinked essays and images, zoomable images, and an interactive timeline."
+  
+  - id: "leventhal_processingplace"
+    src: /screenshots/_leventhal_processingplace.jpg
+    alt: "Processing Place: How Computers and Cartographers Redrew our World"
+    type: Exhibition Catalogue
+    publisher: "Leventhal Map & Education Center, Boston Public Library"
+    title_info: "*Processing Place: How Computers and Cartographers Redrew our World*"
+    pub_date: 2024-09-13
+    url: https://www.leventhalmap.org/digital-exhibitions/processing-place/
+    customization_level: significant
+    github_user:
+      - itspangler
+    note: "For *Processing Place*, the Leventhal Map & Education Center used Quire's standard digital catalogue features—including the IIIF tile generator—and applied custom CSS to replicate the look and feel of the physical exhibition. The institution chose Quire because they have successfully used the tool many times in the past for building and publishing digital companion sites to physical exhibitions."
