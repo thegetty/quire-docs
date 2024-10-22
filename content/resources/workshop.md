@@ -85,7 +85,7 @@ One of the primary functions of the CLI is to easily navigate files on your comp
 **Mac**: 
 
  1. Press Command-Spacebar to open Spotlight 
- 2. Type "Terminal" (Mac's name for the CLI) and hit enter
+ 2. Type "Terminal" (Mac's name for the command-line shell) and hit enter
  3. Type `ls`to list the contents of your computer's home directory
  4. Open your Finder
  5. Press Command+H (to open your "home directory") and compare the files in that folder with what you see listed in the Terminal
@@ -93,7 +93,7 @@ One of the primary functions of the CLI is to easily navigate files on your comp
 **PC**: 
 
  1. Open the Start menu 
- 2. Select "Windows Powershell" and hit enter
+ 2. Select "Windows Powershell" (Windows name for the command-line shell) and hit enter
  3. Type `~` and hit enter to ensure you are in User and not Administrator mode.
  4. Type `ls` in Powershell to list the contents of your computer's home directory
  5. Click File Explorer
