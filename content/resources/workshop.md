@@ -154,19 +154,21 @@ The fact that Markdown is preserved in a human-readable format makes it very eas
 
 1. Open Visual Studio Code
 2. Go to File and select "New File"
-3. Type "Hi my name is [your name]" 
-4. Type "Hi my name is [your name]" a second time and this time put two asterisks on either side of `**your name**`
-4. Press Command-Shift-V to preview the HTML version 
-5. Press Command-\ to create a split screen and drag one tab over to the right side to view a side-by-side comparison
+3. Title the file anything you like and save it anywhere on your comptuer
+4. In the file, type " - Hi my name is [your name]" 
+5. Type "- Hi my name is [your name]" a second time and this time put two asterisks on either side of `**your name**`
+6. Press Command-Shift-V to preview the HTML version 
+7. Press Command-\ to create a split screen and drag one tab over to the right side to view a side-by-side comparison
 
 **PC**: 
 
 1. Open Visual Studio Code
 2. Go to File and select "New File"
-3. Type "Hi my name is [your name]" 
-4. Type "Hi my name is [your name]" a second time and this time put two asterisks on either side of `**your name**`
-4. Press Control-Shift-V to preview the HTML version 
-5. Press Control-\ to create a split screen and drag one tab over to the right side to view a side-by-side comparison
+3. Title the file anything you like and save it anywhere on your comptuer
+4. In the file, type "- Hi my name is [your name]" 
+5. Type "- Hi my name is [your name]" a second time and this time put two asterisks on either side of `**your name**`
+6. Press Control-Shift-V to preview the HTML version 
+7. Press Control-\ to create a split screen and drag one tab over to the right side to view a side-by-side comparison
 
 **Go Deeper**:
 
