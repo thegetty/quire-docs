@@ -114,7 +114,7 @@ You can think of your text editor, like the free tool Visual Studio Code, as a s
 
 **What is Markdown?**
 
-Markdown might seem strange initially, but it is a very approachable language that uses simple character combinations to indicate structure and add formatting elements (headings, bulleted lists, URLs). Rather than using buttons to format the appearance of your text, as you would in Microsoft Word, you are using symbols instead. Quire then does the heavy lifting and converts those symbols into HTML for you. For example, something surrounded by asterisks in Markdown turns into italics in the final publication: *emphasis* = emphasis.
+Markdown might seem strange initially, but it is a very approachable language that uses simple character combinations to indicate structure and add formatting elements (headings, bulleted lists, URLs). Rather than using buttons to format the appearance of your text, as you would in Microsoft Word, you are using symbols instead. Quire then does the heavy lifting and converts those symbols into HTML for you. For example, something surrounded by asterisks in Markdown turns into italics in the final publication: `*emphasis*` = *emphasis*.
 
 **What are the benefits of using Markdown?**
 
