@@ -664,7 +664,7 @@ project_list:
     github_user:
       - lizneely
       - cbutcosk
-    note: "*Exhibiting O'Keeffe: The Making of an American Modernist* is the latest Quire project from the Georgia O'Keeffe Museum. Exhibiting O'Keeffe looks at the role of select exhibitions in building Georgia O'Keeffe's career and public persona. The museum collaborated with [Design for Context](https://www.linkedin.com/company/design-for-context/) to customize Quire to communicate with the museum's Linked Art-based linked data infrastructure. This extension increases discoverability by providing references between the publication and collection information. The publication can be downloaded as a PDF and is available in both English and Spanish."
+    note: "*Exhibiting O'Keeffe: The Making of an American Modernist* looks at the role of select exhibitions in building Georgia O'Keeffe's career and public persona. The museum collaborated with [Design for Context](https://www.linkedin.com/company/design-for-context/) to customize Quire to communicate with the museum's Linked Art-based linked data infrastructure. This extension increases discoverability by providing references between the publication and collection information. The publication can be downloaded as a PDF and is available in both English and Spanish."
 
   - id: "pitts_theology"
     src: /screenshots/_pitts_theology.jpg
@@ -911,3 +911,16 @@ project_list:
     github_user:
       - itspangler
     note: "For *Processing Place*, the Leventhal Map & Education Center used Quire's standard digital catalogue features—including the IIIF tile generator—and applied custom CSS to replicate the look and feel of the physical exhibition. The institution chose Quire because they have successfully used the tool many times in the past for building and publishing digital companion sites to physical exhibitions."
+  
+  - id: "okeeffe_artful_living"
+    src: /screenshots/_okeeffe_artful_living.jpg
+    alt: "Artful Living: O'Keeffe & Modern Design, Exhibition Guide, Georgia O'Keeffe Museum"
+    type: Exhibition Guide
+    publisher: "Georgia O'Keeffe Museum"
+    title_info: "*Artful Living: O'Keeffe & Modern Design*"
+    pub_date: 2024-04-02
+    url: https://publications.okeeffemuseum.org/artful-living/
+    customization_level: extensive 
+    github_user:
+      - lizneely
+    note: "This publication accompanies the exhibition Artful Living: O’Keeffe & Modern Design on view at the O’Keeffe Welcome Center in Abiquiú, New Mexico from April 2, 2024 through January 1, 2026. The publication hs been customized with an extension that utilizes the museum's Linked Art-based linked data infrastructure. This increases discoverability by providing references between the publication and collection information. The publication can be downloaded as a PDF and is available in both English and Spanish."
