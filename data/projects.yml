@@ -857,12 +857,12 @@ project_list:
 
   - id: "nelsonatkins_starr"
     src: /screenshots/_nelsonatkins_starr.jpg
-    alt: "NELSON-ATKINS. Starr Collection of Portrait Miniatures Catalogue"
+    alt: "The Starr Collection of Portrait Miniatures, 1500–1850: The Collections of The Nelson-Atkins Museum of Art, Contributors: By Aimee Marcereau DeGalan, with Blythe Sobol and Maggie Keenan"
     type: Collection Catalogue
     publisher: The Nelson-Atkins Museum of Art
-    title_info: "*Starr Collection of Portrait Miniatures Catalogue*"
+    title_info: "*he Starr Collection of Portrait Miniatures, 1500–1850: The Collections of The Nelson-Atkins Museum of Art*"
     pub_date: 2024-01-16
-    url: https://www.nelson-atkins.org/starr-catalogue/
+    url: https://nelson-atkins.org/starr/
     customization_level: significant
     github_user:
       - salger1
