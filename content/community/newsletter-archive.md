@@ -7,6 +7,9 @@ online: false
 
 2024
 
+- [October](https://newsletters.getty.edu/t/t-54141E0B69A0C6322540EF23F30FEDED) Hands-on Workshop at the University of Kansas, A Quire Case Study Presented at MCN, A Fantastic Resource from the Denver Art Museum, Visual Studio Code Tips & Tricks, Office Hours, Leventhal Map & Education Center, Boston Public Library.
+- [September](https://newsletters.getty.edu/t/t-512C470872C01B182540EF23F30FEDED) MCN's Annual Conference Heads to Kansas, Hands-on Quire Workshop at the Kansas Union, A Quire Case Study Presented at MCN, Community Shoutout, Add Markdown Functionality with Plugins, Office Hours, Materia: Journal of Technical Art History.
+- [August](https://newsletters.getty.edu/t/t-88DEB5141FBEF10D2540EF23F30FEDED) Customize Your Quire Project, ACLS Open Book Prize + Arcadia Open Access Publishing Award, Variables.SCSS, Office Hours, MCN 2024, The Nelson-Atkins Museum of Art.
 - [July](https://newsletters.getty.edu/t/t-DF29FFEED5C90C862540EF23F30FEDED) Quire on the Road, One Tool, Many Workflows, Share Your Quire Workflow, Congratulations, Amon Carter Museum, Office Hours, Leventhal Map & Education Center, Boston Public Library.
 - [May](https://newsletters.getty.edu/t/t-C622C3D425D042482540EF23F30FEDED) *Getty Research Journal* Open-Access Launch, Upcoming Conferences, Workflow Tip: CSV to YAML Conversion Tool, Office Hours, National Gallery Singapore. 
 - [March](https://newsletters.getty.edu/t/t-359C3BC829E16A742540EF23F30FEDED) New Feature: Object Grids for Collection Catalogues, *Artist Things: Rediscovering Lost Property from Eighteenth-Century France*, CAA Annual Conference Recap, Office Hours, Corning Museum of Glass.
