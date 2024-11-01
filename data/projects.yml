@@ -857,16 +857,16 @@ project_list:
 
   - id: "nelsonatkins_starr"
     src: /screenshots/_nelsonatkins_starr.jpg
-    alt: "The Starr Collection of Portrait Miniatures, 1500–1850: The Collections of The Nelson-Atkins Museum of Art, Contributors: By Aimee Marcereau DeGalan, with Blythe Sobol and Maggie Keenan"
+    alt: "The Starr Collection of Portrait Miniatures, 1500–1850: The Collections of The Nelson-Atkins Museum of Art, by Aimee Marcereau DeGalan, with Blythe Sobol and Maggie Keenan"
     type: Collection Catalogue
     publisher: The Nelson-Atkins Museum of Art
-    title_info: "*he Starr Collection of Portrait Miniatures, 1500–1850: The Collections of The Nelson-Atkins Museum of Art*"
+    title_info: "*The Starr Collection of Portrait Miniatures, 1500–1850: The Collections of The Nelson-Atkins Museum of Art*"
     pub_date: 2024-01-16
     url: https://nelson-atkins.org/starr/
     customization_level: significant
     github_user:
       - salger1
-    note: "This is the second Quire publication from The Nelson-Atkins Museum of Art. Comprising nearly three-hundred objects, *The Starr Collection of Portrait Miniatures, 1500–1850* is divided by culture and era into four volumes plus a supplement. The collection of volumes includes deep-zooming images, accordion sections, and pop-up glossary terms along with significant customizations to the template. "
+    note: "This is the second Quire publication from The Nelson-Atkins Museum of Art. Comprising nearly three-hundred objects, *The Starr Collection of Portrait Miniatures, 1500–1850* is divided by culture and era into four volumes plus a supplement. The collection of volumes includes deep-zooming images, accordion sections, and pop-up glossary terms along with significant customizations to the template."
 
   - id: "denver_biophilia"
     src: /screenshots/_denver_biophilia.jpg
