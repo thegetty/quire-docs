@@ -7,12 +7,6 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-**Museum Computer Network Annual Conference**<br>
-[https://mcn.edu/annual-conference/](https://mcn.edu/annual-conference/)<br>
-October 22-24, 2024<br>
-Lawrence, Kansas<br>
-*More information coming soon!*
-
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
 
@@ -28,6 +22,8 @@ Lawrence, Kansas<br>
 
 **2024**
 
+- October 23: Quire presentation at [MCN (Museum Computer Network Conference)](https://mcn2024.sched.com/event/1gdBP/a-quire-case-study-collaborating-with-non-technical-colleagues)
+- October 22: Quire presents ["A Hands-On Quire Workshop"](https://quire.getty.edu/community/mcn-ku-event/) at the University of Kansas 
 - June 4-13: Quire exhibits, sponsors, and presents at  [Library Publishing Forum (LPF)](https://librarypublishing.org/forum/), the [IIIF Annual Conference](https://iiif.io/event/2024/los-angeles/schedule/), and the [AUPresses (AUP) Annual Meeting](https://aupresses.org/programs-events/annual-meeting/aupresses-2024/).
 - March 14: [Object Grids & Filters](https://quire.getty.edu/docs-v1/collection-catalogues/#generate-object-grids) are introduced as a new feature 
 
@@ -72,6 +68,8 @@ Lawrence, Kansas<br>
 
 | Event | Date | Description |
 | -- | -- | -- |
+| MCN (Museum Computer Network) | October 23, 2024 | "A Quire Case Study: Collaborating with Non-Technical Colleagues," presented by Erin Cecele Dunigan and Ruth Evans Lane | 
+| The University of Kansas | October 22, 2023 | "A Hands-On Quire Workshop |
 | Library Publishing Forum (LPF) | May 15-16, 2024 | "Path, Many Tools: Publishing Getty’s Open Access Journal," presented by Greg Albers |  
 | College Art Association Conference (CAA)| February 15-17, 2024 | 30-minute Quire demonstrations at Booth # 205 | 
 | MCN (Museum Computer Network) | November 10, 2023 | "A Community Effort: Digital Publishing with Open-Source Tools," moderated by Erin Cecele Dunigan (Quire) with Duane Degler (Design for Context) and Caitlin Sweeney (Wildenstein Plattner Institute) | 

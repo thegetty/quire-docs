@@ -664,7 +664,7 @@ project_list:
     github_user:
       - lizneely
       - cbutcosk
-    note: "*Exhibiting O'Keeffe: The Making of an American Modernist* is the latest Quire project from the Georgia O'Keeffe Museum. Exhibiting O'Keeffe looks at the role of select exhibitions in building Georgia O'Keeffe's career and public persona. The museum collaborated with [Design for Context](https://www.linkedin.com/company/design-for-context/) to customize Quire to communicate with the museum's Linked Art-based linked data infrastructure. This extension increases discoverability by providing references between the publication and collection information. The publication can be downloaded as a PDF and is available in both English and Spanish."
+    note: "*Exhibiting O'Keeffe: The Making of an American Modernist* looks at the role of select exhibitions in building Georgia O'Keeffe's career and public persona. The museum collaborated with [Design for Context](https://www.linkedin.com/company/design-for-context/) to customize Quire to communicate with the museum's Linked Art-based linked data infrastructure. This extension increases discoverability by providing references between the publication and collection information. The publication can be downloaded as a PDF and is available in both English and Spanish."
 
   - id: "pitts_theology"
     src: /screenshots/_pitts_theology.jpg
@@ -856,24 +856,24 @@ project_list:
     note: "This is *Materia's* fourth journal produced with Quire. The focus of this issue is interdisciplinary collaboration."
 
   - id: "nelsonatkins_starr"
-    src: /screenshots/_nelsonatkins_starr.jpg
-    alt: "NELSON-ATKINS. Starr Collection of Portrait Miniatures Catalogue"
+    src: /screenshots/_nelsonatkins_starr_2.jpg
+    alt: "The Starr Collection of Portrait Miniatures, 1500–1850: The Collections of The Nelson-Atkins Museum of Art, by Aimee Marcereau DeGalan, with Blythe Sobol and Maggie Keenan"
     type: Collection Catalogue
     publisher: The Nelson-Atkins Museum of Art
-    title_info: "*Starr Collection of Portrait Miniatures Catalogue*"
+    title_info: "*The Starr Collection of Portrait Miniatures, 1500–1850: The Collections of The Nelson-Atkins Museum of Art*"
     pub_date: 2024-01-16
-    url: https://www.nelson-atkins.org/starr-catalogue/
+    url: https://nelson-atkins.org/starr/
     customization_level: significant
     github_user:
       - salger1
-    note: "This is the second Quire publication from The Nelson-Atkins Museum of Art. Comprising nearly three-hundred objects, *The Starr Collection of Portrait Miniatures, 1500–1850* is divided by culture and era into four volumes plus a supplement. The collection of volumes includes deep-zooming images, accordion sections, and pop-up glossary terms along with significant customizations to the template. "
+    note: "This is the second Quire publication from The Nelson-Atkins Museum of Art. Comprising nearly three-hundred objects, *The Starr Collection of Portrait Miniatures, 1500–1850* is divided by culture and era into four volumes plus a supplement. The collection of volumes includes deep-zooming images, accordion sections, and pop-up glossary terms along with significant customizations to the template."
 
   - id: "denver_biophilia"
     src: /screenshots/_denver_biophilia.jpg
     alt: "Biophilia: Nature Reimagined" 
     type: "Exhibition Catalogue"
     publisher: "Denver Art Museum"
-    title_info: "Biophilia: Nature Reimagined"
+    title_info: "*Biophilia: Nature Reimagined*"
     pub_date: 2024-05-01
     url: https://biophilia.denartmus.org/
     customization_level: extensive
@@ -882,3 +882,45 @@ project_list:
       - mpopke
       - 1000camels
     note: "This is the second Quire publication from the Denver Art Museum. From the start, *Biophilia: Nature Reimagined* was conceived of as a digital catalogue, in part for sustainability reasons. It incorporates zoomable images, video, and audio files, as well as extensive customizations to the template."
+
+  - id: "denver_ueyama"
+    src: /screenshots/_denver_ueyama.jpg
+    alt: "The Life and Art of Tokio Ueyama" 
+    type: "Exhibition Catalogue"
+    publisher: "Denver Art Museum"
+    title_info: "*The Life and Art of Tokio Ueyama*"
+    pub_date: 2024-07-28
+    url: https://ueyama.denartmus.org/
+    customization_level: moderate
+    github_user:
+      - vhellstein
+      - mpopke
+      - 1000camels
+      - lmurrell 
+    note: "This is the third Quire publication from the Denver Art Museum. This born-digital catalog features crosslinked essays and images, zoomable images, and an interactive timeline."
+  
+  - id: "leventhal_processingplace"
+    src: /screenshots/_leventhal_processingplace.jpg
+    alt: "Processing Place: How Computers and Cartographers Redrew our World"
+    type: Exhibition Catalogue
+    publisher: "Leventhal Map & Education Center, Boston Public Library"
+    title_info: "*Processing Place: How Computers and Cartographers Redrew our World*"
+    pub_date: 2024-09-13
+    url: https://www.leventhalmap.org/digital-exhibitions/processing-place/
+    customization_level: significant
+    github_user:
+      - itspangler
+    note: "For *Processing Place*, the Leventhal Map & Education Center used Quire's standard digital catalogue features—including the IIIF tile generator—and applied custom CSS to replicate the look and feel of the physical exhibition. The institution chose Quire because they have successfully used the tool many times in the past for building and publishing digital companion sites to physical exhibitions."
+  
+  - id: "okeeffe_artful_living"
+    src: /screenshots/_okeeffe_artful_living.jpg
+    alt: "Artful Living: O'Keeffe & Modern Design, Exhibition Guide, Georgia O'Keeffe Museum"
+    type: Exhibition Guide
+    publisher: "Georgia O'Keeffe Museum"
+    title_info: "*Artful Living: O'Keeffe & Modern Design*"
+    pub_date: 2024-04-02
+    url: https://publications.okeeffemuseum.org/artful-living/
+    customization_level: extensive 
+    github_user:
+      - lizneely
+    note: "This publication accompanies the exhibition Artful Living: O’Keeffe & Modern Design on view at the O’Keeffe Welcome Center in Abiquiú, New Mexico from April 2, 2024 through January 1, 2026. The publication hs been customized with an extension that utilizes the museum's Linked Art-based linked data infrastructure. This increases discoverability by providing references between the publication and collection information. The publication can be downloaded as a PDF and is available in both English and Spanish."

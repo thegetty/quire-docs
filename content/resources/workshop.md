@@ -4,16 +4,6 @@ weight: 7500
 type: essay
 abstract: Syllabus for our in-person workshops 
 ---
-{{< q-class "box tip" >}}
-The next in-person Quire workshop will be held at the University of Kanasas in Lawrence, KS on Tuesday, October 22 from 12-4pm. 
-
-<div class="action-button paired-button">
-
-[Learn More](/community/mcn-ku-event/)<br> <br>
-[Register Now](https://forms.gle/gJFFRS7pk4hQZdXo9)
-
-</div>
-{{< /q-class >}}
 
 ## About Quire 
 
