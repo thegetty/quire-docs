@@ -35,7 +35,7 @@ The workshop seeks to break down the various tools, formats, and processes neces
 **Part 5**: Going Deeper: Shortcodes <br>
 **Part 6**: Going Deeper: Customization
 
-*If we don't cover everything during the four hours allotted for the in-person workshop, we invite people to continue exploring Quire independently by following the syllabus below.* 
+*If you are interested in having a hands-on Quire workshop led by a Quire representative either in person or virtually, please contact [quire@getty.edu](mailto:quire@getty.edu).* 
 
 ---
 
@@ -64,7 +64,7 @@ The main benefit of the CLI is efficiency. Instead of spending time finding and 
 
 **Navigating with the CLI**
 
-One of the primary functions of the CLI is to easily navigate files on your computer. In the exercise below, you will use commands like `cd` ("change directory") and `ls` ("list") to explore your computer's home directory, the main storage folder that contains your personal files. You will then use Finder/Explorer to do the same thing. 
+One of the primary functions of the CLI is to easily navigate files on your computer. In the exercise below, you will use commands like `cd` ("change directory") and `ls` ("list") to explore your computer's home directory, the main storage folder that contains your personal files. You will then use Finder/Explorer to do the same thing. This demonstrates how running commands in the command-line shell mirrors the process of clicking through folders in your Finder/Explorer.
 
 ![commandline vs folder](/img/screenshots/commandline-vs-folder.jpg)
 
@@ -92,7 +92,7 @@ One of the primary functions of the CLI is to easily navigate files on your comp
 **Go Deeper**: 
 
  1. Choose a file you want to navigate into
- 2. Type `cd` and the name of the chosen folder and hit enter
+ 2. Type `cd`, a space, and the name of the chosen folder and hit enter
  3. Continue exploring your computer's files
  4. Close your Terminal/Powershell when you are done 
 
@@ -132,7 +132,7 @@ The same list written in Markdown:
 - Milk 
 ```
 
-The fact that Markdown is preserved in a human-readable format makes it very easy to edit and it also helps preserve the longevity of your content. 
+The fact that Markdown is a human-readable format makes it very easy to edit and it also helps preserve the longevity of your content. 
 
 <div class="try-it-yourself">
 
@@ -175,7 +175,7 @@ Now that you understand two of the most fundamental tools needed to use Quire, i
 
 In addition to using the CLI to navigate Quire, as we explored earlier, it can also be used to tell Quire what to do, including creating a new project, previewing a project, or outputting a website, PDF, and e-book. In the steps below, we will use the CLI to create a new project, navigate into that project's folder, and preview it. 
 
-*Please note: The command `quire new` generates a default starter project. It is a sample publication meant to serve as a jumping off point. It serves as a useful template with images and text that can be deleted or substituted when creating your own project.* 
+*The command `quire new` generates a default starter project. It is a sample publication meant to serve as a jumping off point. It serves as a useful template with images and text that can be deleted or substituted when creating your own project.* 
 
 ![Quire Starter Project](/img/screenshots/quire-starter.jpg)
 
@@ -257,11 +257,13 @@ YAML stands for "YAML Ain't Markup Language". YAML's primary purpose is to save 
 
 Here is an example: 
 
-`title: My Project`
+`title: "My Project"`
 
 You can also use Markdown when storing information as YAML: 
 
-`title: *My Project*`
+`title: "*My Project*"`
+
+*We advise always wrapping YAML values in quotations.*
 
 **What are the benefits of using YAML?**
 
@@ -283,8 +285,8 @@ Let's look at the `intro.md` file as an example. This is the YAML block that app
 
 ```YAML
 ---
-title: Introduction
-subtitle: A Tale of Two Photographers
+title: "Introduction"
+subtitle: "A Tale of Two Photographers"
 layout: splash
 order: 10
 image: figures/lange-house.jpg
@@ -297,13 +299,9 @@ The `title` is the title of the essay, the `layout` affects the format of the pa
 
 #### Try it Yourself
 
-
-
 1. Change the `title` of the `intro.md` file to anything you like 
-2. In the CLI, press Control-C to stop your preview
-3. Type the command `quire preview` to restart the preview (this needs to be done any time there is a change to YAML)
-4. Go to your browser, and notice that the title of the essay has changed
-5. Navigate to the table of contents in your project and note how the title of the Introduction has changed there as well
+2. Go to your browser, and notice that the title of the essay has changed
+3. Navigate to the table of contents in your project and note how the title of the Introduction has changed there as well
 
 </div>
 
@@ -342,6 +340,8 @@ As previously mentioned, YAML stores information that is used in multiple places
 
 </div>
 
+*When making changes to `.yaml` files it's necessary to stop and restart the preview for the change to become active/visible.*
+
 ## Part 4. Going Deeper: Images
 
 Now that we have changed the title of your Quire project, let's also change the cover image. 
@@ -372,9 +372,7 @@ Images can be easily added and subtracted from your Quire project. When adding n
 2. Save it to the `_assets/images/` folder (must be all lowercase and use dashes instead of spaces)
 3. In Visual Studio Code, navigate to the `index.md` file (this is the cover page for your project)
 4. In the page YAML, find the `image:` field, delete `spiral-overlay.png`, and add the name of your image file in its place
-5. In your CLI, press Control-C to stop the preview
-6. Type the command `quire preview` to restart the preview
-7. Go to your browser and navigate to the cover page of your project. Note that in addition to the title changing, the cover image has changed too!
+5. Go to your browser and navigate to the cover page of your project. Note that in addition to the title changing, the cover image has changed too!
 
 </div>
 
@@ -386,17 +384,15 @@ The second way to include images in your Quire project is by using shortcodes.
 
 **What are shortcodes?**
 
-A shortcode is a simple snippet of code inserted in a `.md` file that pulls in information from other files in your project. In Quire, shortcodes are used to insert figure images, citations, object information, and more. 
+A shortcode is a simple snippet of code inserted in a `.md` file that pulls in information from other files in your project. In Quire, shortcodes are used to insert figure images, citations, glossary terms, and more. 
 
 **What are the benefits of using shortcodes?**
 
-Shortcodes save a lot of time and energy. Rather than repeating lengthy information in multiple places throughout your project, you can use a shortcode as a shortcut. A shortcode usually references an `id`. For example, the shortcode below is referencing a figure (an image) that has been assigned the id `fig-1`.
+Shortcodes save a lot of time and energy. Rather than repeating lengthy information in multiple places throughout your project, you can use a shortcode as a shortcut. A shortcode usually references an `id`. For example, the shortcode below is referencing a figure image that has been assigned the id `fig-1`.
 
 `{% figure 'fig-1' %}`
 
-In addition to being associated with an image, `fig-1` can also be associated with a caption, credit, label, etc. 
-
-When you insert the shortcode `{% figure 'fig-1' %}` into a `.md` file, you will automatically see all the infromation pertaining to `fig-1` appear when you preview that page in your browser. 
+When you insert the shortcode `{% figure 'fig-1' %}` into a `.md` file, you will automatically the image that has been assigned the `id` `fig-1` appear when you preview that page in your browser. 
 
 Here is an example of a shortcode being used in the `preface.md` to pull in a figure with the id `fig-1`:
 
@@ -415,7 +411,7 @@ Here is an example of a shortcode being used in the `preface.md` to pull in a fi
 
 ### `figures.yaml`
 
-The `id` is assigned in the `figures.yaml` file. This is where you also store information like the image file, caption, credit, label, alt text, etc. As we mentioned before, the beauty of YAML is that you store information in one place and can reference it in multiple locations throughout your publication. This also means that if you edit a image's caption, rather than changing it everywhere the image appears in your publication, you only need to update it in the `figures.yaml` file. 
+The `id` is assigned in the `figures.yaml` file. In the `figures.yaml` file you store the path to the image file as well as the caption, credit, label, alt text, etc. Each image and its related data is assigned an `id`. As we mentioned before, the beauty of YAML is that you store information in one place and can reference it in multiple locations throughout your publication using the `id`. This also means that if you edit a image's caption, rather than changing it everywhere the image appears in your publication, you only need to update it in the `figures.yaml` file and it will automatically update everywhere the `id` is used in a shortcode. 
 
 Here is an example of a `figures.yaml` entry:
 
@@ -430,7 +426,6 @@ The `src` is the path for where the image is stored in the Quire project. In thi
 <div class="try-it-yourself">
 
 #### Try it Yourself
-
 
 1. In Visual Studio Code, navigate to the `_data` folder
 2. Now locate the `figures.yaml` file
@@ -452,8 +447,8 @@ Inserting a new image is a three-step process. First, save the image in the `_as
 
 
 1. Find any image you want and save it in the `_assets/images/figures/` folder (the file name must be all lowercase and use dashes instead of spaces)
-2. Go to the `figures.yaml` file and create a new entry. A new entry leads off with a dash. Make sure that all text indentations are aligned with the other entries or your will receive an error.
-3. Create an `id` for that image (must be all lowercase and use dashes instead of spaces) and write whatever you want for the label, caption, and credit
+2. Go to the `figures.yaml` file and create a new entry. A new entry leads off with a dash. Make sure that all text indentations are aligned with the other entries or your will receive an error when you try to preview.
+3. Create an `id` for that image (must be all lowercase and use dashes instead of spaces and also must start with a letter) and write whatever you want for the label, caption, and credit
 4. The `src` will be `figures/` plus the image file name
 5. Now go back to the `essay.md` file, and change the `id` in the shortcode `{% figure 'fig-2' 'is-pulled-right' %}` to the `id` you just created
 6. In your CLI, press Control-C to stop the preview
@@ -471,6 +466,7 @@ To make Quire approachable to everyone, regardless of technical experience, weâ€
 ### Learning to Love Style Variables
 
 **What are style variables?**
+
 Variables are essentially a list of built-in options for making style customziations. You can use them to control things like text and background colors, specific element sizes, fonts, paragraph indents, PDF margins, and more.
 
 **What are the benefits of using style variables?**
@@ -519,12 +515,12 @@ You can continue reinforcing the concepts above by creating a new page in your Q
 
 #### Try it Yourself
 
-1. In Visual Studio Code, create a new `.md` file by right clicking the `content` folder and choosing "New File". The file name should be all lowercase with dashes instead of spaces and should end in `.md`
-2. Add page YAML to the top of the page and give the page a `title`, `layout`, and `order` 
-3. Add content to the page written in Markdown
-4. Add a new image to the project 
-5. Add a `figures.yaml` entry for that image and give it an `id`, `caption`, `credit`, `label`, and include the image path for the `src`
-6. Use a shortcode to insert that image into the `.md` file
+1. In Visual Studio Code, create a new `.md` file by right clicking the `content` folder and choosing "New File". The file name should be all lowercase with dashes instead of spaces and should end in `.md`.
+2. Add page YAML block to the top of the page, including `title`, `layout`, and `order`.You cannot repeat an `order` number that has already been used in another `.md` file. Don't forget to include three dashes both above and below the YAML block. 
+3. Add content below the YAML block written in Markdown
+4. Add a new image to the project in the `_assets/images/figures` folder
+5. Add a `figures.yaml` entry for that image. Start with a dash and make sure the indents are aligned with the entries above it. Include an `id`, `caption`, `credit`, `label`, and include the image path for the `src`.
+6. Use the `{% figure %}` shortcode to insert that image into the `.md` file you just created by including the `id` you assigned it in the `figures.yaml` file
 7. In your CLI, press Control-C to stop the preview
 8. Type the command `quire preview` to restart the preview
 
