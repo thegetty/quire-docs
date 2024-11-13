@@ -33,7 +33,9 @@ The workshop seeks to break down the various tools, formats, and processes neces
 **Part 3**: Going Deeper: YAML <br>
 **Part 4**: Going Deeper: Images <br>
 **Part 5**: Going Deeper: Shortcodes <br>
-**Part 6**: Going Deeper: Customizationa
+**Part 6**: Going Deeper: Customization
+
+*If you are interested in having a hands-on Quire workshop led by a Quire representative either in person or virtually, please contact [quire@getty.edu](mailto:quire@getty.edu).* 
 
 ---
 
