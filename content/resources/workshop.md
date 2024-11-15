@@ -460,35 +460,37 @@ Inserting a new image is a three-step process. First, save the image in the `_as
 
 ## Part 6. Going Deeper: References 
 
-Another exciting way YAML can be used in your Quire project is to create a bibliography and to add pop-up citations. All bibliographic information for your publication is stored in the `references.yaml` file. 
+YAML can also be useful when it comes to creating a bibliography or adding pop-up citations to your project. All bibliographic information for your publication is stored in the `references.yaml` file located in the `_data/` folder. 
 
-Each entry in the `references.yaml` file must include the full form of the reference and an `id`. Unlike the `figures.yaml` file, the `id` used for references can have spaces becasue it represents the author and the year of the citation. The way the `id` is written is how it will appear in both the bibliography and clickable text for the pop-up citation. 
+Each entry in the `references.yaml` file must include the `full` form of the bibliographic reference and an `id`.  
 
 ```YAML
   - id: "Evans 1938"
     full: "Evans, Walker. *American Photographs*. New York: Museum of Modern Art, 1938."
 ```
 
+As in the example above, the `id` would typically be the short form of the reference in Author Date format. Note that unlike the `figures.yaml` file, the `id` used for references can have spaces. The way the `id` is written is how it will appear in both the bibliography and clickable text for the pop-up citation. 
+
 ### Creating a Bibliography
 
-In the default starter project there is a file called `bibliography.md`. This file has a special `layout` of `bibliography`. This  means it will automatically pull in the information found in the `references.md` file and sort it alphabetically. 
+In the default starter project there is a file called `bibliography.md`. When looking at the page YAML you'll notice there is a special `layout` type of `bibliography`. A `.md` file with this `layout` type will automatically pull in the information found in the `references.md` file and sort it alphabetically.  
 
 <div class="try-it-yourself">
 
 #### Try it Yourself 
 
-1. Navigate to the `references.yaml` file and note the three entries listed there
-2. Navigate to your browser and click on the "Bibliography" page of the project to see how the references rendered
+1. Open the `references.yaml` file and note the three entries listed there
+2. Navigate to your browser and click on the "Bibliography" page to see how the references are rendered online
 
 </div>
 
 ### Inserting pop-up citations
 
-Similar to inserting images with shortcodes, you can also use a shortcode to insert a pop-up citation. This is an example of what a citation shortcode looks like: 
+Similar to inserting images with shortcodes, you can also use a shortcode to insert pop-up citations. This is an example of what a citation shortcode looks like: 
 
 `{% cite 'Evans 1938' %}`
 
-When the shortcode is added, the same tex that is used as the `id` appears underlined, indicating that it can be clicked on. When you click on the underlined text, the content stored in `full`portion of the YAML entry appears. 
+When the shortcode is added to a `.md` file, the same text that is used as the `id` appears underlined, indicating that it can be clicked on. When you click on the underlined text, the content stored in `full` portion of the YAML entry appears. 
 
 In addition to adding the reference information as a pop-up citation, it will also appear as an entry in a page-level bibliography. 
 
@@ -496,17 +498,16 @@ In addition to adding the reference information as a pop-up citation, it will al
 
 #### Try it Yourself 
 
-1. Navigate to the `essay.md` and find an example of a cite shortcode
-2. Navigate to your browser and see how that pop-up citation is rendered in HTML
-3. Scroll down to the bottom of the essay and note the page-level bibliography 
+1. Open the `essay.md` file and find an example of a cite shortcode
+2. Navigate to your browser and see how that pop-up citation is rendered online
+3. Scroll down to the bottom of the essay and note the correspinding page-level bibliography 
 
 **Go Deeper**
 
-1. Back in the `references.yaml` file add a new entry and assign an `id` written as "Author Year"
+1. Back in the `references.yaml` file, create a new entry and assign an `id` written in Author Date format (for example: "Evans 1938")
 2. Navigate to the `essay.md` file and choose a place where you want to insert the pop-up citation
-3. Add the citation using the shortcode: `{% cite 'id' %}`
-4. Replace `id` with the one you assigned in the `references.yaml`
-5. Go to your browser and find both the pop-up citation and the addition to the page-level bibliography
+3. Add the citation using the shortcode: `{% cite 'id' %}`, replacing `id` with the one you just created in the `references.yaml`
+4. Go to your browser and find both the pop-up citation and the addition to the page-level bibliography in the essay. You can also navigate to the "Bibliography" and note that the new reference has been added there as well.
 
 </div>
 
@@ -574,7 +575,7 @@ You can continue reinforcing the concepts above by creating a new page in your Q
 4. Add a new image to the project in the `_assets/images/figures` folder
 5. Add a `figures.yaml` entry for that image. Start with a dash and make sure the indents are aligned with the entries above it. Include an `id`, `caption`, `credit`, `label`, and include the image path for the `src`.
 6. Use the `{% figure %}` shortcode to insert that image into the `.md` file you just created by including the `id` you assigned it in the `figures.yaml` file
-7. Add a new entry in the `references.yaml` file. Include both an `id` (written as "Author Year") and a value for `full`
+7. Add a new entry in the `references.yaml` file. Include both an `id` (written in Author Date format) and a value for `full`
 8. Use the `{% cite %}` shortcode to insert the pop-up citation into the `.md` file by including the `id` you assigned it in the `references.yaml` file
 9. In your CLI, press Control-C to stop the preview
 10. Type the command `quire preview` to restart the preview
