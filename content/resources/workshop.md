@@ -490,7 +490,7 @@ Similar to inserting images with shortcodes, you can also use a shortcode to ins
 
 `{% cite 'Evans 1938' %}`
 
-When the shortcode is added to a `.md` file, the same text that is used as the `id` appears underlined, indicating that it can be clicked on. When you click on the underlined text, the content stored in `full` portion of the YAML entry appears. 
+When the shortcode is added to a `.md` file, the same text that is used as the `id` appears underlined, indicating that it can be clicked on. When you click on the underlined text, the content stored in the `full` portion of the YAML entry appears. 
 
 In addition to adding the reference information as a pop-up citation, it will also appear as an entry in a page-level bibliography. 
 
@@ -500,13 +500,14 @@ In addition to adding the reference information as a pop-up citation, it will al
 
 1. Open the `essay.md` file and find an example of a cite shortcode
 2. Navigate to your browser and see how that pop-up citation is rendered online
-3. Scroll down to the bottom of the essay and note the correspinding page-level bibliography 
+3. Scroll down to the bottom of the essay and note the corresponding page-level bibliography 
 
 **Go Deeper**
 
 1. Back in the `references.yaml` file, create a new entry and assign an `id` written in Author Date format (for example: "Evans 1938")
 2. Navigate to the `essay.md` file and choose a place where you want to insert the pop-up citation
 3. Add the citation using the shortcode: `{% cite 'id' %}`, replacing `id` with the one you just created in the `references.yaml`
+4. Stop and restart your preview
 4. Go to your browser and find both the pop-up citation and the addition to the page-level bibliography in the essay. You can also navigate to the "Bibliography" and note that the new reference has been added there as well.
 
 </div>
