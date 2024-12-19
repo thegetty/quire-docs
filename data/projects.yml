@@ -924,3 +924,17 @@ project_list:
     github_user:
       - lizneely
     note: "This publication accompanies the exhibition Artful Living: O’Keeffe & Modern Design on view at the O’Keeffe Welcome Center in Abiquiú, New Mexico from April 2, 2024 through January 1, 2026. The publication hs been customized with an extension that utilizes the museum's Linked Art-based linked data infrastructure. This increases discoverability by providing references between the publication and collection information. The publication can be downloaded as a PDF and is available in both English and Spanish."
+
+  - id: "newfields_pissarro"
+    src: /screenshots/_newfields_pissarro.jpg
+    alt: "On the right is an impressionist image of a boy painting. It is paired with a list of essays that comprise the publication on the left of the screen."
+    type: Research Paper 
+    publisher: "Indianapolis Museum of Art at Newfields"
+    title_info: "*Paintings by the Pissarro Family: A Technical Catalogue*"
+    pub_date: 2024-11-21
+    url: https://pissarro.discovernewfields.org/
+    customization_level: extensive 
+    github_user:
+      - daniel-keller
+    note: "In developing “Paintings by the Pissarro Family: A Technical Catalogue”, the focus of the team at Newfields was to build a sustainable publication of technical examination reports. Their previous work with Quire, during the development of “Masterpieces from the Clowes Collection: Paintings”, with its highly modified layouts, styles, and custom data pipelines, allowed for quick iteration and low developer-time investment for this second published work.
+"

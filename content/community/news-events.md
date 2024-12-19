@@ -7,6 +7,16 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
+Quire @ [CAA 2025](https://www.collegeart.org/programs/conference/conference2025)
+New York Hilton Midtown  
+February 12-15, 2025
+More information coming soon... 
+
+Quire @ [Code4Lib 2025](https://2025.code4lib.org/)
+Princeton, NJ
+Thursday, March 13, 2025
+More information coming soon... 
+
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
 
@@ -22,8 +32,12 @@ abstract: "Get the latest news and info about upcoming events"
 
 **2024**
 
+- November 11: Yale University and the University of Oxford concluded their [fascinating research project](https://linked.art/community/projects/ees2/) that explored ways of starting collection catalogues directly from Linked Open Data
 - October 23: Quire presentation at [MCN (Museum Computer Network Conference)](https://mcn2024.sched.com/event/1gdBP/a-quire-case-study-collaborating-with-non-technical-colleagues)
 - October 22: Quire presents ["A Hands-On Quire Workshop"](https://quire.getty.edu/community/mcn-ku-event/) at the University of Kansas 
+- October 10: The Denver Art Museum shared a [useful resource](https://github.com/thegetty/quire/discussions/961) on digital publishing with the community
+- August 15: Updated [style customization instructions](https://quire.getty.edu/docs-v1/styles-customization/) are shared with the community
+- July 11: Amon Carter Museum of American Art's Quire publication, [*The Art of the Scene: Charles Truett Williams*](https://art-scene.cartermuseum.org/) received the [Center for the Advancement and Study of Early Texas Art (CASETA)](https://www.caseta.org/index.php)'s annual Exhibition Catalog Award for the most outstanding exhibition catalog on early Texas art 
 - June 4-13: Quire exhibits, sponsors, and presents at  [Library Publishing Forum (LPF)](https://librarypublishing.org/forum/), the [IIIF Annual Conference](https://iiif.io/event/2024/los-angeles/schedule/), and the [AUPresses (AUP) Annual Meeting](https://aupresses.org/programs-events/annual-meeting/aupresses-2024/).
 - March 14: [Object Grids & Filters](https://quire.getty.edu/docs-v1/collection-catalogues/#generate-object-grids) are introduced as a new feature 
 
