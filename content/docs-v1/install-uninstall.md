@@ -39,6 +39,8 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
 
     The Quire installation process may take a few minutes, during which time there will be messaging output in your Terminal. The only messages of any concern are those labeled as ERROR or ERR. You can ignore any messages that tell you to run `npm audit`.
 
+    *Users installing the CLI local to a publication/project (much less common) will need to add `--install-stragey=nested` to the npm install command or their .npmrc file in addition to removing `-g` to support patching package dependencies.*
+
 {{< q-class "box tip" >}}
 - If you receive an error message that says "Error: EACCES: permission denied," this is related to the ownership and **permissions settings** for the global `node_modules` directories installed in step 1. Please see our [*Troubleshooting*](/docs-v1/troubleshooting/#installing-quire-on-macos) section for a solution. 
 {{< /q-class >}}
@@ -70,6 +72,8 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
     ```
 
     The Quire installation process may take a few minutes, during which time there will be messaging output in your PowerShell.
+
+    *Users installing the CLI local to a publication/project (much less common) will need to add `--install-stragey=nested` to the npm install command or their .npmrc file in addition to removing `-g` to support patching package dependencies.*
 
 5. Once Quire has been installed, change your PowerShell **permissions settings** by running the command:
 
