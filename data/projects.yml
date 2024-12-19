@@ -926,7 +926,7 @@ project_list:
     note: "This publication accompanies the exhibition Artful Living: O’Keeffe & Modern Design on view at the O’Keeffe Welcome Center in Abiquiú, New Mexico from April 2, 2024 through January 1, 2026. The publication hs been customized with an extension that utilizes the museum's Linked Art-based linked data infrastructure. This increases discoverability by providing references between the publication and collection information. The publication can be downloaded as a PDF and is available in both English and Spanish."
 
   - id: "newfields_pissarro"
-    src: /screenshots/_newfields_pissarro
+    src: /screenshots/_newfields_pissarro.jpg
     alt: "On the right is an impressionist image of a boy painting. It is paired with a list of essays that comprise the publication on the left of the screen."
     type: Research Paper 
     publisher: "Indianapolis Museum of Art at Newfields"
