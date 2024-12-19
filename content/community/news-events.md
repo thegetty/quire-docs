@@ -12,6 +12,11 @@ New York Hilton Midtown
 February 12-15, 2025
 More information coming soon... 
 
+Quire @ [Code4Lib 2025](https://2025.code4lib.org/)
+Princeton, NJ
+Thursday, March 13, 2025
+More information coming soon... 
+
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
 
