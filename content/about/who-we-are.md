@@ -42,7 +42,7 @@ Thank you to all our growing list of contributors who have made Quire what it is
 - [@badragan](https://github.com/badragan)
 - [@basiakapolka](https://github.com/basiakapolka)
 - [@belmendo](https://github.com/belmendo)
-- [bjhewitt](https://github.com/bjhewitt)
+- [@bjhewitt](https://github.com/bjhewitt)
 - [@brm202322](https://github.com/brm202322)
 - [@brrd](https://github.com/brrd)
 - [@brutaldigital](https://github.com/brutaldigital)
