@@ -7,6 +7,8 @@ online: false
 
 2024
 
+- [December](https://newsletters.getty.edu/t/t-6E63E3ACE8BEFC1B2540EF23F30FEDED) 2024: A Year in Review, 2024 Highlights, Quire by the Numbers, Looking Forward to 2025, Thank You, Contributors!
+- [November](https://newsletters.getty.edu/t/t-36B4FB5368D589462540EF23F30FEDED) MCN 2024, Hands-On Quire Workshop, Printing and Distribution Options, Office Hours, Denver Museum of Art
 - [October](https://newsletters.getty.edu/t/t-54141E0B69A0C6322540EF23F30FEDED) Hands-on Workshop at the University of Kansas, A Quire Case Study Presented at MCN, A Fantastic Resource from the Denver Art Museum, Visual Studio Code Tips & Tricks, Office Hours, Leventhal Map & Education Center, Boston Public Library.
 - [September](https://newsletters.getty.edu/t/t-512C470872C01B182540EF23F30FEDED) MCN's Annual Conference Heads to Kansas, Hands-on Quire Workshop at the Kansas Union, A Quire Case Study Presented at MCN, Community Shoutout, Add Markdown Functionality with Plugins, Office Hours, Materia: Journal of Technical Art History.
 - [August](https://newsletters.getty.edu/t/t-88DEB5141FBEF10D2540EF23F30FEDED) Customize Your Quire Project, ACLS Open Book Prize + Arcadia Open Access Publishing Award, Variables.SCSS, Office Hours, MCN 2024, The Nelson-Atkins Museum of Art.
