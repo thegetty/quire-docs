@@ -757,7 +757,7 @@ project_list:
     publisher: "Yale University Art Gallery"
     title_info: "*Italian Paintings at the Yale University Art Gallery*"
     pub_date: 2023-05-31
-    url: https://italian-paintings-live.netlify.app/
+    url: https://publications.artgallery.yale.edu/italian-paintings/
     customization_level: moderate
     github_user:
       - tiffanysprague
