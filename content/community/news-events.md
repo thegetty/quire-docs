@@ -7,15 +7,18 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-Quire @ [CAA 2025](https://www.collegeart.org/programs/conference/conference2025)
-New York Hilton Midtown  
-February 12-15, 2025
-More information coming soon... 
-
-Quire @ [Code4Lib 2025](https://2025.code4lib.org/)
+**Quire Workshop @ Code4Lib 2025**
 Princeton, NJ
 Thursday, March 13, 2025
-More information coming soon... 
+1:30pm to 4:30pm
+Lewis Science Library
+More information can be found here: <https://2025.code4lib.org/workshops/>
+
+**Quire @ NMPS** 
+Baltimore, MD
+June 29–July 1, 2025
+We will be exhibiting, offering a hands-on workshop, and leading a community-meetup. More information coming soon... 
+Register for NMPS here: <https://graham.uchicago.edu/program/national-museum-publishing-seminar/> 
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
@@ -30,6 +33,10 @@ More information coming soon...
 
 *Visit our [newsletter archive](/community/newsletter-archive/).*
 
+**2025**
+
+- February 13-15: Quire at [College Art Association Conference](https://www.collegeart.org/programs/conference/conference2025) 
+
 **2024**
 
 - November 11: Yale University and the University of Oxford concluded their [fascinating research project](https://linked.art/community/projects/ees2/) that explored ways of starting collection catalogues directly from Linked Open Data
@@ -40,6 +47,7 @@ More information coming soon...
 - July 11: Amon Carter Museum of American Art's Quire publication, [*The Art of the Scene: Charles Truett Williams*](https://art-scene.cartermuseum.org/) received the [Center for the Advancement and Study of Early Texas Art (CASETA)](https://www.caseta.org/index.php)'s annual Exhibition Catalog Award for the most outstanding exhibition catalog on early Texas art 
 - June 4-13: Quire exhibits, sponsors, and presents at  [Library Publishing Forum (LPF)](https://librarypublishing.org/forum/), the [IIIF Annual Conference](https://iiif.io/event/2024/los-angeles/schedule/), and the [AUPresses (AUP) Annual Meeting](https://aupresses.org/programs-events/annual-meeting/aupresses-2024/).
 - March 14: [Object Grids & Filters](https://quire.getty.edu/docs-v1/collection-catalogues/#generate-object-grids) are introduced as a new feature 
+- February 15-17: Quire at [College Art Association Conference](https://caa.confex.com/caa/2024/meetingapp.cgi)  
 
 **2023**
 
@@ -82,6 +90,7 @@ More information coming soon...
 
 | Event | Date | Description |
 | -- | -- | -- |
+| College Art Association Conference (CAA)| February 13-15, 2025 | 30-minute Quire demonstrations at Booth # 222 |  
 | MCN (Museum Computer Network) | October 23, 2024 | "A Quire Case Study: Collaborating with Non-Technical Colleagues," presented by Erin Cecele Dunigan and Ruth Evans Lane | 
 | The University of Kansas | October 22, 2023 | "A Hands-On Quire Workshop |
 | Library Publishing Forum (LPF) | May 15-16, 2024 | "Path, Many Tools: Publishing Getty’s Open Access Journal," presented by Greg Albers |  
