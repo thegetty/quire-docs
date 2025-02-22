@@ -393,7 +393,7 @@ Shortcodes save a lot of time and energy. Rather than repeating lengthy informat
 
 `{% figure 'fig-1' %}`
 
-When you insert the shortcode `{% figure 'fig-1' %}` into a `.md` file, you will automatically the image that has been assigned the `id` `fig-1` appear when you preview that page in your browser. 
+When you insert the shortcode `{% figure 'fig-1' %}` into a `.md` file, you will automatically insert the image that has been assigned the `id` `fig-1` appear when you preview that page in your browser. 
 
 Here is an example of a shortcode being used in the `preface.md` to pull in a figure with the id `fig-1`:
 
