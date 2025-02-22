@@ -936,5 +936,46 @@ project_list:
     customization_level: extensive 
     github_user:
       - daniel-keller
-    note: "In developing “Paintings by the Pissarro Family: A Technical Catalogue”, the focus of the team at Newfields was to build a sustainable publication of technical examination reports. Their previous work with Quire, during the development of “Masterpieces from the Clowes Collection: Paintings”, with its highly modified layouts, styles, and custom data pipelines, allowed for quick iteration and low developer-time investment for this second published work.
-"
+    note: "In developing “Paintings by the Pissarro Family: A Technical Catalogue”, the focus of the team at Newfields was to build a sustainable publication of technical examination reports. Their previous work with Quire, during the development of “Masterpieces from the Clowes Collection: Paintings”, with its highly modified layouts, styles, and custom data pipelines, allowed for quick iteration and low developer-time investment for this second published work."
+
+  - id: "v&a_researchjournal_7"
+    src: /screenshots/_v&a_researchjournal_7.jpg
+    alt: "Issue No.7 Summer 2015, Research Journal, Edited by Angela McShane"
+    type: Journal
+    publisher: "Victoria and Albert Museum"
+    title_info: "*Research Journal: Issue 7 Summer 2015*"
+    pub_date: 2024-10-21
+    url: https://research.vam.ac.uk/journals/research-journal/issue-7/
+    customization_level: full
+    github_user:
+      - vanda 
+      - smithfield-studio
+    note: "This is the first Quire publication from the Victoria and Albert Museum (V&A) and the seventh issue of the *V&A Research Journal*. As a Quire project, Issue No. 7 revises a previously published issue produced with custom code. The V&A ultimately chose Quire because it is open-source and highly customizable. The institution developed an entirely new design and Quire theme for their publication that can potentially serve as a template for further journal issues and research projects."
+
+  - id: "emory_recastingantiquity"
+    src: /screenshots/_emory_recastingantiquity.jpg
+    alt: "Recasting Antiquity: Whistler, Tanagra, and the Female Form, Edited by Linda Merrill and Ruth Allen, with contributions by Beth Cohen"
+    type: Exhibition Catalogue
+    publisher: "Michael C. Carlos Museum, Emory University"
+    title_info: "*Recasting Antiquity: Whistler, Tanagra, and the Female Form*"
+    pub_date: 2024-05-19
+    url: https://carlos.emory.edu/publications/RecastingAntiquity/
+    customization_level: minor
+    github_user:
+      - chrisdaaz
+    note: "This is the second Quire publication from the Michael C. Carlos Museum. The exhibiton catalogue incldues minor customizations."
+
+  - id: "mingei_bluegold"
+    src: /screenshots/_mingei_bluegold.jpg
+    alt: "Blue Gold: The Art and Science of Indigo"
+    type: Exhibition Catalogue
+    publisher: "Mingei International Museum"
+    title_info: "*Blue Gold: The Art and Science of Indigo*"
+    pub_date: 2025-01-03
+    url: https://publications.mingei.org/blue-gold/
+    customization_level: moderate
+    github_user:
+      - Kehrigburgess
+      - daltonrooney
+    note: "Quire was selected for the Mingei International Museum's first widely available digital book publication for two main reasons: it was an opportunity to experiment with an open-source digital publishing platform and the platform already had useable templates that could be customized. The institution took advantage of the tools many built-in, scholarly publishing best practices such as auto-formatted footnotes, endnotes and bibliographies, zooming images, and an object grid. The museum's web developer @daltonrooney imported their Mingei Mono font, customized CSS affecting font sizes and colors, 
+    adjusted padding around images, redesigned the the cover, and tweaked CSS headers on the essay tempaltes. Quire helped the institution fulfill their goal of creating a widely accessible digital book publication that corresponded with an exhibition. They also invested time in learning tbe tool and will consider it for future digital book publications."
