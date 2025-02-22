@@ -5,6 +5,11 @@ type: essay
 online: false
 ---
 
+2025
+
+- [February](https://newsletters.getty.edu/t/t-0CA279D00D9EB4622540EF23F30FEDED) 2025 College Art Association Conference, Reminder: Hands-On Quire Workshop Available, 10-Minute Feedback Survey, Quire + Museum Publishing Digital Interest Group, Victoria and Albert Museum 
+- [January](https://newsletters.getty.edu/t/t-05A1737F2E6B13A42540EF23F30FEDED) Update from Getty, 2025 College Art Association Conference, 10-Minute Survey: Help Us Improve Quire!, Office Hours, Indianapolis Museum of Art 
+
 2024
 
 - [December](https://newsletters.getty.edu/t/t-6E63E3ACE8BEFC1B2540EF23F30FEDED) 2024: A Year in Review, 2024 Highlights, Quire by the Numbers, Looking Forward to 2025, Thank You, Contributors!
