@@ -170,7 +170,7 @@ View the [Hide Title and Subtitle from Cover Page with Custom CSS](/resources/re
 
 ### Add Custom Classes to Pages
 
-You can added classes to `.md` files to change the styling of that page. You can view the predefined classes in the [*Page YAML Classes*](/docs-v1/variables/#page-yaml-classes) section of the [*Default Style Variables and Other Configurations*](/docs-v1/variables/) guide.
+You can add classes to `.md` files to change the styling of that page. You can view the predefined classes in the [*Page YAML Classes*](/docs-v1/variables/#page-yaml-classes) section of the [*Default Style Variables and Other Configurations*](/docs-v1/variables/) guide.
 
 However, you aren't tied to Quire's predefined `classes`. You can also create your own! This is done by writing custom CSS that defines the function of that class and then using the `classes` key in the page YAML to apply it.  
 
