@@ -149,5 +149,6 @@ Thank you to all our growing list of contributors who have made Quire what it is
 
 </div>
 
+*Updated as of December 2025*
 
 Special acknowledgement is due to Eric Gardner ([@egardner](https://github.com/egardner)) who served as Digital Publications Developer at Getty from 2014 to 2018, and who conceived and spearheaded the original development of Quire. Thank you, Eric!
