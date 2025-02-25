@@ -2,8 +2,8 @@
 title: Hands-On Workshop at<br> the Maryland Center for History and Culture
 weight: 2851
 type: page
-menu: true
-online: true
+menu: false
+online: false
 ---
 
 {{< q-figure id="mchc" >}}
@@ -64,11 +64,11 @@ Quire is a free, open-source digital publishing tool developed by Getty to addre
 
 **About the Maryland Center for History and Culture**
 
-The Maryland Center for History and Culture — formerly the Maryland Historical Society — is the oldest continuously operating nonprofit cultural institution in the state. MCHC is a 501(c)3 nonprofit organization that houses a collection of 7 million books, documents, manuscripts, and photographs, and 350,000 objects in its museum and library located in Baltimore.
+[The Maryland Center for History and Culture](https://www.mdhistory.org/about/) — formerly the Maryland Historical Society — is the oldest continuously operating nonprofit cultural institution in the state. MCHC is a 501(c)3 nonprofit organization that houses a collection of 7 million books, documents, manuscripts, and photographs, and 350,000 objects in its museum and library located in Baltimore.
 
 **About the National Museum Publishing Seminar**
 
-The National Museum Publishing Seminar was founded in 1989 to provide resources for and build a community of publishing professionals in museum settings. Supported by the University of Chicago Graham School and planned by museum representatives from across the globe, this conference brings together experts from every aspect of museum publication production, from book proposals to distribution, print and digital. This broad and diverse community is working together to communicate the crucial—and ever-changing—role of the museum today. 
+[The National Museum Publishing Seminar](https://graham.uchicago.edu/program/national-museum-publishing-seminar/) was founded in 1989 to provide resources for and build a community of publishing professionals in museum settings. Supported by the University of Chicago Graham School and planned by museum representatives from across the globe, this conference brings together experts from every aspect of museum publication production, from book proposals to distribution, print and digital. This broad and diverse community is working together to communicate the crucial—and ever-changing—role of the museum today. 
 
 <div class="action-button paired-button">
 
