@@ -15,8 +15,7 @@ online: false
 - [ ] Format figure and table callouts as [hyperlinks](/docs-v1/page-content/#apply-different-types-of-links) using the figure # as the link
 - [ ] If using [internal links](/docs-v1/page-content/#apply-different-types-of-links), format those as hyperlinks using the catalogue section, figure number, object number etc. as the link
 - [ ] Add placeholder [YAML fields](/docs-v1/pages/) to the top of each essay or [object entry page](/docs-v1/collection-catalogues/#create-object-pages)
-- [ ] If using [in-text citations](/docs-v1/citation-bibliographies/#add-in-text-citations) (or pop-up references), wrap the author name and date with double curly brackets in the endnotes (i.e. {{Author XXXX}}). You will later use [Regular Expression (or RegEx)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) to find and replace the curly brackets with the citation shortcode.
-- [ ] Wrap other pop-ups (definitions, objects, etc.) with a symbol other than the double curly bracket so they are easy to find when using RegEx to replace with the appropriate [shortcode](/docs-v1/page-content/#use-shortcodes-to-add-features)
+- [ ] If using [in-text citations](/docs-v1/citation-bibliographies/#add-in-text-citations) (or pop-up references), wrap the author name and date with double dollar signs in the endnotes (i.e. `$$Author XXXX$$`). You will later use [Regular Expression (or RegEx)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) to find and replace the curly brackets with the citation shortcode. (A similar process can be followed for things like pop-up glossary terms or images.)
 - [ ] Create `short_titles` for essay titles longer than 30 characters
 - [ ] Bold any internal notes
 
