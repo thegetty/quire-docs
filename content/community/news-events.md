@@ -7,18 +7,19 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-**Quire Workshop @ Code4Lib 2025**
-Princeton, NJ
-Thursday, March 13, 2025
-1:30pm to 4:30pm
-Lewis Science Library
-More information can be found here: <https://2025.code4lib.org/workshops/>
+**Quire Workshop @ Code4Lib 2025**<br/>
+Princeton, NJ<br/>
+Thursday, March 13, 2025<br/>
+1:30pm to 4:30pm<br/>
+Lewis Science Library<br/>
+[Learn more about the workshop](https://2025.code4lib.org/workshops/)
 
-**Quire @ NMPS** 
-Baltimore, MD
-June 29–July 1, 2025
-We will be exhibiting, offering a hands-on workshop, and leading a community-meetup. More information coming soon... 
-Register for NMPS here: <https://graham.uchicago.edu/program/national-museum-publishing-seminar/> 
+**Quire @ NMPS**<br/> 
+Baltimore, MD<br/>
+June 29–July 1, 2025<br/>
+We will be exhibiting, offering a hands-on workshop, and leading a community-meetup. <br />
+[Learn more/register for the workshop](/community/nmps-mchc-event/) <br/>
+[Register for NMPS](https://graham.uchicago.edu/program/national-museum-publishing-seminar/)
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
