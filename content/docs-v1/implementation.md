@@ -17,7 +17,7 @@ As of 2022, Quire was released as open-source software under a [BSD 3-Clause lic
 
 - Quire is powered by [11ty](https://www.11ty.dev/), a static site generator, and includes programs such as [Vite](https://vitejs.dev/), [Paged.js](https://pagedjs.org/), [CanvasPanel](https://iiif-canvas-panel.netlify.app/about/), and [IIIF](https://iiif.io/).
 
-- Installing Quire also requires installing several third-party applications: [Node.js](https://nodejs.org/en/), [xCode](https://developer.apple.com/xcode) (for Mac users), [GitHub Desktop](https://desktop.github.com/) (optional), and a text editor (such as [Atom](https://atom.io/)).
+- Installing Quire also requires installing several third-party applications: [Node.js](https://nodejs.org/en/), [xCode](https://developer.apple.com/xcode) (for Mac users), [GitHub Desktop](https://desktop.github.com/) (optional), and a text editor (such as [Visual Studio Code](https://code.visualstudio.com/)).
 
 - A standard web server/hosting service is required for publishing your project, but no special server software or setup is required. For site deploy, we recommend using either [Netlify](https://www.netlify.com) or [GitHub Pages](https://pages.github.com/).
 
@@ -31,7 +31,7 @@ As of 2022, Quire was released as open-source software under a [BSD 3-Clause lic
 
 ## Affiliated Costs
 
-- Quire is free to use, however, depending on the nature of the project it can be helpful to hire a developer for general technical support, design customization, and deployment. Please reach out to us (mailto:quire@getty.edu) if you would like freelance developer recommendations.
+- Quire is free to use, however, depending on the nature of the project it can be helpful to hire a digital coordinate to help you set your Quire proejct up or a developer for general technical support, design customization, and deployment. Please reach out to us (mailto:quire@getty.edu) if you would like freelance recommendations.
 
 ## Content Compatibility
 
@@ -39,7 +39,7 @@ As of 2022, Quire was released as open-source software under a [BSD 3-Clause lic
 
 - For those looking to publish more non-textual, image-intensive presentations, like an online exhibition or a fully illustrated children’s book or graphic novel, Quire may not be the right fit.
 
-- Using Quire for journal publishing is also an option, though not yet fully developed. Please see our [Community Showcase](/community/community-showcase) for current examples of journals created using Quire.
+- Using Quire for journal publishing is also an option, though templating has not been fully implemented. Please see our [Community Showcase](/community/community-showcase) for current examples of journals created using Quire.
 
 ## Versioning
 

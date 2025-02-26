@@ -55,6 +55,10 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
 
 ## Install Quire v1 (Windows)
 
+{{< q-class "box warning" >}}
+- At this time, Windows support is not as robust as the support we are able to provide for macOS users. We are working to improve this. If you are well versed in Windows operating systems and would like to provide troubleshooting support for the community, please get in touch with us at [mailto:quire@getty.edu](quire@getty.edu)
+{{< /q-class >}}
+
 1. To use the command-line interface on a PC, right click the Start button and select “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. The only time you need to run PowerShell as an Admin is during install.
 
 2. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install the necessary version control software on your computer.

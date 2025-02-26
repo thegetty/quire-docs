@@ -51,7 +51,9 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 
 *Share your Quire project with other professionals and the public*
 
-* [Museum Publishing Digital Interest Group (MuPuDIG)](https://docs.google.com/forms/d/e/1FAIpQLSeKK2mwSG9fpMgAFoE5qkjKvYUQK7U4596QikNxBB3mE9-ODQ/viewform)
+* [Museum Publishing Digital Interest Group (MuPuDIG)'s Publishing Best Practices](https://digpublishing.github.io/best-practices) *
+
+* [Museum Publishing Digital Interest Group (MuPuDIG)'s Digital Publication Database](https://digpublishing.github.io/digital-publications-database)
 
 * [Quire Community Showcase](https://docs.google.com/forms/d/1R3mOLgsJCw9vx7PQJlVy8w1TRwgxFMWUiOo8TtuSI_A/edit)
 
@@ -61,6 +63,7 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 <div class="image-list">
 
 ### Conferences
+
 *Present your Quire project at conferences*
 
 * [Art Libraries Society of North America (ARLIS/NA)](https://www.arlisna.org/conferences)
@@ -85,6 +88,7 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 <div class="image-list">
 
 ### Awards
+
 *Submit your Quire project for award consideration*
 
 * [American Alliance of Museums (AAM) Media & Technology MUSE Awards](https://www.aam-us.org/programs/awards-competitions/media-technology-muse-awards/)
@@ -111,6 +115,7 @@ abstract:  "Funding, conferences, awards, and more for your Quire project"
 <div class="image-list">
 
 ### Reviews
+
 *Get the word out about your Quire project in journals and other international sources*
 
 * [American Council of Learned Societies (ACLS) Humanities E-Book](https://www.humanitiesebook.org/about)
