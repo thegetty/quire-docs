@@ -79,6 +79,7 @@ Quire is a free, open-source digital publishing tool developed by Getty to addre
 
 </div>
 
+{{< q-figure-group grid="3" id="quirelogo, mchclogo, nmpslogo" class="partner-logos" >}}
 
 <style>
 .headless-table thead {
