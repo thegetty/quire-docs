@@ -102,9 +102,9 @@ Learn about the [key changes](/docs-v1/key-changes) in v1 and view our [3-clause
 
 With Quire officially launched as an open-source tool, the Quire team set off across the country to speak, sponsor, and exhibit at a number of publishing and museum technology conferences including: 
 
-[Association of University Presses (AUP)](https://aupresses.org/), [College Art Association](https://www.collegeart.org/), [IIIF](https://iiif.io/), [Library Publishing Forum (LPF)](https://librarypublishing.org/forum/), [Museum Computer Network (MCN)](https://mcn.edu/), [Museums and the Web](https://mw23.my.mw/), and the [National Museum Publishing Seminar (NMPS)](https://graham.uchicago.edu/program/national-museum-publishing-seminar/)
+[Association of University Presses (AUP)](https://aupresses.org/), [College Art Association (CAA)](https://www.collegeart.org/), [IIIF](https://iiif.io/), [Library Publishing Forum (LPF)](https://librarypublishing.org/forum/), [Museum Computer Network (MCN)](https://mcn.edu/), [Museums and the Web](https://mw23.my.mw/), and the [National Museum Publishing Seminar (NMPS)](https://graham.uchicago.edu/program/national-museum-publishing-seminar/)
 
 ## 2024
 
-The best way to learn how to use Quire is to get hands on with it. For that reason, the Quire team introduced a 4-hour [hands-on workshop](/resources/workshop/). The workshop seeks to break down the various tools, formats, and processes necessary for using Quire into approachable and easy-to-understand concepts. It also offers step-by-step exercises to help prospective users gain confidence in navigating and using the tool.
+The best way to learn how to use Quire is to get hands on experience. For that reason, the Quire team introduces a 4-hour [hands-on workshop](/resources/workshop/). The workshop seeks to break down the various tools, formats, and processes necessary for using Quire into approachable and easy-to-understand concepts. It also offers step-by-step exercises to help prospective users gain confidence in navigating and using the tool.
 
