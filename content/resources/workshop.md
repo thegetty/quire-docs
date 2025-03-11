@@ -7,7 +7,7 @@ abstract: The content of our in-person/virtual workshops
 
 ## About Quire 
 
-Quire is an open-source publishing tool developed by Getty that is used to create long-lasting and discoverable publications. It is not a publishing service or a platform for hosting publications. Instead, Quire provides its users (students, researchers, professors, curators, editors, and more) with the ability to produce multimedia-rich scholarship for the web. The same set of files used to create the website can also be used to create a PDF, e-book, and print book. Quire is an excellent option for long-form book-like projects, especially those that rely on visual illustrations and scholarly elements like citations, bibliographies, and footnotes. Quire is freely available for anyone who wants to use it. You can learn more at <http://quire.getty.edu>. 
+Quire is an open-source publishing tool developed by Getty and used to create long-lasting and discoverable publications. It is not a publishing service or a platform for hosting publications. Instead, Quire provides its users (students, researchers, professors, curators, editors, and more) with the ability to produce multimedia-rich scholarship for the web. The same set of files used to create the website can also be used to create a PDF, e-book, and print book. Quire is an excellent option for long-form book-like projects, especially those that rely on visual illustrations and scholarly elements like citations, bibliographies, and footnotes. Quire is freely available for anyone who wants to use it. You can learn more at <http://quire.getty.edu>. 
 
 ### Examples of Quire Publications 
 
@@ -26,7 +26,7 @@ Quire is an open-source publishing tool developed by Getty that is used to creat
 
 ## About this Workshop 
 
-The workshop seeks to break down the various tools, formats, and processes necessary for using Quire into approachable and easy-to-understand concepts. We will additionally provide attendees with step-by-step exercises to help them gain confidence in navigating and using the tool. We aim for individuals who take this workshop to leave feeling excited to continue experimenting and creating.
+The workshop seeks to break down the various tools, formats, and processes necessary for using Quire into approachable and easy-to-understand concepts. We additionally provide step-by-step exercises to help partcipants gain confidence in navigating and using the tool. We aim for individuals who take this workshop to leave feeling excited and empowered to continue experimenting with Quire on their own.
 
 **Part 1**: Basic Concepts: Command-Line Interface & Text Editor <br>
 **Part 2**: Basic Concepts in Action <br>
@@ -47,7 +47,7 @@ The workshop seeks to break down the various tools, formats, and processes neces
 
 ## Part 1. Basic Concepts
 
-In this section, you will learn about and get hands-on experience with the two main tools that are required to use Quire: the command-line interface (CLI), which is used to navigate your project and tell Quire what processes to run, and the text editor, which is the tool used to organize, write, and edit your project files.  
+In this section, you will learn about and get hands-on experience with the two main tools that are required to use Quire: the command-line interface (CLI), which is used to navigate your project and tell Quire what processes to perform, and the text editor, which is the tool used to organize, write, and edit your project files.  
 
 ### Learning to Love the Command-Line Interface 
 
@@ -61,7 +61,7 @@ This is what the command-line shell looks like when it is first opened on a Mac 
 
 **What are the benefits of using the command-line interface?**
 
-The main benefit of the CLI is efficiency. Instead of spending time finding and clicking on individual files, you can use the CLI to perform actions on several files with simple text commands. Additionally, CLI applications often consume fewer network resources compared to graphical applications. It's worth noting that the CLI is a powerful tool; however, it is used in a very basic, straightforward way when working on Quire projects, so don't be intimidated! 
+The main benefit of the CLI is efficiency. Instead of spending time finding and clicking on *individual* files, you can use the CLI to perform actions on *several* files with simple text commands. Additionally, CLI applications often consume fewer network resources compared to graphical applications. It's worth noting that the CLI is a powerful tool; however, it is used in a very basic, straightforward way when working on Quire projects, so don't be intimidated! 
 
 **Navigating with the CLI**
 
@@ -77,7 +77,7 @@ One of the primary functions of the CLI is to easily navigate files on your comp
 
  1. Press Command-Spacebar to open Spotlight 
  2. Type "Terminal" (Mac's name for the command-line shell) and hit enter
- 3. Type `ls`to list the contents of your computer's home directory
+ 3. Type `ls` to list the contents of your computer's home directory
  4. Open your Finder
  5. Press Command+H (to open your "home directory") and compare the files in that folder with what you see listed in the Terminal
 
@@ -146,7 +146,7 @@ The fact that Markdown is a human-readable format makes it very easy to edit and
 1. Open Visual Studio Code
 2. Go to File and select "New File"
 3. Title the file anything you like and save it anywhere on your comptuer
-4. In the file, type " - Hi my name is [your name]" 
+4. In the file, type "- Hi my name is [your name]" 
 5. Type "- Hi my name is [your name]" a second time and this time put two asterisks on either side of `**your name**`
 6. Press Command+Shift+V to preview the HTML version 
 7. Press Command+\ to create a split screen and drag one tab over to the right side to view a side-by-side comparison
@@ -174,7 +174,7 @@ Now that you understand two of the most fundamental tools needed to use Quire, i
 
 ### Use the CLI to Start and Preview a New Quire Project 
 
-In addition to using the CLI to navigate Quire, as we explored earlier, it can also be used to tell Quire what to do, including creating a new project, previewing a project, or outputting a website, PDF, and e-book. In the steps below, we will use the CLI to create a new project, navigate into that project's folder, and preview it. 
+In addition to using the CLI to navigate Quire, as we explored earlier, it can also be used to tell Quire what to do, including creating a new project, previewing a project, or outputting a website, PDF, and e-book. In the steps below, we will use the CLI to create a new project, navigate our computer's files into that new project folder, and then preview it. 
 
 *The command `quire new` generates a default starter project. It is a sample publication meant to serve as a jumping off point. It serves as a useful template with images and text that can be deleted or substituted when creating your own project.* 
 
@@ -189,7 +189,7 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 3. Type `ls` to see the contents of your home directory again. This time you will notice a new folder called `my-project`
 4. Type `cd my-project` in your Terminal/Powershell to navigate from your home directory into your new project
 5. Type `ls` to browse the project files that were installed with the command `quire new`
-6. When you are ready, make sure you are in the `my-project` folder and type `quire preview` to generate a preview website. Ignore the output in the Terminal/Powershell. Your project is ready to preview when you see <http://localhost:8080/>. 
+6. When you are ready, make sure you are still in the `my-project` folder and type `quire preview` to generate a preview website. Ignore the output in the Terminal/Powershell. Your project is ready to preview when you see <http://localhost:8080/>. 
 7. Cut-and-paste the URL into your browser. Ta-da! Your new project is up-and-running! 
 
 </div>
@@ -272,7 +272,7 @@ YAML provides a way of capturing information that appears in multiple places thr
 
 ### Page YAML 
 
-Every page of content in your Quire publication must start with a block of YAML. You can identify the YAML because it appears between a set of three dashes at the top of each `.md` file. The three YAML keys that must appear on every page are: `title`, `layout`, and `order`. 
+*Every page* of content in your Quire publication must start with a block of YAML. You can identify the YAML because it appears between a set of three dashes at the top of each `.md` file. The three YAML keys that must appear on every page are: `title`, `layout`, and `order`. 
 
 ```YAML
 ---
@@ -294,7 +294,9 @@ image: figures/lange-house.jpg
 ---
 ```
 
-The `title` is the title of the essay, the `layout` affects the format of the page, and `order` affects the page order of the publication. Let's rename the "Introduction". 
+The `title` is the title of the essay, the `layout` affects the format of the page, and `order` affects the page order of the publication. You can learn more about the different layout types in our documentation: https://quire.getty.edu/docs-v1/pages/#define-page-types. 
+
+As our next step, let's rename the "Introduction". 
 
 <div class="try-it-yourself">
 
@@ -372,7 +374,7 @@ Images can be easily added and subtracted from your Quire project. When adding n
 1. Take some time to find an image that has a horizontal orientation
 2. Save it to the `_assets/images/` folder (must be all lowercase and use dashes instead of spaces)
 3. In Visual Studio Code, navigate to the `index.md` file (this is the cover page for your project)
-4. In the page YAML, find the `image:` field, delete `spiral-overlay.png`, and add the name of your image file in its place
+4. In the page YAML, find the `image:` field, delete `spiral-overlay.png`, and add the name of your image file (ending in either .jpg or .png) in its place
 5. Go to your browser and navigate to the cover page of your project. Note that in addition to the title changing, the cover image has changed too!
 
 </div>
@@ -393,7 +395,7 @@ Shortcodes save a lot of time and energy. Rather than repeating lengthy informat
 
 `{% figure 'fig-1' %}`
 
-When you insert the shortcode `{% figure 'fig-1' %}` into a `.md` file, you will automatically insert the image that has been assigned the `id` `fig-1` appear when you preview that page in your browser. 
+When you insert the shortcode `{% figure 'fig-1' %}` into a `.md` file, you will automatically insert the image that has been assigned the `id` `fig-1` into the body of the text in the exact spot where the shortcode is placed. 
 
 Here is an example of a shortcode being used in the `preface.md` to pull in a figure with the id `fig-1`:
 
@@ -447,10 +449,10 @@ Inserting a new image is a three-step process. First, save the image in the `_as
 #### Try it Yourself 
 
 
-1. Find any image you want and save it in the `_assets/images/figures/` folder (the file name must be all lowercase and use dashes instead of spaces)
+1. Find any image you want and save it in the `_assets/images/` folder (the file name must be all lowercase and use dashes instead of spaces)
 2. Go to the `figures.yaml` file and create a new entry. A new entry leads off with a dash. Make sure that all text indentations are aligned with the other entries or your will receive an error when you try to preview.
 3. Create an `id` for that image (must be all lowercase and use dashes instead of spaces and also must start with a letter) and write whatever you want for the label, caption, and credit
-4. The `src` will be `figures/` plus the image file name
+4. The `src` will be the image file name (ending in .jpeg or .png)
 5. Now go back to the `essay.md` file, and change the `id` in the shortcode `{% figure 'fig-2' 'is-pulled-right' %}` to the `id` you just created
 6. In your CLI, press Control-C to stop the preview
 7. Type the command `quire preview` to restart the preview
@@ -504,7 +506,7 @@ In addition to adding the reference information as a pop-up citation, it will al
 
 **Go Deeper**
 
-1. Back in the `references.yaml` file, create a new entry and assign an `id` written in Author Date format (for example: "Evans 1938")
+1. Back in the `references.yaml` file, create a new entry inclduing the `full` version of the citation, and assign an `id` written in Author Date format (for example: "Evans 1938")
 2. Navigate to the `essay.md` file and choose a place where you want to insert the pop-up citation
 3. Add the citation using the shortcode: `{% cite 'id' %}`, replacing `id` with the one you just created in the `references.yaml`
 4. Stop and restart your preview
@@ -573,8 +575,8 @@ You can continue reinforcing the concepts above by creating a new page in your Q
 1. In Visual Studio Code, create a new `.md` file by right clicking the `content` folder and choosing "New File". The file name should be all lowercase with dashes instead of spaces and should end in `.md`.
 2. Add page YAML block to the top of the page, including `title`, `layout`, and `order`.You cannot repeat an `order` number that has already been used in another `.md` file. Don't forget to include three dashes both above and below the YAML block. 
 3. Add content below the YAML block written in Markdown
-4. Add a new image to the project in the `_assets/images/figures` folder
-5. Add a `figures.yaml` entry for that image. Start with a dash and make sure the indents are aligned with the entries above it. Include an `id`, `caption`, `credit`, `label`, and include the image path for the `src`.
+4. Add a new image to the project in the `_assets/images/` folder
+5. Add a `figures.yaml` entry for that image. Start with a dash and make sure the indents are aligned with the entries above it. Include an `id`, `caption`, `credit`, `label`, and include the image file name for `src`.
 6. Use the `{% figure %}` shortcode to insert that image into the `.md` file you just created by including the `id` you assigned it in the `figures.yaml` file
 7. Add a new entry in the `references.yaml` file. Include both an `id` (written in Author Date format) and a value for `full`
 8. Use the `{% cite %}` shortcode to insert the pop-up citation into the `.md` file by including the `id` you assigned it in the `references.yaml` file
