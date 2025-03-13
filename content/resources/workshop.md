@@ -174,7 +174,7 @@ Now that you understand two of the most fundamental tools needed to use Quire, i
 
 ### Use the CLI to Start and Preview a New Quire Project 
 
-In addition to using the CLI to navigate Quire, as we explored earlier, it can also be used to tell Quire what to do, including creating a new project, previewing a project, or outputting a website, PDF, and e-book. In the steps below, we will use the CLI to create a new project, navigate our computer's files into that new project folder, and then preview it. 
+In addition to using the CLI to navigate Quire, as we explored earlier, it can also be used to tell Quire what to do, including creating a new project, previewing a project, or outputting a website, PDF, and e-book. In the steps below, we will use the CLI to create a new project with the command `quire new`, navigate our computer's files into that new project folder, and then preview it. 
 
 ![Quire Starter Project](/img/screenshots/quire-starter.jpg)
 
@@ -365,7 +365,7 @@ The images that comprise your Quire project live in the `_assets` folder in a su
 
 ### Adding new images to your project 
 
-Images can be easily added and subtracted from your Quire project. When adding new images they should be placed in the `_assets/images/` folder. Once the images have been saved, there are a few ways to add them to the pages of your Quire project. The first is by incluing `image:` and the title of your image file in the page YAML. 
+Images can be easily added and subtracted from your Quire project. When adding new images they should be placed in the `_assets/images/` folder. Once the images have been saved, there are a few ways to add them to the pages of your Quire project. The first is by including `image:` and the title of your image file (ending in .jpg or .png) in the page YAML. 
 
 For example: 
 
@@ -402,7 +402,7 @@ A shortcode is a simple snippet of code inserted in a `.md` file that pulls in i
 
 **What are the benefits of using shortcodes?**
 
-Shortcodes save a lot of time and energy. Rather than repeating lengthy information in multiple places throughout your project, you can use a shortcode as a shortcut. A shortcode usually references an `id`. For example, the shortcode below is referencing a figure image that has been assigned the id `fig-1` in the `_data/figures.yaml` file (which we will look more closely at soon).
+Shortcodes save a lot of time and energy. Rather than repeating lengthy information in multiple places throughout your project, you can use a shortcode as a shortcut. A shortcode usually references an `id`. For example, the shortcode below is referencing a figure image that has been assigned the id `fig-1` in the `_data/figures.yaml` file (which we will explore more closely in a minute):
 
 `{% figure 'fig-1' %}`
 
@@ -425,17 +425,19 @@ Here is an example of a shortcode being used in the `preface.md`:
 
 ### `figures.yaml`
 
-Each image is assigned its own `id` in the `figures.yaml` file which is found in the `_data` folder. In addition to the image path, the `id` is also associated with the caption, credit, label, alt text, etc of an image.  As mentioned earlier, the beauty of YAML is that you store information in one place and can reference it in multiple locations throughout your publication.  For example, if you edit a image's caption, rather than changing it everywhere the image appears in your publication, you only need to update it in the `figures.yaml` file and it will automatically update everywhere the `id` is used in a shortcode. 
+Each image is assigned its own `id` in the `figures.yaml` file which is found in the `_data` folder. In addition to the image file, the `id` is also associated with the caption, credit, label, alt text, etc of an image.  As mentioned earlier, the beauty of YAML is that you store information in one place and can reference it in multiple locations throughout your publication.  For example, if you edit a image's caption, rather than changing it everywhere the image appears in your publication, you only need to update it in the `figures.yaml` file and it will automatically update everywhere the `id` is used in a shortcode. 
 
 Here is an example of a `figures.yaml` entry:
 
+```YAML
 - id: "fig-2"
   label: "Figure 2"
   src: figures/evans-sons.jpg
   caption: "Walker Evans. *Sons of the American Legion, Bethlehem, Pennsylvania*, 1935."
   credit: "The J. Paul Getty Museum, Los Angeles"
+```
 
-The `src` is the path for where the image is stored in the Quire project. In this case, the image `evans-sons.jpg` lives in a folder called `figures`. This is a subfolder inside the `images` folder. You can use subfolders to help organize your images; just be sure to include both the folder and subfolder name in the `src` path. 
+The `src` represents both the image file name and the path for where the image is stored in your project. In this case, the image `evans-sons.jpg` lives in a subfolder called `figures` in the main `images` folder. You can use subfolders to help organize your images; just be sure to include the subfolder name followed by a / in the `src` field. If you are not using subfolders then the `src` will just be the image file name (ending in .jpg or .png).
 
 <div class="try-it-yourself">
 
@@ -462,8 +464,8 @@ Inserting a new image is a three-step process. First, save the image in the `_as
 
 1. Find any image you want and save it in the `_assets/images/` folder (the file name must be all lowercase and use dashes instead of spaces)
 2. Go to the `figures.yaml` file and create a new entry. A new entry leads off with a dash. Make sure that all text indentations are aligned with the other entries or your will receive an error when you try to preview.
-3. Create an `id` for that image (must be all lowercase and use dashes instead of spaces and also must start with a letter) and write whatever you want for the label, caption, and credit
-4. The `src` will be the image file name (ending in .jpeg or .png)
+3. Create an `id` for that image. It must be all lowercase, use dashes instead of spaces, and must start with a letter (for example, `fig-15`.) Then write whatever you want for the label, caption, and credit
+4. The `src` will be the image file name (ending in .jpg or .png)
 5. Now go back to the `essay.md` file, and change the `id` in the shortcode `{% figure 'fig-2' 'is-pulled-right' %}` to the `id` you just created
 6. In your CLI, press Control-C to stop the preview
 7. Type the command `quire preview` to restart the preview
@@ -473,7 +475,7 @@ Inserting a new image is a three-step process. First, save the image in the `_as
 
 ## Part 6. Going Deeper: References 
 
-YAML can also be useful when it comes to creating a bibliography or adding pop-up citations to your project. All bibliographic information for your publication is stored in the `references.yaml` file located in the `_data/` folder. 
+YAML can also be useful when it comes to creating a bibliography or adding pop-up citations to your project. All bibliographic information for your publication is stored in the `references.yaml` file, which is also located in the `_data/` folder. 
 
 Each entry in the `references.yaml` file must include the `full` form of the bibliographic reference and an `id`.  
 
@@ -482,7 +484,7 @@ Each entry in the `references.yaml` file must include the `full` form of the bib
     full: "Evans, Walker. *American Photographs*. New York: Museum of Modern Art, 1938."
 ```
 
-As in the example above, the `id` would typically be the short form of the reference in an "Author Date" format. Note that unlike the `figures.yaml` file, the `id` used for references can have spaces. The way the `id` is written is how it will appear in both the bibliography and clickable text for the pop-up citation. 
+As in the example above, the `id` would typically be the short form of the reference in an "Author Date" format. Note that unlike the `figures.yaml` file, the `id` used for references can have spaces and capital letters. The way the `id` is written is how it will appear in both the bibliography and clickable text for the pop-up citation. 
 
 ### Creating a Bibliography
 
@@ -584,12 +586,12 @@ You can continue reinforcing the concepts above by creating a new page in your Q
 #### Try it Yourself
 
 1. In Visual Studio Code, create a new `.md` file by right clicking the `content` folder and choosing "New File". The file name should be all lowercase with dashes instead of spaces and should end in `.md`.
-2. Add page YAML block to the top of the page, including `title`, `layout`, and `order`.You cannot repeat an `order` number that has already been used in another `.md` file. Don't forget to include three dashes both above and below the YAML block. 
+2. Add a YAML block to the top of the page, including `title`, `layout`, and `order`. *You cannot repeat an `order` number that has already been used in another `.md` file*. Don't forget to include three dashes both above and below the YAML block. 
 3. Add content below the YAML block written in Markdown
 4. Add a new image to the project in the `_assets/images/` folder
 5. Add a `figures.yaml` entry for that image. Start with a dash and make sure the indents are aligned with the entries above it. Include an `id`, `caption`, `credit`, `label`, and include the image file name for `src`.
 6. Use the `{% figure %}` shortcode to insert that image into the `.md` file you just created by including the `id` you assigned it in the `figures.yaml` file
-7. Add a new entry in the `references.yaml` file. Include both an `id` (written in Author Date format) and a value for `full`
+7. Add a new entry in the `references.yaml` file. Include both an `id` (written in "Author Date" format) and a value for `full`
 8. Use the `{% cite %}` shortcode to insert the pop-up citation into the `.md` file by including the `id` you assigned it in the `references.yaml` file
 9. In your CLI, press Control-C to stop the preview
 10. Type the command `quire preview` to restart the preview
