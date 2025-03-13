@@ -425,7 +425,7 @@ Here is an example of a shortcode being used in the `preface.md`:
 
 ### `figures.yaml`
 
-Each image is assigned its own `id` in the `figures.yaml` file which is found in the `_data` folder. In addition to the image file, the `id` is also associated with the caption, credit, label, alt text, etc of an image.  As mentioned earlier, the beauty of YAML is that you store information in one place and can reference it in multiple locations throughout your publication.  For example, if you edit a image's caption, rather than changing it everywhere the image appears in your publication, you only need to update it in the `figures.yaml` file and it will automatically update everywhere the `id` is used in a shortcode. 
+Each image is assigned its own `id` in the `figures.yaml` file which is found in the `_data` folder. In addition to the image file, the `id` is also associated with the caption, credit, label, alt text, etc of an image.  As mentioned earlier, the beauty of YAML is that you store information in one place and can reference it in multiple locations throughout your publication.  For example, if you edit an image's caption, rather than changing it everywhere the image appears in your publication, you only need to update it in the `figures.yaml` file and it will automatically update everywhere the `id` is used in a shortcode. 
 
 Here is an example of a `figures.yaml` entry:
 
