@@ -176,9 +176,9 @@ Now that you understand two of the most fundamental tools needed to use Quire, i
 
 In addition to using the CLI to navigate Quire, as we explored earlier, it can also be used to tell Quire what to do, including creating a new project, previewing a project, or outputting a website, PDF, and e-book. In the steps below, we will use the CLI to create a new project, navigate our computer's files into that new project folder, and then preview it. 
 
-*The command `quire new` generates a default starter project. It is a sample publication meant to serve as a jumping off point. It serves as a useful template with images and text that can be deleted or substituted when creating your own project.* 
-
 ![Quire Starter Project](/img/screenshots/quire-starter.jpg)
+
+*The command `quire new` generates a default starter project. It is a sample publication meant to serve as a jumping off point. It serves as a useful template with images and text that can be deleted or substituted when creating your own project.* 
 
 <div class="try-it-yourself">
 
@@ -365,7 +365,18 @@ The images that comprise your Quire project live in the `_assets` folder in a su
 
 ### Adding new images to your project 
 
-Images can be easily added and subtracted from your Quire project. When adding new images they should be placed in the `_assets/images/` folder. Once the images have been saved, there are a few ways to add them to the pages of your Quire project. The first is by incluing `image:` and the title of your image file in the page YAML.  
+Images can be easily added and subtracted from your Quire project. When adding new images they should be placed in the `_assets/images/` folder. Once the images have been saved, there are a few ways to add them to the pages of your Quire project. The first is by incluing `image:` and the title of your image file in the page YAML. 
+
+For example: 
+
+```YAML
+---
+title: Cover
+layout: cover
+order: 1
+image: spiral-overlay.png
+---
+```
 
 <div class="try-it-yourself">
 
@@ -387,17 +398,17 @@ The second way to include images in your Quire project is by using shortcodes.
 
 **What are shortcodes?**
 
-A shortcode is a simple snippet of code inserted in a `.md` file that pulls in information from other files in your project. In Quire, shortcodes are used to insert figure images, citations, glossary terms, and more. 
+A shortcode is a simple snippet of code inserted in a `.md` file that pulls in information from the `_data` files in your project. In Quire, shortcodes are used to insert figure images, citations, glossary terms, and more. 
 
 **What are the benefits of using shortcodes?**
 
-Shortcodes save a lot of time and energy. Rather than repeating lengthy information in multiple places throughout your project, you can use a shortcode as a shortcut. A shortcode usually references an `id`. For example, the shortcode below is referencing a figure image that has been assigned the id `fig-1`.
+Shortcodes save a lot of time and energy. Rather than repeating lengthy information in multiple places throughout your project, you can use a shortcode as a shortcut. A shortcode usually references an `id`. For example, the shortcode below is referencing a figure image that has been assigned the id `fig-1` in the `_data/figures.yaml` file (which we will look more closely at soon).
 
 `{% figure 'fig-1' %}`
 
-When you insert the shortcode `{% figure 'fig-1' %}` into a `.md` file, you will automatically insert the image that has been assigned the `id` `fig-1` into the body of the text in the exact spot where the shortcode is placed. 
+When you insert the shortcode `{% figure 'fig-1' %}` into a `.md` file, you will automatically insert the image that has been assigned the id `fig-1` into the body of the text in the exact spot where the shortcode is placed. 
 
-Here is an example of a shortcode being used in the `preface.md` to pull in a figure with the id `fig-1`:
+Here is an example of a shortcode being used in the `preface.md`:
 
 ![Example demonstrating how to insert and image with a shortcode](/img/screenshots/quire-starter-content-change-2.jpg)
 
@@ -414,7 +425,7 @@ Here is an example of a shortcode being used in the `preface.md` to pull in a fi
 
 ### `figures.yaml`
 
-The `id` is assigned in the `figures.yaml` file. In the `figures.yaml` file you store the path to the image file as well as the caption, credit, label, alt text, etc. Each image and its related data is assigned an `id`. As we mentioned before, the beauty of YAML is that you store information in one place and can reference it in multiple locations throughout your publication using the `id`. This also means that if you edit a image's caption, rather than changing it everywhere the image appears in your publication, you only need to update it in the `figures.yaml` file and it will automatically update everywhere the `id` is used in a shortcode. 
+Each image is assigned its own `id` in the `figures.yaml` file which is found in the `_data` folder. In addition to the image path, the `id` is also associated with the caption, credit, label, alt text, etc of an image.  As mentioned earlier, the beauty of YAML is that you store information in one place and can reference it in multiple locations throughout your publication.  For example, if you edit a image's caption, rather than changing it everywhere the image appears in your publication, you only need to update it in the `figures.yaml` file and it will automatically update everywhere the `id` is used in a shortcode. 
 
 Here is an example of a `figures.yaml` entry:
 
@@ -471,7 +482,7 @@ Each entry in the `references.yaml` file must include the `full` form of the bib
     full: "Evans, Walker. *American Photographs*. New York: Museum of Modern Art, 1938."
 ```
 
-As in the example above, the `id` would typically be the short form of the reference in Author Date format. Note that unlike the `figures.yaml` file, the `id` used for references can have spaces. The way the `id` is written is how it will appear in both the bibliography and clickable text for the pop-up citation. 
+As in the example above, the `id` would typically be the short form of the reference in an "Author Date" format. Note that unlike the `figures.yaml` file, the `id` used for references can have spaces. The way the `id` is written is how it will appear in both the bibliography and clickable text for the pop-up citation. 
 
 ### Creating a Bibliography
 
@@ -506,7 +517,7 @@ In addition to adding the reference information as a pop-up citation, it will al
 
 **Go Deeper**
 
-1. Back in the `references.yaml` file, create a new entry inclduing the `full` version of the citation, and assign an `id` written in Author Date format (for example: "Evans 1938")
+1. Back in the `references.yaml` file, create a new entry inclduing the `full` version of the citation, and assign an `id` written in "Author Date" format (for example: "Evans 1938")
 2. Navigate to the `essay.md` file and choose a place where you want to insert the pop-up citation
 3. Add the citation using the shortcode: `{% cite 'id' %}`, replacing `id` with the one you just created in the `references.yaml`
 4. Stop and restart your preview
