@@ -145,7 +145,7 @@ The fact that Markdown is a human-readable format makes it very easy to edit and
 
 1. Open Visual Studio Code
 2. Go to File and select "New File"
-3. Title the file anything you like and save it anywhere on your comptuer
+3. Title the file `test.md` and save it to your Desktop
 4. In the file, type "- Hi my name is [your name]" 
 5. Type "- Hi my name is [your name]" a second time and this time put two asterisks on either side of `**your name**`
 6. Press Command+Shift+V to preview the HTML version 
