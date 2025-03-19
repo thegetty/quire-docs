@@ -56,11 +56,11 @@ The latter half of the day will see the concepts covered in Part 1 implemented. 
 
 *Participants must bring their own laptop and complete the necessary setup requirements (which include installing Quire and downloading other free software) before the workshop. Details will be provided the week before the event. Questions can be sent to [quire@getty.edu](mailto:quire@getty.edu).*
 
+<div class="mcn-event-listing">
+
 **About Quire** 
 
 Quire is a free, open-source digital publishing tool developed by Getty to address challenges around the discoverability, longevity, and sustainability of online scholarly publications. Quire’s strength lies in transforming a single set of files into a dynamic and fully-featured website, downloadable PDF, e-book, and print-on-demand book. Quire excels at long-form, visually-rich publishing and is designed to be flexible and deeply customizable. A growing international community of academics, and arts and cultural heritage professionals are utilizing Quire to create everything from collection and exhibition catalogues to conference proceedings, journals, student research projects, and more. View them on the Quire [community showcase](/community/community-showcase). 
-
-<div class="mcn-event-listing">
 
 **About the Maryland Center for History and Culture**
 
@@ -79,6 +79,7 @@ Quire is a free, open-source digital publishing tool developed by Getty to addre
 
 </div>
 
+{{< q-figure-group grid="3" id="quirelogo, mchclogo, nmpslogo" class="partner-logos" >}}
 
 <style>
 .headless-table thead {
