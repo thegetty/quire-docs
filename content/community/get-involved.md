@@ -108,7 +108,7 @@ The [Quire Documentation](/docs-v1/) is a perpetual work in progress. Dive in an
 
 ## Write a Recipe
 
-Share instructions on how to create popular customization in Quire. These recipes are included in the [Resources](/resources/reipes/) section of our website.
+Share instructions on how to create popular customization in Quire. These recipes are included in the [Resources](/resources/recipes/) section of our website.
 
 <div class="action-button">
 
