@@ -8,7 +8,7 @@ online: false
 
 {{< q-figure id="mchc" >}}
 
-This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edu), an open-source publishing tool developed by [Getty](https://www.getty.edu/) and available for anyone to use for free. Held in conjunction with the biannual [National Museum Publishing Seminar](https://graham.uchicago.edu/program/national-museum-publishing-seminar/) and in partnership with the [Maryland Center for History and Culture](https://www.mdhistory.org/), this workshop is free and open to all levels of technical experience. Attendance is limited to 25 participants.
+This hands-on workshop will serve as an introduction to [Quire](https://quire.getty.edu), an open-source publishing tool developed by [Getty](https://www.getty.edu/) and available for anyone to use for free. Held in conjunction with the biannual [National Museum Publishing Seminar](https://graham.uchicago.edu/program/national-museum-publishing-seminar/) and in partnership with the [Maryland Center for History and Culture](https://www.mdhistory.org/), this workshop is free and open to all levels of technical experience. Attendance is limited to 10 participants.
 
 <div class="action-button paired-button">
 
@@ -46,7 +46,7 @@ Baltimore , MD 21201<br />
 
 **1:00–2:00 p.m.** 
 
-**Erin Cecele Dunigan**, Quire Community Manager, and **Greg Albers**, Digital Publications Manager at Getty, will kick off the four-hour workshop by briefly introducing Quire and its many benefits. Part 1 will focus on introducing attendees to the basic concepts of how the tool functions, including learning to operate the command line and using a text editor to store content in Markdown.
+**Erin Cecele Dunigan**, Quire Community Manager, and **Greg Albers**, Digital Publications Manager at Getty, will kick off the three-hour workshop by briefly introducing Quire and its many benefits. Part 1 will focus on introducing attendees to the basic concepts of how the tool functions, including learning to operate the command line and using a text editor to store content in Markdown.
 
 ### Part 2: Basic Concepts in Action + Opportunities to Go Deeper
 
@@ -60,7 +60,7 @@ The latter half of the day will see the concepts covered in Part 1 implemented. 
 
 **About Quire** 
 
-Quire is a free, open-source digital publishing tool developed by Getty to address challenges around the discoverability, longevity, and sustainability of online scholarly publications. Quire’s strength lies in transforming a single set of files into a dynamic and fully-featured website, downloadable PDF, e-book, and print-on-demand book. Quire excels at long-form, visually-rich publishing and is designed to be flexible and deeply customizable. A growing international community of academics, and arts and cultural heritage professionals are utilizing Quire to create everything from collection and exhibition catalogues to conference proceedings, journals, student research projects, and more. View them on the Quire [community showcase](/community/community-showcase). 
+Quire is a free, open-source digital publishing tool developed by Getty to address challenges around the discoverability, longevity, and sustainability of online scholarly publications. Quire’s strength lies in transforming a single set of files into a dynamic and fully-featured website, downloadable PDF, e-book, and print-on-demand book. Quire excels at long-form, visually-rich publishing and is designed to be flexible and deeply customizable. A growing international community of academics and arts and cultural heritage professionals are utilizing Quire to create everything from collection and exhibition catalogues to conference proceedings, journals, student research projects, and more. View them on the Quire [community showcase](/community/community-showcase). 
 
 **About the Maryland Center for History and Culture**
 
