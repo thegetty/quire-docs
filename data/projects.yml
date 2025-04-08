@@ -978,3 +978,16 @@ project_list:
       - Kehrigburgess
       - daltonrooney
     note: "Mingei International Museum selected Quire for the institution's first widely available digital book for two main reasons: it was an opportunity to experiment with an open-source digital publishing platform, and the platform already had customizable templates. Mingei took advantage of the tool's built-in scholarly publishing best practices, such as auto-formatted footnotes, endnotes, and bibliographies, zooming images, and an object grid. The museum's web developer @daltonrooney  imported their Mingei Mono font, customized CSS affecting font sizes and colors, adjusted padding around images, redesigned the cover, and tweaked CSS headers on the essay templates. Quire ultimately helped the institution fulfill their goal of creating a widely accessible digital exhibition catalogue while simultaneously enabling them to develop new skills that the staff can apply to future digital publications."
+
+  - id: "terrain_leventhal"
+    src: /screenshots/_terrain_leventhal.jpg
+    alt: "Terrains of Independence"
+    type: Online Exhibition
+    publisher: "Leventhal Map & Education Center at the Boston Public Library"
+    title_info: "*Terrains of Independence*"
+    pub_date: 2025-04-03
+    url: https://www.leventhalmap.org/digital-exhibitions/terrains-of-independence/
+    customization_level: moderate
+    github_user:
+      - garrettdashnelson
+    note: "This is the fourth use of Quire by the Leventhal Center to create a digital companion for our gallery exhibitions. Quire continues to be a great solution for the institutions digital exhibition needs."

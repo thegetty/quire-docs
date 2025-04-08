@@ -7,6 +7,7 @@ online: false
 
 2025
 
+- [March](https://newsletters.getty.edu/t/t-6B0B5149634807C32540EF23F30FEDED) Quire Workshop at Princeton University, Getty's Newest Quire Publication: *Guidelines for the Technical Examination of Bronze Sculpture*, Community Shoutouts, 10-Minute Feedback Survey, Mingei International Museum 
 - [February](https://newsletters.getty.edu/t/t-0CA279D00D9EB4622540EF23F30FEDED) 2025 College Art Association Conference, Reminder: Hands-On Quire Workshop Available, 10-Minute Feedback Survey, Quire + Museum Publishing Digital Interest Group, Victoria and Albert Museum 
 - [January](https://newsletters.getty.edu/t/t-05A1737F2E6B13A42540EF23F30FEDED) Update from Getty, 2025 College Art Association Conference, 10-Minute Survey: Help Us Improve Quire!, Office Hours, Indianapolis Museum of Art 
 

@@ -107,7 +107,9 @@ entryPage:
 
 ### Thumbnail  
 
-If you are using [Deep Zoom with IIIF](/docs-v1/zooming-images/) and the **first** figure listed in the `objects.yaml` entry (for example, `fig-1-1`) is set to `zoom: true` in the corresponding `figures.yaml` entry, Quire will automatically create a thumbnail image for use in an object grid. Otherwise, you can add your own small thumbnail image by using the `thumbnail` attribute and including a path to that image as the value.  The image should be small, approximately 300 pixels wide. When using the `thumbnail` attribute you must still include the figure `id`(s) in the `object_list`. 
+If you are using [Deep Zoom with IIIF](/docs-v1/zooming-images/) and the **first** figure listed in the `objects.yaml` entry (for example, `fig-1-1`) is set to `zoom: true` in the corresponding `figures.yaml` entry, Quire will automatically create a thumbnail image for use in an object grid. 
+
+Otherwise, you can add your own small thumbnail image by using the `thumbnail` attribute and including a path to that image as the value.  The image should be small, approximately 300 pixels wide. When using the `thumbnail` attribute you must still include the figure `id`(s) in the `object_list`. 
 
 ```yaml
 object_list:
@@ -125,6 +127,10 @@ object_list:
       - id: fig-1-2
       - id: fig-1-3
 ```
+
+{{< q-class "box tip" >}}
+- If you are using external IIIF images you will also need to add the thumbnail manually. Quire will not automatically generate a thumbnail for external IIIF images. 
+{{< /q-class >}}
 
 ## Create Object Pages
 

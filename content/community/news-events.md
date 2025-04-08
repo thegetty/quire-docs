@@ -7,19 +7,20 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-**Quire Workshop @ Code4Lib 2025**<br/>
-Princeton, NJ<br/>
-Thursday, March 13, 2025<br/>
-1:30pm to 4:30pm<br/>
-Lewis Science Library<br/>
-[Learn more about the workshop](https://2025.code4lib.org/workshops/)
-
 **Quire @ NMPS**<br/> 
 Baltimore, MD<br/>
-June 29–July 1, 2025<br/>
-We will be exhibiting, offering a hands-on workshop, and leading a community-meetup. <br />
+
+June 29, 1-4 PM<br/>
+Quire Hands-On Workshop<br/>
+Maryland Center for History and Culture<br/>
 [Learn more/register for the workshop](/community/nmps-mchc-event/) <br/>
+
+June 29–July 1, 2025<br/>
+Baltimore Marriott Waterfront<br/>
+We will be exhibiting at NMPS and leading a community-meetup. <br />
 [Register for NMPS](https://graham.uchicago.edu/program/national-museum-publishing-seminar/)
+
+
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
@@ -37,6 +38,7 @@ We will be exhibiting, offering a hands-on workshop, and leading a community-mee
 **2025**
 
 - February 13-15: Quire at [College Art Association Conference](https://www.collegeart.org/programs/conference/conference2025) 
+- March 13: Hands-on Quire workshop at [Code4Lib 2025](https://2025.code4lib.org/) in at Princeton University. 
 
 **2024**
 
@@ -91,6 +93,7 @@ We will be exhibiting, offering a hands-on workshop, and leading a community-mee
 
 | Event | Date | Description |
 | -- | -- | -- |
+| Code4Lib 2025 | March 13, 2025 | 3-hour hands-on Quire workshop at Princeton University | 
 | College Art Association Conference (CAA)| February 13-15, 2025 | 30-minute Quire demonstrations at Booth # 222 |  
 | MCN (Museum Computer Network) | October 23, 2024 | "A Quire Case Study: Collaborating with Non-Technical Colleagues," presented by Erin Cecele Dunigan and Ruth Evans Lane | 
 | The University of Kansas | October 22, 2023 | "A Hands-On Quire Workshop |

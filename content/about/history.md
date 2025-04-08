@@ -34,9 +34,9 @@ Getty Publications hires its first Digital Publications Developer, [Eric Gardner
 
 Getty publishes its first multiformat collection catalogue, [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/). The publication is made available online and in e-book and print editions. Custom built with the [Middleman](https://middlemanapp.com/) static site generator, *Terracottas* serves as a precursor to future Quire titles.
 
-Also released this year are [*Roman Mosaics*](https://www.getty.edu/publications/romanmosaics/) and the third edition of [*Introduction to Metadata*](https://www.getty.edu/publications/intrometadata/). [ARLIS/NA's *Multimedia & Technology Reviews*](https://arlisna.org/publications/multimedia-technology-reviews/1025-roman-mosaics-in-the-j-paul-getty-museum) writes that *Roman Mosaics* has a "dynamic design that encourages further discovery and scholarship."
+Also released this year are [*Roman Mosaics*](https://www.getty.edu/publications/romanmosaics/) and the third edition of [*Introduction to Metadata*](https://www.getty.edu/publications/intrometadata/). [ARLIS/NA's *Multimedia & Technology Reviews*](https://works.hcommons.org/records/xf3nn-fej08) writes that *Roman Mosaics* has a "dynamic design that encourages further discovery and scholarship."
 
-Getty Publications editor, Ruth Evans Lane, writes an article, [“An Editor's View of Digital Publishing,”](http://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/) for Getty's blog, *The Iris*, detailing her experience working on *Ancient Terracottas* and *Roman Mosaics*.
+Getty Publications editor, Ruth Evans Lane, writes an article, [“An Editor's View of Digital Publishing,”](https://blogs.getty.edu/iris/an-editors-view-of-digital-publishing/) for Getty's blog, *The Iris*, detailing her experience working on *Ancient Terracottas* and *Roman Mosaics*.
 
 {{< q-figure id="the_gang" >}}
 
@@ -62,7 +62,7 @@ Developer Eric Gardner leaves Getty Publications. From Getty’s centralized dig
 
 ## 2019
 
-[A major release](https://github.com/gettypubs/quire-starter-theme/releases/tag/v0.1.0.alpha.15.3) of Quire comes out with a new theme—designed by Ramon Tapales (Lead User Experience Designer)—as well as improved figure handling, audio embedding, and page layout options.
+Quire releases a new starter-theme, designed by Ramon Tapales (Lead User Experience Designer), as well as improved figure handling, audio embedding, and page layout options.
 
 Getty releases three additional Quire publications, including the first-ever born-digital version of the century-old reference series, [*Corpus Vasorum Antiquorum (CVA)*](https://www.getty.edu/publications/cva10/).
 
@@ -78,7 +78,7 @@ A landmark [cross-institutional user study](https://digpublishing.github.io/cata
 
 The Quire team hires a Community Manager, Erin Cecele Dunigan, to advance the goal of launching Quire as an open-source tool and to foster a thriving community of users and developers.
 
-Quire is invited to participate in the inaugural [Open Publishing Fest](https://www.openpublishingfest.org/). The Quire team discusses the history and future of the tool, and three Quire community members reflect on their experience publishing with Quire and demo their recent projects.
+Quire is invited to participate in the inaugural Open Publishing Fest organized by the [Coko Foundation](https://coko.foundation/). The Quire team discusses the history and future of the tool, and three Quire community members reflect on their experience publishing with Quire and demo their recent projects.
 
 {{< q-figure id="opf_2020" >}}
 
