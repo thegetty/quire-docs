@@ -79,7 +79,7 @@ One of the primary functions of the CLI is to easily navigate files on your comp
  2. Type "Terminal" (Mac's name for the command-line shell) and hit enter
  3. Type `ls` to list the contents of your computer's home directory
  4. Open your Finder
- 5. Press Command+H (to open your "home directory") and compare the files in that folder with what you see listed in the Terminal
+ 5. Press Command+Shift+H (to open your "home directory") and compare the files in that folder with what you see listed in the Terminal
 
 **PC**: 
 
