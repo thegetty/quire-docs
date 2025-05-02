@@ -22,6 +22,10 @@ Since [Getty Publications](https://www.getty.edu/publications/) is a full publis
 [Lulu](https://www.lulu.com/) <br>
 [Blurb](https://www.blurb.com/)
 
+**Open Access Publication Dissemination**
+
+[Toth](https://thoth.pub/solutions) (metadata management, distribution, archiving, and DOI registration for open-access publications.)
+
 ## Can you recommend freelancers to assist with our Quire projects?
 
 Yes! We have a stable of individuals experienced with Quire who can assist you with your project. There are two options for freelance support: 
