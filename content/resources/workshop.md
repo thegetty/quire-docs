@@ -1,8 +1,8 @@
 ---
-title: Hands-On Workshop
+title: Quire Workshop
 weight: 7500
 type: essay
-abstract: The content of our in-person/virtual workshops 
+abstract: Syllabus for our in-person workshops 
 ---
 
 ## About Quire 
@@ -535,6 +535,3 @@ If you get stuck at any point, please refer to the [Quire documentation](/docs-v
 Coming soon... 
 
 
-## GitHub
-
-Please see the [GitHub section of our website](/resources/github/) for a tutorial. 
