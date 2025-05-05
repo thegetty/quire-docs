@@ -140,7 +140,7 @@ figure_list:
 
   - id: "modern_contributors-initials"
     src: /screenshots/modern_contributors-initials.jpg
-    caption: "Quire also includes an `initials` format which will list the author names onluy by initials."
+    caption: "Quire also includes an `initials` format which will list the author names only by initials."
 
   - id: "modern_contributors-bio"
     src: /screenshots/modern_contributors-bio.jpg
