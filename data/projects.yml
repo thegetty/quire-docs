@@ -897,7 +897,7 @@ project_list:
       - mpopke
       - 1000camels
       - lmurrell 
-    note: "This is the third Quire publication from the Denver Art Museum. This born-digital catalog features crosslinked essays and images, zoomable images, and an interactive timeline."
+    note: "This is the fourth Quire publication from the Denver Art Museum. This born-digital catalog features crosslinked essays and images, zoomable images, and an interactive timeline."
   
   - id: "leventhal_processingplace"
     src: /screenshots/_leventhal_processingplace.jpg
