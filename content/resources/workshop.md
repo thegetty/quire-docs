@@ -577,6 +577,116 @@ Here is an example of a customization (the addition of rosy pink at the top of t
 
 </div>
 
+### Learning to Love CSS 
+
+Another, moderate way, to customize your Quire project is through custom CSS. 
+
+**What is CSS**
+
+CSS stands for “Cascading Style Sheets”. It is a language used to define styles and layouts for webpages written in HTML. While HTML describes the contents of a page, CSS controls the style and formatting of elements on your page. 
+
+**What is the benefit of using CSS**
+
+CSS saves a lot of time because you can apply rules across a website by just editing one file (`custom.css`).
+
+### Creating Custom Classes with CSS 
+
+While CSS can be used to apply changes across an entire website. There is another, more pinpointed, way to use CSS through the creation of custom classes, which are then applied to either specific blocks of text or specific words through the use of the HTML `<div>` and `<span>` tags. 
+
+### The `<div>` Tag 
+
+Let’s say, for example, that you wanted to center a block text on a page. You can wrap that text in the `<div>` tag and give it a custom class. This allows you to target that specific element and apply the desired new style.
+
+You would do this by applying a class to the block of text: 
+
+```md
+<div class="centered-text">
+Text you want centered
+</div>
+```
+
+And then creating the class in the custom.css file: 
+
+```css
+.centered-text {
+  text-align: center;
+}
+```
+
+<div class="try-it-yourself">
+
+#### Try it Yourself
+
+1. In the `essay.md` file, write the sentence "Text you want centered" anywhere on the page. Above the sentence write `<div class="centered-text">` (opening tag) and below the sentence write `</div>` (closing tag), as in the example above. This means that you would like to apply a new class called `centered-text` to the sentence. 
+
+
+2. For this change to take effect, navigate to the `_assets/styles/custom.css` file and cut and paste the style rule listed above into the file. This creates a new style rule where anything with the class `centered-text` applied to it will appear centered on the page. 
+
+
+3. Preview your project and, voila, the sentence has now been centered on the page!
+
+</div>
+
+### The `<span>` Tag 
+
+But say you want to make your change to a single word, rather than an entire sentence. In that case, rather than using the <div> HTML tag which is applied to blocks of text, you would use the <span> HTML tag for in-line elements.
+
+You would do this by applying a class to the specific word: 
+
+```md
+This word should appear <span class="red-text">red</span>. 
+
+```
+And then creating the class in the custom.css file: 
+
+```css
+.red-text {
+  color: red;
+}
+```
+
+<div class="try-it-yourself">
+
+#### Try it Yourself
+
+1. Once again in the `essay.md` file, write the sentence "This word should appear red". Before the word "red" write `<span class="red-text">` (opening tag) and after the word "red" write `</span>` (closing tag). Note that unlike the `<div>` tag which appeared above and below the text in question, the `<span>` tag appears in the same line as the element you want to change. 
+
+2. In your `_assets/styles/custom.css` file, cut and paste the text below to add a style rule that defines the new `red-text` class. This creates a new rule where anything with the class `red-text` applied to it will appear, you guessed it, red! 
+
+3. Preview your project and note that the single line of text within the paragraph is now red.
+
+</div>
+
+### Overriding Styles with Custom CSS 
+
+In addition to creating custom styles in the custom.css file and applying then with HTML tags, you can also override exisiting stlyes. A good example is removing the title and subtitle from the cover page of your project, here is an example of a publication that has done this: https://www.leventhalmap.org/digital-exhibitions/terrains-of-independence/.
+
+<div class="try-it-yourself">
+
+#### Try it Yourself
+
+
+1. Navigate to your project's `_assets/styles/custom.css` file.
+
+2. Cut and paste the lines of CSS listed below into the `custom.css` file. 
+
+```css
+.quire-cover__hero-body {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+```
+
+3. Refresh your project and navigate to your cover page to confirm the custom CSS worked correctly. 
+
+</div>
+
+
 ## Next Steps 
 
 You can continue reinforcing the concepts above by creating a new page in your Quire project. 
@@ -600,13 +710,7 @@ You can continue reinforcing the concepts above by creating a new page in your Q
 
 If you get stuck at any point, please refer to the [Quire documentation](/docs-v1/) for assistance. 
 
----
-
-## Advanced Quire 
-
-Coming soon... 
-
-
 ## GitHub
 
 Please see the [GitHub section of our website](/resources/github/) for a tutorial. 
+
