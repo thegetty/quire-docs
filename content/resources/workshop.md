@@ -185,7 +185,7 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 #### Try it Yourself 
 
 1. Open your Terminal or Powershell 
-2. Type the command `quire new my-project` and hit enter. The process may take a few minutes. You will see the words "successfully installed" when the process is complete. 
+2. Type the command `quire new my-project` and hit enter. The process may take a few minutes. The process is complete when you see your username appear below the text "installing dev dependencies into quire project."
 3. Type `ls` to see the contents of your home directory again. This time you will notice a new folder called `my-project`
 4. Type `cd my-project` in your Terminal/Powershell to navigate from your home directory into your new project
 5. Type `ls` to browse the project files that were installed with the command `quire new`
@@ -216,7 +216,7 @@ This is what the default starter project will look like when it is first opened 
 
 ### Navigating Files with Visual Studio Code 
 
-The "content" folder is where pretty much all the action takes place. The most important files/folders within "content" are the following: 
+The `content` folder is where pretty much all the action takes place. The most important files/folders within `content` are the following: 
 
 | File/Folder | Purpose Served |
 |---|---|
@@ -437,7 +437,7 @@ Here is an example of a `figures.yaml` entry:
   credit: "The J. Paul Getty Museum, Los Angeles"
 ```
 
-The `src` represents both the image file name and the path for where the image is stored in your project. In this case, the image `evans-sons.jpg` lives in a subfolder called `figures` in the main `images` folder. You can use subfolders to help organize your images; just be sure to include the subfolder name followed by a / in the `src` field. If you are not using subfolders then the `src` will just be the image file name (ending in .jpg or .png).
+The `src` represents both the image file name and the path for where the image is stored in your project. In this case, the image `evans-sons.jpg` lives in a subfolder called `figures` in the main `images` folder. You can use subfolders to help organize your images; just be sure to include the subfolder name followed by a `/` in the `src` field. If you are not using subfolders then the `src` will just be the image file name (ending in .jpg or .png).
 
 <div class="try-it-yourself">
 
@@ -455,7 +455,7 @@ The `src` represents both the image file name and the path for where the image i
 
 ### Inserting the image 
 
-Inserting a new image is a three-step process. First, save the image in the `_assets/images/` folder. Next, you must create an entry for that image in the `figures.yaml` file and assign the image an `id`. Finally, decide what `.md` and where within that file you want the image to appear. Then enter a shortcode that references the assigned `id`.
+Inserting a new image is a three-step process. First, save the image in the `_assets/images/` folder. Next, you must create an entry for that image in the `figures.yaml` file and assign the image an `id`. Finally, decide what `.md` file and where within that file you want the image to appear. Then enter a shortcode that references the assigned `id`.
 
 <div class="try-it-yourself">
 
@@ -579,11 +579,11 @@ Here is an example of a customization (the addition of rosy pink at the top of t
 
 ### Learning to Love CSS 
 
-Another, moderate way, to customize your Quire project is through custom CSS. 
+Another way to customize your Quire project is through custom CSS. This is a more involved process that using the `variables.scss` file, but you have both more precise and broader control of changes across your project. 
 
-**What is CSS**
+**What is CSS?**
 
-CSS stands for “Cascading Style Sheets”. It is a language used to define styles and layouts for webpages written in HTML. While HTML describes the contents of a page, CSS controls the style and formatting of elements on your page. 
+CSS stands for “Cascading Style Sheets”. It is a language used to define styles and layouts for webpages written in HTML. While HTML describes the contents of a page, CSS controls the style and formatting of the elements on your page. 
 
 **What is the benefit of using CSS**
 
@@ -591,75 +591,56 @@ CSS saves a lot of time because you can apply rules across a website by just edi
 
 ### Creating Custom Classes with CSS 
 
-While CSS can be used to apply changes across an entire website. There is another, more pinpointed, way to use CSS through the creation of custom classes, which are then applied to either specific blocks of text or specific words through the use of the HTML `<div>` and `<span>` tags. 
+While CSS can be used to apply changes across an entire website. There is another, more pinpointed, way to use CSS through the creation of custom classes. Say, for example, you wanted to make either a word or entire block of text appear purple. You would do that by creating a new class called `purple-text` in the `_assets/styles/custom.css` file and then applying that new class to either a specific block of text or specific words through the use of the `<div>` and `<span>` HTML tags.
 
-### The `<div>` Tag 
-
-Let’s say, for example, that you wanted to center a block text on a page. You can wrap that text in the `<div>` tag and give it a custom class. This allows you to target that specific element and apply the desired new style.
-
-You would do this by applying a class to the block of text: 
-
-```md
-<div class="centered-text">
-Text you want centered
-</div>
-```
-
-And then creating the class in the custom.css file: 
-
-```css
-.centered-text {
-  text-align: center;
-}
-```
+Note: you can name a class whatever you like. For the sake of simplicity, we are calling the class that will change text to the color purple `purple-text`.
 
 <div class="try-it-yourself">
 
 #### Try it Yourself
 
-1. In the `essay.md` file, write the sentence "Text you want centered" anywhere on the page. Above the sentence write `<div class="centered-text">` (opening tag) and below the sentence write `</div>` (closing tag), as in the example above. This means that you would like to apply a new class called `centered-text` to the sentence. 
+1. Assign a custom class by navigating to the `_assets/styles/custom.css`
+2. Add the following custom class to that file
 
-
-2. For this change to take effect, navigate to the `_assets/styles/custom.css` file and cut and paste the style rule listed above into the file. This creates a new style rule where anything with the class `centered-text` applied to it will appear centered on the page. 
-
-
-3. Preview your project and, voila, the sentence has now been centered on the page!
+```css
+.purple-text {
+  color: purple;
+}
+```
 
 </div>
 
 ### The `<span>` Tag 
 
-But say you want to make your change to a single word, rather than an entire sentence. In that case, rather than using the <div> HTML tag which is applied to blocks of text, you would use the <span> HTML tag for in-line elements.
-
-You would do this by applying a class to the specific word: 
-
-```md
-This word should appear <span class="red-text">red</span>. 
-
-```
-And then creating the class in the custom.css file: 
-
-```css
-.red-text {
-  color: red;
-}
-```
+Now that you have created the new `purple-text` class, let's apply it to a specific word with the <span> HTML tag. This tag is used when you want to customiz in-line elements.
 
 <div class="try-it-yourself">
 
 #### Try it Yourself
 
-1. Once again in the `essay.md` file, write the sentence "This word should appear red". Before the word "red" write `<span class="red-text">` (opening tag) and after the word "red" write `</span>` (closing tag). Note that unlike the `<div>` tag which appeared above and below the text in question, the `<span>` tag appears in the same line as the element you want to change. 
+1. In the `essay.md` file, write the sentence "This word should appear purple". 
+2. Before the word "purple" write `<span class="purple-text">` (this is the opening tag) and after the word "purple" write `</span>` (this is the closing tag).
+3. Preview your project and note the word "purple" now appears purple.
 
-2. In your `_assets/styles/custom.css` file, cut and paste the text below to add a style rule that defines the new `red-text` class. This creates a new rule where anything with the class `red-text` applied to it will appear, you guessed it, red! 
+</div>
 
-3. Preview your project and note that the single line of text within the paragraph is now red.
+### The `<div>` Tag 
+
+In addition to targeting a single word with the <span> tag, you can also make changes to an entire block of text. You would do this with the use the <div> tag. 
+
+<div class="try-it-yourself">
+
+#### Try it Yourself
+
+1. In the `essay.md` file, write the sentence "This entire sentence should appear purple" anywhere on the page. 
+2. Above the sentence write `<div class="purple-text">` (this is the opening tag) and below the sentence write `</div>` (this is the closing tag).
+3. Preview your project and, voila, the entire sentence should now be purple.
 
 </div>
 
 ### Overriding Styles with Custom CSS 
 
-In addition to creating custom styles in the custom.css file and applying then with HTML tags, you can also override exisiting stlyes. A good example is removing the title and subtitle from the cover page of your project, here is an example of a publication that has done this: https://www.leventhalmap.org/digital-exhibitions/terrains-of-independence/.
+In addition to creating custom classes in the `custom.css` file and applying then with HTML tags, you can also override exisiting styles in a broader sense. One of the most common requests we get for help with custom CSS is hiding the title and subtitle from the cover page of your project, as in this example from the Leventhal Map & Education Center: https://www.leventhalmap.org/digital-exhibitions/terrains-of-independence/. Please follow the steps below to achieve this goal. 
 
 <div class="try-it-yourself">
 
@@ -667,7 +648,6 @@ In addition to creating custom styles in the custom.css file and applying then w
 
 
 1. Navigate to your project's `_assets/styles/custom.css` file.
-
 2. Cut and paste the lines of CSS listed below into the `custom.css` file. 
 
 ```css
@@ -681,7 +661,6 @@ In addition to creating custom styles in the custom.css file and applying then w
     width: 1px;
   }
 ```
-
 3. Refresh your project and navigate to your cover page to confirm the custom CSS worked correctly. 
 
 </div>
@@ -689,7 +668,7 @@ In addition to creating custom styles in the custom.css file and applying then w
 
 ## Next Steps 
 
-You can continue reinforcing the concepts above by creating a new page in your Quire project. 
+You can continue reinforcing the concepts above by creating a new page in your Quire project, adding text and images, and a pop-up citation. 
 
 <div class="try-it-yourself">
 
