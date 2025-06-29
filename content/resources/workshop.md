@@ -579,11 +579,11 @@ Here is an example of a customization (the addition of rosy pink at the top of t
 
 ### Learning to Love CSS 
 
-Another way to customize your Quire project is through custom CSS. This is a more involved process that using the `variables.scss` file, but you have both more precise and broader control of changes across your project. 
+Another way to customize your Quire project is through custom CSS. This is a more involved process than using the `variables.scss` file, but you have both more precise and broader control of changes across your project. 
 
 **What is CSS?**
 
-CSS stands for “Cascading Style Sheets”. It is a language used to define styles and layouts for webpages written in HTML. While HTML describes the contents of a page, CSS controls the style and formatting of the elements on your page. 
+CSS stands for “Cascading Style Sheets”. It is a language used to define styles and layouts for webpages written in HTML. While HTML describes the contents of a page, CSS controls the style and formatting of the elements on the page. 
 
 **What is the benefit of using CSS**
 
@@ -591,7 +591,7 @@ CSS saves a lot of time because you can apply rules across a website by just edi
 
 ### Creating Custom Classes with CSS 
 
-While CSS can be used to apply changes across an entire website. There is another, more pinpointed, way to use CSS through the creation of custom classes. Say, for example, you wanted to make either a word or entire block of text appear purple. You would do that by creating a new class called `purple-text` in the `_assets/styles/custom.css` file and then applying that new class to either a specific block of text or specific words through the use of the `<div>` and `<span>` HTML tags.
+While CSS can be used to apply changes across an entire website. There is another, more pinpointed, way to use CSS through the creation of custom classes. Say, for example, you wanted to make either a word or entire block of text appear purple. You would do that by first creating a new class called `purple-text` in the `_assets/styles/custom.css` file and then applying that new class to either a specific block of text or specific words through the use of the `<div>` and `<span>` HTML tags.
 
 Note: you can name a class whatever you like. For the sake of simplicity, we are calling the class that will change text to the color purple `purple-text`.
 
@@ -626,7 +626,7 @@ Now that you have created the new `purple-text` class, let's apply it to a speci
 
 ### The `<div>` Tag 
 
-In addition to targeting a single word with the <span> tag, you can also make changes to an entire block of text. You would do this with the use the <div> tag. 
+In addition to targeting a single word with the <span> tag, you can also make changes to an entire block of text. You would do this with the <div> tag. 
 
 <div class="try-it-yourself">
 
@@ -636,11 +636,24 @@ In addition to targeting a single word with the <span> tag, you can also make ch
 2. Above the sentence write `<div class="purple-text">` (this is the opening tag) and below the sentence write `</div>` (this is the closing tag).
 3. Preview your project and, voila, the entire sentence should now be purple.
 
+**Go Deeper**
+
+1. In `_assets/styles/custom.ss` file add the following CSS to create a new class that will center text on the page.
+
+```css
+.centered-text {
+  text-align: center;
+}
+```
+2. Change the `class` in the `<div>` tag to read `centered-text`.
+3. Preview your project and note that the sentence "This entire sentence should appear purple" is now centered on the page. 
+
 </div>
+
 
 ### Overriding Styles with Custom CSS 
 
-In addition to creating custom classes in the `custom.css` file and applying then with HTML tags, you can also override exisiting styles in a broader sense. One of the most common requests we get for help with custom CSS is hiding the title and subtitle from the cover page of your project, as in this example from the Leventhal Map & Education Center: https://www.leventhalmap.org/digital-exhibitions/terrains-of-independence/. Please follow the steps below to achieve this goal. 
+In addition to creating custom classes in the `custom.css` file and applying then with HTML tags, you can also override exisiting styles in a broader sense. One of the most common requests we get for help with custom CSS is hiding the title and subtitle from the cover page of your project, as in this example from the Leventhal Map & Education Center: https://www.leventhalmap.org/digital-exhibitions/terrains-of-independence/. Please follow the steps below to achieve this. 
 
 <div class="try-it-yourself">
 
