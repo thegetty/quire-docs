@@ -185,7 +185,7 @@ In addition to using the CLI to navigate Quire, as we explored earlier, it can a
 #### Try it Yourself 
 
 1. Open your Terminal or Powershell 
-2. Type the command `quire new my-project` and hit enter. The process may take a few minutes. You will see the words "successfully installed" when the process is complete. 
+2. Type the command `quire new my-project` and hit enter. The process may take a few minutes. The process is complete when you see your username appear below the text "installing dev dependencies into quire project."
 3. Type `ls` to see the contents of your home directory again. This time you will notice a new folder called `my-project`
 4. Type `cd my-project` in your Terminal/Powershell to navigate from your home directory into your new project
 5. Type `ls` to browse the project files that were installed with the command `quire new`
@@ -216,7 +216,7 @@ This is what the default starter project will look like when it is first opened 
 
 ### Navigating Files with Visual Studio Code 
 
-The "content" folder is where pretty much all the action takes place. The most important files/folders within "content" are the following: 
+The `content` folder is where pretty much all the action takes place. The most important files/folders within `content` are the following: 
 
 | File/Folder | Purpose Served |
 |---|---|
@@ -437,7 +437,7 @@ Here is an example of a `figures.yaml` entry:
   credit: "The J. Paul Getty Museum, Los Angeles"
 ```
 
-The `src` represents both the image file name and the path for where the image is stored in your project. In this case, the image `evans-sons.jpg` lives in a subfolder called `figures` in the main `images` folder. You can use subfolders to help organize your images; just be sure to include the subfolder name followed by a / in the `src` field. If you are not using subfolders then the `src` will just be the image file name (ending in .jpg or .png).
+The `src` represents both the image file name and the path for where the image is stored in your project. In this case, the image `evans-sons.jpg` lives in a subfolder called `figures` in the main `images` folder. You can use subfolders to help organize your images; just be sure to include the subfolder name followed by a `/` in the `src` field. If you are not using subfolders then the `src` will just be the image file name (ending in .jpg or .png).
 
 <div class="try-it-yourself">
 
@@ -455,7 +455,7 @@ The `src` represents both the image file name and the path for where the image i
 
 ### Inserting the image 
 
-Inserting a new image is a three-step process. First, save the image in the `_assets/images/` folder. Next, you must create an entry for that image in the `figures.yaml` file and assign the image an `id`. Finally, decide what `.md` and where within that file you want the image to appear. Then enter a shortcode that references the assigned `id`.
+Inserting a new image is a three-step process. First, save the image in the `_assets/images/` folder. Next, you must create an entry for that image in the `figures.yaml` file and assign the image an `id`. Finally, decide what `.md` file and where within that file you want the image to appear. Then enter a shortcode that references the assigned `id`.
 
 <div class="try-it-yourself">
 
@@ -577,9 +577,111 @@ Here is an example of a customization (the addition of rosy pink at the top of t
 
 </div>
 
+### Learning to Love CSS 
+
+Another way to customize your Quire project is through custom CSS. This is a more involved process than using the `variables.scss` file, but you have both more precise and broader control of changes across your project. 
+
+**What is CSS?**
+
+CSS stands for “Cascading Style Sheets”. It is a language used to define styles and layouts for webpages written in HTML. While HTML describes the contents of a page, CSS controls the style and formatting of the elements on the page. 
+
+**What is the benefit of using CSS**
+
+CSS saves a lot of time because you can apply rules across a website by just editing one file (`custom.css`).
+
+### Creating Custom Classes with CSS 
+
+While CSS can be used to apply changes across an entire website. There is another, more pinpointed, way to use CSS through the creation of custom classes. Say, for example, you wanted to make either a word or entire block of text appear purple. You would do that by first creating a new class called `purple-text` in the `_assets/styles/custom.css` file and then applying that new class to either a specific block of text or specific words through the use of the `<div>` and `<span>` HTML tags.
+
+Note: you can name a class whatever you like. For the sake of simplicity, we are calling the class that will change text to the color purple `purple-text`.
+
+<div class="try-it-yourself">
+
+#### Try it Yourself
+
+1. Assign a custom class by navigating to the `_assets/styles/custom.css`
+2. Add the following custom class to that file
+
+```css
+.purple-text {
+  color: purple;
+}
+```
+
+</div>
+
+### The `<span>` Tag 
+
+Now that you have created the new `purple-text` class, let's apply it to a specific word with the <span> HTML tag. This tag is used when you want to customiz in-line elements.
+
+<div class="try-it-yourself">
+
+#### Try it Yourself
+
+1. In the `essay.md` file, write the sentence "This word should appear purple". 
+2. Before the word "purple" write `<span class="purple-text">` (this is the opening tag) and after the word "purple" write `</span>` (this is the closing tag).
+3. Preview your project and note the word "purple" now appears purple.
+
+</div>
+
+### The `<div>` Tag 
+
+In addition to targeting a single word with the <span> tag, you can also make changes to an entire block of text. You would do this with the <div> tag. 
+
+<div class="try-it-yourself">
+
+#### Try it Yourself
+
+1. In the `essay.md` file, write the sentence "This entire sentence should appear purple" anywhere on the page. 
+2. Above the sentence write `<div class="purple-text">` (this is the opening tag) and below the sentence write `</div>` (this is the closing tag).
+3. Preview your project and, voila, the entire sentence should now be purple.
+
+**Go Deeper**
+
+1. In `_assets/styles/custom.ss` file add the following CSS to create a new class that will center text on the page.
+
+```css
+.centered-text {
+  text-align: center;
+}
+```
+2. Change the `class` in the `<div>` tag to read `centered-text`.
+3. Preview your project and note that the sentence "This entire sentence should appear purple" is now centered on the page. 
+
+</div>
+
+
+### Overriding Styles with Custom CSS 
+
+In addition to creating custom classes in the `custom.css` file and applying then with HTML tags, you can also override exisiting styles in a broader sense. One of the most common requests we get for help with custom CSS is hiding the title and subtitle from the cover page of your project, as in this example from the Leventhal Map & Education Center: https://www.leventhalmap.org/digital-exhibitions/terrains-of-independence/. Please follow the steps below to achieve this. 
+
+<div class="try-it-yourself">
+
+#### Try it Yourself
+
+
+1. Navigate to your project's `_assets/styles/custom.css` file.
+2. Cut and paste the lines of CSS listed below into the `custom.css` file. 
+
+```css
+.quire-cover__hero-body {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+```
+3. Refresh your project and navigate to your cover page to confirm the custom CSS worked correctly. 
+
+</div>
+
+
 ## Next Steps 
 
-You can continue reinforcing the concepts above by creating a new page in your Quire project. 
+You can continue reinforcing the concepts above by creating a new page in your Quire project, adding text and images, and a pop-up citation. 
 
 <div class="try-it-yourself">
 
@@ -600,13 +702,7 @@ You can continue reinforcing the concepts above by creating a new page in your Q
 
 If you get stuck at any point, please refer to the [Quire documentation](/docs-v1/) for assistance. 
 
----
-
-## Advanced Quire 
-
-Coming soon... 
-
-
 ## GitHub
 
 Please see the [GitHub section of our website](/resources/github/) for a tutorial. 
+
