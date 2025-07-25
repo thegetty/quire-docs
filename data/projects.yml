@@ -77,7 +77,7 @@ project_list:
     publisher: Mills College Art Museum
     title_info: "*Fault Lines: 2020 Senior Thesis Exhibition*"
     pub_date: 2020-05-20
-    url: https://mcam.mills.edu/publications/faultlines/index.html
+    url: https://mcam.oakland.northeastern.edu/publications/faultlines/index.html
     customization_level: minor
     github_user:
       - MillsArtMuseum
@@ -90,7 +90,7 @@ project_list:
     publisher: Mills College Art Museum
     title_info: "*In Plain Sight: Kathryn Andrews, castaneda/reiman, Dario Robleto, Weston Teruya*"
     pub_date: 2019-09-19
-    url: https://mcam.mills.edu/publications/inplainsight/index.html
+    url: https://mcam.oakland.northeastern.edu/publications/inplainsight/index.html
     customization_level: minor
     github_user:
       - MillsArtMuseum
@@ -103,7 +103,7 @@ project_list:
     publisher: Mills College Art Museum
     title_info: "*State of Convergence*"
     pub_date: 2020-01-20
-    url: https://mcam.mills.edu/publications/stateofconvergence/index.html
+    url: https://mcam.oakland.northeastern.edu/publications/stateofconvergence/index.html
     customization_level: minor
     github_user:
       - stephaniehanor
@@ -314,7 +314,7 @@ project_list:
     publisher: Mills College Art Museum
     title_info: "*Shifting Perspectives*"
     pub_date: 2020-12-02
-    url: https://mcam.mills.edu/publications/shiftingperspectives/index.html
+    url: https://mcam.oakland.northeastern.edu/publications/shiftingperspectives/index.html
     customization_level: minor
     github_user:
       - MillsArtMuseum
@@ -500,7 +500,7 @@ project_list:
     publisher: Mills College Art Museum
     title_info: "*Unseen: The Hidden Labor of Women*"
     pub_date: 2022-01-22
-    url: https://mcam.mills.edu/publications/unseen/index.html
+    url: https://mcam.oakland.northeastern.edu/publications/unseen/index.html
     customization_level: none
     github_user:
       - shanor
