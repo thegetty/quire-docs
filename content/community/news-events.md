@@ -7,23 +7,20 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-**Quire @ NMPS**<br/> 
-Baltimore, MD<br/>
+**Quire @ 2025 Digital Library Forum**<br/> 
+[Hands-On Digital Publishing Workshop](https://dlfforum2025.sched.com/event/23ZL5/s07-hands-on-digital-publishing-workshop-with-quire) <br>
+Sunday, November 16 <br>
+1:45–5:00 pm <br>
+Denver, CO <br>
+Learn more/register at: https://forum2025.diglib.org/ 
 
-June 29, 1-4 PM<br/>
-Quire Hands-On Workshop<br/>
-Maryland Center for History and Culture<br/>
-[Learn more/register for the workshop](/community/nmps-mchc-event/) <br/>
-
-June 29–July 1, 2025<br/>
-Baltimore Marriott Waterfront<br/>
-We will be exhibiting at NMPS and leading a community-meetup. <br />
-[Register for NMPS](https://graham.uchicago.edu/program/national-museum-publishing-seminar/)
-
-
+**Quire @ 2025 MCN** <br>
+October 2025 <br>
+Walker Art Center <br>
+Minneapolis, MN <br>
+More information coming soon... 
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
-
 
 ## News
 
@@ -37,14 +34,17 @@ We will be exhibiting at NMPS and leading a community-meetup. <br />
 
 **2025**
 
-- February 13-15: Quire at [College Art Association Conference](https://www.collegeart.org/programs/conference/conference2025) 
-- March 13: Hands-on Quire workshop at [Code4Lib 2025](https://2025.code4lib.org/) in at Princeton University. 
+- February 13-15: Quire exhibits at [College Art Association Conference](https://www.collegeart.org/programs/conference/conference2025) 
+- March 13: Quire presents a hands-on workshop at [Code4Lib 2025](https://2025.code4lib.org/) at Princeton University. 
+- May 14: Greg Albers presents the poster session [*What Can a Book Do?*](https://what-can-a-book-do.netlify.app/) at the 2025 ARLIS/NA virtual conference 
+- June 29: Quire presents a [hands-on workshop](https://quire.getty.edu/community/nmps-mchc-event/) at the Maryland Center for History and Culture in Baltimore, MD during [NMPS 2025](https://graham.uchicago.edu/program/national-museum-publishing-seminar/). 
+- June 29–July 2: Quire is a premium exhibitor at [National Museum Publishing Seminar](https://graham.uchicago.edu/program/national-museum-publishing-seminar/) and organizes a community meet-up. 
 
 **2024**
 
-- November 11: Yale University and the University of Oxford concluded their [fascinating research project](https://linked.art/community/projects/ees2/) that explored ways of starting collection catalogues directly from Linked Open Data
-- October 23: Quire presentation at [MCN (Museum Computer Network Conference)](https://mcn2024.sched.com/event/1gdBP/a-quire-case-study-collaborating-with-non-technical-colleagues)
-- October 22: Quire presents ["A Hands-On Quire Workshop"](https://quire.getty.edu/community/mcn-ku-event/) at the University of Kansas 
+- November 11: Yale University and the University of Oxford conclude their [fascinating research project](https://linked.art/community/projects/ees2/) that explored ways of starting collection catalogues directly from Linked Open Data
+- October 23: Erin Cecele Dunigan and Ruth Lane present ["A Quire Case Study: Collaborating with Non-Technical Colleagues"](https://mcn2024.sched.com/event/1gdBP/a-quire-case-study-collaborating-with-non-technical-colleagues) at [MCN 2024](https://mcn.edu/annual-conference/mcn-2024/)
+- October 22: Quire presents [a hands-on workshop](https://quire.getty.edu/community/mcn-ku-event/) at the University of Kansas 
 - October 10: The Denver Art Museum shared a [useful resource](https://github.com/thegetty/quire/discussions/961) on digital publishing with the community
 - August 15: Updated [style customization instructions](https://quire.getty.edu/docs-v1/styles-customization/) are shared with the community
 - July 11: Amon Carter Museum of American Art's Quire publication, [*The Art of the Scene: Charles Truett Williams*](https://art-scene.cartermuseum.org/) received the [Center for the Advancement and Study of Early Texas Art (CASETA)](https://www.caseta.org/index.php)'s annual Exhibition Catalog Award for the most outstanding exhibition catalog on early Texas art 
