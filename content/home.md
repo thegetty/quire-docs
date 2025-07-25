@@ -40,6 +40,12 @@ Created by [Getty](https://www.getty.edu), free to use.
 
 <div class="action-button paired-button">
 
+[Demo Site](http://quire.getty.edu/demo/)
+
+</div>
+
+<div class="action-button paired-button">
+
 [Watch the Video <svg class="remove-from-epub"><switch><use xlink:href="#start-icon"></use></switch></svg>](https://vimeo.com/820983026/b3a116fb1e)
 
 </div>
