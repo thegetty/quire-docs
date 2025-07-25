@@ -13,7 +13,9 @@ abstract: "How-to guides, demos, webinars, and more"
 
 ## Presentations
 
-*Watch videos of recent Quire presentations from Getty staff and the community.*
+*Enjoy recent Quire presentations from Getty staff and the community.*
+
+### Videos
 
 {{< q-figure id="mupudig_2025" >}}
 
@@ -24,6 +26,10 @@ abstract: "How-to guides, demos, webinars, and more"
 {{< q-figure id="2021-iiif-annual-conference" >}}
 
 {{< q-figure id="opf_2020" >}}
+
+### Poster Sessions
+
+{{< q-figure id="what-can-a-book-do" >}}
 
 ## How-To Guides
 
