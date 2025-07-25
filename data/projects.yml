@@ -991,3 +991,30 @@ project_list:
     github_user:
       - garrettdashnelson
     note: "This is the fourth use of Quire by the Leventhal Center to create a digital companion for our gallery exhibitions. Quire continues to be a great solution for the institutions digital exhibition needs."
+
+  - id: "lucafalefoto_padova"
+    src: /screenshots/_lucafalefoto_padova.jpg
+    alt: "Padova decorata: L’architettura in dialogo con le altre arti nel cuore del Novecento"
+    type: Online Exhibition
+    publisher: "Self-Published"
+    title_info: "*Padova decorata*"
+    pub_date: 2023-09-16
+    url: https://www.padova-decorata.it
+    customization_level: extensive
+    github_user:
+      - lucafalefoto
+    note: "*Padova decorata* is the first Italian-language Quire publication. Its creator was seeking an elegant, responsive, and metadata-rich platform for a visually driven, static website and ultimately chose Quire for its simplicity and clarity. The project aims to document and share artistic elements that shaped urban development in Padua, Italy, in the 20th century. Quire proved to be an ideal tool for achieving this public-facing, visual goal."
+
+  - id: "denver_collecting_americas"
+    src: /screenshots/_denver_collecting_americas.jpg
+    alt: "Collecting the ”Other Americas”: Ancient Americas Collections in American Art Museums"
+    type: Symposium Papers
+    publisher: "Denver Art Museum"
+    title_info: "*Collecting the ”Other Americas”: Ancient Americas Collections in American Art Museums*"
+    pub_date: 2025-07-16
+    url: https://mayer2023.denartmus.org/
+    customization_level: moderate
+    github_user:
+      - mpopke
+      - vhellstein
+    note: "This is the Denver Art Museum's first hybrid digital/print symposium volume.  The volume captures the history of collecting and display of ancient American works in art museums, a history surprisingly poorly documented until now. It was done totally in-house with the goal of reaching a much wider audience than the print-only volumes."
