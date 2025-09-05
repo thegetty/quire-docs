@@ -65,6 +65,8 @@ entries:
     definition: "ISO 639 is the International Standard for language codes. More information about the standard can be found at the ISO website: [https://www.iso.org/iso-639-language-codes.html](https://www.iso.org/iso-639-language-codes.html)"
   - term: ISSN
     definition: "The International Standard Serial Number, or ISSN, identifies newspapers, journals, magazines and periodicals of all kinds and on all media–print and electronic. For more information visit: [https://www.issn.org/](https://www.issn.org/)"
+  - term: "Liquid"
+    definition: "Liquid, or Liquid Templating, is a popular templating language that can used within Quire v1 Markdown files. It allows you to retrieve and manipulate data from different areas of a Quire project (YAML files and the YAML blocks at the top of Markdown pages). Basic documentation can be found at [https://shopify.github.io/liquid/](https://shopify.github.io/liquid/)."
   - term: "Markdown"
     definition: "Markdown is a text formatting standard that defines the use of very simple text character combinations in order to indicate structure and formatting that can easily be transferred to more complicated HTML (web markup). For example, something surrounded in asterisks in Markdown turns into italics in the final publication: `*emphasis*` =  *emphasis*."
   - term: "Markdown file"
