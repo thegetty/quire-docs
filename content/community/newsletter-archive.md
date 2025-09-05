@@ -7,8 +7,11 @@ online: false
 
 2025
 
-- [March](https://newsletters.getty.edu/t/t-6B0B5149634807C32540EF23F30FEDED) Quire Workshop at Princeton University, Getty's Newest Quire Publication: *Guidelines for the Technical Examination of Bronze Sculpture*, Community Shoutouts, 10-Minute Feedback Survey, Mingei International Museum 
-- [February](https://newsletters.getty.edu/t/t-0CA279D00D9EB4622540EF23F30FEDED) 2025 College Art Association Conference, Reminder: Hands-On Quire Workshop Available, 10-Minute Feedback Survey, Quire + Museum Publishing Digital Interest Group, Victoria and Albert Museum 
+- [July](https://newsletters.getty.edu/t/t-4C4A9AE5C42C807C2540EF23F30FEDED) National Museum Publishing Seminar Recap, Quire Demo Site, Quire by the Numbers, 10-Minute Feedback Survey, Office Hours, Upcoming MuPuDIG Sessions, Self-Published 
+- [May](https://newsletters.getty.edu/t/t-E10D0A23A464DED72540EF23F30FEDED) Quire at the National Museum Publishing Seminar, ARLIS Poster Session: What Can a Book Do?, Styling In-line and Block Text with Custom.CSS, 10-Minute Feedback Survey, Office Hours, MuPuDIG Webinar on Online Journals, Getty Publications
+- [April](https://newsletters.getty.edu/t/t-A6408BE7C0A20D482540EF23F30FEDED) Upcoming Quire Workshop: Baltimore, Quire Bug Fixes, 10-Minute Feedback Survey, Office Hours, Brown University Digital Scholarship Symposium, Leventhal Map & Education Center 
+- [March](https://newsletters.getty.edu/t/t-6B0B5149634807C32540EF23F30FEDED) Quire Workshop at Princeton University, Getty's Newest Quire Publication: *Guidelines for the Technical Examination of Bronze Sculpture*, Community Shoutouts, 10-Minute Feedback Survey, Office Hours, Mingei International Museum 
+- [February](https://newsletters.getty.edu/t/t-0CA279D00D9EB4622540EF23F30FEDED) 2025 College Art Association Conference, Reminder: Hands-On Quire Workshop Available, 10-Minute Feedback Survey, Office Hours, Quire + Museum Publishing Digital Interest Group, Victoria and Albert Museum 
 - [January](https://newsletters.getty.edu/t/t-05A1737F2E6B13A42540EF23F30FEDED) Update from Getty, 2025 College Art Association Conference, 10-Minute Survey: Help Us Improve Quire!, Office Hours, Indianapolis Museum of Art 
 
 2024

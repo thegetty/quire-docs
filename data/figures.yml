@@ -435,3 +435,7 @@ figure_list:
 
   - id: "nmpslogo"
     src: /screenshots/nmpslogo.png
+
+  - id: "what-can-a-book-do"
+    src: /screenshots/what-can-a-book-do.jpg
+    caption: "Getty's Digital Publications Manager, Greg Albers, presented a poster session at the 2025 ARLIS/NA Annual Conference. In *[What Can a Book Do](https://what-can-a-book-do.netlify.app/)*, Greg first introduces one of Quire's more interactive features, 360-degree rotating images, and then explains how he hacked the feature in six different ways using conventional tools like a printer, iPhone, Photoshop, and an X-Acto knife."
