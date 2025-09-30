@@ -28,13 +28,13 @@ Quire is an open-source publishing tool developed by Getty and used to create lo
 
 The workshop seeks to break down the various tools, formats, and processes necessary for using Quire into approachable and easy-to-understand concepts. We additionally provide step-by-step exercises to help partcipants gain confidence in navigating and using the tool. We aim for individuals who take this workshop to leave feeling excited and empowered to continue experimenting with Quire on their own.
 
-**Part 1**: Basic Concepts: Command-Line Interface & Text Editor <br>
-**Part 2**: Basic Concepts in Action <br>
-**Part 3**: Going Deeper: YAML <br>
-**Part 4**: Going Deeper: Images <br>
-**Part 5**: Going Deeper: Shortcodes <br>
-**Part 6**: Going Deeper: References <br>
-**Part 7**: Going Deeper: Customization
+**Part 1**: [Basic Concepts: Command-Line Interface & Text Editor](#part-1-basic-concepts) <br>
+**Part 2**: [Basic Concepts in Action](#part-2-basic-concepts-in-action) <br>
+**Part 3**: [Going Deeper: YAML](#part-3-going-deeper-yaml) <br>
+**Part 4**: [Going Deeper: Images](#part-4-going-deeper-images) <br>
+**Part 5**: [Going Deeper: Shortcodes](#part-5-going-deeper-shortcodes) <br>
+**Part 6**: [Going Deeper: References](#part-6-going-deeper-references) <br>
+**Part 7**: [Going Deeper: Customization](#part-7-going-deeper-customization)
 
 *If you are interested in having a hands-on Quire workshop led by a Quire representative either in person or virtually, please contact [quire@getty.edu](mailto:quire@getty.edu).* 
 
@@ -702,7 +702,4 @@ You can continue reinforcing the concepts above by creating a new page in your Q
 
 If you get stuck at any point, please refer to the [Quire documentation](/docs-v1/) for assistance. 
 
-## GitHub
-
-Please see the [GitHub section of our website](/resources/github/) for a tutorial. 
 
