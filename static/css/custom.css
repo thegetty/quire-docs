@@ -912,6 +912,11 @@ p:not(.more-link-view-link) .quire-citation__button:hover {
   content: "";
 }
 
+/* Wrap text formatted in Markdown */
+code.language-md {
+  text-wrap: auto;
+}
+
 /* CONTENTS GRID
 ============================================================================= */
 /* Make full width */
