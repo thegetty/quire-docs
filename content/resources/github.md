@@ -189,11 +189,11 @@ Merge conflicts will happen when you attempt to merge branches that have competi
 
 ### Deploying Project with GitHub Pages
 
-When all your changes are complete and have been merged into the master version of your project you are likely ready to deploy your project. You can use GitHub for this as well! For more information visit the [GitHub Pages](https://quire.getty.edu/docs-v1/site-deploy/#github-pages) section of the [*Deploy Your Project*](https://quire.getty.edu/docs-v1/site-deploy/) documentation. 
+When all your changes are complete and have been merged into the master version of your project, you are likely ready to deploy your project. You can use GitHub for this as well! For more information visit the [GitHub Pages](https://quire.getty.edu/docs-v1/site-deploy/#github-pages) section of the [*Deploy Your Project*](https://quire.getty.edu/docs-v1/site-deploy/) documentation. 
 
 ### Collaborate using GitHub Issues 
 
-Within each repository there is a tab at the top of the page labeled "Issues". This is a great tool for project management. You can use this section to make suggestions, track work that still needs, and receive feedback. It is especially useful when working with collaborators as you can assign tasks and simply close the issues when the work is complete. For more information visit the [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues) section of the GitHub documentation. 
+Within each repository there is a tab at the top of the page labeled "Issues". This is a great tool for project management. You can use this section to make suggestions, track work that still needs to be done, and receive feedback. It is especially useful when working with collaborators as you can assign tasks and simply close the issues when the work is complete. For more information visit the [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues) section of the GitHub documentation. 
 
 ### Manage Third Party Assets with GitHub
 
