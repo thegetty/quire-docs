@@ -31,8 +31,9 @@ aliases:
 
 **Next, you will have two options**:
 
-1. [**Host Your Project's Code on GitHub**](#host-your-projects-code-on-github): Create a new repository on GitHub and add a project that lives locally on your computer. (This would be the case if you recently used `quire new`.) Please note, you are only hosting your project's code and not the actual online version of it.
-2. [**Clone an Existing Project from Github**](#clone-an-existing-project-from-github): Copy an existing repository off GitHub to work locally on your computer. This would be the case when collaborating with others who have already created a repository.
+[**Host Your Project's Code on GitHub**](#host-your-projects-code-on-github): Create a new repository on GitHub and add a project that lives locally on your computer. (This would be the case if you recently used `quire new`.) Please note, you are only hosting your project's code and not the actual online version of it.
+
+[**Clone an Existing Project from Github**](#clone-an-existing-project-from-github): Copy an existing repository off GitHub to work locally on your computer. This would be the case when collaborating with others who have already created a repository.
 
 ## Host Your Project's Code on GitHub
 
