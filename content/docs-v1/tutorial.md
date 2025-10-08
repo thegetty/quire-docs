@@ -274,7 +274,7 @@ figures/lange-house.jpg
 
 Once you’ve played around with adding content and customizing your project, it’s time to output it. One of the most significant differences between Quire and other digital publishing tools is the ability to produce your project in multiple formats, including website, e-book, and print. You can create these different versions of your project by running the command `quire build` which will create the site files used to build the PDF and EPUB. Those formats are then generated with the commands `quire pdf` or `quire epub`.
 
-*Read more about outputting your publication files and deploying your project in the [“Output Your Project”](/docs-v1/multiformat-output/)and ["Deploy Your Project"](/docs-v1/site-deploy/) sections of this guide.*
+*Read more about outputting your publication files and deploying your project in the [“PDF Output”](/docs-v1/pdf/), [“EPUB Output”](/docs-v1/epub/), and ["Deploy Your Project"](/docs-v1/site-deploy/) sections of this guide.*
 
 ### Try it For Yourself
 
