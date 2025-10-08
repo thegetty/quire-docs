@@ -49,7 +49,9 @@ The individual PDFs are considered extracts of the full PDF and will have matchi
 
 ### Control Which Individual Pages Output as PDF
 
-Settings in the `config.yaml` file control the PDF output globally, across the entire project. How and if an individual Markdown page is output as a PDF can also be overridden in the YAML of those pages using the `page_pdf_output` attribute and setting it to `true` or `false`. For example, a page in your project with the following YAML will be output as an individual page PDF even if `pagePDF.output` in `config.yaml` is set to `false`:
+Settings in the `config.yaml` file control the PDF output globally, for all Markdown pages in the project. However, you can override the global settings on a page-by-page basis using the `page_pdf_output` attribute in the YAML of individual Markdown pages.
+
+For example, a page in your project with the following YAML will be output as an individual page PDF even if `pagePDF.output` in `config.yaml` is set to `false`:
 
 ```yaml
 title: My Essay
