@@ -49,30 +49,7 @@ The individual PDFs are considered extracts of the full PDF and will have matchi
 
 ### Control Which Individual Pages Output as PDF
 
-Settings in the `config.yaml` file control the PDF output globally, across the entire project. How and if an individual Markdown page is output as a PDF can also be overridden in the YAML of those pages using the `outputs` and `page_pdf_output` attributes as in the examples below.
-
-If you want to exclude a Markdown page from all PDF outputs:
-
-```yaml
-title: My Essay
-layout: essay
-order: 100
-outputs:
-  - html
-  - epub
-```
-
-If you want to include a Markdown page **only** in PDF, and not in HTML or EPUB:
-
-```yaml
-title: My Essay
-layout: essay
-order: 100
-outputs:
-  - pdf
-```
-
-If you want to output an individual PDF of a page even if `publicationPDF.output` in `config.yaml` is set to `false`:
+Settings in the `config.yaml` file control the PDF output globally, across the entire project. How and if an individual Markdown page is output as a PDF can also be overridden in the YAML of those pages using the `page_pdf_output` attribute and setting it to `true` or `false`. For example, a page in your project with the following YAML will be output as an individual page PDF even if `pagePDF.output` in `config.yaml` is set to `false`:
 
 ```yaml
 title: My Essay
@@ -81,18 +58,18 @@ order: 100
 page_pdf_output: true
 ```
 
-If you don't want to output an individual PDF of a page even if `publicationPDF.output` in `config.yaml` is set to `true`:
+This is especially useful in larger projects if you only want to output a limited number of pages as individual page PDFs. Likewise, the reverse is true. If you have a large project and want to output all of the pages as PDFs **except** for only a few, set `pagePDF.output` in `config.yaml` to `true`, and then use `page_pdf_output: false` to stop the PDF output on those individual pages:
 
 ```yaml
-title: My Essay
-layout: essay
-order: 100
+title: Copyright
+layout: page
+order: 5
 page_pdf_output: false
 ```
 
 {{< q-class "box tip" >}}
 
-- A page that is set to be excluded from PDF output with `outputs: [epub, html]` will not be output as an individual page PDF even if `page_pdf_output` is set to `true` on that same page. The `outputs` attribute affects **all** PDF outputs and cannot be overridden.
+- A page that is set to be excluded from PDF output with `outputs: [epub, html]` will not be output as an individual page PDF even if `page_pdf_output` is set to `true` on that same page. The `outputs` attribute affects **all** PDF outputs and cannot be overridden. Read more about hiding and showing pages using `outputs` in the [”Page Types & Structure”](/docs-v1/pages/#hideshow-pages) section of this guide.
 
 {{< /q-class >}}
 
