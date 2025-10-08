@@ -265,12 +265,14 @@ The content of the cover page can be customized with {{< q-def "Liquid" >}} temp
 
 #### Setting where the PDF file is output
 
-This default file location where PDFs are generated can be changed with the `pdf.outputDir` value in the `content/_data/config.yaml` file. The filepath given there is always considered to be within the `_site` directory.
+By default, PDFs are output the the project’s `_site/assets/downloads/` directory:
 
 ```yaml
 pdf:
   outputDir: '/_assets/downloads' 
 ```
+
+This default file location can be changed with the `pdf.outputDir` value in the `content/_data/config.yaml` file. It will always be within the `_site` directory. For example, `outputDir: '/_assets/other-formats'` would output the PDF files to the `_site/_assets/other-formats/` directory.
 
 #### Setting the PDF filename
 
