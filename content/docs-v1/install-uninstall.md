@@ -27,7 +27,7 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
 
     Some operating systems will already have Xcode installed, in which case you will receive the message "command line tools are already installed". If Xcode is not already installed, an additional notification will pop up. Click “Install” and follow the prompts.
 
-3. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select v18.20.4 (LTS)**: https://nodejs.org/en/download/prebuilt-installer. 
+3. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select version 22**: https://nodejs.org/en/download. 
 
     You can also install a Node.js [package manager](https://nodejs.org/en/download/package-manager) with the command line. A package manager enables you to install more than one version of Node. This is useful when working on multiple Quire projects, some of which might be tied to either newer or older versions of Node.
 
@@ -55,27 +55,15 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
 
 ## Install Quire v1 (Windows)
 
-{{< q-class "box warning" >}}
-- At this time, Windows support is not as robust as the support we are able to provide for macOS users. We are working to improve this. If you are well versed in Windows operating systems and would like to provide troubleshooting support for the community, please get in touch with us at [mailto:quire@getty.edu](quire@getty.edu)
-{{< /q-class >}}
+1. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install the necessary version control software on your computer.
 
-1. To use the command-line interface on a PC, right click the Start button and select “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. The only time you need to run PowerShell as an Admin is during install.
-
-2. Download and install **Git for Windows**: https://gitforwindows.org/. Follow the prompts to install the necessary version control software on your computer.
-
-3. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select v18.20.4 (LTS)**: https://nodejs.org/en/download/prebuilt-installer. 
+2. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select version 22**: https://nodejs.org/en/download. 
 
     You can also install a Node.js [package manager](https://nodejs.org/en/download/package-manager) with the command line. A package manager enables you to install more than one version of Node. This is useful when working on multiple Quire projects, some of which might be tied to either newer or older versions of Node.
-    
-4. In your PowerShell, install **Quire** with the following command:
 
-    ```text
-    npm install --global @thegetty/quire-cli
-    ```
+3. To use the command-line interface on a PC, right click the Start button and select “Windows PowerShell (Admin)”, or search for it in the search bar and select “Run as Administrator”. The only time you need to run PowerShell as an Admin is during install.
 
-    The Quire installation process may take a few minutes, during which time there will be messaging output in your PowerShell.
-
-5. Once Quire has been installed, change your PowerShell **permissions settings** by running the command:
+4. To allow your computer to run Node and Quire scripts, change your PowerShell **permissions settings** by running the command:
 
     ```text
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted
@@ -83,6 +71,14 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
     A message will pop-up that says "The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks. Do you want to change the execution policy?" Type "Y" to accept this change.
 
     Please note, this setting can be easily reverted by running the command `  Set-ExecutionPolicy -ExecutionPolicy Restricted`.
+
+5. In your PowerShell, install **Quire** with the following command:
+
+    ```text
+    npm install --global @thegetty/quire-cli
+    ```
+
+    The Quire installation process may take a few minutes, during which time there will be messaging output in your PowerShell.
 
 6. Confirm installation by running the following command in your PowerShell:
 
