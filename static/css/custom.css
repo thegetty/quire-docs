@@ -1029,6 +1029,13 @@ code.language-md {
   margin-top: 0 !important;
 }
 
+/* For techniques that require more developer-level skill */
+.advanced {
+  border: 1px solid var(--yellow-40);
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
 /* FIXED MENU
 ============================================================================= */
 
