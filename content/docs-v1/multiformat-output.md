@@ -187,7 +187,7 @@ resource_link:
     url: /_assets/downloads/publication.pdf
 ```
 
-The `name` value can be changed to update the link text. The `url` value is a relative path to where the file can be found within the project’s directories.  
+The `name` value can be changed to update the link text. The `url` value is a relative path to where the file can be found within the project’s directories, which by default will be the `/_assets/downloads/` directory, unless you have [configured it differently](#setting-where-the-pdf-file-is-output).
 
 ##### Within Markdown Pages
 
