@@ -7,7 +7,9 @@ aliases:
   - /documentation/site-deploy/
 ---
 
-A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from the hosting service of your choice. You do not need any special back-end setup. If you plan to include PDF and e-book files as part of you published project, it's important that you start by following the directions in the [*Output Your Project*](/docs-v1/multiformat-output/) section of the documentation before proceeding.
+A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from the hosting service of your choice. You do not need any special back-end setup. If you plan to include PDF and EPUB e-book files as part of you published project, it's important that you start by following the directions in the [“PDF Output”](/docs-v1/pdf/), [“EPUB Output”](/docs-v1/epub/) sections of this guide before proceeding.
+
+## Test Deploy
 
 Before deploying your project, you can run a test to make sure all the `_site` files are building correctly and that your styles are properly loading:
 

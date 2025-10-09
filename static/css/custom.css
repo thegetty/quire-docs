@@ -912,6 +912,11 @@ p:not(.more-link-view-link) .quire-citation__button:hover {
   content: "";
 }
 
+/* Wrap text formatted in Markdown */
+code.language-md {
+  text-wrap: auto;
+}
+
 /* CONTENTS GRID
 ============================================================================= */
 /* Make full width */
@@ -1022,6 +1027,13 @@ p:not(.more-link-view-link) .quire-citation__button:hover {
 .quire-page .try-it-yourself h4{
   color: var(--magenta-60);
   margin-top: 0 !important;
+}
+
+/* For techniques that require more developer-level skill */
+.advanced {
+  border: 1px solid var(--yellow-40);
+  border-radius: 4px;
+  padding: 1.5rem;
 }
 
 /* FIXED MENU

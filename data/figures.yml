@@ -400,6 +400,21 @@ figure_list:
     src: /screenshots/pdf-layout-refinement--width.png
     caption: "A custom CSS style can be defined and applied to change the width of a figure to help it fit within the available white space rather than having it bump to the next column or page."
 
+  - id: "pdf-cover-page"
+    src: /screenshots/pdf-cover-page.jpg
+    caption: "The output of PDFs of individual chapter or articles can be configured to include a cover page with basic bibliographic and citation information."
+    alt: "An illustration showing a loose stack of five printed pages, the top sheet is a different design, with a solid color background and simple lines of text in the top half of the page."
+  
+  - id: "pdf-download-link--page"
+    src: /screenshots/pdf-download-link--page.png
+    caption: "On pages with individual PDFs available, download links can be added to the page header and to the footer at the very bottom of the page. Each includes a standard download icon and configurable text."
+    alt: "Screenshot of a web page formatted as an article or chapter of a book. In the page header at the top and in the footer at the bottom, red links stand out with download icons and text labels that say PDF and Download the PDF respectively."
+    
+  - id: "pdf-download-link--sidebar"
+    src: /screenshots/pdf-download-link--sidebar.png
+    caption: "A link to the full project PDF is added to the “Other Formats” section in the sidebar menu. “Other Formats” links are controlled in the `resource_link` list in the `content/_data/publication.yaml` file."
+    alt: "A screenshot of a web page focused on a detail of a sidebar menu that has a heading Other Formats and two links below it. One says PDF, and the other says EPUB."
+    
   - id: "iiif-manifest"
     src: /screenshots/iiif-manifest.jpg
     caption: "Scrolling down Getty's collection page for an object that is available as a IIIF image, you will eventually find the manifest URL."
