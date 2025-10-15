@@ -7,18 +7,22 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
+**Quire @ 2025 MCN** <br>
+October 20-22, 2025 <br>
+Walker Art Center <br>
+Minneapolis, MN <br>
+Learn more/register at: https://mcn.edu/annual-conference/ 
+
+MuPuDIG + Digital Publishing Meet-Up @ MCN
+Wednesday, October 22 at 8:30 am 
+Location will be announced on MCN Slack
+
 **Quire @ 2025 Digital Library Forum**<br/> 
 [Hands-On Digital Publishing Workshop](https://dlfforum2025.sched.com/event/23ZL5/s07-hands-on-digital-publishing-workshop-with-quire) <br>
 Sunday, November 16 <br>
 1:45–5:00 pm <br>
 Denver, CO <br>
-Learn more/register at: https://forum2025.diglib.org/ 
-
-**Quire @ 2025 MCN** <br>
-October 2025 <br>
-Walker Art Center <br>
-Minneapolis, MN <br>
-More information coming soon... 
+Learn more/register at: https://forum2025.diglib.org/
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
@@ -34,11 +38,18 @@ More information coming soon...
 
 **2025**
 
-- February 13-15: Quire exhibits at [College Art Association Conference](https://www.collegeart.org/programs/conference/conference2025) 
-- March 13: Quire presents a hands-on workshop at [Code4Lib 2025](https://2025.code4lib.org/) at Princeton University. 
-- May 14: Greg Albers presents the poster session [*What Can a Book Do?*](https://what-can-a-book-do.netlify.app/) at the 2025 ARLIS/NA virtual conference 
-- June 29: Quire presents a [hands-on workshop](https://quire.getty.edu/community/nmps-mchc-event/) at the Maryland Center for History and Culture in Baltimore, MD during [NMPS 2025](https://graham.uchicago.edu/program/national-museum-publishing-seminar/). 
+- December 10: Virtual [GitHub](/resources/github/) tutorial offered to community members 
+- November 16: Quire presents a [hands-on workshop](https://dlfforum2025.sched.com/event/23ZL5/s07-hands-on-digital-publishing-workshop-with-quire) at DLF Forum in Denver, CO. 
+- November 12: Virtual [GitHub](/resources/github/) tutorial offered to community members 
+- October 22: MuPuDIG + Digital Publishing Meet-Up @ the [2025 MCN Conference](https://mcn.edu/annual-conference/ )
+- October 9: [Individual Page PDFs](https://quire.getty.edu/docs-v1/pdf/#generate-pdf-files) are introduced as a new feature 
+- October 8: Virtual [GitHub](/resources/github/) tutorial offered to community members 
+- July 29: Community member, Valerie Hellstein from the Denver Art Museum, presents "[Why Publish Digitally](https://www.youtube.com/watch?v=dSn0kvLnZqk)" as part of MuPuDIG's bi-monthly webinar series 
 - June 29–July 2: Quire is a premium exhibitor at [National Museum Publishing Seminar](https://graham.uchicago.edu/program/national-museum-publishing-seminar/) and organizes a community meet-up. 
+- June 29: Quire presents a [hands-on workshop](https://quire.getty.edu/community/nmps-mchc-event/) at the Maryland Center for History and Culture in Baltimore, MD during [NMPS 2025](https://graham.uchicago.edu/program/national-museum-publishing-seminar/). 
+- May 14: Greg Albers presents the poster session [*What Can a Book Do?*](https://what-can-a-book-do.netlify.app/) at the 2025 ARLIS/NA virtual conference 
+- March 13: Quire presents a hands-on workshop at [Code4Lib 2025](https://2025.code4lib.org/) at Princeton University. 
+- February 13-15: Quire exhibits at [College Art Association Conference](https://www.collegeart.org/programs/conference/conference2025)
 
 **2024**
 
