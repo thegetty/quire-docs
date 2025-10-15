@@ -7,6 +7,8 @@ online: false
 
 2025
 
+- [October](https://newsletters.getty.edu/t/t-6D5CD04D4020911F2540EF23F30FEDED) New Feature Launch: Individual Page PDFs, Coming Soon: Virtual Show-and-Tell, GitHub Tutorials in November and December, Community Shoutout, 10-Minute Feedback Survey, Digital Publishing Meetup at MCN 2025, Hands-On Quire Workshop at DLF Forum 2025, Office Hours, Reiss-Engelhorn-Museen
+- [September](https://newsletters.getty.edu/t/t-EB8383B7B773E3E92540EF23F30FEDED) GitHub Tutorial: Sign Up Now!, MuPuDIG Session on Digital Publishing, 10-Minute Feedback Survey, Upcoming Conferences: DLF + MCN, Office Hours, Mills College Art Museum at Northeastern University
 - [July](https://newsletters.getty.edu/t/t-4C4A9AE5C42C807C2540EF23F30FEDED) National Museum Publishing Seminar Recap, Quire Demo Site, Quire by the Numbers, 10-Minute Feedback Survey, Office Hours, Upcoming MuPuDIG Sessions, Self-Published 
 - [May](https://newsletters.getty.edu/t/t-E10D0A23A464DED72540EF23F30FEDED) Quire at the National Museum Publishing Seminar, ARLIS Poster Session: What Can a Book Do?, Styling In-line and Block Text with Custom.CSS, 10-Minute Feedback Survey, Office Hours, MuPuDIG Webinar on Online Journals, Getty Publications
 - [April](https://newsletters.getty.edu/t/t-A6408BE7C0A20D482540EF23F30FEDED) Upcoming Quire Workshop: Baltimore, Quire Bug Fixes, 10-Minute Feedback Survey, Office Hours, Brown University Digital Scholarship Symposium, Leventhal Map & Education Center 
