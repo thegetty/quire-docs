@@ -998,7 +998,7 @@ project_list:
     type: Online Exhibition
     publisher: "Self-Published"
     title_info: "*Padova decorata*"
-    pub_date: 2023-09-16
+    pub_date: 2025-09-16
     url: https://www.padova-decorata.it
     customization_level: extensive
     github_user:
@@ -1018,3 +1018,45 @@ project_list:
       - mpopke
       - vhellstein
     note: "This is the Denver Art Museum's first hybrid digital/print symposium volume.  The volume captures the history of collecting and display of ancient American works in art museums, a history surprisingly poorly documented until now. It was done totally in-house with the goal of reaching a much wider audience than the print-only volumes."
+  
+
+  - id: "100_years_mills"
+    src: /screenshots/_100_years_mills.jpg
+    alt: "100 Years of Creative Visions: Mills College Art Museum. Stephanie Hanor and Christa Cesario."
+    type: Essay
+    publisher: "Mills College Art Museum at Northeastern University"
+    title_info: "100 Years of Creative Visions"
+    pub_date: 2025-08-27
+    url: https://mcam.oakland.northeastern.edu/publications/100years/
+    customization_level: none
+    github_user:
+      - shanor
+      - millsartmuseum
+    note: "The Mills College Art Museum used Quire to create a digital publication featuring essays commemorating the institution's centennial. The digital format is perfect for sharing via QR codes both in the museum and on promotional materials, allowing the museum to expand visitor engagement with the museum’s history."
+  
+  - id: "koestliche_reiss_engelhorn"
+    src: /screenshots/_koestliche_reiss_engelhorn.jpg
+    alt: "Köstliche Details: Filigrane Mannheim-Ansichten durch die Linse. Texte von Irmgard Siede. Bilder von Rebecca Kind."
+    type: Collection Catalogue
+    publisher: "Reiss-Engelhorn-Museen"
+    title_info: "Köstliche Details: Filigrane Mannheim-Ansichten durch die Linse"
+    pub_date: 2025-07-31
+    url: https://koestliche-details.rem-mannheim.eu/
+    customization_level: minor
+    github_user:
+      - LesZimmermann
+    note: "The Reiss-Engelhorn-Museen used Quire to publish *Köstliche Details*, making zoomable macro photographs of 19th-century souvenir glasses freely accessible online by taking advantage of Quire’s IIIF image viewer and PDF export while relying almost entirely on the default theme. By adopting Quire with only minimal style adjustments, the museum is experimenting with a low-maintenance, digital-first workflow that expands its academic output beyond the limitations of print."
+  
+  - id: "mapping_newberry_library"
+    src: /screenshots/_mapping_newberry_library.jpg
+    alt: "Mapping Outside the Lines"
+    type: Exhibition Catalogue
+    publisher: "Newberry Library"
+    title_info: "Mapping Outside the Lines"
+    pub_date: 2025-10-09
+    url: https://publications.newberry.org/mapping-outside-the-lines/
+    customization_level: moderate
+    github_user:
+      - dewmaps
+      - historianem
+    note: "The Newberry wanted to have an online proxy for its new exhibition for people who wouldn't be able to visit Chicago. It was important to the Newberry to leverage IIIf to make the objects available in high definition and to have a site that has a good interface without being too heavy of a lift technically."
