@@ -1060,3 +1060,16 @@ project_list:
       - dewmaps
       - historianem
     note: "The Newberry wanted to have an online proxy for its new exhibition for people who wouldn't be able to visit Chicago. It was important to the Newberry to leverage IIIf to make the objects available in high definition and to have a site that has a good interface without being too heavy of a lift technically."
+
+  - id: "materia_issue_5"
+    src: /screenshots/_materia_issue_5.jpg
+    alt: "Materia: Journal of Technical Art History, Issue 5"
+    type: Journal
+    publisher: "Materia: Journal of Technical Art History"
+    title_info: "*Materia: Journal of Technical Art History, Issue 5*"
+    pub_date: 2025-07-09
+    url: https://issue-5.materiajournal.com/
+    customization_level: moderate
+    github_user:
+      - materiajournal
+    note: "This is *Materia's* fifth journal produced with Quire. This issue showcases articles that apply a technical lens to stained glass, decorative plaster, and architectural drawings as well as a theoretical exploration of the conservation of Futurist artworks."
