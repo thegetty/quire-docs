@@ -34,6 +34,9 @@ figure_list:
     src: /screenshots/group-caption.jpg
     caption: " "
     credit:
+  - id: "group-caption1"
+    src: /screenshots/group-caption1.png
+    caption: "For example, with the shortcode `{% figuregroup '2' 'figure id, figure id' %}`, you can place two images of your choosing side by side."
   - id: "1.11"
     src: /screenshots/grid.jpg
     caption: "Examples of various grid layouts."

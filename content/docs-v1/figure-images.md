@@ -72,7 +72,7 @@ Always use `{% figure %}` shortcodes on their own lines in your Markdown documen
 By default, figures will display at the width of the full-column of text. Modifier classes can be added to a shortcode to style the way the figures appear. Available classes are `is-pulled-left` and `is-pulled-right`. This will put the image in-line with the text, either to the right or left. Within the shortcode, the first value is the `id` and the second value is the class type. They should both appear within a set of single quotes, separated by a comma.
 
 ```md
-{% figure 'fig-1-2', 'is-pulled-left' %}
+{% figure 'fig-1-2' 'is-pulled-left' %}
 ```
 
 {{< q-figure id="1.9" >}}
@@ -82,8 +82,10 @@ By default, figures will display at the width of the full-column of text. Modifi
 When you have multiple images that make sense to group together, you can use the `{% figuregroup %}` shortcode. First, you must specify the preferred grid width. For example, if you have six images you could insert `2` in the shortcode to make the grid appear with three rows, each *two* images wide. Alternatively, if you insert `3` then the grid will appear with two rows, each *three* images wide. The figures will scale accordingly. After you have defined the grid width, insert the `ids` of the images you would like included. List the `ids` within one set of single quotes, separated by commas.
 
 ```md
-{% figuregroup '2', 'fig-1-1, fig-1-3, fig-1-3, fig-1-4' %}
+{% figuregroup '2' 'fig-1-1, fig-1-3, fig-1-3, fig-1-4' %}
 ```
+{{< q-figure id="group-caption1" >}}
+
 {{< q-figure id="1.11" >}}
 
 {{< q-class "box warning" >}}
