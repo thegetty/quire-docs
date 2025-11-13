@@ -13,6 +13,8 @@ Quire commands are typically run from Terminal on a Mac and PowerShell on a PC. 
 - Run `quire --help` in your command-line shell for a full list of the Quire commands and options defined below.
 {{< /q-class >}}
 
+{{< q-figure id="cli-commands" >}}
+
 ## Start and Preview Projects
 
 | Command       | Action   | Notes              |

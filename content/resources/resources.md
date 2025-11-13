@@ -13,6 +13,8 @@ abstract: "Helpful tools, explanations, and links"
 - [Codeacademy: Learn the Command Line](https://www.codecademy.com/resources/learn-the-command-line)
 - [Video: Really Friendly Command Line Intro](https://www.youtube.com/watch?v=d9s8co9POYY&feature=youtu.be)
 
+{{< q-figure id="cli-commands" >}}
+
 ## GitHub
 
 *GitHub is a project management platform centered around git-based version control, and highly recommended for hosting your Quire project, tracking changes, and working with collaborators.*
