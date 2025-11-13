@@ -156,7 +156,7 @@ figure_list:
 
   - id: "modern-bibliography"
     src: /screenshots/modern-bibliography.jpg
-    caption: "A bibliography of all works in your project's `references.yaml` file can be added to any page with the `layout: bibliography`."
+    caption: "**`layout: bibliography`** <br /> A bibliography of all works in your project's `references.yaml` file can be added to any page with the `layout: bibliography`."
 
   - id: "netlify-logo"
     src: full-logo-light.jpg
