@@ -519,7 +519,7 @@ In addition to adding the reference information as a pop-up citation, it will al
 
 **Go Deeper**
 
-1. Back in the `references.yaml` file, create a new entry inclduing the `full` version of the citation, and assign an `id` written in "Author Date" format (for example: "Evans 1938")
+1. Back in the `references.yaml` file, create a new entry including the `full` version of the citation, and assign an `id` written in "Author Date" format (for example: "Evans 1938")
 2. Navigate to the `essay.md` file and choose a place where you want to insert the pop-up citation
 3. Add the citation using the shortcode: `{% cite 'id' %}`, replacing `id` with the one you just created in the `references.yaml`
 4. Stop and restart your preview
@@ -537,7 +537,7 @@ To make Quire approachable to everyone, regardless of technical experience, weâ€
 
 **What are style variables?**
 
-Variables are essentially a list of built-in options for making style customziations. You can use them to control things like text and background colors, specific element sizes, fonts, paragraph indents, PDF margins, and more.
+Variables are essentially a list of built-in options for making style customizations. You can use them to control things like text and background colors, specific element sizes, fonts, paragraph indents, PDF margins, and more.
 
 **What are the benefits of using style variables?**
 
@@ -612,7 +612,7 @@ Note: you can name a class whatever you like. For the sake of simplicity, we are
 
 ### The `<span>` Tag 
 
-Now that you have created the new `purple-text` class, let's apply it to a specific word with the <span> HTML tag. This tag is used when you want to customiz in-line elements.
+Now that you have created the new `purple-text` class, let's apply it to a specific word with the <span> HTML tag. This tag is used when you want to customize in-line elements.
 
 <div class="try-it-yourself">
 
@@ -626,7 +626,7 @@ Now that you have created the new `purple-text` class, let's apply it to a speci
 
 ### The `<div>` Tag 
 
-In addition to targeting a single word with the <span> tag, you can also make changes to an entire block of text. You would do this with the <div> tag. 
+In addition to targeting a single word with the <span> tag, you can also make changes to an entire block of text. You would do this with the `<div>` tag. 
 
 <div class="try-it-yourself">
 
@@ -653,7 +653,7 @@ In addition to targeting a single word with the <span> tag, you can also make ch
 
 ### Overriding Styles with Custom CSS 
 
-In addition to creating custom classes in the `custom.css` file and applying then with HTML tags, you can also override exisiting styles in a broader sense. One of the most common requests we get for help with custom CSS is hiding the title and subtitle from the cover page of your project, as in this example from the Leventhal Map & Education Center: https://www.leventhalmap.org/digital-exhibitions/terrains-of-independence/. Please follow the steps below to achieve this. 
+In addition to creating custom classes in the `custom.css` file and applying them with HTML tags, you can also override existing styles in a broader sense. One of the most common requests we get for help with custom CSS is hiding the title and subtitle from the cover page of your project, as in this example from the Leventhal Map & Education Center: https://www.leventhalmap.org/digital-exhibitions/terrains-of-independence/. Please follow the steps below to achieve this. 
 
 <div class="try-it-yourself">
 
