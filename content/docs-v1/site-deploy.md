@@ -138,7 +138,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 9. In your command-line shell, run `git checkout main && git branch -D gh-deploy` to delete the temporary deploy branch and to switch back to your `main` branch. If you were publishing from a branch other than `main`, use that name in here instead, like `git checkout YOUR-BRANCH-NAME && git branch -D gh-deploy`.
 
-10. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change prepository visibility," and change the visibility to public.
+10. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change repository visibility," and change the visibility to public.
 
 11. While in your repository's settings page, use the left sidebar to navigate to "Pages." For "Branch," use the drop-down menu to switch to `gh-pages` in the `/(root)` folder and save.
 

@@ -43,10 +43,10 @@ figure_list:
     credit:
   - id: "1.12"
     src: /screenshots/style1.png
-    caption: "Screenshot of the `variables.scss` file in the default-theme directory."
+    caption: "Screenshot of the `variables.scss` file in the in the `_assets/styles/` directory."
   - id: "1.13"
     src: /screenshots/style2.png
-    caption: "Screenshot of the custom.css file in the static directory."
+    caption: "Screenshot of the custom.css file in the `_assets/styles/` directory."
   - id: "1.15"
     src: /screenshots/outputstyleguide.jpg
     caption: "visual output style guide in quire"
@@ -159,7 +159,7 @@ figure_list:
 
   - id: "modern-bibliography"
     src: /screenshots/modern-bibliography.jpg
-    caption: "**`layout: bibliography`** <br /> A bibliography of all works in your project's `references.yaml` file can be added to any page with the `layout: bibliography`."
+    caption: "**`layout: bibliography`** <br /> A bibliography of all works in your project's `references.yaml` file can be added to any page adding the `bibliography` value to the page's `layout`."
 
   - id: "netlify-logo"
     src: full-logo-light.jpg
