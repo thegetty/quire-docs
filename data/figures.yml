@@ -43,7 +43,7 @@ figure_list:
     credit:
   - id: "1.12"
     src: /screenshots/style1.png
-    caption: "Screenshot of the `variables.scss` file in the in the `_assets/styles/` directory."
+    caption: "Screenshot of the `variables.scss` file in the in the `Z_assets/styles/` directory."
   - id: "1.13"
     src: /screenshots/style2.png
     caption: "Screenshot of the custom.css file in the `_assets/styles/` directory."
@@ -456,6 +456,10 @@ figure_list:
 
   - id: "cli-commands"
     src: /screenshots/cli-commands.png
+    caption: "A full list of Quire commands will be shown on your command-line shell when running `quire --help`."
+
+  - id: "cli-commands-v0"
+    src: /screenshots/cli-commands-v0.jpg
     caption: "A full list of Quire commands will be shown on your command-line shell when running `quire --help`."
 
   - id: "quire-starter-content-change-1-1"

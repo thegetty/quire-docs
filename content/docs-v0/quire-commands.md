@@ -83,4 +83,4 @@ Also for the PDF, EPUB, and MOBI commands, developers may  use the `--env` optio
 `quire debug`
 : Development use only. Log info about current project.
 
-{{< q-figure id="cli-commands" >}}
+{{< q-figure id="cli-commands-v0" >}}
