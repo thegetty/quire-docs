@@ -19,11 +19,11 @@ figure_list:
     credit: " "
 
   - id: "1.7"
-    src: /screenshots/catalogue-entry-page.jpg
+    src: /screenshots/catalogue-entry-page.png
     caption: "Screenshot of catalogue entry page as rendered in the browser."
     credit:
   - id: "1.8"
-    src: /screenshots/catalogue-entry-grid.jpg
+    src: /screenshots/catalogue-entry-grid.png
     caption: "Screenshot of catalogue grid page as rendered in the browser."
     credit: " "
   - id: "1.9"
@@ -34,16 +34,19 @@ figure_list:
     src: /screenshots/group-caption.jpg
     caption: " "
     credit:
+  - id: "group-caption1"
+    src: /screenshots/group-caption1.png
+    caption: "For example, with the shortcode `{% figuregroup '2' 'figure id, figure id' %}`, you can place two images of your choosing side by side."
   - id: "1.11"
     src: /screenshots/grid.jpg
     caption: "Examples of various grid layouts."
     credit:
   - id: "1.12"
-    src: /screenshots/style1.jpg
-    caption: "Screenshot of the `variables.scss` file in the default-theme directory."
+    src: /screenshots/style1.png
+    caption: "Screenshot of the `variables.scss` file in the in the `Z_assets/styles/` directory."
   - id: "1.13"
-    src: /screenshots/style2.jpg
-    caption: "screenshot of the custom.css file in the static directory"
+    src: /screenshots/style2.png
+    caption: "Screenshot of the custom.css file in the `_assets/styles/` directory."
   - id: "1.15"
     src: /screenshots/outputstyleguide.jpg
     caption: "visual output style guide in quire"
@@ -65,7 +68,7 @@ figure_list:
     src: /screenshots/quire-starter-cover-change.jpg
     caption: "A background image can be added to the cover by including the image path in the page YAML of your index.md file."
   - id: "quire-starter-content-change-1"
-    src: /screenshots/quire-starter-content-change-1.jpg
+    src: /screenshots/quire-starter-content-change-1.png
     caption: "Changing the page `title`, `order` and filename of a Markdown file in your text editor (left), will change the page title, its ordering in the book, and its URL in the website (right)."
   - id: "quire-starter-content-change-2"
     src: /screenshots/quire-starter-content-change-2.jpg
@@ -77,10 +80,10 @@ figure_list:
     src: /screenshots/command-line-drag-and-drop.gif
     caption: ""
   - id: "github-desktop-initial-commit"
-    src: /screenshots/github-desktop-initial-commit.jpg
-    caption: "In GitHub Desktop, files with changes will be listed on the left, and a detailed red (old version) and green (new version) highlighted “diff” of individual changes will appear on the right. The Commit to Master button in the lower left adds these changes to your project’s git repository."
+    src: /screenshots/github-desktop-initial-commit.png
+    caption: "In GitHub Desktop, files with changes will be listed on the left, and a detailed red (old version) and green (new version) highlighted “diff” of individual changes will appear on the right. The 'Commit to main' button in the lower left adds these changes to your project’s git repository."
   - id: "github-desktop-publish"
-    src: /screenshots/github-desktop-publish.jpg
+    src: /screenshots/github-desktop-publish.png
     caption: "When publishing a new project repository to GitHub leave the name the same as your project file. You can add add a description if you’d like, can choose whether to make it private or not if you have a paid account, or publish it to an organization account if you have publishing access to one."
   - id: "modern-cover"
     src: /screenshots/modern-cover.jpg
@@ -156,7 +159,7 @@ figure_list:
 
   - id: "modern-bibliography"
     src: /screenshots/modern-bibliography.jpg
-    caption: "A bibliography of all works in your project’s `references.yaml` file can be added to any page with the `layout: biblioraphy`."
+    caption: "**`layout: bibliography`** <br /> A bibliography of all works in your project's `references.yaml` file can be added to any page adding the `bibliography` value to the page's `layout`."
 
   - id: "netlify-logo"
     src: full-logo-light.jpg
@@ -450,6 +453,18 @@ figure_list:
 
   - id: "nmpslogo"
     src: /screenshots/nmpslogo.png
+
+  - id: "cli-commands"
+    src: /screenshots/cli-commands.png
+    caption: "A full list of Quire commands will be shown on your command-line shell when running `quire --help`."
+
+  - id: "cli-commands-v0"
+    src: /screenshots/cli-commands-v0.jpg
+    caption: "A full list of Quire commands will be shown on your command-line shell when running `quire --help`."
+
+  - id: "quire-starter-content-change-1-1"
+    src: /screenshots/quire-starter-content-change-1-1.png
+    caption: "New text in Markdown has been added to the preface in the section below the page YAML."
 
   - id: "what-can-a-book-do"
     src: /screenshots/what-can-a-book-do.jpg

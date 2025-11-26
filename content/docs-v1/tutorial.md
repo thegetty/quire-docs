@@ -203,6 +203,8 @@ of students let loose in the halls of art.
 ```
 3. View the changes in your browser preview.
 
+{{< q-figure id="quire-starter-content-change-1-1">}}
+
 ## 8. Add Images
 
 To add more specialized features to your publication, such as images, multimedia, or citations, Quire extends Markdown’s capabilities with {{< q-def "shortcodes" >}}. Shortcodes are small snippets of code that pull data from the YAML files found in the `_data` folder and insert them into your .md files. The `figures.yaml` file contains YAML values for things like `caption`, `src`, and `id`, among others as in the example below.

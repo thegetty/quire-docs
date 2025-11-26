@@ -70,6 +70,8 @@ The page `layout` must be one of six possible values: `page`, `essay`, `entry`, 
 
 {{< q-figure id="modern-entry-side" >}}
 
+{{< q-figure id="modern-bibliography" >}}
+
 Along with `layout`, Quire pages can also have a `presentation` style. These are applied specifically to the `table-of-contents` and `entry` page types to give further control over the layouts of those pages.
 
 ```yaml
