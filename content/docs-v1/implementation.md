@@ -35,7 +35,7 @@ As of 2022, Quire was released as open-source software under a [BSD 3-Clause lic
 
 ## Content Compatibility
 
-- Quire is optimized for book-like projects. Especially those that rely on visual illustrations and/or scholarly apparatus like citations, bibliographies, and footnoting.
+- Quire is optimized for book-like projects. Especially those that rely on visual illustrations and/or scholarly apparatus like citations, bibliographies, and footnotes.
 
 - For those looking to publish more non-textual, image-intensive presentations, like an online exhibition or a fully illustrated children’s book or graphic novel, Quire may not be the right fit.
 
