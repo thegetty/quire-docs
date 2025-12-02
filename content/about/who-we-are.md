@@ -7,7 +7,7 @@ abstract: Meet Quire’s core team and contributors
 
 ## Core Team
 
-Quire is developed by [Getty](https://www.getty.edu) and the core team working on Quire is currently comprised of Getty staff members. Together, we are working toward a full open-source release by 2022. Feel free to contact us at [quire@getty.edu](mailto:quire@getty.edu).
+Quire is developed by [Getty](https://www.getty.edu) and the core team working on Quire is currently comprised of Getty staff members. Feel free to contact us at [quire@getty.edu](mailto:quire@getty.edu).
 
 <div class="feature-list">
 
