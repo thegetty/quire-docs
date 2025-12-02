@@ -60,7 +60,7 @@ Collection catalogues / exhibition catalogues / guides and toolkits / journals /
 - While Quire is compatible with both macOS and Windows, we presently offer better support for macOS users due to development resources and dependencies. See our [installation guidelines](/docs-v1/install-uninstall/) for more information.
 - No pre-existing technical skills are necessary. We are developing helpful tools and resources to support our users. Take our [workshop](/resources/workshop/) and browse our list of [resources](/resources/).
 - We have a vibrant and diverse community of users who are available to answer your questions and provide guidance. Visit our [Quire Community Forum](https://github.com/thegetty/quire/discussions).
-- For more detailed information about whether Quire is right for you, visit our *[Implementation Considerations](/docs-v1/implementation/)*.
+- For more detailed information about whether Quire is right for you, see our *[Implementation Considerations](/docs-v1/implementation/)*.
 
 **Still not sure? Feel free to [contact us](mailto:quire@getty.edu) for a one-on-one consultation to determine if Quire is right for you.**
 

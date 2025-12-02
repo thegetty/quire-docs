@@ -147,7 +147,7 @@ project_list:
     customization_level: extensive
     github_user:
       - geealbers
-    note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. Getty worked closely with developers and software engineers to create a special template for CVA volumes that can be used by other institutions down the road."
+    note: "This publication marks the first-ever born digital, open-access version of the century-old reference series. It uses a version of the default Quire theme that was modified to match the print format CVA volumes have followed since the series was started over a century ago. Hopefully other institutions might use it down the road for their own CVA volumes."
 
   - id: "heritage_management"
     src: /screenshots/_getty_heritage_management.jpg
