@@ -836,7 +836,7 @@ project_list:
     publisher: "National Gallery Singapore"
     title_info: "*Living Pictures*"
     pub_date: 2024-04-23 
-    url: https://www.nationalgallery.sg/freeresources/living-pictures/
+    url: https://www.nationalgallery.sg/content/dam/microsites/living-pictures/index.html
     customization_level: moderate
     github_user:
       - YLLAM88
