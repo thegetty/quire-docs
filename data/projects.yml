@@ -1154,3 +1154,16 @@ project_list:
     github_user:
       - ACMAA
     note: "This is the inuagural volume of the *Carter Bulletin* and the second Quire publication from the Amon Carter Museum of American Art."
+
+  - id: princeton_cva
+    src: /screenshots/_princeton_cva.jpg
+    alt: "Corpus Vasorum Antiquorum, Fascicule 1: Athenian Red-Figure Amphorae, Loutrophoroi, Pelikai, Dinos, Kraters, Hydriai, Oinochoai, Askoi, Pyxis, Lekanis. By William L. Austin and J. Michael Padgett with contributions by Bailey K. Benson"
+    type: Corpus Vasorum Antiquorum
+    publisher: Princeton Art Museum 
+    title_info: "*Corpus Vasorum Antiquorum, Fascicule 1: Athenian Red-Figure Amphorae, Loutrophoroi, Pelikai, Dinos, Kraters, Hydriai, Oinochoai, Askoi, Pyxis, Lekanis*"
+    pub_date: 2025-09-10
+    url: https://cva.artmuseum.princeton.edu/ 
+    customization_level: significant
+    github_user:
+      - KJustement
+    note: "This is the first CVA issued by the Princeton Art Museum. The publication was heavily customized and followwed the work done by the Getty for their 2019 CVA. Princeton's publication features zoomable images and multiple views of every work, linked bibliographic references, and indices of attributions and subjects. This open-access, custom catalogue, along with its object data, is available free online and in multiple formats for download, including PDF, MOBI/Kindle, and EPUB. A hardcover reference edition is also available for purchase."
