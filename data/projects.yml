@@ -1079,7 +1079,7 @@ project_list:
     alt: "Indonesian Textiles at the Yale University Art Gallery. Ruth Barnes and Arielle Winnik"
     type: Collection Catalogue
     publisher: Yale University Art Gallery
-    title_info: "Indonesian Textiles at the Yale University Art Gallery"
+    title_info: "*Indonesian Textiles at the Yale University Art Gallery*"
     pub_date: 2025-09-12
     url: https://publications.artgallery.yale.edu/indonesian-textiles
     customization_level: moderate
@@ -1092,7 +1092,7 @@ project_list:
     alt: "Essays on the Accademia di San Luca: Year of publication - 2024. Susan Nalezyty, Evelyn Lincoln"
     type: Essay
     publisher: Center for Advanced Study in the Visual Arts, National Gallery of Art
-    title_info: "Essays on Girolama Parasole, Cameral Obligation, and Notarial Tradition v. 2"
+    title_info: "*Essays on Girolama Parasole, Cameral Obligation, and Notarial Tradition v. 2*"
     pub_date: 2025-11-25
     url: https://nationalgalleryofart.github.io/accademiaessaysvolumetwo/ 
     customization_level: minor
@@ -1105,7 +1105,7 @@ project_list:
     alt: "Essays on the Accademia di San Luca: Year of publication - 2023. Antonia Fiori, Laurie Nussdorfer"
     type: Esssay
     publisher: Center for Advanced Study in the Visual Arts, National Gallery of Art
-    title_info: "Essays on Girolama Parasole, Cameral Obligation, and Notarial Tradition v. 1"
+    title_info: "*Essays on Girolama Parasole, Cameral Obligation, and Notarial Tradition v. 1*"
     pub_date: 2025-11-25
     url: https://nationalgalleryofart.github.io/accademiaessaysvolumeone/
     customization_level: minor
@@ -1118,7 +1118,7 @@ project_list:
     alt: "Life and the Afterlife: Ancient Egyptian Art from the Senusret Collection, Edited by Melinda Hartwig"
     type: Exhibition Catalogue
     publisher: Michael C. Carlos Museum, Emory University
-    title_info: "Life and the Afterlife: Ancient Egyptian Art from the Senusret Collection"
+    title_info: "*Life and the Afterlife: Ancient Egyptian Art from the Senusret Collection*"
     pub_date: 2023-06-29
     url: https://carlos.emory.edu/publications/LifeAndTheAfterlife/
     customization_level: minor
@@ -1131,7 +1131,7 @@ project_list:
     alt: "A colorful list of all the issues the Paul Mellon Center for Studies in British Art have created with Quire."
     type: Journal 
     publisher: Paul Mellon Centre for Studies in British Art and Yale Center for British Art
-    title_info: "British Art Studies"
+    title_info: "*British Art Studies*"
     pub_date: 2025-12-05
     url: https://britishartstudies.ac.uk/issues/28/all-issues/
     customization_level: full 
@@ -1140,17 +1140,17 @@ project_list:
       - tompowell-pmc
       - brutaldigital
       - cbutcosk
-    note: "The BAS journal team have used Quire to produce individual publications for their backlist of twenty-five issues, and are continuing to add two to three issues per year. They have adapted the essay template for publication of articles, added an additional ‘virtual exhibition’ template for presenting an narrative that is primarily led by visual material, and an Elasticsearch index that enables seamless cross-searching across multiple Quire projects."
+    note: "The BAS journal team have used Quire to produce individual publications for their backlist of twenty-five issues, and are continuing to add two to three issues per year. They have adapted the essay template for publication of articles, added an additional ‘virtual exhibition’ template for presenting a narrative that is primarily led by visual material, and an Elasticsearch index that enables seamless cross-searching across multiple Quire projects."
 
   - id: acmaa_carter_bulletin_v1
     src: /screenshots/_acmaa_carter_bulletin_v1.jpg
     alt: "Carter Bulletin: Vol. 1. Charles M. Russell: New Perspectives. Emily C. Burns, Annika K. Johnson, Melanie McKay-Cody, Spencer Wigmore, and Michael D. Wise"
     type: Journal
     publisher: Amon Carter Museum of American Art
-    title_info: "Carter Bulletin: Vol. 1"
+    title_info: "*Carter Bulletin: Vol. 1*"
     pub_date: 2025-12-10
     url: https://bulletin-v1.cartermuseum.org/
     customization_level: moderate
     github_user:
       - ACMAA
-    note: "This is the inuagural volume of the Carter Bulletin and the second Quire publication fromo the Amon Carter Museum of American Art."
+    note: "This is the inuagural volume of the *Carter Bulletin* and the second Quire publication from the Amon Carter Museum of American Art."
