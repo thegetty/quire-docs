@@ -938,19 +938,19 @@ project_list:
       - daniel-keller
     note: "In developing “Paintings by the Pissarro Family: A Technical Catalogue”, the focus of the team at Newfields was to build a sustainable publication of technical examination reports. Their previous work with Quire, during the development of “Masterpieces from the Clowes Collection: Paintings”, with its highly modified layouts, styles, and custom data pipelines, allowed for quick iteration and low developer-time investment for this second published work."
 
-  - id: "v&a_researchjournal_7"
-    src: /screenshots/_v&a_researchjournal_7.jpg
-    alt: "Issue No.7 Summer 2015, Research Journal, Edited by Angela McShane"
+  - id: "va_journal"
+    src: /screenshots/_va_journal.jpg
+    alt: "Homepage of Victoria and Albert Research Journals"
     type: Journal
     publisher: "Victoria and Albert Museum"
-    title_info: "*Research Journal: Issue 7 Summer 2015*"
+    title_info: "*Research Journal*"
     pub_date: 2024-10-21
-    url: https://research.vam.ac.uk/journals/research-journal/issue-7/
+    url: https://research.vam.ac.uk/journals/
     customization_level: full
     github_user:
       - vanda 
       - smithfield-studio
-    note: "This is the first Quire publication from the Victoria and Albert Museum (V&A) and the seventh issue of the *V&A Research Journal*. As a Quire project, Issue No. 7 revises a previously published issue produced with custom code. The V&A ultimately chose Quire because it is open-source and highly customizable. The institution developed an entirely new design and Quire theme for their publication that can potentially serve as a template for further journal issues and research projects."
+    note: "The V&A ultimately chose Quire because it is open-source and highly customizable. The institution developed an entirely new design and Quire theme for their publication that can potentially serve as a template for further journal issues and research projects."
 
   - id: "emory_recastingantiquity"
     src: /screenshots/_emory_recastingantiquity.jpg
