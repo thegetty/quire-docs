@@ -96,7 +96,7 @@ Learn more: https://www.collegeart.org/programs/conference/conference2026
 | Event | Date | Description |
 | -- | -- | -- |
 | Digital Library Federation Forum | November 16, 2025 | 3-hour hands-on Quire workshop at The Westin Denver Downtown |  
-| Museum Publishing Digital Interest Group (MuPuDig) Webinar | July 29, 2025 | *Why Publish Digitally*, presented by Valerie Hellstein of the Denver Museum of Art https://www.youtube.com/watch?v=dSn0kvLnZqk |
+| Museum Publishing Digital Interest Group (MuPuDig) Webinar | July 29, 2025 | *Why Publish Digitally*, presented by Valerie Hellstein (Denver Museum of Art) https://www.youtube.com/watch?v=dSn0kvLnZqk |
 | National Museum Publishing Seminar | June 29, 2025 | 3-hour hands-on Quire workshop at the Maryland Center for History & Culture | 
 | ARLIS/NA | May 14, 2025 | *What Can a Book Do?*, presented by Greg Albers |
 | Code4Lib | March 13, 2025 | 3-hour hands-on Quire workshop at Princeton University | 
