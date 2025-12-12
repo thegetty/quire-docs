@@ -938,19 +938,19 @@ project_list:
       - daniel-keller
     note: "In developing “Paintings by the Pissarro Family: A Technical Catalogue”, the focus of the team at Newfields was to build a sustainable publication of technical examination reports. Their previous work with Quire, during the development of “Masterpieces from the Clowes Collection: Paintings”, with its highly modified layouts, styles, and custom data pipelines, allowed for quick iteration and low developer-time investment for this second published work."
 
-  - id: "v&a_researchjournal_7"
-    src: /screenshots/_v&a_researchjournal_7.jpg
-    alt: "Issue No.7 Summer 2015, Research Journal, Edited by Angela McShane"
+  - id: "va_journal"
+    src: /screenshots/_va_journal.jpg
+    alt: "Homepage of Victoria and Albert Research Journals"
     type: Journal
     publisher: "Victoria and Albert Museum"
-    title_info: "*Research Journal: Issue 7 Summer 2015*"
+    title_info: "*Research Journal*"
     pub_date: 2024-10-21
-    url: https://research.vam.ac.uk/journals/research-journal/issue-7/
+    url: https://research.vam.ac.uk/journals/
     customization_level: full
     github_user:
       - vanda 
       - smithfield-studio
-    note: "This is the first Quire publication from the Victoria and Albert Museum (V&A) and the seventh issue of the *V&A Research Journal*. As a Quire project, Issue No. 7 revises a previously published issue produced with custom code. The V&A ultimately chose Quire because it is open-source and highly customizable. The institution developed an entirely new design and Quire theme for their publication that can potentially serve as a template for further journal issues and research projects."
+    note: "The V&A ultimately chose Quire because it is open-source and highly customizable. The institution developed an entirely new design and Quire theme for their publication that can potentially serve as a template for further journal issues and research projects."
 
   - id: "emory_recastingantiquity"
     src: /screenshots/_emory_recastingantiquity.jpg
@@ -963,7 +963,7 @@ project_list:
     customization_level: minor
     github_user:
       - chrisdaaz
-    note: "This is the second Quire publication from the Michael C. Carlos Museum. The exhibiton catalogue incldues minor customizations."
+    note: "This is the third Quire publication from the Michael C. Carlos Museum. The exhibiton catalogue incldues minor customizations."
 
   - id: "mingei_bluegold"
     src: /screenshots/_mingei_bluegold.jpg
@@ -1073,3 +1073,97 @@ project_list:
     github_user:
       - materiajournal
     note: "This is *Materia's* fifth journal produced with Quire. This issue showcases articles that apply a technical lens to stained glass, decorative plaster, and architectural drawings as well as a theoretical exploration of the conservation of Futurist artworks."
+
+  - id: yale_indonesian_textiles
+    src: /screenshots/_yale_indonesian_textiles.jpg
+    alt: "Indonesian Textiles at the Yale University Art Gallery. Ruth Barnes and Arielle Winnik"
+    type: Collection Catalogue
+    publisher: Yale University Art Gallery
+    title_info: "*Indonesian Textiles at the Yale University Art Gallery*"
+    pub_date: 2025-09-12
+    url: https://publications.artgallery.yale.edu/indonesian-textiles
+    customization_level: moderate
+    github_user:
+      - zsofiaj
+    note: "This is the Yale University Art Gallery's second Quire publication. For this book, YAG opted for the slightly more modern out-of-the-box design template, to differentiate it from our first publication (“Italian Paintings at the Yale University Art Gallery”), which used the traditional one. Also new in this book is the “collection index” feature, where a user can sort objects based on things like technique, culture, or date. YAG implemented a glossary as well. The Indonesian textiles collection at the Gallery numbers close to 1,200 objects, so a digital presentation makes a full collection catalogue possible!"
+
+  - id: nga_accademia_di_san_luca_v2
+    src: /screenshots/_nga_accademia_di_san_luca_v2.jpg
+    alt: "Essays on the Accademia di San Luca: Year of publication - 2024. Susan Nalezyty, Evelyn Lincoln"
+    type: Essay
+    publisher: Center for Advanced Study in the Visual Arts, National Gallery of Art
+    title_info: "*Essays on Girolama Parasole, Cameral Obligation, and Notarial Tradition v. 2*"
+    pub_date: 2025-11-25
+    url: https://nationalgalleryofart.github.io/accademiaessaysvolumetwo/ 
+    customization_level: minor
+    github_user:
+      - valefederici
+    note: "The team used Quire with only minimal customization, primarily CSS styling, image integration, and the substitution of endnotes for footnotes, while taking advantage of its open-source structure and compatibility with existing infrastructure such as GitHub. They selected Quire to support the long-term sustainability of the reimagined Accademia di San Luca digital platform, enabling independent yet institutionally supported work and allowing the project’s essays to be published in multiple formats."
+
+  - id: nga_accademia_di_san_luca_v1
+    src: /screenshots/_nga_accademia_di_san_luca_v1.jpg
+    alt: "Essays on the Accademia di San Luca: Year of publication - 2023. Antonia Fiori, Laurie Nussdorfer"
+    type: Esssay
+    publisher: Center for Advanced Study in the Visual Arts, National Gallery of Art
+    title_info: "*Essays on Girolama Parasole, Cameral Obligation, and Notarial Tradition v. 1*"
+    pub_date: 2025-11-25
+    url: https://nationalgalleryofart.github.io/accademiaessaysvolumeone/
+    customization_level: minor
+    github_user:
+      - valefederici
+    note: "The team used Quire with only minimal customization, primarily CSS styling, image integration, and the substitution of endnotes for footnotes, while taking advantage of its open-source structure and compatibility with existing infrastructure such as GitHub. They selected Quire to support the long-term sustainability of the reimagined Accademia di San Luca digital platform, enabling independent yet institutionally supported work and allowing the project’s essays to be published in multiple formats."
+
+  - id: emory_carlos_museum_life_and_afterlife
+    src: /screenshots/_emory_carlos_museum_life_and_afterlife.jpg
+    alt: "Life and the Afterlife: Ancient Egyptian Art from the Senusret Collection, Edited by Melinda Hartwig"
+    type: Exhibition Catalogue
+    publisher: Michael C. Carlos Museum, Emory University
+    title_info: "*Life and the Afterlife: Ancient Egyptian Art from the Senusret Collection*"
+    pub_date: 2023-06-29
+    url: https://carlos.emory.edu/publications/LifeAndTheAfterlife/
+    customization_level: minor
+    github_user:
+      - chrisdaaz
+    note: "This is the second Quire publication from the Michael C. Carlos Museum at Emory University."
+
+  - id: basj_all_issues
+    src: /screenshots/_basj_all_issues.jpg
+    alt: "A colorful list of all the issues of the British Art Studies journal that have been created with Quire."
+    type: Journal 
+    publisher: Paul Mellon Centre for Studies in British Art and Yale Center for British Art
+    title_info: "*British Art Studies*"
+    pub_date: 2025-12-05
+    url: https://britishartstudies.ac.uk/issues/28/all-issues/
+    customization_level: full 
+    github_user:
+      - pmcbcard
+      - tompowell-pmc
+      - brutaldigital
+      - cbutcosk
+    note: "The BAS journal team have used Quire to produce individual publications for their backlist of twenty-five issues, and are continuing to add two to three issues per year. They have adapted the essay template for publication of articles, added an additional ‘virtual exhibition’ template for presenting a narrative that is primarily led by visual material, and an Elasticsearch index that enables seamless cross-searching across multiple Quire projects."
+
+  - id: acmaa_carter_bulletin_v1
+    src: /screenshots/_acmaa_carter_bulletin_v1.jpg
+    alt: "Carter Bulletin: Vol. 1. Charles M. Russell: New Perspectives. Emily C. Burns, Annika K. Johnson, Melanie McKay-Cody, Spencer Wigmore, and Michael D. Wise"
+    type: Journal
+    publisher: Amon Carter Museum of American Art
+    title_info: "*Carter Bulletin: Vol. 1*"
+    pub_date: 2025-12-10
+    url: https://bulletin-v1.cartermuseum.org/
+    customization_level: moderate
+    github_user:
+      - ACMAA
+    note: "This is the inuagural volume of the *Carter Bulletin* and the second Quire publication from the Amon Carter Museum of American Art. This is a new series that the ACMAA will continue to produce with Quire."
+
+  - id: princeton_cva
+    src: /screenshots/_princeton_cva.jpg
+    alt: "Corpus Vasorum Antiquorum, Fascicule 1: Athenian Red-Figure Amphorae, Loutrophoroi, Pelikai, Dinos, Kraters, Hydriai, Oinochoai, Askoi, Pyxis, Lekanis. By William L. Austin and J. Michael Padgett with contributions by Bailey K. Benson"
+    type: Corpus Vasorum Antiquorum
+    publisher: Princeton Art Museum 
+    title_info: "*Corpus Vasorum Antiquorum, Fascicule 1: Athenian Red-Figure Amphorae, Loutrophoroi, Pelikai, Dinos, Kraters, Hydriai, Oinochoai, Askoi, Pyxis, Lekanis*"
+    pub_date: 2025-09-10
+    url: https://cva.artmuseum.princeton.edu/ 
+    customization_level: significant
+    github_user:
+      - KJustement
+    note: "This is the first CVA issued by the Princeton Art Museum. The publication was heavily customized following in the footsteps of the Getty's 2019 CVA produced with Quire. PAM's publication features zoomable images and multiple views of every work, linked bibliographic references, and indices of attributions and subjects. This open-access, custom catalogue, along with its object data, is available free online and in multiple formats for download, including PDF, Kindle, and EPUB. A hardcover reference edition is also available for purchase."
