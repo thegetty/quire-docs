@@ -27,7 +27,6 @@ Learn more: https://www.collegeart.org/programs/conference/conference2026
 
 **2025**
 
-- December 10: Virtual [GitHub](/resources/github/) tutorial offered to community members 
 - November 16: Quire presents a [hands-on workshop](https://dlfforum2025.sched.com/event/23ZL5/s07-hands-on-digital-publishing-workshop-with-quire) at DLF Forum in Denver, CO. 
 - November 12: Virtual [GitHub](/resources/github/) tutorial offered to community members 
 - October 22: MuPuDIG + Digital Publishing Meet-Up @ the [2025 MCN Conference](https://mcn.edu/annual-conference/ )
@@ -38,10 +37,12 @@ Learn more: https://www.collegeart.org/programs/conference/conference2026
 - June 29: Quire presents a [hands-on workshop](https://quire.getty.edu/community/nmps-mchc-event/) at the Maryland Center for History and Culture in Baltimore, MD during [NMPS 2025](https://graham.uchicago.edu/program/national-museum-publishing-seminar/). 
 - May 14: Greg Albers presents the poster session [*What Can a Book Do?*](https://what-can-a-book-do.netlify.app/) at the 2025 ARLIS/NA virtual conference 
 - March 13: Quire presents a hands-on workshop at [Code4Lib 2025](https://2025.code4lib.org/) at Princeton University. 
+- February 18: Greg Albers presents [*Beyond the Collection Catalogue: Recent Projects at Getty*](https://digpublishing.github.io/webinars/2025/02/18/beyond-the-collection-catalogue-recent-projects-at-getty.html) at the Museum Publishing Digital Interest Group's bi-monthly meeting
 - February 13-15: Quire exhibits at [College Art Association Conference](https://www.collegeart.org/programs/conference/conference2025)
 
 **2024**
 
+- December 1: Two community members publish a chapter about Quire in the [The Routledge Companion to Libraries, Archives, and the Digital Humanities](https://www.taylorfrancis.com/books/edit/10.4324/9781003327738/routledge-companion-libraries-archives-digital-humanities-isabel-galina-russell-glen-layne-worthey)
 - November 11: Yale University and the University of Oxford conclude their [fascinating research project](https://linked.art/community/projects/ees2/) that explored ways of starting collection catalogues directly from Linked Open Data
 - October 23: Erin Cecele Dunigan and Ruth Lane present ["A Quire Case Study: Collaborating with Non-Technical Colleagues"](https://mcn2024.sched.com/event/1gdBP/a-quire-case-study-collaborating-with-non-technical-colleagues) at [MCN 2024](https://mcn.edu/annual-conference/mcn-2024/)
 - October 22: Quire presents [a hands-on workshop](https://quire.getty.edu/community/mcn-ku-event/) at the University of Kansas 
@@ -54,6 +55,7 @@ Learn more: https://www.collegeart.org/programs/conference/conference2026
 
 **2023**
 
+- 
 - November 10: Quire presentation at [MCN (Museum Computer Network Conference)](https://mcn2023.sched.com/event/1RYQ6/a-community-effort-digital-publishing-with-open-source-tools)
 - November 8: Quire, Price Lab for Digital Humanities, and Penn Libraries present ["A Day of Digital Publishing & Quire"](https://quire.getty.edu/community/mcn-upenn-event/)
 - August 29: Quire presentation and community-meetup at [National Museum Publishing Seminar](https://graham.uchicago.edu/programs-courses/national-museum-publishing-seminar/2023-nmps-conference-schedule)
@@ -93,7 +95,12 @@ Learn more: https://www.collegeart.org/programs/conference/conference2026
 
 | Event | Date | Description |
 | -- | -- | -- |
-| Code4Lib 2025 | March 13, 2025 | 3-hour hands-on Quire workshop at Princeton University | 
+| Digital Library Federation Forum | November 16, 2025 | 3-hour hands-on Quire workshop at The Westin Denver Downtown |  
+| Museum Publishing Digital Interest Group (MuPuDig) Webinar | July 29, 2025 | *Why Publish Digitally*, presented by Valerie Hellstein of the Denver Museum of Art https://www.youtube.com/watch?v=dSn0kvLnZqk |
+| National Museum Publishing Seminar | June 29, 2025 | 3-hour hands-on Quire workshop at the Maryland Center for History & Culture | 
+| ARLIS/NA | May 14, 2025 | *What Can a Book Do?*, presented by Greg Albers |
+| Code4Lib | March 13, 2025 | 3-hour hands-on Quire workshop at Princeton University | 
+| Museum Publishing Digital Interest Group (MuPuDig) Webinar | February 18, 2025 | *Beyond the Collection Catalogue: Recent Projects at Getty*, presented by Greg Albers https://digpublishing.github.io/webinars/2025/02/18/beyond-the-collection-catalogue-recent-projects-at-getty.html. |
 | College Art Association Conference (CAA)| February 13-15, 2025 | 30-minute Quire demonstrations at Booth # 222 |  
 | MCN (Museum Computer Network) | October 23, 2024 | "A Quire Case Study: Collaborating with Non-Technical Colleagues," presented by Erin Cecele Dunigan and Ruth Evans Lane | 
 | The University of Kansas | October 22, 2023 | "A Hands-On Quire Workshop |
