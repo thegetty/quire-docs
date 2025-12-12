@@ -7,7 +7,7 @@ online: false
 
 2025
 
-- [Novembr](https://newsletters.getty.edu/t/t-6F7BE22495BE94FB2540EF23F30FEDED) MCN 2025 Recap, *The Case of Quire at Pitts Theology Library*, Final GitHub Tutorial of 2025, Community Shoutout, Monthly Quire & Coffee, Hands-On Quire Workshop at DLF Forum 2025, MuPuDIG Seeks New Steering Committee Members, Denver Art Museum 
+- [November](https://newsletters.getty.edu/t/t-6F7BE22495BE94FB2540EF23F30FEDED) MCN 2025 Recap, *The Case of Quire at Pitts Theology Library*, Final GitHub Tutorial of 2025, Community Shoutout, Monthly Quire & Coffee, Hands-On Quire Workshop at DLF Forum 2025, MuPuDIG Seeks New Steering Committee Members, Denver Art Museum 
 - [October](https://newsletters.getty.edu/t/t-6D5CD04D4020911F2540EF23F30FEDED) New Feature Launch: Individual Page PDFs, Coming Soon: Virtual Show-and-Tell, GitHub Tutorials in November and December, Community Shoutout, Digital Publishing Meetup at MCN 2025, Hands-On Quire Workshop at DLF Forum 2025, Office Hours, Reiss-Engelhorn-Museen
 - [September](https://newsletters.getty.edu/t/t-EB8383B7B773E3E92540EF23F30FEDED) GitHub Tutorial: Sign Up Now!, MuPuDIG Session on Digital Publishing, Upcoming Conferences: DLF + MCN, Office Hours, Mills College Art Museum at Northeastern University
 - [July](https://newsletters.getty.edu/t/t-4C4A9AE5C42C807C2540EF23F30FEDED) National Museum Publishing Seminar Recap, Quire Demo Site, Quire by the Numbers, 10-Minute Feedback Survey, Office Hours, Upcoming MuPuDIG Sessions, Self-Published 
