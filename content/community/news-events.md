@@ -7,22 +7,11 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-**Quire @ 2025 MCN** <br>
-October 20-22, 2025 <br>
-Walker Art Center <br>
-Minneapolis, MN <br>
-Learn more/register at: https://mcn.edu/annual-conference/ 
-
-MuPuDIG + Digital Publishing Meet-Up @ MCN
-Wednesday, October 22 at 8:30 am 
-Location will be announced on MCN Slack
-
-**Quire @ 2025 Digital Library Forum**<br/> 
-[Hands-On Digital Publishing Workshop](https://dlfforum2025.sched.com/event/23ZL5/s07-hands-on-digital-publishing-workshop-with-quire) <br>
-Sunday, November 16 <br>
-1:45–5:00 pm <br>
-Denver, CO <br>
-Learn more/register at: https://forum2025.diglib.org/
+**Quire @ CAA 2026** <br>
+February 18-21, 2026 <br>
+Chicago Hilton <br>
+Chicago, IL <br>
+Learn more: https://www.collegeart.org/programs/conference/conference2026
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
