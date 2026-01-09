@@ -47,6 +47,10 @@ By setting `pdf.pagePDF.output` to `true`, individual PDFs of each Markdown page
 
 The individual PDFs are considered extracts of the full PDF and will have matching page numbering. For example, if a chapter starts on page 52 in the full PDF, it will also be numbered starting as 52 in its individual PDF.
 
+{{< q-class "box tip" >}}
+- Before outputting your PDFs, carefully check over all the [metadata and configuration](/docs-v1/metadata-configuration/) data in your project’s `config.yaml` and `publication.yaml` files to ensure it is complete and accurate.
+{{< /q-class >}}
+
 ### Control Which Individual Pages Output as PDF
 
 Settings in the `config.yaml` file control the PDF output globally, for all Markdown pages in the project. However, you can override the global settings on a page-by-page basis using the `page_pdf_output` attribute in the YAML of individual Markdown pages.

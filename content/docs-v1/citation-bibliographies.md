@@ -47,9 +47,11 @@ The `{% cite %}` shortcode adds a linked Author Date citation to your text. If y
 
 {{< q-figure id="modern-bibliography-page" >}}
 
+### Cite Shortcode Parameters
+
 The in-text citation can include three values: `{% cite 'author date' 'page #' 'display text' %}`. They must appear in this specific order to work.
 
-### Author Date
+#### Author Date
 
 The first positional parameter of the `{% cite %}` shortcode is a short form citation that should match the `id` value in the `references.yaml`. The following example would output the link as: <u>Faure 1909</u>.
 
@@ -57,7 +59,7 @@ The first positional parameter of the `{% cite %}` shortcode is a short form cit
 {% cite 'Faure 1909' %}
 ```
 
-### Page Number
+#### Page Number
 
 The second optional parameter is a page number. The following example would output the link as: <u>Faure 1909, 54</u>.
 
@@ -72,7 +74,7 @@ citations:
   divider: ', '
 ```
 
-### Display Text
+#### Display Text
 
 A third optional parameter allows you to customize what text appears in the the link rather than the short form of the citation. The following example would output the link as: 1909, <u>54</u>.
 
@@ -84,6 +86,26 @@ In using this third parameter, you still need to have the second parameter even 
 
 ```md
 {% cite 'Faure 1909' '' '1909' %}
+```
+
+### Customizing the Pop-Up Style
+
+The style of the pop-up is controlled in the project’s `content/_data/config.yaml` file. By default, the pop-up citation is set so that the short form of the citation is styled like and can be clicked like a text link.
+
+{{< q-figure id="pop-up-citation-text" >}}
+
+```yaml
+citations:
+  popupStyle: text
+```
+
+The other option is to instead have the clickable target appear as a circled plus-sign icon.
+
+{{< q-figure id="pop-up-citation-icon" >}}
+
+```yaml
+citations:
+  popupStyle: icon
 ```
 
 ## Display a Bibliography
