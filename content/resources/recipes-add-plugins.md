@@ -22,10 +22,10 @@ When you find a plugin you want to use, follow the instructions below to install
     npm install markdown-it-sup
     ```
 
-2. Open the `_plugins/markdown/index.js` file, and add the plugin to the list of constants at the top of the page following the pattern `const pluginName = require('plugin-npm-name')` where `pluginName` can be anything you'd like, as long as it is in snake case. Snake case means that the first word is lowercase and all consecutive words have an uppercase first letter. The `plugin-npm-name` is the name of the plugin from NPM.
+2. Open the `_plugins/markdown/index.js` file, and add the plugin to the list of imports at the top of the page following the pattern `import pluginName from 'plugin-npm-name'` where `pluginName` can be anything you'd like, as long as it is in snake case. Snake case means that the first word is lowercase and all consecutive words have an uppercase first letter. The `plugin-npm-name` is the name of the plugin from NPM.
 
     ```js
-    const superscriptPlugin = require('markdown-it-sup')
+    import superscriptPlugin from 'markdown-it-sup'
     ```
 
 3. In that same file search or scroll down to find the `markdownLibrary` constant where you'll see a list of plugins being added with `use()`. Add yours to the list following the pattern `.use(pluginName)` where `pluginName` matches the one you created in step 2.
