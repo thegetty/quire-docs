@@ -9,6 +9,10 @@ aliases:
 
 A Quire site is designed to be hosted on virtually any web server, either one your institution already runs, or a new server from the hosting service of your choice. You do not need any special back-end setup. If you plan to include PDF and EPUB e-book files as part of you published project, it's important that you start by following the directions in the [“PDF Output”](/docs-v1/pdf/) and [“EPUB Output”](/docs-v1/epub/) sections of this guide before proceeding.
 
+{{< q-class "box tip" >}}
+- Before deploying your site, carefully check over all the [metadata and configuration](/docs-v1/metadata-configuration/) data in your project’s `config.yaml` and `publication.yaml` files to ensure it is complete and accurate.
+{{< /q-class >}}
+
 ## Test Deploy
 
 Before deploying your project, you can run a test to make sure all the `_site` files are building correctly and that your styles are properly loading. Before proceeding with this test, you will need to download [Python](https://www.python.org/) if you don't have it installed already in your device.
