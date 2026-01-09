@@ -65,7 +65,7 @@ bibliography:
 
 ### Citations
 
-Set whether [pop-up citations](/docs-v1/citation-bibliographies/#add-in-text-citations) appear as text links or as icons (`popupStyle`); and set the text to be used as a divider between the citation and the page number (`divider`).
+Set whether [pop-up citations](/docs-v1/citation-bibliographies/#add-in-text-citations) appear as text links or as icons (`popupStyle`); and set the text character to be used as a divider between the citation and the page number (`divider`).
 
 ```yaml
 citations:
@@ -123,7 +123,7 @@ licenseIcons: true
 
 ### Localization
 
-Set the project’s primary language, using the [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) and an optional [ISO 3166-1 country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
+Defines the project’s primary language, using the [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) and an optional [ISO 3166-1 country code](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes). Note that changing the language here won’t change or translate anything in Quire, it only indicates the language used in the project’s Markdown and YAML files.
 
 ```yaml
 localization:
@@ -132,7 +132,7 @@ localization:
 
 ### Menu
 
-Set the appearance of the contents list in the [sidebar menu](/docs-v1/contents-menu/#sidebar-menu).
+Set the appearance of the contents list in the [sidebar menu](/docs-v1/contents-menu/#sidebar-menu). Setting to `brief` will hide any pages with [sub-sections](/docs-v1/pages/#create-sub-sections).
 
 ```yaml
 menuType: full # full | brief
@@ -150,7 +150,7 @@ navigation:
 
 ### Page Titles
 
-Set the text to be used as a divider between the `label` and `title` on pages throughout your site. While this divider may not be visible on the pages themselves, it is often used in other contexts, such as the table of contents and page metadata.
+Set the text character to be used as a divider between the `label` and `title` on pages throughout your site. While this divider may not be visible on the pages themselves, it is often used in other contexts, such as the table of contents and page metadata.
 
 ```yaml
 pageTitle:
@@ -196,7 +196,7 @@ searchEnabled: true
 
 ### Table of Contents
 
-Set the text to be used as a divider between the page title and page contributor(s). While this divider may not be visible on the pages themselves, it is often used in other contexts, such as the table of contents and page metadata.
+Set the text character to be used as a divider between the page title and page contributor(s). While this divider may not be visible on the pages themselves, it is often used in other contexts, such as the table of contents and page metadata.
 
 ```yaml
 tableOfContents:
