@@ -9,8 +9,8 @@ abstract: "Helpful tools, explanations, and links"
 
 *Command line is a text-based interface that enables you to navigate your computer's files and perform tasks by running certain commands.*
 
-- [Command line Crash Course](https://developer.mozilla.org/en-US/docs/resources/Tools_and_testing/Understanding_client-side_tools/Command_line)
-- [Codeacademy: Learn the Command Line](https://www.codecademy.com/resources/learn-the-command-line)
+- [Command line Crash Course](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Command_line)
+- [Codeacademy: Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line)
 - [Video: Really Friendly Command Line Intro](https://www.youtube.com/watch?v=d9s8co9POYY&feature=youtu.be)
 
 {{< q-figure id="cli-commands" >}}
@@ -20,7 +20,7 @@ abstract: "Helpful tools, explanations, and links"
 *GitHub is a project management platform centered around git-based version control, and highly recommended for hosting your Quire project, tracking changes, and working with collaborators.*
 
 - [GitHub Desktop Documentation](https://docs.github.com/en/free-pro-team@latest/desktop)
-- [GitHub Learning Lab](https://lab.github.com/)
+- [GitHub Learning Lab](https://github.com/apps/github-learning-lab)
 - [GitHub Glossary](https://docs.github.com/en/github/getting-started-with-github/github-glossary)
 - [Git Large File Storage (LFS)](https://git-lfs.github.com/)
 - [Video: Git and GitHub for Poets](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
@@ -31,7 +31,8 @@ abstract: "Helpful tools, explanations, and links"
 *HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are two important programming languages for building web pages. HTML primarily controls page structure, while CSS controls the visual layout.*
 
 - [Interneting is Hard](https://internetingishard.netlify.app/)
-- [w3schools.com](https://www.w3schools.com/html/default.asp)
+- [Mozilla Code Learning Modules](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core)
+- [Mozilla HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
 - [CSS-Tricks](https://css-tricks.com/)
 
 ## Eleventy
@@ -52,9 +53,8 @@ abstract: "Helpful tools, explanations, and links"
 
 *Markdown is a markup language used to format plain-text documents. It is used when working in a text editor.*
 
-- [GitHub: Markdown Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-- [GitHub: Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-- [10-minute Markdown Tutorial](https://commonmark.org/help/)
+- [Markdown Cheatsheet](https://opensource.com/sites/default/files/gated-content/markdown_cheat_sheet_opensource.com_.pdf)
+- [10-minute Markdown Tutorial](https://commonmark.org/help/tutorial/)
 - [The Programming Historian: Getting Started with Markdown](https://programminghistorian.org/en/lessons/getting-started-with-markdown)
 
 ## Netlify
@@ -62,7 +62,7 @@ abstract: "Helpful tools, explanations, and links"
 *With Netlify, you can build a quick preview site or link directly to your Github account to automatically generate an updated preview as you make changes. You can also use it to host your final project when it’s ready to publish.*
 
 - [Netlify Documentation](https://docs.netlify.com/)
-- [Netlify Deploy Instructions](https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git)
+- [Netlify Deploy Instructions](https://docs.netlify.com/site-deploys/create-deploys/)
 
 ## PDFs and PrinceXML
 
@@ -75,7 +75,7 @@ abstract: "Helpful tools, explanations, and links"
 
 *Paged.js is an open source tool for generating PDFs in Quire*
 
-- [Paged.js Documentation](https://pagedjs.org/documentation/)
+- [Paged.js Documentation](https://pagedjs.org/en/documentation/)
 
 ## Static Site Generation
 
@@ -89,7 +89,6 @@ abstract: "Helpful tools, explanations, and links"
 *A text editor is a computer program that allows you to create and edit plain text files, such as Atom or Visual Studio Code.*
 
 - [Text Editor Tips and Tricks](https://dev.to/alebian/text-editor-tips-and-tricks-to-boost-your-productivity-2gc5)
-- [Atom Flight Manual](https://flight-manual.atom.io/)
 - [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 - [RegexOne: Learn Regular Expressions](https://regexone.com)
 
