@@ -41,6 +41,7 @@ Quire commands are typically run from Terminal on a Mac and PowerShell on a PC. 
 
 | Command       | Action   | Notes              |
 | ------------- | -------- | ------------------ |
+| **`quire validate`** | Validates YAML formatting; checks that there are no duplicate `id` values in YAML files; and checks that images in `figures.yaml` exist in the project directory | Run this command before `quire preview` or `build` to check for common errors. |
 | **`quire --version`** | List Quire version number | This is useful for troubleshooting and confirming updates. |
 | **`quire --help`** | Provide list of Quire commands | This is useful if you need a reminder of commands. |
 | **`quire info`** | List `quire-11ty`, `quire-cli`, and starter package version numbers | This command must be run while in a Quire project directory. |
