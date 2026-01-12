@@ -78,9 +78,11 @@ Only one page in your project can have the `classes: [page-one]` tag.
 
 Like the TOC, the sidebar Menu is generated automatically by Quire based on the structure of the files in your `content` directory and the metadata of each page. Unlike the TOC, the Menu is a built-in part of every Quire project and does not have a corresponding `.md` file.
 
-### Removing Pages from the Menu
+### Choosing What Pages Are Listed
 
-[As described with the TOC above](#removing-pages-from-the-toc), you can remove or hide pages from the Menu by adding `menu: false` to the YAML for that page.
+By default, the table of contents list in the sidebar menu will list every page in your project. You can choose to list only the top-level pages, and not any pages in sub-sections, by setting `menuType: brief` in the `content/_data/config.yaml` file.
+
+[As described with the TOC above](#removing-pages-from-the-toc), you can remove or hide individual pages from the Menu by adding `menu: false` to the YAML for that page.
 
 ### Menu Other Formats & Footer Links
 

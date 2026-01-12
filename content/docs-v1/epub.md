@@ -7,6 +7,10 @@ abstract: "Produce an EPUB e-book version of your publication"
 
 Quire is designed to create a website version, a PDF version, and an EPUB e-book version of your project from the same source files. EPUB is {{< q-def "reflowable" >}} and the most widely used format. It will work on most devices and for most e-book vendors. EPUB is an official specification of the World Wide Web Consortium (W3C), and Quire outputs the latest version: EPUB 3.2. This section details how to output, validate, and customize EPUBs in Quire projects. Once your EPUB is ready, visit the [*Deploy Your Project*](/docs-v1/site-deploy/) section of our documentation to learn how to deploy your project to the web.
 
+{{< q-class "box tip" >}}
+- Before outputting your EPUB, carefully check over all the [metadata and configuration](/docs-v1/metadata-configuration/) data in your project’s `config.yaml` and `publication.yaml` files to ensure it is complete and accurate.
+{{< /q-class >}}
+
 ## Create and View the E-Book Files
 
 When creating an EPUB, first run `quire build` in your command-line shell to generate files with your latest changes. Next run `quire epub`. An `epubjs.epub` file will be created and saved to your project’s main directory. This file will be updated and overwritten each time you run `quire epub`.

@@ -161,6 +161,16 @@ figure_list:
     src: /screenshots/modern-bibliography.jpg
     caption: "**`layout: bibliography`** <br /> A bibliography of all works in your project's `references.yaml` file can be added to any page adding the `bibliography` value to the page's `layout`."
 
+  - id: "pop-up-citation-text"
+    src: /screenshots/pop-up-citation-text.jpg
+    caption: "When the pop-up citation style is set to `text`, clicking on “Evans 1938”, which has a dotted red underline, opens the pop-citation box."
+    alt: "Detail of a web page. A block of text is in the background, overlaying it is a smaller white box with citation text in it, below the citation box is a capitalized name and date with a dotted red underline."
+    
+  - id: "pop-up-citation-icon"
+    src: /screenshots/pop-up-citation-icon.jpg
+    caption: "When the pop-up citation style is set to `icon`, clicking on the icon to the right of the inline citation opens the pop-citation box."
+    alt: "Detail of a web page. A block of text is in the background, overlaying it is a smaller white box with citation text in it, below the citation box is a capitalized name and date with a red icon to its right. The icon is a circle with a plus sign in it."
+
   - id: "netlify-logo"
     src: full-logo-light.jpg
 
