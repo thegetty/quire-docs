@@ -54,7 +54,7 @@ Created by [Getty](https://www.getty.edu), free to use.
 
 <div class="more-link">
 
-[Learn If Quire Is Right for You](/documentation/implementation/)
+[Learn If Quire Is Right for You](https://quire.getty.edu/about/quire/#is-quire-right-for-you)
 
 </div>
 </div>
@@ -111,7 +111,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 
 <div class="more-link">
 
-[See the Complete Feature List](/about/quire/)
+[See the Complete Feature List](/about/quire/#features--functionality)
 
 </div>
 </div>
