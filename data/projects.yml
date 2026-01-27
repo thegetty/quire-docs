@@ -188,18 +188,18 @@ project_list:
       - kristhayer11
     note: "With this project, Mia staff sought to evaluate Quire and its potential for future use at the museum. *Alcohol’s Empire* was a good test publication as it was a collaborative project with three distinct contributing partners. The project also included two public events and received national media coverage, which positively impacted its distribution."
 
-  - id: "mozoomdar_at_sea"
-    src: /screenshots/_mozoomdar_at_sea.jpg
-    alt: "Mozoomdar at Sea by Nick Tackes"
-    type: Research Project
-    publisher: Self-Published
-    title_info: "*Mozoomdar at Sea*"
-    pub_date: 2019-04-01
-    url: https://mozoomdar-at-sea.netlify.app/
-    customization_level: minor
-    github_user:
-      - jtackesiii
-    note: "This digital exhibit includes mainly archival materials, manuscripts, and maps. The publication content lent itself well to a digital storytelling platform."
+  # - id: "mozoomdar_at_sea"
+  #   src: /screenshots/_mozoomdar_at_sea.jpg
+  #   alt: "Mozoomdar at Sea by Nick Tackes"
+  #   type: Research Project
+  #   publisher: Self-Published
+  #   title_info: "*Mozoomdar at Sea*"
+  #   pub_date: 2019-04-01
+  #   url: https://mozoomdar-at-sea.netlify.app/
+  #   customization_level: minor
+  #   github_user:
+  #     - jtackesiii
+  #   note: "This digital exhibit includes mainly archival materials, manuscripts, and maps. The publication content lent itself well to a digital storytelling platform."
 
   - id: "humanizing_the_digital"
     src: /screenshots/_humanizing_the_digital.jpg
