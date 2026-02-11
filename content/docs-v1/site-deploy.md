@@ -126,7 +126,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
 2. Update the `url` in `content/_data/publication.yaml` to correspond to your own GitHub site. It will follow the pattern: https://YOUR-USERNAME.github.io/YOUR-PROJECT-DIRECTORY-NAME/. So, if your GitHub username is bonjovi and your project file is blaze-of-glory, your `baseURL` would be https://bonjovi.github.io/blaze-of-glory/. (Note: your GitHub username can also be your organization name if that is how your account is set up in GitHub.) Be sure to commit this update and push to origin. 
 
-3. In your command-line shell, make sure you are in your project folder and run `git checkout -b gh-deploy`, which creates a new temporary branch called `gh-deploy` to work in. This command will automatically switch you to that branch.
+3. In your command-line shell, make sure you are in your project folder and run `git checkout -b gh-pages`, which creates a new temporary branch called `gh-pages` to work in. This command will automatically switch you to that branch.
 
 4. Next, run `quire build`. Check to make sure there are no errors mentioned in the Terminal before proceeding. 
 
@@ -140,7 +140,7 @@ GitHub enables you to not only host your project code, but you can also use it t
 
     If prompted to sign in, do so with your GitHub username and password. If you have two-factor authentication enabled, you'll use a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) in place of a password. Remember, you will not be able to see your username or password as you type them. Hit enter once you are done typing to advance. 
 
-9. In your command-line shell, run `git checkout main && git branch -D gh-deploy` to delete the temporary deploy branch and to switch back to your `main` branch. If you were publishing from a branch other than `main`, use that name in here instead, like `git checkout YOUR-BRANCH-NAME && git branch -D gh-deploy`.
+9. In your command-line shell, run `git checkout main && git branch -D gh-pages` to delete the temporary deploy branch and to switch back to your `main` branch. If you were publishing from a branch other than `main`, use that name in here instead, like `git checkout YOUR-BRANCH-NAME && git branch -D gh-pages`.
 
 10. If your repository is private, you will need to navigate to your repository's settings page. Scroll down to the "Danger Zone," click "Change repository visibility," and change the visibility to public.
 
