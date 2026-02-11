@@ -46,10 +46,10 @@ analytics:
 
 ### Bylines
 
-Set how [contributor](/docs-v1/contributors/) names are listed in page headers: by name only (`name`); by name with their title and affiliation (`name-title`); or with no listing at all (`false`).
+Set how [contributor](/docs-v1/contributors/) names are listed in page headers: by a list of initials concatenated into a string with commas (`initials`); a line-by-line list of names only (`name`); a line-by-line list of names with their title and affiliation (`name-title`); the names concatenated into a string with commas (`string`); or with no listing at all (`false`).
 
 ```yaml
-bylineFormat: name-title # name | name-title | false
+bylineFormat: name-title # initials | name | name-title | string | false
 ```
 
 ### Bibliography
