@@ -1180,3 +1180,17 @@ project_list:
     github_user:
       - fullerpault
     note: "This project uses Quire's deepzoom IIIF functionality to provide users with a way to interact with large cartographic material. Customizations were made to the side menu to enable it to float over page content (thanks to @mpopke!) and to the cover hero image to enable it to resize responsively (thanks to @dewmaps!)."
+
+  - id: denver_transpacific
+    src: /screenshots/_denver_transpacific.jpg
+    alt: "Transpacific Crossings: Art, Trade, and the Manila Galleon. Edited by Jorge F. Rivas Pérez, Karina H. Corrigan, and Kathryn Santner"
+    type: Symposium Papers
+    publisher: "Denver Art Museum"
+    title_info: "*Transpacific Crossings: Art, Trade, and the Manila Galleon*"
+    pub_date: 2026-02-01
+    url: https://mayer2024.denartmus.org/
+    customization_level: moderate
+    github_user:
+      - LeslieMurrell
+      - mpopke
+    note: "This is the Denver Art Museum's second hybrid digital/print symposium volume. It presents scholarship on the Manila Galleon trade between Spanish colonial America and the Philippines (1565–1815). The publication was handled in-house, with moderate customization."
