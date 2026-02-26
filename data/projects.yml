@@ -446,7 +446,7 @@ project_list:
     publisher: Minneapolis Institute of Art
     title_info: "*Highpoint Editions*"
     pub_date: 2021-10-08
-    url: https://artsmia.org/highpoint-editions/
+    url: https://highpoint-editions.netlify.app/
     customization_level: significant
     github_user:
       - kristhayer11
@@ -715,7 +715,7 @@ project_list:
     publisher: "Minneapolis Institute of Art"
     title_info: "*Reflections on Reality: Drawings and Paintings from the Weisberg Collection*"
     pub_date: 2023-03-29
-    url: https://artsmia.org/weisberg-collection/
+    url: https://weisberg-main.netlify.app/
     customization_level: minor
     github_user:
       - kristhayer11
