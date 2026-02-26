@@ -5,8 +5,14 @@ type: essay
 online: false
 ---
 
-2025
+**2026**
 
+- [February](https://newsletters.getty.edu/t/t-619AFEF5841774152540EF23F30FEDED) Show-and-Tell Recording Now Available, 2026 College Art Association Conference, Recommended Sessions at CAA 2026, Monthly Coffee & Quire, Center for Advanced Study in the Visual Arts, National Gallery of Art  
+- [January](https://newsletters.getty.edu/t/t-A3CB3D3CA9B633A82540EF23F30FEDED) Warm Wishes for the New Year, Inaugural Community Show-and-Tell, Introducing the New Validate Command, DLF 2025 Recap, Monthly Coffee & Quire, College Art Association Conference 2026, Newberry Library  
+
+**2025**
+
+- [December](https://newsletters.getty.edu/t/t-F9E6D31DB73676332540EF23F30FEDED) 2025: A Year in Review, 2025 Highlights, Quire by the Numbers, Looking Ahead to the Future, This Quire Swag Could Be Yours, Thank you, Contributors 
 - [November](https://newsletters.getty.edu/t/t-6F7BE22495BE94FB2540EF23F30FEDED) MCN 2025 Recap, *The Case of Quire at Pitts Theology Library*, Final GitHub Tutorial of 2025, Community Shoutout, Monthly Quire & Coffee, Hands-On Quire Workshop at DLF Forum 2025, MuPuDIG Seeks New Steering Committee Members, Denver Art Museum 
 - [October](https://newsletters.getty.edu/t/t-6D5CD04D4020911F2540EF23F30FEDED) New Feature Launch: Individual Page PDFs, Coming Soon: Virtual Show-and-Tell, GitHub Tutorials in November and December, Community Shoutout, Digital Publishing Meetup at MCN 2025, Hands-On Quire Workshop at DLF Forum 2025, Office Hours, Reiss-Engelhorn-Museen
 - [September](https://newsletters.getty.edu/t/t-EB8383B7B773E3E92540EF23F30FEDED) GitHub Tutorial: Sign Up Now!, MuPuDIG Session on Digital Publishing, Upcoming Conferences: DLF + MCN, Office Hours, Mills College Art Museum at Northeastern University
@@ -17,7 +23,7 @@ online: false
 - [February](https://newsletters.getty.edu/t/t-0CA279D00D9EB4622540EF23F30FEDED) 2025 College Art Association Conference, Reminder: Hands-On Quire Workshop Available, Office Hours, Quire + Museum Publishing Digital Interest Group, Victoria and Albert Museum 
 - [January](https://newsletters.getty.edu/t/t-05A1737F2E6B13A42540EF23F30FEDED) Update from Getty, 2025 College Art Association Conference, 10-Minute Survey: Help Us Improve Quire!, Office Hours, Indianapolis Museum of Art 
 
-2024
+**2024**
 
 - [December](https://newsletters.getty.edu/t/t-6E63E3ACE8BEFC1B2540EF23F30FEDED) 2024: A Year in Review, 2024 Highlights, Quire by the Numbers, Looking Forward to 2025, Thank You, Contributors!
 - [November](https://newsletters.getty.edu/t/t-36B4FB5368D589462540EF23F30FEDED) MCN 2024, Hands-On Quire Workshop, Printing and Distribution Options, Office Hours, Denver Museum of Art
@@ -30,7 +36,7 @@ online: false
 - [February](https://newsletters.getty.edu/t/t-6FC30DFAF8A283C32540EF23F30FEDED) Visit Quire at CAA: Booth #205, Getty Research Journal at CAA, Wildenstein Plattner Institute at CAA, Share Your Conference Highlights.
 - [January](https://newsletters.getty.edu/t/t-6B3B5FE4A232762B2540EF23F30FEDED) Visit Quire at CAA: Booth #205, Community Survey, Introduce Yourself!, Add Deep Zooming Images to Your Quire Project, Office Hours, Denver Art Museum.
 
-2023
+**2023**
 
 - [December](https://newsletters.getty.edu/t/t-290EE214BF85F57E2540EF23F30FEDED) 2023: A Year in Review, Quire Highlights, Community Survey, Looking Forward to 2024, Thank You, Contributors!
 - [October](https://newsletters.getty.edu/t/t-39592B4DA884F94C2540EF23F30FEDED) MCN 2023, A Day of Digital Publishing & Quire, Request for Community Feedback, Using Pandoc to Convert Word to Markdown, Quire Office Hours, MCN (Museum Computer Network), Ad Hoc Museum Collective. 
@@ -44,7 +50,7 @@ online: false
 - [February](https://newsletters.getty.edu/t/t-9E705F0191033A542540EF23F30FEDED): Quire CAA Schedule, Digital Publishing Resources, Deploying a Quire Site with Netlify, Quire Office Hours, Northwestern University Libraries
 - [January](https://newsletters.getty.edu/t/t-842F21D1971227092540EF23F30FEDED): Visit Quire at CAA, Booth #218, Freelance Quire Developers, New Config.yaml File Layout, Quire Office Hours, Getty Publications
 
-2022
+**2022**
 
 - [December](https://newsletters.getty.edu/t/t-DFC34729291CD1802540EF23F30FEDED) 2022: A Year in Review, New Publications from the Community, Quire Highlights, Looking Forward to 2023, What Do You Love About Quire?, Thank You Contributors.   
 - [Special Announcement](https://newsletters.getty.edu/t/t-4316DA71F6D1F1932540EF23F30FEDED): Quire v1 Pre-Release Is Now Available, What We Are Excited About, Next Steps, Quire Office Hours
@@ -59,7 +65,7 @@ online: false
 - [February](https://newsletters.getty.edu/t/t-7029ED74D2C80EB52540EF23F30FEDED): Introducing a Sample Quire Workflow, Pandoc: Converting Word files into Markdown, New & Updated Documentation, Museum Publishing Digital Interest Group, Philadelphia Museum of Art, Mills College Museum of Art
 - [January](https://newsletters.getty.edu/t/t-4F6F9B38F0A42AE32540EF23F30FEDED): Community Survey Results, Contributing to the Quire Website & Documentation, Akron Art Museum, The State of Museum Digital Practice 2021
 
-2021
+**2021**
 
 - [December](https://newsletters.getty.edu/t/t-182F4DDE523E25DE2540EF23F30FEDED): New Publications from the Community, Quire by the Numbers, Looking Forward to 2022, Quire at Open Publishing Fest, Complete the Community Survey by 12/10, What do you love about Quire?, Thank you Contributors
 - [November](https://newsletters.getty.edu/t/t-F81AAF9D69C92E1E2540EF23F30FEDED): Contribute to the Quire-Docs Repository, Coming Soon: End-of-Year Quire Survey, Update to Node.js Installation Instructions, Getty Publications
@@ -74,7 +80,7 @@ online: false
 - [February](https://mailchi.mp/1560ae4535e7/quire-newsletter-february-2021?e=5c4361e9ac): Announcing the Quire Community Forum, Quire Repository Migration: Update, Guidelines for Uninstalling Quire, Installing Quire, and First Time Quire Users, New Publication from Mills College Art Museum
 - [January](https://mailchi.mp/a37708de5fe9/quire-newsletter-january-2021): Quire Repository Migration, Forthcoming Quire Features, IIIF Image Tiling, Call for Freelance Developers
 
-2020
+**2020**
 
 - [December](https://mailchi.mp/d030942ba347/quire-a-year-in-review?e=5c4361e9ac): Quire: A Year in Review, New Releases, Thank You Contributors, Looking Ahead to the Future
 

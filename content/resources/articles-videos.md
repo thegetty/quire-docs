@@ -11,6 +11,12 @@ abstract: "How-to guides, demos, webinars, and more"
 
 {{< q-figure id="quire_demo_2023" >}}
 
+## Show-and-Tell
+
+*Quarterly presentations from the community about their recent Quire projects.*
+
+{{< q-figure id="show-and-tell-jan26" >}}
+
 ## Presentations
 
 *Enjoy recent Quire presentations from Getty staff and the community.*

@@ -7,11 +7,17 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-**Quire @ CAA 2026** <br>
-February 18-21, 2026 <br>
-Chicago Hilton <br>
-Chicago, IL <br>
-Learn more: https://www.collegeart.org/programs/conference/conference2026
+**Quire @ AUP 2026** <br>
+June 13-15, 2026 <br>
+Westin Seattle <br>
+Seattle, WA <br>
+Learn more: https://aupresses.org/events/aupresses-2026-annual-meeting/
+
+**Quire @ LPF 2026** <br>
+June 17–18, 2026 <br>
+University of Washington <br>
+Seattle, WA <br>
+Learn more: https://librarypublishing.org/forum/   
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
@@ -24,6 +30,10 @@ Learn more: https://www.collegeart.org/programs/conference/conference2026
 </div>
 
 *Visit our [newsletter archive](/community/newsletter-archive/).*
+
+**2026**
+
+- February 18–21: Quire exhibits at [College Art Association Conference](https://www.collegeart.org/programs/conference/conference2026)
 
 **2025**
 
@@ -54,8 +64,7 @@ Learn more: https://www.collegeart.org/programs/conference/conference2026
 - February 15-17: Quire at [College Art Association Conference](https://caa.confex.com/caa/2024/meetingapp.cgi)  
 
 **2023**
-
-- 
+ 
 - November 10: Quire presentation at [MCN (Museum Computer Network Conference)](https://mcn2023.sched.com/event/1RYQ6/a-community-effort-digital-publishing-with-open-source-tools)
 - November 8: Quire, Price Lab for Digital Humanities, and Penn Libraries present ["A Day of Digital Publishing & Quire"](https://quire.getty.edu/community/mcn-upenn-event/)
 - August 29: Quire presentation and community-meetup at [National Museum Publishing Seminar](https://graham.uchicago.edu/programs-courses/national-museum-publishing-seminar/2023-nmps-conference-schedule)
@@ -95,6 +104,7 @@ Learn more: https://www.collegeart.org/programs/conference/conference2026
 
 | Event | Date | Description |
 | -- | -- | -- |
+| College Art Association Conference (CAA)| February 18–21, 2026 | Author Meet-and-Greet at Booth \#321 | 
 | Digital Library Federation Forum | November 16, 2025 | 3-hour hands-on Quire workshop at The Westin Denver Downtown |  
 | Museum Publishing Digital Interest Group (MuPuDig) Webinar | July 29, 2025 | *Why Publish Digitally*, presented by Valerie Hellstein (Denver Museum of Art) https://www.youtube.com/watch?v=dSn0kvLnZqk |
 | National Museum Publishing Seminar | June 29, 2025 | 3-hour hands-on Quire workshop at the Maryland Center for History & Culture | 
