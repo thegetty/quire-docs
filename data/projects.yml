@@ -1167,3 +1167,30 @@ project_list:
     github_user:
       - KJustement
     note: "This is the first CVA issued by the Princeton Art Museum. The publication was heavily customized following in the footsteps of the Getty's 2019 CVA produced with Quire. PAM's publication features zoomable images and multiple views of every work, linked bibliographic references, and indices of attributions and subjects. This open-access, custom catalogue, along with its object data, is available free online and in multiple formats for download, including PDF, Kindle, and EPUB. A hardcover reference edition is also available for purchase."
+
+  - id: osher_founding_memories
+    src: /screenshots/_osher_founding_memories.jpg
+    alt: "Founding Memories: America at 250. Contributors:Libby Bischof, Matthew Edney, Adam Schmitt, and Ashley Towle"
+    type: Online Exibition 
+    publisher: "Osher Map Library and Smith Center for Cartographic Education"
+    title_info: "Founding Memories: America at 250"
+    pub_date: 2026-01-12
+    url: https://exhibits.oshermaps.org/founding-memories/
+    customization_level: moderate
+    github_user:
+      - fullerpault
+    note: "This project uses Quire's deepzoom IIIF functionality to provide users with a way to interact with large cartographic material. Customizations were made to the side menu to enable it to float over page content (thanks to @mpopke!) and to the cover hero image to enable it to resize responsively (thanks to @dewmaps!)."
+
+  - id: denver_transpacific
+    src: /screenshots/_denver_transpacific.jpg
+    alt: "Transpacific Crossings: Art, Trade, and the Manila Galleon. Edited by Jorge F. Rivas Pérez, Karina H. Corrigan, and Kathryn Santner"
+    type: Symposium Papers
+    publisher: "Denver Art Museum"
+    title_info: "*Transpacific Crossings: Art, Trade, and the Manila Galleon*"
+    pub_date: 2026-02-01
+    url: https://mayer2024.denartmus.org/
+    customization_level: moderate
+    github_user:
+      - LeslieMurrell
+      - mpopke
+    note: "This is the Denver Art Museum's second hybrid digital/print symposium volume. It presents scholarship on the Manila Galleon trade between Spanish colonial America and the Philippines (1565–1815). The publication was handled in-house, with moderate customization."

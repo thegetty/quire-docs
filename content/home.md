@@ -31,7 +31,6 @@ Quire is an open-source multiformat publishing tool designed for longevity, disc
 
 Created by [Getty](https://www.getty.edu), free to use.
 
-
 <div class="action-button paired-button" >
 
 [Get Started](/docs-v1/getting-started/)
@@ -43,7 +42,6 @@ Created by [Getty](https://www.getty.edu), free to use.
 [Watch the Video <svg class="remove-from-epub"><switch><use xlink:href="#start-icon"></use></switch></svg>](https://vimeo.com/820983026/b3a116fb1e)
 
 </div>
-
 
 </div>
 </div>
@@ -100,7 +98,7 @@ Quire is an ideal solution for anyone seeking to publish beautiful digital books
 </div>
 </div>
 
-{{< q-showcase projects="v&a_researchjournal_7, museum_digital_practice_2022, newfields_pissarro, mingei_bluegold, okeeffe_artful_living" class="full-width-slider" sort="false" >}}
+{{< q-showcase projects="mapping_newberry_library, yale_italian_paintings,denver_transpacific, museum_digital_practice_2022, basj_all_issues" class="full-width-slider" sort="false" >}}
 
 </div>
 
