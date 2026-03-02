@@ -1,6 +1,6 @@
 ---
 title: FAQs
-weight: 750
+weight: 1850
 type: page
 abstract: "Answers to frequently asked questions"
 ---
@@ -20,7 +20,7 @@ Quire is open-source and, therefore, free to [install](/docs-v1/install-uninstal
 
 ## Is my project right for Quire? 
 
-Quire is optimized for book-like projects, especially those that rely on visual illustrations and/or scholarly apparatus like citations, bibliographies, and footnotes. Quire is also ideal for projects you want to last a long-time. While most websites have a lifespan of website is 2-5 years, the very first Quire publication, *Ancient Terracottas*, was released in 2016 and is still going strong. 
+Quire is optimized for book-like projects, especially those that rely on visual illustrations and/or scholarly apparatus like citations, bibliographies, and footnotes. Quire is also ideal for projects you want to last a long-time. While most websites have a lifespan of website is 2-5 years, the very first Quire publication, [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/), was released in 2016 and is still going strong. 
 
 **Project types well-suited for Quire**: 
 
@@ -30,7 +30,7 @@ Quire is optimized for book-like projects, especially those that rely on visual 
 
 **Project types not ideal for Quire**: 
 
-- Non-textual, image-intensive presentations, like an online exhibition or a fully illustrated children’s book or graphic novel.
+- Non-textual, image-intensive presentations, like a fully illustrated children’s book or graphic novel.
 - Educational resources that require interactivity like annotations, collaboration, or open discussion.
 
 We are always happy to recommend other tools that might be a better fit for your project like [Pressbooks](https://pressbooks.com/), [Manifold](https://manifoldapp.org/), [Issuu](https://issuu.com/), or [WordPress](https://wordpress.com/) to name a few. Feel free to email us at [quire@getty.edu](mailto:quire@getty.edu) for guidance. 
@@ -97,7 +97,7 @@ At [Getty Publications](https://www.getty.edu/publications/) we do short-run dig
 
 ## What is the difference between v0 and v1?
 
-When Quire was first launched in 2016 we used the static-site generator Hugo. However, when we decided to open-source the tool in 2022 we switched to Eleventy as our static-site generator since it was based on JavaScript and that is a more common code language in the cultural heritage sector. Publications built with v0 will continue to work and are not deprecated, however,  they may be more difficult to update over time. For new users, we recommend using v1 as it is the most stable, reliable, and fully featured version of the tool. 
+The first release of Quire (v0) used the static-site generator Hugo. However, when we decided to open-source the tool in 2022 we switched to Eleventy as our static-site generator since it was based on JavaScript and that is a more common code language in the cultural heritage sector. Publications built with v0 will continue to work and are not deprecated, however,  they may be more difficult to update over time. For new users, we recommend using v1 as it is the most stable, reliable, and fully featured version of the tool. 
 
 For more information on what changed between the two versions, please see our [Key Changes in Version](/docs-v1/key-changes/) 1 page. 
 
