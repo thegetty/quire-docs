@@ -11,14 +11,14 @@ abstract: "Answers to frequently asked questions"
 
 </div>
 
-## Are there costs associated with Quire? 
+## Are there associated costs? 
 
 Quire is open-source and, therefore, free to [install](/docs-v1/install-uninstall/) and use. There is no proprietary software or longterm maintenance fees associated with using the tool. However, depending on your needs there may be some additional costs. 
 
 - You may want to hire a Digital Coordinator or Developer/Designer to assist with the publication. See below for more details on the kinds of services they provide. 
 - While hosting websites like Netlify or GitHub pages start off as free, you may want to invest in an enterprise account especially if you plan on publishing multiple books. 
 
-## Is my project right for Quire? 
+## Is my project a good candidat? 
 
 Quire is optimized for book-like projects, especially those that rely on visual illustrations and/or scholarly apparatus like citations, bibliographies, and footnotes. Quire is also ideal for projects you want to last a long-time. While most websites have a lifespan of website is 2-5 years, the very first Quire publication, [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/), was released in 2016 and is still going strong. 
 
@@ -35,13 +35,13 @@ Quire is optimized for book-like projects, especially those that rely on visual 
 
 We are always happy to recommend other tools that might be a better fit for your project like [Pressbooks](https://pressbooks.com/), [Manifold](https://manifoldapp.org/), [Issuu](https://issuu.com/), or [WordPress](https://wordpress.com/) to name a few. Feel free to email us at [quire@getty.edu](mailto:quire@getty.edu) for guidance. 
 
-## Do I need to know how to code to use Quire? 
+## Do I need to know how to code? 
 
 While there is a learning curve to using Quire, the tool was designed to be used by technical and non-technical individuals alike. You will need to learn human-readable mark-up languages like Markdown and YAML but they are significantly less complicated than HTML and [our documentation](/docs-v1/fundamentals/) offers copious guidance. While Quire is heavily customizable and flexible for those with advanced coding skills, we offer an out-of-the-box option with pre-templated layouts that is accessible for all. 
 
 We recommend taking our [hands-on workshop](/resource/workshop/) to get a sense of whether Quire is the right fit for you! 
 
-## Can you recommend freelancers to assist with our Quire projects?
+## Can you recommend freelancers to assist with my project?
 
 Yes! We have a stable of individuals experienced with Quire who can assist you with your project. There are two options for freelance support: 
 
@@ -63,7 +63,7 @@ Yes! We have a stable of individuals experienced with Quire who can assist you w
 
 If you would like to be put in touch with one of our freelancers, please email [quire@getty.edu](mailto:quire@getty.edu) and put FREELANCE HELP in the subject line. 
 
-## Will the Getty host my Quire project?
+## Will the Getty host my project?
 
 While we are always happy to show off our community's work on our [Community Showcase](/community/community-showcase/), we do not host Quire projects. Quire projects are designed to be hosted on virtually any web server, either one your institution already runs or a new server from the hosting service of your choice. Here are some of our recommendations: 
 
@@ -73,7 +73,7 @@ While we are always happy to show off our community's work on our [Community Sho
 
 Learn more about deploying your project on our [Deploy Your Project](https://quire.getty.edu/docs-v1/site-deploy/) page. 
 
-## What are the options for printing and distributing my Quire publication?
+## What are the options for printing and distributing my publication?
 
 At [Getty Publications](https://www.getty.edu/publications/) we do short-run digital printing for  Quire books and publish in small quantities, between 100-400 units. This model has a higher price per unit but requires less upfront investment. The company we use for short-run digital printing is [Integrated Books International (IBI)](https://www.booksintl.com/), which supplies our distributor directly.
  
@@ -101,7 +101,7 @@ The first release of Quire (v0) used the static-site generator Hugo. However, wh
 
 For more information on what changed between the two versions, please see our [Key Changes in Version](/docs-v1/key-changes/) 1 page. 
 
-## What are the technology requirements for Quire?
+## What are the technology requirements?
 
 See our [Implementation Considerations](docs-v1/implementation/) page for more information on the technology stack and operating system compatibility for Quire. 
 
