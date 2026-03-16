@@ -7,7 +7,7 @@ abstract: "Answers to frequently asked questions"
 
 <div class="action-button">
 
-[Ask a new  question](https://github.com/thegetty/quire/discussions/new=get-help).
+[Ask a new  question](https://github.com/thegetty/quire/discussions/new?category=get-help).
 
 </div>
 
@@ -18,7 +18,7 @@ Quire is open-source and, therefore, free to [install](/docs-v1/install-uninstal
 - You may want to hire a Digital Coordinator or Developer/Designer to assist with the publication. See below for more details on the kinds of services they provide. 
 - While hosting websites like Netlify or GitHub pages start off as free, you may want to invest in an enterprise account especially if you plan on publishing multiple books. 
 
-## Is my project a good candidat? 
+## Is my project a good candidate? 
 
 Quire is optimized for book-like projects, especially those that rely on visual illustrations and/or scholarly apparatus like citations, bibliographies, and footnotes. Quire is also ideal for projects you want to last a long-time. While most websites have a lifespan of website is 2-5 years, the very first Quire publication, [*Ancient Terracottas*](https://www.getty.edu/publications/terracottas/), was released in 2016 and is still going strong. 
 
