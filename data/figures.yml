@@ -485,3 +485,9 @@ figure_list:
     media_id: 1161630015/3d88267bbf
     media_type: vimeo
     caption: "Morgan Wylder (Materia: Journal of Technical Art History) and Michelle Padilla (Amon Carter Museum of American Art) provide an inside look into their recent Quire projects and answer questions from the community."
+
+  - id: "show-and-tell-april29" 
+    src: /screenshots/quire-show-and-tell-video-poster-april29.jpg
+    media_id: 1187853642/4e2cf00d84
+    media_type: vimeo
+    caption: "Valeria Federici (Research Associate, Center for Advanced Study in the Visual Arts, National Gallery of Art) and Paul Fuller (Coordinator of Digital Collections and Digital Initiatives, Osher Map Library, University of Southern Maine) provide an inside look into their recent Quire projects and answer questions from the community."
