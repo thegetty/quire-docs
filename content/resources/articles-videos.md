@@ -17,6 +17,8 @@ abstract: "How-to guides, demos, webinars, and more"
 
 {{< q-figure id="show-and-tell-jan26" >}}
 
+{{< q-figure id="show-and-tell-april29" >}}
+
 ## Presentations
 
 *Enjoy recent Quire presentations from Getty staff and the community.*
