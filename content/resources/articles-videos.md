@@ -17,7 +17,7 @@ abstract: "How-to guides, demos, webinars, and more"
 
 {{< q-figure id="show-and-tell-jan26" >}}
 
-{{< q-figure id="show-and-tell-april29" >}}
+{{< q-figure id="show-and-tell-april26" >}}
 
 ## Presentations
 
