@@ -15,9 +15,9 @@ abstract: "How-to guides, demos, webinars, and more"
 
 *Quarterly presentations from the community about their recent Quire projects.*
 
-{{< q-figure id="show-and-tell-jan26" >}}
-
 {{< q-figure id="show-and-tell-april26" >}}
+
+{{< q-figure id="show-and-tell-jan26" >}}
 
 ## Presentations
 
