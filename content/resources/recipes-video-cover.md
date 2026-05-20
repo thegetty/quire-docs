@@ -12,7 +12,7 @@ You can have a video cover in Quire by making a few customizations to your proje
 
 {{< q-class "warn" >}}
 
-This will only work for the online/HTML version of your Quire project. This recipe does not offer fallbacks for the PDF or EPUB output.
+This will only work for the online/HTML version of your Quire project. This recipe does not offer fallbacks for the PDF or EPUB output. For those, you can create a static version as a JPG file. For EPUB, add the JPG to your `content/_assets/images` directory and list it under `epub.defaultCoverImage` in `content/_data/config.yaml`. For PDF, output your PDF file without a cover and manually add the static cover JPG directly as the first page.
 
 {{< /q-class >}}
 
