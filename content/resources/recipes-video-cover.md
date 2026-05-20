@@ -10,6 +10,12 @@ You can use an animated GIF or WEBP file to create an animated cover for your pr
 
 You can have a video cover in Quire by making a few customizations to your project. You'll want to use a short MP4 video that will work when played in a loop. The shorter the video clip, the smaller the file will be and the better it will load for your users.
 
+{{< q-class "warn" >}}
+
+This will only work for the online/HTML version of your Quire project. This recipe does not offer fallbacks for the PDF or EPUB output.
+
+{{< /q-class >}}
+
 Start by customizing the cover layout to display the video instead of a static image. In `_layouts/cover.liquid` replace:
 
 ```html
@@ -51,5 +57,7 @@ Finally, add your MP4 video file to `content/_assets/images` and reference it in
 layout: cover
 order: 1
 image: cover-video.mp4
+outputs:
+  - html
 ---
 ```
