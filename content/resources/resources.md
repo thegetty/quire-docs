@@ -30,6 +30,7 @@ abstract: "Helpful tools, explanations, and links"
 
 *HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are two important programming languages for building web pages. HTML primarily controls page structure, while CSS controls the visual layout.*
 
+- [HTML & CSS for Absolute Beginners](https://www.kevinpowell.co/courses/)
 - [Interneting is Hard](https://internetingishard.netlify.app/)
 - [Mozilla Code Learning Modules](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core)
 - [Mozilla HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
