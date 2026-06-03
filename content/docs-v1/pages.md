@@ -168,15 +168,51 @@ Numbering should be unique, and use sequential whole numbers, but it can skip nu
 
 ## Create Publication Cover Page
 
-The way to create a publication cover page is similar to creating section landing pages. Name the `.md` file for your cover `index.md` and include the `layout` value of `cover`. The cover is usually given a page `order` of `1`. You can also include an attribute of `image` on your cover page and a link to the file. For example, `figures/my-cover-image.jpg`. You may also want to exclude the cover from the menu and table of contents. Learn how to do that in the following section.
+The way to create a publication cover page is similar to creating section landing pages. Name the `.md` file for your cover `index.md` and include the `layout` value of `cover`. The cover is usually given a page `order` of `1`. You can also include an attribute of `image` on your cover page and the path to the file. For example, `figures/my-cover-image.jpg`. You may also want to exclude the cover from the menu and table of contents. Learn how to do that in the [“Hide/Show Pages”](#hideshow-pages) section below.
 
 Like in the case of sub-sections explained above, `index.md` files always inherit the URL of their parent directory. The `index.md` file used for your cover is in the root, or top-most, directory, and so the URL for it will be the base URL where you host the site.
 
-{{< q-class "box warning" >}}
+### PDF Covers
 
-- Do not leave the `image` attribute blank or remove `image` completely from the page YAML, otherwise the build will break. 
+The layout of your cover in the online edition will be automatically adapted and included in the PDF output. Alternatively, you can manually add a custom cover image into the PDF after it has been generated in Quire. This may be advantageous in cases where you have a cover designed specifically for the PDF/print edition. For the best results, we recommend setting up the cover image file at the same size as your PDF and 150ppi (pixels per inch). For example, if your PDF is set to be 7” x 10", the PDF cover image should be 1050 x 1500 pixels.
 
-{{< /q-class >}}
+Instead of relying on Quire’s default output, or a manually added cover file, advanced users may choose to adjust the PDF cover using CSS and a print media query. This can be especially useful in adjusting the positioning of the background image included with the `image` attribute as described above.
+
+The default CSS position for the cover image is below. The background image can be repositioned by adjusting the `top`, `left`, and `transform` values, and adding the CSS snippet to the project’s `content/_assets/styles/custom.css` file. As long as it is wrapped in a `@media print` media query, the CSS changes will only have an effect on the PDF/print output.
+
+```css
+@media print {
+  .quire-cover .hero-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+```
+
+### EPUB Covers
+
+EPUBs require that a static cover image is included. The static cover is what will display for readers in their e-book library when when loading the EPUB file onto their e-reading devices or apps. This cover image will also often be the first image shown when opening the file.
+
+With the required static cover included, most projects won't also need to include the cover page created with the `content/index.md` file as described above. In this case you can choose to only output the `index.md` cover page in the HTML and PDF formats using the `outputs` attribute in the page YAML of the file:
+
+```yaml
+outputs:
+  - html
+  - pdf
+```
+
+The EPUB cover file should be a JPG file, but PNG and GIF are also accepted. It can be created in any program and added into the `content/_assets/images` directory of your project. The default filename is `static-cover.jpg` but this can be changed in the project’s `content/_data/config.yaml` file.
+
+```yaml
+epub:
+  defaultCoverImage: 'static-cover.jpg'
+```
+
+It is also possible to create a static cover image file from your Quire project. One way is to run `quire preview`, open up the preview in your browser, adjust the browser window to the aspect ratio you prefer, and take a screenshot of the cover, cropping out parts of the interface you don't need in the EPUB cover like the top navigation bar.
+
+A second method of creating a static cover image is to output the PDF of your project with `quire build` followed by `quire pdf` and convert the first page of the PDF (the cover) to an image file using a program like Adobe Acrobat or Photoshop.
 
 ## Hide/Show Pages
 
