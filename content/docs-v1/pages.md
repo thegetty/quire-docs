@@ -174,7 +174,7 @@ Like in the case of sub-sections explained above, `index.md` files always inheri
 
 Learn how to [Hide Title and Subtitle from Cover Page with Custom CSS](/resources/recipes-cover/) or [Display a Video Cover Image](/resources/recipes-video-cover/) in the [Recipes](/resources/recipes/) section. 
 
-Learn how to create covers for the PDF and EPUB version of your project in the [PDF Output](/docs-v1/pdf/) and [EPUB Output](/docs-v1/epub/#epub-covers) sections of this documentation. 
+Learn how to create covers for the PDF and EPUB version of your project in the [PDF Output](/docs-v1/pdf/#add-pdf-covers) and [EPUB Output](/docs-v1/epub/#epub-covers) sections of this documentation. 
 
 ## Hide/Show Pages
 
