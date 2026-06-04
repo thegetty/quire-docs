@@ -57,3 +57,33 @@ EPUBCheck will output a list of any errors or warnings that exist in your file. 
 ## EPUB Styles
 
 EPUBs in Quire have their own style sheet separate from any styles applied to the online version of your project. EPUB styles can be modified and added to in the `content/_assets/styles/epub.scss` file.
+
+
+### EPUB Covers
+
+EPUBs require that a static cover image is included. The static cover is what will display for readers in their e-book library when loading the EPUB file onto their e-reading devices or apps. This cover image will also often be the first image shown when opening the file.
+
+#### Creating EPUB Covers
+
+A quick way to create a static cover image file is with a screenshot of the online cover from your Quire project. Run `quire preview`, open up the preview in your browser, adjust the browser window to the aspect ratio you prefer, and take a screenshot of the cover. Crop out the parts of the interface you don't need in the EPUB like the top navigation bar and save as a JPG or PNG. 
+
+Alternatively, like for the PDF cover as described above, a custom cover image created outside of Quire can also be used. The file should be a JPG or PNG, but GIF is also accepted. We recommend it be a minimum of 1800px on the long side. Some third-party EPUB distribution vendors may enforce their own specific minimums.
+
+Whether created from a screenshot or an external program, add the EPUB cover image into the `content/_assets/images` directory of your project. The default filename is `static-cover.jpg` but this can be changed in the project’s `content/_data/config.yaml` file.
+
+```yaml
+epub:
+  defaultCoverImage: 'static-cover.jpg'
+```
+
+By adding a static cover you no longer need the `content/index.md` in your EPUB. To omit this file, choose to only output the `index.md` cover page in the HTML and PDF formats using the `outputs` attribute in the page YAML of the file:
+
+```yaml
+outputs:
+  - html
+  - pdf
+```
+
+{{< q-class "box tip" >}}
+One exception to omitting the `index.md` from the EPUB is if you have Markdown content, like a brief introductory text or epigraph, that you also want to include in the EPUB output. 
+{{< /q-class >}}
