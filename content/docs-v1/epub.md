@@ -59,11 +59,9 @@ EPUBCheck will output a list of any errors or warnings that exist in your file. 
 EPUBs in Quire have their own style sheet separate from any styles applied to the online version of your project. EPUB styles can be modified and added to in the `content/_assets/styles/epub.scss` file.
 
 
-### EPUB Covers
+## EPUB Covers
 
 EPUBs require that a static cover image is included. The static cover is what will display for readers in their e-book library when loading the EPUB file onto their e-reading devices or apps. This cover image will also often be the first image shown when opening the file.
-
-#### Creating EPUB Covers
 
 A quick way to create a static cover image file is with a screenshot of the online cover from your Quire project. Run `quire preview`, open up the preview in your browser, adjust the browser window to the aspect ratio you prefer, and take a screenshot of the cover. Crop out the parts of the interface you don't need in the EPUB like the top navigation bar and save as a JPG or PNG. 
 
@@ -85,5 +83,5 @@ outputs:
 ```
 
 {{< q-class "box tip" >}}
-One exception to omitting the `index.md` from the EPUB is if you have Markdown content, like a brief introductory text or epigraph, that you also want to include in the EPUB output. 
+- One exception to omitting the `index.md` from the EPUB is if you have Markdown content, like a brief introductory text or epigraph, that you also want to include in the EPUB output. 
 {{< /q-class >}}
