@@ -168,15 +168,13 @@ Numbering should be unique, and use sequential whole numbers, but it can skip nu
 
 ## Create Publication Cover Page
 
-The way to create a publication cover page is similar to creating section landing pages. Name the `.md` file for your cover `index.md` and include the `layout` value of `cover`. The cover is usually given a page `order` of `1`. You can also include an attribute of `image` on your cover page and a link to the file. For example, `figures/my-cover-image.jpg`. You may also want to exclude the cover from the menu and table of contents. Learn how to do that in the following section.
+The way to create a publication cover page is similar to creating section landing pages. Name the `.md` file for your cover `index.md` and include the `layout` value of `cover`. The cover is usually given a page `order` of `1`. You can also include an attribute of `image` on your cover page and the path to the file. For example, `figures/my-cover-image.jpg`. You may also want to exclude the cover from the menu and table of contents. Learn how to do that in the [“Hide/Show Pages”](#hideshow-pages) section below.
 
 Like in the case of sub-sections explained above, `index.md` files always inherit the URL of their parent directory. The `index.md` file used for your cover is in the root, or top-most, directory, and so the URL for it will be the base URL where you host the site.
 
-{{< q-class "box warning" >}}
+Learn how to [Hide Title and Subtitle from Cover Page with Custom CSS](/resources/recipes-cover/) or [Display a Video Cover Image](/resources/recipes-video-cover/) in the [Recipes](/resources/recipes/) section. 
 
-- Do not leave the `image` attribute blank or remove `image` completely from the page YAML, otherwise the build will break. 
-
-{{< /q-class >}}
+Learn how to create covers for the PDF and EPUB version of your project in the [PDF Output](/docs-v1/pdf/#add-pdf-covers) and [EPUB Output](/docs-v1/epub/#epub-covers) sections of this documentation. 
 
 ## Hide/Show Pages
 
