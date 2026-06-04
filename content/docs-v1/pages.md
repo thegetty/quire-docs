@@ -172,7 +172,9 @@ The way to create a publication cover page is similar to creating section landin
 
 Like in the case of sub-sections explained above, `index.md` files always inherit the URL of their parent directory. The `index.md` file used for your cover is in the root, or top-most, directory, and so the URL for it will be the base URL where you host the site.
 
-To learn how to create covers for the PDF and EPUB version of your project please visit the [PDF Output](/docs-v1/pdf/) and [EPUB Output](/docs-v1/epub/) sections of this documentation. 
+Learn how to [Hide Title and Subtitle from Cover Page with Custom CSS](/resources/recipes-cover/) or [Display a Video Cover Image](/resources/recipes-video-cover/) in our [Recipes](/resources/recipes/) section. 
+
+Learn how to create covers for the PDF and EPUB version of your project please visit the [PDF Output](/docs-v1/pdf/) and [EPUB Output](/docs-v1/epub/) sections of this documentation. 
 
 ## Hide/Show Pages
 
