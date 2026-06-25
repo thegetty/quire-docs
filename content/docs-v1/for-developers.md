@@ -99,8 +99,66 @@ Assets: `./content/_assets`
 
 
 ## Publication API
+`publication.yml` contains important metadata regarding your publication. While only `title` is required, it is recommended to fill as many fields possible to support Search Engine Optimiziation (SEO) and general discovery.
 
-TK
+You can find this file at `content/_data/publication.yml`.
+
+For configuration tips and walkthroughs, see the [Metadata Configuration](/docs-v1/metadata-configuration/) guide.
+
+| Property | Possible Values | Description |
+|----------|-----------------|-------------|
+| `url` | Any valid URL string | Base URL of the published site. Update before deploying. |
+| `title` | Any string; HTML and Markdown supported | Full publication title. Supports `<br>` for line breaks. |
+| `subtitle` | Any string | Optional subtitle displayed below the title. |
+| `reading_line` | Any string | Short tagline or series descriptor shown near the title. |
+| `short_title` | Any string | Abbreviated title used in navigation when the full title is too long. |
+| `description.one_line` | Any string | One-sentence description used in SEO metadata. |
+| `description.full` | Any string | Full abstract used in SEO metadata and on Cover and About pages. |
+| `pub_date` | `YYYY-MM-DD` (ISO 8601) | Projected final publication date. |
+| `language` | ISO 639-1 two-letter code (`en`, `es`, `fr`, etc.) | Primary language of the publication. |
+| `pub_type` | `book`, `journal-periodical`, `other` | Publication format type. Affects which identifiers are recommended. |
+| `identifier.isbn` | Valid ISBN-10 or ISBN-13 | ISBN for the online edition specifically. Recommended when `pub_type` is `book`. |
+| `identifier.issn` | Valid ISSN | ISSN for the online edition. Recommended when `pub_type` is `journal-periodical`. |
+| `identifier.doi` | Valid DOI string | Digital Object Identifier. Widely used in academic contexts to support citation. |
+| `identifier.uuid` | Valid UUID string | Universally Unique Identifier for identifying the publication in computer systems. |
+| `publisher[].name` | Any string | Publisher's display name. Used in citation features and search engine metadata. |
+| `publisher[].location` | Any city/location string | Publisher's city or location. Used in citation features. |
+| `publisher[].url` | Any valid URL | Publisher's website. Used in citation features and search engine metadata. |
+| `publisher[].logo` | Relative file path | Path to publisher logo image. |
+| `contributor_as_it_appears` | Any string | Freeform author credit line as it should appear on the cover (e.g. "Edited by Rose Valland"). |
+| `additional_contributors` | Any string | Freeform credits for contributors who don't fit the structured list. |
+| `contributor[].id` | Any unique string | Unique identifier. Can be referenced in individual page YAML to attribute essays to a specific author. |
+| `contributor[].type` | `primary`, `secondary`, `project-team` | Role of the contributor. `primary` appears on Cover, Menu, and Title Page. `project-team` appears on About and Copyright pages. |
+| `contributor[].first_name` | Any string | Contributor's first name. Use with `last_name`, or use `full_name` instead. |
+| `contributor[].last_name` | Any string | Contributor's last name. Use with `first_name`, or use `full_name` instead. |
+| `contributor[].full_name` | Any string | Alternative to `first_name` + `last_name` for names that don't split cleanly. |
+| `contributor[].title` | Any string | Professional title (e.g. "Dr.", "Professor"). |
+| `contributor[].affiliation` | Any string | Institutional affiliation. |
+| `contributor[].bio` | Any string; Markdown supported | Biographical note displayed on contributor pages. |
+| `contributor[].url` | Any valid URL | Contributor's personal or professional website. |
+| `contributor[].sort_as` | Quoted number string | Controls display order of contributors. Must be a quoted string, not a raw integer. |
+| `contributor[].image` | Relative file path | Path to contributor portrait image. |
+| `copyright` | Any string; both HTML and Markdown supported | Copyright notice (e.g. "© 2026 Author Name"). |
+| `license[].name` | Any string | Full name of the license (e.g. "Creative Commons Attribution"). |
+| `license[].abbreviation` | `CCBY`, `CCBY-NC`, `CCBY-NC-ND`, `CCBY-NC-SA`, `CCBY-ND`, `CCBY-SA`, `CC0` | License abbreviation. If it matches a Creative Commons license, an icon is added automatically. |
+| `license[].url` | Any valid URL | Link to the full license text. |
+| `license[].scope` | `full`, `text-only`, `some-exceptions` | Controls how license wording is rendered on the site. |
+| `license[].online_text` | Any string | Overrides the default license wording for the online edition. |
+| `license[].pdf_ebook_text` | Any string | Overrides the default license wording for PDF and EPUB editions. |
+| `license[].icon` | Relative file path | Path to a custom license icon. Used when `abbreviation` does not match a known Creative Commons license. |
+| `resource_link[].type` | `other-format`, `related-resource`, `footer-link` | How the link is surfaced. `other-format` for PDF/EPUB/print editions; `related-resource` for supplementary content; `footer-link` for bottom-of-menu links. |
+| `resource_link[].name` | Any string | Display label for the link as it appears in the sidebar menu. |
+| `resource_link[].media_type` | Valid MIME type | MIME type for the linked resource. Recommended for `other-format` links. |
+| `resource_link[].link_relation` | `alternate`, `about`, `related` | Semantic relationship of the link, following IANA conventions. |
+| `resource_link[].url` | Any valid URL | Destination of the link. Can be internal or external. |
+| `subject[].type` | `keyword`, `bisac`, `getty` | Subject classification scheme. |
+| `subject[].name` | Any string | Subject term. For `keyword`, a single comma-separated list. For `bisac` and `getty`, one subject per entry. |
+| `subject[].identifier` | BISAC code or Getty vocabulary semantic URL | Required for `bisac` and `getty` types. Not used for `keyword`. |
+| `revision_history[].date` | `YYYY-MM-DD` | Date a post-publication revision was made. |
+| `revision_history[].summary` | Any string; Markdown supported | Description of changes made. Typically written as a Markdown list. |
+| `repository_url` | Any valid URL | Link to the source code repository (e.g. GitHub). Pairs with `revision_history` for version control. |
+| `promo_image` | Relative file path | Cover image used for social sharing previews and metadata. |
+
 
 ## Page API
 
