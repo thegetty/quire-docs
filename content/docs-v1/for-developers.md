@@ -165,13 +165,70 @@ For configuration tips and walkthroughs, see the [Metadata Configuration](/docs-
 TK
 
 ## Shortcodes API
+Shortcodes are reusable components that may accept a number of parameters. These shortcodes are used to insert elements into your templates. Refer to the official Eleventy documentation on [shortcodes](https://www.11ty.dev/docs/shortcodes/).
 
-// TODO: [ ] Shortcodes API specs
-11ty uses JavaScript to register shortcodes and Liquid for templating.
+*Supported Template Formats*
+- `11ty.js`
+- `html`
+- `liquid`
+- `md`
+- `njk`
 
-Basic shortcode syntax: `{% shortcode-name %}`
+### Eleventy Config
+Shortcodes may be added via `eleventyConfig.addShortcode` and `eleventyConfig.addPairedShortcode` under the `.eleventy.js` config file. It is highly recommended to add shortcodes via Quire's Shortcode Plugin.
 
-Shortcode registration can be found under `./_plugins/shortcodes`
+*Basic shortcode example*
+
+Javascript
+eleventyConfig.addShortcode("year", () => ${new Date().getFullYear()})
+
+njk
+{% year %}
+
+*Basic paired shortcode example*
+
+Javascript
+eleventyConfig.addPairedShortcode("callout", (content, type) => {
+return <div class="callout callout--${type}">${content}</div>
+})
+
+njk
+{% callout "warning" %}
+This is important.
+{% endcallout %}
+
+### Quire's Shortcode Plugin
+Rather than calling eleventyConfig directly, Quire provides a thin wrapper under the `_plugins/shortcodes/index.js` directory. This wrapper (known as `shortcodefactory`) provides page and collection data to your component.
+
+*Why use Quire's Shortcode Plugin*:
+- Allows shortcodes to be registered identically across all supported template languages.
+- Decouples shortcode logic from Eleventy's internal structure.
+
+### Creating a shortcode
+You should create your shortcodes under the `_plugins/shortcodes` directory.
+
+After creating your component, register it by calling `addShortcode` or `addPairedShortcode` inside `_plugins/shortcodes/index.js`.
+
+{{< q-class "box tip" >}}
+  When determining if you need a paired shortcode or regular, ask yourself:
+- Do I need to nest content? PairedShortcode otherwise regular shortcode.
+- Do I need to wrap or transform large sections of markup or text? PairedShortcode
+{{< /q-class >}}
+
+### Available Shortcodes
+| Shortcode | Type | Parameters | Description |
+|---|---|---|---|
+| `accordion` | Paired | `heading`, `id` *(optional)*, `open` *(optional)* | Renders an HTML `<details>`/`<summary>`/`<section>` accordion |
+| `backmatter` | Paired | — | Styles wrapped content as "backmatter" in a `<div>` |
+| `cite` | Regular | `id`, `pageNumber` *(optional)*, `text` *(optional)* | Adds a linked Author-Date citation with hover pop-up, pulled from `references.yml` |
+| `contributors` | Regular | `context`, `align` *(optional)*, `type` *(optional)*, `format` *(optional)* | Renders a list of contributors |
+| `figure` | Regular | `alt`, `aspectRatio`, `caption`, `credit`, `download`, `id`, `label`, `mediaId`, `mediaType`, `src` | Renders an HTML `<figure>` element |
+| `figureGroup` | Regular | `columns`, `ids` (comma-separated string) | Renders multiple `<figure>` elements as a group |
+| `ref` | Regular | `anno` *(optional)*, `fig` *(optional)*, `region` *(optional)*, `transition` *(optional)*, `start` *(optional)*, `text` *(optional)* | Anchor link to an annotation or region state of a canvas |
+| `title` | Regular | — | Renders the Quire project/publication title (used on cover template) |
+
+### A note on Custom Tags
+Custom tags allow certain template engines to be extended. These custom tags are unrelated to Eleventy's Tags. Eleventy itself does not recommend using custom tags and every effort should be made to use shortcodes.
 
 ## Notes
 
