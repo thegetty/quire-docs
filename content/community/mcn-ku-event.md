@@ -1,6 +1,6 @@
 ---
 title: Hands-On Quire Workshop at<br> the University of Kansas
-weight: 2850
+weight: 2853
 type: page
 menu: false
 online: false
