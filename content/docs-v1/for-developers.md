@@ -161,8 +161,29 @@ For configuration tips and walkthroughs, see the [Metadata Configuration](/docs-
 
 
 ## Page API
+Any Markdown file under `/content/` is scanned and becomes a page in Eleventy's data model.
 
-TK
+| Attribute | Expected Value | Description |
+| --- | --- | --- |
+| `label` | string | A label for the page "Chapter 1", "2", "III", etc. |
+| `title` | string | |
+| `subtitle` | string | |
+| `short_title` | string | Used in navigation items where a long title would be too unwieldy. |
+| `layout` | "page" (default), "essay", "entry", "cover", "table-of-contents", "splash", or "data" | See the [*Page Types & Structure*](/docs-v1/pages/) documentation for examples. |
+| `presentation` | For `layout: table-of-contents`: "list" (default), "brief", "abstract", or "grid". For `layout: entry`: "landscape" (default) or "side-by-side". | Applied specifically to the table-of-contents and entry layouts to give further control over their presentation. |
+| `class` | string | Can accept any string, which will be included as a class in the main page element to facilitate style customization. A number of pre-defined classes also exist in the [Quire Default Theme](https://github.com/thegetty/quire/tree/main/themes/default). |
+| `order` | integer | Controls ordering of pages in the publication. |
+| `object` | array | See the [*Catalogue Entries*](/docs-v1/collection-catalogues/) documentation. |
+| `contributor` | array | See the [*Contributors*](/docs-v1/contributors/) documentation. |
+| `contributor_byline` | boolean | |
+| `abstract` | string | Markdown okay. |
+| `slug` | url path | Will change the URL of the page. Or use a period `.` to make the URL be the directory name (homepage). Read more in the [*Page Types & Structure*](/docs-v1/pages/#creating-section-landing-pages) chapter of this guide. |
+| `toc` | boolean | Default is "true". Page will not display in contents page if "false". |
+| `menu` | boolean | Default is "true". Page will not display in menu if "false". |
+| `online` | boolean | Default is "true". Page will not display in the online edition if "false". |
+| `pdf` | boolean | Default is "true". Page will not display in the PDF edition if "false". |
+| `epub` | boolean | Default is "true". Page will not display in either the EPUB or MOBI e-book editions if "false". |
+| `image` | url | |
 
 ## Shortcodes API
 Shortcodes are reusable components that may accept a number of parameters. These shortcodes are used to insert elements into your templates. Refer to the official Eleventy documentation on [shortcodes](https://www.11ty.dev/docs/shortcodes/).
@@ -208,12 +229,6 @@ Rather than calling eleventyConfig directly, Quire provides a thin wrapper under
 You should create your shortcodes under the `_plugins/shortcodes` directory.
 
 After creating your component, register it by calling `addShortcode` or `addPairedShortcode` inside `_plugins/shortcodes/index.js`.
-
-{{< q-class "box tip" >}}
-  When determining if you need a paired shortcode or regular, ask yourself:
-- Do I need to nest content? PairedShortcode otherwise regular shortcode.
-- Do I need to wrap or transform large sections of markup or text? PairedShortcode
-{{< /q-class >}}
 
 ### Available Shortcodes
 | Shortcode | Type | Parameters | Description |
