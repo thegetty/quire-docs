@@ -10,7 +10,7 @@ aliases:
 Since its launch in December 2022, Quire has been freely available under the BSD 3-Clause License. Quire is a tool for generating full static sites using 11ty, with pages that load quickly in the browser. The Quire CLI provides a straightforward set of commands for building and publishing your site.
 
 ## Requirements
-[Node.js](https://nodejs.org/en/) v22
+[Node.js](https://nodejs.org/en/) v22 preferred
 
 ## Repositories
 
@@ -64,6 +64,28 @@ Read our [*Metadata & Configuration*](https://quire.getty.edu/docs-v1/metadata-c
 - `disableKinds`
 - `buildDrafts`
 
+## Directory Structure under 11ty
+```
+  project-root/
+  ├── _epub/ # EPub e-book version of your project
+  ├── _includes/ # Language agnostic templates consumed inline by other templates (including layouts) 
+  ├── _layouts/ # Chainable language agnostic templates that wrap content via the layout front matter key
+  ├── _lib/ # Shared JS utility modules
+  ├── _patches/ # Patch files applied to node_modules automatically via the npm
+  ├── _plugins/ # Custom Eleventy plugins
+  ├── _site/ # Generated build of your project
+  ├── content/ # Your Project
+  │   ├── _data/ # Editable changes of the structure of your project      
+  │   ├── _computed/ # Injected data properties into your data object (See 11ty's https://www.11ty.dev/docs/data-computed/ for detail.)
+  │   ├── _assets/ # Fonts, images, custom styling and javascript behavior
+  │   ├── catalogue/ # Catalog entries for your project
+  │   └── *.md # Markdown files for your project (e.g. About, Appendix, Bilbiography, etc.)
+  ├── public/
+  ├── _layouts/           
+  ├── .eleventy.js # Eleventy configuration File     
+  └── package.json # Specific project dependencies
+```
+
 ## Configuration API
 With Quire's release, we switched from Hugo to 11ty which supports YAML for configuring your project. The `.eleventy.js` file is the root directory of your proejct to configure Eleventy to your needs.
 
@@ -83,20 +105,9 @@ With Quire's release, we switched from Hugo to 11ty which supports YAML for conf
 | `watchTargets` | string | Add files or directories for 11ty to watch. These files will trigger a build. |
 | `watchIgnore` | string | Add files or directories for 11ty to ignore. This will not trigger a build. |
 
-### Configration API: Plugins
+## Configration API: Plugins
 Plugins are custom code 11ty imports from external repositorys. Much like files in folders grouped with a common goal to complete a task. Below are some plugins used by Quire. Read more about available 11ty plugins through their official [documentation](https://www.11ty.dev/docs/plugins/)
-
-// TODO: [] Go over what is in site and what it does after writing.
-// input, output, _site, publicDir, dataDir, includesDir, layoutsDir,
-### Directory Structure under 11ty
-Layouts: `./_layouts`
-Site Data: `./content/_data`
-Assets: `./content/_assets`
-
-### Migrating from Hugo to 11ty
-// TODO: [] What is different from Hugo to 11ty with configurations
-
-
+// TODO
 
 ## Publication API
 `publication.yml` contains important metadata regarding your publication. While only `title` is required, it is recommended to fill as many fields possible to support Search Engine Optimiziation (SEO) and general discovery.
