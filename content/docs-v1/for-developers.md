@@ -244,7 +244,3 @@ After creating your component, register it by calling `addShortcode` or `addPair
 
 ### A note on Custom Tags
 Custom tags allow certain template engines to be extended. These custom tags are unrelated to Eleventy's Tags. Eleventy itself does not recommend using custom tags and every effort should be made to use shortcodes.
-
-## Notes
-
-TK
