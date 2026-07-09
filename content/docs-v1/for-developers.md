@@ -29,7 +29,7 @@ This repository is specifically for the Quire website and documentation.
 ## Directory Structure under 11ty
 ```
   project-root/
-  ├── _epub/ # EPub e-book version of your project
+  ├── _epub/ # EPUB e-book version of your project
   ├── _includes/ # Language agnostic templates consumed inline by other templates (including layouts) 
   ├── _layouts/ # Chainable language agnostic templates that wrap content via the layout front matter key
   ├── _lib/ # Shared JS utility modules
@@ -41,7 +41,7 @@ This repository is specifically for the Quire website and documentation.
   │   ├── _computed/ # Injected data properties into your data object (See 11ty's https://www.11ty.dev/docs/data-computed/ for detail.)
   │   ├── _assets/ # Fonts, images, custom styling and javascript behavior
   │   ├── catalogue/ # Catalog entries for your project
-  │   └── *.md # Markdown files for your project (e.g. About, Appendix, Bilbiography, etc.)
+  │   └── *.md # Markdown files for your project (e.g. About, Appendix, Bibliography, etc.)
   ├── public/ # Generated project files
   ├── .eleventy.js # Eleventy configuration File     
   └── package.json # Specific project dependencies
@@ -50,8 +50,6 @@ This repository is specifically for the Quire website and documentation.
 ## Configuration YAML
 
 Quire uses config.yaml as a settings file for developers to configure general aspects of their Quire project. This is distinct from Eleventy's [Configuration API](#configuration-api), which is executed and configured directly in .eleventy.js — see the Configuration API section below. Learn more about .eleventy.js through 11ty's official configuration [documentation](https://www.11ty.dev/docs/config/).
-
-Quire uses 11ty to generate static site files for publication. Through 11ty's Configuration API, general settings are available for developers in `config.yaml` to configure their Quire project. Learn more about 11ty's Configuration API through their official [documentation](https://www.11ty.dev/docs/config/).
 
 Read our [*Metadata & Configuration*](https://quire.getty.edu/docs-v1/metadata-configuration/) for adjusting your `config.yaml`. 
 
@@ -88,7 +86,7 @@ Read our [*Metadata & Configuration*](https://quire.getty.edu/docs-v1/metadata-c
 - `buildDrafts`
 
 ## Configuration API
-With Quire's release, we switched from Hugo to 11ty which supports YAML for configuring your project. The `.eleventy.js` file is the root directory of your proejct to configure Eleventy to your needs.
+With Quire's release, we switched from Hugo to 11ty which supports YAML for configuring your project. The `.eleventy.js` file is the root directory of your project to configure Eleventy to your needs.
 
 {% q-class "box warning" %}
 - Editing `.eleventy.js` can introduce breaking changes. Ensure you read the official 11ty documentation before making any changes.
@@ -108,7 +106,7 @@ With Quire's release, we switched from Hugo to 11ty which supports YAML for conf
 
 
 ## Publication API
-`publication.yml` contains important metadata regarding your publication. While only `title` is required, it is recommended to fill as many fields possible to support Search Engine Optimiziation (SEO) and general discovery.
+`publication.yml` contains important metadata regarding your publication. While only `title` is required, it is recommended to fill as many fields possible to support Search Engine Optimization (SEO) and general discovery.
 
 You can find this file at `content/_data/publication.yml`.
 
