@@ -26,7 +26,30 @@ https://github.com/thegetty/quire-docs
 
 This repository is specifically for the Quire website and documentation.
 
+## Directory Structure under 11ty
+```
+  project-root/
+  ├── _epub/ # EPub e-book version of your project
+  ├── _includes/ # Language agnostic templates consumed inline by other templates (including layouts) 
+  ├── _layouts/ # Chainable language agnostic templates that wrap content via the layout front matter key
+  ├── _lib/ # Shared JS utility modules
+  ├── _patches/ # Patch files applied to node_modules automatically via the npm
+  ├── _plugins/ # Custom Eleventy plugins
+  ├── _site/ # Generated build of your project
+  ├── content/ # Your Project
+  │   ├── _data/ # Global and directory-level data files     
+  │   ├── _computed/ # Injected data properties into your data object (See 11ty's https://www.11ty.dev/docs/data-computed/ for detail.)
+  │   ├── _assets/ # Fonts, images, custom styling and javascript behavior
+  │   ├── catalogue/ # Catalog entries for your project
+  │   └── *.md # Markdown files for your project (e.g. About, Appendix, Bilbiography, etc.)
+  ├── public/ # Generated project files
+  ├── .eleventy.js # Eleventy configuration File     
+  └── package.json # Specific project dependencies
+```
+
 ## Configuration YAML
+
+Quire uses config.yaml as a settings file for developers to configure general aspects of their Quire project. This is distinct from Eleventy's [Configuration API](#configuration-api), which is executed and configured directly in .eleventy.js — see the Configuration API section below. Learn more about .eleventy.js through 11ty's official configuration [documentation](https://www.11ty.dev/docs/config/).
 
 Quire uses 11ty to generate static site files for publication. Through 11ty's Configuration API, general settings are available for developers in `config.yaml` to configure their Quire project. Learn more about 11ty's Configuration API through their official [documentation](https://www.11ty.dev/docs/config/).
 
@@ -64,28 +87,6 @@ Read our [*Metadata & Configuration*](https://quire.getty.edu/docs-v1/metadata-c
 - `disableKinds`
 - `buildDrafts`
 
-## Directory Structure under 11ty
-```
-  project-root/
-  ├── _epub/ # EPub e-book version of your project
-  ├── _includes/ # Language agnostic templates consumed inline by other templates (including layouts) 
-  ├── _layouts/ # Chainable language agnostic templates that wrap content via the layout front matter key
-  ├── _lib/ # Shared JS utility modules
-  ├── _patches/ # Patch files applied to node_modules automatically via the npm
-  ├── _plugins/ # Custom Eleventy plugins
-  ├── _site/ # Generated build of your project
-  ├── content/ # Your Project
-  │   ├── _data/ # Editable changes of the structure of your project      
-  │   ├── _computed/ # Injected data properties into your data object (See 11ty's https://www.11ty.dev/docs/data-computed/ for detail.)
-  │   ├── _assets/ # Fonts, images, custom styling and javascript behavior
-  │   ├── catalogue/ # Catalog entries for your project
-  │   └── *.md # Markdown files for your project (e.g. About, Appendix, Bilbiography, etc.)
-  ├── public/
-  ├── _layouts/           
-  ├── .eleventy.js # Eleventy configuration File     
-  └── package.json # Specific project dependencies
-```
-
 ## Configuration API
 With Quire's release, we switched from Hugo to 11ty which supports YAML for configuring your project. The `.eleventy.js` file is the root directory of your proejct to configure Eleventy to your needs.
 
@@ -93,21 +94,18 @@ With Quire's release, we switched from Hugo to 11ty which supports YAML for conf
 - Editing `.eleventy.js` can introduce breaking changes. Ensure you read the official 11ty documentation before making any changes.
 {% endq-class %}
 
-| Property | Expected Value | Description | 
-| --- | --- | --- |
-| `input directory` | object | Directory/file used to resolve templates. Default to `content` | 
-| `output directory` | object | Where written templates will be written to. Default to `_site` | 
-| `publicDir` | object | Set to production when you're ready to go public with your site. Default to `false` | 
-| `dataDir` | object | TODO Description |
-| `includesDir` | object | Directory that maps subdirectories to be consumed by other template files. |
-| `layoutsDir` | object | Directory to resolve 11ty layouts. Layouts are special templates used to wrap other content. | 
-| `templateFormats` | string array | Specify which type of templates to transform. If you need to configure more templateFormats, use the `addTemplateFormats("option(s)")` API to append to the existing formats. |
-| `watchTargets` | string | Add files or directories for 11ty to watch. These files will trigger a build. |
-| `watchIgnore` | string | Add files or directories for 11ty to ignore. This will not trigger a build. |
+| Property | Set Via | Expected Value | Description |
+| --- | --- | --- | --- |
+| `input` | `eleventyConfig.setInputDirectory()` | string | Directory Eleventy scans to resolve templates. Defaults to `content`, or override with the `ELEVENTY_INPUT` environment variable. |
+| `output` | `eleventyConfig.setOutputDirectory()` | string | Directory the built site is written to. Defaults to `_site`, or override with `ELEVENTY_OUTPUT`. |
+| `data` | `eleventyConfig.setDataDirectory()` | string | Directory (relative to `input`) Eleventy resolves for data files. Defaults to `_computed`, or override with `ELEVENTY_DATA`. |
+| `includes` | `eleventyConfig.setIncludesDirectory()` | string | Directory (relative to `input`) for templates consumed inline by other templates. Defaults to `../_includes`, or override with `ELEVENTY_INCLUDES`. |
+| `layouts` | `eleventyConfig.setLayoutsDirectory()` | string | Directory (relative to `input`) Eleventy resolves for layout templates. Defaults to `../_layouts`, or override with `ELEVENTY_LAYOUTS`. |
+| `publicDir` | local variable, used with `addPassthroughCopy()` | string \| `false` | Path to static assets copied through as-is on **production** builds only. Automatically resolves to `public` when `ELEVENTY_ENV=production`, otherwise `false` — not intended to be set manually. |
+| `templateFormats` | `eleventyConfig.setTemplateFormats()` | string array | Which template languages Eleventy processes. Quire sets `['11ty.js', 'html', 'liquid', 'md', 'njk']`. Use `addTemplateFormats()` to append more without overriding this list. |
+| `watchTargets` | `eleventyConfig.addWatchTarget()` | string (glob) | Additional files/directories that trigger a rebuild when changed. Quire watches `**/*.css`, `**/*.js`, `**/*.scss`. |
+| `watchIgnores` | `eleventyConfig.watchIgnores.add()` | string | Files/directories excluded from triggering a rebuild. Quire ignores `_epub`, `_pdf`, and `_temp`. |
 
-## Configration API: Plugins
-Plugins are custom code 11ty imports from external repositorys. Much like files in folders grouped with a common goal to complete a task. Below are some plugins used by Quire. Read more about available 11ty plugins through their official [documentation](https://www.11ty.dev/docs/plugins/)
-// TODO
 
 ## Publication API
 `publication.yml` contains important metadata regarding your publication. While only `title` is required, it is recommended to fill as many fields possible to support Search Engine Optimiziation (SEO) and general discovery.
