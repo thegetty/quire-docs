@@ -1209,8 +1209,8 @@ project_list:
       - bplmaps
     note: "The Leventhal Center uses Quire now as its standard platform for creating digital companion exhibitions to accompany physical exhibitions at the Central Library. This is the Leventhal Center's fifth Quire publication."
 
-  - id: "archiveo_mariategui_estudios"
-    src: /screenshots/_archiveo_mariategui_estudios.jpg
+  - id: "archivo_mariategui_estudios"
+    src: /screenshots/_archivo_mariategui_estudios.jpg
     alt: "Introductory text in spanish is followed by four book covers each one is a different color. Each publication has spanish text on its cover and spanish text below listing the title, author, publisher, and date."
     type: Series
     publisher: "Archivo José Carlos Mariátegui"
