@@ -1194,3 +1194,30 @@ project_list:
       - LeslieMurrell
       - mpopke
     note: "This is the Denver Art Museum's second hybrid digital/print symposium volume. It presents scholarship on the Manila Galleon trade between Spanish colonial America and the Philippines (1565–1815). The publication was handled in-house, with moderate customization."
+
+
+  - id: leventhal_declarations
+    src: /screenshots/_leventhal_declarations.jpg
+    alt: "Declarations: Printing a New Nation"
+    type: Online Exhibition
+    publisher: Leventhal Map & Education Center, Boston Public Library
+    title_info: "*Declarations: Printing a New Nation*"
+    pub_date: 2026-04-11
+    url: https://www.leventhalmap.org/digital-exhibitions/declarations/ 
+    customization_level: significant
+    github_user:
+      - bplmaps
+    note: "The Leventhal Center uses Quire now as its standard platform for creating digital companion exhibitions to accompany physical exhibitions at the Central Library. This is the Leventhal Center's fifth Quire publication."
+
+  - id: "archiveo_mariategui_estudios"
+    src: /screenshots/_archiveo_mariategui_estudios.jpg
+    alt: "Introductory text in spanish is followed by four book covers each one is a different color. Each publication has spanish text on its cover and spanish text below listing the title, author, publisher, and date."
+    type: Series
+    publisher: "Archivo José Carlos Mariátegui"
+    title_info: "*Escritos Juveniles de José Carlos Mariátegui*"
+    pub_date: 2026-04-07
+    url: https://www.mariategui.org/publicaciones/
+    customization_level: minor
+    github_user:
+      - Mapachosa
+    note: "Estudios Mariateguianos is a series that seeks to continue the work begun by Mariátegui's children. The first four titles in the series are dedicated to examining the enduring relevance and contemporary impact of El Amauta's work. The archive has previously published nine other Quire publications. In addition to online reading, these publications are available as downloadable ePubs and PDFs. All current and future publications in the archive are open access and freely available. "
