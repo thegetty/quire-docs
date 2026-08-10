@@ -9,7 +9,7 @@ aliases:
 
 ## Import Fonts from Google Fonts or Bunny Fonts
 
-For long-term performance and preservation it is recommended to include all font files within the project rather than hosting them from a third-part service. However, in cases where that is not possible/practical, or where you first want to try out some font options before committing, hosted fonts from [Google Fonts](https://fonts.google.com) or its open-source, privacy-first mirror, [Bunny Fonts](https://fonts.bunny.net), can be used in your project.
+For long-term performance and preservation it is recommended to include all font files within the project rather than hosting them from a third-party service. However, in cases where that is not possible/practical, or where you first want to try out some font options before committing, hosted fonts from [Google Fonts](https://fonts.google.com) or its open-source, privacy-first mirror, [Bunny Fonts](https://fonts.bunny.net), can be used in your project.
 
 1. On your preferred service, find the font you want and add it to your font selections with the "Add variant" (Bunny) or "Get font" (Google) option on the page. 
 
