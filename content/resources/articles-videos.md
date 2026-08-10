@@ -9,17 +9,17 @@ abstract: "How-to guides, demos, webinars, and more"
 
 *Watch videos guiding you through the steps of using Quire.*
 
-{{< q-figure id="quire_demo_2023" >}}
+{{< q-figure id="quire_demo_2023" class="custom-aspect-ratio-1680x1050" >}}
 
 ## Show-and-Tell
 
 *Quarterly presentations from the community about their recent Quire projects.*
 
-{{< q-figure id="show-and-tell-august26" >}}
+{{< q-figure id="show-and-tell-august26" class="custom-aspect-ratio-1728x1116" >}}
 
-{{< q-figure id="show-and-tell-april26" >}}
+{{< q-figure id="show-and-tell-april26" class="custom-aspect-ratio-1920x1032" >}}
 
-{{< q-figure id="show-and-tell-jan26" >}}
+{{< q-figure id="show-and-tell-jan26" class="custom-aspect-ratio-1880x103" >}}
 
 ## Presentations
 

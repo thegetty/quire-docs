@@ -917,6 +917,20 @@ code.language-md {
   text-wrap: auto;
 }
 
+/* Custom sizing to fix display of Vimeo embeds where original videos are off sized */
+.quire-figure.custom-aspect-ratio-1728x1116 .quire-figure__media-wrapper--widescreen {
+  padding-bottom: 64.58%;
+}
+.quire-figure.custom-aspect-ratio-1920x1032 .quire-figure__media-wrapper--widescreen {
+  padding-bottom: 53.75%;
+}
+.quire-figure.custom-aspect-ratio-1880x1032 .quire-figure__media-wrapper--widescreen {
+  padding-bottom: 54.89%;
+}
+.quire-figure.custom-aspect-ratio-1680x1050 .quire-figure__media-wrapper--widescreen {
+  padding-bottom: 62.50%;
+}
+
 /* CONTENTS GRID
 ============================================================================= */
 /* Make full width */
