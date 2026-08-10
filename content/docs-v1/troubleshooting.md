@@ -5,16 +5,6 @@ type: page
 abstract: "Find solutions to common problems"
 ---
 
-## Installation
-
-### Installing Quire on macOS
-
-If you receive an error message that says "Error: EACCES: permission denied," this is related to the ownership and **permissions settings** for the global `node_modules` directories that are installed with Quire. To fix this issue, run the following command and then try re-installing Quire:
-
-```text
-sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
-```
-
 ## Quire Commands
 
 ### Running `quire build` on Windows 10
