@@ -1422,3 +1422,8 @@ div.quire-caption-container > span code {
 #resources-workshop .quire-page__heading-links {
   display: none;
 }
+
+.interview-caption {
+  font-size: 1rem;
+  color: #1a47b8;
+}

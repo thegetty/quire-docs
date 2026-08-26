@@ -494,7 +494,7 @@ figure_list:
   
   - id: "yang"
     src: "/screenshots/interview_Yang_Li.jpg"
-    caption: "**Yang Li, Senior Software Engineer at Emory Center for Digital Scholarship**"
+    caption: <span class="interview-caption">**Yang Li<br> Senior Software Engineer<br> Emory Center for Digital Scholarship**</span>
 
   - id: "valerie"
     src: "/screenshots/interview_Valerie_Hellstein.jpg"
