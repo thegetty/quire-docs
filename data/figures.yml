@@ -493,7 +493,13 @@ figure_list:
     caption: "Valeria Federici (Research Associate, Center for Advanced Study in the Visual Arts, National Gallery of Art) and Paul Fuller (Coordinator of Digital Collections and Digital Initiatives, Osher Map Library, University of Southern Maine) provide an inside look into their recent Quire projects and answer questions from the community."
   
   - id: "yang"
-    src: "/screenshots/yang-headshot.jpg"
+    src: "/screenshots/interview_Yang_Li.jpg"
+    caption: "**Yang Li, Senior Software Engineer at Emory Center for Digital Scholarship**"
 
-  - id: "stevie"
-    src: "/screenshots/stevie.jpg"
+  - id: "valerie"
+    src: "/screenshots/interview_Valerie_Hellstein.jpg"
+    caption: "Valerie Hellstein, Managing Editor at Denver Art Museum"
+
+  - id: "andy"
+    src: "/screenshots/interview_Andy_de_Leon.jpg"
+    caption: "Andy De Leon, Full Stack Engineer"
