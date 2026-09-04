@@ -106,28 +106,40 @@ This linking can be applied to a piece of text that when clicked upon will take 
 [fig. 1](#1.1)
 ```
 
-#### Links to Other Page Elements
+### Internal Links to Specific Elements on Pages
 
-An ID and the # symbol is also used for other kinds of elements on the same page. The IDs for these elements can be found using the following method:
+There are several types of linking between features, text, or objects on a single page that can be included through the following Markdown formatting:
 
-- Use the Inspect Element tool when right clicking a page or specific element. For Safari users, refer to this [guide](https://apple.stackexchange.com/questions/139767/inspect-element-in-safari) to enable this feature.
+#### Links to Figures
 
-- In the page's code, certain elements will include a piece of code, `id="idnamehere"` that designates the ID of that element. If the name of the element has a space that will be represented with a dash `-`.
-
-- For example, the ID of a heading will often be the name of that heading.
+This linking can be applied to a piece of text that when clicked upon will take a user to the location of the corresponding figure on the page. Figure IDs can be found on the `figures.yml` page as explained in the [*Figure Images*](/docs-v0/figure-images/) chapter of this guide. They are proceeded by the # symbol when used as a link address.
 
 ```md
-[referencetolink](#element-id)  
-See [heading 1](#heading-1).
+[number or name of figure](#figureid)
+[fig. 1](#1.1)
 ```
 
-#### Links to Elements on a Separate Page
+#### Links to Specific Section on a Page 
 
-Following the formula for internal links between pages, you can also specify an element on a separate page as a link destination by adding the # symbol and the element’s ID on to the end of a page link.
+You can also link to specific sections on a page by creating an ID and associating it with that section's header. Then you can reference the assigned ID in the text you want to be linked.
+
+```md
+{#assigned-header-id}
+[header name](#assigned-header-id)
+```
+
+```md
+## Scientific Methodology {#scientific-methodology}
+See [Scientific Methodology](#scientific-methodology) for more information
+```
+
+#### Links to Specific Section on Other Pages  
+
+You can also link to this header from a separate page.  
 
 ```md
 [referencetolink](/nameofpage/#idname)
-See the introduction [notes](/introduction/#notes)
+See the [Scientic Methodology](/paper-4/#scientific-methodology) in paper 4 
 ```
 
 #### Linked Footnotes

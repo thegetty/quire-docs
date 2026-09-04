@@ -29,9 +29,15 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
 
 3. **Node.js** enables you to run javascript on your computer. Download and install the Quire-supported version of Node.js. **Use the drop-down menu to select version 22**: https://nodejs.org/en/download. 
 
-    You can also install a Node.js [package manager](https://nodejs.org/en/download/package-manager) with the command line. A package manager enables you to install more than one version of Node. This is useful when working on multiple Quire projects, some of which might be tied to either newer or older versions of Node.
+    **If you are working on older Quire projects tied to different versions of Node** we recommend installing a Node.js [package manager](https://nodejs.org/en/download/package-manager). This will enable you to install more than one version of Node. 
 
-4. In your Terminal, install **Quire** with the following command:
+4. To set ownership permissions for the global `node_modules` directories that are installed with Quire, run the following command in the Terminal:
+
+    ```text
+    sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+    ```
+
+5. Next install **Quire** with the following command:
 
     ```text
     npm install --global @thegetty/quire-cli
@@ -39,11 +45,7 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
 
     The Quire installation process may take a few minutes, during which time there will be messaging output in your Terminal. The only messages of any concern are those labeled as ERROR or ERR. You can ignore any messages that tell you to run `npm audit`.
 
-{{< q-class "box tip" >}}
-- If you receive an error message that says "Error: EACCES: permission denied," this is related to the ownership and **permissions settings** for the global `node_modules` directories installed in step 1. Please see our [*Troubleshooting*](/docs-v1/troubleshooting/#installing-quire-on-macos) section for a solution. 
-{{< /q-class >}}
-
-5. Confirm installation by running the following command in your Terminal:
+6. Confirm installation by running the following command in your Terminal:
 
     ```text
      quire --version
@@ -51,7 +53,7 @@ There is no graphical user interface (GUI) for Quire. So using it may look or fe
 
     You should see a version number that begins with a 1. If you receive the message "command not found" this means installation was unsuccessful.
 
-6. Visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/) or [*Get Started*](/docs-v1/getting-started) section of the documentation to learn how to use Quire or get started with a new project. 
+7. Visit the [*Quire Basics Tutorial*](/docs-v1/tutorial/), [*Hans-On Workshop*](/resoucres/workshop/) or [*Get Started*](/docs-v1/getting-started) section of the documentation to learn how to use Quire or get started with a new project. 
 
 ## Install Quire v1 (Windows)
 
