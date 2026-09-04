@@ -498,8 +498,8 @@ figure_list:
 
   - id: "valerie"
     src: "/screenshots/interview_Valerie_Hellstein.jpg"
-    caption: "Valerie Hellstein, Managing Editor at Denver Art Museum"
+    caption: <span class="interview-caption">**Valerie Hellstein<br> Managing Editor<br> Denver Art Museum**</span>"
 
   - id: "andy"
     src: "/screenshots/interview_Andy_de_Leon.jpg"
-    caption: "Andy De Leon, Full Stack Engineer"
+    caption: <span class="interview-caption">**Andy De Leon<br> Full Stack Engineer<br> Freelance**</span>
