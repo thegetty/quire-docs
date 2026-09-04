@@ -492,14 +492,8 @@ figure_list:
     media_type: vimeo
     caption: "Valeria Federici (Research Associate, Center for Advanced Study in the Visual Arts, National Gallery of Art) and Paul Fuller (Coordinator of Digital Collections and Digital Initiatives, Osher Map Library, University of Southern Maine) provide an inside look into their recent Quire projects and answer questions from the community."
   
-  - id: "yang"
-    src: "/screenshots/interview_Yang_Li.jpg"
-    caption: <span class="interview-caption">**Yang Li<br> Senior Software Engineer<br> Emory Center for Digital Scholarship**</span>
-
-  - id: "valerie"
-    src: "/screenshots/interview_Valerie_Hellstein.jpg"
-    caption: <span class="interview-caption">**Valerie Hellstein<br> Managing Editor<br> Denver Art Museum**</span>"
-
-  - id: "andy"
-    src: "/screenshots/interview_Andy_de_Leon.jpg"
-    caption: <span class="interview-caption">**Andy De Leon<br> Full Stack Engineer<br> Freelance**</span>
+  - id: "show-and-tell-august26" 
+    src: /screenshots/quire-show-and-tell-video-poster-august26.png
+    media_id: 1216508200/15c52ba8b5
+    media_type: vimeo
+    caption: "Garrett Dash Nelson (President & Head Curator, Leventhal Map & Education Center at the Boston Public Library) and Tom Scutt (Digital Lead, Paul Mellon Centre for Studies in British Art, Yale University) provide an inside look into their recent Quire projects and answer questions from the community."

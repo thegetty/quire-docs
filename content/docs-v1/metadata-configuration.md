@@ -19,6 +19,25 @@ You can read more about YAML syntax basics in [*YAML & Markdown*](/docs-v1/funda
 
 The `config.yaml` file is a required file for Quire. It is used to define a number of key values, including the location of the figure image directory, format for object entry pages, bibliography format, name of navigation buttons, contributor byline styling, and more.
 
+### Accessibility Metadata
+
+EPUB e-book files must include certain metadata fields describing the accessibility of the file. More information and a complete list of possible values can be found on the [Schema.org Accessibility Metadata](https://kb.daisy.org/publishing/docs/metadata/schema.org/index.html) page in Daisy Consortium's *Accessible Publishing Knowledge Base*. By default, Quire includes base values that should apply to all books.
+
+```yaml
+accessibilityMetadata:
+  accessibilitySummary: This publication meets baseline accessibility standards
+  accessMode:
+    - textual
+    - visual
+  accessModeSufficient:
+    - textual,visual
+    - textual
+  accessibilityFeature:
+    - unknown
+  accessibilityHazard:
+    - unknown
+```
+
 ### Accordion Sections
 
 For [accordion sections](/docs-v1/accordions/) created with the `{% accordion %}` shortcode, set the style of the icon used to open the section (`controls`); set the label texts for the section link-copying feature (`copyButton`); and set the label texts for the global controls created with the `{% accordionGlobalControls %}` shortcode (`globalControls`).
@@ -46,10 +65,10 @@ analytics:
 
 ### Bylines
 
-Set how [contributor](/docs-v1/contributors/) names are listed in page headers: by name only (`name`); by name with their title and affiliation (`name-title`); or with no listing at all (`false`).
+Set how [contributor](/docs-v1/contributors/) names are listed in page headers: each contributor’s initials concatenated into a string with commas (`initials`); each contributor’sname on its own line (`name`); each contributor’s name on its own line along with their title and affiliation (`name-title`); contributor’s name concatenated into a string with commas (`string`); or with no listing at all (`false`).
 
 ```yaml
-bylineFormat: name-title # name | name-title | false
+bylineFormat: name-title # initials | name | name-title | string | false
 ```
 
 ### Bibliography
@@ -104,11 +123,12 @@ footnotes:
 
 ### Figures
 
-Set the default directories for figure images; and determine whether images should open in a lightbox modal when clicked (`enableModal`).
+Set the default directories for figure images (`assetDir` and `imageDir`); the default label text (`defaultLabel`) to appear in search when no `label` is defined in figures.yaml; and determine whether images should open in a lightbox modal when clicked (`enableModal`).
 
 ```yaml
 figures:
   assetDir: '/_assets/'
+  defaultLabel: 'Figure'
   enableModal: true
   imageDir: '/_assets/images'
 ```
