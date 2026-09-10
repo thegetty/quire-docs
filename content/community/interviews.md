@@ -2,7 +2,7 @@
 title: "Meet the Community"
 weight: 2800
 type: page
-abstract: "Interviews with Quire users"
+abstract: "Read interviews with Quire users"
 ---
 
 ## Andy de Leon

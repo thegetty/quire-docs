@@ -1,6 +1,6 @@
 ---
 title: "Show-and-Tell"
-abstract: "Quarterly presentations of community publications"
+abstract: "Watch presentations from our community"
 type: page
 weight: 2850
 aliases:
