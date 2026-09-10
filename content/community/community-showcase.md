@@ -1,6 +1,6 @@
 ---
 title: Community Showcase
-weight: 2400
+weight: 2600
 type: essay
 abstract: "Browse Quire publications from our community"
 ---
