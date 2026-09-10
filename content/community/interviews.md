@@ -5,30 +5,29 @@ type: page
 abstract: "Interviews with Quire users"
 ---
 
-## Yang Li
+## Andy de Leon
 
-{{< q-figure id="yang" class="is-pulled-right" >}}
+{{< q-figure id="andy" class="is-pulled-right" >}}
 
-**How would you describe what you do to someone outside your field?**<br>
+**How would you describe what you do to someone outside your field?**
 
-I continue to stay curious after college and am often drawn to problem-solving and learning new things. I work on my own and my friends' cars, troubleshoot HVAC systems, and try new recipes. Most recently, I tried making Korean preserved vegetables, or banchan, including baechu-kimchi (napa cabbage), kkakdugi (radish), and oi-kimchi (cucumber).
+As a Software Engineer, I build software and tools that help people navigate and make sense of their data and information. Day to day, that means speaking several languages only computers understand.
 
-**How did you find Quire, and what made you stick with it?**<br>
+**How did you find Quire, and what made you stick with it?**
 
-I came across Quire in 2018 while exploring digital publishing platforms at the Emory Center for Digital Scholarship. It stood out as a structured yet flexible and customizable platform. Full code exposure allows a developer like me to make reasonable customizations, which complements more opinionated platforms. The Quire community is also very responsive and supportive, taking user feedback seriously and providing consistent updates and maintenance of the software.
+I found Quire through my admiration for Getty and learning about the projects they are actively involved in. What's kept me here is seeing the passion and inspiration with which Quire serves its community across the spectrum of media.
 
-**What’s an example of a project you are excited about and why?**<br>
+**Can you tell us about a Quire project (past or present) that has excited you?**
 
-I am currently working on a Quire project called *Making an Impression* by Professor Ruth Allen at Emory University, which features ancient engraved gemstones. Professor Allen has Reflectance Transformation Imaging objects that reveal the texture of the gemstones when light is projected from different angles. I retrofitted a web RTI viewer into Quire and minimized “footprints” on the platform, taking this experiment as a joyful exploration to push the boundary of the platform.
+I am currently working on the Leopoldo Méndez catalogue raisonné project. I am helping extract and transform over 800+ entries to publish on Quire. Really exciting to work on this project and push Quire to its limits. 
 
-**What’s something you wish you knew about Quire in advance of using it?**<br>
+**What’s something you wish you knew about Quire in advance of using it?** 
 
-Documentation. Documentation. Documentation.<br>
-I always encourage project partners to read the documentation. Even though it may sound tedious, the documentation helps anyone new to Quire understand its design philosophy, file structures, and development workflows. Taking that time upfront is a great investment that pays off quickly once you start developing complex Quire projects at scale.
+I wish I had understood earlier how much good, well-formatted structured data pays off when starting a Quire project. This is less about Quire itself and more about defining our approach and outlining our thought process in advance.
 
-**What’s currently making you happy?**<br>
+**What’s currently making you happy?**
 
-Lately I have been casually sharing my experience studying abroad in the U.S. with international students from Asia, a small act that brings me a surprising amount of joy. On the technical side, I have also been stitching vibe coding and AI-assisted design into my workflows, with equal parts excitement and caution. These pursuits are some of what keep me going these days.
+Coming home again to LA after living in Chi for some years. Though I do miss the concrete beaches.
 
 ## Valerie Hellstein
 
@@ -55,28 +54,29 @@ To create something truly unique with its own look and feel, a developer is esse
 
 Enjoying negronis in the backyard garden once the sun has dipped down below the tree line and the bees are still busy buzzing in the lavender bushes.
 
-## Andy de Leon
+## Yang Li
 
-{{< q-figure id="andy" class="is-pulled-right" >}}
+{{< q-figure id="yang" class="is-pulled-right" >}}
 
-**How would you describe what you do to someone outside your field?**
+**How would you describe what you do to someone outside your field?**<br>
 
-As a Software Engineer, I build software and tools that help people navigate and make sense of their data and information. Day to day, that means speaking several languages only computers understand.
+I am a "translator," sitting between faculty members and software applications, translating their needs into code that drives the web apps, sites, and publications people use on their computers and phones. I call myself a "translator" because I realize that I need to truly understand their needs and wants and put subject matter into context to arrive at meaningful designs and delightful software products, or, in this case, Quire publications. I enjoy this job a lot because I am educating, sharing, listening, and, hopefully, building beautiful things, and it never gets old!
 
-**How did you find Quire, and what made you stick with it?**
+**How did you find Quire, and what made you stick with it?**<br>
 
-I found Quire through my admiration for Getty and learning about the projects they are actively involved in. What's kept me here is seeing the passion and inspiration with which Quire serves its community across the spectrum of media.
+I came across Quire in 2018 while exploring digital publishing platforms at the Emory Center for Digital Scholarship. It stood out as a structured yet flexible and customizable platform. Full code exposure allows a developer like me to make reasonable customizations, which complements more opinionated platforms. The Quire community is also very responsive and supportive, taking user feedback seriously and providing consistent updates and maintenance of the software.
 
-**Can you tell us about a Quire project (past or present) that has excited you?**
+**What’s an example of a project you are excited about and why?**<br>
 
-I am currently working on the Leopoldo Méndez catalogue raisonné project. I am helping extract and transform over 800+ entries to publish on Quire. Really exciting to work on this project and push Quire to its limits. 
+I am currently working on a Quire project called *Making an Impression* by Professor Ruth Allen at Emory University, which features ancient engraved gemstones. Professor Allen has Reflectance Transformation Imaging objects that reveal the texture of the gemstones when light is projected from different angles. I retrofitted a web RTI viewer into Quire and minimized “footprints” on the platform, taking this experiment as a joyful exploration to push the boundary of the platform.
 
-**What’s something you wish you knew about Quire in advance of using it?** 
+**What’s something you wish you knew about Quire in advance of using it?**<br>
 
-I wish I had understood earlier how much good, well-formatted structured data pays off when starting a Quire project. This is less about Quire itself and more about defining our approach and outlining our thought process in advance.
+At the very beginning, I was so eager to try things out that I skipped deep diving into the Quire documentation. I essentially started manipulating code straight away, which was okay for the most part because of my prior coding experience and how structured the platform is. However, definitions, best practices, and certain features weren't obvious unless I read the documentation. Besides, the documentation also reveals the design philosophy and design choices made by Quire's makers. This is important because it helps me better understand what the platform is meant to be and not meant to be. It helps me become a better consultant when I advise faculty members, or really anyone using or interested in using the platform.
 
-**What’s currently making you happy?**
+**What’s currently making you happy?**<br>
 
-Coming home again to LA after living in Chi for some years. Though I do miss the concrete beaches.
+Lately I have been casually sharing my experience studying abroad in the U.S. with international students from Asia, a small act that brings me a surprising amount of joy. On the technical side, I have also been stitching vibe coding and AI-assisted design into my workflows, with equal parts excitement and caution. These pursuits are some of what keep me going these days.
+
 
 
