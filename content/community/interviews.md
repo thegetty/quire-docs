@@ -68,7 +68,7 @@ I came across Quire in 2018 while exploring digital publishing platforms at the 
 
 **What’s an example of a project you are excited about and why?**<br>
 
-I am currently working on a Quire project called *Making an Impression* by Professor Ruth Allen at Emory University, which features ancient engraved gemstones. Professor Allen has Reflectance Transformation Imaging objects that reveal the texture of the gemstones when light is projected from different angles. I retrofitted a web RTI viewer into Quire and minimized “footprints” on the platform, taking this experiment as a joyful exploration to push the boundary of the platform.
+I am currently working on a Quire project called *Making an Impression* by Professor Ruth Allen at Emory University, which features ancient engraved gemstones. Professor Allen has Reflectance Transformation Imaging objects that reveal the gemstone's texture when light is projected from different angles. I retrofitted a web RTI viewer into Quire and minimized “footprints” on the platform, taking this experiment as a joyful exploration to push the boundary of the platform.
 
 **What’s something you wish you knew about Quire in advance of using it?**<br>
 
