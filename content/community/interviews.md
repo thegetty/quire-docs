@@ -19,7 +19,7 @@ I found Quire through my admiration for Getty and learning about the projects th
 
 **Can you tell us about a Quire project (past or present) that has excited you?**
 
-I am currently working on the Leopoldo Méndez catalogue raisonné project. I am helping extract and transform over 800+ entries to publish on Quire. Really exciting to work on this project and push Quire to its limits. 
+I am currently working on the Leopoldo Méndez catalogue raisonné project. I am helping extract and transform over 800+ entries to publish on Quire. Really exciting to work on this project and push the tool to its limits. 
 
 **What’s something you wish you knew about Quire in advance of using it?** 
 
