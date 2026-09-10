@@ -3,6 +3,8 @@ title: "Show-and-Tell"
 abstract: "Watch presentations from our community"
 type: page
 weight: 2850
+aliases:
+  - /resources/articles-videos/#show-and-tell
 ---
 
 
