@@ -58,23 +58,23 @@ Enjoying negronis in the backyard garden once the sun has dipped down below the 
 
 {{< q-figure id="yang" class="is-pulled-right" >}}
 
-**How would you describe what you do to someone outside your field?**<br>
+**How would you describe what you do to someone outside your field?**
 
 I am a "translator," sitting between faculty members and software applications, translating their needs into code that drives the web apps, sites, and publications people use on their computers and phones. I call myself a "translator" because I realize that I need to truly understand their needs and wants and put subject matter into context to arrive at meaningful designs and delightful software products, or, in this case, Quire publications. I enjoy this job a lot because I am educating, sharing, listening, and, hopefully, building beautiful things, and it never gets old!
 
-**How did you find Quire, and what made you stick with it?**<br>
+**How did you find Quire, and what made you stick with it?**
 
 I came across Quire in 2018 while exploring digital publishing platforms at the Emory Center for Digital Scholarship. It stood out as a structured yet flexible and customizable platform. Full code exposure allows a developer like me to make reasonable customizations, which complements more opinionated platforms. The Quire community is also very responsive and supportive, taking user feedback seriously and providing consistent updates and maintenance of the software.
 
-**What’s an example of a project you are excited about and why?**<br>
+**What’s an example of a project you are excited about and why?**
 
 I am currently working on a Quire project called *Making an Impression* by Professor Ruth Allen at Emory University, which features ancient engraved gemstones. Professor Allen has Reflectance Transformation Imaging objects that reveal the gemstone's texture when light is projected from different angles. I retrofitted a web RTI viewer into Quire and minimized “footprints” on the platform, taking this experiment as a joyful exploration to push the boundary of the platform.
 
-**What’s something you wish you knew about Quire in advance of using it?**<br>
+**What’s something you wish you knew about Quire in advance of using it?**
 
 At the very beginning, I was so eager to try things out that I skipped deep diving into the Quire documentation. I essentially started manipulating code straight away, which was okay for the most part because of my prior coding experience and how structured the platform is. However, definitions, best practices, and certain features weren't obvious unless I read the documentation. Besides, the documentation also reveals the design philosophy and design choices made by Quire's makers. This is important because it helps me better understand what the platform is meant to be and not meant to be. It helps me become a better consultant when I advise faculty members, or really anyone using or interested in using the platform.
 
-**What’s currently making you happy?**<br>
+**What’s currently making you happy?**
 
 Lately I have been casually sharing my experience studying abroad in the U.S. with international students from Asia, a small act that brings me a surprising amount of joy. On the technical side, I have also been stitching vibe coding and AI-assisted design into my workflows, with equal parts excitement and caution. These pursuits are some of what keep me going these days.
 
