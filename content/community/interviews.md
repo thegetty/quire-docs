@@ -21,7 +21,7 @@ I found Quire through my admiration for Getty and learning about the projects th
 
 I am currently working on the Leopoldo Méndez catalogue raisonné project. I am helping extract and transform over 800+ entries to publish on Quire. Really exciting to work on this project and push the tool to its limits. 
 
-**What’s something you wish you knew about Quire in advance of using it?** 
+**What’s something you wish you knew about Quire before using it?**
 
 I wish I had understood earlier how much good, well-formatted structured data pays off when starting a Quire project. This is less about Quire itself and more about defining our approach and outlining our thought process in advance.
 
@@ -66,11 +66,11 @@ I am a "translator," sitting between faculty members and software applications, 
 
 I came across Quire in 2018 while exploring digital publishing platforms at the Emory Center for Digital Scholarship. It stood out as a structured yet flexible and customizable platform. Full code exposure allows a developer like me to make reasonable customizations, which complements more opinionated platforms. The Quire community is also very responsive and supportive, taking user feedback seriously and providing consistent updates and maintenance of the software.
 
-**What’s an example of a project you are excited about and why?**
+**Can you tell us about a Quire project (past or present) that has excited you?**
 
 I am currently working on a Quire project called *Making an Impression* by Professor Ruth Allen at Emory University, which features ancient engraved gemstones. Professor Allen has Reflectance Transformation Imaging objects that reveal the gemstone's texture when light is projected from different angles. I retrofitted a web RTI viewer into Quire and minimized “footprints” on the platform, taking this experiment as a joyful exploration to push the boundary of the platform.
 
-**What’s something you wish you knew about Quire in advance of using it?**
+**What’s something you wish you knew about Quire before using it?**
 
 At the very beginning, I was so eager to try things out that I skipped deep diving into the Quire documentation. I essentially started manipulating code straight away, which was okay for the most part because of my prior coding experience and how structured the platform is. However, definitions, best practices, and certain features weren't obvious unless I read the documentation. Besides, the documentation also reveals the design philosophy and design choices made by Quire's makers. This is important because it helps me better understand what the platform is meant to be and not meant to be. It helps me become a better consultant when I advise faculty members, or really anyone using or interested in using the platform.
 
