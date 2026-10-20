@@ -509,4 +509,9 @@ figure_list:
   - id: "andy"
     src: "/screenshots/interview_Andy_de_Leon.jpg"
     caption: <span class="interview-caption">**Andy De Leon<br> Full Stack Engineer<br> Freelance**</span>
-    
+
+  - id: "show-and-tell-oct26"  
+    src: /screenshots/quire-show-and-tell-video-poster-october26.png
+    media_id: 1234164250/c6007d2726
+    media_type: vimeo
+    caption: "Valerie Hellstein (Managing Editor, Denver Art Museum) and Kristi Ehrig-Burgess (Head of Library and Archives, Mingei International Museum) provide an inside look into their recent Quire projects and answer questions from the community."
