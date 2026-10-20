@@ -515,3 +515,7 @@ figure_list:
     media_id: 1234164250/c6007d2726
     media_type: vimeo
     caption: "Valerie Hellstein (Managing Editor, Denver Art Museum) and Kristi Ehrig-Burgess (Head of Library and Archives, Mingei International Museum) provide an inside look into their recent Quire projects and answer questions from the community."
+
+  - id: "michelle"
+    src: "/screenshots/interview_michelle_padilla.jpg"
+    caption: <span class="interview-caption">**Michelle Padilla<br> Digital Content Strategist<br> Amon Carter Museum of American Art**</span>"
