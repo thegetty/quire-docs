@@ -5,6 +5,32 @@ type: page
 abstract: "Read interviews with Quire users"
 ---
 
+## Michelle Padilla 
+
+{{< q-figure id="michelle" class="is-pulled-right" >}}
+
+**How would you describe what you do to someone outside your field?**
+
+My title is Digital Content Strategist, but most people don’t know what that means so I say that I manage the website content at my museum.
+
+**How did you find Quire, and what made you stick with it?**
+
+I first became aware of Quire at my last museum when we were trying to find ways to get more scholarly content online. We ended up not using it, but I kept my eye on it. When I arrived at the Carter and we were looking for a way to develop an online publication, I came back to Quire and suggested we look into it.
+
+After launching our first digital publication in 2022, we decided it would be a good platform for a scholarly bulletin we were launching. That Quire is free to use and is basically ready to use “out of the box” are two pluses. There is definitely a learning curve to it, but with minimal customizations, it’s pretty easy to use. And the Quire team at Getty are always willing to help if you get stuck!
+
+**Can you tell us about a Quire project (past or present) that has excited you?**
+
+The Carter has launched two publications using [Quire: The Art of the Scene (2022)](https://art-scene.cartermuseum.org/) and [Carter Bulletin Vol 1 / Charles M. Russell: New Perspectives (2025)](https://bulletin-v1.cartermuseum.org/). They’ve both been really fun to work with. But I’m currently using Quire for a personal project and I’m excited about that! I’ve digitized and transcribed letters that my grandfather sent my grandmother during World War II before they were married. I’m using photos, maps, and other documents to put them into context. It’s been a very heartwarming experience to get an idea of what they might have been like as young adults.
+
+**What’s something you wish you knew about Quire before using it?**
+
+While not directly Quire-related, I do wish I had a better grasp on how to use Github better. As I’m working on my third epub, I’m realizing the value of using Github, but I feel like real understanding is just out of reach and Github is where I often find myself getting tripped up.
+
+**What’s currently making you happy?**
+
+Always my pets - two dogs and three cats! Also, it’s been pretty hot here in Texas and my husband and I have been visiting some of the Texas State Parks for stand-up paddle boarding. We’ve found it quite relaxing - and cool! - to pack up our boards and float around on a lake for a few hours on a weekend. It’s a great way to step away from our electronics and get up-close and personal with nature.
+
 ## Andy de Leon
 
 {{< q-figure id="andy" class="is-pulled-right" >}}

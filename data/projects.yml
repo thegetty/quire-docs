@@ -1220,4 +1220,30 @@ project_list:
     customization_level: minor
     github_user:
       - Mapachosa
-    note: "Estudios Mariateguianos is a series that seeks to continue the work begun by Mariátegui's children. The first four titles in the series are dedicated to examining the enduring relevance and contemporary impact of El Amauta's work. The archive has previously published nine other Quire publications. In addition to online reading, these publications are available as downloadable ePubs and PDFs. All current and future publications in the archive are open access and freely available. "
+    note: "Estudios Mariateguianos is a series that seeks to continue the work begun by Mariátegui's children. The first four titles in the series are dedicated to examining the enduring relevance and contemporary impact of El Amauta's work. The archive has previously published nine other Quire publications. In addition to online reading, these publications are available as downloadable ePubs and PDFs. All current and future publications in the archive are open access and freely available."
+
+  - id: "costen_backdirt"
+    src: /screenshots/_costen_backdirt.jpg
+    alt: "Backdirt 2025: The Cotsen Institute of Archaeology Annual Review"
+    type: Journal
+    publisher: "The Cotsen Institute of Archaeology Press"
+    title_info: "*Backdirt: The Cotsen Institute of Archaeology Annual Review*"
+    pub_date: 2026-08-11
+    url: https://dal.ucla.edu/backdirt/2025/
+    customization_level: moderate
+    github_user:
+      - cioapress
+    note: "Backdirt: Annual Review is the magazine of the Cotsen Institute of Archaeology at UCLA.The CIoA Press publishes the annual magazine at the end of each academic year. This is the institute's first Quire project, which sought to create a streamlined way of making the magazine accessible online; as such customizations were moderate."
+
+  - id: "gtsf_summer2026"
+    src: /screenshots/_gtsf_summer2026.jpg
+    alt: "Gabrielino Tongva Springs Foundation Internship: Summer 2026, Orpheus Bradley, Mara-Kay Guitierrez, Emily Holt, Lennon Miura, Armando Quezada, and Narelly Santiago"
+    type: "Essays"
+    publisher: "Gabrielino Tongva Springs Foundation"
+    title_info: "*Gabrielino Tongva Springs Foundation Internship: Summer 2026*"
+    pub_date: 2026-10-05
+    url: https://gtsf-internship-2026.netlify.app/
+    customization_level: minor
+    github_user:
+      - liliflores-design
+    note: "This publication was created by the inaugural Gabrielino Tongva Springs Summer Internship cohort of 2026. Over the summer, the interns were introduced to various topics, including decolonial and Indigenous methods of knowledge-making, the importance of oral histories, archaeological perspectives that enrich the deep history of Tovangaar, and land and water stewardship. This is Gabrielino Tongva Springs Foundation's (GTSF) first Quire publication. The 2026 cohort attended a Quire info session and hands-on workshop as part of their internship. GTSF hopes make this collaboration with Quire an annual tradition."

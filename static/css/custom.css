@@ -930,6 +930,9 @@ code.language-md {
 .quire-figure.custom-aspect-ratio-1680x1050 .quire-figure__media-wrapper--widescreen {
   padding-bottom: 62.50%;
 }
+.quire-figure.custom-aspect-ratio-1900x1000 .quire-figure__media-wrapper--widescreen {
+  padding-bottom: 52.63%;
+}
 
 /* CONTENTS GRID
 ============================================================================= */
