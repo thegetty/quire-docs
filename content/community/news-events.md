@@ -7,17 +7,23 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-**Quire @ AUP 2026** <br>
-June 13-15, 2026 <br>
-Westin Seattle <br>
+**Quire @ MCN 2026** <br>
+October 21-23, 2026 <br>
+Hyatt Regency Seattle <br>
 Seattle, WA <br>
-Learn more: https://aupresses.org/events/aupresses-2026-annual-meeting/
+[Learn more](https://mcn.edu/annual-conference/mcn-2026/)
 
-**Quire @ LPF 2026** <br>
-June 17–18, 2026 <br>
-University of Washington <br>
-Seattle, WA <br>
-Learn more: https://librarypublishing.org/forum/   
+**Quire @ CAA 2027** <br>
+February 3-6, 2027 <br>
+NY Midtown Hilton <br>
+New York, NY <br>
+[Learn more](https://www.collegeart.org/programs/conference/conference2027)
+
+**Quire @ NMPS 2027** <br>
+April 11-13, 2027 <br>
+Radisson Blu Aqua Hotel <br>
+Chicago, IL <br>
+[Learn more](https://graham.uchicago.edu/program/national-museum-publishing-seminar/ )
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
@@ -33,13 +39,26 @@ Learn more: https://librarypublishing.org/forum/
 
 **2026**
 
+- November 11: Virtual [GitHub](/resources/github/) tutorial offered to community members 
+- October 21-23: The Quire team attends the [MCN 2026](https://mcn.edu/annual-conference/mcn-2026/) in Seattle and Erin Cecele Dunigan (Quire Community Manager) speaks about static-sites and Quire as part of a panel called ["F***, Marry, Kill: Guidelines for Determining a Digital Project's Lifespan"](https://mcn2026.sched.com/event/2RWqP/f-marry-kill-guidelines-for-determining-a-digital-projects-lifespan)
+- October 7: Our fourth [Quire Community Show-and-Tell](https://quire.getty.edu/community/show-and-tell/) is held featuring Valerie Hellstein (Denver Art Museum) and Kristi Ehrig-Burgess (Mingei International Museum)
+- September 17: ["Meet the Community"](https://quire.getty.edu/community/interviews/) interview feature is added to the newsletter and Quire website
+- August 13: New and improved search functionality is deployed in Quire and instructions for adding Google Fonts are added to the [documentation](https://quire.getty.edu/docs-v1/fonts-customization/)
+- August 5: Our third [Quire Community Show-and-Tell](https://quire.getty.edu/community/show-and-tell/) is held featuring Garrett Dash Nelson (Leventhal Map & Education Center at the Boston Public Library) and Tom Scutt (Paul Mellon Centre for Studies in British Art, Yale University)
+- June 17–18: The Quire team sponsors and attends the [2026 Library Publishing Forum](https://librarypublishing.org/forum-2026/) at the University of Washington  
+- June 13–15: The Quire team attends the [2026 AUPresses Annual Conference](https://aupresses.org/programs-events/annual-meeting/aupresses-2026/) in Seattle
+- June 11: Documentation is added for Quire project cover creation for both [PDFs](https://quire.getty.edu/docs-v1/pdf/#add-pdf-covers) and [EPUBs](https://quire.getty.edu/docs-v1/epub/#epub-covers)
+- May 7–10: Quire books are exhibited at the [2026 LA Art Book Fair](https://laabf2026.printedmatterartbookfairs.org/visit) at the Getty booth.
+- April 29: Our second [Quire Community Show-and-Tell](https://quire.getty.edu/community/show-and-tell/) is held featuring Valeria Federici (Center for Advanced Study in the Visual Arts, National Gallery of Art) and Paul Fuller (Osher Map Library, University of Southern Maine) 
+- March 19: [FAQ section](https://quire.getty.edu/about/faq/) added to Quire website
 - February 18–21: Quire exhibits at [College Art Association Conference](https://www.collegeart.org/programs/conference/conference2026)
+- January 28: The [inaugural Quire Community Show-and-Tell](https://quire.getty.edu/community/show-and-tell/) is held featuring Michelle Padilla (Amon Carter Museum of American Art) and Morgan Wylder (Materia: Journal of Technical Art History) 
 
 **2025**
 
-- November 16: Quire presents a [hands-on workshop](https://dlfforum2025.sched.com/event/23ZL5/s07-hands-on-digital-publishing-workshop-with-quire) at DLF Forum in Denver, CO. 
+- November 16: Quire presents a [hands-on workshop](https://dlfforum2025.sched.com/event/23ZL5/s07-hands-on-digital-publishing-workshop-with-quire) at DLF Forum in Denver, CO 
 - November 12: Virtual [GitHub](/resources/github/) tutorial offered to community members 
-- October 22: MuPuDIG + Digital Publishing Meet-Up @ the [2025 MCN Conference](https://mcn.edu/annual-conference/ )
+- October 22: The Quire team attends the [2025 MCN Conference](https://mcn.edu/annual-conference/) and hosts MuPuDIG + Digital Publishing Meet-Up 
 - October 9: [Individual Page PDFs](https://quire.getty.edu/docs-v1/pdf/#generate-pdf-files) are introduced as a new feature 
 - October 8: Virtual [GitHub](/resources/github/) tutorial offered to community members 
 - July 29: Community member, Valerie Hellstein from the Denver Art Museum, presents "[Why Publish Digitally](https://www.youtube.com/watch?v=dSn0kvLnZqk)" as part of MuPuDIG's bi-monthly webinar series 
@@ -59,7 +78,9 @@ Learn more: https://librarypublishing.org/forum/
 - October 10: The Denver Art Museum shared a [useful resource](https://github.com/thegetty/quire/discussions/961) on digital publishing with the community
 - August 15: Updated [style customization instructions](https://quire.getty.edu/docs-v1/styles-customization/) are shared with the community
 - July 11: Amon Carter Museum of American Art's Quire publication, [*The Art of the Scene: Charles Truett Williams*](https://art-scene.cartermuseum.org/) received the [Center for the Advancement and Study of Early Texas Art (CASETA)](https://www.caseta.org/index.php)'s annual Exhibition Catalog Award for the most outstanding exhibition catalog on early Texas art 
-- June 4-13: Quire exhibits, sponsors, and presents at  [Library Publishing Forum (LPF)](https://librarypublishing.org/forum/), the [IIIF Annual Conference](https://iiif.io/event/2024/los-angeles/schedule/), and the [AUPresses (AUP) Annual Meeting](https://aupresses.org/programs-events/annual-meeting/aupresses-2024/).
+- June 4-13: Quire exhibits and sponsors the [AUPresses (AUP) Annual Meeting](https://aupresses.org/programs-events/annual-meeting/aupresses-2024/).
+June 4–6: Quire exhibits at and sponsors the [2026 IIIF Annual Conference](https://iiif.io/event/2024/los-angeles/schedule/)
+- May 15–16: Quire sponsors, exhibits, and presents at the [2024 Library Publishing Forum (LPF)](https://librarypublishing.org/forum/)
 - March 14: [Object Grids & Filters](https://quire.getty.edu/docs-v1/collection-catalogues/#generate-object-grids) are introduced as a new feature 
 - February 15-17: Quire at [College Art Association Conference](https://caa.confex.com/caa/2024/meetingapp.cgi)  
 
@@ -104,6 +125,7 @@ Learn more: https://librarypublishing.org/forum/
 
 | Event | Date | Description |
 | -- | -- | -- |
+| MCN Annual Conference | October 22, 2026 | "F***, Marry, Kill: Guidelines for Determining the Lifespan of a Digital Project" presented by Sarah Luken (Corning Museum of Glass), Erin Cecele Dunigan (Quire), and Mara Kurlandsky (Freelance) | 
 | College Art Association Conference (CAA)| February 18–21, 2026 | Author Meet-and-Greet at Booth \#321 | 
 | Digital Library Federation Forum | November 16, 2025 | 3-hour hands-on Quire workshop at The Westin Denver Downtown |  
 | Museum Publishing Digital Interest Group (MuPuDig) Webinar | July 29, 2025 | *Why Publish Digitally*, presented by Valerie Hellstein (Denver Museum of Art) https://www.youtube.com/watch?v=dSn0kvLnZqk |
@@ -112,11 +134,11 @@ Learn more: https://librarypublishing.org/forum/
 | Code4Lib | March 13, 2025 | 3-hour hands-on Quire workshop at Princeton University | 
 | Museum Publishing Digital Interest Group (MuPuDig) Webinar | February 18, 2025 | *Beyond the Collection Catalogue: Recent Projects at Getty*, presented by Greg Albers https://digpublishing.github.io/webinars/2025/02/18/beyond-the-collection-catalogue-recent-projects-at-getty.html. |
 | College Art Association Conference (CAA)| February 13-15, 2025 | 30-minute Quire demonstrations at Booth # 222 |  
-| MCN (Museum Computer Network) | October 23, 2024 | "A Quire Case Study: Collaborating with Non-Technical Colleagues," presented by Erin Cecele Dunigan and Ruth Evans Lane | 
-| The University of Kansas | October 22, 2023 | "A Hands-On Quire Workshop |
+| MCN Annual Conference | October 23, 2024 | "A Quire Case Study: Collaborating with Non-Technical Colleagues," presented by Erin Cecele Dunigan and Ruth Evans Lane | 
+| The University of Kansas | October 22, 2024 | "A Hands-On Quire Workshop |
 | Library Publishing Forum (LPF) | May 15-16, 2024 | "Path, Many Tools: Publishing Getty’s Open Access Journal," presented by Greg Albers |  
 | College Art Association Conference (CAA)| February 15-17, 2024 | 30-minute Quire demonstrations at Booth # 205 | 
-| MCN (Museum Computer Network) | November 10, 2023 | "A Community Effort: Digital Publishing with Open-Source Tools," moderated by Erin Cecele Dunigan (Quire) with Duane Degler (Design for Context) and Caitlin Sweeney (Wildenstein Plattner Institute) | 
+| MCN Annual Conference | November 10, 2023 | "A Community Effort: Digital Publishing with Open-Source Tools," moderated by Erin Cecele Dunigan (Quire) with Duane Degler (Design for Context) and Caitlin Sweeney (Wildenstein Plattner Institute) | 
 | Price Lab for Digital Humanities and Penn Libraries | November 8, 2023 | "A Day of Digital Publishing & Quire," featuring Cosette Alonso Bruhns (Penn Libraries), Chris Diaz (formerly Northwestern University Libraries),  Erin Cecele Dunigan (Quire), Matt K. Gold (CUNY Graduate Center/Manifold), Liz Neely (Georgia O'Keefe Museum), Stewart Varner (Price Lab for Digital Humanities) | 
 | National Museum Publishing Seminar | August 29, 2023 | Quire Community Meet-Up, featuring Meghan Gray & Stephanie Alger (Nelson-Atkins Museum of Art); Will Gillham (Amon Carter Museum of American Art); Valerie Hellstein (Denver Art Museum); and Stephanie Rebick (Vancouver Gallery of Art)|
 | National Museum Publishing Seminar | August 28, 2023 | "Gauging the Impact of Digital Publications," moderated by Erin Cecele Dunigan (Quire) with Allison Levy (Brown University Library), Lauren Makholm (Art Institute of Chicago), and Liz Neely (Georgia O’Keeffe Museum)|
