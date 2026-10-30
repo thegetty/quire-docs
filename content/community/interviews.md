@@ -5,6 +5,31 @@ type: page
 abstract: "Read interviews with Quire users"
 ---
 
+## Morgan Wylder
+
+{{< q-figure id="morgan" class="is-pulled-right" >}}
+
+**How would you describe what you do to someone outside your field?**
+
+Professionally, I am a conservator of paintings. I also volunteer as a co-editor of an online journal dedicated to Technical Art History (TAH) called *Materia*. TAH is basically the study of art objects and other cultural heritage through the lens of materiality–what things are made from, how they were made, and why those matter in our storytelling about objects and our histories. 
+
+**How did you find Quire, and what made you stick with it?**
+
+We found Quire at the suggestion of one of our former team members. She was researching ways we could produce a serial journal that would be accessible to a wide audience, free to use, and had customizability and features beyond a typical WordPress (in 2020) so that we could showcase objects and research better–including video, audio, zoomable images, etc. Quire had become a public, open-source tool by this time and was a great fit for our project! 
+
+**Can you tell us about a Quire project (past or present) that has excited you?**
+
+My favorite issue that we (*Materia*) have produced so far might be [issue 3](https://issue-3.materiajournal.com/), where author Rowan Frame submitted stop-motion videos of her painting en plein air in the style of English painter John Constable. It really showcases how digital media can be helpful in describing something that words cannot. Other Quire projects that I’ve been so impressed with are the [*Masterpieces from the Clowes Collection*](https://paintings.theclowescollection.org/) from Indianapolis Museum of Art at Newfields (it has technical reports of paintings!) and [*Blue Gold: The Art and Science of Indigo from the Mingei Museum*](https://publications.mingei.org/blue-gold/) in San Diego, with many essays on the making of indigo dye and dyed objects from around the world. 
+
+**What’s something you wish you knew about Quire before using it?**
+
+For someone who knows as little about website building as I did, there is indeed a learning curve between the Quire program itself, Github, Netlify, and some of the other steps involved, so this will require some time and patience. Thankfully, the Quire team has written excellent documentation to walk you through the process of starting a project. Once you get the hang of it, it’s pretty straightforward and there is no limit to the information and images you can include in your project–other than hosting/storage fees. 
+
+**What’s currently making you happy?**
+
+We are currently working on our 6th, 7th, and 8th issues! It’s amazing that our team is still as dedicated as it was in the beginning. We have so much fun working together, and we find contributing to this mission so rewarding.  We are grateful to our early authors who believed in us and our potential for sustainability that they published with us, and so grateful that we continue to receive excellent research and can continue to publish. 
+
+
 ## Michelle Padilla 
 
 {{< q-figure id="michelle" class="is-pulled-right" >}}

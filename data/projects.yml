@@ -1170,7 +1170,7 @@ project_list:
 
   - id: osher_founding_memories
     src: /screenshots/_osher_founding_memories.jpg
-    alt: "Founding Memories: America at 250. Contributors:Libby Bischof, Matthew Edney, Adam Schmitt, and Ashley Towle"
+    alt: "Founding Memories: America at 250. Libby Bischof, Matthew Edney, Adam Schmitt, and Ashley Towle"
     type: Online Exibition 
     publisher: "Osher Map Library and Smith Center for Cartographic Education"
     title_info: "Founding Memories: America at 250"
@@ -1247,3 +1247,16 @@ project_list:
     github_user:
       - liliflores-design
     note: "This publication was created by the inaugural Gabrielino Tongva Springs Summer Internship cohort of 2026. Over the summer, the interns were introduced to various topics, including decolonial and Indigenous methods of knowledge-making, the importance of oral histories, archaeological perspectives that enrich the deep history of Tovangaar, and land and water stewardship. This is Gabrielino Tongva Springs Foundation's (GTSF) first Quire publication. The 2026 cohort attended a Quire info session and hands-on workshop as part of their internship. GTSF hopes make this collaboration with Quire an annual tradition."
+
+  - id: "osher_pageant_spectacles"
+    src: /screenshots/_osher_pageant_spectacles.jpg
+    alt: "A Pageant of Spectacles: Chromolithography in America. Matthew H. Edney"
+    type: "Online Exibition"
+    publisher: "Osher Map Library and Smith Center for Cartographic Education"
+    title_info: "*A Pageant of Spectacles: Chromolithography in America*"
+    pub_date: 2026-04-17
+    url: https://exhibits.oshermaps.org/pageant-of-spectacles/
+    customization_level: moderate
+    github_user:
+      - fullerpault
+    note: "The exhibition *A Pageant of Spectacles: Chromolithography in America was curated by Matthew H. Edney, Osher Professor in the History of Cartography, University of Southern Maine. It ran at USM’s Osher Map Library and Smith Center for Cartographic Education from November 30, 2023 through June 29, 2024. This online version of the exhibition features an extensive essay by Professor Edney on “Mapping, Printing, and Color,” in which he expands on both the labels of the original exhibition and his lecture about the exhibition on 25 March 2024. It further contains information and digital images of all the exhibited works. This is the Osher's second Quire publication."
