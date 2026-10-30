@@ -519,3 +519,7 @@ figure_list:
   - id: "michelle"
     src: "/screenshots/interview_michelle_padilla.jpg"
     caption: <span class="interview-caption">**Michelle Padilla<br> Digital Content Strategist<br> Amon Carter Museum of American Art**</span>"
+
+  - id: "morgan"
+    src: "/screenshots/interview_morgan_wylder.jpg"
+    caption: <span class="interview-caption">**Morgan Wylder<br> Associate Conservator of Paintings<br> Balboa Art Conservation Center (BACC)**</span>
