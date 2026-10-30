@@ -11,7 +11,7 @@ abstract: "Read interviews with Quire users"
 
 **How would you describe what you do to someone outside your field?**
 
-Professionally, I am a conservator of paintings. I also volunteer as a co-editor of an online journal dedicated to Technical Art History called *Materia*. TAH is basically the study of art objects and other cultural heritage through the lens of materiality–what things are made from, how they were made, and why those matter in our storytelling about objects and our histories. 
+Professionally, I am a conservator of paintings. I also volunteer as a co-editor of an online journal dedicated to Technical Art History (TAH) called *Materia*. TAH is basically the study of art objects and other cultural heritage through the lens of materiality–what things are made from, how they were made, and why those matter in our storytelling about objects and our histories. 
 
 **How did you find Quire, and what made you stick with it?**
 
