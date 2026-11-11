@@ -7,12 +7,6 @@ abstract: "Get the latest news and info about upcoming events"
 
 ## Upcoming Events
 
-**Quire @ MCN 2026** <br>
-October 21-23, 2026 <br>
-Hyatt Regency Seattle <br>
-Seattle, WA <br>
-[Learn more](https://mcn.edu/annual-conference/mcn-2026/)
-
 **Quire @ CAA 2027** <br>
 February 3-6, 2027 <br>
 NY Midtown Hilton <br>
@@ -23,7 +17,13 @@ New York, NY <br>
 April 11-13, 2027 <br>
 Radisson Blu Aqua Hotel <br>
 Chicago, IL <br>
-[Learn more](https://graham.uchicago.edu/program/national-museum-publishing-seminar/ )
+[Learn more](https://graham.uchicago.edu/program/national-museum-publishing-seminar/)
+
+**Quire @ MCN 2027** <br>
+October 20–22, 2027 <br>
+RISD Museum <br>
+Providence, RI <br>
+[Learn More](https://mcn.edu/annual-conference/mcn-2027/)
 
 *Have an event coming up? Email us at [quire@getty.edu](mailto:quire@getty.edu) and we’ll add it to the calendar.*
 
@@ -40,7 +40,7 @@ Chicago, IL <br>
 **2026**
 
 - November 11: Virtual [GitHub](/resources/github/) tutorial offered to community members 
-- October 21-23: The Quire team attends the [MCN 2026](https://mcn.edu/annual-conference/mcn-2026/) in Seattle and Erin Cecele Dunigan (Quire Community Manager) speaks about static-sites and Quire as part of a panel called ["F***, Marry, Kill: Guidelines for Determining a Digital Project's Lifespan"](https://mcn2026.sched.com/event/2RWqP/f-marry-kill-guidelines-for-determining-a-digital-projects-lifespan)
+- October 21-23: The Quire team attends the [MCN 2026](https://mcn.edu/annual-conference/mcn-2026/) in Seattle and Erin Cecele Dunigan (Quire Community Manager) speaks on a panel called ["F***, Marry, Kill: Guidelines for Determining a Digital Project's Lifespan"](https://mcn2026.sched.com/event/2RWqP/). See Erin's presentation about static sites: [*Are You Ready for Commitment*](/downloads/are-you-ready-for-commitment_MCN.pdf)
 - October 7: Our fourth [Quire Community Show-and-Tell](https://quire.getty.edu/community/show-and-tell/) is held featuring Valerie Hellstein (Denver Art Museum) and Kristi Ehrig-Burgess (Mingei International Museum)
 - September 17: ["Meet the Community"](https://quire.getty.edu/community/interviews/) interview feature is added to the newsletter and Quire website
 - August 13: New and improved search functionality is deployed in Quire and instructions for adding Google Fonts are added to the [documentation](https://quire.getty.edu/docs-v1/fonts-customization/)
@@ -125,7 +125,7 @@ June 4–6: Quire exhibits at and sponsors the [2026 IIIF Annual Conference](htt
 
 | Event | Date | Description |
 | -- | -- | -- |
-| MCN Annual Conference | October 22, 2026 | "F***, Marry, Kill: Guidelines for Determining the Lifespan of a Digital Project" presented by Sarah Luken (Corning Museum of Glass), Erin Cecele Dunigan (Quire), and Mara Kurlandsky (Freelance) | 
+| MCN Annual Conference | October 22, 2026 | "F***, Marry, Kill: Guidelines for Determining the Lifespan of a Digital Project" presented by Sarah Luken (Corning Museum of Glass), Erin Cecele Dunigan (Quire), and Mara Kurlandsky (Freelance). See Erin's presentation: [*Are You Ready for Commitment*](/downloads/are-you-ready-for-commitment_MCN.pdf) | 
 | College Art Association Conference (CAA)| February 18–21, 2026 | Author Meet-and-Greet at Booth \#321 | 
 | Digital Library Federation Forum | November 16, 2025 | 3-hour hands-on Quire workshop at The Westin Denver Downtown |  
 | Museum Publishing Digital Interest Group (MuPuDig) Webinar | July 29, 2025 | *Why Publish Digitally*, presented by Valerie Hellstein (Denver Museum of Art) https://www.youtube.com/watch?v=dSn0kvLnZqk |
