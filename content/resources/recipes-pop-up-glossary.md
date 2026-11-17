@@ -65,7 +65,7 @@ And then add the following liquid code to the body of the `glossary.md` file:
 ```
 {% for def in glossary.entries %}
 
-{{ def.term }}
+{{ def.id }}{#{{ def.id | slugify }}}
 : {{ def.definition }}
 
 {% endfor %}
