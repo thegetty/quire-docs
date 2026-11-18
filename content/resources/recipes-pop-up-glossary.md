@@ -36,7 +36,7 @@ export default function (eleventyConfig) {
 }
 ```
 
-Register it in `_plugins/shortcodes/index.js` by adding the line `import def from ./def.js` below the contributors line (they are listed alphabetically). Then add `addShortcode('def', def)` to the relevant section below that. 
+Register it in `_plugins/shortcodes/index.js` by adding the line `import def from './def.js'` below the contributors line (they are listed alphabetically). Then add `addShortcode('def', def)` to the relevant section below that. 
 
 We recommend making a note about the updates to your Quire project template in your project's `README.md` file. For example: 
 
