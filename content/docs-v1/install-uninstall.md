@@ -137,26 +137,29 @@ If you are using {{< q-def "git" >}} for version control on your project, you wi
 3. Replace the following files and directories in your project with the copies from the new project:
 
     ```
-    package.json
-    package-lock.json
-    _plugins/
-    _lib/
-    _layouts/
     _includes/
-    .node-version
-    .gitignore
-    .eslintrc
-    .eleventyignore
+    _layouts/
+    _lib/
+    _patches/
+    _plugins/
+    _tests/
     .eleventy.js
+    .eleventyignore
+    .gitignore
+    .node-version
     .quire
-    content/_computed/
     content/_assets/fonts/
     content/_assets/javascript/
     content/_assets/styles/
+    content/_computed/
     content/_data/config.yaml
+    eslint.config.js
+    lighthouserc.json
+    package-lock.json
+    package.json
     ```
 
-    If you made any customizations to any of these files previously—for instance to `content/_assets/styles/variables.scss`—you will need to copy those over into the replaced files individually.
+    If you made any customizations to any of these files previously—for instance to `content/_assets/styles/variables.scss`—you will need to copy those over into the replaced files individually. (For this reason, we recommend keeping track of any changes you make to templates outside of the `content/` folder.)
 
     Note that some of these are "hidden" files that you will see in a text editor, but not in your Finder or File Explorer. To show hidden files in Finder on macOS type Shift-Command-Period(.); in File Explorer on Windows 10/11, follow [Microsoft’s instructions](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5).
 
