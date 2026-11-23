@@ -193,7 +193,7 @@ In addition to inserting tables in your project [as Markdown](https://www.markdo
 
 {{< q-class "box tip" >}}
 
--  Use a free conversion tool like [Text Fixer](https://www.textfixer.com/html/) to quickly convert Word tables to HTML. You may still need to clean up the HTML, but for long tables, it is much faster than creating them by hand.
+-  Use a free conversion tool like [Tableizer](https://www.tableizer.journalistopia.com/) to quickly convert Word tables to HTML. You can then either clean-up the table by hand or use the free tool, [Tidy](https://tidy.js.org/html/).
 
 {{< /q-class >}}
 
