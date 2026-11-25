@@ -458,6 +458,10 @@ figure_list:
   - id: "mchc"
     src: /screenshots/mchc.jpg
 
+  - id: "nmps-2027-event"
+    src: /screenshots/nmps-2027-event.png
+    credit: "Image credit: https://www.dayuse.com/hotels/usa/radisson-blu-aqua-hotel-chicago"
+
   - id: "mchclogo"
     src: /screenshots/mchclogo.jpg
 
