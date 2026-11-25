@@ -12,7 +12,7 @@ This hands-on workshop will serve as an introduction to [Quire](https://quire.ge
 
 <div class="action-button paired-button">
 
-[Register Now](https://forms.gle/ZCzFJhbrvcBjXoht9)
+[Register for the Quire Workshop](https://forms.gle/ZCzFJhbrvcBjXoht9)
 
 </div>
 
@@ -61,6 +61,15 @@ The latter half of the day will see the concepts covered in Part 1 implemented. 
 **About Quire** 
 
 [Quire](http://quire.getty.edu) is a free, multiformat publishing tool developed by Getty to address challenges around the discoverability, longevity, and sustainability of online scholarly publications. Quire’s strength lies in transforming a single set of files into a dynamic and fully-featured website, downloadable PDF, e-book, and print-on-demand book. Quire excels at long-form, visually-rich publishing and is designed to be flexible and deeply customizable. A growing international community of academics and arts and cultural heritage professionals are utilizing Quire to create everything from collection and exhibition catalogues to conference proceedings, journals, student research projects, and more. View them on the Quire [community showcase](/community/community-showcase). 
+
+<div class="action-button paired-button">
+
+[Register for the Quire Workshop](https://forms.gle/ZCzFJhbrvcBjXoht9)
+
+</div>
+
+<br>
+<br>
 
 **About the National Museum Publishing Seminar**
 
